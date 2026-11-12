@@ -29,3 +29,5 @@ blockquote { margin: 0; padding: 8px 14px; border-left: 3px solid var(--border-s
 .sources { margin-top: 32px; padding: 4px 16px 12px; background: var(--hover); border-radius: 10px; font-size: 14px; }
 .sources b { font-weight: 600; }
 footer { max-width: 760px; margin: 0 auto; padding: 16px 16px 40px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--border); }
+
+.worksheets .answers { font-size: 13px; margin-left: 6px; }

@@ -1,18 +1,24 @@
 load("@aspect_bazel_lib//lib:run_binary.bzl", "run_binary")
 
 # The data file the website reads and the static pages search engines read,
-# both built from the skill graph and the curated layer.
+# both built from the skill graph, the curated layer and the worksheet
+# catalogue.
 run_binary(
     name = "math",
     srcs = [
         "//content/math",
         "//content/math:strands.textproto",
+        "//content/worksheets:alignments.textproto",
+        "//content/worksheets:catalog",
+        "//content/worksheets:composed_sheets",
         "//data:graph",
     ],
     outs = ["math.json"],
     args = [
         "--graph=$(location //data:graph)",
         "--curated=content/math",
+        "--worksheets=content/worksheets",
+        "--composed=content/worksheets/composed",
         "--out=$(location math.json)",
         "--pages=$(RULEDIR)/pages",
     ],

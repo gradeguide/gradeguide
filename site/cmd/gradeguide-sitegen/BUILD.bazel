@@ -7,6 +7,7 @@ go_library(
     visibility = ["//visibility:private"],
     deps = [
         "//graph/curated",
+        "//graph/worksheets",
         "//proto/graph/v1",
         "//site/sitegen",
         "@org_golang_google_protobuf//proto",

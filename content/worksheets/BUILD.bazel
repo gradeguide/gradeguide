@@ -11,6 +11,12 @@ filegroup(
 
 exports_files(["alignments.textproto"])
 
+# The published sheets, for the site to read page counts from.
+filegroup(
+    name = "composed_sheets",
+    srcs = glob(["composed/*.json"]),
+)
+
 # The catalogue encoded, with each fragment's header standards filled in from
 # its alignments.
 genrule(

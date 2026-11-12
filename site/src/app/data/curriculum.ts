@@ -52,6 +52,19 @@ export interface SkillData {
   also?: { unitId: string; month: number }[];
   parts?: { code: string; name: string }[];
   steps?: string[];
+  /** Printable worksheets that teach or practise the skill. */
+  worksheets?: WorksheetRef[];
+}
+
+export interface WorksheetRef {
+  id: string;
+  title: string;
+  minutes?: number;
+  pages: number;
+  /** The worksheet to print. */
+  href: string;
+  /** The worksheet beside a copy filled in with the answers. */
+  answersHref: string;
 }
 
 export interface Credit {
