@@ -7,6 +7,24 @@ import { MapViewComponent } from './map/map-view.component';
 import { PathViewComponent } from './path/path-view.component';
 import { SkillPanelComponent } from './skill/skill-panel.component';
 
+/** Remembers whether the reader collapsed the details panel. */
+const PANEL_KEY = 'gradeguide.panel';
+
+/** Wide enough for a side panel; narrower screens use a bottom sheet. */
+const WIDE_QUERY = '(min-width: 861px)';
+
+function readPanelCollapsed(): boolean {
+  try {
+    return globalThis.localStorage?.getItem(PANEL_KEY) === 'collapsed';
+  } catch {
+    return false;
+  }
+}
+
+function matchWide(): boolean {
+  return globalThis.matchMedia?.(WIDE_QUERY).matches ?? true;
+}
+
 /** The address of the data file, next to the page. */
 export const DATA_URL = 'math.json';
 
@@ -45,7 +63,7 @@ export const DATA_URL = 'math.json';
         }
       </div>
 
-      <main [class.open]="!!selectedId()">
+      <main [class.open]="!!selectedId() && !collapsed()" [class.stripped]="!!selectedId() && collapsed()">
         <div class="view">
           @switch (state().view) {
             @case ('map') {
@@ -66,12 +84,20 @@ export const DATA_URL = 'math.json';
             }
           }
         </div>
-        @if (selectedId()) {
-          <aside class="panel" aria-label="Skill details">
+        @if (selectedId() && collapsed()) {
+          <button type="button" class="strip" [attr.aria-label]="'Show details for ' + selectedName()" title="Show details" (click)="setCollapsed(false)">
+            <span class="chev" aria-hidden="true">‹</span>
+            <span class="vname">{{ selectedName() }}</span>
+          </button>
+        } @else if (selectedId()) {
+          <aside class="panel-wrap" aria-label="Skill details">
+            <button type="button" class="collapse" aria-label="Hide details" title="Hide details" (click)="setCollapsed(true)">›</button>
+            <div class="panel">
             <gg-skill-panel [curriculum]="c" [skillId]="selectedId()" (pick)="select($event, true)" (close)="select('')" />
             @if (state().view !== 'path' || pathTarget()?.id !== selectedId()) {
               <button type="button" class="pathlink" (click)="showPath()">{{ pathLabel() }}</button>
             }
+            </div>
           </aside>
         }
       </main>
@@ -105,9 +131,21 @@ export const DATA_URL = 'math.json';
     .legend i.before { background: var(--before-bg); border: 1px solid var(--before); }
     .legend i.after { background: var(--after-bg); border: 1px solid var(--after); }
     main { display: grid; grid-template-columns: minmax(0, 1fr); }
-    main.open { grid-template-columns: minmax(0, 1fr) 380px; }
+    main.open { grid-template-columns: minmax(0, 1fr) 340px; }
+    main.stripped { grid-template-columns: minmax(0, 1fr) 34px; }
     .view { min-width: 0; padding: 0 0 0 16px; }
-    .panel { border-left: 1px solid var(--border); padding: 16px 20px 24px; max-height: calc(100vh - 120px); overflow-y: auto; position: sticky; top: 0; }
+    .strip {
+      position: sticky; top: 0; height: min(100vh - 120px, 640px); display: flex; flex-direction: column; align-items: center; gap: 10px;
+      padding: 12px 0; border: none; border-left: 1px solid var(--border); background: var(--surface); color: var(--muted); font: inherit; cursor: pointer;
+    }
+    .strip:hover { background: var(--hover); color: var(--text); }
+    .chev { font-size: 20px; line-height: 1; }
+    .vname { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-height: 100%; }
+    /* A round handle on the panel's left border, clear of the panel's own heading. */
+    .collapse { position: absolute; top: 14px; left: -13px; width: 26px; height: 26px; padding: 0 0 2px 2px; font-size: 18px; line-height: 1; border: 1px solid var(--border-strong); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer; z-index: 2; }
+    .collapse:hover { color: var(--text); border-color: var(--text); }
+    .panel-wrap { position: sticky; top: 0; align-self: start; z-index: 3; }
+    .panel { border-left: 1px solid var(--border); padding: 16px 20px 24px; max-height: calc(100vh - 120px); overflow-y: auto; }
     .pathlink { margin-top: 18px; font: inherit; font-size: 14px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); cursor: pointer; }
     footer { padding: 24px 16px; font-size: 14px; color: var(--muted); max-width: 900px; }
     footer a { color: inherit; }
@@ -119,6 +157,8 @@ export const DATA_URL = 'math.json';
       .bar { flex-wrap: nowrap; overflow-x: auto; }
       .grades { flex-wrap: nowrap; }
       .legend, .ctl:has(input[type='checkbox']) { display: none; }
+      .collapse { display: none; }
+      .panel-wrap { position: static; }
       .panel {
         position: fixed; top: auto; left: 0; right: 0; bottom: 0; max-height: 55vh; z-index: 10;
         background: var(--page); border-left: none; border-top: 1px solid var(--border-strong);
@@ -165,7 +205,23 @@ export class AppComponent {
 
   private readonly map = viewChild(MapViewComponent);
 
+  /** Whether the reader collapsed the details panel. Remembered, and only honoured on wide screens. */
+  private readonly collapsePref = signal(readPanelCollapsed());
+  private readonly wide = signal(matchWide());
+  protected readonly collapsed = computed(() => this.collapsePref() && this.wide());
+  protected readonly selectedName = computed(() => this.curriculum()?.skill(this.selectedId())?.name ?? '');
+
+  protected setCollapsed(c: boolean) {
+    this.collapsePref.set(c);
+    try {
+      globalThis.localStorage?.setItem(PANEL_KEY, c ? 'collapsed' : 'open');
+    } catch {
+      // Private browsing can refuse storage; the panel then opens next visit.
+    }
+  }
+
   constructor() {
+    globalThis.matchMedia?.(WIDE_QUERY).addEventListener('change', (e) => this.wide.set(e.matches));
     fetch(DATA_URL)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status} ${r.statusText}`))))
       .then((d: SiteData) => this.data.set(d))
