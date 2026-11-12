@@ -1,0 +1,9 @@
+{{template "head" .}}
+<h1>K–8 math, month by month</h1>
+<p class="lead">Every Common Core math skill from kindergarten to grade 8: when it is usually taught, what it builds on, and a plain explanation for parents.</p>
+<p class="actions"><a class="button" href="/">Open the interactive map</a></p>
+<h2>By grade</h2>
+<ul class="grid">{{range .Grades}}<li><a href="{{.Path}}">{{gradeName .Grade}}</a> <span class="g">{{len .Skills}} skills</span></li>{{end}}</ul>
+<h2>By topic</h2>
+<ul class="grid">{{range .Strands}}<li><a href="{{index $.StrandPaths .ID}}">{{.Name}}</a></li>{{end}}</ul>
+{{template "foot" .}}

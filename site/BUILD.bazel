@@ -58,12 +58,14 @@ copy_to_directory(
     srcs = [
         "src/about.html",
         "src/index.html",
+        "src/pages.css",
         "src/styles.css",
         ":bundle",
         "//site/data:math",
     ],
     root_paths = [
         "site/src",
+        "site/data/pages",
         "site/data",
         "site",
     ],

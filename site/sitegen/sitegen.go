@@ -80,6 +80,9 @@ type skill struct {
 	Also        []also   `json:"also,omitempty"`
 	Parts       []part   `json:"parts,omitempty"`
 	Steps       []string `json:"steps,omitempty"`
+	// Path is the skill's own page, such as
+	// "/math/grade-4/4-nf-a-1-equivalent-fractions/".
+	Path string `json:"path"`
 }
 
 type credit struct {
@@ -217,6 +220,7 @@ func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
 		s := byID[id]
 		t := text[id]
 		sk := skill{
+			Path:        skillPath(s.GetGrades()[0], s.GetCode(), t.GetName()),
 			ID:          id,
 			Code:        s.GetCode(),
 			Grade:       s.GetGrades()[0],

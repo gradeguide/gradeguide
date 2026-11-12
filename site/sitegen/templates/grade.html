@@ -1,0 +1,8 @@
+{{template "head" .}}
+<h1>{{gradeName .Grade}} math, month by month</h1>
+<p class="lead">Every Common Core math skill for {{gradeName .Grade}}, in the month it is usually taught. Pick a skill for a plain explanation, an example and an idea to try at home.</p>
+<p class="actions"><a class="button" href="/#map/{{.Grade}}/">See {{gradeName .Grade}} on the map</a></p>
+{{range .Months}}
+<section class="month"><h2>{{.Month}}</h2><ul class="links">{{range .Skills}}<li><a href="{{.Path}}">{{.Name}}</a></li>{{end}}</ul></section>
+{{end}}
+{{template "foot" .}}

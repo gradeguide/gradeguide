@@ -2,11 +2,21 @@ load("@rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
     name = "sitegen",
-    srcs = ["sitegen.go"],
+    srcs = [
+        "pages.go",
+        "sitegen.go",
+    ],
+    embedsrcs = glob(["templates/*.html"]),
     importpath = "github.com/gradeguide/gradeguide/site/sitegen",
     visibility = ["//visibility:public"],
     deps = [
         "//graph/curated",
         "//proto/graph/v1",
     ],
+)
+
+go_test(
+    name = "sitegen_test",
+    srcs = ["pages_test.go"],
+    embed = [":sitegen"],
 )
