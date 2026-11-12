@@ -4,6 +4,7 @@ import { compose } from '../../../worksheet/engine/compose.js';
 import { SheetComponent } from '../../../worksheet/components/sheet.component.js';
 import { WritingSize } from '../../../worksheet/proto/v1/worksheet_pb.js';
 import { type Catalog, type Sheet } from './catalog.js';
+import { RelatedComponent } from './related.component.js';
 import { type Crumb, TopBarComponent } from './top-bar.component.js';
 
 type Feeling = 'easy' | 'ok' | 'hard';
@@ -14,7 +15,7 @@ type Feeling = 'easy' | 'ok' | 'hard';
 @Component({
   selector: 'gg-sheet-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SheetComponent, TopBarComponent],
+  imports: [SheetComponent, TopBarComponent, RelatedComponent],
   template: `
     @let s = sheet();
     <gg-top-bar [crumbs]="crumbs()" />
@@ -43,6 +44,12 @@ type Feeling = 'easy' | 'ok' | 'hard';
             <span>Page {{ page() + 1 }} of {{ composed().pages.length }}</span>
           </nav>
         }
+        @if (related().length) {
+          <section class="related">
+            <h2>Related worksheets</h2>
+            <gg-related [groups]="related()" />
+          </section>
+        }
       </main>
 
       <section class="details">
@@ -64,10 +71,6 @@ type Feeling = 'easy' | 'ok' | 'hard';
           <h2>Helping at home</h2>
           <p class="tip">{{ s.homeTip }}</p>
         }
-        @if (next(); as n) {
-          <h2>Next</h2>
-          <a class="sheet-link" [href]="'?only=' + n.id">{{ n.title }}</a>
-        }
         <h2>How did it go?</h2>
         <div class="feel" role="group" aria-label="How did it go?">
           @for (f of feelings; track f.value) {
@@ -75,22 +78,7 @@ type Feeling = 'easy' | 'ok' | 'hard';
           }
         </div>
         <p class="private">Saved on this device only.</p>
-        @if (feeling() === 'hard' && easier().length) {
-          <h3>Hard? Try these first</h3>
-          <ul class="list">
-            @for (e of easier(); track e.id) {
-              <li><a [href]="'?only=' + e.id">{{ e.title }}</a></li>
-            }
-          </ul>
-        }
-        @if (feeling() === 'easy' && harder().length) {
-          <h3>Easy? Ready for</h3>
-          <ul class="list">
-            @for (h of harder(); track h.id) {
-              <li><a [href]="'?only=' + h.id">{{ h.title }}</a></li>
-            }
-          </ul>
-        }
+        <a class="report" [href]="reportUrl()" target="_blank" rel="noopener">Something wrong with this sheet? Tell us</a>
       </section>
     </div>
   `,
@@ -119,12 +107,13 @@ type Feeling = 'easy' | 'ok' | 'hard';
     .chips li { font-size: 13px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
     .chips a { color: var(--text); text-decoration: none; }
     .tip { font-size: 14px; line-height: 1.5; margin: 0; }
-    .sheet-link { font-size: 14px; }
+    .related { margin-top: 28px; }
+    .related h2 { margin-top: 0; }
+    .report { display: inline-block; margin-top: 18px; font-size: 13px; color: var(--muted); }
     .feel { display: flex; gap: 6px; }
     .feel button { flex: 1; padding: 6px 0; }
     .feel button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
     .private { font-size: 13px; color: var(--muted); margin: 6px 0 0; }
-    .list { padding-left: 18px; margin: 0; font-size: 14px; }
     @media (max-width: 860px) {
       .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "actions" "paper" "details"; padding-top: 12px; }
       .actions { position: sticky; top: 0; z-index: 1; background: var(--page); padding: 8px 0; border-bottom: 1px solid var(--border); margin-bottom: 12px; }
@@ -133,7 +122,7 @@ type Feeling = 'easy' | 'ok' | 'hard';
       .buttons { flex-direction: row; flex-wrap: wrap; align-items: center; }
     }
     @media print {
-      .actions, .details, .strip { display: none !important; }
+      .actions, .details, .strip, .related { display: none !important; }
       .layout { display: block; padding: 0; max-width: none; }
       .pages { zoom: 1 !important; display: block; }
       .pages ::ng-deep .page { box-shadow: none !important; margin: 0 !important; break-after: page; }
@@ -177,13 +166,22 @@ export class SheetPageComponent {
   protected readonly meta = computed(() => {
     const s = this.sheet();
     const n = this.composed().pages.length;
-    return [s.grade ? gradeName(s.grade) : '', `${n} ${n === 1 ? 'page' : 'pages'}`, s.minutes ? `about ${s.minutes} min` : '', s.review ? 'Review' : '']
+    return [s.grade ? gradeName(s.grade) : '', `${n} ${n === 1 ? 'page' : 'pages'}`, s.review ? 'Review' : '']
       .filter(Boolean)
       .join(' · ');
   });
-  protected readonly next = computed(() => this.catalog().next(this.sheet()));
-  protected readonly easier = computed(() => this.catalog().easier(this.sheet()));
-  protected readonly harder = computed(() => this.catalog().harder(this.sheet()));
+  protected readonly related = computed(() => this.catalog().related(this.sheet()));
+  /** A new issue on the worksheet feedback form, filled in with this sheet. */
+  protected readonly reportUrl = computed(() => {
+    const s = this.sheet();
+    const q = new URLSearchParams({
+      template: '3-worksheet.yml',
+      title: 'Worksheet: ' + s.title,
+      worksheet: `${s.id} ${s.title}`,
+      page: typeof location === 'undefined' ? '' : location.href,
+    });
+    return 'https://github.com/gradeguide/gradeguide/issues/new?' + q.toString();
+  });
   /**
    * Pages are 816 px wide, and shrink to fit their column: beside the
    * 240 px panel on a wide screen, the whole width below 860 px.

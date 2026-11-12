@@ -28,6 +28,7 @@ angular_ts_project(
     source_map = True,
     tsconfig = ":tsconfig",
     deps = [
+        "//:node_modules/@angular/common",
         "//:node_modules/@angular/core",
         "//:node_modules/@angular/platform-browser",
         "//:node_modules/@bufbuild/protobuf",

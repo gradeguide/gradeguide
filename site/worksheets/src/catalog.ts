@@ -18,6 +18,8 @@ export interface SkillData {
   grade: string;
   strand: string;
   name: string;
+  /** The month the skill is usually taught: 1 is September, 10 is June. */
+  month?: number;
   /** The skill's static page, such as "/math/grade-4/4-nf-a-1-equivalent-fractions/". */
   path?: string;
   worksheets?: {
@@ -33,7 +35,6 @@ export interface SkillData {
 export interface Sheet {
   id: string;
   title: string;
-  minutes: number;
   pages: number;
   /** Empty when the sheet is not listed under any skill. */
   grade: string;
@@ -43,6 +44,8 @@ export interface Sheet {
   skills: SkillData[];
   /** True when the sheet only reviews skills. */
   review: boolean;
+  /** The skill the library files the sheet under: its earliest-taught skill. */
+  primary?: SkillData;
   homeTip: string;
   pdf?: string;
   answersPdf?: string;
@@ -75,17 +78,17 @@ export class Catalog {
         }
       }
       const skills = main.length ? main : reviews;
-      const first = skills[0];
+      const first = [...skills].sort((a, b) => (a.month ?? 99) - (b.month ?? 99))[0];
       const sheet: Sheet = {
         id: w.id,
         title: w.title,
-        minutes: w.minutes,
         pages: ref?.pages ?? 0,
         grade: first?.grade ?? '',
         strand: first?.strand ?? '',
         strandName: strandName.get(first?.strand ?? '') ?? '',
         skills,
         review: main.length === 0 && reviews.length > 0,
+        primary: first,
         homeTip: w.homeTip,
         pdf: ref?.pdf,
         answersPdf: ref?.answersPdf,
@@ -113,37 +116,90 @@ export class Catalog {
     });
   }
 
-  /** The next sheet in the same grade and topic, in catalogue order. */
-  next(sheet: Sheet): Sheet | undefined {
-    const same = this.sheets.filter((s) => s.grade === sheet.grade && s.strand === sheet.strand);
-    return same[same.indexOf(sheet) + 1];
-  }
-
-  /** Sheets for the skills this sheet's skills build on. */
-  easier(sheet: Sheet, limit = 3): Sheet[] {
-    return this.linked(sheet, 1, 0, limit);
-  }
-
-  /** Sheets for the skills this sheet's skills lead to. */
-  harder(sheet: Sheet, limit = 3): Sheet[] {
-    return this.linked(sheet, 0, 1, limit);
-  }
-
-  private linked(sheet: Sheet, from: 0 | 1, to: 0 | 1, limit: number): Sheet[] {
-    const mine = new Set(sheet.skills.map((s) => s.id));
-    const out: Sheet[] = [];
-    for (const link of this.site.links) {
-      if (!mine.has(link[from])) {
-        continue;
+  /**
+   * The library for a grade and topic: by month, then by skill in the map's
+   * order, each sheet under its primary skill.
+   */
+  byMonth(grade: string, strand: string): Month[] {
+    const months: Month[] = [];
+    const skillOrder = new Map(this.site.skills.map((s, i) => [s.id, i]));
+    const sheets = this.find(grade, strand, '').filter((s) => s.primary);
+    sheets.sort(
+      (a, b) =>
+        (a.primary!.month ?? 99) - (b.primary!.month ?? 99) ||
+        skillOrder.get(a.primary!.id)! - skillOrder.get(b.primary!.id)! ||
+        this.sheets.indexOf(a) - this.sheets.indexOf(b),
+    );
+    for (const s of sheets) {
+      const m = s.primary!.month ?? 0;
+      let month = months[months.length - 1];
+      if (!month || month.month !== m) {
+        month = { month: m, skills: [] };
+        months.push(month);
       }
-      const skill = this.skillsById.get(link[to]);
-      for (const r of skill?.worksheets ?? []) {
-        const s = this.byId.get(r.id);
-        if (s && s !== sheet && r.role !== 'reviews' && !out.includes(s)) {
-          out.push(s);
+      let skill = month.skills[month.skills.length - 1];
+      if (!skill || skill.skill !== s.primary) {
+        skill = { skill: s.primary!, sheets: [] };
+        month.skills.push(skill);
+      }
+      skill.sheets.push(s);
+    }
+    return months;
+  }
+
+  /**
+   * Sheets related to this one, in four groups: the same skills, the skills
+   * they build on, the skills they lead to, and other skills of the same
+   * grade taught within a month of them. No sheet appears twice, and empty
+   * groups are left out.
+   */
+  related(sheet: Sheet, limit = 4): Related[] {
+    const mine = new Set(sheet.skills.map((s) => s.id));
+    const seen = new Set<Sheet>([sheet]);
+    const sheetsOf = (skills: Iterable<SkillData | undefined>): Sheet[] => {
+      const out: Sheet[] = [];
+      for (const k of skills) {
+        for (const r of k?.worksheets ?? []) {
+          const s = this.byId.get(r.id);
+          if (s && r.role !== 'reviews' && !seen.has(s) && !out.includes(s)) {
+            out.push(s);
+          }
         }
       }
-    }
-    return out.slice(0, limit);
+      const kept = out.slice(0, limit);
+      kept.forEach((s) => seen.add(s));
+      return kept;
+    };
+    const linked = (from: 0 | 1, to: 0 | 1) => this.site.links.filter((l) => mine.has(l[from])).map((l) => this.skillsById.get(l[to]));
+    const months = sheet.skills.map((s) => s.month).filter((m): m is number => m !== undefined);
+    const nearby = this.site.skills.filter(
+      (s) => s.grade === sheet.grade && !mine.has(s.id) && s.month !== undefined && months.some((m) => Math.abs(m - s.month!) <= 1),
+    );
+    const groups: Related[] = [
+      { kind: 'same', sheets: sheetsOf(sheet.skills) },
+      { kind: 'before', sheets: sheetsOf(linked(1, 0)) },
+      { kind: 'after', sheets: sheetsOf(linked(0, 1)) },
+      { kind: 'nearby', sheets: sheetsOf(nearby) },
+    ];
+    return groups.filter((g) => g.sheets.length > 0);
   }
+}
+
+/** A month of the library: 1 is September, 0 when the month is unknown. */
+export interface Month {
+  month: number;
+  skills: { skill: SkillData; sheets: Sheet[] }[];
+}
+
+/** One group of related sheets. */
+export interface Related {
+  kind: 'same' | 'before' | 'after' | 'nearby';
+  sheets: Sheet[];
+}
+
+const MONTHS = ['September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June'];
+
+/** The name of a school month: 1 is September. */
+export function monthName(m: number): string {
+  return MONTHS[m - 1] ?? 'Any time';
 }

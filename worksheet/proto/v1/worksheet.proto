@@ -453,7 +453,9 @@ message Worksheet {
   // Such as "ws-equivalent-fractions-number-line".
   string id = 1;
   string title = 2;
-  int32 minutes = 4;
+  // A time estimate; removed, because every child takes their own time.
+  reserved 4;
+  reserved "minutes";
   // Seeds every item set a placement does not seed itself.
   uint32 seed = 5;
   // Why the worksheet is ordered as it is: its arc from review to practice.
@@ -567,7 +569,9 @@ message ComposedSheet {
   string title = 2;
   // The placed fragments' header labels, in placement order, each once.
   repeated string header_labels = 3;
-  int32 minutes = 4;
+  // A time estimate; removed, because every child takes their own time.
+  reserved 4;
+  reserved "minutes";
   repeated Page pages = 5;
   // Every field on the sheet, in page order, with its item label.
   repeated KeyEntry key = 6;

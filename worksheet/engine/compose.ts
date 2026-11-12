@@ -89,7 +89,6 @@ export function compose(ws: Worksheet, lib: Library, opts: Options = {}): Compos
     worksheetId: ws.id,
     title: ws.title,
     headerLabels: headerLabelsOf(ws, fragments),
-    minutes: ws.minutes,
     design: ws.design,
     pages,
     problems,

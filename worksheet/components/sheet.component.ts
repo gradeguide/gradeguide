@@ -126,7 +126,7 @@ export class SheetComponent {
   protected readonly L = L;
   protected readonly kicker = computed(() => {
     const s = this.sheet();
-    return [s.headerLabels.join(', '), s.minutes ? `About ${s.minutes} minutes` : '', this.filled() ? 'Answers' : ''].filter(Boolean).join(' · ');
+    return [s.headerLabels.join(', '), this.filled() ? 'Answers' : ''].filter(Boolean).join(' · ');
   });
   protected boldRuns = bold;
 }

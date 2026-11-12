@@ -15,6 +15,7 @@ function catalog(): Catalog {
         grade: '4',
         strand: 'fractions',
         name: 'Equivalent fractions',
+        month: 2,
         path: '/math/grade-4/b/',
         worksheets: [
           { id: 'ws-b', role: 'teaches', pages: 2, pdf: '/worksheets/ws-b.pdf' },
@@ -22,7 +23,7 @@ function catalog(): Catalog {
           { id: 'ws-a', role: 'reviews', pages: 1 },
         ],
       },
-      { id: 'c', code: '4.NF.B.3', grade: '4', strand: 'fractions', name: 'Adding fractions', worksheets: [{ id: 'ws-c', role: 'practises', pages: 1 }] },
+      { id: 'c', code: '4.NF.B.3', grade: '4', strand: 'fractions', name: 'Adding fractions', month: 3, worksheets: [{ id: 'ws-c', role: 'practises', pages: 1 }] },
     ],
     links: [
       ['a', 'b'],
@@ -52,11 +53,17 @@ describe('Catalog', () => {
     expect(c.find('4', '', 'unit').map((s) => s.id)).toEqual(['ws-a']);
   });
 
-  it('offers the next sheet, easier sheets and harder sheets', () => {
+  it('groups related sheets without repeating one', () => {
     const c = catalog();
-    const b = c.sheet('ws-b')!;
-    expect(c.next(b)?.id).toBe('ws-b2');
-    expect(c.easier(b).map((s) => s.id)).toEqual(['ws-a']);
-    expect(c.harder(b).map((s) => s.id)).toEqual(['ws-c']);
+    const groups = c.related(c.sheet('ws-b')!).map((g) => `${g.kind}:${g.sheets.map((s) => s.id).join(',')}`);
+    // ws-c's skill is both the next skill and taught the same month; it is
+    // listed once, under the first group it belongs to.
+    expect(groups).toEqual(['same:ws-b2', 'before:ws-a', 'after:ws-c']);
+  });
+
+  it('files the library by month, then skill', () => {
+    const c = catalog();
+    const lib = c.byMonth('4', '').map((m) => `${m.month}:${m.skills.map((k) => k.skill.code + '=' + k.sheets.map((s) => s.id).join('+')).join(' ')}`);
+    expect(lib).toEqual(['2:4.NF.A.1=ws-b+ws-b2', '3:4.NF.B.3=ws-c']);
   });
 });
