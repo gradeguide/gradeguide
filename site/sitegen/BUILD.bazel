@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "sitegen",
+    srcs = ["sitegen.go"],
+    importpath = "github.com/gradeguide/gradeguide/site/sitegen",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//graph/curated",
+        "//proto/graph/v1",
+    ],
+)

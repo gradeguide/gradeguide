@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About GradeGuide and its sources</title>
+    <meta name="description" content="Where GradeGuide's K–8 math map comes from: the Common Core standards, learning progressions, curriculum order and plain-language explanations, and who publishes each." />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.6; }
+      h1 { font-size: 26px; margin: 8px 0 16px; }
+      h2 { font-size: 18px; margin: 28px 0 6px; }
+      a { color: var(--accent); }
+      .back { font-size: 14px; }
+      #credits { font-size: 13px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./">← Back to the map</a>
+      <h1>About GradeGuide and its sources</h1>
+
+      <h2>What you're looking at</h2>
+      <p>GradeGuide shows the math your child is expected to learn from kindergarten to grade 8: one card per skill, placed in the month it's usually taught. Lines show which skills build on which.</p>
+
+      <h2>Where the skills come from</h2>
+      <p>Each card is one of the Common Core State Standards for Mathematics. They were published in 2010 and adopted, sometimes with changes, by most US states. If your state uses its own standards, most skills will still match, but the codes and timing may differ.</p>
+
+      <h2>How we know what builds on what</h2>
+      <p>The "needed first" and "leads to" links come from learning progressions by Student Achievement Partners, a nonprofit founded by authors of the Common Core. They show how each standard rests on earlier ones.</p>
+
+      <h2>The smaller steps</h2>
+      <p>The smaller steps listed under a skill come from Achievement Network, an education nonprofit that splits each standard into the pieces a child learns along the way.</p>
+
+      <h2>When each skill is taught</h2>
+      <p>We use the unit order of Illustrative Mathematics 360, a curriculum many schools teach, spread evenly across a September–June year. It's a typical order, not your school's calendar.</p>
+
+      <h2>The plain-language text</h2>
+      <p>The explanations, examples and home ideas are written by GradeGuide with AI help. They're marked as drafts until a teacher has reviewed them.</p>
+
+      <h2>How we got the data</h2>
+      <p>The standards, progressions, smaller steps and curriculum order come from the Learning Commons Knowledge Graph, which collects them from their publishers under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> licence. GradeGuide is open source: you can see every source and every change on <a href="https://github.com/gradeguide/gradeguide">GitHub</a>.</p>
+
+      <h2>Credits</h2>
+      <p>As each source asks to be credited:</p>
+      <ul id="credits"><li>Loading…</li></ul>
+    </main>
+    <script>
+      fetch('math.json')
+        .then((r) => r.json())
+        .then((d) => {
+          const ul = document.getElementById('credits');
+          ul.replaceChildren(
+            ...d.credits.map((c) => {
+              const li = document.createElement('li');
+              li.textContent = c.statement + ' ';
+              const a = document.createElement('a');
+              a.href = c.license;
+              a.textContent = 'Licence';
+              li.append(a);
+              return li;
+            }),
+          );
+        })
+        .catch(() => (document.getElementById('credits').textContent = 'The credits could not be loaded. They are listed in data/CREDITS on GitHub.'));
+    </script>
+  </body>
+</html>
