@@ -14,6 +14,14 @@ import {
 
 import { Curriculum, MONTHS, SkillData } from '../data/curriculum';
 
+/**
+ * How close, in pixels, a selected card may sit to the map's left edge before
+ * the map scrolls, leaving room for the skills it needs first, and to its right
+ * edge.
+ */
+const KEEP_LEFT = 100;
+const KEEP_RIGHT = 40;
+
 /** How far, in pixels, a mouse must move before a press becomes a drag. */
 const DRAG_THRESHOLD = 5;
 
@@ -152,6 +160,7 @@ export class MapViewComponent {
   private readonly scroller = viewChild.required<ElementRef<HTMLElement>>('scroller');
   private readonly cards = viewChild.required<ElementRef<HTMLElement>>('cards');
   private lastScrolledGrade = '';
+  private lastKept = '';
 
   /** True while the reader is dragging the map sideways with a mouse. */
   protected readonly dragging = signal(false);
@@ -200,8 +209,21 @@ export class MapViewComponent {
       const g = this.grade();
       if (g !== this.lastScrolledGrade) {
         this.lastScrolledGrade = g;
-        untracked(() => this.scrollToGrade(g));
+        untracked(() => {
+          this.scrollToGrade(g);
+          // Jumping to a grade's September would hide a selected card at its edge.
+          const sel = this.selected();
+          if (sel) this.keepInView(sel, 'instant');
+        });
       }
+    });
+    // Once the panel has opened and the map has narrowed, bring a newly
+    // selected card into view if it sits at the edge or behind the panel.
+    afterRenderEffect(() => {
+      const id = this.selected();
+      // The first selection, from the address, jumps; later ones glide.
+      if (id && id !== this.lastKept) untracked(() => this.keepInView(id, this.lastKept ? 'smooth' : 'instant'));
+      this.lastKept = id;
     });
     globalThis.addEventListener?.('resize', () => this.lines.set(this.measureLines()));
     // The capture phase runs before a card's own click handler.
@@ -266,6 +288,21 @@ export class MapViewComponent {
       e.preventDefault();
     }
     this.drag = undefined;
+  }
+
+  /**
+   * Scrolls the map so a card sits a third of the way in, leaving room on
+   * the left for the skills it needs first, unless it is already well inside
+   * the visible area.
+   */
+  keepInView(id: string, behavior: ScrollBehavior = 'smooth') {
+    const el = this.cards().nativeElement.querySelector<HTMLElement>(`[data-id="${id}"]`);
+    const sc = this.scroller().nativeElement;
+    if (!el || !sc.getBoundingClientRect) return;
+    const r = el.getBoundingClientRect();
+    const s = sc.getBoundingClientRect();
+    if (r.left >= s.left + KEEP_LEFT && r.right <= s.right - KEEP_RIGHT) return;
+    sc.scrollTo({ left: sc.scrollLeft + r.left - s.left - s.width / 3, behavior });
   }
 
   protected onScroll() {
