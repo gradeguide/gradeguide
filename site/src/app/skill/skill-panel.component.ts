@@ -116,7 +116,7 @@ function readSourcesOpen(): boolean {
     :host { display: block; }
     article { position: relative; }
     header { padding-right: 32px; }
-    .kicker { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .kicker { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
     .dot { width: 10px; height: 10px; border-radius: 2px; background: var(--c); }
     h2 { font-size: 20px; margin: 4px 0 2px; }
     .where { font-size: 13px; color: var(--muted); }
@@ -124,19 +124,19 @@ function readSourcesOpen(): boolean {
     .close:hover { background: var(--hover); }
     .explain { font-size: 15px; line-height: 1.55; margin: 12px 0 8px; }
     dl { margin: 0; font-size: 14px; line-height: 1.5; }
-    dt { font-size: 12px; color: var(--muted); margin-top: 8px; }
+    dt { font-size: 13px; color: var(--muted); margin-top: 8px; }
     dd { margin: 0; }
-    .note { font-size: 12px; color: var(--muted); font-style: italic; margin: 10px 0 0; }
+    .note { font-size: 13px; color: var(--muted); font-style: italic; margin: 10px 0 0; }
     h3 { font-size: 13px; font-weight: 600; margin: 18px 0 6px; }
     h3.before { color: var(--before); }
     h3.after { color: var(--after); }
     .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 16px; }
     .link { display: block; width: 100%; text-align: left; font: inherit; font-size: 13px; padding: 6px 8px; margin-bottom: 4px; cursor: pointer; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: 6px; }
     .link:hover { border-color: var(--border-strong); border-left-color: var(--c); }
-    .link span { color: var(--muted); font-size: 12px; }
+    .link span { color: var(--muted); font-size: 13px; }
     .none { font-size: 13px; color: var(--muted); margin: 0; }
     ul, ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.55; }
-    .code { color: var(--muted); font-size: 12px; }
+    .code { color: var(--muted); font-size: 13px; }
     /* The folding sections read as headings like the others, with a disclosure arrow. */
     details { margin-top: 18px; }
     summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); }

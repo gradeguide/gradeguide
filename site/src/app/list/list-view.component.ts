@@ -49,7 +49,7 @@ interface Group {
     li button:hover { background: var(--hover); }
     li button.on { border-left-color: var(--c); background: var(--hover); }
     .name { display: block; font-size: 15px; }
-    .meta { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .meta { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
     .none { color: var(--muted); }
   `,
 })

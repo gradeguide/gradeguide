@@ -106,7 +106,7 @@ interface Line {
     .grade:first-child { border-left: none; }
     .gname { font-weight: 600; font-size: 15px; padding: 10px 8px 2px; }
     .months { display: flex; }
-    .months span { box-sizing: border-box; padding: 0 8px 8px; font-size: 12px; color: var(--muted); }
+    .months span { box-sizing: border-box; padding: 0 8px 8px; font-size: 13px; color: var(--muted); }
     .cards { position: relative; display: grid; align-items: start; }
     .col { padding: 0 5px; min-height: 40px; }
     .col.first { border-left: 1px solid var(--border-strong); }
@@ -117,13 +117,13 @@ interface Line {
     .lines .after { stroke: var(--after); stroke-width: 1.8; }
     .card {
       position: relative; display: block; width: 100%; margin: 0 0 6px; padding: 6px 8px;
-      text-align: left; font: inherit; font-size: 12.5px; line-height: 1.3; cursor: pointer;
+      text-align: left; font: inherit; font-size: 13.5px; line-height: 1.3; cursor: pointer;
       color: var(--text); background: var(--surface); border: 1px solid var(--border);
       border-left: 4px solid var(--c); border-radius: 6px;
     }
     .card:hover { border-color: var(--border-strong); border-left-color: var(--c); }
     .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-    .card .code { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .card .code { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
     .card.selected { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
     .card.selected .code { color: inherit; opacity: 0.8; }
     .card.before { background: var(--before-bg); border-color: var(--before); border-left-color: var(--c); }
