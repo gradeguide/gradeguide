@@ -2,6 +2,9 @@ import { ChangeDetectionStrategy, Component, computed, input, output, signal } f
 
 import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculum';
 
+/** The official Common Core math standards, as the source data credits them. */
+export const STANDARDS_URL = 'https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf';
+
 /** Remembers whether the reader collapsed the sources box, so it stays closed on every skill. */
 const SOURCES_KEY = 'gradeguide.sources';
 
@@ -87,6 +90,7 @@ function readSourcesOpen(): boolean {
         <details>
           <summary>Official wording <span class="code">{{ s.code }}</span></summary>
           <p>{{ statement() }}</p>
+          <a [href]="standardsUrl" target="_blank" rel="noopener">All the Common Core math standards (PDF, corestandards.org) ↗</a>
         </details>
 
         <details class="sources" [open]="sourcesOpen()" (toggle)="rememberSources($any($event.target).open)">
@@ -140,6 +144,7 @@ function readSourcesOpen(): boolean {
     .sources ul { margin: 6px 0 0; padding-left: 20px; font-size: 14px; line-height: 1.5; }
     .sources li { margin-bottom: 4px; }
     .sources b { font-weight: 600; }
+    details a { display: inline-block; margin-top: 4px; font-size: 13px; color: var(--accent); }
     .sources a { display: inline-block; margin-top: 4px; font-size: 14px; color: var(--accent); }
   `,
 })
@@ -149,6 +154,8 @@ export class SkillPanelComponent {
 
   readonly pick = output<string>();
   readonly close = output<void>();
+
+  protected readonly standardsUrl = STANDARDS_URL;
 
   /** Open until the reader closes it once. */
   protected readonly sourcesOpen = signal(readSourcesOpen());
