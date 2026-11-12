@@ -21,3 +21,6 @@ genrule(
     tools = ["//graph/cmd/gradeguide-graph-import"],
     visibility = ["//visibility:public"],
 )
+
+# Short names for learning components, adapted from their descriptions.
+exports_files(["step-names.textproto"])

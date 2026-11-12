@@ -1,0 +1,151 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Short names for the smaller steps (learning components) that worksheets
+# are aligned to, and for every step of the grade 3 and 4 fraction skills.
+# Each is adapted from the component's description in the Learning Commons
+# Knowledge Graph, so this file is CC BY 4.0 like the rest of data/; see
+# CREDITS. Drafts until a teacher reviews them. A step with no name here is
+# shown with its full description.
+
+components { component_id: "35f78f08-b9cd-5b93-af4a-3d5426a2b848" name: "Add mixed numbers" review { status: STATUS_DRAFT } }
+components { component_id: "32a33b2c-cdd1-58a7-a6f9-ce0b7c066d50" name: "Add mixed numbers" review { status: STATUS_DRAFT } }
+components { component_id: "91c2912b-10ea-5d55-9cdd-f34ad00536d0" name: "Add tenths and hundredths" review { status: STATUS_DRAFT } }
+components { component_id: "984b8dc3-b5db-551f-9af5-b44b06aaa40c" name: "Use the area formula for rectangles" review { status: STATUS_DRAFT } }
+components { component_id: "92e853a7-1f4a-57df-af59-5303d1ce5f1f" name: "Area of rectangles in real problems" review { status: STATUS_DRAFT } }
+components { component_id: "270da5c5-1f9a-5fb6-a4c6-687ad3b3683d" name: "Break a factor apart to multiply" review { status: STATUS_DRAFT } }
+components { component_id: "8a82f241-5bc1-5ba7-9a24-ed9c72a581d2" name: "Perimeter of rectangles in real problems" review { status: STATUS_DRAFT } }
+components { component_id: "ec7e77d8-d9f7-5765-8104-d5f38d064aa8" name: "Sort shapes by their angles" review { status: STATUS_DRAFT } }
+components { component_id: "10bc56bd-613c-5965-823b-a4dd11ba482f" name: "Sort shapes by parallel and perpendicular sides" review { status: STATUS_DRAFT } }
+components { component_id: "2bfc7496-6e00-5c7d-9d81-1df05d4642c5" name: "Compare fractions by their size" review { status: STATUS_DRAFT } }
+components { component_id: "f44fbaad-f4a6-543f-b5d1-280862baa2c3" name: "Compare decimals to hundredths" review { status: STATUS_DRAFT } }
+components { component_id: "82d042d0-dd1d-50d8-bea6-43361589d5a6" name: "Compare any two fractions" review { status: STATUS_DRAFT } }
+components { component_id: "b5c4b5f8-f03b-5c9a-8980-661e42088ae1" name: "Compare any two fractions" review { status: STATUS_DRAFT } }
+components { component_id: "56514983-4388-5971-bad0-595dbec5e266" name: "Compare fractions with the same denominator" review { status: STATUS_DRAFT } }
+components { component_id: "bd5ee9b3-1538-5faf-aab0-e625b2cd64f5" name: "Compare fractions with the same denominator" review { status: STATUS_DRAFT } }
+components { component_id: "ea2ae87f-40aa-53fd-9a03-b69889f16266" name: "Compare fractions with the same numerator" review { status: STATUS_DRAFT } }
+components { component_id: "1f979ba2-12d7-5fcc-a3cc-9e4cc546b8e7" name: "Compare fractions with the same numerator" review { status: STATUS_DRAFT } }
+components { component_id: "da70f59c-db93-5dca-86e9-72134a429d4e" name: "Convert to a smaller unit" review { status: STATUS_DRAFT } }
+components { component_id: "144856f4-26da-5abc-af5f-02f1f71d0bed" name: "Split a fraction into parts in different ways" review { status: STATUS_DRAFT } }
+components { component_id: "78c91fb0-7a7c-5ec7-a2a2-e63a35f96f17" name: "Split a fraction into parts in different ways" review { status: STATUS_DRAFT } }
+components { component_id: "8dc1a96f-e651-5962-b7ab-d5e811e99b81" name: "Split a mixed number into parts" review { status: STATUS_DRAFT } }
+components { component_id: "a3248bfb-32d9-5182-b971-95d7ba9d1155" name: "Split a mixed number into parts" review { status: STATUS_DRAFT } }
+components { component_id: "471f63ab-db68-5f3d-ba18-8add02ec2b2a" name: "Count one-degree angles" review { status: STATUS_DRAFT } }
+components { component_id: "26cdecbb-91e0-5c11-8820-55004547a871" name: "Find a missing number in division" review { status: STATUS_DRAFT } }
+components { component_id: "26f02245-d5bb-553c-82e7-e8d97f26dfa5" name: "Find a missing factor" review { status: STATUS_DRAFT } }
+components { component_id: "6c81abb2-bfff-534b-bbe6-2c2a2a405462" name: "Tell whether a number is a multiple" review { status: STATUS_DRAFT } }
+components { component_id: "f548ce1a-ef91-5a91-9d5e-1cebf7fd201c" name: "Tell prime from composite" review { status: STATUS_DRAFT } }
+components { component_id: "81f35b63-e3d7-5fef-92ef-ac579b749b04" name: "Divide to compare in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "2f646a05-2fae-5a36-962a-94bc9453ad83" name: "Draw and spot line segments" review { status: STATUS_DRAFT } }
+components { component_id: "f67e0d53-c787-59d9-b9df-9f61ed12a82c" name: "Draw lines of symmetry" review { status: STATUS_DRAFT } }
+components { component_id: "10e69fc1-7f7a-56a5-b13d-8d8bab6e5674" name: "Draw and spot rays" review { status: STATUS_DRAFT } }
+components { component_id: "f577262f-e994-558d-9643-47ad8a8f80ca" name: "Explain simple equivalent fractions" review { status: STATUS_DRAFT } }
+components { component_id: "74de8dae-331b-5d0a-8f64-a1e8c7c5c3be" name: "Explain equivalent fractions with models" review { status: STATUS_DRAFT } }
+components { component_id: "d20a384e-e8cc-5c06-acd5-9c829e5c9042" name: "Explain why fractions are equivalent" review { status: STATUS_DRAFT } }
+components { component_id: "09f9dbf8-a4e9-5902-9e26-13376991623e" name: "Write tenths as hundredths" review { status: STATUS_DRAFT } }
+components { component_id: "18987551-d948-57b5-8304-619be587d66e" name: "Write whole numbers as fractions" review { status: STATUS_DRAFT } }
+components { component_id: "8970cb2b-7dd0-5209-acd1-d7c7083db812" name: "Find all factor pairs" review { status: STATUS_DRAFT } }
+components { component_id: "437e6968-6aae-5624-acac-0b10432b5690" name: "Divide three-digit numbers" review { status: STATUS_DRAFT } }
+components { component_id: "81aefb08-0aea-5ac6-bc2d-59ff42d3709f" name: "Divide three-digit numbers with remainders" review { status: STATUS_DRAFT } }
+components { component_id: "bd0c4c17-8426-507e-9615-64ed2eca7270" name: "Add with the standard algorithm" review { status: STATUS_DRAFT } }
+components { component_id: "f7731421-c574-506a-ac2d-09672132c477" name: "Add within 1,000" review { status: STATUS_DRAFT } }
+components { component_id: "5a0a81bb-41df-5f2b-be89-f9be39d9f4e3" name: "Division facts" review { status: STATUS_DRAFT } }
+components { component_id: "7d5e2ea9-0bac-5822-8c15-f5bf1ea6309b" name: "Subtract with the standard algorithm" review { status: STATUS_DRAFT } }
+components { component_id: "18fca54d-8944-5dd1-bb11-0348131e71af" name: "Subtract within 1,000" review { status: STATUS_DRAFT } }
+components { component_id: "f14ddf6b-75f5-52d8-be88-8bf26119bafb" name: "Make a number pattern from a rule" review { status: STATUS_DRAFT } }
+components { component_id: "c3b684c1-9c44-51cd-8a52-d7812ec62951" name: "Make equivalent fractions by multiplying" review { status: STATUS_DRAFT } }
+components { component_id: "13498e57-1a95-5b05-a073-f99ab6e932ff" name: "Make equivalent fractions by multiplying" review { status: STATUS_DRAFT } }
+components { component_id: "566157d3-ede7-5ce6-a077-dc1cbade027e" name: "Measure to the nearest quarter inch" review { status: STATUS_DRAFT } }
+components { component_id: "463e4334-f8c9-5996-961f-8e1fc3ffdf03" name: "Make simple equivalent fractions" review { status: STATUS_DRAFT } }
+components { component_id: "188fe970-4e1d-52c4-9f18-5e2fade05494" name: "Unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "0f80aa86-2c60-5a0f-bd85-7720345949d9" name: "Fractions as counts of unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "1f95ef88-6b5b-5b50-acab-79a69f51f872" name: "Spot lines in shapes" review { status: STATUS_DRAFT } }
+components { component_id: "a0205dfb-18bc-51d1-8681-3594ee9b0cc3" name: "Spot lines of symmetry" review { status: STATUS_DRAFT } }
+components { component_id: "3a80eead-6bf5-522c-a824-9570862ece16" name: "Spot parallel lines" review { status: STATUS_DRAFT } }
+components { component_id: "ba8dce38-25fb-5155-b5df-d4084be22ba8" name: "Spot perpendicular lines" review { status: STATUS_DRAFT } }
+components { component_id: "db42dcec-1f26-5f05-89fc-32209f556336" name: "Spot right triangles" review { status: STATUS_DRAFT } }
+components { component_id: "c69a41b7-0f98-5837-8a08-bc749f9e0a26" name: "Right, acute and obtuse angles" review { status: STATUS_DRAFT } }
+components { component_id: "433011a1-134c-5841-a49b-b33e87282103" name: "Equivalent fractions on a number line" review { status: STATUS_DRAFT } }
+components { component_id: "a04aae38-9db3-5a88-bbea-ee0920c415c7" name: "Equivalent fractions are the same size" review { status: STATUS_DRAFT } }
+components { component_id: "3ab3ded7-d0ee-5a4a-be46-7980e0e5afc6" name: "Read multiplication as a comparison" review { status: STATUS_DRAFT } }
+components { component_id: "a0174086-6335-568a-ae51-86e54edc8371" name: "Multiplication as equal groups" review { status: STATUS_DRAFT } }
+components { component_id: "1995cc98-1d9d-5fdb-a8da-63b3967883f6" name: "Explain how two fractions compare" review { status: STATUS_DRAFT } }
+components { component_id: "67628647-4777-5f52-88c3-94f7876f3cd1" name: "Explain how two fractions compare" review { status: STATUS_DRAFT } }
+components { component_id: "b77a918b-49b4-5e85-a6da-8dae176ef619" name: "Explain fraction comparisons" review { status: STATUS_DRAFT } }
+components { component_id: "eadbe803-6499-5c02-8be6-079dd03b161c" name: "Show a fraction's parts with a model" review { status: STATUS_DRAFT } }
+components { component_id: "c152b85c-2893-547f-9114-3cecf2ef0b4f" name: "Show a fraction's parts with a model" review { status: STATUS_DRAFT } }
+components { component_id: "5be2e8e4-9026-56eb-b55a-5f5d6ed7d4e6" name: "Show a mixed number's parts with a model" review { status: STATUS_DRAFT } }
+components { component_id: "288a6904-d7d3-56f9-b8a0-3daab7219252" name: "Show a mixed number's parts with a model" review { status: STATUS_DRAFT } }
+components { component_id: "9bccf790-2840-5241-9cdb-bda2ef83d28b" name: "Explain how two decimals compare" review { status: STATUS_DRAFT } }
+components { component_id: "ee3360f2-c08d-5933-96c1-8fd9692b63b7" name: "Multiplication facts from memory" review { status: STATUS_DRAFT } }
+components { component_id: "dc34402c-b3d4-53a0-841b-102c45e42d9a" name: "Decimals on a number line" review { status: STATUS_DRAFT } }
+components { component_id: "522dfbfa-6e48-50e2-b8eb-dd95b5302e6b" name: "Measure angles with a protractor" review { status: STATUS_DRAFT } }
+components { component_id: "b676d1b5-98bb-5bd5-936b-cedc2eb286ce" name: "Multiply a fraction by a whole number" review { status: STATUS_DRAFT } }
+components { component_id: "801b8bb6-e46c-54e2-ba61-70dffecbb765" name: "Multiply a fraction by a whole number" review { status: STATUS_DRAFT } }
+components { component_id: "3caedc60-779a-5ae1-9dfb-c2bc82908149" name: "Multiply a fraction like 2/5 by a whole number" review { status: STATUS_DRAFT } }
+components { component_id: "4e8bd7bf-3aff-5927-985b-3b2dc09de9e1" name: "Multiply three digits by one digit" review { status: STATUS_DRAFT } }
+components { component_id: "a9ce7b44-70ca-5ae3-b56e-2b0fc3594948" name: "Multiply a unit fraction by a whole number" review { status: STATUS_DRAFT } }
+components { component_id: "5067efaa-c056-5bcd-82d0-17960c05baf6" name: "Multiply by multiples of 10" review { status: STATUS_DRAFT } }
+components { component_id: "b8565b5b-cd3f-5b68-9838-46d59f0c43ab" name: "Multiply to compare in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "28d45152-c961-5c22-ac93-78a39ed1aa1a" name: "Fractions as sums of unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "2f52e80a-dffe-5042-bab0-c048a7adb500" name: "Adding fractions joins parts" review { status: STATUS_DRAFT } }
+components { component_id: "5f61cb2a-1c2e-5a6f-9f57-47629badf7c0" name: "Spot equivalent fractions" review { status: STATUS_DRAFT } }
+components { component_id: "df5f3fb2-9b5d-5e23-838e-dc991a80a444" name: "Spot equivalent fractions" review { status: STATUS_DRAFT } }
+components { component_id: "42e054c8-e913-55c3-9189-92f00da38701" name: "Fractions equal to whole numbers" review { status: STATUS_DRAFT } }
+components { component_id: "3194d5b0-9440-51c5-b560-d5d761da38de" name: "Spot simple equivalent fractions" review { status: STATUS_DRAFT } }
+components { component_id: "0745e110-05aa-53fa-9f3c-418c92c75c2c" name: "Subtracting fractions takes parts away" review { status: STATUS_DRAFT } }
+components { component_id: "6e1f6305-6f9b-5e6b-acf7-03226fb50238" name: "One-degree angles" review { status: STATUS_DRAFT } }
+components { component_id: "971e94a1-e257-507e-8f18-0812688715a0" name: "Compare decimals of the same whole" review { status: STATUS_DRAFT } }
+components { component_id: "ee846e61-d7ce-552b-b277-2934c48eadf9" name: "Compare fractions of the same whole" review { status: STATUS_DRAFT } }
+components { component_id: "b8719b33-8a52-575a-b3ec-e0ce7594445c" name: "Compare fractions of the same whole" review { status: STATUS_DRAFT } }
+components { component_id: "10c7a285-f952-5554-aea7-72270a22457c" name: "Each place is ten times the next" review { status: STATUS_DRAFT } }
+components { component_id: "d65254fc-236d-53e0-a631-c23fc55cec22" name: "Fractions as lengths on a number line" review { status: STATUS_DRAFT } }
+components { component_id: "9adcd390-9117-501d-b02b-6759698e3b36" name: "Unit fractions on a number line" review { status: STATUS_DRAFT } }
+components { component_id: "7b4b5bc6-90dc-5ac7-ae2f-b23bc4232bc8" name: "Write a fraction's parts as an equation" review { status: STATUS_DRAFT } }
+components { component_id: "b6ee14d2-93e8-5bf2-a4c5-cedb438fe107" name: "Write a fraction's parts as an equation" review { status: STATUS_DRAFT } }
+components { component_id: "1e84f1d7-7d88-5fe7-bb9b-5ee7bb7956a4" name: "Write a mixed number's parts as an equation" review { status: STATUS_DRAFT } }
+components { component_id: "d533aa7d-a89a-57d9-ba72-73d4658d75f1" name: "Write a mixed number's parts as an equation" review { status: STATUS_DRAFT } }
+components { component_id: "471384ea-a5e2-5447-9d6c-9f638ffa2d29" name: "Conversion tables" review { status: STATUS_DRAFT } }
+components { component_id: "3ad29867-b72b-5318-9362-2a15e7ea56c4" name: "Division as a missing factor" review { status: STATUS_DRAFT } }
+components { component_id: "33922a0f-8f0f-57b2-83a4-9d81d8b00054" name: "Show a unit fraction with a model" review { status: STATUS_DRAFT } }
+components { component_id: "1df660cf-3f7b-52db-aca9-adef3f9662a8" name: "Fractions less than 1 as sums of unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "42bbf920-debb-58ec-99c6-a6ab645fdc28" name: "Fractions greater than 1 as sums of unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "a1e20219-ce16-5f00-8596-0f0566c735a9" name: "Show a fraction with a model" review { status: STATUS_DRAFT } }
+components { component_id: "14047f66-56ba-59f0-b582-2af921aab0e6" name: "Groups of a fraction as unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "87c73c3b-702c-5f42-8a16-b8df53513506" name: "Write comparisons as equations" review { status: STATUS_DRAFT } }
+components { component_id: "8f3e372f-10be-5526-8b26-808f4044e844" name: "Round big numbers" review { status: STATUS_DRAFT } }
+components { component_id: "567ffbd5-3542-5d93-b20c-c2cc6c49fc85" name: "Round to the nearest 10" review { status: STATUS_DRAFT } }
+components { component_id: "b490803e-afb4-5f17-bbb7-adc6dea6a633" name: "Round to the nearest 100" review { status: STATUS_DRAFT } }
+components { component_id: "5b8696e3-bdcc-5753-8bb5-c1957a369267" name: "Perimeter of rectangles" review { status: STATUS_DRAFT } }
+components { component_id: "7e561083-58c0-554a-8cb0-ff5621464fad" name: "Multi-step word problems" review { status: STATUS_DRAFT } }
+components { component_id: "754f84dd-6ef1-5fa2-800c-c395acbbbdf6" name: "One-step division problems" review { status: STATUS_DRAFT } }
+components { component_id: "fc8751b8-eead-5df5-aef4-c0ada3144ce5" name: "One-step multiplication problems" review { status: STATUS_DRAFT } }
+components { component_id: "33be216e-2109-54ec-aa3e-6c0bd1006c01" name: "One-step questions from a bar graph" review { status: STATUS_DRAFT } }
+components { component_id: "3a05b3ed-db4c-5493-b314-9d1929a5dff8" name: "Find a missing angle" review { status: STATUS_DRAFT } }
+components { component_id: "db9fc2c4-fbae-5ba0-8e50-5fb1716013a9" name: "Two-step questions from a bar graph" review { status: STATUS_DRAFT } }
+components { component_id: "123700d1-59f1-5e78-84fc-e9988a590cfb" name: "Adding fractions in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "832d4e61-ae9c-5b6b-8f11-cd5bae627bfa" name: "Adding fractions in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "317f9cf3-3430-58d9-b00e-d1c2c2e23c7f" name: "Fraction × whole number word problems" review { status: STATUS_DRAFT } }
+components { component_id: "b5446421-5dfd-5995-9e11-24079bbabfcf" name: "Fraction × whole number word problems" review { status: STATUS_DRAFT } }
+components { component_id: "80c88178-b3d7-529b-8e94-c09da6c69e6d" name: "Subtracting fractions in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "63e76820-5fc1-5ca3-88a0-8e4597eca670" name: "Subtracting fractions in word problems" review { status: STATUS_DRAFT } }
+components { component_id: "80e84a1d-f17a-56d8-8196-cd5b35d12e88" name: "Subtract mixed numbers" review { status: STATUS_DRAFT } }
+components { component_id: "d688c51d-4261-5987-b2f6-28f694322f28" name: "Subtract mixed numbers" review { status: STATUS_DRAFT } }
+components { component_id: "befd3355-fa6c-5c35-9812-84f6dd50f3b9" name: "Tell time to the minute" review { status: STATUS_DRAFT } }
+components { component_id: "524bcfce-6e7e-571a-b3fe-db64d70d72a7" name: "Fractions on a number line" review { status: STATUS_DRAFT } }
+components { component_id: "0bf72853-30d6-571f-9ef3-f4912c02ba23" name: "Compare decimals with <, > or =" review { status: STATUS_DRAFT } }
+components { component_id: "2013ca22-fbca-5331-93f9-0beea2dd9cf1" name: "Compare fractions with <, > or =" review { status: STATUS_DRAFT } }
+components { component_id: "e1eb33c5-e722-531f-8168-d010304a05a9" name: "Compare any two fractions with <, > or =" review { status: STATUS_DRAFT } }
+components { component_id: "c7ecef55-059e-5c05-9d52-d8f4d220c4de" name: "Compare any two fractions with <, > or =" review { status: STATUS_DRAFT } }
+components { component_id: "2aecfdc6-4f8a-522d-9798-bf9c2137a56a" name: "Two-step word problems" review { status: STATUS_DRAFT } }
+components { component_id: "4671de27-b1dd-5e8a-a985-0b1e2e42082d" name: "Multiply a fraction using unit fractions" review { status: STATUS_DRAFT } }
+components { component_id: "86f60c17-f57b-5b4f-8157-248c08421272" name: "Write tenths as decimals" review { status: STATUS_DRAFT } }
+components { component_id: "269378e0-048c-57e6-a480-8762f609a8be" name: "Write hundredths as decimals" review { status: STATUS_DRAFT } }
+components { component_id: "4d77123a-200c-5c72-9e34-64eee3eb6ce9" name: "Write equations for fraction × whole number problems" review { status: STATUS_DRAFT } }
+components { component_id: "cb82dee4-88cb-5e46-9ec3-bc05b1d5a482" name: "Two-digit × two-digit with models" review { status: STATUS_DRAFT } }
+components { component_id: "f0a0bc8e-e6f7-5254-a6e5-fc281bb2e4e7" name: "Multiply with mass and volume" review { status: STATUS_DRAFT } }
+components { component_id: "a93d7dd3-e355-5bb6-ab73-f0bcc71a973c" name: "Subtract with mass and volume" review { status: STATUS_DRAFT } }
+components { component_id: "2abe1331-000f-535d-9dca-ea14efc72a5f" name: "Measurement word problems" review { status: STATUS_DRAFT } }
+components { component_id: "a16722fd-5811-5b22-9e40-ed3218acd6b3" name: "Measurement word problems with conversions" review { status: STATUS_DRAFT } }
+components { component_id: "751c388e-7603-528b-b730-0e6378023a28" name: "Fraction questions from a line plot" review { status: STATUS_DRAFT } }
+components { component_id: "4092257b-3b7e-57b1-a1ba-ec01d48a89a1" name: "Model fraction × whole number problems" review { status: STATUS_DRAFT } }
