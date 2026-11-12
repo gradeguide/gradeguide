@@ -51,10 +51,22 @@ export interface SkillData {
   month: number;
   also?: { unitId: string; month: number }[];
   parts?: { code: string; name: string }[];
-  steps?: string[];
+  /** The smaller steps inside the skill. Older data files list them as plain text. */
+  steps?: (string | StepData)[];
   /** Printable worksheets that teach or practise the skill. */
   worksheets?: WorksheetRef[];
 }
+
+/** StepData is one smaller step inside a skill: a learning component. */
+export interface StepData {
+  id: string;
+  /** A short name, such as "Generate equivalent fractions". */
+  name: string;
+  /** The full description. */
+  text: string;
+}
+
+export type WorksheetRole = 'teaches' | 'practises' | 'checks' | 'reviews';
 
 export interface WorksheetRef {
   id: string;
@@ -65,6 +77,15 @@ export interface WorksheetRef {
   href: string;
   /** The worksheet beside a copy filled in with the answers. */
   answersHref: string;
+  /** How the worksheet relates to the skill it is listed under. */
+  role?: WorksheetRole;
+  /** The skill's smaller steps the worksheet covers, and where on the sheet. */
+  steps?: { stepId: string; where: string }[];
+  /** The worksheet as a PDF, without answers. */
+  pdf?: string;
+  answersPdf?: string;
+  /** An image of the first page. */
+  thumbnail?: string;
 }
 
 export interface Credit {
@@ -118,6 +139,19 @@ export class Curriculum {
 
   strand(id: string): StrandData | undefined {
     return this.strandsById.get(id);
+  }
+
+  /** The smaller steps inside a skill, with ids even where the data gives only text. */
+  steps(id: string): StepData[] {
+    return (this.byId.get(id)?.steps ?? []).map((st, i) =>
+      typeof st === 'string' ? { id: `${id}#${i + 1}`, name: plainStatement(st), text: plainStatement(st) } : st,
+    );
+  }
+
+  /** A skill's worksheets: ones that teach, practise or check it first, then ones that review it. */
+  worksheets(id: string): WorksheetRef[] {
+    const ws = [...(this.byId.get(id)?.worksheets ?? [])];
+    return ws.sort((a, b) => Number(a.role === 'reviews') - Number(b.role === 'reviews'));
   }
 
   /** Skills that build towards id: what a child needs first. */

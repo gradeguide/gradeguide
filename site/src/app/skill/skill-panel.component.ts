@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 
 import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculum';
+import { SkillWorksheetsComponent } from './skill-worksheets.component';
 
 /** The official Common Core math standards, as the source data credits them. */
 export const STANDARDS_URL = 'https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf';
@@ -19,6 +20,7 @@ function readSourcesOpen(): boolean {
 /** SkillPanel explains one skill to a parent and links to the skills around it. */
 @Component({
   selector: 'gg-skill-panel',
+  imports: [SkillWorksheetsComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (skill(); as s) {
@@ -75,29 +77,7 @@ function readSourcesOpen(): boolean {
           </ul>
         }
 
-        @if (s.steps?.length) {
-          <h3>Smaller steps inside this skill</h3>
-          <ol>
-            @for (st of s.steps; track $index) {
-              <li>{{ plain(st) }}</li>
-            }
-          </ol>
-        }
-
-        <h3>Worksheets</h3>
-        @if (s.worksheets?.length) {
-          <ul class="worksheets">
-            @for (w of s.worksheets; track w.id) {
-              <li>
-                <a [href]="w.href" target="_blank" rel="noopener">{{ w.title }}</a>
-                <span class="meta">{{ w.pages }} {{ w.pages === 1 ? 'page' : 'pages' }}@if (w.minutes) {, about {{ w.minutes }} minutes}</span>
-                <a class="answers" [href]="w.answersHref" target="_blank" rel="noopener">Answers</a>
-              </li>
-            }
-          </ul>
-        } @else {
-          <p class="none">Printable worksheets for this skill are coming.</p>
-        }
+        <gg-skill-worksheets [steps]="steps()" [worksheets]="worksheets()" />
 
         <details>
           <summary>Official wording <span class="code">{{ s.code }}</span></summary>
@@ -147,10 +127,6 @@ function readSourcesOpen(): boolean {
     .link:hover { border-color: var(--border-strong); border-left-color: var(--c); }
     .link span { color: var(--muted); font-size: 13px; }
     .none { font-size: 13px; color: var(--muted); margin: 0; }
-    .worksheets { padding-left: 18px; margin: 0; }
-    .worksheets li { margin: 2px 0; }
-    .worksheets .meta { font-size: 13px; color: var(--muted); margin-left: 6px; }
-    .worksheets .answers { font-size: 13px; margin-left: 8px; }
     ul, ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.55; }
     .code { color: var(--muted); font-size: 13px; }
     /* The folding sections read as headings like the others, with a disclosure arrow. */
@@ -187,6 +163,9 @@ export class SkillPanelComponent {
   }
 
   protected readonly skill = computed(() => this.curriculum().skill(this.skillId()));
+  // Computed once per skill, so the worksheet list keeps its picked step until the skill changes.
+  protected readonly steps = computed(() => this.curriculum().steps(this.skillId()));
+  protected readonly worksheets = computed(() => this.curriculum().worksheets(this.skillId()));
   protected readonly before = computed(() => (this.skill() ? this.curriculum().neededFirst(this.skillId()) : []));
   protected readonly after = computed(() => (this.skill() ? this.curriculum().leadsTo(this.skillId()) : []));
   protected readonly strandName = computed(() => this.curriculum().strand(this.skill()?.strand ?? '')?.name ?? '');
@@ -204,9 +183,5 @@ export class SkillPanelComponent {
 
   protected gradeLabel(s: SkillData): string {
     return s.grade === 'K' ? 'K' : `gr ${s.grade}`;
-  }
-
-  protected plain(text: string): string {
-    return plainStatement(text);
   }
 }
