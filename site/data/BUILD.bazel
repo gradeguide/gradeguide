@@ -14,6 +14,7 @@ run_binary(
         "//content/worksheets:composed_sheets",
         "//data:graph",
         "//data:step-names.textproto",
+        "//content/worksheets:worksheets_prints",
     ],
     outs = ["math.json"],
     args = [
@@ -22,6 +23,7 @@ run_binary(
         "--worksheets=content/worksheets",
         "--composed=content/worksheets/composed",
         "--step-names=$(location //data:step-names.textproto)",
+        "--prints=$(location //content/worksheets:worksheets_prints)",
         "--out=$(location math.json)",
         "--pages=$(RULEDIR)/pages",
     ],

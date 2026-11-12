@@ -276,7 +276,7 @@ worksheets {
   title: "Lines, rays and segments"
   minutes: 10
   seed: 122
-  placements { fragment_id: "frag-name-figures" }
+  placements { fragment_id: "frag-name-figures" count: 4 }
   placements { fragment_id: "frag-name-line-pairs" }
 }
 

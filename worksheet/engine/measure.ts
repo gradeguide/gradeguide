@@ -82,11 +82,12 @@ export function minWidth(n: Node, w: Writing = STANDARD_WRITING): number {
         }
       }, 0);
     case 'row':
-      return k.value.children.reduce((s, c) => s + minWidth(c, w) + 12, 0);
+      return k.value.children.reduce((s, c) => s + minWidth(c, w) + ROW_GAP, 0);
     case 'stack':
       return Math.max(0, ...k.value.children.map((c) => minWidth(c, w)));
     case 'choices':
-      return 75 * k.value.options.length;
+      // A tick box, its gap, the option's text, and the gap to the next.
+      return k.value.options.reduce((w, o) => w + 16 + 5 + o.length * 6.8 + 12, 0);
     case 'lines':
       return 220;
     case 'workSpace':
@@ -104,6 +105,8 @@ export function minWidth(n: Node, w: Writing = STANDARD_WRITING): number {
 
 // height is how tall a node is drawn at width.
 const PART_LABEL = 32;
+// The gap between the children of a row, across and down.
+const ROW_GAP = 12;
 
 export function height(n: Node, width: number, w: Writing = STANDARD_WRITING): number {
   const d = drawing(n, w);
@@ -117,8 +120,23 @@ export function height(n: Node, width: number, w: Writing = STANDARD_WRITING): n
       return textHeight(k.value, width);
     case 'math':
       return hasStackedFraction(n) ? 58 : Math.max(34, w.row + 6);
-    case 'row':
-      return Math.max(0, ...k.value.children.map((c) => height(c, width, w)));
+    case 'row': {
+      // Children wrap onto a new line when the next one does not fit.
+      let total = 0;
+      let line = 0;
+      let x = 0;
+      for (const c of k.value.children) {
+        const cw = minWidth(c, w);
+        if (x > 0 && x + cw > width) {
+          total += line + ROW_GAP;
+          line = 0;
+          x = 0;
+        }
+        x += cw + ROW_GAP;
+        line = Math.max(line, height(c, width, w));
+      }
+      return total + line;
+    }
     case 'stack':
       return k.value.children.reduce((s, c) => s + height(c, width, w) + NODE_GAP, 0);
     case 'choices':

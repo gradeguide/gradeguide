@@ -91,7 +91,7 @@ function bold(s: string): { b: boolean; s: string }[] {
   `,
   styles: `
     :host { display: block; }
-    .page { box-sizing: border-box; background: white; color: #222; position: relative; overflow: hidden; display: flex; flex-direction: column; margin: 0 auto 24px; box-shadow: 0 1px 6px rgba(0,0,0,.18); font-family: 'Helvetica Neue', Arial, sans-serif; }
+    .page { box-sizing: border-box; background: white; color: #222; position: relative; overflow: hidden; display: flex; flex-direction: column; margin: 0 auto 24px; box-shadow: 0 1px 6px rgba(0,0,0,.18); font-family: Andika, 'Helvetica Neue', Arial, sans-serif; }
     header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #222; box-sizing: border-box; }
     h1 { font-size: 26px; margin: 4px 0 0; }
     .kicker { font-size: 12px; letter-spacing: .04em; color: #555; }
@@ -99,10 +99,10 @@ function bold(s: string): { b: boolean; s: string }[] {
     .rule { display: inline-block; width: 150px; border-bottom: 1.2px solid #222; }
     .body { overflow: hidden; padding-top: 6px; box-sizing: border-box; }
     section { margin-bottom: 4px; }
-    h2 { font-size: 16px; font-weight: 600; margin: 6px 0 6px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    h2 { font-size: 16px; line-height: 22px; font-weight: 600; margin: 6px 0 6px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
     h2 small { font-weight: 400; color: #666; }
     .tag { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; border-radius: 4px; background: #222; color: white; font-size: 13px; margin-right: 4px; padding: 0 4px; }
-    .explainer { margin: 0 0 6px; font-size: 14px; color: #333; }
+    .explainer { margin: 0 0 6px; font-size: 14px; line-height: 20px; color: #333; }
     .figure { margin-bottom: 14px; }
     .example { border: 1.5px dashed #888; border-radius: 6px; padding: 8px 10px; margin-bottom: 14px; position: relative; }
     .look { position: absolute; top: -9px; left: 10px; background: white; padding: 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #555; }
@@ -151,7 +151,7 @@ export class SheetComponent {
     </div>
   `,
   styles: `
-    :host { display: block; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; }
+    :host { display: block; font-family: Andika, 'Helvetica Neue', Arial, sans-serif; font-size: 13px; }
     h3 { font-size: 15px; margin: 0 0 6px; }
     .cols { columns: 3; column-gap: 24px; }
     .row { break-inside: avoid; padding: 1px 0; }
@@ -236,7 +236,7 @@ function principleName(p: Principle): string {
     }
   `,
   styles: `
-    :host { display: block; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; line-height: 1.45; }
+    :host { display: block; font-family: Andika, 'Helvetica Neue', Arial, sans-serif; font-size: 13px; line-height: 1.45; }
     h3 { font-size: 15px; margin: 0 0 6px; }
     p { margin: 0 0 6px; }
     .arc { padding-left: 18px; margin: 6px 0; }

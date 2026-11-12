@@ -37,19 +37,20 @@ func main() {
 	worksheetsDir := flag.String("worksheets", "", "the worksheet catalogue directory")
 	composedDir := flag.String("composed", "", "the composed worksheets directory, one JSON ComposedSheet per worksheet")
 	stepNames := flag.String("step-names", "", "a textproto CuratedLayer of short names for steps")
+	prints := flag.String("prints", "", "the directory of each worksheet's PDFs and page-one PNG")
 	baseURL := flag.String("base-url", "https://gradeguide.github.io", "the site's address, for canonical links and the sitemap")
 	flag.Parse()
 	if *graphPath == "" || *curatedDir == "" || *out == "" {
 		fmt.Fprintln(os.Stderr, "gradeguide-sitegen: --graph, --curated and --out are required")
 		os.Exit(2)
 	}
-	if err := run(*graphPath, *curatedDir, *worksheetsDir, *composedDir, *stepNames, *out, *pages, strings.TrimSuffix(*baseURL, "/")); err != nil {
+	if err := run(*graphPath, *curatedDir, *worksheetsDir, *composedDir, *stepNames, *prints, *out, *pages, strings.TrimSuffix(*baseURL, "/")); err != nil {
 		fmt.Fprintln(os.Stderr, "gradeguide-sitegen:", err)
 		os.Exit(1)
 	}
 }
 
-func run(graphPath, curatedDir, worksheetsDir, composedDir, stepNames, out, pagesDir, baseURL string) error {
+func run(graphPath, curatedDir, worksheetsDir, composedDir, stepNames, prints, out, pagesDir, baseURL string) error {
 	data, err := os.ReadFile(graphPath)
 	if err != nil {
 		return err
@@ -75,7 +76,7 @@ func run(graphPath, curatedDir, worksheetsDir, composedDir, stepNames, out, page
 	}
 	var sheets []sitegen.Sheet
 	if worksheetsDir != "" {
-		if sheets, err = loadSheets(worksheetsDir, composedDir); err != nil {
+		if sheets, err = loadSheets(worksheetsDir, composedDir, prints); err != nil {
 			return err
 		}
 	}
@@ -112,7 +113,7 @@ func run(graphPath, curatedDir, worksheetsDir, composedDir, stepNames, out, page
 // loadSheets reads the worksheet catalogue for what each fragment is
 // aligned to, and the composed sheets for page counts and for where each
 // fragment's problems are.
-func loadSheets(catalogDir, composedDir string) ([]sitegen.Sheet, error) {
+func loadSheets(catalogDir, composedDir, prints string) ([]sitegen.Sheet, error) {
 	fsys := os.DirFS(catalogDir)
 	lib, err := worksheets.LoadLibrary(fsys)
 	if err != nil {
@@ -161,6 +162,14 @@ func loadSheets(catalogDir, composedDir string) ([]sitegen.Sheet, error) {
 			return nil, fmt.Errorf("%s: %w", w.GetId(), err)
 		}
 		sh := sitegen.Sheet{ID: w.GetId(), Title: w.GetTitle(), Minutes: w.GetMinutes(), Pages: len(composed.Pages)}
+		if prints != "" {
+			sh.Printed = true
+			for _, f := range []string{w.GetId() + ".pdf", w.GetId() + "-answers.pdf", w.GetId() + ".png"} {
+				if _, err := os.Stat(filepath.Join(prints, f)); err != nil {
+					sh.Printed = false
+				}
+			}
+		}
 		// One part per section. A section continued onto the next page adds
 		// its items to the part it continues.
 		type section struct {

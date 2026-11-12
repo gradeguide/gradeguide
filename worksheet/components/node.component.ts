@@ -177,6 +177,7 @@ import {
   `,
   styles: `
     :host { display: block; }
+    :host(.text), :host(.choices) { line-height: 20px; }
     :host(.row) { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
     :host(.stack) { display: flex; flex-direction: column; gap: 6px; }
     .text { font-size: 15px; line-height: 20px; }
