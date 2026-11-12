@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
+  afterNextRender,
   afterRenderEffect,
   computed,
   input,
@@ -12,6 +13,9 @@ import {
 } from '@angular/core';
 
 import { Curriculum, MONTHS, SkillData } from '../data/curriculum';
+
+/** How far, in pixels, a mouse must move before a press becomes a drag. */
+const DRAG_THRESHOLD = 5;
 
 /** How far, in pixels, the longest links dip below the cards they join. */
 const SAG_MAX = 60;
@@ -42,7 +46,7 @@ interface Line {
   selector: 'gg-map-view',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="scroller" #scroller (scroll)="onScroll()">
+    <div class="scroller" #scroller [class.dragging]="dragging()" (scroll)="onScroll()" (pointerdown)="dragStart($event)" (pointermove)="dragMove($event)" (pointerup)="dragEnd($event)" (pointercancel)="dragEnd($event)">
       <div class="canvas" [style.width.px]="width()">
         <div class="heads">
           @for (g of curriculum().grades; track g) {
@@ -96,7 +100,8 @@ interface Line {
   `,
   styles: `
     :host { display: block; }
-    .scroller { overflow-x: auto; overscroll-behavior-x: contain; border-block: 1px solid var(--border); }
+    .scroller { overflow-x: auto; overscroll-behavior-x: contain; border-block: 1px solid var(--border); cursor: grab; }
+    .scroller.dragging, .scroller.dragging .card { cursor: grabbing; user-select: none; }
     .canvas { position: relative; padding-bottom: 72px; }
     .heads { display: flex; }
     .grade { box-sizing: border-box; border-left: 1px solid var(--border-strong); }
@@ -152,6 +157,10 @@ export class MapViewComponent {
   private readonly cards = viewChild.required<ElementRef<HTMLElement>>('cards');
   private lastScrolledGrade = '';
 
+  /** True while the reader is dragging the map sideways with a mouse. */
+  protected readonly dragging = signal(false);
+  private drag?: { pointer: number; x: number; scroll: number; moved: boolean };
+
   protected readonly columns = computed<Column[]>(() => {
     const c = this.curriculum();
     const order = c.strands.map((s) => s.id);
@@ -200,6 +209,8 @@ export class MapViewComponent {
       }
     });
     globalThis.addEventListener?.('resize', () => this.lines.set(this.measureLines()));
+    // The capture phase runs before a card's own click handler.
+    afterNextRender(() => this.scroller().nativeElement.addEventListener('click', (e) => this.swallowClickAfterDrag(e), true));
   }
 
   protected cardState(s: SkillData): CardState {
@@ -228,6 +239,40 @@ export class MapViewComponent {
     const r = el.getBoundingClientRect();
     const s = sc.getBoundingClientRect();
     sc.scrollLeft += r.left - s.left - s.width / 2 + r.width / 2;
+  }
+
+  /** Starts a possible drag. It becomes one only once the pointer moves, so a plain click still picks a card. */
+  protected dragStart(e: PointerEvent) {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    this.drag = { pointer: e.pointerId, x: e.clientX, scroll: this.scroller().nativeElement.scrollLeft, moved: false };
+  }
+
+  protected dragMove(e: PointerEvent) {
+    const d = this.drag;
+    if (!d || e.pointerId !== d.pointer) return;
+    const dx = e.clientX - d.x;
+    if (!d.moved) {
+      if (Math.abs(dx) < DRAG_THRESHOLD) return;
+      d.moved = true;
+      this.dragging.set(true);
+      this.scroller().nativeElement.setPointerCapture(e.pointerId);
+    }
+    this.scroller().nativeElement.scrollLeft = d.scroll - dx;
+  }
+
+  protected dragEnd(e: PointerEvent) {
+    if (!this.drag || e.pointerId !== this.drag.pointer) return;
+    if (!this.drag.moved) this.drag = undefined;
+    this.dragging.set(false);
+  }
+
+  /** Stops the click that ends a drag from also picking the card under the pointer. */
+  private swallowClickAfterDrag(e: MouseEvent) {
+    if (this.drag?.moved) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
+    this.drag = undefined;
   }
 
   protected onScroll() {
