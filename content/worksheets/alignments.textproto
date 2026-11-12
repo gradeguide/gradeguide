@@ -1,0 +1,112 @@
+# proto-file: proto/graph/v1/alignment.proto
+# proto-message: gradeguide.graph.v1.WorksheetAlignments
+#
+# Which skills each worksheet fragment covers: a Common Core standard by code,
+# or a learning component by its id in the skill graph. A component must
+# support a standard the same fragment is aligned to.
+# //graph/worksheets:catalogue_test checks every alignment against the graph.
+
+alignments { fragment_id: "frag-name-the-shaded-fraction" skill { code: "3.NF.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-shade-the-fraction" skill { code: "3.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-at-arrow" skill { code: "3.NF.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-at-arrow-past-1" skill { code: "3.NF.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-label-the-marks" skill { code: "3.NF.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-mistake-counting-marks" skill { code: "3.NF.A.2" } role: ROLE_CHECKS }
+alignments { fragment_id: "frag-equivalent-on-number-lines" skill { code: "3.NF.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-equivalent-on-number-lines" skill { code: "4.NF.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-equivalent-with-wall" skill { code: "4.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-equivalent-missing" skill { code: "4.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-compare-same-denominator" skill { code: "3.NF.A.3" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-compare-same-numerator" skill { code: "3.NF.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-compare-any" skill { code: "4.NF.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-hundredths-grid" skill { code: "4.NF.C.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-tenths-grid" skill { code: "4.NF.C.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-array-facts" skill { code: "3.OA.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-array-facts" skill { code: "3.OA.B.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-multiplication-facts" skill { code: "3.OA.C.7" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-division-facts" skill { code: "3.OA.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-area-model-2-by-1" skill { code: "4.NBT.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-area-model-2-by-2" skill { code: "4.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-add" skill { code: "4.NBT.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-subtract" skill { code: "4.NBT.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-multiply" skill { code: "4.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-times-as-many" skill { code: "4.OA.A.2" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-classify-angles" skill { code: "4.G.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-missing-angle" skill { code: "4.MD.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-perimeter" skill { code: "3.MD.D.8" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-rectangle-area" skill { code: "4.MD.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-missing-side" skill { code: "4.MD.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-place-value-chart" skill { code: "4.NBT.A.2" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-place-value-chart" skill { code: "4.NBT.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-base-ten-blocks" skill { code: "2.NBT.A.1" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-round-on-number-line" skill { code: "4.NBT.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-long-division" skill { code: "4.NBT.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-read-clock" skill { code: "3.MD.A.1" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-elapsed-time" skill { code: "4.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-measure-with-ruler" skill { code: "3.MD.B.4" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-line-plot" skill { code: "4.MD.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-read-protractor" skill { code: "4.MD.C.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-figures" skill { code: "4.G.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-line-pairs" skill { code: "4.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-factor-pairs" skill { code: "4.OA.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-shade-multiples" skill { code: "4.OA.B.4" } role: ROLE_TEACHES }
+
+# ── Learning components ─────────────────────────────────────────────────
+# Finer than a standard: what the fragment's items practise. Each id is a
+# Component in the skill graph, and supports a standard the fragment is
+# aligned to above. The components' descriptions are in the graph, not here,
+# because they come from the imported data.
+
+alignments { fragment_id: "frag-name-the-shaded-fraction" skill { component_id: "0f80aa86-2c60-5a0f-bd85-7720345949d9" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-shade-the-fraction" skill { component_id: "0f80aa86-2c60-5a0f-bd85-7720345949d9" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-at-arrow" skill { component_id: "524bcfce-6e7e-571a-b3fe-db64d70d72a7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-at-arrow-past-1" skill { component_id: "524bcfce-6e7e-571a-b3fe-db64d70d72a7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-label-the-marks" skill { component_id: "524bcfce-6e7e-571a-b3fe-db64d70d72a7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-mistake-counting-marks" skill { component_id: "524bcfce-6e7e-571a-b3fe-db64d70d72a7" } role: ROLE_CHECKS }
+alignments { fragment_id: "frag-equivalent-on-number-lines" skill { component_id: "74de8dae-331b-5d0a-8f64-a1e8c7c5c3be" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-equivalent-on-number-lines" skill { component_id: "f577262f-e994-558d-9643-47ad8a8f80ca" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-equivalent-with-wall" skill { component_id: "13498e57-1a95-5b05-a073-f99ab6e932ff" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-equivalent-missing" skill { component_id: "13498e57-1a95-5b05-a073-f99ab6e932ff" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-compare-same-denominator" skill { component_id: "2bfc7496-6e00-5c7d-9d81-1df05d4642c5" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-compare-same-numerator" skill { component_id: "2bfc7496-6e00-5c7d-9d81-1df05d4642c5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-compare-any" skill { component_id: "b5c4b5f8-f03b-5c9a-8980-661e42088ae1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-hundredths-grid" skill { component_id: "269378e0-048c-57e6-a480-8762f609a8be" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-tenths-grid" skill { component_id: "09f9dbf8-a4e9-5902-9e26-13376991623e" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-array-facts" skill { component_id: "a0174086-6335-568a-ae51-86e54edc8371" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-array-facts" skill { component_id: "3ad29867-b72b-5318-9362-2a15e7ea56c4" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-multiplication-facts" skill { component_id: "ee3360f2-c08d-5933-96c1-8fd9692b63b7" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-division-facts" skill { component_id: "5a0a81bb-41df-5f2b-be89-f9be39d9f4e3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-area-model-2-by-2" skill { component_id: "cb82dee4-88cb-5e46-9ec3-bc05b1d5a482" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-add" skill { component_id: "bd0c4c17-8426-507e-9615-64ed2eca7270" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-subtract" skill { component_id: "7d5e2ea9-0bac-5822-8c15-f5bf1ea6309b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-multiply" skill { component_id: "4e8bd7bf-3aff-5927-985b-3b2dc09de9e1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-times-as-many" skill { component_id: "b8565b5b-cd3f-5b68-9838-46d59f0c43ab" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-classify-angles" skill { component_id: "c69a41b7-0f98-5837-8a08-bc749f9e0a26" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-missing-angle" skill { component_id: "3a05b3ed-db4c-5493-b314-9d1929a5dff8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-perimeter" skill { component_id: "5b8696e3-bdcc-5753-8bb5-c1957a369267" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-rectangle-area" skill { component_id: "984b8dc3-b5db-551f-9af5-b44b06aaa40c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-missing-side" skill { component_id: "984b8dc3-b5db-551f-9af5-b44b06aaa40c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-place-value-chart" skill { component_id: "10c7a285-f952-5554-aea7-72270a22457c" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-round-on-number-line" skill { component_id: "8f3e372f-10be-5526-8b26-808f4044e844" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-long-division" skill { component_id: "81aefb08-0aea-5ac6-bc2d-59ff42d3709f" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-read-clock" skill { component_id: "befd3355-fa6c-5c35-9812-84f6dd50f3b9" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-elapsed-time" skill { component_id: "2abe1331-000f-535d-9dca-ea14efc72a5f" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-measure-with-ruler" skill { component_id: "566157d3-ede7-5ce6-a077-dc1cbade027e" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-line-plot" skill { component_id: "751c388e-7603-528b-b730-0e6378023a28" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-read-protractor" skill { component_id: "522dfbfa-6e48-50e2-b8eb-dd95b5302e6b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-figures" skill { component_id: "1f95ef88-6b5b-5b50-acab-79a69f51f872" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-figures" skill { component_id: "10e69fc1-7f7a-56a5-b13d-8d8bab6e5674" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-figures" skill { component_id: "2f646a05-2fae-5a36-962a-94bc9453ad83" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-name-line-pairs" skill { component_id: "3a80eead-6bf5-522c-a824-9570862ece16" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-name-line-pairs" skill { component_id: "ba8dce38-25fb-5155-b5df-d4084be22ba8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-factor-pairs" skill { component_id: "8970cb2b-7dd0-5209-acd1-d7c7083db812" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-factor-pairs" skill { component_id: "f548ce1a-ef91-5a91-9d5e-1cebf7fd201c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-shade-multiples" skill { component_id: "6c81abb2-bfff-534b-bbe6-2c2a2a405462" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-multiply-tens" skill { code: "3.NBT.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-multiply-tens" skill { code: "4.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-break-apart" skill { code: "3.OA.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-break-apart" skill { code: "4.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-partial-products" skill { code: "4.NBT.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-multiply-word-problems" skill { code: "4.OA.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-multiply-word-problems" skill { code: "4.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-multiply-word-problems" skill { code: "4.NBT.B.5" } role: ROLE_PRACTISES }

@@ -1,0 +1,774 @@
+{
+ "worksheetId": "ws-long-division",
+ "title": "Long division",
+ "headerLabels": [
+  "3.OA.C.7",
+  "4.NBT.B.6"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Warm up: divide.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "8 ÷ 2",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 ÷ 2 = 4"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "48"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "48 ÷ 8",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "48 ÷ 8 = 6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "16 ÷ 2",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16 ÷ 2 = 8"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "18 ÷ 3",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 ÷ 3 = 6"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "48"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "48 ÷ 6",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "48 ÷ 6 = 8"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "6 ÷ 3",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 ÷ 3 = 2"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "24 ÷ 4",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24 ÷ 4 = 6"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "30 ÷ 6",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 ÷ 6 = 5"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "10 ÷ 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 ÷ 2 = 5"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "18 ÷ 9",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 ÷ 9 = 2"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-division-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Recall division facts from multiplication.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "B",
+     "instruction": "Divide. Write any remainder after R.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "805",
+          "divisor": 7,
+          "quotient": {
+           "id": "q11",
+           "label": "805 ÷ 7",
+           "answer": {
+            "text": "115"
+           }
+          },
+          "remainder": {
+           "id": "q11-2",
+           "label": "remainder of 805 ÷ 7",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "115, 0"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "737",
+          "divisor": 9,
+          "quotient": {
+           "id": "q12",
+           "label": "737 ÷ 9",
+           "answer": {
+            "text": "81"
+           }
+          },
+          "remainder": {
+           "id": "q12-2",
+           "label": "remainder of 737 ÷ 9",
+           "answer": {
+            "text": "8"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "81, 8"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "804",
+          "divisor": 4,
+          "quotient": {
+           "id": "q13",
+           "label": "804 ÷ 4",
+           "answer": {
+            "text": "201"
+           }
+          },
+          "remainder": {
+           "id": "q13-2",
+           "label": "remainder of 804 ÷ 4",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "201, 0"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "682",
+          "divisor": 5,
+          "quotient": {
+           "id": "q14",
+           "label": "682 ÷ 5",
+           "answer": {
+            "text": "136"
+           }
+          },
+          "remainder": {
+           "id": "q14-2",
+           "label": "remainder of 682 ÷ 5",
+           "answer": {
+            "text": "2"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "136, 2"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "196",
+          "divisor": 7,
+          "quotient": {
+           "id": "q15",
+           "label": "196 ÷ 7",
+           "answer": {
+            "text": "28"
+           }
+          },
+          "remainder": {
+           "id": "q15-2",
+           "label": "remainder of 196 ÷ 7",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "28, 0"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "417",
+          "divisor": 7,
+          "quotient": {
+           "id": "q16",
+           "label": "417 ÷ 7",
+           "answer": {
+            "text": "59"
+           }
+          },
+          "remainder": {
+           "id": "q16-2",
+           "label": "remainder of 417 ÷ 7",
+           "answer": {
+            "text": "4"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "59, 4"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-long-division",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide a three-digit number by a one-digit number, with remainders.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+     },
+     "estimatedHeight": 494
+    }
+   ],
+   "estimatedHeight": 684
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "8 ÷ 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "48 ÷ 8",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "16 ÷ 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "18 ÷ 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "48 ÷ 6",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "6 ÷ 3",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "24 ÷ 4",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "30 ÷ 6",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "10 ÷ 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "18 ÷ 9",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "805 ÷ 7",
+    "answer": {
+     "text": "115"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "remainder of 805 ÷ 7",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "737 ÷ 9",
+    "answer": {
+     "text": "81"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-2",
+    "label": "remainder of 737 ÷ 9",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "804 ÷ 4",
+    "answer": {
+     "text": "201"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "remainder of 804 ÷ 4",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "682 ÷ 5",
+    "answer": {
+     "text": "136"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "remainder of 682 ÷ 5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "196 ÷ 7",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-2",
+    "label": "remainder of 196 ÷ 7",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "417 ÷ 7",
+    "answer": {
+     "text": "59"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-2",
+    "label": "remainder of 417 ÷ 7",
+    "answer": {
+     "text": "4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide with remainders.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Every step of long division is a division fact, so the warm-up recalls them first."
+ },
+ "advice": [
+  "\"Divide. Write any remainder after R.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,34 @@
+load("//worksheet/bazel:defs.bzl", "worksheet_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Grade Guide's worksheets: fragments, worksheets, and their alignments to
+# the skill graph.
+filegroup(
+    name = "catalog",
+    srcs = glob(["*.textproto"]),
+)
+
+exports_files(["alignments.textproto"])
+
+# The catalogue encoded, with each fragment's header standards filled in from
+# its alignments.
+genrule(
+    name = "library",
+    srcs = [
+        ":catalog",
+        "alignments.textproto",
+    ],
+    outs = ["library.binpb"],
+    cmd = "$(location //graph/cmd/gradeguide-worksheet-library) --catalog=$$(dirname $(location alignments.textproto)) --out=$@",
+    tools = ["//graph/cmd/gradeguide-worksheet-library"],
+)
+
+# Composes every worksheet; the build fails on any problem. composed/ holds
+# the published sheets: worksheets_golden_test fails when a change alters
+# one, and `bazel run //content/worksheets:worksheets_golden` rewrites them.
+worksheet_library(
+    name = "worksheets",
+    composed_dir = "composed",
+    library = ":library",
+)

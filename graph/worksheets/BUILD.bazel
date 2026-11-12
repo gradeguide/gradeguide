@@ -22,3 +22,26 @@ go_test(
         "//worksheet/proto/v1",
     ],
 )
+
+# Checks Grade Guide's worksheet catalogue against the import of the pinned
+# export.
+go_test(
+    name = "catalogue_test",
+    size = "medium",
+    srcs = ["catalogue_test.go"],
+    data = [
+        "//content/worksheets:alignments.textproto",
+        "//content/worksheets:catalog",
+        "//data:graph",
+    ],
+    embed = [":worksheets"],
+    env = {
+        "CATALOG": "$(rlocationpath //content/worksheets:alignments.textproto)",
+        "GRAPH": "$(rlocationpath //data:graph)",
+    },
+    deps = [
+        "//proto/graph/v1",
+        "@org_golang_google_protobuf//proto",
+        "@rules_go//go/runfiles",
+    ],
+)

@@ -1,0 +1,704 @@
+{
+ "worksheetId": "ws-rectangles",
+ "title": "Perimeter and area",
+ "headerLabels": [
+  "3.MD.D.8",
+  "4.MD.A.3"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the perimeter.",
+     "example": {
+      "nodes": [
+       {
+        "polygon": {
+         "points": [
+          {},
+          {
+           "x": 5
+          },
+          {
+           "x": 5,
+           "y": 3
+          },
+          {
+           "y": 3
+          }
+         ],
+         "sides": [
+          {
+           "text": "5 cm"
+          },
+          {
+           "text": "3 cm"
+          },
+          {},
+          {}
+         ],
+         "markRightAngles": true
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "Perimeter ="
+          },
+          {
+           "blank": {
+            "label": "perimeter in cm",
+            "answer": {
+             "text": "16"
+            }
+           }
+          },
+          {
+           "text": "cm"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Perimeter is the distance **all the way around**: add all four sides."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 24 cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 3
+           },
+           {
+            "x": 3,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "3 cm"
+           },
+           {
+            "text": "2 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 10 cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": 5,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "2 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "14"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 14 cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-perimeter",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find a rectangle's perimeter from two sides.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ]
+     },
+     "estimatedHeight": 529
+    },
+    {
+     "label": "B",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": 5,
+            "y": 4
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square cm",
+             "answer": {
+              "text": "20"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 20 sq cm"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": 5,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "area in square cm",
+             "answer": {
+              "text": "15"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 15 sq cm"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 8
+           },
+           {
+            "y": 8
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "8 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "area in square cm",
+             "answer": {
+              "text": "72"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 72 sq cm"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-rectangle-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a rectangle's area as length times width.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "misconceptions": [
+       "Mixing up area and perimeter"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 771
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "The area is given. Find the missing side.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Area = 54 square cm"
+        },
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "field": {
+             "id": "q7",
+             "label": "the missing side",
+             "answer": {
+              "text": "6 cm",
+              "also": [
+               "6"
+              ]
+             }
+            }
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "6 cm"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Area = 24 square cm"
+        },
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "field": {
+             "id": "q8",
+             "label": "the missing side",
+             "answer": {
+              "text": "3 cm",
+              "also": [
+               "3"
+              ]
+             }
+            }
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "3 cm"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Area = 18 square cm"
+        },
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "field": {
+             "id": "q9",
+             "label": "the missing side",
+             "answer": {
+              "text": "2 cm",
+              "also": [
+               "2"
+              ]
+             }
+            }
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "2 cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-missing-side",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Use area to find an unknown side.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Running the formula backwards is the 4.MD.A.3 example task, and it is division as an unknown factor again."
+     },
+     "estimatedHeight": 346
+    }
+   ],
+   "estimatedHeight": 346
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area in square cm",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "area in square cm",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "area in square cm",
+    "answer": {
+     "text": "72"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the missing side",
+    "answer": {
+     "text": "6 cm",
+     "also": [
+      "6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the missing side",
+    "answer": {
+     "text": "3 cm",
+     "also": [
+      "3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the missing side",
+    "answer": {
+     "text": "2 cm",
+     "also": [
+      "2"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Tell area from perimeter, then use area backwards.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,638 @@
+{
+ "worksheetId": "ws-fractions-on-a-number-line",
+ "title": "Fractions on a number line",
+ "headerLabels": [
+  "3.NF.A.2"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "What fraction is at the arrow?",
+     "example": {
+      "nodes": [
+       {
+        "numberLine": {
+         "end": 1,
+         "partsPerUnit": 4,
+         "hasArrow": true,
+         "arrowTick": 3
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "fractionBlank": {
+            "label": "the fraction at the arrow",
+            "answer": {
+             "text": "3/4"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "From 0 to 1 there are **4 equal jumps**, so each jump is 1/4. The arrow is 3 jumps from 0, so it is at **3/4**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 6,
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "1/6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "hasArrow": true,
+          "arrowTick": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q2",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "2/8",
+              "also": [
+               "1/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/8"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "hasArrow": true,
+          "arrowTick": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "6/8",
+              "also": [
+               "3/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6/8"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "hasArrow": true,
+          "arrowTick": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q4",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "4/8",
+              "also": [
+               "1/2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4/8"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-fraction-at-arrow",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read a fraction as a distance from 0 on a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "misconceptions": [
+       "Counting tick marks instead of the spaces between them"
+      ],
+      "references": [
+       "Siegler et al. (2010), IES practice guide, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 500
+    },
+    {
+     "label": "B",
+     "instruction": "Write a fraction in each box.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 4,
+          "blanks": [
+           {
+            "tick": 1,
+            "field": {
+             "id": "q5",
+             "label": "the fraction at mark 1",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           },
+           {
+            "tick": 2,
+            "field": {
+             "id": "q5-2",
+             "label": "the fraction at mark 2",
+             "answer": {
+              "text": "2/4",
+              "also": [
+               "1/2"
+              ]
+             }
+            }
+           },
+           {
+            "tick": 3,
+            "field": {
+             "id": "q5-3",
+             "label": "the fraction at mark 3",
+             "answer": {
+              "text": "3/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4, 2/4, 3/4"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 5,
+          "blanks": [
+           {
+            "tick": 1,
+            "field": {
+             "id": "q6",
+             "label": "the fraction at mark 1",
+             "answer": {
+              "text": "1/5"
+             }
+            }
+           },
+           {
+            "tick": 2,
+            "field": {
+             "id": "q6-2",
+             "label": "the fraction at mark 2",
+             "answer": {
+              "text": "2/5"
+             }
+            }
+           },
+           {
+            "tick": 3,
+            "field": {
+             "id": "q6-3",
+             "label": "the fraction at mark 3",
+             "answer": {
+              "text": "3/5"
+             }
+            }
+           },
+           {
+            "tick": 4,
+            "field": {
+             "id": "q6-4",
+             "label": "the fraction at mark 4",
+             "answer": {
+              "text": "4/5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/5, 2/5, 3/5, 4/5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-label-the-marks",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Label every unit fraction step from 0 to 1.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Labelling each mark in turn builds 3/4 as three jumps of 1/4, the idea 4.NF.B.3 later uses for adding fractions."
+     },
+     "estimatedHeight": 238
+    }
+   ],
+   "estimatedHeight": 738
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the mistake.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 3,
+          "labels": [
+           {
+            "tick": 1,
+            "text": "1/4",
+            "wrong": true
+           }
+          ]
+         }
+        },
+        {
+         "text": "Omar labeled the first mark 1/4 because there are 4 marks. What should it be?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q7",
+             "label": "the right label for the first mark",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q7-2",
+           "label": "why",
+           "answer": {
+            "text": "There are 3 equal jumps from 0 to 1, so each jump is 1/3. Count the jumps, not the marks."
+           }
+          }
+         }
+        }
+       ],
+       "key": "1/3; There are 3 equal jumps from 0 to 1, so each jump is 1/3. Count the jumps, not the marks."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-mistake-counting-marks",
+     "stage": "STAGE_MISTAKE",
+     "design": {
+      "purpose": "Spot and explain the marks-not-jumps error.",
+      "principles": [
+       "PRINCIPLE_ERROR_ANALYSIS",
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Explaining why a worked answer is wrong helps children drop a misconception they would otherwise keep using. The error shown is the most common one on number lines.",
+      "misconceptions": [
+       "Counting tick marks instead of the spaces between them"
+      ],
+      "references": [
+       "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
+      ]
+     },
+     "estimatedHeight": 276
+    },
+    {
+     "label": "D",
+     "instruction": "What fraction is at the arrow? Some are more than 1.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 2,
+          "partsPerUnit": 4,
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q8",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 2,
+          "partsPerUnit": 3,
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q9",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-fraction-at-arrow-past-1",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "See that fractions go on past 1.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "A line to 2 breaks the idea that a fraction is always a part of one thing and less than 1.",
+      "misconceptions": [
+       "Fractions are always less than 1"
+      ]
+     },
+     "estimatedHeight": 180
+    }
+   ],
+   "estimatedHeight": 456
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "1/6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "2/8",
+     "also": [
+      "1/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "6/8",
+     "also": [
+      "3/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "4/8",
+     "also": [
+      "1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the fraction at mark 1",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "the fraction at mark 2",
+    "answer": {
+     "text": "2/4",
+     "also": [
+      "1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "the fraction at mark 3",
+    "answer": {
+     "text": "3/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the fraction at mark 1",
+    "answer": {
+     "text": "1/5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "the fraction at mark 2",
+    "answer": {
+     "text": "2/5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "the fraction at mark 3",
+    "answer": {
+     "text": "3/5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-4",
+    "label": "the fraction at mark 4",
+    "answer": {
+     "text": "4/5"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the right label for the first mark",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "why",
+    "answer": {
+     "text": "There are 3 equal jumps from 0 to 1, so each jump is 1/3. Count the jumps, not the marks."
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Place and read fractions as distances from 0.",
+  "principles": [
+   "PRINCIPLE_NUMBER_LINE"
+  ],
+  "rationale": "Reading a point comes before labelling every mark. The marks-not-jumps mistake comes once the child has labelled marks correctly, so they can see why it is wrong."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

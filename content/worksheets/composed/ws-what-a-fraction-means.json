@@ -1,0 +1,516 @@
+{
+ "worksheetId": "ws-what-a-fraction-means",
+ "title": "What a fraction means",
+ "headerLabels": [
+  "3.NF.A.1"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the fraction that is shaded.",
+     "example": {
+      "nodes": [
+       {
+        "fractionBar": {
+         "parts": 4,
+         "shaded": [
+          0
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "fractionBlank": {
+            "label": "the shaded fraction",
+            "answer": {
+             "text": "1/4"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The bar is cut into **4 equal parts**, so each part is a fourth. Count the shaded parts for the top number."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shaded": [
+           0,
+           1
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "2/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 2,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q2",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "1/2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 6,
+          "shaded": [
+           0,
+           1,
+           2
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "3/6",
+              "also": [
+               "1/2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 6,
+          "shaded": [
+           0,
+           1
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q4",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "2/6",
+              "also": [
+               "1/3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/6"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q5",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 6,
+          "shaded": [
+           0,
+           1,
+           2,
+           3,
+           4
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q6",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "5/6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/6"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-name-the-shaded-fraction",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Name a fraction of a whole from an area model.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Bars come before number lines because a part of a shape is easier to see than a distance. Denominators vary so the child reads the bottom number every time instead of assuming fourths.",
+      "misconceptions": [
+       "Counting shaded and unshaded parts as top and bottom numbers"
+      ],
+      "references": [
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
+      ]
+     },
+     "estimatedHeight": 410
+    },
+    {
+     "label": "B",
+     "instruction": "Shade the fraction.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 6,
+             "den": 8
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 8,
+          "shadeField": {
+           "id": "q7",
+           "label": "shading of 6/8",
+           "answer": {
+            "text": "6 of 8 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6 of 8 parts shaded"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 5,
+             "den": 8
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 8,
+          "shadeField": {
+           "id": "q8",
+           "label": "shading of 5/8",
+           "answer": {
+            "text": "5 of 8 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5 of 8 parts shaded"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q9",
+           "label": "shading of 3/4",
+           "answer": {
+            "text": "3 of 4 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3 of 4 parts shaded"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 8
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 8,
+          "shadeField": {
+           "id": "q10",
+           "label": "shading of 3/8",
+           "answer": {
+            "text": "3 of 8 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3 of 8 parts shaded"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-shade-the-fraction",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Make a fraction, not just read one.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Reversing the task, from fraction to picture, checks that the child knows what each number does."
+     },
+     "estimatedHeight": 266
+    }
+   ],
+   "estimatedHeight": 676
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "1/2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "3/6",
+     "also": [
+      "1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "2/6",
+     "also": [
+      "1/3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "5/6"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "shading of 6/8",
+    "answer": {
+     "text": "6 of 8 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "shading of 5/8",
+    "answer": {
+     "text": "5 of 8 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "shading of 3/4",
+    "answer": {
+     "text": "3 of 4 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "shading of 3/8",
+    "answer": {
+     "text": "3 of 8 parts shaded"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read and make fractions of a whole.",
+  "rationale": "A worked example, then reading fractions, then making them: the task turns around once the child has seen it done."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

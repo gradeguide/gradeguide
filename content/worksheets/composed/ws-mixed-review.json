@@ -1,0 +1,890 @@
+{
+ "worksheetId": "ws-mixed-review",
+ "title": "Mixed review",
+ "headerLabels": [
+  "3.NF.A.2",
+  "4.NF.A.1",
+  "4.NBT.B.5",
+  "4.G.A.1",
+  "4.MD.A.3"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "1",
+     "instruction": "What fraction is at the arrow?",
+     "items": [
+      {
+       "label": "1a",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "hasArrow": true,
+          "arrowTick": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1a",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "2/8",
+              "also": [
+               "1/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/8"
+      },
+      {
+       "label": "1b",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 3,
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1b",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-fraction-at-arrow",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read a fraction as a distance from 0 on a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "misconceptions": [
+       "Counting tick marks instead of the spaces between them"
+      ],
+      "references": [
+       "Siegler et al. (2010), IES practice guide, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 180
+    },
+    {
+     "label": "2",
+     "instruction": "Fill in the box.",
+     "items": [
+      {
+       "label": "2a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q2a",
+              "label": "numerator equal to 1/5",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/5 = 2/10"
+      },
+      {
+       "label": "2b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 2,
+             "field": {
+              "id": "q2b",
+              "label": "denominator equal to 1/6",
+              "answer": {
+               "text": "12"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 = 2/12"
+      },
+      {
+       "label": "2c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 8,
+             "blankNumerator": true,
+             "field": {
+              "id": "q2c",
+              "label": "numerator equal to 1/4",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 = 2/8"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-equivalent-missing",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Generate equivalent fractions without a picture.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+     },
+     "estimatedHeight": 106
+    },
+    {
+     "label": "3",
+     "instruction": "Fill in the area model, then the product.",
+     "items": [
+      {
+       "label": "3a",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           6
+          ],
+          "colParts": [
+           30,
+           8
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q3a",
+             "label": "6 × 30",
+             "answer": {
+              "text": "180"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q3a-2",
+             "label": "6 × 8",
+             "answer": {
+              "text": "48"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "38"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3a-3",
+             "label": "38 × 6",
+             "answer": {
+              "text": "228"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "180, 48; 38 × 6 = 228"
+      },
+      {
+       "label": "3b",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           9
+          ],
+          "colParts": [
+           40,
+           2
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q3b",
+             "label": "9 × 40",
+             "answer": {
+              "text": "360"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q3b-2",
+             "label": "9 × 2",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "42"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3b-3",
+             "label": "42 × 9",
+             "answer": {
+              "text": "378"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "360, 18; 42 × 9 = 378"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-area-model-2-by-1",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "misconceptions": [
+       "Multiplying only the ones, or forgetting the tens are tens"
+      ]
+     },
+     "estimatedHeight": 170
+    },
+    {
+     "label": "4",
+     "instruction": "Tick acute, right or obtuse.",
+     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "items": [
+      {
+       "label": "4a",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 10,
+          "rays": [
+           105
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q4a",
+           "label": "kind of angle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      },
+      {
+       "label": "4b",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 5,
+          "rays": [
+           90
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q4b",
+           "label": "kind of angle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-angles",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Classify angles against a right angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "misconceptions": [
+       "Longer rays make a bigger angle"
+      ]
+     },
+     "estimatedHeight": 236
+    }
+   ],
+   "estimatedHeight": 692
+  },
+  {
+   "sections": [
+    {
+     "label": "4",
+     "instruction": "Tick acute, right or obtuse.",
+     "items": [
+      {
+       "label": "4c",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 30,
+          "rays": [
+           90
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q4c",
+           "label": "kind of angle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-angles",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Classify angles against a right angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "misconceptions": [
+       "Longer rays make a bigger angle"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 179
+    },
+    {
+     "label": "5",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "5a",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "2 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5a",
+             "label": "area in square cm",
+             "answer": {
+              "text": "16"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 16 sq cm"
+      },
+      {
+       "label": "5b",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 5
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5b",
+             "label": "area in square cm",
+             "answer": {
+              "text": "45"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 45 sq cm"
+      },
+      {
+       "label": "5c",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "x": 7,
+            "y": 4
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5c",
+             "label": "area in square cm",
+             "answer": {
+              "text": "28"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 28 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a rectangle's area as length times width.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "misconceptions": [
+       "Mixing up area and perimeter"
+      ]
+     },
+     "estimatedHeight": 424
+    }
+   ],
+   "estimatedHeight": 603
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "2/8",
+     "also": [
+      "1/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2a",
+   "field": {
+    "id": "q2a",
+    "label": "numerator equal to 1/5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2b",
+   "field": {
+    "id": "q2b",
+    "label": "denominator equal to 1/6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2c",
+   "field": {
+    "id": "q2c",
+    "label": "numerator equal to 1/4",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3a",
+   "field": {
+    "id": "q3a",
+    "label": "6 × 30",
+    "answer": {
+     "text": "180"
+    }
+   }
+  },
+  {
+   "itemLabel": "3a",
+   "field": {
+    "id": "q3a-2",
+    "label": "6 × 8",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "3a",
+   "field": {
+    "id": "q3a-3",
+    "label": "38 × 6",
+    "answer": {
+     "text": "228"
+    }
+   }
+  },
+  {
+   "itemLabel": "3b",
+   "field": {
+    "id": "q3b",
+    "label": "9 × 40",
+    "answer": {
+     "text": "360"
+    }
+   }
+  },
+  {
+   "itemLabel": "3b",
+   "field": {
+    "id": "q3b-2",
+    "label": "9 × 2",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "3b",
+   "field": {
+    "id": "q3b-3",
+    "label": "42 × 9",
+    "answer": {
+     "text": "378"
+    }
+   }
+  },
+  {
+   "itemLabel": "4a",
+   "field": {
+    "id": "q4a",
+    "label": "kind of angle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "4b",
+   "field": {
+    "id": "q4b",
+    "label": "kind of angle",
+    "answer": {
+     "text": "right"
+    }
+   }
+  },
+  {
+   "itemLabel": "4c",
+   "field": {
+    "id": "q4c",
+    "label": "kind of angle",
+    "answer": {
+     "text": "right"
+    }
+   }
+  },
+  {
+   "itemLabel": "5a",
+   "field": {
+    "id": "q5a",
+    "label": "area in square cm",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "5b",
+   "field": {
+    "id": "q5b",
+    "label": "area in square cm",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "5c",
+   "field": {
+    "id": "q5c",
+    "label": "area in square cm",
+    "answer": {
+     "text": "28"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Bring back four units' skills weeks after they were taught.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Spaced, mixed review keeps skills that blocked units let fade. No worked examples: the point is recall.",
+  "references": [
+   "Rohrer and Taylor (2007), Instructional Science 35"
+  ]
+ },
+ "advice": [
+  "\"What fraction is at the arrow?\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Fill in the area model, then the product.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

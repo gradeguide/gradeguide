@@ -1,0 +1,454 @@
+{
+ "worksheetId": "ws-add-subtract",
+ "title": "Add and subtract big numbers",
+ "headerLabels": [
+  "4.NBT.B.4"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "5405",
+           "6271"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "5405 + 6271",
+           "answer": {
+            "text": "11676"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "11676"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "3851",
+           "3892"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "3851 + 3892",
+           "answer": {
+            "text": "7743"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "7743"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "3846",
+           "1884"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "3846 + 1884",
+           "answer": {
+            "text": "5730"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "5730"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "3252",
+           "5009"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "3252 + 5009",
+           "answer": {
+            "text": "8261"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "8261"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "2879",
+           "9325"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "2879 + 9325",
+           "answer": {
+            "text": "12204"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "12204"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "8618",
+           "3959"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "8618 + 3959",
+           "answer": {
+            "text": "12577"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "12577"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-column-add",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add four-digit numbers with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every item regroups at least once, so the carry boxes are used."
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "B",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "8128",
+           "2296"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "8128 − 2296",
+           "answer": {
+            "text": "5832"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "5832"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "6534",
+           "2368"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "6534 − 2368",
+           "answer": {
+            "text": "4166"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "4166"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "4590",
+           "1332"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "4590 − 1332",
+           "answer": {
+            "text": "3258"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3258"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "9224",
+           "1418"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "9224 − 1418",
+           "answer": {
+            "text": "7806"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "7806"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "5986",
+           "1058"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "5986 − 1058",
+           "answer": {
+            "text": "4928"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "4928"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "4755",
+           "2670"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "4755 − 2670",
+           "answer": {
+            "text": "2085"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "2085"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-column-subtract",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract four-digit numbers with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in every column"
+      ]
+     },
+     "estimatedHeight": 302
+    }
+   ],
+   "estimatedHeight": 604
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "5405 + 6271",
+    "answer": {
+     "text": "11676"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "3851 + 3892",
+    "answer": {
+     "text": "7743"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "3846 + 1884",
+    "answer": {
+     "text": "5730"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "3252 + 5009",
+    "answer": {
+     "text": "8261"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2879 + 9325",
+    "answer": {
+     "text": "12204"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "8618 + 3959",
+    "answer": {
+     "text": "12577"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "8128 − 2296",
+    "answer": {
+     "text": "5832"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "6534 − 2368",
+    "answer": {
+     "text": "4166"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4590 − 1332",
+    "answer": {
+     "text": "3258"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "9224 − 1418",
+    "answer": {
+     "text": "7806"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "5986 − 1058",
+    "answer": {
+     "text": "4928"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "4755 − 2670",
+    "answer": {
+     "text": "2085"
+    }
+   }
+  }
+ ],
+ "advice": [
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

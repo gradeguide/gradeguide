@@ -1,0 +1,519 @@
+{
+ "worksheetId": "ws-place-value",
+ "title": "Place value to a hundred thousand",
+ "headerLabels": [
+  "2.NBT.A.1",
+  "4.NBT.A.2",
+  "4.NBT.A.1"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "What number do the blocks show?",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "thousands": 3,
+          "hundreds": 4,
+          "tens": 2,
+          "ones": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The blocks show"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "3,425",
+              "also": [
+               "3425"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The blocks show 3,425"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "thousands": 2,
+          "hundreds": 3,
+          "tens": 6,
+          "ones": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The blocks show"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "2,361",
+              "also": [
+               "2361"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The blocks show 2,361"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "thousands": 2,
+          "hundreds": 1,
+          "tens": 1,
+          "ones": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The blocks show"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "2,111",
+              "also": [
+               "2111"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The blocks show 2,111"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-base-ten-blocks",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read a number from base-ten blocks.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Blocks show ten tens making a hundred as a size, the 2.NBT.A.1 idea that grade 4 place value extends.",
+      "misconceptions": [
+       "Writing 3 hundreds, 0 tens and 4 ones as 34"
+      ]
+     },
+     "estimatedHeight": 400
+    },
+    {
+     "label": "B",
+     "instruction": "Read the place-value chart.",
+     "example": {
+      "nodes": [
+       {
+        "placeValueChart": {
+         "columns": [
+          {
+           "name": "thousands",
+           "digit": "7"
+          },
+          {
+           "name": "hundreds",
+           "digit": "0"
+          },
+          {
+           "name": "tens",
+           "digit": "4"
+          },
+          {
+           "name": "ones",
+           "digit": "0"
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "The number is"
+          },
+          {
+           "blank": {
+            "label": "the number in the chart",
+            "answer": {
+             "text": "7,040",
+             "also": [
+              "7040"
+             ]
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "The 4 is worth"
+          },
+          {
+           "blank": {
+            "label": "value of the 4",
+            "answer": {
+             "text": "40",
+             "also": [
+              "40"
+             ]
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Each place is worth **ten times** the place to its right. The digit tells how many of that place."
+     },
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "placeValueChart": {
+          "columns": [
+           {
+            "name": "hundred thousands",
+            "digit": "9"
+           },
+           {
+            "name": "ten thousands",
+            "digit": "5"
+           },
+           {
+            "name": "thousands",
+            "digit": "6"
+           },
+           {
+            "name": "hundreds",
+            "digit": "6"
+           },
+           {
+            "name": "tens",
+            "digit": "8"
+           },
+           {
+            "name": "ones",
+            "digit": "1"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The number is"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "the number in the chart",
+             "answer": {
+              "text": "956,681",
+              "also": [
+               "956681"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 9 is worth"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "value of the 9",
+             "answer": {
+              "text": "900,000",
+              "also": [
+               "900000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The number is 956,681; The 9 is worth 900,000"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-place-value-chart",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read multi-digit numbers and the value of each digit.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names.",
+      "misconceptions": [
+       "A digit is worth the same wherever it is"
+      ]
+     },
+     "estimatedHeight": 412
+    }
+   ],
+   "estimatedHeight": 812
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Read the place-value chart.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "placeValueChart": {
+          "columns": [
+           {
+            "name": "hundred thousands",
+            "digit": "9"
+           },
+           {
+            "name": "ten thousands",
+            "digit": "1"
+           },
+           {
+            "name": "thousands",
+            "digit": "2"
+           },
+           {
+            "name": "hundreds",
+            "digit": "4"
+           },
+           {
+            "name": "tens",
+            "digit": "0"
+           },
+           {
+            "name": "ones",
+            "digit": "9"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The number is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the number in the chart",
+             "answer": {
+              "text": "912,409",
+              "also": [
+               "912409"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 4 is worth"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "value of the 4",
+             "answer": {
+              "text": "400",
+              "also": [
+               "400"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The number is 912,409; The 4 is worth 400"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-place-value-chart",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read multi-digit numbers and the value of each digit.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names.",
+      "misconceptions": [
+       "A digit is worth the same wherever it is"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 209
+    }
+   ],
+   "estimatedHeight": 209
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "3,425",
+     "also": [
+      "3425"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "2,361",
+     "also": [
+      "2361"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "2,111",
+     "also": [
+      "2111"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the number in the chart",
+    "answer": {
+     "text": "956,681",
+     "also": [
+      "956681"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "value of the 9",
+    "answer": {
+     "text": "900,000",
+     "also": [
+      "900000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the number in the chart",
+    "answer": {
+     "text": "912,409",
+     "also": [
+      "912409"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "value of the 4",
+    "answer": {
+     "text": "400",
+     "also": [
+      "400"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read big numbers and the value of each digit.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Blocks, then a chart, then the number alone: each step keeps less of the picture."
+ },
+ "advice": [
+  "Section \"Read the place-value chart.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

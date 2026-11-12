@@ -1,0 +1,377 @@
+{
+ "worksheetId": "ws-rounding",
+ "title": "Rounding on a number line",
+ "headerLabels": [
+  "4.NBT.A.3"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Round. The number line shows which multiple is nearer.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Round 7,800 to the nearest thousand."
+        },
+        {
+         "numberLine": {
+          "start": 7,
+          "end": 8,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 8,
+          "scale": 1000
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7,800"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "7,800 rounded to the nearest thousand",
+             "answer": {
+              "text": "8,000",
+              "also": [
+               "8000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7,800 ≈ 8,000"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Round 5,280 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 52,
+          "end": 53,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 8,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5,280"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "5,280 rounded to the nearest hundred",
+             "answer": {
+              "text": "5,300",
+              "also": [
+               "5300"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5,280 ≈ 5,300"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Round 9,470 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 94,
+          "end": 95,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 7,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9,470"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "9,470 rounded to the nearest hundred",
+             "answer": {
+              "text": "9,500",
+              "also": [
+               "9500"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9,470 ≈ 9,500"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Round 5,300 to the nearest thousand."
+        },
+        {
+         "numberLine": {
+          "start": 5,
+          "end": 6,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 3,
+          "scale": 1000
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5,300"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "5,300 rounded to the nearest thousand",
+             "answer": {
+              "text": "5,000",
+              "also": [
+               "5000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5,300 ≈ 5,000"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Round 1,580 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 15,
+          "end": 16,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 8,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1,580"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "1,580 rounded to the nearest hundred",
+             "answer": {
+              "text": "1,600",
+              "also": [
+               "1600"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1,580 ≈ 1,600"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Round 3,960 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 39,
+          "end": 40,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 6,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3,960"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "3,960 rounded to the nearest hundred",
+             "answer": {
+              "text": "4,000",
+              "also": [
+               "4000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3,960 ≈ 4,000"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-round-on-number-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Round to any place by seeing which multiple is nearer.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Rounding as nearness on a line explains the rule instead of replacing it. Halfway rounds up, and the line shows why that case needs a rule.",
+      "misconceptions": [
+       "Rounding by looking only at the next digit, without knowing what it means"
+      ]
+     },
+     "estimatedHeight": 490
+    }
+   ],
+   "estimatedHeight": 490
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "7,800 rounded to the nearest thousand",
+    "answer": {
+     "text": "8,000",
+     "also": [
+      "8000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "5,280 rounded to the nearest hundred",
+    "answer": {
+     "text": "5,300",
+     "also": [
+      "5300"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "9,470 rounded to the nearest hundred",
+    "answer": {
+     "text": "9,500",
+     "also": [
+      "9500"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "5,300 rounded to the nearest thousand",
+    "answer": {
+     "text": "5,000",
+     "also": [
+      "5000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "1,580 rounded to the nearest hundred",
+    "answer": {
+     "text": "1,600",
+     "also": [
+      "1600"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "3,960 rounded to the nearest hundred",
+    "answer": {
+     "text": "4,000",
+     "also": [
+      "4000"
+     ]
+    }
+   }
+  }
+ ],
+ "advice": [
+  "\"Round. The number line shows which multiple is nearer.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,367 @@
+{
+ "worksheetId": "ws-protractor",
+ "title": "Measuring angles",
+ "headerLabels": [
+  "4.G.A.1",
+  "4.MD.C.6"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Warm up: tick acute, right or obtuse.",
+     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 35,
+          "rays": [
+           75
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 40,
+          "rays": [
+           115
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "kind of angle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 30,
+          "rays": [
+           140
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "kind of angle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-angles",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Classify angles against a right angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "misconceptions": [
+       "Longer rays make a bigger angle"
+      ]
+     },
+     "estimatedHeight": 351
+    },
+    {
+     "label": "B",
+     "instruction": "Read the protractor.",
+     "explainer": "Start at the 0 where the bottom ray lies, and count up to the other ray.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "protractor": {
+          "degrees": 115
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The angle measures"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "the angle on the protractor",
+             "answer": {
+              "text": "115°",
+              "also": [
+               "115"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The angle measures 115°"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "protractor": {
+          "degrees": 95
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The angle measures"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the angle on the protractor",
+             "answer": {
+              "text": "95°",
+              "also": [
+               "95"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The angle measures 95°"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "protractor": {
+          "degrees": 150
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The angle measures"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the angle on the protractor",
+             "answer": {
+              "text": "150°",
+              "also": [
+               "150"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The angle measures 150°"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "protractor": {
+          "degrees": 75
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The angle measures"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the angle on the protractor",
+             "answer": {
+              "text": "75°",
+              "also": [
+               "75"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The angle measures 75°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-read-protractor",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Measure an angle with a protractor.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "One scale, with the first ray always on 0, isolates reading the scale before the two-scale protractor of a real classroom.",
+      "misconceptions": [
+       "Reading the wrong scale, giving 180 minus the angle"
+      ]
+     },
+     "estimatedHeight": 452
+    }
+   ],
+   "estimatedHeight": 803
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "kind of angle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "kind of angle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "kind of angle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the angle on the protractor",
+    "answer": {
+     "text": "115°",
+     "also": [
+      "115"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the angle on the protractor",
+    "answer": {
+     "text": "95°",
+     "also": [
+      "95"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the angle on the protractor",
+    "answer": {
+     "text": "150°",
+     "also": [
+      "150"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the angle on the protractor",
+    "answer": {
+     "text": "75°",
+     "also": [
+      "75"
+     ]
+    }
+   }
+  }
+ ],
+ "advice": [
+  "\"Read the protractor.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
