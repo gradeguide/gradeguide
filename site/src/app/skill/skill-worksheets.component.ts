@@ -70,7 +70,7 @@ interface Row {
             @if (r.sheet.role) {
               <span class="role" [class]="'role ' + r.sheet.role">{{ roleLabel(r.sheet.role) }}</span>
             }
-            {{ r.sheet.pages }} {{ r.sheet.pages === 1 ? 'page' : 'pages' }}@if (r.sheet.minutes) {, about {{ r.sheet.minutes }} min}
+            {{ r.sheet.pages }} {{ r.sheet.pages === 1 ? 'page' : 'pages' }}
           </div>
           @if (r.numbers.length) {
             <div class="badges" [attr.aria-label]="'Covers steps ' + r.numbers.join(', ')">
