@@ -1,0 +1,63 @@
+# Publishes the built website as a release asset, for apps that bundle it.
+#
+# Pushing a tag such as v2026.11.12 builds //site:site at that tag and attaches
+# gradeguide-site-<tag>.tar.gz, and its SHA-256 in the notes, to a release of
+# the same name. "Run workflow" does the same for a new tag on main.
+#
+# The archive holds the files the Pages deploy serves, at its top level. It is
+# built with sorted names, fixed times and owners, and no gzip timestamp, so
+# rebuilding the same commit gives the same bytes.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: New tag to create on main, such as v2026.11.12
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.event.inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bazel-contrib/setup-bazel@0.15.0
+        with:
+          bazelisk-cache: true
+          disk-cache: release
+          # The pinned Knowledge Graph export is about 1 GB; keep it between runs.
+          repository-cache: true
+      - name: Build the site
+        run: |
+          bazel build //site:site
+          cp -RL bazel-bin/site/site _site
+          chmod -R u+w _site
+          rm -f _site/*.map
+      - name: Pack it
+        run: |
+          name="gradeguide-site-$TAG.tar.gz"
+          tar --sort=name --mtime=@0 --owner=0 --group=0 --numeric-owner \
+            --format=gnu -C _site -cf - . | gzip -9n > "$name"
+          sha256sum "$name" | tee "$name.sha256"
+          echo "NAME=$name" >> "$GITHUB_ENV"
+      - name: Publish the release
+        run: |
+          sha=$(cut -d' ' -f1 "$NAME.sha256")
+          notes=$(printf 'The website built from %s.\n\n%s  SHA-256 %s\n' "$GITHUB_SHA" "$NAME" "$sha")
+          if [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            gh release create "$TAG" "$NAME" --target "$GITHUB_SHA" --title "$TAG" --notes "$notes"
+          else
+            gh release create "$TAG" "$NAME" --verify-tag --title "$TAG" --notes "$notes"
+          fi

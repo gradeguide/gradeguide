@@ -35,6 +35,14 @@ graph does not have.
 To move to a new source release, change `KNOWLEDGE_GRAPH_VERSION` and the
 two hashes in `MODULE.bazel`.
 
+## Releasing the site
+
+Apps that work offline bundle the built website from a release. Push a tag
+such as `v2026.11.12`, or run the Release workflow with a new tag, and it
+attaches `gradeguide-site-<tag>.tar.gz` to a release of that name. The
+release notes give its SHA-256. The archive holds what the website serves,
+and the same commit always packs to the same bytes.
+
 ## Reviewing the parent-facing text
 
 Every entry in `content/math/` starts as `STATUS_DRAFT`. A teacher who
