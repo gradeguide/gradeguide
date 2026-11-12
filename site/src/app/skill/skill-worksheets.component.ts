@@ -59,7 +59,7 @@ interface Row {
       <div class="sheet">
         <a class="thumb" [href]="r.sheet.href" target="_blank" rel="noopener" [attr.aria-label]="'Open ' + r.sheet.title">
           @if (r.sheet.thumbnail) {
-            <img [src]="r.sheet.thumbnail" alt="" loading="lazy" />
+            <img [src]="r.sheet.thumbnail" alt="" width="56" height="73" loading="lazy" />
           } @else {
             <span class="ph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
           }
@@ -111,7 +111,7 @@ interface Row {
     .count.gap { color: var(--before); }
     .all { font: inherit; font-size: 13px; font-weight: 400; color: var(--accent); background: none; border: none; padding: 0; cursor: pointer; margin-left: auto; }
     .sheet { display: flex; gap: 12px; padding: 10px 0; border-top: 1px solid var(--border); }
-    .thumb { flex: none; width: 56px; height: 72px; border: 1px solid var(--border-strong); border-radius: 3px; background: #fff; overflow: hidden; display: block; }
+    .thumb { flex: none; width: 56px; height: 73px; border: 1px solid var(--border-strong); border-radius: 3px; background: #fff; overflow: hidden; display: block; }
     .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
     .ph { display: block; padding: 8px 6px; }
     .ph i { display: block; height: 3px; margin-bottom: 7px; border-radius: 2px; background: #d3d1c7; }
