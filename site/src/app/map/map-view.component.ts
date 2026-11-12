@@ -23,7 +23,7 @@ const SAG_MAX = 60;
 /** The width of one month column, in pixels. */
 export const COLUMN_WIDTH = 132;
 
-type CardState = 'plain' | 'selected' | 'before' | 'after' | 'dim' | 'hidden';
+type CardState = 'plain' | 'selected' | 'before' | 'after' | 'dim';
 
 interface Column {
   grade: string;
@@ -40,7 +40,7 @@ interface Line {
  * MapView lays every grade end to end as month columns, September to June,
  * and places each skill in the month its main unit starts teaching it. Lines
  * join the selected or hovered skill to the skills it needs first and leads
- * to. Focusing on a strand hides the other strands' cards.
+ * to.
  */
 @Component({
   selector: 'gg-map-view',
@@ -70,7 +70,6 @@ interface Line {
             <div class="col" [class.first]="col.month === 1 && $index > 0">
               @for (s of col.skills; track s.id) {
                 @let st = cardState(s);
-                @if (st !== 'hidden') {
                 <button
                   type="button"
                   [attr.data-id]="s.id"
@@ -90,7 +89,6 @@ interface Line {
                     <span class="code">{{ s.code }}</span>
                   }
                 </button>
-                }
               }
             </div>
           }
@@ -137,8 +135,6 @@ export class MapViewComponent {
   readonly curriculum = input.required<Curriculum>();
   /** The selected skill's id, or empty. */
   readonly selected = input('');
-  /** A strand id to focus on, or empty for all. */
-  readonly focus = input('');
   readonly showCodes = input(false);
   /** The grade to scroll to when it changes. */
   readonly grade = input('4');
@@ -192,10 +188,9 @@ export class MapViewComponent {
 
   constructor() {
     // Draw the lines once the cards are laid out, and again when the
-    // selection or focus changes.
+    // selection or hovered card changes.
     afterRenderEffect(() => {
       this.selected();
-      this.focus();
       this.hovered();
       this.columns();
       this.showCodes();
@@ -219,8 +214,6 @@ export class MapViewComponent {
     if (s.id === sel) return 'selected';
     if (before.has(s.id)) return 'before';
     if (after.has(s.id)) return 'after';
-    const focus = this.focus();
-    if (focus && s.strand !== focus) return 'hidden';
     if (sel) return 'dim';
     return 'plain';
   }

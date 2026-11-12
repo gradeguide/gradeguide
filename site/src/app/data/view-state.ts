@@ -10,28 +10,25 @@ export interface State {
   grade: string;
   /** The selected skill's code, such as "4.NF.A.1", or empty. */
   skill: string;
-  /** A strand to focus the map on, or empty for all. */
-  focus: string;
   /** The code of the skill the foundations view starts from, or empty. */
   target: string;
 }
 
-export const DEFAULT_STATE: State = { view: 'map', grade: '4', skill: '', focus: '', target: '' };
+export const DEFAULT_STATE: State = { view: 'map', grade: '4', skill: '', target: '' };
 
 /** Reads a state from an address fragment such as "#map/4/4.NF.A.1". */
 export function parseHash(hash: string): State {
-  const [view, grade, skill, focus, target] = hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent);
+  const [view, grade, skill, target] = hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent);
   return {
     view: VIEWS.includes(view as View) ? (view as View) : DEFAULT_STATE.view,
     grade: grade || DEFAULT_STATE.grade,
     skill: skill ?? '',
-    focus: focus ?? '',
     target: target ?? '',
   };
 }
 
 export function formatHash(s: State): string {
-  const parts = [s.view, s.grade, s.skill, s.focus, s.target].map(encodeURIComponent);
+  const parts = [s.view, s.grade, s.skill, s.target].map(encodeURIComponent);
   while (parts.length > 2 && !parts[parts.length - 1]) parts.pop();
   return '#' + parts.join('/');
 }

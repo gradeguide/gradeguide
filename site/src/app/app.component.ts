@@ -40,17 +40,6 @@ export const DATA_URL = 'math.json';
           </div>
         }
         @if (state().view === 'map') {
-          <label class="ctl">Focus
-            <select (change)="viewState.update({ focus: $any($event.target).value })">
-              <option value="" [selected]="!state().focus">Everything</option>
-              @for (st of c.strands; track st.id) {
-                <option [value]="st.id" [selected]="state().focus === st.id">{{ st.name }}</option>
-              }
-            </select>
-          </label>
-          @if (state().focus) {
-            <button type="button" class="clear" (click)="viewState.update({ focus: '' })">Showing only {{ c.strand(state().focus)?.name }} · Show everything</button>
-          }
           <label class="ctl"><input type="checkbox" [checked]="showCodes()" (change)="showCodes.set($any($event.target).checked)" /> Codes</label>
           <span class="legend"><i class="before"></i>Needed first <i class="after"></i>Leads to</span>
         }
@@ -63,7 +52,6 @@ export const DATA_URL = 'math.json';
               <gg-map-view
                 [curriculum]="c"
                 [selected]="selectedId()"
-                [focus]="state().focus"
                 [grade]="state().grade"
                 [showCodes]="showCodes()"
                 (pick)="select($event)"
@@ -112,7 +100,6 @@ export const DATA_URL = 'math.json';
     .bar { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; padding: 10px 16px; }
     .ctl { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
     .ctl select { font: inherit; font-size: 13px; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); }
-    .clear { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--accent); background: none; color: var(--accent); cursor: pointer; }
     .legend { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
     .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-left: 6px; }
     .legend i.before { background: var(--before-bg); border: 1px solid var(--before); }
