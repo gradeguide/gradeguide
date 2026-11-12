@@ -128,8 +128,12 @@ export const DATA_URL = 'math.json';
     @media (max-width: 860px) {
       main.open { grid-template-columns: minmax(0, 1fr); }
       .view { padding: 0 0 0 8px; }
+      .brand span { display: none; }
+      .bar { flex-wrap: nowrap; overflow-x: auto; }
+      .grades { flex-wrap: nowrap; }
+      .legend, .ctl:has(input[type='checkbox']) { display: none; }
       .panel {
-        position: fixed; left: 0; right: 0; bottom: 0; max-height: 70vh; z-index: 10;
+        position: fixed; top: auto; left: 0; right: 0; bottom: 0; max-height: 55vh; z-index: 10;
         background: var(--page); border-left: none; border-top: 1px solid var(--border-strong);
         border-radius: 16px 16px 0 0; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
       }
