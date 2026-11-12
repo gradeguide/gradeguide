@@ -62,7 +62,7 @@ export const DATA_URL = 'math.json';
               <gg-list-view [curriculum]="c" [grade]="state().grade" [selected]="selectedId()" (pick)="select($event)" />
             }
             @case ('path') {
-              <gg-path-view [curriculum]="c" [target]="pathTarget()" [selected]="selectedId()" (pick)="select($event)" (chooseTarget)="choosePathTarget($event)" />
+              <gg-path-view [curriculum]="c" [target]="pathTarget()" [selected]="selectedId()" (pick)="select($event)" (chooseTarget)="choosePathTarget($event)" (back)="backToMap()" />
             }
           }
         </div>
@@ -133,7 +133,7 @@ export class AppComponent {
   protected readonly views: { id: View; label: string }[] = [
     { id: 'map', label: 'Map' },
     { id: 'list', label: 'List' },
-    { id: 'path', label: 'Foundations' },
+    { id: 'path', label: 'Prerequisites' },
   ];
 
   protected readonly data = signal<SiteData | undefined>(undefined);
@@ -150,17 +150,17 @@ export class AppComponent {
     return (code && this.curriculum()?.skills.find((s) => s.code === code)?.id) || '';
   });
 
-  /** The skill the foundations view starts from: the one in the address, or else the selected one. */
+  /** The skill the prerequisites view starts from: the one in the address, or else the selected one. */
   protected readonly pathTarget = computed(() => {
     const c = this.curriculum();
     const code = this.state().target || this.state().skill;
     return code ? c?.skills.find((s) => s.code === code) : undefined;
   });
 
-  /** The panel button that opens the foundations view on the selected skill. */
+  /** The panel button that opens the prerequisites view on the selected skill. */
   protected readonly pathLabel = computed(() => {
     const name = this.curriculum()?.skill(this.selectedId())?.name ?? '';
-    return this.state().view === 'path' ? `Show what ${name} rests on` : 'What does this rest on?';
+    return this.state().view === 'path' ? `Show prerequisite skills for ${name}` : 'Show prerequisite skills';
   });
 
   private readonly map = viewChild(MapViewComponent);
@@ -173,7 +173,7 @@ export class AppComponent {
   }
 
   protected setView(v: View) {
-    // Entering the foundations view starts from the selected skill.
+    // Entering the prerequisites view starts from the selected skill.
     this.viewState.update(v === 'path' ? { view: v, target: this.state().skill } : { view: v, target: '' });
   }
 
@@ -191,6 +191,13 @@ export class AppComponent {
 
   protected showPath() {
     this.viewState.update({ view: 'path', target: this.state().skill });
+  }
+
+  /** Returns to the map, centred on the skill being read. */
+  protected backToMap() {
+    const s = this.curriculum()?.skill(this.selectedId()) ?? this.pathTarget();
+    this.viewState.update({ view: 'map', target: '', skill: s?.code ?? '', ...(s ? { grade: s.grade } : {}) });
+    if (s) setTimeout(() => this.map()?.scrollToSkill(s.id));
   }
 
   protected choosePathTarget(id: string) {

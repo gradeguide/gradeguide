@@ -19,17 +19,17 @@ interface GradeColumn {
 }
 
 /**
- * PathView answers "what does this skill rest on?" It shows a skill and
- * every skill it needs first, back through earlier grades, as columns by
- * grade joined by lines.
+ * PathView shows a skill's prerequisite skills: every skill it needs first,
+ * back through earlier grades, as columns by grade joined by lines.
  */
 @Component({
   selector: 'gg-path-view',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <button type="button" class="back" (click)="back.emit()">← Back to the map</button>
     <div class="pickrow">
       <label>
-        <span>Showing what this skill rests on</span>
+        <span>Showing the prerequisite skills for</span>
         <input #box type="search" list="gg-path-skills" placeholder="Type a skill, such as equivalent fractions" [value]="query()" (change)="choose(box)" />
       </label>
       <datalist id="gg-path-skills">
@@ -40,8 +40,12 @@ interface GradeColumn {
     </div>
     @if (target(); as t) {
       <p class="summary">
-        <strong>{{ t.name }}</strong> rests on {{ count() }} earlier skill{{ count() === 1 ? '' : 's' }}
-        across {{ columns().length - 1 }} earlier grade{{ columns().length === 2 ? '' : 's' }}. Pick any of them to read about it.
+        @if (count()) {
+          <strong>{{ t.name }}</strong> has {{ count() }} prerequisite skill{{ count() === 1 ? '' : 's' }}, going back
+          {{ earlierGrades() }} grade{{ earlierGrades() === 1 ? '' : 's' }}. Pick any of them to read about it.
+        } @else {
+          <strong>{{ t.name }}</strong> has no prerequisite skills in the data.
+        }
       </p>
       <div class="scroller">
         <div class="cols" #cols>
@@ -70,11 +74,12 @@ interface GradeColumn {
         </div>
       </div>
     } @else {
-      <p class="summary">Pick a skill on the map or type one above to see everything it builds on.</p>
+      <p class="summary">Pick a skill on the map, or type one above, to see its prerequisite skills.</p>
     }
   `,
   styles: `
     :host { display: block; }
+    .back { display: inline-block; font: inherit; font-size: 14px; padding: 6px 12px; margin: 4px 0 14px; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface); color: var(--text); cursor: pointer; }
     .pickrow label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); max-width: 520px; }
     .pickrow input { font: inherit; font-size: 15px; padding: 10px 12px; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface); color: var(--text); }
     .summary { font-size: 15px; line-height: 1.5; max-width: 720px; }
@@ -84,21 +89,23 @@ interface GradeColumn {
     .gname { font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
     .lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
     .lines path { fill: none; stroke: var(--border-strong); stroke-width: 1.2; }
-    button { position: relative; display: block; width: 100%; text-align: left; font: inherit; font-size: 13px; line-height: 1.3; padding: 7px 9px; margin-bottom: 10px; cursor: pointer; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: 6px; }
-    button:hover { border-color: var(--border-strong); border-left-color: var(--c); }
-    button.target { border-width: 2px; border-left-width: 4px; border-color: var(--text); border-left-color: var(--c); font-weight: 600; }
-    button.on { background: var(--accent); color: var(--on-accent); }
+    .col button { position: relative; display: block; width: 100%; text-align: left; font: inherit; font-size: 13px; line-height: 1.3; padding: 7px 9px; margin-bottom: 10px; cursor: pointer; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: 6px; }
+    .col button:hover { border-color: var(--border-strong); border-left-color: var(--c); }
+    .col button.target { border-width: 2px; border-left-width: 4px; border-color: var(--text); border-left-color: var(--c); font-weight: 600; }
+    .col button.on { background: var(--accent); color: var(--on-accent); }
   `,
 })
 export class PathViewComponent {
   readonly curriculum = input.required<Curriculum>();
-  /** The skill whose foundations are shown. */
+  /** The skill whose prerequisite skills are shown. */
   readonly target = input<SkillData | undefined>(undefined);
   /** The skill open in the details panel. */
   readonly selected = input('');
 
   readonly pick = output<string>();
   readonly chooseTarget = output<string>();
+  /** The reader asked to go back to the map. */
+  readonly back = output<void>();
 
   protected readonly lines = signal<string[]>([]);
   private readonly cols = viewChild<ElementRef<HTMLElement>>('cols');
@@ -111,6 +118,14 @@ export class PathViewComponent {
   });
 
   protected readonly count = computed(() => this.ids().size - 1);
+
+  /** How many grades before the skill's own the prerequisites reach. */
+  protected readonly earlierGrades = computed(() => {
+    const t = this.target();
+    const grades = this.curriculum().grades;
+    const first = this.columns()[0]?.grade;
+    return t && first ? grades.indexOf(t.grade) - grades.indexOf(first) : 0;
+  });
 
   protected readonly columns = computed<GradeColumn[]>(() => {
     const c = this.curriculum();

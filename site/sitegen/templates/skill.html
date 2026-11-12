@@ -9,7 +9,7 @@
   <dt>Try at home</dt><dd>{{.TryAtHome}}</dd>
 </dl>
 {{if .Draft}}<p class="note">Draft written with AI help. A teacher hasn't checked it yet.</p>{{end}}
-<p class="actions"><a class="button" href="{{$.MapLink}}">See it on the map</a> <a class="button" href="{{$.Foundations}}">What does this rest on?</a></p>
+<p class="actions"><a class="button" href="{{$.MapLink}}">See it on the map</a> <a class="button" href="{{$.Foundations}}">Show prerequisite skills</a></p>
 
 <div class="cols">
   <section><h2 class="before">Needed first</h2>{{if $.Before}}<ul class="links">{{template "links" $.Before}}</ul>{{else}}<p class="none">Nothing listed in the data.</p>{{end}}</section>
