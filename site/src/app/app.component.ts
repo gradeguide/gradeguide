@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal, viewChild } from '@angular/core';
 
 import { Curriculum, SiteData } from './data/curriculum';
 import { View, ViewState } from './data/view-state';
@@ -31,20 +31,25 @@ export const DATA_URL = 'math.json';
       <p class="error">Couldn't load the curriculum. {{ error() }}</p>
     } @else if (curriculum(); as c) {
       <div class="bar">
-        <div class="grades" role="group" aria-label="Grade">
-          @for (g of c.grades; track g) {
-            <button type="button" [class.on]="state().grade === g" (click)="setGrade(g)">{{ g }}</button>
-          }
-        </div>
+        @if (state().view !== 'path') {
+          <div class="grades" role="group" aria-label="Grade">
+            @for (g of c.grades; track g) {
+              <button type="button" [class.on]="state().grade === g" (click)="setGrade(g)">{{ g }}</button>
+            }
+          </div>
+        }
         @if (state().view === 'map') {
           <label class="ctl">Focus
-            <select [value]="state().focus" (change)="viewState.update({ focus: $any($event.target).value })">
-              <option value="">Everything</option>
+            <select (change)="viewState.update({ focus: $any($event.target).value })">
+              <option value="" [selected]="!state().focus">Everything</option>
               @for (st of c.strands; track st.id) {
-                <option [value]="st.id">{{ st.name }}</option>
+                <option [value]="st.id" [selected]="state().focus === st.id">{{ st.name }}</option>
               }
             </select>
           </label>
+          @if (state().focus) {
+            <button type="button" class="clear" (click)="viewState.update({ focus: '' })">Showing only {{ c.strand(state().focus)?.name }} · Show everything</button>
+          }
           <label class="ctl"><input type="checkbox" [checked]="showCodes()" (change)="showCodes.set($any($event.target).checked)" /> Codes</label>
           <span class="legend"><i class="before"></i>Needed first <i class="after"></i>Leads to</span>
         }
@@ -75,8 +80,8 @@ export const DATA_URL = 'math.json';
         @if (selectedId()) {
           <aside class="panel" aria-label="Skill details">
             <gg-skill-panel [curriculum]="c" [skillId]="selectedId()" (pick)="select($event, true)" (close)="select('')" />
-            @if (state().view !== 'path') {
-              <button type="button" class="pathlink" (click)="showPath()">What does this rest on?</button>
+            @if (state().view !== 'path' || pathTarget()?.id !== selectedId()) {
+              <button type="button" class="pathlink" (click)="showPath()">{{ pathLabel() }}</button>
             }
           </aside>
         }
@@ -113,6 +118,7 @@ export const DATA_URL = 'math.json';
     .bar { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; padding: 10px 16px; }
     .ctl { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
     .ctl select { font: inherit; font-size: 13px; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); }
+    .clear { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--accent); background: none; color: var(--accent); cursor: pointer; }
     .legend { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
     .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-left: 6px; }
     .legend i.before { background: var(--before-bg); border: 1px solid var(--before); }
@@ -163,8 +169,18 @@ export class AppComponent {
     return (code && this.curriculum()?.skills.find((s) => s.code === code)?.id) || '';
   });
 
-  /** The skill the Foundations view starts from. */
-  protected readonly pathTarget = signal<ReturnType<Curriculum['skill']>>(undefined);
+  /** The skill the foundations view starts from: the one in the address, or else the selected one. */
+  protected readonly pathTarget = computed(() => {
+    const c = this.curriculum();
+    const code = this.state().target || this.state().skill;
+    return code ? c?.skills.find((s) => s.code === code) : undefined;
+  });
+
+  /** The panel button that opens the foundations view on the selected skill. */
+  protected readonly pathLabel = computed(() => {
+    const name = this.curriculum()?.skill(this.selectedId())?.name ?? '';
+    return this.state().view === 'path' ? `Show what ${name} rests on` : 'What does this rest on?';
+  });
 
   private readonly map = viewChild(MapViewComponent);
 
@@ -173,17 +189,11 @@ export class AppComponent {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status} ${r.statusText}`))))
       .then((d: SiteData) => this.data.set(d))
       .catch((e: Error) => this.error.set(e.message));
-    // Opening the Foundations view straight from an address starts at the selected skill.
-    effect(() => {
-      if (this.state().view === 'path' && !this.pathTarget() && this.selectedId()) {
-        this.pathTarget.set(this.curriculum()?.skill(this.selectedId()));
-      }
-    });
   }
 
   protected setView(v: View) {
-    if (v === 'path' && this.selectedId()) this.pathTarget.set(this.curriculum()?.skill(this.selectedId()));
-    this.viewState.update({ view: v });
+    // Entering the foundations view starts from the selected skill.
+    this.viewState.update(v === 'path' ? { view: v, target: this.state().skill } : { view: v, target: '' });
   }
 
   protected setGrade(g: string) {
@@ -199,12 +209,11 @@ export class AppComponent {
   }
 
   protected showPath() {
-    this.pathTarget.set(this.curriculum()?.skill(this.selectedId()));
-    this.viewState.update({ view: 'path' });
+    this.viewState.update({ view: 'path', target: this.state().skill });
   }
 
   protected choosePathTarget(id: string) {
-    this.pathTarget.set(this.curriculum()?.skill(id));
-    this.select(id);
+    const code = this.curriculum()?.skill(id)?.code ?? '';
+    this.viewState.update({ view: 'path', target: code, skill: code });
   }
 }

@@ -52,13 +52,14 @@ describe('plainStatement', () => {
 
 describe('address', () => {
   it('round-trips a state', () => {
-    const s = { view: 'path' as const, grade: 'K', skill: 'K.CC.A.1', focus: '' };
+    const s = { view: 'path' as const, grade: 'K', skill: 'K.CC.A.1', focus: '', target: 'K.CC.A.2' };
     expect(parseHash(formatHash(s))).toEqual(s);
-    expect(formatHash(s)).toBe('#path/K/K.CC.A.1');
+    expect(formatHash(s)).toBe('#path/K/K.CC.A.1//K.CC.A.2');
+    expect(formatHash({ ...s, target: '' })).toBe('#path/K/K.CC.A.1');
   });
 
   it('falls back to the map for grade 4', () => {
-    expect(parseHash('')).toEqual({ view: 'map', grade: '4', skill: '', focus: '' });
+    expect(parseHash('')).toEqual({ view: 'map', grade: '4', skill: '', focus: '', target: '' });
     expect(parseHash('#nonsense').view).toBe('map');
   });
 });

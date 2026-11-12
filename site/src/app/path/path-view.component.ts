@@ -29,8 +29,8 @@ interface GradeColumn {
   template: `
     <div class="pickrow">
       <label>
-        <span>Show what this skill rests on</span>
-        <input type="search" list="gg-path-skills" placeholder="Type a skill, such as equivalent fractions" [value]="query()" (change)="choose($any($event.target).value)" />
+        <span>Showing what this skill rests on</span>
+        <input #box type="search" list="gg-path-skills" placeholder="Type a skill, such as equivalent fractions" [value]="query()" (change)="choose(box)" />
       </label>
       <datalist id="gg-path-skills">
         @for (s of curriculum().skills; track s.id) {
@@ -131,9 +131,12 @@ export class PathViewComponent {
     return `${s.name} (${s.code})`;
   }
 
-  protected choose(value: string) {
-    const s = this.curriculum().skills.find((x) => this.label(x) === value || x.code.toLowerCase() === value.trim().toLowerCase());
+  protected choose(box: HTMLInputElement) {
+    const value = box.value.trim().toLowerCase();
+    const s = this.curriculum().skills.find((x) => this.label(x).toLowerCase() === value || x.code.toLowerCase() === value);
     if (s) this.chooseTarget.emit(s.id);
+    // Show the current skill again rather than a half-typed or cleared box.
+    else box.value = this.query();
   }
 
   private measure(): string[] {
