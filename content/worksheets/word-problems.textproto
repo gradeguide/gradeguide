@@ -136,8 +136,8 @@ fragments {
         nodes { work_space { field { label: "A baker has 156 muffins. She puts 6 muffins in each box. How" answer { text: "26" work: "156 ÷ 6" also: "26 boxes" } } } }
       }
       items {
-        nodes { text: "There are 245 students going on a trip. Each bus holds 35 students. How many buses are needed?" }
-        nodes { work_space { field { label: "There are 245 students going on a trip. Each bus holds 35 st" answer { text: "7" work: "245 ÷ 35" also: "7 buses" } } } }
+        nodes { text: "There are 152 students going on a trip. Each van holds 8 students. How many vans are needed?" }
+        nodes { work_space { field { label: "There are 152 students going on a trip. Each van holds 8 stu" answer { text: "19" work: "152 ÷ 8" also: "19 vans" } } } }
       }
       items {
         nodes {

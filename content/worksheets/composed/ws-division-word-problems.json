@@ -140,26 +140,26 @@
        "label": "5",
        "nodes": [
         {
-         "text": "There are 245 students going on a trip. Each bus holds 35 students. How many buses are needed?"
+         "text": "There are 152 students going on a trip. Each van holds 8 students. How many vans are needed?"
         },
         {
          "workSpace": {
           "rows": 3,
           "field": {
            "id": "q5",
-           "label": "There are 245 students going on a trip. Each bus holds 35 st",
+           "label": "There are 152 students going on a trip. Each van holds 8 stu",
            "answer": {
-            "text": "7",
+            "text": "19",
             "also": [
-             "7 buses"
+             "19 vans"
             ],
-            "work": "245 ÷ 35"
+            "work": "152 ÷ 8"
            }
           }
          }
         }
        ],
-       "key": "7"
+       "key": "19"
       }
      ],
      "columns": 1,
@@ -355,13 +355,13 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "There are 245 students going on a trip. Each bus holds 35 st",
+    "label": "There are 152 students going on a trip. Each van holds 8 stu",
     "answer": {
-     "text": "7",
+     "text": "19",
      "also": [
-      "7 buses"
+      "19 vans"
      ],
-     "work": "245 ÷ 35"
+     "work": "152 ÷ 8"
     }
    }
   },
