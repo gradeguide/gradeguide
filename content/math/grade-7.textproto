@@ -1,0 +1,515 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 7 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "7.RP.A.1"
+  standard_id: "5407f284-4756-58fb-8a7f-67eb13f40eee"
+  name: "Unit rates with fractions"
+  explanation: "Finding a rate per one unit when the amounts are fractions."
+  example: "Walking 1/2 mile in 1/4 hour is (1/2) ÷ (1/4) = 2 miles per hour."
+  try_at_home: "Time how far you walk in a few minutes and work out miles per hour."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.2"
+  standard_id: "6086f1c2-b335-57fc-b575-6e2e4210c727"
+  name: "Proportional relationships"
+  explanation: "Recognizing when two quantities always keep the same ratio, and showing it"
+    " in tables, graphs and equations."
+  example: "At $3 each, 2 items cost $6, 4 cost $12 and 5 cost $15. The cost per item "
+    "is always 3."
+  try_at_home: "Compare two shops' prices and ask whether the price per item stays the "
+    "same."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.2.a"
+  standard_id: "3e17c849-3f86-59b9-876c-98b5beda6735"
+  name: "Is it proportional?"
+  explanation: "Testing whether two quantities are proportional by checking that the "
+    "ratios match, or that the graph is a straight line through (0, 0)."
+  example: "2 → 6, 4 → 12, 5 → 15 is proportional. 2 → 5, 4 → 9 is not, because 5/2 is"
+    " not 9/4."
+  try_at_home: "Look at a recipe table and check whether each row has the same ratio."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.2.b"
+  standard_id: "cf6eacf0-856c-5b47-8ede-af6573a5ce4e"
+  name: "Finding the constant of proportionality"
+  explanation: "Finding the number that links the two quantities, which is the unit rate, "
+    "from a table, graph, equation or description."
+  example: "4 apples cost $6, so each costs 6 ÷ 4 = $1.50."
+  try_at_home: "Pick any item priced by weight and work out its price per pound."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.2.c"
+  standard_id: "82fdfb13-e8ad-5a79-b745-978b9102003d"
+  name: "Proportions as equations"
+  explanation: "Writing a proportional relationship as an equation."
+  example: "Apples are $1.50 each, so t = 1.5n. For n = 6, t = $9."
+  try_at_home: "Write a rule for the cost of any number of your favorite snack."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.2.d"
+  standard_id: "ee0bf2ee-fcf2-58cc-b151-06eefc3a7a74"
+  name: "Reading points on a proportional graph"
+  explanation: "Explaining what a point on the graph means in the situation, including (0,"
+    " 0) and (1, r) where r is the unit rate."
+  example: "On a graph of apples against cost, (4, 6) means 4 apples cost $6, and (1, "
+    "1.5) means 1 apple costs $1.50."
+  try_at_home: "Draw a graph of cost against items and point to what (0, 0) means."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.RP.A.3"
+  standard_id: "6e3a7822-649d-5d0f-8c25-908832ee9f97"
+  name: "Multi-step ratio and percent problems"
+  explanation: "Using proportions to solve problems with several steps, such as discounts,"
+    " tax, tips and percent change."
+  example: "A $40 shirt is 25% off, then 8% tax: 40 × 0.75 = 30, and 30 × 1.08 = "
+    "$32.40."
+  try_at_home: "Work out the final price of something on sale together, including tax."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.1"
+  standard_id: "fbff39a6-0075-5afa-b997-bb365b23902d"
+  name: "Adding and subtracting negatives"
+  explanation: "Adding and subtracting positive and negative numbers, including fractions "
+    "and decimals, using a number line."
+  example: "−3 + 5 = 2. Start at −3 and move 5 to the right."
+  try_at_home: "Use temperatures below zero: it is −3 degrees and warms up by 5. What is "
+    "it now?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.1.a"
+  standard_id: "ad970c34-9d42-5c6c-9013-1ebe486507b5"
+  name: "Opposites cancel to zero"
+  explanation: "Describing situations where two opposite amounts combine to make 0."
+  example: "Gaining $4 and then spending $4 leaves 0, so 4 + (−4) = 0."
+  try_at_home: "Walk 5 steps forward and 5 steps back and talk about where you end up."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.1.b"
+  standard_id: "a1d441d7-d499-5654-a7bd-8ef360893cde"
+  name: "Adding as moving on a number line"
+  explanation: "Seeing p + q as starting at p and moving |q| steps, right if q is positive"
+    " and left if q is negative."
+  example: "2 + (−5): start at 2, move 5 left, and land on −3."
+  try_at_home: "Draw a number line on the floor with tape and walk the sums."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.1.c"
+  standard_id: "ba4cefdb-67e9-536a-8187-e9022ea9b28e"
+  name: "Subtracting as adding the opposite"
+  explanation: "Understanding that subtracting a number is the same as adding its "
+    "opposite, and that the distance between two numbers is the absolute value "
+    "of their difference."
+  example: "3 − 5 = 3 + (−5) = −2. The distance between 3 and −2 is |3 − (−2)| = 5."
+  try_at_home: "Find how far apart two temperatures are, such as 8 above and 4 below zero."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.1.d"
+  standard_id: "cf5df918-2d02-5743-9c38-1476d52f11f6"
+  name: "Smart strategies for adding"
+  explanation: "Using properties of operations, such as regrouping and reordering, to add "
+    "and subtract rational numbers more easily."
+  example: "−7 + 12 + 7 = (−7 + 7) + 12 = 12."
+  try_at_home: "Challenge each other to add a few numbers in the easiest order."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.2"
+  standard_id: "b79a0972-85b1-5f54-99e4-55f5aae2ebc4"
+  name: "Multiplying and dividing negatives"
+  explanation: "Extending multiplication and division to positive and negative numbers, "
+    "including fractions and decimals."
+  example: "−4 × 3 = −12 and −4 × (−3) = 12."
+  try_at_home: "Say the rule out loud: same signs give positive, different signs give "
+    "negative. Test it with examples."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.2.a"
+  standard_id: "60415f42-a535-5264-8784-75d2430d80b6"
+  name: "Why negative times negative is positive"
+  explanation: "Understanding why the rules for multiplying signed numbers must be what "
+    "they are, and describing products in real situations."
+  example: "Taking away 4 debts of $3 leaves you $12 better off, so (−4) × (−3) = 12."
+  try_at_home: "Describe a story for 3 × (−2), such as spending $2 three times."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.2.b"
+  standard_id: "4e80caa2-7625-5b77-a2f1-49ae31036653"
+  name: "Dividing integers"
+  explanation: "Knowing that any integer can be divided by any integer except zero, and "
+    "that signs behave the same way in fractions."
+  example: "−12 ÷ 4 = −3, and −(6/7) = (−6)/7 = 6/(−7)."
+  try_at_home: "Ask: \"A balance drops $12 over 4 days. What is the change per day?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.2.c"
+  standard_id: "56bdbf75-4d72-5b24-bc08-9434a6bec004"
+  name: "Smart strategies for multiplying"
+  explanation: "Using properties of operations to multiply and divide rational numbers "
+    "more easily."
+  example: "(−25) × 7 × (−4) = (−25 × −4) × 7 = 100 × 7 = 700."
+  try_at_home: "Look for pairs that multiply to 10 or 100 when multiplying several "
+    "numbers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.2.d"
+  standard_id: "0c938188-b8f9-58ad-bde1-979e5498d838"
+  name: "Fractions as decimals"
+  explanation: "Turning a fraction into a decimal by long division, and knowing the "
+    "decimal either stops or repeats forever."
+  example: "3/8 = 0.375, which stops. 1/3 = 0.333…, which repeats."
+  try_at_home: "Use a calculator to turn 1/7 into a decimal and look for the repeating "
+    "pattern."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.NS.A.3"
+  standard_id: "5c31dc9d-3775-5cfe-8ebe-05376dac32dc"
+  name: "Real problems with signed numbers"
+  explanation: "Solving real problems that use all four operations with positive and "
+    "negative numbers."
+  example: "It is −6° at night and rises 2.5° an hour for 4 hours: −6 + 4 × 2.5 = 4°."
+  try_at_home: "Track a weekly allowance with spending (negative) and earning (positive)."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.A.1"
+  standard_id: "ef3f3549-28fa-5035-a268-86659cf7860f"
+  name: "Rewriting expressions"
+  explanation: "Using the rules of arithmetic to rewrite an expression like 3(2x + 5) in a"
+    " different but equal form, by multiplying it out or pulling out a common "
+    "factor."
+  example: "3(2x + 5) = 6x + 15, and 4x + 8 = 4(x + 2)."
+  try_at_home: "Ask two ways to find the cost of 3 tickets at x dollars plus a $5 fee "
+    "each: 3(x + 5) or 3x + 15."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.A.2"
+  standard_id: "0a685ed9-128b-5f60-84ed-f4f0738ae2b6"
+  name: "Different forms tell different stories"
+  explanation: "Seeing that the same expression written two ways can show different things"
+    " about a situation."
+  example: "A 5% price increase is p + 0.05p, which equals 1.05p. A $40 item becomes "
+    "1.05 × 40 = $42."
+  try_at_home: "At a restaurant, find the total with a 20% tip by multiplying the bill by "
+    "1.2."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.B.3"
+  standard_id: "e35e05db-06b7-5fe9-a0a1-daea5736f190"
+  name: "Multi-step problems with all number types"
+  explanation: "Solving problems that mix whole numbers, fractions, decimals and "
+    "negatives, and checking that the answer is reasonable by estimating."
+  example: "A $25 hourly wage with a 10% raise: 25 × 1.10 = $27.50 per hour."
+  try_at_home: "Before using a calculator on a bill or a sale price, ask for an estimate "
+    "and compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.B.4"
+  standard_id: "d6084d12-c2f3-595c-b27b-27b9b43df0a1"
+  name: "Writing equations and inequalities"
+  explanation: "Choosing a letter for an unknown amount and writing an equation or "
+    "inequality that matches a story."
+  example: "You have $20 and save $5 a week. After w weeks you have 20 + 5w dollars."
+  try_at_home: "Make up a saving goal and write what the money will be after any number of"
+    " weeks."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.B.4.a"
+  standard_id: "374ff999-c31e-5369-9dbe-1887326f03d8"
+  name: "Solving equations from stories"
+  explanation: "Solving two-step equations such as px + q = r that come from word "
+    "problems, and comparing with solving it by plain arithmetic."
+  example: "A rectangle has perimeter 54 cm and length 6 cm. 2(6 + w) = 54, so 6 + w ="
+    " 27 and w = 21 cm."
+  try_at_home: "Ask: \"I have $50 and spend $6 a day. When do I have $14 left?\" and write "
+    "the equation."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.EE.B.4.b"
+  standard_id: "67d0c77a-4e09-5cc4-bb0d-033e952ab1ed"
+  name: "Solving inequalities from stories"
+  explanation: "Solving problems with \"at least\" or \"at most\" by writing an inequality, "
+    "finding all the answers that work, and graphing them on a number line."
+  example: "Pay is $50 plus $3 per sale, and you want at least $100. 50 + 3s ≥ 100 "
+    "gives s ≥ 16.67, so at least 17 sales."
+  try_at_home: "Set a goal such as \"at least $30\" and work out how many $4 chores it "
+    "takes."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.A.1"
+  standard_id: "1301e20a-244f-5f26-9b90-e53d37c85c72"
+  name: "Samples and populations"
+  explanation: "Understanding that a sample can tell you about a larger group, but only if"
+    " it is fair and chosen at random."
+  example: "Asking only the soccer team about favorite sports will not show what the "
+    "whole school thinks."
+  try_at_home: "Ask how a survey chose its people before trusting its headline."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.A.2"
+  standard_id: "f29ac1cd-eb1d-5cc4-9889-d118f7880233"
+  name: "Learning from random samples"
+  explanation: "Using a random sample to estimate something about a whole group, and "
+    "seeing that different samples give slightly different answers."
+  example: "Picking 10 random words from a book gives mean lengths such as 4.2, 4.8 "
+    "and 5.1 letters. The true mean is near these."
+  try_at_home: "Pick random words from a page several times and compare the average word "
+    "length."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.B.3"
+  standard_id: "9f4f2288-f6cb-5708-a703-fd4aec422541"
+  name: "Comparing two sets of data"
+  explanation: "Judging how much two data sets overlap, by comparing the gap between their"
+    " centers with how spread out each one is."
+  example: "Two teams have mean heights 150 cm and 160 cm. If each varies by about 5 "
+    "cm, the 10 cm gap is twice the spread."
+  try_at_home: "Compare the heights of two groups of family or friends and decide whether "
+    "they differ clearly."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.B.4"
+  standard_id: "650f7457-abe1-503d-803e-1d92079bf5b2"
+  name: "Comparing two populations"
+  explanation: "Using averages and spread from random samples to compare two groups."
+  example: "Sample words from a grade 7 and a grade 4 science chapter. If the means "
+    "are 5.2 and 4.1 letters, grade 7 words are longer."
+  try_at_home: "Compare typical sentence length in two books by sampling a few pages from "
+    "each."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.5"
+  standard_id: "7b2a9707-5c18-5091-bc20-b0039e18e26d"
+  name: "Probability from 0 to 1"
+  explanation: "Understanding that probability is a number from 0 to 1 telling how likely "
+    "something is, where 0 is impossible and 1 is certain."
+  example: "A coin landing heads has probability 1/2. Rolling a 6 on a die is 1/6, "
+    "which is unlikely."
+  try_at_home: "Sort events such as \"it snows in July\" or \"the sun rises\" on a line from 0"
+    " to 1."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.6"
+  standard_id: "8b2a7480-f623-5b09-a48d-2a8b5b378240"
+  name: "Probability from many trials"
+  explanation: "Estimating a probability by repeating an experiment many times, and "
+    "predicting about how often an outcome will show up."
+  example: "Rolling a die 600 times, a 3 or 6 should come up about 200 times, but "
+    "probably not exactly 200."
+  try_at_home: "Flip a coin 50 times and see how close the heads count is to 25."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.7"
+  standard_id: "65d16892-7b6f-5c26-ae94-706bb53493e3"
+  name: "Probability models"
+  explanation: "Building a model of the possible outcomes, using it to find probabilities,"
+    " and checking it against real results."
+  example: "A fair spinner with 4 equal parts gives each 1/4. If red comes up 18 times"
+    " in 40 spins, the spinner may not be fair."
+  try_at_home: "Test a spinner or die by repeating it and comparing to what you expect."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.7.a"
+  standard_id: "a8ada090-c86a-5050-9e2f-858e1e53e4c2"
+  name: "Equally likely outcomes"
+  explanation: "Finding probabilities when every outcome is equally likely."
+  example: "A class has 20 students, 12 of them girls. The chance of picking Jane is "
+    "1/20, and of picking a girl is 12/20 = 3/5."
+  try_at_home: "Put names in a bowl and work out the chance a certain name is drawn."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.7.b"
+  standard_id: "923c0d07-77d4-5b5d-9fd3-00ec0854db43"
+  name: "Probabilities from observed data"
+  explanation: "Estimating probabilities for events that are not equally likely by "
+    "collecting results."
+  example: "Tossing a paper cup 50 times lands open-end down 30 times, so the estimate"
+    " is 30/50 = 3/5."
+  try_at_home: "Toss a paper cup or a bottle cap 30 times and record how it lands."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.8"
+  standard_id: "7b10146b-85e0-5348-bf98-b16d90cf7da4"
+  name: "Compound events"
+  explanation: "Finding the probability of two or more events together, using lists, "
+    "tables, tree diagrams or simulation."
+  example: "Flip two coins: HH, HT, TH, TT. The chance of two heads is 1/4."
+  try_at_home: "List every outcome of flipping a coin and rolling a die."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.8.a"
+  standard_id: "f9d1890b-e760-5b31-92be-6aea8ea5c016"
+  name: "Probability of a compound event"
+  explanation: "Understanding that the probability of a compound event is the fraction of "
+    "all possible outcomes that match it."
+  example: "Rolling two dice, a total of 12 matches 1 of 36 outcomes, so the "
+    "probability is 1/36."
+  try_at_home: "Count how many two-dice rolls give a total of 7, out of 36."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.8.b"
+  standard_id: "9229b492-ed22-5985-9d16-f00e542581a1"
+  name: "Listing all outcomes"
+  explanation: "Showing all the outcomes with an organized list, table or tree diagram, "
+    "and finding the ones that match an event."
+  example: "2 sandwiches and 3 drinks give 6 lunch combinations. \"Double sixes\" is the"
+    " single outcome (6, 6)."
+  try_at_home: "Draw a tree of all outfits from 2 shirts and 3 pairs of pants."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.SP.C.8.c"
+  standard_id: "0376b604-e8c0-574d-a592-05e1c8916053"
+  name: "Simulating chance events"
+  explanation: "Using random digits or dice to imitate a chance situation and estimate its"
+    " probability."
+  example: "A prize is in 1 of 5 boxes. Let digits 0 and 1 mean a prize, and count how"
+    " many boxes you open until one appears."
+  try_at_home: "Roll a die over and over to imitate a game, and record the results."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.A.1"
+  standard_id: "0b24db92-59bb-5187-9b76-1d5963ea3b6a"
+  name: "Scale drawings"
+  explanation: "Using a scale on a map or plan to find real lengths and areas, and "
+    "redrawing it at a different scale."
+  example: "Scale 1 cm : 5 m. A wall drawn 4 cm long is 20 m. Each 1 cm² of area "
+    "stands for 25 m²."
+  try_at_home: "Measure a room, then draw a plan with a scale such as 1 cm for each 50 cm."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.A.2"
+  standard_id: "13602b07-ab55-571e-8540-d1049ab0a9ed"
+  name: "Drawing triangles from measurements"
+  explanation: "Drawing shapes from given measures, and seeing when the measures give "
+    "exactly one triangle, many triangles or none."
+  example: "Sides 3, 4 and 5 make one triangle. Sides 2, 3 and 6 make none, because 2 "
+    "+ 3 is less than 6."
+  try_at_home: "Cut straws of different lengths and try to make triangles from them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.A.3"
+  standard_id: "45635cb5-0817-5c6a-bf87-8959c4474229"
+  name: "Slicing solid shapes"
+  explanation: "Describing the flat shape you get when you slice through a solid shape, "
+    "such as a box or a pyramid."
+  example: "A straight slice across a cube, parallel to one face, gives a square."
+  try_at_home: "Slice a block of cheese or a sponge in different directions and look at "
+    "the cut faces."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.B.4"
+  standard_id: "8925c85f-8668-5e82-bbd7-df35f6459542"
+  name: "Area and circumference of circles"
+  explanation: "Knowing the formulas for the distance around a circle (C = 2πr) and the "
+    "space inside it (A = πr²), and using them."
+  example: "A circle with radius 5 has C = 2 × π × 5 ≈ 31.4 and A = π × 5² ≈ 78.5."
+  try_at_home: "Measure a plate's width and use it to estimate the distance around it, "
+    "then check with string."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.B.5"
+  standard_id: "1d0511f7-17b7-5468-85e9-5e282bc6f4d9"
+  name: "Angle facts and unknown angles"
+  explanation: "Using facts about angles that add up to 90°, add up to 180°, or sit "
+    "opposite each other, to write an equation and find a missing angle."
+  example: "Angles on a straight line add to 180°. If one is 65°, the other is 180 − "
+    "65 = 115°."
+  try_at_home: "Open a door or a laptop to different angles and guess the angle left over "
+    "on a straight line."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "7.G.B.6"
+  standard_id: "04ae82c5-8a43-52b8-b2f7-9353d5b82bdc"
+  name: "Area, volume and surface area"
+  explanation: "Finding the area, volume or surface area of flat and solid shapes, "
+    "including shapes made of several simpler pieces."
+  example: "A box 4 × 3 × 2 has volume 24 and surface area 2(12 + 8 + 6) = 52."
+  try_at_home: "Work out how much wrapping paper a cereal box needs."
+  review { status: STATUS_DRAFT }
+}

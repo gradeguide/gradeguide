@@ -1,0 +1,564 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 6 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "6.RP.A.1"
+  standard_id: "3a650f7a-3b10-55d0-9d07-c2bdf8e08175"
+  name: "What a ratio is"
+  explanation: "Understanding a ratio as a comparison of two amounts, and describing it in"
+    " words."
+  example: "A recipe uses 2 cups of flour for every 3 cups of milk. The ratio is 2:3."
+  try_at_home: "Count the boys to girls, or red cars to blue cars, in a parking lot and "
+    "say the ratio."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.2"
+  standard_id: "c3126032-2984-5b67-9ed5-2f2f0821e99f"
+  name: "Unit rates"
+  explanation: "Understanding a unit rate as the amount for one of something, found by "
+    "dividing, and using words such as \"per\"."
+  example: "6 apples for $3 is $0.50 per apple, or 2 apples per dollar."
+  try_at_home: "Compare the price per ounce of two sizes of the same food."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.3"
+  standard_id: "dc7b9495-8837-5eae-a0b0-04be0fab3079"
+  name: "Solving ratio and rate problems"
+  explanation: "Using tables, bar drawings, double number lines or equations to solve "
+    "problems with ratios and rates."
+  example: "If the ratio is 2:3, then 4:6 and 6:9 are the same ratio."
+  try_at_home: "Double and triple a recipe and check that each ingredient scales the same "
+    "way."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.3.a"
+  standard_id: "5ecc2dbf-1ee8-58e6-a883-d0d6a64bb48c"
+  name: "Tables of equivalent ratios"
+  explanation: "Making a table of equal ratios, finding missing values, plotting the pairs"
+    " on a grid and comparing ratios."
+  example: "For 2:5, the table has (2, 5), (4, 10) and (6, 15)."
+  try_at_home: "Make a table for how many wheels there are for 1, 2, 3 and 4 cars."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.3.b"
+  standard_id: "5efeac94-5e0b-52cd-a86d-2332b551b922"
+  name: "Unit price and speed"
+  explanation: "Solving problems about unit pricing and constant speed with unit rates."
+  example: "4 lawns in 7 hours. In 35 hours, that is 35 ÷ 7 = 5 times as long, so 4 × "
+    "5 = 20 lawns."
+  try_at_home: "At the store, find which of two packages costs less per item."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.3.c"
+  standard_id: "a1991d72-45f4-54f9-affc-b44e6a7538d8"
+  name: "Percent of a quantity"
+  explanation: "Understanding percent as a rate per 100, finding a percent of a number, "
+    "and finding the whole when given a part and a percent."
+  example: "30% of 60 is 30/100 × 60 = 18. If 15 is 25% of a number, the number is 60."
+  try_at_home: "Work out a 20% tip on a bill of $40, which is $8."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.RP.A.3.d"
+  standard_id: "f3d92832-7f9c-5bb1-b8c9-769cf06ece82"
+  name: "Converting units with ratios"
+  explanation: "Using ratios to change from one unit to another, and to work with units "
+    "that are multiplied or divided."
+  example: "4 feet = 4 × 12 = 48 inches. 60 miles per hour is 1 mile per minute."
+  try_at_home: "Convert the length of a room from feet to inches."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.A.1"
+  standard_id: "7453eac8-c6af-5146-a3ad-29f8ab0c9c6b"
+  name: "Dividing fractions"
+  explanation: "Dividing one fraction by another, and using pictures and the link with "
+    "multiplication to explain the answer."
+  example: "3/4 ÷ 1/8 = 6, because 3/4 is 6/8, and there are six 1/8 pieces in it."
+  try_at_home: "Ask how many 1/4-cup scoops fit in a 3/4-cup measure, and draw it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.B.2"
+  standard_id: "ad797b48-b738-57dd-a199-03f57fa5160e"
+  name: "Long division"
+  explanation: "Dividing multi-digit numbers quickly and correctly with the standard long "
+    "division method."
+  example: "1,248 ÷ 12 = 104, because 12 × 104 = 1,248."
+  try_at_home: "Check each division by multiplying the answer by the divisor."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.B.3"
+  standard_id: "9140cf9c-bec7-5a10-a1b3-200c0d9d15e4"
+  name: "Decimal arithmetic"
+  explanation: "Adding, subtracting, multiplying and dividing multi-digit decimals with "
+    "the standard methods."
+  example: "4.2 × 1.5 = 6.3."
+  try_at_home: "Total a receipt by hand, then split it evenly among three people."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.B.4"
+  standard_id: "b15d0fc6-94b7-5bae-9e62-2c30813b4c0f"
+  name: "Common factors and multiples"
+  explanation: "Finding the greatest common factor (the biggest number that divides both) "
+    "and the least common multiple (the smallest number both divide into), and "
+    "pulling out a common factor from a sum."
+  example: "The greatest common factor of 12 and 18 is 6. The least common multiple of"
+    " 4 and 6 is 12. And 36 + 8 = 4(9 + 2)."
+  try_at_home: "List the multiples of 4 and of 6 and find the first one they share."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.5"
+  standard_id: "164ff7f2-0152-551a-969f-437aed471786"
+  name: "Positive and negative numbers"
+  explanation: "Using positive and negative numbers for opposite directions or values, and"
+    " saying what zero means in each case."
+  example: "−5°C means 5 degrees below zero. Zero is the freezing point."
+  try_at_home: "Look at the weather, a bank balance or a floor in a building and name what"
+    " 0 means."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.6"
+  standard_id: "b20ef024-5651-5f61-bc0e-bd344a169b14"
+  name: "Negatives on lines and grids"
+  explanation: "Seeing every number as a point on the number line, and extending number "
+    "lines and coordinate grids to negative numbers."
+  example: "−1.5 sits halfway between −2 and −1. The point (−3, 2) is 3 left of the "
+    "centre and 2 up."
+  try_at_home: "Draw a number line on the floor with tape and walk to different numbers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.6.a"
+  standard_id: "16d9b4d6-86de-58c8-ad92-8c44938cc71a"
+  name: "Opposites"
+  explanation: "Seeing that opposite numbers sit on opposite sides of 0, and that the "
+    "opposite of the opposite is the number itself."
+  example: "The opposite of 3 is −3, and the opposite of −3 is 3. The opposite of 0 is"
+    " 0."
+  try_at_home: "Take steps forward and backward from a start line and name the opposite "
+    "move."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.6.b"
+  standard_id: "8eed2d39-6fef-54bd-a799-f7ccccdb6e8d"
+  name: "Signs and quadrants"
+  explanation: "Reading the signs in a pair such as (3, 2) as telling which of the four "
+    "regions of the grid the point is in, and seeing that changing a sign "
+    "mirrors the point."
+  example: "(3, 2) and (−3, 2) are mirror images across the vertical axis."
+  try_at_home: "Plot a point and its mirror on grid paper and fold the paper to check."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.6.c"
+  standard_id: "e9681cce-5443-5d36-a279-836660785a84"
+  name: "Plotting on lines and grids"
+  explanation: "Placing whole numbers, fractions and decimals, both positive and negative,"
+    " on a number line and on a coordinate plane."
+  example: "−2 1/2 sits halfway between −3 and −2. The point (−1, 3) is 1 left and 3 "
+    "up."
+  try_at_home: "Play a find-the-treasure game on a grid using pairs with negative numbers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.7"
+  standard_id: "57058c37-ea9f-5c32-a382-d4dc74bae716"
+  name: "Ordering and absolute value"
+  explanation: "Putting positive and negative numbers in order, and understanding absolute"
+    " value as distance from zero."
+  example: "−7 is left of −3, so −7 < −3. The absolute value of −7 is 7."
+  try_at_home: "Rank a list of temperatures that go below zero, from coldest to warmest."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.7.a"
+  standard_id: "ac936314-e1e9-5480-97cf-c9f0356e86b6"
+  name: "Order on a number line"
+  explanation: "Reading a statement such as −3 > −7 as saying where two numbers sit on the"
+    " number line: the larger number is farther right."
+  example: "−3 > −7 because −3 is to the right of −7."
+  try_at_home: "Mark two negative numbers on a number line and ask which one is further "
+    "right."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.7.b"
+  standard_id: "34ffc32a-4aa1-5bc9-92c9-e969ef4c4925"
+  name: "Order in real situations"
+  explanation: "Writing and explaining which of two numbers is larger in a real situation."
+  example: "−3°C > −7°C, because −3°C is warmer."
+  try_at_home: "Compare two temperatures below zero and say which is colder."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.7.c"
+  standard_id: "9da513f5-6ac1-5768-a441-6c24aad943ea"
+  name: "Absolute value"
+  explanation: "Understanding absolute value as the distance from 0, and using it for the "
+    "size of a quantity such as a debt."
+  example: "A balance of −30 dollars is a debt of 30 dollars, so |−30| = 30."
+  try_at_home: "Ask how far from zero −8 and 8 are on a number line. Both are 8 away."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.7.d"
+  standard_id: "c4fbf566-88b0-5d8f-aee6-3fc8d266f53f"
+  name: "Order versus absolute value"
+  explanation: "Telling apart \"which number is smaller\" from \"which has a larger size\"."
+  example: "A balance of −50 dollars is less than −30 dollars, but the debt of 50 "
+    "dollars is larger."
+  try_at_home: "Ask which is worse, owing $50 or owing $30, and which number is smaller."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.NS.C.8"
+  standard_id: "bdb5f668-7de0-5b0b-bd37-06ad462939c1"
+  name: "Graphing in all four quadrants"
+  explanation: "Plotting points in all four regions of the grid and finding the distance "
+    "between points that share one coordinate."
+  example: "(−2, 3) and (−2, −4) are 3 + 4 = 7 apart."
+  try_at_home: "Plot a few points on a grid with negative numbers and measure the gap "
+    "between two of them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.1"
+  standard_id: "3025d9a2-93e4-5861-bf89-676a883295cd"
+  name: "Exponents"
+  explanation: "Writing repeated multiplication of the same number with a small raised "
+    "number, and finding its value."
+  example: "2³ = 2 × 2 × 2 = 8, and 10² = 100."
+  try_at_home: "Ask what 5² means as a square of tiles, 5 rows of 5."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.2"
+  standard_id: "ebc304c3-ece6-5f12-8b51-6da420ca4650"
+  name: "Expressions with letters"
+  explanation: "Using letters to stand for numbers, and writing, reading and evaluating "
+    "expressions with them."
+  example: "If n is the number of boxes and each holds 6 eggs, there are 6n eggs. For "
+    "n = 4, that is 24 eggs."
+  try_at_home: "Pick a number for a letter and ask the child to work out the expression, "
+    "such as 2n + 1 when n = 5."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.2.a"
+  standard_id: "7a305b19-df0f-54de-90c0-b6af56fbd293"
+  name: "Writing expressions from words"
+  explanation: "Turning a phrase into an expression, using a letter when the number is not"
+    " known."
+  example: "\"Subtract y from 5\" is 5 − y. \"Three times a number n\" is 3n."
+  try_at_home: "Say a phrase such as \"4 more than a number\" and have them write it with a "
+    "letter."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.2.b"
+  standard_id: "ad077157-124f-54a3-a4b3-29d85affcbb1"
+  name: "Naming parts of an expression"
+  explanation: "Using words such as sum, term, product, factor, quotient and coefficient "
+    "for the parts of an expression, and seeing a group in parentheses as one "
+    "thing."
+  example: "In 2(8 + 7), the factors are 2 and (8 + 7). Inside the parentheses, 8 and "
+    "7 are two terms of a sum."
+  try_at_home: "Write 3(4 + 5) and ask which part is the sum and which is the product."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.2.c"
+  standard_id: "a38faffa-9c52-51b3-b934-6eb61a78d3d5"
+  name: "Evaluating expressions"
+  explanation: "Finding the value of an expression when the letters are replaced by "
+    "numbers, working in the usual order: parentheses, exponents, then "
+    "multiplying and dividing, then adding and subtracting."
+  example: "A cube with side s = 4 has volume s³ = 4 × 4 × 4 = 64. And 3 + 2 × 5 = 13,"
+    " not 25."
+  try_at_home: "Use a formula from daily life, such as cost = 3 × pounds, and plug in "
+    "different weights."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.3"
+  standard_id: "e5215f8b-d870-5c04-9157-7e88e2be6ee3"
+  name: "Equivalent expressions"
+  explanation: "Using the properties of operations, such as the distributive property, to "
+    "rewrite an expression in a different form that has the same value."
+  example: "3(2 + x) = 6 + 3x. And y + y + y = 3y."
+  try_at_home: "Ask for 4 × 12 as 4 × 10 + 4 × 2, then do the same with a letter in place "
+    "of 12."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.A.4"
+  standard_id: "596ffcb9-a709-5ce6-b508-c1d1092b0850"
+  name: "Are two expressions equal"
+  explanation: "Telling when two expressions always give the same value, whatever number "
+    "the letter stands for."
+  example: "y + y + y and 3y are equivalent. If y = 5, both are 15. If y = 2, both are"
+    " 6."
+  try_at_home: "Test two expressions with a few numbers. If one pair disagrees, they are "
+    "not equivalent."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.B.5"
+  standard_id: "ae58bba3-5897-5f6c-a610-ba6138300d7f"
+  name: "Solutions to equations"
+  explanation: "Seeing that solving an equation or inequality means finding which numbers "
+    "make it true, and checking a number by substituting it."
+  example: "Is 4 a solution of x + 3 = 7? Yes, because 4 + 3 = 7. Is 5? No, because 5 "
+    "+ 3 = 8."
+  try_at_home: "Say \"I am thinking of a number, and adding 6 gives 15.\" Have them test "
+    "guesses."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.B.6"
+  standard_id: "0d6c08c2-cc5f-5f8a-8619-95fa2dc3eae2"
+  name: "Variables in problems"
+  explanation: "Using a letter to stand for an unknown number, or for any number in a set,"
+    " and writing an expression for a problem."
+  example: "Tickets cost $8 each. For t tickets, the cost is 8t dollars."
+  try_at_home: "Pick a real cost, such as bus fare, and write the total for any number of "
+    "rides."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.B.7"
+  standard_id: "9dfa87d0-f5fb-5433-9a24-08f90e88d139"
+  name: "Solving one-step equations"
+  explanation: "Writing and solving equations of the forms x + p = q and px = q, where the"
+    " numbers may be fractions or decimals."
+  example: "x + 2.5 = 9 gives x = 6.5. And 4x = 10 gives x = 2.5."
+  try_at_home: "Make up a story: \"I had some money, got $5 more and now have $12.\" Write "
+    "it as an equation."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.B.8"
+  standard_id: "ffe560d5-fdcb-58f5-931e-df28b74269c9"
+  name: "Inequalities"
+  explanation: "Writing x > c or x < c for a limit in a problem, and seeing that such an "
+    "inequality has endless solutions, shown on a number line."
+  example: "\"You must be taller than 48 inches\" is x > 48. Both 48.5 and 60 work. 48 "
+    "itself does not."
+  try_at_home: "Talk about limits such as a speed limit or a height rule, and name some "
+    "numbers that pass and some that do not."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.EE.C.9"
+  standard_id: "eb730269-9427-5554-b5b3-eb7e322bcd77"
+  name: "Two quantities that change together"
+  explanation: "Using letters for two quantities that change together, writing an equation"
+    " that links them, and showing the link in a table and a graph."
+  example: "A car goes 65 miles each hour: d = 65t. After 2 hours, d = 130 miles."
+  try_at_home: "On a drive, note the distance every hour in a table and spot the pattern."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.A.1"
+  standard_id: "5cec1cee-9dbb-557b-ac1c-18cbbc28298c"
+  name: "Statistical questions"
+  explanation: "Telling a question with one answer from a question whose answers vary, "
+    "called a statistical question."
+  example: "\"How old am I?\" has one answer. \"How old are the students in my school?\" "
+    "has many different answers."
+  try_at_home: "Make up a question that you could ask 10 friends and get different "
+    "answers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.A.2"
+  standard_id: "7f73a2ac-ae0d-5b54-a09e-84627109cbc0"
+  name: "Center, spread and shape of data"
+  explanation: "Describing a set of data by its center, its spread and its overall shape."
+  example: "Quiz scores 6, 7, 7, 8, 9 are centered around 7 and spread from 6 to 9."
+  try_at_home: "Collect the ages in a family or friend group and describe where they "
+    "cluster."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.A.3"
+  standard_id: "8a3cfdb1-392d-5dda-b888-9b6d86203c63"
+  name: "Center and variation"
+  explanation: "Knowing that a measure of center, such as the mean, gives one number for "
+    "the typical value, and a measure of variation gives one number for how "
+    "spread out the values are."
+  example: "Scores 70, 80 and 90 have a mean of 80. The range, 90 − 70, is 20."
+  try_at_home: "Record daily high temperatures for a week and find the typical one and the"
+    " range."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.4"
+  standard_id: "ab587610-4ac3-5934-8ba3-d9a53b952bb0"
+  name: "Dot plots, histograms and box plots"
+  explanation: "Showing numbers of a data set on a number line using dot plots, histograms"
+    " and box plots."
+  example: "A dot plot of shoe sizes puts one dot above the number line for each "
+    "person."
+  try_at_home: "Ask everyone in the family their shoe size and draw a dot plot."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.5"
+  standard_id: "5a8c41eb-67d7-5efb-bccb-c798d58101c2"
+  name: "Describing a data set"
+  explanation: "Summarizing a set of numbers in a way that fits where the data came from, "
+    "such as how many there are, what was measured and the center and spread."
+  example: "12 students were asked how many minutes they read. The median was 20 "
+    "minutes."
+  try_at_home: "Ask the child to describe a small data set in a sentence, with units."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.5.a"
+  standard_id: "57da55cb-b83e-5197-bc09-851845f2d6a8"
+  name: "Counting observations"
+  explanation: "Saying how many values are in the data set."
+  example: "12 students answered the survey, so there are 12 observations."
+  try_at_home: "Count and say how many data points before talking about anything else."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.5.b"
+  standard_id: "c41f2797-9dda-5fcd-b24c-d75191f4a5b0"
+  name: "What was measured and how"
+  explanation: "Describing what was measured, how it was measured and in what units."
+  example: "The height of bean plants, measured in centimetres from the soil to the "
+    "top leaf."
+  try_at_home: "Write down what and how each number was measured when you collect data."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.5.c"
+  standard_id: "905232e2-a99d-5d43-8aba-19bd6f182731"
+  name: "Median, mean and spread"
+  explanation: "Finding the median, mean and measures of how spread out the data is, and "
+    "describing patterns and unusual values in context."
+  example: "For 2, 4, 6, 8, the mean and median are both 5. On average the values are "
+    "2 away from 5."
+  try_at_home: "Find the mean and median of a week of screen times and describe the "
+    "pattern."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.SP.B.5.d"
+  standard_id: "5e384a5a-405c-589b-b80f-81ab08cc5278"
+  name: "Choosing the best measure"
+  explanation: "Choosing between the mean and median, and between measures of spread, "
+    "based on the shape of the data and the situation."
+  example: "For 3, 4, 4, 5, 40, the mean is 11.2 but the median is 4. The median "
+    "describes a typical value better."
+  try_at_home: "Notice how one very large value changes the mean and not the median."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.G.A.1"
+  standard_id: "617b9ad8-2ebc-54b6-8ae7-166d7e780c9e"
+  name: "Area of triangles and polygons"
+  explanation: "Finding the area of triangles and other polygons by cutting them into "
+    "rectangles and triangles, or fitting them into rectangles."
+  example: "A triangle with base 6 and height 4 is half of a 6 × 4 rectangle, so its "
+    "area is 12."
+  try_at_home: "Cut a paper rectangle along a diagonal and show that the two triangles are"
+    " equal halves."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.G.A.2"
+  standard_id: "a6b910c8-ac87-51b3-af40-a6372cb1e970"
+  name: "Volume with fraction sides"
+  explanation: "Finding the volume of a box whose edges are fractions, using the formula "
+    "length × width × height."
+  example: "A box 3/2 by 1/2 by 2 has volume 3/2 × 1/2 × 2 = 3/2, or 1 1/2 cubic "
+    "units."
+  try_at_home: "Measure a small box in half-inches and work out its volume."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.G.A.3"
+  standard_id: "d34ac232-6f89-53d4-8281-35ae2a7126ff"
+  name: "Polygons on a coordinate grid"
+  explanation: "Drawing shapes by plotting their corner points, and finding the length of "
+    "a side when two points share a first or second coordinate."
+  example: "Points (2, 1) and (2, 5) share the first number, so the side between them "
+    "is 5 − 1 = 4 long."
+  try_at_home: "Draw a grid and plot four corners of a rectangle. Ask for the length of "
+    "each side."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "6.G.A.4"
+  standard_id: "fd5b678f-1525-5a23-9ece-8a9350f193e0"
+  name: "Nets and surface area"
+  explanation: "Unfolding a 3D shape into a flat net, then adding the areas of its faces "
+    "to find its surface area."
+  example: "A cube with 2 cm edges has 6 faces of 4 square cm each, so its surface "
+    "area is 24 square cm."
+  try_at_home: "Open up a cereal box flat and measure each face."
+  review { status: STATUS_DRAFT }
+}

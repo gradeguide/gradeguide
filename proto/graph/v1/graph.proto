@@ -1,0 +1,453 @@
+// The Grade Guide skill graph: academic standards, the smaller skills under
+// them, common misconceptions, curriculum structure, and the typed links
+// between them.
+//
+// The types follow the classes of the Learning Commons Knowledge Graph
+// (https://docs.learningcommons.org/knowledge-graph/), keeping the subset
+// Grade Guide uses. Every imported record keeps its source id and attribution,
+// because the data is licensed CC BY 4.0 and the licence requires credit to
+// each original author.
+syntax = "proto3";
+
+package gradeguide.graph.v1;
+
+option go_package = "github.com/gradeguide/gradeguide/proto/graph/v1";
+
+// Graph is one import of the skill graph.
+message Graph {
+  // Where and when the data came from.
+  Snapshot snapshot = 1;
+
+  repeated Framework frameworks = 2;
+  repeated Standard standards = 3;
+  repeated Component components = 4;
+  repeated Misconception misconceptions = 5;
+  repeated Construct constructs = 6;
+  repeated CurriculumNode curriculum = 7;
+  repeated Link links = 8;
+
+  // Where each curriculum course teaches each standard. Derived by the
+  // importer from the course structure and its alignments.
+  repeated Placement placements = 9;
+}
+
+// Snapshot identifies the source data an import was made from.
+message Snapshot {
+  // For example "Learning Commons Open Knowledge Graph".
+  string source = 1;
+
+  // When the source was downloaded, as YYYY-MM-DD. Empty when the import
+  // names a release instead.
+  string downloaded = 2;
+
+  // Hex SHA-256 of each source file, by file name.
+  map<string, string> sha256 = 3;
+
+  // The source's release, such as "v1.17.0".
+  string version = 4;
+}
+
+// Attribution is the credit the source licence requires for one record.
+message Attribution {
+  // The original author, such as "Achievement Network".
+  string author = 1;
+
+  // The statement the source asks to be shown, verbatim.
+  string statement = 2;
+
+  // For example "https://creativecommons.org/licenses/by/4.0/".
+  string license_url = 3;
+}
+
+// SourceIds are a record's identifiers in other systems.
+message SourceIds {
+  // The record's identifier in the Learning Commons Knowledge Graph.
+  string learning_commons = 1;
+
+  // The 1EdTech CASE identifier, for standards and frameworks that have one.
+  string case_uuid = 2;
+  string case_uri = 3;
+
+  // The original publisher's own identifier, where given.
+  string publisher = 4;
+}
+
+// Framework is one set of standards, such as Common Core math or a state's
+// science standards. Learning Commons: StandardsFramework.
+message Framework {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  string name = 2;
+
+  // "Multi-State" for Common Core, otherwise a state's name.
+  string jurisdiction = 3;
+
+  // For example "Mathematics".
+  string subject = 4;
+
+  Currency currency = 5;
+
+  enum Currency {
+    // The source did not say.
+    CURRENCY_UNKNOWN = 0;
+    CURRENCY_CURRENT = 1;
+    CURRENCY_SUPERSEDED = 2;
+  }
+
+  SourceIds source_ids = 6;
+  Attribution attribution = 7;
+}
+
+// Standard is one statement in a framework: a standard, a lettered part of
+// one, or a grouping such as a domain or cluster. Learning Commons:
+// StandardsFrameworkItem.
+message Standard {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  string framework_id = 2;
+
+  // The code people use, such as "4.NF.A.1". Unique within a framework, and
+  // empty for some groupings.
+  string code = 3;
+
+  string description = 4;
+
+  Kind kind = 5;
+
+  enum Kind {
+    // The source did not say.
+    KIND_UNKNOWN = 0;
+    // Something a student is expected to know or do.
+    KIND_STANDARD = 1;
+    // A heading that groups standards, such as a domain or cluster.
+    KIND_GROUPING = 2;
+    // Anything else, such as an introduction.
+    KIND_OTHER = 3;
+  }
+
+  // The framework's own name for the level, such as "Cluster", "Domain" or
+  // "Component", verbatim.
+  string statement_type = 6;
+
+  // Grades the standard applies to: "PK", "K", then "1" to "12".
+  repeated string grades = 7;
+
+  // The parent standard or grouping. Empty at the top of a framework.
+  string parent_id = 8;
+
+  // Order among the parent's children.
+  int32 position = 9;
+
+  Adoption adoption = 10;
+
+  enum Adoption {
+    // The source did not say.
+    ADOPTION_UNKNOWN = 0;
+    ADOPTION_ADOPTED = 1;
+    ADOPTION_PENDING = 2;
+    ADOPTION_DRAFT = 3;
+    ADOPTION_RETIRED = 4;
+  }
+
+  MasteryStats mastery = 11;
+
+  SourceIds source_ids = 12;
+  Attribution attribution = 13;
+
+  // The strand the standard's domain belongs to. Derived from the code; a
+  // grouping without a code takes the strand of its children.
+  Strand strand = 14;
+
+  // The domain part of the code, such as "NF" for "4.NF.A.1". Empty for
+  // groupings above the domain level.
+  string domain_code = 15;
+}
+
+// Strand groups Common Core domains into threads that run across grades, so
+// a skill can be followed from kindergarten to grade 8.
+enum Strand {
+  STRAND_UNSPECIFIED = 0;
+  // Counting and Cardinality (CC).
+  STRAND_COUNTING = 1;
+  // Operations and Algebraic Thinking (OA), then Expressions and Equations
+  // (EE) and Functions (F).
+  STRAND_OPERATIONS_AND_ALGEBRA = 2;
+  // Number and Operations in Base Ten (NBT), then the Number System (NS).
+  STRAND_NUMBER = 3;
+  // Number and Operations, Fractions (NF), then Ratios and Proportional
+  // Relationships (RP).
+  STRAND_FRACTIONS_AND_RATIOS = 4;
+  // Measurement and Data (MD), then Statistics and Probability (SP).
+  STRAND_MEASUREMENT_AND_DATA = 5;
+  // Geometry (G).
+  STRAND_GEOMETRY = 6;
+  // The Standards for Mathematical Practice (MP), which apply to every grade.
+  STRAND_PRACTICES = 7;
+}
+
+// Component is a small, specific skill that supports one or more standards.
+// Worksheet items align to components. Learning Commons: LearningComponent.
+message Component {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  // For example "Generate equivalent fractions using the principle
+  // a/b = (n x a)/(n x b)".
+  string description = 2;
+
+  // Worked examples of the skill, where the source gives them.
+  repeated string examples = 3;
+
+  string subject = 4;
+
+  MasteryStats mastery = 5;
+
+  SourceIds source_ids = 6;
+  Attribution attribution = 7;
+}
+
+// MasteryStats are a test publisher's statistics for the items aligned to a
+// standard or component. Learning Commons: MasteryThreshold.
+message MasteryStats {
+  int32 aligned_item_count = 1;
+
+  // The source gives two thresholds and their reliabilities, named for 50
+  // and 67. It does not document their scale.
+  double threshold_50 = 2;
+  double threshold_67 = 3;
+  double reliability_50 = 4;
+  double reliability_67 = 5;
+
+  Attribution attribution = 6;
+}
+
+// Misconception is a common error, from Eedi's misconceptions graph.
+message Misconception {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  // For example "Thinks a question collecting a single value is a
+  // statistical question".
+  string description = 2;
+
+  SourceIds source_ids = 3;
+  Attribution attribution = 4;
+}
+
+// Construct is a skill as Eedi names it. Misconceptions hinder constructs.
+// Constructs are not linked to standards in the source.
+message Construct {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  string description = 2;
+
+  SourceIds source_ids = 3;
+  Attribution attribution = 4;
+}
+
+// CurriculumNode is one level of a published curriculum: a course, unit,
+// section, lesson, activity or assessment. Only names, order and alignments
+// are open; lesson text is not. Learning Commons: Course, LessonGrouping,
+// Lesson, Activity, Assessment.
+message CurriculumNode {
+  // Equal to the Learning Commons identifier.
+  string id = 1;
+
+  // The course this belongs to, such as "im360:4".
+  string course_code = 2;
+
+  Level level = 3;
+
+  enum Level {
+    LEVEL_UNKNOWN = 0;
+    LEVEL_COURSE = 1;
+    LEVEL_UNIT = 2;
+    LEVEL_SECTION = 3;
+    LEVEL_LESSON = 4;
+    LEVEL_ACTIVITY = 5;
+    LEVEL_ASSESSMENT = 6;
+  }
+
+  string name = 4;
+
+  // For example "Unit 2" or "Lesson 5".
+  string ordinal_name = 5;
+
+  // The publisher's label, such as "Warm-up" or "End-of-Unit Assessment".
+  string label = 6;
+
+  // Order within the parent.
+  int32 position = 7;
+
+  string parent_id = 8;
+
+  repeated string grades = 9;
+
+  // ISO 8601 duration, verbatim, such as "PT45M" or "P156D".
+  string time_required = 10;
+
+  Optionality optionality = 11;
+
+  enum Optionality {
+    // The source did not say.
+    OPTIONALITY_UNKNOWN = 0;
+    OPTIONALITY_REQUIRED = 1;
+    // The publisher marks it optional, so a school may skip it.
+    OPTIONALITY_OPTIONAL = 2;
+  }
+
+  SourceIds source_ids = 12;
+  Attribution attribution = 13;
+
+  // LEVEL_LESSON only: the lesson's place in the whole course, from 1, in
+  // teaching order. Derived from the positions of the lesson and its
+  // ancestors.
+  int32 sequence = 14;
+
+  // LEVEL_UNIT, LEVEL_SECTION and LEVEL_LESSON only: when it is taught.
+  // Derived by the importer.
+  Pace pace = 15;
+}
+
+// Pace places part of a course on the school year. The importer counts one
+// instructional day per lesson, including optional lessons, because every
+// lesson in the source is 45 minutes. Days are counted from the start of the
+// course.
+message Pace {
+  // The first instructional day, from 0.
+  int32 start_day = 1;
+
+  // How many instructional days it takes.
+  int32 days = 2;
+
+  // An estimate for a timeline with one column per month. The course's
+  // lessons are spread evenly over a September-to-June school year. Schools
+  // differ, so a reader that knows the real calendar should use the days
+  // instead.
+  SchoolMonth start_month = 3;
+  SchoolMonth end_month = 4;
+}
+
+// SchoolMonth is a month of a September-to-June school year.
+enum SchoolMonth {
+  SCHOOL_MONTH_UNSPECIFIED = 0;
+  SCHOOL_MONTH_SEPTEMBER = 1;
+  SCHOOL_MONTH_OCTOBER = 2;
+  SCHOOL_MONTH_NOVEMBER = 3;
+  SCHOOL_MONTH_DECEMBER = 4;
+  SCHOOL_MONTH_JANUARY = 5;
+  SCHOOL_MONTH_FEBRUARY = 6;
+  SCHOOL_MONTH_MARCH = 7;
+  SCHOOL_MONTH_APRIL = 8;
+  SCHOOL_MONTH_MAY = 9;
+  SCHOOL_MONTH_JUNE = 10;
+}
+
+// Placement says where one course teaches one standard: the unit, and the
+// lessons in it that address the standard. A lesson addresses a standard if
+// the lesson, or one of its activities, is aligned to it with
+// ALIGNMENT_ADDRESSING. A lesson that addresses a lettered part, such as
+// "4.NF.B.3.a", also addresses the part's parent standard.
+message Placement {
+  string standard_id = 1;
+
+  // Such as "im360:4".
+  string course_code = 2;
+
+  string unit_id = 3;
+
+  // The lessons in the unit that address the standard, in teaching order.
+  repeated string lesson_ids = 4;
+
+  Role role = 5;
+
+  enum Role {
+    ROLE_UNSPECIFIED = 0;
+    // The unit that mainly teaches the standard. Each standard that any
+    // course addresses has exactly one. It is the unit with the most
+    // addressing lessons, in a course for the standard's own grade when one
+    // addresses it, and the earliest such unit on a tie.
+    ROLE_MAIN = 1;
+    // Any other unit that addresses the standard.
+    ROLE_ALSO = 2;
+  }
+
+  // From the first addressing lesson to the last, within the course.
+  Pace pace = 6;
+}
+
+// SkillRef names one skill in the graph by id, for content such as worksheets
+// and activities to align to. Exactly one id is set.
+message SkillRef {
+  oneof skill {
+    string standard_id = 1;
+    string component_id = 2;
+  }
+
+  // The standard's code, such as "4.NF.A.1", so a person reading the file can
+  // tell which skill it is. When set with standard_id, the two must agree.
+  string code = 3;
+}
+
+// Link is a typed relationship between two records, by id. Containment
+// (Learning Commons hasChild and hasPart) is not a link: it is the parent_id
+// and framework_id fields.
+message Link {
+  string from_id = 1;
+  string to_id = 2;
+
+  Kind kind = 3;
+
+  enum Kind {
+    KIND_UNKNOWN = 0;
+    // A component supports a standard. Learning Commons: supports.
+    KIND_SUPPORTS = 1;
+    // Proficiency in from helps success in to: a prerequisite. Learning
+    // Commons: buildsTowards, from the Coherence Map.
+    KIND_BUILDS_TOWARDS = 2;
+    // Related, with no direction. Learning Commons: relatesTo.
+    KIND_RELATES_TO = 3;
+    // A state standard matches a Common Core standard. Learning Commons:
+    // hasStandardAlignment.
+    KIND_MATCHES_STANDARD = 4;
+    // Curriculum content is aligned to a standard. Learning Commons:
+    // hasEducationalAlignment.
+    KIND_ALIGNED_TO = 5;
+    // One unit depends on another. Learning Commons: hasDependency.
+    KIND_DEPENDS_ON = 6;
+    // One lesson refers to another. Learning Commons: hasReference.
+    KIND_REFERENCES = 7;
+    // Two assessments are alternatives. Learning Commons:
+    // mutuallyExclusiveWith.
+    KIND_ALTERNATIVE_TO = 8;
+    // A misconception hinders a construct. Learning Commons: hinders.
+    KIND_HINDERS = 9;
+  }
+
+  // KIND_ALIGNED_TO only: how the content relates to the standard.
+  Alignment alignment = 4;
+
+  enum Alignment {
+    ALIGNMENT_UNKNOWN = 0;
+    // Teaches the standard.
+    ALIGNMENT_ADDRESSING = 1;
+    // Uses an earlier standard.
+    ALIGNMENT_BUILDING_ON = 2;
+    // Prepares for a later standard.
+    ALIGNMENT_BUILDING_TOWARD = 3;
+    // Practises or assesses the standard.
+    ALIGNMENT_PRACTISING = 4;
+  }
+
+  // KIND_MATCHES_STANDARD only: the share of learning components the two
+  // standards have in common, from 0 to 1.
+  double jaccard = 5;
+
+  // KIND_REFERENCES only, verbatim, such as "support" or "unlock".
+  string reference_type = 6;
+
+  Attribution attribution = 7;
+}

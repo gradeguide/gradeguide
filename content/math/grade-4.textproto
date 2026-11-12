@@ -1,0 +1,436 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 4 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "4.OA.A.1"
+  standard_id: "26eee6ee-16af-5d9b-a7d2-be01f79a174b"
+  name: "Times as many"
+  explanation: "Reading a multiplication as a comparison: 35 = 5 × 7 means 35 is 5 times "
+    "as many as 7. This is a new way to think about multiplying, beyond equal "
+    "groups."
+  example: "Sam has 4 stickers. Ava has 3 times as many. 3 × 4 = 12."
+  try_at_home: "Compare real things: \"Your book has 3 times as many pages as mine. How "
+    "many is that?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.OA.A.2"
+  standard_id: "743db505-fe65-55ff-bac5-574e41555291"
+  name: "Word problems with \"times as many\""
+  explanation: "Solving story problems that compare two amounts by multiplying or "
+    "dividing, often with a drawing of bars for each amount."
+  example: "A red ribbon is 6 cm. A blue one is 4 times as long. How long is the blue "
+    "one?"
+  try_at_home: "Ask for a bar drawing before the answer: one short bar, and a long bar "
+    "made of copies of it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.OA.A.3"
+  standard_id: "9e07be8c-467c-54fe-8589-a689473bbd98"
+  name: "Multi-step word problems"
+  explanation: "Solving problems that need two or more steps and any of the four "
+    "operations, including what to do with a remainder."
+  example: "29 kids, 4 per car. How many cars? 7 r 1, so 8 cars."
+  try_at_home: "Ask \"does the answer make sense?\" Can you have a leftover kid? Do you need"
+    " another car?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.OA.B.4"
+  standard_id: "b5051cb2-86ce-5cbb-b091-960c15a42e76"
+  name: "Factors, multiples, prime and composite"
+  explanation: "Finding all the factor pairs of a number up to 100, and telling whether a "
+    "number is prime (only 1 and itself) or composite."
+  example: "Factor pairs of 24: 1×24, 2×12, 3×8, 4×6. 13 is prime."
+  try_at_home: "Arrange 12, 13 or 24 coins into rectangles. How many different rectangles "
+    "can you make?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.OA.C.5"
+  standard_id: "cfe55d7a-bf0d-5135-8d78-3505118e0ff0"
+  name: "Number and shape patterns"
+  explanation: "Making a pattern from a rule, and noticing things about it that the rule "
+    "does not say outright."
+  example: "Start at 1, add 3: 1, 4, 7, 10… The numbers go odd, even, odd, even."
+  try_at_home: "Take turns making a rule and guessing each other's rule from the first few"
+    " numbers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.A.1"
+  standard_id: "1ee6b0a0-737e-55ad-b7e1-a95ce78d21c9"
+  name: "Each place is ten times the next"
+  explanation: "Understanding that a digit is worth ten times as much each time it moves "
+    "one place to the left."
+  example: "In 770, the first 7 is worth 700 and the second is worth 70. 700 is ten "
+    "times 70."
+  try_at_home: "Use money: how many dimes make a dollar? How many dollars make ten "
+    "dollars?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.A.2"
+  standard_id: "7873a9dc-5f0d-5bff-9e51-9ab7ca0fb3dd"
+  name: "Reading and comparing big numbers"
+  explanation: "Reading and writing numbers up to a million in digits, words and expanded "
+    "form, and comparing them with <, = and >."
+  example: "352,064 = 300,000 + 50,000 + 2,000 + 60 + 4."
+  try_at_home: "Read big numbers aloud from a news story or a map, such as a city's "
+    "population."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.A.3"
+  standard_id: "5619b796-7505-514c-a3dd-85a010b8fafd"
+  name: "Rounding"
+  explanation: "Rounding whole numbers to any place, such as the nearest ten, hundred or "
+    "thousand."
+  example: "4,862 to the nearest hundred is 4,900."
+  try_at_home: "Estimate a grocery total by rounding each price before adding."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.B.4"
+  standard_id: "06f8082b-deb3-5d13-b982-7c012aefc966"
+  name: "Adding and subtracting with the standard method"
+  explanation: "Adding and subtracting multi-digit numbers with the column method, "
+    "regrouping when needed, fluently."
+  example: "6,005 − 2,378 = 3,627."
+  try_at_home: "Check subtraction by adding back: 3,627 + 2,378 should give 6,005."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.B.5"
+  standard_id: "c15c54d5-0acd-54ef-81bd-f5e0d794df0c"
+  name: "Multiplying bigger numbers"
+  explanation: "Multiplying up to four digits by one digit, and two digits by two digits, "
+    "using place value, area pictures and partial products."
+  example: "23 × 14 = 20×10 + 20×4 + 3×10 + 3×4 = 322."
+  try_at_home: "Draw the area rectangle together and split it by tens and ones."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NBT.B.6"
+  standard_id: "9daac84b-81be-51cd-b208-aaa7d0a0431e"
+  name: "Dividing bigger numbers"
+  explanation: "Dividing up to four-digit numbers by one-digit numbers, with remainders, "
+    "using place value and the link to multiplication."
+  example: "157 ÷ 6: 6 × 20 = 120, 6 × 6 = 36, so 26 r 1."
+  try_at_home: "Share a number of things fairly, such as 75 cards among 4 players. How "
+    "many each, and how many left?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.A.1"
+  standard_id: "6189b37a-9eff-5aed-bad5-9e59619fd396"
+  name: "Equivalent fractions"
+  explanation: "Explaining why two fractions name the same amount, such as 1/2 and 3/6, "
+    "using pictures, and making equivalent fractions by multiplying the top and"
+    " bottom by the same number."
+  example: "2/3 = 4/6 = 8/12: the pieces get smaller, and there are more of them."
+  try_at_home: "Fold a strip of paper in halves, then quarters, then eighths. Mark how 1/2"
+    " is also 2/4 and 4/8."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.A.2"
+  standard_id: "2fe303c0-217b-54e9-9421-6e499b232604"
+  name: "Comparing fractions"
+  explanation: "Comparing two fractions with different tops and bottoms, by finding a "
+    "common denominator or numerator, or by comparing to 1/2."
+  example: "3/8 < 2/3, because 3/8 is less than 1/2 and 2/3 is more."
+  try_at_home: "Ask \"which is more, 3/4 of a pizza or 5/8?\" and have them prove it with a "
+    "drawing."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.3"
+  standard_id: "e9c6bbc4-24c1-565f-a4d4-c1c505f59b41"
+  name: "Adding and subtracting fractions"
+  explanation: "Seeing a fraction as a sum of unit fractions, then adding and subtracting "
+    "fractions and mixed numbers with the same denominator."
+  example: "3/8 = 1/8 + 1/8 + 1/8. 2 1/4 − 3/4 = 1 2/4."
+  try_at_home: "Measuring cups: three 1/4 cups of flour, then one more. How much is that?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.3.a"
+  standard_id: "eb63f464-897f-53b3-8ea5-bd965e4a7da6"
+  name: "Joining and separating fractions"
+  explanation: "Seeing adding fractions as joining parts of the same whole, and "
+    "subtracting as taking parts away."
+  example: "2/5 + 1/5 = 3/5. And 3/5 − 1/5 = 2/5."
+  try_at_home: "Eat 2 of 8 slices of a pizza, then 1 more. Say what fraction is gone."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.3.b"
+  standard_id: "9ea3d69d-56ed-5685-a4d0-e93262f46423"
+  name: "Splitting a fraction into parts"
+  explanation: "Breaking a fraction into a sum of fractions with the same bottom number, "
+    "in more than one way."
+  example: "5/8 = 3/8 + 2/8, and also 5/8 = 1/8 + 4/8."
+  try_at_home: "Show 5/8 of a pizza in two groups and write each way as an equation."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.3.c"
+  standard_id: "a65d0bd0-f7c2-52da-b2db-3a29816bd244"
+  name: "Adding mixed numbers"
+  explanation: "Adding and subtracting mixed numbers with the same denominator, by turning"
+    " them into fractions or by working with the whole and fraction parts."
+  example: "2 3/4 + 1 2/4 = 3 5/4 = 4 1/4."
+  try_at_home: "Measure two lengths of ribbon in quarter-inches and add them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.3.d"
+  standard_id: "e89d12eb-613d-5825-ac2d-c435cc3b1564"
+  name: "Fraction add and subtract problems"
+  explanation: "Solving story problems that add or subtract fractions with the same bottom"
+    " number, using pictures and equations."
+  example: "Walk 3/4 mile, then 2/4 mile. The total is 5/4 = 1 1/4 miles."
+  try_at_home: "Pose a story with cups of milk and write it as an equation."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.4"
+  standard_id: "509e1786-9a54-570f-8078-d95c85f3d325"
+  name: "Multiplying a fraction by a whole number"
+  explanation: "Seeing a fraction times a whole number as repeated adding, and using it in"
+    " word problems."
+  example: "3 × 2/5 = 6/5 = 1 1/5."
+  try_at_home: "A recipe uses 2/3 cup of milk. How much for a triple batch?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.4.a"
+  standard_id: "3121145b-1815-5651-ba32-240a486d0e69"
+  name: "A fraction as a multiple"
+  explanation: "Seeing a fraction like 5/4 as 5 copies of the unit fraction 1/4."
+  example: "5/4 = 5 × 1/4."
+  try_at_home: "Count 5 quarter-cup scoops and say how many cups that is."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.4.b"
+  standard_id: "0021bf1f-0746-5aab-ab4f-ca656120edeb"
+  name: "Fraction times a whole number"
+  explanation: "Seeing a multiple of a fraction as a multiple of its unit fraction, and "
+    "using that to multiply."
+  example: "4 × 3/8 = 12 × 1/8 = 12/8 = 1 1/2."
+  try_at_home: "Ask how much flour in 4 scoops of 3/8 cup each."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.B.4.c"
+  standard_id: "e3f77ffa-b935-5d3f-b02b-8465fd158ac9"
+  name: "Word problems with fraction times whole"
+  explanation: "Solving story problems that multiply a fraction by a whole number, and "
+    "saying between which two whole numbers the answer lies."
+  example: "5 people each eat 3/8 pound of beef. 5 × 3/8 = 15/8 pounds, which is "
+    "between 1 and 2."
+  try_at_home: "Scale a recipe up for a group and say whether it is more or less than 2 "
+    "cups."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.C.5"
+  standard_id: "f7efbe6d-9fcd-587f-a1ed-8aa1affed4af"
+  name: "Tenths and hundredths"
+  explanation: "Seeing that 3/10 = 30/100, and adding fractions with denominators 10 and "
+    "100."
+  example: "3/10 + 4/100 = 34/100."
+  try_at_home: "Dimes and pennies: 3 dimes and 4 pennies is 34 cents, or 34/100 of a "
+    "dollar."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.C.6"
+  standard_id: "9cbfa449-845b-5aa7-84c2-c0d0cdd6bbb3"
+  name: "Decimals"
+  explanation: "Writing tenths and hundredths as decimals, and placing them on a number "
+    "line."
+  example: "0.62 = 62/100. It sits a little past halfway between 0 and 1."
+  try_at_home: "Read prices and running times aloud as decimals, and say what each digit "
+    "is worth."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.NF.C.7"
+  standard_id: "9a33a0d8-ffe5-5ee2-bc5d-0a78f9416189"
+  name: "Comparing decimals"
+  explanation: "Comparing two decimals to hundredths by thinking about their size, and "
+    "knowing it only works if both refer to the same whole."
+  example: "0.5 > 0.45, even though 45 looks bigger than 5."
+  try_at_home: "Ask which is more money, $0.50 or $0.45, then try it without the dollar "
+    "sign."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.A.1"
+  standard_id: "63ca683b-e4d5-5b0f-a0d3-5904a36904f9"
+  name: "Units of measure"
+  explanation: "Knowing the relative sizes of units in one system, such as km, m and cm, "
+    "or hours, minutes and seconds, and converting a larger unit into a smaller"
+    " one."
+  example: "1 foot = 12 inches, so 3 feet = 36 inches."
+  try_at_home: "Measure a room in feet and inches, then convert it all to inches."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.A.2"
+  standard_id: "07754a79-c0ed-5e17-aa4b-dc7d0761cca7"
+  name: "Measurement word problems"
+  explanation: "Solving word problems with distance, time, liquid volume, mass and money, "
+    "including fractions and decimals, often on a number line."
+  example: "Practice starts at 3:45 and lasts 1 hour 20 minutes. It ends at 5:05."
+  try_at_home: "Work out together when you will arrive if the drive takes 2 hours 15 "
+    "minutes."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.A.3"
+  standard_id: "1b9cdeb7-7c76-55d4-ae26-2a843a886722"
+  name: "Area and perimeter of rectangles"
+  explanation: "Using the formulas for area (length × width) and perimeter (the distance "
+    "around) in real problems, including finding a missing side."
+  example: "A rug is 40 square feet and 5 feet wide, so it is 8 feet long."
+  try_at_home: "Measure a table and find both how far around it is and how much surface it"
+    " covers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.B.4"
+  standard_id: "1e3e8778-a603-5dab-857e-9dccb966926f"
+  name: "Line plots with fractions"
+  explanation: "Making a line plot of measurements in halves, quarters and eighths, and "
+    "using it to answer questions."
+  example: "Plant heights of 2 1/4, 2 1/2 and 2 1/4 inches, shown as Xs above a number"
+    " line."
+  try_at_home: "Measure a handful of pencils or leaves to the nearest 1/4 inch and plot "
+    "them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.C.5"
+  standard_id: "53375445-0a44-5b95-a47d-fdb93e5b2298"
+  name: "What an angle is"
+  explanation: "Understanding an angle as a turn between two rays, measured in degrees, "
+    "where a full turn is 360°."
+  example: "A quarter turn is 90°. A half turn is 180°."
+  try_at_home: "Turn your body a quarter, a half and a full turn, and name the degrees."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.C.5.a"
+  standard_id: "1f783739-69a3-54c4-afae-d6d7ff5f3aaa"
+  name: "What a one-degree angle is"
+  explanation: "Understanding that an angle is two rays from one point, and that it is "
+    "measured by how much of a circle it turns through. One degree is 1/360 of "
+    "a full circle."
+  example: "A full circle is 360 degrees. A one-degree angle is 1/360 of it."
+  try_at_home: "Turn on the spot all the way around and say that is 360 degrees."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.C.5.b"
+  standard_id: "0fa1390b-5bbc-564e-a6b4-360c0bc46d6e"
+  name: "Counting degrees"
+  explanation: "An angle that turns through n one-degree angles measures n degrees."
+  example: "An angle made of 90 one-degree angles measures 90 degrees, a quarter turn."
+  try_at_home: "Open a door a quarter of the way and call that angle 90 degrees."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.C.6"
+  standard_id: "a5c0bc25-1030-5c57-8c66-f556012854d4"
+  name: "Measuring angles"
+  explanation: "Measuring angles with a protractor and drawing angles of a given size."
+  example: "Draw a 45° angle: half of a square corner."
+  try_at_home: "Find corners around the house and guess their angles before measuring."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.MD.C.7"
+  standard_id: "c2e862e1-58f3-55fe-9d03-091c8275f77f"
+  name: "Adding angles"
+  explanation: "Seeing that an angle split into parts equals the sum of the parts, and "
+    "finding missing angles."
+  example: "A 90° corner split into 35° and some angle x: x = 55°."
+  try_at_home: "Cut a paper corner into two angles, measure both, and check that they add "
+    "to 90°."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.G.A.1"
+  standard_id: "03deb597-5bbe-531a-8f0c-a1b7abcd6407"
+  name: "Points, lines, rays and angles"
+  explanation: "Drawing and naming points, lines, segments, rays, right, acute and obtuse "
+    "angles, and parallel and perpendicular lines."
+  example: "Train tracks are parallel. The corner of a page is a right angle."
+  try_at_home: "Go on a hunt for parallel and perpendicular lines in your street or "
+    "kitchen."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.G.A.2"
+  standard_id: "c0ae4dc3-18d6-54b1-bed2-4d0b56df8729"
+  name: "Sorting shapes by their sides and angles"
+  explanation: "Classifying two-dimensional shapes by parallel or perpendicular sides and "
+    "by the kinds of angles they have, including right triangles."
+  example: "A rectangle has two pairs of parallel sides and four right angles."
+  try_at_home: "Play \"guess my shape\" with clues about sides and angles."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "4.G.A.3"
+  standard_id: "a107a6e7-d43a-5e38-b815-abc1310d9231"
+  name: "Lines of symmetry"
+  explanation: "Finding lines that fold a shape into two matching halves, and drawing "
+    "them."
+  example: "A square has 4 lines of symmetry. The letter A has 1."
+  try_at_home: "Fold paper cut-outs to test for symmetry. Check the letters in your name."
+  review { status: STATUS_DRAFT }
+}

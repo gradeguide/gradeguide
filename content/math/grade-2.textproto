@@ -1,0 +1,312 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 2 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "2.OA.A.1"
+  standard_id: "3460571a-4af1-5be2-8300-f1b3d5dec056"
+  name: "Word problems within 100"
+  explanation: "Solving one- and two-step story problems within 100 about adding, taking "
+    "away, putting together and comparing."
+  example: "Sam had 34 cards. He gave away 12 and got 20 more. 34 − 12 + 20 = 42."
+  try_at_home: "Turn a shopping trip into a story problem."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.OA.B.2"
+  standard_id: "98ff367c-5a9e-58fa-8957-e1d04da2816c"
+  name: "Facts within 20"
+  explanation: "Adding and subtracting within 20 using mental strategies, and knowing all "
+    "sums of two one-digit numbers by memory by the end of the year."
+  example: "7 + 8 = 15. 15 − 9 = 6."
+  try_at_home: "Practice facts with flash cards or dice."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.OA.C.3"
+  standard_id: "75f88ede-4b74-51ba-b1e5-2e2d8bd759a6"
+  name: "Odd and even numbers"
+  explanation: "Telling whether a number up to 20 is odd or even by pairing things up, and"
+    " writing an even number as two equal parts."
+  example: "14 is even, because 14 = 7 + 7. 9 is odd, because one is left over."
+  try_at_home: "Pair up socks and see whether one is left over."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.OA.C.4"
+  standard_id: "5364ad93-e6c0-51b2-8e09-9466691c324a"
+  name: "Arrays and equal groups"
+  explanation: "Finding the total in a rectangle of rows and columns, up to 5 by 5, by "
+    "adding equal groups. This is the start of multiplication."
+  example: "3 rows of 4: 4 + 4 + 4 = 12."
+  try_at_home: "Look at a muffin tin or egg carton and count by rows."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.1"
+  standard_id: "166aca28-6609-5e57-b6d1-d04b9fad7c63"
+  name: "Hundreds, tens and ones"
+  explanation: "Understanding that the three digits of a number stand for hundreds, tens "
+    "and ones."
+  example: "706 is 7 hundreds, 0 tens and 6 ones."
+  try_at_home: "Show 253 using paper for hundreds, strips for tens and dots for ones."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.1.a"
+  standard_id: "095e181f-bb20-5bcb-b8e7-d74ca93d96b9"
+  name: "Ten tens make a hundred"
+  explanation: "Seeing that 100 is a bundle of ten tens, called a hundred."
+  example: "10 bundles of ten sticks make 100 sticks."
+  try_at_home: "Count ten groups of ten pennies together."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.1.b"
+  standard_id: "fd202998-949a-5f67-b651-74d1ab27fde9"
+  name: "Counting hundreds"
+  explanation: "Knowing that 100, 200 up to 900 mean that many hundreds with no tens or "
+    "ones."
+  example: "400 is 4 hundreds, 0 tens and 0 ones."
+  try_at_home: "Count by hundreds: 100, 200, 300."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.2"
+  standard_id: "96789744-bebc-5a27-a1d2-6fabaaa79a78"
+  name: "Counting to 1000 and skip counting"
+  explanation: "Counting up to 1000, and skip counting by 5s, 10s and 100s."
+  example: "By 5s: 5, 10, 15, 20. By 100s: 100, 200, 300."
+  try_at_home: "Skip count by 5s while counting nickels."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.3"
+  standard_id: "9ad14c84-fad1-58f3-9d96-2adf6d055322"
+  name: "Reading and writing numbers to 1000"
+  explanation: "Reading and writing numbers to 1000 in digits, in words and as a sum of "
+    "hundreds, tens and ones."
+  example: "345 is three hundred forty-five, or 300 + 40 + 5."
+  try_at_home: "Read three-digit numbers on signs, houses or prices."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.A.4"
+  standard_id: "13fc46b3-1d2d-5f73-9f5a-32d3c52a2864"
+  name: "Comparing three-digit numbers"
+  explanation: "Comparing numbers by looking at the hundreds first, then the tens, then "
+    "the ones, using >, = and <."
+  example: "582 > 568, because the hundreds are equal and 8 tens is more than 6 tens."
+  try_at_home: "Make two numbers from digit cards and decide which is bigger."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.B.5"
+  standard_id: "dbc39aa0-5d9e-5b00-8aa1-c2fc08cce31e"
+  name: "Adding and subtracting within 100"
+  explanation: "Adding and subtracting numbers up to 100 quickly, using place value and "
+    "number rules."
+  example: "47 + 25 = 72. 63 − 28 = 35."
+  try_at_home: "Practice with prices or scores while playing a game."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.B.6"
+  standard_id: "3a43a01b-e669-5a5f-b750-631c94388579"
+  name: "Adding several two-digit numbers"
+  explanation: "Adding up to four two-digit numbers using place value."
+  example: "20 + 30 + 15 + 12: tens 20 + 30 + 10 + 10 = 70, ones 5 + 2 = 7, total 77."
+  try_at_home: "Add up four game scores."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.B.7"
+  standard_id: "fdf8ecab-ad85-56a9-aaf1-ce95210c4bae"
+  name: "Adding and subtracting within 1000"
+  explanation: "Adding and subtracting three-digit numbers with models or place value, "
+    "sometimes trading a ten or a hundred."
+  example: "Trading ten ones for a ten: 256 + 178 = 434. 500 − 230 = 270."
+  try_at_home: "Use play money to add and take away hundreds, tens and ones."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.B.8"
+  standard_id: "4076419c-0733-5275-b76c-be98b39dc638"
+  name: "10 more and 100 more"
+  explanation: "Finding 10 or 100 more or less than a number from 100 to 900 in your head."
+  example: "100 more than 345 is 445. 10 less than 345 is 335."
+  try_at_home: "Ask \"What is 100 more than 520?\" in the car."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.NBT.B.9"
+  standard_id: "1ab7bf89-36d5-5b5d-b5bc-e57782d74e46"
+  name: "Explaining why methods work"
+  explanation: "Explaining why adding and subtracting methods work, using place value and "
+    "number rules."
+  example: "To add 38 + 40, add 3 tens and 4 tens to get 7 tens, so the answer is 78."
+  try_at_home: "Ask your child to explain how they solved a problem."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.A.1"
+  standard_id: "1e7b8f46-92a9-5817-ba90-cf67a66bc81a"
+  name: "Measuring with tools"
+  explanation: "Measuring length with a ruler, yardstick, meter stick or measuring tape, "
+    "choosing the right tool."
+  example: "A pencil is 7 inches long when measured with a ruler."
+  try_at_home: "Let your child measure household items and pick which tool to use."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.A.2"
+  standard_id: "a1310b6d-2e79-5226-9bf9-03c16ac02af5"
+  name: "Different units, different counts"
+  explanation: "Measuring the same object with two different units and seeing that a "
+    "smaller unit gives a bigger number."
+  example: "A table is 3 feet long, which is 36 inches long."
+  try_at_home: "Measure a table in hand spans, then in shoe lengths, and compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.A.3"
+  standard_id: "34042f6f-b54d-5958-8fd1-2b6a24836e62"
+  name: "Estimating length"
+  explanation: "Guessing how long something is in inches, feet, centimeters or meters, "
+    "then checking."
+  example: "A door is about 7 feet tall."
+  try_at_home: "Guess the length of a rug in feet, then measure."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.A.4"
+  standard_id: "2be7a4ef-098a-59e4-8ceb-06e2db57b1cb"
+  name: "How much longer"
+  explanation: "Measuring two objects and finding the difference in length in a standard "
+    "unit."
+  example: "A rope is 15 inches and a ribbon is 9 inches. The rope is 6 inches longer."
+  try_at_home: "Compare two pieces of string and find the difference."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.B.5"
+  standard_id: "c6d44ab3-a6ef-5d84-9b1d-56baece3ecdd"
+  name: "Length word problems"
+  explanation: "Solving addition and subtraction story problems about lengths in the same "
+    "unit, within 100."
+  example: "A board is 45 cm and another is 20 cm. 45 − 20 = 25, so the first is 25 cm"
+    " longer."
+  try_at_home: "Make up a story about two strings and solve it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.B.6"
+  standard_id: "d865f537-3bc8-5143-81b9-3ade20de09d2"
+  name: "Number line"
+  explanation: "Showing whole numbers as lengths on a number line and using it to add and "
+    "subtract within 100."
+  example: "On a number line, start at 30 and move 20 to the right to reach 50."
+  try_at_home: "Draw a number line on paper and hop along it with a toy."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.C.7"
+  standard_id: "0c06f09b-9c78-5d36-b08d-5e945bc3ab76"
+  name: "Time to five minutes"
+  explanation: "Telling and writing time to the nearest five minutes on analog and digital"
+    " clocks, using a.m. and p.m."
+  example: "The hour hand is just past 4 and the minute hand is on the 7, so it is 4:35."
+  try_at_home: "Ask for the time at different times of day, including a.m. or p.m."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.C.8"
+  standard_id: "30c2c925-42a9-5c74-85f2-f3daaf2cc895"
+  name: "Money word problems"
+  explanation: "Solving problems with dollar bills, quarters, dimes, nickels and pennies, "
+    "using the $ and ¢ signs."
+  example: "2 quarters and 1 dime is 50¢ + 10¢ = 60¢."
+  try_at_home: "Let your child count coins for a small purchase."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.D.9"
+  standard_id: "b528719a-796b-567e-a14d-2571811c1f1f"
+  name: "Line plots"
+  explanation: "Measuring several objects to the nearest whole unit and showing the "
+    "results with marks above a number line."
+  example: "Pencils measure 5, 6, 6 and 7 inches. The line plot has two marks above 6."
+  try_at_home: "Measure leaves or shoes and mark the results on a number line."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.MD.D.10"
+  standard_id: "1a743663-429e-5e6f-b9f5-a1c67fa15832"
+  name: "Picture and bar graphs"
+  explanation: "Drawing picture graphs and bar graphs with up to four categories, and "
+    "answering questions about them."
+  example: "Votes: 5 for apples, 3 for grapes. Apples got 2 more votes."
+  try_at_home: "Survey the family on favorite foods and graph the answers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.G.A.1"
+  standard_id: "24b64403-c53d-5baf-9c62-ec93b347a30e"
+  name: "Shapes and their features"
+  explanation: "Recognizing and drawing shapes by their features, such as the number of "
+    "angles or faces, and naming triangles, quadrilaterals, pentagons, hexagons"
+    " and cubes."
+  example: "A pentagon has 5 sides and 5 angles. A cube has 6 equal square faces."
+  try_at_home: "Find shapes around the house and count their sides and corners together."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.G.A.2"
+  standard_id: "73138360-d2c3-53b0-aa36-91b9ea38f0f8"
+  name: "Rows and columns of squares"
+  explanation: "Splitting a rectangle into rows and columns of equal squares and counting "
+    "them to find the total."
+  example: "A rectangle with 3 rows of 4 squares has 12 squares."
+  try_at_home: "Fold a paper rectangle into equal squares and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "2.G.A.3"
+  standard_id: "50aa6eb6-7f6b-5286-80d9-67e719722c54"
+  name: "Halves, thirds and fourths"
+  explanation: "Splitting circles and rectangles into 2, 3 or 4 equal shares and naming "
+    "them. Equal shares can have different shapes."
+  example: "A rectangle cut in 3 equal parts has 3 thirds. Two halves of a sandwich "
+    "can be two rectangles or two triangles."
+  try_at_home: "Share a snack equally among 3 people and name each share."
+  review { status: STATUS_DRAFT }
+}

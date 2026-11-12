@@ -1,0 +1,23 @@
+# The skill graph, imported from the pinned Knowledge Graph export in
+# MODULE.bazel and checked against the curated layer in content/math.
+genrule(
+    name = "graph",
+    srcs = [
+        "@knowledge_graph_nodes//file",
+        "@knowledge_graph_relationships//file",
+        "//content/math",
+        "//content/math:strands.textproto",
+    ],
+    outs = ["graph.binpb"],
+    cmd = " ".join([
+        "$(location //graph/cmd/gradeguide-graph-import)",
+        "--nodes=$(location @knowledge_graph_nodes//file)",
+        "--relationships=$(location @knowledge_graph_relationships//file)",
+        "--version=v1.17.0",
+        "--curated=$$(dirname $(location //content/math:strands.textproto))",
+        "--out=$@",
+        "--quiet",
+    ]),
+    tools = ["//graph/cmd/gradeguide-graph-import"],
+    visibility = ["//visibility:public"],
+)

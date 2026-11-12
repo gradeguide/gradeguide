@@ -1,0 +1,48 @@
+Credits for the imported data
+=============================
+
+The skill graph that //data:graph builds is imported from the Learning
+Commons Knowledge Graph export, release v1.17.0, licensed under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/; see LICENSE in this
+directory). The export is downloaded at build time and is not stored in
+this repository.
+
+The import changes the data: it keeps a subset, converts it to a different
+schema, and derives strands, lesson order, pacing and placements.
+
+Each imported record keeps its author and attribution statement. These are
+all the statements in the import, verbatim:
+
+Common Good Learning Tools (Common Core State Standards for Mathematics):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license. Common Core Mathematics standards provided by Common Good
+  Learning Tools available at
+  https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf.
+
+Achievement Network (learning components):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license. Learning Commons received learning components under CC BY-4.0
+  from Achievement Network.
+
+Student Achievement Partners (learning progressions):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license. Learning Commons received learning progressions under CC0 from
+  Student Achievement Partners.
+
+Illustrative Mathematics (IM 360 scope and sequence):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license. Learning Commons received the scope and sequence of the
+  Illustrative Mathematics 360 curriculum under CC BY-4.0 from Illustrative
+  Mathematics.
+
+New Meridian Corporation (mastery statistics):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license, available at https://creativecommons.org/licenses/by/4.0.
+  Learning Commons received the New Meridian Mastery Statistics under
+  CC BY-4.0 from New Meridian Corporation.
+
+Eedi Ltd. (misconceptions):
+  Knowledge Graph is provided by Learning Commons under the CC BY-4.0
+  license, available at https://creativecommons.org/licenses/by/4.0. "Eedi
+  Misconceptions Graph v1.0" (c) 2026 Eedi Ltd., licensed under CC BY 4.0
+  and available at https://www.eedi.com.

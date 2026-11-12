@@ -1,0 +1,338 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# The strands and topics that group K-8 math across grades. A strand follows
+# Common Core domains from grade to grade. A topic is a thread inside a
+# strand, made of whole clusters. Every K-8 cluster is in exactly one topic.
+
+strands {
+  strand: STRAND_COUNTING
+  name: "Counting"
+  description: "Saying numbers in order, counting things, and comparing small numbers. "
+    "Kindergarten."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  name: "Operations and algebra"
+  description: "Adding, subtracting, multiplying and dividing, then expressions, "
+    "equations and functions. Kindergarten to grade 8."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_NUMBER
+  name: "Place value and numbers"
+  description: "Place value and written methods for whole numbers and decimals, then "
+    "negative and irrational numbers. Kindergarten to grade 8."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_FRACTIONS_AND_RATIOS
+  name: "Fractions and ratios"
+  description: "What a fraction is and how to calculate with fractions, then ratios, "
+    "rates, percentages and proportional relationships. Grades 3 to 7."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_MEASUREMENT_AND_DATA
+  name: "Measurement and data"
+  description: "Length, time, money, area, angles and volume, and reading and making "
+    "graphs, then statistics and probability. Kindergarten to grade 8."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_GEOMETRY
+  name: "Shapes and geometry"
+  description: "Naming and sorting shapes, then the coordinate plane, area and volume "
+    "formulas, transformations and the Pythagorean theorem. Kindergarten to grade 8."
+  review { status: STATUS_DRAFT }
+}
+strands {
+  strand: STRAND_PRACTICES
+  name: "Ways of thinking"
+  description: "Habits used in every grade, such as making sense of a problem and "
+    "explaining an answer."
+  review { status: STATUS_DRAFT }
+}
+
+# Counting
+
+topics {
+  id: "counting"
+  strand: STRAND_COUNTING
+  position: 0
+  name: "Counting"
+  cluster_codes: ["K.CC.A", "K.CC.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "comparing-small-numbers"
+  strand: STRAND_COUNTING
+  position: 1
+  name: "Comparing small numbers"
+  cluster_codes: ["K.CC.C"]
+  review { status: STATUS_DRAFT }
+}
+
+# Operations and algebra
+
+topics {
+  id: "adding-and-subtracting"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 0
+  name: "Adding and subtracting"
+  cluster_codes: ["K.OA.A", "1.OA.A", "1.OA.B", "1.OA.C", "1.OA.D", "2.OA.A", "2.OA.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "multiplying-and-dividing"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 1
+  name: "Multiplying and dividing"
+  cluster_codes: ["2.OA.C", "3.OA.A", "3.OA.B", "3.OA.C", "3.OA.D", "4.OA.A", "4.OA.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "patterns"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 2
+  name: "Patterns"
+  cluster_codes: ["4.OA.C", "5.OA.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "expressions"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 3
+  name: "Expressions"
+  cluster_codes: ["5.OA.A", "6.EE.A", "7.EE.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "equations"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 4
+  name: "Equations and inequalities"
+  cluster_codes: ["6.EE.B", "7.EE.B", "8.EE.C"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "exponents-and-roots"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 5
+  name: "Exponents and roots"
+  cluster_codes: ["8.EE.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "relationships-and-functions"
+  strand: STRAND_OPERATIONS_AND_ALGEBRA
+  position: 6
+  name: "Relationships and functions"
+  cluster_codes: ["6.EE.C", "8.EE.B", "8.F.A", "8.F.B"]
+  review { status: STATUS_DRAFT }
+}
+
+# Place value and numbers
+
+topics {
+  id: "place-value"
+  strand: STRAND_NUMBER
+  position: 0
+  name: "Place value"
+  cluster_codes: ["K.NBT.A", "1.NBT.A", "1.NBT.B", "2.NBT.A", "4.NBT.A", "5.NBT.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "written-methods"
+  strand: STRAND_NUMBER
+  position: 1
+  name: "Adding, subtracting, multiplying and dividing big numbers"
+  cluster_codes: ["1.NBT.C", "2.NBT.B", "3.NBT.A", "4.NBT.B", "5.NBT.B", "6.NS.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "dividing-fractions"
+  strand: STRAND_NUMBER
+  position: 2
+  name: "Dividing fractions"
+  cluster_codes: ["6.NS.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "negative-numbers"
+  strand: STRAND_NUMBER
+  position: 3
+  name: "Negative numbers"
+  cluster_codes: ["6.NS.C", "7.NS.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "irrational-numbers"
+  strand: STRAND_NUMBER
+  position: 4
+  name: "Irrational numbers"
+  cluster_codes: ["8.NS.A"]
+  review { status: STATUS_DRAFT }
+}
+
+# Fractions and ratios
+
+topics {
+  id: "understanding-fractions"
+  strand: STRAND_FRACTIONS_AND_RATIOS
+  position: 0
+  name: "Understanding fractions"
+  cluster_codes: ["3.NF.A", "4.NF.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "calculating-with-fractions"
+  strand: STRAND_FRACTIONS_AND_RATIOS
+  position: 1
+  name: "Calculating with fractions"
+  cluster_codes: ["4.NF.B", "5.NF.A", "5.NF.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "decimal-fractions"
+  strand: STRAND_FRACTIONS_AND_RATIOS
+  position: 2
+  name: "Tenths and hundredths as decimals"
+  cluster_codes: ["4.NF.C"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "ratios-and-proportions"
+  strand: STRAND_FRACTIONS_AND_RATIOS
+  position: 3
+  name: "Ratios, rates and percentages"
+  cluster_codes: ["6.RP.A", "7.RP.A"]
+  review { status: STATUS_DRAFT }
+}
+
+# Measurement and data
+
+topics {
+  id: "length"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 0
+  name: "Measuring length"
+  cluster_codes: ["K.MD.A", "1.MD.A", "2.MD.A", "2.MD.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "time-and-money"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 1
+  name: "Time and money"
+  cluster_codes: ["1.MD.B", "2.MD.C", "3.MD.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "data-and-graphs"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 2
+  name: "Data and graphs"
+  cluster_codes: ["K.MD.B", "1.MD.C", "2.MD.D", "3.MD.B", "4.MD.B", "5.MD.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "area-and-perimeter"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 3
+  name: "Area and perimeter"
+  cluster_codes: ["3.MD.C", "3.MD.D"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "converting-units"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 4
+  name: "Converting units"
+  cluster_codes: ["4.MD.A", "5.MD.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "angles"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 5
+  name: "Measuring angles"
+  cluster_codes: ["4.MD.C"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "volume"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 6
+  name: "Volume"
+  cluster_codes: ["5.MD.C"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "statistics"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 7
+  name: "Statistics"
+  cluster_codes: ["6.SP.A", "6.SP.B", "7.SP.A", "7.SP.B", "8.SP.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "probability"
+  strand: STRAND_MEASUREMENT_AND_DATA
+  position: 8
+  name: "Probability"
+  cluster_codes: ["7.SP.C"]
+  review { status: STATUS_DRAFT }
+}
+
+# Shapes and geometry
+
+topics {
+  id: "shapes"
+  strand: STRAND_GEOMETRY
+  position: 0
+  name: "Shapes and their properties"
+  cluster_codes: ["K.G.A", "K.G.B", "1.G.A", "2.G.A", "3.G.A", "4.G.A", "5.G.B"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "coordinate-plane"
+  strand: STRAND_GEOMETRY
+  position: 1
+  name: "The coordinate plane"
+  cluster_codes: ["5.G.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "area-surface-and-volume"
+  strand: STRAND_GEOMETRY
+  position: 2
+  name: "Area, surface area and volume formulas"
+  cluster_codes: ["6.G.A", "7.G.B", "8.G.C"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "scale-drawings-and-constructions"
+  strand: STRAND_GEOMETRY
+  position: 3
+  name: "Scale drawings and constructions"
+  cluster_codes: ["7.G.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "transformations"
+  strand: STRAND_GEOMETRY
+  position: 4
+  name: "Moving, turning and resizing shapes"
+  cluster_codes: ["8.G.A"]
+  review { status: STATUS_DRAFT }
+}
+topics {
+  id: "pythagorean-theorem"
+  strand: STRAND_GEOMETRY
+  position: 5
+  name: "The Pythagorean theorem"
+  cluster_codes: ["8.G.B"]
+  review { status: STATUS_DRAFT }
+}

@@ -1,0 +1,23 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "lcimport",
+    srcs = [
+        "derive.go",
+        "lcimport.go",
+    ],
+    importpath = "github.com/gradeguide/gradeguide/graph/lcimport",
+    visibility = ["//visibility:public"],
+    deps = ["//proto/graph/v1"],
+)
+
+go_test(
+    name = "lcimport_test",
+    srcs = [
+        "derive_test.go",
+        "lcimport_test.go",
+    ],
+    data = glob(["testdata/**"]),
+    embed = [":lcimport"],
+    deps = ["//proto/graph/v1"],
+)

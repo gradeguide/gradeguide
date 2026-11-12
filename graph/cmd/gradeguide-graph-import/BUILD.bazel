@@ -1,0 +1,21 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "gradeguide-graph-import_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/gradeguide/gradeguide/graph/cmd/gradeguide-graph-import",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//graph/curated",
+        "//graph/lcimport",
+        "//proto/graph/v1",
+        "@org_golang_google_protobuf//encoding/protojson",
+        "@org_golang_google_protobuf//proto",
+    ],
+)
+
+go_binary(
+    name = "gradeguide-graph-import",
+    embed = [":gradeguide-graph-import_lib"],
+    visibility = ["//visibility:public"],
+)

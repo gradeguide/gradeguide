@@ -1,0 +1,413 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 3 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "3.OA.A.1"
+  standard_id: "affc10f3-aae4-58ea-bc33-ed9fae9be609"
+  name: "What multiplication means"
+  explanation: "Seeing multiplication as equal groups: 5 × 7 means 5 groups of 7 things."
+  example: "5 bags with 7 marbles each is 5 × 7 = 35 marbles."
+  try_at_home: "Spot equal groups around the house, such as eggs in a carton, and say the "
+    "multiplication."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.A.2"
+  standard_id: "64cb2ac3-6f8d-55f5-bbae-6e4de98768e3"
+  name: "What division means"
+  explanation: "Seeing division as sharing into equal groups, or as finding how many "
+    "groups fit."
+  example: "56 ÷ 8: share 56 cards among 8 people, or make piles of 8. Either way, 7."
+  try_at_home: "Share snacks fairly and say the division out loud."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.A.3"
+  standard_id: "7fb27036-f1e3-5214-b65d-2333e20186be"
+  name: "Multiply and divide word problems to 100"
+  explanation: "Solving story problems with equal groups, arrays and measurements, using "
+    "drawings and equations."
+  example: "24 chairs in 4 equal rows. How many in each row? 24 ÷ 4 = 6."
+  try_at_home: "Ask for a quick drawing first, then the equation."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.A.4"
+  standard_id: "35ca96cb-de02-567b-99f7-dd938c89fb0d"
+  name: "Unknown numbers in × and ÷ equations"
+  explanation: "Finding the missing number in a multiplication or division equation."
+  example: "8 × ? = 48. The missing number is 6."
+  try_at_home: "Play \"I'm thinking of a number: 7 times it is 42.\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.B.5"
+  standard_id: "2e901b04-79c4-5d68-9077-47e55816f1f4"
+  name: "Properties of multiplication"
+  explanation: "Using rules that make multiplying easier: order does not matter, grouping "
+    "does not matter, and a product can be split into two easier ones."
+  example: "8 × 7 = 8 × 5 + 8 × 2 = 40 + 16 = 56."
+  try_at_home: "When a fact is hard, ask \"what easier facts could you split it into?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.B.6"
+  standard_id: "500edab4-e918-5517-a755-0d9f6b57650c"
+  name: "Division as a missing factor"
+  explanation: "Solving a division by thinking of the multiplication it undoes."
+  example: "32 ÷ 8 asks \"8 times what is 32?\" The answer is 4."
+  try_at_home: "Practise fact families together: 4 × 8, 8 × 4, 32 ÷ 8 and 32 ÷ 4."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.C.7"
+  standard_id: "446e7fbc-10cc-53f3-8e39-a32cc2d70c6d"
+  name: "Times tables"
+  explanation: "Multiplying and dividing within 100 quickly. By the end of grade 3, all "
+    "products of two one-digit numbers are known from memory."
+  example: "7 × 8 = 56, and so 56 ÷ 7 = 8."
+  try_at_home: "A few minutes a day, a few facts at a time. Recall gets faster, and "
+    "shouldn't be rushed with a timer."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.D.8"
+  standard_id: "7b7b5a54-3ded-50ae-bb6d-403b56c3d378"
+  name: "Two-step word problems"
+  explanation: "Solving problems that take two steps, writing them with a letter for the "
+    "unknown, and checking whether the answer is reasonable."
+  example: "3 packs of 6 juice boxes, and 5 are drunk. 3 × 6 − 5 = 13 left."
+  try_at_home: "Ask for an estimate before solving, then compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.OA.D.9"
+  standard_id: "54a4b539-c90a-5b02-ab73-cbc25632e167"
+  name: "Patterns in the tables"
+  explanation: "Noticing and explaining patterns in addition and multiplication tables."
+  example: "4 times any number is always even, because it is 2 × 2 times the number."
+  try_at_home: "Colour the multiples of 2, 4 or 5 on a 100 chart and talk about the "
+    "patterns."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NBT.A.1"
+  standard_id: "95639b83-ad93-53bb-9f82-d2cc5a91a67b"
+  name: "Rounding to 10 or 100"
+  explanation: "Rounding whole numbers to the nearest 10 or 100, using place value."
+  example: "467 rounds to 470 (nearest 10) or 500 (nearest 100)."
+  try_at_home: "Round prices at the store to the nearest dollar or ten dollars."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NBT.A.2"
+  standard_id: "8b539ff6-44c7-59b1-8789-03afc110e85e"
+  name: "Add and subtract within 1,000"
+  explanation: "Adding and subtracting three-digit numbers fluently, with methods based on"
+    " place value."
+  example: "503 − 268 = 235."
+  try_at_home: "Keep score in a game to several hundred and add the points each round."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NBT.A.3"
+  standard_id: "9af2cedd-56ce-5e0c-9a2f-2b62efda3e86"
+  name: "Multiplying by multiples of 10"
+  explanation: "Multiplying a one-digit number by 10, 20, … 90, using place value."
+  example: "9 × 80 = 9 × 8 tens = 72 tens = 720."
+  try_at_home: "Ask how much 6 packs of 30 cards would be."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.1"
+  standard_id: "e1755456-c533-5a84-891e-59725c0479e0"
+  name: "What a fraction is"
+  explanation: "Understanding 1/4 as one of 4 equal parts of a whole, and 3/4 as three of "
+    "those parts."
+  example: "A pizza cut in 4 equal slices: 3 slices is 3/4."
+  try_at_home: "Cut food into equal parts and name the fractions. Make sure the parts "
+    "really are equal."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.2"
+  standard_id: "40edda9b-7aed-5802-8bff-d566f71df50d"
+  name: "Fractions on a number line"
+  explanation: "Placing fractions on a number line by splitting the space from 0 to 1 into"
+    " equal parts."
+  example: "Split 0 to 1 into 3 equal jumps. Two jumps land on 2/3."
+  try_at_home: "Draw a number line on the pavement in chalk and hop to fractions."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.2.a"
+  standard_id: "972e8e15-cee5-5ad4-9940-ab4128a5c1c4"
+  name: "Unit fractions on a number line"
+  explanation: "Marking a fraction like 1/4 on a number line by splitting the space from 0"
+    " to 1 into equal parts."
+  example: "Split 0 to 1 into 4 equal parts. The first mark is 1/4."
+  try_at_home: "Fold a paper strip into 4 equal parts and mark the first fold as 1/4."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.2.b"
+  standard_id: "2f598f07-ccbb-52b7-a961-5639dd557c44"
+  name: "Other fractions on a number line"
+  explanation: "Marking a fraction like 3/4 by counting that many equal steps from 0."
+  example: "Take 3 steps of size 1/4 from 0. You land on 3/4."
+  try_at_home: "Mark the folds of a paper strip as 1/4, 2/4, 3/4 and 4/4."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.3"
+  standard_id: "53dd1dc9-19ab-582c-8014-de8981768e5d"
+  name: "Equivalent and compared fractions (simple cases)"
+  explanation: "Recognising simple equivalent fractions, writing whole numbers as "
+    "fractions, and comparing fractions with the same top or bottom number."
+  example: "1/2 = 2/4. 3 = 3/1. 2/8 < 2/4, because eighths are smaller pieces."
+  try_at_home: "Compare slices: is 1/3 or 1/4 of a cake bigger? Why?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.3.a"
+  standard_id: "5fa6d6be-71b8-5f87-aa8b-c1ed9e3cf9b0"
+  name: "What equivalent means"
+  explanation: "Seeing that two fractions are equivalent when they are the same size, "
+    "which is the same point on a number line."
+  example: "1/2 and 2/4 land on the same point on the number line."
+  try_at_home: "Show that half a sandwich and two quarters of a sandwich are the same "
+    "amount."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.3.b"
+  standard_id: "2b557d73-b8e1-5d4e-9387-0cf0b641908f"
+  name: "Making equivalent fractions"
+  explanation: "Writing simple equivalent fractions and explaining why they match, using a"
+    " picture."
+  example: "2/3 = 4/6. Cutting each third in two makes 6 smaller pieces, and 4 of them"
+    " fill the same space."
+  try_at_home: "Draw two same-size bars, split one in thirds and the other in sixths, and "
+    "compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.3.c"
+  standard_id: "ef001e22-4544-5436-a7bd-d6aa4eab5859"
+  name: "Whole numbers as fractions"
+  explanation: "Writing a whole number as a fraction, and spotting fractions that are "
+    "equal to whole numbers."
+  example: "3 = 3/1, 4/4 = 1 and 6/3 = 2."
+  try_at_home: "Cut a pizza into 4 slices and say that all 4 of 4 make 1 whole pizza."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.NF.A.3.d"
+  standard_id: "64ba0f2e-487e-5938-867f-576ee03619ea"
+  name: "Comparing simple fractions"
+  explanation: "Comparing two fractions that have the same bottom number or the same top "
+    "number, with <, = or >, as long as both are parts of the same whole."
+  example: "2/5 < 3/5. And 1/3 > 1/6, because thirds are bigger pieces than sixths."
+  try_at_home: "Ask which is more, 1/3 of a cake or 1/6 of the same cake, and draw it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.A.1"
+  standard_id: "2ed1d2aa-c3f0-551d-9ceb-c1931c1e432a"
+  name: "Telling time and elapsed time"
+  explanation: "Telling time to the minute, and working out how much time has passed."
+  example: "From 3:40 to 4:15 is 35 minutes."
+  try_at_home: "Ask how long until dinner, or how long the drive took."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.A.2"
+  standard_id: "3d0fc1be-afc6-54d5-a2a2-c051fe916e16"
+  name: "Liquid volume and mass"
+  explanation: "Estimating and measuring in grams, kilograms and litres, and solving "
+    "one-step problems with them."
+  example: "A full bottle holds about 1 litre. A paper clip weighs about 1 gram."
+  try_at_home: "Cook together and read the amounts on packages."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.B.3"
+  standard_id: "cf660729-0dc5-5627-b43b-450c3ff281cf"
+  name: "Picture and bar graphs"
+  explanation: "Drawing and reading bar graphs and picture graphs where each picture or "
+    "step stands for more than one."
+  example: "Each star stands for 5 votes, so 4 stars is 20 votes."
+  try_at_home: "Survey the family about a favourite and graph the answers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.B.4"
+  standard_id: "3bca2a07-c4ab-57ec-8369-4fdee85e2c49"
+  name: "Line plots in halves and quarters"
+  explanation: "Measuring lengths to the nearest half or quarter inch and showing them on "
+    "a line plot."
+  example: "Pencils of 5 1/2, 6 and 5 1/2 inches, shown as Xs over a number line."
+  try_at_home: "Measure toys or leaves to the nearest 1/2 inch and make a line plot."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.5"
+  standard_id: "aad309a8-f04d-5e11-b9b4-7bbe36d72205"
+  name: "What area is"
+  explanation: "Understanding area as how many unit squares cover a flat shape."
+  example: "A shape covered by 12 one-inch squares has an area of 12 square inches."
+  try_at_home: "Cover a book with sticky notes and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.5.a"
+  standard_id: "35819393-a4e8-5f4a-91af-970b1bb513c3"
+  name: "The unit square"
+  explanation: "A square with sides of 1 unit is the basic piece for measuring area, and "
+    "it has an area of one square unit."
+  example: "A square with 1 cm sides has an area of 1 square centimetre."
+  try_at_home: "Cut out a 1-inch square of paper and use it as the area measuring piece."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.5.b"
+  standard_id: "82301928-3823-5cf8-a51f-c407011803c7"
+  name: "Covering a shape with squares"
+  explanation: "A flat shape that unit squares cover with no gaps or overlaps has an area "
+    "equal to the number of squares."
+  example: "A shape covered by 12 unit squares has an area of 12 square units."
+  try_at_home: "Cover a placemat with sticky notes, with no gaps, and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.6"
+  standard_id: "fc25c5ec-af04-54ae-a25e-8e2be4885082"
+  name: "Measuring area by counting squares"
+  explanation: "Finding area by counting unit squares, in square centimetres, inches or "
+    "other units."
+  example: "Count the squares inside a shape drawn on grid paper."
+  try_at_home: "Draw shapes on grid paper and race to find their areas."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.7"
+  standard_id: "7ef75c23-5d70-5765-831c-a9e227b95db7"
+  name: "Area and multiplication"
+  explanation: "Linking area to multiplication: a rectangle's area is its length times its"
+    " width, and a big rectangle can be split into smaller ones."
+  example: "A 6 × 7 rectangle = 6 × 5 + 6 × 2 = 42 square units."
+  try_at_home: "Measure a rug or tile floor and find its area by multiplying."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.7.a"
+  standard_id: "3dbbcda5-5868-5b18-a07e-5e8b4eb24e58"
+  name: "Tiling and multiplying"
+  explanation: "Finding a rectangle's area by covering it with unit squares, and seeing "
+    "that this matches length × width."
+  example: "A 3 by 4 rectangle has 3 rows of 4 squares, which is 12. And 3 × 4 = 12."
+  try_at_home: "Tile a small rectangle with coins or tiles, then multiply the sides to "
+    "check."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.7.b"
+  standard_id: "813f4e23-c302-532a-845f-cb693fe12b35"
+  name: "Area problems by multiplying"
+  explanation: "Multiplying the side lengths to find the area of a rectangle in real "
+    "problems, and picturing a product as a rectangle."
+  example: "A garden 5 feet by 8 feet has an area of 5 × 8 = 40 square feet."
+  try_at_home: "Find the area of a door or table by multiplying its sides."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.7.c"
+  standard_id: "dd2c096e-56d6-57a9-b4f0-4cdf91d462d9"
+  name: "Splitting a rectangle"
+  explanation: "Seeing that a rectangle can be split into two, and that the whole area is "
+    "the sum of the two parts."
+  example: "4 × 9 = 4 × 5 + 4 × 4 = 20 + 16 = 36."
+  try_at_home: "Draw a rectangle on grid paper, split it into two and add the two areas."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.C.7.d"
+  standard_id: "18ef0fa7-89ae-53f6-b4b0-f98cda23570e"
+  name: "Area of L-shapes"
+  explanation: "Finding the area of a shape made of rectangles by splitting it into "
+    "rectangles and adding their areas."
+  example: "An L-shape made of a 4 by 3 rectangle and a 2 by 2 rectangle has area 12 +"
+    " 4 = 16."
+  try_at_home: "Find the floor area of an L-shaped room by splitting it into two "
+    "rectangles."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.MD.D.8"
+  standard_id: "b6ea7b48-aac1-55c4-91f8-c5c13ae946d3"
+  name: "Perimeter"
+  explanation: "Finding the distance around a shape, and telling it apart from area."
+  example: "A 4 by 3 rectangle has perimeter 4 + 3 + 4 + 3 = 14."
+  try_at_home: "Walk around a table counting hand-spans for its perimeter."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.G.A.1"
+  standard_id: "ad1bfb7b-57cd-58fe-95a2-11097c8efad5"
+  name: "Shape categories"
+  explanation: "Seeing that shapes in different categories can share features, such as "
+    "squares, rectangles and rhombuses all being quadrilaterals."
+  example: "A square is a rectangle and a rhombus at the same time."
+  try_at_home: "Sort household shapes by the number of sides and corners."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "3.G.A.2"
+  standard_id: "ebdfdc2a-8514-50ee-8a28-ed577b81a516"
+  name: "Equal parts of shapes"
+  explanation: "Splitting a shape into parts with equal area, and naming each part as a "
+    "unit fraction."
+  example: "A rectangle split into 6 equal parts: each part is 1/6 of the area."
+  try_at_home: "Fold paper into equal parts in different ways, and check each part is the "
+    "same size."
+  review { status: STATUS_DRAFT }
+}

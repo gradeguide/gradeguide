@@ -1,0 +1,418 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 8 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "8.NS.A.1"
+  standard_id: "ab19383d-8a81-5766-909c-92569f412a7a"
+  name: "Rational and irrational numbers"
+  explanation: "Knowing that numbers that are not fractions are called irrational, and "
+    "that fractions have decimals that stop or repeat."
+  example: "1/3 = 0.333… is rational. √2 and π are irrational. 0.777… = 7/9."
+  try_at_home: "Use a calculator to see that √2 never settles into a repeating pattern."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.NS.A.2"
+  standard_id: "10204309-7113-5913-aa66-6d95f9338f05"
+  name: "Estimating irrational numbers"
+  explanation: "Using decimals to place irrational numbers on a number line and to compare"
+    " them."
+  example: "√2 is between 1 and 2, then between 1.4 and 1.5, since 1.4² = 1.96 and "
+    "1.5² = 2.25."
+  try_at_home: "Guess and check by squaring to get closer to √2."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.A.1"
+  standard_id: "549d72b8-68e2-527f-a3fa-c8fb033fe4a2"
+  name: "Rules for exponents"
+  explanation: "Using the rules of exponents, including negative exponents, to rewrite "
+    "numbers that have powers."
+  example: "2³ × 2⁴ = 2⁷ = 128, and 3⁻² = 1/9."
+  try_at_home: "Use a calculator to check 2³ × 2⁴ against 2⁷."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.A.2"
+  standard_id: "3bebaa64-eeef-5329-b3cc-dddc8e68f0a1"
+  name: "Square roots and cube roots"
+  explanation: "Using square root and cube root symbols to solve equations like x² = 49 "
+    "and x³ = 27, and knowing that √2 is not a fraction."
+  example: "x² = 49 gives x = 7, since 7 × 7 = 49. ∛27 = 3, since 3 × 3 × 3 = 27."
+  try_at_home: "Find the side of a square floor tile with area 49 square inches."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.A.3"
+  standard_id: "85e37e84-850b-55bb-8e2c-db84016e7e56"
+  name: "Powers of ten for big and small"
+  explanation: "Writing very large or very small numbers as a single digit times a power "
+    "of 10, and comparing them."
+  example: "U.S. population 3 × 10⁸ and world population 7 × 10⁹. 70 ÷ 3 is about 23, "
+    "so the world has more than 20 times as many people."
+  try_at_home: "Write the distance to the Moon, about 400,000 km, as 4 × 10⁵."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.A.4"
+  standard_id: "11610aaf-64f0-518d-b9c1-95070a8a7001"
+  name: "Scientific notation"
+  explanation: "Calculating with numbers in scientific notation and choosing sensible "
+    "units for very large or very small things."
+  example: "(3 × 10⁴) × (2 × 10³) = 6 × 10⁷."
+  try_at_home: "Look for scientific notation on a calculator display and read it aloud."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.B.5"
+  standard_id: "0b02d60f-6a4e-5cf6-9a46-91ba5bfe5b7d"
+  name: "Graphs of unit rates"
+  explanation: "Graphing a proportional relationship so that the unit rate is the "
+    "steepness (slope) of the line, and comparing two of them."
+  example: "Car A goes 60 miles per hour. Car B's graph passes through (2, 100), which"
+    " is 50 miles per hour. Car A is faster."
+  try_at_home: "Compare two friends' running speeds from a graph and a sentence."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.B.6"
+  standard_id: "f42ff582-c718-5196-917c-9178b1fb2c91"
+  name: "Why slope is the same everywhere"
+  explanation: "Using similar triangles to see that the slope of a straight line is the "
+    "same between any two points, which leads to y = mx + b."
+  example: "The line through (0, 0), (2, 4) and (3, 6) has slope 4/2 = 2 and 6/3 = 2, "
+    "so y = 2x."
+  try_at_home: "Draw a line on grid paper and measure its rise over run in two different "
+    "spots."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.7"
+  standard_id: "b686895b-8c12-52ff-84c5-1acd55ee9e34"
+  name: "Solving linear equations"
+  explanation: "Solving equations with one unknown number."
+  example: "3x + 4 = 19 gives 3x = 15, so x = 5."
+  try_at_home: "Ask: \"I'm thinking of a number. Triple it and add 4 to get 19.\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.7.a"
+  standard_id: "e4fb1b8a-aa7d-559f-a28b-47500a5c1a61"
+  name: "One, many or no solutions"
+  explanation: "Seeing that an equation can have one solution, infinitely many, or none, "
+    "by simplifying it step by step."
+  example: "x + 3 = 5 has one solution. 2x + 2 = 2(x + 1) is always true. x + 1 = x + "
+    "2 has no solution."
+  try_at_home: "Try the equation x + 1 = x + 2 with different numbers and see why it never"
+    " works."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.7.b"
+  standard_id: "8d03e081-fa8a-554a-ab0f-ce2b978d9da4"
+  name: "Equations with parentheses"
+  explanation: "Solving equations that need parentheses expanded and like terms combined."
+  example: "2(x + 3) = 4x − 2 becomes 2x + 6 = 4x − 2, so 8 = 2x and x = 4."
+  try_at_home: "Check an answer by putting it back in: 2(4 + 3) = 14 and 4 × 4 − 2 = 14."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.8"
+  standard_id: "15f1b8b4-b836-5750-866a-f7d5f377a296"
+  name: "Two equations at once"
+  explanation: "Analyzing and solving two linear equations together."
+  example: "x + y = 10 and x − y = 2 give x = 6 and y = 4."
+  try_at_home: "Ask: \"Two numbers add to 10 and differ by 2. What are they?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.8.a"
+  standard_id: "45845725-c424-5979-935e-799020ffdbdb"
+  name: "Where two lines meet"
+  explanation: "Understanding that the solution to two equations is the point where their "
+    "graphs cross."
+  example: "y = x + 1 and y = −x + 5 cross at (2, 3), since 2 + 1 = 3 and −2 + 5 = 3."
+  try_at_home: "Draw two lines on grid paper and read off where they cross."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.8.b"
+  standard_id: "edc37a90-fbc4-5141-a96c-743419e57327"
+  name: "Solving two equations"
+  explanation: "Solving two equations with two unknowns by algebra, and checking by "
+    "graphing."
+  example: "y = 2x and x + y = 9 give 3x = 9, so x = 3 and y = 6."
+  try_at_home: "Swap one value into the other equation to check that both work."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.EE.C.8.c"
+  standard_id: "c7c0e167-bb2b-525b-89f7-0bea1608513c"
+  name: "Problems with two unknowns"
+  explanation: "Solving real problems that lead to two equations."
+  example: "Adult tickets are $8 and child tickets $5. 10 tickets cost $62. That is 4 "
+    "adult and 6 child: 32 + 30 = 62."
+  try_at_home: "Make up a ticket or snack problem with two prices and a total."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.F.A.1"
+  standard_id: "e4de5a68-0b5a-5a21-bfe2-2924f3a7e70e"
+  name: "What a function is"
+  explanation: "Understanding a function as a rule that gives exactly one output for each "
+    "input."
+  example: "The rule \"double and add 1\" turns 3 into 7."
+  try_at_home: "Make a function machine game: you give a number and the other player "
+    "applies a secret rule."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.F.A.2"
+  standard_id: "9f8337d3-e4d7-51cc-a27c-f8403bca7ad1"
+  name: "Comparing two functions"
+  explanation: "Comparing functions shown in different ways, such as a table and an "
+    "equation."
+  example: "A table with y = 1, 4, 7 for x = 0, 1, 2 grows by 3 each step. y = 2x + 5 "
+    "grows by 2. The table grows faster."
+  try_at_home: "Compare two phone plans, one as a table and one as a sentence."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.F.A.3"
+  standard_id: "534ca674-79cd-5a7e-b7e0-b9258b338e8c"
+  name: "Linear and nonlinear functions"
+  explanation: "Knowing that y = mx + b makes a straight line, and recognizing functions "
+    "that do not."
+  example: "y = 2x + 1 is a line. A = s² gives (1, 1), (2, 4), (3, 9), which are not "
+    "on a line."
+  try_at_home: "Plot the area of squares with sides 1, 2 and 3 and see that it curves."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.F.B.4"
+  standard_id: "0ff0d447-960a-5116-9fde-5989f4fc88fc"
+  name: "Building linear functions"
+  explanation: "Writing an equation for a linear relationship, and finding the rate of "
+    "change and starting value from a description, table or graph."
+  example: "A gym has a $20 sign-up fee and $10 a month: y = 10x + 20. From (1, 30) "
+    "and (3, 50) the rate is 20 ÷ 2 = 10."
+  try_at_home: "Find the starting amount and weekly change in a savings plan."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.F.B.5"
+  standard_id: "9d3c6a12-46a7-5285-a425-df2570bc7764"
+  name: "Reading and sketching graphs"
+  explanation: "Describing a graph of a situation, such as where it goes up, goes down or "
+    "stays flat, and sketching a graph from a description."
+  example: "A ball thrown up has a graph that rises, then falls."
+  try_at_home: "Sketch a graph of your speed on a bike ride to the park."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.SP.A.1"
+  standard_id: "56b722c3-4a4c-50c9-bc55-a152ee3b276d"
+  name: "Scatter plots"
+  explanation: "Making and reading graphs of pairs of measurements to see patterns such as"
+    " clusters, outliers and trends."
+  example: "Hours studied against test score tend to rise together, a positive "
+    "association."
+  try_at_home: "Plot family members' heights against shoe sizes."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.SP.A.2"
+  standard_id: "2ef2cd57-bb44-5bc3-a5e3-081de809894f"
+  name: "Fitting a line to data"
+  explanation: "Drawing a straight line close to scattered points and judging how well it "
+    "fits."
+  example: "A line drawn through the middle of a scatter plot with most points near it"
+    " is a good fit."
+  try_at_home: "Lay a ruler or a spaghetti strand on a scatter plot to fit a line."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.SP.A.3"
+  standard_id: "98da3d52-b694-59f6-be1f-912861048cdc"
+  name: "Using a line to make predictions"
+  explanation: "Using the equation of a fitted line to answer questions, and explaining "
+    "what the slope and starting value mean."
+  example: "Plant height y = 1.5x + 10: each extra hour of sunlight goes with 1.5 cm "
+    "more height, and 10 cm is the start."
+  try_at_home: "Describe what the slope means in a graph from a news article."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.SP.A.4"
+  standard_id: "13130cb1-c8cf-5460-a77e-04115ef91419"
+  name: "Two-way tables"
+  explanation: "Using a table of counts for two yes-or-no questions, and comparing "
+    "percentages across rows or columns to spot connections."
+  example: "Of 10 students with a curfew, 8 have chores (80%). Of 10 without, 4 do "
+    "(40%). Curfew goes with chores."
+  try_at_home: "Survey family or friends on two yes-or-no questions and fill in a table."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.1"
+  standard_id: "785dbfaa-3ede-5681-91dc-23574d49a09e"
+  name: "Moves that keep shape and size"
+  explanation: "Checking by hands-on work that sliding, flipping and turning a shape does "
+    "not change its size or shape."
+  example: "Trace a triangle on paper, slide it, and see that it fits the original."
+  try_at_home: "Cut a shape from paper and slide, flip and turn it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.1.a"
+  standard_id: "ab3f9261-b89d-58c9-aae6-ab8312d688c7"
+  name: "Lengths stay the same"
+  explanation: "Checking that slides, flips and turns take lines to lines and keep lengths"
+    " the same."
+  example: "A 5 cm segment slid 3 cm right is still 5 cm long."
+  try_at_home: "Slide a ruler across paper and note that a drawn line stays the same "
+    "length."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.1.b"
+  standard_id: "19bac67b-648d-5cb8-8dd5-ecbba72a895c"
+  name: "Angles stay the same"
+  explanation: "Checking that slides, flips and turns keep every angle the same size."
+  example: "Flip a triangle with a 40° corner and the flipped corner is still 40°."
+  try_at_home: "Trace a corner on paper, flip it over, and compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.1.c"
+  standard_id: "f2a92de7-8237-5af3-aa9c-cb854c54a493"
+  name: "Parallel lines stay parallel"
+  explanation: "Checking that slides, flips and turns keep parallel lines parallel."
+  example: "Two parallel lines rotated by 90° are still parallel to each other."
+  try_at_home: "Rotate a sheet of lined paper and see the lines stay parallel."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.2"
+  standard_id: "01283b43-9bb8-5430-aff3-c10cf3d29937"
+  name: "Congruent shapes"
+  explanation: "Understanding that two shapes are congruent (same size and shape) when one"
+    " can be turned into the other by slides, flips and turns."
+  example: "A triangle slid 5 units right and then flipped is congruent to the "
+    "original."
+  try_at_home: "Find two matching shapes and describe the moves from one to the other."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.3"
+  standard_id: "cf8f294e-a741-5295-8441-39a8caeeb802"
+  name: "Transformations with coordinates"
+  explanation: "Describing how slides, flips, turns and enlargements change the "
+    "coordinates of a shape's points."
+  example: "Point (2, 3) flipped over the x-axis becomes (2, −3). Enlarged by 2 from "
+    "(0, 0) it becomes (4, 6)."
+  try_at_home: "Plot a triangle on grid paper and move it by 3 to the right."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.4"
+  standard_id: "1f9fc8f9-d21d-51be-8078-d50b4365fc87"
+  name: "Similar shapes"
+  explanation: "Understanding that two shapes are similar (same shape, maybe different "
+    "size) when one can be made from the other by moves and enlargement."
+  example: "A triangle with sides 3, 4, 5 and one with sides 6, 8, 10 are similar. "
+    "Every side is doubled."
+  try_at_home: "Compare a photo with its enlarged print and check that the ratios match."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.A.5"
+  standard_id: "29523042-4921-5e17-85a7-caadeab205ce"
+  name: "Angle facts for triangles and lines"
+  explanation: "Explaining facts about the angles in a triangle and the angles made when a"
+    " line crosses parallel lines."
+  example: "A triangle has angles 50° and 60°, so the third is 180 − 50 − 60 = 70°."
+  try_at_home: "Tear the corners off a paper triangle and line them up to make a straight "
+    "edge."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.B.6"
+  standard_id: "52aff65f-f9bf-51bb-99c0-0a53063975ae"
+  name: "Why the Pythagorean Theorem works"
+  explanation: "Explaining a proof of the Pythagorean Theorem (a² + b² = c² in a right "
+    "triangle) and that it works backwards too."
+  example: "3² + 4² = 9 + 16 = 25 = 5², so a triangle with sides 3, 4, 5 is a right "
+    "triangle."
+  try_at_home: "Make a corner from a 3-4-5 loop of string and check it is square."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.B.7"
+  standard_id: "baa2ebfe-b4ae-5424-b435-0978cbda8219"
+  name: "Using the Pythagorean Theorem"
+  explanation: "Finding a missing side of a right triangle using a² + b² = c²."
+  example: "A 10 ft ladder is 6 ft from a wall. The height is √(100 − 36) = √64 = 8 "
+    "ft."
+  try_at_home: "Check a TV's diagonal from its width and height."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.B.8"
+  standard_id: "74df37a8-5572-588b-a649-6045601c2aab"
+  name: "Distance between two points"
+  explanation: "Using the Pythagorean Theorem to find the distance between two points on a"
+    " grid."
+  example: "From (1, 2) to (4, 6): the legs are 3 and 4, so the distance is 5."
+  try_at_home: "Pick two spots on a map grid and work out the straight-line distance."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "8.G.C.9"
+  standard_id: "75acceb6-cebe-5b1b-be1c-a9d7dc230f94"
+  name: "Volume of cones, cylinders, spheres"
+  explanation: "Knowing the volume formulas for a cylinder, a cone and a sphere, and using"
+    " them."
+  example: "A cylinder with radius 3 and height 5 has volume π × 3² × 5 = 45π, about "
+    "141 cubic units."
+  try_at_home: "Estimate how much a can holds from its radius and height."
+  review { status: STATUS_DRAFT }
+}

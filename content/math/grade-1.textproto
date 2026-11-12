@@ -1,0 +1,268 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 1 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "1.OA.A.1"
+  standard_id: "e2ac303d-3864-56f1-b848-aa5bdcc8d14b"
+  name: "Word problems within 20"
+  explanation: "Solving story problems with adding, taking away, putting together, taking "
+    "apart and comparing, within 20. The unknown can be in any place."
+  example: "Mia has 9 stickers. She gets some more and has 14. 9 + ? = 14, so she got "
+    "5."
+  try_at_home: "Tell short stories at dinner and ask your child to solve them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.A.2"
+  standard_id: "3ee46574-0863-54dd-bfc1-434edea25aa7"
+  name: "Adding three numbers"
+  explanation: "Solving story problems that add three numbers with a total up to 20."
+  example: "4 red, 5 blue and 6 green balls: 4 + 5 + 6 = 15."
+  try_at_home: "Add up three small piles of snacks."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.B.3"
+  standard_id: "6f455e8e-dcc3-5836-8926-5a726e009306"
+  name: "Using properties to add and subtract"
+  explanation: "Using rules of number, such as adding in any order, to make adding easier."
+  example: "3 + 9 gives the same as 9 + 3. 2 + 6 + 4 = 2 + 4 + 6 = 6 + 6 = 12."
+  try_at_home: "Ask which order makes a sum easy: \"What is 2 + 7 + 8?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.B.4"
+  standard_id: "3aa19a18-9443-5552-899b-063648313211"
+  name: "Subtraction as a missing addend"
+  explanation: "Thinking of a subtraction as asking what to add to reach the larger "
+    "number."
+  example: "10 − 8 = ? means 8 + ? = 10, so the answer is 2."
+  try_at_home: "Ask \"8 plus what makes 10?\" when a subtraction is hard."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.C.5"
+  standard_id: "78ed3ab1-18c4-59c1-9aee-da9d8800d08c"
+  name: "Counting on to add and subtract"
+  explanation: "Using counting to add and subtract, such as counting on or counting back."
+  example: "To add 2 to 7, count on: 8, 9. So 7 + 2 = 9."
+  try_at_home: "Count on from the larger number when adding on fingers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.C.6"
+  standard_id: "aa0c5592-b771-525d-a9a4-e7579b266e1f"
+  name: "Adding and subtracting within 20"
+  explanation: "Adding and subtracting up to 20 using strategies such as making ten. Sums "
+    "and differences within 10 should be known quickly."
+  example: "8 + 6: 8 + 2 = 10, then 10 + 4 = 14."
+  try_at_home: "Play \"make ten\" with playing cards."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.D.7"
+  standard_id: "1208a51d-bbaa-5d92-8192-758a71391c59"
+  name: "What the equal sign means"
+  explanation: "Understanding that = means both sides have the same value, and deciding "
+    "whether an equation is true or false."
+  example: "7 = 8 − 1 is true. 4 + 1 = 5 + 2 is false."
+  try_at_home: "Write some equations and ask \"true or false?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.OA.D.8"
+  standard_id: "bbc995ce-7cd3-59c6-896d-64a23b2ee989"
+  name: "Finding the missing number"
+  explanation: "Finding the unknown number in an addition or subtraction equation."
+  example: "8 + ? = 11, so the missing number is 3."
+  try_at_home: "Cover one number in an equation and ask what it must be."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.A.1"
+  standard_id: "db51575f-e92e-5a08-904b-66b7b1a5a656"
+  name: "Counting to 120"
+  explanation: "Counting up to 120 from any starting number, and reading and writing those"
+    " numbers."
+  example: "Start at 97 and count: 97, 98, 99, 100, 101."
+  try_at_home: "Count past 100 on a hundred chart or while climbing steps."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.B.2"
+  standard_id: "827a633a-b88a-5ce9-8a7a-18369c547363"
+  name: "Tens and ones"
+  explanation: "Understanding that a two-digit number is made of tens and ones."
+  example: "47 is 4 tens and 7 ones."
+  try_at_home: "Group 23 beans as two piles of ten and 3 loose ones."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.B.2.a"
+  standard_id: "2f43387e-8a89-5d5d-8a2e-9aa7cbcba332"
+  name: "Ten ones make a ten"
+  explanation: "Seeing that 10 can be thought of as one bundle, a ten, made of ten ones."
+  example: "10 single sticks tied together make 1 bundle of ten."
+  try_at_home: "Bundle 10 straws with a rubber band and call it a ten."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.B.2.b"
+  standard_id: "416ba9ff-039f-5a97-bf02-ff55407f94fa"
+  name: "Teen numbers as a ten and ones"
+  explanation: "Understanding that 11 to 19 are a ten plus some ones."
+  example: "16 is 1 ten and 6 ones."
+  try_at_home: "Show a number such as 14 with one ten-bundle and 4 single items."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.B.2.c"
+  standard_id: "0902b8b2-25b4-538e-b4e5-4233209824e7"
+  name: "Counting tens"
+  explanation: "Knowing that 10, 20, 30 and so on up to 90 mean that many tens and no "
+    "extra ones."
+  example: "60 is 6 tens and 0 ones."
+  try_at_home: "Count bundles of ten and say the number: 1 ten, 2 tens, 3 tens."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.B.3"
+  standard_id: "f5cb97f7-4647-587c-99bf-99f0c928be0e"
+  name: "Comparing two-digit numbers"
+  explanation: "Comparing two-digit numbers by looking at the tens first, then the ones, "
+    "and using the symbols >, = and <."
+  example: "47 > 39 because 4 tens is more than 3 tens."
+  try_at_home: "Write two numbers and ask which is bigger and how you can tell."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.C.4"
+  standard_id: "329754ec-5f10-5e72-b72c-f10e015e88a8"
+  name: "Adding within 100"
+  explanation: "Adding a two-digit number to a one-digit number or to a multiple of ten, "
+    "by adding tens to tens and ones to ones."
+  example: "34 + 20 = 54. 28 + 5 = 33."
+  try_at_home: "Add a price and a few cents using coins: how much is 25 + 6?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.C.5"
+  standard_id: "4dab7809-d18a-591f-862d-86e8d5785a03"
+  name: "10 more and 10 less"
+  explanation: "Finding 10 more or 10 less than a two-digit number in your head, without "
+    "counting."
+  example: "10 more than 43 is 53. 10 less than 43 is 33."
+  try_at_home: "Ask \"What is 10 more than 56?\" while out for a walk."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.NBT.C.6"
+  standard_id: "e698ee8c-edbe-5fac-87ae-cf9c8ef770c7"
+  name: "Subtracting tens"
+  explanation: "Subtracting a multiple of ten from another multiple of ten, using tens as "
+    "units."
+  example: "80 − 30 = 50, because 8 tens − 3 tens = 5 tens."
+  try_at_home: "Take away dimes from a pile of dimes and count what is left."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.MD.A.1"
+  standard_id: "a5c72e23-4039-51b9-8ab3-86f4708d7381"
+  name: "Ordering and comparing length"
+  explanation: "Putting three objects in order by length, and comparing two objects by "
+    "using a third one."
+  example: "A pencil is longer than a crayon, and the crayon is longer than an eraser."
+    " So the pencil is longer than the eraser."
+  try_at_home: "Compare two things that cannot be put side by side, using a string as the "
+    "third object."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.MD.A.2"
+  standard_id: "5202eb12-da14-59b3-aaca-d84bfb21b73d"
+  name: "Measuring with units"
+  explanation: "Measuring length by laying small identical objects end to end with no gaps"
+    " or overlaps, then counting them."
+  example: "A book is 8 paper clips long."
+  try_at_home: "Measure a table with the same toy blocks laid in a row."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.MD.B.3"
+  standard_id: "79d47aa7-e38b-5fb1-a02c-14037bfd098b"
+  name: "Telling time to the half hour"
+  explanation: "Reading and writing time to the hour and half hour on clocks with hands "
+    "and on digital clocks."
+  example: "3:30 is half past three."
+  try_at_home: "Ask your child to tell you the time on the hour and half hour."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.MD.C.4"
+  standard_id: "27033a04-b09f-5e9c-ac96-bdbd5f30cf53"
+  name: "Reading and making tallies and graphs"
+  explanation: "Sorting information into up to three groups, then answering questions "
+    "about totals and which group has more or less."
+  example: "5 red, 3 blue and 2 green cars: 10 cars in all, and 2 more red than blue."
+  try_at_home: "Count the colors of cars on your street and compare."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.G.A.1"
+  standard_id: "c14e392d-1c27-5aca-9bef-259a8403dd60"
+  name: "What makes a shape"
+  explanation: "Knowing which features define a shape, such as the number of sides, and "
+    "which do not, such as color or size. Building and drawing shapes with "
+    "those features."
+  example: "A triangle has 3 straight sides and is closed. It is a triangle whether it"
+    " is red or blue, big or small."
+  try_at_home: "Ask \"Is this still a triangle if we turn it or color it?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.G.A.2"
+  standard_id: "226b21e4-6dd2-53ce-bd17-68b5c61d3093"
+  name: "Combining shapes"
+  explanation: "Putting flat or solid shapes together to make a new shape, then using that"
+    " new shape to make others."
+  example: "Two squares side by side make a rectangle."
+  try_at_home: "Make a picture from paper shapes and ask what shapes it is made from."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "1.G.A.3"
+  standard_id: "39db4dc2-ac27-54cd-b78a-b65d512eb8a6"
+  name: "Halves and fourths"
+  explanation: "Splitting circles and rectangles into 2 or 4 equal parts and naming them "
+    "halves, fourths or quarters. More parts means each part is smaller."
+  example: "A pizza cut into 4 equal slices has 4 fourths. One slice is a quarter of "
+    "the pizza."
+  try_at_home: "Cut a sandwich in halves, then in fourths, and compare the pieces."
+  review { status: STATUS_DRAFT }
+}

@@ -1,0 +1,280 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Kindergarten math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "K.CC.A.1"
+  standard_id: "0465e0ad-eaf2-5d3e-999f-fe665744aaf1"
+  name: "Counting to 100"
+  explanation: "Saying the numbers from 1 to 100 in order, and counting by tens."
+  example: "By ones: 1, 2, 3 … 100. By tens: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100."
+  try_at_home: "Count stairs, steps or toys aloud together, and count by tens while "
+    "walking."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.A.2"
+  standard_id: "d9be53e8-38b3-51d7-beca-8a7d45657481"
+  name: "Counting on from any number"
+  explanation: "Starting to count at a number other than 1 and carrying on from there."
+  example: "Start at 6 and count on: 6, 7, 8, 9, 10."
+  try_at_home: "Say a number and ask your child to keep counting from it until you say "
+    "stop."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.A.3"
+  standard_id: "64ebfe7e-0c10-57d4-a609-615ffba60411"
+  name: "Writing numbers to 20"
+  explanation: "Writing the numbers 0 to 20 and matching each to a group of objects. Zero "
+    "means none."
+  example: "A group of 7 blocks is written 7. An empty plate has 0 cookies."
+  try_at_home: "Write a number on paper and ask your child to put out that many spoons or "
+    "coins."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.B.4"
+  standard_id: "44193d7a-42a0-5bde-ae59-16c14eb6229e"
+  name: "Numbers match quantities"
+  explanation: "Seeing that counting tells how many things there are, and that each number"
+    " stands for an amount."
+  example: "Counting 4 crayons ends with the word \"four\", which tells how many crayons"
+    " there are."
+  try_at_home: "Ask \"how many?\" about everyday groups, such as shoes by the door."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.B.4.a"
+  standard_id: "1daf7461-8b13-504b-9705-04410578ffd7"
+  name: "One number for each object"
+  explanation: "Counting in the right order and saying exactly one number for each object,"
+    " with none skipped or counted twice."
+  example: "Touching 5 grapes while saying 1, 2, 3, 4, 5 gives one number per grape."
+  try_at_home: "Let your child touch or move each item as they count it."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.B.4.b"
+  standard_id: "297e1bee-e393-5392-bf3a-2ee28c2f13c8"
+  name: "The last number tells how many"
+  explanation: "Knowing that the last number said is the total, and that the total stays "
+    "the same however the objects are arranged."
+  example: "Count 6 buttons in a row and get 6. Spread them in a circle and there are "
+    "still 6."
+  try_at_home: "Count a pile of coins, then spread them out and count again to see that "
+    "the total is the same."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.B.4.c"
+  standard_id: "6e056208-42cb-524f-bfcf-793bffdaf9a0"
+  name: "Each number is one more"
+  explanation: "Understanding that the next number in counting is always one more than the"
+    " number before it."
+  example: "After 7 comes 8, and 8 is one more than 7."
+  try_at_home: "Add one block at a time to a tower and say how many there are each time."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.B.5"
+  standard_id: "d465972a-5ea0-5252-80e4-25b41fca1572"
+  name: "Counting up to 20 things"
+  explanation: "Counting objects to say how many, up to 20 in a line, grid or circle and "
+    "up to 10 in a scattered pile. Also counting out a number of objects on "
+    "request."
+  example: "Asked for 12 raisins, the child counts out exactly 12."
+  try_at_home: "Ask your child to bring you 15 of something, such as pasta pieces or "
+    "socks."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.C.6"
+  standard_id: "59fef5e5-3828-5332-b762-bc0c91ca1fb8"
+  name: "Comparing groups"
+  explanation: "Telling whether one group has more, fewer or the same number of objects as"
+    " another, by matching them up or counting."
+  example: "Group A has 5 cars and group B has 3 cars. A has more, and B has fewer."
+  try_at_home: "Line up two sets of toys side by side and ask which has more."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.CC.C.7"
+  standard_id: "c984a883-a457-55db-9f87-b0358e5ac760"
+  name: "Comparing written numbers"
+  explanation: "Telling which of two written numbers from 1 to 10 is greater or less."
+  example: "Of 4 and 9, 9 is greater and 4 is less."
+  try_at_home: "Write two numbers on cards and ask which is bigger."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.OA.A.1"
+  standard_id: "b978b10f-234d-5964-89ed-c132adc07a1f"
+  name: "Showing adding and taking away"
+  explanation: "Showing addition and subtraction in different ways: with objects, fingers,"
+    " drawings, acting out, words or equations."
+  example: "2 birds land by 3 birds: 2 + 3 = 5."
+  try_at_home: "Act out a story with toys and ask your child to say what happened."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.OA.A.2"
+  standard_id: "0eb3e5dd-ea32-5ff9-9b5c-9806c54bbbdc"
+  name: "Adding and subtracting within 10"
+  explanation: "Solving simple story problems and adding and subtracting with numbers up "
+    "to 10, using objects or drawings."
+  example: "There are 7 apples and 3 are eaten. 7 − 3 = 4."
+  try_at_home: "Make up small story problems at snack time."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.OA.A.3"
+  standard_id: "b2e2c061-29b5-5946-be19-19e1a5e8e148"
+  name: "Breaking numbers into two parts"
+  explanation: "Splitting a number up to 10 into two parts in more than one way."
+  example: "5 = 2 + 3 and 5 = 4 + 1."
+  try_at_home: "Split 6 coins between two hands in as many ways as you can find."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.OA.A.4"
+  standard_id: "9dfd6529-b354-556c-9f2a-3d278234cae4"
+  name: "Making 10"
+  explanation: "Finding what must be added to a number from 1 to 9 to make 10."
+  example: "7 + 3 = 10, so 3 more makes 10 from 7."
+  try_at_home: "Hold up some fingers and ask how many more are needed to make 10."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.OA.A.5"
+  standard_id: "ec423f7c-3e67-5b0c-9f72-c5fd236b2b61"
+  name: "Adding and subtracting within 5"
+  explanation: "Adding and subtracting with numbers up to 5 quickly and easily."
+  example: "3 + 2 = 5 and 4 − 1 = 3."
+  try_at_home: "Play a quick game of questions such as \"2 and 1 more?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.NBT.A.1"
+  standard_id: "f2f75947-1ec6-5a93-b1a4-4931db79b461"
+  name: "Teen numbers as ten and more"
+  explanation: "Seeing each number from 11 to 19 as a ten and some extra ones."
+  example: "18 is 10 and 8, written 18 = 10 + 8."
+  try_at_home: "Put out 10 beans and some more, and say \"ten and three more is thirteen\"."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.MD.A.1"
+  standard_id: "fb8a2e0d-695f-556f-be81-53427c5011dc"
+  name: "Things we can measure"
+  explanation: "Describing features of an object that can be measured, such as length or "
+    "weight. One object can have several."
+  example: "A pencil has a length and a weight."
+  try_at_home: "Ask \"What could we measure about this?\" for a book or a bag."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.MD.A.2"
+  standard_id: "96c55133-2681-59f9-93af-d27881cbf101"
+  name: "Comparing two objects"
+  explanation: "Comparing two objects by one feature, such as which is longer, shorter, "
+    "heavier or lighter, and saying how they differ."
+  example: "The spoon is longer than the pencil. The pencil is shorter."
+  try_at_home: "Compare two family members' shoes or two fruits by size and weight."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.MD.B.3"
+  standard_id: "75e75869-038b-56c4-a377-b13df275e992"
+  name: "Sorting and counting groups"
+  explanation: "Sorting objects into groups, counting each group and ordering the groups "
+    "by how many are in them."
+  example: "Sort 9 blocks: 4 red, 3 blue, 2 yellow. Red has the most."
+  try_at_home: "Sort a pile of laundry or coins by type and count each pile."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.A.1"
+  standard_id: "472fb1eb-7c0d-5904-b9a3-e5a6d94b4ab3"
+  name: "Naming shapes and positions"
+  explanation: "Naming shapes in everyday objects and describing where things are, using "
+    "words like above, below, beside, in front of, behind and next to."
+  example: "A clock is a circle. The cup is next to the plate."
+  try_at_home: "Go on a shape hunt at home and describe where each shape is."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.A.2"
+  standard_id: "308440b4-e522-5061-85a6-4a5a0a3dce51"
+  name: "Shapes in any size or turn"
+  explanation: "Naming a shape correctly even when it is bigger, smaller or turned in a "
+    "different direction."
+  example: "A triangle is still a triangle when it points down."
+  try_at_home: "Draw a shape big, small and tilted, and name each one."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.A.3"
+  standard_id: "d4594d7e-edbd-5c0b-a233-35cccdbbcecf"
+  name: "Flat or solid shapes"
+  explanation: "Telling flat shapes, such as squares and circles, from solid shapes, such "
+    "as cubes and spheres."
+  example: "A square drawn on paper is flat. A number cube is a solid."
+  try_at_home: "Sort household items into flat shapes and solid shapes."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.B.4"
+  standard_id: "5dbd4b4f-1932-52a8-9735-dac39b011420"
+  name: "Comparing shapes"
+  explanation: "Describing how shapes are alike and different using simple words, such as "
+    "the number of sides and corners."
+  example: "A square has 4 sides and 4 corners. A triangle has 3 sides and 3 corners."
+  try_at_home: "Pick two shapes and ask \"How are they the same? How are they different?\""
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.B.5"
+  standard_id: "afc486de-cc4e-5df2-b8d3-ad078a256ff7"
+  name: "Building and drawing shapes"
+  explanation: "Making shapes from parts such as sticks and clay, and drawing them."
+  example: "Use 3 craft sticks and clay balls at the corners to build a triangle."
+  try_at_home: "Build shapes from straws, tape or playdough."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "K.G.B.6"
+  standard_id: "2736f26a-1e5c-5b90-be28-5f4c801bfd82"
+  name: "Putting shapes together"
+  explanation: "Joining simple shapes to make bigger shapes."
+  example: "Two triangles with full sides touching make a rectangle."
+  try_at_home: "Cut a paper square in half along the diagonal and try to make new shapes "
+    "from the pieces."
+  review { status: STATUS_DRAFT }
+}

@@ -1,0 +1,57 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "curated",
+    srcs = ["curated.go"],
+    importpath = "github.com/gradeguide/gradeguide/graph/curated",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//proto/graph/v1",
+        "@org_golang_google_protobuf//encoding/prototext",
+        "@org_golang_google_protobuf//proto",
+    ],
+)
+
+go_test(
+    name = "curated_test",
+    srcs = [
+        "curated_test.go",
+        "helpers_test.go",
+    ],
+    data = [
+        "//content/math",
+        "//content/math:strands.textproto",
+    ],
+    embed = [":curated"],
+    env = {"MATH_STRANDS": "$(rlocationpath //content/math:strands.textproto)"},
+    deps = [
+        "//proto/graph/v1",
+        "@rules_go//go/runfiles",
+    ],
+)
+
+# Checks the curated layer against the import of the pinned export. The
+# first run downloads the export, about 1 GB.
+go_test(
+    name = "coverage_test",
+    size = "medium",
+    srcs = [
+        "coverage_test.go",
+        "helpers_test.go",
+    ],
+    data = [
+        "//content/math",
+        "//content/math:strands.textproto",
+        "//data:graph",
+    ],
+    embed = [":curated"],
+    env = {
+        "GRAPH": "$(rlocationpath //data:graph)",
+        "MATH_STRANDS": "$(rlocationpath //content/math:strands.textproto)",
+    },
+    deps = [
+        "//proto/graph/v1",
+        "@org_golang_google_protobuf//proto",
+        "@rules_go//go/runfiles",
+    ],
+)

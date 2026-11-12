@@ -1,0 +1,36 @@
+module(name = "gradeguide")
+
+bazel_dep(name = "rules_go", version = "0.62.0")
+bazel_dep(name = "gazelle", version = "0.52.2")
+bazel_dep(name = "protobuf", version = "34.0.bcr.1")
+bazel_dep(name = "rules_proto", version = "7.1.0")
+
+go_sdk = use_extension("@rules_go//go:extensions.bzl", "go_sdk")
+go_sdk.download(version = "1.26.4")
+
+go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")
+go_deps.from_file(go_mod = "//:go.mod")
+use_repo(go_deps, "org_golang_google_protobuf")
+
+# The Learning Commons Knowledge Graph export, pinned by release and content
+# hash. Each release of github.com/learning-commons-org/knowledge-graph
+# publishes the export at a versioned address. To move to a new release,
+# change the version in both URLs and both hashes. The export is about 1 GB and
+# is downloaded once into the repository cache.
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+
+KNOWLEDGE_GRAPH_VERSION = "v1.17.0"
+
+http_file(
+    name = "knowledge_graph_nodes",
+    downloaded_file_path = "nodes.jsonl",
+    sha256 = "8ae4e62a17659116eebaf40d12d9f28d46be1487dfe357bd42a6c77368ed71f0",
+    urls = ["https://cdn.learningcommons.org/knowledge-graph/%s/exports/nodes.jsonl" % KNOWLEDGE_GRAPH_VERSION],
+)
+
+http_file(
+    name = "knowledge_graph_relationships",
+    downloaded_file_path = "relationships.jsonl",
+    sha256 = "e8ce6bc06d1befff9cd77bb705fd6fd4a02afd5adf20b34c50430c138a54435b",
+    urls = ["https://cdn.learningcommons.org/knowledge-graph/%s/exports/relationships.jsonl" % KNOWLEDGE_GRAPH_VERSION],
+)

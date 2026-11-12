@@ -1,0 +1,113 @@
+// The curated layer: hand-written, parent-facing text that sits beside an
+// imported skill graph. It names imported records by id and never changes
+// them, so a re-import cannot overwrite anything written here.
+//
+// All text starts as a draft. A draft is shown with a note that a teacher has
+// not checked it yet.
+syntax = "proto3";
+
+package gradeguide.graph.v1;
+
+import "proto/graph/v1/graph.proto";
+
+option go_package = "github.com/gradeguide/gradeguide/proto/graph/v1";
+
+// CuratedLayer is everything written by hand for one subject. It is stored as
+// several textproto files, which are merged into one.
+message CuratedLayer {
+  repeated CuratedStrand strands = 1;
+  repeated Topic topics = 2;
+  repeated CuratedStandard standards = 3;
+  repeated CuratedComponent components = 4;
+}
+
+// CuratedStrand is the plain name and description of a strand.
+message CuratedStrand {
+  Strand strand = 1;
+
+  // For example "Fractions and ratios".
+  string name = 2;
+
+  // One sentence on what the strand covers, from its first grade to grade 8.
+  string description = 3;
+
+  Review review = 4;
+}
+
+// Topic is a thread within a strand, smaller than a strand and running across
+// grades, such as "Place value" from kindergarten to grade 5. Each Common
+// Core cluster belongs to exactly one topic.
+message Topic {
+  // A short slug, such as "place-value". Stable once published, because web
+  // addresses use it.
+  string id = 1;
+
+  Strand strand = 2;
+
+  // For example "Place value".
+  string name = 3;
+
+  // The cluster codes in the topic, such as "4.NBT.A", in grade order.
+  repeated string cluster_codes = 4;
+
+  // Order among the strand's topics, from 0.
+  int32 position = 5;
+
+  Review review = 6;
+}
+
+// CuratedStandard is the parent-facing text for one standard.
+message CuratedStandard {
+  string standard_id = 1;
+
+  // The standard's code, such as "4.NF.A.1". It must equal the imported
+  // Standard.code; it is here so a reviewer can tell which standard this is.
+  string code = 2;
+
+  // A short plain name, such as "Equivalent fractions".
+  string name = 3;
+
+  // One or two sentences on what the child learns.
+  string explanation = 4;
+
+  // One worked example with real numbers.
+  string example = 5;
+
+  // One thing a parent can do at home with everyday things.
+  string try_at_home = 6;
+
+  Review review = 7;
+}
+
+// CuratedComponent is the plain short name of one learning component. The
+// imported description is precise but long; this is what a card shows.
+message CuratedComponent {
+  string component_id = 1;
+
+  // For example "Equivalent fractions by multiplying".
+  string name = 2;
+
+  Review review = 3;
+}
+
+// Review records whether a teacher has checked a piece of curated text.
+message Review {
+  Status status = 1;
+
+  enum Status {
+    // Not allowed in a checked-in file. Every entry says its status.
+    STATUS_UNSPECIFIED = 0;
+    // Written but not checked by a teacher. Shown with a draft note.
+    STATUS_DRAFT = 1;
+    // A teacher checked it and asked for changes. Shown with a draft note.
+    STATUS_CHANGES_REQUESTED = 2;
+    // A teacher checked it and approved it.
+    STATUS_REVIEWED = 3;
+  }
+
+  // Who reviewed it, when status is not STATUS_DRAFT.
+  string reviewer = 2;
+
+  // When it was reviewed, as YYYY-MM-DD.
+  string reviewed = 3;
+}

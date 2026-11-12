@@ -1,0 +1,446 @@
+# proto-file: proto/graph/v1/curated.proto
+# proto-message: gradeguide.graph.v1.CuratedLayer
+#
+# Grade 5 math: parent-facing text for each Common Core standard and lettered
+# part. Drafts until a teacher reviews them.
+
+standards {
+  code: "5.OA.A.1"
+  standard_id: "0d343aef-d260-5c98-a980-71691e13a834"
+  name: "Parentheses in expressions"
+  explanation: "Using parentheses and brackets to show which part of a calculation to do "
+    "first."
+  example: "(2 + 3) × 4 = 20, but 2 + 3 × 4 = 14."
+  try_at_home: "Write a calculation two ways and see if the answers match."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.OA.A.2"
+  standard_id: "c34e15c7-74b1-53bd-a8b8-2e7280d35abe"
+  name: "Writing and reading expressions"
+  explanation: "Writing simple calculations as expressions, and reading what an expression"
+    " says without working it out."
+  example: "3 × (18,932 + 921) is three times as large as 18,932 + 921."
+  try_at_home: "Turn a sentence into an expression: \"add 8 and 7, then double it\" is 2 × "
+    "(8 + 7)."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.OA.B.3"
+  standard_id: "f73b3ccc-754a-550f-a520-2eb49ae352fb"
+  name: "Comparing two number patterns"
+  explanation: "Making two patterns from two rules, comparing them, and graphing the "
+    "pairs."
+  example: "Add 3: 0, 3, 6, 9. Add 6: 0, 6, 12, 18. The second is always twice the "
+    "first."
+  try_at_home: "Compare saving $3 a week with saving $6 a week."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.1"
+  standard_id: "0a8e2481-2bf2-5973-9f87-ee388a766fb4"
+  name: "Place value with decimals"
+  explanation: "Knowing that each place is worth ten times the place to its right and a "
+    "tenth of the place to its left, including after the decimal point."
+  example: "In 0.33, the first 3 is worth ten times the second."
+  try_at_home: "Use money again: a dollar, a dime and a penny."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.2"
+  standard_id: "0ec3c975-d82d-5102-8c2a-29a6bd4d14be"
+  name: "Multiplying and dividing by powers of 10"
+  explanation: "Explaining the pattern of zeros and of the decimal point when multiplying "
+    "or dividing by 10, 100 or 1,000, and writing powers of 10 as exponents."
+  example: "3.6 × 100 = 360. 10³ = 1,000."
+  try_at_home: "Convert dollars to cents and back, and watch the decimal point move."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.3"
+  standard_id: "037c62c6-5448-5a6c-a550-e84e7b42f062"
+  name: "Reading and comparing decimals to thousandths"
+  explanation: "Reading, writing and comparing decimals to three decimal places."
+  example: "0.305 = 3 tenths + 5 thousandths. 0.305 < 0.35."
+  try_at_home: "Compare race times or batting averages."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.3.a"
+  standard_id: "6eb96849-b17d-56ab-843f-2bef3d095405"
+  name: "Reading and writing decimals"
+  explanation: "Reading, writing and expanding decimals to thousandths in digits, words "
+    "and sums."
+  example: "3.407 = 3 + 4/10 + 0/100 + 7/1000, read as three and four hundred seven "
+    "thousandths."
+  try_at_home: "Read a decimal from a measuring device aloud, digit by digit."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.3.b"
+  standard_id: "5f11bbee-0514-592b-bc96-61ebf6fcec7f"
+  name: "Comparing decimals"
+  explanation: "Comparing two decimals by looking at the digits place by place, and using "
+    "<, = and >."
+  example: "0.382 < 0.39, because the tenths match and 8 hundredths is less than 9 "
+    "hundredths."
+  try_at_home: "Ask which is longer, 0.382 metres or 0.39 metres, and explain why."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.A.4"
+  standard_id: "f843ce81-4410-5cf3-969f-5dce4d32fdec"
+  name: "Rounding decimals"
+  explanation: "Rounding decimals to any place."
+  example: "3.462 rounded to the nearest tenth is 3.5."
+  try_at_home: "Round prices to the nearest dime or dollar."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.B.5"
+  standard_id: "506558bd-685e-5df8-b55d-19dd04a408d8"
+  name: "Standard multiplication method"
+  explanation: "Multiplying multi-digit whole numbers fluently with the standard column "
+    "method."
+  example: "345 × 26 = 8,970."
+  try_at_home: "Check a product with a quick estimate: 345 × 26 is about 350 × 25."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.B.6"
+  standard_id: "7d15e8c3-103a-5013-a24c-0464999d69a0"
+  name: "Dividing by two-digit numbers"
+  explanation: "Dividing up to four-digit numbers by two-digit numbers, using place value "
+    "and the link to multiplication."
+  example: "1,512 ÷ 24 = 63."
+  try_at_home: "Split a trip cost or a big number of items among a group."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NBT.B.7"
+  standard_id: "fc0059ec-6efb-5477-913f-2526f51903e2"
+  name: "Decimal arithmetic"
+  explanation: "Adding, subtracting, multiplying and dividing decimals to hundredths, "
+    "using models and place value."
+  example: "2.5 × 0.4 = 1. 3.6 ÷ 0.9 = 4."
+  try_at_home: "Add up a receipt, or work out the price of 0.75 pounds of cheese."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.A.1"
+  standard_id: "d968d12f-9a8c-5cd8-aee3-f87f496b49cd"
+  name: "Adding fractions with unlike denominators"
+  explanation: "Adding and subtracting fractions and mixed numbers with different "
+    "denominators, by rewriting them as equivalent fractions."
+  example: "2/3 + 1/4 = 8/12 + 3/12 = 11/12."
+  try_at_home: "Combine measuring cups of different sizes and find the total."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.A.2"
+  standard_id: "a852c87a-7f3c-5599-9213-ff963f49277c"
+  name: "Fraction add and subtract word problems"
+  explanation: "Solving story problems that add or subtract fractions, and checking with "
+    "estimates such as \"is it more than a half?\""
+  example: "2/5 + 1/2 can't be 3/7, because 3/7 is less than 1/2."
+  try_at_home: "Ask for an estimate before the exact answer."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.3"
+  standard_id: "9975ae78-2f08-5d8a-afae-f091931d277f"
+  name: "A fraction as division"
+  explanation: "Seeing a fraction as a division: 3/4 means 3 ÷ 4."
+  example: "3 pizzas shared by 4 people: each gets 3/4 of a pizza."
+  try_at_home: "Share a few items among more people and say the fraction each gets."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.4"
+  standard_id: "bf78dc38-1de7-57d1-a602-2afe9dbbe51a"
+  name: "Multiplying fractions"
+  explanation: "Multiplying a fraction by a whole number or by another fraction, and "
+    "finding the area of rectangles with fraction side lengths."
+  example: "2/3 × 4/5 = 8/15."
+  try_at_home: "Half of three-quarters of a cake: how much is that?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.4.a"
+  standard_id: "3bf66623-814f-508e-970f-78a756951800"
+  name: "Fraction of a quantity"
+  explanation: "Understanding a fraction times a number as splitting it into equal parts "
+    "and taking some of them, or as multiplying and then dividing."
+  example: "2/3 of 6: split 6 into 3 parts of 2, and take 2 parts. 2/3 × 6 = 4."
+  try_at_home: "Take 3/4 of a bag of 12 sweets by splitting it into 4 equal piles."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.4.b"
+  standard_id: "d0b7d56d-8184-54d3-b227-a482cb974831"
+  name: "Area with fraction sides"
+  explanation: "Finding the area of a rectangle with fraction sides by tiling, and seeing "
+    "that it matches multiplying the sides."
+  example: "A 1/2 by 1/3 rectangle has area 1/2 × 1/3 = 1/6 of a unit square."
+  try_at_home: "Fold a paper square into halves one way and thirds the other, and shade "
+    "the part."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.5"
+  standard_id: "2e5beccd-f20e-5b6b-98b0-b886d17e60c0"
+  name: "Multiplying as scaling"
+  explanation: "Seeing that multiplying by a number less than 1 makes something smaller, "
+    "and by more than 1 makes it bigger."
+  example: "5 × 3/4 is less than 5. 5 × 1 1/4 is more than 5."
+  try_at_home: "Ask \"will the answer be bigger or smaller?\" before multiplying."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.5.a"
+  standard_id: "f4107acc-3e46-5969-9e64-345de0dc7b61"
+  name: "Comparing size without multiplying"
+  explanation: "Telling whether a product is bigger or smaller than one of the numbers "
+    "just from the size of the other number."
+  example: "2 × 5/8 is bigger than 5/8. And 1/2 × 9 is smaller than 9."
+  try_at_home: "Ask \"is half of 9 more or less than 9?\" before any calculating."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.5.b"
+  standard_id: "761bc2ba-93b5-5de4-9ec5-0c98fac26303"
+  name: "Bigger or smaller by a fraction"
+  explanation: "Explaining why multiplying by a fraction greater than 1 makes a number "
+    "larger, and by a fraction less than 1 makes it smaller."
+  example: "3/2 × 8 = 12, which is more than 8. And 1/4 × 8 = 2, which is less."
+  try_at_home: "Scale a recipe by 1 1/2 and by 1/2 and check which gets bigger."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.6"
+  standard_id: "33b3c642-046f-5ce1-be78-81003f5f0d10"
+  name: "Fraction multiplication word problems"
+  explanation: "Solving real problems that multiply fractions and mixed numbers."
+  example: "A recipe needs 2 1/2 cups of flour. Half a batch needs 1 1/4 cups."
+  try_at_home: "Halve or double a recipe together."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.7"
+  standard_id: "fca94116-321f-599b-8b92-1cdef8844d4d"
+  name: "Dividing with unit fractions"
+  explanation: "Dividing a unit fraction by a whole number, and a whole number by a unit "
+    "fraction."
+  example: "1/3 ÷ 4 = 1/12. 4 ÷ 1/5 = 20."
+  try_at_home: "How many 1/4-cup scoops are in 3 cups?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.7.a"
+  standard_id: "c84cc6c5-f504-5d78-9e5c-0095f520bd27"
+  name: "Unit fraction divided by whole"
+  explanation: "Dividing a unit fraction by a whole number, using the link with "
+    "multiplication."
+  example: "1/3 ÷ 4 = 1/12, because 1/12 × 4 = 1/3."
+  try_at_home: "Share 1/3 of a pan of brownies among 4 people and ask for each share."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.7.b"
+  standard_id: "aaa67467-b679-59a8-bbeb-6706232a0715"
+  name: "Whole divided by unit fraction"
+  explanation: "Dividing a whole number by a unit fraction, using the link with "
+    "multiplication."
+  example: "3 ÷ 1/4 = 12, because 12 × 1/4 = 3."
+  try_at_home: "Ask how many quarter-pizzas you get from 3 pizzas."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.NF.B.7.c"
+  standard_id: "e1410cc7-0283-5fd3-ab82-94d9886401ae"
+  name: "Word problems with unit fractions"
+  explanation: "Solving story problems that divide a unit fraction by a whole number, or a"
+    " whole number by a unit fraction."
+  example: "3 people share 1/2 pound of chocolate, so each gets 1/6 pound. 2 cups of "
+    "raisins hold 6 servings of 1/3 cup."
+  try_at_home: "Divide 2 cups of juice into 1/4-cup glasses and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.A.1"
+  standard_id: "62c2bd03-9006-5597-b8db-1e0a6856dbd3"
+  name: "Converting units in multi-step problems"
+  explanation: "Converting between units in the same system, such as cm and m, and using "
+    "conversions in multi-step problems."
+  example: "5 cm = 0.05 m. 2.5 kg = 2,500 g."
+  try_at_home: "Convert a recipe or a running distance between units."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.B.2"
+  standard_id: "eaaa28e6-ce47-526d-b7e1-2d0a1a913e02"
+  name: "Line plots with fraction operations"
+  explanation: "Making line plots of measurements in fractions, and using fraction "
+    "operations to answer questions about the data."
+  example: "If the water in these beakers were shared equally, how much would each "
+    "hold?"
+  try_at_home: "Measure and plot something, then ask what the total or the even share "
+    "would be."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.3"
+  standard_id: "f305010a-cdfe-57e6-adf0-7eff49eb921c"
+  name: "What volume is"
+  explanation: "Understanding volume as how many unit cubes fill a solid."
+  example: "A box filled by 24 one-inch cubes has a volume of 24 cubic inches."
+  try_at_home: "Fill a small box with sugar cubes or blocks and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.3.a"
+  standard_id: "bddca711-2602-5f9b-af13-1cbd5abc07fc"
+  name: "The unit cube"
+  explanation: "A cube with edges of 1 unit is the basic piece for measuring volume, and "
+    "it has a volume of one cubic unit."
+  example: "A cube with 1 cm edges has a volume of 1 cubic centimetre."
+  try_at_home: "Use a sugar cube or a toy block as the measuring cube."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.3.b"
+  standard_id: "80133c27-fadc-5e80-bb7a-1668cb884ec8"
+  name: "Packing a solid with cubes"
+  explanation: "A solid that unit cubes fill with no gaps or overlaps has a volume equal "
+    "to the number of cubes."
+  example: "A box filled by 24 unit cubes has a volume of 24 cubic units."
+  try_at_home: "Fill a small box with blocks, with no gaps, and count them."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.4"
+  standard_id: "5bc00d79-63fc-552a-bb76-ada451c72768"
+  name: "Measuring volume by counting cubes"
+  explanation: "Finding volume by counting unit cubes in cubic centimetres, inches or "
+    "other units."
+  example: "A stack 3 cubes long, 2 wide and 2 high holds 12 cubes."
+  try_at_home: "Build boxes from blocks and count the cubes."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.5"
+  standard_id: "e62d8be0-2146-5b5a-800d-db76bf1d8ca9"
+  name: "Volume formulas"
+  explanation: "Finding the volume of boxes with length × width × height, and of shapes "
+    "made of two boxes."
+  example: "A 4 × 3 × 2 box has volume 24 cubic units."
+  try_at_home: "Measure a cereal box and work out its volume."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.5.a"
+  standard_id: "399a1f18-5a00-521e-8af4-f2f569ec505c"
+  name: "Packing and multiplying"
+  explanation: "Finding a box's volume by filling it with unit cubes, and seeing that it "
+    "matches multiplying the edges, or the base area times the height."
+  example: "A 5 by 2 by 3 box has layers of 5 × 2 = 10 cubes, and 3 layers make 30."
+  try_at_home: "Build a box of blocks in layers and count the layers."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.5.b"
+  standard_id: "346e2c8c-686e-5422-a960-f6716141f31c"
+  name: "Using the volume formulas"
+  explanation: "Using V = l × w × h and V = b × h to solve real problems about boxes."
+  example: "A box 6 by 2 by 5 has volume 6 × 2 × 5 = 60. Or the base is 12, and 12 × 5"
+    " = 60."
+  try_at_home: "Find the volume of a shoe box from its measurements."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.MD.C.5.c"
+  standard_id: "c41aafda-f8ce-589f-87de-d172c97b4667"
+  name: "Volume of combined boxes"
+  explanation: "Finding the volume of a solid made from two boxes by adding their volumes."
+  example: "A 4 × 3 × 2 box (24) joined to a 2 × 3 × 2 box (12) has a volume of 36."
+  try_at_home: "Build a step shape from blocks and add the two parts."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.G.A.1"
+  standard_id: "a01704d9-404d-57c6-a54b-d7b587349e41"
+  name: "The coordinate grid"
+  explanation: "Locating points on a grid with two number lines, using pairs of numbers."
+  example: "(3, 5) means 3 across, then 5 up."
+  try_at_home: "Play a simple battleship game on graph paper."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.G.A.2"
+  standard_id: "ba2855ee-89aa-5bf2-9741-b2ef8a53d122"
+  name: "Graphing to solve problems"
+  explanation: "Plotting points to show real situations, and reading what the points mean."
+  example: "Plot hours worked against dollars earned."
+  try_at_home: "Graph a plant's height each week."
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.G.B.3"
+  standard_id: "bc681e82-fddc-5655-8296-2aa5a38f5fab"
+  name: "Shape hierarchies"
+  explanation: "Understanding that a property of a category belongs to all of its "
+    "subcategories."
+  example: "All rectangles have four right angles, and squares are rectangles, so all "
+    "squares have four right angles."
+  try_at_home: "Play \"always, sometimes, never\": is a rhombus always a square?"
+  review { status: STATUS_DRAFT }
+}
+
+standards {
+  code: "5.G.B.4"
+  standard_id: "74721dc3-d49c-5f16-804c-4cb07fca6ed6"
+  name: "Classifying shapes by their properties"
+  explanation: "Arranging two-dimensional shapes into a family tree based on their "
+    "properties."
+  example: "Quadrilateral → parallelogram → rectangle → square."
+  try_at_home: "Draw the family tree of quadrilaterals together."
+  review { status: STATUS_DRAFT }
+}
