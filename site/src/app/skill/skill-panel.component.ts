@@ -94,7 +94,7 @@ function readSourcesOpen(): boolean {
         </details>
 
         <details class="sources" [open]="sourcesOpen()" (toggle)="rememberSources($any($event.target).open)">
-          <summary>Where this comes from</summary>
+          <summary>Sources for this skill</summary>
           <ul>
             <li><b>The skill</b> is Common Core math standard {{ s.code }}.</li>
             <li><b>Needed first and leads to</b> come from the Common Core learning progressions by Student Achievement Partners.</li>
