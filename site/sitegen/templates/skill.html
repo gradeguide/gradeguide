@@ -17,10 +17,10 @@
 </div>
 
 {{if .Parts}}<h2>Parts</h2><ul>{{range .Parts}}<li>{{.Name}} <span class="g">{{.Code}}</span></li>{{end}}</ul>{{end}}
-{{if .Steps}}<h2>Smaller steps inside this skill</h2><ol>{{range .Steps}}<li>{{.}}</li>{{end}}</ol>{{end}}
+{{if .Steps}}<h2>Smaller steps inside this skill</h2><ol>{{range .Steps}}<li title="{{.Text}}">{{.Name}}</li>{{end}}</ol>{{end}}
 
 <h2>Worksheets</h2>
-{{if .Worksheets}}<ul class="worksheets">{{range .Worksheets}}<li><a href="{{.Href}}">{{.Title}}</a> <span class="g">{{.Pages}} {{if eq .Pages 1}}page{{else}}pages{{end}}</span> <a class="answers" href="{{.AnswersHref}}">Answers</a></li>{{end}}</ul>
+{{if .Worksheets}}<ul class="worksheets">{{range .Worksheets}}<li><a href="{{.Href}}">{{.Title}}</a> <span class="g">{{if .Role}}{{roleLabel .Role}} · {{end}}{{.Pages}} {{if eq .Pages 1}}page{{else}}pages{{end}}</span> <a class="answers" href="{{.AnswersHref}}">Answers</a>{{range .Steps}}<div class="g">Step {{stepNumber $.Skill.Steps .StepID}}: {{.Where}}</div>{{end}}</li>{{end}}</ul>
 {{else}}<p class="none">Printable worksheets for this skill are coming.</p>{{end}}
 
 <h2>Official wording ({{.Code}})</h2>
