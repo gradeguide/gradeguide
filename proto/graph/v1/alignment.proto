@@ -1,0 +1,39 @@
+// Worksheet alignments: which skills in the graph each worksheet fragment
+// covers. The worksheet engine (worksheet/) knows nothing about the graph;
+// alignments live here, beside it, and fill in the standard codes each
+// worksheet prints in its header.
+syntax = "proto3";
+
+package gradeguide.graph.v1;
+
+import "proto/graph/v1/graph.proto";
+
+option go_package = "github.com/gradeguide/gradeguide/proto/graph/v1";
+
+// WorksheetAlignments is every alignment for a worksheet catalogue. It is
+// stored as textproto files, which are merged into one.
+message WorksheetAlignments {
+  repeated WorksheetAlignment alignments = 1;
+}
+
+// WorksheetAlignment links one fragment to one skill.
+message WorksheetAlignment {
+  // The fragment's id in the worksheet catalogue.
+  string fragment_id = 1;
+
+  // The skill. Here a standard may be named by its code alone, such as
+  // "4.NF.A.1", with no standard_id. A component is named by component_id,
+  // and must support a standard the same fragment is aligned to.
+  SkillRef skill = 2;
+
+  Role role = 3;
+
+  enum Role {
+    ROLE_UNSPECIFIED = 0;
+    ROLE_TEACHES = 1;
+    ROLE_PRACTISES = 2;
+    ROLE_CHECKS = 3;
+    // Refreshes a prerequisite.
+    ROLE_REVIEWS = 4;
+  }
+}

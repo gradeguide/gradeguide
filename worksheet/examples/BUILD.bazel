@@ -1,0 +1,30 @@
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+load("//worksheet/bazel:defs.bzl", "worksheet_library")
+load("//worksheet/bazel:tsconfig.bzl", "TSCONFIG")
+
+package(default_visibility = ["//visibility:public"])
+
+# Example fragments and worksheets: the engine's test fixtures and the demo
+# its gallery shows. bazel build //worksheet/examples:examples_gallery
+worksheet_library(
+    name = "examples",
+    srcs = glob(["*.textproto"]),
+)
+
+# The examples wrapped in a module the specs import.
+genrule(
+    name = "examples_data",
+    srcs = [":examples"],
+    outs = ["examples_data.ts"],
+    cmd = """
+      printf "// Generated from worksheet/examples/*.textproto.\\nexport const EXAMPLES = '%s';\\n" \
+        "$$(base64 -w0 < $(location :examples))" > $@
+    """,
+)
+
+ts_project(
+    name = "examples_ts",
+    srcs = [":examples_data"],
+    declaration = True,
+    tsconfig = TSCONFIG,
+)

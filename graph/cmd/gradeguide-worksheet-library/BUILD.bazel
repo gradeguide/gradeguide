@@ -1,0 +1,11 @@
+load("@rules_go//go:def.bzl", "go_binary")
+
+go_binary(
+    name = "gradeguide-worksheet-library",
+    srcs = ["main.go"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//graph/worksheets",
+        "@org_golang_google_protobuf//proto",
+    ],
+)

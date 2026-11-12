@@ -1,0 +1,527 @@
+// Worksheets are composed from fragments: reusable sections that each say
+// what kind of item they ask, how many, and why. A worksheet places
+// fragments in order, numbers their items, and fits them to its pages.
+//
+// Most items are generated: a fragment names an item kind and the ranges its
+// values come from, and the kind's generator picks the values from a seed
+// and computes the answers. Authored items are written in full, by a person
+// or a model, and each answer carries working the composer checks. The composer turns a worksheet into a
+// ComposedSheet, which is what the components draw.
+syntax = "proto3";
+
+package gradeguide.worksheet.v1;
+
+import "worksheet/proto/v1/nodes.proto";
+
+option go_package = "github.com/gradeguide/gradeguide/worksheet/proto/v1";
+
+// Library is a catalogue: every fragment and worksheet.
+message Library {
+  repeated Fragment fragments = 1;
+  repeated Worksheet worksheets = 2;
+}
+
+// Fragment is one reusable section of a worksheet. It has no numbers of its
+// own: the worksheet that places it gives it a section label and the label
+// of its first item.
+message Fragment {
+  // Such as "frag-fraction-at-arrow".
+  string id = 1;
+  // The section's instruction, such as "What fraction is at the arrow?"
+  string instruction = 2;
+  // Where the fragment belongs in a worksheet's arc, unless a placement
+  // says otherwise.
+  Stage stage = 3;
+  // Why the fragment is built the way it is.
+  LearningDesign design = 4;
+  // A sentence or two printed under the instruction.
+  string explainer = 5;
+  // A solved item shown before the child's items.
+  WorkedExample example = 6;
+  // A figure every item refers to, such as a fraction wall. It may not
+  // contain fields.
+  repeated Node figure = 7;
+  ItemSet items = 8;
+  // The most columns the items are laid out in. The composer uses fewer
+  // when an item is too wide. Zero: as many as fit.
+  int32 max_columns = 9;
+  // Short labels printed in the header of any sheet that places the
+  // fragment, such as the codes of the standards it covers. The catalogue's
+  // owner fills them in; the engine only prints them.
+  repeated string header_labels = 10;
+}
+
+// WorkedExample is an item drawn with its answers filled in.
+message WorkedExample {
+  ItemKind item = 1;
+  uint32 seed = 2;
+  // What to notice, printed beside the solved item. May use **bold**.
+  string text = 3;
+}
+
+// ItemSet is a run of generated items of one kind, or a list of authored
+// items.
+message ItemSet {
+  oneof source {
+    ItemKind kind = 1;
+    Authored authored = 4;
+  }
+  // How many items, unless the placement says otherwise.
+  int32 count = 2;
+  // The fewest items the composer may cut to when the page is full. Zero:
+  // count, so the set never shrinks.
+  int32 min_count = 3;
+}
+
+// Authored is items written in full. A placement's count takes the first
+// items, in order.
+message Authored {
+  repeated AuthoredItem items = 1;
+}
+
+// AuthoredItem is one item's nodes. Fields have no ids; the composer gives
+// them ids after numbering.
+message AuthoredItem {
+  repeated Node nodes = 1;
+}
+
+// IntRange is min to max, both included.
+message IntRange {
+  int32 min = 1;
+  int32 max = 2;
+}
+
+// ItemKind names a generator and the ranges it picks values from.
+message ItemKind {
+  oneof kind {
+    FractionAtArrow fraction_at_arrow = 1;
+    LabelTicks label_ticks = 2;
+    EquivalentOnNumberLines equivalent_on_number_lines = 3;
+    ShadedFraction shaded_fraction = 4;
+    EquivalentMissing equivalent_missing = 5;
+    CompareFractions compare_fractions = 6;
+    HundredthsGrid hundredths_grid = 7;
+    ArrayFacts array_facts = 8;
+    AreaModelMultiply area_model_multiply = 9;
+    ColumnAddSubtract column_add_subtract = 10;
+    ColumnMultiply column_multiply = 11;
+    TimesAsMany times_as_many = 12;
+    ClassifyAngle classify_angle = 13;
+    MissingAngle missing_angle = 14;
+    RectangleMeasure rectangle_measure = 15;
+    MultiplicationFact multiplication_fact = 16;
+    FindMistakeNumberLine find_mistake_number_line = 17;
+    PlaceValueRead place_value_read = 18;
+    BaseTenRead base_ten_read = 19;
+    RoundOnNumberLine round_on_number_line = 20;
+    LongDivisionItem long_division = 21;
+    ClockTime clock_time = 22;
+    MeasureWithRuler measure_with_ruler = 23;
+    LinePlotQuestions line_plot_questions = 24;
+    ReadProtractor read_protractor = 25;
+    NameLineFigure name_line_figure = 26;
+    FactorPairs factor_pairs = 27;
+    ShadeMultiples shade_multiples = 28;
+    MultiplyByTens multiply_by_tens = 29;
+    BreakApart break_apart = 30;
+    PartialProducts partial_products = 31;
+  }
+}
+
+// A number line with an arrow at a fraction; write the fraction.
+message FractionAtArrow {
+  repeated int32 denominators = 1;
+  // How many units the line runs, from 0. Zero: 1.
+  int32 units = 2;
+}
+
+// A number line with boxes under its part ticks; label each.
+message LabelTicks {
+  repeated int32 denominators = 1;
+}
+
+// Two lines from 0 to 1, one in d parts with a labelled point, one in n×d
+// parts; write the point's name in the finer parts.
+message EquivalentOnNumberLines {
+  repeated int32 denominators = 1;
+  // The n in n×d.
+  repeated int32 factors = 2;
+}
+
+// A shaded model; write the fraction. Or, with child_shades, a fraction to
+// shade.
+message ShadedFraction {
+  repeated int32 denominators = 1;
+  Model model = 2;
+  bool child_shades = 3;
+
+  enum Model {
+    MODEL_UNSPECIFIED = 0;
+    MODEL_BAR = 1;
+    MODEL_GRID = 2;
+  }
+}
+
+// a/b = ?/(n×b), or the reverse.
+message EquivalentMissing {
+  repeated int32 denominators = 1;
+  repeated int32 factors = 2;
+  // Ask for the denominator instead of the numerator in some items.
+  bool mix_blank_side = 3;
+}
+
+// Two fractions and a circle for <, > or =.
+message CompareFractions {
+  repeated int32 denominators = 1;
+  Mode mode = 2;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Same denominator.
+    MODE_SAME_DENOMINATOR = 1;
+    // Same numerator.
+    MODE_SAME_NUMERATOR = 2;
+    // Any two, including equivalent pairs.
+    MODE_ANY = 3;
+  }
+}
+
+// A hundredths square with some shaded; write it as a fraction and a
+// decimal.
+message HundredthsGrid {
+  // Only multiples of ten shaded, for tenths.
+  bool tenths = 1;
+}
+
+// An array of dots; write the multiplication and division it shows.
+message ArrayFacts {
+  IntRange rows = 1;
+  IntRange cols = 2;
+}
+
+// a × b with an area model to fill in.
+message AreaModelMultiply {
+  // Digits in each factor, such as 2 and 1 for 34 × 6.
+  int32 a_digits = 1;
+  int32 b_digits = 2;
+}
+
+// a × b0, where b0 is a multiple of 10 or 100, written as a basic fact
+// times tens: "3 × 40 = 3 × 4 tens = 12 tens = 120".
+message MultiplyByTens {
+  IntRange factors = 1;
+  // The powers of ten b0 may use, such as 10 and 100.
+  repeated int32 places = 2;
+}
+
+// a × b, with b broken into two easier parts: "7 × 8 = 7 × 5 + 7 × 3".
+message BreakApart {
+  IntRange factors = 1;
+}
+
+// A multi-digit by one-digit product set in columns, with a row for each
+// place's partial product before the total.
+message PartialProducts {
+  int32 top_digits = 1;
+}
+
+// A sum or difference set in columns.
+message ColumnAddSubtract {
+  int32 digits = 1;
+  bool subtract = 2;
+  // At least one column regroups.
+  bool regroup = 3;
+}
+
+// A product of a many-digit and a one-digit number, set in columns.
+message ColumnMultiply {
+  int32 top_digits = 1;
+}
+
+// "Ana has 3 times as many as Ben": a tape diagram and a blank.
+message TimesAsMany {
+  IntRange times = 1;
+  IntRange smaller = 2;
+}
+
+// An angle; tick acute, right or obtuse.
+message ClassifyAngle {}
+
+// An angle split in two, one part given; find the other.
+message MissingAngle {
+  // The whole angle: 90 for a right angle, 180 for a straight one.
+  repeated int32 wholes = 1;
+}
+
+// A rectangle with side lengths; find perimeter, area or a missing side.
+message RectangleMeasure {
+  IntRange side = 1;
+  Ask ask = 2;
+
+  enum Ask {
+    ASK_UNSPECIFIED = 0;
+    ASK_PERIMETER = 1;
+    ASK_AREA = 2;
+    // Area and one side given; find the other side.
+    ASK_MISSING_SIDE = 3;
+  }
+}
+
+// a × b = ?, or a division fact.
+message MultiplicationFact {
+  IntRange factors = 1;
+  bool division = 2;
+}
+
+// A number line labelled by counting marks instead of jumps; find the
+// mistake.
+message FindMistakeNumberLine {
+  repeated int32 denominators = 1;
+}
+
+// A number in a place-value chart; write it and the value of one digit.
+message PlaceValueRead {
+  // Digits in the number, 4 to 6.
+  int32 digits = 1;
+}
+
+// Base-ten blocks; write the number they show.
+message BaseTenRead {
+  // Include thousands cubes.
+  bool thousands = 1;
+}
+
+// A number on a number line between two multiples of a place; round it.
+message RoundOnNumberLine {
+  // Digits in the number.
+  int32 digits = 1;
+  // Round to this place: 10, 100 or 1000.
+  repeated int32 places = 2;
+}
+
+// A long division with a one-digit divisor.
+message LongDivisionItem {
+  int32 dividend_digits = 1;
+  // Some items leave a remainder.
+  bool remainders = 2;
+}
+
+// A clock; read the time, or find a time some minutes later.
+message ClockTime {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Write the time shown, to the minute.
+    MODE_READ = 1;
+    // Find the time a given number of minutes later.
+    MODE_ELAPSED = 2;
+  }
+}
+
+// A bar along an inch ruler; write its length.
+message MeasureWithRuler {
+  // 2, 4 or 8.
+  repeated int32 parts_per_inch = 1;
+}
+
+// A line plot of lengths in fractions of an inch, with questions about it.
+message LinePlotQuestions {
+  // Marks per inch on the plot: 2, 4 or 8.
+  int32 parts_per_unit = 1;
+}
+
+// An angle on a protractor; write its measure.
+message ReadProtractor {}
+
+// A figure; tick its name.
+message NameLineFigure {
+  // Ask about pairs of lines (parallel, perpendicular, intersecting) instead
+  // of single figures (line, ray, segment).
+  bool pairs = 1;
+}
+
+// A number; list its factor pairs.
+message FactorPairs {
+  IntRange number = 1;
+}
+
+// A hundred chart; shade the multiples of a number.
+message ShadeMultiples {
+  repeated int32 of = 1;
+}
+
+// Worksheet is fragments in order, fitted to pages.
+message Worksheet {
+  // Such as "ws-equivalent-fractions-number-line".
+  string id = 1;
+  string title = 2;
+  int32 minutes = 4;
+  // Seeds every item set a placement does not seed itself.
+  uint32 seed = 5;
+  // Why the worksheet is ordered as it is: its arc from review to practice.
+  LearningDesign design = 6;
+  Numbering numbering = 7;
+  // The most pages the composer may use. Zero: 1.
+  int32 max_pages = 8;
+  repeated Placement placements = 9;
+}
+
+// Placement puts a fragment on a worksheet, optionally changing it.
+message Placement {
+  string fragment_id = 1;
+  // Overrides the fragment's count. Zero: the fragment's.
+  int32 count = 2;
+  // Fixes the items regardless of the worksheet's seed. Zero: derived from
+  // the worksheet's seed and this placement's position.
+  uint32 seed = 3;
+  // Overrides the fragment's instruction.
+  string instruction = 4;
+  // Overrides the fragment's stage.
+  Stage stage = 5;
+  // Leaves out the fragment's worked example, for a worksheet that has
+  // already shown one.
+  bool omit_example = 6;
+}
+
+// Numbering is how a worksheet labels its sections and items.
+message Numbering {
+  Style style = 1;
+  // The first section's number, for a worksheet that continues another.
+  // Zero: 1.
+  int32 first = 2;
+
+  enum Style {
+    // Sections A, B, C; items 1, 2, 3 running on across sections.
+    STYLE_UNSPECIFIED = 0;
+    // Sections 1, 2, 3; items 1a, 1b, 1c within each.
+    STYLE_SECTION_LETTERS = 1;
+    // Sections 1, 2, 3; items 1.1, 1.2 within each.
+    STYLE_SECTION_DOTTED = 2;
+  }
+}
+
+// Stage is where a section sits in a worksheet's arc.
+enum Stage {
+  STAGE_UNSPECIFIED = 0;
+  // Brings back a prerequisite the new skill builds on.
+  STAGE_REVIEW = 1;
+  // Shows the new idea, with a worked example.
+  STAGE_INTRODUCE = 2;
+  // Practice with the model drawn for the child.
+  STAGE_GUIDED = 3;
+  // Practice with less support.
+  STAGE_PRACTICE = 4;
+  // Confronts a common misconception.
+  STAGE_MISTAKE = 5;
+  // Asks for an explanation or a harder case.
+  STAGE_STRETCH = 6;
+  // Uses the skill in a word problem or a new context.
+  STAGE_APPLY = 7;
+}
+
+// WritingSize is how large the child writes. Every space a child writes in
+// is sized from it; printed text and figures the child only reads are not.
+enum WritingSize {
+  // Standard: about a third of an inch per row, like wide-ruled paper.
+  WRITING_SIZE_UNSPECIFIED = 0;
+  WRITING_SIZE_STANDARD = 1;
+  // Half an inch per row, for a child who writes large.
+  WRITING_SIZE_LARGE = 2;
+}
+
+// LearningDesign records why a fragment or worksheet is built as it is.
+message LearningDesign {
+  // What the child can do after it, in one sentence.
+  string purpose = 1;
+  repeated Principle principles = 2;
+  // Why these principles apply here, in a few sentences.
+  string rationale = 3;
+  // The misconceptions it targets, in plain words.
+  repeated string misconceptions = 4;
+  // Claim ids in the human learning model catalogue that support it.
+  repeated string claim_ids = 5;
+  // Other sources, as short citations, until they are catalogued.
+  repeated string references = 6;
+}
+
+// Principle is a named instructional principle.
+enum Principle {
+  PRINCIPLE_UNSPECIFIED = 0;
+  PRINCIPLE_WORKED_EXAMPLE = 1;
+  PRINCIPLE_CONCRETENESS_FADING = 2;
+  PRINCIPLE_MULTIPLE_REPRESENTATIONS = 3;
+  PRINCIPLE_NUMBER_LINE = 4;
+  PRINCIPLE_RETRIEVAL_PRACTICE = 5;
+  PRINCIPLE_INTERLEAVING = 6;
+  PRINCIPLE_ERROR_ANALYSIS = 7;
+  PRINCIPLE_SELF_EXPLANATION = 8;
+  PRINCIPLE_PREREQUISITE_REVIEW = 9;
+  PRINCIPLE_SYSTEMATIC_VARIATION = 10;
+}
+
+// ComposedSheet is a worksheet with its items generated, numbered and laid
+// out on pages. The components draw it; nothing in it is chosen at draw time.
+message ComposedSheet {
+  string worksheet_id = 1;
+  string title = 2;
+  // The placed fragments' header labels, in placement order, each once.
+  repeated string header_labels = 3;
+  int32 minutes = 4;
+  repeated Page pages = 5;
+  // Every field on the sheet, in page order, with its item label.
+  repeated KeyEntry key = 6;
+  LearningDesign design = 7;
+  // What makes the sheet unusable as composed, one sentence each: a page
+  // overflow, more pages than allowed, an unknown fragment. A catalogue
+  // with problems does not build.
+  repeated string problems = 8;
+  // What a reviewer should look at, one sentence each: items cut to fit, a
+  // stage out of the usual order.
+  repeated string advice = 9;
+  // The writing size the sheet was composed for. A print option, not part of
+  // the worksheet record.
+  WritingSize writing_size = 10;
+
+  message Page {
+    repeated Section sections = 1;
+    // The composer's estimate of the content height, in CSS pixels.
+    int32 estimated_height = 2;
+  }
+
+  message Section {
+    // Such as "B" or "2".
+    string label = 1;
+    string instruction = 2;
+    string explainer = 3;
+    repeated Node figure = 4;
+    Example example = 5;
+    repeated Item items = 6;
+    int32 columns = 7;
+    string fragment_id = 8;
+    Stage stage = 9;
+    LearningDesign design = 10;
+    // The section carries on from the previous page.
+    bool continued = 11;
+    // The composer's estimate of this part's height, in CSS pixels.
+    int32 estimated_height = 12;
+  }
+
+  message Example {
+    repeated Node nodes = 1;
+    string text = 2;
+  }
+
+  message Item {
+    // Such as "4" or "2b".
+    string label = 1;
+    repeated Node nodes = 2;
+    // The item solved, for the answer key, such as "5 × 5 = 25; 25 ÷ 5 = 5".
+    string key = 3;
+  }
+
+  message KeyEntry {
+    string item_label = 1;
+    Field field = 2;
+  }
+}

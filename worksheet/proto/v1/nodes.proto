@@ -1,0 +1,474 @@
+// Nodes are what a worksheet is drawn from: text, maths, the widgets that
+// show a mathematical model, and the answer spaces a child writes in.
+//
+// A node describes mathematics, not pixels. A number line is "0 to 2 in
+// sixths, with an arrow at 5/6", and the component that draws it decides
+// where each tick goes. Item generators write most nodes and compute their
+// answers. Authored items are written in full, and each of their answers
+// carries the working it is checked against.
+syntax = "proto3";
+
+package gradeguide.worksheet.v1;
+
+option go_package = "github.com/gradeguide/gradeguide/worksheet/proto/v1";
+
+// Node is one piece of a worksheet item. Exactly one kind is set.
+message Node {
+  oneof kind {
+    // A run of words. May mark bold with **double asterisks**.
+    string text = 1;
+    Math math = 2;
+    // Children side by side, wrapping when they do not fit.
+    Row row = 3;
+    // Children one under another.
+    Stack stack = 4;
+
+    NumberLine number_line = 10;
+    FractionBar fraction_bar = 11;
+    FractionWall fraction_wall = 12;
+    UnitGrid unit_grid = 13;
+    AreaModel area_model = 14;
+    DotArray dot_array = 15;
+    TapeDiagram tape_diagram = 16;
+    ColumnArithmetic column_arithmetic = 17;
+    Angle angle = 18;
+    Polygon polygon = 19;
+    PlaceValueChart place_value_chart = 20;
+    BaseTenBlocks base_ten_blocks = 21;
+    LongDivision long_division = 22;
+    Clock clock = 23;
+    Ruler ruler = 24;
+    LinePlot line_plot = 25;
+    Protractor protractor = 26;
+    LineFigure line_figure = 27;
+    NumberChart number_chart = 28;
+
+    BarGraph bar_graph = 29;
+    DataTable data_table = 32;
+
+    Choices choices = 30;
+    Lines lines = 31;
+    WorkSpace work_space = 33;
+    MultiPartQuestion multi_part_question = 34;
+  }
+}
+
+message Row {
+  repeated Node children = 1;
+}
+
+message Stack {
+  repeated Node children = 1;
+}
+
+// Fraction is a/b. A whole number has den 1.
+message Fraction {
+  int32 num = 1;
+  int32 den = 2;
+}
+
+// Answer is what a field should read, as the answer key prints it.
+message Answer {
+  // The answer as printed, such as "3/4" or "<".
+  string text = 1;
+  // Other readings that are also right, such as "0.5" for "1/2".
+  repeated string also = 2;
+  // How the answer is reached, as arithmetic such as "9 × 8 − 4 × 8". Set
+  // on authored answers, which the composer checks against it: the working
+  // must come to the answer, and every number in it must appear in the item
+  // or in an earlier part's answer. Generated answers leave it empty.
+  string work = 3;
+}
+
+// Field is one place a child writes. Its id is given by the composer, so the
+// same item has a different id on each worksheet it appears on.
+message Field {
+  // Unique on its worksheet, such as "q4b" or "q4b-2".
+  string id = 1;
+  // What the field asks for, in a few words, for whoever reads the scan.
+  string label = 2;
+  Answer answer = 3;
+}
+
+// Math is a line of maths: numbers, operators, fractions and blanks.
+message Math {
+  repeated Atom atoms = 1;
+
+  message Atom {
+    oneof kind {
+      // A number, operator or word, such as "4", "×" or "of".
+      string text = 1;
+      // A fraction set with its numerator over its denominator.
+      Fraction fraction = 2;
+      // A box for one number or word.
+      Field blank = 3;
+      // A fraction with a box for the numerator and one for the denominator,
+      // read as one field such as "3/4".
+      Field fraction_blank = 4;
+      // A fraction with one part given and a box for the other.
+      HalfBlank half_blank = 5;
+      // A circle to write <, > or = in.
+      Field compare = 6;
+    }
+  }
+
+  message HalfBlank {
+    // The given part. Which part it is depends on blank_numerator.
+    int32 given = 1;
+    // True: the numerator is the box.
+    bool blank_numerator = 2;
+    Field field = 3;
+  }
+}
+
+// NumberLine is a line from start to end, cut into parts_per_unit equal
+// parts in each unit.
+message NumberLine {
+  int32 start = 1;
+  int32 end = 2;
+  int32 parts_per_unit = 3;
+  // Ticks are drawn for every part; false draws only the two ends, for a
+  // child to partition.
+  bool hide_part_ticks = 4;
+  // Labels under ticks, by tick index from start (0 is start).
+  repeated TickLabel labels = 5;
+  // Boxes under ticks for the child to label.
+  repeated TickBlank blanks = 6;
+  // An arrow above this tick. -1 or unset with has_arrow false: none.
+  bool has_arrow = 7;
+  int32 arrow_tick = 8;
+  // Whole numbers are labelled under their ticks unless this is set.
+  bool hide_whole_labels = 9;
+  // Arcs drawn above the line from one tick to the next, for counting jumps.
+  repeated int32 jump_ticks = 10;
+  // What one unit is worth, for whole-number labels: start 43 and scale 100
+  // labels the first tick 4,300. Zero: 1.
+  int32 scale = 11;
+
+  message TickLabel {
+    int32 tick = 1;
+    oneof value {
+      Fraction fraction = 2;
+      string text = 3;
+    }
+    // Printed in italics with a question mark, as a wrong label to find.
+    bool wrong = 4;
+  }
+
+  message TickBlank {
+    int32 tick = 1;
+    Field field = 2;
+  }
+}
+
+// FractionBar is one whole cut into parts, some shaded.
+message FractionBar {
+  int32 parts = 1;
+  // Which parts are shaded, from 0 on the left.
+  repeated int32 shaded = 2;
+  // Relative part widths, for a bar cut into unequal parts. Empty: equal.
+  repeated int32 widths = 3;
+  // Printed to the right of the bar, such as "2/4".
+  string label = 4;
+  // Set when the child shades the bar: what correct shading is.
+  Field shade_field = 5;
+}
+
+// FractionWall is a whole bar above rows of unit fractions.
+message FractionWall {
+  repeated int32 denominators = 1;
+  // Labels each piece 1/d.
+  bool label_pieces = 2;
+}
+
+// UnitGrid is rows by columns of squares, the first shaded ones filled in
+// reading order. A 10 by 10 grid is the hundredths square.
+message UnitGrid {
+  int32 rows = 1;
+  int32 cols = 2;
+  int32 shaded = 3;
+  Field shade_field = 4;
+}
+
+// AreaModel is a rectangle cut into rows and columns whose side lengths are
+// the parts of two factors, such as 20 + 3 by 40 + 5.
+message AreaModel {
+  repeated int32 row_parts = 1;
+  repeated int32 col_parts = 2;
+  // One per cell, row by row. A cell with no field shows its product.
+  repeated Cell cells = 3;
+  // Hide the cell products and print nothing in cells without a field.
+  bool empty_cells = 4;
+
+  message Cell {
+    Field field = 1;
+  }
+}
+
+// DotArray is rows by columns of dots.
+message DotArray {
+  int32 rows = 1;
+  int32 cols = 2;
+}
+
+// TapeDiagram is one or more labelled tapes made of equal units, for
+// comparison and part-whole problems.
+message TapeDiagram {
+  // All tapes share one unit width, so their lengths compare.
+  repeated Tape tapes = 1;
+
+  message Tape {
+    // Printed at the left, such as "Ana".
+    string name = 1;
+    int32 units = 2;
+    // Printed in each unit, such as "6". Empty: blank units.
+    string unit_text = 3;
+    // A brace under the tape with this total, or a field for it.
+    string total = 4;
+    Field total_field = 5;
+  }
+}
+
+// ColumnArithmetic is a sum, difference or product set in columns.
+message ColumnArithmetic {
+  Op op = 1;
+  repeated int64 operands = 2;
+  // The answer row, a box per digit, read as one field.
+  Field answer = 3;
+  // Small boxes above the top row for regrouping.
+  bool carry_boxes = 4;
+  // For partial products: a row of boxes for each partial product before
+  // the answer row, with its note, such as "4 × 7", beside it.
+  repeated Partial partials = 5;
+
+  message Partial {
+    Field field = 1;
+    string note = 2;
+  }
+
+  enum Op {
+    OP_UNSPECIFIED = 0;
+    OP_ADD = 1;
+    OP_SUBTRACT = 2;
+    OP_MULTIPLY = 3;
+  }
+}
+
+// Angle is two rays from a vertex. Angles are in degrees, counterclockwise.
+message Angle {
+  // Direction of the first ray from the positive x axis.
+  double rotation = 1;
+  // Directions of the rays after the first, measured from the first. One
+  // ray is a single angle; more split it into adjacent angles.
+  repeated double rays = 2;
+  // Labels for each adjacent angle, inside its arc. A field for one makes it
+  // the angle to find.
+  repeated ArcLabel arcs = 3;
+  // Mark a right angle with a square instead of an arc.
+  bool mark_right_angles = 4;
+
+  message ArcLabel {
+    string text = 1;
+    Field field = 2;
+  }
+}
+
+// Polygon is a shape drawn from its vertices, in grid units with y upward.
+message Polygon {
+  repeated Point points = 1;
+  // One per side, side i running from point i to point i+1.
+  repeated SideLabel sides = 2;
+  bool mark_right_angles = 3;
+
+  message Point {
+    double x = 1;
+    double y = 2;
+  }
+
+  message SideLabel {
+    string text = 1;
+    Field field = 2;
+  }
+}
+
+// Choices is options to tick, one of which is right.
+message Choices {
+  repeated string options = 1;
+  Field field = 2;
+}
+
+// Lines is writing lines for an explanation. Its answer is what to look
+// for, written by the item's author, and a person marks it.
+message Lines {
+  int32 count = 1;
+  Field field = 2;
+}
+
+// PlaceValueChart is a row of place-value columns, largest place first.
+message PlaceValueChart {
+  repeated Column columns = 1;
+
+  message Column {
+    // Such as "thousands".
+    string name = 1;
+    // The digit printed in the column, or empty.
+    string digit = 2;
+    // Set when the child writes the digit.
+    Field field = 3;
+  }
+}
+
+// BaseTenBlocks shows a number as thousands cubes, hundreds flats, tens rods
+// and ones units.
+message BaseTenBlocks {
+  int32 thousands = 1;
+  int32 hundreds = 2;
+  int32 tens = 3;
+  int32 ones = 4;
+}
+
+// LongDivision is a dividend under a division bracket, with room to work.
+message LongDivision {
+  int64 dividend = 1;
+  int32 divisor = 2;
+  Field quotient = 3;
+  // Set when the division may leave a remainder.
+  Field remainder = 4;
+  // Rows of working space under the dividend.
+  int32 work_rows = 5;
+}
+
+// Clock is an analogue clock face.
+message Clock {
+  int32 hour = 1;
+  int32 minute = 2;
+}
+
+// Ruler is an inch ruler with a bar to measure lying along it from 0.
+message Ruler {
+  int32 inches = 1;
+  // Marks per inch: 2, 4 or 8.
+  int32 parts_per_inch = 2;
+  // The bar's length, in parts.
+  int32 bar_parts = 3;
+}
+
+// LinePlot is a number line with an X above it for each data value.
+message LinePlot {
+  int32 start = 1;
+  int32 end = 2;
+  int32 parts_per_unit = 3;
+  // How many Xs above each tick, from the tick at start.
+  repeated int32 counts = 4;
+  // Printed under the line, such as "Length of each pencil (inches)".
+  string caption = 5;
+}
+
+// Protractor is a half-circle protractor over an angle whose first ray runs
+// along its base.
+message Protractor {
+  double degrees = 1;
+}
+
+// LineFigure is one of the basic figures of 4.G.A.1.
+message LineFigure {
+  Kind kind = 1;
+  // Turns the figure, in degrees counterclockwise.
+  double rotation = 2;
+  // Letters for the named points, in drawing order.
+  repeated string points = 3;
+
+  enum Kind {
+    KIND_UNSPECIFIED = 0;
+    KIND_POINT = 1;
+    KIND_SEGMENT = 2;
+    KIND_LINE = 3;
+    KIND_RAY = 4;
+    KIND_PARALLEL = 5;
+    KIND_PERPENDICULAR = 6;
+    KIND_INTERSECTING = 7;
+  }
+}
+
+// NumberChart is a grid of consecutive numbers, such as 1 to 50.
+message NumberChart {
+  int32 start = 1;
+  int32 rows = 2;
+  int32 cols = 3;
+  // Numbers printed shaded.
+  repeated int32 shaded = 4;
+  // Set when the child shades the chart: which numbers are right.
+  Field shade_field = 5;
+}
+
+// BarGraph is a bar graph with one bar per category, drawn from zero.
+message BarGraph {
+  string title = 1;
+  // The label of the value axis, such as "Packs".
+  string value_axis = 2;
+  // The value between gridlines. Zero: chosen from the data.
+  int32 step = 3;
+  repeated Bar bars = 4;
+
+  message Bar {
+    string label = 1;
+    int32 value = 2;
+  }
+}
+
+// DataTable is a table with a header row. A cell holds text or a field.
+message DataTable {
+  string title = 1;
+  repeated string header = 2;
+  repeated Row rows = 3;
+
+  message Row {
+    repeated Cell cells = 1;
+  }
+
+  message Cell {
+    oneof kind {
+      string text = 1;
+      Field field = 2;
+    }
+  }
+}
+
+// WorkSpace is room for a child's working. Its rows are rows of the child's
+// handwriting, so how tall they are depends on the writing size the sheet
+// is printed for.
+message WorkSpace {
+  // Zero: one row per step of the working in the item's answers, plus one,
+  // plus one more when the answer is written here too.
+  int32 rows = 1;
+  Style style = 2;
+  // Set when the child writes the answer in the space, with no box for it.
+  // A scan reads the whole space for the answer.
+  Field field = 3;
+
+  enum Style {
+    // Blank: open white space, with no border or lines, as most worksheets
+    // leave for working.
+    STYLE_UNSPECIFIED = 0;
+    STYLE_LINED = 1;
+    STYLE_GRID = 2;
+    STYLE_BLANK = 3;
+  }
+}
+
+// MultiPartQuestion is a question with a shared stem and parts the composer
+// labels, such as 3a and 3b. It lays out content and knows nothing about
+// what the content says.
+message MultiPartQuestion {
+  // The story and any pictures every part refers to.
+  repeated Node stem = 1;
+  repeated Part parts = 2;
+
+  message Part {
+    // Such as "3a". Set by the composer.
+    string label = 1;
+    repeated Node prompt = 2;
+    // Where the child answers: working space, blanks, lines.
+    repeated Node response = 3;
+  }
+}

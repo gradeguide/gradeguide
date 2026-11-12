@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Worksheets</title>
+    <style>
+      body { margin: 0; background: #e9e9e9; }
+      @media print {
+        body { background: white; }
+        nav, .caption, .meta { display: none !important; }
+        .page { box-shadow: none !important; margin: 0 !important; break-after: page; }
+      }
+      @page { size: letter; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <ws-gallery></ws-gallery>
+    <script type="module" src="gallery.js"></script>
+  </body>
+</html>

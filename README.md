@@ -4,7 +4,8 @@ Grade Guide shows parents what a child learns in K–8 math, month by month.
 For each skill it gives a plain explanation, an example, an idea to try at
 home, the skills it builds on and leads to, and printable worksheets.
 
-This repository holds the skill graph and the text written for parents.
+This repository holds the skill graph, the text written for parents, and the
+worksheet engine.
 
 ## Layout
 
@@ -16,6 +17,9 @@ This repository holds the skill graph and the text written for parents.
 | `data/` | The build of the imported skill graph, with its licence and credits |
 | `graph/lcimport/` | The importer, which turns the source export into the skill graph |
 | `graph/curated/` | Loads the parent-facing layer and checks it against the graph |
+| `proto/graph/v1/alignment.proto` | Which skills in the graph each worksheet fragment covers |
+| `graph/worksheets/` | Checks worksheet alignments against the graph and fills in each worksheet's header standards |
+| `worksheet/` | The worksheet engine, a subproject with its own README: records, composer, components and gallery |
 
 ## Building
 
