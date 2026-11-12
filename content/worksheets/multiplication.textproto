@@ -124,6 +124,7 @@ fragments {
 worksheets {
   id: "ws-multiplication-strategies"
   title: "Many ways to multiply"
+  home_tip: "Let them pick the strategy for each problem; ask which felt fastest."
   minutes: 40
   seed: 140
   max_pages: 4

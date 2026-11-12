@@ -7,6 +7,7 @@
 worksheets {
   id: "ws-what-a-fraction-means"
   title: "What a fraction means"
+  home_tip: "Fold a paper strip into equal parts and ask what one part is called."
   minutes: 12
   seed: 101
   placements { fragment_id: "frag-name-the-shaded-fraction" }
@@ -36,6 +37,7 @@ worksheets {
 
 worksheets {
   id: "ws-equivalent-fractions-number-line"
+  home_tip: "Ask why 2/4 and 1/2 land on the same spot before checking the answer."
   max_pages: 2
   title: "Equivalent fractions on a number line"
   minutes: 15
@@ -68,6 +70,7 @@ worksheets {
 worksheets {
   id: "ws-comparing-fractions"
   title: "Comparing fractions"
+  home_tip: "Ask them to say which fraction is bigger, and why, before writing the sign."
   minutes: 15
   seed: 105
   placements { fragment_id: "frag-compare-same-denominator" }
@@ -101,6 +104,7 @@ worksheets {
 
 worksheets {
   id: "ws-facts-check"
+  home_tip: "Circle the facts that took longest and practise just those tomorrow."
   max_pages: 2
   title: "Facts check"
   minutes: 10
@@ -245,6 +249,7 @@ worksheets {
 worksheets {
   id: "ws-time"
   title: "Telling time and elapsed time"
+  home_tip: "Ask what time it will be in 15 minutes, using a real clock at home."
   minutes: 12
   max_pages: 2
   seed: 119

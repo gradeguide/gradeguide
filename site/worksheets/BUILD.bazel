@@ -1,0 +1,60 @@
+load("@aspect_rules_esbuild//esbuild:defs.bzl", "esbuild")
+load("@aspect_rules_ts//ts:defs.bzl", "ts_config")
+load("//tools/bazel:angular.bzl", "angular_test", "angular_ts_project")
+
+package(default_visibility = ["//site:__pkg__"])
+
+exports_files(["index.html"])
+
+ts_config(
+    name = "tsconfig",
+    src = "tsconfig.json",
+)
+
+ts_config(
+    name = "spec_tsconfig",
+    src = "spec_tsconfig.json",
+    deps = [":tsconfig"],
+)
+
+# The worksheet pages: the index, and one page per sheet.
+angular_ts_project(
+    name = "pages",
+    srcs = glob(
+        ["src/**/*.ts"],
+        exclude = ["src/**/*.spec.ts"],
+    ),
+    declaration = True,
+    source_map = True,
+    tsconfig = ":tsconfig",
+    deps = [
+        "//:node_modules/@angular/core",
+        "//:node_modules/@angular/platform-browser",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/components",
+        "//worksheet/engine",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+angular_test(
+    name = "pages_test",
+    srcs = glob(["src/**/*.spec.ts"]),
+    tsconfig = ":spec_tsconfig",
+    deps = [
+        ":pages",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+esbuild(
+    name = "bundle",
+    entry_point = "src/main.js",
+    format = "esm",
+    minify = True,
+    output = "app.js",
+    platform = "browser",
+    sourcemap = "linked",
+    deps = [":pages"],
+)

@@ -103,9 +103,9 @@ type worksheetRef struct {
 	Title   string `json:"title"`
 	Minutes int32  `json:"minutes,omitempty"`
 	Pages   int    `json:"pages"`
-	// The worksheet to print, from the site's root.
+	// The worksheet's page, from the site's root.
 	Href string `json:"href"`
-	// The worksheet beside a copy filled in with the answers.
+	// The worksheet's page, opened with the answers shown.
 	AnswersHref string `json:"answersHref"`
 	// What the sheet does for this skill: "teaches", "practises", "checks"
 	// or "reviews", the first of these any of its parts does.
@@ -200,7 +200,7 @@ func worksheetsFor(sk skill, sheets []Sheet, canonical map[string]string) []work
 		if role == 0 {
 			continue
 		}
-		ref := worksheetRef{ID: sh.ID, Title: sh.Title, Minutes: sh.Minutes, Pages: sh.Pages, Href: "/worksheets/?answers=0&only=" + sh.ID, AnswersHref: "/worksheets/?only=" + sh.ID, Role: roleNames[role], Steps: steps}
+		ref := worksheetRef{ID: sh.ID, Title: sh.Title, Minutes: sh.Minutes, Pages: sh.Pages, Href: "/worksheets/?only=" + sh.ID, AnswersHref: "/worksheets/?only=" + sh.ID + "&answers=1", Role: roleNames[role], Steps: steps}
 		if sh.Printed {
 			ref.PDF = "/worksheets/" + sh.ID + ".pdf"
 			ref.AnswersPDF = "/worksheets/" + sh.ID + "-answers.pdf"

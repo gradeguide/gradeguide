@@ -462,6 +462,9 @@ message Worksheet {
   // The most pages the composer may use. Zero: 1.
   int32 max_pages = 8;
   repeated Placement placements = 9;
+  // One short idea for a grown-up helping with the sheet at home, such as
+  // "Ask which fraction is bigger before they work it out." Optional.
+  string home_tip = 10;
 }
 
 // Placement puts a fragment on a worksheet, optionally changing it.

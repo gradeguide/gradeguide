@@ -170,6 +170,7 @@ worksheets {
 worksheets {
   id: "ws-add-subtract-fractions"
   title: "Add and subtract fractions"
+  home_tip: "If they add the bottom numbers, ask what size the pieces are."
   minutes: 15
   seed: 212
   placements { fragment_id: "frag-add-fractions" }
@@ -183,6 +184,7 @@ worksheets {
 worksheets {
   id: "ws-mixed-numbers"
   title: "Mixed numbers"
+  home_tip: "Have them say the whole numbers first, then the parts."
   minutes: 20
   seed: 213
   placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
@@ -211,6 +213,7 @@ worksheets {
 worksheets {
   id: "ws-fraction-word-problems"
   title: "Fraction word problems"
+  home_tip: "Ask them to draw the pizza or ribbon before writing any numbers."
   minutes: 20
   seed: 215
   max_pages: 2
@@ -316,6 +319,7 @@ worksheets {
 worksheets {
   id: "ws-bar-graphs"
   title: "Read bar graphs"
+  home_tip: "Make a quick bar graph together of something at home, like socks by colour."
   minutes: 12
   seed: 222
   placements { fragment_id: "frag-bar-graph-questions" }
