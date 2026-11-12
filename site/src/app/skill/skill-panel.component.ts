@@ -85,7 +85,7 @@ function readSourcesOpen(): boolean {
         <p class="none">Printable worksheets for this skill are coming.</p>
 
         <details>
-          <summary>Official wording ({{ s.code }})</summary>
+          <summary>Official wording <span class="code">{{ s.code }}</span></summary>
           <p>{{ statement() }}</p>
         </details>
 
@@ -133,15 +133,14 @@ function readSourcesOpen(): boolean {
     .none { font-size: 13px; color: var(--muted); margin: 0; }
     ul, ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.55; }
     .code { color: var(--muted); font-size: 12px; }
-    details { margin-top: 18px; font-size: 13px; color: var(--muted); }
-    summary { cursor: pointer; }
-    .sources { background: var(--hover); border-radius: 8px; padding: 10px 12px; color: var(--text); }
-    .sources summary { font-weight: 600; }
-    .sources ul { margin: 8px 0 0; font-size: 13px; }
+    /* The folding sections read as headings like the others, with a disclosure arrow. */
+    details { margin-top: 18px; }
+    summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); }
+    details p { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 6px 0 0; }
+    .sources ul { margin: 6px 0 0; padding-left: 20px; font-size: 14px; line-height: 1.5; }
     .sources li { margin-bottom: 4px; }
     .sources b { font-weight: 600; }
-    .sources .via { color: var(--muted); margin: 6px 0; }
-    .sources a { color: var(--accent); }
+    .sources a { display: inline-block; margin-top: 4px; font-size: 14px; color: var(--accent); }
   `,
 })
 export class SkillPanelComponent {
