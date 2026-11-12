@@ -85,7 +85,19 @@ function readSourcesOpen(): boolean {
         }
 
         <h3>Worksheets</h3>
-        <p class="none">Printable worksheets for this skill are coming.</p>
+        @if (s.worksheets?.length) {
+          <ul class="worksheets">
+            @for (w of s.worksheets; track w.id) {
+              <li>
+                <a [href]="w.href" target="_blank" rel="noopener">{{ w.title }}</a>
+                <span class="meta">{{ w.pages }} {{ w.pages === 1 ? 'page' : 'pages' }}@if (w.minutes) {, about {{ w.minutes }} minutes}</span>
+                <a class="answers" [href]="w.answersHref" target="_blank" rel="noopener">Answers</a>
+              </li>
+            }
+          </ul>
+        } @else {
+          <p class="none">Printable worksheets for this skill are coming.</p>
+        }
 
         <details>
           <summary>Official wording <span class="code">{{ s.code }}</span></summary>
@@ -135,6 +147,10 @@ function readSourcesOpen(): boolean {
     .link:hover { border-color: var(--border-strong); border-left-color: var(--c); }
     .link span { color: var(--muted); font-size: 13px; }
     .none { font-size: 13px; color: var(--muted); margin: 0; }
+    .worksheets { padding-left: 18px; margin: 0; }
+    .worksheets li { margin: 2px 0; }
+    .worksheets .meta { font-size: 13px; color: var(--muted); margin-left: 6px; }
+    .worksheets .answers { font-size: 13px; margin-left: 8px; }
     ul, ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.55; }
     .code { color: var(--muted); font-size: 13px; }
     /* The folding sections read as headings like the others, with a disclosure arrow. */

@@ -1,0 +1,459 @@
+{
+ "worksheetId": "ws-lines-and-rays",
+ "title": "Lines, rays and segments",
+ "headerLabels": [
+  "4.G.A.1"
+ ],
+ "minutes": 10,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick the name of each figure.",
+     "explainer": "A line goes on forever both ways. A ray starts at a point and goes on one way. A line segment has two endpoints.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_SEGMENT",
+          "rotation": 15,
+          "points": [
+           "J",
+           "K"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "name of the figure",
+           "answer": {
+            "text": "line segment"
+           }
+          }
+         }
+        }
+       ],
+       "key": "line segment"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_LINE",
+          "rotation": 5,
+          "points": [
+           "Y",
+           "Z"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "name of the figure",
+           "answer": {
+            "text": "line"
+           }
+          }
+         }
+        }
+       ],
+       "key": "line"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_RAY",
+          "rotation": -20,
+          "points": [
+           "G",
+           "H"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "name of the figure",
+           "answer": {
+            "text": "ray"
+           }
+          }
+         }
+        }
+       ],
+       "key": "ray"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_RAY",
+          "rotation": 25,
+          "points": [
+           "E",
+           "F"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "name of the figure",
+           "answer": {
+            "text": "ray"
+           }
+          }
+         }
+        }
+       ],
+       "key": "ray"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_SEGMENT",
+          "points": [
+           "R",
+           "S"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "name of the figure",
+           "answer": {
+            "text": "line segment"
+           }
+          }
+         }
+        }
+       ],
+       "key": "line segment"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_SEGMENT",
+          "rotation": -30,
+          "points": [
+           "J",
+           "K"
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "line segment",
+           "line",
+           "ray"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "name of the figure",
+           "answer": {
+            "text": "line segment"
+           }
+          }
+         }
+        }
+       ],
+       "key": "line segment"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-name-figures",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell lines, rays and line segments apart.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Figures are drawn at different slants so the child goes by arrows and endpoints, not by how the figure sits."
+     },
+     "estimatedHeight": 506
+    },
+    {
+     "label": "B",
+     "instruction": "Are the lines parallel, perpendicular or just intersecting?",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_PARALLEL"
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "name of the figure",
+           "answer": {
+            "text": "parallel"
+           }
+          }
+         }
+        }
+       ],
+       "key": "parallel"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_PERPENDICULAR"
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "name of the figure",
+           "answer": {
+            "text": "perpendicular"
+           }
+          }
+         }
+        }
+       ],
+       "key": "perpendicular"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_INTERSECTING",
+          "rotation": -15
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "name of the figure",
+           "answer": {
+            "text": "intersecting"
+           }
+          }
+         }
+        }
+       ],
+       "key": "intersecting"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_INTERSECTING",
+          "rotation": 25
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "name of the figure",
+           "answer": {
+            "text": "intersecting"
+           }
+          }
+         }
+        }
+       ],
+       "key": "intersecting"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-name-line-pairs",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell parallel, perpendicular and intersecting lines apart.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Only horizontal and vertical lines can be perpendicular"
+      ]
+     },
+     "estimatedHeight": 318
+    }
+   ],
+   "estimatedHeight": 824
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "name of the figure",
+    "answer": {
+     "text": "line segment"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "name of the figure",
+    "answer": {
+     "text": "line"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "name of the figure",
+    "answer": {
+     "text": "ray"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "name of the figure",
+    "answer": {
+     "text": "ray"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "name of the figure",
+    "answer": {
+     "text": "line segment"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "name of the figure",
+    "answer": {
+     "text": "line segment"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "name of the figure",
+    "answer": {
+     "text": "parallel"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "name of the figure",
+    "answer": {
+     "text": "perpendicular"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "name of the figure",
+    "answer": {
+     "text": "intersecting"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "name of the figure",
+    "answer": {
+     "text": "intersecting"
+    }
+   }
+  }
+ ],
+ "advice": [
+  "Section \"Are the lines parallel, perpendicular or just intersecting?\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

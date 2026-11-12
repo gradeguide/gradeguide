@@ -1,0 +1,556 @@
+{
+ "worksheetId": "ws-area-perimeter-word-problems",
+ "title": "Area and perimeter problems",
+ "headerLabels": [
+  "3.MD.D.8",
+  "4.MD.A.3"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the perimeter.",
+     "example": {
+      "nodes": [
+       {
+        "polygon": {
+         "points": [
+          {},
+          {
+           "x": 5
+          },
+          {
+           "x": 5,
+           "y": 3
+          },
+          {
+           "y": 3
+          }
+         ],
+         "sides": [
+          {
+           "text": "5 cm"
+          },
+          {
+           "text": "3 cm"
+          },
+          {},
+          {}
+         ],
+         "markRightAngles": true
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "Perimeter ="
+          },
+          {
+           "blank": {
+            "label": "perimeter in cm",
+            "answer": {
+             "text": "16"
+            }
+           }
+          },
+          {
+           "text": "cm"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Perimeter is the distance **all the way around**: add all four sides."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "6 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 30 cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "x": 7,
+            "y": 5
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 24 cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-perimeter",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find a rectangle's perimeter from two sides.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ]
+     },
+     "estimatedHeight": 434
+    },
+    {
+     "label": "B",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "x": 7,
+            "y": 5
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square cm",
+             "answer": {
+              "text": "35"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 35 sq cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square cm",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 24 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-area",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find a rectangle's area as length times width.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "misconceptions": [
+       "Mixing up area and perimeter"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 676
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A rug is 9 feet long and 6 feet wide. What is its area?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "A rug is 9 feet long and 6 feet wide. What is its area",
+           "answer": {
+            "text": "54",
+            "also": [
+             "54 square feet"
+            ],
+            "work": "9 × 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "54"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A garden is 12 meters long and 5 meters wide. How many meters of fence go around it?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q6",
+           "label": "A garden is 12 meters long and 5 meters wide. How many meter",
+           "answer": {
+            "text": "34",
+            "also": [
+             "34 meters"
+            ],
+            "work": "12 + 5 + 12 + 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "34"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A rectangular poster has an area of 96 square inches. It is 12 inches long. How wide is it?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q7",
+           "label": "A rectangular poster has an area of 96 square inches. It is ",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 inches"
+            ],
+            "work": "96 ÷ 12"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A square patio has 4 equal sides. Its perimeter is 28 feet. How long is each side?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q8",
+           "label": "A square patio has 4 equal sides. Its perimeter is 28 feet. ",
+           "answer": {
+            "text": "7",
+            "also": [
+             "7 feet"
+            ],
+            "work": "28 ÷ 4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-area-perimeter-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use the area and perimeter formulas for rectangles in real problems, including finding a missing side.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Two problems give the area or perimeter and ask for a side, so the formula is used backwards.",
+      "misconceptions": [
+       "Confusing area and perimeter: the fence around a garden is its area."
+      ]
+     },
+     "estimatedHeight": 642
+    }
+   ],
+   "estimatedHeight": 642
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area in square cm",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area in square cm",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "A rug is 9 feet long and 6 feet wide. What is its area",
+    "answer": {
+     "text": "54",
+     "also": [
+      "54 square feet"
+     ],
+     "work": "9 × 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "A garden is 12 meters long and 5 meters wide. How many meter",
+    "answer": {
+     "text": "34",
+     "also": [
+      "34 meters"
+     ],
+     "work": "12 + 5 + 12 + 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "A rectangular poster has an area of 96 square inches. It is ",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 inches"
+     ],
+     "work": "96 ÷ 12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "A square patio has 4 equal sides. Its perimeter is 28 feet. ",
+    "answer": {
+     "text": "7",
+     "also": [
+      "7 feet"
+     ],
+     "work": "28 ÷ 4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use area and perimeter in real problems.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

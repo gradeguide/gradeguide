@@ -1,0 +1,966 @@
+{
+ "worksheetId": "ws-comparison-sentences",
+ "title": "Times as many: sentences and equations",
+ "headerLabels": [
+  "3.OA.C.7",
+  "4.OA.A.1",
+  "4.OA.A.2"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Warm up: multiply.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "7 × 8",
+             "answer": {
+              "text": "56"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 8 = 56"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "7 × 7",
+             "answer": {
+              "text": "49"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 7 = 49"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "5 × 3",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 3 = 15"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "4 × 7",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 7 = 28"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "7 × 2",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 2 = 14"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "7 × 5",
+             "answer": {
+              "text": "35"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 5 = 35"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "4 × 2",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 2 = 8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "7 × 4",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 4 = 28"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-multiplication-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Recall multiplication facts.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "references": [
+       "Roediger and Karpicke (2006), Psychological Science 17"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "B",
+     "instruction": "Fill in the blanks. Each sentence and the equation under it say the same thing.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "15 is"
+          },
+          {
+           "blank": {
+            "label": "how many times 5",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "times as many as 5."
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "15"
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "15 ÷ 5",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "×"
+          },
+          {
+           "text": "5"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "\"15 is 3 times as many as 5\" is the same as **15 = 3 × 5**."
+     },
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q9",
+             "label": "5 times as many as 8",
+             "answer": {
+              "text": "40"
+             }
+            }
+           },
+           {
+            "text": "is 5 times as many as 8."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "5 × 8",
+             "answer": {
+              "text": "40"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40 is 5 times as many as 8.; 40 = 5 × 8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q10",
+             "label": "4 times as many as 9",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "is 4 times as many as 9."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q10-2",
+             "label": "4 × 9",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "36 is 4 times as many as 9.; 36 = 4 × 9"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "25 is"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "how many times 5",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "times as many as 5."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "25"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11-2",
+             "label": "25 ÷ 5",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "25 is 5 times as many as 5.; 25 = 5 × 5"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "42 is 7 times as many as"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "42 ÷ 7",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "42"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q12-2",
+             "label": "42 ÷ 7",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "42 is 7 times as many as 6; 42 = 7 × 6"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "63 is"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "how many times 9",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "times as many as 9."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "63"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13-2",
+             "label": "63 ÷ 9",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "63 is 7 times as many as 9.; 63 = 7 × 9"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-times-as-many-statements",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read a multiplication equation as a comparison: 35 = 5 × 7 means 35 is 5 times as many as 7.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions.",
+      "misconceptions": [
+       "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+      ]
+     },
+     "estimatedHeight": 638
+    }
+   ],
+   "estimatedHeight": 776
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Use the tape diagram. Write the answer under the brace.",
+     "example": {
+      "nodes": [
+       {
+        "text": "Ben has 4 shells. Kai has 3 times as many. How many shells does Kai have?"
+       },
+       {
+        "tapeDiagram": {
+         "tapes": [
+          {
+           "name": "Ben",
+           "units": 1,
+           "unitText": "4"
+          },
+          {
+           "name": "Kai",
+           "units": 3,
+           "unitText": "4",
+           "totalField": {
+            "label": "shells Kai has",
+            "answer": {
+             "text": "12"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "**3 times as many** means 3 tapes the same length as the smaller one: 4 + 4 + 4 = 3 × 4 = 12."
+     },
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "Ana has 7 shells. Ben has 5 times as many. How many shells does Ben have?"
+        },
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Ana",
+            "units": 1,
+            "unitText": "7"
+           },
+           {
+            "name": "Ben",
+            "units": 5,
+            "unitText": "7",
+            "totalField": {
+             "id": "q14",
+             "label": "shells Ben has",
+             "answer": {
+              "text": "35"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "35"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "Mia has 5 shells. Omar has 4 times as many. How many shells does Omar have?"
+        },
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Mia",
+            "units": 1,
+            "unitText": "5"
+           },
+           {
+            "name": "Omar",
+            "units": 4,
+            "unitText": "5",
+            "totalField": {
+             "id": "q15",
+             "label": "shells Omar has",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-times-as-many",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Solve multiplicative comparison word problems.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Tape diagrams separate 'times as many' from 'more than', which children often solve by adding.",
+      "misconceptions": [
+       "Reading '3 times as many' as '3 more'"
+      ]
+     },
+     "estimatedHeight": 514
+    }
+   ],
+   "estimatedHeight": 514
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "7 × 8",
+    "answer": {
+     "text": "56"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "7 × 7",
+    "answer": {
+     "text": "49"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "5 × 3",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "4 × 7",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "7 × 2",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "7 × 5",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "4 × 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "7 × 4",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "5 times as many as 8",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "5 × 8",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "4 times as many as 9",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "4 × 9",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "how many times 5",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "25 ÷ 5",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "42 ÷ 7",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-2",
+    "label": "42 ÷ 7",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "how many times 9",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "63 ÷ 9",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "shells Ben has",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "shells Omar has",
+    "answer": {
+     "text": "20"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read and write multiplication as a comparison.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "Sentences and equations come before tape diagrams, so the diagram shows what the sentence already said."
+ },
+ "advice": [
+  "Section \"Fill in the blanks. Each sentence and the equation under it say the same thing.\" was cut from 6 to 5 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

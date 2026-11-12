@@ -1,0 +1,359 @@
+{
+ "worksheetId": "ws-symmetry",
+ "title": "Lines of symmetry",
+ "headerLabels": [
+  "4.G.A.3"
+ ],
+ "minutes": 10,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "How many lines of symmetry does each shape have? Draw them, then write the number.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 4,
+            "y": 6.92
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 3"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 4,
+            "y": 10
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 1"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {
+            "x": 2
+           },
+           {
+            "x": 6
+           },
+           {
+            "x": 8,
+            "y": 3.46
+           },
+           {
+            "x": 6,
+            "y": 6.92
+           },
+           {
+            "x": 2,
+            "y": 6.92
+           },
+           {
+            "y": 3.46
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 12,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 2"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 8
+           },
+           {
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 4"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {
+            "y": 4
+           },
+           {
+            "x": 6
+           },
+           {
+            "x": 12,
+            "y": 4
+           },
+           {
+            "x": 6,
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Lines of symmetry:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "lines of symmetry",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Lines of symmetry: 2"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-lines-of-symmetry",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find lines of symmetry in a shape.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Drawing a diagonal of a rectangle as a line of symmetry."
+      ]
+     },
+     "estimatedHeight": 658
+    }
+   ],
+   "estimatedHeight": 658
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "lines of symmetry",
+    "answer": {
+     "text": "2"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find lines of symmetry.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"How many lines of symmetry does each shape have? Draw them, then write the number.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

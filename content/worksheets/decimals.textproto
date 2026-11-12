@@ -1,0 +1,18 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Decimals to hundredths.
+
+fragments {
+  id: "frag-compare-decimals"
+  instruction: "Write <, > or = in each circle."
+  stage: STAGE_PRACTICE
+  explainer: "Compare tenths first, then hundredths. 0.4 is the same as 0.40."
+  items { kind { compare_decimals {} } count: 12 min_count: 6 }
+  max_columns: 3
+  design {
+    purpose: "Compare two decimals to hundredths."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+  }
+}

@@ -1,0 +1,737 @@
+{
+ "worksheetId": "ws-same-amount-different-names",
+ "title": "Same amount, different names",
+ "headerLabels": [
+  "4.NF.A.1"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the fraction wall to fill in the box.",
+     "figure": [
+      {
+       "fractionWall": {
+        "denominators": [
+         2,
+         3,
+         4,
+         6,
+         8
+        ],
+        "labelPieces": true
+       }
+      }
+     ],
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 6,
+             "blankNumerator": true,
+             "field": {
+              "id": "q1",
+              "label": "numerator equal to 1/3",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3 = 2/6"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 6,
+             "blankNumerator": true,
+             "field": {
+              "id": "q2",
+              "label": "numerator equal to 2/3",
+              "answer": {
+               "text": "4"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 = 4/6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 8,
+             "blankNumerator": true,
+             "field": {
+              "id": "q3",
+              "label": "numerator equal to 1/4",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 = 2/8"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "blankNumerator": true,
+             "field": {
+              "id": "q4",
+              "label": "numerator equal to 1/2",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 = 2/4"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 8,
+             "blankNumerator": true,
+             "field": {
+              "id": "q5",
+              "label": "numerator equal to 3/4",
+              "answer": {
+               "text": "6"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4 = 6/8"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "blankNumerator": true,
+             "field": {
+              "id": "q6",
+              "label": "numerator equal to 1/2",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 = 2/4"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-equivalent-with-wall",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Find equivalent fractions by lining up pieces.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The wall is the concrete step: the child can check each answer by eye. Later sections take the wall away.",
+      "references": [
+       "Fyfe, McNeil, Son and Goldstone (2014), Educational Psychology Review 26"
+      ]
+     },
+     "estimatedHeight": 354
+    },
+    {
+     "label": "B",
+     "instruction": "Fill in the box.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "field": {
+              "id": "q7",
+              "label": "denominator equal to 5/6",
+              "answer": {
+               "text": "12"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/6 = 10/12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q8",
+              "label": "denominator equal to 1/5",
+              "answer": {
+               "text": "20"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/5 = 4/20"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 20,
+             "blankNumerator": true,
+             "field": {
+              "id": "q9",
+              "label": "numerator equal to 1/5",
+              "answer": {
+               "text": "4"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/5 = 4/20"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 24,
+             "blankNumerator": true,
+             "field": {
+              "id": "q10",
+              "label": "numerator equal to 1/6",
+              "answer": {
+               "text": "4"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 = 4/24"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "field": {
+              "id": "q11",
+              "label": "denominator equal to 3/4",
+              "answer": {
+               "text": "16"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4 = 12/16"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q12",
+              "label": "denominator equal to 2/5",
+              "answer": {
+               "text": "10"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/5 = 4/10"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 18,
+             "blankNumerator": true,
+             "field": {
+              "id": "q13",
+              "label": "numerator equal to 1/6",
+              "answer": {
+               "text": "3"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 = 3/18"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 6,
+             "blankNumerator": true,
+             "field": {
+              "id": "q14",
+              "label": "numerator equal to 1/2",
+              "answer": {
+               "text": "3"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 = 3/6"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 18,
+             "blankNumerator": true,
+             "field": {
+              "id": "q15",
+              "label": "numerator equal to 5/6",
+              "answer": {
+               "text": "15"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/6 = 15/18"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-equivalent-missing",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Generate equivalent fractions without a picture.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+     },
+     "estimatedHeight": 250
+    }
+   ],
+   "estimatedHeight": 604
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "numerator equal to 1/3",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "numerator equal to 2/3",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "numerator equal to 1/4",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "numerator equal to 1/2",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "numerator equal to 3/4",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "numerator equal to 1/2",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "denominator equal to 5/6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "denominator equal to 1/5",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "numerator equal to 1/5",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "numerator equal to 1/6",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "denominator equal to 3/4",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "denominator equal to 2/5",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "numerator equal to 1/6",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "numerator equal to 1/2",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "numerator equal to 5/6",
+    "answer": {
+     "text": "15"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Generate equivalent fractions, first with a fraction wall, then without.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "The same task twice, with the picture taken away the second time."
+ },
+ "advice": [
+  "\"Use the fraction wall to fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

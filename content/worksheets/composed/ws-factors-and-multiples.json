@@ -1,0 +1,366 @@
+{
+ "worksheetId": "ws-factors-and-multiples",
+ "title": "Factors and multiples",
+ "headerLabels": [
+  "4.OA.B.4"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Shade the multiples.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Shade every multiple of 4."
+        },
+        {
+         "numberChart": {
+          "start": 1,
+          "rows": 5,
+          "cols": 10,
+          "shadeField": {
+           "id": "q1",
+           "label": "multiples of 4 up to 50",
+           "answer": {
+            "text": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Shade every multiple of 6."
+        },
+        {
+         "numberChart": {
+          "start": 1,
+          "rows": 5,
+          "cols": 10,
+          "shadeField": {
+           "id": "q2",
+           "label": "multiples of 6 up to 50",
+           "answer": {
+            "text": "6, 12, 18, 24, 30, 36, 42, 48"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6, 12, 18, 24, 30, 36, 42, 48"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-shade-multiples",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "See multiples as a pattern on a hundred chart.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+     },
+     "estimatedHeight": 215
+    },
+    {
+     "label": "B",
+     "instruction": "List every factor pair. Then tick prime or composite.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Factor pairs of 35:"
+           }
+          ]
+         }
+        },
+        {
+         "lines": {
+          "count": 1,
+          "field": {
+           "id": "q3",
+           "label": "factor pairs of 35",
+           "answer": {
+            "text": "1 × 35, 5 × 7"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "prime",
+           "composite"
+          ],
+          "field": {
+           "id": "q3-2",
+           "label": "is 35 prime or composite",
+           "answer": {
+            "text": "composite"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1 × 35, 5 × 7; composite"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Factor pairs of 30:"
+           }
+          ]
+         }
+        },
+        {
+         "lines": {
+          "count": 1,
+          "field": {
+           "id": "q4",
+           "label": "factor pairs of 30",
+           "answer": {
+            "text": "1 × 30, 2 × 15, 3 × 10, 5 × 6"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "prime",
+           "composite"
+          ],
+          "field": {
+           "id": "q4-2",
+           "label": "is 30 prime or composite",
+           "answer": {
+            "text": "composite"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1 × 30, 2 × 15, 3 × 10, 5 × 6; composite"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Factor pairs of 23:"
+           }
+          ]
+         }
+        },
+        {
+         "lines": {
+          "count": 1,
+          "field": {
+           "id": "q5",
+           "label": "factor pairs of 23",
+           "answer": {
+            "text": "1 × 23"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "prime",
+           "composite"
+          ],
+          "field": {
+           "id": "q5-2",
+           "label": "is 23 prime or composite",
+           "answer": {
+            "text": "prime"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1 × 23; prime"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Factor pairs of 24:"
+           }
+          ]
+         }
+        },
+        {
+         "lines": {
+          "count": 1,
+          "field": {
+           "id": "q6",
+           "label": "factor pairs of 24",
+           "answer": {
+            "text": "1 × 24, 2 × 12, 3 × 8, 4 × 6"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "prime",
+           "composite"
+          ],
+          "field": {
+           "id": "q6-2",
+           "label": "is 24 prime or composite",
+           "answer": {
+            "text": "composite"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1 × 24, 2 × 12, 3 × 8, 4 × 6; composite"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-factor-pairs",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find all factor pairs of a number up to 100 and decide whether it is prime.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Listing pairs in order, from 1 up, gives a check for when the list is complete."
+     },
+     "estimatedHeight": 270
+    }
+   ],
+   "estimatedHeight": 485
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "multiples of 4 up to 50",
+    "answer": {
+     "text": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "multiples of 6 up to 50",
+    "answer": {
+     "text": "6, 12, 18, 24, 30, 36, 42, 48"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "factor pairs of 35",
+    "answer": {
+     "text": "1 × 35, 5 × 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "is 35 prime or composite",
+    "answer": {
+     "text": "composite"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "factor pairs of 30",
+    "answer": {
+     "text": "1 × 30, 2 × 15, 3 × 10, 5 × 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "is 30 prime or composite",
+    "answer": {
+     "text": "composite"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "factor pairs of 23",
+    "answer": {
+     "text": "1 × 23"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "is 23 prime or composite",
+    "answer": {
+     "text": "prime"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "factor pairs of 24",
+    "answer": {
+     "text": "1 × 24, 2 × 12, 3 × 8, 4 × 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "is 24 prime or composite",
+    "answer": {
+     "text": "composite"
+    }
+   }
+  }
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

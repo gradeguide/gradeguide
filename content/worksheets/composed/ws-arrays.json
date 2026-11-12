@@ -1,0 +1,1017 @@
+{
+ "worksheetId": "ws-arrays",
+ "title": "What × and ÷ mean",
+ "headerLabels": [
+  "3.OA.A.1",
+  "3.OA.B.6",
+  "3.OA.C.7"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "example": {
+      "nodes": [
+       {
+        "dotArray": {
+         "rows": 3,
+         "cols": 5
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "×"
+          },
+          {
+           "blank": {
+            "label": "columns",
+            "answer": {
+             "text": "5"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          },
+          {
+           "text": "÷"
+          },
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "in each row",
+            "answer": {
+             "text": "5"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 5,
+          "cols": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "columns",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "dots",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1-4",
+             "label": "dots",
+             "answer": {
+              "text": "25"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q1-5",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-6",
+             "label": "in each row",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 5 = 25; 25 ÷ 5 = 5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 3,
+          "cols": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "columns",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "dots",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2-4",
+             "label": "dots",
+             "answer": {
+              "text": "18"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q2-5",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-6",
+             "label": "in each row",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 6 = 18; 18 ÷ 3 = 6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "rows",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "columns",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "dots",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3-4",
+             "label": "dots",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q3-5",
+             "label": "rows",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3-6",
+             "label": "in each row",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 6 = 24; 24 ÷ 4 = 6"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-array-facts",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read one array as a multiplication and a division.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+     },
+     "estimatedHeight": 426
+    },
+    {
+     "label": "B",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "10 ÷ 5",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 ÷ 5 = 2"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "15"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "15 ÷ 3",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15 ÷ 3 = 5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "81"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "81 ÷ 9",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "81 ÷ 9 = 9"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "27 ÷ 3",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27 ÷ 3 = 9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "12 ÷ 6",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 ÷ 6 = 2"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "64"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "64 ÷ 8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "64 ÷ 8 = 8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "8 ÷ 2",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 ÷ 2 = 4"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "36"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "36 ÷ 4",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "36 ÷ 4 = 9"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "20"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "20 ÷ 5",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20 ÷ 5 = 4"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "35"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "35 ÷ 7",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "35 ÷ 7 = 5"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-division-facts",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Recall division facts from multiplication.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 616
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "columns",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "dots",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "dots",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "in each row",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "columns",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "dots",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "dots",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "in each row",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "rows",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "columns",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "dots",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "dots",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-5",
+    "label": "rows",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-6",
+    "label": "in each row",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "10 ÷ 5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "15 ÷ 3",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "81 ÷ 9",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "27 ÷ 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "12 ÷ 6",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "64 ÷ 8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8 ÷ 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "36 ÷ 4",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "20 ÷ 5",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "35 ÷ 7",
+    "answer": {
+     "text": "5"
+    }
+   }
+  }
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

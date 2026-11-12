@@ -1,0 +1,592 @@
+{
+ "worksheetId": "ws-comparison-word-problems",
+ "title": "Comparison word problems",
+ "headerLabels": [
+  "4.OA.A.1",
+  "4.OA.A.2"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in the blanks. Each sentence and the equation under it say the same thing.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16 is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "how many times 8",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "times as many as 8."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "16 ÷ 8",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16 is 2 times as many as 8.; 16 = 2 × 8"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "64 is 8 times as many as"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "64 ÷ 8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "64"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "64 ÷ 8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "64 is 8 times as many as 8; 64 = 8 × 8"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "36 is 6 times as many as"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "36 ÷ 6",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "36"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "36 ÷ 6",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "36 is 6 times as many as 6; 36 = 6 × 6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "25 is 5 times as many as"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "25 ÷ 5",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "25"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "25 ÷ 5",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "25 is 5 times as many as 5; 25 = 5 × 5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-times-as-many-statements",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read a multiplication equation as a comparison: 35 = 5 × 7 means 35 is 5 times as many as 7.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions.",
+      "misconceptions": [
+       "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+      ]
+     },
+     "estimatedHeight": 418
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A puppy weighs 7 pounds. Its mother weighs 9 times as much. How much does the mother weigh?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "A puppy weighs 7 pounds. Its mother weighs 9 times as much. ",
+           "answer": {
+            "text": "63",
+            "also": [
+             "63 pounds"
+            ],
+            "work": "7 × 9"
+           }
+          }
+         }
+        }
+       ],
+       "key": "63"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A red ribbon is 48 inches long. It is 6 times as long as a blue ribbon. How long is the blue ribbon?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q6",
+           "label": "A red ribbon is 48 inches long. It is 6 times as long as a b",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 inches"
+            ],
+            "work": "48 ÷ 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-comparison-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that compare two amounts by multiplying or dividing.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story.",
+      "misconceptions": [
+       "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+      ]
+     },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 744
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Leo read 5 books this summer. His sister read 40 books. How many times as many books did his sister read?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q7",
+           "label": "Leo read 5 books this summer. His sister read 40 books. How ",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 times"
+            ],
+            "work": "40 ÷ 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A small fish tank holds 12 gallons. A big tank holds 4 times as much."
+           }
+          ],
+          "parts": [
+           {
+            "label": "8a",
+            "prompt": [
+             {
+              "text": "How many gallons does the big tank hold?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q8a",
+                "label": "How many gallons does the big tank hold",
+                "answer": {
+                 "text": "48",
+                 "also": [
+                  "48 gallons"
+                 ],
+                 "work": "12 × 4"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "8b",
+            "prompt": [
+             {
+              "text": "How many more gallons does the big tank hold than the small one?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q8b",
+                "label": "How many more gallons does the big tank hold than the small ",
+                "answer": {
+                 "text": "36",
+                 "also": [
+                  "36 gallons"
+                 ],
+                 "work": "48 − 12"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8a: 12 × 4 = 48; 8b: 48 − 12 = 36"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-comparison-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that compare two amounts by multiplying or dividing.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story.",
+      "misconceptions": [
+       "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 492
+    }
+   ],
+   "estimatedHeight": 492
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "how many times 8",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "16 ÷ 8",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "64 ÷ 8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "64 ÷ 8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "36 ÷ 6",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "36 ÷ 6",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "25 ÷ 5",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "25 ÷ 5",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "A puppy weighs 7 pounds. Its mother weighs 9 times as much. ",
+    "answer": {
+     "text": "63",
+     "also": [
+      "63 pounds"
+     ],
+     "work": "7 × 9"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "A red ribbon is 48 inches long. It is 6 times as long as a b",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 inches"
+     ],
+     "work": "48 ÷ 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "Leo read 5 books this summer. His sister read 40 books. How ",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 times"
+     ],
+     "work": "40 ÷ 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "8a",
+   "field": {
+    "id": "q8a",
+    "label": "How many gallons does the big tank hold",
+    "answer": {
+     "text": "48",
+     "also": [
+      "48 gallons"
+     ],
+     "work": "12 × 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8b",
+   "field": {
+    "id": "q8b",
+    "label": "How many more gallons does the big tank hold than the small ",
+    "answer": {
+     "text": "36",
+     "also": [
+      "36 gallons"
+     ],
+     "work": "48 − 12"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve problems that compare by multiplying or dividing.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

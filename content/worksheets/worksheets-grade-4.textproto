@@ -1,0 +1,405 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# More worksheets for grade 4 and the grade 3 skills it builds on, so every
+# grade 4 cluster has several sheets.
+
+# ── Operations and algebraic thinking ──────────────────────────────────────
+
+worksheets {
+  id: "ws-comparison-sentences"
+  title: "Times as many: sentences and equations"
+  minutes: 15
+  seed: 201
+  max_pages: 2
+  placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-times-as-many-statements" }
+  placements { fragment_id: "frag-times-as-many" count: 2 stage: STAGE_PRACTICE }
+  design {
+    purpose: "Read and write multiplication as a comparison."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Sentences and equations come before tape diagrams, so the diagram shows what the sentence already said."
+  }
+}
+
+worksheets {
+  id: "ws-comparison-word-problems"
+  title: "Comparison word problems"
+  minutes: 20
+  seed: 202
+  max_pages: 2
+  placements { fragment_id: "frag-times-as-many-statements" count: 4 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-comparison-word-problems" }
+  design {
+    purpose: "Solve problems that compare by multiplying or dividing."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-multistep-word-problems"
+  title: "Problems with more than one step"
+  minutes: 25
+  seed: 203
+  max_pages: 3
+  placements { fragment_id: "frag-multistep-word-problems" }
+  design {
+    purpose: "Solve multi-step problems with whole numbers."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-number-patterns"
+  title: "Number patterns"
+  minutes: 15
+  seed: 204
+  max_pages: 2
+  placements { fragment_id: "frag-continue-the-pattern" }
+  placements { fragment_id: "frag-find-the-rule" }
+  placements { fragment_id: "frag-shade-multiples" count: 1 stage: STAGE_STRETCH }
+  design {
+    purpose: "Make and describe number patterns from a rule."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Following a rule comes before finding one; shading multiples ends with a pattern in a grid instead of a list."
+  }
+}
+
+worksheets {
+  id: "ws-missing-numbers"
+  title: "Find the missing number"
+  minutes: 12
+  seed: 205
+  placements { fragment_id: "frag-division-facts" count: 8 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-missing-factor" }
+  design {
+    purpose: "Find an unknown number in a multiplication or division fact."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-equal-groups-word-problems"
+  title: "Equal groups word problems"
+  minutes: 15
+  seed: 206
+  max_pages: 2
+  placements { fragment_id: "frag-array-facts" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-equal-groups-word-problems" }
+  design {
+    purpose: "Solve equal-groups problems by multiplying or dividing."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Arrays first, because an equal-groups story is an array with the rows named."
+  }
+}
+
+worksheets {
+  id: "ws-two-step-word-problems"
+  title: "Two-step word problems"
+  minutes: 20
+  seed: 207
+  max_pages: 2
+  placements { fragment_id: "frag-two-step-word-problems" }
+  design {
+    purpose: "Solve two-step problems with the four operations."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+# ── Number and operations in base ten ──────────────────────────────────────
+
+worksheets {
+  id: "ws-add-subtract-within-1000"
+  title: "Add and subtract within 1,000"
+  minutes: 15
+  seed: 208
+  max_pages: 2
+  placements { fragment_id: "frag-round-to-tens-and-hundreds" stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-column-add-3-digit" }
+  placements { fragment_id: "frag-column-subtract-3-digit" }
+  design {
+    purpose: "Add and subtract three-digit numbers, with rounding to check."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-partial-products"
+  title: "Partial products"
+  minutes: 15
+  seed: 209
+  placements { fragment_id: "frag-multiply-tens" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-partial-products" }
+  placements { fragment_id: "frag-column-multiply" count: 4 }
+  design {
+    purpose: "Multiply with partial products, then the standard algorithm."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-division-word-problems"
+  title: "Division word problems"
+  minutes: 20
+  seed: 210
+  max_pages: 2
+  placements { fragment_id: "frag-long-division" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-division-word-problems" }
+  design {
+    purpose: "Divide in context."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+# ── Fractions ──────────────────────────────────────────────────────────────
+
+worksheets {
+  id: "ws-decompose-fractions"
+  title: "Fractions in parts"
+  minutes: 15
+  seed: 211
+  placements { fragment_id: "frag-name-the-shaded-fraction" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-decompose-fraction" }
+  placements { fragment_id: "frag-add-fractions" count: 4 }
+  design {
+    purpose: "See a fraction as a sum of unit fractions, then add fractions."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-add-subtract-fractions"
+  title: "Add and subtract fractions"
+  minutes: 15
+  seed: 212
+  placements { fragment_id: "frag-add-fractions" }
+  placements { fragment_id: "frag-subtract-fractions" }
+  design {
+    purpose: "Add and subtract fractions with the same denominator."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-mixed-numbers"
+  title: "Mixed numbers"
+  minutes: 20
+  seed: 213
+  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-add-mixed-numbers" }
+  placements { fragment_id: "frag-subtract-mixed-numbers" }
+  design {
+    purpose: "Add and subtract mixed numbers with the same denominator."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-fraction-times-whole"
+  title: "Multiply a fraction by a whole number"
+  minutes: 15
+  seed: 214
+  max_pages: 2
+  placements { fragment_id: "frag-decompose-fraction" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-fraction-times-whole" }
+  design {
+    purpose: "Multiply a fraction by a whole number."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-fraction-word-problems"
+  title: "Fraction word problems"
+  minutes: 20
+  seed: 215
+  max_pages: 2
+  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-fraction-word-problems" }
+  design {
+    purpose: "Solve word problems with fractions that share a denominator."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-compare-decimals"
+  title: "Compare decimals"
+  minutes: 12
+  seed: 216
+  placements { fragment_id: "frag-hundredths-grid" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-compare-decimals" }
+  design {
+    purpose: "Compare decimals to hundredths."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The grids show 0.4 as 40 hundredths before the child compares 0.4 with 0.38 in symbols."
+  }
+}
+
+worksheets {
+  id: "ws-fractions-review"
+  title: "Fractions review"
+  minutes: 20
+  seed: 217
+  max_pages: 2
+  numbering { style: STYLE_SECTION_LETTERS }
+  placements { fragment_id: "frag-equivalent-missing" count: 4 }
+  placements { fragment_id: "frag-compare-any" count: 4 }
+  placements { fragment_id: "frag-add-fractions" count: 4 }
+  placements { fragment_id: "frag-fraction-times-whole" count: 2 }
+  placements { fragment_id: "frag-compare-decimals" count: 6 }
+  design {
+    purpose: "Review the grade 4 fraction and decimal skills together."
+    principles: [PRINCIPLE_INTERLEAVING, PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+# ── Measurement and data ───────────────────────────────────────────────────
+
+worksheets {
+  id: "ws-convert-units"
+  title: "Convert units"
+  minutes: 15
+  seed: 218
+  max_pages: 2
+  placements { fragment_id: "frag-convert-length" }
+  placements { fragment_id: "frag-convert-time-and-mass" }
+  design {
+    purpose: "Convert larger units to smaller ones."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-measurement-word-problems"
+  title: "Measurement word problems"
+  minutes: 20
+  seed: 219
+  max_pages: 2
+  placements { fragment_id: "frag-convert-time-and-mass" count: 1 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-measurement-word-problems" }
+  design {
+    purpose: "Solve problems with measurements, converting units where needed."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-angle-turns"
+  title: "Angles are turns"
+  minutes: 12
+  seed: 220
+  max_pages: 2
+  placements { fragment_id: "frag-angle-turns" }
+  placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_PRACTICE }
+  design {
+    purpose: "Understand an angle's measure as an amount of turn."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-area-perimeter-word-problems"
+  title: "Area and perimeter problems"
+  minutes: 20
+  seed: 221
+  max_pages: 2
+  placements { fragment_id: "frag-rectangle-perimeter" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-rectangle-area" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-area-perimeter-word-problems" }
+  design {
+    purpose: "Use area and perimeter in real problems."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-bar-graphs"
+  title: "Read bar graphs"
+  minutes: 12
+  seed: 222
+  placements { fragment_id: "frag-bar-graph-questions" }
+  design {
+    purpose: "Answer questions from a scaled bar graph."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-mass-and-volume"
+  title: "Mass and liquid volume"
+  minutes: 12
+  seed: 223
+  max_pages: 2
+  placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-mass-volume-word-problems" }
+  design {
+    purpose: "Solve problems about mass and liquid volume."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+# ── Geometry ───────────────────────────────────────────────────────────────
+
+worksheets {
+  id: "ws-classify-triangles"
+  title: "Triangles by their angles"
+  minutes: 12
+  seed: 224
+  max_pages: 2
+  placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-classify-triangles" }
+  design {
+    purpose: "Sort triangles by their angles."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-quadrilaterals"
+  title: "Parallel sides and right angles"
+  minutes: 12
+  seed: 225
+  max_pages: 2
+  placements { fragment_id: "frag-name-line-pairs" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-quadrilateral-features" }
+  design {
+    purpose: "Describe quadrilaterals by their parallel sides and right angles."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-symmetry"
+  title: "Lines of symmetry"
+  minutes: 10
+  seed: 226
+  max_pages: 2
+  placements { fragment_id: "frag-lines-of-symmetry" }
+  design {
+    purpose: "Find lines of symmetry."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+# ── Review ─────────────────────────────────────────────────────────────────
+
+worksheets {
+  id: "ws-grade-3-check"
+  title: "Ready for grade 4?"
+  minutes: 25
+  seed: 227
+  max_pages: 2
+  numbering { style: STYLE_SECTION_LETTERS }
+  placements { fragment_id: "frag-multiplication-facts" count: 12 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-missing-factor" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-fraction-at-arrow" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-round-to-tens-and-hundreds" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-column-subtract-3-digit" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-rectangle-area" count: 2 stage: STAGE_REVIEW }
+  design {
+    purpose: "Check the grade 3 skills grade 4 builds on."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Short sets from each grade 3 domain show which prerequisite needs work before a grade 4 unit starts."
+  }
+}

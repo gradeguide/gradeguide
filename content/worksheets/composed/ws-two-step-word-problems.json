@@ -1,0 +1,221 @@
+{
+ "worksheetId": "ws-two-step-word-problems",
+ "title": "Two-step word problems",
+ "headerLabels": [
+  "3.OA.D.8"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Sam has 5 bags of marbles with 8 marbles in each bag. He gives 12 marbles to a friend."
+           }
+          ],
+          "parts": [
+           {
+            "label": "1a",
+            "prompt": [
+             {
+              "text": "How many marbles did Sam have at first?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q1a",
+                "label": "How many marbles did Sam have at first",
+                "answer": {
+                 "text": "40",
+                 "also": [
+                  "40 marbles"
+                 ],
+                 "work": "5 × 8"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "1b",
+            "prompt": [
+             {
+              "text": "How many marbles does he have now?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q1b",
+                "label": "How many marbles does he have now",
+                "answer": {
+                 "text": "28",
+                 "also": [
+                  "28 marbles"
+                 ],
+                 "work": "40 − 12"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1a: 5 × 8 = 40; 1b: 40 − 12 = 28"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A class collects 36 cans on Monday and 28 cans on Tuesday. They put the cans in 4 equal boxes. How many cans go in each box?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q2",
+           "label": "A class collects 36 cans on Monday and 28 cans on Tuesday. T",
+           "answer": {
+            "text": "16",
+            "also": [
+             "16 cans"
+            ],
+            "work": "(36 + 28) ÷ 4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "16"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Tickets for a show cost $7 each. Zoe buys 6 tickets and pays with $50. How much change does she get?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q3",
+           "label": "Tickets for a show cost $7 each. Zoe buys 6 tickets and pays",
+           "answer": {
+            "text": "8",
+            "also": [
+             "$8",
+             "8 dollars"
+            ],
+            "work": "50 − 6 × 7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-two-step-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve two-step problems with the four operations.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The two parts make each step visible before a single-question problem asks for both.",
+      "misconceptions": [
+       "Stopping after the first step."
+      ]
+     },
+     "estimatedHeight": 712
+    }
+   ],
+   "estimatedHeight": 712
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "How many marbles did Sam have at first",
+    "answer": {
+     "text": "40",
+     "also": [
+      "40 marbles"
+     ],
+     "work": "5 × 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "How many marbles does he have now",
+    "answer": {
+     "text": "28",
+     "also": [
+      "28 marbles"
+     ],
+     "work": "40 − 12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "A class collects 36 cans on Monday and 28 cans on Tuesday. T",
+    "answer": {
+     "text": "16",
+     "also": [
+      "16 cans"
+     ],
+     "work": "(36 + 28) ÷ 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "Tickets for a show cost $7 each. Zoe buys 6 tickets and pays",
+    "answer": {
+     "text": "8",
+     "also": [
+      "$8",
+      "8 dollars"
+     ],
+     "work": "50 − 6 × 7"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve two-step problems with the four operations.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

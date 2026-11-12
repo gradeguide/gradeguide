@@ -1,0 +1,404 @@
+{
+ "worksheetId": "ws-multistep-word-problems",
+ "title": "Problems with more than one step",
+ "headerLabels": [
+  "4.OA.A.3"
+ ],
+ "minutes": 25,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A school orders 6 boxes of pencils. Each box holds 144 pencils. The pencils are shared equally among 8 classes."
+           }
+          ],
+          "parts": [
+           {
+            "label": "1a",
+            "prompt": [
+             {
+              "text": "How many pencils are there in all?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q1a",
+                "label": "How many pencils are there in all",
+                "answer": {
+                 "text": "864",
+                 "also": [
+                  "864 pencils"
+                 ],
+                 "work": "6 × 144"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "1b",
+            "prompt": [
+             {
+              "text": "How many pencils does each class get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q1b",
+                "label": "How many pencils does each class get",
+                "answer": {
+                 "text": "108",
+                 "also": [
+                  "108 pencils"
+                 ],
+                 "work": "864 ÷ 8"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1a: 6 × 144 = 864; 1b: 864 ÷ 8 = 108"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A theater has 23 rows of 18 seats. On Friday, 297 seats are filled."
+           }
+          ],
+          "parts": [
+           {
+            "label": "2a",
+            "prompt": [
+             {
+              "text": "How many seats are in the theater?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q2a",
+                "label": "How many seats are in the theater",
+                "answer": {
+                 "text": "414",
+                 "also": [
+                  "414 seats"
+                 ],
+                 "work": "23 × 18"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "2b",
+            "prompt": [
+             {
+              "text": "How many seats are empty on Friday?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q2b",
+                "label": "How many seats are empty on Friday",
+                "answer": {
+                 "text": "117",
+                 "also": [
+                  "117 seats"
+                 ],
+                 "work": "414 − 297"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2a: 23 × 18 = 414; 2b: 414 − 297 = 117"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-multistep-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve problems that need two or more steps with whole numbers.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next.",
+      "misconceptions": [
+       "Using every number in the story in one operation."
+      ]
+     },
+     "estimatedHeight": 658
+    }
+   ],
+   "estimatedHeight": 658
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Ana has $125. She buys 3 books that cost $18 each and a lamp that costs $39. How much money does she have left?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q3",
+           "label": "Ana has $125. She buys 3 books that cost $18 each and a lamp",
+           "answer": {
+            "text": "32",
+            "also": [
+             "$32",
+             "32 dollars"
+            ],
+            "work": "125 − 3 × 18 − 39"
+           }
+          }
+         }
+        }
+       ],
+       "key": "32"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A farmer picks 1,260 apples. She keeps 180 and packs the rest into bags of 9."
+           }
+          ],
+          "parts": [
+           {
+            "label": "4a",
+            "prompt": [
+             {
+              "text": "How many apples does she pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q4a",
+                "label": "How many apples does she pack",
+                "answer": {
+                 "text": "1080",
+                 "also": [
+                  "1,080",
+                  "1,080 apples"
+                 ],
+                 "work": "1,260 − 180"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "4b",
+            "prompt": [
+             {
+              "text": "How many bags does she fill?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q4b",
+                "label": "How many bags does she fill",
+                "answer": {
+                 "text": "120",
+                 "also": [
+                  "120 bags"
+                 ],
+                 "work": "1080 ÷ 9"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4a: 1,260 − 180 = 1080; 4b: 1080 ÷ 9 = 120"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-multistep-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve problems that need two or more steps with whole numbers.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next.",
+      "misconceptions": [
+       "Using every number in the story in one operation."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 556
+    }
+   ],
+   "estimatedHeight": 556
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "How many pencils are there in all",
+    "answer": {
+     "text": "864",
+     "also": [
+      "864 pencils"
+     ],
+     "work": "6 × 144"
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "How many pencils does each class get",
+    "answer": {
+     "text": "108",
+     "also": [
+      "108 pencils"
+     ],
+     "work": "864 ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2a",
+   "field": {
+    "id": "q2a",
+    "label": "How many seats are in the theater",
+    "answer": {
+     "text": "414",
+     "also": [
+      "414 seats"
+     ],
+     "work": "23 × 18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2b",
+   "field": {
+    "id": "q2b",
+    "label": "How many seats are empty on Friday",
+    "answer": {
+     "text": "117",
+     "also": [
+      "117 seats"
+     ],
+     "work": "414 − 297"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "Ana has $125. She buys 3 books that cost $18 each and a lamp",
+    "answer": {
+     "text": "32",
+     "also": [
+      "$32",
+      "32 dollars"
+     ],
+     "work": "125 − 3 × 18 − 39"
+    }
+   }
+  },
+  {
+   "itemLabel": "4a",
+   "field": {
+    "id": "q4a",
+    "label": "How many apples does she pack",
+    "answer": {
+     "text": "1080",
+     "also": [
+      "1,080",
+      "1,080 apples"
+     ],
+     "work": "1,260 − 180"
+    }
+   }
+  },
+  {
+   "itemLabel": "4b",
+   "field": {
+    "id": "q4b",
+    "label": "How many bags does she fill",
+    "answer": {
+     "text": "120",
+     "also": [
+      "120 bags"
+     ],
+     "work": "1080 ÷ 9"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve multi-step problems with whole numbers.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,883 @@
+{
+ "worksheetId": "ws-convert-units",
+ "title": "Convert units",
+ "headerLabels": [
+  "4.MD.A.1"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Complete the table.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "1 yard is 3 feet."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Yards",
+           "Feet"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "2 yards in feet",
+               "answer": {
+                "text": "6"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "3 yards in feet",
+               "answer": {
+                "text": "9"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "5 yards in feet",
+               "answer": {
+                "text": "15"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "8 yards in feet",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 9, 15, 24"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "1 meter is 100 centimeters."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Meters",
+           "Centimeters"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "100"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q2",
+               "label": "2 meters in centimeters",
+               "answer": {
+                "text": "200"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q2-2",
+               "label": "3 meters in centimeters",
+               "answer": {
+                "text": "300"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q2-3",
+               "label": "5 meters in centimeters",
+               "answer": {
+                "text": "500"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "field": {
+               "id": "q2-4",
+               "label": "8 meters in centimeters",
+               "answer": {
+                "text": "800"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "200, 300, 500, 800"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "1 foot is 12 inches."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Feet",
+           "Inches"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "12"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q3",
+               "label": "2 feet in inches",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q3-2",
+               "label": "3 feet in inches",
+               "answer": {
+                "text": "36"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q3-3",
+               "label": "5 feet in inches",
+               "answer": {
+                "text": "60"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "field": {
+               "id": "q3-4",
+               "label": "6 feet in inches",
+               "answer": {
+                "text": "72"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24, 36, 60, 72"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-convert-length",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Express lengths in a larger unit in terms of a smaller unit.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A table shows that each row is the first row times a number, which is the multiplication the conversion is."
+     },
+     "estimatedHeight": 268
+    },
+    {
+     "label": "B",
+     "instruction": "Complete the table.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "1 pound is 16 ounces."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Pounds",
+           "Ounces"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "16"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q4",
+               "label": "2 pounds in ounces",
+               "answer": {
+                "text": "32"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q4-2",
+               "label": "3 pounds in ounces",
+               "answer": {
+                "text": "48"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q4-3",
+               "label": "5 pounds in ounces",
+               "answer": {
+                "text": "80"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "field": {
+               "id": "q4-4",
+               "label": "10 pounds in ounces",
+               "answer": {
+                "text": "160"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "32, 48, 80, 160"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "1 kilogram is 1,000 grams."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Kilograms",
+           "Grams"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "1,000"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q5",
+               "label": "2 kilograms in grams",
+               "answer": {
+                "text": "2000",
+                "also": [
+                 "2,000"
+                ]
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q5-2",
+               "label": "3 kilograms in grams",
+               "answer": {
+                "text": "3000",
+                "also": [
+                 "3,000"
+                ]
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q5-3",
+               "label": "5 kilograms in grams",
+               "answer": {
+                "text": "5000",
+                "also": [
+                 "5,000"
+                ]
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "field": {
+               "id": "q5-4",
+               "label": "8 kilograms in grams",
+               "answer": {
+                "text": "8000",
+                "also": [
+                 "8,000"
+                ]
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2000, 3000, 5000, 8000"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "1 hour is 60 minutes."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Hours",
+           "Minutes"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "60"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q6",
+               "label": "2 hours in minutes",
+               "answer": {
+                "text": "120"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q6-2",
+               "label": "3 hours in minutes",
+               "answer": {
+                "text": "180"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q6-3",
+               "label": "5 hours in minutes",
+               "answer": {
+                "text": "300"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "field": {
+               "id": "q6-4",
+               "label": "10 hours in minutes",
+               "answer": {
+                "text": "600"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "120, 180, 300, 600"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-convert-time-and-mass",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Express times, masses and volumes in a smaller unit.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ]
+     },
+     "estimatedHeight": 268
+    }
+   ],
+   "estimatedHeight": 536
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2 yards in feet",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "3 yards in feet",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "5 yards in feet",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "8 yards in feet",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "2 meters in centimeters",
+    "answer": {
+     "text": "200"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "3 meters in centimeters",
+    "answer": {
+     "text": "300"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "5 meters in centimeters",
+    "answer": {
+     "text": "500"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "8 meters in centimeters",
+    "answer": {
+     "text": "800"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2 feet in inches",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "3 feet in inches",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "5 feet in inches",
+    "answer": {
+     "text": "60"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "6 feet in inches",
+    "answer": {
+     "text": "72"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 pounds in ounces",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "3 pounds in ounces",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "5 pounds in ounces",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-4",
+    "label": "10 pounds in ounces",
+    "answer": {
+     "text": "160"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2 kilograms in grams",
+    "answer": {
+     "text": "2000",
+     "also": [
+      "2,000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "3 kilograms in grams",
+    "answer": {
+     "text": "3000",
+     "also": [
+      "3,000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "5 kilograms in grams",
+    "answer": {
+     "text": "5000",
+     "also": [
+      "5,000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-4",
+    "label": "8 kilograms in grams",
+    "answer": {
+     "text": "8000",
+     "also": [
+      "8,000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "2 hours in minutes",
+    "answer": {
+     "text": "120"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "3 hours in minutes",
+    "answer": {
+     "text": "180"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "5 hours in minutes",
+    "answer": {
+     "text": "300"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-4",
+    "label": "10 hours in minutes",
+    "answer": {
+     "text": "600"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Convert larger units to smaller ones.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Complete the table.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Complete the table.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

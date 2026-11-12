@@ -1,0 +1,517 @@
+{
+ "worksheetId": "ws-multiply-in-columns",
+ "title": "From area models to columns",
+ "headerLabels": [
+  "4.NBT.B.5"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in the area model, then the product.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           5
+          ],
+          "colParts": [
+           20,
+           5
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q1",
+             "label": "5 × 20",
+             "answer": {
+              "text": "100"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q1-2",
+             "label": "5 × 5",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "25"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "25 × 5",
+             "answer": {
+              "text": "125"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "100, 25; 25 × 5 = 125"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           5
+          ],
+          "colParts": [
+           40,
+           5
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q2",
+             "label": "5 × 40",
+             "answer": {
+              "text": "200"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q2-2",
+             "label": "5 × 5",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "45"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "45 × 5",
+             "answer": {
+              "text": "225"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "200, 25; 45 × 5 = 225"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-area-model-2-by-1",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "misconceptions": [
+       "Multiplying only the ones, or forgetting the tens are tens"
+      ]
+     },
+     "estimatedHeight": 170
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "928",
+           "8"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "928 × 8",
+           "answer": {
+            "text": "7424"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "7424"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "310",
+           "2"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "310 × 2",
+           "answer": {
+            "text": "620"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "620"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "989",
+           "5"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "989 × 5",
+           "answer": {
+            "text": "4945"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "4945"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "126",
+           "6"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "126 × 6",
+           "answer": {
+            "text": "756"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "756"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "658",
+           "4"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "658 × 4",
+           "answer": {
+            "text": "2632"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "2632"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "494",
+           "3"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "494 × 3",
+           "answer": {
+            "text": "1482"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1482"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "832",
+           "4"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "832 × 4",
+           "answer": {
+            "text": "3328"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3328"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "846",
+           "2"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "846 × 2",
+           "answer": {
+            "text": "1692"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1692"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-multiply",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a three-digit number by a one-digit number in columns.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+     },
+     "estimatedHeight": 302
+    }
+   ],
+   "estimatedHeight": 472
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "5 × 20",
+    "answer": {
+     "text": "100"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "5 × 5",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "25 × 5",
+    "answer": {
+     "text": "125"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "5 × 40",
+    "answer": {
+     "text": "200"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "5 × 5",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "45 × 5",
+    "answer": {
+     "text": "225"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "928 × 8",
+    "answer": {
+     "text": "7424"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "310 × 2",
+    "answer": {
+     "text": "620"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "989 × 5",
+    "answer": {
+     "text": "4945"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "126 × 6",
+    "answer": {
+     "text": "756"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "658 × 4",
+    "answer": {
+     "text": "2632"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "494 × 3",
+    "answer": {
+     "text": "1482"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "832 × 4",
+    "answer": {
+     "text": "3328"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "846 × 2",
+    "answer": {
+     "text": "1692"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Move from partial products to the standard algorithm.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

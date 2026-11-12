@@ -1,12 +1,25 @@
-import { toBinary } from '@bufbuild/protobuf';
+import { create, toBinary } from '@bufbuild/protobuf';
 
 import { EXAMPLES } from '../examples/examples_data.js';
-import { type Node } from '../proto/v1/nodes_pb.js';
-import { type ComposedSheet, ComposedSheetSchema, WorksheetSchema, WritingSize } from '../proto/v1/worksheet_pb.js';
+import { type Field, type Node } from '../proto/v1/nodes_pb.js';
+import {
+  type ComposedSheet,
+  type ItemKind,
+  ComposedSheetSchema,
+  CompareDecimalsSchema,
+  FractionAddSubtractSchema,
+  FractionTimesWholeSchema,
+  ItemKindSchema,
+  MissingFactorSchema,
+  WorksheetSchema,
+  WritingSize,
+} from '../proto/v1/worksheet_pb.js';
 import { Fields, blank, fieldsOf, math, text } from './build.js';
-import { checkAuthored, evaluate } from './check.js';
+import { checkAuthored, evaluate, parseAnswer } from './check.js';
 import { allNodes, compose } from './compose.js';
+import { generate } from './kinds.js';
 import { decodeLibrary } from './library.js';
+import { Rng } from './rng.js';
 import { verifyLibrary } from './verify.js';
 
 const lib = decodeLibrary(Uint8Array.from(atob(EXAMPLES), (c) => c.charCodeAt(0)));
@@ -241,6 +254,14 @@ describe('authored items', () => {
     expect(evaluate('9 × apples')).toBeUndefined();
   });
 
+  it('reads fraction and mixed-number answers', () => {
+    expect(parseAnswer('5/8')).toBe(0.625);
+    expect(parseAnswer('2 1/4')).toBe(2.25);
+    expect(parseAnswer('$1,200')).toBe(1200);
+    expect(parseAnswer('lots')).toBeNaN();
+    expect(checkAuthored(item('Mia ate 2/8 of a pizza and Ben ate 3/8.', '5/8', '2/8 + 3/8'), 'q')).toEqual([]);
+  });
+
   it('accepts working that comes to the answer from numbers the item shows', () => {
     expect(checkAuthored(item('Each of 9 boxes holds 8 pens.', '72', '9 × 8'), 'q')).toEqual([]);
   });
@@ -293,5 +314,56 @@ describe('writing size', () => {
     expect(total(large)).toBeGreaterThan(total(standard));
     expect(large.writingSize).toBe(WritingSize.LARGE);
     expect(toBinary(WorksheetSchema, ws)).toEqual(before);
+  });
+});
+
+// Each new kind's answers, recomputed from what the item prints.
+describe('item kinds', () => {
+  const items = (kind: ItemKind['kind'], n = 30) => {
+    const rng = new Rng(7);
+    const used = new Set<string>();
+    const fresh = (k: string) => !used.has(k) && !!used.add(k);
+    return Array.from({ length: n }, (_, i) => generate(create(ItemKindSchema, { kind }), { rng, fields: new Fields(`q${i}`), fresh }));
+  };
+  const atoms = (n: Node) => (n.kind.case === 'math' ? n.kind.value.atoms : []);
+
+  it('adds and subtracts same-denominator fractions', () => {
+    for (const subtract of [false, true]) {
+      for (const [n] of items({ case: 'fractionAddSubtract', value: create(FractionAddSubtractSchema, { subtract }) })) {
+        const [a, , b, , ans] = atoms(n);
+        const x = a.kind.value as { num: number; den: number };
+        const y = b.kind.value as { num: number; den: number };
+        const want = subtract ? x.num - y.num : x.num + y.num;
+        expect(parseAnswer((ans.kind.value as Field).answer!.text)).toBeCloseTo(want / x.den);
+      }
+    }
+  });
+
+  it('compares decimals', () => {
+    for (const [n] of items({ case: 'compareDecimals', value: create(CompareDecimalsSchema, {}) })) {
+      const [a, c, b] = atoms(n);
+      const x = Number(a.kind.value);
+      const y = Number(b.kind.value);
+      expect((c.kind.value as Field).answer!.text).toBe(x > y ? '>' : x < y ? '<' : '=');
+    }
+  });
+
+  it('finds the missing factor', () => {
+    for (const [n] of items({ case: 'missingFactor', value: create(MissingFactorSchema, {}) })) {
+      const parts = atoms(n).map((a) => {
+        const v = a.kind.case === 'blank' ? a.kind.value.answer!.text : String(a.kind.value);
+        return /^\d+$/.test(v) ? Number(v) : v;
+      });
+      const [p, op, q, , r] = parts as [number, string, number, string, number];
+      expect(op === '×' ? p * q : p / q).toBe(r);
+    }
+  });
+
+  it('multiplies a fraction by a whole number', () => {
+    for (const [, n] of items({ case: 'fractionTimesWhole', value: create(FractionTimesWholeSchema, {}) })) {
+      const [w, , f, , ans] = atoms(n);
+      const x = f.kind.value as { num: number; den: number };
+      expect(parseAnswer((ans.kind.value as Field).answer!.text)).toBeCloseTo((Number(w.kind.value) * x.num) / x.den);
+    }
   });
 });

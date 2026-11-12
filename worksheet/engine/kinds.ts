@@ -21,8 +21,13 @@ import {
   RulerSchema,
   ChoicesSchema,
   ColumnArithmetic_Op,
+  BarGraph_BarSchema,
+  BarGraphSchema,
   ColumnArithmetic_PartialSchema,
   ColumnArithmeticSchema,
+  DataTable_CellSchema,
+  DataTable_RowSchema,
+  DataTableSchema,
   DotArraySchema,
   FractionBarSchema,
   FractionSchema,
@@ -40,12 +45,15 @@ import {
 import {
   type IntRange,
   type ItemKind,
+  ClassifyShape_Family,
   ClockTime_Mode,
+  UnitConversion_Conversion,
   CompareFractions_Mode,
   RectangleMeasure_Ask,
   ShadedFraction_Model,
 } from '../proto/v1/worksheet_pb.js';
 import {
+  type AtomSpec,
   type Fields,
   blank,
   compare,
@@ -55,6 +63,7 @@ import {
   halfBlank,
   math,
   node,
+  row,
   text,
 } from './build.js';
 import { commas, mixed } from './draw.js';
@@ -328,6 +337,208 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
             answer: ctx.fields.field(`${x} × ${y}`, String(x * y)),
           }),
         }),
+      ];
+    }
+    case 'timesAsManyStatement': {
+      const [t, sm, form] = pickFresh(ctx, k.case, () => [inRange(rng, k.value.times, 2, 9), inRange(rng, k.value.smaller, 2, 9), rng.int(0, 2)]);
+      const p = t * sm;
+      const f = ctx.fields;
+      switch (form) {
+        case 0:
+          return [math(blank(f.field(`${t} times as many as ${sm}`, String(p))), `is ${t} times as many as ${sm}.`), math(blank(f.field(`${t} × ${sm}`, String(p))), '=', t, '×', sm)];
+        case 1:
+          return [math(`${p} is`, blank(f.field(`how many times ${sm}`, String(t))), `times as many as ${sm}.`), math(p, '=', blank(f.field(`${p} ÷ ${sm}`, String(t))), '×', sm)];
+        default:
+          return [math(`${p} is ${t} times as many as`, blank(f.field(`${p} ÷ ${t}`, String(sm)))), math(p, '=', t, '×', blank(f.field(`${p} ÷ ${t}`, String(sm))))];
+      }
+    }
+    case 'numberPattern': {
+      const [a, d] = pickFresh(ctx, k.case + k.value.findRule, () => [inRange(rng, k.value.start, 1, 20), inRange(rng, k.value.step, 2, 9)]);
+      const terms = Array.from({ length: 6 }, (_, i) => a + i * d);
+      const f = ctx.fields;
+      if (k.value.findRule) {
+        return [math(...terms.slice(0, 5).flatMap((x, i) => (i ? [',', x] : [x]))), math('Rule: add', blank(f.field(`the rule for ${terms.slice(0, 3).join(', ')}`, String(d))))];
+      }
+      const atoms: AtomSpec[] = [];
+      terms.forEach((x, i) => {
+        if (i) {
+          atoms.push(',');
+        }
+        atoms.push(i < 3 ? x : blank(f.field(`term ${i + 1}`, String(x))));
+      });
+      return [text(`Rule: start at ${a}, add ${d}.`), math(...atoms)];
+    }
+    case 'fractionAddSubtract': {
+      const ds = list(k.value.denominators, [3, 4, 5, 6, 8, 10, 12]);
+      const sub = k.value.subtract;
+      const f = ctx.fields;
+      if (k.value.mixed) {
+        const [d, w1, a, w2, b] = pickFresh(ctx, k.case + sub + 'm', () => {
+          for (;;) {
+            const d = rng.pick(ds);
+            const w1 = rng.int(1, 4);
+            const a = rng.int(1, d - 1);
+            const w2 = rng.int(1, 3);
+            const b = rng.int(1, d - 1);
+            if (!sub || w1 * d + a > w2 * d + b) {
+              return [d, w1, a, w2, b];
+            }
+          }
+        });
+        const n = sub ? w1 * d + a - (w2 * d + b) : w1 * d + a + w2 * d + b;
+        const op = sub ? '−' : '+';
+        const answer = mixedOf(n, d);
+        return [math(w1, [a, d], op, w2, [b, d], '=', blank(f.field(`${w1} ${a}/${d} ${op} ${w2} ${b}/${d}`, answer, unique([frac(n, d), mixed(n, d)]).filter((x) => x !== answer))))];
+      }
+      const [d, a, b] = pickFresh(ctx, k.case + sub, () => {
+        const d = rng.pick(ds);
+        let a = rng.int(1, d - 1);
+        let b = rng.int(1, d - 1);
+        if (sub && a === b) {
+          a = Math.min(d - 1, a + 1);
+          b = Math.max(1, b - 1);
+        }
+        return sub && b > a ? [d, b, a] : [d, a, b];
+      });
+      const n = sub ? a - b : a + b;
+      const answer = frac(n, d);
+      return [math([a, d], sub ? '−' : '+', [b, d], '=', fractionBlank(f.field(`${frac(a, d)} ${sub ? '−' : '+'} ${frac(b, d)}`, answer, unique([mixedOf(n, d), mixed(n, d), ...simplest(n, d)]).filter((x) => x !== answer))))];
+    }
+    case 'decomposeFraction': {
+      const [d, a, b] = pickFresh(ctx, k.case, () => {
+        const d = rng.pick(list(k.value.denominators, [4, 5, 6, 8, 10]));
+        const a = rng.int(2, d);
+        return [d, a, rng.int(1, a - 1)];
+      });
+      return [math([a, d], '=', [b, d], '+', halfBlank(d, true, ctx.fields.field(`${frac(a, d)} − ${frac(b, d)}`, String(a - b))))];
+    }
+    case 'fractionTimesWhole': {
+      const [d, a, n] = pickFresh(ctx, k.case, () => {
+        const d = rng.pick(list(k.value.denominators, [3, 4, 5, 6, 8]));
+        return [d, rng.int(1, d - 1), inRange(rng, k.value.wholes, 2, 5)];
+      });
+      const bars = Array.from({ length: n }, () =>
+        node({ case: 'fractionBar', value: create(FractionBarSchema, { parts: d, shaded: Array.from({ length: a }, (_, i) => i) }) }),
+      );
+      const answer = frac(n * a, d);
+      return [row(...bars), math(n, '×', [a, d], '=', fractionBlank(ctx.fields.field(`${n} × ${frac(a, d)}`, answer, unique([mixedOf(n * a, d), mixed(n * a, d), ...simplest(n * a, d)]).filter((x) => x !== answer))))];
+    }
+    case 'compareDecimals': {
+      const [t, h, flip] = pickFresh(ctx, k.case, () => [rng.int(1, 9), rng.int(1, 99), rng.int(0, 1)]);
+      const left = `0.${t}`;
+      const right = `0.${String(h).padStart(2, '0')}`;
+      const [x, y, xs, ys] = flip ? [h, t * 10, right, left] : [t * 10, h, left, right];
+      const sign = x > y ? '>' : x < y ? '<' : '=';
+      return [math(xs, compare(ctx.fields.field(`<, > or = between ${xs} and ${ys}`, sign)), ys)];
+    }
+    case 'unitConversion': {
+      const conv = pickFresh(ctx, k.case, () => rng.pick(list(k.value.conversions, [1, 2, 3, 5, 6])));
+      const [big, small, per] = CONVERSIONS[conv as UnitConversion_Conversion] ?? CONVERSIONS[UnitConversion_Conversion.FEET_INCHES];
+      const rows = [1, 2, 3, 5, rng.pick([6, 8, 10])].map((n, i) =>
+        create(DataTable_RowSchema, {
+          cells: [
+            create(DataTable_CellSchema, { kind: { case: 'text', value: String(n) } }),
+            i === 0
+              ? create(DataTable_CellSchema, { kind: { case: 'text', value: commas(n * per) } })
+              : create(DataTable_CellSchema, { kind: { case: 'field', value: ctx.fields.field(`${n} ${big} in ${small}`, String(n * per), n * per >= 1000 ? [commas(n * per)] : []) } }),
+          ],
+        }),
+      );
+      return [
+        text(`1 ${big.replace(/s$/, '').replace(/^feet$/, 'foot')} is ${commas(per)} ${small}.`),
+        node({ case: 'dataTable', value: create(DataTableSchema, { header: [cap(big), cap(small)], rows }) }),
+      ];
+    }
+    case 'angleTurn': {
+      // Fresh by what is asked, so no turn or angle appears twice.
+      const [form, i, deg] = pickFresh(ctx, k.case, () => {
+        const form = rng.int(0, 1);
+        return form === 0 ? [0, rng.int(0, 3), 0] : [1, 0, 5 * rng.int(3, 34)];
+      });
+      if (form === 0) {
+        const [name, degrees] = [
+          ['quarter', 90],
+          ['half', 180],
+          ['three-quarter', 270],
+          ['full', 360],
+        ][i] as [string, number];
+        return [math(`A ${name} turn is`, blank(ctx.fields.field(`degrees in a ${name} turn`, String(degrees), [`${degrees}°`])), 'degrees.')];
+      }
+      return [
+        node({ case: 'angle', value: create(AngleSchema, { rotation: 0, rays: [deg], arcs: [create(Angle_ArcLabelSchema, { text: `${deg}°` })] }) }),
+        math('It turns through', blank(ctx.fields.field(`one-degree angles in ${deg}°`, String(deg))), 'one-degree angles.'),
+      ];
+    }
+    case 'classifyShape': {
+      const family = k.value.family || ClassifyShape_Family.TRIANGLES;
+      const f = ctx.fields;
+      if (family === ClassifyShape_Family.TRIANGLES) {
+        // Fresh by kind alone, so a set shows each kind before repeating one.
+        const kind = pickFresh(ctx, k.case + family, () => rng.int(0, 2));
+        const [w, h] = [rng.int(5, 7), rng.int(3, 5)];
+        const triangles: Pts[] = [
+          [[0, 0], [w, 0], [w / 2 - 0.5, h + 1]],
+          [[0, 0], [w, 0], [0, h]],
+          [[2, 0], [w + 2, 0], [0, h - 1]],
+        ];
+        const pts = triangles[kind];
+        const names = ['acute', 'right', 'obtuse'];
+        return [
+          node({ case: 'polygon', value: create(PolygonSchema, { points: big(pts), markRightAngles: kind === 1 }) }),
+          node({ case: 'choices', value: create(ChoicesSchema, { options: names, field: f.field('kind of triangle', names[kind]) }) }),
+        ];
+      }
+      const i = pickFresh(ctx, k.case + family, () => rng.int(0, QUADS.length - 1));
+      const [pts, parallel, right] = QUADS[i];
+      return [
+        node({ case: 'polygon', value: create(PolygonSchema, { points: big(pts) }) }),
+        math('Parallel pairs:', blank(f.field('pairs of parallel sides', String(parallel)))),
+        math('Right angles:', blank(f.field('right angles', String(right)))),
+      ];
+    }
+    case 'linesOfSymmetry': {
+      const i = pickFresh(ctx, k.case, () => rng.int(0, SYMMETRIC.length - 1));
+      const [pts, lines] = SYMMETRIC[i];
+      return [
+        node({ case: 'polygon', value: create(PolygonSchema, { points: big(pts) }) }),
+        math('Lines of symmetry:', blank(ctx.fields.field('lines of symmetry', String(lines)))),
+      ];
+    }
+    case 'missingFactor': {
+      const [a, b, form] = pickFresh(ctx, k.case, () => [inRange(rng, k.value.factors, 2, 9), inRange(rng, k.value.factors, 2, 9), rng.int(0, 2)]);
+      const p = a * b;
+      const f = ctx.fields;
+      switch (form) {
+        case 0:
+          return [math(blank(f.field(`${p} ÷ ${b}`, String(a))), '×', b, '=', p)];
+        case 1:
+          return [math(a, '×', blank(f.field(`${p} ÷ ${a}`, String(b))), '=', p)];
+        default:
+          return [math(p, '÷', blank(f.field(`${p} ÷ ${b}`, String(a))), '=', b)];
+      }
+    }
+    case 'barGraphQuestions': {
+      const [theme, values] = pickFresh(ctx, k.case, () => {
+        const theme = rng.int(0, GRAPH_THEMES.length - 1);
+        const vs: number[] = [];
+        while (vs.length < 4) {
+          const v = inRange(rng, k.value.values, 2, 12);
+          if (!vs.includes(v)) {
+            vs.push(v);
+          }
+        }
+        return [theme, vs];
+      });
+      const [title, axis, labels, noun] = GRAPH_THEMES[theme];
+      const bars = labels.map((label, i) => create(BarGraph_BarSchema, { label, value: values[i] }));
+      const hi = values.indexOf(Math.max(...values));
+      const lo = values.indexOf(Math.min(...values));
+      const f = ctx.fields;
+      return [
+        node({ case: 'barGraph', value: create(BarGraphSchema, { title, valueAxis: axis, step: k.value.step, bars }) }),
+        math(`How many ${noun} for ${labels[0]}?`, blank(f.field(`${noun} for ${labels[0]}`, String(values[0])))),
+        math(`How many more for ${labels[hi]} than for ${labels[lo]}?`, blank(f.field(`${labels[hi]} minus ${labels[lo]}`, String(values[hi] - values[lo])))),
+        math(`How many ${noun} in all?`, blank(f.field(`total ${noun}`, String(values.reduce((x, y) => x + y, 0))))),
       ];
     }
     case 'timesAsMany': {
@@ -691,3 +902,74 @@ function regroups(x: number, y: number, subtract: boolean): boolean {
   }
   return false;
 }
+
+// mixedOf writes n/d as a mixed number without reducing the fraction part,
+// as a child adding same-denominator fractions would: 9/4 is "2 1/4".
+function mixedOf(n: number, d: number): string {
+  const w = Math.floor(n / d);
+  const r = n - w * d;
+  return w === 0 ? frac(r, d) : r === 0 ? String(w) : `${w} ${frac(r, d)}`;
+}
+
+function unique(xs: string[]): string[] {
+  return [...new Set(xs)];
+}
+
+function cap(s: string): string {
+  return s[0].toUpperCase() + s.slice(1);
+}
+
+// Each conversion: the larger unit, the smaller, and how many of the
+// smaller make one of the larger.
+const CONVERSIONS: Record<number, [string, string, number]> = {
+  [UnitConversion_Conversion.FEET_INCHES]: ['feet', 'inches', 12],
+  [UnitConversion_Conversion.YARDS_FEET]: ['yards', 'feet', 3],
+  [UnitConversion_Conversion.HOURS_MINUTES]: ['hours', 'minutes', 60],
+  [UnitConversion_Conversion.MINUTES_SECONDS]: ['minutes', 'seconds', 60],
+  [UnitConversion_Conversion.METERS_CENTIMETERS]: ['meters', 'centimeters', 100],
+  [UnitConversion_Conversion.KILOGRAMS_GRAMS]: ['kilograms', 'grams', 1000],
+  [UnitConversion_Conversion.POUNDS_OUNCES]: ['pounds', 'ounces', 16],
+  [UnitConversion_Conversion.LITERS_MILLILITERS]: ['liters', 'milliliters', 1000],
+};
+
+type Pts = [number, number][];
+
+// big turns grid points into polygon points at twice the size, so a shape
+// the child draws on is drawn as large as a polygon may be.
+function big(pts: Pts) {
+  return pts.map(([x, y]) => create(Polygon_PointSchema, { x: 2 * x, y: 2 * y }));
+}
+
+// Quadrilaterals with their pairs of parallel sides and right angles.
+const QUADS: [Pts, number, number][] = [
+  [[[0, 0], [4, 0], [4, 4], [0, 4]], 2, 4],
+  [[[0, 0], [6, 0], [6, 3], [0, 3]], 2, 4],
+  [[[0, 0], [5, 0], [7, 3], [2, 3]], 2, 0],
+  [[[0, 2], [3, 0], [6, 2], [3, 4]], 2, 0],
+  [[[0, 0], [7, 0], [5, 3], [2, 3]], 1, 0],
+  [[[0, 0], [6, 0], [4, 3], [0, 3]], 1, 2],
+  [[[0, 3], [2, 0], [4, 3], [2, 5]], 0, 0],
+  [[[0, 0], [6, 1], [5, 4], [1, 3]], 0, 0],
+];
+
+// Shapes with how many lines of symmetry each has.
+const SYMMETRIC: [Pts, number][] = [
+  [[[0, 0], [4, 0], [4, 4], [0, 4]], 4],
+  [[[0, 0], [6, 0], [6, 3], [0, 3]], 2],
+  [[[0, 0], [4, 0], [2, 3.46]], 3],
+  [[[0, 0], [4, 0], [2, 5]], 1],
+  [[[0, 0], [6, 0], [1, 4]], 0],
+  [[[0, 2], [3, 0], [6, 2], [3, 4]], 2],
+  [[[0, 0], [7, 0], [5, 3], [2, 3]], 1],
+  [[[0, 0], [5, 0], [7, 3], [2, 3]], 0],
+  [[[0, 3], [2, 0], [4, 3], [2, 5]], 1],
+  [[[1, 0], [3, 0], [4, 1.73], [3, 3.46], [1, 3.46], [0, 1.73]], 6],
+];
+
+// Bar graph themes: title, value axis, four labels, and what is counted.
+const GRAPH_THEMES: [string, string, string[], string][] = [
+  ['Favorite fruit', 'Votes', ['Apples', 'Bananas', 'Grapes', 'Pears'], 'votes'],
+  ['Books read this week', 'Books', ['Mon', 'Tue', 'Wed', 'Thu'], 'books'],
+  ['Pets in our class', 'Pets', ['Dogs', 'Cats', 'Fish', 'Birds'], 'pets'],
+  ['Cans collected', 'Cans', ['Room 1', 'Room 2', 'Room 3', 'Room 4'], 'cans'],
+];

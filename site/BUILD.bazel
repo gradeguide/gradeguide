@@ -61,8 +61,11 @@ copy_to_directory(
         "src/pages.css",
         "src/styles.css",
         ":bundle",
+        "//content/worksheets:worksheets_gallery",
         "//site/data:math",
     ],
+    # The worksheets go under worksheets/, which the skill panels link to.
+    replace_prefixes = {"content/worksheets/worksheets_gallery": "worksheets"},
     root_paths = [
         "site/src",
         "site/data/pages",

@@ -1,0 +1,725 @@
+{
+ "worksheetId": "ws-add-subtract-within-1000",
+ "title": "Add and subtract within 1,000",
+ "headerLabels": [
+  "3.NBT.A.1",
+  "3.NBT.A.2"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Round. The number line shows which multiple is nearer.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Round 557 to the nearest ten."
+        },
+        {
+         "numberLine": {
+          "start": 55,
+          "end": 56,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 7,
+          "scale": 10
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "557"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "557 rounded to the nearest ten",
+             "answer": {
+              "text": "560",
+              "also": [
+               "560"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "557 ≈ 560"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Round 930 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 9,
+          "end": 10,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 3,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "930"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "930 rounded to the nearest hundred",
+             "answer": {
+              "text": "900",
+              "also": [
+               "900"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "930 ≈ 900"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Round 874 to the nearest ten."
+        },
+        {
+         "numberLine": {
+          "start": 87,
+          "end": 88,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 4,
+          "scale": 10
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "874"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "874 rounded to the nearest ten",
+             "answer": {
+              "text": "870",
+              "also": [
+               "870"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "874 ≈ 870"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Round 203 to the nearest ten."
+        },
+        {
+         "numberLine": {
+          "start": 20,
+          "end": 21,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 3,
+          "scale": 10
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "203"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "203 rounded to the nearest ten",
+             "answer": {
+              "text": "200",
+              "also": [
+               "200"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "203 ≈ 200"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-round-to-tens-and-hundreds",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Round three-digit numbers to the nearest 10 or 100.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ]
+     },
+     "estimatedHeight": 338
+    },
+    {
+     "label": "B",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "855",
+           "887"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "855 + 887",
+           "answer": {
+            "text": "1742"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1742"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "152",
+           "784"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "152 + 784",
+           "answer": {
+            "text": "936"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "936"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "923",
+           "722"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "923 + 722",
+           "answer": {
+            "text": "1645"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1645"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "768",
+           "821"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "768 + 821",
+           "answer": {
+            "text": "1589"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1589"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "832",
+           "384"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "832 + 384",
+           "answer": {
+            "text": "1216"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1216"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "464",
+           "170"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "464 + 170",
+           "answer": {
+            "text": "634"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "634"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-add-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add three-digit numbers in columns, regrouping.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "C",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "319",
+           "238"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "319 − 238",
+           "answer": {
+            "text": "81"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "81"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "624",
+           "567"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "624 − 567",
+           "answer": {
+            "text": "57"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "57"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "757",
+           "482"
+          ],
+          "answer": {
+           "id": "q13",
+           "label": "757 − 482",
+           "answer": {
+            "text": "275"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "275"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "816",
+           "247"
+          ],
+          "answer": {
+           "id": "q14",
+           "label": "816 − 247",
+           "answer": {
+            "text": "569"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "569"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-subtract-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract three-digit numbers in columns, regrouping.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in each column, whichever is on top."
+      ]
+     },
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 808
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "374",
+           "280"
+          ],
+          "answer": {
+           "id": "q15",
+           "label": "374 − 280",
+           "answer": {
+            "text": "94"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "94"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "913",
+           "907"
+          ],
+          "answer": {
+           "id": "q16",
+           "label": "913 − 907",
+           "answer": {
+            "text": "6"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "6"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-subtract-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract three-digit numbers in columns, regrouping.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in each column, whichever is on top."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 168
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "557 rounded to the nearest ten",
+    "answer": {
+     "text": "560",
+     "also": [
+      "560"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "930 rounded to the nearest hundred",
+    "answer": {
+     "text": "900",
+     "also": [
+      "900"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "874 rounded to the nearest ten",
+    "answer": {
+     "text": "870",
+     "also": [
+      "870"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "203 rounded to the nearest ten",
+    "answer": {
+     "text": "200",
+     "also": [
+      "200"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "855 + 887",
+    "answer": {
+     "text": "1742"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "152 + 784",
+    "answer": {
+     "text": "936"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "923 + 722",
+    "answer": {
+     "text": "1645"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "768 + 821",
+    "answer": {
+     "text": "1589"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "832 + 384",
+    "answer": {
+     "text": "1216"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "464 + 170",
+    "answer": {
+     "text": "634"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "319 − 238",
+    "answer": {
+     "text": "81"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "624 − 567",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "757 − 482",
+    "answer": {
+     "text": "275"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "816 − 247",
+    "answer": {
+     "text": "569"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "374 − 280",
+    "answer": {
+     "text": "94"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "913 − 907",
+    "answer": {
+     "text": "6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract three-digit numbers, with rounding to check.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

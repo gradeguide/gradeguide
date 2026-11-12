@@ -64,25 +64,70 @@ type also struct {
 }
 
 type skill struct {
-	ID          string   `json:"id"`
-	Code        string   `json:"code"`
-	Grade       string   `json:"grade"`
-	Strand      string   `json:"strand"`
-	Topic       string   `json:"topic,omitempty"`
-	Name        string   `json:"name"`
-	Explanation string   `json:"explanation"`
-	Example     string   `json:"example"`
-	TryAtHome   string   `json:"tryAtHome"`
-	Draft       bool     `json:"draft"`
-	Statement   string   `json:"statement"`
-	UnitID      string   `json:"unitId,omitempty"`
-	Month       int32    `json:"month"`
-	Also        []also   `json:"also,omitempty"`
-	Parts       []part   `json:"parts,omitempty"`
-	Steps       []string `json:"steps,omitempty"`
+	ID          string         `json:"id"`
+	Code        string         `json:"code"`
+	Grade       string         `json:"grade"`
+	Strand      string         `json:"strand"`
+	Topic       string         `json:"topic,omitempty"`
+	Name        string         `json:"name"`
+	Explanation string         `json:"explanation"`
+	Example     string         `json:"example"`
+	TryAtHome   string         `json:"tryAtHome"`
+	Draft       bool           `json:"draft"`
+	Statement   string         `json:"statement"`
+	UnitID      string         `json:"unitId,omitempty"`
+	Month       int32          `json:"month"`
+	Also        []also         `json:"also,omitempty"`
+	Parts       []part         `json:"parts,omitempty"`
+	Steps       []string       `json:"steps,omitempty"`
+	Worksheets  []worksheetRef `json:"worksheets,omitempty"`
 	// Path is the skill's own page, such as
 	// "/math/grade-4/4-nf-a-1-equivalent-fractions/".
 	Path string `json:"path"`
+}
+
+// worksheetRef is a printable worksheet listed under a skill.
+type worksheetRef struct {
+	ID      string `json:"id"`
+	Title   string `json:"title"`
+	Minutes int32  `json:"minutes,omitempty"`
+	Pages   int    `json:"pages"`
+	// The worksheet to print, from the site's root.
+	Href string `json:"href"`
+	// The worksheet beside a copy filled in with the answers.
+	AnswersHref string `json:"answersHref"`
+}
+
+// Sheet is a worksheet in the catalogue, as AttachWorksheets needs it.
+type Sheet struct {
+	ID      string
+	Title   string
+	Minutes int32
+	Pages   int
+	// The codes of the standards, or lettered parts, the sheet teaches,
+	// practises or checks. Standards it only reviews are left out, so a
+	// warm-up does not list a sheet under the skill it warms up.
+	Codes []string
+}
+
+// AttachWorksheets lists each sheet under every shown skill it covers,
+// directly or through one of the skill's lettered parts, in the order given.
+func AttachWorksheets(s *site, sheets []Sheet) {
+	for i := range s.Skills {
+		sk := &s.Skills[i]
+		codes := map[string]bool{sk.Code: true}
+		for _, p := range sk.Parts {
+			codes[p.Code] = true
+		}
+		for _, sh := range sheets {
+			for _, c := range sh.Codes {
+				if codes[c] {
+					sk.Worksheets = append(sk.Worksheets, worksheetRef{sh.ID, sh.Title, sh.Minutes, sh.Pages, "/worksheets/?answers=0&only=" + sh.ID, "/worksheets/?only=" + sh.ID})
+					break
+				}
+			}
+		}
+	}
 }
 
 type credit struct {

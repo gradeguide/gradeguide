@@ -1,0 +1,55 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Converting units, angles as turns, and reading bar graphs.
+
+fragments {
+  id: "frag-convert-length"
+  instruction: "Complete the table."
+  stage: STAGE_PRACTICE
+  items { kind { unit_conversion { conversions: [CONVERSION_FEET_INCHES, CONVERSION_YARDS_FEET, CONVERSION_METERS_CENTIMETERS] } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Express lengths in a larger unit in terms of a smaller unit."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A table shows that each row is the first row times a number, which is the multiplication the conversion is."
+  }
+}
+
+fragments {
+  id: "frag-convert-time-and-mass"
+  instruction: "Complete the table."
+  stage: STAGE_PRACTICE
+  items { kind { unit_conversion { conversions: [CONVERSION_HOURS_MINUTES, CONVERSION_MINUTES_SECONDS, CONVERSION_KILOGRAMS_GRAMS, CONVERSION_POUNDS_OUNCES, CONVERSION_LITERS_MILLILITERS] } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Express times, masses and volumes in a smaller unit."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-angle-turns"
+  instruction: "Fill in the blanks."
+  stage: STAGE_INTRODUCE
+  explainer: "A full turn is 360 degrees. An angle that turns through 1/360 of a full turn is a one-degree angle."
+  items { kind { angle_turn {} } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Measure an angle as a turn: a fraction of a circle, or a count of one-degree angles."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-bar-graph-questions"
+  instruction: "Use the bar graph to answer."
+  stage: STAGE_PRACTICE
+  items { kind { bar_graph_questions { values { min: 2 max: 20 } step: 2 } } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Read a scaled bar graph and answer how many, how many more, and how many in all."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The scale counts by 2, so odd values fall between gridlines and the child has to read the scale, not count lines."
+  }
+}

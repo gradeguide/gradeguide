@@ -1,0 +1,1998 @@
+{
+ "worksheetId": "ws-facts-check",
+ "title": "Facts check",
+ "headerLabels": [
+  "3.OA.C.7"
+ ],
+ "minutes": 10,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "1",
+     "instruction": "Multiply. Circle any you had to stop and think about.",
+     "items": [
+      {
+       "label": "1a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1a",
+             "label": "5 × 9",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 9 = 45"
+      },
+      {
+       "label": "1b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1b",
+             "label": "2 × 7",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 7 = 14"
+      },
+      {
+       "label": "1c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1c",
+             "label": "6 × 7",
+             "answer": {
+              "text": "42"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 7 = 42"
+      },
+      {
+       "label": "1d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1d",
+             "label": "9 × 4",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × 4 = 36"
+      },
+      {
+       "label": "1e",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1e",
+             "label": "5 × 2",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 2 = 10"
+      },
+      {
+       "label": "1f",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1f",
+             "label": "4 × 4",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 4 = 16"
+      },
+      {
+       "label": "1g",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1g",
+             "label": "2 × 4",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 4 = 8"
+      },
+      {
+       "label": "1h",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1h",
+             "label": "7 × 6",
+             "answer": {
+              "text": "42"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 6 = 42"
+      },
+      {
+       "label": "1i",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1i",
+             "label": "3 × 8",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 8 = 24"
+      },
+      {
+       "label": "1j",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1j",
+             "label": "7 × 4",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 4 = 28"
+      },
+      {
+       "label": "1k",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1k",
+             "label": "8 × 2",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 2 = 16"
+      },
+      {
+       "label": "1l",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1l",
+             "label": "3 × 3",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 3 = 9"
+      },
+      {
+       "label": "1m",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1m",
+             "label": "4 × 6",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 6 = 24"
+      },
+      {
+       "label": "1n",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1n",
+             "label": "6 × 3",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 3 = 18"
+      },
+      {
+       "label": "1o",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1o",
+             "label": "8 × 4",
+             "answer": {
+              "text": "32"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 4 = 32"
+      },
+      {
+       "label": "1p",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1p",
+             "label": "9 × 6",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × 6 = 54"
+      },
+      {
+       "label": "1q",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1q",
+             "label": "5 × 6",
+             "answer": {
+              "text": "30"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 6 = 30"
+      },
+      {
+       "label": "1r",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1r",
+             "label": "7 × 7",
+             "answer": {
+              "text": "49"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 7 = 49"
+      },
+      {
+       "label": "1s",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1s",
+             "label": "5 × 5",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 5 = 25"
+      },
+      {
+       "label": "1t",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1t",
+             "label": "2 × 8",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 8 = 16"
+      },
+      {
+       "label": "1u",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1u",
+             "label": "3 × 2",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 2 = 6"
+      },
+      {
+       "label": "1v",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1v",
+             "label": "7 × 2",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 2 = 14"
+      },
+      {
+       "label": "1w",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1w",
+             "label": "8 × 6",
+             "answer": {
+              "text": "48"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 6 = 48"
+      },
+      {
+       "label": "1x",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1x",
+             "label": "5 × 8",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 8 = 40"
+      },
+      {
+       "label": "1y",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1y",
+             "label": "6 × 8",
+             "answer": {
+              "text": "48"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 8 = 48"
+      },
+      {
+       "label": "1z",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1z",
+             "label": "8 × 3",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 3 = 24"
+      },
+      {
+       "label": "1aa",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1aa",
+             "label": "4 × 7",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 7 = 28"
+      },
+      {
+       "label": "1ab",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1ab",
+             "label": "7 × 3",
+             "answer": {
+              "text": "21"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 3 = 21"
+      },
+      {
+       "label": "1ac",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1ac",
+             "label": "9 × 5",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × 5 = 45"
+      },
+      {
+       "label": "1ad",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1ad",
+             "label": "4 × 5",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 5 = 20"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-multiplication-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Recall multiplication facts.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "references": [
+       "Roediger and Karpicke (2006), Psychological Science 17"
+      ]
+     },
+     "estimatedHeight": 450
+    },
+    {
+     "label": "2",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "2a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2a",
+             "label": "30 ÷ 5",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 ÷ 5 = 6"
+      },
+      {
+       "label": "2b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "45"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2b",
+             "label": "45 ÷ 5",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "45 ÷ 5 = 9"
+      },
+      {
+       "label": "2c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "45"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2c",
+             "label": "45 ÷ 9",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "45 ÷ 9 = 5"
+      },
+      {
+       "label": "2d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2d",
+             "label": "10 ÷ 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 ÷ 2 = 5"
+      },
+      {
+       "label": "2e",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2e",
+             "label": "27 ÷ 9",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27 ÷ 9 = 3"
+      },
+      {
+       "label": "2f",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2f",
+             "label": "30 ÷ 6",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 ÷ 6 = 5"
+      },
+      {
+       "label": "2g",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "63"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2g",
+             "label": "63 ÷ 7",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "63 ÷ 7 = 9"
+      },
+      {
+       "label": "2h",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "42"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2h",
+             "label": "42 ÷ 6",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "42 ÷ 6 = 7"
+      },
+      {
+       "label": "2i",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2i",
+             "label": "12 ÷ 4",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 ÷ 4 = 3"
+      },
+      {
+       "label": "2j",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "40"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2j",
+             "label": "40 ÷ 8",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40 ÷ 8 = 5"
+      },
+      {
+       "label": "2k",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "28"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2k",
+             "label": "28 ÷ 4",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "28 ÷ 4 = 7"
+      },
+      {
+       "label": "2l",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "35"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2l",
+             "label": "35 ÷ 7",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "35 ÷ 7 = 5"
+      },
+      {
+       "label": "2m",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "81"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2m",
+             "label": "81 ÷ 9",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "81 ÷ 9 = 9"
+      },
+      {
+       "label": "2n",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "48"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2n",
+             "label": "48 ÷ 6",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "48 ÷ 6 = 8"
+      },
+      {
+       "label": "2o",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2o",
+             "label": "16 ÷ 4",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16 ÷ 4 = 4"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-division-facts",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Recall division facts from multiplication.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 692
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "5 × 9",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "2 × 7",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "1c",
+   "field": {
+    "id": "q1c",
+    "label": "6 × 7",
+    "answer": {
+     "text": "42"
+    }
+   }
+  },
+  {
+   "itemLabel": "1d",
+   "field": {
+    "id": "q1d",
+    "label": "9 × 4",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "1e",
+   "field": {
+    "id": "q1e",
+    "label": "5 × 2",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1f",
+   "field": {
+    "id": "q1f",
+    "label": "4 × 4",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "1g",
+   "field": {
+    "id": "q1g",
+    "label": "2 × 4",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1h",
+   "field": {
+    "id": "q1h",
+    "label": "7 × 6",
+    "answer": {
+     "text": "42"
+    }
+   }
+  },
+  {
+   "itemLabel": "1i",
+   "field": {
+    "id": "q1i",
+    "label": "3 × 8",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "1j",
+   "field": {
+    "id": "q1j",
+    "label": "7 × 4",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "1k",
+   "field": {
+    "id": "q1k",
+    "label": "8 × 2",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "1l",
+   "field": {
+    "id": "q1l",
+    "label": "3 × 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1m",
+   "field": {
+    "id": "q1m",
+    "label": "4 × 6",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "1n",
+   "field": {
+    "id": "q1n",
+    "label": "6 × 3",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "1o",
+   "field": {
+    "id": "q1o",
+    "label": "8 × 4",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "1p",
+   "field": {
+    "id": "q1p",
+    "label": "9 × 6",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "1q",
+   "field": {
+    "id": "q1q",
+    "label": "5 × 6",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "1r",
+   "field": {
+    "id": "q1r",
+    "label": "7 × 7",
+    "answer": {
+     "text": "49"
+    }
+   }
+  },
+  {
+   "itemLabel": "1s",
+   "field": {
+    "id": "q1s",
+    "label": "5 × 5",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1t",
+   "field": {
+    "id": "q1t",
+    "label": "2 × 8",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "1u",
+   "field": {
+    "id": "q1u",
+    "label": "3 × 2",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1v",
+   "field": {
+    "id": "q1v",
+    "label": "7 × 2",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "1w",
+   "field": {
+    "id": "q1w",
+    "label": "8 × 6",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "1x",
+   "field": {
+    "id": "q1x",
+    "label": "5 × 8",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "1y",
+   "field": {
+    "id": "q1y",
+    "label": "6 × 8",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "1z",
+   "field": {
+    "id": "q1z",
+    "label": "8 × 3",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "1aa",
+   "field": {
+    "id": "q1aa",
+    "label": "4 × 7",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "1ab",
+   "field": {
+    "id": "q1ab",
+    "label": "7 × 3",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "1ac",
+   "field": {
+    "id": "q1ac",
+    "label": "9 × 5",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "1ad",
+   "field": {
+    "id": "q1ad",
+    "label": "4 × 5",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "2a",
+   "field": {
+    "id": "q2a",
+    "label": "30 ÷ 5",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2b",
+   "field": {
+    "id": "q2b",
+    "label": "45 ÷ 5",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2c",
+   "field": {
+    "id": "q2c",
+    "label": "45 ÷ 9",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2d",
+   "field": {
+    "id": "q2d",
+    "label": "10 ÷ 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2e",
+   "field": {
+    "id": "q2e",
+    "label": "27 ÷ 9",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2f",
+   "field": {
+    "id": "q2f",
+    "label": "30 ÷ 6",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2g",
+   "field": {
+    "id": "q2g",
+    "label": "63 ÷ 7",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2h",
+   "field": {
+    "id": "q2h",
+    "label": "42 ÷ 6",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2i",
+   "field": {
+    "id": "q2i",
+    "label": "12 ÷ 4",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2j",
+   "field": {
+    "id": "q2j",
+    "label": "40 ÷ 8",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2k",
+   "field": {
+    "id": "q2k",
+    "label": "28 ÷ 4",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2l",
+   "field": {
+    "id": "q2l",
+    "label": "35 ÷ 7",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2m",
+   "field": {
+    "id": "q2m",
+    "label": "81 ÷ 9",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2n",
+   "field": {
+    "id": "q2n",
+    "label": "48 ÷ 6",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2o",
+   "field": {
+    "id": "q2o",
+    "label": "16 ÷ 4",
+    "answer": {
+     "text": "4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find which facts are not yet automatic.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

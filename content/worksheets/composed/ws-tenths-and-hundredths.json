@@ -1,0 +1,499 @@
+{
+ "worksheetId": "ws-tenths-and-hundredths",
+ "title": "Tenths and hundredths",
+ "headerLabels": [
+  "4.NF.C.6",
+  "4.NF.C.5"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the shaded part as a fraction and as a decimal.",
+     "example": {
+      "nodes": [
+       {
+        "unitGrid": {
+         "rows": 10,
+         "cols": 10,
+         "shaded": 43
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "fractionBlank": {
+            "label": "the shaded part as a fraction",
+            "answer": {
+             "text": "43/100"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "the shaded part as a decimal",
+            "answer": {
+             "text": "0.43"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The square is **one whole** cut into 100 equal parts. Each part is 1/100, or 0.01."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 24
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "24/100",
+              "also": [
+               "6/25"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24/100 = 0.24"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 8
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q2",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "8/100",
+              "also": [
+               "2/25"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.08"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8/100 = 0.08"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 79
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "79/100"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.79"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "79/100 = 0.79"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 11
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q4",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "11/100"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11/100 = 0.11"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-hundredths-grid",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Write hundredths as fractions and decimals.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The grid ties decimal notation to the fraction it stands for, so 0.3 and 0.30 can be seen to be the same amount.",
+      "misconceptions": [
+       "0.30 is bigger than 0.3"
+      ]
+     },
+     "estimatedHeight": 710
+    }
+   ],
+   "estimatedHeight": 710
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Write the shaded part as a fraction and as a decimal.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 60
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q5",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "60/100",
+              "also": [
+               "3/5",
+               "6/10"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.60",
+              "also": [
+               "0.6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "60/100 = 0.60"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 20
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q6",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "20/100",
+              "also": [
+               "1/5",
+               "2/10"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.20",
+              "also": [
+               "0.2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20/100 = 0.20"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-tenths-grid",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "See tenths as a number of hundredths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Tenths shaded on a hundredths grid accept both 3/10 and 30/100, the equivalence 4.NF.C.5 uses to add tenths and hundredths."
+     },
+     "estimatedHeight": 250
+    }
+   ],
+   "estimatedHeight": 250
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "24/100",
+     "also": [
+      "6/25"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.24"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "8/100",
+     "also": [
+      "2/25"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.08"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "79/100"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.79"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "11/100"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.11"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "60/100",
+     "also": [
+      "3/5",
+      "6/10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.60",
+     "also": [
+      "0.6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "20/100",
+     "also": [
+      "1/5",
+      "2/10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.20",
+     "also": [
+      "0.2"
+     ]
+    }
+   }
+  }
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

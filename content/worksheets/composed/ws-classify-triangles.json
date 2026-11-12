@@ -1,0 +1,397 @@
+{
+ "worksheetId": "ws-classify-triangles",
+ "title": "Triangles by their angles",
+ "headerLabels": [
+  "4.G.A.1",
+  "4.G.A.2"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick acute, right or obtuse.",
+     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 15,
+          "rays": [
+           65
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 5,
+          "rays": [
+           105
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "kind of angle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 40,
+          "rays": [
+           155
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "kind of angle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-angles",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Classify angles against a right angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "misconceptions": [
+       "Longer rays make a bigger angle"
+      ]
+     },
+     "estimatedHeight": 374
+    },
+    {
+     "label": "B",
+     "instruction": "Is the triangle acute, right or obtuse? Tick one.",
+     "explainer": "A right triangle has a right angle. An obtuse triangle has an angle bigger than a right angle. In an acute triangle every angle is smaller than a right angle.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {
+            "x": 4
+           },
+           {
+            "x": 16
+           },
+           {
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "obtuse"
+           }
+          }
+         }
+        }
+       ],
+       "key": "obtuse"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 5,
+            "y": 10
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-triangles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Classify triangles by their largest angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 272
+    }
+   ],
+   "estimatedHeight": 646
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Is the triangle acute, right or obtuse? Tick one.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "y": 10
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "y": 8
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-triangles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Classify triangles by their largest angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 226
+    }
+   ],
+   "estimatedHeight": 226
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "kind of angle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "kind of angle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "kind of angle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "obtuse"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "right"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "right"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Sort triangles by their angles.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "\"Is the triangle acute, right or obtuse? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Is the triangle acute, right or obtuse? Tick one.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,1123 @@
+{
+ "worksheetId": "ws-fractions-review",
+ "title": "Fractions review",
+ "headerLabels": [
+  "4.NF.A.1",
+  "4.NF.A.2",
+  "4.NF.B.3.a",
+  "4.NF.B.4.a",
+  "4.NF.B.4.b",
+  "4.NF.C.7"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "1",
+     "instruction": "Fill in the box.",
+     "items": [
+      {
+       "label": "1a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q1a",
+              "label": "denominator equal to 1/4",
+              "answer": {
+               "text": "16"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 = 4/16"
+      },
+      {
+       "label": "1b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "blankNumerator": true,
+             "field": {
+              "id": "q1b",
+              "label": "numerator equal to 5/6",
+              "answer": {
+               "text": "10"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/6 = 10/12"
+      },
+      {
+       "label": "1c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "blankNumerator": true,
+             "field": {
+              "id": "q1c",
+              "label": "numerator equal to 3/4",
+              "answer": {
+               "text": "9"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4 = 9/12"
+      },
+      {
+       "label": "1d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q1d",
+              "label": "denominator equal to 2/3",
+              "answer": {
+               "text": "6"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 = 4/6"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-equivalent-missing",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Generate equivalent fractions without a picture.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+     },
+     "estimatedHeight": 178
+    },
+    {
+     "label": "2",
+     "instruction": "Write <, > or =. Use a benchmark like 1/2 or a common denominator.",
+     "items": [
+      {
+       "label": "2a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 8
+            }
+           },
+           {
+            "compare": {
+             "id": "q2a",
+             "label": "<, > or = between 2/8 and 4/6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "fraction": {
+             "num": 4,
+             "den": 6
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/8 < 4/6"
+      },
+      {
+       "label": "2b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 8,
+             "den": 10
+            }
+           },
+           {
+            "compare": {
+             "id": "q2b",
+             "label": "<, > or = between 8/10 and 4/8",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "fraction": {
+             "num": 4,
+             "den": 8
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8/10 > 4/8"
+      },
+      {
+       "label": "2c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 8
+            }
+           },
+           {
+            "compare": {
+             "id": "q2c",
+             "label": "<, > or = between 5/8 and 1/3",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/8 > 1/3"
+      },
+      {
+       "label": "2d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 8
+            }
+           },
+           {
+            "compare": {
+             "id": "q2d",
+             "label": "<, > or = between 3/8 and 3/6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 6
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/8 < 3/6"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-compare-any",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare any two fractions.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Mixing same-denominator, same-numerator and unlike pairs makes the child choose a strategy, which blocked practice never asks for.",
+      "references": [
+       "Rohrer and Taylor (2007), Instructional Science 35"
+      ]
+     },
+     "estimatedHeight": 178
+    },
+    {
+     "label": "3",
+     "instruction": "Add. The denominators are the same.",
+     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "items": [
+      {
+       "label": "3a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 5
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3a",
+             "label": "2/5 + 1/5",
+             "answer": {
+              "text": "3/5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/5 + 1/5 = 3/5"
+      },
+      {
+       "label": "3b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 4,
+             "den": 5
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 4,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3b",
+             "label": "4/5 + 4/5",
+             "answer": {
+              "text": "8/5",
+              "also": [
+               "1 3/5"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4/5 + 4/5 = 8/5"
+      },
+      {
+       "label": "3c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3c",
+             "label": "3/4 + 2/4",
+             "answer": {
+              "text": "5/4",
+              "also": [
+               "1 1/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4 + 2/4 = 5/4"
+      },
+      {
+       "label": "3d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 8,
+             "den": 10
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 8,
+             "den": 10
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3d",
+             "label": "8/10 + 8/10",
+             "answer": {
+              "text": "16/10",
+              "also": [
+               "1 6/10",
+               "1 3/5",
+               "8/5"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8/10 + 8/10 = 16/10"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-add-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add fractions with the same denominator.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ]
+     },
+     "estimatedHeight": 204
+    },
+    {
+     "label": "4",
+     "instruction": "Use the bars. Multiply the whole number by the fraction.",
+     "explainer": "3 × 2/5 is three groups of two fifths: six fifths, or 6/5.",
+     "items": [
+      {
+       "label": "4a",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionBar": {
+             "parts": 8,
+             "shaded": [
+              0
+             ]
+            }
+           },
+           {
+            "fractionBar": {
+             "parts": 8,
+             "shaded": [
+              0
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q4a",
+             "label": "2 × 1/8",
+             "answer": {
+              "text": "2/8",
+              "also": [
+               "1/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 1/8 = 2/8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-fraction-times-whole",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a fraction by a whole number as repeated groups of unit fractions.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d.",
+      "misconceptions": [
+       "Multiplying the denominator too: 3 × 2/5 = 6/15."
+      ]
+     },
+     "estimatedHeight": 176
+    }
+   ],
+   "estimatedHeight": 736
+  },
+  {
+   "sections": [
+    {
+     "label": "4",
+     "instruction": "Use the bars. Multiply the whole number by the fraction.",
+     "items": [
+      {
+       "label": "4b",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionBar": {
+             "parts": 8,
+             "shaded": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+             ]
+            }
+           },
+           {
+            "fractionBar": {
+             "parts": 8,
+             "shaded": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+             ]
+            }
+           },
+           {
+            "fractionBar": {
+             "parts": 8,
+             "shaded": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "fraction": {
+             "num": 6,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q4b",
+             "label": "3 × 6/8",
+             "answer": {
+              "text": "18/8",
+              "also": [
+               "2 2/8",
+               "2 1/4",
+               "9/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 6/8 = 18/8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-fraction-times-whole",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a fraction by a whole number as repeated groups of unit fractions.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d.",
+      "misconceptions": [
+       "Multiplying the denominator too: 3 × 2/5 = 6/15."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 150
+    },
+    {
+     "label": "5",
+     "instruction": "Write <, > or = in each circle.",
+     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "items": [
+      {
+       "label": "5a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.2"
+           },
+           {
+            "compare": {
+             "id": "q5a",
+             "label": "<, > or = between 0.2 and 0.12",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.12"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.2 > 0.12"
+      },
+      {
+       "label": "5b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.6"
+           },
+           {
+            "compare": {
+             "id": "q5b",
+             "label": "<, > or = between 0.6 and 0.88",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.88"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.6 < 0.88"
+      },
+      {
+       "label": "5c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.51"
+           },
+           {
+            "compare": {
+             "id": "q5c",
+             "label": "<, > or = between 0.51 and 0.1",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.1"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.51 > 0.1"
+      },
+      {
+       "label": "5d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.8"
+           },
+           {
+            "compare": {
+             "id": "q5d",
+             "label": "<, > or = between 0.8 and 0.53",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.53"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.8 > 0.53"
+      },
+      {
+       "label": "5e",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.6"
+           },
+           {
+            "compare": {
+             "id": "q5e",
+             "label": "<, > or = between 0.6 and 0.05",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.05"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.6 > 0.05"
+      },
+      {
+       "label": "5f",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.03"
+           },
+           {
+            "compare": {
+             "id": "q5f",
+             "label": "<, > or = between 0.03 and 0.2",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.03 < 0.2"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-compare-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare two decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+      ]
+     },
+     "estimatedHeight": 164
+    }
+   ],
+   "estimatedHeight": 314
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "denominator equal to 1/4",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "numerator equal to 5/6",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1c",
+   "field": {
+    "id": "q1c",
+    "label": "numerator equal to 3/4",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1d",
+   "field": {
+    "id": "q1d",
+    "label": "denominator equal to 2/3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2a",
+   "field": {
+    "id": "q2a",
+    "label": "<, > or = between 2/8 and 4/6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "2b",
+   "field": {
+    "id": "q2b",
+    "label": "<, > or = between 8/10 and 4/8",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "2c",
+   "field": {
+    "id": "q2c",
+    "label": "<, > or = between 5/8 and 1/3",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "2d",
+   "field": {
+    "id": "q2d",
+    "label": "<, > or = between 3/8 and 3/6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "3a",
+   "field": {
+    "id": "q3a",
+    "label": "2/5 + 1/5",
+    "answer": {
+     "text": "3/5"
+    }
+   }
+  },
+  {
+   "itemLabel": "3b",
+   "field": {
+    "id": "q3b",
+    "label": "4/5 + 4/5",
+    "answer": {
+     "text": "8/5",
+     "also": [
+      "1 3/5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3c",
+   "field": {
+    "id": "q3c",
+    "label": "3/4 + 2/4",
+    "answer": {
+     "text": "5/4",
+     "also": [
+      "1 1/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3d",
+   "field": {
+    "id": "q3d",
+    "label": "8/10 + 8/10",
+    "answer": {
+     "text": "16/10",
+     "also": [
+      "1 6/10",
+      "1 3/5",
+      "8/5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4a",
+   "field": {
+    "id": "q4a",
+    "label": "2 × 1/8",
+    "answer": {
+     "text": "2/8",
+     "also": [
+      "1/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4b",
+   "field": {
+    "id": "q4b",
+    "label": "3 × 6/8",
+    "answer": {
+     "text": "18/8",
+     "also": [
+      "2 2/8",
+      "2 1/4",
+      "9/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5a",
+   "field": {
+    "id": "q5a",
+    "label": "<, > or = between 0.2 and 0.12",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "5b",
+   "field": {
+    "id": "q5b",
+    "label": "<, > or = between 0.6 and 0.88",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "5c",
+   "field": {
+    "id": "q5c",
+    "label": "<, > or = between 0.51 and 0.1",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "5d",
+   "field": {
+    "id": "q5d",
+    "label": "<, > or = between 0.8 and 0.53",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "5e",
+   "field": {
+    "id": "q5e",
+    "label": "<, > or = between 0.6 and 0.05",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "5f",
+   "field": {
+    "id": "q5f",
+    "label": "<, > or = between 0.03 and 0.2",
+    "answer": {
+     "text": "<"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Review the grade 4 fraction and decimal skills together.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write <, > or =. Use a benchmark like 1/2 or a common denominator.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add. The denominators are the same.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the bars. Multiply the whole number by the fraction.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

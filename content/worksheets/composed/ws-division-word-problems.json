@@ -1,0 +1,404 @@
+{
+ "worksheetId": "ws-division-word-problems",
+ "title": "Division word problems",
+ "headerLabels": [
+  "4.NBT.B.6",
+  "4.OA.A.3"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Divide. Write any remainder after R.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "576",
+          "divisor": 8,
+          "quotient": {
+           "id": "q1",
+           "label": "576 ÷ 8",
+           "answer": {
+            "text": "72"
+           }
+          },
+          "remainder": {
+           "id": "q1-2",
+           "label": "remainder of 576 ÷ 8",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "72, 0"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "151",
+          "divisor": 7,
+          "quotient": {
+           "id": "q2",
+           "label": "151 ÷ 7",
+           "answer": {
+            "text": "21"
+           }
+          },
+          "remainder": {
+           "id": "q2-2",
+           "label": "remainder of 151 ÷ 7",
+           "answer": {
+            "text": "4"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "21, 4"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "718",
+          "divisor": 2,
+          "quotient": {
+           "id": "q3",
+           "label": "718 ÷ 2",
+           "answer": {
+            "text": "359"
+           }
+          },
+          "remainder": {
+           "id": "q3-2",
+           "label": "remainder of 718 ÷ 2",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 6
+         }
+        }
+       ],
+       "key": "359, 0"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-long-division",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Divide a three-digit number by a one-digit number, with remainders.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+     },
+     "estimatedHeight": 264
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A baker has 156 muffins. She puts 6 muffins in each box. How many boxes does she fill?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "A baker has 156 muffins. She puts 6 muffins in each box. How",
+           "answer": {
+            "text": "26",
+            "also": [
+             "26 boxes"
+            ],
+            "work": "156 ÷ 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "26"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "There are 152 students going on a trip. Each van holds 8 students. How many vans are needed?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "There are 152 students going on a trip. Each van holds 8 stu",
+           "answer": {
+            "text": "19",
+            "also": [
+             "19 vans"
+            ],
+            "work": "152 ÷ 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "19"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-division-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Divide multi-digit numbers in word problems, including what is left over.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "One problem in each pair asks for the leftover, so the child has to decide what the remainder means.",
+      "misconceptions": [
+       "Ignoring the leftover, or giving the remainder as the answer."
+      ]
+     },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 590
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A club has 98 stickers to share equally among 7 members."
+           }
+          ],
+          "parts": [
+           {
+            "label": "6a",
+            "prompt": [
+             {
+              "text": "How many stickers does each member get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q6a",
+                "label": "How many stickers does each member get",
+                "answer": {
+                 "text": "14",
+                 "also": [
+                  "14 stickers"
+                 ],
+                 "work": "98 ÷ 7"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "6b",
+            "prompt": [
+             {
+              "text": "Then 7 more members join and the club gets 70 more stickers. All the stickers are shared equally again. How many does each member get now?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 5,
+               "field": {
+                "id": "q6b",
+                "label": "Then 7 more members join and the club gets 70 more stickers.",
+                "answer": {
+                 "text": "12",
+                 "also": [
+                  "12 stickers"
+                 ],
+                 "work": "(98 + 70) ÷ (7 + 7)"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6a: 98 ÷ 7 = 14; 6b: (98 + 70) ÷ (7 + 7) = 12"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-division-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Divide multi-digit numbers in word problems, including what is left over.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "One problem in each pair asks for the leftover, so the child has to decide what the remainder means.",
+      "misconceptions": [
+       "Ignoring the leftover, or giving the remainder as the answer."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 420
+    }
+   ],
+   "estimatedHeight": 420
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "576 ÷ 8",
+    "answer": {
+     "text": "72"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "remainder of 576 ÷ 8",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "151 ÷ 7",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "remainder of 151 ÷ 7",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "718 ÷ 2",
+    "answer": {
+     "text": "359"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "remainder of 718 ÷ 2",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "A baker has 156 muffins. She puts 6 muffins in each box. How",
+    "answer": {
+     "text": "26",
+     "also": [
+      "26 boxes"
+     ],
+     "work": "156 ÷ 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "There are 152 students going on a trip. Each van holds 8 stu",
+    "answer": {
+     "text": "19",
+     "also": [
+      "19 vans"
+     ],
+     "work": "152 ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6a",
+   "field": {
+    "id": "q6a",
+    "label": "How many stickers does each member get",
+    "answer": {
+     "text": "14",
+     "also": [
+      "14 stickers"
+     ],
+     "work": "98 ÷ 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "6b",
+   "field": {
+    "id": "q6b",
+    "label": "Then 7 more members join and the club gets 70 more stickers.",
+    "answer": {
+     "text": "12",
+     "also": [
+      "12 stickers"
+     ],
+     "work": "(98 + 70) ÷ (7 + 7)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide in context.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

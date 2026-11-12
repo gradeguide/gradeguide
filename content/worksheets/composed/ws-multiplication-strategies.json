@@ -1,0 +1,2383 @@
+{
+ "worksheetId": "ws-multiplication-strategies",
+ "title": "Many ways to multiply",
+ "headerLabels": [
+  "3.OA.C.7",
+  "3.OA.A.1",
+  "3.OA.B.6",
+  "3.NBT.A.3",
+  "4.NBT.B.5",
+  "3.OA.B.5",
+  "4.OA.A.3",
+  "4.OA.A.2"
+ ],
+ "minutes": 40,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Warm up: multiply.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "5 × 8",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 8 = 40"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "3 × 6",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 6 = 18"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "6 × 2",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 2 = 12"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "3 × 8",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 8 = 24"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "3 × 5",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 5 = 15"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "6 × 6",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 6 = 36"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "5 × 9",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 9 = 45"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "7 × 3",
+             "answer": {
+              "text": "21"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 3 = 21"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "4 × 9",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 9 = 36"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "3 × 3",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 3 = 9"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-multiplication-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Recall multiplication facts.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "references": [
+       "Roediger and Karpicke (2006), Psychological Science 17"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "B",
+     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "example": {
+      "nodes": [
+       {
+        "dotArray": {
+         "rows": 3,
+         "cols": 5
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "×"
+          },
+          {
+           "blank": {
+            "label": "columns",
+            "answer": {
+             "text": "5"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          },
+          {
+           "text": "÷"
+          },
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "in each row",
+            "answer": {
+             "text": "5"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+     },
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 5,
+          "cols": 7
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q11",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q11-2",
+             "label": "columns",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11-3",
+             "label": "dots",
+             "answer": {
+              "text": "35"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q11-4",
+             "label": "dots",
+             "answer": {
+              "text": "35"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q11-5",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11-6",
+             "label": "in each row",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 7 = 35; 35 ÷ 5 = 7"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q12",
+             "label": "rows",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q12-2",
+             "label": "columns",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12-3",
+             "label": "dots",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q12-4",
+             "label": "dots",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q12-5",
+             "label": "rows",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12-6",
+             "label": "in each row",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 3 = 12; 12 ÷ 4 = 3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-array-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read one array as a multiplication and a division.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+     },
+     "estimatedHeight": 426
+    },
+    {
+     "label": "C",
+     "instruction": "Multiply by tens and hundreds. Use the basic fact.",
+     "explainer": "3 × 40 is 3 × 4 tens. That is 12 tens, or 120.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "700"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "hundreds"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "5 × 7 hundreds",
+             "answer": {
+              "text": "35"
+             }
+            }
+           },
+           {
+            "text": "hundreds"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13-2",
+             "label": "5 × 700",
+             "answer": {
+              "text": "3500"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 35 hundreds = 3500"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "90"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "7 × 9 tens",
+             "answer": {
+              "text": "63"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14-2",
+             "label": "7 × 90",
+             "answer": {
+              "text": "630"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 63 tens = 630"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-multiply-tens",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Multiply a one-digit number by a multiple of 10 or 100 using a basic fact.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros.",
+      "misconceptions": [
+       "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+      ]
+     },
+     "estimatedHeight": 156
+    }
+   ],
+   "estimatedHeight": 772
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Break the second number apart. Multiply each part, then add.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "9 − 5",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15-2",
+             "label": "6 × 5",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q15-3",
+             "label": "6 × 4",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15-4",
+             "label": "6 × 9",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 9 = 6 × 5 + 6 × 4; = 30 + 24 = 54"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "6 − 5",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16-2",
+             "label": "9 × 5",
+             "answer": {
+              "text": "45"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q16-3",
+             "label": "9 × 1",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16-4",
+             "label": "9 × 6",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × 6 = 9 × 5 + 9 × 1; = 45 + 9 = 54"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-break-apart",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Use the distributive property to find a hard fact from two easier ones.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW"
+      ],
+      "rationale": "Splitting at 5 uses the fives facts most children already know, and is the same move the area model and partial products make with place value."
+     },
+     "estimatedHeight": 226
+    },
+    {
+     "label": "E",
+     "instruction": "Fill in the area model, then the product.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           8
+          ],
+          "colParts": [
+           30,
+           3
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q17",
+             "label": "8 × 30",
+             "answer": {
+              "text": "240"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q17-2",
+             "label": "8 × 3",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "33"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q17-3",
+             "label": "33 × 8",
+             "answer": {
+              "text": "264"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "240, 24; 33 × 8 = 264"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "areaModel": {
+          "rowParts": [
+           8
+          ],
+          "colParts": [
+           10,
+           4
+          ],
+          "cells": [
+           {
+            "field": {
+             "id": "q18",
+             "label": "8 × 10",
+             "answer": {
+              "text": "80"
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q18-2",
+             "label": "8 × 4",
+             "answer": {
+              "text": "32"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q18-3",
+             "label": "14 × 8",
+             "answer": {
+              "text": "112"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "80, 32; 14 × 8 = 112"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-area-model-2-by-1",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "misconceptions": [
+       "Multiplying only the ones, or forgetting the tens are tens"
+      ]
+     },
+     "estimatedHeight": 170
+    },
+    {
+     "label": "F",
+     "instruction": "Multiply each place, then add the partial products.",
+     "items": [
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "542",
+           "4"
+          ],
+          "answer": {
+           "id": "q19-4",
+           "label": "542 × 4",
+           "answer": {
+            "text": "2168"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q19",
+             "label": "4 × 2",
+             "answer": {
+              "text": "8"
+             }
+            },
+            "note": "4 × 2"
+           },
+           {
+            "field": {
+             "id": "q19-2",
+             "label": "4 × 40",
+             "answer": {
+              "text": "160"
+             }
+            },
+            "note": "4 × 40"
+           },
+           {
+            "field": {
+             "id": "q19-3",
+             "label": "4 × 500",
+             "answer": {
+              "text": "2000"
+             }
+            },
+            "note": "4 × 500"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8, 160, 2000, 2168"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "238",
+           "3"
+          ],
+          "answer": {
+           "id": "q20-4",
+           "label": "238 × 3",
+           "answer": {
+            "text": "714"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q20",
+             "label": "3 × 8",
+             "answer": {
+              "text": "24"
+             }
+            },
+            "note": "3 × 8"
+           },
+           {
+            "field": {
+             "id": "q20-2",
+             "label": "3 × 30",
+             "answer": {
+              "text": "90"
+             }
+            },
+            "note": "3 × 30"
+           },
+           {
+            "field": {
+             "id": "q20-3",
+             "label": "3 × 200",
+             "answer": {
+              "text": "600"
+             }
+            },
+            "note": "3 × 200"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24, 90, 600, 714"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "219",
+           "6"
+          ],
+          "answer": {
+           "id": "q21-4",
+           "label": "219 × 6",
+           "answer": {
+            "text": "1314"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q21",
+             "label": "6 × 9",
+             "answer": {
+              "text": "54"
+             }
+            },
+            "note": "6 × 9"
+           },
+           {
+            "field": {
+             "id": "q21-2",
+             "label": "6 × 10",
+             "answer": {
+              "text": "60"
+             }
+            },
+            "note": "6 × 10"
+           },
+           {
+            "field": {
+             "id": "q21-3",
+             "label": "6 × 200",
+             "answer": {
+              "text": "1200"
+             }
+            },
+            "note": "6 × 200"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "54, 60, 1200, 1314"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-partial-products",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a three-digit number by a one-digit number with partial products.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+     },
+     "estimatedHeight": 248
+    },
+    {
+     "label": "G",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "948",
+           "4"
+          ],
+          "answer": {
+           "id": "q22",
+           "label": "948 × 4",
+           "answer": {
+            "text": "3792"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3792"
+      },
+      {
+       "label": "23",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "371",
+           "5"
+          ],
+          "answer": {
+           "id": "q23",
+           "label": "371 × 5",
+           "answer": {
+            "text": "1855"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1855"
+      },
+      {
+       "label": "24",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "602",
+           "5"
+          ],
+          "answer": {
+           "id": "q24",
+           "label": "602 × 5",
+           "answer": {
+            "text": "3010"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3010"
+      },
+      {
+       "label": "25",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "172",
+           "6"
+          ],
+          "answer": {
+           "id": "q25",
+           "label": "172 × 6",
+           "answer": {
+            "text": "1032"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1032"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-multiply",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a three-digit number by a one-digit number in columns.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+     },
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 812
+  },
+  {
+   "sections": [
+    {
+     "label": "H",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "26",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "The graph shows how many packs of stickers each class bought. Each pack has 8 stickers."
+           },
+           {
+            "barGraph": {
+             "title": "Sticker packs bought",
+             "valueAxis": "Packs",
+             "step": 4,
+             "bars": [
+              {
+               "label": "Room 4",
+               "value": 16
+              },
+              {
+               "label": "Room 5",
+               "value": 23
+              },
+              {
+               "label": "Room 6",
+               "value": 12
+              }
+             ]
+            }
+           }
+          ],
+          "parts": [
+           {
+            "label": "26a",
+            "prompt": [
+             {
+              "text": "How many stickers did Room 5 get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q26a",
+                "label": "stickers Room 5 got",
+                "answer": {
+                 "text": "184",
+                 "also": [
+                  "184 stickers"
+                 ],
+                 "work": "23 × 8"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "26b",
+            "prompt": [
+             {
+              "text": "How many more stickers did Room 5 get than Room 6?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 4,
+               "field": {
+                "id": "q26b",
+                "label": "how many more stickers",
+                "answer": {
+                 "text": "88",
+                 "also": [
+                  "88 stickers"
+                 ],
+                 "work": "184 − 12 × 8"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "26a: 23 × 8 = 184; 26b: 184 − 12 × 8 = 88"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-multiply-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Choose and use multiplication to solve problems from a graph, a table and a comparison.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+     },
+     "estimatedHeight": 572
+    }
+   ],
+   "estimatedHeight": 572
+  },
+  {
+   "sections": [
+    {
+     "label": "H",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "27",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Mr. Lee buys 4 adult tickets and 6 child tickets for the school fair."
+           },
+           {
+            "dataTable": {
+             "title": "School fair tickets",
+             "header": [
+              "Ticket",
+              "Price"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "Adult"
+                },
+                {
+                 "text": "$12"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "Child"
+                },
+                {
+                 "text": "$7"
+                }
+               ]
+              }
+             ]
+            }
+           }
+          ],
+          "parts": [
+           {
+            "label": "27a",
+            "prompt": [
+             {
+              "text": "How much do the adult tickets cost?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q27a",
+                "label": "cost of adult tickets",
+                "answer": {
+                 "text": "48",
+                 "also": [
+                  "$48",
+                  "48 dollars"
+                 ],
+                 "work": "4 × 12"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "27b",
+            "prompt": [
+             {
+              "text": "How much does Mr. Lee pay in all?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 4,
+               "field": {
+                "id": "q27b",
+                "label": "total cost",
+                "answer": {
+                 "text": "90",
+                 "also": [
+                  "$90",
+                  "90 dollars"
+                 ],
+                 "work": "48 + 6 × 7"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27a: 4 × 12 = 48; 27b: 48 + 6 × 7 = 90"
+      },
+      {
+       "label": "28",
+       "nodes": [
+        {
+         "text": "A sunflower is 14 inches tall. A young tree is 6 times as tall as the sunflower. How tall is the tree?"
+        },
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Flower",
+            "units": 1,
+            "unitText": "14"
+           },
+           {
+            "name": "Tree",
+            "units": 6,
+            "unitText": "14",
+            "total": "?"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q28",
+           "label": "height of the tree in inches",
+           "answer": {
+            "text": "84",
+            "also": [
+             "84 inches"
+            ],
+            "work": "14 × 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "84"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-multiply-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Choose and use multiplication to solve problems from a graph, a table and a comparison.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+     },
+     "continued": true,
+     "estimatedHeight": 760
+    }
+   ],
+   "estimatedHeight": 760
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "5 × 8",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "3 × 6",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "6 × 2",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "3 × 8",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "3 × 5",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "6 × 6",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "5 × 9",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "7 × 3",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4 × 9",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "3 × 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "columns",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-3",
+    "label": "dots",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-4",
+    "label": "dots",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-5",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-6",
+    "label": "in each row",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "rows",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-2",
+    "label": "columns",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-3",
+    "label": "dots",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-4",
+    "label": "dots",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-5",
+    "label": "rows",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-6",
+    "label": "in each row",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "5 × 7 hundreds",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "5 × 700",
+    "answer": {
+     "text": "3500"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "7 × 9 tens",
+    "answer": {
+     "text": "63"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "7 × 90",
+    "answer": {
+     "text": "630"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "9 − 5",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-2",
+    "label": "6 × 5",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-3",
+    "label": "6 × 4",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-4",
+    "label": "6 × 9",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "6 − 5",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-2",
+    "label": "9 × 5",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-3",
+    "label": "9 × 1",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-4",
+    "label": "9 × 6",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "8 × 30",
+    "answer": {
+     "text": "240"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17-2",
+    "label": "8 × 3",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17-3",
+    "label": "33 × 8",
+    "answer": {
+     "text": "264"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "8 × 10",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18-2",
+    "label": "8 × 4",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18-3",
+    "label": "14 × 8",
+    "answer": {
+     "text": "112"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "4 × 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19-2",
+    "label": "4 × 40",
+    "answer": {
+     "text": "160"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19-3",
+    "label": "4 × 500",
+    "answer": {
+     "text": "2000"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19-4",
+    "label": "542 × 4",
+    "answer": {
+     "text": "2168"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "3 × 8",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20-2",
+    "label": "3 × 30",
+    "answer": {
+     "text": "90"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20-3",
+    "label": "3 × 200",
+    "answer": {
+     "text": "600"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20-4",
+    "label": "238 × 3",
+    "answer": {
+     "text": "714"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "6 × 9",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21-2",
+    "label": "6 × 10",
+    "answer": {
+     "text": "60"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21-3",
+    "label": "6 × 200",
+    "answer": {
+     "text": "1200"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21-4",
+    "label": "219 × 6",
+    "answer": {
+     "text": "1314"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "948 × 4",
+    "answer": {
+     "text": "3792"
+    }
+   }
+  },
+  {
+   "itemLabel": "23",
+   "field": {
+    "id": "q23",
+    "label": "371 × 5",
+    "answer": {
+     "text": "1855"
+    }
+   }
+  },
+  {
+   "itemLabel": "24",
+   "field": {
+    "id": "q24",
+    "label": "602 × 5",
+    "answer": {
+     "text": "3010"
+    }
+   }
+  },
+  {
+   "itemLabel": "25",
+   "field": {
+    "id": "q25",
+    "label": "172 × 6",
+    "answer": {
+     "text": "1032"
+    }
+   }
+  },
+  {
+   "itemLabel": "26a",
+   "field": {
+    "id": "q26a",
+    "label": "stickers Room 5 got",
+    "answer": {
+     "text": "184",
+     "also": [
+      "184 stickers"
+     ],
+     "work": "23 × 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "26b",
+   "field": {
+    "id": "q26b",
+    "label": "how many more stickers",
+    "answer": {
+     "text": "88",
+     "also": [
+      "88 stickers"
+     ],
+     "work": "184 − 12 × 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "27a",
+   "field": {
+    "id": "q27a",
+    "label": "cost of adult tickets",
+    "answer": {
+     "text": "48",
+     "also": [
+      "$48",
+      "48 dollars"
+     ],
+     "work": "4 × 12"
+    }
+   }
+  },
+  {
+   "itemLabel": "27b",
+   "field": {
+    "id": "q27b",
+    "label": "total cost",
+    "answer": {
+     "text": "90",
+     "also": [
+      "$90",
+      "90 dollars"
+     ],
+     "work": "48 + 6 × 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "28",
+   "field": {
+    "id": "q28",
+    "label": "height of the tree in inches",
+    "answer": {
+     "text": "84",
+     "also": [
+      "84 inches"
+     ],
+     "work": "14 × 6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Practise each multiplication strategy in turn, then use them in word problems.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Facts and arrays come first because every later strategy is built from basic facts. Tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so the child chooses the strategy."
+ },
+ "advice": [
+  "Section \"Multiply by tens and hundreds. Use the basic fact.\" was cut from 4 to 2 items to fit.",
+  "Section \"Break the second number apart. Multiply each part, then add.\" was cut from 3 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

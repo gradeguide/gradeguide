@@ -1,0 +1,299 @@
+{
+ "worksheetId": "ws-measure-and-plot",
+ "title": "Measure, then plot",
+ "headerLabels": [
+  "3.MD.B.4",
+  "4.MD.B.4"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "How long is the grey bar?",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 4,
+          "barParts": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "1 1/4",
+              "also": [
+               "5/4"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 1 1/4 inches long."
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 4,
+          "barParts": 17
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "4 1/4",
+              "also": [
+               "17/4"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 4 1/4 inches long."
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 2,
+          "barParts": 7
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "3 1/2",
+              "also": [
+               "7/2"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 3 1/2 inches long."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-measure-with-ruler",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Measure to the nearest half or quarter inch.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "A ruler is a number line. Reading one to a quarter inch produces the data line plots in 4.MD.B.4 use.",
+      "misconceptions": [
+       "Starting to count from 1 instead of 0"
+      ]
+     },
+     "estimatedHeight": 436
+    },
+    {
+     "label": "B",
+     "instruction": "Use the line plot.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "linePlot": {
+          "end": 2,
+          "partsPerUnit": 4,
+          "counts": [
+           0,
+           0,
+           0,
+           1,
+           1,
+           4,
+           1,
+           3,
+           1
+          ],
+          "caption": "Length of each leaf (inches)"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many leaves are 1 1/2 inch long?"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "leaves 1 1/2 inch long",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Longest minus shortest:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "longest minus shortest leaf",
+             "answer": {
+              "text": "1 1/4",
+              "also": [
+               "5/4"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inch"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many leaves are 1 1/2 inch long? 1; Longest minus shortest: 1 1/4 inch"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-line-plot",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a line plot of fractional measurements and subtract fractions from it.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "4.MD.B.4 pairs line plots with fraction addition and subtraction; the second question needs both."
+     },
+     "estimatedHeight": 260
+    }
+   ],
+   "estimatedHeight": 696
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "1 1/4",
+     "also": [
+      "5/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "4 1/4",
+     "also": [
+      "17/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "3 1/2",
+     "also": [
+      "7/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "leaves 1 1/2 inch long",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "longest minus shortest leaf",
+    "answer": {
+     "text": "1 1/4",
+     "also": [
+      "5/4"
+     ]
+    }
+   }
+  }
+ ],
+ "advice": [
+  "\"How long is the grey bar?\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the line plot.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

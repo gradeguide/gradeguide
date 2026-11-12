@@ -52,9 +52,26 @@ export function evaluate(expr: string): number | undefined {
   return i === tokens.length ? v : undefined;
 }
 
+// parseAnswer reads an answer as a number: a whole number, a decimal, a
+// fraction such as "5/8", or a mixed number such as "2 1/4", ignoring commas
+// and a dollar sign. NaN if it is none of these.
+export function parseAnswer(text: string): number {
+  const t = text.replace(/[,$]/g, '').trim();
+  const m = t.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+  if (m) {
+    return Number(m[1]) + Number(m[2]) / Number(m[3]);
+  }
+  const f = t.match(/^(\d+)\/(\d+)$/);
+  if (f) {
+    return Number(f[1]) / Number(f[2]);
+  }
+  return /^\d+(\.\d+)?$/.test(t) ? Number(t) : NaN;
+}
+
 // steps counts the operations in a working.
 export function steps(work: string): number {
-  return (work.match(/[-+−×x*÷/]/g) ?? []).length;
+  // A slash between digits is a fraction, not a division step.
+  return (work.match(/[-+−×x*÷]|\s\/\s/g) ?? []).length;
 }
 
 function numbersIn(s: string): number[] {
@@ -112,7 +129,7 @@ export function checkAuthored(nodes: readonly Node[], where: string): string[] {
         continue;
       }
       const v = evaluate(a.work);
-      const want = Number(a.text.replace(/[,$]/g, ''));
+      const want = parseAnswer(a.text);
       if (v === undefined) {
         problems.push(`${where}: the working "${a.work}" is not arithmetic the checker can read.`);
       } else if (Number.isNaN(want) || Math.abs(v - want) > 1e-9) {
