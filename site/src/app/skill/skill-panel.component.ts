@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 
 import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculum';
+import { feedbackUrl } from '../data/feedback';
 
 /** The official Common Core math standards, as the source data credits them. */
 export const STANDARDS_URL = 'https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf';
@@ -121,6 +122,11 @@ function readSourcesOpen(): boolean {
           <p class="via">Collected through the Learning Commons Knowledge Graph (CC BY 4.0).</p>
           <a href="about.html">About this map and its sources →</a>
         </details>
+
+        <p class="feedback">
+          Something wrong or unclear?
+          <a [href]="feedback()" target="_blank" rel="noopener">Tell us about this skill</a>
+        </p>
       </article>
     }
   `,
@@ -161,6 +167,8 @@ function readSourcesOpen(): boolean {
     .sources li { margin-bottom: 4px; }
     .sources b { font-weight: 600; }
     details a { display: inline-block; margin-top: 4px; font-size: 13px; color: var(--accent); }
+    .feedback { font-size: 13px; color: var(--muted); margin: 16px 0 0; }
+    .feedback a { color: var(--accent); }
     .sources a { display: inline-block; margin-top: 4px; font-size: 14px; color: var(--accent); }
   `,
 })
@@ -187,6 +195,14 @@ export class SkillPanelComponent {
   }
 
   protected readonly skill = computed(() => this.curriculum().skill(this.skillId()));
+  /** The skill feedback form, filled in with this skill. */
+  protected readonly feedback = computed(() => {
+    const s = this.skill();
+    if (!s) return '';
+    const origin = globalThis.location?.origin ?? '';
+    return feedbackUrl('skill', { title: `Skill: ${s.name} (${s.code})`, skill: `${s.code} ${s.name}`, page: s.path ? origin + s.path : '' });
+  });
+
   protected readonly before = computed(() => (this.skill() ? this.curriculum().neededFirst(this.skillId()) : []));
   protected readonly after = computed(() => (this.skill() ? this.curriculum().leadsTo(this.skillId()) : []));
   protected readonly strandName = computed(() => this.curriculum().strand(this.skill()?.strand ?? '')?.name ?? '');

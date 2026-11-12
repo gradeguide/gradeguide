@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: About GradeGuide and its sources
+    url: https://gradeguide.github.io/about.html
+    about: Where the skills, links and timing come from.

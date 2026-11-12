@@ -52,6 +52,8 @@ export interface SkillData {
   also?: { unitId: string; month: number }[];
   parts?: { code: string; name: string }[];
   steps?: string[];
+  /** The skill's own static page, such as "/math/grade-4/4-nf-a-1-equivalent-fractions/". */
+  path?: string;
   /** Printable worksheets that teach or practise the skill. */
   worksheets?: WorksheetRef[];
 }

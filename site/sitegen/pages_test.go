@@ -142,3 +142,22 @@ func TestWorksheetsAreListedUnderTheSkillsTheyCover(t *testing.T) {
 		t.Errorf("the skill page does not link to ws-part:\n%s", page)
 	}
 }
+
+func TestFeedbackLinksFillTheForm(t *testing.T) {
+	files, err := Pages(fixture(), "https://example.org")
+	if err != nil {
+		t.Fatal(err)
+	}
+	page := string(files["math/grade-4/4-nf-a-1-equivalent-fractions/index.html"])
+	for _, want := range []string{
+		"https://github.com/gradeguide/gradeguide/issues/new?",
+		"template=2-skill.yml",
+		"skill=4.NF.A.1&#43;Equivalent&#43;fractions",
+		"page=https%3A%2F%2Fexample.org%2Fmath%2Fgrade-4%2F4-nf-a-1-equivalent-fractions%2F",
+		"template=1-general.yml",
+	} {
+		if !strings.Contains(page, want) {
+			t.Errorf("skill page lacks %q", want)
+		}
+	}
+}

@@ -1,0 +1,40 @@
+name: Feedback on a skill
+description: Something wrong or unclear in a skill's explanation, example, home idea, prerequisites or timing.
+title: "Skill: "
+labels: [feedback, skill-text]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This page is public, so please don't include your child's name or anything else personal.
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: The standard's code and name. Filled in for you when you came from the site.
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What's the problem?
+      options:
+        - The explanation is wrong or unclear
+        - The example is wrong or unclear
+        - The idea to try at home doesn't work well
+        - The skills it needs first, or leads to, look wrong
+        - It's taught at a different time at our school
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell us more
+      description: What did you expect, and what would be better?
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page you were on

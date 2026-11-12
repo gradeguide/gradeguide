@@ -17,7 +17,7 @@
 <body>
 <header class="top">
   <a class="brand" href="/">GradeGuide</a>
-  <nav><a href="/">Map</a><a href="/math/">All grades</a><a href="/about.html">About</a></nav>
+  <nav><a href="/">Map</a><a href="/math/">All grades</a><a href="/about.html">About</a><a href="{{feedbackURL "1-general.yml" "page" .Canonical}}" rel="noopener">Feedback</a></nav>
 </header>
 <main>
 {{if .Crumbs}}<nav class="crumbs" aria-label="Breadcrumb">{{range .Crumbs}}<a href="{{.Path}}">{{.Name}}</a> › {{end}}</nav>{{end}}
@@ -27,7 +27,7 @@
 </main>
 <footer>
   <p>Timing follows the Illustrative Mathematics 360 order spread over a September–June year; your school may differ.</p>
-  <p><a href="/about.html">About this map and its sources</a> · <a href="https://github.com/gradeguide/gradeguide">Open source on GitHub</a></p>
+  <p><a href="/about.html">About this map and its sources</a> · <a href="{{feedbackURL "1-general.yml" "page" .Canonical}}" rel="noopener">Give feedback</a> · <a href="https://github.com/gradeguide/gradeguide">Open source on GitHub</a></p>
 </footer>
 </body>
 </html>
