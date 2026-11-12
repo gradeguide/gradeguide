@@ -1,0 +1,15 @@
+load("@aspect_rules_js//js:defs.bzl", "js_library")
+
+exports_files(["angular.bzl"])
+
+js_library(
+    name = "angular_spec_runner",
+    srcs = ["angular_spec_runner.mjs"],
+    visibility = ["//visibility:public"],
+)
+
+js_library(
+    name = "esm_loader",
+    srcs = ["esm_loader.mjs"],
+    visibility = ["//visibility:public"],
+)

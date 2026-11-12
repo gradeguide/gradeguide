@@ -1,0 +1,19 @@
+# The data file the website reads, built from the skill graph and the
+# curated layer.
+genrule(
+    name = "math",
+    srcs = [
+        "//data:graph",
+        "//content/math",
+        "//content/math:strands.textproto",
+    ],
+    outs = ["math.json"],
+    cmd = " ".join([
+        "$(location //site/cmd/gradeguide-sitegen)",
+        "--graph=$(location //data:graph)",
+        "--curated=$$(dirname $(location //content/math:strands.textproto))",
+        "--out=$@",
+    ]),
+    tools = ["//site/cmd/gradeguide-sitegen"],
+    visibility = ["//visibility:public"],
+)

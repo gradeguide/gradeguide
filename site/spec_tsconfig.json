@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "files": ["src/app/data/curriculum.spec.ts"],
+  "compilerOptions": {
+    "types": ["jasmine", "node"]
+  }
+}

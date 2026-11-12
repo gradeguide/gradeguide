@@ -1,0 +1,70 @@
+load("@aspect_bazel_lib//lib:copy_to_directory.bzl", "copy_to_directory")
+load("@aspect_rules_esbuild//esbuild:defs.bzl", "esbuild")
+load("@aspect_rules_ts//ts:defs.bzl", "ts_config")
+load("//tools/bazel:angular.bzl", "angular_test", "angular_ts_project")
+
+ts_config(
+    name = "tsconfig",
+    src = "tsconfig.json",
+    visibility = ["//visibility:public"],
+)
+
+angular_ts_project(
+    name = "app",
+    srcs = glob(
+        ["src/**/*.ts"],
+        exclude = ["src/**/*.spec.ts"],
+    ),
+    declaration = True,
+    source_map = True,
+    tsconfig = ":tsconfig",
+    deps = [
+        "//:node_modules/@angular/common",
+        "//:node_modules/@angular/compiler",
+        "//:node_modules/@angular/core",
+        "//:node_modules/@angular/platform-browser",
+        "//:node_modules/rxjs",
+        "//:node_modules/tslib",
+    ],
+)
+
+ts_config(
+    name = "spec_tsconfig",
+    src = "spec_tsconfig.json",
+    deps = [":tsconfig"],
+)
+
+angular_test(
+    name = "app_test",
+    srcs = ["src/app/data/curriculum.spec.ts"],
+    tsconfig = ":spec_tsconfig",
+    deps = [":app"],
+)
+
+esbuild(
+    name = "bundle",
+    entry_point = "src/main.ts",
+    format = "esm",
+    minify = True,
+    output = "bundle.js",
+    platform = "browser",
+    sourcemap = "linked",
+    deps = [":app"],
+)
+
+# The website, ready to serve as static files.
+copy_to_directory(
+    name = "site",
+    srcs = [
+        "src/index.html",
+        "src/styles.css",
+        ":bundle",
+        "//site/data:math",
+    ],
+    root_paths = [
+        "site/src",
+        "site/data",
+        "site",
+    ],
+    visibility = ["//visibility:public"],
+)
