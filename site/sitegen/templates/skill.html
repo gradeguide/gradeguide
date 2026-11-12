@@ -1,0 +1,41 @@
+{{template "head" .}}
+{{with .Skill}}
+<p class="kicker">{{$.StrandName}}{{if $.TopicName}} · {{$.TopicName}}{{end}}</p>
+<h1>{{.Name}}</h1>
+<p class="when">{{$.When}}</p>
+<p class="lead">{{.Explanation}}</p>
+<dl>
+  <dt>Example</dt><dd>{{.Example}}</dd>
+  <dt>Try at home</dt><dd>{{.TryAtHome}}</dd>
+</dl>
+{{if .Draft}}<p class="note">Draft written with AI help. A teacher hasn't checked it yet.</p>{{end}}
+<p class="actions"><a class="button" href="{{$.MapLink}}">See it on the map</a> <a class="button" href="{{$.Foundations}}">What does this rest on?</a></p>
+
+<div class="cols">
+  <section><h2 class="before">Needed first</h2>{{if $.Before}}<ul class="links">{{template "links" $.Before}}</ul>{{else}}<p class="none">Nothing listed in the data.</p>{{end}}</section>
+  <section><h2 class="after">Leads to</h2>{{if $.After}}<ul class="links">{{template "links" $.After}}</ul>{{else}}<p class="none">Nothing listed in the data.</p>{{end}}</section>
+</div>
+
+{{if .Parts}}<h2>Parts</h2><ul>{{range .Parts}}<li>{{.Name}} <span class="g">{{.Code}}</span></li>{{end}}</ul>{{end}}
+{{if .Steps}}<h2>Smaller steps inside this skill</h2><ol>{{range .Steps}}<li>{{.}}</li>{{end}}</ol>{{end}}
+
+<h2>Worksheets</h2>
+<p class="none">Printable worksheets for this skill are coming.</p>
+
+<h2>Official wording ({{.Code}})</h2>
+<blockquote>{{$.Statement}}</blockquote>
+<p class="none"><a href="https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf" rel="noopener">All the Common Core math standards (PDF, corestandards.org)</a></p>
+
+<section class="sources">
+  <h2>Sources for this skill</h2>
+  <ul>
+    <li><b>The skill</b> is Common Core math standard {{.Code}}.</li>
+    <li><b>Needed first and leads to</b> come from the Common Core learning progressions by Student Achievement Partners.</li>
+    {{if .Steps}}<li><b>Smaller steps</b> come from Achievement Network.</li>{{end}}
+    {{if .Month}}<li><b>When it's taught</b> follows Illustrative Mathematics 360, spread evenly from September to June. Your school may differ.</li>{{end}}
+    <li><b>The explanation, example and home idea</b> are GradeGuide's own drafts.</li>
+  </ul>
+  <p class="none">Collected through the Learning Commons Knowledge Graph (CC BY 4.0). <a href="/about.html">About this map and its sources</a></p>
+</section>
+{{end}}
+{{template "foot" .}}

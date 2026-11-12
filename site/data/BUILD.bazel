@@ -1,19 +1,22 @@
-# The data file the website reads, built from the skill graph and the
-# curated layer.
-genrule(
+load("@aspect_bazel_lib//lib:run_binary.bzl", "run_binary")
+
+# The data file the website reads and the static pages search engines read,
+# both built from the skill graph and the curated layer.
+run_binary(
     name = "math",
     srcs = [
-        "//data:graph",
         "//content/math",
         "//content/math:strands.textproto",
+        "//data:graph",
     ],
     outs = ["math.json"],
-    cmd = " ".join([
-        "$(location //site/cmd/gradeguide-sitegen)",
+    args = [
         "--graph=$(location //data:graph)",
-        "--curated=$$(dirname $(location //content/math:strands.textproto))",
-        "--out=$@",
-    ]),
-    tools = ["//site/cmd/gradeguide-sitegen"],
+        "--curated=content/math",
+        "--out=$(location math.json)",
+        "--pages=$(RULEDIR)/pages",
+    ],
+    out_dirs = ["pages"],
+    tool = "//site/cmd/gradeguide-sitegen",
     visibility = ["//visibility:public"],
 )

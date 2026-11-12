@@ -1,0 +1,9 @@
+{{template "head" .}}
+{{with .Strand}}
+<h1>{{.Name}}</h1>
+<p class="lead">{{.Description}}</p>
+{{end}}
+{{range .ByGrade}}
+<section class="month"><h2><a href="{{.Path}}">{{gradeName .Grade}}</a></h2><ul class="links">{{range .Skills}}<li><a href="{{.Path}}">{{.Name}}</a></li>{{end}}</ul></section>
+{{end}}
+{{template "foot" .}}
