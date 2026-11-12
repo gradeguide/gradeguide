@@ -72,6 +72,11 @@ func run(gallery, out string) error {
 	if err != nil {
 		return err
 	}
+	// Chromium's sandbox needs unprivileged user namespaces, which some
+	// build machines block (Ubuntu 24.04 does, through AppArmor), and then
+	// Chromium will not start. The browser only loads this repository's own
+	// pages from a loopback server, so it runs without the sandbox.
+	opts = append(opts, chromedp.NoSandbox, chromedp.Flag("disable-setuid-sandbox", true))
 	actx, cancel := chromedp.NewExecAllocator(context.Background(), append(chromedp.DefaultExecAllocatorOptions[:], opts...)...)
 	defer cancel()
 	ctx, cancel := chromedp.NewContext(actx)
