@@ -78,8 +78,8 @@ export const DATA_URL = 'math.json';
 
       <footer>
         <p>
-          Draft explanations, not yet reviewed by teachers. Placement by month follows the Illustrative Mathematics 360
-          pace spread evenly over a September–June year; your school's calendar may differ.
+          Placement by month follows the Illustrative Mathematics 360 pace spread evenly over a September–June year; your
+          school's calendar may differ.
         </p>
         <p><a href="about.html">About this map and its sources</a> · Skill graph {{ c.data.version }}</p>
       </footer>
@@ -100,7 +100,7 @@ export const DATA_URL = 'math.json';
     .bar { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; padding: 10px 16px; }
     .ctl { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
     .ctl select { font: inherit; font-size: 13px; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); }
-    .legend { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .legend { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
     .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-left: 6px; }
     .legend i.before { background: var(--before-bg); border: 1px solid var(--before); }
     .legend i.after { background: var(--after-bg); border: 1px solid var(--after); }
@@ -109,7 +109,7 @@ export const DATA_URL = 'math.json';
     .view { min-width: 0; padding: 0 0 0 16px; }
     .panel { border-left: 1px solid var(--border); padding: 16px 20px 24px; max-height: calc(100vh - 120px); overflow-y: auto; position: sticky; top: 0; }
     .pathlink { margin-top: 18px; font: inherit; font-size: 14px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); cursor: pointer; }
-    footer { padding: 24px 16px; font-size: 12px; color: var(--muted); max-width: 900px; }
+    footer { padding: 24px 16px; font-size: 14px; color: var(--muted); max-width: 900px; }
     footer a { color: inherit; }
     .loading, .error { padding: 24px 16px; }
     @media (max-width: 860px) {
