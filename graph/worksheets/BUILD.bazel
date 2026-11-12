@@ -33,14 +33,17 @@ go_test(
         "//content/worksheets:alignments.textproto",
         "//content/worksheets:catalog",
         "//data:graph",
+        "//data:step-names.textproto",
     ],
     embed = [":worksheets"],
     env = {
         "CATALOG": "$(rlocationpath //content/worksheets:alignments.textproto)",
         "GRAPH": "$(rlocationpath //data:graph)",
+        "STEP_NAMES": "$(rlocationpath //data:step-names.textproto)",
     },
     deps = [
         "//proto/graph/v1",
+        "@org_golang_google_protobuf//encoding/prototext",
         "@org_golang_google_protobuf//proto",
         "@rules_go//go/runfiles",
     ],

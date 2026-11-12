@@ -6,6 +6,7 @@ import (
 	"testing"
 
 	"github.com/bazelbuild/rules_go/go/runfiles"
+	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 
 	graphpb "github.com/gradeguide/gradeguide/proto/graph/v1"
@@ -42,5 +43,32 @@ func TestCatalogue(t *testing.T) {
 	}
 	for _, e := range Check(g, lib, al) {
 		t.Error(e)
+	}
+
+	// Every aligned component has a short name in data/step-names.textproto,
+	// and every name there is for a component in the graph.
+	b, err = os.ReadFile(runfile(t, "STEP_NAMES"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	names := &graphpb.CuratedLayer{}
+	if err := prototext.Unmarshal(b, names); err != nil {
+		t.Fatal(err)
+	}
+	inGraph := map[string]bool{}
+	for _, c := range g.GetComponents() {
+		inGraph[c.GetId()] = true
+	}
+	named := map[string]bool{}
+	for _, c := range names.GetComponents() {
+		if !inGraph[c.GetComponentId()] || c.GetName() == "" || c.GetReview().GetStatus() == graphpb.Review_STATUS_UNSPECIFIED {
+			t.Errorf("step name %s: not in the graph, or no name or review status", c.GetComponentId())
+		}
+		named[c.GetComponentId()] = true
+	}
+	for _, a := range al.GetAlignments() {
+		if c := a.GetSkill().GetComponentId(); c != "" && !named[c] {
+			t.Errorf("%s: step %s has no short name", a.GetFragmentId(), c)
+		}
 	}
 }
