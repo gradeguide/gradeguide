@@ -51,6 +51,56 @@ alignments { fragment_id: "frag-name-line-pairs" skill { code: "4.G.A.1" } role:
 alignments { fragment_id: "frag-factor-pairs" skill { code: "4.OA.B.4" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-shade-multiples" skill { code: "4.OA.B.4" } role: ROLE_TEACHES }
 
+# Multiplicative comparison, patterns and unknown numbers.
+alignments { fragment_id: "frag-times-as-many-statements" skill { code: "4.OA.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-continue-the-pattern" skill { code: "4.OA.C.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-find-the-rule" skill { code: "4.OA.C.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-missing-factor" skill { code: "3.OA.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-missing-factor" skill { code: "3.OA.B.6" } role: ROLE_REVIEWS }
+
+alignments { fragment_id: "frag-column-add-3-digit" skill { code: "3.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-column-subtract-3-digit" skill { code: "3.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-round-to-tens-and-hundreds" skill { code: "3.NBT.A.1" } role: ROLE_PRACTISES }
+
+# Fraction operations.
+alignments { fragment_id: "frag-decompose-fraction" skill { code: "4.NF.B.3.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-add-fractions" skill { code: "4.NF.B.3.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-subtract-fractions" skill { code: "4.NF.B.3.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-add-mixed-numbers" skill { code: "4.NF.B.3.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-subtract-mixed-numbers" skill { code: "4.NF.B.3.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-times-whole" skill { code: "4.NF.B.4.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-fraction-times-whole" skill { code: "4.NF.B.4.b" } role: ROLE_PRACTISES }
+
+# Decimals.
+alignments { fragment_id: "frag-compare-decimals" skill { code: "4.NF.C.7" } role: ROLE_PRACTISES }
+
+# Measurement and data.
+alignments { fragment_id: "frag-convert-length" skill { code: "4.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-convert-time-and-mass" skill { code: "4.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-angle-turns" skill { code: "4.MD.C.5.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-angle-turns" skill { code: "4.MD.C.5.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-bar-graph-questions" skill { code: "3.MD.B.3" } role: ROLE_PRACTISES }
+
+# Geometry.
+alignments { fragment_id: "frag-classify-triangles" skill { code: "4.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-quadrilateral-features" skill { code: "4.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-quadrilateral-features" skill { code: "3.G.A.1" } role: ROLE_REVIEWS }
+alignments { fragment_id: "frag-lines-of-symmetry" skill { code: "4.G.A.3" } role: ROLE_PRACTISES }
+
+# Word problems.
+alignments { fragment_id: "frag-comparison-word-problems" skill { code: "4.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-multistep-word-problems" skill { code: "4.OA.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-division-word-problems" skill { code: "4.NBT.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-division-word-problems" skill { code: "4.OA.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-equal-groups-word-problems" skill { code: "3.OA.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-two-step-word-problems" skill { code: "3.OA.D.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-word-problems" skill { code: "4.NF.B.3.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-fraction-word-problems" skill { code: "4.NF.B.4.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-measurement-word-problems" skill { code: "4.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-measurement-word-problems" skill { code: "4.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-mass-volume-word-problems" skill { code: "3.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-area-perimeter-word-problems" skill { code: "4.MD.A.3" } role: ROLE_PRACTISES }
+
 # ── Learning components ─────────────────────────────────────────────────
 # Finer than a standard: what the fragment's items practise. Each id is a
 # Component in the skill graph, and supports a standard the fragment is

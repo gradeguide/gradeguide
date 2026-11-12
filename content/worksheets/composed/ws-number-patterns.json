@@ -1,0 +1,765 @@
+{
+ "worksheetId": "ws-number-patterns",
+ "title": "Number patterns",
+ "headerLabels": [
+  "4.OA.C.5",
+  "4.OA.B.4"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Follow the rule. Write the next three numbers.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Rule: start at 18, add 7."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "25"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "32"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "term 4",
+             "answer": {
+              "text": "39"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "term 5",
+             "answer": {
+              "text": "46"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "term 6",
+             "answer": {
+              "text": "53"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 , 25 , 32 , 39 , 46 , 53"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Rule: start at 17, add 10."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "17"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "27"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "37"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "term 4",
+             "answer": {
+              "text": "47"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "term 5",
+             "answer": {
+              "text": "57"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "term 6",
+             "answer": {
+              "text": "67"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "17 , 27 , 37 , 47 , 57 , 67"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Rule: start at 30, add 8."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "38"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "46"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "term 4",
+             "answer": {
+              "text": "54"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "term 5",
+             "answer": {
+              "text": "62"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "term 6",
+             "answer": {
+              "text": "70"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 , 38 , 46 , 54 , 62 , 70"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Rule: start at 10, add 9."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "19"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "28"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "term 4",
+             "answer": {
+              "text": "37"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "term 5",
+             "answer": {
+              "text": "46"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "term 6",
+             "answer": {
+              "text": "55"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 , 19 , 28 , 37 , 46 , 55"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-continue-the-pattern",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Generate a number pattern from a rule.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 346
+    },
+    {
+     "label": "B",
+     "instruction": "What is the rule? Write the number added each time.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "29"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "34"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "39"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "44"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rule: add"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the rule for 24, 29, 34",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rule: add 5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "23"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "26"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "29"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "32"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "35"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rule: add"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the rule for 23, 26, 29",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rule: add 3"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "22"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "37"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "52"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "67"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "82"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rule: add"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the rule for 22, 37, 52",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rule: add 15"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "35"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "50"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "65"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "80"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "95"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rule: add"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "the rule for 35, 50, 65",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rule: add 15"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-find-the-rule",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the rule of an adding pattern from its terms.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Finding the rule reverses the previous section, so the child checks a rule against several pairs of terms rather than one."
+     },
+     "estimatedHeight": 226
+    },
+    {
+     "label": "C",
+     "instruction": "Shade the multiples.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Shade every multiple of 4."
+        },
+        {
+         "numberChart": {
+          "start": 1,
+          "rows": 5,
+          "cols": 10,
+          "shadeField": {
+           "id": "q9",
+           "label": "multiples of 4 up to 50",
+           "answer": {
+            "text": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-shade-multiples",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "See multiples as a pattern on a hundred chart.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+     },
+     "estimatedHeight": 215
+    }
+   ],
+   "estimatedHeight": 787
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "term 4",
+    "answer": {
+     "text": "39"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "term 5",
+    "answer": {
+     "text": "46"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "term 6",
+    "answer": {
+     "text": "53"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "term 4",
+    "answer": {
+     "text": "47"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "term 5",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "term 6",
+    "answer": {
+     "text": "67"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "term 4",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "term 5",
+    "answer": {
+     "text": "62"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "term 6",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "term 4",
+    "answer": {
+     "text": "37"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "term 5",
+    "answer": {
+     "text": "46"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "term 6",
+    "answer": {
+     "text": "55"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the rule for 24, 29, 34",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the rule for 23, 26, 29",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the rule for 22, 37, 52",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the rule for 35, 50, 65",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "multiples of 4 up to 50",
+    "answer": {
+     "text": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Make and describe number patterns from a rule.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "Following a rule comes before finding one; shading multiples ends with a pattern in a grid instead of a list."
+ },
+ "advice": [
+  "\"Follow the rule. Write the next three numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"What is the rule? Write the number added each time.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

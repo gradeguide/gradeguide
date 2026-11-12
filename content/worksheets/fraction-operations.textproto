@@ -1,0 +1,87 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Adding and subtracting fractions and mixed numbers, decomposing fractions,
+# and multiplying a fraction by a whole number.
+
+fragments {
+  id: "frag-decompose-fraction"
+  instruction: "Split the fraction into two parts with the same denominator."
+  stage: STAGE_INTRODUCE
+  explainer: "5/8 is five eighths. Three eighths and two eighths make five eighths: 5/8 = 3/8 + 2/8."
+  items { kind { decompose_fraction { denominators: [4, 5, 6, 8, 10] } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Write a fraction as a sum of fractions with the same denominator."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Seeing 5/8 as a count of eighths is what makes adding same-denominator fractions an addition of counts."
+  }
+}
+
+fragments {
+  id: "frag-add-fractions"
+  instruction: "Add. The denominators are the same."
+  stage: STAGE_PRACTICE
+  explainer: "Add the numbers of parts. The size of the parts stays the same."
+  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8, 10, 12] } } count: 8 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Add fractions with the same denominator."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Adding the denominators too: 2/5 + 1/5 = 3/10."
+  }
+}
+
+fragments {
+  id: "frag-subtract-fractions"
+  instruction: "Subtract. The denominators are the same."
+  stage: STAGE_PRACTICE
+  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8, 10, 12] subtract: true } } count: 8 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Subtract fractions with the same denominator."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-add-mixed-numbers"
+  instruction: "Add. Write the answer as a mixed number."
+  stage: STAGE_GUIDED
+  explainer: "Add the wholes, then the parts. If the parts make more than one whole, trade them for a whole."
+  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8] mixed: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Add mixed numbers with the same denominator."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-subtract-mixed-numbers"
+  instruction: "Subtract. Write the answer as a mixed number."
+  stage: STAGE_STRETCH
+  explainer: "If there are not enough parts to take away, trade one whole for parts first."
+  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8] mixed: true subtract: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Subtract mixed numbers with the same denominator, trading a whole when needed."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Subtracting the smaller fraction part from the larger whatever their order: 3 1/4 − 1 3/4 = 2 2/4."
+  }
+}
+
+fragments {
+  id: "frag-fraction-times-whole"
+  instruction: "Use the bars. Multiply the whole number by the fraction."
+  stage: STAGE_GUIDED
+  explainer: "3 × 2/5 is three groups of two fifths: six fifths, or 6/5."
+  items { kind { fraction_times_whole { denominators: [3, 4, 5, 6, 8] wholes { min: 2 max: 4 } } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Multiply a fraction by a whole number as repeated groups of unit fractions."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d."
+    misconceptions: "Multiplying the denominator too: 3 × 2/5 = 6/15."
+  }
+}

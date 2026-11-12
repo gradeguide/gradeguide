@@ -1,0 +1,387 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Word problems. Each is written in full, and each answer carries the
+# working that produces it; the composer checks the working comes to the
+# answer and uses only numbers the problem shows.
+
+fragments {
+  id: "frag-comparison-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems that compare two amounts by multiplying or dividing."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story."
+    misconceptions: "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A puppy weighs 7 pounds. Its mother weighs 9 times as much. How much does the mother weigh?" }
+        nodes { work_space { field { label: "A puppy weighs 7 pounds. Its mother weighs 9 times as much. " answer { text: "63" work: "7 × 9" also: "63 pounds" } } } }
+      }
+      items {
+        nodes { text: "A red ribbon is 48 inches long. It is 6 times as long as a blue ribbon. How long is the blue ribbon?" }
+        nodes { work_space { field { label: "A red ribbon is 48 inches long. It is 6 times as long as a b" answer { text: "8" work: "48 ÷ 6" also: "8 inches" } } } }
+      }
+      items {
+        nodes { text: "Leo read 5 books this summer. His sister read 40 books. How many times as many books did his sister read?" }
+        nodes { work_space { field { label: "Leo read 5 books this summer. His sister read 40 books. How " answer { text: "8" work: "40 ÷ 5" also: "8 times" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A small fish tank holds 12 gallons. A big tank holds 4 times as much." }
+            parts {
+              prompt { text: "How many gallons does the big tank hold?" }
+              response { work_space { field { label: "How many gallons does the big tank hold" answer { text: "48" work: "12 × 4" also: "48 gallons" } } } }
+            }
+            parts {
+              prompt { text: "How many more gallons does the big tank hold than the small one?" }
+              response { work_space { field { label: "How many more gallons does the big tank hold than the small " answer { text: "36" work: "48 − 12" also: "36 gallons" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-multistep-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve problems that need two or more steps with whole numbers."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next."
+    misconceptions: "Using every number in the story in one operation."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A school orders 6 boxes of pencils. Each box holds 144 pencils. The pencils are shared equally among 8 classes." }
+            parts {
+              prompt { text: "How many pencils are there in all?" }
+              response { work_space { field { label: "How many pencils are there in all" answer { text: "864" work: "6 × 144" also: "864 pencils" } } } }
+            }
+            parts {
+              prompt { text: "How many pencils does each class get?" }
+              response { work_space { field { label: "How many pencils does each class get" answer { text: "108" work: "864 ÷ 8" also: "108 pencils" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A theater has 23 rows of 18 seats. On Friday, 297 seats are filled." }
+            parts {
+              prompt { text: "How many seats are in the theater?" }
+              response { work_space { field { label: "How many seats are in the theater" answer { text: "414" work: "23 × 18" also: "414 seats" } } } }
+            }
+            parts {
+              prompt { text: "How many seats are empty on Friday?" }
+              response { work_space { field { label: "How many seats are empty on Friday" answer { text: "117" work: "414 − 297" also: "117 seats" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "Ana has $125. She buys 3 books that cost $18 each and a lamp that costs $39. How much money does she have left?" }
+        nodes { work_space { field { label: "Ana has $125. She buys 3 books that cost $18 each and a lamp" answer { text: "32" work: "125 − 3 × 18 − 39" also: "$32" also: "32 dollars" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A farmer picks 1,260 apples. She keeps 180 and packs the rest into bags of 9." }
+            parts {
+              prompt { text: "How many apples does she pack?" }
+              response { work_space { field { label: "How many apples does she pack" answer { text: "1080" work: "1,260 − 180" also: "1,080" also: "1,080 apples" } } } }
+            }
+            parts {
+              prompt { text: "How many bags does she fill?" }
+              response { work_space { field { label: "How many bags does she fill" answer { text: "120" work: "1080 ÷ 9" also: "120 bags" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-division-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Divide multi-digit numbers in word problems, including what is left over."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "One problem in each pair asks for the leftover, so the child has to decide what the remainder means."
+    misconceptions: "Ignoring the leftover, or giving the remainder as the answer."
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "A baker has 156 muffins. She puts 6 muffins in each box. How many boxes does she fill?" }
+        nodes { work_space { field { label: "A baker has 156 muffins. She puts 6 muffins in each box. How" answer { text: "26" work: "156 ÷ 6" also: "26 boxes" } } } }
+      }
+      items {
+        nodes { text: "There are 245 students going on a trip. Each bus holds 35 students. How many buses are needed?" }
+        nodes { work_space { field { label: "There are 245 students going on a trip. Each bus holds 35 st" answer { text: "7" work: "245 ÷ 35" also: "7 buses" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A club has 98 stickers to share equally among 7 members." }
+            parts {
+              prompt { text: "How many stickers does each member get?" }
+              response { work_space { field { label: "How many stickers does each member get" answer { text: "14" work: "98 ÷ 7" also: "14 stickers" } } } }
+            }
+            parts {
+              prompt { text: "Then 7 more members join and the club gets 70 more stickers. All the stickers are shared equally again. How many does each member get now?" }
+              response { work_space { field { label: "Then 7 more members join and the club gets 70 more stickers." answer { text: "12" work: "(98 + 70) ÷ (7 + 7)" also: "12 stickers" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-equal-groups-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve equal-groups and array problems with multiplication and division within 100."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups."
+    misconceptions: "Multiplying whenever two numbers appear."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "There are 6 tables in the art room. Each table has 4 chairs. How many chairs are there?" }
+        nodes { work_space { field { label: "There are 6 tables in the art room. Each table has 4 chairs." answer { text: "24" work: "6 × 4" also: "24 chairs" } } } }
+      }
+      items {
+        nodes { text: "Maya puts 32 photos in an album. Each page holds 8 photos. How many pages does she fill?" }
+        nodes { work_space { field { label: "Maya puts 32 photos in an album. Each page holds 8 photos. H" answer { text: "4" work: "32 ÷ 8" also: "4 pages" } } } }
+      }
+      items {
+        nodes { text: "A garden has 7 rows of carrots with the same number in each row. There are 42 carrots. How many carrots are in each row?" }
+        nodes { work_space { field { label: "A garden has 7 rows of carrots with the same number in each " answer { text: "6" work: "42 ÷ 7" also: "6 carrots" } } } }
+      }
+      items {
+        nodes { text: "A pack of juice has 3 boxes. Mr. Diaz buys 9 packs. How many juice boxes does he buy?" }
+        nodes { work_space { field { label: "A pack of juice has 3 boxes. Mr. Diaz buys 9 packs. How many" answer { text: "27" work: "9 × 3" also: "27 juice boxes" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-two-step-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve two-step problems with the four operations."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The two parts make each step visible before a single-question problem asks for both."
+    misconceptions: "Stopping after the first step."
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "Sam has 5 bags of marbles with 8 marbles in each bag. He gives 12 marbles to a friend." }
+            parts {
+              prompt { text: "How many marbles did Sam have at first?" }
+              response { work_space { field { label: "How many marbles did Sam have at first" answer { text: "40" work: "5 × 8" also: "40 marbles" } } } }
+            }
+            parts {
+              prompt { text: "How many marbles does he have now?" }
+              response { work_space { field { label: "How many marbles does he have now" answer { text: "28" work: "40 − 12" also: "28 marbles" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "A class collects 36 cans on Monday and 28 cans on Tuesday. They put the cans in 4 equal boxes. How many cans go in each box?" }
+        nodes { work_space { field { label: "A class collects 36 cans on Monday and 28 cans on Tuesday. T" answer { text: "16" work: "(36 + 28) ÷ 4" also: "16 cans" } } } }
+      }
+      items {
+        nodes { text: "Tickets for a show cost $7 each. Zoe buys 6 tickets and pays with $50. How much change does she get?" }
+        nodes { work_space { field { label: "Tickets for a show cost $7 each. Zoe buys 6 tickets and pays" answer { text: "8" work: "50 − 6 × 7" also: "$8" also: "8 dollars" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-fraction-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems that add, subtract or multiply fractions with the same denominator."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem keeps one denominator, so the child can reason in counts of unit fractions."
+    misconceptions: "Adding denominators: 2/8 + 3/8 = 5/16."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "Kai ate 2/8 of a pizza. His brother ate 3/8 of the same pizza. How much of the pizza did they eat together?" }
+        nodes { work_space { field { label: "Kai ate 2/8 of a pizza. His brother ate 3/8 of the same pizz" answer { text: "5/8" work: "2/8 + 3/8" } } } }
+      }
+      items {
+        nodes { text: "A ribbon is 3 1/4 feet long. Ana cuts off 1 3/4 feet. How long is the ribbon now?" }
+        nodes { work_space { field { label: "A ribbon is 3 1/4 feet long. Ana cuts off 1 3/4 feet. How lo" answer { text: "1 2/4" work: "3 + 1/4 − (1 + 3/4)" also: "1 1/2" also: "6/4" also: "3/2" also: "1 2/4 feet" } } } }
+      }
+      items {
+        nodes { text: "Each glass holds 2/3 of a cup of juice. How much juice is in 5 glasses?" }
+        nodes { work_space { field { label: "Each glass holds 2/3 of a cup of juice. How much juice is in" answer { text: "10/3" work: "5 × 2/3" also: "3 1/3" also: "3 1/3 cups" also: "10/3 cups" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A trail is 4/5 of a mile long. Lena walks it, and then walks it back." }
+            parts {
+              prompt { text: "How far does Lena walk in all?" }
+              response { work_space { field { label: "How far does Lena walk in all" answer { text: "8/5" work: "4/5 + 4/5" also: "1 3/5" also: "1 3/5 miles" } } } }
+            }
+            parts {
+              prompt { text: "If she walks the trail and back 3 days in a row, how far does she walk?" }
+              response { work_space { field { label: "If she walks the trail and back 3 days in a row, how far doe" answer { text: "24/5" work: "3 × 8/5" also: "4 4/5" also: "4 4/5 miles" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-measurement-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems about distance, time, liquid volume, mass and money."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table."
+    misconceptions: "Combining amounts in different units without converting."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A movie lasts 1 hour 50 minutes. One hour is 60 minutes. How many minutes long is the movie?" }
+        nodes { work_space { field { label: "A movie lasts 1 hour 50 minutes. One hour is 60 minutes. How" answer { text: "110" work: "60 + 50" also: "110 minutes" } } } }
+      }
+      items {
+        nodes { text: "A jug holds 2 liters of water. Ben pours out 650 milliliters. One liter is 1,000 milliliters. How many milliliters are left?" }
+        nodes { work_space { field { label: "A jug holds 2 liters of water. Ben pours out 650 milliliters" answer { text: "1350" work: "2 × 1000 − 650" also: "1,350" also: "1,350 milliliters" } } } }
+      }
+      items {
+        nodes { text: "Rosa runs 3 laps of a track that is 400 meters around. How many meters does she run?" }
+        nodes { work_space { field { label: "Rosa runs 3 laps of a track that is 400 meters around. How m" answer { text: "1200" work: "3 × 400" also: "1,200" also: "1,200 meters" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "Apples cost $2 a pound. A bag of apples weighs 3 pounds 8 ounces. One pound is 16 ounces." }
+            parts {
+              prompt { text: "How many ounces does the bag weigh?" }
+              response { work_space { field { label: "How many ounces does the bag weigh" answer { text: "56" work: "3 × 16 + 8" also: "56 ounces" } } } }
+            }
+            parts {
+              prompt { text: "How much do the apples cost?" }
+              response { work_space { field { label: "How much do the apples cost" answer { text: "7" work: "2 × 56 ÷ 16" also: "$7" also: "7 dollars" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-mass-volume-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve one-step problems about mass in grams and kilograms, and volume in liters."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Every problem stays in one unit, so the arithmetic, not a conversion, is the step."
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "A bag of rice has a mass of 5 kilograms. How many kilograms are in 4 bags?" }
+        nodes { work_space { field { label: "A bag of rice has a mass of 5 kilograms. How many kilograms " answer { text: "20" work: "5 × 4" also: "20 kilograms" also: "20 kg" } } } }
+      }
+      items {
+        nodes { text: "A bucket holds 9 liters. Pia fills it 3 times to water the garden. How many liters does she use?" }
+        nodes { work_space { field { label: "A bucket holds 9 liters. Pia fills it 3 times to water the g" answer { text: "27" work: "9 × 3" also: "27 liters" also: "27 L" } } } }
+      }
+      items {
+        nodes { text: "An apple has a mass of 180 grams and an orange has a mass of 145 grams. How much heavier is the apple?" }
+        nodes { work_space { field { label: "An apple has a mass of 180 grams and an orange has a mass of" answer { text: "35" work: "180 − 145" also: "35 grams" also: "35 g" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-area-perimeter-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Use the area and perimeter formulas for rectangles in real problems, including finding a missing side."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Two problems give the area or perimeter and ask for a side, so the formula is used backwards."
+    misconceptions: "Confusing area and perimeter: the fence around a garden is its area."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A rug is 9 feet long and 6 feet wide. What is its area?" }
+        nodes { work_space { field { label: "A rug is 9 feet long and 6 feet wide. What is its area" answer { text: "54" work: "9 × 6" also: "54 square feet" } } } }
+      }
+      items {
+        nodes { text: "A garden is 12 meters long and 5 meters wide. How many meters of fence go around it?" }
+        nodes { work_space { field { label: "A garden is 12 meters long and 5 meters wide. How many meter" answer { text: "34" work: "12 + 5 + 12 + 5" also: "34 meters" } } } }
+      }
+      items {
+        nodes { text: "A rectangular poster has an area of 96 square inches. It is 12 inches long. How wide is it?" }
+        nodes { work_space { field { label: "A rectangular poster has an area of 96 square inches. It is " answer { text: "8" work: "96 ÷ 12" also: "8 inches" } } } }
+      }
+      items {
+        nodes { text: "A square patio has 4 equal sides. Its perimeter is 28 feet. How long is each side?" }
+        nodes { work_space { field { label: "A square patio has 4 equal sides. Its perimeter is 28 feet. " answer { text: "7" work: "28 ÷ 4" also: "7 feet" } } } }
+      }
+    }
+  }
+}

@@ -1,0 +1,521 @@
+{
+ "worksheetId": "ws-quadrilaterals",
+ "title": "Parallel sides and right angles",
+ "headerLabels": [
+  "4.G.A.1",
+  "4.G.A.2",
+  "3.G.A.1"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Are the lines parallel, perpendicular or just intersecting?",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_PERPENDICULAR"
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "name of the figure",
+           "answer": {
+            "text": "perpendicular"
+           }
+          }
+         }
+        }
+       ],
+       "key": "perpendicular"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_PARALLEL",
+          "rotation": 15
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "name of the figure",
+           "answer": {
+            "text": "parallel"
+           }
+          }
+         }
+        }
+       ],
+       "key": "parallel"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "lineFigure": {
+          "kind": "KIND_INTERSECTING"
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "parallel",
+           "perpendicular",
+           "intersecting"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "name of the figure",
+           "answer": {
+            "text": "intersecting"
+           }
+          }
+         }
+        }
+       ],
+       "key": "intersecting"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-name-line-pairs",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Tell parallel, perpendicular and intersecting lines apart.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Only horizontal and vertical lines can be perpendicular"
+      ]
+     },
+     "estimatedHeight": 318
+    },
+    {
+     "label": "B",
+     "instruction": "Count the pairs of parallel sides and the right angles.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 14
+           },
+           {
+            "x": 10,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Parallel pairs:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "pairs of parallel sides",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right angles:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "right angles",
+             "answer": {
+              "text": "0"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Parallel pairs: 1; Right angles: 0"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 8,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Parallel pairs:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "pairs of parallel sides",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right angles:"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "right angles",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Parallel pairs: 1; Right angles: 2"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-quadrilateral-features",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe quadrilaterals by parallel sides and right angles.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+     },
+     "estimatedHeight": 271
+    }
+   ],
+   "estimatedHeight": 589
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the pairs of parallel sides and the right angles.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 8
+           },
+           {
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Parallel pairs:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "pairs of parallel sides",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right angles:"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "right angles",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Parallel pairs: 2; Right angles: 4"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {
+            "y": 6
+           },
+           {
+            "x": 4
+           },
+           {
+            "x": 8,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 10
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Parallel pairs:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "pairs of parallel sides",
+             "answer": {
+              "text": "0"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right angles:"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "right angles",
+             "answer": {
+              "text": "0"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Parallel pairs: 0; Right angles: 0"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-quadrilateral-features",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe quadrilaterals by parallel sides and right angles.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+     },
+     "continued": true,
+     "estimatedHeight": 286
+    }
+   ],
+   "estimatedHeight": 286
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "name of the figure",
+    "answer": {
+     "text": "perpendicular"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "name of the figure",
+    "answer": {
+     "text": "parallel"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "name of the figure",
+    "answer": {
+     "text": "intersecting"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "pairs of parallel sides",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "right angles",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "pairs of parallel sides",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "right angles",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "pairs of parallel sides",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "right angles",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "pairs of parallel sides",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "right angles",
+    "answer": {
+     "text": "0"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe quadrilaterals by their parallel sides and right angles.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "\"Count the pairs of parallel sides and the right angles.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Count the pairs of parallel sides and the right angles.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

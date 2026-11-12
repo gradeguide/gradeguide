@@ -1,0 +1,440 @@
+{
+ "worksheetId": "ws-measurement-word-problems",
+ "title": "Measurement word problems",
+ "headerLabels": [
+  "4.MD.A.1",
+  "4.MD.A.2"
+ ],
+ "minutes": 20,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Complete the table.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "1 pound is 16 ounces."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Pounds",
+           "Ounces"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "16"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "2 pounds in ounces",
+               "answer": {
+                "text": "32"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "3 pounds in ounces",
+               "answer": {
+                "text": "48"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "5 pounds in ounces",
+               "answer": {
+                "text": "80"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "10 pounds in ounces",
+               "answer": {
+                "text": "160"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "32, 48, 80, 160"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-convert-time-and-mass",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Express times, masses and volumes in a smaller unit.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ]
+     },
+     "estimatedHeight": 268
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A movie lasts 1 hour 50 minutes. One hour is 60 minutes. How many minutes long is the movie?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q2",
+           "label": "A movie lasts 1 hour 50 minutes. One hour is 60 minutes. How",
+           "answer": {
+            "text": "110",
+            "also": [
+             "110 minutes"
+            ],
+            "work": "60 + 50"
+           }
+          }
+         }
+        }
+       ],
+       "key": "110"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A jug holds 2 liters of water. Ben pours out 650 milliliters. One liter is 1,000 milliliters. How many milliliters are left?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q3",
+           "label": "A jug holds 2 liters of water. Ben pours out 650 milliliters",
+           "answer": {
+            "text": "1350",
+            "also": [
+             "1,350",
+             "1,350 milliliters"
+            ],
+            "work": "2 × 1000 − 650"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1350"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Rosa runs 3 laps of a track that is 400 meters around. How many meters does she run?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "Rosa runs 3 laps of a track that is 400 meters around. How m",
+           "answer": {
+            "text": "1200",
+            "also": [
+             "1,200",
+             "1,200 meters"
+            ],
+            "work": "3 × 400"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1200"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-measurement-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems about distance, time, liquid volume, mass and money.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table.",
+      "misconceptions": [
+       "Combining amounts in different units without converting."
+      ]
+     },
+     "estimatedHeight": 514
+    }
+   ],
+   "estimatedHeight": 782
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Apples cost $2 a pound. A bag of apples weighs 3 pounds 8 ounces. One pound is 16 ounces."
+           }
+          ],
+          "parts": [
+           {
+            "label": "5a",
+            "prompt": [
+             {
+              "text": "How many ounces does the bag weigh?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 4,
+               "field": {
+                "id": "q5a",
+                "label": "How many ounces does the bag weigh",
+                "answer": {
+                 "text": "56",
+                 "also": [
+                  "56 ounces"
+                 ],
+                 "work": "3 × 16 + 8"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "5b",
+            "prompt": [
+             {
+              "text": "How much do the apples cost?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 4,
+               "field": {
+                "id": "q5b",
+                "label": "How much do the apples cost",
+                "answer": {
+                 "text": "7",
+                 "also": [
+                  "$7",
+                  "7 dollars"
+                 ],
+                 "work": "2 × 56 ÷ 16"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5a: 3 × 16 + 8 = 56; 5b: 2 × 56 ÷ 16 = 7"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-measurement-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems about distance, time, liquid volume, mass and money.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table.",
+      "misconceptions": [
+       "Combining amounts in different units without converting."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 400
+    }
+   ],
+   "estimatedHeight": 400
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2 pounds in ounces",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "3 pounds in ounces",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "5 pounds in ounces",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "10 pounds in ounces",
+    "answer": {
+     "text": "160"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "A movie lasts 1 hour 50 minutes. One hour is 60 minutes. How",
+    "answer": {
+     "text": "110",
+     "also": [
+      "110 minutes"
+     ],
+     "work": "60 + 50"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "A jug holds 2 liters of water. Ben pours out 650 milliliters",
+    "answer": {
+     "text": "1350",
+     "also": [
+      "1,350",
+      "1,350 milliliters"
+     ],
+     "work": "2 × 1000 − 650"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "Rosa runs 3 laps of a track that is 400 meters around. How m",
+    "answer": {
+     "text": "1200",
+     "also": [
+      "1,200",
+      "1,200 meters"
+     ],
+     "work": "3 × 400"
+    }
+   }
+  },
+  {
+   "itemLabel": "5a",
+   "field": {
+    "id": "q5a",
+    "label": "How many ounces does the bag weigh",
+    "answer": {
+     "text": "56",
+     "also": [
+      "56 ounces"
+     ],
+     "work": "3 × 16 + 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "5b",
+   "field": {
+    "id": "q5b",
+    "label": "How much do the apples cost",
+    "answer": {
+     "text": "7",
+     "also": [
+      "$7",
+      "7 dollars"
+     ],
+     "work": "2 × 56 ÷ 16"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve problems with measurements, converting units where needed.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

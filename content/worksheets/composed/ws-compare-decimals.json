@@ -1,0 +1,646 @@
+{
+ "worksheetId": "ws-compare-decimals",
+ "title": "Compare decimals",
+ "headerLabels": [
+  "4.NF.C.6",
+  "4.NF.C.7"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the shaded part as a fraction and as a decimal.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 32
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "32/100",
+              "also": [
+               "8/25"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.32"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "32/100 = 0.32"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 10,
+          "cols": 10,
+          "shaded": 92
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q2",
+             "label": "the shaded part as a fraction",
+             "answer": {
+              "text": "92/100",
+              "also": [
+               "23/25"
+              ]
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "the shaded part as a decimal",
+             "answer": {
+              "text": "0.92"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "92/100 = 0.92"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-hundredths-grid",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Write hundredths as fractions and decimals.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The grid ties decimal notation to the fraction it stands for, so 0.3 and 0.30 can be seen to be the same amount.",
+      "misconceptions": [
+       "0.30 is bigger than 0.3"
+      ]
+     },
+     "estimatedHeight": 250
+    },
+    {
+     "label": "B",
+     "instruction": "Write <, > or = in each circle.",
+     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.88"
+           },
+           {
+            "compare": {
+             "id": "q3",
+             "label": "<, > or = between 0.88 and 0.3",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.3"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.88 > 0.3"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.2"
+           },
+           {
+            "compare": {
+             "id": "q4",
+             "label": "<, > or = between 0.2 and 0.26",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.26"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.2 < 0.26"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.2"
+           },
+           {
+            "compare": {
+             "id": "q5",
+             "label": "<, > or = between 0.2 and 0.01",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.01"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.2 > 0.01"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.7"
+           },
+           {
+            "compare": {
+             "id": "q6",
+             "label": "<, > or = between 0.7 and 0.12",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.12"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.7 > 0.12"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.88"
+           },
+           {
+            "compare": {
+             "id": "q7",
+             "label": "<, > or = between 0.88 and 0.2",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.88 > 0.2"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.58"
+           },
+           {
+            "compare": {
+             "id": "q8",
+             "label": "<, > or = between 0.58 and 0.6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.58 < 0.6"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.19"
+           },
+           {
+            "compare": {
+             "id": "q9",
+             "label": "<, > or = between 0.19 and 0.7",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.7"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.19 < 0.7"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.1"
+           },
+           {
+            "compare": {
+             "id": "q10",
+             "label": "<, > or = between 0.1 and 0.51",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.51"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.1 < 0.51"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.36"
+           },
+           {
+            "compare": {
+             "id": "q11",
+             "label": "<, > or = between 0.36 and 0.4",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.4"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.36 < 0.4"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.30"
+           },
+           {
+            "compare": {
+             "id": "q12",
+             "label": "<, > or = between 0.30 and 0.1",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.1"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.30 > 0.1"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.8"
+           },
+           {
+            "compare": {
+             "id": "q13",
+             "label": "<, > or = between 0.8 and 0.50",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.50"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.8 > 0.50"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.8"
+           },
+           {
+            "compare": {
+             "id": "q14",
+             "label": "<, > or = between 0.8 and 0.01",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.01"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.8 > 0.01"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-compare-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare two decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+      ]
+     },
+     "estimatedHeight": 268
+    }
+   ],
+   "estimatedHeight": 518
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "32/100",
+     "also": [
+      "8/25"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.32"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the shaded part as a fraction",
+    "answer": {
+     "text": "92/100",
+     "also": [
+      "23/25"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the shaded part as a decimal",
+    "answer": {
+     "text": "0.92"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "<, > or = between 0.88 and 0.3",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "<, > or = between 0.2 and 0.26",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "<, > or = between 0.2 and 0.01",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "<, > or = between 0.7 and 0.12",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "<, > or = between 0.88 and 0.2",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "<, > or = between 0.58 and 0.6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "<, > or = between 0.19 and 0.7",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "<, > or = between 0.1 and 0.51",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "<, > or = between 0.36 and 0.4",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "<, > or = between 0.30 and 0.1",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "<, > or = between 0.8 and 0.50",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "<, > or = between 0.8 and 0.01",
+    "answer": {
+     "text": ">"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare decimals to hundredths.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "The grids show 0.4 as 40 hundredths before the child compares 0.4 with 0.38 in symbols."
+ },
+ "advice": [
+  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

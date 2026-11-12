@@ -125,6 +125,18 @@ message ItemKind {
     MultiplyByTens multiply_by_tens = 29;
     BreakApart break_apart = 30;
     PartialProducts partial_products = 31;
+    TimesAsManyStatement times_as_many_statement = 32;
+    NumberPattern number_pattern = 33;
+    FractionAddSubtract fraction_add_subtract = 34;
+    DecomposeFraction decompose_fraction = 35;
+    FractionTimesWhole fraction_times_whole = 36;
+    CompareDecimals compare_decimals = 37;
+    UnitConversion unit_conversion = 38;
+    AngleTurn angle_turn = 39;
+    ClassifyShape classify_shape = 40;
+    LinesOfSymmetry lines_of_symmetry = 41;
+    MissingFactor missing_factor = 42;
+    BarGraphQuestions bar_graph_questions = 43;
   }
 }
 
@@ -223,6 +235,91 @@ message BreakApart {
 // place's partial product before the total.
 message PartialProducts {
   int32 top_digits = 1;
+}
+
+// "☐ is 4 times as many as 6" and its unknown-factor forms, as an equation
+// and a sentence.
+message TimesAsManyStatement {
+  IntRange times = 1;
+  IntRange smaller = 2;
+}
+
+// A number pattern from a rule: continue it, or find its rule.
+message NumberPattern {
+  IntRange start = 1;
+  IntRange step = 2;
+  // Ask for the rule instead of the next terms.
+  bool find_rule = 3;
+}
+
+// a/d + b/d or a/d − b/d, optionally with mixed numbers.
+message FractionAddSubtract {
+  repeated int32 denominators = 1;
+  bool subtract = 2;
+  bool mixed = 3;
+}
+
+// a/d written as a sum of two fractions with the same denominator, one part
+// given.
+message DecomposeFraction {
+  repeated int32 denominators = 1;
+}
+
+// n × a/d, with fraction bars for the n groups.
+message FractionTimesWhole {
+  repeated int32 denominators = 1;
+  IntRange wholes = 2;
+}
+
+// Two decimals to tenths or hundredths; write <, > or =.
+message CompareDecimals {}
+
+// A conversion table from a larger unit to a smaller one.
+message UnitConversion {
+  repeated Conversion conversions = 1;
+
+  enum Conversion {
+    CONVERSION_UNSPECIFIED = 0;
+    CONVERSION_FEET_INCHES = 1;
+    CONVERSION_YARDS_FEET = 2;
+    CONVERSION_HOURS_MINUTES = 3;
+    CONVERSION_MINUTES_SECONDS = 4;
+    CONVERSION_METERS_CENTIMETERS = 5;
+    CONVERSION_KILOGRAMS_GRAMS = 6;
+    CONVERSION_POUNDS_OUNCES = 7;
+    CONVERSION_LITERS_MILLILITERS = 8;
+  }
+}
+
+// Angles as turns: a fraction of a full turn in degrees, or an angle as a
+// count of one-degree angles.
+message AngleTurn {}
+
+// A drawn shape: tick the kind of triangle, or count a quadrilateral's
+// parallel pairs and right angles.
+message ClassifyShape {
+  Family family = 1;
+
+  enum Family {
+    FAMILY_UNSPECIFIED = 0;
+    FAMILY_TRIANGLES = 1;
+    FAMILY_QUADRILATERALS = 2;
+  }
+}
+
+// A drawn shape; write how many lines of symmetry it has.
+message LinesOfSymmetry {}
+
+// A multiplication or division fact with one number missing.
+message MissingFactor {
+  IntRange factors = 1;
+}
+
+// A bar graph of made-up data, with questions read from it.
+message BarGraphQuestions {
+  IntRange values = 1;
+  // Gridline step. Zero: chosen from the data.
+  int32 step = 2;
 }
 
 // A sum or difference set in columns.

@@ -1,0 +1,43 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Classifying shapes and symmetry.
+
+fragments {
+  id: "frag-classify-triangles"
+  instruction: "Is the triangle acute, right or obtuse? Tick one."
+  stage: STAGE_PRACTICE
+  explainer: "A right triangle has a right angle. An obtuse triangle has an angle bigger than a right angle. In an acute triangle every angle is smaller than a right angle."
+  items { kind { classify_shape { family: FAMILY_TRIANGLES } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Classify triangles by their largest angle."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-quadrilateral-features"
+  instruction: "Count the pairs of parallel sides and the right angles."
+  stage: STAGE_PRACTICE
+  items { kind { classify_shape { family: FAMILY_QUADRILATERALS } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Describe quadrilaterals by parallel sides and right angles."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+  }
+}
+
+fragments {
+  id: "frag-lines-of-symmetry"
+  instruction: "How many lines of symmetry does each shape have? Draw them, then write the number."
+  stage: STAGE_PRACTICE
+  items { kind { lines_of_symmetry {} } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Find lines of symmetry in a shape."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Drawing a diagonal of a rectangle as a line of symmetry."
+  }
+}

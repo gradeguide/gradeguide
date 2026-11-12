@@ -1,0 +1,274 @@
+{
+ "worksheetId": "ws-bar-graphs",
+ "title": "Read bar graphs",
+ "headerLabels": [
+  "3.MD.B.3"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the bar graph to answer.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "barGraph": {
+          "title": "Favorite fruit",
+          "valueAxis": "Votes",
+          "step": 2,
+          "bars": [
+           {
+            "label": "Apples",
+            "value": 9
+           },
+           {
+            "label": "Bananas",
+            "value": 20
+           },
+           {
+            "label": "Grapes",
+            "value": 11
+           },
+           {
+            "label": "Pears",
+            "value": 17
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many votes for Apples?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "votes for Apples",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Bananas than for Apples?"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "Bananas minus Apples",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many votes in all?"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "total votes",
+             "answer": {
+              "text": "57"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many votes for Apples? 9; How many more for Bananas than for Apples? 11; How many votes in all? 57"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "barGraph": {
+          "title": "Cans collected",
+          "valueAxis": "Cans",
+          "step": 2,
+          "bars": [
+           {
+            "label": "Room 1",
+            "value": 6
+           },
+           {
+            "label": "Room 2",
+            "value": 9
+           },
+           {
+            "label": "Room 3",
+            "value": 17
+           },
+           {
+            "label": "Room 4",
+            "value": 2
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many cans for Room 1?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "cans for Room 1",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Room 3 than for Room 4?"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "Room 3 minus Room 4",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many cans in all?"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "total cans",
+             "answer": {
+              "text": "34"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many cans for Room 1? 6; How many more for Room 3 than for Room 4? 15; How many cans in all? 34"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-bar-graph-questions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a scaled bar graph and answer how many, how many more, and how many in all.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The scale counts by 2, so odd values fall between gridlines and the child has to read the scale, not count lines."
+     },
+     "estimatedHeight": 722
+    }
+   ],
+   "estimatedHeight": 722
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "votes for Apples",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "Bananas minus Apples",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "total votes",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "cans for Room 1",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "Room 3 minus Room 4",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "total cans",
+    "answer": {
+     "text": "34"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Answer questions from a scaled bar graph.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Use the bar graph to answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

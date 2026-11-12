@@ -1,0 +1,427 @@
+{
+ "worksheetId": "ws-angle-turns",
+ "title": "Angles are turns",
+ "headerLabels": [
+  "4.MD.C.5.a",
+  "4.MD.C.5.b",
+  "4.G.A.1"
+ ],
+ "minutes": 12,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in the blanks.",
+     "explainer": "A full turn is 360 degrees. An angle that turns through 1/360 of a full turn is a one-degree angle.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A three-quarter turn is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "degrees in a three-quarter turn",
+             "answer": {
+              "text": "270",
+              "also": [
+               "270°"
+              ]
+             }
+            }
+           },
+           {
+            "text": "degrees."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A three-quarter turn is 270 degrees."
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A quarter turn is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "degrees in a quarter turn",
+             "answer": {
+              "text": "90",
+              "also": [
+               "90°"
+              ]
+             }
+            }
+           },
+           {
+            "text": "degrees."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A quarter turn is 90 degrees."
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "angle": {
+          "rays": [
+           125
+          ],
+          "arcs": [
+           {
+            "text": "125°"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It turns through"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "one-degree angles in 125°",
+             "answer": {
+              "text": "125"
+             }
+            }
+           },
+           {
+            "text": "one-degree angles."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It turns through 125 one-degree angles."
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "angle": {
+          "rays": [
+           80
+          ],
+          "arcs": [
+           {
+            "text": "80°"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It turns through"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "one-degree angles in 80°",
+             "answer": {
+              "text": "80"
+             }
+            }
+           },
+           {
+            "text": "one-degree angles."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It turns through 80 one-degree angles."
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "angle": {
+          "rays": [
+           55
+          ],
+          "arcs": [
+           {
+            "text": "55°"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It turns through"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "one-degree angles in 55°",
+             "answer": {
+              "text": "55"
+             }
+            }
+           },
+           {
+            "text": "one-degree angles."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It turns through 55 one-degree angles."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-angle-turns",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Measure an angle as a turn: a fraction of a circle, or a count of one-degree angles.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 669
+    }
+   ],
+   "estimatedHeight": 669
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Tick acute, right or obtuse.",
+     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 25,
+          "rays": [
+           45
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "angle": {
+          "rays": [
+           65
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 5,
+          "rays": [
+           70
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-classify-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Classify angles against a right angle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "misconceptions": [
+       "Longer rays make a bigger angle"
+      ]
+     },
+     "estimatedHeight": 384
+    }
+   ],
+   "estimatedHeight": 384
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "degrees in a three-quarter turn",
+    "answer": {
+     "text": "270",
+     "also": [
+      "270°"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "degrees in a quarter turn",
+    "answer": {
+     "text": "90",
+     "also": [
+      "90°"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "one-degree angles in 125°",
+    "answer": {
+     "text": "125"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "one-degree angles in 80°",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "one-degree angles in 55°",
+    "answer": {
+     "text": "55"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "kind of angle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "kind of angle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "kind of angle",
+    "answer": {
+     "text": "acute"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Understand an angle's measure as an amount of turn.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "Section \"Fill in the blanks.\" was cut from 6 to 5 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

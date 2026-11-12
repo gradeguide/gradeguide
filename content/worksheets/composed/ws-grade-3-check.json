@@ -1,0 +1,1266 @@
+{
+ "worksheetId": "ws-grade-3-check",
+ "title": "Ready for grade 4?",
+ "headerLabels": [
+  "3.OA.C.7",
+  "3.OA.A.4",
+  "3.OA.B.6",
+  "3.NF.A.2",
+  "3.NBT.A.1",
+  "3.NBT.A.2",
+  "4.MD.A.3"
+ ],
+ "minutes": 25,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "1",
+     "instruction": "Multiply. Circle any you had to stop and think about.",
+     "items": [
+      {
+       "label": "1a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1a",
+             "label": "7 × 7",
+             "answer": {
+              "text": "49"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 7 = 49"
+      },
+      {
+       "label": "1b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1b",
+             "label": "8 × 9",
+             "answer": {
+              "text": "72"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 9 = 72"
+      },
+      {
+       "label": "1c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1c",
+             "label": "3 × 6",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 6 = 18"
+      },
+      {
+       "label": "1d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1d",
+             "label": "6 × 2",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 2 = 12"
+      },
+      {
+       "label": "1e",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1e",
+             "label": "7 × 9",
+             "answer": {
+              "text": "63"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 9 = 63"
+      },
+      {
+       "label": "1f",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1f",
+             "label": "5 × 5",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 5 = 25"
+      },
+      {
+       "label": "1g",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1g",
+             "label": "2 × 4",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 4 = 8"
+      },
+      {
+       "label": "1h",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1h",
+             "label": "2 × 7",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 7 = 14"
+      },
+      {
+       "label": "1i",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1i",
+             "label": "2 × 8",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 8 = 16"
+      },
+      {
+       "label": "1j",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1j",
+             "label": "4 × 8",
+             "answer": {
+              "text": "32"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 8 = 32"
+      },
+      {
+       "label": "1k",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1k",
+             "label": "6 × 9",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 9 = 54"
+      },
+      {
+       "label": "1l",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1l",
+             "label": "5 × 3",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 3 = 15"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-multiplication-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Recall multiplication facts.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "references": [
+       "Roediger and Karpicke (2006), Psychological Science 17"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "2",
+     "instruction": "Find the missing number.",
+     "items": [
+      {
+       "label": "2a",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q2a",
+             "label": "4 ÷ 2",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "4"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 2 = 4"
+      },
+      {
+       "label": "2b",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2b",
+             "label": "24 ÷ 3",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "24"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 3 = 24"
+      },
+      {
+       "label": "2c",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "54"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q2c",
+             "label": "54 ÷ 6",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "54 ÷ 9 = 6"
+      },
+      {
+       "label": "2d",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q2d",
+             "label": "27 ÷ 9",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "9"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27 ÷ 3 = 9"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-missing-factor",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find an unknown factor in a multiplication or division equation.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+     },
+     "estimatedHeight": 86
+    },
+    {
+     "label": "3",
+     "instruction": "What fraction is at the arrow?",
+     "items": [
+      {
+       "label": "3a",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 6,
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3a",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "1/6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6"
+      },
+      {
+       "label": "3b",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 4,
+          "hasArrow": true,
+          "arrowTick": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3b",
+             "label": "the fraction at the arrow",
+             "answer": {
+              "text": "2/4",
+              "also": [
+               "1/2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/4"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-fraction-at-arrow",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read a fraction as a distance from 0 on a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "misconceptions": [
+       "Counting tick marks instead of the spaces between them"
+      ],
+      "references": [
+       "Siegler et al. (2010), IES practice guide, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 180
+    },
+    {
+     "label": "4",
+     "instruction": "Round. The number line shows which multiple is nearer.",
+     "items": [
+      {
+       "label": "4a",
+       "nodes": [
+        {
+         "text": "Round 720 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 7,
+          "end": 8,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 2,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "720"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q4a",
+             "label": "720 rounded to the nearest hundred",
+             "answer": {
+              "text": "700",
+              "also": [
+               "700"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "720 ≈ 700"
+      },
+      {
+       "label": "4b",
+       "nodes": [
+        {
+         "text": "Round 880 to the nearest hundred."
+        },
+        {
+         "numberLine": {
+          "start": 8,
+          "end": 9,
+          "partsPerUnit": 10,
+          "hasArrow": true,
+          "arrowTick": 8,
+          "scale": 100
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "880"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q4b",
+             "label": "880 rounded to the nearest hundred",
+             "answer": {
+              "text": "900",
+              "also": [
+               "900"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "880 ≈ 900"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-round-to-tens-and-hundreds",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Round three-digit numbers to the nearest 10 or 100.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ]
+     },
+     "estimatedHeight": 186
+    },
+    {
+     "label": "5",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "5a",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "533",
+           "253"
+          ],
+          "answer": {
+           "id": "q5a",
+           "label": "533 − 253",
+           "answer": {
+            "text": "280"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "280"
+      },
+      {
+       "label": "5b",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "512",
+           "305"
+          ],
+          "answer": {
+           "id": "q5b",
+           "label": "512 − 305",
+           "answer": {
+            "text": "207"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "207"
+      },
+      {
+       "label": "5c",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "348",
+           "273"
+          ],
+          "answer": {
+           "id": "q5c",
+           "label": "348 − 273",
+           "answer": {
+            "text": "75"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "75"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-column-subtract-3-digit",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Subtract three-digit numbers in columns, regrouping.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in each column, whichever is on top."
+      ]
+     },
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 810
+  },
+  {
+   "sections": [
+    {
+     "label": "6",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "6a",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6a",
+             "label": "area in square cm",
+             "answer": {
+              "text": "27"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 27 sq cm"
+      },
+      {
+       "label": "6b",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 8
+           },
+           {
+            "y": 8
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "8 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6b",
+             "label": "area in square cm",
+             "answer": {
+              "text": "72"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 72 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-area",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find a rectangle's area as length times width.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "misconceptions": [
+       "Mixing up area and perimeter"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 242
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1a",
+   "field": {
+    "id": "q1a",
+    "label": "7 × 7",
+    "answer": {
+     "text": "49"
+    }
+   }
+  },
+  {
+   "itemLabel": "1b",
+   "field": {
+    "id": "q1b",
+    "label": "8 × 9",
+    "answer": {
+     "text": "72"
+    }
+   }
+  },
+  {
+   "itemLabel": "1c",
+   "field": {
+    "id": "q1c",
+    "label": "3 × 6",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "1d",
+   "field": {
+    "id": "q1d",
+    "label": "6 × 2",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1e",
+   "field": {
+    "id": "q1e",
+    "label": "7 × 9",
+    "answer": {
+     "text": "63"
+    }
+   }
+  },
+  {
+   "itemLabel": "1f",
+   "field": {
+    "id": "q1f",
+    "label": "5 × 5",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1g",
+   "field": {
+    "id": "q1g",
+    "label": "2 × 4",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1h",
+   "field": {
+    "id": "q1h",
+    "label": "2 × 7",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "1i",
+   "field": {
+    "id": "q1i",
+    "label": "2 × 8",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "1j",
+   "field": {
+    "id": "q1j",
+    "label": "4 × 8",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "1k",
+   "field": {
+    "id": "q1k",
+    "label": "6 × 9",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "1l",
+   "field": {
+    "id": "q1l",
+    "label": "5 × 3",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2a",
+   "field": {
+    "id": "q2a",
+    "label": "4 ÷ 2",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2b",
+   "field": {
+    "id": "q2b",
+    "label": "24 ÷ 3",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2c",
+   "field": {
+    "id": "q2c",
+    "label": "54 ÷ 6",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2d",
+   "field": {
+    "id": "q2d",
+    "label": "27 ÷ 9",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3a",
+   "field": {
+    "id": "q3a",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "1/6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3b",
+   "field": {
+    "id": "q3b",
+    "label": "the fraction at the arrow",
+    "answer": {
+     "text": "2/4",
+     "also": [
+      "1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4a",
+   "field": {
+    "id": "q4a",
+    "label": "720 rounded to the nearest hundred",
+    "answer": {
+     "text": "700",
+     "also": [
+      "700"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4b",
+   "field": {
+    "id": "q4b",
+    "label": "880 rounded to the nearest hundred",
+    "answer": {
+     "text": "900",
+     "also": [
+      "900"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5a",
+   "field": {
+    "id": "q5a",
+    "label": "533 − 253",
+    "answer": {
+     "text": "280"
+    }
+   }
+  },
+  {
+   "itemLabel": "5b",
+   "field": {
+    "id": "q5b",
+    "label": "512 − 305",
+    "answer": {
+     "text": "207"
+    }
+   }
+  },
+  {
+   "itemLabel": "5c",
+   "field": {
+    "id": "q5c",
+    "label": "348 − 273",
+    "answer": {
+     "text": "75"
+    }
+   }
+  },
+  {
+   "itemLabel": "6a",
+   "field": {
+    "id": "q6a",
+    "label": "area in square cm",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "6b",
+   "field": {
+    "id": "q6b",
+    "label": "area in square cm",
+    "answer": {
+     "text": "72"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Check the grade 3 skills grade 4 builds on.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Short sets from each grade 3 domain show which prerequisite needs work before a grade 4 unit starts."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

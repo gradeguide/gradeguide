@@ -94,7 +94,7 @@ function bold(s: string): { b: boolean; s: string }[] {
     .page { box-sizing: border-box; background: white; color: #222; position: relative; overflow: hidden; display: flex; flex-direction: column; margin: 0 auto 24px; box-shadow: 0 1px 6px rgba(0,0,0,.18); font-family: 'Helvetica Neue', Arial, sans-serif; }
     header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #222; box-sizing: border-box; }
     h1 { font-size: 26px; margin: 4px 0 0; }
-    .kicker { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: #555; }
+    .kicker { font-size: 12px; letter-spacing: .04em; color: #555; }
     .name { font-size: 14px; line-height: 30px; text-align: right; }
     .rule { display: inline-block; width: 150px; border-bottom: 1.2px solid #222; }
     .body { overflow: hidden; padding-top: 6px; box-sizing: border-box; }
@@ -127,7 +127,7 @@ export class SheetComponent {
   protected readonly L = L;
   protected readonly kicker = computed(() => {
     const s = this.sheet();
-    return [s.headerLabels.join(', '), s.minutes ? `about ${s.minutes} minutes` : '', this.filled() ? 'answers' : ''].filter(Boolean).join(' · ');
+    return [s.headerLabels.join(', '), s.minutes ? `About ${s.minutes} minutes` : '', this.filled() ? 'Answers' : ''].filter(Boolean).join(' · ');
   });
   protected boldRuns = bold;
 }

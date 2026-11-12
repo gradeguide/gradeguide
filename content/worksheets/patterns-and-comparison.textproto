@@ -1,0 +1,94 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Multiplicative comparison, number patterns and unknown numbers.
+
+fragments {
+  id: "frag-times-as-many-statements"
+  instruction: "Fill in the blanks. Each sentence and the equation under it say the same thing."
+  stage: STAGE_INTRODUCE
+  example {
+    item { times_as_many_statement { times { min: 3 max: 3 } smaller { min: 5 max: 5 } } }
+    seed: 1
+    text: "\"15 is 3 times as many as 5\" is the same as **15 = 3 × 5**."
+  }
+  items { kind { times_as_many_statement { times { min: 2 max: 9 } smaller { min: 2 max: 9 } } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Read a multiplication equation as a comparison: 35 = 5 × 7 means 35 is 5 times as many as 7."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions."
+    misconceptions: "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+  }
+}
+
+fragments {
+  id: "frag-continue-the-pattern"
+  instruction: "Follow the rule. Write the next three numbers."
+  stage: STAGE_PRACTICE
+  items { kind { number_pattern { start { min: 1 max: 30 } step { min: 2 max: 12 } } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Generate a number pattern from a rule."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-find-the-rule"
+  instruction: "What is the rule? Write the number added each time."
+  stage: STAGE_PRACTICE
+  items { kind { number_pattern { start { min: 2 max: 40 } step { min: 3 max: 15 } find_rule: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Find the rule of an adding pattern from its terms."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Finding the rule reverses the previous section, so the child checks a rule against several pairs of terms rather than one."
+  }
+}
+
+fragments {
+  id: "frag-missing-factor"
+  instruction: "Find the missing number."
+  stage: STAGE_PRACTICE
+  items { kind { missing_factor { factors { min: 2 max: 9 } } } count: 12 min_count: 6 }
+  design {
+    purpose: "Find an unknown factor in a multiplication or division equation."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+  }
+}
+
+fragments {
+  id: "frag-column-add-3-digit"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 3 regroup: true } } count: 6 min_count: 3 }
+  design {
+    purpose: "Add three-digit numbers in columns, regrouping."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-column-subtract-3-digit"
+  instruction: "Subtract."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 3 subtract: true regroup: true } } count: 6 min_count: 3 }
+  design {
+    purpose: "Subtract three-digit numbers in columns, regrouping."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Subtracting the smaller digit from the larger in each column, whichever is on top."
+  }
+}
+
+fragments {
+  id: "frag-round-to-tens-and-hundreds"
+  instruction: "Round. The number line shows which multiple is nearer."
+  stage: STAGE_GUIDED
+  items { kind { round_on_number_line { digits: 3 places: [10, 100] } } count: 4 min_count: 2 }
+  design {
+    purpose: "Round three-digit numbers to the nearest 10 or 100."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}

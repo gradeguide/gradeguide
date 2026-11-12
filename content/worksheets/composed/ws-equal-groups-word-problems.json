@@ -1,0 +1,630 @@
+{
+ "worksheetId": "ws-equal-groups-word-problems",
+ "title": "Equal groups word problems",
+ "headerLabels": [
+  "3.OA.A.1",
+  "3.OA.B.6",
+  "3.OA.A.3"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "example": {
+      "nodes": [
+       {
+        "dotArray": {
+         "rows": 3,
+         "cols": 5
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "×"
+          },
+          {
+           "blank": {
+            "label": "columns",
+            "answer": {
+             "text": "5"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "dots",
+            "answer": {
+             "text": "15"
+            }
+           }
+          },
+          {
+           "text": "÷"
+          },
+          {
+           "blank": {
+            "label": "rows",
+            "answer": {
+             "text": "3"
+            }
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "in each row",
+            "answer": {
+             "text": "5"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 3,
+          "cols": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "columns",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "dots",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1-4",
+             "label": "dots",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q1-5",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-6",
+             "label": "in each row",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 4 = 12; 12 ÷ 3 = 4"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 5,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "columns",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "dots",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2-4",
+             "label": "dots",
+             "answer": {
+              "text": "15"
+             }
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q2-5",
+             "label": "rows",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-6",
+             "label": "in each row",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 3 = 15; 15 ÷ 5 = 3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-array-facts",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read one array as a multiplication and a division.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+     },
+     "estimatedHeight": 426
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "There are 6 tables in the art room. Each table has 4 chairs. How many chairs are there?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q3",
+           "label": "There are 6 tables in the art room. Each table has 4 chairs.",
+           "answer": {
+            "text": "24",
+            "also": [
+             "24 chairs"
+            ],
+            "work": "6 × 4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "24"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Maya puts 32 photos in an album. Each page holds 8 photos. How many pages does she fill?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "Maya puts 32 photos in an album. Each page holds 8 photos. H",
+           "answer": {
+            "text": "4",
+            "also": [
+             "4 pages"
+            ],
+            "work": "32 ÷ 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-equal-groups-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve equal-groups and array problems with multiplication and division within 100.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups.",
+      "misconceptions": [
+       "Multiplying whenever two numbers appear."
+      ]
+     },
+     "estimatedHeight": 306
+    }
+   ],
+   "estimatedHeight": 732
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A garden has 7 rows of carrots with the same number in each row. There are 42 carrots. How many carrots are in each row?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "A garden has 7 rows of carrots with the same number in each ",
+           "answer": {
+            "text": "6",
+            "also": [
+             "6 carrots"
+            ],
+            "work": "42 ÷ 7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A pack of juice has 3 boxes. Mr. Diaz buys 9 packs. How many juice boxes does he buy?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q6",
+           "label": "A pack of juice has 3 boxes. Mr. Diaz buys 9 packs. How many",
+           "answer": {
+            "text": "27",
+            "also": [
+             "27 juice boxes"
+            ],
+            "work": "9 × 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "27"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-equal-groups-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve equal-groups and array problems with multiplication and division within 100.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups.",
+      "misconceptions": [
+       "Multiplying whenever two numbers appear."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 326
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "columns",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "dots",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "dots",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "in each row",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "columns",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "dots",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "dots",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "rows",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "in each row",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "There are 6 tables in the art room. Each table has 4 chairs.",
+    "answer": {
+     "text": "24",
+     "also": [
+      "24 chairs"
+     ],
+     "work": "6 × 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "Maya puts 32 photos in an album. Each page holds 8 photos. H",
+    "answer": {
+     "text": "4",
+     "also": [
+      "4 pages"
+     ],
+     "work": "32 ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "A garden has 7 rows of carrots with the same number in each ",
+    "answer": {
+     "text": "6",
+     "also": [
+      "6 carrots"
+     ],
+     "work": "42 ÷ 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "A pack of juice has 3 boxes. Mr. Diaz buys 9 packs. How many",
+    "answer": {
+     "text": "27",
+     "also": [
+      "27 juice boxes"
+     ],
+     "work": "9 × 3"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve equal-groups problems by multiplying or dividing.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Arrays first, because an equal-groups story is an array with the rows named."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

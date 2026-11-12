@@ -1,0 +1,676 @@
+{
+ "worksheetId": "ws-partial-products",
+ "title": "Partial products",
+ "headerLabels": [
+  "3.NBT.A.3",
+  "4.NBT.B.5"
+ ],
+ "minutes": 15,
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply by tens and hundreds. Use the basic fact.",
+     "explainer": "3 × 40 is 3 × 4 tens. That is 12 tens, or 120.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "50"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "8 × 5 tens",
+             "answer": {
+              "text": "40"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "8 × 50",
+             "answer": {
+              "text": "400"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 40 tens = 400"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "400"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "hundreds"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "9 × 4 hundreds",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "hundreds"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "9 × 400",
+             "answer": {
+              "text": "3600"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 36 hundreds = 3600"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-multiply-tens",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Multiply a one-digit number by a multiple of 10 or 100 using a basic fact.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros.",
+      "misconceptions": [
+       "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+      ]
+     },
+     "estimatedHeight": 156
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply each place, then add the partial products.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "176",
+           "8"
+          ],
+          "answer": {
+           "id": "q3-4",
+           "label": "176 × 8",
+           "answer": {
+            "text": "1408"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q3",
+             "label": "8 × 6",
+             "answer": {
+              "text": "48"
+             }
+            },
+            "note": "8 × 6"
+           },
+           {
+            "field": {
+             "id": "q3-2",
+             "label": "8 × 70",
+             "answer": {
+              "text": "560"
+             }
+            },
+            "note": "8 × 70"
+           },
+           {
+            "field": {
+             "id": "q3-3",
+             "label": "8 × 100",
+             "answer": {
+              "text": "800"
+             }
+            },
+            "note": "8 × 100"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "48, 560, 800, 1408"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "574",
+           "3"
+          ],
+          "answer": {
+           "id": "q4-4",
+           "label": "574 × 3",
+           "answer": {
+            "text": "1722"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q4",
+             "label": "3 × 4",
+             "answer": {
+              "text": "12"
+             }
+            },
+            "note": "3 × 4"
+           },
+           {
+            "field": {
+             "id": "q4-2",
+             "label": "3 × 70",
+             "answer": {
+              "text": "210"
+             }
+            },
+            "note": "3 × 70"
+           },
+           {
+            "field": {
+             "id": "q4-3",
+             "label": "3 × 500",
+             "answer": {
+              "text": "1500"
+             }
+            },
+            "note": "3 × 500"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12, 210, 1500, 1722"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "928",
+           "4"
+          ],
+          "answer": {
+           "id": "q5-4",
+           "label": "928 × 4",
+           "answer": {
+            "text": "3712"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q5",
+             "label": "4 × 8",
+             "answer": {
+              "text": "32"
+             }
+            },
+            "note": "4 × 8"
+           },
+           {
+            "field": {
+             "id": "q5-2",
+             "label": "4 × 20",
+             "answer": {
+              "text": "80"
+             }
+            },
+            "note": "4 × 20"
+           },
+           {
+            "field": {
+             "id": "q5-3",
+             "label": "4 × 900",
+             "answer": {
+              "text": "3600"
+             }
+            },
+            "note": "4 × 900"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "32, 80, 3600, 3712"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-partial-products",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply a three-digit number by a one-digit number with partial products.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+     },
+     "estimatedHeight": 248
+    },
+    {
+     "label": "C",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "898",
+           "9"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "898 × 9",
+           "answer": {
+            "text": "8082"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "8082"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "698",
+           "5"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "698 × 5",
+           "answer": {
+            "text": "3490"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3490"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "725",
+           "3"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "725 × 3",
+           "answer": {
+            "text": "2175"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "2175"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "652",
+           "6"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "652 × 6",
+           "answer": {
+            "text": "3912"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "3912"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-column-multiply",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a three-digit number by a one-digit number in columns.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+     },
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 572
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "8 × 5 tens",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "8 × 50",
+    "answer": {
+     "text": "400"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "9 × 4 hundreds",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "9 × 400",
+    "answer": {
+     "text": "3600"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "8 × 6",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "8 × 70",
+    "answer": {
+     "text": "560"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "8 × 100",
+    "answer": {
+     "text": "800"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "176 × 8",
+    "answer": {
+     "text": "1408"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "3 × 4",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "3 × 70",
+    "answer": {
+     "text": "210"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "3 × 500",
+    "answer": {
+     "text": "1500"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-4",
+    "label": "574 × 3",
+    "answer": {
+     "text": "1722"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "4 × 8",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "4 × 20",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "4 × 900",
+    "answer": {
+     "text": "3600"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-4",
+    "label": "928 × 4",
+    "answer": {
+     "text": "3712"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "898 × 9",
+    "answer": {
+     "text": "8082"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "698 × 5",
+    "answer": {
+     "text": "3490"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "725 × 3",
+    "answer": {
+     "text": "2175"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "652 × 6",
+    "answer": {
+     "text": "3912"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply with partial products, then the standard algorithm.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Multiply each place, then add the partial products.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
