@@ -19,6 +19,7 @@ export const DATA_URL = 'math.json';
     <header class="top">
       <div class="brand">GradeGuide <span>K–8 math, month by month</span></div>
       <nav class="views" aria-label="Views">
+        <a class="about" href="about.html">About</a>
         @for (v of views; track v.id) {
           <button type="button" [class.on]="state().view === v.id" [attr.aria-current]="state().view === v.id ? 'page' : null" (click)="setView(v.id)">
             {{ v.label }}
@@ -92,15 +93,7 @@ export const DATA_URL = 'math.json';
           Draft explanations, not yet reviewed by teachers. Placement by month follows the Illustrative Mathematics 360
           pace spread evenly over a September–June year; your school's calendar may differ.
         </p>
-        <details>
-          <summary>Sources and credits</summary>
-          <p>Skill graph {{ c.data.version }} from the Learning Commons Knowledge Graph, CC BY 4.0.</p>
-          <ul>
-            @for (cr of c.credits; track cr.author + cr.statement) {
-              <li>{{ cr.statement }} <a [href]="cr.license">Licence</a></li>
-            }
-          </ul>
-        </details>
+        <p><a href="about.html">About this map and its sources</a> · Skill graph {{ c.data.version }}</p>
       </footer>
     } @else {
       <p class="loading">Loading the curriculum…</p>
@@ -111,7 +104,8 @@ export const DATA_URL = 'math.json';
     .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 16px; border-bottom: 1px solid var(--border); }
     .brand { font-weight: 700; font-size: 18px; }
     .brand span { font-weight: 400; font-size: 13px; color: var(--muted); margin-left: 8px; }
-    .views, .grades { display: flex; gap: 4px; flex-wrap: wrap; }
+    .views, .grades { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
+    .about { font-size: 14px; color: var(--muted); margin-right: 8px; }
     .views button, .grades button { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); cursor: pointer; }
     .grades button { min-width: 36px; padding: 6px 8px; }
     .views button.on, .grades button.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }

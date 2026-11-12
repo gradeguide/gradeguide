@@ -1,6 +1,17 @@
-import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 
 import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculum';
+
+/** Remembers whether the reader collapsed the sources box, so it stays closed on every skill. */
+const SOURCES_KEY = 'gradeguide.sources';
+
+function readSourcesOpen(): boolean {
+  try {
+    return globalThis.localStorage?.getItem(SOURCES_KEY) !== 'closed';
+  } catch {
+    return true;
+  }
+}
 
 /** SkillPanel explains one skill to a parent and links to the skills around it. */
 @Component({
@@ -26,7 +37,7 @@ import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculu
           <dd>{{ s.tryAtHome }}</dd>
         </dl>
         @if (s.draft) {
-          <p class="note">Draft text, not yet checked by a teacher.</p>
+          <p class="note">Draft written with AI help. A teacher hasn't checked it yet.</p>
         }
 
         <section class="links">
@@ -77,6 +88,23 @@ import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculu
           <summary>Official wording ({{ s.code }})</summary>
           <p>{{ statement() }}</p>
         </details>
+
+        <details class="sources" [open]="sourcesOpen()" (toggle)="rememberSources($any($event.target).open)">
+          <summary>Where this comes from</summary>
+          <ul>
+            <li><b>The skill</b> is Common Core math standard {{ s.code }}.</li>
+            <li><b>Needed first and leads to</b> come from the Common Core learning progressions by Student Achievement Partners.</li>
+            @if (s.steps?.length) {
+              <li><b>Smaller steps</b> come from Achievement Network.</li>
+            }
+            @if (s.month) {
+              <li><b>When it's taught</b> follows Illustrative Mathematics 360, spread evenly from September to June. Your school may differ.</li>
+            }
+            <li><b>The explanation, example and home idea</b> are GradeGuide's own drafts.</li>
+          </ul>
+          <p class="via">Collected through the Learning Commons Knowledge Graph (CC BY 4.0).</p>
+          <a href="about.html">About this map and its sources →</a>
+        </details>
       </article>
     }
   `,
@@ -107,6 +135,13 @@ import { Curriculum, MONTHS, SkillData, plainStatement } from '../data/curriculu
     .code { color: var(--muted); font-size: 12px; }
     details { margin-top: 18px; font-size: 13px; color: var(--muted); }
     summary { cursor: pointer; }
+    .sources { background: var(--hover); border-radius: 8px; padding: 10px 12px; color: var(--text); }
+    .sources summary { font-weight: 600; }
+    .sources ul { margin: 8px 0 0; font-size: 13px; }
+    .sources li { margin-bottom: 4px; }
+    .sources b { font-weight: 600; }
+    .sources .via { color: var(--muted); margin: 6px 0; }
+    .sources a { color: var(--accent); }
   `,
 })
 export class SkillPanelComponent {
@@ -115,6 +150,19 @@ export class SkillPanelComponent {
 
   readonly pick = output<string>();
   readonly close = output<void>();
+
+  /** Open until the reader closes it once. */
+  protected readonly sourcesOpen = signal(readSourcesOpen());
+
+  protected rememberSources(open: boolean) {
+    if (open === this.sourcesOpen()) return;
+    this.sourcesOpen.set(open);
+    try {
+      globalThis.localStorage?.setItem(SOURCES_KEY, open ? 'open' : 'closed');
+    } catch {
+      // Private browsing can refuse storage; the box then reopens next visit.
+    }
+  }
 
   protected readonly skill = computed(() => this.curriculum().skill(this.skillId()));
   protected readonly before = computed(() => (this.skill() ? this.curriculum().neededFirst(this.skillId()) : []));

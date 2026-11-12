@@ -56,6 +56,7 @@ esbuild(
 copy_to_directory(
     name = "site",
     srcs = [
+        "src/about.html",
         "src/index.html",
         "src/styles.css",
         ":bundle",
