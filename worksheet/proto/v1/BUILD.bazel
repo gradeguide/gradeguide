@@ -1,0 +1,69 @@
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+load("@protobuf//bazel:proto_library.bzl", "proto_library")
+load("@rules_go//go:def.bzl", "go_library")
+load("@rules_go//proto:def.bzl", "go_proto_library")
+load("//worksheet/bazel:tsconfig.bzl", "TSCONFIG")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files([
+    "nodes.proto",
+    "worksheet.proto",
+])
+
+proto_library(
+    name = "v1_proto",
+    srcs = [
+        "nodes.proto",
+        "worksheet.proto",
+    ],
+)
+
+go_proto_library(
+    name = "v1_go_proto",
+    importpath = "github.com/gradeguide/gradeguide/worksheet/proto/v1",
+    proto = ":v1_proto",
+)
+
+go_library(
+    name = "v1",
+    embed = [":v1_go_proto"],
+    importpath = "github.com/gradeguide/gradeguide/worksheet/proto/v1",
+)
+
+# protoc-gen-es writes each file at its import path under BINDIR.
+genrule(
+    name = "v1_es",
+    srcs = [
+        "nodes.proto",
+        "worksheet.proto",
+    ],
+    outs = [
+        "nodes_pb.ts",
+        "worksheet_pb.ts",
+    ],
+    cmd = """
+      export BAZEL_BINDIR=.
+      $(location //worksheet/bazel:protoc) \
+          --plugin=protoc-gen-es=$(location //worksheet/bazel:protoc_gen_es) \
+          --es_out=$(BINDIR) \
+          --es_opt=target=ts,import_extension=js \
+          -I. \
+          $(execpath nodes.proto) $(execpath worksheet.proto)
+    """,
+    tools = [
+        "//worksheet/bazel:protoc",
+        "//worksheet/bazel:protoc_gen_es",
+    ],
+)
+
+ts_project(
+    name = "v1_ts",
+    srcs = [
+        "nodes_pb.ts",
+        "worksheet_pb.ts",
+    ],
+    declaration = True,
+    tsconfig = TSCONFIG,
+    deps = ["//:node_modules/@bufbuild/protobuf"],
+)

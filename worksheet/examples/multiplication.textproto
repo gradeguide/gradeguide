@@ -1,0 +1,143 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Multiplication strategies, and word problems that use them. The word
+# problems are authored: their numbers and answers are written here, and the
+# composer checks each answer against its working.
+
+fragments {
+  id: "frag-multiply-tens"
+  instruction: "Multiply by tens and hundreds. Use the basic fact."
+  stage: STAGE_INTRODUCE
+  explainer: "3 × 40 is 3 × 4 tens. That is 12 tens, or 120."
+  items { kind { multiply_by_tens { factors { min: 2 max: 9 } places: [10, 100] } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply a one-digit number by a multiple of 10 or 100 using a basic fact."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros."
+    misconceptions: "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+  }
+}
+
+fragments {
+  id: "frag-break-apart"
+  instruction: "Break the second number apart. Multiply each part, then add."
+  stage: STAGE_GUIDED
+  items { kind { break_apart { factors { min: 6 max: 9 } } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Use the distributive property to find a hard fact from two easier ones."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Splitting at 5 uses the fives facts most children already know, and is the same move the area model and partial products make with place value."
+  }
+}
+
+fragments {
+  id: "frag-partial-products"
+  instruction: "Multiply each place, then add the partial products."
+  stage: STAGE_GUIDED
+  items { kind { partial_products { top_digits: 3 } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Multiply a three-digit number by a one-digit number with partial products."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+  }
+}
+
+fragments {
+  id: "frag-multiply-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Choose and use multiplication to solve problems from a graph, a table and a comparison."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "The graph shows how many packs of stickers each class bought. Each pack has 8 stickers." }
+            stem {
+              bar_graph {
+                title: "Sticker packs bought"
+                value_axis: "Packs"
+                step: 4
+                bars { label: "Room 4" value: 16 }
+                bars { label: "Room 5" value: 23 }
+                bars { label: "Room 6" value: 12 }
+              }
+            }
+            parts {
+              prompt { text: "How many stickers did Room 5 get?" }
+              response { work_space { field { label: "stickers Room 5 got" answer { text: "184" work: "23 × 8" also: "184 stickers" } } } }
+            }
+            parts {
+              prompt { text: "How many more stickers did Room 5 get than Room 6?" }
+              response { work_space { field { label: "how many more stickers" answer { text: "88" work: "184 − 12 × 8" also: "88 stickers" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "Mr. Lee buys 4 adult tickets and 6 child tickets for the school fair." }
+            stem {
+              data_table {
+                title: "School fair tickets"
+                header: ["Ticket", "Price"]
+                rows { cells { text: "Adult" } cells { text: "$12" } }
+                rows { cells { text: "Child" } cells { text: "$7" } }
+              }
+            }
+            parts {
+              prompt { text: "How much do the adult tickets cost?" }
+              response { work_space { field { label: "cost of adult tickets" answer { text: "48" work: "4 × 12" also: "$48" also: "48 dollars" } } } }
+            }
+            parts {
+              prompt { text: "How much does Mr. Lee pay in all?" }
+              response { work_space { field { label: "total cost" answer { text: "90" work: "48 + 6 × 7" also: "$90" also: "90 dollars" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "A sunflower is 14 inches tall. A young tree is 6 times as tall as the sunflower. How tall is the tree?" }
+        nodes {
+          tape_diagram {
+            tapes { name: "Flower" units: 1 unit_text: "14" }
+            tapes { name: "Tree" units: 6 unit_text: "14" total: "?" }
+          }
+        }
+        nodes { work_space { field { label: "height of the tree in inches" answer { text: "84" work: "14 × 6" also: "84 inches" } } } }
+      }
+    }
+  }
+}
+
+worksheets {
+  id: "ws-multiplication-strategies"
+  title: "Many ways to multiply"
+  minutes: 40
+  seed: 140
+  max_pages: 4
+  placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-array-facts" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-multiply-tens" }
+  placements { fragment_id: "frag-break-apart" }
+  placements { fragment_id: "frag-area-model-2-by-1" count: 2 omit_example: true }
+  placements { fragment_id: "frag-partial-products" }
+  placements { fragment_id: "frag-column-multiply" count: 4 }
+  placements { fragment_id: "frag-multiply-word-problems" }
+  design {
+    purpose: "Practise each multiplication strategy in turn, then use them in word problems."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Facts and arrays come first because every later strategy is built from basic facts. Tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so the child chooses the strategy."
+  }
+}

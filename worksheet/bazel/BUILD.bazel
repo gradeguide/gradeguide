@@ -1,0 +1,25 @@
+load("@aspect_rules_js//js:defs.bzl", "js_library")
+load("@npm//:@bufbuild/protoc-gen-es/package_json.bzl", protoc_gen_es = "bin")
+load(":protoc.bzl", "resolved_protoc")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files([
+    "angular.bzl",
+    "defs.bzl",
+])
+
+# The protoc that proto toolchain resolution picked, for genrules.
+resolved_protoc(name = "protoc")
+
+protoc_gen_es.protoc_gen_es_binary(name = "protoc_gen_es")
+
+js_library(
+    name = "angular_spec_runner",
+    srcs = ["angular_spec_runner.mjs"],
+)
+
+js_library(
+    name = "esm_loader",
+    srcs = ["esm_loader.mjs"],
+)

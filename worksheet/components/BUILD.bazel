@@ -1,0 +1,36 @@
+load("//worksheet/bazel:angular.bzl", "angular_test", "angular_ts_project")
+load("//worksheet/bazel:tsconfig.bzl", "TSCONFIG", "tsconfig_with")
+
+package(default_visibility = ["//visibility:public"])
+
+# The Angular components that draw a ComposedSheet. Each takes a protobuf
+# message as a signal input and draws it; none has state of its own.
+angular_ts_project(
+    name = "components",
+    srcs = glob(
+        ["*.ts"],
+        exclude = ["*.spec.ts"],
+    ),
+    declaration = True,
+    source_map = True,
+    tsconfig = TSCONFIG,
+    deps = [
+        "//:node_modules/@angular/core",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/engine",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+angular_test(
+    name = "components_test",
+    srcs = glob(["*.spec.ts"]),
+    tsconfig = tsconfig_with(["jasmine", "node"]),
+    deps = [
+        ":components",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/engine",
+        "//worksheet/examples:examples_ts",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)

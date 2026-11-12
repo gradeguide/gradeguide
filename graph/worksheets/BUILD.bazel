@@ -1,0 +1,24 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "worksheets",
+    srcs = ["worksheets.go"],
+    importpath = "github.com/gradeguide/gradeguide/graph/worksheets",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//proto/graph/v1",
+        "//worksheet/proto/v1",
+        "@org_golang_google_protobuf//encoding/prototext",
+        "@org_golang_google_protobuf//proto",
+    ],
+)
+
+go_test(
+    name = "worksheets_test",
+    srcs = ["worksheets_test.go"],
+    embed = [":worksheets"],
+    deps = [
+        "//proto/graph/v1",
+        "//worksheet/proto/v1",
+    ],
+)

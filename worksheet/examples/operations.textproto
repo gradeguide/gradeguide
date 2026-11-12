@@ -1,0 +1,390 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Whole-number operations, grades 3-4, and geometry and measurement, grade 4.
+
+fragments {
+  id: "frag-array-facts"
+  instruction: "Write a × fact and a ÷ fact for each array. Rows first."
+  stage: STAGE_INTRODUCE
+  example {
+    item { array_facts { rows { min: 3 max: 3 } cols { min: 5 max: 5 } } }
+    seed: 1
+    text: "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+  }
+  items { kind { array_facts { rows { min: 2 max: 5 } cols { min: 3 max: 7 } } } count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Read one array as a multiplication and a division."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+  }
+}
+
+fragments {
+  id: "frag-multiplication-facts"
+  instruction: "Multiply. Circle any you had to stop and think about."
+  stage: STAGE_REVIEW
+  items { kind { multiplication_fact { factors { min: 2 max: 9 } } } count: 20 min_count: 10 }
+  max_columns: 5
+  design {
+    purpose: "Recall multiplication facts."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list."
+    references: "Roediger and Karpicke (2006), Psychological Science 17"
+  }
+}
+
+fragments {
+  id: "frag-division-facts"
+  instruction: "Divide."
+  stage: STAGE_PRACTICE
+  items { kind { multiplication_fact { factors { min: 2 max: 9 } division: true } } count: 10 min_count: 5 }
+  max_columns: 5
+  design {
+    purpose: "Recall division facts from multiplication."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-area-model-2-by-1"
+  instruction: "Fill in the area model, then the product."
+  stage: STAGE_GUIDED
+  example {
+    item { area_model_multiply { a_digits: 2 b_digits: 1 } }
+    seed: 9
+    text: "Split the big number by place value. Multiply each part, then **add the parts**."
+  }
+  items { kind { area_model_multiply { a_digits: 2 b_digits: 1 } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply a two-digit number by a one-digit number with partial products."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly."
+    misconceptions: "Multiplying only the ones, or forgetting the tens are tens"
+  }
+}
+
+fragments {
+  id: "frag-area-model-2-by-2"
+  instruction: "Fill in the area model, then the product."
+  stage: STAGE_STRETCH
+  items { kind { area_model_multiply { a_digits: 2 b_digits: 2 } } count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply two two-digit numbers with four partial products."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-column-add"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 4 regroup: true } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Add four-digit numbers with the standard algorithm."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every item regroups at least once, so the carry boxes are used."
+  }
+}
+
+fragments {
+  id: "frag-column-subtract"
+  instruction: "Subtract."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 4 subtract: true regroup: true } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Subtract four-digit numbers with the standard algorithm."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Subtracting the smaller digit from the larger in every column"
+  }
+}
+
+fragments {
+  id: "frag-column-multiply"
+  instruction: "Multiply."
+  stage: STAGE_PRACTICE
+  items { kind { column_multiply { top_digits: 3 } } count: 4 min_count: 2 }
+  max_columns: 4
+  design {
+    purpose: "Multiply a three-digit number by a one-digit number in columns."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+  }
+}
+
+fragments {
+  id: "frag-times-as-many"
+  instruction: "Use the tape diagram. Write the answer under the brace."
+  stage: STAGE_GUIDED
+  example {
+    item { times_as_many { times { min: 3 max: 3 } smaller { min: 4 max: 4 } } }
+    seed: 2
+    text: "**3 times as many** means 3 tapes the same length as the smaller one: 4 + 4 + 4 = 3 × 4 = 12."
+  }
+  items { kind { times_as_many { times { min: 2 max: 5 } smaller { min: 3 max: 9 } } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Solve multiplicative comparison word problems."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Tape diagrams separate 'times as many' from 'more than', which children often solve by adding."
+    misconceptions: "Reading '3 times as many' as '3 more'"
+  }
+}
+
+fragments {
+  id: "frag-classify-angles"
+  instruction: "Tick acute, right or obtuse."
+  stage: STAGE_INTRODUCE
+  explainer: "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line."
+  items { kind { classify_angle {} } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Classify angles against a right angle."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal."
+    misconceptions: "Longer rays make a bigger angle"
+  }
+}
+
+fragments {
+  id: "frag-missing-angle"
+  instruction: "Find the missing angle."
+  stage: STAGE_PRACTICE
+  items { kind { missing_angle { wholes: [90, 180] } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Use angle addition to find an unknown part."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "4.MD.C.7 treats angle measure as additive. Right and straight angles are the wholes children know."
+  }
+}
+
+fragments {
+  id: "frag-rectangle-perimeter"
+  instruction: "Find the perimeter."
+  stage: STAGE_REVIEW
+  example {
+    item { rectangle_measure { side { min: 3 max: 5 } ask: ASK_PERIMETER } }
+    seed: 4
+    text: "Perimeter is the distance **all the way around**: add all four sides."
+  }
+  items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_PERIMETER } } count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Find a rectangle's perimeter from two sides."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_WORKED_EXAMPLE]
+  }
+}
+
+fragments {
+  id: "frag-rectangle-area"
+  instruction: "Find the area."
+  stage: STAGE_PRACTICE
+  items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_AREA } } count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Find a rectangle's area as length times width."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Placed after perimeter so the child has to tell the two apart."
+    misconceptions: "Mixing up area and perimeter"
+  }
+}
+
+fragments {
+  id: "frag-rectangle-missing-side"
+  instruction: "The area is given. Find the missing side."
+  stage: STAGE_STRETCH
+  items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_MISSING_SIDE } } count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Use area to find an unknown side."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Running the formula backwards is the 4.MD.A.3 example task, and it is division as an unknown factor again."
+  }
+}
+
+fragments {
+  id: "frag-place-value-chart"
+  instruction: "Read the place-value chart."
+  stage: STAGE_INTRODUCE
+  example {
+    item { place_value_read { digits: 4 } }
+    seed: 3
+    text: "Each place is worth **ten times** the place to its right. The digit tells how many of that place."
+  }
+  items { kind { place_value_read { digits: 6 } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Read multi-digit numbers and the value of each digit."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names."
+    misconceptions: "A digit is worth the same wherever it is"
+  }
+}
+
+fragments {
+  id: "frag-base-ten-blocks"
+  instruction: "What number do the blocks show?"
+  stage: STAGE_REVIEW
+  items { kind { base_ten_read { thousands: true } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Read a number from base-ten blocks."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Blocks show ten tens making a hundred as a size, the 2.NBT.A.1 idea that grade 4 place value extends."
+    misconceptions: "Writing 3 hundreds, 0 tens and 4 ones as 34"
+  }
+}
+
+fragments {
+  id: "frag-round-on-number-line"
+  instruction: "Round. The number line shows which multiple is nearer."
+  stage: STAGE_GUIDED
+  items { kind { round_on_number_line { digits: 4 places: [10, 100, 1000] } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Round to any place by seeing which multiple is nearer."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Rounding as nearness on a line explains the rule instead of replacing it. Halfway rounds up, and the line shows why that case needs a rule."
+    misconceptions: "Rounding by looking only at the next digit, without knowing what it means"
+  }
+}
+
+fragments {
+  id: "frag-long-division"
+  instruction: "Divide. Write any remainder after R."
+  stage: STAGE_PRACTICE
+  items { kind { long_division { dividend_digits: 3 remainders: true } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Divide a three-digit number by a one-digit number, with remainders."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+  }
+}
+
+fragments {
+  id: "frag-read-clock"
+  instruction: "Write the time."
+  stage: STAGE_REVIEW
+  items { kind { clock_time { mode: MODE_READ } } count: 4 min_count: 2 }
+  max_columns: 4
+  design {
+    purpose: "Read an analogue clock to the minute."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Elapsed-time problems in 4.MD.A.2 assume the child can read the start time, which 3.MD.A.1 taught."
+  }
+}
+
+fragments {
+  id: "frag-elapsed-time"
+  instruction: "Find the end time."
+  stage: STAGE_PRACTICE
+  items { kind { clock_time { mode: MODE_ELAPSED } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Add a duration to a time."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Treating 60 minutes like 100 when crossing the hour"
+  }
+}
+
+fragments {
+  id: "frag-measure-with-ruler"
+  instruction: "How long is the grey bar?"
+  stage: STAGE_GUIDED
+  items { kind { measure_with_ruler { parts_per_inch: [2, 4] } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Measure to the nearest half or quarter inch."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "A ruler is a number line. Reading one to a quarter inch produces the data line plots in 4.MD.B.4 use."
+    misconceptions: "Starting to count from 1 instead of 0"
+  }
+}
+
+fragments {
+  id: "frag-line-plot"
+  instruction: "Use the line plot."
+  stage: STAGE_PRACTICE
+  items { kind { line_plot_questions { parts_per_unit: 4 } } count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Read a line plot of fractional measurements and subtract fractions from it."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "4.MD.B.4 pairs line plots with fraction addition and subtraction; the second question needs both."
+  }
+}
+
+fragments {
+  id: "frag-read-protractor"
+  instruction: "Read the protractor."
+  stage: STAGE_GUIDED
+  explainer: "Start at the 0 where the bottom ray lies, and count up to the other ray."
+  items { kind { read_protractor {} } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Measure an angle with a protractor."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "One scale, with the first ray always on 0, isolates reading the scale before the two-scale protractor of a real classroom."
+    misconceptions: "Reading the wrong scale, giving 180 minus the angle"
+  }
+}
+
+fragments {
+  id: "frag-name-figures"
+  instruction: "Tick the name of each figure."
+  stage: STAGE_INTRODUCE
+  explainer: "A line goes on forever both ways. A ray starts at a point and goes on one way. A line segment has two endpoints."
+  items { kind { name_line_figure {} } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Tell lines, rays and line segments apart."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Figures are drawn at different slants so the child goes by arrows and endpoints, not by how the figure sits."
+  }
+}
+
+fragments {
+  id: "frag-name-line-pairs"
+  instruction: "Are the lines parallel, perpendicular or just intersecting?"
+  stage: STAGE_PRACTICE
+  items { kind { name_line_figure { pairs: true } } count: 6 min_count: 3 }
+  max_columns: 3
+  design {
+    purpose: "Tell parallel, perpendicular and intersecting lines apart."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Only horizontal and vertical lines can be perpendicular"
+  }
+}
+
+fragments {
+  id: "frag-factor-pairs"
+  instruction: "List every factor pair. Then tick prime or composite."
+  stage: STAGE_PRACTICE
+  items { kind { factor_pairs { number { min: 12 max: 60 } } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Find all factor pairs of a number up to 100 and decide whether it is prime."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Listing pairs in order, from 1 up, gives a check for when the list is complete."
+  }
+}
+
+fragments {
+  id: "frag-shade-multiples"
+  instruction: "Shade the multiples."
+  stage: STAGE_INTRODUCE
+  items { kind { shade_multiples { of: [3, 4, 6, 7] } } count: 2 }
+  max_columns: 2
+  design {
+    purpose: "See multiples as a pattern on a hundred chart."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+  }
+}

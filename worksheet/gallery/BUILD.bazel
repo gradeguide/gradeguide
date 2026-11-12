@@ -1,0 +1,40 @@
+load("@aspect_rules_esbuild//esbuild:defs.bzl", "esbuild")
+load("//worksheet/bazel:angular.bzl", "angular_ts_project")
+load("//worksheet/bazel:tsconfig.bzl", "TSCONFIG")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files(["index.html"])
+
+# The gallery shows every worksheet in a library: its pages, the pages
+# filled in, the answer key and the design notes. It loads library.binpb
+# from beside its page, so one bundle serves any library; see
+# worksheet_library in //worksheet/bazel:defs.bzl.
+angular_ts_project(
+    name = "gallery_ts",
+    srcs = [
+        "gallery.component.ts",
+        "main.ts",
+    ],
+    declaration = True,
+    source_map = True,
+    tsconfig = TSCONFIG,
+    deps = [
+        "//:node_modules/@angular/core",
+        "//:node_modules/@angular/platform-browser",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/components",
+        "//worksheet/engine",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+esbuild(
+    name = "gallery",
+    entry_point = "main.js",
+    format = "esm",
+    output = "gallery.js",
+    platform = "browser",
+    sourcemap = "inline",
+    deps = [":gallery_ts"],
+)

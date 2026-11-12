@@ -1,0 +1,63 @@
+load("@aspect_rules_js//js:defs.bzl", "js_binary")
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+load("//worksheet/bazel:angular.bzl", "angular_test")
+load("//worksheet/bazel:tsconfig.bzl", "TSCONFIG", "tsconfig_with")
+
+package(default_visibility = ["//visibility:public"])
+
+# The engine: item generators, the composer, the answer checks, and the
+# geometry the components draw. No Angular, so it runs in Node as well.
+ts_project(
+    name = "engine",
+    srcs = glob(
+        ["*.ts"],
+        exclude = [
+            "*.spec.ts",
+            "cli.ts",
+        ],
+    ),
+    declaration = True,
+    source_map = True,
+    tsconfig = TSCONFIG,
+    deps = [
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+ts_project(
+    name = "cli_ts",
+    srcs = ["cli.ts"],
+    declaration = True,
+    tsconfig = tsconfig_with(["node"]),
+    deps = [
+        ":engine",
+        "//:node_modules/@bufbuild/protobuf",
+        "//:node_modules/@types/node",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
+
+# compose-library <library.binpb> <out dir>: writes every worksheet composed,
+# as JSON, and fails on any problem in the library.
+js_binary(
+    name = "compose_library",
+    data = [
+        ":cli_ts",
+        "//:node_modules/@bufbuild/protobuf",
+    ],
+    entry_point = "cli.js",
+    node_options = ["--experimental-default-type=module"],
+)
+
+angular_test(
+    name = "engine_test",
+    srcs = ["engine.spec.ts"],
+    tsconfig = tsconfig_with(["jasmine", "node"]),
+    deps = [
+        ":engine",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/examples:examples_ts",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)
