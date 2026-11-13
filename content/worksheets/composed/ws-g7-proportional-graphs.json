@@ -1,0 +1,209 @@
+{
+ "worksheetId": "ws-g7-proportional-graphs",
+ "title": "Graphs of proportional relationships",
+ "headerLabels": [
+  "7.RP.A.2.d",
+  "7.RP.A.2.b"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the graph.",
+     "explainer": "A proportional graph is a straight line through (0, 0). The point where x is 1 shows the unit rate.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 6,
+          "yMax": 10,
+          "yScale": 5,
+          "labelEvery": 1,
+          "xLabel": "Minutes",
+          "yLabel": "Pages",
+          "points": [
+           {
+            "x": 1,
+            "y": 2,
+            "label": "A"
+           },
+           {
+            "x": 2,
+            "y": 4,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x2": 1,
+            "y2": 2,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point A is (1, "
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "y at x = 1",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pages per minute:"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "the unit rate",
+             "answer": {
+              "text": "10",
+              "also": [
+               "10 pages",
+               "10pages"
+              ]
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point B is (2, "
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "y at x = 2",
+             "answer": {
+              "text": "20"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q1-4",
+             "label": "the equation",
+             "answer": {
+              "text": "10x"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Point A is (1,  10 ); Pages per minute: 10 pages; Point B is (2,  20 ); Equation: y = 10x"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-proportional-graph",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read the unit rate and other points from the graph of a proportional relationship.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 512
+    }
+   ],
+   "estimatedHeight": 516
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "y at x = 1",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the unit rate",
+    "answer": {
+     "text": "10",
+     "also": [
+      "10 pages",
+      "10pages"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "y at x = 2",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "the equation",
+    "answer": {
+     "text": "10x"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read the unit rate and equation from the graph of a proportional relationship.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the graph.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Use the graph.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

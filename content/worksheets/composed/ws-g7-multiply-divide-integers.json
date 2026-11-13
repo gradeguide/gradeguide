@@ -1,0 +1,1228 @@
+{
+ "worksheetId": "ws-g7-multiply-divide-integers",
+ "title": "Multiplying and dividing positive and negative numbers",
+ "headerLabels": [
+  "7.NS.A.2.a",
+  "7.NS.A.2",
+  "7.NS.A.2.b",
+  "7.NS.A.2.c",
+  "7.NS.A.2.d"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply or divide.",
+     "explainer": "Same signs give a positive answer. Different signs give a negative answer.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "15 ÷ 3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "15 ÷ 3",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15 ÷ 3 = 5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−3 × 1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "−3 × 1",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−3 × 1 = −3"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6 × (−8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "6 × (−8)",
+             "answer": {
+              "text": "−48",
+              "also": [
+               "-48"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × (−8) = −48"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−12 ÷ (−3)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "−12 ÷ (−3)",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−12 ÷ (−3) = 4"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "48 ÷ (−8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "48 ÷ (−8)",
+             "answer": {
+              "text": "−6",
+              "also": [
+               "-6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "48 ÷ (−8) = −6"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−20 ÷ 4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "−20 ÷ 4",
+             "answer": {
+              "text": "−5",
+              "also": [
+               "-5"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−20 ÷ 4 = −5"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−8 ÷ (−1)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "−8 ÷ (−1)",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−8 ÷ (−1) = 8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−6 × 9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "−6 × 9",
+             "answer": {
+              "text": "−54",
+              "also": [
+               "-54"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−6 × 9 = −54"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g7-multiply-divide-integers",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply and divide integers using the sign rules.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Thinking two negatives multiply to a negative."
+      ]
+     },
+     "estimatedHeight": 216
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply or divide.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 6
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "the answer",
+             "answer": {
+              "text": "−1/4",
+              "also": [
+               "-1/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4 × (− 2/6 ) = −1/4"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 4,
+             "den": 4
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "the answer",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4/4 ÷ (− 2/4 ) = −2"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "the answer",
+             "answer": {
+              "text": "1/18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "− 1/6 × (− 1/3 ) = 1/18"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 3
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 3
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "the answer",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "− 3/3 ÷ (− 3/3 ) = 1"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-multiply-divide-rationals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply and divide signed fractions, where −(p/q) = (−p)/q = p/(−q).",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 178
+    },
+    {
+     "label": "C",
+     "instruction": "Multiply or divide.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−3.1 × (−3)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "−3.1 × (−3)",
+             "answer": {
+              "text": "9.3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−3.1 × (−3) = 9.3"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−3.1 × (−1)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "−3.1 × (−1)",
+             "answer": {
+              "text": "3.1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−3.1 × (−1) = 3.1"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−2.8 ÷ (−2)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "−2.8 ÷ (−2)",
+             "answer": {
+              "text": "1.4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−2.8 ÷ (−2) = 1.4"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1.3 ÷ (−1)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "1.3 ÷ (−1)",
+             "answer": {
+              "text": "−1.3",
+              "also": [
+               "-1.3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1.3 ÷ (−1) = −1.3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-multiply-divide-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply and divide signed decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "D",
+     "instruction": "Write each fraction as a decimal, then tick whether it ends or repeats.",
+     "explainer": "Divide the numerator by the denominator. The digits either stop or start to repeat.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 33,
+             "den": 40
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "33/40 to the nearest thousandth",
+             "answer": {
+              "text": "0.825"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q17-2",
+           "label": "does 33/40 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "33/40 ≈ 0.825; ends"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 4,
+             "den": 8
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "4/8 to the nearest thousandth",
+             "answer": {
+              "text": "0.5",
+              "also": [
+               "0.500"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q18-2",
+           "label": "does 4/8 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4/8 ≈ 0.5; ends"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 13,
+             "den": 15
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "13/15 to the nearest thousandth",
+             "answer": {
+              "text": "0.867"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q19-2",
+           "label": "does 13/15 end or repeat",
+           "answer": {
+            "text": "repeats"
+           }
+          }
+         }
+        }
+       ],
+       "key": "13/15 ≈ 0.867; repeats"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 11
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q20",
+             "label": "2/11 to the nearest thousandth",
+             "answer": {
+              "text": "0.182"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q20-2",
+           "label": "does 2/11 end or repeat",
+           "answer": {
+            "text": "repeats"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2/11 ≈ 0.182; repeats"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 30,
+             "den": 25
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "30/25 to the nearest thousandth",
+             "answer": {
+              "text": "1.2",
+              "also": [
+               "1.200"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q21-2",
+           "label": "does 30/25 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "30/25 ≈ 1.2; ends"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 48,
+             "den": 40
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "48/40 to the nearest thousandth",
+             "answer": {
+              "text": "1.2",
+              "also": [
+               "1.200"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q22-2",
+           "label": "does 48/40 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "48/40 ≈ 1.2; ends"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g7-fraction-to-decimal",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Change a fraction to a decimal by long division and tell whether it ends or repeats.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 260
+    }
+   ],
+   "estimatedHeight": 808
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "15 ÷ 3",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "−3 × 1",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "6 × (−8)",
+    "answer": {
+     "text": "−48",
+     "also": [
+      "-48"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "−12 ÷ (−3)",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "48 ÷ (−8)",
+    "answer": {
+     "text": "−6",
+     "also": [
+      "-6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "−20 ÷ 4",
+    "answer": {
+     "text": "−5",
+     "also": [
+      "-5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "−8 ÷ (−1)",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "−6 × 9",
+    "answer": {
+     "text": "−54",
+     "also": [
+      "-54"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the answer",
+    "answer": {
+     "text": "−1/4",
+     "also": [
+      "-1/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the answer",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the answer",
+    "answer": {
+     "text": "1/18"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the answer",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "−3.1 × (−3)",
+    "answer": {
+     "text": "9.3"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "−3.1 × (−1)",
+    "answer": {
+     "text": "3.1"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "−2.8 ÷ (−2)",
+    "answer": {
+     "text": "1.4"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "1.3 ÷ (−1)",
+    "answer": {
+     "text": "−1.3",
+     "also": [
+      "-1.3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "33/40 to the nearest thousandth",
+    "answer": {
+     "text": "0.825"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17-2",
+    "label": "does 33/40 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "4/8 to the nearest thousandth",
+    "answer": {
+     "text": "0.5",
+     "also": [
+      "0.500"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18-2",
+    "label": "does 4/8 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "13/15 to the nearest thousandth",
+    "answer": {
+     "text": "0.867"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19-2",
+    "label": "does 13/15 end or repeat",
+    "answer": {
+     "text": "repeats"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "2/11 to the nearest thousandth",
+    "answer": {
+     "text": "0.182"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20-2",
+    "label": "does 2/11 end or repeat",
+    "answer": {
+     "text": "repeats"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "30/25 to the nearest thousandth",
+    "answer": {
+     "text": "1.2",
+     "also": [
+      "1.200"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21-2",
+    "label": "does 30/25 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "48/40 to the nearest thousandth",
+    "answer": {
+     "text": "1.2",
+     "also": [
+      "1.200"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22-2",
+    "label": "does 48/40 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply and divide rational numbers, and write fractions as decimals.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write each fraction as a decimal, then tick whether it ends or repeats.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

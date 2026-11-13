@@ -53,6 +53,16 @@ message Node {
 
     GridShape grid_shape = 90;
     FractionCircle fraction_circle = 91;
+    // Grades 6 to 8. Fields 45 to 49 and 70 to 89.
+    DoubleNumberLine double_number_line = 45;
+    CoordinatePlane coordinate_plane = 46;
+    BoxPlot box_plot = 47;
+    Histogram histogram = 48;
+    PrismNet prism_net = 49;
+    HeightShape height_shape = 70;
+    Transversal transversal = 71;
+    RoundSolid round_solid = 72;
+    BoxSolid box_solid = 73;
   }
 }
 
@@ -496,4 +506,175 @@ message FractionCircle {
   int32 parts = 1;
   int32 shaded = 2;
   Field shade_field = 3;
+}
+
+// Widgets for grades 6 to 8. They are drawn by engine/draw_g68.ts.
+
+// DoubleNumberLine is two lines that share evenly spaced ticks, for two
+// quantities in a fixed ratio, such as cups of flour and cups of sugar.
+message DoubleNumberLine {
+  // Printed left of each line, such as "Flour (cups)".
+  string top_label = 1;
+  string bottom_label = 2;
+  // One per tick, from the left.
+  repeated Tick ticks = 3;
+
+  message Tick {
+    // The value above the top line, or a box for it.
+    string top = 1;
+    Field top_field = 2;
+    // The value below the bottom line, or a box for it.
+    string bottom = 3;
+    Field bottom_field = 4;
+  }
+}
+
+// CoordinatePlane is a grid with x and y axes, points and segments.
+message CoordinatePlane {
+  // The axes' ranges in grid units. A plane with x_min and y_min 0 is the
+  // first quadrant only.
+  int32 x_min = 1;
+  int32 x_max = 2;
+  int32 y_min = 3;
+  int32 y_max = 4;
+  // What one grid unit is worth on each axis, for labels. Zero: 1.
+  int32 x_scale = 5;
+  int32 y_scale = 6;
+  // Label every this many grid units. Zero: chosen from the size.
+  int32 label_every = 7;
+  string x_label = 8;
+  string y_label = 9;
+  repeated Point points = 10;
+  repeated Segment segments = 11;
+  // Set when the child plots or draws on the plane: what is right.
+  Field plot_field = 12;
+
+  message Point {
+    // In grid units.
+    double x = 1;
+    double y = 2;
+    // Printed beside the point, such as "A".
+    string label = 3;
+  }
+
+  message Segment {
+    double x1 = 1;
+    double y1 = 2;
+    double x2 = 3;
+    double y2 = 4;
+    bool dashed = 5;
+    // Printed beside the segment's middle, or a box there.
+    string label = 6;
+    Field field = 7;
+    // Draw the whole line through the two ends, to the grid's edge.
+    bool extend = 8;
+    // Put the label above a level segment, or left of an upright one,
+    // instead of below or right.
+    bool label_before = 9;
+  }
+}
+
+// BoxPlot is a box-and-whisker plot over a number line.
+message BoxPlot {
+  int32 start = 1;
+  int32 end = 2;
+  // The value between ticks. Zero: 1.
+  int32 step = 3;
+  double min = 4;
+  double q1 = 5;
+  double median = 6;
+  double q3 = 7;
+  double max = 8;
+  string caption = 9;
+  // Set when the child draws the plot: only the number line is printed.
+  Field draw_field = 10;
+}
+
+// Histogram is bars for equal intervals, drawn side by side.
+message Histogram {
+  string title = 1;
+  string value_axis = 2;
+  // The value between gridlines. Zero: 1.
+  int32 step = 3;
+  repeated Bin bins = 4;
+
+  message Bin {
+    // Such as "10–19".
+    string label = 1;
+    int32 count = 2;
+  }
+}
+
+// PrismNet is the net of a rectangular prism, laid flat as a cross, with
+// its edges labelled.
+message PrismNet {
+  int32 length = 1;
+  int32 width = 2;
+  int32 height = 3;
+  // Such as "cm".
+  string unit = 4;
+}
+
+// HeightShape is a triangle, parallelogram or trapezoid drawn with its
+// base along the bottom and a dashed height.
+message HeightShape {
+  // Vertices in grid units with y upward. The base runs from the first
+  // point to the second, along y = 0.
+  repeated Polygon.Point points = 1;
+  // The height is drawn from this point straight down to the base line,
+  // extended if the foot falls outside the base.
+  Polygon.Point apex = 2;
+  string base_label = 3;
+  string height_label = 4;
+  // A label for the side opposite the base, for a trapezoid.
+  string top_label = 5;
+  // Labels for the other sides, such as a slanted side's length, from the
+  // second point on.
+  repeated string side_labels = 6;
+}
+
+// Transversal is two parallel lines crossed by a third, with the eight
+// angles it makes labelled by position.
+message Transversal {
+  // The angle between the transversal and the parallel lines, in degrees.
+  double degrees = 1;
+  repeated Label labels = 2;
+
+  // Positions 0 to 3 are at the upper crossing and 4 to 7 at the lower,
+  // each going top right, top left, bottom left, bottom right.
+  message Label {
+    int32 position = 1;
+    string text = 2;
+    Field field = 3;
+  }
+}
+
+// RoundSolid is a circle, cylinder, cone or sphere with its radius and
+// height marked.
+message RoundSolid {
+  Kind kind = 1;
+  string radius_label = 2;
+  // Mark the diameter instead of the radius.
+  bool diameter = 3;
+  string height_label = 4;
+
+  enum Kind {
+    KIND_UNSPECIFIED = 0;
+    KIND_CIRCLE = 1;
+    KIND_CYLINDER = 2;
+    KIND_CONE = 3;
+    KIND_SPHERE = 4;
+  }
+}
+
+// BoxSolid is a rectangular prism drawn in perspective with its edges
+// labelled.
+message BoxSolid {
+  string length_label = 1;
+  string width_label = 2;
+  string height_label = 3;
+  // Relative proportions for the drawing. Zero: 3, 2 and 2.
+  double length = 4;
+  double width = 5;
+  double height = 6;
 }

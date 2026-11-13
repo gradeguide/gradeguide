@@ -1,0 +1,562 @@
+{
+ "worksheetId": "ws-g8-transformations",
+ "title": "Transformations on the coordinate plane",
+ "headerLabels": [
+  "8.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Draw the image, then write the coordinates of A′.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Reflect triangle ABC across the x-axis. Draw the image, then write the coordinates of A′."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -7,
+          "xMax": 7,
+          "yMin": -7,
+          "yMax": 7,
+          "points": [
+           {
+            "x": 2,
+            "y": 4,
+            "label": "A"
+           },
+           {
+            "x": -4,
+            "y": 1,
+            "label": "B"
+           },
+           {
+            "x": -2,
+            "y": 2,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 2,
+            "y1": 4,
+            "x2": -4,
+            "y2": 1
+           },
+           {
+            "x1": -4,
+            "y1": 1,
+            "x2": -2,
+            "y2": 2
+           },
+           {
+            "x1": -2,
+            "y1": 2,
+            "x2": 2,
+            "y2": 4
+           }
+          ],
+          "plotField": {
+           "id": "q1",
+           "label": "the image drawn",
+           "answer": {
+            "text": "A′(2, −4), B′(−4, −1), C′(−2, −2)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "−4",
+              "also": [
+               "-4"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′(2, −4), B′(−4, −1), C′(−2, −2); A′ ( 2 , −4 )"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Rotate triangle ABC 90° counterclockwise about the origin. Draw the image, then write the coordinates of A′."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -7,
+          "xMax": 7,
+          "yMin": -7,
+          "yMax": 7,
+          "points": [
+           {
+            "x": 2,
+            "label": "A"
+           },
+           {
+            "x": -3,
+            "y": -4,
+            "label": "B"
+           },
+           {
+            "y": 4,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 2,
+            "x2": -3,
+            "y2": -4
+           },
+           {
+            "x1": -3,
+            "y1": -4,
+            "y2": 4
+           },
+           {
+            "y1": 4,
+            "x2": 2
+           }
+          ],
+          "plotField": {
+           "id": "q2",
+           "label": "the image drawn",
+           "answer": {
+            "text": "A′(0, 2), B′(4, −3), C′(−4, 0)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "0"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′(0, 2), B′(4, −3), C′(−4, 0); A′ ( 0 , 2 )"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Translate triangle ABC 2 left and 1 up. Draw the image, then write the coordinates of A′."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -7,
+          "xMax": 7,
+          "yMin": -7,
+          "yMax": 7,
+          "points": [
+           {
+            "x": -1,
+            "y": 2,
+            "label": "A"
+           },
+           {
+            "x": 4,
+            "y": 3,
+            "label": "B"
+           },
+           {
+            "x": -3,
+            "y": 1,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -1,
+            "y1": 2,
+            "x2": 4,
+            "y2": 3
+           },
+           {
+            "x1": 4,
+            "y1": 3,
+            "x2": -3,
+            "y2": 1
+           },
+           {
+            "x1": -3,
+            "y1": 1,
+            "x2": -1,
+            "y2": 2
+           }
+          ],
+          "plotField": {
+           "id": "q3",
+           "label": "the image drawn",
+           "answer": {
+            "text": "A′(−3, 3), B′(2, 4), C′(−5, 2)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′(−3, 3), B′(2, 4), C′(−5, 2); A′ ( −3 , 3 )"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Translate triangle ABC 1 right and 1 up. Draw the image, then write the coordinates of A′."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -7,
+          "xMax": 7,
+          "yMin": -7,
+          "yMax": 7,
+          "points": [
+           {
+            "x": 1,
+            "y": -2,
+            "label": "A"
+           },
+           {
+            "x": 3,
+            "y": -3,
+            "label": "B"
+           },
+           {
+            "x": -1,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 1,
+            "y1": -2,
+            "x2": 3,
+            "y2": -3
+           },
+           {
+            "x1": 3,
+            "y1": -3,
+            "x2": -1
+           },
+           {
+            "x1": -1,
+            "x2": 1,
+            "y2": -2
+           }
+          ],
+          "plotField": {
+           "id": "q4",
+           "label": "the image drawn",
+           "answer": {
+            "text": "A′(2, −1), B′(4, −2), C′(0, 1)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′(2, −1), B′(4, −2), C′(0, 1); A′ ( 2 , −1 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transformations",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the effect of translations, reflections, rotations and dilations on coordinates.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Rotating 90° by swapping x and y without changing a sign."
+      ]
+     },
+     "estimatedHeight": 794
+    }
+   ],
+   "estimatedHeight": 798
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the image drawn",
+    "answer": {
+     "text": "A′(2, −4), B′(−4, −1), C′(−2, −2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "−4",
+     "also": [
+      "-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the image drawn",
+    "answer": {
+     "text": "A′(0, 2), B′(4, −3), C′(−4, 0)"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the image drawn",
+    "answer": {
+     "text": "A′(−3, 3), B′(2, 4), C′(−5, 2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the image drawn",
+    "answer": {
+     "text": "A′(2, −1), B′(4, −2), C′(0, 1)"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Draw transformations and describe their effect on coordinates.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Draw the image, then write the coordinates of A′.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

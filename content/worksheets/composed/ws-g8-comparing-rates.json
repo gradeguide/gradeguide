@@ -1,0 +1,486 @@
+{
+ "worksheetId": "ws-g8-comparing-rates",
+ "title": "Comparing rates of change",
+ "headerLabels": [
+  "8.EE.B.5",
+  "8.F.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Compare the two functions.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "dataTable": {
+             "title": "Function A",
+             "header": [
+              "x",
+              "y"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "0"
+                },
+                {
+                 "text": "3"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "1"
+                },
+                {
+                 "text": "8"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "2"
+                },
+                {
+                 "text": "13"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "3"
+                },
+                {
+                 "text": "18"
+                }
+               ]
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Function B:"
+              },
+              {
+               "text": "y = 8x + 5"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Rate of change of A:"
+              },
+              {
+               "blank": {
+                "id": "q1",
+                "label": "rate of change of A",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "of B:"
+              },
+              {
+               "blank": {
+                "id": "q1-2",
+                "label": "rate of change of B",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which grows faster?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B"
+          ],
+          "field": {
+           "id": "q1-3",
+           "label": "faster function",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5, 8; B"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "dataTable": {
+             "title": "Function A",
+             "header": [
+              "x",
+              "y"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "0"
+                },
+                {
+                 "text": "8"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "1"
+                },
+                {
+                 "text": "10"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "2"
+                },
+                {
+                 "text": "12"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "3"
+                },
+                {
+                 "text": "14"
+                }
+               ]
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Function B:"
+              },
+              {
+               "text": "y = 9x + 4"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Rate of change of A:"
+              },
+              {
+               "blank": {
+                "id": "q2",
+                "label": "rate of change of A",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "of B:"
+              },
+              {
+               "blank": {
+                "id": "q2-2",
+                "label": "rate of change of B",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which grows faster?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B"
+          ],
+          "field": {
+           "id": "q2-3",
+           "label": "faster function",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2, 9; B"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-compare-rates",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare the rates of change of two functions given in different forms.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 662
+    }
+   ],
+   "estimatedHeight": 666
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Car A's distance is d = 55t miles after t hours. Car B goes 186 miles in 3 hours. How many more miles an hour does car B go?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q3",
+           "label": "how much faster car B goes",
+           "answer": {
+            "text": "7",
+            "also": [
+             "7 miles per hour"
+            ],
+            "work": "186 ÷ 3 − 55"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Store A sells 6 pounds of rice for $9. Store B's cost is c = 1.40p for p pounds. How much less per pound is store B?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q4",
+           "label": "how much less per pound at store B",
+           "answer": {
+            "text": "0.10",
+            "also": [
+             "$0.10",
+             "0.1"
+            ],
+            "work": "9 ÷ 6 − 1.40"
+           }
+          }
+         }
+        }
+       ],
+       "key": "0.10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-compare-rate-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Compare two proportional relationships given in different ways.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 410
+    }
+   ],
+   "estimatedHeight": 414
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "rate of change of A",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "rate of change of B",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "faster function",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "rate of change of A",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "rate of change of B",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "faster function",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "how much faster car B goes",
+    "answer": {
+     "text": "7",
+     "also": [
+      "7 miles per hour"
+     ],
+     "work": "186 ÷ 3 − 55"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "how much less per pound at store B",
+    "answer": {
+     "text": "0.10",
+     "also": [
+      "$0.10",
+      "0.1"
+     ],
+     "work": "9 ÷ 6 − 1.40"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare rates of change given in tables, equations and words.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Compare the two functions.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

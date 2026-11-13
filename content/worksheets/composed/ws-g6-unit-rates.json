@@ -1,0 +1,803 @@
+{
+ "worksheetId": "ws-g6-unit-rates",
+ "title": "Unit rates",
+ "headerLabels": [
+  "6.RP.A.2",
+  "6.RP.A.3.b",
+  "6.RP.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the rate for one, then use it.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "5 stickers cost $7.50."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One costs $"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "cost of one of 5 for $7.50",
+             "answer": {
+              "text": "1.50",
+              "also": [
+               "1.5",
+               "$1.50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8 stickers cost $"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "cost of 8",
+             "answer": {
+              "text": "12.00",
+              "also": [
+               "12",
+               "$12.00"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "One costs $ 1.50; 8 stickers cost $ 12.00"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A cyclist rides 80 miles in 8 hours."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "miles per hour",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 4 hours:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "miles in 4 hours",
+             "answer": {
+              "text": "40"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 10 miles per hour; In 4 hours: 40 miles"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A cyclist rides 77 miles in 7 hours."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "miles per hour",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 6 hours:"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "miles in 6 hours",
+             "answer": {
+              "text": "66"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 11 miles per hour; In 6 hours: 66 miles"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "5 muffins cost $2.00."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One costs $"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "cost of one of 5 for $2.00",
+             "answer": {
+              "text": "0.40",
+              "also": [
+               "0.4",
+               "$0.40"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 muffins cost $"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "cost of 4",
+             "answer": {
+              "text": "1.60",
+              "also": [
+               "1.6",
+               "$1.60"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "One costs $ 0.40; 4 muffins cost $ 1.60"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A printer prints 77 pages in 7 minutes."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "pages per minute",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "pages per minute"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 8 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "pages in 8 minutes",
+             "answer": {
+              "text": "88"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 11 pages per minute; In 8 minutes: 88 pages"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "8 muffins cost $20.00."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One costs $"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "cost of one of 8 for $20.00",
+             "answer": {
+              "text": "2.50",
+              "also": [
+               "2.5",
+               "$2.50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 muffins cost $"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "cost of 7",
+             "answer": {
+              "text": "17.50",
+              "also": [
+               "17.5",
+               "$17.50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "One costs $ 2.50; 7 muffins cost $ 17.50"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-unit-rate",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a unit rate by dividing, and use it to find the amount for another number of units.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Dividing the smaller number by the larger whatever the question asks."
+      ]
+     },
+     "estimatedHeight": 400
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar go with 12 cups of flour?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q7",
+           "label": "cups of sugar for 12 cups of flour",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 cups"
+            ],
+            "work": "12 ÷ 3 × 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A car goes 150 miles on 5 gallons of gas. How far can it go on 8 gallons?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q8",
+           "label": "miles on 8 gallons",
+           "answer": {
+            "text": "240",
+            "also": [
+             "240 miles"
+            ],
+            "work": "150 ÷ 5 × 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "240"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-ratio-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve ratio and rate problems from stories.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+      ]
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 798
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Paint is mixed 2 cups of blue for every 3 cups of white. Mia wants 30 cups of paint in all. How many cups of blue does she need?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q9",
+           "label": "cups of blue in 30 cups",
+           "answer": {
+            "text": "12",
+            "also": [
+             "12 cups"
+            ],
+            "work": "30 ÷ (2 + 3) × 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A pack of 6 juice boxes costs $4.50. A pack of 10 costs $7.00."
+           }
+          ],
+          "parts": [
+           {
+            "label": "10a",
+            "prompt": [
+             {
+              "text": "How much is one box in the small pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10a",
+                "label": "cost of one box in the small pack",
+                "answer": {
+                 "text": "0.75",
+                 "also": [
+                  "$0.75"
+                 ],
+                 "work": "4.50 ÷ 6"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "10b",
+            "prompt": [
+             {
+              "text": "How much is one box in the large pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10b",
+                "label": "cost of one box in the large pack",
+                "answer": {
+                 "text": "0.70",
+                 "also": [
+                  "$0.70",
+                  "0.7"
+                 ],
+                 "work": "7.00 ÷ 10"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "10c",
+            "prompt": [
+             {
+              "text": "How much do you save on each box with the large pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10c",
+                "label": "saving per box",
+                "answer": {
+                 "text": "0.05",
+                 "also": [
+                  "$0.05"
+                 ],
+                 "work": "0.75 − 0.70"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10a: 4.50 ÷ 6 = 0.75; 10b: 7.00 ÷ 10 = 0.70; 10c: 0.75 − 0.70 = 0.05"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-ratio-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve ratio and rate problems from stories.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 690
+    }
+   ],
+   "estimatedHeight": 694
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "cost of one of 5 for $7.50",
+    "answer": {
+     "text": "1.50",
+     "also": [
+      "1.5",
+      "$1.50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "cost of 8",
+    "answer": {
+     "text": "12.00",
+     "also": [
+      "12",
+      "$12.00"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "miles per hour",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "miles in 4 hours",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "miles per hour",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "miles in 6 hours",
+    "answer": {
+     "text": "66"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "cost of one of 5 for $2.00",
+    "answer": {
+     "text": "0.40",
+     "also": [
+      "0.4",
+      "$0.40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "cost of 4",
+    "answer": {
+     "text": "1.60",
+     "also": [
+      "1.6",
+      "$1.60"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "pages per minute",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "pages in 8 minutes",
+    "answer": {
+     "text": "88"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "cost of one of 8 for $20.00",
+    "answer": {
+     "text": "2.50",
+     "also": [
+      "2.5",
+      "$2.50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "cost of 7",
+    "answer": {
+     "text": "17.50",
+     "also": [
+      "17.5",
+      "$17.50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "cups of sugar for 12 cups of flour",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 cups"
+     ],
+     "work": "12 ÷ 3 × 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "miles on 8 gallons",
+    "answer": {
+     "text": "240",
+     "also": [
+      "240 miles"
+     ],
+     "work": "150 ÷ 5 × 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "cups of blue in 30 cups",
+    "answer": {
+     "text": "12",
+     "also": [
+      "12 cups"
+     ],
+     "work": "30 ÷ (2 + 3) × 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10a",
+   "field": {
+    "id": "q10a",
+    "label": "cost of one box in the small pack",
+    "answer": {
+     "text": "0.75",
+     "also": [
+      "$0.75"
+     ],
+     "work": "4.50 ÷ 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "10b",
+   "field": {
+    "id": "q10b",
+    "label": "cost of one box in the large pack",
+    "answer": {
+     "text": "0.70",
+     "also": [
+      "$0.70",
+      "0.7"
+     ],
+     "work": "7.00 ÷ 10"
+    }
+   }
+  },
+  {
+   "itemLabel": "10c",
+   "field": {
+    "id": "q10c",
+    "label": "saving per box",
+    "answer": {
+     "text": "0.05",
+     "also": [
+      "$0.05"
+     ],
+     "work": "0.75 − 0.70"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find unit rates and use them and ratios to solve problems.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the rate for one, then use it.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

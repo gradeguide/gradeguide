@@ -1,0 +1,663 @@
+{
+ "worksheetId": "ws-g7-scale-and-triangles",
+ "title": "Scale drawings, triangles and slices",
+ "headerLabels": [
+  "7.G.A.1",
+  "7.G.A.2",
+  "7.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the scale.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 4 feet. A wall is 62 feet long."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "On the plan:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "length on the plan",
+             "answer": {
+              "text": "15.5",
+              "also": [
+               "15.5 inch",
+               "15.5inch"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "On the plan: 15.5 inches"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 4 km. Two towns are 6 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "real length",
+             "answer": {
+              "text": "24",
+              "also": [
+               "24 km",
+               "24km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 24 km"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 2 feet. A wall is 14 inches long on the plan."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "real length",
+             "answer": {
+              "text": "28",
+              "also": [
+               "28 feet",
+               "28feet"
+              ]
+             }
+            }
+           },
+           {
+            "text": "feet"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 28 feet"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 20 km. Two towns are 5 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "real length",
+             "answer": {
+              "text": "100",
+              "also": [
+               "100 km",
+               "100km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 100 km"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 2 feet. A wall is 11 feet long."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "On the plan:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "length on the plan",
+             "answer": {
+              "text": "5.5",
+              "also": [
+               "5.5 inch",
+               "5.5inch"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "On the plan: 5.5 inches"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 2 km. Two towns are 12 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "real length",
+             "answer": {
+              "text": "24",
+              "also": [
+               "24 km",
+               "24km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 24 km"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-scale-drawings",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find real lengths from a scale drawing, and drawing lengths from real ones.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Multiplying when going from real length to the drawing."
+      ]
+     },
+     "estimatedHeight": 502
+    },
+    {
+     "label": "B",
+     "instruction": "Can these side lengths make a triangle? The two shorter sides must add to more than the longest.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Side lengths 4 cm, 4 cm and 11 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "can 4, 4, 11 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Side lengths 5 cm, 6 cm and 14 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "can 5, 6, 14 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Side lengths 3 cm, 11 cm and 13 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "can 3, 11, 13 make a triangle",
+           "answer": {
+            "text": "makes a triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "makes a triangle"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Side lengths 3 cm, 5 cm and 9 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "can 3, 5, 9 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Side lengths 4 cm, 9 cm and 17 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "can 4, 9, 17 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Side lengths 2 cm, 11 cm and 12 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "can 2, 11, 12 make a triangle",
+           "answer": {
+            "text": "makes a triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "makes a triangle"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-can-it-be-a-triangle",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Decide whether three side lengths make a triangle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 220
+    }
+   ],
+   "estimatedHeight": 730
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Picture the slice. Tick its shape.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "boxSolid": {
+          "length": 3,
+          "width": 2,
+          "height": 2
+         }
+        },
+        {
+         "text": "Slice the box parallel to its base. What shape is the slice?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q13",
+           "label": "Slice the box parallel to its base. What shape is the slice?",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "boxSolid": {
+          "length": 3,
+          "width": 2,
+          "height": 2
+         }
+        },
+        {
+         "text": "Slice the box straight down, parallel to its front. What shape is the slice?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q14",
+           "label": "Slice the box straight down, parallel to its front. What shape is the slice?",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-cross-sections",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name the two-dimensional shape made by slicing a box, cylinder, cone or ball.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 252
+    }
+   ],
+   "estimatedHeight": 256
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "length on the plan",
+    "answer": {
+     "text": "15.5",
+     "also": [
+      "15.5 inch",
+      "15.5inch"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "real length",
+    "answer": {
+     "text": "24",
+     "also": [
+      "24 km",
+      "24km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "real length",
+    "answer": {
+     "text": "28",
+     "also": [
+      "28 feet",
+      "28feet"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "real length",
+    "answer": {
+     "text": "100",
+     "also": [
+      "100 km",
+      "100km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "length on the plan",
+    "answer": {
+     "text": "5.5",
+     "also": [
+      "5.5 inch",
+      "5.5inch"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "real length",
+    "answer": {
+     "text": "24",
+     "also": [
+      "24 km",
+      "24km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "can 4, 4, 11 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "can 5, 6, 14 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "can 3, 11, 13 make a triangle",
+    "answer": {
+     "text": "makes a triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "can 3, 5, 9 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "can 4, 9, 17 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "can 2, 11, 12 make a triangle",
+    "answer": {
+     "text": "makes a triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "Slice the box parallel to its base. What shape is the slice?",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "Slice the box straight down, parallel to its front. What shape is the slice?",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use scales, decide when sides make a triangle, and picture slices of solids.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the scale.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Can these side lengths make a triangle? The two shorter sides must add to more than the longest.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Picture the slice. Tick its shape.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Picture the slice. Tick its shape.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

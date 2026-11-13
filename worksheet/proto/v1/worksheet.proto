@@ -139,6 +139,38 @@ message ItemKind {
     BarGraphQuestions bar_graph_questions = 43;
     AreaByCounting area_by_counting = 110;
     CircleFraction circle_fraction = 111;
+
+    // Grades 6 to 8. Fields 80 to 109.
+    RatioLanguage ratio_language = 80;
+    RatioTable ratio_table = 81;
+    UnitRate unit_rate = 82;
+    PercentOf percent_of = 83;
+    ConvertMeasure convert_measure = 84;
+    DivideFractions divide_fractions = 85;
+    MultiDigitDivision multi_digit_division = 86;
+    DecimalArithmetic decimal_arithmetic = 87;
+    GcfLcm gcf_lcm = 88;
+    TwoWayTable two_way_table = 89;
+    Integers integers = 90;
+    CoordinatePoints coordinate_points = 91;
+    Exponents exponents = 92;
+    WriteExpression write_expression = 93;
+    EvaluateExpression evaluate_expression = 94;
+    EquivalentExpressions equivalent_expressions = 95;
+    SolveEquation solve_equation = 96;
+    RuleTable rule_table = 97;
+    ShapeArea shape_area = 98;
+    PrismMeasure prism_measure = 99;
+    DataSetStats data_set_stats = 100;
+    SignedArithmetic signed_arithmetic = 101;
+    FractionToDecimal fraction_to_decimal = 102;
+    RoundMeasure round_measure = 103;
+    Classify classify = 104;
+    Probability probability = 105;
+    Pythagorean pythagorean = 106;
+    ScientificNotation scientific_notation = 107;
+    LinearRelation linear_relation = 108;
+    AngleFacts angle_facts = 109;
   }
 }
 
@@ -463,6 +495,420 @@ message FactorPairs {
 // A hundred chart; shade the multiples of a number.
 message ShadeMultiples {
   repeated int32 of = 1;
+}
+
+// Item kinds for grades 6 to 8. Their generators are in
+// engine/kinds_g68.ts. Negative numbers print with a minus sign (−); answers
+// also accept a hyphen.
+
+// A story with two amounts; write a ratio of them with a colon.
+message RatioLanguage {}
+
+// A table of equivalent ratios with some cells blank.
+message RatioTable {
+  // The two parts of the simplest ratio. Zero: 2 to 9.
+  IntRange parts = 1;
+  // Show the ratios on a double number line instead of in a table.
+  bool double_number_line = 2;
+}
+
+// A price or a speed for several units; find the rate for one, then use it.
+message UnitRate {
+  // Fractions of a mile and of an hour, for a complex fraction.
+  bool fractions = 1;
+}
+
+// A percent of a number, or the whole or the percent from the other two.
+message PercentOf {
+  Ask ask = 1;
+  // Show the whole as 100% on a double number line, and ask for the part.
+  bool double_number_line = 2;
+
+  enum Ask {
+    // Any of the three.
+    ASK_UNSPECIFIED = 0;
+    ASK_PART = 1;
+    ASK_WHOLE = 2;
+    ASK_PERCENT = 3;
+  }
+}
+
+// Convert between units with a given rate, or between a scale drawing and
+// real lengths.
+message ConvertMeasure {
+  bool scale = 1;
+}
+
+// A fraction divided by a fraction, or a whole number and a fraction.
+message DivideFractions {
+  // Use a mixed number as the dividend in some items.
+  bool mixed = 1;
+}
+
+// A long division with a two-digit divisor.
+message MultiDigitDivision {
+  // Digits in the dividend. Zero: 4.
+  int32 dividend_digits = 1;
+  bool remainders = 2;
+}
+
+// A sum, difference, product or quotient of decimals.
+message DecimalArithmetic {
+  repeated Op ops = 1;
+
+  enum Op {
+    OP_UNSPECIFIED = 0;
+    OP_ADD = 1;
+    OP_SUBTRACT = 2;
+    OP_MULTIPLY = 3;
+    OP_DIVIDE = 4;
+  }
+}
+
+// The greatest common factor or least common multiple of two numbers, or a
+// sum rewritten with the common factor outside.
+message GcfLcm {
+  Ask ask = 1;
+
+  enum Ask {
+    ASK_UNSPECIFIED = 0;
+    ASK_GCF = 1;
+    ASK_LCM = 2;
+    ASK_DISTRIBUTE = 3;
+  }
+}
+
+// A two-way table of counts; fill in the totals and find fractions of a row
+// or column.
+message TwoWayTable {}
+
+// Integers: on a number line, opposites, comparing, absolute value,
+// ordering, and in context.
+message Integers {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A number line from −10 to 10 with an arrow; write the number.
+    MODE_NUMBER_LINE = 1;
+    MODE_OPPOSITE = 2;
+    MODE_COMPARE = 3;
+    MODE_ABSOLUTE_VALUE = 4;
+    // Four integers to put in order.
+    MODE_ORDER = 5;
+    // A sentence such as "12 feet below sea level"; write the integer.
+    MODE_CONTEXT = 6;
+    // Account balances and debts.
+    MODE_DEBT = 7;
+    // Which of two temperatures or heights is colder, warmer, lower or
+    // higher.
+    MODE_ORDER_IN_CONTEXT = 8;
+  }
+}
+
+// Points on a coordinate plane.
+message CoordinatePoints {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    MODE_QUADRANT = 1;
+    // Reflect across an axis.
+    MODE_REFLECT = 2;
+    // Distance between two points that share a coordinate.
+    MODE_DISTANCE = 3;
+    // A rectangle by its vertices; find its sides and area.
+    MODE_RECTANGLE = 4;
+    // Translate, reflect, rotate about the origin, or dilate from it.
+    MODE_TRANSFORM = 5;
+  }
+}
+
+// Powers and roots.
+message Exponents {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Evaluate a power, or a numerical expression with one.
+    MODE_EVALUATE = 1;
+    // Write a repeated product as a power.
+    MODE_WRITE_POWER = 2;
+    // Properties of integer exponents.
+    MODE_RULES = 3;
+    // Square and cube roots of perfect squares and cubes.
+    MODE_ROOTS = 4;
+    // The two whole numbers a square root lies between.
+    MODE_ESTIMATE_ROOT = 5;
+  }
+}
+
+// Write an expression or inequality from words.
+message WriteExpression {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Such as "5 less than y".
+    MODE_FROM_WORDS = 1;
+    // Name the coefficient, constant and number of terms.
+    MODE_PARTS = 2;
+    // A short story with a variable.
+    MODE_CONTEXT = 3;
+    // Such as "at least 48 inches".
+    MODE_INEQUALITY = 4;
+  }
+}
+
+// An expression with variables, and values to substitute.
+message EvaluateExpression {
+  // Use negative values.
+  bool negatives = 1;
+}
+
+// Rewrite expressions: expand, factor, collect like terms, or decide whether
+// two are equivalent.
+message EquivalentExpressions {
+  Mode mode = 1;
+  // Use negative numbers.
+  bool negatives = 2;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    MODE_EXPAND = 1;
+    MODE_FACTOR = 2;
+    MODE_COMBINE = 3;
+    MODE_CHECK = 4;
+    // A percent increase or decrease as one multiplication.
+    MODE_PERCENT_CHANGE = 5;
+  }
+}
+
+// Solve an equation or inequality.
+message SolveEquation {
+  Form form = 1;
+  bool inequality = 2;
+  // Negative coefficients and solutions.
+  bool negatives = 3;
+
+  enum Form {
+    FORM_UNSPECIFIED = 0;
+    FORM_ONE_STEP = 1;
+    FORM_TWO_STEP = 2;
+    // The variable on both sides.
+    FORM_BOTH_SIDES = 3;
+    // Pick the value that makes it true from four.
+    FORM_CHECK = 4;
+  }
+}
+
+// A table of x and y from a linear rule.
+message RuleTable {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A rule in a story; fill in the table and name the dependent variable.
+    MODE_FILL = 1;
+    // A table; write its rule as y = mx + b.
+    MODE_FIND_RULE = 2;
+    // A table; is it proportional?
+    MODE_PROPORTIONAL = 3;
+    // A proportional table; find the constant and the equation.
+    MODE_CONSTANT = 4;
+    // A proportional relationship graphed; read the unit rate at x = 1.
+    MODE_GRAPH = 5;
+  }
+}
+
+// The area of a triangle, parallelogram or trapezoid.
+message ShapeArea {
+  repeated Shape shapes = 1;
+
+  enum Shape {
+    SHAPE_UNSPECIFIED = 0;
+    SHAPE_RIGHT_TRIANGLE = 1;
+    SHAPE_TRIANGLE = 2;
+    SHAPE_PARALLELOGRAM = 3;
+    SHAPE_TRAPEZOID = 4;
+  }
+}
+
+// The volume or surface area of a box.
+message PrismMeasure {
+  bool surface_area = 1;
+  // Edges in halves and quarters, for volume.
+  bool fractions = 2;
+}
+
+// A small data set; find measures of center and spread.
+message DataSetStats {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Mean, median, mode and range.
+    MODE_CENTER = 1;
+    // Quartiles, interquartile range and mean absolute deviation.
+    MODE_SPREAD = 2;
+    // A dot plot; count, median and range.
+    MODE_DOT_PLOT = 3;
+    // Tally the data in a frequency table.
+    MODE_FREQUENCY = 4;
+    // Two groups with the same spread; compare their means.
+    MODE_TWO_GROUPS = 5;
+    // A box plot; read its median, quartiles and ranges.
+    MODE_BOX_PLOT = 6;
+    // A data set; draw its box plot over a number line.
+    MODE_DRAW_BOX_PLOT = 7;
+    // A histogram; read counts from it.
+    MODE_HISTOGRAM = 8;
+  }
+}
+
+// Add, subtract, multiply or divide signed numbers.
+message SignedArithmetic {
+  repeated DecimalArithmetic.Op ops = 1;
+  Numbers numbers = 2;
+  // Show addition on a number line.
+  bool number_line = 3;
+  // Write subtraction as adding the opposite.
+  bool add_opposite = 4;
+
+  enum Numbers {
+    NUMBERS_UNSPECIFIED = 0;
+    NUMBERS_INTEGERS = 1;
+    NUMBERS_DECIMALS = 2;
+    NUMBERS_FRACTIONS = 3;
+  }
+}
+
+// A fraction written as a decimal.
+message FractionToDecimal {
+  // Include fractions whose decimals repeat.
+  bool repeating = 1;
+}
+
+// Circles, cylinders, cones and spheres, with 3.14 for π.
+message RoundMeasure {
+  repeated Ask asks = 1;
+
+  enum Ask {
+    ASK_UNSPECIFIED = 0;
+    ASK_CIRCUMFERENCE = 1;
+    ASK_CIRCLE_AREA = 2;
+    ASK_CYLINDER = 3;
+    ASK_CONE = 4;
+    ASK_SPHERE = 5;
+  }
+}
+
+// Tick which of two or more categories something belongs to.
+message Classify {
+  Topic topic = 1;
+
+  enum Topic {
+    TOPIC_UNSPECIFIED = 0;
+    TOPIC_STATISTICAL_QUESTION = 1;
+    TOPIC_CENTER_OR_SPREAD = 2;
+    TOPIC_SAMPLE = 3;
+    TOPIC_LIKELIHOOD = 4;
+    TOPIC_TRIANGLE = 5;
+    TOPIC_RATIONAL = 6;
+    TOPIC_FUNCTION = 7;
+    TOPIC_SOLUTIONS = 8;
+    TOPIC_LINEAR = 9;
+    // The shape of a slice through a solid.
+    TOPIC_CROSS_SECTION = 10;
+  }
+}
+
+// Probability of simple and compound events.
+message Probability {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Marbles in a bag.
+    MODE_SIMPLE = 1;
+    // Two coins or number cubes.
+    MODE_COMPOUND = 2;
+    // How many times to expect an outcome in many trials.
+    MODE_EXPECTED = 3;
+  }
+}
+
+// The Pythagorean theorem with whole-number sides.
+message Pythagorean {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    MODE_HYPOTENUSE = 1;
+    MODE_LEG = 2;
+    // The distance between two points.
+    MODE_DISTANCE = 3;
+  }
+}
+
+// Scientific notation.
+message ScientificNotation {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    MODE_TO_SCIENTIFIC = 1;
+    MODE_TO_STANDARD = 2;
+    MODE_MULTIPLY = 3;
+    MODE_DIVIDE = 4;
+    // How many times as large one number is as another.
+    MODE_COMPARE = 5;
+  }
+}
+
+// Slope, linear functions and systems.
+message LinearRelation {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // The slope through two points.
+    MODE_SLOPE = 1;
+    // The equation through two points, as y = mx + b.
+    MODE_EQUATION = 2;
+    // Two equations; find x and y.
+    MODE_SYSTEM = 3;
+    // A table and an equation; which changes faster?
+    MODE_COMPARE = 4;
+    // A linear model; predict a value and read its slope.
+    MODE_PREDICT = 5;
+    // A line on a grid with a slope triangle; find rise, run and slope.
+    MODE_SLOPE_TRIANGLE = 6;
+    // A scatter plot; name the association.
+    MODE_SCATTER = 7;
+    // A scatter plot with a line of fit; find its slope and predict.
+    MODE_LINE_OF_FIT = 8;
+    // Two lines graphed; read where they cross.
+    MODE_SYSTEM_GRAPH = 9;
+  }
+}
+
+// Angle facts: vertical angles, angle sums, and angles named with x.
+message AngleFacts {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    MODE_VERTICAL = 1;
+    // Two angles of a triangle; find the third.
+    MODE_TRIANGLE_SUM = 2;
+    // Two angles of a triangle; find the exterior angle at the third.
+    MODE_EXTERIOR = 3;
+    // Complementary or supplementary angles named with x.
+    MODE_ALGEBRA = 4;
+    // Parallel lines cut by a transversal.
+    MODE_TRANSVERSAL = 5;
+  }
 }
 
 // Worksheet is fragments in order, fitted to pages.

@@ -1,0 +1,235 @@
+{
+ "worksheetId": "ws-g6-long-division",
+ "title": "Dividing by two-digit numbers",
+ "headerLabels": [
+  "6.NS.B.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Divide.",
+     "explainer": "Estimate each digit of the quotient: how many 24s are in 98? About 4, since 4 × 25 = 100.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "3174",
+          "divisor": 23,
+          "quotient": {
+           "id": "q1",
+           "label": "3174 ÷ 23",
+           "answer": {
+            "text": "138"
+           }
+          },
+          "remainder": {
+           "id": "q1-2",
+           "label": "remainder of 3174 ÷ 23",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 8
+         }
+        }
+       ],
+       "key": "138, 0"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "8260",
+          "divisor": 35,
+          "quotient": {
+           "id": "q2",
+           "label": "8260 ÷ 35",
+           "answer": {
+            "text": "236"
+           }
+          },
+          "remainder": {
+           "id": "q2-2",
+           "label": "remainder of 8260 ÷ 35",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 8
+         }
+        }
+       ],
+       "key": "236, 0"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "2761",
+          "divisor": 50,
+          "quotient": {
+           "id": "q3",
+           "label": "2761 ÷ 50",
+           "answer": {
+            "text": "55"
+           }
+          },
+          "remainder": {
+           "id": "q3-2",
+           "label": "remainder of 2761 ÷ 50",
+           "answer": {
+            "text": "11"
+           }
+          },
+          "workRows": 8
+         }
+        }
+       ],
+       "key": "55, 11"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "9566",
+          "divisor": 28,
+          "quotient": {
+           "id": "q4",
+           "label": "9566 ÷ 28",
+           "answer": {
+            "text": "341"
+           }
+          },
+          "remainder": {
+           "id": "q4-2",
+           "label": "remainder of 9566 ÷ 28",
+           "answer": {
+            "text": "18"
+           }
+          },
+          "workRows": 8
+         }
+        }
+       ],
+       "key": "341, 18"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-long-division",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide multi-digit numbers by two-digit numbers with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Leaving out a zero in the quotient when a step does not divide."
+      ]
+     },
+     "estimatedHeight": 616
+    }
+   ],
+   "estimatedHeight": 620
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "3174 ÷ 23",
+    "answer": {
+     "text": "138"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "remainder of 3174 ÷ 23",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "8260 ÷ 35",
+    "answer": {
+     "text": "236"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "remainder of 8260 ÷ 35",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2761 ÷ 50",
+    "answer": {
+     "text": "55"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "remainder of 2761 ÷ 50",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "9566 ÷ 28",
+    "answer": {
+     "text": "341"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "remainder of 9566 ÷ 28",
+    "answer": {
+     "text": "18"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide fluently with the standard algorithm and two-digit divisors.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Divide.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

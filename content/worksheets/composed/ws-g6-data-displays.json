@@ -1,0 +1,563 @@
+{
+ "worksheetId": "ws-g6-data-displays",
+ "title": "Data displays",
+ "headerLabels": [
+  "6.SP.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count how many games had each number of goals.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Goals scored in each game: 5, 6, 5, 8, 5, 7, 6, 5, 8"
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Goals",
+           "Games"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "how many times 4 appears",
+               "answer": {
+                "text": "0"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "how many times 5 appears",
+               "answer": {
+                "text": "4"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "how many times 6 appears",
+               "answer": {
+                "text": "2"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "7"
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "how many times 7 appears",
+               "answer": {
+                "text": "1"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "field": {
+               "id": "q1-5",
+               "label": "how many times 8 appears",
+               "answer": {
+                "text": "2"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "9"
+             },
+             {
+              "field": {
+               "id": "q1-6",
+               "label": "how many times 9 appears",
+               "answer": {
+                "text": "0"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0, 4, 2, 1, 2, 0"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-frequency-table",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Organize a data set in a frequency table, the first step to a dot plot or histogram.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 300
+    },
+    {
+     "label": "B",
+     "instruction": "Use the histogram.",
+     "items": [
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "histogram": {
+          "title": "Minutes of reading each day",
+          "valueAxis": "Days",
+          "step": 1,
+          "bins": [
+           {
+            "label": "0–9",
+            "count": 4
+           },
+           {
+            "label": "10–19",
+            "count": 3
+           },
+           {
+            "label": "20–29",
+            "count": 3
+           },
+           {
+            "label": "30–39",
+            "count": 9
+           },
+           {
+            "label": "40–49",
+            "count": 1
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Days with 20–29 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "days in 20–29",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Days in all:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "days in all",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Days with 30 minutes or more:"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "days with 30 or more",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Days with 20–29 minutes: 3; Days in all: 20; Days with 30 minutes or more: 10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-histogram",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read how many values fall in each interval of a histogram.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Reading a bar's height as a data value instead of a count."
+      ]
+     },
+     "estimatedHeight": 378
+    }
+   ],
+   "estimatedHeight": 686
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the five-number summary, then draw the box plot.",
+     "explainer": "Order the data. The median splits it in half; the quartiles are the medians of each half.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Points scored: 3, 4, 19, 9, 9, 5, 8, 17, 14, 14, 20"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Min:"
+              },
+              {
+               "blank": {
+                "id": "q3",
+                "label": "minimum",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Q1:"
+              },
+              {
+               "blank": {
+                "id": "q3-2",
+                "label": "lower quartile",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q3-3",
+                "label": "median",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Q3:"
+              },
+              {
+               "blank": {
+                "id": "q3-4",
+                "label": "upper quartile",
+                "answer": {
+                 "text": "17"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Max:"
+              },
+              {
+               "blank": {
+                "id": "q3-5",
+                "label": "maximum",
+                "answer": {
+                 "text": "20"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "boxPlot": {
+          "end": 22,
+          "step": 2,
+          "min": 3,
+          "q1": 5,
+          "median": 9,
+          "q3": 17,
+          "max": 20,
+          "caption": "Points scored",
+          "drawField": {
+           "id": "q3-6",
+           "label": "the box plot",
+           "answer": {
+            "text": "box from 5 to 17, median 9, whiskers to 3 and 20"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3, 5, 9, 17, 20; box from 5 to 17, median 9, whiskers to 3 and 20"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-draw-box-plot",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a five-number summary and draw a box plot of it.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 270
+    }
+   ],
+   "estimatedHeight": 274
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "how many times 4 appears",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "how many times 5 appears",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "how many times 6 appears",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "how many times 7 appears",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "how many times 8 appears",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "how many times 9 appears",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "days in 20–29",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "days in all",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "days with 30 or more",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "minimum",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "lower quartile",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "median",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "upper quartile",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-5",
+    "label": "maximum",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-6",
+    "label": "the box plot",
+    "answer": {
+     "text": "box from 5 to 17, median 9, whiskers to 3 and 20"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Organize data in a table, read a histogram, and draw a box plot.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Count how many games had each number of goals.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the histogram.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the five-number summary, then draw the box plot.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

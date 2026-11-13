@@ -1,0 +1,840 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Grade 7 sheets: proportional relationships and percents, operations with
+# rational numbers, expressions and equations, geometry, and probability and
+# sampling.
+
+# Proportional relationships.
+
+fragments {
+  id: "frag-g7-unit-rate-fractions"
+  instruction: "Find the unit rate."
+  stage: STAGE_PRACTICE
+  explainer: "Divide the amount by the time, even when both are fractions: 1/2 mile in 1/4 hour is 1/2 ÷ 1/4 = 2 miles per hour."
+  items { kind { unit_rate { fractions: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find unit rates from ratios of fractions."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Dividing the time by the distance."
+  }
+}
+
+fragments {
+  id: "frag-g7-proportional-or-not"
+  instruction: "Is y proportional to x? Check whether y ÷ x is the same in every row."
+  stage: STAGE_INTRODUCE
+  items { kind { rule_table { mode: MODE_PROPORTIONAL } } count: 4 min_count: 2 }
+  max_columns: 4
+  design {
+    purpose: "Decide whether a table shows a proportional relationship."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Calling any table that goes up by the same amount proportional, even y = 2x + 3."
+  }
+}
+
+fragments {
+  id: "frag-g7-constant-of-proportionality"
+  instruction: "Find the constant of proportionality and write the equation."
+  stage: STAGE_PRACTICE
+  items { kind { rule_table { mode: MODE_CONSTANT } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Find the constant of proportionality from a table and write y = kx."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-proportional-graph"
+  instruction: "Use the graph."
+  stage: STAGE_GUIDED
+  explainer: "A proportional graph is a straight line through (0, 0). The point where x is 1 shows the unit rate."
+  items { kind { rule_table { mode: MODE_GRAPH } } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Read the unit rate and other points from the graph of a proportional relationship."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-percent-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve multistep percent problems: tax, tips, discounts, markups and percent change."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Finding the percent change from the new amount instead of the original."
+  }
+  items {
+    count: 5
+    authored {
+      items {
+        nodes { text: "A meal costs $48. Sam leaves a 15% tip, which is 0.15 of the cost. What is the total with the tip?" }
+        nodes { work_space { field { label: "total with tip" answer { text: "55.20" work: "48 + 48 × 0.15" also: "$55.20" also: "55.2" } } } }
+      }
+      items {
+        nodes { text: "A $60 jacket is on sale for 30% off, which is 0.30 of the price. What is the sale price?" }
+        nodes { work_space { field { label: "sale price" answer { text: "42" work: "60 − 60 × 0.30" also: "$42" } } } }
+      }
+      items {
+        nodes { text: "A bike costs $250. Sales tax is 8%, which is 0.08 of the price. What is the total cost?" }
+        nodes { work_space { field { label: "total cost" answer { text: "270" work: "250 + 250 × 0.08" also: "$270" } } } }
+      }
+      items {
+        nodes { text: "A store buys a lamp for $40 and marks it up 25% (25 out of every 100). What is the selling price?" }
+        nodes { work_space { field { label: "selling price" answer { text: "50" work: "40 + 40 ÷ 100 × 25" also: "$50" } } } }
+      }
+      items {
+        nodes { text: "A town grew from 800 people to 920 people. By what percent did it grow? (A percent is out of 100.)" }
+        nodes { work_space { field { label: "percent growth" answer { text: "15" work: "(920 − 800) ÷ 800 × 100" also: "15%" } } } }
+      }
+    }
+  }
+}
+
+# Rational numbers.
+
+fragments {
+  id: "frag-g7-add-on-number-line"
+  instruction: "Use the number line to add."
+  stage: STAGE_GUIDED
+  explainer: "Adding a negative number moves left. A number and its opposite add to 0."
+  items { kind { signed_arithmetic { number_line: true } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Add integers by moving along a number line."
+    principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g7-subtract-add-opposite"
+  instruction: "Subtract by adding the opposite."
+  stage: STAGE_PRACTICE
+  explainer: "p − q = p + (−q). So 3 − (−5) = 3 + 5."
+  items { kind { signed_arithmetic { add_opposite: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Rewrite subtraction as adding the opposite, then add."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Thinking 3 − (−5) is −2."
+  }
+}
+
+fragments {
+  id: "frag-g7-add-subtract-rationals"
+  instruction: "Add or subtract."
+  stage: STAGE_PRACTICE
+  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_DECIMALS } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Add and subtract positive and negative decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g7-add-subtract-signed-fractions"
+  instruction: "Add or subtract. Write the answer in simplest form."
+  stage: STAGE_PRACTICE
+  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_FRACTIONS } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Add and subtract positive and negative fractions."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g7-multiply-divide-integers"
+  instruction: "Multiply or divide."
+  stage: STAGE_PRACTICE
+  explainer: "Same signs give a positive answer. Different signs give a negative answer."
+  items { kind { signed_arithmetic { ops: [OP_MULTIPLY, OP_DIVIDE] } } count: 8 min_count: 6 }
+  max_columns: 4
+  design {
+    purpose: "Multiply and divide integers using the sign rules."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Thinking two negatives multiply to a negative."
+  }
+}
+
+fragments {
+  id: "frag-g7-multiply-divide-rationals"
+  instruction: "Multiply or divide."
+  stage: STAGE_PRACTICE
+  items { kind { signed_arithmetic { ops: [OP_MULTIPLY, OP_DIVIDE] numbers: NUMBERS_FRACTIONS } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply and divide signed fractions, where −(p/q) = (−p)/q = p/(−q)."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g7-multiply-divide-decimals"
+  instruction: "Multiply or divide."
+  stage: STAGE_PRACTICE
+  items { kind { signed_arithmetic { ops: [OP_MULTIPLY, OP_DIVIDE] numbers: NUMBERS_DECIMALS } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply and divide signed decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g7-fraction-to-decimal"
+  instruction: "Write each fraction as a decimal, then tick whether it ends or repeats."
+  stage: STAGE_PRACTICE
+  explainer: "Divide the numerator by the denominator. The digits either stop or start to repeat."
+  items { kind { fraction_to_decimal { repeating: true } } count: 6 min_count: 4 }
+  max_columns: 3
+  design {
+    purpose: "Change a fraction to a decimal by long division and tell whether it ends or repeats."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g7-rational-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve problems with positive and negative numbers, fractions and decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "At 6 a.m. it was −5°F. By noon it was 12°F. How many degrees did it rise?" }
+        nodes { work_space { field { label: "degrees risen" answer { text: "17" work: "12 + 5" also: "17 degrees" } } } }
+      }
+      items {
+        nodes { text: "A diver is 30 feet below the surface. She rises 2 1/2 feet each minute. How many minutes until she reaches the surface?" }
+        nodes { work_space { field { label: "minutes to the surface" answer { text: "12" work: "30 ÷ (2 + 1/2)" also: "12 minutes" } } } }
+      }
+      items {
+        nodes { text: "Kim's account had −$18.50. She deposits $45.25. What is her balance now?" }
+        nodes { work_space { field { label: "new balance" answer { text: "26.75" work: "45.25 − 18.50" also: "$26.75" } } } }
+      }
+      items {
+        nodes { text: "A hiker starts at 1,200 feet above sea level. Her height changes by −350 feet each hour for 3 hours. How high is she then?" }
+        nodes { work_space { field { label: "height after 3 hours" answer { text: "150" work: "1,200 − 350 × 3" also: "150 feet" } } } }
+      }
+    }
+  }
+}
+
+# Expressions and equations.
+
+fragments {
+  id: "frag-g7-expand-signed"
+  instruction: "Multiply out the brackets."
+  stage: STAGE_PRACTICE
+  explainer: "Multiply every term inside by the number outside, sign and all: −2(x − 5) = −2x + 10."
+  items { kind { equivalent_expressions { mode: MODE_EXPAND negatives: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Expand expressions with negative numbers."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Not multiplying the second term's sign: −2(x − 5) = −2x − 10."
+  }
+}
+
+fragments {
+  id: "frag-g7-combine-like-terms"
+  instruction: "Combine like terms."
+  stage: STAGE_PRACTICE
+  items { kind { equivalent_expressions { mode: MODE_COMBINE negatives: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Collect like terms in linear expressions with negative coefficients."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Adding a constant to a coefficient: 3x + 2 = 5x."
+  }
+}
+
+fragments {
+  id: "frag-g7-factor-signed"
+  instruction: "Factor out the greatest common factor."
+  stage: STAGE_PRACTICE
+  items { kind { equivalent_expressions { mode: MODE_FACTOR negatives: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Factor linear expressions, including ones with a subtraction."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g7-percent-change-expressions"
+  instruction: "Write the change as one multiplication."
+  stage: STAGE_STRETCH
+  explainer: "Going up 5% is p + 0.05p, which is 1.05p."
+  items { kind { equivalent_expressions { mode: MODE_PERCENT_CHANGE } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Rewrite a percent increase or decrease as a single multiplication."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-two-step-equations"
+  instruction: "Solve."
+  stage: STAGE_PRACTICE
+  explainer: "Undo the adding or subtracting first, then the multiplying or dividing."
+  items { kind { solve_equation { form: FORM_TWO_STEP negatives: true } } count: 8 min_count: 6 }
+  max_columns: 2
+  design {
+    purpose: "Solve equations of the form px + q = r and p(x + q) = r."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Dividing before subtracting, so only part of the equation is divided."
+  }
+}
+
+fragments {
+  id: "frag-g7-two-step-inequalities"
+  instruction: "Solve the inequality."
+  stage: STAGE_STRETCH
+  explainer: "Solve as an equation, but flip the sign when you multiply or divide by a negative number."
+  items { kind { solve_equation { form: FORM_TWO_STEP inequality: true negatives: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Solve inequalities of the form px + q > r, flipping the sign when dividing by a negative."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+    misconceptions: "Keeping the sign the same after dividing by a negative number."
+  }
+}
+
+fragments {
+  id: "frag-g7-equation-word-problems"
+  instruction: "Write an equation, solve it, and show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Write and solve two-step equations for stories, with whole numbers, fractions and decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A gym charges $25 to join and $12 a month. Leo has paid $121 in all. How many months has he been a member?" }
+        nodes { work_space { field { label: "months" answer { text: "8" work: "(121 − 25) ÷ 12" also: "8 months" } } } }
+      }
+      items {
+        nodes { text: "A rectangle has 2 long sides of 15 cm and 2 short sides. Its perimeter is 54 cm. How long is each short side?" }
+        nodes { work_space { field { label: "width" answer { text: "12" work: "(54 − 15 − 15) ÷ 2" also: "12 cm" } } } }
+      }
+      items {
+        nodes { text: "Ana buys 4 notebooks and a $3.50 pen. She spends $13.10. How much is each notebook?" }
+        nodes { work_space { field { label: "cost of each notebook" answer { text: "2.40" work: "(13.10 − 3.50) ÷ 4" also: "$2.40" also: "2.4" } } } }
+      }
+      items {
+        nodes { text: "Ben has $50 and saves $15 a week. How many weeks until he has at least $170?" }
+        nodes { work_space { field { label: "weeks" answer { text: "8" work: "(170 − 50) ÷ 15" also: "8 weeks" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g7-multistep-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve multistep problems that mix whole numbers, fractions, decimals and percents."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each story needs two or more steps and a change of form, so the child chooses which form to work in."
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "A worker earns $25 an hour and gets a raise of 10%, which is 0.10 of her pay. What is her new hourly pay?" }
+        nodes { work_space { field { label: "new hourly pay" answer { text: "27.50" work: "25 + 25 × 0.10" also: "$27.50" also: "27.5" } } } }
+      }
+      items {
+        nodes { text: "A 9 3/4-inch board is cut into pieces 1 1/2 inches long, with 3/4 inch left over. How many pieces are there?" }
+        nodes { work_space { field { label: "pieces" answer { text: "6" work: "(9 + 3/4 − 3/4) ÷ (1 + 1/2)" also: "6 pieces" } } } }
+      }
+      items {
+        nodes { text: "A shirt costs $24. It is 1/4 off, then 6% tax (0.06 of the sale price) is added. What do you pay?" }
+        nodes { work_space { field { label: "price paid" answer { text: "19.08" work: "(24 − 24 × 1/4) × (1 + 0.06)" also: "$19.08" } } } }
+      }
+    }
+  }
+}
+
+# Geometry.
+
+fragments {
+  id: "frag-g7-scale-drawings"
+  instruction: "Use the scale."
+  stage: STAGE_PRACTICE
+  items { kind { convert_measure { scale: true } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find real lengths from a scale drawing, and drawing lengths from real ones."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Multiplying when going from real length to the drawing."
+  }
+}
+
+fragments {
+  id: "frag-g7-can-it-be-a-triangle"
+  instruction: "Can these side lengths make a triangle? The two shorter sides must add to more than the longest."
+  stage: STAGE_PRACTICE
+  items { kind { classify { topic: TOPIC_TRIANGLE } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Decide whether three side lengths make a triangle."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g7-cross-sections"
+  instruction: "Picture the slice. Tick its shape."
+  stage: STAGE_PRACTICE
+  items { kind { classify { topic: TOPIC_CROSS_SECTION } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Name the two-dimensional shape made by slicing a box, cylinder, cone or ball."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-circles"
+  instruction: "Use 3.14 for π."
+  stage: STAGE_PRACTICE
+  explainer: "Circumference = π × diameter. Area = π × radius × radius. The diameter is twice the radius."
+  items { kind { round_measure { asks: [ASK_CIRCUMFERENCE, ASK_CIRCLE_AREA] } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find the circumference and area of a circle from its radius or diameter."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Using the diameter in place of the radius in the area formula."
+  }
+}
+
+fragments {
+  id: "frag-g7-vertical-angles"
+  instruction: "Find the missing angles."
+  stage: STAGE_INTRODUCE
+  explainer: "Angles across from each other are equal. Angles beside each other on a line add to 180°."
+  items { kind { angle_facts { mode: MODE_VERTICAL } } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Use vertical and supplementary angles to find unknown angles."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-angle-equations"
+  instruction: "Write an equation and solve for x."
+  stage: STAGE_PRACTICE
+  explainer: "Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal."
+  items { kind { angle_facts { mode: MODE_ALGEBRA } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Write and solve equations for unknown angles."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g7-area"
+  instruction: "Find the area."
+  stage: STAGE_REVIEW
+  items { kind { shape_area { shapes: [SHAPE_TRIANGLE, SHAPE_TRAPEZOID, SHAPE_PARALLELOGRAM] } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Find the area of triangles and quadrilaterals."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g7-volume"
+  instruction: "Find the volume."
+  stage: STAGE_PRACTICE
+  items { kind { prism_measure {} } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Find the volume of a right rectangular prism."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g7-surface-area"
+  instruction: "Find the surface area."
+  stage: STAGE_PRACTICE
+  items { kind { prism_measure { surface_area: true } } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Find the surface area of a right rectangular prism from its net."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Statistics and probability.
+
+fragments {
+  id: "frag-g7-samples"
+  instruction: "Is the sample representative or biased?"
+  stage: STAGE_INTRODUCE
+  explainer: "A representative sample is chosen at random from the whole group, so every member has the same chance."
+  items { kind { classify { topic: TOPIC_SAMPLE } } count: 6 min_count: 4 }
+  max_columns: 1
+  design {
+    purpose: "Tell a random, representative sample from a biased one."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g7-inference-problems"
+  instruction: "Use the sample to estimate. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Use data from a random sample to estimate a count in the whole group."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "In a random sample of 50 students, 12 walk to school. There are 600 students in the school. About how many walk?" }
+        nodes { work_space { field { label: "students who walk" answer { text: "144" work: "600 ÷ 50 × 12" also: "about 144" } } } }
+      }
+      items {
+        nodes { text: "A farmer checks 40 apples picked at random and finds 3 bruised. About how many of her 2,000 apples are bruised?" }
+        nodes { work_space { field { label: "bruised apples" answer { text: "150" work: "2,000 ÷ 40 × 3" also: "about 150" } } } }
+      }
+      items {
+        nodes { text: "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it? (A percent is out of 100.)" }
+        nodes { work_space { field { label: "percent who support" answer { text: "65" work: "52 ÷ 80 × 100" also: "65%" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g7-compare-groups"
+  instruction: "Compare the two groups."
+  stage: STAGE_PRACTICE
+  explainer: "Dividing the difference in means by the mean absolute deviation shows how far apart the groups are."
+  items { kind { data_set_stats { mode: MODE_TWO_GROUPS } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Compare two groups by their means, measured against their spread."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g7-likelihood"
+  instruction: "How likely is it?"
+  stage: STAGE_INTRODUCE
+  explainer: "A probability is a number from 0 (impossible) to 1 (certain). 1/2 is as likely as not."
+  items { kind { classify { topic: TOPIC_LIKELIHOOD } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Describe a chance as impossible, unlikely, as likely as not, likely or certain."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g7-simple-probability"
+  instruction: "Find the probability."
+  stage: STAGE_PRACTICE
+  items { kind { probability { mode: MODE_SIMPLE } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find the probability of an outcome when all outcomes are equally likely."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Writing the ratio of red to blue instead of red to all."
+  }
+}
+
+fragments {
+  id: "frag-g7-expected-outcomes"
+  instruction: "Predict."
+  stage: STAGE_APPLY
+  items { kind { probability { mode: MODE_EXPECTED } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Predict about how often an outcome happens in many trials from its probability."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g7-experimental-probability"
+  instruction: "Use the results to estimate. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Estimate a probability from observed results, and use it to predict."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  items {
+    count: 2
+    authored {
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A paper cup is tossed 60 times. It lands on its side 42 times." }
+            parts {
+              prompt { text: "Estimate the probability it lands on its side." }
+              response { work_space { field { label: "probability of landing on its side" answer { text: "7/10" work: "42/60" also: "0.7" also: "42/60" } } } }
+            }
+            parts {
+              prompt { text: "About how many times would it land on its side in 200 tosses?" }
+              response { work_space { field { label: "landings on side in 200" answer { text: "140" work: "200 × 7/10" also: "about 140" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "A spinner landed on blue 18 times in 40 spins. About how many times would you expect blue in 100 spins?" }
+        nodes { work_space { field { label: "blue in 100 spins" answer { text: "45" work: "18 ÷ 40 × 100" also: "about 45" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g7-compound-probability"
+  instruction: "List or count the outcomes, then find the probability."
+  stage: STAGE_PRACTICE
+  explainer: "Make a list, table or tree of every outcome. Count the ones that match."
+  items { kind { probability { mode: MODE_COMPOUND } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Find probabilities of compound events from a sample space."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Counting heads-tails and tails-heads as one outcome."
+  }
+}
+
+worksheets {
+  id: "ws-g7-proportional-relationships"
+  title: "Proportional relationships"
+  seed: 701
+  max_pages: 2
+  placements { fragment_id: "frag-g7-unit-rate-fractions" }
+  placements { fragment_id: "frag-g7-proportional-or-not" }
+  placements { fragment_id: "frag-g7-constant-of-proportionality" }
+  design {
+    purpose: "Find unit rates with fractions, and recognize proportional tables and their constants."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+  home_tip: "Ask: if you double x, does y double too?"
+}
+
+worksheets {
+  id: "ws-g7-proportional-graphs"
+  title: "Graphs of proportional relationships"
+  seed: 702
+  max_pages: 2
+  placements { fragment_id: "frag-g7-proportional-graph" }
+  design {
+    purpose: "Read the unit rate and equation from the graph of a proportional relationship."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g7-percent-problems"
+  title: "Percent problems"
+  seed: 703
+  max_pages: 2
+  placements { fragment_id: "frag-g7-percent-word-problems" }
+  placements { fragment_id: "frag-g7-percent-change-expressions" }
+  design {
+    purpose: "Solve tax, tip, discount, markup and percent change problems."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-add-subtract-integers"
+  title: "Adding and subtracting positive and negative numbers"
+  seed: 704
+  max_pages: 2
+  placements { fragment_id: "frag-g7-add-on-number-line" }
+  placements { fragment_id: "frag-g7-subtract-add-opposite" }
+  placements { fragment_id: "frag-g7-add-subtract-rationals" }
+  placements { fragment_id: "frag-g7-add-subtract-signed-fractions" }
+  design {
+    purpose: "Add and subtract rational numbers, first on a number line, then by adding the opposite."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+worksheets {
+  id: "ws-g7-multiply-divide-integers"
+  title: "Multiplying and dividing positive and negative numbers"
+  seed: 705
+  max_pages: 2
+  placements { fragment_id: "frag-g7-multiply-divide-integers" }
+  placements { fragment_id: "frag-g7-multiply-divide-rationals" }
+  placements { fragment_id: "frag-g7-multiply-divide-decimals" }
+  placements { fragment_id: "frag-g7-fraction-to-decimal" }
+  design {
+    purpose: "Multiply and divide rational numbers, and write fractions as decimals."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g7-rational-number-problems"
+  title: "Problems with rational numbers"
+  seed: 706
+  max_pages: 2
+  placements { fragment_id: "frag-g7-rational-word-problems" }
+  placements { fragment_id: "frag-g7-multistep-problems" }
+  design {
+    purpose: "Solve real-world problems with positive and negative numbers, fractions, decimals and percents."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-expressions"
+  title: "Equivalent expressions"
+  seed: 707
+  max_pages: 2
+  placements { fragment_id: "frag-g7-expand-signed" }
+  placements { fragment_id: "frag-g7-combine-like-terms" }
+  placements { fragment_id: "frag-g7-factor-signed" }
+  design {
+    purpose: "Expand, collect and factor linear expressions with negative numbers."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g7-equations-inequalities"
+  title: "Two-step equations and inequalities"
+  seed: 708
+  max_pages: 3
+  placements { fragment_id: "frag-g7-two-step-equations" }
+  placements { fragment_id: "frag-g7-two-step-inequalities" }
+  placements { fragment_id: "frag-g7-equation-word-problems" }
+  design {
+    purpose: "Solve two-step equations and inequalities, then use them for stories."
+    principles: [PRINCIPLE_ERROR_ANALYSIS, PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-scale-and-triangles"
+  title: "Scale drawings, triangles and slices"
+  seed: 709
+  max_pages: 2
+  placements { fragment_id: "frag-g7-scale-drawings" }
+  placements { fragment_id: "frag-g7-can-it-be-a-triangle" }
+  placements { fragment_id: "frag-g7-cross-sections" }
+  design {
+    purpose: "Use scales, decide when sides make a triangle, and picture slices of solids."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g7-circles"
+  title: "Circumference and area of circles"
+  seed: 710
+  max_pages: 2
+  placements { fragment_id: "frag-g7-circles" }
+  design {
+    purpose: "Find the circumference and area of circles."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Wrap a string round a can, then compare it with the can's width."
+}
+
+worksheets {
+  id: "ws-g7-angles"
+  title: "Angle relationships"
+  seed: 711
+  max_pages: 2
+  placements { fragment_id: "frag-g7-vertical-angles" }
+  placements { fragment_id: "frag-g7-angle-equations" }
+  design {
+    purpose: "Use vertical, complementary and supplementary angles to find unknown angles."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g7-area-volume"
+  title: "Area, volume and surface area"
+  seed: 712
+  max_pages: 2
+  placements { fragment_id: "frag-g7-area" }
+  placements { fragment_id: "frag-g7-volume" }
+  placements { fragment_id: "frag-g7-surface-area" }
+  design {
+    purpose: "Solve area, volume and surface area problems."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-sampling"
+  title: "Samples and comparing groups"
+  seed: 713
+  max_pages: 2
+  placements { fragment_id: "frag-g7-samples" }
+  placements { fragment_id: "frag-g7-inference-problems" }
+  placements { fragment_id: "frag-g7-compare-groups" }
+  design {
+    purpose: "Judge samples, estimate from them, and compare two groups."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-probability"
+  title: "Probability"
+  seed: 714
+  max_pages: 2
+  placements { fragment_id: "frag-g7-likelihood" }
+  placements { fragment_id: "frag-g7-simple-probability" }
+  placements { fragment_id: "frag-g7-expected-outcomes" }
+  placements { fragment_id: "frag-g7-experimental-probability" }
+  design {
+    purpose: "Describe and find probabilities, predict from them, and estimate them from results."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g7-compound-probability"
+  title: "Compound events"
+  seed: 715
+  max_pages: 2
+  placements { fragment_id: "frag-g7-compound-probability" }
+  design {
+    purpose: "Find probabilities of compound events from lists, tables and tree diagrams."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}

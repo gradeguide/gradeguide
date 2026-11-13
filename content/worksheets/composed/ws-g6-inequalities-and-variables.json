@@ -1,0 +1,621 @@
+{
+ "worksheetId": "ws-g6-inequalities-and-variables",
+ "title": "Inequalities and dependent variables",
+ "headerLabels": [
+  "6.EE.B.8",
+  "6.EE.C.9"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write an inequality.",
+     "explainer": "\"At least\" means ≥. \"At most\" means ≤. \"More than\" means >. \"Fewer than\" means <.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "The temperature stayed above −9°F all night. Use t for temperature."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "The temperature stayed above −9°F all night. Use t for temperature.",
+             "answer": {
+              "text": "t > −9",
+              "also": [
+               "t > -9",
+               "t>−9",
+               "t>-9"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "t > −9"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "The temperature stayed above −7°F all night. Use t for temperature."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "The temperature stayed above −7°F all night. Use t for temperature.",
+             "answer": {
+              "text": "t > −7",
+              "also": [
+               "t > -7",
+               "t>−7",
+               "t>-7"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "t > −7"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A bag can hold at most 25 pounds. Use w for weight."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "A bag can hold at most 25 pounds. Use w for weight.",
+             "answer": {
+              "text": "w ≤ 25",
+              "also": [
+               "w≤25",
+               "w <= 25",
+               "w<=25",
+               "25 ≥ w",
+               "25≥w"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "w ≤ 25"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Fewer than 35 people fit in the room. Use p for people."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q4",
+             "label": "Fewer than 35 people fit in the room. Use p for people.",
+             "answer": {
+              "text": "p < 35",
+              "also": [
+               "p<35",
+               "35 > p",
+               "35>p"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p < 35"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "More than 15 students signed up. Use s for students."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q5",
+             "label": "More than 15 students signed up. Use s for students.",
+             "answer": {
+              "text": "s > 15",
+              "also": [
+               "s>15",
+               "15 < s",
+               "15<s"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "s > 15"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-write-inequalities",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write an inequality for a limit in a story, and see it has many solutions.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Using > for \"at least\"."
+      ]
+     },
+     "estimatedHeight": 450
+    },
+    {
+     "label": "B",
+     "instruction": "Fill in the table, then tick the dependent variable.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A gym charges $12 to join and $3 a visit: c = 3v + 12."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Visits, v",
+           "Cost ($), c"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "12"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "field": {
+               "id": "q6",
+               "label": "c when v is 1",
+               "answer": {
+                "text": "15"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q6-2",
+               "label": "c when v is 2",
+               "answer": {
+                "text": "18"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q6-3",
+               "label": "c when v is 4",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "field": {
+               "id": "q6-4",
+               "label": "c when v is 6",
+               "answer": {
+                "text": "30"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which depends on the other?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "v",
+           "c"
+          ],
+          "field": {
+           "id": "q6-5",
+           "label": "the dependent variable",
+           "answer": {
+            "text": "c"
+           }
+          }
+         }
+        }
+       ],
+       "key": "15, 18, 24, 30; c"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A tank holds 11 gallons and fills 5 gallons a minute: g = 5t + 11."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "Minutes, t",
+           "Gallons, g"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "11"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "field": {
+               "id": "q7",
+               "label": "g when t is 1",
+               "answer": {
+                "text": "16"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q7-2",
+               "label": "g when t is 2",
+               "answer": {
+                "text": "21"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q7-3",
+               "label": "g when t is 4",
+               "answer": {
+                "text": "31"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "field": {
+               "id": "q7-4",
+               "label": "g when t is 6",
+               "answer": {
+                "text": "41"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which depends on the other?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "t",
+           "g"
+          ],
+          "field": {
+           "id": "q7-5",
+           "label": "the dependent variable",
+           "answer": {
+            "text": "g"
+           }
+          }
+         }
+        }
+       ],
+       "key": "16, 21, 31, 41; g"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-rule-tables",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use an equation to fill in a table, and tell the dependent from the independent variable.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 360
+    }
+   ],
+   "estimatedHeight": 818
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "The temperature stayed above −9°F all night. Use t for temperature.",
+    "answer": {
+     "text": "t > −9",
+     "also": [
+      "t > -9",
+      "t>−9",
+      "t>-9"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "The temperature stayed above −7°F all night. Use t for temperature.",
+    "answer": {
+     "text": "t > −7",
+     "also": [
+      "t > -7",
+      "t>−7",
+      "t>-7"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "A bag can hold at most 25 pounds. Use w for weight.",
+    "answer": {
+     "text": "w ≤ 25",
+     "also": [
+      "w≤25",
+      "w <= 25",
+      "w<=25",
+      "25 ≥ w",
+      "25≥w"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "Fewer than 35 people fit in the room. Use p for people.",
+    "answer": {
+     "text": "p < 35",
+     "also": [
+      "p<35",
+      "35 > p",
+      "35>p"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "More than 15 students signed up. Use s for students.",
+    "answer": {
+     "text": "s > 15",
+     "also": [
+      "s>15",
+      "15 < s",
+      "15<s"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "c when v is 1",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "c when v is 2",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "c when v is 4",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-4",
+    "label": "c when v is 6",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-5",
+    "label": "the dependent variable",
+    "answer": {
+     "text": "c"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "g when t is 1",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "g when t is 2",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "g when t is 4",
+    "answer": {
+     "text": "31"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-4",
+    "label": "g when t is 6",
+    "answer": {
+     "text": "41"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-5",
+    "label": "the dependent variable",
+    "answer": {
+     "text": "g"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Write inequalities for limits, and relate two variables with an equation and a table.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Write an inequality.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

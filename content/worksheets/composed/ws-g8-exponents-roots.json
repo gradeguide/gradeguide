@@ -1,0 +1,747 @@
+{
+ "worksheetId": "ws-g8-exponents-roots",
+ "title": "Exponents and roots",
+ "headerLabels": [
+  "8.EE.A.1",
+  "8.EE.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write as a single power, or as a fraction.",
+     "explainer": "Multiplying adds exponents, dividing subtracts them, and a power of a power multiplies them. A negative exponent means one over.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2⁻⁴ × 2⁴"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "2⁻⁴ × 2⁴ as one power",
+             "answer": {
+              "text": "2⁰",
+              "also": [
+               "2^0",
+               "1"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2⁻⁴ × 2⁴ = 2⁰"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7³ × 7³"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "7³ × 7³ as one power",
+             "answer": {
+              "text": "7⁶",
+              "also": [
+               "7^6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7³ × 7³ = 7⁶"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7⁻⁴ × 7⁴ ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "7⁻⁴ × 7⁴",
+             "answer": {
+              "text": "1",
+              "also": [
+               "7⁰",
+               "7^0"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7⁻⁴ × 7⁴ = 1"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7⁴ ÷ 7¹"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "7⁴ ÷ 7¹ as one power",
+             "answer": {
+              "text": "7³",
+              "also": [
+               "7^3",
+               "343"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7⁴ ÷ 7¹ = 7³"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7³ × 7⁻³ ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "7³ × 7⁻³",
+             "answer": {
+              "text": "1",
+              "also": [
+               "7⁰",
+               "7^0"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7³ × 7⁻³ = 1"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2¹ × 2⁻¹ ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "2¹ × 2⁻¹",
+             "answer": {
+              "text": "1",
+              "also": [
+               "2⁰",
+               "2^0"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2¹ × 2⁻¹ = 1"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(5⁻³)⁵"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "(5⁻³)⁵ as one power",
+             "answer": {
+              "text": "5⁻¹⁵",
+              "also": [
+               "5^-15",
+               "5^−15",
+               "1/5¹⁵",
+               "1/30517578125"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(5⁻³)⁵ = 5⁻¹⁵"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5⁻⁵ ÷ 5⁻³"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "5⁻⁵ ÷ 5⁻³ as one power",
+             "answer": {
+              "text": "5⁻²",
+              "also": [
+               "5^-2",
+               "5^−2",
+               "1/5²",
+               "1/25"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5⁻⁵ ÷ 5⁻³ = 5⁻²"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6³ ÷ 6⁵"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "6³ ÷ 6⁵ as one power",
+             "answer": {
+              "text": "6⁻²",
+              "also": [
+               "6^-2",
+               "6^−2",
+               "1/6²",
+               "1/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6³ ÷ 6⁵ = 6⁻²"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(6⁻³)²"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "(6⁻³)² as one power",
+             "answer": {
+              "text": "6⁻⁶",
+              "also": [
+               "6^-6",
+               "6^−6",
+               "1/6⁶",
+               "1/46656"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(6⁻³)² = 6⁻⁶"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-exponent-rules",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Use the properties of integer exponents.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Multiplying the exponents when multiplying powers: 3² × 3⁴ = 3⁸.",
+       "Reading 2⁻³ as a negative number."
+      ]
+     },
+     "estimatedHeight": 600
+    },
+    {
+     "label": "B",
+     "instruction": "Find the root, or solve.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "∛125 ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "cube root of 125",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "∛125 = 5"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x² = 9 and x > 0, so x ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "positive solution of x² = 9",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x² = 9 and x > 0, so x = 3"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x² = 169 and x > 0, so x ="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "positive solution of x² = 169",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x² = 169 and x > 0, so x = 13"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-roots",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find square and cube roots of perfect squares and cubes, and solve x² = p and x³ = p.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 798
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the root, or solve.",
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x² = 81 and x > 0, so x ="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "positive solution of x² = 81",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x² = 81 and x > 0, so x = 9"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "∛64 ="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "cube root of 64",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "∛64 = 4"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "√16 ="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "square root of 16",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "√16 = 4"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-roots",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find square and cube roots of perfect squares and cubes, and solve x² = p and x³ = p.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 194
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2⁻⁴ × 2⁴ as one power",
+    "answer": {
+     "text": "2⁰",
+     "also": [
+      "2^0",
+      "1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "7³ × 7³ as one power",
+    "answer": {
+     "text": "7⁶",
+     "also": [
+      "7^6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "7⁻⁴ × 7⁴",
+    "answer": {
+     "text": "1",
+     "also": [
+      "7⁰",
+      "7^0"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "7⁴ ÷ 7¹ as one power",
+    "answer": {
+     "text": "7³",
+     "also": [
+      "7^3",
+      "343"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "7³ × 7⁻³",
+    "answer": {
+     "text": "1",
+     "also": [
+      "7⁰",
+      "7^0"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "2¹ × 2⁻¹",
+    "answer": {
+     "text": "1",
+     "also": [
+      "2⁰",
+      "2^0"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "(5⁻³)⁵ as one power",
+    "answer": {
+     "text": "5⁻¹⁵",
+     "also": [
+      "5^-15",
+      "5^−15",
+      "1/5¹⁵",
+      "1/30517578125"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "5⁻⁵ ÷ 5⁻³ as one power",
+    "answer": {
+     "text": "5⁻²",
+     "also": [
+      "5^-2",
+      "5^−2",
+      "1/5²",
+      "1/25"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "6³ ÷ 6⁵ as one power",
+    "answer": {
+     "text": "6⁻²",
+     "also": [
+      "6^-2",
+      "6^−2",
+      "1/6²",
+      "1/36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "(6⁻³)² as one power",
+    "answer": {
+     "text": "6⁻⁶",
+     "also": [
+      "6^-6",
+      "6^−6",
+      "1/6⁶",
+      "1/46656"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "cube root of 125",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "positive solution of x² = 9",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "positive solution of x² = 169",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "positive solution of x² = 81",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "cube root of 64",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "square root of 16",
+    "answer": {
+     "text": "4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use the properties of exponents, and find square and cube roots.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Write as a single power, or as a fraction.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the root, or solve.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the root, or solve.\" was cut from 8 to 6 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

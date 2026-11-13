@@ -1,0 +1,615 @@
+{
+ "worksheetId": "ws-g8-systems",
+ "title": "Systems of equations",
+ "headerLabels": [
+  "8.EE.C.8.a",
+  "8.EE.C.8.b",
+  "8.EE.C.8",
+  "8.EE.C.8.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Where do the lines cross? That point solves both equations.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Line 1: y = −2x − 6. Line 2: y = 2x + 10."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "segments": [
+           {
+            "x1": -4,
+            "y1": 2,
+            "x2": -3,
+            "extend": true
+           },
+           {
+            "x1": -4,
+            "y1": 2,
+            "x2": -3,
+            "y2": 4,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "They cross at ("
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "x where the lines cross",
+             "answer": {
+              "text": "−4",
+              "also": [
+               "-4"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "y where the lines cross",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "They cross at ( −4 , 2 )"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Line 1: y = 2x − 2. Line 2: y = −2x − 2."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "segments": [
+           {
+            "y1": -2,
+            "x2": 1,
+            "extend": true
+           },
+           {
+            "y1": -2,
+            "x2": 1,
+            "y2": -4,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "They cross at ("
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "x where the lines cross",
+             "answer": {
+              "text": "0"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "y where the lines cross",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "They cross at ( 0 , −2 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-systems-graph",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Solve a system of two linear equations by reading where their graphs cross.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 352
+    },
+    {
+     "label": "B",
+     "instruction": "Solve the system.",
+     "explainer": "If both equations say y = …, set them equal. If one adds x and y and the other subtracts, add the equations.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + y = −4"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x − y = 0"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "x for x + y = −4, x − y = 0",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           },
+           {
+            "text": " y ="
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "y for x + y = −4, x − y = 0",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = −2  y = −2"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = 3x + 7"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = −x + 7"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "x for y = 3x + 7, y = −x + 7",
+             "answer": {
+              "text": "0"
+             }
+            }
+           },
+           {
+            "text": " y ="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "y for y = 3x + 7, y = −x + 7",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 0  y = 7"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-systems",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Solve systems of two linear equations by substitution or elimination.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 290
+    }
+   ],
+   "estimatedHeight": 650
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write two equations and solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Adult tickets cost $8 and child tickets $5. A group buys 10 tickets for $65."
+           }
+          ],
+          "parts": [
+           {
+            "label": "5a",
+            "prompt": [
+             {
+              "text": "How many adult tickets did they buy?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 6,
+               "field": {
+                "id": "q5a",
+                "label": "adult tickets",
+                "answer": {
+                 "text": "5",
+                 "also": [
+                  "5 tickets"
+                 ],
+                 "work": "(65 − 5 × 10) ÷ (8 − 5)"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "5b",
+            "prompt": [
+             {
+              "text": "How many child tickets?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q5b",
+                "label": "child tickets",
+                "answer": {
+                 "text": "5",
+                 "also": [
+                  "5 tickets"
+                 ],
+                 "work": "10 − 5"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5a: (65 − 5 × 10) ÷ (8 − 5) = 5; 5b: 10 − 5 = 5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Mia and Leo share 47 stickers between the 2 of them. Mia gets 9 more than Leo."
+           }
+          ],
+          "parts": [
+           {
+            "label": "6a",
+            "prompt": [
+             {
+              "text": "How many stickers does Leo get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 4,
+               "field": {
+                "id": "q6a",
+                "label": "Leo's stickers",
+                "answer": {
+                 "text": "19",
+                 "work": "(47 − 9) ÷ 2"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "6b",
+            "prompt": [
+             {
+              "text": "How many does Mia get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q6b",
+                "label": "Mia's stickers",
+                "answer": {
+                 "text": "28",
+                 "work": "19 + 9"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6a: (47 − 9) ÷ 2 = 19; 6b: 19 + 9 = 28"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-system-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Write and solve a system of equations for a story.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ]
+     },
+     "estimatedHeight": 766
+    }
+   ],
+   "estimatedHeight": 770
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "x where the lines cross",
+    "answer": {
+     "text": "−4",
+     "also": [
+      "-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "y where the lines cross",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "x where the lines cross",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "y where the lines cross",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "x for x + y = −4, x − y = 0",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "y for x + y = −4, x − y = 0",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "x for y = 3x + 7, y = −x + 7",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "y for y = 3x + 7, y = −x + 7",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "5a",
+   "field": {
+    "id": "q5a",
+    "label": "adult tickets",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 tickets"
+     ],
+     "work": "(65 − 5 × 10) ÷ (8 − 5)"
+    }
+   }
+  },
+  {
+   "itemLabel": "5b",
+   "field": {
+    "id": "q5b",
+    "label": "child tickets",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 tickets"
+     ],
+     "work": "10 − 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6a",
+   "field": {
+    "id": "q6a",
+    "label": "Leo's stickers",
+    "answer": {
+     "text": "19",
+     "work": "(47 − 9) ÷ 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6b",
+   "field": {
+    "id": "q6b",
+    "label": "Mia's stickers",
+    "answer": {
+     "text": "28",
+     "work": "19 + 9"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve systems by graph, by algebra, and for stories.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Solve the system.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

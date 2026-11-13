@@ -16,6 +16,7 @@ import {
   RowSchema,
   StackSchema,
 } from '../proto/v1/nodes_pb.js';
+import { fieldsG68 } from './draw_g68.js';
 
 export function gcd(a: number, b: number): number {
   a = Math.abs(a);
@@ -107,6 +108,7 @@ export function fieldsOf(nodes: readonly Node[]): Field[] {
     }
   };
   const walk = (n: Node) => {
+    fieldsG68(n).forEach(add);
     const k = n.kind;
     switch (k.case) {
       case 'row':

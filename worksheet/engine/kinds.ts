@@ -68,6 +68,7 @@ import {
 } from './build.js';
 import { commas, mixed } from './draw.js';
 import { generateShapes } from './kinds_shapes.js';
+import { generateG68 } from './kinds_g68.js';
 import { type Rng } from './rng.js';
 
 // Ctx is what a generator gets: random numbers, field ids, and a check that
@@ -102,7 +103,7 @@ export function list(xs: readonly number[], fallback: number[]): readonly number
 }
 
 // simplest gives the other names a fraction reading may also take.
-function simplest(n: number, d: number): string[] {
+export function simplest(n: number, d: number): string[] {
   const g = gcd(n, d);
   if (g === 1) {
     return [];
@@ -110,12 +111,16 @@ function simplest(n: number, d: number): string[] {
   return d / g === 1 ? [String(n / g)] : [frac(n / g, d / g)];
 }
 
-const names = ['Ana', 'Ben', 'Kai', 'Mia', 'Omar', 'Lena', 'Raj', 'Zoe'];
+export const names = ['Ana', 'Ben', 'Kai', 'Mia', 'Omar', 'Lena', 'Raj', 'Zoe'];
 
 export function generate(kind: ItemKind, ctx: Ctx): Node[] {
   const shaped = generateShapes(kind, ctx);
   if (shaped) {
     return shaped;
+  }
+  const g68 = generateG68(kind, ctx);
+  if (g68) {
+    return g68;
   }
   const { rng } = ctx;
   const k = kind.kind;
@@ -911,13 +916,13 @@ function regroups(x: number, y: number, subtract: boolean): boolean {
 
 // mixedOf writes n/d as a mixed number without reducing the fraction part,
 // as a child adding same-denominator fractions would: 9/4 is "2 1/4".
-function mixedOf(n: number, d: number): string {
+export function mixedOf(n: number, d: number): string {
   const w = Math.floor(n / d);
   const r = n - w * d;
   return w === 0 ? frac(r, d) : r === 0 ? String(w) : `${w} ${frac(r, d)}`;
 }
 
-function unique(xs: string[]): string[] {
+export function unique(xs: string[]): string[] {
   return [...new Set(xs)];
 }
 

@@ -1,0 +1,189 @@
+# proto-file: proto/graph/v1/alignment.proto
+# proto-message: gradeguide.graph.v1.WorksheetAlignments
+#
+# Which standards the grade 6 to 8 fragments cover.
+
+# Grade 6: ratios and proportional relationships.
+alignments { fragment_id: "frag-g6-ratio-language" skill { code: "6.RP.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-double-number-line" skill { code: "6.RP.A.3.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-ratio-table" skill { code: "6.RP.A.3.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-unit-rate" skill { code: "6.RP.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-unit-rate" skill { code: "6.RP.A.3.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-ratio-word-problems" skill { code: "6.RP.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-ratio-word-problems" skill { code: "6.RP.A.3.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-percent-double-number-line" skill { code: "6.RP.A.3.c" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-percent-of" skill { code: "6.RP.A.3.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-percent-whole-or-rate" skill { code: "6.RP.A.3.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-percent-word-problems" skill { code: "6.RP.A.3.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-convert-units" skill { code: "6.RP.A.3.d" } role: ROLE_PRACTISES }
+
+# Grade 6: the number system.
+alignments { fragment_id: "frag-g6-divide-fractions" skill { code: "6.NS.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-divide-fractions-word-problems" skill { code: "6.NS.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-long-division" skill { code: "6.NS.B.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-decimal-add-subtract" skill { code: "6.NS.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-decimal-multiply-divide" skill { code: "6.NS.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-gcf" skill { code: "6.NS.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-lcm" skill { code: "6.NS.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-factor-out-gcf" skill { code: "6.NS.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-integers-in-context" skill { code: "6.NS.C.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-integer-number-line" skill { code: "6.NS.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-integer-number-line" skill { code: "6.NS.C.6.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-opposites" skill { code: "6.NS.C.6.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-quadrants" skill { code: "6.NS.C.6.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-quadrants" skill { code: "6.NS.C.6.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-reflect-points" skill { code: "6.NS.C.6.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-compare-integers" skill { code: "6.NS.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-compare-integers" skill { code: "6.NS.C.7.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-order-integers" skill { code: "6.NS.C.7.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-integers-order-in-context" skill { code: "6.NS.C.7.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-absolute-value" skill { code: "6.NS.C.7.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-debt" skill { code: "6.NS.C.7.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-distance-on-grid" skill { code: "6.NS.C.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-rectangle-on-grid" skill { code: "6.NS.C.8" } role: ROLE_PRACTISES }
+
+# Grade 6: expressions and equations.
+alignments { fragment_id: "frag-g6-write-power" skill { code: "6.EE.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-evaluate-powers" skill { code: "6.EE.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-expressions-from-words" skill { code: "6.EE.A.2.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-expressions-from-words" skill { code: "6.EE.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-parts-of-expressions" skill { code: "6.EE.A.2.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-evaluate-expressions" skill { code: "6.EE.A.2.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-expand" skill { code: "6.EE.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-factor" skill { code: "6.EE.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-equivalent-or-not" skill { code: "6.EE.A.4" } role: ROLE_CHECKS }
+alignments { fragment_id: "frag-g6-which-value-solves" skill { code: "6.EE.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-expressions-in-stories" skill { code: "6.EE.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-one-step-equations" skill { code: "6.EE.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-equation-word-problems" skill { code: "6.EE.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-write-inequalities" skill { code: "6.EE.B.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-rule-tables" skill { code: "6.EE.C.9" } role: ROLE_PRACTISES }
+
+# Grade 6: geometry.
+alignments { fragment_id: "frag-g6-shape-area" skill { code: "6.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-volume-fractional-edges" skill { code: "6.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-rectangle-on-grid" skill { code: "6.G.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-surface-area" skill { code: "6.G.A.4" } role: ROLE_PRACTISES }
+
+# Grade 6: statistics.
+alignments { fragment_id: "frag-g6-statistical-questions" skill { code: "6.SP.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g6-dot-plot" skill { code: "6.SP.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-dot-plot" skill { code: "6.SP.B.5.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-center-or-spread" skill { code: "6.SP.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-frequency-table" skill { code: "6.SP.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-histogram" skill { code: "6.SP.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-draw-box-plot" skill { code: "6.SP.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-read-box-plot" skill { code: "6.SP.B.5.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-mean-median-mode" skill { code: "6.SP.B.5.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-quartiles-mad" skill { code: "6.SP.B.5.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g6-quartiles-mad" skill { code: "6.SP.B.5" } role: ROLE_PRACTISES }
+
+# Grade 7: ratios and proportional relationships.
+alignments { fragment_id: "frag-g7-unit-rate-fractions" skill { code: "7.RP.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-proportional-or-not" skill { code: "7.RP.A.2.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-proportional-or-not" skill { code: "7.RP.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-constant-of-proportionality" skill { code: "7.RP.A.2.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-constant-of-proportionality" skill { code: "7.RP.A.2.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-proportional-graph" skill { code: "7.RP.A.2.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-proportional-graph" skill { code: "7.RP.A.2.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-percent-word-problems" skill { code: "7.RP.A.3" } role: ROLE_PRACTISES }
+
+# Grade 7: the number system.
+alignments { fragment_id: "frag-g7-add-on-number-line" skill { code: "7.NS.A.1.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-add-on-number-line" skill { code: "7.NS.A.1.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-subtract-add-opposite" skill { code: "7.NS.A.1.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-add-subtract-rationals" skill { code: "7.NS.A.1.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-add-subtract-rationals" skill { code: "7.NS.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-add-subtract-signed-fractions" skill { code: "7.NS.A.1.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-multiply-divide-integers" skill { code: "7.NS.A.2.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-multiply-divide-integers" skill { code: "7.NS.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-multiply-divide-rationals" skill { code: "7.NS.A.2.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-multiply-divide-decimals" skill { code: "7.NS.A.2.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-fraction-to-decimal" skill { code: "7.NS.A.2.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-rational-word-problems" skill { code: "7.NS.A.3" } role: ROLE_PRACTISES }
+
+# Grade 7: expressions and equations.
+alignments { fragment_id: "frag-g7-expand-signed" skill { code: "7.EE.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-combine-like-terms" skill { code: "7.EE.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-factor-signed" skill { code: "7.EE.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-percent-change-expressions" skill { code: "7.EE.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-multistep-problems" skill { code: "7.EE.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-two-step-equations" skill { code: "7.EE.B.4.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-two-step-inequalities" skill { code: "7.EE.B.4.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-equation-word-problems" skill { code: "7.EE.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-equation-word-problems" skill { code: "7.EE.B.4.a" } role: ROLE_PRACTISES }
+
+# Grade 7: geometry.
+alignments { fragment_id: "frag-g7-scale-drawings" skill { code: "7.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-can-it-be-a-triangle" skill { code: "7.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-cross-sections" skill { code: "7.G.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-circles" skill { code: "7.G.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-vertical-angles" skill { code: "7.G.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-angle-equations" skill { code: "7.G.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-area" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-volume" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-surface-area" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
+
+# Grade 7: statistics and probability.
+alignments { fragment_id: "frag-g7-samples" skill { code: "7.SP.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-inference-problems" skill { code: "7.SP.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-compare-groups" skill { code: "7.SP.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-compare-groups" skill { code: "7.SP.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-likelihood" skill { code: "7.SP.C.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g7-simple-probability" skill { code: "7.SP.C.7.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-simple-probability" skill { code: "7.SP.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-expected-outcomes" skill { code: "7.SP.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-experimental-probability" skill { code: "7.SP.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-experimental-probability" skill { code: "7.SP.C.7.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-compound-probability" skill { code: "7.SP.C.8.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-compound-probability" skill { code: "7.SP.C.8.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-compound-probability" skill { code: "7.SP.C.8" } role: ROLE_PRACTISES }
+
+# Grade 8: the number system.
+alignments { fragment_id: "frag-g8-rational-or-irrational" skill { code: "8.NS.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g8-estimate-roots" skill { code: "8.NS.A.2" } role: ROLE_PRACTISES }
+
+# Grade 8: expressions and equations.
+alignments { fragment_id: "frag-g8-exponent-rules" skill { code: "8.EE.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-roots" skill { code: "8.EE.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-scientific-notation" skill { code: "8.EE.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-standard-form" skill { code: "8.EE.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-how-many-times" skill { code: "8.EE.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-operations-scientific" skill { code: "8.EE.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-divide-scientific" skill { code: "8.EE.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-compare-rates" skill { code: "8.EE.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-compare-rates" skill { code: "8.F.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-compare-rate-problems" skill { code: "8.EE.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-slope-triangles" skill { code: "8.EE.B.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g8-slope-from-points" skill { code: "8.EE.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-slope-from-points" skill { code: "8.F.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-equations-both-sides" skill { code: "8.EE.C.7.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-equations-both-sides" skill { code: "8.EE.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-how-many-solutions" skill { code: "8.EE.C.7.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-systems-graph" skill { code: "8.EE.C.8.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g8-systems" skill { code: "8.EE.C.8.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-systems" skill { code: "8.EE.C.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-system-word-problems" skill { code: "8.EE.C.8.c" } role: ROLE_PRACTISES }
+
+# Grade 8: functions.
+alignments { fragment_id: "frag-g8-function-or-not" skill { code: "8.F.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g8-linear-or-not" skill { code: "8.F.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-line-through-points" skill { code: "8.F.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-rule-from-table" skill { code: "8.F.B.4" } role: ROLE_PRACTISES }
+
+# Grade 8: geometry.
+alignments { fragment_id: "frag-g8-transformations" skill { code: "8.G.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-triangle-angles" skill { code: "8.G.A.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-exterior-angles" skill { code: "8.G.A.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-transversals" skill { code: "8.G.A.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-hypotenuse" skill { code: "8.G.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-missing-leg" skill { code: "8.G.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-distance-on-grid" skill { code: "8.G.B.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-volume" skill { code: "8.G.C.9" } role: ROLE_PRACTISES }
+
+# Grade 8: statistics.
+alignments { fragment_id: "frag-g8-scatter-association" skill { code: "8.SP.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g8-line-of-fit" skill { code: "8.SP.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-line-of-fit" skill { code: "8.SP.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-linear-models" skill { code: "8.SP.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g8-two-way-tables" skill { code: "8.SP.A.4" } role: ROLE_PRACTISES }

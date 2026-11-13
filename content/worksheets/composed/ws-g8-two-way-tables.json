@@ -1,0 +1,461 @@
+{
+ "worksheetId": "ws-g8-two-way-tables",
+ "title": "Two-way tables",
+ "headerLabels": [
+  "8.SP.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in the totals, then answer.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "Walks to school",
+           "Rides",
+           "Total"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "Has a pet"
+             },
+             {
+              "text": "11"
+             },
+             {
+              "text": "20"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "Has a pet total",
+               "answer": {
+                "text": "31"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "No pet"
+             },
+             {
+              "text": "6"
+             },
+             {
+              "text": "5"
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "No pet total",
+               "answer": {
+                "text": "11"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Total"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "Walks to school total",
+               "answer": {
+                "text": "17"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "Rides total",
+               "answer": {
+                "text": "25"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-5",
+               "label": "grand total",
+               "answer": {
+                "text": "42"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Of the students who walk, what fraction have a pet?"
+           },
+           {
+            "fractionBlank": {
+             "id": "q1-6",
+             "label": "Of the students who walk, what fraction have a pet?",
+             "answer": {
+              "text": "11/17"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Of the students with a pet, what fraction ride?"
+           },
+           {
+            "fractionBlank": {
+             "id": "q1-7",
+             "label": "Of the students with a pet, what fraction ride?",
+             "answer": {
+              "text": "20/31"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "31, 11, 17, 25, 42; Of the students who walk, what fraction have a pet? 11/17; Of the students with a pet, what fraction ride? 20/31"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "Walks to school",
+           "Rides",
+           "Total"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "Has a pet"
+             },
+             {
+              "text": "12"
+             },
+             {
+              "text": "26"
+             },
+             {
+              "field": {
+               "id": "q2",
+               "label": "Has a pet total",
+               "answer": {
+                "text": "38"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "No pet"
+             },
+             {
+              "text": "27"
+             },
+             {
+              "text": "9"
+             },
+             {
+              "field": {
+               "id": "q2-2",
+               "label": "No pet total",
+               "answer": {
+                "text": "36"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Total"
+             },
+             {
+              "field": {
+               "id": "q2-3",
+               "label": "Walks to school total",
+               "answer": {
+                "text": "39"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-4",
+               "label": "Rides total",
+               "answer": {
+                "text": "35"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-5",
+               "label": "grand total",
+               "answer": {
+                "text": "74"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Of the students who walk, what fraction have a pet?"
+           },
+           {
+            "fractionBlank": {
+             "id": "q2-6",
+             "label": "Of the students who walk, what fraction have a pet?",
+             "answer": {
+              "text": "4/13",
+              "also": [
+               "12/39"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Of the students with a pet, what fraction ride?"
+           },
+           {
+            "fractionBlank": {
+             "id": "q2-7",
+             "label": "Of the students with a pet, what fraction ride?",
+             "answer": {
+              "text": "13/19",
+              "also": [
+               "26/38"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "38, 36, 39, 35, 74; Of the students who walk, what fraction have a pet? 4/13; Of the students with a pet, what fraction ride? 13/19"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-two-way-tables",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Complete a two-way table and find relative frequencies in a row or column.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Dividing by the grand total when the question is about one row."
+      ]
+     },
+     "estimatedHeight": 578
+    }
+   ],
+   "estimatedHeight": 582
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "Has a pet total",
+    "answer": {
+     "text": "31"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "No pet total",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "Walks to school total",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "Rides total",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "grand total",
+    "answer": {
+     "text": "42"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "Of the students who walk, what fraction have a pet?",
+    "answer": {
+     "text": "11/17"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "Of the students with a pet, what fraction ride?",
+    "answer": {
+     "text": "20/31"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "Has a pet total",
+    "answer": {
+     "text": "38"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "No pet total",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "Walks to school total",
+    "answer": {
+     "text": "39"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "Rides total",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "grand total",
+    "answer": {
+     "text": "74"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "Of the students who walk, what fraction have a pet?",
+    "answer": {
+     "text": "4/13",
+     "also": [
+      "12/39"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-7",
+    "label": "Of the students with a pet, what fraction ride?",
+    "answer": {
+     "text": "13/19",
+     "also": [
+      "26/38"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Complete two-way tables and compare relative frequencies.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Fill in the totals, then answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,445 @@
+{
+ "worksheetId": "ws-g7-area-volume",
+ "title": "Area, volume and surface area",
+ "headerLabels": [
+  "7.G.B.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": -2,
+            "y": 6
+           }
+          ],
+          "apex": {
+           "x": -2,
+           "y": 6
+          },
+          "baseLabel": "5 cm",
+          "heightLabel": "6 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area in square cm",
+             "answer": {
+              "text": "15"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 15 sq cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": 5,
+            "y": 8
+           },
+           {
+            "x": 3,
+            "y": 8
+           }
+          ],
+          "apex": {
+           "x": 3,
+           "y": 8
+          },
+          "baseLabel": "5 cm",
+          "heightLabel": "8 cm",
+          "topLabel": "2 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "area in square cm",
+             "answer": {
+              "text": "28"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 28 sq cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "x": 9,
+            "y": 7
+           },
+           {
+            "x": 2,
+            "y": 7
+           }
+          ],
+          "apex": {
+           "x": 2,
+           "y": 7
+          },
+          "baseLabel": "10 cm",
+          "heightLabel": "7 cm",
+          "topLabel": "7 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square cm",
+             "answer": {
+              "text": "59.5"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 59.5 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-area",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find the area of triangles and quadrilaterals.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 470
+    },
+    {
+     "label": "B",
+     "instruction": "Find the volume.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "boxSolid": {
+          "lengthLabel": "10 in",
+          "widthLabel": "5 in",
+          "heightLabel": "4 in",
+          "length": 10,
+          "width": 5,
+          "height": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "volume in cubic inches",
+             "answer": {
+              "text": "200"
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 200 cubic in"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "boxSolid": {
+          "lengthLabel": "5 in",
+          "widthLabel": "6 in",
+          "heightLabel": "6 in",
+          "length": 5,
+          "width": 6,
+          "height": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "volume in cubic inches",
+             "answer": {
+              "text": "180"
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 180 cubic in"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-volume",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the volume of a right rectangular prism.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 222
+    }
+   ],
+   "estimatedHeight": 700
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the surface area.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "prismNet": {
+          "length": 8,
+          "width": 7,
+          "height": 6,
+          "unit": "in"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Surface area ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "surface area in square inches",
+             "answer": {
+              "text": "292"
+             }
+            }
+           },
+           {
+            "text": "sq in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Surface area = 292 sq in"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "prismNet": {
+          "length": 9,
+          "width": 5,
+          "height": 6,
+          "unit": "in"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Surface area ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "surface area in square inches",
+             "answer": {
+              "text": "258"
+             }
+            }
+           },
+           {
+            "text": "sq in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Surface area = 258 sq in"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-surface-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the surface area of a right rectangular prism from its net.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 350
+    }
+   ],
+   "estimatedHeight": 354
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area in square cm",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "area in square cm",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area in square cm",
+    "answer": {
+     "text": "59.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "volume in cubic inches",
+    "answer": {
+     "text": "200"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "volume in cubic inches",
+    "answer": {
+     "text": "180"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "surface area in square inches",
+    "answer": {
+     "text": "292"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "surface area in square inches",
+    "answer": {
+     "text": "258"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve area, volume and surface area problems.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the surface area.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

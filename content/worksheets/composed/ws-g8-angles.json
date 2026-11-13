@@ -1,0 +1,564 @@
+{
+ "worksheetId": "ws-g8-angles",
+ "title": "Angles in triangles and parallel lines",
+ "headerLabels": [
+  "8.G.A.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the angle.",
+     "explainer": "The angles of a triangle add to 180°. An exterior angle equals the two far interior angles added.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 24° and 19°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Third angle:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "third angle",
+             "answer": {
+              "text": "137°",
+              "also": [
+               "137"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Third angle: 137°"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 78° and 67°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Third angle:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "third angle",
+             "answer": {
+              "text": "35°",
+              "also": [
+               "35"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Third angle: 35°"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 96° and 47°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Third angle:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "third angle",
+             "answer": {
+              "text": "37°",
+              "also": [
+               "37"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Third angle: 37°"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 82° and 45°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Third angle:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "third angle",
+             "answer": {
+              "text": "53°",
+              "also": [
+               "53"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Third angle: 53°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-triangle-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Use the triangle angle sum.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 236
+    },
+    {
+     "label": "B",
+     "instruction": "Find the exterior angle.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 104° and 18°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Exterior angle at the third corner:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "exterior angle",
+             "answer": {
+              "text": "122°",
+              "also": [
+               "122"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Exterior angle at the third corner: 122°"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 68° and 80°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Exterior angle at the third corner:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "exterior angle",
+             "answer": {
+              "text": "148°",
+              "also": [
+               "148"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Exterior angle at the third corner: 148°"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 57° and 77°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Exterior angle at the third corner:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "exterior angle",
+             "answer": {
+              "text": "134°",
+              "also": [
+               "134"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Exterior angle at the third corner: 134°"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A triangle has angles of 56° and 71°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Exterior angle at the third corner:"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "exterior angle",
+             "answer": {
+              "text": "127°",
+              "also": [
+               "127"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Exterior angle at the third corner: 127°"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-exterior-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find an exterior angle of a triangle from the two interior angles across from it.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 346
+    }
+   ],
+   "estimatedHeight": 590
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "The arrows mark parallel lines. Find the angles in the boxes.",
+     "explainer": "Corresponding and alternate angles are equal. Angles beside each other on a line add to 180°.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 60,
+          "labels": [
+           {
+            "position": 2,
+            "text": "60°"
+           },
+           {
+            "field": {
+             "id": "q9",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "60°",
+              "also": [
+               "60"
+              ]
+             }
+            }
+           },
+           {
+            "position": 7,
+            "field": {
+             "id": "q9-2",
+             "label": "angle at position 7",
+             "answer": {
+              "text": "120°",
+              "also": [
+               "120"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "60°, 120°"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 115,
+          "labels": [
+           {
+            "position": 7,
+            "text": "65°"
+           },
+           {
+            "position": 5,
+            "field": {
+             "id": "q10",
+             "label": "angle at position 5",
+             "answer": {
+              "text": "65°",
+              "also": [
+               "65"
+              ]
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q10-2",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "115°",
+              "also": [
+               "115"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "65°, 115°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transversals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find angles made when a transversal cuts parallel lines.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 258
+    }
+   ],
+   "estimatedHeight": 262
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "third angle",
+    "answer": {
+     "text": "137°",
+     "also": [
+      "137"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "third angle",
+    "answer": {
+     "text": "35°",
+     "also": [
+      "35"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "third angle",
+    "answer": {
+     "text": "37°",
+     "also": [
+      "37"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "third angle",
+    "answer": {
+     "text": "53°",
+     "also": [
+      "53"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "exterior angle",
+    "answer": {
+     "text": "122°",
+     "also": [
+      "122"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "exterior angle",
+    "answer": {
+     "text": "148°",
+     "also": [
+      "148"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "exterior angle",
+    "answer": {
+     "text": "134°",
+     "also": [
+      "134"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "exterior angle",
+    "answer": {
+     "text": "127°",
+     "also": [
+      "127"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "60°",
+     "also": [
+      "60"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "angle at position 7",
+    "answer": {
+     "text": "120°",
+     "also": [
+      "120"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "angle at position 5",
+    "answer": {
+     "text": "65°",
+     "also": [
+      "65"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "115°",
+     "also": [
+      "115"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use angle sums, exterior angles and parallel lines to find angles.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the angle.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the exterior angle.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"The arrows mark parallel lines. Find the angles in the boxes.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"The arrows mark parallel lines. Find the angles in the boxes.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

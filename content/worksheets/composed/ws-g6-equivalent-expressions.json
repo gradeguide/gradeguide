@@ -1,0 +1,790 @@
+{
+ "worksheetId": "ws-g6-equivalent-expressions",
+ "title": "Equivalent expressions",
+ "headerLabels": [
+  "6.EE.A.3",
+  "6.EE.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply out the brackets.",
+     "explainer": "Multiply each term inside by the number outside: 3(x + 4) = 3x + 12.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8(3x + 12)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "8(3x + 12) expanded",
+             "answer": {
+              "text": "24x + 96",
+              "also": [
+               "24x+96"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8(3x + 12) = 24x + 96"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8(4x + 2)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "8(4x + 2) expanded",
+             "answer": {
+              "text": "32x + 16",
+              "also": [
+               "32x+16"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8(4x + 2) = 32x + 16"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2(4x + 4)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "2(4x + 4) expanded",
+             "answer": {
+              "text": "8x + 8",
+              "also": [
+               "8x+8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2(4x + 4) = 8x + 8"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2(x + 9)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "2(x + 9) expanded",
+             "answer": {
+              "text": "2x + 18",
+              "also": [
+               "2x+18"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2(x + 9) = 2x + 18"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2(2x + 8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "2(2x + 8) expanded",
+             "answer": {
+              "text": "4x + 16",
+              "also": [
+               "4x+16"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2(2x + 8) = 4x + 16"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5(4x + 1)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "5(4x + 1) expanded",
+             "answer": {
+              "text": "20x + 5",
+              "also": [
+               "20x+5"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5(4x + 1) = 20x + 5"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-expand",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Use the distributive property to write an equivalent expression without brackets.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Multiplying only the first term: 3(x + 4) = 3x + 4."
+      ]
+     },
+     "estimatedHeight": 216
+    },
+    {
+     "label": "B",
+     "instruction": "Factor out the greatest common factor.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24x + 30"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "24x + 30 with 6 factored out",
+             "answer": {
+              "text": "6(4x + 5)",
+              "also": [
+               "6(4x+5)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24x + 30 = 6(4x + 5)"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27x + 9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "27x + 9 with 9 factored out",
+             "answer": {
+              "text": "9(3x + 1)",
+              "also": [
+               "9(3x+1)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27x + 9 = 9(3x + 1)"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30x + 35"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "30x + 35 with 5 factored out",
+             "answer": {
+              "text": "5(6x + 7)",
+              "also": [
+               "5(6x+7)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30x + 35 = 5(6x + 7)"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8x + 28"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "8x + 28 with 4 factored out",
+             "answer": {
+              "text": "4(2x + 7)",
+              "also": [
+               "4(2x+7)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8x + 28 = 4(2x + 7)"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-factor",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write an expression as its greatest common factor times a sum.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "C",
+     "instruction": "Are the two expressions equivalent? Try a number for the variable to check.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5x + 6 + x"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "6x + 6"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "is 5x + 6 + x the same as 6x + 6",
+           "answer": {
+            "text": "equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equivalent"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + x + x"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "x³"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "is x + x + x the same as x³",
+           "answer": {
+            "text": "not equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equivalent"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9x + 5 + x"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "10x + 5"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q13",
+           "label": "is 9x + 5 + x the same as 10x + 5",
+           "answer": {
+            "text": "equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equivalent"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9x + 5x"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "14x²"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q14",
+           "label": "is 9x + 5x the same as 14x²",
+           "answer": {
+            "text": "not equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equivalent"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + x + x"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "3x"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q15",
+           "label": "is x + x + x the same as 3x",
+           "answer": {
+            "text": "equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equivalent"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7(x − 4)"
+           },
+           {
+            "text": "and"
+           },
+           {
+            "text": "7x − 4"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equivalent",
+           "not equivalent"
+          ],
+          "field": {
+           "id": "q16",
+           "label": "is 7(x − 4) the same as 7x − 4",
+           "answer": {
+            "text": "not equivalent"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equivalent"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-equivalent-or-not",
+     "stage": "STAGE_MISTAKE",
+     "design": {
+      "purpose": "Decide whether two expressions are equal for every value of the variable.",
+      "principles": [
+       "PRINCIPLE_ERROR_ANALYSIS"
+      ],
+      "misconceptions": [
+       "Thinking x + x + x is x³.",
+       "Thinking 2x + 3x is 5x²."
+      ]
+     },
+     "estimatedHeight": 274
+    }
+   ],
+   "estimatedHeight": 640
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "8(3x + 12) expanded",
+    "answer": {
+     "text": "24x + 96",
+     "also": [
+      "24x+96"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "8(4x + 2) expanded",
+    "answer": {
+     "text": "32x + 16",
+     "also": [
+      "32x+16"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2(4x + 4) expanded",
+    "answer": {
+     "text": "8x + 8",
+     "also": [
+      "8x+8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2(x + 9) expanded",
+    "answer": {
+     "text": "2x + 18",
+     "also": [
+      "2x+18"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2(2x + 8) expanded",
+    "answer": {
+     "text": "4x + 16",
+     "also": [
+      "4x+16"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "5(4x + 1) expanded",
+    "answer": {
+     "text": "20x + 5",
+     "also": [
+      "20x+5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "24x + 30 with 6 factored out",
+    "answer": {
+     "text": "6(4x + 5)",
+     "also": [
+      "6(4x+5)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "27x + 9 with 9 factored out",
+    "answer": {
+     "text": "9(3x + 1)",
+     "also": [
+      "9(3x+1)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "30x + 35 with 5 factored out",
+    "answer": {
+     "text": "5(6x + 7)",
+     "also": [
+      "5(6x+7)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8x + 28 with 4 factored out",
+    "answer": {
+     "text": "4(2x + 7)",
+     "also": [
+      "4(2x+7)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "is 5x + 6 + x the same as 6x + 6",
+    "answer": {
+     "text": "equivalent"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "is x + x + x the same as x³",
+    "answer": {
+     "text": "not equivalent"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "is 9x + 5 + x the same as 10x + 5",
+    "answer": {
+     "text": "equivalent"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "is 9x + 5x the same as 14x²",
+    "answer": {
+     "text": "not equivalent"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "is x + x + x the same as 3x",
+    "answer": {
+     "text": "equivalent"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "is 7(x − 4) the same as 7x − 4",
+    "answer": {
+     "text": "not equivalent"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Expand and factor expressions, and tell when two are equivalent.",
+  "principles": [
+   "PRINCIPLE_ERROR_ANALYSIS"
+  ]
+ },
+ "advice": [
+  "\"Multiply out the brackets.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Factor out the greatest common factor.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

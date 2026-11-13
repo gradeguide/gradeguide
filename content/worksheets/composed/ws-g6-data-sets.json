@@ -1,0 +1,1158 @@
+{
+ "worksheetId": "ws-g6-data-sets",
+ "title": "Center and spread of data",
+ "headerLabels": [
+  "6.SP.A.2",
+  "6.SP.B.5.a",
+  "6.SP.B.5.c",
+  "6.SP.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the dot plot.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "linePlot": {
+          "start": 4,
+          "end": 14,
+          "partsPerUnit": 1,
+          "counts": [
+           0,
+           1,
+           0,
+           2,
+           0,
+           0,
+           2,
+           2,
+           2,
+           0,
+           0
+          ],
+          "caption": "Books each student read"
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "How many students?"
+              },
+              {
+               "blank": {
+                "id": "q1",
+                "label": "number of data values",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q1-2",
+                "label": "median",
+                "answer": {
+                 "text": "10"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q1-3",
+                "label": "range",
+                "answer": {
+                 "text": "7"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9, 10, 7"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "linePlot": {
+          "start": 3,
+          "end": 13,
+          "partsPerUnit": 1,
+          "counts": [
+           0,
+           1,
+           3,
+           0,
+           2,
+           3,
+           1,
+           1,
+           0,
+           1,
+           0
+          ],
+          "caption": "Books each student read"
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "How many students?"
+              },
+              {
+               "blank": {
+                "id": "q2",
+                "label": "number of data values",
+                "answer": {
+                 "text": "12"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q2-2",
+                "label": "median",
+                "answer": {
+                 "text": "7.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q2-3",
+                "label": "range",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12, 7.5, 8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-dot-plot",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read the number of values, the median and the range from a dot plot.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Taking the middle number on the scale as the median."
+      ]
+     },
+     "estimatedHeight": 353
+    },
+    {
+     "label": "B",
+     "instruction": "Find the mean, median, mode and range.",
+     "explainer": "Put the data in order first. The mean is the total shared equally.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Hours of sleep: 10, 7, 11, 11, 6"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q3",
+                "label": "mean",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q3-2",
+                "label": "median",
+                "answer": {
+                 "text": "10"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mode:"
+              },
+              {
+               "blank": {
+                "id": "q3-3",
+                "label": "mode",
+                "answer": {
+                 "text": "11"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q3-4",
+                "label": "range",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9, 10, 11, 5"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Points scored: 16, 3, 20, 17, 7, 3"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q4",
+                "label": "mean",
+                "answer": {
+                 "text": "11"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q4-2",
+                "label": "median",
+                "answer": {
+                 "text": "11.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mode:"
+              },
+              {
+               "blank": {
+                "id": "q4-3",
+                "label": "mode",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q4-4",
+                "label": "range",
+                "answer": {
+                 "text": "17"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11, 11.5, 3, 17"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Hours of sleep: 11, 10, 10, 9, 8, 6"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q5",
+                "label": "mean",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q5-2",
+                "label": "median",
+                "answer": {
+                 "text": "9.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mode:"
+              },
+              {
+               "blank": {
+                "id": "q5-3",
+                "label": "mode",
+                "answer": {
+                 "text": "10"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q5-4",
+                "label": "range",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9, 9.5, 10, 5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-mean-median-mode",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the mean, median, mode and range of a small data set.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Finding the median without ordering the data."
+      ]
+     },
+     "estimatedHeight": 294
+    }
+   ],
+   "estimatedHeight": 655
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Use the box plot.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "boxPlot": {
+          "start": 2,
+          "end": 28,
+          "step": 2,
+          "min": 6,
+          "q1": 9,
+          "median": 12,
+          "q3": 15,
+          "max": 25,
+          "caption": "Minutes to walk to school"
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q6",
+                "label": "median",
+                "answer": {
+                 "text": "12"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "IQR:"
+              },
+              {
+               "blank": {
+                "id": "q6-2",
+                "label": "interquartile range",
+                "answer": {
+                 "text": "6"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Range:"
+              },
+              {
+               "blank": {
+                "id": "q6-3",
+                "label": "range",
+                "answer": {
+                 "text": "19"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12, 6, 19"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-read-box-plot",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read the median, interquartile range and range from a box plot.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Reading the length of the box as the range."
+      ]
+     },
+     "estimatedHeight": 218
+    },
+    {
+     "label": "D",
+     "instruction": "Find the quartiles, interquartile range, mean and mean absolute deviation.",
+     "explainer": "Quartiles are the medians of the lower and upper halves. Mean absolute deviation is the mean distance from the mean.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Points scored: 11, 7, 2, 20, 16, 18, 16, 5, 18, 17"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Lower quartile:"
+              },
+              {
+               "blank": {
+                "id": "q7",
+                "label": "lower quartile",
+                "answer": {
+                 "text": "7"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Upper quartile:"
+              },
+              {
+               "blank": {
+                "id": "q7-2",
+                "label": "upper quartile",
+                "answer": {
+                 "text": "18"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "IQR:"
+              },
+              {
+               "blank": {
+                "id": "q7-3",
+                "label": "interquartile range",
+                "answer": {
+                 "text": "11"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q7-4",
+                "label": "mean",
+                "answer": {
+                 "text": "13"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "MAD:"
+              },
+              {
+               "blank": {
+                "id": "q7-5",
+                "label": "mean absolute deviation",
+                "answer": {
+                 "text": "5.4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7, 18, 11; 13, 5.4"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Minutes to walk to school: 14, 19, 7, 24, 25, 13, 24, 18"
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Lower quartile:"
+              },
+              {
+               "blank": {
+                "id": "q8",
+                "label": "lower quartile",
+                "answer": {
+                 "text": "13.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Upper quartile:"
+              },
+              {
+               "blank": {
+                "id": "q8-2",
+                "label": "upper quartile",
+                "answer": {
+                 "text": "24"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "IQR:"
+              },
+              {
+               "blank": {
+                "id": "q8-3",
+                "label": "interquartile range",
+                "answer": {
+                 "text": "10.5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q8-4",
+                "label": "mean",
+                "answer": {
+                 "text": "18"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "MAD:"
+              },
+              {
+               "blank": {
+                "id": "q8-5",
+                "label": "mean absolute deviation",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13.5, 24, 10.5; 18, 5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-quartiles-mad",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Find the interquartile range and mean absolute deviation of a data set.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ]
+     },
+     "estimatedHeight": 324
+    }
+   ],
+   "estimatedHeight": 550
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "number of data values",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "median",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "range",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "number of data values",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "median",
+    "answer": {
+     "text": "7.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "range",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "mean",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "median",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "mode",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "range",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "mean",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "median",
+    "answer": {
+     "text": "11.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "mode",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-4",
+    "label": "range",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "mean",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "median",
+    "answer": {
+     "text": "9.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "mode",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-4",
+    "label": "range",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "median",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "interquartile range",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "range",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "lower quartile",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "upper quartile",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "interquartile range",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-4",
+    "label": "mean",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-5",
+    "label": "mean absolute deviation",
+    "answer": {
+     "text": "5.4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "lower quartile",
+    "answer": {
+     "text": "13.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "upper quartile",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "interquartile range",
+    "answer": {
+     "text": "10.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-4",
+    "label": "mean",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-5",
+    "label": "mean absolute deviation",
+    "answer": {
+     "text": "5"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe a data set by its center and spread, from a dot plot and from a list.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the dot plot.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the mean, median, mode and range.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the box plot.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Use the box plot.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

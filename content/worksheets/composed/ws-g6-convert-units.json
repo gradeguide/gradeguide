@@ -1,0 +1,372 @@
+{
+ "worksheetId": "ws-g6-convert-units",
+ "title": "Converting units",
+ "headerLabels": [
+  "6.RP.A.3.d"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Convert. Use the rate given.",
+     "explainer": "To go to the smaller unit, multiply by the rate. To go to the larger unit, divide.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "1 quart = 4 cups"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24 cups ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "24 cups in quarts",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "quarts"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24 cups = 6 quarts"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "1 gallon = 4 quarts"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12 quarts ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "12 quarts in gallons",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "gallons"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 quarts = 3 gallons"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "1 kilogram = 1,000 grams"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9 kilograms ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "9 kilograms in grams",
+             "answer": {
+              "text": "9,000",
+              "also": [
+               "9000"
+              ]
+             }
+            }
+           },
+           {
+            "text": "grams"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 kilograms = 9,000 grams"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "1 hour = 60 minutes"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 hours ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "3 hours in minutes",
+             "answer": {
+              "text": "180"
+             }
+            }
+           },
+           {
+            "text": "minutes"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 hours = 180 minutes"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "1 gallon = 4 quarts"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9 gallons ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "9 gallons in quarts",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "quarts"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 gallons = 36 quarts"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "1 pound = 16 ounces"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "176 ounces ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "176 ounces in pounds",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "pounds"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "176 ounces = 11 pounds"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "1 kilometer = 1,000 meters"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11,000 meters ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "11,000 meters in kilometers",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "kilometers"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11,000 meters = 11 kilometers"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "1 kilometer = 1,000 meters"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9,000 meters ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "9,000 meters in kilometers",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "kilometers"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9,000 meters = 9 kilometers"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-convert-units",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Use a conversion rate to change a measurement from one unit to another, both ways.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Multiplying when converting to a larger unit, so 36 inches becomes 432 feet."
+      ]
+     },
+     "estimatedHeight": 684
+    }
+   ],
+   "estimatedHeight": 688
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "24 cups in quarts",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "12 quarts in gallons",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "9 kilograms in grams",
+    "answer": {
+     "text": "9,000",
+     "also": [
+      "9000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "3 hours in minutes",
+    "answer": {
+     "text": "180"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "9 gallons in quarts",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "176 ounces in pounds",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "11,000 meters in kilometers",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "9,000 meters in kilometers",
+    "answer": {
+     "text": "9"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Convert measurements with a rate, in both directions.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Convert. Use the rate given.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

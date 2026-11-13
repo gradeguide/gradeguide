@@ -1,0 +1,536 @@
+{
+ "worksheetId": "ws-g8-pythagorean-theorem",
+ "title": "The Pythagorean theorem",
+ "headerLabels": [
+  "8.G.B.7",
+  "8.G.B.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the hypotenuse. a² + b² = c².",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "y": 15
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "field": {
+             "id": "q1",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "17",
+              "also": [
+               "17 cm",
+               "17cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "15 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 15
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "15 cm"
+           },
+           {
+            "field": {
+             "id": "q2",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "17",
+              "also": [
+               "17 cm",
+               "17cm"
+              ]
+             }
+            }
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 4
+           },
+           {
+            "x": 4,
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {
+            "field": {
+             "id": "q3",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "5",
+              "also": [
+               "5 cm",
+               "5cm"
+              ]
+             }
+            }
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 4
+           },
+           {
+            "x": 4,
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {
+            "field": {
+             "id": "q4",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "5",
+              "also": [
+               "5 cm",
+               "5cm"
+              ]
+             }
+            }
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "5"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g8-hypotenuse",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the hypotenuse of a right triangle.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Adding the legs instead of their squares."
+      ]
+     },
+     "estimatedHeight": 318
+    },
+    {
+     "label": "B",
+     "instruction": "Find the missing leg.",
+     "explainer": "Subtract: b² = c² − a².",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "12 cm"
+           },
+           {
+            "text": "13 cm"
+           },
+           {
+            "field": {
+             "id": "q5",
+             "label": "the missing leg",
+             "answer": {
+              "text": "5",
+              "also": [
+               "5 cm",
+               "5cm"
+              ]
+             }
+            }
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 4
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "field": {
+             "id": "q6",
+             "label": "the missing leg",
+             "answer": {
+              "text": "3",
+              "also": [
+               "3 cm",
+               "3cm"
+              ]
+             }
+            }
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "3"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 20
+           },
+           {
+            "x": 20,
+            "y": 21
+           }
+          ],
+          "sides": [
+           {
+            "text": "20 cm"
+           },
+           {
+            "field": {
+             "id": "q7",
+             "label": "the missing leg",
+             "answer": {
+              "text": "21",
+              "also": [
+               "21 cm",
+               "21cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "29 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        }
+       ],
+       "key": "21"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-missing-leg",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a leg of a right triangle from the other leg and the hypotenuse.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 357
+    }
+   ],
+   "estimatedHeight": 683
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the distance between A and B. Draw a right triangle to help.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -8,
+          "xMax": 8,
+          "yMin": -8,
+          "yMax": 8,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -1,
+            "label": "A"
+           },
+           {
+            "x": 5,
+            "y": -8,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -1,
+            "x2": 5,
+            "y2": -8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Distance from A(−1, 0) to B(5, −8) ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "distance from (−1, 0) to (5, −8)",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Distance from A(−1, 0) to B(5, −8) = 10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-distance-on-grid",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use the Pythagorean theorem to find the distance between two points.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 330
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "17",
+     "also": [
+      "17 cm",
+      "17cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "17",
+     "also": [
+      "17 cm",
+      "17cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 cm",
+      "5cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 cm",
+      "5cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the missing leg",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 cm",
+      "5cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the missing leg",
+    "answer": {
+     "text": "3",
+     "also": [
+      "3 cm",
+      "3cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the missing leg",
+    "answer": {
+     "text": "21",
+     "also": [
+      "21 cm",
+      "21cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "distance from (−1, 0) to (5, −8)",
+    "answer": {
+     "text": "10"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find missing sides of right triangles and distances on a grid.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Find the hypotenuse. a² + b² = c².\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the missing leg.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the distance between A and B. Draw a right triangle to help.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

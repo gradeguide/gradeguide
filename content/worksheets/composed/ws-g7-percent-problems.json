@@ -1,0 +1,472 @@
+{
+ "worksheetId": "ws-g7-percent-problems",
+ "title": "Percent problems",
+ "headerLabels": [
+  "7.RP.A.3",
+  "7.EE.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A meal costs $48. Sam leaves a 15% tip, which is 0.15 of the cost. What is the total with the tip?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q1",
+           "label": "total with tip",
+           "answer": {
+            "text": "55.20",
+            "also": [
+             "$55.20",
+             "55.2"
+            ],
+            "work": "48 + 48 × 0.15"
+           }
+          }
+         }
+        }
+       ],
+       "key": "55.20"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A $60 jacket is on sale for 30% off, which is 0.30 of the price. What is the sale price?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q2",
+           "label": "sale price",
+           "answer": {
+            "text": "42",
+            "also": [
+             "$42"
+            ],
+            "work": "60 − 60 × 0.30"
+           }
+          }
+         }
+        }
+       ],
+       "key": "42"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A bike costs $250. Sales tax is 8%, which is 0.08 of the price. What is the total cost?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q3",
+           "label": "total cost",
+           "answer": {
+            "text": "270",
+            "also": [
+             "$270"
+            ],
+            "work": "250 + 250 × 0.08"
+           }
+          }
+         }
+        }
+       ],
+       "key": "270"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A store buys a lamp for $40 and marks it up 25% (25 out of every 100). What is the selling price?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q4",
+           "label": "selling price",
+           "answer": {
+            "text": "50",
+            "also": [
+             "$50"
+            ],
+            "work": "40 + 40 ÷ 100 × 25"
+           }
+          }
+         }
+        }
+       ],
+       "key": "50"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-percent-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multistep percent problems: tax, tips, discounts, markups and percent change.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Finding the percent change from the new amount instead of the original."
+      ]
+     },
+     "estimatedHeight": 778
+    }
+   ],
+   "estimatedHeight": 782
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A town grew from 800 people to 920 people. By what percent did it grow? (A percent is out of 100.)"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q5",
+           "label": "percent growth",
+           "answer": {
+            "text": "15",
+            "also": [
+             "15%"
+            ],
+            "work": "(920 − 800) ÷ 800 × 100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "15"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-percent-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multistep percent problems: tax, tips, discounts, markups and percent change.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Finding the percent change from the new amount instead of the original."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 254
+    },
+    {
+     "label": "B",
+     "instruction": "Write the change as one multiplication.",
+     "explainer": "Going up 5% is p + 0.05p, which is 1.05p.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A price p goes down by 20%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p − 0.2p ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "p − 0.2p",
+             "answer": {
+              "text": "0.8",
+              "also": [
+               "0.8p",
+               "0.80"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p − 0.2p = 0.8 p"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A price p goes up by 25%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p + 0.25p ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "p + 0.25p",
+             "answer": {
+              "text": "1.25",
+              "also": [
+               "1.25p"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p + 0.25p = 1.25 p"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A price p goes up by 40%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p + 0.4p ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "p + 0.4p",
+             "answer": {
+              "text": "1.4",
+              "also": [
+               "1.4p",
+               "1.40"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p + 0.4p = 1.4 p"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A price p goes down by 30%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p − 0.3p ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "p − 0.3p",
+             "answer": {
+              "text": "0.7",
+              "also": [
+               "0.7p",
+               "0.70"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p − 0.3p = 0.7 p"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-percent-change-expressions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Rewrite a percent increase or decrease as a single multiplication.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 216
+    }
+   ],
+   "estimatedHeight": 478
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "total with tip",
+    "answer": {
+     "text": "55.20",
+     "also": [
+      "$55.20",
+      "55.2"
+     ],
+     "work": "48 + 48 × 0.15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "sale price",
+    "answer": {
+     "text": "42",
+     "also": [
+      "$42"
+     ],
+     "work": "60 − 60 × 0.30"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "total cost",
+    "answer": {
+     "text": "270",
+     "also": [
+      "$270"
+     ],
+     "work": "250 + 250 × 0.08"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "selling price",
+    "answer": {
+     "text": "50",
+     "also": [
+      "$50"
+     ],
+     "work": "40 + 40 ÷ 100 × 25"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "percent growth",
+    "answer": {
+     "text": "15",
+     "also": [
+      "15%"
+     ],
+     "work": "(920 − 800) ÷ 800 × 100"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "p − 0.2p",
+    "answer": {
+     "text": "0.8",
+     "also": [
+      "0.8p",
+      "0.80"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "p + 0.25p",
+    "answer": {
+     "text": "1.25",
+     "also": [
+      "1.25p"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "p + 0.4p",
+    "answer": {
+     "text": "1.4",
+     "also": [
+      "1.4p",
+      "1.40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "p − 0.3p",
+    "answer": {
+     "text": "0.7",
+     "also": [
+      "0.7p",
+      "0.70"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve tax, tip, discount, markup and percent change problems.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,347 @@
+{
+ "worksheetId": "ws-g7-angles",
+ "title": "Angle relationships",
+ "headerLabels": [
+  "7.G.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the missing angles.",
+     "explainer": "Angles across from each other are equal. Angles beside each other on a line add to 180°.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 30,
+          "rays": [
+           120,
+           180,
+           300
+          ],
+          "arcs": [
+           {
+            "text": "120°"
+           },
+           {
+            "field": {
+             "id": "q1",
+             "label": "the angle beside 120°",
+             "answer": {
+              "text": "60°",
+              "also": [
+               "60"
+              ]
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q1-2",
+             "label": "the angle across from 120°",
+             "answer": {
+              "text": "120°",
+              "also": [
+               "120"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "60°, 120°"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "angle": {
+          "rotation": 30,
+          "rays": [
+           140,
+           180,
+           320
+          ],
+          "arcs": [
+           {
+            "text": "140°"
+           },
+           {
+            "field": {
+             "id": "q2",
+             "label": "the angle beside 140°",
+             "answer": {
+              "text": "40°",
+              "also": [
+               "40"
+              ]
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q2-2",
+             "label": "the angle across from 140°",
+             "answer": {
+              "text": "140°",
+              "also": [
+               "140"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40°, 140°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-vertical-angles",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Use vertical and supplementary angles to find unknown angles.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 248
+    },
+    {
+     "label": "B",
+     "instruction": "Write an equation and solve for x.",
+     "explainer": "Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Two complementary angles measure x° and (2x + 15)°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "x",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 25"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Two vertical angles measure (3x + 15)° and 75°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "x",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 20"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Two vertical angles measure (3x + 20)° and 140°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "x",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 40"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Two complementary angles measure x° and (2x + 45)°."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "x",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 15"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-angle-equations",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write and solve equations for unknown angles.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ]
+     },
+     "estimatedHeight": 372
+    }
+   ],
+   "estimatedHeight": 628
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the angle beside 120°",
+    "answer": {
+     "text": "60°",
+     "also": [
+      "60"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the angle across from 120°",
+    "answer": {
+     "text": "120°",
+     "also": [
+      "120"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the angle beside 140°",
+    "answer": {
+     "text": "40°",
+     "also": [
+      "40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the angle across from 140°",
+    "answer": {
+     "text": "140°",
+     "also": [
+      "140"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "x",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "x",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "x",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "x",
+    "answer": {
+     "text": "15"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use vertical, complementary and supplementary angles to find unknown angles.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,409 @@
+{
+ "worksheetId": "ws-g6-area",
+ "title": "Area of triangles and quadrilaterals",
+ "headerLabels": [
+  "6.G.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the area.",
+     "explainer": "Triangle: half of base × height. Parallelogram: base × height. Trapezoid: half the sum of the bases × height.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {},
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area in square cm",
+             "answer": {
+              "text": "17.5"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 17.5 sq cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "x": 2,
+            "y": 9
+           }
+          ],
+          "apex": {
+           "x": 2,
+           "y": 9
+          },
+          "baseLabel": "10 cm",
+          "heightLabel": "9 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "area in square cm",
+             "answer": {
+              "text": "45"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 45 sq cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 13
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "13 cm"
+           },
+           {},
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square cm",
+             "answer": {
+              "text": "26"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 26 sq cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "x": 11,
+            "y": 10
+           }
+          ],
+          "apex": {
+           "x": 11,
+           "y": 10
+          },
+          "baseLabel": "10 cm",
+          "heightLabel": "10 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square cm",
+             "answer": {
+              "text": "50"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 50 sq cm"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 14,
+            "y": 8
+           },
+           {
+            "x": 6,
+            "y": 8
+           }
+          ],
+          "apex": {
+           "x": 6,
+           "y": 8
+          },
+          "baseLabel": "8 cm",
+          "heightLabel": "8 cm",
+          "sideLabels": [
+           "10 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "area in square cm",
+             "answer": {
+              "text": "64"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 64 sq cm"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "x": 11,
+            "y": 8
+           },
+           {
+            "x": 6,
+            "y": 8
+           }
+          ],
+          "apex": {
+           "x": 6,
+           "y": 8
+          },
+          "baseLabel": "5 cm",
+          "heightLabel": "8 cm",
+          "sideLabels": [
+           "10 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "area in square cm",
+             "answer": {
+              "text": "40"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 40 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-shape-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the area of right triangles, other triangles, parallelograms and trapezoids.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Using a slanted side as the height.",
+       "Forgetting to halve for a triangle."
+      ]
+     },
+     "estimatedHeight": 734
+    }
+   ],
+   "estimatedHeight": 738
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area in square cm",
+    "answer": {
+     "text": "17.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "area in square cm",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area in square cm",
+    "answer": {
+     "text": "26"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area in square cm",
+    "answer": {
+     "text": "50"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "area in square cm",
+    "answer": {
+     "text": "64"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "area in square cm",
+    "answer": {
+     "text": "40"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the area of triangles, parallelograms and trapezoids.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the area.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

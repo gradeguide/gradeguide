@@ -1,0 +1,326 @@
+{
+ "worksheetId": "ws-g7-compound-probability",
+ "title": "Compound events",
+ "headerLabels": [
+  "7.SP.C.8.a",
+  "7.SP.C.8.b",
+  "7.SP.C.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "List or count the outcomes, then find the probability.",
+     "explainer": "Make a list, table or tree of every outcome. Count the ones that match.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Toss two coins. Find the chance of two heads."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "outcomes: Toss two coins. Find the chance of two heads.",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q1-2",
+             "label": "probability: Toss two coins. Find the chance of two heads.",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 4; P = 1/4"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "outcomes: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q2-2",
+             "label": "probability: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "2/12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 12; P = 1/6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Roll two number cubes. Find the chance the sum is 7."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "outcomes: Roll two number cubes. Find the chance the sum is 7.",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3-2",
+             "label": "probability: Roll two number cubes. Find the chance the sum is 7.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "6/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 36; P = 1/6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Roll two number cubes. Find the chance of doubles."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "outcomes: Roll two number cubes. Find the chance of doubles.",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q4-2",
+             "label": "probability: Roll two number cubes. Find the chance of doubles.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "6/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 36; P = 1/6"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-compound-probability",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find probabilities of compound events from a sample space.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Counting heads-tails and tails-heads as one outcome."
+      ]
+     },
+     "estimatedHeight": 628
+    }
+   ],
+   "estimatedHeight": 632
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "outcomes: Toss two coins. Find the chance of two heads.",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "probability: Toss two coins. Find the chance of two heads.",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "outcomes: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "probability: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "2/12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "outcomes: Roll two number cubes. Find the chance the sum is 7.",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "probability: Roll two number cubes. Find the chance the sum is 7.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "6/36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "outcomes: Roll two number cubes. Find the chance of doubles.",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "probability: Roll two number cubes. Find the chance of doubles.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "6/36"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find probabilities of compound events from lists, tables and tree diagrams.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"List or count the outcomes, then find the probability.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

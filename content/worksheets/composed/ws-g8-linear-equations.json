@@ -1,0 +1,562 @@
+{
+ "worksheetId": "ws-g8-linear-equations",
+ "title": "Linear equations",
+ "headerLabels": [
+  "8.EE.C.7.b",
+  "8.EE.C.7",
+  "8.EE.C.7.a"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve.",
+     "explainer": "Collect the variable on one side and the numbers on the other.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2y − 2 = 5y + 16"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "solution of 2y − 2 = 5y + 16",
+             "answer": {
+              "text": "−6",
+              "also": [
+               "-6",
+               "y = −6",
+               "y = -6",
+               "y=−6",
+               "y=-6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = −6"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−5y = 3y − 56"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "solution of −5y = 3y − 56",
+             "answer": {
+              "text": "7",
+              "also": [
+               "y = 7",
+               "y=7"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 7"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−3n = 9n − 48"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "solution of −3n = 9n − 48",
+             "answer": {
+              "text": "4",
+              "also": [
+               "n = 4",
+               "n=4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "n = 4"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3n + 8 = −3n − 46"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "solution of 3n + 8 = −3n − 46",
+             "answer": {
+              "text": "−9",
+              "also": [
+               "-9",
+               "n = −9",
+               "n = -9",
+               "n=−9",
+               "n=-9"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "n = −9"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9n + 5 = −5n + 117"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "solution of 9n + 5 = −5n + 117",
+             "answer": {
+              "text": "8",
+              "also": [
+               "n = 8",
+               "n=8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "n = 8"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3n − 6 = 5n"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "solution of 3n − 6 = 5n",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3",
+               "n = −3",
+               "n = -3",
+               "n=−3",
+               "n=-3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "n = −3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-equations-both-sides",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Solve linear equations with the variable on both sides.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 654
+    },
+    {
+     "label": "B",
+     "instruction": "How many solutions does it have?",
+     "explainer": "Simplify both sides. Different x-terms: one solution. Same x-terms, different numbers: none. Both sides the same: infinitely many.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5(x + 5) = 5x + 25"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "solutions of 5(x + 5) = 5x + 25",
+           "answer": {
+            "text": "infinitely many"
+           }
+          }
+         }
+        }
+       ],
+       "key": "infinitely many"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-how-many-solutions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Tell whether a linear equation has one solution, no solution or infinitely many.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 160
+    }
+   ],
+   "estimatedHeight": 822
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "How many solutions does it have?",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5(x + 3) = 5x + 18"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "solutions of 5(x + 3) = 5x + 18",
+           "answer": {
+            "text": "no solution"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no solution"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6(x + 2) = 6x + 17"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "solutions of 6(x + 2) = 6x + 17",
+           "answer": {
+            "text": "no solution"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no solution"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-how-many-solutions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Tell whether a linear equation has one solution, no solution or infinitely many.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 194
+    }
+   ],
+   "estimatedHeight": 198
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "solution of 2y − 2 = 5y + 16",
+    "answer": {
+     "text": "−6",
+     "also": [
+      "-6",
+      "y = −6",
+      "y = -6",
+      "y=−6",
+      "y=-6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "solution of −5y = 3y − 56",
+    "answer": {
+     "text": "7",
+     "also": [
+      "y = 7",
+      "y=7"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "solution of −3n = 9n − 48",
+    "answer": {
+     "text": "4",
+     "also": [
+      "n = 4",
+      "n=4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "solution of 3n + 8 = −3n − 46",
+    "answer": {
+     "text": "−9",
+     "also": [
+      "-9",
+      "n = −9",
+      "n = -9",
+      "n=−9",
+      "n=-9"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "solution of 9n + 5 = −5n + 117",
+    "answer": {
+     "text": "8",
+     "also": [
+      "n = 8",
+      "n=8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "solution of 3n − 6 = 5n",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3",
+      "n = −3",
+      "n = -3",
+      "n=−3",
+      "n=-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "solutions of 5(x + 5) = 5x + 25",
+    "answer": {
+     "text": "infinitely many"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "solutions of 5(x + 3) = 5x + 18",
+    "answer": {
+     "text": "no solution"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "solutions of 6(x + 2) = 6x + 17",
+    "answer": {
+     "text": "no solution"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve equations with the variable on both sides, and tell how many solutions one has.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Solve.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"How many solutions does it have?\" was cut from 4 to 3 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

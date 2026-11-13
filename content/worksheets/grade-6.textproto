@@ -1,0 +1,1143 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Grade 6 sheets: ratios and rates, dividing fractions, decimals, factors
+# and multiples, integers, expressions and equations, area and volume, and
+# statistics.
+
+# Ratios and rates.
+
+fragments {
+  id: "frag-g6-ratio-language"
+  instruction: "Write each ratio."
+  stage: STAGE_INTRODUCE
+  explainer: "A ratio compares two amounts. The order matters: the ratio of cats to dogs is the cats first."
+  example { item { ratio_language {} } seed: 11 text: "The amounts go in the order the sentence names them." }
+  items { kind { ratio_language {} } count: 6 min_count: 4 }
+  design {
+    purpose: "Write a ratio of two amounts, or of a part to the whole, in the order asked."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Writing the amounts in the order they appear instead of the order asked."
+    misconceptions: "Using a part where the whole is asked for."
+  }
+}
+
+fragments {
+  id: "frag-g6-ratio-table"
+  instruction: "Fill in the table of equivalent ratios."
+  stage: STAGE_PRACTICE
+  explainer: "Each row is the first row times the same number."
+  items { kind { ratio_table {} } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Complete a table of equivalent ratios by multiplying both amounts by the same number."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Adding the same number to both amounts instead of multiplying."
+  }
+}
+
+fragments {
+  id: "frag-g6-double-number-line"
+  instruction: "Fill in the double number line."
+  stage: STAGE_GUIDED
+  explainer: "Each pair of numbers above and below a tick is in the same ratio as the first pair."
+  items { kind { ratio_table { double_number_line: true } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Find equivalent ratios on a double number line."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_NUMBER_LINE]
+    misconceptions: "Counting up by the same amount on both lines instead of by each line's own step."
+  }
+}
+
+fragments {
+  id: "frag-g6-unit-rate"
+  instruction: "Find the rate for one, then use it."
+  stage: STAGE_PRACTICE
+  items { kind { unit_rate {} } count: 6 min_count: 4 }
+  design {
+    purpose: "Find a unit rate by dividing, and use it to find the amount for another number of units."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Dividing the smaller number by the larger whatever the question asks."
+  }
+}
+
+fragments {
+  id: "frag-g6-ratio-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve ratio and rate problems from stories."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar go with 12 cups of flour?" }
+        nodes { work_space { field { label: "cups of sugar for 12 cups of flour" answer { text: "8" work: "12 ÷ 3 × 2" also: "8 cups" } } } }
+      }
+      items {
+        nodes { text: "A car goes 150 miles on 5 gallons of gas. How far can it go on 8 gallons?" }
+        nodes { work_space { field { label: "miles on 8 gallons" answer { text: "240" work: "150 ÷ 5 × 8" also: "240 miles" } } } }
+      }
+      items {
+        nodes { text: "Paint is mixed 2 cups of blue for every 3 cups of white. Mia wants 30 cups of paint in all. How many cups of blue does she need?" }
+        nodes { work_space { field { label: "cups of blue in 30 cups" answer { text: "12" work: "30 ÷ (2 + 3) × 2" also: "12 cups" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A pack of 6 juice boxes costs $4.50. A pack of 10 costs $7.00." }
+            parts {
+              prompt { text: "How much is one box in the small pack?" }
+              response { work_space { field { label: "cost of one box in the small pack" answer { text: "0.75" work: "4.50 ÷ 6" also: "$0.75" } } } }
+            }
+            parts {
+              prompt { text: "How much is one box in the large pack?" }
+              response { work_space { field { label: "cost of one box in the large pack" answer { text: "0.70" work: "7.00 ÷ 10" also: "$0.70" also: "0.7" } } } }
+            }
+            parts {
+              prompt { text: "How much do you save on each box with the large pack?" }
+              response { work_space { field { label: "saving per box" answer { text: "0.05" work: "0.75 − 0.70" also: "$0.05" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g6-percent-double-number-line"
+  instruction: "The whole is 100%. Find the amount at the box."
+  stage: STAGE_GUIDED
+  explainer: "Split the whole into equal steps. Each step on the top line matches a step of percent below."
+  items { kind { percent_of { double_number_line: true } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Find a percent of a quantity on a double number line from 0% to 100%."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g6-percent-of"
+  instruction: "Find the percent of the number."
+  stage: STAGE_PRACTICE
+  explainer: "A percent is a rate per 100. 30% of 60 is 30 for every 100, so 30/100 × 60."
+  items { kind { percent_of { ask: ASK_PART } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find a percent of a quantity as a rate per 100."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g6-percent-whole-or-rate"
+  instruction: "Find the missing number."
+  stage: STAGE_STRETCH
+  items { kind { percent_of {} } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find the whole, or the percent, when the other two are known."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Always multiplying, even when the part is given and the whole is asked for."
+  }
+}
+
+fragments {
+  id: "frag-g6-percent-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve percent problems from stories, including finding the whole."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "In a town of 2,400 people, 60% own a bike. (60% means 60 out of every 100.) How many people own a bike?" }
+        nodes { work_space { field { label: "people who own a bike" answer { text: "1440" work: "2,400 ÷ 100 × 60" also: "1,440" } } } }
+      }
+      items {
+        nodes { text: "Ben has answered 18 questions. That is 30% of the test. (30% means 30 out of every 100.) How many questions are on the test?" }
+        nodes { work_space { field { label: "questions on the test" answer { text: "60" work: "18 ÷ 30 × 100" also: "60 questions" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A shirt costs $40. It is 25% off. (25% means 25 out of every 100.)" }
+            parts {
+              prompt { text: "How many dollars off is that?" }
+              response { work_space { field { label: "dollars off" answer { text: "10" work: "40 ÷ 100 × 25" also: "$10" } } } }
+            }
+            parts {
+              prompt { text: "What is the sale price?" }
+              response { work_space { field { label: "sale price" answer { text: "30" work: "40 − 10" also: "$30" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g6-convert-units"
+  instruction: "Convert. Use the rate given."
+  stage: STAGE_PRACTICE
+  explainer: "To go to the smaller unit, multiply by the rate. To go to the larger unit, divide."
+  items { kind { convert_measure {} } count: 8 min_count: 6 }
+  max_columns: 2
+  design {
+    purpose: "Use a conversion rate to change a measurement from one unit to another, both ways."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Multiplying when converting to a larger unit, so 36 inches becomes 432 feet."
+  }
+}
+
+# Dividing fractions.
+
+fragments {
+  id: "frag-g6-divide-fractions"
+  instruction: "Divide. Write the answer in simplest form."
+  stage: STAGE_PRACTICE
+  explainer: "To divide by a fraction, multiply by its reciprocal: 2/3 ÷ 4/5 = 2/3 × 5/4."
+  example { item { divide_fractions {} } seed: 5 text: "Ask: how many of the second fit in the first?" }
+  items { kind { divide_fractions {} } count: 10 min_count: 6 }
+  design {
+    purpose: "Divide fractions and whole numbers by fractions."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Flipping the first fraction instead of the second."
+    misconceptions: "Expecting a quotient always to be smaller than the number divided."
+  }
+}
+
+fragments {
+  id: "frag-g6-divide-fractions-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Use fraction division to answer how many fit in, or how much in each share."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Dividing the larger number by the smaller whatever the story says."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "How many 3/4-cup servings are in 6 cups of yogurt?" }
+        nodes { work_space { field { label: "servings" answer { text: "8" work: "6 ÷ (3/4)" also: "8 servings" } } } }
+      }
+      items {
+        nodes { text: "A ribbon 7/8 yard long is cut into pieces 1/8 yard long. How many pieces are there?" }
+        nodes { work_space { field { label: "pieces" answer { text: "7" work: "(7/8) ÷ (1/8)" also: "7 pieces" } } } }
+      }
+      items {
+        nodes { text: "A rectangle has an area of 2/3 square meter. It is 1/2 meter wide. How long is it?" }
+        nodes { work_space { field { label: "length in meters" answer { text: "1 1/3" work: "(2/3) ÷ (1/2)" also: "4/3" } } } }
+      }
+      items {
+        nodes { text: "3 friends share 1/2 pound of cheese equally. How much does each get?" }
+        nodes { work_space { field { label: "pounds each" answer { text: "1/6" work: "(1/2) ÷ 3" also: "1/6 pound" } } } }
+      }
+    }
+  }
+}
+
+# Whole numbers and decimals.
+
+fragments {
+  id: "frag-g6-long-division"
+  instruction: "Divide."
+  stage: STAGE_PRACTICE
+  explainer: "Estimate each digit of the quotient: how many 24s are in 98? About 4, since 4 × 25 = 100."
+  items { kind { multi_digit_division { dividend_digits: 4 remainders: true } } count: 6 min_count: 4 }
+  design {
+    purpose: "Divide multi-digit numbers by two-digit numbers with the standard algorithm."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Leaving out a zero in the quotient when a step does not divide."
+  }
+}
+
+fragments {
+  id: "frag-g6-decimal-add-subtract"
+  instruction: "Add or subtract. Line up the decimal points."
+  stage: STAGE_PRACTICE
+  items { kind { decimal_arithmetic { ops: [OP_ADD, OP_SUBTRACT] } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Add and subtract decimals with different numbers of places."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Lining up the last digits instead of the decimal points."
+  }
+}
+
+fragments {
+  id: "frag-g6-decimal-multiply-divide"
+  instruction: "Multiply or divide."
+  stage: STAGE_PRACTICE
+  explainer: "When dividing by a decimal, move both decimal points the same number of places first."
+  items { kind { decimal_arithmetic { ops: [OP_MULTIPLY, OP_DIVIDE] } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Multiply and divide decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Placing the decimal point in a product by lining it up with one factor."
+  }
+}
+
+fragments {
+  id: "frag-g6-gcf"
+  instruction: "Find the greatest common factor."
+  stage: STAGE_PRACTICE
+  items { kind { gcf_lcm { ask: ASK_GCF } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find the greatest common factor of two numbers up to 100."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g6-lcm"
+  instruction: "Find the least common multiple."
+  stage: STAGE_PRACTICE
+  items { kind { gcf_lcm { ask: ASK_LCM } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Find the least common multiple of two numbers up to 12."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Multiplying the two numbers, which gives a common multiple but not always the least."
+  }
+}
+
+fragments {
+  id: "frag-g6-factor-out-gcf"
+  instruction: "Write the sum as the greatest common factor times a sum."
+  stage: STAGE_STRETCH
+  explainer: "36 + 8 = 4 × (9 + 2), because 4 is the greatest factor of both."
+  items { kind { gcf_lcm { ask: ASK_DISTRIBUTE } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Use the distributive property to write a sum with its greatest common factor outside."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Integers and the coordinate plane.
+
+fragments {
+  id: "frag-g6-integers-in-context"
+  instruction: "Write an integer for each."
+  stage: STAGE_INTRODUCE
+  explainer: "Below zero, below sea level, a loss or a withdrawal is negative. 0 is the starting point."
+  items { kind { integers { mode: MODE_CONTEXT } } count: 6 min_count: 4 }
+  max_columns: 3
+  design {
+    purpose: "Use positive and negative numbers for amounts in opposite directions."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g6-integer-number-line"
+  instruction: "Write the integer at the arrow."
+  stage: STAGE_GUIDED
+  items { kind { integers { mode: MODE_NUMBER_LINE } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Locate integers on a number line that runs below zero."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    misconceptions: "Counting left of zero as −0, −1 … so every negative is off by one."
+  }
+}
+
+fragments {
+  id: "frag-g6-opposites"
+  instruction: "Find the opposite."
+  stage: STAGE_PRACTICE
+  explainer: "Opposites are the same distance from 0 on either side. The opposite of the opposite is the number itself."
+  items { kind { integers { mode: MODE_OPPOSITE } } count: 6 min_count: 4 }
+  max_columns: 3
+  design {
+    purpose: "Find the opposite of a number, and of an opposite."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g6-compare-integers"
+  instruction: "Write <, > or =."
+  stage: STAGE_PRACTICE
+  explainer: "On a number line, the number further right is greater, so −2 > −8."
+  items { kind { integers { mode: MODE_COMPARE } } count: 8 min_count: 6 }
+  design {
+    purpose: "Compare integers by their position on a number line."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    misconceptions: "Thinking −8 is greater than −2 because 8 is greater than 2."
+  }
+}
+
+fragments {
+  id: "frag-g6-absolute-value"
+  instruction: "Find the absolute value, or tick the number farther from 0."
+  stage: STAGE_PRACTICE
+  explainer: "Absolute value is distance from 0, so it is never negative."
+  items { kind { integers { mode: MODE_ABSOLUTE_VALUE } } count: 6 min_count: 4 }
+  max_columns: 3
+  design {
+    purpose: "Find absolute value as distance from zero."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g6-order-integers"
+  instruction: "Write the numbers from least to greatest."
+  stage: STAGE_PRACTICE
+  items { kind { integers { mode: MODE_ORDER } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Order a set of positive and negative integers."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g6-integers-order-in-context"
+  instruction: "Tick the answer."
+  stage: STAGE_APPLY
+  items { kind { integers { mode: MODE_ORDER_IN_CONTEXT } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Decide which of two temperatures or heights is colder, warmer, lower or higher."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Calling −20°F warmer than −5°F because 20 is more than 5."
+  }
+}
+
+fragments {
+  id: "frag-g6-debt"
+  instruction: "Answer each about money in an account."
+  stage: STAGE_STRETCH
+  explainer: "A balance below $0 is a debt. A balance of −$30 is a debt of $30."
+  items { kind { integers { mode: MODE_DEBT } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Tell a balance from the size of a debt, using absolute value."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Thinking a balance of −$40 is more money than −$25."
+  }
+}
+
+fragments {
+  id: "frag-g6-quadrants"
+  instruction: "Write the coordinates of P, then tick its quadrant."
+  stage: STAGE_INTRODUCE
+  explainer: "Quadrant I is (+, +), II is (−, +), III is (−, −) and IV is (+, −)."
+  items { kind { coordinate_points { mode: MODE_QUADRANT } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Name the quadrant of a point from the signs of its coordinates."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g6-reflect-points"
+  instruction: "Plot the reflection, then write its coordinates."
+  stage: STAGE_PRACTICE
+  explainer: "A reflection across the x-axis changes the sign of y. Across the y-axis, it changes the sign of x."
+  items { kind { coordinate_points { mode: MODE_REFLECT } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Reflect a point across an axis by changing the sign of one coordinate."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Changing the sign of the coordinate named by the axis: across the x-axis, changing x."
+  }
+}
+
+fragments {
+  id: "frag-g6-distance-on-grid"
+  instruction: "Find the distance between the points."
+  stage: STAGE_PRACTICE
+  explainer: "When two points share a coordinate, count across zero: from −3 to 5 is 3 + 5 = 8."
+  items { kind { coordinate_points { mode: MODE_DISTANCE } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Find the distance between two points that share an x or a y coordinate."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    misconceptions: "Subtracting the numbers without their signs: from −3 to 5 is 2."
+  }
+}
+
+fragments {
+  id: "frag-g6-rectangle-on-grid"
+  instruction: "Find D, the side lengths and the area."
+  stage: STAGE_APPLY
+  items { kind { coordinate_points { mode: MODE_RECTANGLE } } count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Find side lengths and area of a rectangle from the coordinates of its corners."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Expressions and equations.
+
+fragments {
+  id: "frag-g6-write-power"
+  instruction: "Write as a power."
+  stage: STAGE_INTRODUCE
+  items { kind { exponents { mode: MODE_WRITE_POWER } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Write a repeated product as a base and an exponent."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g6-evaluate-powers"
+  instruction: "Find the value. Do powers first, then × and ÷, then + and −."
+  stage: STAGE_PRACTICE
+  items { kind { exponents { mode: MODE_EVALUATE } } count: 8 min_count: 6 }
+  max_columns: 2
+  design {
+    purpose: "Evaluate powers and expressions that contain them, in the right order."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Reading 5² as 5 × 2."
+    misconceptions: "Working left to right, so 4 + 3 × 2² is 28."
+  }
+}
+
+fragments {
+  id: "frag-g6-expressions-from-words"
+  instruction: "Write an expression."
+  stage: STAGE_PRACTICE
+  items { kind { write_expression { mode: MODE_FROM_WORDS } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Turn words such as \"less than\" and \"the product of\" into an expression."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Writing \"5 less than y\" as 5 − y."
+  }
+}
+
+fragments {
+  id: "frag-g6-parts-of-expressions"
+  instruction: "Name the parts of the expression."
+  stage: STAGE_INTRODUCE
+  explainer: "Terms are separated by + and −. A coefficient multiplies a variable. A constant has no variable."
+  items { kind { write_expression { mode: MODE_PARTS } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Name the terms, coefficients and constant of an expression."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g6-evaluate-expressions"
+  instruction: "Substitute, then find the value."
+  stage: STAGE_PRACTICE
+  items { kind { evaluate_expression {} } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Evaluate an expression for given values of its variables."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Reading 3x with x = 4 as 34."
+  }
+}
+
+fragments {
+  id: "frag-g6-expand"
+  instruction: "Multiply out the brackets."
+  stage: STAGE_PRACTICE
+  explainer: "Multiply each term inside by the number outside: 3(x + 4) = 3x + 12."
+  items { kind { equivalent_expressions { mode: MODE_EXPAND } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Use the distributive property to write an equivalent expression without brackets."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Multiplying only the first term: 3(x + 4) = 3x + 4."
+  }
+}
+
+fragments {
+  id: "frag-g6-factor"
+  instruction: "Factor out the greatest common factor."
+  stage: STAGE_PRACTICE
+  items { kind { equivalent_expressions { mode: MODE_FACTOR } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Write an expression as its greatest common factor times a sum."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g6-equivalent-or-not"
+  instruction: "Are the two expressions equivalent? Try a number for the variable to check."
+  stage: STAGE_MISTAKE
+  items { kind { equivalent_expressions { mode: MODE_CHECK } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Decide whether two expressions are equal for every value of the variable."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+    misconceptions: "Thinking x + x + x is x³."
+    misconceptions: "Thinking 2x + 3x is 5x²."
+  }
+}
+
+fragments {
+  id: "frag-g6-which-value-solves"
+  instruction: "Tick the value that makes the equation true."
+  stage: STAGE_INTRODUCE
+  explainer: "Try each value in place of the letter. The solution makes both sides equal."
+  items { kind { solve_equation { form: FORM_CHECK } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Find which of a set of values makes an equation true by substituting."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g6-one-step-equations"
+  instruction: "Solve."
+  stage: STAGE_PRACTICE
+  explainer: "Undo the operation on the letter: subtract to undo +, divide to undo ×."
+  items { kind { solve_equation { form: FORM_ONE_STEP } } count: 10 min_count: 6 }
+  max_columns: 3
+  design {
+    purpose: "Solve one-step equations by doing the inverse operation."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Doing the operation shown instead of its inverse: x + 4 = 10 gives x = 14."
+  }
+}
+
+fragments {
+  id: "frag-g6-expressions-in-stories"
+  instruction: "Write an expression for each."
+  stage: STAGE_APPLY
+  items { kind { write_expression { mode: MODE_CONTEXT } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Write an expression with a variable for an amount in a story."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g6-equation-word-problems"
+  instruction: "Write an equation, solve it, and show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Write and solve one-step equations for stories."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "Mia had some money saved. She earned $15 more and then had $62. How much had she saved?" }
+        nodes { work_space { field { label: "money saved before" answer { text: "47" work: "62 − 15" also: "$47" } } } }
+      }
+      items {
+        nodes { text: "A pack of 8 markers costs $12. What does one marker cost?" }
+        nodes { work_space { field { label: "cost of one marker" answer { text: "1.50" work: "12 ÷ 8" also: "$1.50" also: "1.5" } } } }
+      }
+      items {
+        nodes { text: "Leo has read 3/4 of his book. That is 120 pages. How many pages long is the book?" }
+        nodes { work_space { field { label: "pages in the book" answer { text: "160" work: "120 ÷ (3/4)" also: "160 pages" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g6-write-inequalities"
+  instruction: "Write an inequality."
+  stage: STAGE_PRACTICE
+  explainer: "\"At least\" means ≥. \"At most\" means ≤. \"More than\" means >. \"Fewer than\" means <."
+  items { kind { write_expression { mode: MODE_INEQUALITY } } count: 5 min_count: 3 }
+  max_columns: 1
+  design {
+    purpose: "Write an inequality for a limit in a story, and see it has many solutions."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Using > for \"at least\"."
+  }
+}
+
+fragments {
+  id: "frag-g6-rule-tables"
+  instruction: "Fill in the table, then tick the dependent variable."
+  stage: STAGE_APPLY
+  items { kind { rule_table { mode: MODE_FILL } } count: 2 min_count: 1 }
+  max_columns: 2
+  design {
+    purpose: "Use an equation to fill in a table, and tell the dependent from the independent variable."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Geometry.
+
+fragments {
+  id: "frag-g6-shape-area"
+  instruction: "Find the area."
+  stage: STAGE_PRACTICE
+  explainer: "Triangle: half of base × height. Parallelogram: base × height. Trapezoid: half the sum of the bases × height."
+  items { kind { shape_area {} } count: 6 min_count: 4 }
+  max_columns: 3
+  design {
+    purpose: "Find the area of right triangles, other triangles, parallelograms and trapezoids."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Using a slanted side as the height."
+    misconceptions: "Forgetting to halve for a triangle."
+  }
+}
+
+fragments {
+  id: "frag-g6-volume-fractional-edges"
+  instruction: "Find how many half-inch cubes fill the box, then its volume."
+  stage: STAGE_PRACTICE
+  explainer: "8 half-inch cubes make 1 cubic inch. The volume is also length × width × height."
+  items { kind { prism_measure { fractions: true } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Find the volume of a box with fractional edges, by packing unit cubes and by multiplying."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g6-surface-area"
+  instruction: "Find the surface area from the net."
+  stage: STAGE_PRACTICE
+  explainer: "Each face is labelled with its length and width. Add the areas of all 6."
+  items { kind { prism_measure { surface_area: true } } count: 4 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Find the surface area of a box from its length, width and height."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Adding only 3 faces, one of each size."
+  }
+}
+
+# Statistics.
+
+fragments {
+  id: "frag-g6-statistical-questions"
+  instruction: "Is it a statistical question? A statistical question expects answers that vary."
+  stage: STAGE_INTRODUCE
+  items { kind { classify { topic: TOPIC_STATISTICAL_QUESTION } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Tell a statistical question, whose answers vary, from one with a single answer."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g6-center-or-spread"
+  instruction: "Does it measure center or spread?"
+  stage: STAGE_REVIEW
+  items { kind { classify { topic: TOPIC_CENTER_OR_SPREAD } } count: 6 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Tell measures of center from measures of spread."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g6-frequency-table"
+  instruction: "Count how many games had each number of goals."
+  stage: STAGE_PRACTICE
+  items { kind { data_set_stats { mode: MODE_FREQUENCY } } count: 1 }
+  design {
+    purpose: "Organize a data set in a frequency table, the first step to a dot plot or histogram."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g6-histogram"
+  instruction: "Use the histogram."
+  stage: STAGE_GUIDED
+  items { kind { data_set_stats { mode: MODE_HISTOGRAM } } count: 1 }
+  design {
+    purpose: "Read how many values fall in each interval of a histogram."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Reading a bar's height as a data value instead of a count."
+  }
+}
+
+fragments {
+  id: "frag-g6-draw-box-plot"
+  instruction: "Find the five-number summary, then draw the box plot."
+  stage: STAGE_PRACTICE
+  explainer: "Order the data. The median splits it in half; the quartiles are the medians of each half."
+  items { kind { data_set_stats { mode: MODE_DRAW_BOX_PLOT } } count: 1 }
+  design {
+    purpose: "Find a five-number summary and draw a box plot of it."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g6-read-box-plot"
+  instruction: "Use the box plot."
+  stage: STAGE_PRACTICE
+  items { kind { data_set_stats { mode: MODE_BOX_PLOT } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Read the median, interquartile range and range from a box plot."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Reading the length of the box as the range."
+  }
+}
+
+fragments {
+  id: "frag-g6-dot-plot"
+  instruction: "Use the dot plot."
+  stage: STAGE_GUIDED
+  items { kind { data_set_stats { mode: MODE_DOT_PLOT } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Read the number of values, the median and the range from a dot plot."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Taking the middle number on the scale as the median."
+  }
+}
+
+fragments {
+  id: "frag-g6-mean-median-mode"
+  instruction: "Find the mean, median, mode and range."
+  stage: STAGE_PRACTICE
+  explainer: "Put the data in order first. The mean is the total shared equally."
+  items { kind { data_set_stats { mode: MODE_CENTER } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Find the mean, median, mode and range of a small data set."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Finding the median without ordering the data."
+  }
+}
+
+fragments {
+  id: "frag-g6-quartiles-mad"
+  instruction: "Find the quartiles, interquartile range, mean and mean absolute deviation."
+  stage: STAGE_STRETCH
+  explainer: "Quartiles are the medians of the lower and upper halves. Mean absolute deviation is the mean distance from the mean."
+  items { kind { data_set_stats { mode: MODE_SPREAD } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Find the interquartile range and mean absolute deviation of a data set."
+    principles: [PRINCIPLE_WORKED_EXAMPLE]
+  }
+}
+
+worksheets {
+  id: "ws-g6-ratios"
+  title: "Ratios and ratio tables"
+  seed: 601
+  max_pages: 2
+  placements { fragment_id: "frag-g6-ratio-language" }
+  placements { fragment_id: "frag-g6-double-number-line" }
+  placements { fragment_id: "frag-g6-ratio-table" }
+  design {
+    purpose: "Write ratios in words and symbols, then extend them in tables."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Ask which amount comes first before your child writes the ratio."
+}
+
+worksheets {
+  id: "ws-g6-unit-rates"
+  title: "Unit rates"
+  seed: 602
+  max_pages: 2
+  placements { fragment_id: "frag-g6-unit-rate" }
+  placements { fragment_id: "frag-g6-ratio-word-problems" }
+  design {
+    purpose: "Find unit rates and use them and ratios to solve problems."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Compare the price per ounce of two sizes at the store."
+}
+
+worksheets {
+  id: "ws-g6-percents"
+  title: "Percents"
+  seed: 603
+  max_pages: 3
+  placements { fragment_id: "frag-g6-percent-double-number-line" }
+  placements { fragment_id: "frag-g6-percent-of" }
+  placements { fragment_id: "frag-g6-percent-whole-or-rate" }
+  placements { fragment_id: "frag-g6-percent-word-problems" }
+  design {
+    purpose: "Find a percent of a number, then the whole or the percent, then use them in stories."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-convert-units"
+  title: "Converting units"
+  seed: 604
+  max_pages: 1
+  placements { fragment_id: "frag-g6-convert-units" }
+  design {
+    purpose: "Convert measurements with a rate, in both directions."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-g6-divide-fractions"
+  title: "Dividing fractions"
+  seed: 605
+  max_pages: 2
+  placements { fragment_id: "frag-g6-divide-fractions" }
+  placements { fragment_id: "frag-g6-divide-fractions-word-problems" }
+  design {
+    purpose: "Divide fractions, then use division to answer questions about stories."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Ask: how many halves fit in 3? Then: how many quarters?"
+}
+
+worksheets {
+  id: "ws-g6-long-division"
+  title: "Dividing by two-digit numbers"
+  seed: 606
+  max_pages: 2
+  placements { fragment_id: "frag-g6-long-division" }
+  design {
+    purpose: "Divide fluently with the standard algorithm and two-digit divisors."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g6-decimals"
+  title: "Decimal operations"
+  seed: 607
+  max_pages: 2
+  placements { fragment_id: "frag-g6-decimal-add-subtract" }
+  placements { fragment_id: "frag-g6-decimal-multiply-divide" }
+  design {
+    purpose: "Add, subtract, multiply and divide decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-gcf-lcm"
+  title: "Factors and multiples"
+  seed: 608
+  max_pages: 1
+  placements { fragment_id: "frag-g6-gcf" }
+  placements { fragment_id: "frag-g6-lcm" }
+  placements { fragment_id: "frag-g6-factor-out-gcf" }
+  design {
+    purpose: "Find greatest common factors and least common multiples, and factor a sum."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-integers"
+  title: "Positive and negative numbers"
+  seed: 609
+  max_pages: 2
+  placements { fragment_id: "frag-g6-integers-in-context" }
+  placements { fragment_id: "frag-g6-integer-number-line" }
+  placements { fragment_id: "frag-g6-opposites" }
+  design {
+    purpose: "Use negative numbers in context, on a number line, and as opposites."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_NUMBER_LINE]
+  }
+  home_tip: "Look at a thermometer together and find a temperature below zero."
+}
+
+worksheets {
+  id: "ws-g6-compare-integers"
+  title: "Comparing integers and absolute value"
+  seed: 610
+  max_pages: 2
+  placements { fragment_id: "frag-g6-compare-integers" }
+  placements { fragment_id: "frag-g6-order-integers" }
+  placements { fragment_id: "frag-g6-integers-order-in-context" }
+  placements { fragment_id: "frag-g6-absolute-value" }
+  placements { fragment_id: "frag-g6-debt" }
+  design {
+    purpose: "Compare and order integers, and use absolute value for distance and debt."
+    principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-coordinates"
+  title: "The coordinate plane"
+  seed: 611
+  max_pages: 3
+  placements { fragment_id: "frag-g6-quadrants" }
+  placements { fragment_id: "frag-g6-reflect-points" }
+  placements { fragment_id: "frag-g6-distance-on-grid" }
+  placements { fragment_id: "frag-g6-rectangle-on-grid" }
+  design {
+    purpose: "Use the signs of coordinates for quadrants, reflections and distances."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+  home_tip: "Sketch the points on graph paper if a question is hard to picture."
+}
+
+worksheets {
+  id: "ws-g6-exponents"
+  title: "Exponents and order of operations"
+  seed: 612
+  max_pages: 1
+  placements { fragment_id: "frag-g6-write-power" }
+  placements { fragment_id: "frag-g6-evaluate-powers" }
+  design {
+    purpose: "Write and evaluate powers, and use them in the order of operations."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g6-expressions"
+  title: "Writing and evaluating expressions"
+  seed: 613
+  max_pages: 2
+  placements { fragment_id: "frag-g6-expressions-from-words" }
+  placements { fragment_id: "frag-g6-parts-of-expressions" }
+  placements { fragment_id: "frag-g6-evaluate-expressions" }
+  design {
+    purpose: "Write expressions from words, name their parts, and evaluate them."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g6-equivalent-expressions"
+  title: "Equivalent expressions"
+  seed: 614
+  max_pages: 2
+  placements { fragment_id: "frag-g6-expand" }
+  placements { fragment_id: "frag-g6-factor" }
+  placements { fragment_id: "frag-g6-equivalent-or-not" }
+  design {
+    purpose: "Expand and factor expressions, and tell when two are equivalent."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+  }
+}
+
+worksheets {
+  id: "ws-g6-equations"
+  title: "One-step equations"
+  seed: 615
+  max_pages: 2
+  placements { fragment_id: "frag-g6-which-value-solves" }
+  placements { fragment_id: "frag-g6-one-step-equations" }
+  placements { fragment_id: "frag-g6-expressions-in-stories" }
+  placements { fragment_id: "frag-g6-equation-word-problems" }
+  design {
+    purpose: "Find solutions by substituting, then by inverse operations, then for stories."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-inequalities-and-variables"
+  title: "Inequalities and dependent variables"
+  seed: 616
+  max_pages: 2
+  placements { fragment_id: "frag-g6-write-inequalities" }
+  placements { fragment_id: "frag-g6-rule-tables" }
+  design {
+    purpose: "Write inequalities for limits, and relate two variables with an equation and a table."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g6-area"
+  title: "Area of triangles and quadrilaterals"
+  seed: 617
+  max_pages: 2
+  placements { fragment_id: "frag-g6-shape-area" }
+  design {
+    purpose: "Find the area of triangles, parallelograms and trapezoids."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Cut a paper parallelogram and move the triangle to make a rectangle."
+}
+
+worksheets {
+  id: "ws-g6-volume-surface-area"
+  title: "Volume and surface area"
+  seed: 618
+  max_pages: 2
+  placements { fragment_id: "frag-g6-volume-fractional-edges" }
+  placements { fragment_id: "frag-g6-surface-area" }
+  design {
+    purpose: "Find the volume of boxes with fractional edges, and the surface area of boxes."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g6-statistical-questions"
+  title: "Statistical questions"
+  seed: 619
+  max_pages: 2
+  placements { fragment_id: "frag-g6-statistical-questions" }
+  placements { fragment_id: "frag-g6-center-or-spread" }
+  design {
+    purpose: "Recognize statistical questions, and sort measures of center and spread."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-g6-data-displays"
+  title: "Data displays"
+  seed: 621
+  max_pages: 2
+  placements { fragment_id: "frag-g6-frequency-table" }
+  placements { fragment_id: "frag-g6-histogram" }
+  placements { fragment_id: "frag-g6-draw-box-plot" }
+  design {
+    purpose: "Organize data in a table, read a histogram, and draw a box plot."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g6-data-sets"
+  title: "Center and spread of data"
+  seed: 620
+  max_pages: 2
+  placements { fragment_id: "frag-g6-dot-plot" }
+  placements { fragment_id: "frag-g6-mean-median-mode" }
+  placements { fragment_id: "frag-g6-read-box-plot" }
+  placements { fragment_id: "frag-g6-quartiles-mad" }
+  design {
+    purpose: "Describe a data set by its center and spread, from a dot plot and from a list."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}

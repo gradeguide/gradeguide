@@ -1,0 +1,416 @@
+{
+ "worksheetId": "ws-g6-volume-surface-area",
+ "title": "Volume and surface area",
+ "headerLabels": [
+  "6.G.A.2",
+  "6.G.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find how many half-inch cubes fill the box, then its volume.",
+     "explainer": "8 half-inch cubes make 1 cubic inch. The volume is also length × width × height.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "boxSolid": {
+          "lengthLabel": "3 1/2 in",
+          "widthLabel": "3 1/2 in",
+          "heightLabel": "4 1/2 in",
+          "length": 7,
+          "width": 7,
+          "height": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cubes with ½-inch edges that fill it:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "half-inch cubes",
+             "answer": {
+              "text": "441"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "volume in cubic inches",
+             "answer": {
+              "text": "55 1/8",
+              "also": [
+               "551/8",
+               "441/8",
+               "55.125"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Cubes with ½-inch edges that fill it: 441; Volume = 55 1/8 cubic in"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "boxSolid": {
+          "lengthLabel": "2 1/2 in",
+          "widthLabel": "3 in",
+          "heightLabel": "2 1/2 in",
+          "length": 5,
+          "width": 6,
+          "height": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cubes with ½-inch edges that fill it:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "half-inch cubes",
+             "answer": {
+              "text": "150"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "volume in cubic inches",
+             "answer": {
+              "text": "18 3/4",
+              "also": [
+               "183/4",
+               "75/4",
+               "18.75"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Cubes with ½-inch edges that fill it: 150; Volume = 18 3/4 cubic in"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "boxSolid": {
+          "lengthLabel": "2 1/2 in",
+          "widthLabel": "3 1/2 in",
+          "heightLabel": "3 1/2 in",
+          "length": 5,
+          "width": 7,
+          "height": 7
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cubes with ½-inch edges that fill it:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "half-inch cubes",
+             "answer": {
+              "text": "245"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "volume in cubic inches",
+             "answer": {
+              "text": "30 5/8",
+              "also": [
+               "305/8",
+               "245/8",
+               "30.625"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Cubes with ½-inch edges that fill it: 245; Volume = 30 5/8 cubic in"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-volume-fractional-edges",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the volume of a box with fractional edges, by packing unit cubes and by multiplying.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 757
+    }
+   ],
+   "estimatedHeight": 761
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the surface area from the net.",
+     "explainer": "Each face is labelled with its length and width. Add the areas of all 6.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "prismNet": {
+          "length": 6,
+          "width": 6,
+          "height": 3,
+          "unit": "in"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Surface area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "surface area in square inches",
+             "answer": {
+              "text": "144"
+             }
+            }
+           },
+           {
+            "text": "sq in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Surface area = 144 sq in"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "prismNet": {
+          "length": 10,
+          "width": 6,
+          "height": 4,
+          "unit": "in"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Surface area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "surface area in square inches",
+             "answer": {
+              "text": "248"
+             }
+            }
+           },
+           {
+            "text": "sq in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Surface area = 248 sq in"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-surface-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the surface area of a box from its length, width and height.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Adding only 3 faces, one of each size."
+      ]
+     },
+     "estimatedHeight": 631
+    }
+   ],
+   "estimatedHeight": 635
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "half-inch cubes",
+    "answer": {
+     "text": "441"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "volume in cubic inches",
+    "answer": {
+     "text": "55 1/8",
+     "also": [
+      "551/8",
+      "441/8",
+      "55.125"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "half-inch cubes",
+    "answer": {
+     "text": "150"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "volume in cubic inches",
+    "answer": {
+     "text": "18 3/4",
+     "also": [
+      "183/4",
+      "75/4",
+      "18.75"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "half-inch cubes",
+    "answer": {
+     "text": "245"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "volume in cubic inches",
+    "answer": {
+     "text": "30 5/8",
+     "also": [
+      "305/8",
+      "245/8",
+      "30.625"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "surface area in square inches",
+    "answer": {
+     "text": "144"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "surface area in square inches",
+    "answer": {
+     "text": "248"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the volume of boxes with fractional edges, and the surface area of boxes.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Find how many half-inch cubes fill the box, then its volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the surface area from the net.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the surface area from the net.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

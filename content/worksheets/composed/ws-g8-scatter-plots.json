@@ -1,0 +1,655 @@
+{
+ "worksheetId": "ws-g8-scatter-plots",
+ "title": "Scatter plots and linear models",
+ "headerLabels": [
+  "8.SP.A.1",
+  "8.SP.A.2",
+  "8.SP.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "What association does the scatter plot show?",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 9,
+            "y": 8
+           },
+           {
+            "x": 6,
+            "y": 5
+           },
+           {
+            "x": 3,
+            "y": 4
+           },
+           {
+            "x": 10,
+            "y": 7
+           },
+           {
+            "x": 7,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 5
+           },
+           {
+            "x": 1,
+            "y": 1
+           },
+           {
+            "x": 8,
+            "y": 7
+           },
+           {
+            "x": 5,
+            "y": 4
+           },
+           {
+            "x": 2,
+            "y": 2
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "the association",
+           "answer": {
+            "text": "positive"
+           }
+          }
+         }
+        }
+       ],
+       "key": "positive"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 4,
+            "y": 5
+           },
+           {
+            "x": 1,
+            "y": 2
+           },
+           {
+            "x": 8,
+            "y": 6
+           },
+           {
+            "x": 5,
+            "y": 3
+           },
+           {
+            "x": 2,
+            "y": 7
+           },
+           {
+            "x": 9,
+            "y": 4
+           },
+           {
+            "x": 6,
+            "y": 8
+           },
+           {
+            "x": 3,
+            "y": 5
+           },
+           {
+            "x": 10,
+            "y": 2
+           },
+           {
+            "x": 7,
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "the association",
+           "answer": {
+            "text": "no association"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no association"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 8,
+            "y": 5
+           },
+           {
+            "x": 5,
+            "y": 2
+           },
+           {
+            "x": 2,
+            "y": 6
+           },
+           {
+            "x": 9,
+            "y": 3
+           },
+           {
+            "x": 6,
+            "y": 7
+           },
+           {
+            "x": 3,
+            "y": 4
+           },
+           {
+            "x": 10,
+            "y": 8
+           },
+           {
+            "x": 7,
+            "y": 5
+           },
+           {
+            "x": 4,
+            "y": 2
+           },
+           {
+            "x": 1,
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "the association",
+           "answer": {
+            "text": "no association"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no association"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-scatter-association",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Describe the association in a scatter plot as positive, negative or none.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 602
+    }
+   ],
+   "estimatedHeight": 606
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Use the line of fit.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A line of fit for hours studied and test score goes through (0, 30) and (10, 80)."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 9,
+            "y": 9
+           },
+           {
+            "x": 6,
+            "y": 6
+           },
+           {
+            "x": 3,
+            "y": 5
+           },
+           {
+            "x": 10,
+            "y": 7
+           },
+           {
+            "x": 7,
+            "y": 7
+           },
+           {
+            "x": 4,
+            "y": 6
+           },
+           {
+            "x": 1,
+            "y": 3
+           },
+           {
+            "x": 8,
+            "y": 8
+           },
+           {
+            "x": 5,
+            "y": 5
+           },
+           {
+            "x": 2,
+            "y": 4
+           }
+          ],
+          "segments": [
+           {
+            "y1": 3,
+            "x2": 10,
+            "y2": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "slope of the line of fit",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "points per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predicted score for 3 hours:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "predicted score for 3 hours",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Slope: 5 points per hour; Predicted score for 3 hours: 45"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-line-of-fit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the slope of a line of fit and use it to predict.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 404
+    },
+    {
+     "label": "C",
+     "instruction": "Use the model.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "The distance in miles a hiker has walked after x hours is about y = 1.5x + 25."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predict the distance when x is 6:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the distance at 6",
+             "answer": {
+              "text": "34"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Miles each hour:"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "Miles each hour",
+             "answer": {
+              "text": "1.5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Predict the distance when x is 6: 34; Miles each hour: 1.5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "The cost in dollars of x pounds of fruit plus a bag fee is y = 3.7x + 6."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predict the cost when x is 4:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the cost at 4",
+             "answer": {
+              "text": "20.8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cost per pound ($):"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "Cost per pound ($)",
+             "answer": {
+              "text": "3.7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Predict the cost when x is 4: 20.8; Cost per pound ($): 3.7"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "The cost in dollars of x pounds of fruit plus a bag fee is y = 2x + 19."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predict the cost when x is 9:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the cost at 9",
+             "answer": {
+              "text": "37"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cost per pound ($):"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "Cost per pound ($)",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Predict the cost when x is 9: 37; Cost per pound ($): 2"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-linear-models",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use a linear model to predict, and say what its slope means.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 400
+    }
+   ],
+   "estimatedHeight": 812
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the association",
+    "answer": {
+     "text": "positive"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the association",
+    "answer": {
+     "text": "no association"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the association",
+    "answer": {
+     "text": "no association"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "slope of the line of fit",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "predicted score for 3 hours",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the distance at 6",
+    "answer": {
+     "text": "34"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "Miles each hour",
+    "answer": {
+     "text": "1.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the cost at 4",
+    "answer": {
+     "text": "20.8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "Cost per pound ($)",
+    "answer": {
+     "text": "3.7"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the cost at 9",
+    "answer": {
+     "text": "37"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "Cost per pound ($)",
+    "answer": {
+     "text": "2"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe association in scatter plots, and use lines of fit and linear models.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "Section \"Use the line of fit.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

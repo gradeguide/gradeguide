@@ -1,0 +1,956 @@
+{
+ "worksheetId": "ws-g6-ratios",
+ "title": "Ratios and ratio tables",
+ "headerLabels": [
+  "6.RP.A.1",
+  "6.RP.A.3.a"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write each ratio.",
+     "explainer": "A ratio compares two amounts. The order matters: the ratio of cats to dogs is the cats first.",
+     "example": {
+      "nodes": [
+       {
+        "text": "There are 7 pencils and 8 pens in the box. Write the ratio of pencils to all the pencils and pens."
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "pencils in the ratio",
+            "answer": {
+             "text": "7"
+            }
+           }
+          },
+          {
+           "text": ":"
+          },
+          {
+           "blank": {
+            "label": "all the pencils and pens in the ratio",
+            "answer": {
+             "text": "15"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The amounts go in the order the sentence names them."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "There are 10 tulips and 11 roses in the garden. Write the ratio of tulips to all the tulips and roses."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "tulips in the ratio",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "all the tulips and roses in the ratio",
+             "answer": {
+              "text": "21"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 : 21"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "There are 7 pencils and 10 pens in the box. Write the ratio of pencils to all the pencils and pens."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "pencils in the ratio",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "all the pencils and pens in the ratio",
+             "answer": {
+              "text": "17"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 : 17"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "There are 3 cars and 10 trucks in the parking lot. Write the ratio of cars to trucks."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "cars in the ratio",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "trucks in the ratio",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 : 10"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "There are 2 pencils and 4 pens in the box. Write the ratio of pencils to all the pencils and pens."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q4",
+             "label": "pencils in the ratio",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "all the pencils and pens in the ratio",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 : 6"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "There are 5 fiction books and 7 nonfiction books on the shelf. Write the ratio of nonfiction books to fiction books."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q5",
+             "label": "nonfiction books in the ratio",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "fiction books in the ratio",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 : 5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "There are 12 dogs and 7 cats at the shelter. Write the ratio of dogs to cats."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q6",
+             "label": "dogs in the ratio",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": ":"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "cats in the ratio",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 : 7"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-ratio-language",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Write a ratio of two amounts, or of a part to the whole, in the order asked.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Writing the amounts in the order they appear instead of the order asked.",
+       "Using a part where the whole is asked for."
+      ]
+     },
+     "estimatedHeight": 502
+    },
+    {
+     "label": "B",
+     "instruction": "Fill in the double number line.",
+     "explainer": "Each pair of numbers above and below a tick is in the same ratio as the first pair.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "doubleNumberLine": {
+          "topLabel": "Laps",
+          "bottomLabel": "Minutes",
+          "ticks": [
+           {
+            "top": "0",
+            "bottom": "0"
+           },
+           {
+            "top": "8",
+            "bottom": "9"
+           },
+           {
+            "topField": {
+             "id": "q7",
+             "label": "Laps for 18 Minutes",
+             "answer": {
+              "text": "16"
+             }
+            },
+            "bottom": "18"
+           },
+           {
+            "top": "24",
+            "bottomField": {
+             "id": "q7-2",
+             "label": "Minutes for 24 Laps",
+             "answer": {
+              "text": "27"
+             }
+            }
+           },
+           {
+            "topField": {
+             "id": "q7-3",
+             "label": "Laps for 36 Minutes",
+             "answer": {
+              "text": "32"
+             }
+            },
+            "bottom": "36"
+           },
+           {
+            "top": "40",
+            "bottomField": {
+             "id": "q7-4",
+             "label": "Minutes for 40 Laps",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16, 27, 32, 45"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-double-number-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Find equivalent ratios on a double number line.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "misconceptions": [
+       "Counting up by the same amount on both lines instead of by each line's own step."
+      ]
+     },
+     "estimatedHeight": 222
+    }
+   ],
+   "estimatedHeight": 732
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Fill in the table of equivalent ratios.",
+     "explainer": "Each row is the first row times the same number.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Cans of paint",
+           "Rooms"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "text": "9"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q8",
+               "label": "Cans of paint for 18 Rooms",
+               "answer": {
+                "text": "16"
+               }
+              }
+             },
+             {
+              "text": "18"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "24"
+             },
+             {
+              "field": {
+               "id": "q8-2",
+               "label": "Rooms for 24 Cans of paint",
+               "answer": {
+                "text": "27"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q8-3",
+               "label": "Cans of paint for 36 Rooms",
+               "answer": {
+                "text": "32"
+               }
+              }
+             },
+             {
+              "text": "36"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "56"
+             },
+             {
+              "field": {
+               "id": "q8-4",
+               "label": "Rooms for 56 Cans of paint",
+               "answer": {
+                "text": "63"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16, 27, 32, 63"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Red beads",
+           "Blue beads"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": "8"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q9",
+               "label": "Red beads for 16 Blue beads",
+               "answer": {
+                "text": "10"
+               }
+              }
+             },
+             {
+              "text": "16"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "15"
+             },
+             {
+              "field": {
+               "id": "q9-2",
+               "label": "Blue beads for 15 Red beads",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q9-3",
+               "label": "Red beads for 48 Blue beads",
+               "answer": {
+                "text": "30"
+               }
+              }
+             },
+             {
+              "text": "48"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "50"
+             },
+             {
+              "field": {
+               "id": "q9-4",
+               "label": "Blue beads for 50 Red beads",
+               "answer": {
+                "text": "80"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10, 24, 30, 80"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Cans of paint",
+           "Rooms"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "7"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "field": {
+               "id": "q10",
+               "label": "Rooms for 8 Cans of paint",
+               "answer": {
+                "text": "14"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q10-2",
+               "label": "Cans of paint for 21 Rooms",
+               "answer": {
+                "text": "12"
+               }
+              }
+             },
+             {
+              "text": "21"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "16"
+             },
+             {
+              "field": {
+               "id": "q10-3",
+               "label": "Rooms for 16 Cans of paint",
+               "answer": {
+                "text": "28"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "field": {
+               "id": "q10-4",
+               "label": "Cans of paint for 49 Rooms",
+               "answer": {
+                "text": "28"
+               }
+              }
+             },
+             {
+              "text": "49"
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "14, 12, 28, 28"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-ratio-table",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Complete a table of equivalent ratios by multiplying both amounts by the same number.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Adding the same number to both amounts instead of multiplying."
+      ]
+     },
+     "estimatedHeight": 268
+    }
+   ],
+   "estimatedHeight": 272
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "tulips in the ratio",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "all the tulips and roses in the ratio",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "pencils in the ratio",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "all the pencils and pens in the ratio",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "cars in the ratio",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "trucks in the ratio",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "pencils in the ratio",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "all the pencils and pens in the ratio",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "nonfiction books in the ratio",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "fiction books in the ratio",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "dogs in the ratio",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "cats in the ratio",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "Laps for 18 Minutes",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "Minutes for 24 Laps",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "Laps for 36 Minutes",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-4",
+    "label": "Minutes for 40 Laps",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "Cans of paint for 18 Rooms",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "Rooms for 24 Cans of paint",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "Cans of paint for 36 Rooms",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-4",
+    "label": "Rooms for 56 Cans of paint",
+    "answer": {
+     "text": "63"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "Red beads for 16 Blue beads",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "Blue beads for 15 Red beads",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "Red beads for 48 Blue beads",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-4",
+    "label": "Blue beads for 50 Red beads",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "Rooms for 8 Cans of paint",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "Cans of paint for 21 Rooms",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "Rooms for 16 Cans of paint",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-4",
+    "label": "Cans of paint for 49 Rooms",
+    "answer": {
+     "text": "28"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Write ratios in words and symbols, then extend them in tables.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Fill in the double number line.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
