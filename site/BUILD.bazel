@@ -64,12 +64,17 @@ copy_to_directory(
         ":bundle",
         "//content/worksheets:worksheets_gallery",
         "//content/worksheets:worksheets_prints",
+        "//site/worksheets:bundle",
+        "//site/worksheets:index.html",
         "//site/data:math",
     ],
-    # The worksheets go under worksheets/, which the skill panels link to.
+    # The worksheet pages, their print files, and the developer gallery go
+    # under worksheets/, which the skill panels link to.
     replace_prefixes = {
-        "content/worksheets/worksheets_gallery": "worksheets",
+        "content/worksheets/worksheets_gallery": "worksheets/gallery",
         "content/worksheets/worksheets_prints": "worksheets",
+        "site/worksheets/index.html": "worksheets/index.html",
+        "site/worksheets/app.js": "worksheets/app.js",
     },
     root_paths = [
         "site/src",

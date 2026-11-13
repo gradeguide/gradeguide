@@ -83,7 +83,7 @@ function bold(s: string): { b: boolean; s: string }[] {
           }
         </div>
         <footer [style.height.px]="L.FOOTER_HEIGHT">
-          <span>How did this feel? <span class="ring">easy</span> <span class="ring">OK</span> <span class="ring">hard</span></span>
+          <span></span>
           <span>Page {{ p + 1 }} of {{ sheet().pages.length }}</span>
         </footer>
       </div>
@@ -114,7 +114,6 @@ function bold(s: string): { b: boolean; s: string }[] {
     .qn { flex: 0 0 24px; font-weight: 700; font-size: 14px; padding-top: 2px; }
     .item-nodes { display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1; }
     footer { display: flex; justify-content: space-between; align-items: flex-end; font-size: 12px; color: #444; border-top: 1px solid #bbb; box-sizing: border-box; margin-top: auto; }
-    .ring { border: 1px solid #444; border-radius: 10px; padding: 0 6px; margin-left: 3px; }
   `,
 })
 export class SheetComponent {
@@ -127,7 +126,7 @@ export class SheetComponent {
   protected readonly L = L;
   protected readonly kicker = computed(() => {
     const s = this.sheet();
-    return [s.headerLabels.join(', '), s.minutes ? `About ${s.minutes} minutes` : '', this.filled() ? 'Answers' : ''].filter(Boolean).join(' · ');
+    return [s.headerLabels.join(', '), this.filled() ? 'Answers' : ''].filter(Boolean).join(' · ');
   });
   protected boldRuns = bold;
 }

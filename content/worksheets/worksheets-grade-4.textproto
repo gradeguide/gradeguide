@@ -9,7 +9,6 @@
 worksheets {
   id: "ws-comparison-sentences"
   title: "Times as many: sentences and equations"
-  minutes: 15
   seed: 201
   max_pages: 2
   placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
@@ -25,7 +24,6 @@ worksheets {
 worksheets {
   id: "ws-comparison-word-problems"
   title: "Comparison word problems"
-  minutes: 20
   seed: 202
   max_pages: 2
   placements { fragment_id: "frag-times-as-many-statements" count: 4 stage: STAGE_REVIEW omit_example: true }
@@ -39,7 +37,6 @@ worksheets {
 worksheets {
   id: "ws-multistep-word-problems"
   title: "Problems with more than one step"
-  minutes: 25
   seed: 203
   max_pages: 3
   placements { fragment_id: "frag-multistep-word-problems" }
@@ -52,7 +49,6 @@ worksheets {
 worksheets {
   id: "ws-number-patterns"
   title: "Number patterns"
-  minutes: 15
   seed: 204
   max_pages: 2
   placements { fragment_id: "frag-continue-the-pattern" }
@@ -68,7 +64,6 @@ worksheets {
 worksheets {
   id: "ws-missing-numbers"
   title: "Find the missing number"
-  minutes: 12
   seed: 205
   placements { fragment_id: "frag-division-facts" count: 8 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-missing-factor" }
@@ -81,7 +76,6 @@ worksheets {
 worksheets {
   id: "ws-equal-groups-word-problems"
   title: "Equal groups word problems"
-  minutes: 15
   seed: 206
   max_pages: 2
   placements { fragment_id: "frag-array-facts" count: 2 stage: STAGE_REVIEW }
@@ -96,7 +90,6 @@ worksheets {
 worksheets {
   id: "ws-two-step-word-problems"
   title: "Two-step word problems"
-  minutes: 20
   seed: 207
   max_pages: 2
   placements { fragment_id: "frag-two-step-word-problems" }
@@ -111,7 +104,6 @@ worksheets {
 worksheets {
   id: "ws-add-subtract-within-1000"
   title: "Add and subtract within 1,000"
-  minutes: 15
   seed: 208
   max_pages: 2
   placements { fragment_id: "frag-round-to-tens-and-hundreds" stage: STAGE_REVIEW }
@@ -126,7 +118,6 @@ worksheets {
 worksheets {
   id: "ws-partial-products"
   title: "Partial products"
-  minutes: 15
   seed: 209
   placements { fragment_id: "frag-multiply-tens" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-partial-products" }
@@ -140,7 +131,6 @@ worksheets {
 worksheets {
   id: "ws-division-word-problems"
   title: "Division word problems"
-  minutes: 20
   seed: 210
   max_pages: 2
   placements { fragment_id: "frag-long-division" count: 3 stage: STAGE_REVIEW }
@@ -156,7 +146,6 @@ worksheets {
 worksheets {
   id: "ws-decompose-fractions"
   title: "Fractions in parts"
-  minutes: 15
   seed: 211
   placements { fragment_id: "frag-name-the-shaded-fraction" count: 2 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-decompose-fraction" }
@@ -170,7 +159,7 @@ worksheets {
 worksheets {
   id: "ws-add-subtract-fractions"
   title: "Add and subtract fractions"
-  minutes: 15
+  home_tip: "If they add the bottom numbers, ask what size the pieces are."
   seed: 212
   placements { fragment_id: "frag-add-fractions" }
   placements { fragment_id: "frag-subtract-fractions" }
@@ -183,7 +172,7 @@ worksheets {
 worksheets {
   id: "ws-mixed-numbers"
   title: "Mixed numbers"
-  minutes: 20
+  home_tip: "Have them say the whole numbers first, then the parts."
   seed: 213
   placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-add-mixed-numbers" }
@@ -197,7 +186,6 @@ worksheets {
 worksheets {
   id: "ws-fraction-times-whole"
   title: "Multiply a fraction by a whole number"
-  minutes: 15
   seed: 214
   max_pages: 2
   placements { fragment_id: "frag-decompose-fraction" count: 2 stage: STAGE_REVIEW }
@@ -211,7 +199,7 @@ worksheets {
 worksheets {
   id: "ws-fraction-word-problems"
   title: "Fraction word problems"
-  minutes: 20
+  home_tip: "Ask them to draw the pizza or ribbon before writing any numbers."
   seed: 215
   max_pages: 2
   placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
@@ -225,7 +213,6 @@ worksheets {
 worksheets {
   id: "ws-compare-decimals"
   title: "Compare decimals"
-  minutes: 12
   seed: 216
   placements { fragment_id: "frag-hundredths-grid" count: 2 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-compare-decimals" }
@@ -239,7 +226,6 @@ worksheets {
 worksheets {
   id: "ws-fractions-review"
   title: "Fractions review"
-  minutes: 20
   seed: 217
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }
@@ -259,7 +245,6 @@ worksheets {
 worksheets {
   id: "ws-convert-units"
   title: "Convert units"
-  minutes: 15
   seed: 218
   max_pages: 2
   placements { fragment_id: "frag-convert-length" }
@@ -273,7 +258,6 @@ worksheets {
 worksheets {
   id: "ws-measurement-word-problems"
   title: "Measurement word problems"
-  minutes: 20
   seed: 219
   max_pages: 2
   placements { fragment_id: "frag-convert-time-and-mass" count: 1 stage: STAGE_REVIEW }
@@ -287,7 +271,6 @@ worksheets {
 worksheets {
   id: "ws-angle-turns"
   title: "Angles are turns"
-  minutes: 12
   seed: 220
   max_pages: 2
   placements { fragment_id: "frag-angle-turns" }
@@ -301,7 +284,6 @@ worksheets {
 worksheets {
   id: "ws-area-perimeter-word-problems"
   title: "Area and perimeter problems"
-  minutes: 20
   seed: 221
   max_pages: 2
   placements { fragment_id: "frag-rectangle-perimeter" count: 2 stage: STAGE_REVIEW }
@@ -316,7 +298,7 @@ worksheets {
 worksheets {
   id: "ws-bar-graphs"
   title: "Read bar graphs"
-  minutes: 12
+  home_tip: "Make a quick bar graph together of something at home, like socks by colour."
   seed: 222
   placements { fragment_id: "frag-bar-graph-questions" }
   design {
@@ -328,7 +310,6 @@ worksheets {
 worksheets {
   id: "ws-mass-and-volume"
   title: "Mass and liquid volume"
-  minutes: 12
   seed: 223
   max_pages: 2
   placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
@@ -344,7 +325,6 @@ worksheets {
 worksheets {
   id: "ws-classify-triangles"
   title: "Triangles by their angles"
-  minutes: 12
   seed: 224
   max_pages: 2
   placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW }
@@ -358,7 +338,6 @@ worksheets {
 worksheets {
   id: "ws-quadrilaterals"
   title: "Parallel sides and right angles"
-  minutes: 12
   seed: 225
   max_pages: 2
   placements { fragment_id: "frag-name-line-pairs" count: 3 stage: STAGE_REVIEW }
@@ -372,7 +351,6 @@ worksheets {
 worksheets {
   id: "ws-symmetry"
   title: "Lines of symmetry"
-  minutes: 10
   seed: 226
   max_pages: 2
   placements { fragment_id: "frag-lines-of-symmetry" }
@@ -387,7 +365,6 @@ worksheets {
 worksheets {
   id: "ws-grade-3-check"
   title: "Ready for grade 4?"
-  minutes: 25
   seed: 227
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }

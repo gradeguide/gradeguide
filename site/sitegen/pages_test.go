@@ -114,15 +114,15 @@ func TestWorksheetsAreListedUnderTheSkillsTheyCover(t *testing.T) {
 	s := fixture()
 	s.Skills[1].Parts = []part{{Code: "4.NF.A.1.a", Name: "A part"}}
 	s.Skills[1].Worksheets = []worksheetRef{
-		{ID: "ws-one", Title: "One", Pages: 1, Href: "/worksheets/?answers=0&only=ws-one", Role: "teaches"},
-		{ID: "ws-part", Title: "Part", Pages: 2, Href: "/worksheets/?answers=0&only=ws-part", Role: "practises"},
+		{ID: "ws-one", Title: "One", Pages: 1, Href: "/worksheets/?only=ws-one", Role: "teaches"},
+		{ID: "ws-part", Title: "Part", Pages: 2, Href: "/worksheets/?only=ws-part", Role: "practises"},
 	}
 	files, err := Pages(s, "https://example.org")
 	if err != nil {
 		t.Fatal(err)
 	}
 	page := string(files["math/grade-4/4-nf-a-1-equivalent-fractions/index.html"])
-	if !strings.Contains(page, `href="/worksheets/?answers=0&amp;only=ws-part"`) || !strings.Contains(page, "2 pages") {
+	if !strings.Contains(page, `href="/worksheets/?only=ws-part"`) || !strings.Contains(page, "2 pages") {
 		t.Errorf("the skill page does not link to ws-part:\n%s", page)
 	}
 }
