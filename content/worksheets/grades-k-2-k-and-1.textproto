@@ -1,0 +1,971 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Kindergarten and grade 1 sheets. A grown-up reads the instructions aloud;
+# the child counts, writes numbers and ticks answers.
+
+# Kindergarten: counting and cardinality.
+
+fragments {
+  id: "frag-gk-count-dots-to-10"
+  instruction: "Count the pictures. Write how many."
+  stage: STAGE_INTRODUCE
+  explainer: "Touch each picture once as you count. The last number you say tells how many."
+  example { item { count_objects { count { min: 4 max: 4 } picture: PICTURE_GROUPS } } seed: 1 text: "Touch and count: 1, 2, 3, 4. There are **4**." }
+  items { kind { count_objects { count { min: 1 max: 10 } picture: PICTURE_GROUPS } } count: 6 }
+  design {
+    purpose: "Count up to 10 things in small groups, one number for each, and write how many."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Counting a picture twice or skipping one."
+    misconceptions: "Recounting from 1 when asked how many, instead of using the last number said."
+  }
+}
+
+fragments {
+  id: "frag-gk-count-dots-to-20"
+  instruction: "Count the dots. Write how many."
+  stage: STAGE_PRACTICE
+  items { kind { count_objects { count { min: 11 max: 20 } } } count: 4 }
+  design {
+    purpose: "Count up to 20 dots in a line or in rows, and write the number."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The dots come in a line and in rows, so the child keeps track of what has been counted in more than one arrangement."
+  }
+}
+
+fragments {
+  id: "frag-gk-ten-frames"
+  instruction: "How many counters? Write the number."
+  stage: STAGE_PRACTICE
+  explainer: "A full ten frame is 10. Count on from 10 for the second frame."
+  items { kind { count_objects { count { min: 3 max: 20 } picture: PICTURE_TEN_FRAME } } count: 6 }
+  design {
+    purpose: "Read numbers up to 20 from ten frames, seeing 5 and 10 at a glance."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Counting every counter from 1 instead of seeing a full frame as 10."
+  }
+}
+
+fragments {
+  id: "frag-gk-one-more"
+  instruction: "Count the dots. Then write the number that is one more."
+  stage: STAGE_PRACTICE
+  items { kind { count_objects { count { min: 1 max: 9 } mode: MODE_ONE_MORE picture: PICTURE_TEN_FRAME } } count: 4 }
+  design {
+    purpose: "See that the next counting number is one more."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-gk-count-on"
+  instruction: "Count on. Write the missing numbers."
+  stage: STAGE_PRACTICE
+  explainer: "Start at the first number and keep counting by ones."
+  items { kind { count_sequence { start { min: 3 max: 94 } steps: [1] } } count: 4 }
+  design {
+    purpose: "Count forward by ones from any number up to 100."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Going from 29 to 20 or 210 instead of 30."
+  }
+}
+
+fragments {
+  id: "frag-gk-hundred-chart"
+  instruction: "Fill in the missing numbers on the hundred chart."
+  max_columns: 1
+  stage: STAGE_PRACTICE
+  explainer: "Moving right is one more. Moving down is ten more."
+  items { kind { count_sequence { start { min: 1 max: 61 } chart: true } } count: 2 }
+  design {
+    purpose: "Count to 100 by ones and see the tens on a hundred chart."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-gk-count-by-tens"
+  instruction: "Count by tens. Write the missing numbers."
+  stage: STAGE_PRACTICE
+  items { kind { count_sequence { start { min: 10 max: 50 } steps: [10] } } count: 2 }
+  design {
+    purpose: "Count by tens to 100."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-gk-compare-groups"
+  instruction: "Which row has more dots? Tick A, B or same."
+  stage: STAGE_PRACTICE
+  explainer: "Match the dots in the two rows. The row with dots left over has more."
+  items { kind { count_objects { count { min: 2 max: 10 } mode: MODE_COMPARE_GROUPS } } count: 6 }
+  design {
+    purpose: "Tell whether one group has more, fewer or the same number as another."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Thinking the longer-looking row has more."
+  }
+}
+
+fragments {
+  id: "frag-gk-greater-number"
+  instruction: "Tick the greater number."
+  stage: STAGE_PRACTICE
+  items { kind { compare_numbers { numbers { min: 1 max: 10 } } } count: 10 }
+  design {
+    purpose: "Tell which of two numbers from 1 to 10 is greater."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+# Kindergarten: operations.
+
+fragments {
+  id: "frag-gk-add-pictures"
+  instruction: "Count both groups. Write the total."
+  stage: STAGE_INTRODUCE
+  example { item { add_subtract_fact { max: 6 op: OP_ADD pictures: true } } seed: 3 text: "Count all of them together." }
+  items { kind { add_subtract_fact { max: 10 op: OP_ADD pictures: true } } count: 6 }
+  design {
+    purpose: "Show adding as putting two groups together."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-gk-subtract-pictures"
+  instruction: "Some are crossed out. Write how many are left."
+  stage: STAGE_GUIDED
+  items { kind { add_subtract_fact { max: 10 op: OP_SUBTRACT pictures: true } } count: 6 }
+  design {
+    purpose: "Show taking away by crossing out pictures."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-gk-word-problems"
+  instruction: "Listen to the story. Draw or write to solve."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve adding and taking-away stories within 10."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "A grown-up reads each story aloud. Drawing the things in the story is a good way to solve it."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "Mia has 4 red apples and 3 green apples. How many apples does she have?" }
+        nodes { work_space { rows: 4 field { label: "apples Mia has" answer { text: "7" work: "4 + 3" also: "7 apples" } } } }
+      }
+      items {
+        nodes { text: "There are 9 ducks in the pond. 5 ducks swim away. How many ducks are left?" }
+        nodes { work_space { rows: 4 field { label: "ducks left" answer { text: "4" work: "9 − 5" also: "4 ducks" } } } }
+      }
+      items {
+        nodes { text: "Ben has 6 toy cars. He gets 2 more. How many cars does Ben have now?" }
+        nodes { work_space { rows: 4 field { label: "cars Ben has" answer { text: "8" work: "6 + 2" also: "8 cars" } } } }
+      }
+      items {
+        nodes { text: "There are 10 cookies on a plate. Kai eats 3. How many cookies are left?" }
+        nodes { work_space { rows: 4 field { label: "cookies left" answer { text: "7" work: "10 − 3" also: "7 cookies" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-gk-facts-within-5"
+  instruction: "Add or subtract."
+  stage: STAGE_PRACTICE
+  items { kind { add_subtract_fact { max: 5 op: OP_MIXED } } count: 12 }
+  design {
+    purpose: "Add and subtract within 5 quickly."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-gk-facts-within-10"
+  instruction: "Add or subtract."
+  stage: STAGE_PRACTICE
+  items { kind { add_subtract_fact { max: 10 op: OP_MIXED } } count: 10 }
+  design {
+    purpose: "Add and subtract within 10."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-gk-break-apart"
+  instruction: "Fill in the missing number."
+  stage: STAGE_PRACTICE
+  explainer: "The top circle is the whole. The two circles under it are its parts: 5 is 2 and 3, or 4 and 1."
+  items { kind { equation { total { min: 3 max: 10 } mode: MODE_MISSING_PART model: MODEL_BOND } } count: 6 }
+  design {
+    purpose: "Split numbers up to 10 into two parts in more than one way."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-gk-make-ten"
+  instruction: "How many more make 10?"
+  stage: STAGE_PRACTICE
+  items { kind { equation { total { min: 10 max: 10 } mode: MODE_MISSING_PART model: MODEL_TEN_FRAME } } count: 6 }
+  design {
+    purpose: "Find the number that makes 10 with a number from 1 to 9."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The empty squares in the ten frame are the missing part."
+  }
+}
+
+fragments {
+  id: "frag-gk-teen-numbers"
+  instruction: "Write the missing number."
+  stage: STAGE_INTRODUCE
+  explainer: "A long block is a ten. Each small block is a one. 14 is a ten and 4 ones."
+  items { kind { place_value_blocks { mode: MODE_TEEN } } count: 8 }
+  design {
+    purpose: "See numbers from 11 to 19 as ten ones and some more ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Reading 14 as 1 and 4 instead of a ten and 4 ones."
+  }
+}
+
+# Kindergarten: measurement, data and shapes.
+
+fragments {
+  id: "frag-gk-longer"
+  instruction: "Which strip is longer? Tick A or B."
+  stage: STAGE_PRACTICE
+  items { kind { length_measure { mode: MODE_LONGER } } count: 6 }
+  design {
+    purpose: "Compare two lengths that start at the same place."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-gk-sort-shapes"
+  instruction: "Sort the shapes. Count each kind."
+  stage: STAGE_PRACTICE
+  items { kind { shape_attributes { mode: MODE_SORT } } count: 2 }
+  design {
+    purpose: "Sort shapes into groups and count each group."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-gk-name-shapes"
+  instruction: "Tick the name of the shape."
+  stage: STAGE_PRACTICE
+  explainer: "A shape keeps its name when it is bigger, smaller or turned."
+  items { kind { shape_attributes { mode: MODE_NAME } } count: 6 }
+  design {
+    purpose: "Name circles, triangles, squares, rectangles and hexagons of any size or turn."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Thinking a turned square is no longer a square."
+  }
+}
+
+fragments {
+  id: "frag-gk-sides-corners"
+  instruction: "Count the sides and corners."
+  stage: STAGE_PRACTICE
+  items { kind { shape_attributes { mode: MODE_SIDES_CORNERS } } count: 4 }
+  design {
+    purpose: "Describe shapes by their sides and corners."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-gk-draw-shapes"
+  instruction: "Draw the shape."
+  stage: STAGE_APPLY
+  items { kind { shape_attributes { mode: MODE_DRAW } } count: 4 }
+  design {
+    purpose: "Draw triangles, squares, rectangles and hexagons."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+  }
+}
+
+worksheets {
+  id: "ws-gk-count-to-20"
+  title: "Counting to 20"
+  seed: 401
+  max_pages: 3
+  placements { fragment_id: "frag-gk-count-dots-to-10" }
+  placements { fragment_id: "frag-gk-count-dots-to-20" }
+  placements { fragment_id: "frag-gk-ten-frames" }
+  placements { fragment_id: "frag-gk-one-more" }
+  design {
+    purpose: "Count up to 20 dots and write how many, then find one more."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Let your child touch each dot as they count."
+}
+
+worksheets {
+  id: "ws-gk-count-on"
+  title: "Counting on to 100"
+  seed: 402
+  max_pages: 2
+  placements { fragment_id: "frag-gk-hundred-chart" }
+  placements { fragment_id: "frag-gk-count-on" }
+  placements { fragment_id: "frag-gk-count-by-tens" }
+  design {
+    purpose: "Count on by ones from any number, and count by tens."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+  home_tip: "Say the numbers aloud together before writing them."
+}
+
+worksheets {
+  id: "ws-gk-more-and-less"
+  title: "More, fewer and the same"
+  seed: 403
+  max_pages: 2
+  placements { fragment_id: "frag-gk-compare-groups" }
+  placements { fragment_id: "frag-gk-greater-number" }
+  design {
+    purpose: "Compare groups of dots, then compare written numbers."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-gk-add-and-take-away"
+  title: "Adding and taking away"
+  seed: 404
+  max_pages: 2
+  placements { fragment_id: "frag-gk-add-pictures" }
+  placements { fragment_id: "frag-gk-subtract-pictures" }
+  placements { fragment_id: "frag-gk-word-problems" }
+  design {
+    purpose: "Add and take away with pictures, then in stories."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Read the stories aloud. Drawing the things in the story is a fine way to solve it."
+}
+
+worksheets {
+  id: "ws-gk-facts-within-10"
+  title: "Facts within 10"
+  seed: 405
+  max_pages: 1
+  placements { fragment_id: "frag-gk-facts-within-5" }
+  placements { fragment_id: "frag-gk-facts-within-10" }
+  design {
+    purpose: "Add and subtract within 5 quickly, then within 10."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-gk-number-partners"
+  title: "Number partners and making 10"
+  seed: 406
+  max_pages: 1
+  placements { fragment_id: "frag-gk-break-apart" }
+  placements { fragment_id: "frag-gk-make-ten" }
+  design {
+    purpose: "Split numbers into two parts, and find the partner that makes 10."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+  home_tip: "Use ten fingers: hold up some and ask how many are down."
+}
+
+worksheets {
+  id: "ws-gk-teen-numbers"
+  title: "Teen numbers"
+  seed: 407
+  max_pages: 2
+  placements { fragment_id: "frag-gk-teen-numbers" }
+  design {
+    purpose: "See each teen number as a ten and some ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-gk-shapes"
+  title: "Shapes"
+  seed: 408
+  max_pages: 3
+  placements { fragment_id: "frag-gk-name-shapes" }
+  placements { fragment_id: "frag-gk-sides-corners" }
+  placements { fragment_id: "frag-gk-draw-shapes" }
+  design {
+    purpose: "Name shapes, describe their sides and corners, and draw them."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-gk-compare-and-sort"
+  title: "Longer and sorting"
+  seed: 409
+  max_pages: 2
+  placements { fragment_id: "frag-gk-longer" }
+  placements { fragment_id: "frag-gk-sort-shapes" }
+  design {
+    purpose: "Compare two lengths, and sort and count shapes."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+# Grade 1: operations and algebraic thinking.
+
+fragments {
+  id: "frag-g1-word-problems-within-20"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve adding and subtracting stories within 20, with the unknown in any place."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The stories mix adding to, taking from, putting together and comparing, and the unknown is the result, the change or the start."
+    misconceptions: "Adding whenever a story says \"more\"."
+  }
+  items {
+    count: 5
+    authored {
+      items {
+        nodes { text: "Ana has 8 shells. She finds some more. Now she has 13 shells. How many shells did she find?" }
+        nodes { work_space { field { label: "shells Ana found" answer { text: "5" work: "13 − 8" also: "5 shells" } } } }
+      }
+      items {
+        nodes { text: "Omar has 15 stickers. Zoe has 9 stickers. How many more stickers does Omar have than Zoe?" }
+        nodes { work_space { field { label: "how many more stickers Omar has" answer { text: "6" work: "15 − 9" also: "6 stickers" } } } }
+      }
+      items {
+        nodes { text: "Some birds sat on a fence. 6 flew away. Then 7 birds were left. How many birds were on the fence at first?" }
+        nodes { work_space { field { label: "birds at first" answer { text: "13" work: "7 + 6" also: "13 birds" } } } }
+      }
+      items {
+        nodes { text: "There are 12 children on the bus. 7 are girls. The rest are boys. How many boys are on the bus?" }
+        nodes { work_space { field { label: "boys on the bus" answer { text: "5" work: "12 − 7" also: "5 boys" } } } }
+      }
+      items {
+        nodes { text: "Raj has 9 marbles. Lena has 4 more marbles than Raj. How many marbles does Lena have?" }
+        nodes { work_space { field { label: "marbles Lena has" answer { text: "13" work: "9 + 4" also: "13 marbles" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g1-three-addend-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve stories that add three numbers with a total up to 20."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 3
+    authored {
+      items {
+        nodes { text: "Mia picks 5 red flowers, 4 yellow flowers and 6 white flowers. How many flowers does she pick?" }
+        nodes { work_space { field { label: "flowers Mia picks" answer { text: "15" work: "5 + 4 + 6" also: "15 flowers" } } } }
+      }
+      items {
+        nodes { text: "Ben reads 3 books on Monday, 7 books on Tuesday and 2 books on Wednesday. How many books does he read?" }
+        nodes { work_space { field { label: "books Ben reads" answer { text: "12" work: "3 + 7 + 2" also: "12 books" } } } }
+      }
+      items {
+        nodes { text: "A pet shop has 8 cats, 2 dogs and 5 rabbits. How many animals does it have?" }
+        nodes { work_space { field { label: "animals in the shop" answer { text: "15" work: "8 + 2 + 5" also: "15 animals" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g1-add-three-numbers"
+  instruction: "Add. Look for two numbers that make 10."
+  stage: STAGE_PRACTICE
+  items { kind { add_subtract_fact { max: 20 three_addends: true } } count: 8 }
+  design {
+    purpose: "Add three numbers with a total up to 20."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g1-turn-around"
+  instruction: "Fill in the missing number."
+  stage: STAGE_PRACTICE
+  explainer: "You can add in any order: 3 + 8 is the same as 8 + 3."
+  items { kind { equation { total { min: 5 max: 18 } mode: MODE_TURN_AROUND } } count: 8 }
+  design {
+    purpose: "Use adding in any order to make adding easier."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g1-count-on-number-line"
+  instruction: "Count the jumps. Write the answer."
+  stage: STAGE_GUIDED
+  explainer: "Start at the arrow. Each jump is 1."
+  items { kind { number_line_jumps { step: 1 end: 20 } } count: 3 }
+  design {
+    purpose: "Add by counting on along a number line."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    misconceptions: "Counting the starting number as the first jump."
+  }
+}
+
+fragments {
+  id: "frag-g1-count-back-number-line"
+  instruction: "Count the jumps back. Write the answer."
+  stage: STAGE_GUIDED
+  items { kind { number_line_jumps { step: 1 end: 20 subtract: true } } count: 2 }
+  design {
+    purpose: "Subtract by counting back along a number line."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g1-facts-within-20"
+  instruction: "Add or subtract."
+  stage: STAGE_PRACTICE
+  items { kind { add_subtract_fact { max: 20 op: OP_MIXED } } count: 12 }
+  design {
+    purpose: "Add and subtract within 20, and know the facts within 10."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g1-think-addition"
+  instruction: "Use an addition fact to subtract."
+  stage: STAGE_PRACTICE
+  items { kind { equation { total { min: 6 max: 18 } mode: MODE_THINK_ADDITION } } count: 6 }
+  design {
+    purpose: "Solve a subtraction by finding the missing number in an addition."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g1-true-or-false"
+  instruction: "Is it true or false? Tick one."
+  stage: STAGE_PRACTICE
+  explainer: "The = sign means both sides are worth the same."
+  items { kind { equation { total { min: 4 max: 15 } mode: MODE_TRUE_FALSE } } count: 8 }
+  design {
+    purpose: "Decide whether an equation is true by working out both sides."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+    misconceptions: "Reading = as \"the answer comes next\", so 7 = 7 or 9 = 4 + 5 looks wrong."
+  }
+}
+
+fragments {
+  id: "frag-g1-missing-number"
+  instruction: "Fill in the missing number."
+  stage: STAGE_PRACTICE
+  items { kind { equation { total { min: 5 max: 20 } mode: MODE_MISSING_ANY } } count: 10 }
+  design {
+    purpose: "Find the missing number in an addition or subtraction equation."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-g1-word-problems"
+  title: "Story problems within 20"
+  seed: 411
+  max_pages: 3
+  placements { fragment_id: "frag-g1-word-problems-within-20" }
+  placements { fragment_id: "frag-g1-three-addend-word-problems" }
+  design {
+    purpose: "Solve adding and subtracting stories, including stories with three numbers."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Ask your child to tell the story back in their own words first."
+}
+
+worksheets {
+  id: "ws-g1-adding-strategies"
+  title: "Adding three numbers and in any order"
+  seed: 412
+  max_pages: 1
+  placements { fragment_id: "frag-g1-add-three-numbers" }
+  placements { fragment_id: "frag-g1-turn-around" }
+  design {
+    purpose: "Add three numbers and use adding in any order."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g1-facts-within-20"
+  title: "Adding and subtracting within 20"
+  seed: 413
+  max_pages: 3
+  placements { fragment_id: "frag-g1-count-on-number-line" }
+  placements { fragment_id: "frag-g1-count-back-number-line" }
+  placements { fragment_id: "frag-g1-think-addition" }
+  placements { fragment_id: "frag-g1-facts-within-20" }
+  design {
+    purpose: "Count on and back on a number line, think of subtraction as adding, then practise facts."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g1-equal-sign"
+  title: "The equal sign"
+  seed: 414
+  max_pages: 2
+  placements { fragment_id: "frag-g1-true-or-false" }
+  placements { fragment_id: "frag-g1-missing-number" }
+  design {
+    purpose: "Understand = as \"the same as\", and find missing numbers."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+  }
+}
+
+# Grade 1: number and place value.
+
+fragments {
+  id: "frag-g1-count-to-120"
+  instruction: "Count on. Write the missing numbers."
+  stage: STAGE_PRACTICE
+  items { kind { count_sequence { start { min: 40 max: 114 } steps: [1] } } count: 8 }
+  design {
+    purpose: "Count and write numbers up to 120 from any starting number."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Writing 100 and 1 as 1001 instead of 101."
+  }
+}
+
+fragments {
+  id: "frag-g1-chart-to-120"
+  instruction: "Fill in the missing numbers on the chart."
+  max_columns: 1
+  stage: STAGE_PRACTICE
+  items { kind { count_sequence { start { min: 61 max: 81 } chart: true } } count: 2 }
+  design {
+    purpose: "Read and write numbers up to 120 on a chart, across 100."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g1-tens-units"
+  instruction: "Fill in the missing number."
+  stage: STAGE_INTRODUCE
+  explainer: "10 ones make 1 ten. 40 is 4 tens and 0 ones."
+  items { kind { place_value_blocks { number { min: 10 max: 99 } mode: MODE_UNITS } } count: 8 }
+  design {
+    purpose: "See 10 ones as a ten, and 10, 20 up to 90 as that many tens."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g1-teen-blocks"
+  instruction: "Write the missing number."
+  stage: STAGE_PRACTICE
+  items { kind { place_value_blocks { mode: MODE_TEEN } } count: 4 }
+  design {
+    purpose: "See numbers from 11 to 19 as a ten and some ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g1-read-tens-ones"
+  instruction: "Write the tens, the ones and the number."
+  stage: STAGE_PRACTICE
+  items { kind { place_value_blocks { number { min: 21 max: 99 } mode: MODE_READ_BLOCKS } } count: 4 }
+  design {
+    purpose: "Read a two-digit number from its tens and ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Writing 3 tens and 5 ones as 305."
+  }
+}
+
+fragments {
+  id: "frag-g1-compare-two-digit"
+  instruction: "Write <, > or =."
+  stage: STAGE_PRACTICE
+  explainer: "Compare the tens first. If the tens are the same, compare the ones."
+  items { kind { compare_numbers { numbers { min: 10 max: 99 } symbols: true } } count: 12 }
+  design {
+    purpose: "Compare two-digit numbers with <, > and =."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Thinking 29 is greater than 31 because 9 is greater than 1."
+  }
+}
+
+fragments {
+  id: "frag-g1-plus-ones"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { mental_math { mode: MODE_PLUS_ONES } } count: 8 }
+  design {
+    purpose: "Add a one-digit number to a two-digit number, making a new ten when needed."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g1-plus-tens"
+  instruction: "Add tens."
+  stage: STAGE_PRACTICE
+  items { kind { mental_math { mode: MODE_PLUS_TENS } } count: 6 }
+  design {
+    purpose: "Add a multiple of 10 to a two-digit number by adding tens to tens."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g1-ten-more-less"
+  instruction: "Find 10 more or 10 less."
+  stage: STAGE_PRACTICE
+  items { kind { mental_math { mode: MODE_TEN_MORE_LESS } } count: 6 }
+  design {
+    purpose: "Find 10 more or 10 less than a two-digit number without counting."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Changing the ones digit instead of the tens digit."
+  }
+}
+
+fragments {
+  id: "frag-g1-chart-ten-more-less"
+  instruction: "Fill in 1 more, 1 less, 10 more and 10 less."
+  stage: STAGE_INTRODUCE
+  explainer: "On a hundred chart, the number below is 10 more and the number above is 10 less."
+  items { kind { mental_math { mode: MODE_TEN_MORE_LESS chart: true } } count: 4 }
+  design {
+    purpose: "See 10 more and 10 less as moving down and up a hundred chart."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g1-subtract-tens"
+  instruction: "Subtract tens."
+  stage: STAGE_PRACTICE
+  items { kind { mental_math { mode: MODE_SUBTRACT_TENS } } count: 6 }
+  design {
+    purpose: "Subtract a multiple of 10 from a larger multiple of 10."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g1-count-to-120"
+  title: "Counting to 120"
+  seed: 415
+  max_pages: 2
+  placements { fragment_id: "frag-g1-chart-to-120" }
+  placements { fragment_id: "frag-g1-count-to-120" }
+  design {
+    purpose: "Count on and write numbers up to 120."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g1-tens-and-ones"
+  title: "Tens and ones"
+  seed: 416
+  max_pages: 3
+  placements { fragment_id: "frag-g1-tens-units" }
+  placements { fragment_id: "frag-g1-teen-blocks" }
+  placements { fragment_id: "frag-g1-read-tens-ones" }
+  design {
+    purpose: "See a ten as ten ones, then read two-digit numbers as tens and ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g1-compare-two-digit"
+  title: "Comparing two-digit numbers"
+  seed: 417
+  max_pages: 1
+  placements { fragment_id: "frag-g1-compare-two-digit" }
+  design {
+    purpose: "Compare two-digit numbers by their tens, then their ones."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g1-add-subtract-tens"
+  title: "Adding and subtracting with tens"
+  seed: 418
+  max_pages: 2
+  placements { fragment_id: "frag-g1-plus-ones" }
+  placements { fragment_id: "frag-g1-plus-tens" }
+  placements { fragment_id: "frag-g1-chart-ten-more-less" }
+  placements { fragment_id: "frag-g1-ten-more-less" }
+  placements { fragment_id: "frag-g1-subtract-tens" }
+  design {
+    purpose: "Add within 100, find 10 more and 10 less, and subtract tens."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+# Grade 1: measurement, data and shapes.
+
+fragments {
+  id: "frag-g1-order-three"
+  instruction: "Tick the longest and the shortest strip."
+  stage: STAGE_PRACTICE
+  items { kind { length_measure { mode: MODE_ORDER_THREE } } count: 4 }
+  design {
+    purpose: "Put three lengths in order."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g1-count-units"
+  instruction: "How many units long is the strip?"
+  stage: STAGE_PRACTICE
+  explainer: "Each box is one unit. The units touch, with no gaps and no overlaps."
+  items { kind { length_measure { mode: MODE_COUNT_UNITS } } count: 3 }
+  design {
+    purpose: "Measure a length by counting equal units laid end to end."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g1-clock-hour"
+  instruction: "Write the time."
+  stage: STAGE_INTRODUCE
+  explainer: "The short hand shows the hour. When the long hand points to 12, it is o'clock."
+  items { kind { clock_nearest { step: 60 } } count: 4 }
+  design {
+    purpose: "Tell time to the hour."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g1-clock-half-hour"
+  instruction: "Write the time."
+  stage: STAGE_PRACTICE
+  explainer: "When the long hand points to 6, it is half past: 3:30. The short hand is halfway between two numbers."
+  items { kind { clock_nearest { step: 30 } } count: 4 }
+  design {
+    purpose: "Tell time to the hour and half hour."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Reading the hour from the number after the short hand at half past."
+  }
+}
+
+fragments {
+  id: "frag-g1-tally"
+  instruction: "Use the tally chart to answer."
+  stage: STAGE_PRACTICE
+  explainer: "Each | is one. ||||/ is a group of 5."
+  items { kind { data_chart { mode: MODE_TALLY } } count: 2 }
+  design {
+    purpose: "Read a chart in three groups: how many in each, how many more, how many in all."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g1-shape-features"
+  instruction: "Count the sides and corners. Tick the name."
+  stage: STAGE_PRACTICE
+  items { kind { shape_attributes { mode: MODE_SIDES_CORNERS } } count: 4 }
+  design {
+    purpose: "Name a shape by its sides and corners, not its color, size or turn."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g1-halves-fourths"
+  instruction: "What share is shaded? Tick one."
+  stage: STAGE_PRACTICE
+  items { kind { equal_shares { denominators: [2, 4] } } count: 4 }
+  design {
+    purpose: "Name one of two equal shares as one half and one of four as one fourth."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Thinking one fourth is bigger than one half because 4 is bigger than 2."
+  }
+}
+
+fragments {
+  id: "frag-g1-equal-or-not"
+  instruction: "Are the parts equal shares? Tick one."
+  stage: STAGE_PRACTICE
+  items { kind { equal_shares { denominators: [2, 4] unequal: true } } count: 4 }
+  design {
+    purpose: "Tell equal shares from parts that are not equal."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+    misconceptions: "Calling any cut into two parts halves."
+  }
+}
+
+worksheets {
+  id: "ws-g1-length"
+  title: "Comparing and measuring length"
+  seed: 419
+  max_pages: 2
+  placements { fragment_id: "frag-g1-order-three" }
+  placements { fragment_id: "frag-g1-count-units" }
+  design {
+    purpose: "Order three lengths, then measure lengths in units."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g1-time"
+  title: "Time to the hour and half hour"
+  seed: 420
+  max_pages: 2
+  placements { fragment_id: "frag-g1-clock-hour" }
+  placements { fragment_id: "frag-g1-clock-half-hour" }
+  design {
+    purpose: "Read clocks to the hour, then to the half hour."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g1-tally-charts"
+  title: "Tally charts"
+  seed: 421
+  max_pages: 1
+  placements { fragment_id: "frag-g1-tally" }
+  design {
+    purpose: "Answer questions from data in three groups."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g1-shapes-and-shares"
+  title: "Shapes, halves and fourths"
+  seed: 422
+  max_pages: 2
+  placements { fragment_id: "frag-g1-shape-features" }
+  placements { fragment_id: "frag-g1-equal-or-not" }
+  placements { fragment_id: "frag-g1-halves-fourths" }
+  design {
+    purpose: "Describe shapes by their features, then split them into equal shares."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}

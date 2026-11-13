@@ -15,11 +15,41 @@ import {
   MissingFactorSchema,
   WorksheetSchema,
   WritingSize,
+  AddInColumnsSchema,
+  AddSubtractFact_Op,
+  AddSubtractFactSchema,
+  ClockNearestSchema,
+  CompareNumbersSchema,
+  CountObjects_Mode,
+  CountObjects_Picture,
+  CountObjectsSchema,
+  Equation_Model,
+  CountSequenceSchema,
+  DataChart_Mode,
+  DataChartSchema,
+  EqualSharesSchema,
+  Equation_Mode,
+  EquationSchema,
+  LengthMeasure_Mode,
+  LengthMeasureSchema,
+  MentalMath_Mode,
+  MentalMathSchema,
+  NumberForms_Mode,
+  NumberFormsSchema,
+  NumberLineJumpsSchema,
+  PairsAndArrays_Mode,
+  PairsAndArraysSchema,
+  PlaceValueBlocks_Mode,
+  PlaceValueBlocksSchema,
+  ShapeAttributes_Mode,
+  ShapeAttributesSchema,
 } from '../proto/v1/worksheet_pb.js';
 import { Fields, blank, fieldsOf, math, text } from './build.js';
 import { checkAuthored, evaluate, parseAnswer } from './check.js';
 import { allNodes, compose } from './compose.js';
 import { generate } from './kinds.js';
+import { COIN } from './draw_k2.js';
+import { numberWords } from './kinds_k2.js';
 import { decodeLibrary } from './library.js';
 import { Rng } from './rng.js';
 import { verifyLibrary } from './verify.js';
@@ -394,3 +424,359 @@ describe('item kinds', () => {
   });
 });
 
+describe('kindergarten to grade 2 item kinds', () => {
+  const items = (kind: ItemKind['kind'], n = 30) => {
+    const rng = new Rng(11);
+    const used = new Set<string>();
+    const fresh = (k: string) => !used.has(k) && !!used.add(k);
+    return Array.from({ length: n }, (_, i) => generate(create(ItemKindSchema, { kind }), { rng, fields: new Fields(`q${i}`), fresh }));
+  };
+  // flat lists every node, descending into rows and stacks.
+  const flat = (ns: readonly Node[]): Node[] =>
+    ns.flatMap((n) => (n.kind.case === 'row' || n.kind.case === 'stack' ? flat(n.kind.value.children) : [n]));
+  const find = <C extends Node['kind']['case']>(ns: readonly Node[], c: C) =>
+    flat(ns)
+      .filter((n) => n.kind.case === c)
+      .map((n) => n.kind.value as Extract<Node['kind'], { case: C }>['value']);
+  const answers = (ns: readonly Node[]) => fieldsOf(ns).map((f) => f.answer!.text);
+  // line reads a line of maths with each blank filled in by its answer.
+  const line = (n: Node) =>
+    n.kind.case === 'math'
+      ? n.kind.value.atoms
+          .map((a) => (a.kind.case === 'text' ? a.kind.value : a.kind.case === 'blank' ? a.kind.value.answer!.text : '?'))
+          .join(' ')
+      : '';
+  // holds checks that a filled-in line is a true equation. Place-value words
+  // become their values: "6 tens" is 6 × 10.
+  const holds = (n: Node) => {
+    const s = line(n)
+      .replace(/\bbecause\b/, '')
+      .replace(/\bhundreds?\b/g, '× 100')
+      .replace(/\btens?\b/g, '× 10')
+      .replace(/\bones\b/g, '× 1');
+    const sides = s.split('=').map((x) => evaluate(x.trim()));
+    expect(sides.length).withContext(s).toBeGreaterThan(1);
+    for (const v of sides) {
+      expect(v).withContext(s).toBe(sides[0]);
+    }
+  };
+  const dotCount = (ns: readonly Node[]) => find(ns, 'dotArray').reduce((t, d) => t + d.rows * d.cols, 0);
+
+  it('counts dots, one more, and compares rows', () => {
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { count: { min: 1, max: 20 } }) })) {
+      expect(answers(ns)).toEqual([String(dotCount(ns))]);
+    }
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { mode: CountObjects_Mode.ONE_MORE }) })) {
+      const n = dotCount(ns);
+      expect(answers(ns)).toEqual([String(n), String(n + 1)]);
+    }
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { mode: CountObjects_Mode.COMPARE_GROUPS }) })) {
+      const [a, b] = find(ns, 'dotArray').map((d) => d.rows * d.cols);
+      expect(answers(ns)).toEqual([a > b ? 'A' : a < b ? 'B' : 'same']);
+    }
+  });
+
+  it('counts ten frames, pictures in groups and coins', () => {
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { count: { min: 1, max: 20 }, picture: CountObjects_Picture.TEN_FRAME }) })) {
+      const [t] = find(ns, 'tenFrame');
+      expect(answers(ns)).toEqual([String(t.filled)]);
+    }
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { count: { min: 1, max: 20 }, picture: CountObjects_Picture.GROUPS }) })) {
+      const [g] = find(ns, 'pictureGroups');
+      expect(answers(ns)).toEqual([String(g.groups.reduce((a, b) => a + b, 0))]);
+    }
+    for (const ns of items({ case: 'countObjects', value: create(CountObjectsSchema, { count: { min: 10, max: 99 }, mode: CountObjects_Mode.COINS }) })) {
+      const [c] = find(ns, 'coins');
+      const v = c.coins.reduce((t, x) => t + COIN[x][1], 0);
+      expect(v).toBeGreaterThanOrEqual(10);
+      expect(v).toBeLessThanOrEqual(99);
+      expect(answers(ns)).toEqual([String(v)]);
+    }
+  });
+
+  it('fills hundred charts and number bonds', () => {
+    for (const ns of items({ case: 'countSequence', value: create(CountSequenceSchema, { start: { min: 1, max: 81 }, chart: true }) })) {
+      const [g] = find(ns, 'numberGrid');
+      for (const b of g.blanks) {
+        expect(b.field!.answer!.text).toBe(String(b.number));
+        expect(b.number - g.start).toBeLessThan(g.rows * g.cols);
+      }
+    }
+    for (const ns of items({ case: 'mentalMath', value: create(MentalMathSchema, { mode: MentalMath_Mode.TEN_MORE_LESS, chart: true }) })) {
+      const [g] = find(ns, 'numberGrid');
+      const n = g.start + 11;
+      expect(g.blanks.map((b) => Number(b.field!.answer!.text))).toEqual([n - 10, n - 1, n + 1, n + 10]);
+    }
+    for (const ns of items({ case: 'equation', value: create(EquationSchema, { total: { min: 3, max: 10 }, mode: Equation_Mode.MISSING_PART, model: Equation_Model.BOND }) })) {
+      const [b] = find(ns, 'numberBond');
+      const part = (p: typeof b.left) => Number(p?.field ? p.field.answer!.text : p?.text);
+      expect(part(b.left) + part(b.right)).toBe(Number(b.whole!.text));
+      holds(ns[1]);
+    }
+    for (const ns of items({ case: 'equation', value: create(EquationSchema, { total: { min: 10, max: 10 }, mode: Equation_Mode.MISSING_PART, model: Equation_Model.TEN_FRAME }) })) {
+      const [t] = find(ns, 'tenFrame');
+      holds(ns[1]);
+      expect(answers(ns)).toEqual([String(10 - t.filled)]);
+    }
+  });
+
+  it('crosses out what is taken away', () => {
+    for (const ns of items({ case: 'addSubtractFact', value: create(AddSubtractFactSchema, { max: 10, op: AddSubtractFact_Op.SUBTRACT, pictures: true }) })) {
+      const [g] = find(ns, 'pictureGroups');
+      const [w, , a] = line(ns[1]).split(' ').map(Number);
+      expect(g.groups).toEqual([w]);
+      expect(g.crossedOut).toBe(a);
+    }
+  });
+
+  it('compares numbers', () => {
+    for (const [n] of items({ case: 'compareNumbers', value: create(CompareNumbersSchema, { numbers: { min: 10, max: 99 }, symbols: true }) })) {
+      const [a, c, b] = n.kind.case === 'math' ? n.kind.value.atoms : [];
+      const x = Number(a.kind.value);
+      const y = Number(b.kind.value);
+      expect((c.kind.value as Field).answer!.text).toBe(x > y ? '>' : x < y ? '<' : '=');
+    }
+    for (const ns of items({ case: 'compareNumbers', value: create(CompareNumbersSchema, { numbers: { min: 1, max: 10 } }) })) {
+      const [c] = find(ns, 'choices');
+      expect(c.field!.answer!.text).toBe(String(Math.max(...c.options.map(Number))));
+    }
+  });
+
+  it('continues counting sequences by their step', () => {
+    for (const [n] of items({ case: 'countSequence', value: create(CountSequenceSchema, { start: { min: 5, max: 900 }, steps: [1, 5, 10, 100] }) })) {
+      const xs = line(n).split(' , ').map(Number);
+      expect(xs.length).toBe(6);
+      for (let i = 2; i < xs.length; i++) {
+        expect(xs[i] - xs[i - 1]).toBe(xs[1] - xs[0]);
+      }
+      expect(xs[5]).toBeLessThanOrEqual(1000);
+    }
+  });
+
+  it('adds and subtracts facts, with and without pictures', () => {
+    for (const op of [AddSubtractFact_Op.ADD, AddSubtractFact_Op.SUBTRACT, AddSubtractFact_Op.MIXED]) {
+      for (const max of [5, 10, 20]) {
+        for (const ns of items({ case: 'addSubtractFact', value: create(AddSubtractFactSchema, { max, op }) })) {
+          const [n] = flat(ns).filter((x) => x.kind.case === 'math');
+          holds(n);
+          expect(evaluate(line(n).split('=')[0])).toBeLessThanOrEqual(max);
+        }
+      }
+    }
+    for (const ns of items({ case: 'addSubtractFact', value: create(AddSubtractFactSchema, { max: 10, op: AddSubtractFact_Op.MIXED, pictures: true }) })) {
+      const eq = flat(ns).filter((x) => x.kind.case === 'math' && line(x).includes('='))[0];
+      holds(eq);
+      const [first, , second] = line(eq).split(' ').map(Number);
+      const [g] = find(ns, 'pictureGroups');
+      expect(g.groups.reduce((x, y) => x + y, 0)).toBe(line(eq).includes('+') ? first + second : first);
+    }
+    for (const [n] of items({ case: 'addSubtractFact', value: create(AddSubtractFactSchema, { max: 20, threeAddends: true }) })) {
+      holds(n);
+    }
+  });
+
+  it('completes and judges equations', () => {
+    for (const mode of [Equation_Mode.MISSING_PART, Equation_Mode.TURN_AROUND, Equation_Mode.THINK_ADDITION, Equation_Mode.MISSING_ANY]) {
+      for (const ns of items({ case: 'equation', value: create(EquationSchema, { total: { min: 2, max: 20 }, mode }) })) {
+        ns.forEach(holds);
+      }
+    }
+    for (const ns of items({ case: 'equation', value: create(EquationSchema, { total: { min: 2, max: 15 }, mode: Equation_Mode.TRUE_FALSE }) })) {
+      const [l, r] = line(ns[0]).split('=').map((x) => evaluate(x.trim()));
+      expect(answers(ns)).toEqual([l === r ? 'true' : 'false']);
+    }
+  });
+
+  it('reads place value from blocks and units', () => {
+    for (const number of [
+      { min: 11, max: 99 },
+      { min: 101, max: 999 },
+    ]) {
+      for (const ns of items({ case: 'placeValueBlocks', value: create(PlaceValueBlocksSchema, { number, mode: PlaceValueBlocks_Mode.READ_BLOCKS }) })) {
+        const [b] = find(ns, 'baseTenBlocks');
+        const n = 100 * b.hundreds + 10 * b.tens + b.ones;
+        expect(answers(ns)).toEqual([...(b.hundreds ? [String(b.hundreds)] : []), String(b.tens), String(b.ones), String(n)]);
+      }
+      for (const ns of items({ case: 'placeValueBlocks', value: create(PlaceValueBlocksSchema, { number, mode: PlaceValueBlocks_Mode.UNITS }) })) {
+        ns.forEach(holds);
+      }
+    }
+    for (const ns of items({ case: 'placeValueBlocks', value: create(PlaceValueBlocksSchema, { mode: PlaceValueBlocks_Mode.TEEN }) })) {
+      const [b] = find(ns, 'baseTenBlocks');
+      expect(b.tens).toBe(1);
+      holds(ns[1]);
+      expect(line(ns[1])).toContain(String(10 + b.ones));
+    }
+  });
+
+  it('adds and subtracts tens and hundreds in the head', () => {
+    for (const mode of [MentalMath_Mode.PLUS_ONES, MentalMath_Mode.PLUS_TENS, MentalMath_Mode.SUBTRACT_TENS]) {
+      for (const [n] of items({ case: 'mentalMath', value: create(MentalMathSchema, { mode }) })) {
+        holds(n);
+        expect(Number(line(n).split('= ')[1])).toBeLessThan(100);
+      }
+    }
+    for (const mode of [MentalMath_Mode.TEN_MORE_LESS, MentalMath_Mode.HUNDRED_MORE_LESS]) {
+      for (const [n] of items({ case: 'mentalMath', value: create(MentalMathSchema, { mode }) })) {
+        const m = line(n).match(/^(\d+) (more|less) than (\d+) is (\d+)$/)!;
+        expect(m).withContext(line(n)).not.toBeNull();
+        const [by, dir, from, to] = [Number(m[1]), m[2], Number(m[3]), Number(m[4])];
+        expect(to).toBe(dir === 'more' ? from + by : from - by);
+      }
+    }
+  });
+
+  it('writes numbers in words and expanded form', () => {
+    expect(numberWords(347)).toBe('three hundred forty-seven');
+    expect(numberWords(115)).toBe('one hundred fifteen');
+    expect(numberWords(900)).toBe('nine hundred');
+    expect(numberWords(405)).toBe('four hundred five');
+    expect(numberWords(780)).toBe('seven hundred eighty');
+    for (const mode of [NumberForms_Mode.EXPANDED_TO_NUMBER, NumberForms_Mode.NUMBER_TO_EXPANDED]) {
+      for (const [n] of items({ case: 'numberForms', value: create(NumberFormsSchema, { mode }) })) {
+        holds(n);
+      }
+    }
+    for (const ns of items({ case: 'numberForms', value: create(NumberFormsSchema, { mode: NumberForms_Mode.WORDS_TO_NUMBER }) })) {
+      expect(ns[0].kind.value).toBe(numberWords(Number(answers(ns)[0])));
+    }
+  });
+
+  it('adds several numbers in columns', () => {
+    for (const addends of [2, 3, 4]) {
+      for (const ns of items({ case: 'addInColumns', value: create(AddInColumnsSchema, { addends }) })) {
+        const [c] = find(ns, 'columnArithmetic');
+        expect(c.operands.length).toBe(addends);
+        expect(c.answer!.answer!.text).toBe(String(c.operands.reduce((s, x) => s + Number(x), 0)));
+      }
+    }
+  });
+
+  it('reads clocks on a step', () => {
+    for (const step of [60, 30, 5]) {
+      for (const ns of items({ case: 'clockNearest', value: create(ClockNearestSchema, { step }) })) {
+        const [c] = find(ns, 'clock');
+        expect(c.minute % step).toBe(0);
+        expect(answers(ns)).toEqual([`${c.hour}:${String(c.minute).padStart(2, '0')}`]);
+      }
+    }
+  });
+
+  it('answers questions from tallies and line plots', () => {
+    const tallied = (s: string) => (s.match(/[|/]/g) ?? []).length;
+    for (const ns of items({ case: 'dataChart', value: create(DataChartSchema, { mode: DataChart_Mode.TALLY }) })) {
+      const [t] = find(ns, 'dataTable');
+      const vs = t.rows.map((r) => tallied(r.cells[1].kind.value as string));
+      const [first, more, all] = answers(ns).map(Number);
+      expect(first).toBe(vs[0]);
+      expect(more).toBe(Math.max(...vs) - Math.min(...vs));
+      expect(all).toBe(vs.reduce((a, b) => a + b, 0));
+    }
+    for (const ns of items({ case: 'dataChart', value: create(DataChartSchema, { mode: DataChart_Mode.LINE_PLOT }) })) {
+      const [p] = find(ns, 'linePlot');
+      const [, total, range] = answers(ns).map(Number);
+      const with_ = p.counts.map((c, i) => (c > 0 ? i : -1)).filter((i) => i >= 0);
+      expect(total).toBe(p.counts.reduce((a, b) => a + b, 0));
+      expect(range).toBe(with_[with_.length - 1] - with_[0]);
+    }
+  });
+
+  it('names, counts and sorts shapes', () => {
+    const names: Record<number, string> = { 3: 'triangle', 4: 'quadrilateral', 5: 'pentagon', 6: 'hexagon' };
+    for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.SIDES_CORNERS }) })) {
+      const [p] = find(ns, 'polygon');
+      const n = p.points.length;
+      expect(answers(ns)).toEqual([String(n), String(n), names[n]]);
+    }
+    for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.SORT }) })) {
+      const sides = find(ns, 'polygon').map((p) => p.points.length);
+      expect(answers(ns)).toEqual([3, 4, 24].map((k) => String(sides.filter((x) => x === k).length)));
+    }
+    for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.NAME }) })) {
+      const [p] = find(ns, 'polygon');
+      const name = answers(ns)[0];
+      const corners: Record<string, number> = { circle: 24, triangle: 3, square: 4, rectangle: 4, hexagon: 6 };
+      expect(p.points.length).toBe(corners[name]);
+    }
+  });
+
+  it('names equal shares and spots unequal ones', () => {
+    for (const ns of items({ case: 'equalShares', value: create(EqualSharesSchema, { denominators: [2, 3, 4] }) })) {
+      const [b] = find(ns, 'fractionBar');
+      const share: Record<number, string> = { 2: 'one half', 3: 'one third', 4: 'one fourth' };
+      expect(answers(ns)).toEqual([share[b.parts]]);
+    }
+    for (const ns of items({ case: 'equalShares', value: create(EqualSharesSchema, { denominators: [2, 3, 4], unequal: true }) })) {
+      const [b] = find(ns, 'fractionBar');
+      const equal = b.widths.length === 0 || b.widths.every((w) => w === b.widths[0]);
+      expect(answers(ns)).toEqual([equal ? 'equal shares' : 'not equal shares']);
+    }
+  });
+
+  it('pairs dots, adds rows and counts squares', () => {
+    for (const ns of items({ case: 'pairsAndArrays', value: create(PairsAndArraysSchema, { size: { min: 2, max: 20 }, mode: PairsAndArrays_Mode.ODD_EVEN }) })) {
+      const n = dotCount(ns);
+      expect(answers(ns)[0]).toBe(n % 2 === 0 ? 'even' : 'odd');
+      if (n % 2 === 0) {
+        holds(ns[2]);
+      }
+    }
+    for (const ns of items({ case: 'pairsAndArrays', value: create(PairsAndArraysSchema, { size: { min: 2, max: 5 }, mode: PairsAndArrays_Mode.ARRAY_SUM }) })) {
+      holds(ns[1]);
+      expect(answers(ns)).toEqual([String(dotCount(ns))]);
+    }
+    for (const ns of items({ case: 'pairsAndArrays', value: create(PairsAndArraysSchema, { size: { min: 2, max: 5 }, mode: PairsAndArrays_Mode.SQUARES }) })) {
+      const [g] = find(ns, 'unitGrid');
+      expect(answers(ns)).toEqual([String(g.rows), String(g.cols), String(g.rows * g.cols)]);
+    }
+  });
+
+  it('lands number line jumps where the sum says', () => {
+    for (const [step, subtract] of [
+      [1, false],
+      [1, true],
+      [10, false],
+      [10, true],
+    ] as const) {
+      for (const ns of items({ case: 'numberLineJumps', value: create(NumberLineJumpsSchema, { step, subtract }) })) {
+        const [l] = find(ns, 'numberLine');
+        holds(ns[1]);
+        const start = l.arrowTick;
+        const end = subtract ? start - l.jumpTicks.length : start + l.jumpTicks.length;
+        expect(l.blanks[0].tick).toBe(end);
+        expect(answers(ns)).toEqual([String(end * step), String(end * step)]);
+      }
+    }
+  });
+
+  it('compares and measures lengths', () => {
+    const units = (ns: readonly Node[]) => find(ns, 'tapeDiagram')[0].tapes.map((t) => t.units);
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.LONGER }) })) {
+      const [a, b] = units(ns);
+      expect(answers(ns)).toEqual([a > b ? 'A' : 'B']);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.ORDER_THREE }) })) {
+      const ls = units(ns);
+      expect(answers(ns)).toEqual(['ABC'[ls.indexOf(Math.max(...ls))], 'ABC'[ls.indexOf(Math.min(...ls))]]);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.COUNT_UNITS }) })) {
+      expect(answers(ns)).toEqual([String(units(ns)[0])]);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.RULER_INCHES }) })) {
+      expect(answers(ns)).toEqual([String(find(ns, 'ruler')[0].barParts)]);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.HOW_MUCH_LONGER }) })) {
+      const [a, b] = find(ns, 'ruler').map((r) => r.barParts);
+      expect(answers(ns)).toEqual([String(a), String(b), String(a - b)]);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.TWO_UNITS }) })) {
+      const [big, small] = find(ns, 'fractionBar').map((b) => b.parts);
+      expect(small).toBeGreaterThan(big);
+      expect(answers(ns)).toEqual([String(big), String(small), 'small units']);
+    }
+    for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.ESTIMATE }) })) {
+      const [c] = find(ns, 'choices');
+      expect(c.options).toContain(c.field!.answer!.text);
+    }
+  });
+});

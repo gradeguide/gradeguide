@@ -4,6 +4,7 @@
 import { type Node } from '../proto/v1/nodes_pb.js';
 import * as draw from './draw.js';
 import * as shapes from './draw_shapes.js';
+import * as drawK2 from './draw_k2.js';
 import { blankWidth } from './field.js';
 import { type Drawing } from './drawing.js';
 import { NODE_GAP, STANDARD_WRITING, type Writing, textHeight } from './layout.js';
@@ -59,6 +60,16 @@ function drawing(n: Node, w: Writing): Drawing | undefined {
       return shapes.measuringJug(k.value);
     case 'dataTable':
       return draw.dataTable(k.value, false, w);
+    case 'tenFrame':
+      return drawK2.tenFrame(k.value);
+    case 'numberBond':
+      return drawK2.numberBond(k.value, false);
+    case 'pictureGroups':
+      return drawK2.pictureGroups(k.value);
+    case 'numberGrid':
+      return drawK2.numberGrid(k.value, false);
+    case 'coins':
+      return drawK2.coins(k.value);
   }
   return undefined;
 }

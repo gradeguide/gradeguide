@@ -1,0 +1,516 @@
+{
+ "worksheetId": "ws-g2-graphs",
+ "title": "Line plots and bar graphs",
+ "headerLabels": [
+  "2.MD.D.9",
+  "2.MD.D.10"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the line plot to answer.",
+     "explainer": "Each × is one thing that was measured.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "linePlot": {
+          "start": 2,
+          "end": 8,
+          "partsPerUnit": 1,
+          "counts": [
+           0,
+           0,
+           3,
+           1,
+           3,
+           1,
+           0
+          ],
+          "caption": "Length of each shell (inches)"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many shells are 6 inches long?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "shells 6 inches long",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many shells were measured?"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "shells measured",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Longest minus shortest:"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "longest minus shortest shells",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many shells are 6 inches long? 3; How many shells were measured? 8; Longest minus shortest: 3 inches"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "linePlot": {
+          "start": 2,
+          "end": 8,
+          "partsPerUnit": 1,
+          "counts": [
+           3,
+           3,
+           1,
+           0,
+           1,
+           0,
+           0
+          ],
+          "caption": "Length of each crayon (inches)"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many crayons are 4 inches long?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "crayons 4 inches long",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many crayons were measured?"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "crayons measured",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Longest minus shortest:"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "longest minus shortest crayons",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many crayons are 4 inches long? 1; How many crayons were measured? 8; Longest minus shortest: 4 inches"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-line-plot",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a line plot of lengths measured to the nearest inch.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 570
+    }
+   ],
+   "estimatedHeight": 574
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Use the bar graph to answer.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "barGraph": {
+          "title": "Favorite fruit",
+          "valueAxis": "Votes",
+          "step": 1,
+          "bars": [
+           {
+            "label": "Apples",
+            "value": 4
+           },
+           {
+            "label": "Bananas",
+            "value": 3
+           },
+           {
+            "label": "Grapes",
+            "value": 10
+           },
+           {
+            "label": "Pears",
+            "value": 2
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many votes for Apples?"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "votes for Apples",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Grapes than for Pears?"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "Grapes minus Pears",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many votes in all?"
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "total votes",
+             "answer": {
+              "text": "19"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many votes for Apples? 4; How many more for Grapes than for Pears? 8; How many votes in all? 19"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "barGraph": {
+          "title": "Pets in our class",
+          "valueAxis": "Pets",
+          "step": 1,
+          "bars": [
+           {
+            "label": "Dogs",
+            "value": 1
+           },
+           {
+            "label": "Cats",
+            "value": 10
+           },
+           {
+            "label": "Fish",
+            "value": 2
+           },
+           {
+            "label": "Birds",
+            "value": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many pets for Dogs?"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "pets for Dogs",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Cats than for Dogs?"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "Cats minus Dogs",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many pets in all?"
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "total pets",
+             "answer": {
+              "text": "19"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many pets for Dogs? 1; How many more for Cats than for Dogs? 9; How many pets in all? 19"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-bar-graph",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a bar graph with four groups and answer put-together, take-apart and compare questions.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 722
+    }
+   ],
+   "estimatedHeight": 726
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "shells 6 inches long",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "shells measured",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "longest minus shortest shells",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "crayons 4 inches long",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "crayons measured",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "longest minus shortest crayons",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "votes for Apples",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "Grapes minus Pears",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "total votes",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "pets for Dogs",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "Cats minus Dogs",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "total pets",
+    "answer": {
+     "text": "19"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read a line plot of measurements and a bar graph.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the line plot to answer.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the bar graph to answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

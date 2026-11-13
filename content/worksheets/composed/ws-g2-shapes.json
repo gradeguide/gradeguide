@@ -1,0 +1,1150 @@
+{
+ "worksheetId": "ws-g2-shapes",
+ "title": "Shapes and equal shares",
+ "headerLabels": [
+  "2.G.A.1",
+  "2.G.A.2",
+  "2.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the sides and corners. Tick the name.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.2640000000000002,
+               "y": 2.2640000000000002
+              },
+              {
+               "x": 2.2640000000000002,
+               "y": 4.5280000000000005
+              },
+              {
+               "y": 4.5280000000000005
+              },
+              {
+               "x": -2.2640000000000002,
+               "y": 2.2640000000000002
+              },
+              {
+               "x": -0.568,
+               "y": 1.6960000000000002
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q1",
+                   "label": "sides",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q1-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q1-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "hexagon"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 6, hexagon"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -1.8,
+               "y": 1.04
+              },
+              {
+               "y": -2.08
+              },
+              {
+               "x": 1.8,
+               "y": 1.04
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q2",
+                   "label": "sides",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q2-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q2-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "triangle"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, 3, triangle"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": 1,
+               "y": 1.736
+              },
+              {
+               "x": -1,
+               "y": 1.736
+              },
+              {
+               "x": -2
+              },
+              {
+               "x": -1,
+               "y": -1.736
+              },
+              {
+               "x": 1,
+               "y": -1.736
+              },
+              {
+               "x": 2
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q3",
+                   "label": "sides",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q3-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q3-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "hexagon"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 6, hexagon"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 4.16,
+               "y": 2.4000000000000004
+              },
+              {
+               "x": 0.18400000000000002,
+               "y": 2.8800000000000003
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q4",
+                   "label": "sides",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q4-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q4-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "triangle"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, 3, triangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-shape-features",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name triangles, quadrilaterals, pentagons and hexagons by their sides and corners.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking only a regular shape counts: a hexagon must look like a honeycomb cell."
+      ]
+     },
+     "estimatedHeight": 558
+    },
+    {
+     "label": "B",
+     "instruction": "Draw the shape. Then tick its name.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Draw a shape with 6 sides and 6 corners."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q5",
+           "label": "a shape with 6 sides",
+           "answer": {
+            "text": "A closed shape with 6 straight sides and 6 corners"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "triangle",
+           "quadrilateral",
+           "pentagon",
+           "hexagon"
+          ],
+          "field": {
+           "id": "q5-2",
+           "label": "name of a shape with 6 sides",
+           "answer": {
+            "text": "hexagon"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 6 straight sides and 6 corners; hexagon"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-draw-by-sides",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Draw a shape with a given number of sides and corners, and name it.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ]
+     },
+     "estimatedHeight": 230
+    }
+   ],
+   "estimatedHeight": 796
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Draw the shape. Then tick its name.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Draw a shape with 4 sides and 4 corners."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q6",
+           "label": "a shape with 4 sides",
+           "answer": {
+            "text": "A closed shape with 4 straight sides and 4 corners"
+           }
+          }
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "triangle",
+           "quadrilateral",
+           "pentagon",
+           "hexagon"
+          ],
+          "field": {
+           "id": "q6-2",
+           "label": "name of a shape with 4 sides",
+           "answer": {
+            "text": "quadrilateral"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 4 straight sides and 4 corners; quadrilateral"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-draw-by-sides",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Draw a shape with a given number of sides and corners, and name it.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 230
+    },
+    {
+     "label": "C",
+     "instruction": "Count the rows, the columns and the squares.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 3,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q7",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "rows"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "columns",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "columns"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Squares:"
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "squares in all",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 rows 3 columns; Squares: 9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 3,
+          "cols": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q8",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "rows"
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "columns",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "columns"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Squares:"
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "squares in all",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 rows 5 columns; Squares: 15"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 3,
+          "cols": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q9",
+             "label": "rows",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "rows"
+           },
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "columns",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "columns"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Squares:"
+           },
+           {
+            "blank": {
+             "id": "q9-3",
+             "label": "squares in all",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 rows 2 columns; Squares: 6"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "unitGrid": {
+          "rows": 4,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q10",
+             "label": "rows",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "rows"
+           },
+           {
+            "blank": {
+             "id": "q10-2",
+             "label": "columns",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "columns"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Squares:"
+           },
+           {
+            "blank": {
+             "id": "q10-3",
+             "label": "squares in all",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 rows 3 columns; Squares: 12"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-rows-of-squares",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Count the squares in a rectangle cut into rows and columns.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 408
+    },
+    {
+     "label": "D",
+     "instruction": "Are the parts equal shares? Tick one.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ],
+          "widths": [
+           2,
+           1,
+           1,
+           3
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "not equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equal shares"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equal shares"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-equal-shares",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell equal shares from parts that are not equal, in halves, thirds and fourths.",
+      "principles": [
+       "PRINCIPLE_ERROR_ANALYSIS"
+      ],
+      "misconceptions": [
+       "Calling any cut into three parts thirds."
+      ]
+     },
+     "estimatedHeight": 114
+    }
+   ],
+   "estimatedHeight": 764
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "sides",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "corners",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "hexagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "sides",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "corners",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "sides",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "corners",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "hexagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "sides",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "corners",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "a shape with 6 sides",
+    "answer": {
+     "text": "A closed shape with 6 straight sides and 6 corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "name of a shape with 6 sides",
+    "answer": {
+     "text": "hexagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "a shape with 4 sides",
+    "answer": {
+     "text": "A closed shape with 4 straight sides and 4 corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "name of a shape with 4 sides",
+    "answer": {
+     "text": "quadrilateral"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "columns",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "squares in all",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "columns",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "squares in all",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "rows",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "columns",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "squares in all",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "rows",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "columns",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "squares in all",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "not equal shares"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "equal shares"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Name and draw shapes by their sides, count squares in rows and columns, and find equal shares.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Count the sides and corners. Tick the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the rows, the columns and the squares.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Are the parts equal shares? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

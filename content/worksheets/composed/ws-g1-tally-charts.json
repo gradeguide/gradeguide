@@ -1,0 +1,305 @@
+{
+ "worksheetId": "ws-g1-tally-charts",
+ "title": "Tally charts",
+ "headerLabels": [
+  "1.MD.C.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the tally chart to answer.",
+     "explainer": "Each | is one. ||||/ is a group of 5.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dataTable": {
+          "title": "How we get to school",
+          "header": [
+           "Kind",
+           "Tally"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "Walk"
+             },
+             {
+              "text": "||||/  ||||/  ||"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Bus"
+             },
+             {
+              "text": "||"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Car"
+             },
+             {
+              "text": "||||/  ||||"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many for Walk?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "children for Walk",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Walk than for Bus?"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "Walk minus Bus",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many in all?"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "total children",
+             "answer": {
+              "text": "23"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many for Walk? 12; How many more for Walk than for Bus? 10; How many in all? 23"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dataTable": {
+          "title": "Birds at the feeder",
+          "header": [
+           "Kind",
+           "Tally"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "Robins"
+             },
+             {
+              "text": "||||/  ||||/"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Finches"
+             },
+             {
+              "text": "||||/  ||||"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "Jays"
+             },
+             {
+              "text": "||||/  ||"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many for Robins?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "birds for Robins",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more for Robins than for Jays?"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "Robins minus Jays",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many in all?"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "total birds",
+             "answer": {
+              "text": "26"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many for Robins? 10; How many more for Robins than for Jays? 3; How many in all? 26"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-tally",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a chart in three groups: how many in each, how many more, how many in all.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 656
+    }
+   ],
+   "estimatedHeight": 660
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "children for Walk",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "Walk minus Bus",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "total children",
+    "answer": {
+     "text": "23"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "birds for Robins",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "Robins minus Jays",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "total birds",
+    "answer": {
+     "text": "26"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Answer questions from data in three groups.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the tally chart to answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

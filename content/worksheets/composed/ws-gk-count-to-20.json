@@ -1,0 +1,1028 @@
+{
+ "worksheetId": "ws-gk-count-to-20",
+ "title": "Counting to 20",
+ "headerLabels": [
+  "K.CC.B.4",
+  "K.CC.B.4.a",
+  "K.CC.B.4.b",
+  "K.CC.A.3",
+  "K.CC.B.5",
+  "K.CC.B.4.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the pictures. Write how many.",
+     "explainer": "Touch each picture once as you count. The last number you say tells how many.",
+     "example": {
+      "nodes": [
+       {
+        "pictureGroups": {
+         "picture": "PICTURE_BALL",
+         "groups": [
+          2,
+          2
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "How many?"
+          },
+          {
+           "blank": {
+            "label": "how many",
+            "answer": {
+             "text": "4"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Touch and count: 1, 2, 3, 4. There are **4**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_HEART",
+          "groups": [
+           3,
+           5
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "how many",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 8"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_BALL",
+          "groups": [
+           5,
+           1
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "how many",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_BALL",
+          "groups": [
+           3
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "how many",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 3"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_BALL",
+          "groups": [
+           2
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "how many",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 2"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_BALL",
+          "groups": [
+           2,
+           3
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "how many",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_HEART",
+          "groups": [
+           5,
+           3,
+           2
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "how many",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-count-dots-to-10",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Count up to 10 things in small groups, one number for each, and write how many.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "misconceptions": [
+       "Counting a picture twice or skipping one.",
+       "Recounting from 1 when asked how many, instead of using the last number said."
+      ]
+     },
+     "estimatedHeight": 760
+    }
+   ],
+   "estimatedHeight": 764
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the dots. Write how many.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "how many",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 16"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "how many",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 12"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 13
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "how many",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 13"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 17
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "how many",
+             "answer": {
+              "text": "17"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 17"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-count-dots-to-20",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Count up to 20 dots in a line or in rows, and write the number.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The dots come in a line and in rows, so the child keeps track of what has been counted in more than one arrangement."
+     },
+     "estimatedHeight": 256
+    },
+    {
+     "label": "C",
+     "instruction": "How many counters? Write the number.",
+     "explainer": "A full ten frame is 10. Count on from 10 for the second frame.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "how many",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 9"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 7
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "how many",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 7"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 14
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "how many",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 14"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 20
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "how many",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 20"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 11
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "how many",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 11"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 19
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "how many",
+             "answer": {
+              "text": "19"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 19"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-gk-ten-frames",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read numbers up to 20 from ten frames, seeing 5 and 10 at a glance.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Counting every counter from 1 instead of seeing a full frame as 10."
+      ]
+     },
+     "estimatedHeight": 448
+    }
+   ],
+   "estimatedHeight": 712
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Count the dots. Then write the number that is one more.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q17",
+             "label": "how many",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "One more is"
+           },
+           {
+            "blank": {
+             "id": "q17-2",
+             "label": "one more than 9",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 One more is 10"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q18",
+             "label": "how many",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "One more is"
+           },
+           {
+            "blank": {
+             "id": "q18-2",
+             "label": "one more than 2",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 One more is 3"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q19",
+             "label": "how many",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "One more is"
+           },
+           {
+            "blank": {
+             "id": "q19-2",
+             "label": "one more than 6",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 One more is 7"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 8
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q20",
+             "label": "how many",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "One more is"
+           },
+           {
+            "blank": {
+             "id": "q20-2",
+             "label": "one more than 8",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 One more is 9"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-one-more",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "See that the next counting number is one more.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 282
+    }
+   ],
+   "estimatedHeight": 286
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "how many",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "how many",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "how many",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "how many",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "how many",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "how many",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "how many",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "how many",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "how many",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "how many",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "how many",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "how many",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "how many",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "how many",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "how many",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "how many",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "how many",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17-2",
+    "label": "one more than 9",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "how many",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18-2",
+    "label": "one more than 2",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "how many",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19-2",
+    "label": "one more than 6",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "how many",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20-2",
+    "label": "one more than 8",
+    "answer": {
+     "text": "9"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Count up to 20 dots and write how many, then find one more.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,800 @@
+{
+ "worksheetId": "ws-g2-add-subtract-within-1000",
+ "title": "Adding and subtracting within 1000",
+ "headerLabels": [
+  "2.NBT.B.8",
+  "2.NBT.B.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find 10 or 100 more or less.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "100 less than 796"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "100 less than 796",
+             "answer": {
+              "text": "696"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "100 less than 796 is 696"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 511"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "10 more than 511",
+             "answer": {
+              "text": "521"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 511 is 521"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 less than 821"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "10 less than 821",
+             "answer": {
+              "text": "811"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 less than 821 is 811"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "100 more than 703"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "100 more than 703",
+             "answer": {
+              "text": "803"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "100 more than 703 is 803"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 338"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "10 more than 338",
+             "answer": {
+              "text": "348"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 338 is 348"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 less than 711"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "10 less than 711",
+             "answer": {
+              "text": "701"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 less than 711 is 701"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "100 more than 611"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "100 more than 611",
+             "answer": {
+              "text": "711"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "100 more than 611 is 711"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 less than 651"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "10 less than 651",
+             "answer": {
+              "text": "641"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 less than 651 is 641"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-ten-hundred-more-less",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find 10 more, 10 less, 100 more or 100 less than a number from 100 to 900 without counting.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Changing the ones digit for 10 more."
+      ]
+     },
+     "estimatedHeight": 242
+    },
+    {
+     "label": "B",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "928",
+           "802"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "928 + 802",
+           "answer": {
+            "text": "1730"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1730"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "845",
+           "804"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "845 + 804",
+           "answer": {
+            "text": "1649"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1649"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "494",
+           "713"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "494 + 713",
+           "answer": {
+            "text": "1207"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1207"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "551",
+           "675"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "551 + 675",
+           "answer": {
+            "text": "1226"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1226"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "940",
+           "242"
+          ],
+          "answer": {
+           "id": "q13",
+           "label": "940 + 242",
+           "answer": {
+            "text": "1182"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1182"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "946",
+           "526"
+          ],
+          "answer": {
+           "id": "q14",
+           "label": "946 + 526",
+           "answer": {
+            "text": "1472"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "1472"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g2-add-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add three-digit numbers, regrouping ones and tens.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "C",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "975",
+           "608"
+          ],
+          "answer": {
+           "id": "q15",
+           "label": "975 − 608",
+           "answer": {
+            "text": "367"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "367"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "686",
+           "493"
+          ],
+          "answer": {
+           "id": "q16",
+           "label": "686 − 493",
+           "answer": {
+            "text": "193"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "193"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "231",
+           "179"
+          ],
+          "answer": {
+           "id": "q17",
+           "label": "231 − 179",
+           "answer": {
+            "text": "52"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "52"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "720",
+           "687"
+          ],
+          "answer": {
+           "id": "q18",
+           "label": "720 − 687",
+           "answer": {
+            "text": "33"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "33"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g2-subtract-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract three-digit numbers, trading a hundred for tens or a ten for ones.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Taking the smaller digit from the larger in each column."
+      ]
+     },
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 724
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "887",
+           "394"
+          ],
+          "answer": {
+           "id": "q19",
+           "label": "887 − 394",
+           "answer": {
+            "text": "493"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "493"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "605",
+           "309"
+          ],
+          "answer": {
+           "id": "q20",
+           "label": "605 − 309",
+           "answer": {
+            "text": "296"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "296"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g2-subtract-3-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract three-digit numbers, trading a hundred for tens or a ten for ones.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Taking the smaller digit from the larger in each column."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 168
+    }
+   ],
+   "estimatedHeight": 172
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "100 less than 796",
+    "answer": {
+     "text": "696"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "10 more than 511",
+    "answer": {
+     "text": "521"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "10 less than 821",
+    "answer": {
+     "text": "811"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "100 more than 703",
+    "answer": {
+     "text": "803"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "10 more than 338",
+    "answer": {
+     "text": "348"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "10 less than 711",
+    "answer": {
+     "text": "701"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "100 more than 611",
+    "answer": {
+     "text": "711"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "10 less than 651",
+    "answer": {
+     "text": "641"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "928 + 802",
+    "answer": {
+     "text": "1730"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "845 + 804",
+    "answer": {
+     "text": "1649"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "494 + 713",
+    "answer": {
+     "text": "1207"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "551 + 675",
+    "answer": {
+     "text": "1226"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "940 + 242",
+    "answer": {
+     "text": "1182"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "946 + 526",
+    "answer": {
+     "text": "1472"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "975 − 608",
+    "answer": {
+     "text": "367"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "686 − 493",
+    "answer": {
+     "text": "193"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "231 − 179",
+    "answer": {
+     "text": "52"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "720 − 687",
+    "answer": {
+     "text": "33"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "887 − 394",
+    "answer": {
+     "text": "493"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "605 − 309",
+    "answer": {
+     "text": "296"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find 10 or 100 more or less, then add and subtract three-digit numbers.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "\"Find 10 or 100 more or less.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,1156 @@
+{
+ "worksheetId": "ws-g1-count-to-120",
+ "title": "Counting to 120",
+ "headerLabels": [
+  "1.NBT.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in the missing numbers on the chart.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 61,
+          "rows": 4,
+          "cols": 10,
+          "blanks": [
+           {
+            "number": 65,
+            "field": {
+             "id": "q1",
+             "label": "hundred chart, 65",
+             "answer": {
+              "text": "65"
+             }
+            }
+           },
+           {
+            "number": 75,
+            "field": {
+             "id": "q1-2",
+             "label": "hundred chart, 75",
+             "answer": {
+              "text": "75"
+             }
+            }
+           },
+           {
+            "number": 76,
+            "field": {
+             "id": "q1-3",
+             "label": "hundred chart, 76",
+             "answer": {
+              "text": "76"
+             }
+            }
+           },
+           {
+            "number": 77,
+            "field": {
+             "id": "q1-4",
+             "label": "hundred chart, 77",
+             "answer": {
+              "text": "77"
+             }
+            }
+           },
+           {
+            "number": 78,
+            "field": {
+             "id": "q1-5",
+             "label": "hundred chart, 78",
+             "answer": {
+              "text": "78"
+             }
+            }
+           },
+           {
+            "number": 88,
+            "field": {
+             "id": "q1-6",
+             "label": "hundred chart, 88",
+             "answer": {
+              "text": "88"
+             }
+            }
+           },
+           {
+            "number": 89,
+            "field": {
+             "id": "q1-7",
+             "label": "hundred chart, 89",
+             "answer": {
+              "text": "89"
+             }
+            }
+           },
+           {
+            "number": 90,
+            "field": {
+             "id": "q1-8",
+             "label": "hundred chart, 90",
+             "answer": {
+              "text": "90"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "65, 75, 76, 77, 78, 88, 89, 90"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 71,
+          "rows": 4,
+          "cols": 10,
+          "blanks": [
+           {
+            "number": 82,
+            "field": {
+             "id": "q2",
+             "label": "hundred chart, 82",
+             "answer": {
+              "text": "82"
+             }
+            }
+           },
+           {
+            "number": 92,
+            "field": {
+             "id": "q2-2",
+             "label": "hundred chart, 92",
+             "answer": {
+              "text": "92"
+             }
+            }
+           },
+           {
+            "number": 102,
+            "field": {
+             "id": "q2-3",
+             "label": "hundred chart, 102",
+             "answer": {
+              "text": "102"
+             }
+            }
+           },
+           {
+            "number": 103,
+            "field": {
+             "id": "q2-4",
+             "label": "hundred chart, 103",
+             "answer": {
+              "text": "103"
+             }
+            }
+           },
+           {
+            "number": 104,
+            "field": {
+             "id": "q2-5",
+             "label": "hundred chart, 104",
+             "answer": {
+              "text": "104"
+             }
+            }
+           },
+           {
+            "number": 105,
+            "field": {
+             "id": "q2-6",
+             "label": "hundred chart, 105",
+             "answer": {
+              "text": "105"
+             }
+            }
+           },
+           {
+            "number": 106,
+            "field": {
+             "id": "q2-7",
+             "label": "hundred chart, 106",
+             "answer": {
+              "text": "106"
+             }
+            }
+           },
+           {
+            "number": 107,
+            "field": {
+             "id": "q2-8",
+             "label": "hundred chart, 107",
+             "answer": {
+              "text": "107"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "82, 92, 102, 103, 104, 105, 106, 107"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-chart-to-120",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read and write numbers up to 120 on a chart, across 100.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 330
+    },
+    {
+     "label": "B",
+     "instruction": "Count on. Write the missing numbers.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "101"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "102"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "103"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "counting by 1s from 101, number 4",
+             "answer": {
+              "text": "104"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "counting by 1s from 101, number 5",
+             "answer": {
+              "text": "105"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "counting by 1s from 101, number 6",
+             "answer": {
+              "text": "106"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "101 , 102 , 103 , 104 , 105 , 106"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "78"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "79"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "80"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "counting by 1s from 78, number 4",
+             "answer": {
+              "text": "81"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "counting by 1s from 78, number 5",
+             "answer": {
+              "text": "82"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "counting by 1s from 78, number 6",
+             "answer": {
+              "text": "83"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "78 , 79 , 80 , 81 , 82 , 83"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "113"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "114"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "115"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "counting by 1s from 113, number 4",
+             "answer": {
+              "text": "116"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "counting by 1s from 113, number 5",
+             "answer": {
+              "text": "117"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "counting by 1s from 113, number 6",
+             "answer": {
+              "text": "118"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "113 , 114 , 115 , 116 , 117 , 118"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "89"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "90"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "counting by 1s from 89, number 3",
+             "answer": {
+              "text": "91"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "92"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "counting by 1s from 89, number 5",
+             "answer": {
+              "text": "93"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "counting by 1s from 89, number 6",
+             "answer": {
+              "text": "94"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "89 , 90 , 91 , 92 , 93 , 94"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "113"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "114"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "counting by 1s from 113, number 3",
+             "answer": {
+              "text": "115"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "116"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "counting by 1s from 113, number 5",
+             "answer": {
+              "text": "117"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "counting by 1s from 113, number 6",
+             "answer": {
+              "text": "118"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "113 , 114 , 115 , 116 , 117 , 118"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "43"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "44"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "counting by 1s from 43, number 3",
+             "answer": {
+              "text": "45"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "counting by 1s from 43, number 4",
+             "answer": {
+              "text": "46"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "47"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "counting by 1s from 43, number 6",
+             "answer": {
+              "text": "48"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "43 , 44 , 45 , 46 , 47 , 48"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "72"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "73"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "counting by 1s from 72, number 3",
+             "answer": {
+              "text": "74"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "counting by 1s from 72, number 4",
+             "answer": {
+              "text": "75"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "76"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q9-3",
+             "label": "counting by 1s from 72, number 6",
+             "answer": {
+              "text": "77"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "72 , 73 , 74 , 75 , 76 , 77"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "83"
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "84"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "counting by 1s from 83, number 3",
+             "answer": {
+              "text": "85"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "text": "86"
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q10-2",
+             "label": "counting by 1s from 83, number 5",
+             "answer": {
+              "text": "87"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q10-3",
+             "label": "counting by 1s from 83, number 6",
+             "answer": {
+              "text": "88"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "83 , 84 , 85 , 86 , 87 , 88"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-count-to-120",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Count and write numbers up to 120 from any starting number.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Writing 100 and 1 as 1001 instead of 101."
+      ]
+     },
+     "estimatedHeight": 450
+    }
+   ],
+   "estimatedHeight": 788
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "hundred chart, 65",
+    "answer": {
+     "text": "65"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "hundred chart, 75",
+    "answer": {
+     "text": "75"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "hundred chart, 76",
+    "answer": {
+     "text": "76"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "hundred chart, 77",
+    "answer": {
+     "text": "77"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "hundred chart, 78",
+    "answer": {
+     "text": "78"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "hundred chart, 88",
+    "answer": {
+     "text": "88"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "hundred chart, 89",
+    "answer": {
+     "text": "89"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-8",
+    "label": "hundred chart, 90",
+    "answer": {
+     "text": "90"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "hundred chart, 82",
+    "answer": {
+     "text": "82"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "hundred chart, 92",
+    "answer": {
+     "text": "92"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "hundred chart, 102",
+    "answer": {
+     "text": "102"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "hundred chart, 103",
+    "answer": {
+     "text": "103"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "hundred chart, 104",
+    "answer": {
+     "text": "104"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "hundred chart, 105",
+    "answer": {
+     "text": "105"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-7",
+    "label": "hundred chart, 106",
+    "answer": {
+     "text": "106"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-8",
+    "label": "hundred chart, 107",
+    "answer": {
+     "text": "107"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "counting by 1s from 101, number 4",
+    "answer": {
+     "text": "104"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "counting by 1s from 101, number 5",
+    "answer": {
+     "text": "105"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "counting by 1s from 101, number 6",
+    "answer": {
+     "text": "106"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "counting by 1s from 78, number 4",
+    "answer": {
+     "text": "81"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "counting by 1s from 78, number 5",
+    "answer": {
+     "text": "82"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "counting by 1s from 78, number 6",
+    "answer": {
+     "text": "83"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "counting by 1s from 113, number 4",
+    "answer": {
+     "text": "116"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "counting by 1s from 113, number 5",
+    "answer": {
+     "text": "117"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "counting by 1s from 113, number 6",
+    "answer": {
+     "text": "118"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "counting by 1s from 89, number 3",
+    "answer": {
+     "text": "91"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "counting by 1s from 89, number 5",
+    "answer": {
+     "text": "93"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "counting by 1s from 89, number 6",
+    "answer": {
+     "text": "94"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "counting by 1s from 113, number 3",
+    "answer": {
+     "text": "115"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "counting by 1s from 113, number 5",
+    "answer": {
+     "text": "117"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "counting by 1s from 113, number 6",
+    "answer": {
+     "text": "118"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "counting by 1s from 43, number 3",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "counting by 1s from 43, number 4",
+    "answer": {
+     "text": "46"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "counting by 1s from 43, number 6",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "counting by 1s from 72, number 3",
+    "answer": {
+     "text": "74"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "counting by 1s from 72, number 4",
+    "answer": {
+     "text": "75"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "counting by 1s from 72, number 6",
+    "answer": {
+     "text": "77"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "counting by 1s from 83, number 3",
+    "answer": {
+     "text": "85"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "counting by 1s from 83, number 5",
+    "answer": {
+     "text": "87"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "counting by 1s from 83, number 6",
+    "answer": {
+     "text": "88"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Count on and write numbers up to 120.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Fill in the missing numbers on the chart.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count on. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
