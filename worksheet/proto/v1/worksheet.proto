@@ -137,6 +137,8 @@ message ItemKind {
     LinesOfSymmetry lines_of_symmetry = 41;
     MissingFactor missing_factor = 42;
     BarGraphQuestions bar_graph_questions = 43;
+    AreaByCounting area_by_counting = 110;
+    CircleFraction circle_fraction = 111;
   }
 }
 
@@ -320,6 +322,21 @@ message BarGraphQuestions {
   IntRange values = 1;
   // Gridline step. Zero: chosen from the data.
   int32 step = 2;
+}
+
+// A shape of unit squares on a grid: a rectangle or an L, to find its area
+// by counting squares.
+message AreaByCounting {
+  IntRange side = 1;
+  // Also draw L shapes, which are two rectangles joined.
+  bool l_shapes = 2;
+}
+
+// A circle cut into halves, thirds or fourths: name the shaded part, or
+// shade a given part.
+message CircleFraction {
+  repeated int32 denominators = 1;
+  bool child_shades = 2;
 }
 
 // A sum or difference set in columns.

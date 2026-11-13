@@ -208,10 +208,151 @@
     },
     {
      "label": "B",
-     "instruction": "Shade the fraction.",
+     "instruction": "What part of the circle is shaded?",
      "items": [
       {
        "label": "7",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shaded": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q7",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 is shaded."
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shaded": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q8",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "2/4"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/4 is shaded."
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 2,
+          "shaded": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q9",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "1/2"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 is shaded."
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shaded": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q10",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "2/3"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 is shaded."
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-circle-fractions",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Name halves, thirds and fourths of a circle.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 690
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Shade the fraction.",
+     "items": [
+      {
+       "label": "11",
        "nodes": [
         {
          "math": {
@@ -232,7 +373,7 @@
          "fractionBar": {
           "parts": 3,
           "shadeField": {
-           "id": "q7",
+           "id": "q11",
            "label": "shading of 2/3",
            "answer": {
             "text": "2 of 3 parts shaded"
@@ -244,40 +385,7 @@
        "key": "2 of 3 parts shaded"
       },
       {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Shade"
-           },
-           {
-            "fraction": {
-             "num": 3,
-             "den": 4
-            }
-           }
-          ]
-         }
-        },
-        {
-         "fractionBar": {
-          "parts": 4,
-          "shadeField": {
-           "id": "q8",
-           "label": "shading of 3/4",
-           "answer": {
-            "text": "3 of 4 parts shaded"
-           }
-          }
-         }
-        }
-       ],
-       "key": "3 of 4 parts shaded"
-      },
-      {
-       "label": "9",
+       "label": "12",
        "nodes": [
         {
          "math": {
@@ -288,7 +396,7 @@
            {
             "fraction": {
              "num": 1,
-             "den": 3
+             "den": 2
             }
            }
           ]
@@ -296,21 +404,21 @@
         },
         {
          "fractionBar": {
-          "parts": 3,
+          "parts": 2,
           "shadeField": {
-           "id": "q9",
-           "label": "shading of 1/3",
+           "id": "q12",
+           "label": "shading of 1/2",
            "answer": {
-            "text": "1 of 3 parts shaded"
+            "text": "1 of 2 parts shaded"
            }
           }
          }
         }
        ],
-       "key": "1 of 3 parts shaded"
+       "key": "1 of 2 parts shaded"
       },
       {
-       "label": "10",
+       "label": "13",
        "nodes": [
         {
          "math": {
@@ -331,7 +439,7 @@
          "fractionBar": {
           "parts": 3,
           "shadeField": {
-           "id": "q10",
+           "id": "q13",
            "label": "shading of 2/3",
            "answer": {
             "text": "2 of 3 parts shaded"
@@ -341,6 +449,39 @@
         }
        ],
        "key": "2 of 3 parts shaded"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q14",
+           "label": "shading of 2/4",
+           "answer": {
+            "text": "2 of 4 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2 of 4 parts shaded"
       }
      ],
      "columns": 3,
@@ -353,9 +494,169 @@
       ]
      },
      "estimatedHeight": 266
+    },
+    {
+     "label": "D",
+     "instruction": "Shade the part of the circle.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q15",
+           "label": "shade 2/4",
+           "answer": {
+            "text": "2/4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2/4"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shadeField": {
+           "id": "q16",
+           "label": "shade 1/3",
+           "answer": {
+            "text": "1/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1/3"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shadeField": {
+           "id": "q17",
+           "label": "shade 2/3",
+           "answer": {
+            "text": "2/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2/3"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 2,
+          "shadeField": {
+           "id": "q18",
+           "label": "shade 1/2",
+           "answer": {
+            "text": "1/2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1/2"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-shade-circle-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Shade halves, thirds and fourths of a circle.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 390
     }
    ],
-   "estimatedHeight": 566
+   "estimatedHeight": 664
   }
  ],
  "key": [
@@ -426,9 +727,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "shading of 2/3",
+    "label": "fraction shaded",
     "answer": {
-     "text": "2 of 3 parts shaded"
+     "text": "1/4"
     }
    }
   },
@@ -436,9 +737,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "shading of 3/4",
+    "label": "fraction shaded",
     "answer": {
-     "text": "3 of 4 parts shaded"
+     "text": "2/4"
     }
    }
   },
@@ -446,9 +747,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "shading of 1/3",
+    "label": "fraction shaded",
     "answer": {
-     "text": "1 of 3 parts shaded"
+     "text": "1/2"
     }
    }
   },
@@ -456,15 +757,95 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
+    "label": "fraction shaded",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
     "label": "shading of 2/3",
     "answer": {
      "text": "2 of 3 parts shaded"
     }
    }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "shading of 1/2",
+    "answer": {
+     "text": "1 of 2 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "shading of 2/3",
+    "answer": {
+     "text": "2 of 3 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "shading of 2/4",
+    "answer": {
+     "text": "2 of 4 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "shade 2/4",
+    "answer": {
+     "text": "2/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "shade 1/3",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "shade 2/3",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "shade 1/2",
+    "answer": {
+     "text": "1/2"
+    }
+   }
   }
  ],
  "design": {
-  "purpose": "Name and shade halves, thirds and fourths.",
+  "purpose": "Name and shade halves, thirds and fourths of rectangles and circles.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]

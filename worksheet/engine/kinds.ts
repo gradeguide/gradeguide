@@ -67,6 +67,7 @@ import {
   text,
 } from './build.js';
 import { commas, mixed } from './draw.js';
+import { generateShapes } from './kinds_shapes.js';
 import { type Rng } from './rng.js';
 
 // Ctx is what a generator gets: random numbers, field ids, and a check that
@@ -84,7 +85,7 @@ const tries = 40;
 // pickFresh calls choose until it returns values whose key is fresh, or
 // gives up and keeps the last ones. A narrow range can have fewer distinct
 // items than a worksheet asks for.
-function pickFresh<T>(ctx: Ctx, kind: string, choose: () => T): T {
+export function pickFresh<T>(ctx: Ctx, kind: string, choose: () => T): T {
   let v = choose();
   for (let i = 0; i < tries && !ctx.fresh(kind + ':' + JSON.stringify(v)); i++) {
     v = choose();
@@ -92,11 +93,11 @@ function pickFresh<T>(ctx: Ctx, kind: string, choose: () => T): T {
   return v;
 }
 
-function inRange(rng: Rng, r: IntRange | undefined, lo: number, hi: number): number {
+export function inRange(rng: Rng, r: IntRange | undefined, lo: number, hi: number): number {
   return rng.int(r?.min || lo, r?.max || hi);
 }
 
-function list(xs: readonly number[], fallback: number[]): readonly number[] {
+export function list(xs: readonly number[], fallback: number[]): readonly number[] {
   return xs.length > 0 ? xs : fallback;
 }
 
@@ -112,6 +113,10 @@ function simplest(n: number, d: number): string[] {
 const names = ['Ana', 'Ben', 'Kai', 'Mia', 'Omar', 'Lena', 'Raj', 'Zoe'];
 
 export function generate(kind: ItemKind, ctx: Ctx): Node[] {
+  const shaped = generateShapes(kind, ctx);
+  if (shaped) {
+    return shaped;
+  }
   const { rng } = ctx;
   const k = kind.kind;
   switch (k.case) {
@@ -835,6 +840,7 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
     case undefined:
       throw new Error('item kind not set');
   }
+  throw new Error(`no generator for item kind ${k.case ?? 'none'}`);
 }
 
 const placeName = ['one', 'ten', 'hundred', 'thousand', 'ten thousand', 'hundred thousand'];

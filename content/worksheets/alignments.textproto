@@ -114,6 +114,11 @@ alignments { fragment_id: "frag-rectangle-perimeter" skill { code: "3.MD.D.8" } 
 alignments { fragment_id: "frag-division-facts" skill { code: "3.OA.A.2" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-shade-multiples" skill { code: "3.OA.D.9" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-quadrilateral-features" skill { code: "3.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-area-by-counting" skill { code: "3.MD.C.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-area-by-counting" skill { code: "3.MD.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-area-of-l-shapes" skill { code: "3.MD.C.7.d" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-circle-fractions" skill { code: "2.G.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-shade-circle-fractions" skill { code: "2.G.A.3" } role: ROLE_PRACTISES }
 
 # ── Learning components ─────────────────────────────────────────────────
 # Finer than a standard: what the fragment's items practise. Each id is a

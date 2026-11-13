@@ -49,6 +49,76 @@ fragments {
   }
 }
 
+fragments {
+  id: "frag-area-by-counting"
+  instruction: "Count the shaded squares. Each square is 1 square unit."
+  stage: STAGE_INTRODUCE
+  explainer: "Area is how many unit squares cover a shape, with no gaps and no overlaps."
+  example {
+    item { area_by_counting { side { min: 3 max: 3 } } }
+    seed: 2
+    text: "3 rows of 3 squares: **9 square units**."
+  }
+  items { kind { area_by_counting { side { min: 2 max: 6 } } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Measure area by counting unit squares."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Counting squares comes before the formula, so length times width is a shortcut for a count the child has already made."
+  }
+}
+
+fragments {
+  id: "frag-area-of-l-shapes"
+  instruction: "Find the area. Some shapes are two rectangles joined."
+  stage: STAGE_PRACTICE
+  explainer: "Split an L shape into two rectangles, find each area, then add."
+  items { kind { area_by_counting { side { min: 3 max: 6 } l_shapes: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Find the area of shapes made of rectangles."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Multiplying the two longest sides of an L shape."
+  }
+}
+
+fragments {
+  id: "frag-circle-fractions"
+  instruction: "What part of the circle is shaded?"
+  stage: STAGE_INTRODUCE
+  items { kind { circle_fraction { denominators: [2, 3, 4] } } count: 4 min_count: 2 }
+  max_columns: 4
+  design {
+    purpose: "Name halves, thirds and fourths of a circle."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-shade-circle-fractions"
+  instruction: "Shade the part of the circle."
+  stage: STAGE_PRACTICE
+  items { kind { circle_fraction { denominators: [2, 3, 4] child_shades: true } } count: 4 min_count: 2 }
+  max_columns: 4
+  design {
+    purpose: "Shade halves, thirds and fourths of a circle."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-area-by-counting"
+  title: "Area by counting squares"
+  seed: 307
+  max_pages: 2
+  placements { fragment_id: "frag-area-by-counting" }
+  placements { fragment_id: "frag-area-of-l-shapes" }
+  design {
+    purpose: "Find area by counting unit squares, then for shapes made of rectangles."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
 worksheets {
   id: "ws-add-subtract-within-100"
   title: "Add and subtract within 100"
@@ -68,9 +138,11 @@ worksheets {
   seed: 302
   max_pages: 2
   placements { fragment_id: "frag-halves-thirds-fourths" }
+  placements { fragment_id: "frag-circle-fractions" }
   placements { fragment_id: "frag-shade-halves-thirds-fourths" }
+  placements { fragment_id: "frag-shade-circle-fractions" }
   design {
-    purpose: "Name and shade halves, thirds and fourths."
+    purpose: "Name and shade halves, thirds and fourths of rectangles and circles."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
 }

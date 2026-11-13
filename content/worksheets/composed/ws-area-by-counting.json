@@ -1,0 +1,842 @@
+{
+ "worksheetId": "ws-area-by-counting",
+ "title": "Area by counting squares",
+ "headerLabels": [
+  "3.MD.C.5",
+  "3.MD.C.6",
+  "3.MD.C.7.d"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the shaded squares. Each square is 1 square unit.",
+     "explainer": "Area is how many unit squares cover a shape, with no gaps and no overlaps.",
+     "example": {
+      "nodes": [
+       {
+        "gridShape": {
+         "cols": 5,
+         "rows": 5,
+         "cells": [
+          {
+           "col": 1,
+           "row": 1
+          },
+          {
+           "col": 2,
+           "row": 1
+          },
+          {
+           "col": 3,
+           "row": 1
+          },
+          {
+           "col": 1,
+           "row": 2
+          },
+          {
+           "col": 2,
+           "row": 2
+          },
+          {
+           "col": 3,
+           "row": 2
+          },
+          {
+           "col": 1,
+           "row": 3
+          },
+          {
+           "col": 2,
+           "row": 3
+          },
+          {
+           "col": 3,
+           "row": 3
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "Area ="
+          },
+          {
+           "blank": {
+            "label": "area in square units",
+            "answer": {
+             "text": "9"
+            }
+           }
+          },
+          {
+           "text": "square units"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "3 rows of 3 squares: **9 square units**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 4,
+          "rows": 7,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 1,
+            "row": 5
+           },
+           {
+            "col": 2,
+            "row": 5
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area in square units",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 10 square units"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 8,
+          "rows": 6,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 3,
+            "row": 1
+           },
+           {
+            "col": 4,
+            "row": 1
+           },
+           {
+            "col": 5,
+            "row": 1
+           },
+           {
+            "col": 6,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 4,
+            "row": 2
+           },
+           {
+            "col": 5,
+            "row": 2
+           },
+           {
+            "col": 6,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           },
+           {
+            "col": 4,
+            "row": 3
+           },
+           {
+            "col": 5,
+            "row": 3
+           },
+           {
+            "col": 6,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 3,
+            "row": 4
+           },
+           {
+            "col": 4,
+            "row": 4
+           },
+           {
+            "col": 5,
+            "row": 4
+           },
+           {
+            "col": 6,
+            "row": 4
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "area in square units",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 24 square units"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 5,
+          "rows": 7,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 3,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 3,
+            "row": 4
+           },
+           {
+            "col": 1,
+            "row": 5
+           },
+           {
+            "col": 2,
+            "row": 5
+           },
+           {
+            "col": 3,
+            "row": 5
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square units",
+             "answer": {
+              "text": "15"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 15 square units"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 4,
+          "rows": 8,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 1,
+            "row": 5
+           },
+           {
+            "col": 2,
+            "row": 5
+           },
+           {
+            "col": 1,
+            "row": 6
+           },
+           {
+            "col": 2,
+            "row": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square units",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 12 square units"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-area-by-counting",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Measure area by counting unit squares.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Counting squares comes before the formula, so length times width is a shortcut for a count the child has already made."
+     },
+     "estimatedHeight": 806
+    }
+   ],
+   "estimatedHeight": 810
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the area. Some shapes are two rectangles joined.",
+     "explainer": "Split an L shape into two rectangles, find each area, then add.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 7,
+          "rows": 8,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 4,
+            "row": 2
+           },
+           {
+            "col": 5,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           },
+           {
+            "col": 4,
+            "row": 3
+           },
+           {
+            "col": 5,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 3,
+            "row": 4
+           },
+           {
+            "col": 4,
+            "row": 4
+           },
+           {
+            "col": 5,
+            "row": 4
+           },
+           {
+            "col": 1,
+            "row": 5
+           },
+           {
+            "col": 2,
+            "row": 5
+           },
+           {
+            "col": 3,
+            "row": 5
+           },
+           {
+            "col": 4,
+            "row": 5
+           },
+           {
+            "col": 5,
+            "row": 5
+           },
+           {
+            "col": 1,
+            "row": 6
+           },
+           {
+            "col": 2,
+            "row": 6
+           },
+           {
+            "col": 3,
+            "row": 6
+           },
+           {
+            "col": 4,
+            "row": 6
+           },
+           {
+            "col": 5,
+            "row": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "area in square units",
+             "answer": {
+              "text": "27"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 27 square units"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 7,
+          "rows": 6,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 3,
+            "row": 1
+           },
+           {
+            "col": 4,
+            "row": 1
+           },
+           {
+            "col": 5,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 4,
+            "row": 2
+           },
+           {
+            "col": 5,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           },
+           {
+            "col": 4,
+            "row": 3
+           },
+           {
+            "col": 5,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 3,
+            "row": 4
+           },
+           {
+            "col": 4,
+            "row": 4
+           },
+           {
+            "col": 5,
+            "row": 4
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "area in square units",
+             "answer": {
+              "text": "20"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 20 square units"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-area-of-l-shapes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the area of shapes made of rectangles.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Multiplying the two longest sides of an L shape."
+      ]
+     },
+     "estimatedHeight": 334
+    }
+   ],
+   "estimatedHeight": 338
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area in square units",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "area in square units",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area in square units",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area in square units",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "area in square units",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "area in square units",
+    "answer": {
+     "text": "20"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find area by counting unit squares, then for shapes made of rectangles.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Find the area. Some shapes are two rectangles joined.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
