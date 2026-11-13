@@ -57,6 +57,7 @@ copy_to_directory(
     name = "site",
     srcs = [
         "src/about.html",
+        "src/privacy.html",
         "src/index.html",
         "src/pages.css",
         "src/styles.css",
