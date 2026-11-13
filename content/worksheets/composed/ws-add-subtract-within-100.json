@@ -1,0 +1,590 @@
+{
+ "worksheetId": "ws-add-subtract-within-100",
+ "title": "Add and subtract within 100",
+ "headerLabels": [
+  "2.NBT.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "67",
+           "77"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "67 + 77",
+           "answer": {
+            "text": "144"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "144"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "39",
+           "61"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "39 + 61",
+           "answer": {
+            "text": "100"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "100"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "99",
+           "21"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "99 + 21",
+           "answer": {
+            "text": "120"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "120"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "98",
+           "63"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "98 + 63",
+           "answer": {
+            "text": "161"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "161"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "81",
+           "64"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "81 + 64",
+           "answer": {
+            "text": "145"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "145"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "53",
+           "81"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "53 + 81",
+           "answer": {
+            "text": "134"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "134"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "63",
+           "80"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "63 + 80",
+           "answer": {
+            "text": "143"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "143"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "54",
+           "16"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "54 + 16",
+           "answer": {
+            "text": "70"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "70"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-add-within-100",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add two-digit numbers in columns, regrouping ten ones as a ten.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "B",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "63",
+           "57"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "63 − 57",
+           "answer": {
+            "text": "6"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "50",
+           "17"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "50 − 17",
+           "answer": {
+            "text": "33"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "33"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "37",
+           "28"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "37 − 28",
+           "answer": {
+            "text": "9"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "9"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "75",
+           "19"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "75 − 19",
+           "answer": {
+            "text": "56"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "56"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "84",
+           "68"
+          ],
+          "answer": {
+           "id": "q13",
+           "label": "84 − 68",
+           "answer": {
+            "text": "16"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "16"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "90",
+           "86"
+          ],
+          "answer": {
+           "id": "q14",
+           "label": "90 − 86",
+           "answer": {
+            "text": "4"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "4"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "44",
+           "37"
+          ],
+          "answer": {
+           "id": "q15",
+           "label": "44 − 37",
+           "answer": {
+            "text": "7"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "86",
+           "27"
+          ],
+          "answer": {
+           "id": "q16",
+           "label": "86 − 27",
+           "answer": {
+            "text": "59"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "59"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-subtract-within-100",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract two-digit numbers in columns, trading a ten for ten ones.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Taking the smaller digit from the larger in each column: 52 − 38 = 26."
+      ]
+     },
+     "estimatedHeight": 302
+    }
+   ],
+   "estimatedHeight": 612
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "67 + 77",
+    "answer": {
+     "text": "144"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "39 + 61",
+    "answer": {
+     "text": "100"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "99 + 21",
+    "answer": {
+     "text": "120"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "98 + 63",
+    "answer": {
+     "text": "161"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "81 + 64",
+    "answer": {
+     "text": "145"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "53 + 81",
+    "answer": {
+     "text": "134"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "63 + 80",
+    "answer": {
+     "text": "143"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "54 + 16",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "63 − 57",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "50 − 17",
+    "answer": {
+     "text": "33"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "37 − 28",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "75 − 19",
+    "answer": {
+     "text": "56"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "84 − 68",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "90 − 86",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "44 − 37",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "86 − 27",
+    "answer": {
+     "text": "59"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract two-digit numbers, regrouping.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

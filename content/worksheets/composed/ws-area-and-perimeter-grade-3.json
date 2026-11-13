@@ -1,0 +1,375 @@
+{
+ "worksheetId": "ws-area-and-perimeter-grade-3",
+ "title": "Area and perimeter of rectangles",
+ "headerLabels": [
+  "4.MD.A.3",
+  "3.MD.C.7",
+  "3.MD.D.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the area.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "6 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area in square cm",
+             "answer": {
+              "text": "48"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 48 sq cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "x": 7,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "area in square cm",
+             "answer": {
+              "text": "21"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 21 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a rectangle's area as length times width.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "misconceptions": [
+       "Mixing up area and perimeter"
+      ]
+     },
+     "estimatedHeight": 242
+    },
+    {
+     "label": "B",
+     "instruction": "Find the perimeter.",
+     "example": {
+      "nodes": [
+       {
+        "polygon": {
+         "points": [
+          {},
+          {
+           "x": 5
+          },
+          {
+           "x": 5,
+           "y": 3
+          },
+          {
+           "y": 3
+          }
+         ],
+         "sides": [
+          {
+           "text": "5 cm"
+          },
+          {
+           "text": "3 cm"
+          },
+          {},
+          {}
+         ],
+         "markRightAngles": true
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "Perimeter ="
+          },
+          {
+           "blank": {
+            "label": "perimeter in cm",
+            "answer": {
+             "text": "16"
+            }
+           }
+          },
+          {
+           "text": "cm"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Perimeter is the distance **all the way around**: add all four sides."
+     },
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 9,
+            "y": 7
+           },
+           {
+            "y": 7
+           }
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "7 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "32"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 32 cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "2 cm"
+           },
+           {},
+           {}
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Perimeter ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "perimeter in cm",
+             "answer": {
+              "text": "20"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Perimeter = 20 cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-rectangle-perimeter",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a rectangle's perimeter from two sides.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ]
+     },
+     "estimatedHeight": 434
+    }
+   ],
+   "estimatedHeight": 684
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area in square cm",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "area in square cm",
+    "answer": {
+     "text": "21"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "perimeter in cm",
+    "answer": {
+     "text": "20"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the area and perimeter of rectangles.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

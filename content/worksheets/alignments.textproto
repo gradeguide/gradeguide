@@ -101,6 +101,20 @@ alignments { fragment_id: "frag-measurement-word-problems" skill { code: "4.MD.A
 alignments { fragment_id: "frag-mass-volume-word-problems" skill { code: "3.MD.A.2" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-area-perimeter-word-problems" skill { code: "4.MD.A.3" } role: ROLE_PRACTISES }
 
+# Grade 2, and grade 3 skills that had no sheet of their own.
+alignments { fragment_id: "frag-add-within-100" skill { code: "2.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-subtract-within-100" skill { code: "2.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-halves-thirds-fourths" skill { code: "2.G.A.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-halves-thirds-fourths" skill { code: "3.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-shade-halves-thirds-fourths" skill { code: "2.G.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-read-clock" skill { code: "3.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-measure-with-ruler" skill { code: "3.MD.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-area" skill { code: "3.MD.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-rectangle-perimeter" skill { code: "3.MD.D.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-division-facts" skill { code: "3.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-shade-multiples" skill { code: "3.OA.D.9" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-quadrilateral-features" skill { code: "3.G.A.1" } role: ROLE_PRACTISES }
+
 # ── Learning components ─────────────────────────────────────────────────
 # Finer than a standard: what the fragment's items practise. Each id is a
 # Component in the skill graph, and supports a standard the fragment is

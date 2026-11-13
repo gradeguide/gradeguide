@@ -1,0 +1,129 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Grade 2 sheets, and grade 3 skills that had no sheet of their own.
+
+fragments {
+  id: "frag-add-within-100"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 2 regroup: true } } count: 8 min_count: 4 }
+  design {
+    purpose: "Add two-digit numbers in columns, regrouping ten ones as a ten."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-subtract-within-100"
+  instruction: "Subtract."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 2 subtract: true regroup: true } } count: 8 min_count: 4 }
+  design {
+    purpose: "Subtract two-digit numbers in columns, trading a ten for ten ones."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Taking the smaller digit from the larger in each column: 52 − 38 = 26."
+  }
+}
+
+fragments {
+  id: "frag-halves-thirds-fourths"
+  instruction: "Write the fraction that is shaded."
+  stage: STAGE_INTRODUCE
+  explainer: "The whole is cut into equal parts. Count the shaded parts, then all the parts."
+  items { kind { shaded_fraction { denominators: [2, 3, 4] model: MODEL_BAR } } count: 6 min_count: 3 }
+  design {
+    purpose: "Name halves, thirds and fourths of a shape cut into equal parts."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-shade-halves-thirds-fourths"
+  instruction: "Shade the fraction."
+  stage: STAGE_PRACTICE
+  items { kind { shaded_fraction { denominators: [2, 3, 4] child_shades: true } } count: 4 min_count: 2 }
+  design {
+    purpose: "Shade halves, thirds and fourths."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-add-subtract-within-100"
+  title: "Add and subtract within 100"
+  seed: 301
+  max_pages: 2
+  placements { fragment_id: "frag-add-within-100" }
+  placements { fragment_id: "frag-subtract-within-100" }
+  design {
+    purpose: "Add and subtract two-digit numbers, regrouping."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-halves-thirds-fourths"
+  title: "Halves, thirds and fourths"
+  seed: 302
+  max_pages: 2
+  placements { fragment_id: "frag-halves-thirds-fourths" }
+  placements { fragment_id: "frag-shade-halves-thirds-fourths" }
+  design {
+    purpose: "Name and shade halves, thirds and fourths."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-clocks-and-rulers"
+  title: "Clocks and rulers"
+  seed: 303
+  max_pages: 2
+  placements { fragment_id: "frag-read-clock" }
+  placements { fragment_id: "frag-measure-with-ruler" }
+  design {
+    purpose: "Tell time to the minute and measure lengths to the nearest half and quarter inch."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-area-and-perimeter-grade-3"
+  title: "Area and perimeter of rectangles"
+  seed: 304
+  max_pages: 2
+  placements { fragment_id: "frag-rectangle-area" count: 2 }
+  placements { fragment_id: "frag-rectangle-perimeter" count: 2 stage: STAGE_PRACTICE }
+  design {
+    purpose: "Find the area and perimeter of rectangles."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+worksheets {
+  id: "ws-division-and-patterns"
+  title: "Division facts and patterns"
+  seed: 305
+  max_pages: 2
+  placements { fragment_id: "frag-division-facts" }
+  placements { fragment_id: "frag-missing-factor" count: 6 }
+  placements { fragment_id: "frag-shade-multiples" count: 1 }
+  design {
+    purpose: "Divide within 100, and see patterns in multiples."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-shapes-grade-3"
+  title: "Sorting quadrilaterals"
+  seed: 306
+  max_pages: 2
+  placements { fragment_id: "frag-quadrilateral-features" }
+  placements { fragment_id: "frag-halves-thirds-fourths" count: 3 stage: STAGE_PRACTICE omit_example: true }
+  design {
+    purpose: "Describe quadrilaterals by their sides and angles, and split shapes into equal parts."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
