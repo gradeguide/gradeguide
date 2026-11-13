@@ -31,9 +31,11 @@ import { generate } from './kinds.js';
 import {
   BODY_HEIGHT,
   CONTENT_WIDTH,
+  BODY_PADDING,
   ITEM_GAP,
   ITEM_LABEL_WIDTH,
   NODE_GAP,
+  SECTION_GAP,
   SECTION_HEADER,
   type Writing,
   textHeight,
@@ -214,11 +216,13 @@ function rowsHeight(items: readonly ComposedSheet_Item[], columns: number, w: Wr
 // page. The worked example and figure never split from the first row.
 function paginate(planned: Planned[], maxPages: number, problems: string[], advice: string[], w: Writing): ComposedSheet['pages'] {
   const pages = [create(ComposedSheet_PageSchema, {})];
-  let left = BODY_HEIGHT;
+  // The page body's padding, and the gap under each section, take room too.
+  const room = BODY_HEIGHT - BODY_PADDING;
+  let left = room;
   const page = () => pages[pages.length - 1];
   const newPage = () => {
     pages.push(create(ComposedSheet_PageSchema, {}));
-    left = BODY_HEIGHT;
+    left = room;
   };
 
   for (const p of planned) {
@@ -251,7 +255,7 @@ function paginate(planned: Planned[], maxPages: number, problems: string[], advi
       if (used + rows[r] > left && section.items.length > 0) {
         section.estimatedHeight = Math.round(used);
         page().sections.push(section);
-        page().estimatedHeight += used;
+        page().estimatedHeight += used + SECTION_GAP;
         newPage();
         section = create(ComposedSheet_SectionSchema, { ...p.section, items: [], continued: true, example: undefined, figure: [], explainer: '' });
         used = SECTION_HEADER;
@@ -261,8 +265,8 @@ function paginate(planned: Planned[], maxPages: number, problems: string[], advi
     }
     section.estimatedHeight = Math.round(used);
     page().sections.push(section);
-    page().estimatedHeight += used;
-    left -= used;
+    page().estimatedHeight += used + SECTION_GAP;
+    left -= used + SECTION_GAP;
   }
   for (const p of pages) {
     p.estimatedHeight = Math.round(p.estimatedHeight);
@@ -271,8 +275,8 @@ function paginate(planned: Planned[], maxPages: number, problems: string[], advi
     problems.push(`The worksheet needs ${pages.length} pages; it may have ${maxPages}.`);
   }
   pages.forEach((p, i) => {
-    if (p.estimatedHeight > BODY_HEIGHT) {
-      problems.push(`Page ${i + 1} is estimated at ${p.estimatedHeight}px; the page body holds ${BODY_HEIGHT}px.`);
+    if (p.estimatedHeight > room) {
+      problems.push(`Page ${i + 1} is estimated at ${p.estimatedHeight}px; the page body holds ${room}px.`);
     }
   });
   return pages;

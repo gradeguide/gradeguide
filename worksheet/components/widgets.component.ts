@@ -179,7 +179,7 @@ export class PolygonComponent {
     }
   `,
   styles: `
-    :host { display: inline-flex; gap: 14px; font-size: 15px; }
+    :host { display: flex; gap: 12px; font-size: 14px; line-height: 22px; }
     .opt { display: inline-flex; align-items: center; gap: 5px; }
     .tick { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border: 1.5px solid #222; color: #1a4f8a; font-size: 13px; }
   `,

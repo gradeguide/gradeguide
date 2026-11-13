@@ -1,0 +1,16 @@
+load("@rules_go//go:def.bzl", "go_binary")
+
+go_binary(
+    name = "render-worksheets",
+    srcs = ["main.go"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//worksheet/chromium",
+        "//worksheet/proto/v1",
+        "@com_github_chromedp_cdproto//emulation",
+        "@com_github_chromedp_cdproto//page",
+        "@com_github_chromedp_cdproto//runtime",
+        "@com_github_chromedp_chromedp//:chromedp",
+        "@org_golang_google_protobuf//proto",
+    ],
+)

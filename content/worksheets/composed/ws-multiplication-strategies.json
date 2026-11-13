@@ -806,7 +806,7 @@
      "estimatedHeight": 156
     }
    ],
-   "estimatedHeight": 772
+   "estimatedHeight": 784
   },
   {
    "sections": [
@@ -1340,7 +1340,12 @@
       "rationale": "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
      },
      "estimatedHeight": 248
-    },
+    }
+   ],
+   "estimatedHeight": 656
+  },
+  {
+   "sections": [
     {
      "label": "G",
      "instruction": "Multiply.",
@@ -1449,12 +1454,7 @@
       "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
      },
      "estimatedHeight": 168
-    }
-   ],
-   "estimatedHeight": 812
-  },
-  {
-   "sections": [
+    },
     {
      "label": "H",
      "instruction": "Solve. Show your work.",
@@ -1563,7 +1563,7 @@
      "estimatedHeight": 572
     }
    ],
-   "estimatedHeight": 572
+   "estimatedHeight": 748
   },
   {
    "sections": [
@@ -1730,7 +1730,7 @@
      "estimatedHeight": 760
     }
    ],
-   "estimatedHeight": 760
+   "estimatedHeight": 764
   }
  ],
  "key": [

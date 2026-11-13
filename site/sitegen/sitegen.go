@@ -112,6 +112,12 @@ type worksheetRef struct {
 	Role string `json:"role"`
 	// The skill's steps the sheet practises, and where.
 	Steps []worksheetStep `json:"steps,omitempty"`
+	// The print files, from the site's root, when they were built: the
+	// sheet as a PDF, the sheet with its answers as a PDF, and page one as a
+	// PNG about 240 pixels wide.
+	PDF        string `json:"pdf,omitempty"`
+	AnswersPDF string `json:"answersPdf,omitempty"`
+	Thumbnail  string `json:"thumbnail,omitempty"`
 }
 
 // worksheetStep is one of a skill's steps that a part of a worksheet
@@ -142,6 +148,8 @@ type Sheet struct {
 	Minutes int32
 	Pages   int
 	Parts   []SheetPart
+	// Whether <id>.pdf, <id>-answers.pdf and <id>.png were built.
+	Printed bool
 }
 
 // SheetPart is one section of a worksheet: one placed fragment.
@@ -192,7 +200,12 @@ func worksheetsFor(sk skill, sheets []Sheet, canonical map[string]string) []work
 		if role == 0 {
 			continue
 		}
-		ref := worksheetRef{sh.ID, sh.Title, sh.Minutes, sh.Pages, "/worksheets/?answers=0&only=" + sh.ID, "/worksheets/?only=" + sh.ID, roleNames[role], steps}
+		ref := worksheetRef{ID: sh.ID, Title: sh.Title, Minutes: sh.Minutes, Pages: sh.Pages, Href: "/worksheets/?answers=0&only=" + sh.ID, AnswersHref: "/worksheets/?only=" + sh.ID, Role: roleNames[role], Steps: steps}
+		if sh.Printed {
+			ref.PDF = "/worksheets/" + sh.ID + ".pdf"
+			ref.AnswersPDF = "/worksheets/" + sh.ID + "-answers.pdf"
+			ref.Thumbnail = "/worksheets/" + sh.ID + ".png"
+		}
 		if role == RoleReviews {
 			reviews = append(reviews, ref)
 		} else {

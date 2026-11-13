@@ -1,0 +1,29 @@
+load("@rules_go//go:def.bzl", "go_library")
+load(":libraries.bzl", "deb_libraries")
+
+# The Chromium that renders worksheets to PDF and PNG, and the shared
+# libraries it loads. rules_playwright fetches the browser; the libraries are
+# the chrome_deps packages in //MODULE.bazel.
+deb_libraries(
+    name = "libraries",
+    packages = ["@chrome_deps//:packages"],
+)
+
+go_library(
+    name = "chromium",
+    srcs = ["chromium.go"],
+    data = [
+        ":libraries",
+        "@playwright//:chromium",
+    ],
+    importpath = "github.com/gradeguide/gradeguide/worksheet/chromium",
+    visibility = ["//worksheet:__subpackages__"],
+    x_defs = {
+        "browserRlocation": "$(rlocationpath @playwright//:chromium)",
+        "librariesRlocation": "$(rlocationpath :libraries)",
+    },
+    deps = [
+        "@com_github_chromedp_chromedp//:chromedp",
+        "@rules_go//go/runfiles",
+    ],
+)
