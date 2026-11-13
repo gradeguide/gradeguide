@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
+	"net/url"
 	"regexp"
 	"sort"
 	"strings"
@@ -69,6 +70,19 @@ func plainStatement(s string) string {
 	return strings.TrimSpace(spaces.ReplaceAllString(s, " "))
 }
 
+// feedbackURL is a new issue on the project's repository using one of the
+// feedback forms in .github/ISSUE_TEMPLATE, with fields filled in. pairs
+// alternate field ids and values; GitHub fills the form field with each id.
+func feedbackURL(form string, pairs ...string) string {
+	q := url.Values{"template": {form}}
+	for i := 0; i+1 < len(pairs); i += 2 {
+		if pairs[i+1] != "" {
+			q.Set(pairs[i], pairs[i+1])
+		}
+	}
+	return "https://github.com/gradeguide/gradeguide/issues/new?" + q.Encode()
+}
+
 type crumb struct {
 	Name string
 	Path string
@@ -126,7 +140,7 @@ type page struct {
 // the site root, such as "math/grade-4/index.html". baseURL is the site's
 // address without a trailing slash, for canonical links and the sitemap.
 func Pages(s *site, baseURL string) (map[string][]byte, error) {
-	tmpl, err := template.New("").Funcs(template.FuncMap{"gradeName": gradeName}).ParseFS(templateFS, "templates/*.html")
+	tmpl, err := template.New("").Funcs(template.FuncMap{"gradeName": gradeName, "feedbackURL": feedbackURL}).ParseFS(templateFS, "templates/*.html")
 	if err != nil {
 		return nil, err
 	}

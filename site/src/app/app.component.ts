@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal, viewChild } from '@angular/core';
 
 import { Curriculum, SiteData } from './data/curriculum';
+import { feedbackUrl } from './data/feedback';
 import { View, ViewState } from './data/view-state';
 import { ListViewComponent } from './list/list-view.component';
 import { MapViewComponent } from './map/map-view.component';
@@ -37,6 +38,7 @@ export const DATA_URL = 'math.json';
     <header class="top">
       <div class="brand">GradeGuide <span>K–8 math, month by month</span></div>
       <nav class="views" aria-label="Views">
+        <a class="about" [href]="feedback()" target="_blank" rel="noopener">Feedback</a>
         <a class="about" href="about.html">About</a>
         @for (v of views; track v.id) {
           <button type="button" [class.on]="state().view === v.id" [attr.aria-current]="state().view === v.id ? 'page' : null" (click)="setView(v.id)">
@@ -107,7 +109,7 @@ export const DATA_URL = 'math.json';
           Placement by month follows the Illustrative Mathematics 360 pace spread evenly over a September–June year; your
           school's calendar may differ.
         </p>
-        <p><a href="about.html">About this map and its sources</a> · Skill graph {{ c.data.version }}</p>
+        <p><a href="about.html">About this map and its sources</a> · <a [href]="feedback()" target="_blank" rel="noopener">Give feedback</a> · Skill graph {{ c.data.version }}</p>
       </footer>
     } @else {
       <p class="loading">Loading the curriculum…</p>
@@ -188,6 +190,12 @@ export class AppComponent {
   protected readonly selectedId = computed(() => {
     const code = this.state().skill;
     return (code && this.curriculum()?.skills.find((s) => s.code === code)?.id) || '';
+  });
+
+  /** A general feedback form, noting the view the reader is on. */
+  protected readonly feedback = computed(() => {
+    this.state();
+    return feedbackUrl('general', { page: globalThis.location?.href ?? '' });
   });
 
   /** The skill the prerequisites view starts from: the one in the address, or else the selected one. */

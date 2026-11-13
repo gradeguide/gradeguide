@@ -1,0 +1,44 @@
+name: Feedback on a worksheet
+description: A mistake in a problem or answer, a sheet that's too hard or too easy, or one that prints badly.
+title: "Worksheet: "
+labels: [feedback, worksheet]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This page is public, so please don't include your child's name, photos of their work, or anything else personal.
+  - type: input
+    id: worksheet
+    attributes:
+      label: Worksheet
+      description: Filled in for you when you came from the site.
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What's the problem?
+      options:
+        - A problem or answer is wrong
+        - The instructions are unclear
+        - It's too hard for this grade
+        - It's too easy for this grade
+        - It doesn't print well
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: problem
+    attributes:
+      label: Which problem?
+      description: For example "2b". Leave blank if it's about the whole sheet.
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell us more
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page you were on

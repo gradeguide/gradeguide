@@ -1,0 +1,21 @@
+name: Something's broken
+description: A page doesn't load, a button doesn't work, or something looks wrong on your device.
+title: "Problem: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page you were on
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      description: For example "iPad, Safari" or "Windows laptop, Chrome".
