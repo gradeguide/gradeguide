@@ -453,7 +453,9 @@ message Worksheet {
   // Such as "ws-equivalent-fractions-number-line".
   string id = 1;
   string title = 2;
-  int32 minutes = 4;
+  // A time estimate; removed, because every child takes their own time.
+  reserved 4;
+  reserved "minutes";
   // Seeds every item set a placement does not seed itself.
   uint32 seed = 5;
   // Why the worksheet is ordered as it is: its arc from review to practice.
@@ -462,6 +464,9 @@ message Worksheet {
   // The most pages the composer may use. Zero: 1.
   int32 max_pages = 8;
   repeated Placement placements = 9;
+  // One short idea for a grown-up helping with the sheet at home, such as
+  // "Ask which fraction is bigger before they work it out." Optional.
+  string home_tip = 10;
 }
 
 // Placement puts a fragment on a worksheet, optionally changing it.
@@ -564,7 +569,9 @@ message ComposedSheet {
   string title = 2;
   // The placed fragments' header labels, in placement order, each once.
   repeated string header_labels = 3;
-  int32 minutes = 4;
+  // A time estimate; removed, because every child takes their own time.
+  reserved 4;
+  reserved "minutes";
   repeated Page pages = 5;
   // Every field on the sheet, in page order, with its item label.
   repeated KeyEntry key = 6;

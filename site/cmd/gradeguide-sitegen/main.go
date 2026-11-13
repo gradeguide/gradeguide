@@ -161,7 +161,7 @@ func loadSheets(catalogDir, composedDir, prints string) ([]sitegen.Sheet, error)
 		if err := json.Unmarshal(data, &composed); err != nil {
 			return nil, fmt.Errorf("%s: %w", w.GetId(), err)
 		}
-		sh := sitegen.Sheet{ID: w.GetId(), Title: w.GetTitle(), Minutes: w.GetMinutes(), Pages: len(composed.Pages)}
+		sh := sitegen.Sheet{ID: w.GetId(), Title: w.GetTitle(), Pages: len(composed.Pages)}
 		if prints != "" {
 			sh.Printed = true
 			for _, f := range []string{w.GetId() + ".pdf", w.GetId() + "-answers.pdf", w.GetId() + ".png"} {
