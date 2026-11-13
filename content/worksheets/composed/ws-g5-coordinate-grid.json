@@ -1,0 +1,395 @@
+{
+ "worksheetId": "ws-g5-coordinate-grid",
+ "title": "The coordinate grid",
+ "headerLabels": [
+  "5.G.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write where each point is.",
+     "explainer": "(3, 5) means 3 across from 0, then 5 up. Across comes first.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 8,
+            "y": 5,
+            "label": "A"
+           },
+           {
+            "x": 4,
+            "y": 9,
+            "label": "B"
+           },
+           {
+            "x": 1,
+            "y": 9,
+            "label": "C"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A is at"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "coordinates of A",
+             "answer": {
+              "text": "(8, 5)",
+              "also": [
+               "8, 5",
+               "(8,5)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "B is at"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "coordinates of B",
+             "answer": {
+              "text": "(4, 9)",
+              "also": [
+               "4, 9",
+               "(4,9)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "C is at"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "coordinates of C",
+             "answer": {
+              "text": "(1, 9)",
+              "also": [
+               "1, 9",
+               "(1,9)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A is at (8, 5); B is at (4, 9); C is at (1, 9)"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 6,
+            "y": 3,
+            "label": "A"
+           },
+           {
+            "x": 5,
+            "label": "B"
+           },
+           {
+            "y": 6,
+            "label": "C"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A is at"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "coordinates of A",
+             "answer": {
+              "text": "(6, 3)",
+              "also": [
+               "6, 3",
+               "(6,3)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "B is at"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "coordinates of B",
+             "answer": {
+              "text": "(5, 0)",
+              "also": [
+               "5, 0",
+               "(5,0)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "C is at"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "coordinates of C",
+             "answer": {
+              "text": "(0, 6)",
+              "also": [
+               "0, 6",
+               "(0,6)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A is at (6, 3); B is at (5, 0); C is at (0, 6)"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-read-points",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read the coordinates of points on a grid.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "misconceptions": [
+       "Swapping the numbers: writing (5, 3) for 3 across and 5 up."
+      ]
+     },
+     "estimatedHeight": 462
+    },
+    {
+     "label": "B",
+     "instruction": "Plot the points.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Plot and label P (4, 2), Q (3, 1), R (0, 4)."
+        },
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "plotField": {
+           "id": "q3",
+           "label": "points plotted",
+           "answer": {
+            "text": "P (4, 2); Q (3, 1); R (0, 4)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P (4, 2); Q (3, 1); R (0, 4)"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Plot and label P (6, 1), Q (5, 4), R (8, 6)."
+        },
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "plotField": {
+           "id": "q4",
+           "label": "points plotted",
+           "answer": {
+            "text": "P (6, 1); Q (5, 4); R (8, 6)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P (6, 1); Q (5, 4); R (8, 6)"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-plot-points",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Plot points on a grid from their coordinates.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ]
+     },
+     "estimatedHeight": 350
+    }
+   ],
+   "estimatedHeight": 820
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "coordinates of A",
+    "answer": {
+     "text": "(8, 5)",
+     "also": [
+      "8, 5",
+      "(8,5)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "coordinates of B",
+    "answer": {
+     "text": "(4, 9)",
+     "also": [
+      "4, 9",
+      "(4,9)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "coordinates of C",
+    "answer": {
+     "text": "(1, 9)",
+     "also": [
+      "1, 9",
+      "(1,9)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "coordinates of A",
+    "answer": {
+     "text": "(6, 3)",
+     "also": [
+      "6, 3",
+      "(6,3)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "coordinates of B",
+    "answer": {
+     "text": "(5, 0)",
+     "also": [
+      "5, 0",
+      "(5,0)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "coordinates of C",
+    "answer": {
+     "text": "(0, 6)",
+     "also": [
+      "0, 6",
+      "(0,6)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "points plotted",
+    "answer": {
+     "text": "P (4, 2); Q (3, 1); R (0, 4)"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "points plotted",
+    "answer": {
+     "text": "P (6, 1); Q (5, 4); R (8, 6)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read and plot points on a coordinate grid.",
+  "principles": [
+   "PRINCIPLE_NUMBER_LINE"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

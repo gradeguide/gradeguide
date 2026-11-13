@@ -1,0 +1,677 @@
+{
+ "worksheetId": "ws-g5-multiply-multi-digit",
+ "title": "Multiplying multi-digit numbers",
+ "headerLabels": [
+  "5.NBT.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply. Write a row for each digit of the bottom number, then add.",
+     "explainer": "Multiply by the ones digit first. Then multiply by the tens: the row ends in 0 because you are multiplying by tens.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "59",
+           "62"
+          ],
+          "answer": {
+           "id": "q1-3",
+           "label": "59 × 62",
+           "answer": {
+            "text": "3658"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q1",
+             "label": "2 × 59",
+             "answer": {
+              "text": "118"
+             }
+            },
+            "note": "2 × 59"
+           },
+           {
+            "field": {
+             "id": "q1-2",
+             "label": "60 × 59",
+             "answer": {
+              "text": "3540"
+             }
+            },
+            "note": "60 × 59"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "118, 3540, 3658"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "69",
+           "19"
+          ],
+          "answer": {
+           "id": "q2-3",
+           "label": "69 × 19",
+           "answer": {
+            "text": "1311"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q2",
+             "label": "9 × 69",
+             "answer": {
+              "text": "621"
+             }
+            },
+            "note": "9 × 69"
+           },
+           {
+            "field": {
+             "id": "q2-2",
+             "label": "10 × 69",
+             "answer": {
+              "text": "690"
+             }
+            },
+            "note": "10 × 69"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "621, 690, 1311"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "64",
+           "35"
+          ],
+          "answer": {
+           "id": "q3-3",
+           "label": "64 × 35",
+           "answer": {
+            "text": "2240"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q3",
+             "label": "5 × 64",
+             "answer": {
+              "text": "320"
+             }
+            },
+            "note": "5 × 64"
+           },
+           {
+            "field": {
+             "id": "q3-2",
+             "label": "30 × 64",
+             "answer": {
+              "text": "1920"
+             }
+            },
+            "note": "30 × 64"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "320, 1920, 2240"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "88",
+           "62"
+          ],
+          "answer": {
+           "id": "q4-3",
+           "label": "88 × 62",
+           "answer": {
+            "text": "5456"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q4",
+             "label": "2 × 88",
+             "answer": {
+              "text": "176"
+             }
+            },
+            "note": "2 × 88"
+           },
+           {
+            "field": {
+             "id": "q4-2",
+             "label": "60 × 88",
+             "answer": {
+              "text": "5280"
+             }
+            },
+            "note": "60 × 88"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "176, 5280, 5456"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-by-2-digits",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply two-digit numbers with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "misconceptions": [
+       "Forgetting the zero in the tens row: 23 × 14 with 23 written for 10 × 23."
+      ]
+     },
+     "estimatedHeight": 448
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "785",
+           "55"
+          ],
+          "answer": {
+           "id": "q5-3",
+           "label": "785 × 55",
+           "answer": {
+            "text": "43175"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q5",
+             "label": "5 × 785",
+             "answer": {
+              "text": "3925"
+             }
+            },
+            "note": "5 × 785"
+           },
+           {
+            "field": {
+             "id": "q5-2",
+             "label": "50 × 785",
+             "answer": {
+              "text": "39250"
+             }
+            },
+            "note": "50 × 785"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3925, 39250, 43175"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "318",
+           "86"
+          ],
+          "answer": {
+           "id": "q6-3",
+           "label": "318 × 86",
+           "answer": {
+            "text": "27348"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q6",
+             "label": "6 × 318",
+             "answer": {
+              "text": "1908"
+             }
+            },
+            "note": "6 × 318"
+           },
+           {
+            "field": {
+             "id": "q6-2",
+             "label": "80 × 318",
+             "answer": {
+              "text": "25440"
+             }
+            },
+            "note": "80 × 318"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1908, 25440, 27348"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-3-by-2-digits",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a three-digit number by a two-digit number with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 218
+    }
+   ],
+   "estimatedHeight": 674
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "4006",
+           "94"
+          ],
+          "answer": {
+           "id": "q7-3",
+           "label": "4006 × 94",
+           "answer": {
+            "text": "376564"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q7",
+             "label": "4 × 4006",
+             "answer": {
+              "text": "16024"
+             }
+            },
+            "note": "4 × 4,006"
+           },
+           {
+            "field": {
+             "id": "q7-2",
+             "label": "90 × 4006",
+             "answer": {
+              "text": "360540"
+             }
+            },
+            "note": "90 × 4,006"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16024, 360540, 376564"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "3850",
+           "78"
+          ],
+          "answer": {
+           "id": "q8-3",
+           "label": "3850 × 78",
+           "answer": {
+            "text": "300300"
+           }
+          },
+          "partials": [
+           {
+            "field": {
+             "id": "q8",
+             "label": "8 × 3850",
+             "answer": {
+              "text": "30800"
+             }
+            },
+            "note": "8 × 3,850"
+           },
+           {
+            "field": {
+             "id": "q8-2",
+             "label": "70 × 3850",
+             "answer": {
+              "text": "269500"
+             }
+            },
+            "note": "70 × 3,850"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30800, 269500, 300300"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-4-by-2-digits",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Multiply a four-digit number by a two-digit number with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 218
+    }
+   ],
+   "estimatedHeight": 222
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2 × 59",
+    "answer": {
+     "text": "118"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "60 × 59",
+    "answer": {
+     "text": "3540"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "59 × 62",
+    "answer": {
+     "text": "3658"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "9 × 69",
+    "answer": {
+     "text": "621"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "10 × 69",
+    "answer": {
+     "text": "690"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "69 × 19",
+    "answer": {
+     "text": "1311"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "5 × 64",
+    "answer": {
+     "text": "320"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "30 × 64",
+    "answer": {
+     "text": "1920"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "64 × 35",
+    "answer": {
+     "text": "2240"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 × 88",
+    "answer": {
+     "text": "176"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "60 × 88",
+    "answer": {
+     "text": "5280"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "88 × 62",
+    "answer": {
+     "text": "5456"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "5 × 785",
+    "answer": {
+     "text": "3925"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "50 × 785",
+    "answer": {
+     "text": "39250"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "785 × 55",
+    "answer": {
+     "text": "43175"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "6 × 318",
+    "answer": {
+     "text": "1908"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "80 × 318",
+    "answer": {
+     "text": "25440"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "318 × 86",
+    "answer": {
+     "text": "27348"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "4 × 4006",
+    "answer": {
+     "text": "16024"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "90 × 4006",
+    "answer": {
+     "text": "360540"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "4006 × 94",
+    "answer": {
+     "text": "376564"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "8 × 3850",
+    "answer": {
+     "text": "30800"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "70 × 3850",
+    "answer": {
+     "text": "269500"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "3850 × 78",
+    "answer": {
+     "text": "300300"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply multi-digit numbers with the standard algorithm.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Multiply. Write a row for each digit of the bottom number, then add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Multiply.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

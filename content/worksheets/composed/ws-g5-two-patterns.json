@@ -1,0 +1,785 @@
+{
+ "worksheetId": "ws-g5-two-patterns",
+ "title": "Two number patterns",
+ "headerLabels": [
+  "5.OA.B.3",
+  "5.G.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Fill in both patterns. Then compare them.",
+     "explainer": "Both patterns start at 0. Add the rule's number each step.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Step",
+           "Add 2",
+           "Add 6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "2"
+             },
+             {
+              "text": "6"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "step 2 of add 2",
+               "answer": {
+                "text": "4"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "step 2 of add 6",
+               "answer": {
+                "text": "12"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "step 3 of add 2",
+               "answer": {
+                "text": "6"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "step 3 of add 6",
+               "answer": {
+                "text": "18"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q1-5",
+               "label": "step 4 of add 2",
+               "answer": {
+                "text": "8"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-6",
+               "label": "step 4 of add 6",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each term of \"Add 6\" is"
+           },
+           {
+            "blank": {
+             "id": "q1-7",
+             "label": "how many times the add 2 term",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "times the term of \"Add 2\"."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 12, 6, 18, 8, 24; Each term of \"Add 6\" is 3 times the term of \"Add 2\"."
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Step",
+           "Add 3",
+           "Add 9"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "3"
+             },
+             {
+              "text": "9"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q2",
+               "label": "step 2 of add 3",
+               "answer": {
+                "text": "6"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-2",
+               "label": "step 2 of add 9",
+               "answer": {
+                "text": "18"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q2-3",
+               "label": "step 3 of add 3",
+               "answer": {
+                "text": "9"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-4",
+               "label": "step 3 of add 9",
+               "answer": {
+                "text": "27"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q2-5",
+               "label": "step 4 of add 3",
+               "answer": {
+                "text": "12"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-6",
+               "label": "step 4 of add 9",
+               "answer": {
+                "text": "36"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each term of \"Add 9\" is"
+           },
+           {
+            "blank": {
+             "id": "q2-7",
+             "label": "how many times the add 3 term",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "times the term of \"Add 3\"."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 18, 9, 27, 12, 36; Each term of \"Add 9\" is 3 times the term of \"Add 3\"."
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Step",
+           "Add 3",
+           "Add 12"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "3"
+             },
+             {
+              "text": "12"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q3",
+               "label": "step 2 of add 3",
+               "answer": {
+                "text": "6"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q3-2",
+               "label": "step 2 of add 12",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q3-3",
+               "label": "step 3 of add 3",
+               "answer": {
+                "text": "9"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q3-4",
+               "label": "step 3 of add 12",
+               "answer": {
+                "text": "36"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q3-5",
+               "label": "step 4 of add 3",
+               "answer": {
+                "text": "12"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q3-6",
+               "label": "step 4 of add 12",
+               "answer": {
+                "text": "48"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each term of \"Add 12\" is"
+           },
+           {
+            "blank": {
+             "id": "q3-7",
+             "label": "how many times the add 3 term",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "times the term of \"Add 3\"."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 24, 9, 36, 12, 48; Each term of \"Add 12\" is 4 times the term of \"Add 3\"."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-two-patterns",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Make two patterns from two rules and see how their terms are related.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Side by side in a table, the terms show one pattern is always a set number of times the other."
+     },
+     "estimatedHeight": 816
+    }
+   ],
+   "estimatedHeight": 820
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "The graph shows a pattern. Answer from the graph.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 8,
+          "yMax": 24,
+          "yStep": 3,
+          "xTitle": "Minutes",
+          "yTitle": "Laps swum",
+          "points": [
+           {},
+           {
+            "x": 1,
+            "y": 3
+           },
+           {
+            "x": 2,
+            "y": 6
+           },
+           {
+            "x": 3,
+            "y": 9
+           },
+           {
+            "x": 4,
+            "y": 12
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Laps after 3 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "laps after 3 minutes",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "If the pattern goes on, laps after 8 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "laps after 8 minutes",
+             "answer": {
+              "text": "24"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Laps after 3 minutes: 9; If the pattern goes on, laps after 8 minutes: 24"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-graph-a-pattern",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Read and extend a pattern shown as points on a coordinate grid.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 378
+    }
+   ],
+   "estimatedHeight": 382
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "step 2 of add 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "step 2 of add 6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "step 3 of add 2",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "step 3 of add 6",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "step 4 of add 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "step 4 of add 6",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "how many times the add 2 term",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "step 2 of add 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "step 2 of add 9",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "step 3 of add 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "step 3 of add 9",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "step 4 of add 3",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "step 4 of add 9",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-7",
+    "label": "how many times the add 3 term",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "step 2 of add 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "step 2 of add 12",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "step 3 of add 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "step 3 of add 12",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-5",
+    "label": "step 4 of add 3",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-6",
+    "label": "step 4 of add 12",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-7",
+    "label": "how many times the add 3 term",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "laps after 3 minutes",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "laps after 8 minutes",
+    "answer": {
+     "text": "24"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Make, compare and graph number patterns.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Fill in both patterns. Then compare them.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Fill in both patterns. Then compare them.\" was cut from 4 to 3 items to fit.",
+  "Section \"The graph shows a pattern. Answer from the graph.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

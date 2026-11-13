@@ -1,0 +1,684 @@
+{
+ "worksheetId": "ws-g5-round-decimals",
+ "title": "Rounding decimals",
+ "headerLabels": [
+  "5.NBT.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the number line to round.",
+     "explainer": "Find which end of the line the number is closer to. A number exactly halfway rounds up.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Round 28.649 to the nearest hundredth."
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 10,
+          "labels": [
+           {
+            "text": "28.64"
+           },
+           {
+            "tick": 5,
+            "text": "28.645"
+           },
+           {
+            "tick": 10,
+            "text": "28.65"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 9,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "28.649"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "28.649 to the nearest hundredth",
+             "answer": {
+              "text": "28.65"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "28.649 ≈ 28.65"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Round 11.4 to the nearest whole number."
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 10,
+          "labels": [
+           {
+            "text": "11"
+           },
+           {
+            "tick": 5,
+            "text": "11.5"
+           },
+           {
+            "tick": 10,
+            "text": "12"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 4,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11.4"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "11.4 to the nearest whole number",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11.4 ≈ 11"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Round 7.543 to the nearest hundredth."
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 10,
+          "labels": [
+           {
+            "text": "7.54"
+           },
+           {
+            "tick": 5,
+            "text": "7.545"
+           },
+           {
+            "tick": 10,
+            "text": "7.55"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 3,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7.543"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "7.543 to the nearest hundredth",
+             "answer": {
+              "text": "7.54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7.543 ≈ 7.54"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Round 23.324 to the nearest hundredth."
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 10,
+          "labels": [
+           {
+            "text": "23.32"
+           },
+           {
+            "tick": 5,
+            "text": "23.325"
+           },
+           {
+            "tick": 10,
+            "text": "23.33"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 4,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "23.324"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "23.324 to the nearest hundredth",
+             "answer": {
+              "text": "23.32"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "23.324 ≈ 23.32"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-round-decimals-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Round a decimal using a number line between the two choices.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ]
+     },
+     "estimatedHeight": 364
+    },
+    {
+     "label": "B",
+     "instruction": "Round each number.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Round 28.3 to the nearest whole number."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "28.3"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "28.3 to the nearest whole number",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "28.3 ≈ 28"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Round 5.329 to the nearest hundredth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5.329"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "5.329 to the nearest hundredth",
+             "answer": {
+              "text": "5.33"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5.329 ≈ 5.33"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Round 27.99 to the nearest tenth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27.99"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "27.99 to the nearest tenth",
+             "answer": {
+              "text": "28.0",
+              "also": [
+               "28"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27.99 ≈ 28.0"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Round 2.73 to the nearest tenth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.73"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "2.73 to the nearest tenth",
+             "answer": {
+              "text": "2.7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2.73 ≈ 2.7"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Round 28.03 to the nearest tenth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "28.03"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "28.03 to the nearest tenth",
+             "answer": {
+              "text": "28.0",
+              "also": [
+               "28"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "28.03 ≈ 28.0"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Round 2.253 to the nearest hundredth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.253"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "2.253 to the nearest hundredth",
+             "answer": {
+              "text": "2.25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2.253 ≈ 2.25"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Round 5.589 to the nearest hundredth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5.589"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "5.589 to the nearest hundredth",
+             "answer": {
+              "text": "5.59"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5.589 ≈ 5.59"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Round 11.9 to the nearest whole number."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11.9"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "11.9 to the nearest whole number",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11.9 ≈ 12"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "Round 13.942 to the nearest hundredth."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "13.942"
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "13.942 to the nearest hundredth",
+             "answer": {
+              "text": "13.94"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13.942 ≈ 13.94"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-round-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Round decimals to the nearest whole number, tenth or hundredth.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Rounding 3.46 to the nearest tenth as 3.4 by dropping the last digit."
+      ]
+     },
+     "estimatedHeight": 328
+    }
+   ],
+   "estimatedHeight": 700
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "28.649 to the nearest hundredth",
+    "answer": {
+     "text": "28.65"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "11.4 to the nearest whole number",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "7.543 to the nearest hundredth",
+    "answer": {
+     "text": "7.54"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "23.324 to the nearest hundredth",
+    "answer": {
+     "text": "23.32"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "28.3 to the nearest whole number",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "5.329 to the nearest hundredth",
+    "answer": {
+     "text": "5.33"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "27.99 to the nearest tenth",
+    "answer": {
+     "text": "28.0",
+     "also": [
+      "28"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "2.73 to the nearest tenth",
+    "answer": {
+     "text": "2.7"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "28.03 to the nearest tenth",
+    "answer": {
+     "text": "28.0",
+     "also": [
+      "28"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "2.253 to the nearest hundredth",
+    "answer": {
+     "text": "2.25"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "5.589 to the nearest hundredth",
+    "answer": {
+     "text": "5.59"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "11.9 to the nearest whole number",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "13.942 to the nearest hundredth",
+    "answer": {
+     "text": "13.94"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Round decimals to any place.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "The number line shows the two choices before the child rounds without it."
+ },
+ "advice": [
+  "\"Use the number line to round.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Round each number.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

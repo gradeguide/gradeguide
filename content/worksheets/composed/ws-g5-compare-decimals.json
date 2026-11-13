@@ -1,0 +1,844 @@
+{
+ "worksheetId": "ws-g5-compare-decimals",
+ "title": "Comparing decimals to thousandths",
+ "headerLabels": [
+  "4.NF.C.7",
+  "5.NBT.A.3.b"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write <, > or = in each circle.",
+     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.72"
+           },
+           {
+            "compare": {
+             "id": "q1",
+             "label": "<, > or = between 0.72 and 0.1",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.1"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.72 > 0.1"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.15"
+           },
+           {
+            "compare": {
+             "id": "q2",
+             "label": "<, > or = between 0.15 and 0.6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.15 < 0.6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.33"
+           },
+           {
+            "compare": {
+             "id": "q3",
+             "label": "<, > or = between 0.33 and 0.5",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.33 < 0.5"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.2"
+           },
+           {
+            "compare": {
+             "id": "q4",
+             "label": "<, > or = between 0.2 and 0.24",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.24"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.2 < 0.24"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.58"
+           },
+           {
+            "compare": {
+             "id": "q5",
+             "label": "<, > or = between 0.58 and 0.4",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.4"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.58 > 0.4"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.5"
+           },
+           {
+            "compare": {
+             "id": "q6",
+             "label": "<, > or = between 0.5 and 0.84",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.84"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.5 < 0.84"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-compare-decimals",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Compare two decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+      ]
+     },
+     "estimatedHeight": 164
+    },
+    {
+     "label": "B",
+     "instruction": "Write <, > or = in each circle.",
+     "explainer": "Line up the decimal points. Compare tenths first, then hundredths, then thousandths. 0.4 is the same as 0.400.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.138"
+           },
+           {
+            "compare": {
+             "id": "q7",
+             "label": "<, > or = between 3.138 and 3.2",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "3.2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3.138 < 3.2"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4.160"
+           },
+           {
+            "compare": {
+             "id": "q8",
+             "label": "<, > or = between 4.160 and 4.16",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "4.16"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4.160 = 4.16"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.430"
+           },
+           {
+            "compare": {
+             "id": "q9",
+             "label": "<, > or = between 0.430 and 0.43",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "0.43"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.430 = 0.43"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.349"
+           },
+           {
+            "compare": {
+             "id": "q10",
+             "label": "<, > or = between 2.349 and 2.295",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "2.295"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2.349 > 2.295"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1.888"
+           },
+           {
+            "compare": {
+             "id": "q11",
+             "label": "<, > or = between 1.888 and 1.52",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "1.52"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1.888 > 1.52"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.188"
+           },
+           {
+            "compare": {
+             "id": "q12",
+             "label": "<, > or = between 0.188 and 0.064",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.064"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.188 > 0.064"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.488"
+           },
+           {
+            "compare": {
+             "id": "q13",
+             "label": "<, > or = between 0.488 and 0.5",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "0.5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.488 < 0.5"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9.050"
+           },
+           {
+            "compare": {
+             "id": "q14",
+             "label": "<, > or = between 9.050 and 9.67",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "9.67"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9.050 < 9.67"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.5"
+           },
+           {
+            "compare": {
+             "id": "q15",
+             "label": "<, > or = between 0.5 and 0.474",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.474"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.5 > 0.474"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.5"
+           },
+           {
+            "compare": {
+             "id": "q16",
+             "label": "<, > or = between 0.5 and 0.414",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "0.414"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.5 > 0.414"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.870"
+           },
+           {
+            "compare": {
+             "id": "q17",
+             "label": "<, > or = between 3.870 and 3.87",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "3.87"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3.870 = 3.87"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.840"
+           },
+           {
+            "compare": {
+             "id": "q18",
+             "label": "<, > or = between 0.840 and 0.84",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "0.84"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.840 = 0.84"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.32"
+           },
+           {
+            "compare": {
+             "id": "q19",
+             "label": "<, > or = between 0.32 and 0.320",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "0.320"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.32 = 0.320"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.67"
+           },
+           {
+            "compare": {
+             "id": "q20",
+             "label": "<, > or = between 0.67 and 0.670",
+             "answer": {
+              "text": "="
+             }
+            }
+           },
+           {
+            "text": "0.670"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.67 = 0.670"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1.179"
+           },
+           {
+            "compare": {
+             "id": "q21",
+             "label": "<, > or = between 1.179 and 1.61",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "1.61"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1.179 < 1.61"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-compare-thousandths",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare two decimals to thousandths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking the decimal with more digits is larger: 0.389 > 0.4."
+      ]
+     },
+     "estimatedHeight": 340
+    }
+   ],
+   "estimatedHeight": 512
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "<, > or = between 0.72 and 0.1",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "<, > or = between 0.15 and 0.6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "<, > or = between 0.33 and 0.5",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "<, > or = between 0.2 and 0.24",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "<, > or = between 0.58 and 0.4",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "<, > or = between 0.5 and 0.84",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "<, > or = between 3.138 and 3.2",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "<, > or = between 4.160 and 4.16",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "<, > or = between 0.430 and 0.43",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "<, > or = between 2.349 and 2.295",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "<, > or = between 1.888 and 1.52",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "<, > or = between 0.188 and 0.064",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "<, > or = between 0.488 and 0.5",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "<, > or = between 9.050 and 9.67",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "<, > or = between 0.5 and 0.474",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "<, > or = between 0.5 and 0.414",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "<, > or = between 3.870 and 3.87",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "<, > or = between 0.840 and 0.84",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "<, > or = between 0.32 and 0.320",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "<, > or = between 0.67 and 0.670",
+    "answer": {
+     "text": "="
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "<, > or = between 1.179 and 1.61",
+    "answer": {
+     "text": "<"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare decimals to thousandths.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

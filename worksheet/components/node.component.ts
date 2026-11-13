@@ -29,6 +29,7 @@ import {
   WorkSpaceComponent,
 } from './widgets.component.js';
 import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
+import { CoordinateGridComponent, DecimalChartComponent, FractionGridComponent, SolidComponent } from './widgets_g5.component.js';
 
 // NodeComponent draws any node by its kind. Rows and stacks draw their
 // children with this component again.
@@ -64,6 +65,10 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
     GridShapeComponent,
     FractionCircleComponent,
     MeasuringJugComponent,
+    SolidComponent,
+    CoordinateGridComponent,
+    DecimalChartComponent,
+    FractionGridComponent,
   ],
   host: { '[class]': 'kind()' },
   template: `
@@ -159,6 +164,18 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
       }
       @case ('workSpace') {
         <ws-work-space [node]="k.value" [filled]="filled()" />
+      }
+      @case ('solid') {
+        <ws-solid [node]="k.value" [filled]="filled()" />
+      }
+      @case ('coordinateGrid') {
+        <ws-coordinate-grid [node]="k.value" [filled]="filled()" />
+      }
+      @case ('decimalChart') {
+        <ws-decimal-chart [node]="k.value" [filled]="filled()" />
+      }
+      @case ('fractionGrid') {
+        <ws-fraction-grid [node]="k.value" [filled]="filled()" />
       }
       @case ('multiPartQuestion') {
         <div class="stem">

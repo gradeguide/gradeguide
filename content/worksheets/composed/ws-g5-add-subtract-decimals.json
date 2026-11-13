@@ -1,0 +1,470 @@
+{
+ "worksheetId": "ws-g5-add-subtract-decimals",
+ "title": "Adding and subtracting decimals",
+ "headerLabels": [
+  "5.NBT.B.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add. Keep the decimal points lined up.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "9532",
+           "4217"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "95.32 + 42.17",
+           "answer": {
+            "text": "137.49"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "137.49"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "1168",
+           "2409"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "11.68 + 24.09",
+           "answer": {
+            "text": "35.77"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "35.77"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "567",
+           "454"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "56.7 + 45.4",
+           "answer": {
+            "text": "102.1"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "102.1"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "497",
+           "497"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "4.97 + 4.97",
+           "answer": {
+            "text": "9.94"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "9.94"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "434",
+           "4334"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "4.34 + 43.34",
+           "answer": {
+            "text": "47.68"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "47.68"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "453",
+           "128"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "45.3 + 12.8",
+           "answer": {
+            "text": "58.1"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "58.1"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-add-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Lining up the last digits instead of the decimal points."
+      ]
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "B",
+     "instruction": "Subtract. Keep the decimal points lined up.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "341",
+           "122"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "34.1 − 12.2",
+           "answer": {
+            "text": "21.9"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "21.9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "412",
+           "309"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "41.2 − 30.9",
+           "answer": {
+            "text": "10.3"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "10.3"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "349",
+           "297"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "34.9 − 29.7",
+           "answer": {
+            "text": "5.2"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "5.2"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "9545",
+           "1320"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "95.45 − 13.20",
+           "answer": {
+            "text": "82.25"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "82.25"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "604",
+           "266"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "60.4 − 26.6",
+           "answer": {
+            "text": "33.8"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "33.8"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "298",
+           "124"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "29.8 − 12.4",
+           "answer": {
+            "text": "17.4"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "17.4"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-subtract-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 302
+    }
+   ],
+   "estimatedHeight": 612
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "95.32 + 42.17",
+    "answer": {
+     "text": "137.49"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "11.68 + 24.09",
+    "answer": {
+     "text": "35.77"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "56.7 + 45.4",
+    "answer": {
+     "text": "102.1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "4.97 + 4.97",
+    "answer": {
+     "text": "9.94"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "4.34 + 43.34",
+    "answer": {
+     "text": "47.68"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "45.3 + 12.8",
+    "answer": {
+     "text": "58.1"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "34.1 − 12.2",
+    "answer": {
+     "text": "21.9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "41.2 − 30.9",
+    "answer": {
+     "text": "10.3"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "34.9 − 29.7",
+    "answer": {
+     "text": "5.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "95.45 − 13.20",
+    "answer": {
+     "text": "82.25"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "60.4 − 26.6",
+    "answer": {
+     "text": "33.8"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "29.8 − 12.4",
+    "answer": {
+     "text": "17.4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract decimals to hundredths in columns.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Add. Keep the decimal points lined up.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract. Keep the decimal points lined up.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

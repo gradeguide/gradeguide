@@ -1,0 +1,575 @@
+{
+ "worksheetId": "ws-g5-volume-cubes",
+ "title": "Volume with unit cubes",
+ "headerLabels": [
+  "5.MD.C.3.a",
+  "5.MD.C.3.b",
+  "5.MD.C.4",
+  "5.MD.C.5.a"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the cubes to find the volume.",
+     "explainer": "Each small cube is 1 cubic unit. Volume is how many cubes fill the box, including the ones you cannot see.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 4,
+            "width": 3,
+            "height": 2
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "cubes in a 4 by 3 by 2 box",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 24 cubic units"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 5,
+            "width": 3,
+            "height": 4
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "cubes in a 5 by 3 by 4 box",
+             "answer": {
+              "text": "60"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 60 cubic units"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 3,
+            "width": 3,
+            "height": 2
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "cubes in a 3 by 3 by 2 box",
+             "answer": {
+              "text": "18"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 18 cubic units"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 3,
+            "width": 2,
+            "height": 4
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "cubes in a 3 by 2 by 4 box",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 24 cubic units"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 4,
+            "width": 2,
+            "height": 3
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "cubes in a 4 by 2 by 3 box",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 24 cubic units"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 2,
+            "width": 3,
+            "height": 2
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "cubes in a 2 by 3 by 2 box",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 12 cubic units"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-volume-count",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Find the volume of a box by counting unit cubes.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "misconceptions": [
+       "Counting only the cubes that show on the outside."
+      ]
+     },
+     "estimatedHeight": 576
+    }
+   ],
+   "estimatedHeight": 580
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the volume by layers.",
+     "explainer": "Count the cubes in the bottom layer. Every layer is the same, so multiply by the number of layers.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 3,
+            "width": 3,
+            "height": 4
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cubes in the bottom layer:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "cubes in a 3 by 3 layer",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Layers:"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "layers",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "cubes in a 3 by 3 by 4 box",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Cubes in the bottom layer: 9; Layers: 4; Volume = 36 cubic units"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 5,
+            "width": 3,
+            "height": 2
+           }
+          ],
+          "showCubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cubes in the bottom layer:"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "cubes in a 5 by 3 layer",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Layers:"
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "layers",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "cubes in a 5 by 3 by 2 box",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Cubes in the bottom layer: 15; Layers: 2; Volume = 30 cubic units"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-volume-layers",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "See that volume is the cubes in one layer times the number of layers.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 572
+    }
+   ],
+   "estimatedHeight": 576
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "cubes in a 4 by 3 by 2 box",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "cubes in a 5 by 3 by 4 box",
+    "answer": {
+     "text": "60"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "cubes in a 3 by 3 by 2 box",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "cubes in a 3 by 2 by 4 box",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "cubes in a 4 by 2 by 3 box",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "cubes in a 2 by 3 by 2 box",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "cubes in a 3 by 3 layer",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "layers",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "cubes in a 3 by 3 by 4 box",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "cubes in a 5 by 3 layer",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "layers",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "cubes in a 5 by 3 by 2 box",
+    "answer": {
+     "text": "30"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find volume by counting cubes, then by layers.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Find the volume by layers.\" was cut from 3 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

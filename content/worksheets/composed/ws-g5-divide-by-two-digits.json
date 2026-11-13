@@ -1,0 +1,278 @@
+{
+ "worksheetId": "ws-g5-divide-by-two-digits",
+ "title": "Dividing by two-digit numbers",
+ "headerLabels": [
+  "5.NBT.B.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Divide.",
+     "explainer": "Round the divisor to estimate: for 252 ÷ 21, think 250 ÷ 20, about 12. Then check and adjust.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "741",
+          "divisor": 39,
+          "quotient": {
+           "id": "q1",
+           "label": "741 ÷ 39",
+           "answer": {
+            "text": "19"
+           }
+          },
+          "workRows": 5
+         }
+        }
+       ],
+       "key": "19"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "609",
+          "divisor": 21,
+          "quotient": {
+           "id": "q2",
+           "label": "609 ÷ 21",
+           "answer": {
+            "text": "29"
+           }
+          },
+          "workRows": 5
+         }
+        }
+       ],
+       "key": "29"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "527",
+          "divisor": 31,
+          "quotient": {
+           "id": "q3",
+           "label": "527 ÷ 31",
+           "answer": {
+            "text": "17"
+           }
+          },
+          "workRows": 5
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "465",
+          "divisor": 31,
+          "quotient": {
+           "id": "q4",
+           "label": "465 ÷ 31",
+           "answer": {
+            "text": "15"
+           }
+          },
+          "workRows": 5
+         }
+        }
+       ],
+       "key": "15"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-3-digits-by-2",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Divide a three-digit number by a two-digit number.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "misconceptions": [
+       "Keeping a first estimate that is too big or too small instead of adjusting it."
+      ]
+     },
+     "estimatedHeight": 472
+    },
+    {
+     "label": "B",
+     "instruction": "Divide. Some have a remainder.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "2898",
+          "divisor": 21,
+          "quotient": {
+           "id": "q5",
+           "label": "2898 ÷ 21",
+           "answer": {
+            "text": "138"
+           }
+          },
+          "remainder": {
+           "id": "q5-2",
+           "label": "remainder of 2898 ÷ 21",
+           "answer": {
+            "text": "0"
+           }
+          },
+          "workRows": 7
+         }
+        }
+       ],
+       "key": "138, 0"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "5388",
+          "divisor": 34,
+          "quotient": {
+           "id": "q6",
+           "label": "5388 ÷ 34",
+           "answer": {
+            "text": "158"
+           }
+          },
+          "remainder": {
+           "id": "q6-2",
+           "label": "remainder of 5388 ÷ 34",
+           "answer": {
+            "text": "16"
+           }
+          },
+          "workRows": 7
+         }
+        }
+       ],
+       "key": "158, 16"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-4-digits-by-2",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide a four-digit number by a two-digit number, with remainders.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ]
+     },
+     "estimatedHeight": 288
+    }
+   ],
+   "estimatedHeight": 768
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "741 ÷ 39",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "609 ÷ 21",
+    "answer": {
+     "text": "29"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "527 ÷ 31",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "465 ÷ 31",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2898 ÷ 21",
+    "answer": {
+     "text": "138"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "remainder of 2898 ÷ 21",
+    "answer": {
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "5388 ÷ 34",
+    "answer": {
+     "text": "158"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "remainder of 5388 ÷ 34",
+    "answer": {
+     "text": "16"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide by two-digit numbers, estimating each digit of the quotient.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Divide. Some have a remainder.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Divide. Some have a remainder.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -181,6 +181,12 @@ export function fieldsOf(nodes: readonly Node[]): Field[] {
       case 'numberChart':
         add(k.value.shadeField);
         break;
+      case 'coordinateGrid':
+        add(k.value.plotField);
+        break;
+      case 'decimalChart':
+        k.value.rows.forEach((r) => add(r.field));
+        break;
       case 'choices':
         add(k.value.field);
         break;

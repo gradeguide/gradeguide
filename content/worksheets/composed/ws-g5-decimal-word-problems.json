@@ -1,0 +1,400 @@
+{
+ "worksheetId": "ws-g5-decimal-word-problems",
+ "title": "Decimal word problems",
+ "headerLabels": [
+  "5.NBT.B.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add. Keep the decimal points lined up.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "960",
+           "489"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "96.0 + 48.9",
+           "answer": {
+            "text": "144.9"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "144.9"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "3753",
+           "3571"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "37.53 + 35.71",
+           "answer": {
+            "text": "73.24"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "73.24"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "1878",
+           "398"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "18.78 + 3.98",
+           "answer": {
+            "text": "22.76"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "22.76"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-add-decimals",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Add decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "misconceptions": [
+       "Lining up the last digits instead of the decimal points."
+      ]
+     },
+     "estimatedHeight": 168
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Mia buys a notebook for $3.75 and a pen for $1.49. How much does she spend?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "cost of the notebook and the pen",
+           "answer": {
+            "text": "5.24",
+            "also": [
+             "$5.24"
+            ],
+            "work": "3.75 + 1.49"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5.24"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A ribbon is 6.5 meters long. Kai cuts off 2.85 meters. How much ribbon is left?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "ribbon left",
+           "answer": {
+            "text": "3.65",
+            "also": [
+             "3.65 meters"
+            ],
+            "work": "6.5 − 2.85"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3.65"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "One bag of apples weighs 2.4 pounds. How much do 6 bags weigh?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q6",
+           "label": "weight of 6 bags",
+           "answer": {
+            "text": "14.4",
+            "also": [
+             "14.4 pounds"
+            ],
+            "work": "2.4 × 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "14.4"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-decimal-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve money and measurement problems with decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each operation appears once, so the child chooses it from the story."
+     },
+     "estimatedHeight": 442
+    }
+   ],
+   "estimatedHeight": 618
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Omar shares $12.60 equally among 4 friends."
+           }
+          ],
+          "parts": [
+           {
+            "label": "7a",
+            "prompt": [
+             {
+              "text": "How much does each friend get?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q7a",
+                "label": "each friend's share",
+                "answer": {
+                 "text": "3.15",
+                 "also": [
+                  "$3.15"
+                 ],
+                 "work": "12.60 ÷ 4"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "7b",
+            "prompt": [
+             {
+              "text": "Each friend spends $1.75. How much does each have left?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q7b",
+                "label": "money left for each friend",
+                "answer": {
+                 "text": "1.40",
+                 "also": [
+                  "1.4",
+                  "$1.40"
+                 ],
+                 "work": "3.15 − 1.75"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7a: 12.60 ÷ 4 = 3.15; 7b: 3.15 − 1.75 = 1.40"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-decimal-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve money and measurement problems with decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each operation appears once, so the child chooses it from the story."
+     },
+     "continued": true,
+     "estimatedHeight": 336
+    }
+   ],
+   "estimatedHeight": 340
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "96.0 + 48.9",
+    "answer": {
+     "text": "144.9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "37.53 + 35.71",
+    "answer": {
+     "text": "73.24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "18.78 + 3.98",
+    "answer": {
+     "text": "22.76"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "cost of the notebook and the pen",
+    "answer": {
+     "text": "5.24",
+     "also": [
+      "$5.24"
+     ],
+     "work": "3.75 + 1.49"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "ribbon left",
+    "answer": {
+     "text": "3.65",
+     "also": [
+      "3.65 meters"
+     ],
+     "work": "6.5 − 2.85"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "weight of 6 bags",
+    "answer": {
+     "text": "14.4",
+     "also": [
+      "14.4 pounds"
+     ],
+     "work": "2.4 × 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "7a",
+   "field": {
+    "id": "q7a",
+    "label": "each friend's share",
+    "answer": {
+     "text": "3.15",
+     "also": [
+      "$3.15"
+     ],
+     "work": "12.60 ÷ 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "7b",
+   "field": {
+    "id": "q7b",
+    "label": "money left for each friend",
+    "answer": {
+     "text": "1.40",
+     "also": [
+      "1.4",
+      "$1.40"
+     ],
+     "work": "3.15 − 1.75"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use decimal arithmetic to solve money and measurement problems.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

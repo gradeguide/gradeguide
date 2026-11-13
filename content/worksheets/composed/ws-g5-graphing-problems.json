@@ -1,0 +1,295 @@
+{
+ "worksheetId": "ws-g5-graphing-problems",
+ "title": "Graphing to solve problems",
+ "headerLabels": [
+  "5.G.A.1",
+  "5.OA.B.3",
+  "5.G.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write where each point is.",
+     "explainer": "(3, 5) means 3 across from 0, then 5 up. Across comes first.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 1,
+            "label": "A"
+           },
+           {
+            "x": 1,
+            "y": 6,
+            "label": "B"
+           },
+           {
+            "x": 9,
+            "y": 6,
+            "label": "C"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A is at"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "coordinates of A",
+             "answer": {
+              "text": "(1, 0)",
+              "also": [
+               "1, 0",
+               "(1,0)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "B is at"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "coordinates of B",
+             "answer": {
+              "text": "(1, 6)",
+              "also": [
+               "1, 6",
+               "(1,6)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "C is at"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "coordinates of C",
+             "answer": {
+              "text": "(9, 6)",
+              "also": [
+               "9, 6",
+               "(9,6)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A is at (1, 0); B is at (1, 6); C is at (9, 6)"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-read-points",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read the coordinates of points on a grid.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "misconceptions": [
+       "Swapping the numbers: writing (5, 3) for 3 across and 5 up."
+      ]
+     },
+     "estimatedHeight": 462
+    }
+   ],
+   "estimatedHeight": 466
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "The graph shows a pattern. Answer from the graph.",
+     "items": [
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 8,
+          "yMax": 16,
+          "yStep": 2,
+          "xTitle": "Boxes",
+          "yTitle": "Pencils",
+          "points": [
+           {},
+           {
+            "x": 1,
+            "y": 2
+           },
+           {
+            "x": 2,
+            "y": 4
+           },
+           {
+            "x": 3,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pencils after 3 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "pencils after 3 boxes",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "If the pattern goes on, pencils after 8 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "pencils after 8 boxes",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Pencils after 3 boxes: 6; If the pattern goes on, pencils after 8 boxes: 16"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-graph-a-pattern",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Read and extend a pattern shown as points on a coordinate grid.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 378
+    }
+   ],
+   "estimatedHeight": 382
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "coordinates of A",
+    "answer": {
+     "text": "(1, 0)",
+     "also": [
+      "1, 0",
+      "(1,0)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "coordinates of B",
+    "answer": {
+     "text": "(1, 6)",
+     "also": [
+      "1, 6",
+      "(1,6)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "coordinates of C",
+    "answer": {
+     "text": "(9, 6)",
+     "also": [
+      "9, 6",
+      "(9,6)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "pencils after 3 boxes",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "pencils after 8 boxes",
+    "answer": {
+     "text": "16"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read and extend graphs of real situations.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ]
+ },
+ "advice": [
+  "Section \"The graph shows a pattern. Answer from the graph.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

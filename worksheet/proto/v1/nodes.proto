@@ -54,6 +54,10 @@ message Node {
     GridShape grid_shape = 90;
     FractionCircle fraction_circle = 91;
     MeasuringJug measuring_jug = 92;
+    Solid solid = 40;
+    CoordinateGrid coordinate_grid = 41;
+    DecimalChart decimal_chart = 42;
+    FractionGrid fraction_grid = 43;
   }
 }
 
@@ -244,6 +248,10 @@ message ColumnArithmetic {
   // For partial products: a row of boxes for each partial product before
   // the answer row, with its note, such as "4 × 7", beside it.
   repeated Partial partials = 5;
+  // Places after the decimal point. The operands are scaled by ten to this
+  // power: 345 with 2 places is 3.45. A decimal point is drawn between
+  // columns, and the answer row has a fixed point.
+  int32 decimal_places = 40;
 
   message Partial {
     Field field = 1;
@@ -508,4 +516,88 @@ message MeasuringJug {
   int32 level = 4;
   // Printed under the scale, such as "mL" or "liters".
   string unit = 5;
+}
+
+// Solid is one or more boxes standing side by side on a table, drawn at a
+// slant so three faces show. Lengths run left to right, widths away from the
+// viewer, heights up.
+message Solid {
+  repeated Box boxes = 1;
+  // Draw the unit cubes on every face.
+  bool show_cubes = 2;
+
+  message Box {
+    // Where the box starts, in units from the left of the first box.
+    int32 x = 1;
+    int32 length = 2;
+    int32 width = 3;
+    int32 height = 4;
+    // Edge labels, such as "5 cm". Empty: none.
+    string length_label = 5;
+    string width_label = 6;
+    string height_label = 7;
+  }
+}
+
+// CoordinateGrid is the first quadrant with labelled points.
+message CoordinateGrid {
+  int32 x_max = 1;
+  int32 y_max = 2;
+  // The value between gridlines on each axis. Zero: 1.
+  int32 x_step = 3;
+  int32 y_step = 4;
+  // Axis titles, such as "Hours".
+  string x_title = 5;
+  string y_title = 6;
+  repeated Point points = 7;
+  // Set when the child plots points on the grid: which points are right.
+  Field plot_field = 8;
+
+  message Point {
+    int32 x = 1;
+    int32 y = 2;
+    // Such as "A". Empty: a dot alone.
+    string label = 3;
+  }
+}
+
+// DecimalChart is a place-value chart that runs past the decimal point,
+// with one row per number. A row shows a number's digits in their places,
+// or a box in every place for the child to write a number.
+message DecimalChart {
+  // The largest place, as a power of ten: 3 for thousands.
+  int32 high = 1;
+  // How many places after the point: 3 for thousandths.
+  int32 decimals = 2;
+  Headings headings = 3;
+  repeated Row rows = 4;
+
+  enum Headings {
+    // Place names: thousands, hundreds, ..., thousandths.
+    HEADINGS_UNSPECIFIED = 0;
+    HEADINGS_NAMES = 1;
+    // Powers of ten over their values: 10³ over 1,000, down to 1/1000.
+    HEADINGS_POWERS = 2;
+  }
+
+  message Row {
+    // The number shown, such as "4.7"; its digits go in their places.
+    string number = 1;
+    // Set when the child writes the number: a box in every place, read as
+    // one field.
+    Field field = 2;
+    // Printed to the right of the row, such as "× 100".
+    string note = 3;
+  }
+}
+
+// FractionGrid is a rectangle cut into columns and rows. The first
+// shaded_cols columns and the first shaded_rows rows are shaded; where they
+// overlap is shaded darker. It shows a/b as a count of (b × d)ths, and the
+// product of two fractions as the overlap.
+message FractionGrid {
+  int32 cols = 1;
+  int32 rows = 2;
+  int32 shaded_cols = 3;
+  int32 shaded_rows = 4;
 }
