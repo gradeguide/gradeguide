@@ -1,0 +1,477 @@
+{
+ "worksheetId": "ws-g5-multiply-divide-decimals",
+ "title": "Multiplying and dividing decimals",
+ "headerLabels": [
+  "5.NBT.B.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply.",
+     "explainer": "Multiply as if there were no decimal points. Then count the digits after the points in both numbers: the answer has that many.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8.3 × 8 ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "8.3 × 8",
+             "answer": {
+              "text": "66.4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "8.3 × 8 = 66.4"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.4 × 3 ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "2.4 × 3",
+             "answer": {
+              "text": "7.2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "2.4 × 3 = 7.2"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.3 × 4 ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "2.3 × 4",
+             "answer": {
+              "text": "9.2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "2.3 × 4 = 9.2"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8.2 × 6 ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "8.2 × 6",
+             "answer": {
+              "text": "49.2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "8.2 × 6 = 49.2"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.19 × 2 ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "0.19 × 2",
+             "answer": {
+              "text": "0.38"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "0.19 × 2 = 0.38"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.7 × 0.5 ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "2.7 × 0.5",
+             "answer": {
+              "text": "1.35"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "2.7 × 0.5 = 1.35"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply decimals to hundredths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking multiplying always makes a number bigger: 0.6 × 0.7 = 4.2."
+      ]
+     },
+     "estimatedHeight": 542
+    },
+    {
+     "label": "B",
+     "instruction": "Divide.",
+     "explainer": "To divide by a decimal, think how many of it fit: 3.6 ÷ 0.4 asks how many 4 tenths make 36 tenths.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1.2 ÷ 0.3 ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "1.2 ÷ 0.3",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "1.2 ÷ 0.3 = 4"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.85 ÷ 7 ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "3.85 ÷ 7",
+             "answer": {
+              "text": "0.55"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "3.85 ÷ 7 = 0.55"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide decimals to hundredths by whole numbers and by decimals.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 234
+    }
+   ],
+   "estimatedHeight": 784
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "73.6 ÷ 8 ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "73.6 ÷ 8",
+             "answer": {
+              "text": "9.2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "73.6 ÷ 8 = 9.2"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "19.2 ÷ 2 ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "19.2 ÷ 2",
+             "answer": {
+              "text": "9.6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "19.2 ÷ 2 = 9.6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide decimals to hundredths by whole numbers and by decimals.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 188
+    }
+   ],
+   "estimatedHeight": 192
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "8.3 × 8",
+    "answer": {
+     "text": "66.4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "2.4 × 3",
+    "answer": {
+     "text": "7.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2.3 × 4",
+    "answer": {
+     "text": "9.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "8.2 × 6",
+    "answer": {
+     "text": "49.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "0.19 × 2",
+    "answer": {
+     "text": "0.38"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "2.7 × 0.5",
+    "answer": {
+     "text": "1.35"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "1.2 ÷ 0.3",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3.85 ÷ 7",
+    "answer": {
+     "text": "0.55"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "73.6 ÷ 8",
+    "answer": {
+     "text": "9.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "19.2 ÷ 2",
+    "answer": {
+     "text": "9.6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply and divide decimals to hundredths.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Divide.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

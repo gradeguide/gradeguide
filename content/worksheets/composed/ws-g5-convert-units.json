@@ -1,0 +1,806 @@
+{
+ "worksheetId": "ws-g5-convert-units",
+ "title": "Converting units",
+ "headerLabels": [
+  "5.MD.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Convert.",
+     "explainer": "1 m = 100 cm, 1 km = 1,000 m, 1 cm = 10 mm, 1 kg = 1,000 g, 1 L = 1,000 mL. 1 ft = 12 in, 1 yd = 3 ft, 1 gal = 4 qt, 1 lb = 16 oz, 1 hr = 60 min.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 yd ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "3 yd in ft",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "ft"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 yd = 9 ft"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 m ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "4 m in cm",
+             "answer": {
+              "text": "400"
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 m = 400 cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "99 oz ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "whole lb in 99 oz",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "lb"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "oz left over from 99 oz",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "oz"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "99 oz = 6 lb 3 oz"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "142 cm ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "142 cm in m",
+             "answer": {
+              "text": "1.42"
+             }
+            }
+           },
+           {
+            "text": "m"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "142 cm = 1.42 m"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2 yd ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "2 yd in ft",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "ft"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 yd = 6 ft"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 lb ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "4 lb in oz",
+             "answer": {
+              "text": "64"
+             }
+            }
+           },
+           {
+            "text": "oz"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 lb = 64 oz"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1,576 mL ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "1576 mL in L",
+             "answer": {
+              "text": "1.576"
+             }
+            }
+           },
+           {
+            "text": "L"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1,576 mL = 1.576 L"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7.9 L ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "7.9 L in mL",
+             "answer": {
+              "text": "7,900",
+              "also": [
+               "7900"
+              ]
+             }
+            }
+           },
+           {
+            "text": "mL"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7.9 L = 7,900 mL"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 km ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "7 km in m",
+             "answer": {
+              "text": "7,000",
+              "also": [
+               "7000"
+              ]
+             }
+            }
+           },
+           {
+            "text": "m"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 km = 7,000 m"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8 hr ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "8 hr in min",
+             "answer": {
+              "text": "480"
+             }
+            }
+           },
+           {
+            "text": "min"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 hr = 480 min"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "22 qt ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "whole gal in 22 qt",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "gal"
+           },
+           {
+            "blank": {
+             "id": "q11-2",
+             "label": "qt left over from 22 qt",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "qt"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "22 qt = 5 gal 2 qt"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4,934 m ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "4934 m in km",
+             "answer": {
+              "text": "4.934"
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4,934 m = 4.934 km"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-convert-measure",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Convert between larger and smaller units of one system, including decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Dividing when going to a smaller unit: 3 m = 0.03 cm."
+      ]
+     },
+     "estimatedHeight": 392
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "A pitcher holds 2 liters of water. 1 liter is 1,000 milliliters. How many 250-milliliter glasses can it fill?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q13",
+           "label": "glasses filled",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 glasses"
+            ],
+            "work": "2 × 1,000 ÷ 250"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "Ana's rope is 3 yards long. Ben's rope is 7 feet long. 1 yard is 3 feet. How many feet longer is Ana's rope?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q14",
+           "label": "how much longer",
+           "answer": {
+            "text": "2",
+            "also": [
+             "2 feet"
+            ],
+            "work": "3 × 3 − 7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-measurement-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve problems with more than one step that need a unit conversion.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Comparing or adding amounts in different units without converting first."
+      ]
+     },
+     "estimatedHeight": 410
+    }
+   ],
+   "estimatedHeight": 810
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A box of crackers weighs 450 grams. 1 kilogram is 1,000 grams."
+           }
+          ],
+          "parts": [
+           {
+            "label": "15a",
+            "prompt": [
+             {
+              "text": "How many grams do 6 boxes weigh?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q15a",
+                "label": "grams in 6 boxes",
+                "answer": {
+                 "text": "2,700",
+                 "also": [
+                  "2700",
+                  "2,700 grams"
+                 ],
+                 "work": "450 × 6"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "15b",
+            "prompt": [
+             {
+              "text": "How many kilograms is that?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q15b",
+                "label": "kilograms in 6 boxes",
+                "answer": {
+                 "text": "2.7",
+                 "also": [
+                  "2.7 kilograms"
+                 ],
+                 "work": "2,700 ÷ 1,000"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15a: 450 × 6 = 2,700; 15b: 2,700 ÷ 1,000 = 2.7"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "A movie is 2 hours 15 minutes long. Kai has watched 50 minutes of it. 1 hour is 60 minutes. How many minutes are left?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q16",
+           "label": "minutes left",
+           "answer": {
+            "text": "85",
+            "also": [
+             "85 minutes"
+            ],
+            "work": "2 × 60 + 15 − 50"
+           }
+          }
+         }
+        }
+       ],
+       "key": "85"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-measurement-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve problems with more than one step that need a unit conversion.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "misconceptions": [
+       "Comparing or adding amounts in different units without converting first."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 556
+    }
+   ],
+   "estimatedHeight": 560
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "3 yd in ft",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "4 m in cm",
+    "answer": {
+     "text": "400"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "whole lb in 99 oz",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "oz left over from 99 oz",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "142 cm in m",
+    "answer": {
+     "text": "1.42"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2 yd in ft",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "4 lb in oz",
+    "answer": {
+     "text": "64"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "1576 mL in L",
+    "answer": {
+     "text": "1.576"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "7.9 L in mL",
+    "answer": {
+     "text": "7,900",
+     "also": [
+      "7900"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "7 km in m",
+    "answer": {
+     "text": "7,000",
+     "also": [
+      "7000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8 hr in min",
+    "answer": {
+     "text": "480"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "whole gal in 22 qt",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "qt left over from 22 qt",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "4934 m in km",
+    "answer": {
+     "text": "4.934"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "glasses filled",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 glasses"
+     ],
+     "work": "2 × 1,000 ÷ 250"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "how much longer",
+    "answer": {
+     "text": "2",
+     "also": [
+      "2 feet"
+     ],
+     "work": "3 × 3 − 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "15a",
+   "field": {
+    "id": "q15a",
+    "label": "grams in 6 boxes",
+    "answer": {
+     "text": "2,700",
+     "also": [
+      "2700",
+      "2,700 grams"
+     ],
+     "work": "450 × 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "15b",
+   "field": {
+    "id": "q15b",
+    "label": "kilograms in 6 boxes",
+    "answer": {
+     "text": "2.7",
+     "also": [
+      "2.7 kilograms"
+     ],
+     "work": "2,700 ÷ 1,000"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "minutes left",
+    "answer": {
+     "text": "85",
+     "also": [
+      "85 minutes"
+     ],
+     "work": "2 × 60 + 15 − 50"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Convert units, and use conversions in problems with more than one step.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Convert.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

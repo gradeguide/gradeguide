@@ -1,0 +1,934 @@
+{
+ "worksheetId": "ws-g5-powers-of-ten",
+ "title": "Powers of 10",
+ "headerLabels": [
+  "5.NBT.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply or divide by a power of 10.",
+     "explainer": "10³ means 10 × 10 × 10 = 1,000. The small number says how many 10s to multiply.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "770,000 ÷ 10⁴ ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "770000 ÷ 10 to the power 4",
+             "answer": {
+              "text": "77"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "770,000 ÷ 10⁴ = 77"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 × 10² ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "10 × 10 to the power 2",
+             "answer": {
+              "text": "1,000",
+              "also": [
+               "1000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 × 10² = 1,000"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "41 × 10² ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "41 × 10 to the power 2",
+             "answer": {
+              "text": "4,100",
+              "also": [
+               "4100"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "41 × 10² = 4,100"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9,800,000 ÷ 10⁵ ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "9800000 ÷ 10 to the power 5",
+             "answer": {
+              "text": "98"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9,800,000 ÷ 10⁵ = 98"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "81 × 10⁵ ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "81 × 10 to the power 5",
+             "answer": {
+              "text": "8,100,000",
+              "also": [
+               "8100000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "81 × 10⁵ = 8,100,000"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10² ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "10 to the power 2",
+             "answer": {
+              "text": "100",
+              "also": [
+               "100"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10² = 100"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "29 × 10⁵ ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "29 × 10 to the power 5",
+             "answer": {
+              "text": "2,900,000",
+              "also": [
+               "2900000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "29 × 10⁵ = 2,900,000"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "29,000 ÷ 10³ ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "29000 ÷ 10 to the power 3",
+             "answer": {
+              "text": "29"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "29,000 ÷ 10³ = 29"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "91 × 10³ ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "91 × 10 to the power 3",
+             "answer": {
+              "text": "91,000",
+              "also": [
+               "91000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "91 × 10³ = 91,000"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "69 × 10² ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "69 × 10 to the power 2",
+             "answer": {
+              "text": "6,900",
+              "also": [
+               "6900"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "69 × 10² = 6,900"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10⁵ ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "10 to the power 5",
+             "answer": {
+              "text": "100,000",
+              "also": [
+               "100000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10⁵ = 100,000"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10² ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "10 to the power 2",
+             "answer": {
+              "text": "100",
+              "also": [
+               "100"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10² = 100"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-powers-of-ten",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write powers of 10 with exponents, and multiply and divide whole numbers by them.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Reading 10³ as 10 × 3 = 30."
+      ]
+     },
+     "estimatedHeight": 372
+    },
+    {
+     "label": "B",
+     "instruction": "Write the answer in the bottom row of the chart.",
+     "explainer": "Times 10 moves every digit one place to the left. Divide by 10 moves every digit one place to the right. The decimal point stays put.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "70 × 10²"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "70"
+           },
+           {
+            "field": {
+             "id": "q13",
+             "label": "70 × 100",
+             "answer": {
+              "text": "7,000",
+              "also": [
+               "7000"
+              ]
+             }
+            },
+            "note": "× 100"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7,000"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "0.93 × 10"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "0.93"
+           },
+           {
+            "field": {
+             "id": "q14",
+             "label": "0.93 × 10",
+             "answer": {
+              "text": "9.3"
+             }
+            },
+            "note": "× 10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9.3"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "2.8 ÷ 10"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "2.8"
+           },
+           {
+            "field": {
+             "id": "q15",
+             "label": "2.8 ÷ 10",
+             "answer": {
+              "text": "0.28"
+             }
+            },
+            "note": "÷ 10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.28"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "3.65 ÷ 10"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "3.65"
+           },
+           {
+            "field": {
+             "id": "q16",
+             "label": "3.65 ÷ 10",
+             "answer": {
+              "text": "0.365"
+             }
+            },
+            "note": "÷ 10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.365"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-powers-of-ten-chart",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "See multiplying and dividing by 10, 100 and 1,000 as moving digits between places.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The chart shows the digits moving while the point stays still, which is what \"moving the decimal point\" really means."
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 770
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Multiply or divide. Watch where the decimal point goes.",
+     "explainer": "Times 10 moves each digit one place to the left. Divide by 10 moves each digit one place to the right.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.7 × 10 ="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "2.7 × 10",
+             "answer": {
+              "text": "27"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2.7 × 10 = 27"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.73 × 100 ="
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "3.73 × 100",
+             "answer": {
+              "text": "373"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3.73 × 100 = 373"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "0.34 × 10¹ ="
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "0.34 × 10",
+             "answer": {
+              "text": "3.4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.34 × 10¹ = 3.4"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "81.1 × 10² ="
+           },
+           {
+            "blank": {
+             "id": "q20",
+             "label": "81.1 × 100",
+             "answer": {
+              "text": "8,110",
+              "also": [
+               "8110"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "81.1 × 10² = 8,110"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6.81 ÷ 10 ="
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "6.81 ÷ 10",
+             "answer": {
+              "text": "0.681"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6.81 ÷ 10 = 0.681"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6.8 ÷ 10¹ ="
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "6.8 ÷ 10",
+             "answer": {
+              "text": "0.68"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6.8 ÷ 10¹ = 0.68"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-powers-of-ten-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply and divide decimals by 10, 100 and 1,000.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Adding a zero to the end of a decimal to multiply by 10: 4.7 × 10 = 4.70."
+      ]
+     },
+     "estimatedHeight": 236
+    }
+   ],
+   "estimatedHeight": 240
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "770000 ÷ 10 to the power 4",
+    "answer": {
+     "text": "77"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "10 × 10 to the power 2",
+    "answer": {
+     "text": "1,000",
+     "also": [
+      "1000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "41 × 10 to the power 2",
+    "answer": {
+     "text": "4,100",
+     "also": [
+      "4100"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "9800000 ÷ 10 to the power 5",
+    "answer": {
+     "text": "98"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "81 × 10 to the power 5",
+    "answer": {
+     "text": "8,100,000",
+     "also": [
+      "8100000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "10 to the power 2",
+    "answer": {
+     "text": "100",
+     "also": [
+      "100"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "29 × 10 to the power 5",
+    "answer": {
+     "text": "2,900,000",
+     "also": [
+      "2900000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "29000 ÷ 10 to the power 3",
+    "answer": {
+     "text": "29"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "91 × 10 to the power 3",
+    "answer": {
+     "text": "91,000",
+     "also": [
+      "91000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "69 × 10 to the power 2",
+    "answer": {
+     "text": "6,900",
+     "also": [
+      "6900"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "10 to the power 5",
+    "answer": {
+     "text": "100,000",
+     "also": [
+      "100000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "10 to the power 2",
+    "answer": {
+     "text": "100",
+     "also": [
+      "100"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "70 × 100",
+    "answer": {
+     "text": "7,000",
+     "also": [
+      "7000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "0.93 × 10",
+    "answer": {
+     "text": "9.3"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "2.8 ÷ 10",
+    "answer": {
+     "text": "0.28"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "3.65 ÷ 10",
+    "answer": {
+     "text": "0.365"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "2.7 × 10",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "3.73 × 100",
+    "answer": {
+     "text": "373"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "0.34 × 10",
+    "answer": {
+     "text": "3.4"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "81.1 × 100",
+    "answer": {
+     "text": "8,110",
+     "also": [
+      "8110"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "6.81 ÷ 10",
+    "answer": {
+     "text": "0.681"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "6.8 ÷ 10",
+    "answer": {
+     "text": "0.68"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply and divide by powers of 10, and write them with exponents.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Multiply or divide by a power of 10.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the answer in the bottom row of the chart.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply or divide. Watch where the decimal point goes.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Multiply or divide. Watch where the decimal point goes.\" was cut from 12 to 6 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

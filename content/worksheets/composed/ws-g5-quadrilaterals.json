@@ -1,0 +1,478 @@
+{
+ "worksheetId": "ws-g5-quadrilaterals",
+ "title": "The quadrilateral family",
+ "headerLabels": [
+  "5.G.B.4",
+  "5.G.B.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick the most exact name for each shape.",
+     "explainer": "A square is also a rectangle and a rhombus, but square is its most exact name.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {
+            "y": 4
+           },
+           {
+            "x": 3
+           },
+           {
+            "x": 6,
+            "y": 4
+           },
+           {
+            "x": 3,
+            "y": 8
+           }
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "trapezoid",
+           "parallelogram",
+           "rectangle",
+           "rhombus",
+           "square"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "most exact name of the shape",
+           "answer": {
+            "text": "rhombus"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rhombus"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 4
+           },
+           {
+            "x": 4,
+            "y": 4
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "trapezoid",
+           "parallelogram",
+           "rectangle",
+           "rhombus",
+           "square"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "most exact name of the shape",
+           "answer": {
+            "text": "square"
+           }
+          }
+         }
+        }
+       ],
+       "key": "square"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 5,
+            "y": 4
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "trapezoid",
+           "parallelogram",
+           "rectangle",
+           "rhombus",
+           "square"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "most exact name of the shape",
+           "answer": {
+            "text": "trapezoid"
+           }
+          }
+         }
+        }
+       ],
+       "key": "trapezoid"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 6
+           },
+           {
+            "x": 6,
+            "y": 3
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "6 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {
+            "text": "6 cm"
+           },
+           {
+            "text": "3 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "trapezoid",
+           "parallelogram",
+           "rectangle",
+           "rhombus",
+           "square"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "most exact name of the shape",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-name-quadrilaterals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Classify quadrilaterals by their sides and angles.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking a square is not a rectangle."
+      ]
+     },
+     "estimatedHeight": 740
+    }
+   ],
+   "estimatedHeight": 744
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Tick always, sometimes or never.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A square ___ has two pairs of parallel sides."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "A square ___ has two pairs of parallel sides.",
+           "answer": {
+            "text": "always"
+           }
+          }
+         }
+        }
+       ],
+       "key": "always"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A rhombus is ___ a square."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "A rhombus is ___ a square.",
+           "answer": {
+            "text": "sometimes"
+           }
+          }
+         }
+        }
+       ],
+       "key": "sometimes"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A rectangle is ___ a parallelogram."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "A rectangle is ___ a parallelogram.",
+           "answer": {
+            "text": "always"
+           }
+          }
+         }
+        }
+       ],
+       "key": "always"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A rhombus is ___ a parallelogram."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "A rhombus is ___ a parallelogram.",
+           "answer": {
+            "text": "always"
+           }
+          }
+         }
+        }
+       ],
+       "key": "always"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-always-sometimes-never",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Reason about which shapes belong to which families.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Deciding \"sometimes\" needs one example and one counterexample, which makes the child think about the properties."
+     },
+     "estimatedHeight": 178
+    }
+   ],
+   "estimatedHeight": 182
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "most exact name of the shape",
+    "answer": {
+     "text": "rhombus"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "most exact name of the shape",
+    "answer": {
+     "text": "square"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "most exact name of the shape",
+    "answer": {
+     "text": "trapezoid"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "most exact name of the shape",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "A square ___ has two pairs of parallel sides.",
+    "answer": {
+     "text": "always"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "A rhombus is ___ a square.",
+    "answer": {
+     "text": "sometimes"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "A rectangle is ___ a parallelogram.",
+    "answer": {
+     "text": "always"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "A rhombus is ___ a parallelogram.",
+    "answer": {
+     "text": "always"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Classify quadrilaterals and reason about their families.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Tick the most exact name for each shape.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Tick the most exact name for each shape.\" was cut from 6 to 4 items to fit.",
+  "Section \"Tick always, sometimes or never.\" was cut from 8 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

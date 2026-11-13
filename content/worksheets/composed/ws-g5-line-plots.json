@@ -1,0 +1,298 @@
+{
+ "worksheetId": "ws-g5-line-plots",
+ "title": "Line plots with fractions",
+ "headerLabels": [
+  "5.MD.B.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the line plot.",
+     "explainer": "Each X is one amount. To share the total equally, divide it by how many there are.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "linePlot": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "counts": [
+           0,
+           0,
+           0,
+           1,
+           2,
+           0,
+           0,
+           2,
+           0
+          ],
+          "caption": "Weight of each bag of beads (pounds)"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Bags with 3/8 pound:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "bags with 3/8 pound",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total of all the amounts:"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "total pounds",
+             "answer": {
+              "text": "3 1/8",
+              "also": [
+               "25/8"
+              ]
+             }
+            }
+           },
+           {
+            "text": "pounds"
+           }
+          ]
+         }
+        },
+        {
+         "text": "Share the total equally among the 5 bags. How much does each get?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "equal share of 3 1/8 among 5",
+             "answer": {
+              "text": "5/8",
+              "also": [
+               "25/40"
+              ]
+             }
+            }
+           },
+           {
+            "text": "pounds"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Bags with 3/8 pound: 1; Total of all the amounts: 3 1/8 pounds; 5/8 pounds"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "linePlot": {
+          "end": 1,
+          "partsPerUnit": 8,
+          "counts": [
+           0,
+           0,
+           0,
+           2,
+           1,
+           2,
+           0,
+           0,
+           0
+          ],
+          "caption": "Length of each piece of string (yards)"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pieces with 3/8 yard:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "pieces with 3/8 yard",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total of all the amounts:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "total yards",
+             "answer": {
+              "text": "2 1/2",
+              "also": [
+               "20/8",
+               "2 4/8",
+               "5/2"
+              ]
+             }
+            }
+           },
+           {
+            "text": "yards"
+           }
+          ]
+         }
+        },
+        {
+         "text": "Share the total equally among the 5 pieces. How much does each get?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "equal share of 2 1/2 among 5",
+             "answer": {
+              "text": "1/2",
+              "also": [
+               "4/8",
+               "20/40"
+              ]
+             }
+            }
+           },
+           {
+            "text": "yards"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Pieces with 3/8 yard: 2; Total of all the amounts: 2 1/2 yards; 1/2 yards"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-line-plot-share",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Read a line plot of fractions and use fraction operations to find a total and an equal share.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 592
+    }
+   ],
+   "estimatedHeight": 596
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "bags with 3/8 pound",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "total pounds",
+    "answer": {
+     "text": "3 1/8",
+     "also": [
+      "25/8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "equal share of 3 1/8 among 5",
+    "answer": {
+     "text": "5/8",
+     "also": [
+      "25/40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "pieces with 3/8 yard",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "total yards",
+    "answer": {
+     "text": "2 1/2",
+     "also": [
+      "20/8",
+      "2 4/8",
+      "5/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "equal share of 2 1/2 among 5",
+    "answer": {
+     "text": "1/2",
+     "also": [
+      "4/8",
+      "20/40"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Answer questions from a line plot using fraction operations.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
