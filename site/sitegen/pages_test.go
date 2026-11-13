@@ -113,32 +113,16 @@ func TestSitemapListsEveryPage(t *testing.T) {
 func TestWorksheetsAreListedUnderTheSkillsTheyCover(t *testing.T) {
 	s := fixture()
 	s.Skills[1].Parts = []part{{Code: "4.NF.A.1.a", Name: "A part"}}
-	AttachWorksheets(s, []Sheet{
-		{ID: "ws-one", Title: "One", Pages: 1, Codes: []string{"4.NF.A.1"}},
-		{ID: "ws-part", Title: "Part", Pages: 2, Codes: []string{"4.NF.A.1.a", "4.NF.A.2"}},
-	})
-	got := func(i int) []string {
-		var ids []string
-		for _, w := range s.Skills[i].Worksheets {
-			ids = append(ids, w.ID)
-		}
-		return ids
-	}
-	if a := got(0); len(a) != 0 {
-		t.Errorf("3.NF.A.3 lists %v, want none", a)
-	}
-	if b := strings.Join(got(1), ","); b != "ws-one,ws-part" {
-		t.Errorf("4.NF.A.1 lists %s, want ws-one,ws-part", b)
-	}
-	if c := strings.Join(got(2), ","); c != "ws-part" {
-		t.Errorf("4.NF.A.2 lists %s, want ws-part", c)
+	s.Skills[1].Worksheets = []worksheetRef{
+		{ID: "ws-one", Title: "One", Pages: 1, Href: "/worksheets/?only=ws-one", Role: "teaches"},
+		{ID: "ws-part", Title: "Part", Pages: 2, Href: "/worksheets/?only=ws-part", Role: "practises"},
 	}
 	files, err := Pages(s, "https://example.org")
 	if err != nil {
 		t.Fatal(err)
 	}
 	page := string(files["math/grade-4/4-nf-a-1-equivalent-fractions/index.html"])
-	if !strings.Contains(page, `href="/worksheets/?answers=0&amp;only=ws-part"`) || !strings.Contains(page, "2 pages") {
+	if !strings.Contains(page, `href="/worksheets/?only=ws-part"`) || !strings.Contains(page, "2 pages") {
 		t.Errorf("the skill page does not link to ws-part:\n%s", page)
 	}
 }

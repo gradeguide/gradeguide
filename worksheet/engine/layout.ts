@@ -15,6 +15,9 @@ export const FOOTER_HEIGHT = 34;
 export const BODY_HEIGHT = PAGE_HEIGHT - 2 * MARGIN - HEADER_HEIGHT - FOOTER_HEIGHT;
 
 export const SECTION_HEADER = 34;
+// The padding at the top of a page body, and the gap under each section.
+export const BODY_PADDING = 6;
+export const SECTION_GAP = 4;
 export const ITEM_GAP = 14;
 export const NODE_GAP = 6;
 export const ITEM_LABEL_WIDTH = 30;

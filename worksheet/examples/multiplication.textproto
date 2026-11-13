@@ -124,7 +124,6 @@ fragments {
 worksheets {
   id: "ws-multiplication-strategies"
   title: "Many ways to multiply"
-  minutes: 40
   seed: 140
   max_pages: 4
   placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }

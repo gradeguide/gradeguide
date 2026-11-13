@@ -5,7 +5,6 @@
   "4.G.A.1",
   "4.G.A.2"
  ],
- "minutes": 12,
  "pages": [
   {
    "sections": [
@@ -214,7 +213,7 @@
      "estimatedHeight": 272
     }
    ],
-   "estimatedHeight": 646
+   "estimatedHeight": 654
   },
   {
    "sections": [
@@ -308,7 +307,7 @@
      "estimatedHeight": 226
     }
    ],
-   "estimatedHeight": 226
+   "estimatedHeight": 230
   }
  ],
  "key": [

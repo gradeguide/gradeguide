@@ -83,6 +83,31 @@ func feedbackURL(form string, pairs ...string) string {
 	return "https://github.com/gradeguide/gradeguide/issues/new?" + q.Encode()
 }
 
+// roleLabel is how a worksheet's role reads to a parent.
+func roleLabel(role string) string {
+	switch role {
+	case "teaches":
+		return "Introduces"
+	case "practises":
+		return "Practice"
+	case "checks":
+		return "Check"
+	case "reviews":
+		return "Review"
+	}
+	return ""
+}
+
+// stepNumber is a step's place in a skill's list, from 1, or 0 if absent.
+func stepNumber(steps []step, id string) int {
+	for i, st := range steps {
+		if st.ID == id {
+			return i + 1
+		}
+	}
+	return 0
+}
+
 type crumb struct {
 	Name string
 	Path string
@@ -140,7 +165,7 @@ type page struct {
 // the site root, such as "math/grade-4/index.html". baseURL is the site's
 // address without a trailing slash, for canonical links and the sitemap.
 func Pages(s *site, baseURL string) (map[string][]byte, error) {
-	tmpl, err := template.New("").Funcs(template.FuncMap{"gradeName": gradeName, "feedbackURL": feedbackURL}).ParseFS(templateFS, "templates/*.html")
+	tmpl, err := template.New("").Funcs(template.FuncMap{"gradeName": gradeName, "feedbackURL": feedbackURL, "roleLabel": roleLabel, "stepNumber": stepNumber}).ParseFS(templateFS, "templates/*.html")
 	if err != nil {
 		return nil, err
 	}

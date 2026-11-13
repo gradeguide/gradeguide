@@ -46,3 +46,11 @@ Eedi Ltd. (misconceptions):
   license, available at https://creativecommons.org/licenses/by/4.0. "Eedi
   Misconceptions Graph v1.0" (c) 2026 Eedi Ltd., licensed under CC BY 4.0
   and available at https://www.eedi.com.
+
+Short step names (data/step-names.textproto)
+============================================
+
+The short names given to learning components in data/step-names.textproto
+are adapted from the components' descriptions in the Learning Commons
+Knowledge Graph, which Learning Commons received from Achievement Network
+under CC BY-4.0. The adapted names are licensed under CC BY 4.0.

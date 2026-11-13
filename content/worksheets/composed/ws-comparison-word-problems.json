@@ -5,7 +5,6 @@
   "4.OA.A.1",
   "4.OA.A.2"
  ],
- "minutes": 20,
  "pages": [
   {
    "sections": [
@@ -307,7 +306,7 @@
      "estimatedHeight": 326
     }
    ],
-   "estimatedHeight": 744
+   "estimatedHeight": 752
   },
   {
    "sections": [
@@ -427,7 +426,7 @@
      "estimatedHeight": 492
     }
    ],
-   "estimatedHeight": 492
+   "estimatedHeight": 496
   }
  ],
  "key": [

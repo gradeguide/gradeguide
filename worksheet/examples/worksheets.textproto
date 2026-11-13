@@ -7,7 +7,6 @@
 worksheets {
   id: "ws-what-a-fraction-means"
   title: "What a fraction means"
-  minutes: 12
   seed: 101
   placements { fragment_id: "frag-name-the-shaded-fraction" }
   placements { fragment_id: "frag-shade-the-fraction" }
@@ -21,7 +20,6 @@ worksheets {
   id: "ws-fractions-on-a-number-line"
   max_pages: 2
   title: "Fractions on a number line"
-  minutes: 15
   seed: 102
   placements { fragment_id: "frag-fraction-at-arrow" }
   placements { fragment_id: "frag-label-the-marks" }
@@ -38,7 +36,6 @@ worksheets {
   id: "ws-equivalent-fractions-number-line"
   max_pages: 2
   title: "Equivalent fractions on a number line"
-  minutes: 15
   seed: 103
   placements { fragment_id: "frag-fraction-at-arrow" count: 2 omit_example: true stage: STAGE_REVIEW instruction: "Warm up: what fraction is at the arrow?" }
   placements { fragment_id: "frag-equivalent-on-number-lines" }
@@ -54,7 +51,6 @@ worksheets {
 worksheets {
   id: "ws-same-amount-different-names"
   title: "Same amount, different names"
-  minutes: 12
   seed: 104
   placements { fragment_id: "frag-equivalent-with-wall" }
   placements { fragment_id: "frag-equivalent-missing" }
@@ -68,7 +64,6 @@ worksheets {
 worksheets {
   id: "ws-comparing-fractions"
   title: "Comparing fractions"
-  minutes: 15
   seed: 105
   placements { fragment_id: "frag-compare-same-denominator" }
   placements { fragment_id: "frag-compare-same-numerator" }
@@ -84,7 +79,6 @@ worksheets {
   id: "ws-tenths-and-hundredths"
   max_pages: 2
   title: "Tenths and hundredths"
-  minutes: 12
   seed: 106
   placements { fragment_id: "frag-hundredths-grid" }
   placements { fragment_id: "frag-tenths-grid" }
@@ -93,7 +87,6 @@ worksheets {
 worksheets {
   id: "ws-arrays"
   title: "What × and ÷ mean"
-  minutes: 12
   seed: 107
   placements { fragment_id: "frag-array-facts" }
   placements { fragment_id: "frag-division-facts" }
@@ -103,7 +96,6 @@ worksheets {
   id: "ws-facts-check"
   max_pages: 2
   title: "Facts check"
-  minutes: 10
   seed: 108
   numbering { style: STYLE_SECTION_LETTERS }
   placements { fragment_id: "frag-multiplication-facts" count: 30 }
@@ -118,7 +110,6 @@ worksheets {
   id: "ws-area-models"
   max_pages: 2
   title: "Multiply with area models"
-  minutes: 15
   seed: 109
   placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
   placements { fragment_id: "frag-area-model-2-by-1" }
@@ -133,7 +124,6 @@ worksheets {
 worksheets {
   id: "ws-add-subtract"
   title: "Add and subtract big numbers"
-  minutes: 15
   seed: 110
   placements { fragment_id: "frag-column-add" }
   placements { fragment_id: "frag-column-subtract" }
@@ -142,7 +132,6 @@ worksheets {
 worksheets {
   id: "ws-multiply-in-columns"
   title: "From area models to columns"
-  minutes: 15
   seed: 111
   placements { fragment_id: "frag-area-model-2-by-1" count: 2 omit_example: true stage: STAGE_REVIEW }
   placements { fragment_id: "frag-column-multiply" count: 8 }
@@ -155,7 +144,6 @@ worksheets {
 worksheets {
   id: "ws-times-as-many"
   title: "Times as many"
-  minutes: 12
   seed: 112
   placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
   placements { fragment_id: "frag-times-as-many" }
@@ -164,7 +152,6 @@ worksheets {
 worksheets {
   id: "ws-angles"
   title: "Angles"
-  minutes: 12
   seed: 113
   placements { fragment_id: "frag-classify-angles" }
   placements { fragment_id: "frag-missing-angle" }
@@ -174,7 +161,6 @@ worksheets {
   id: "ws-rectangles"
   max_pages: 2
   title: "Perimeter and area"
-  minutes: 15
   seed: 114
   placements { fragment_id: "frag-rectangle-perimeter" }
   placements { fragment_id: "frag-rectangle-area" }
@@ -188,7 +174,6 @@ worksheets {
 worksheets {
   id: "ws-mixed-review"
   title: "Mixed review"
-  minutes: 15
   seed: 115
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }
@@ -208,7 +193,6 @@ worksheets {
 worksheets {
   id: "ws-place-value"
   title: "Place value to a hundred thousand"
-  minutes: 15
   seed: 116
   max_pages: 2
   placements { fragment_id: "frag-base-ten-blocks" }
@@ -223,7 +207,6 @@ worksheets {
 worksheets {
   id: "ws-rounding"
   title: "Rounding on a number line"
-  minutes: 12
   seed: 117
   placements { fragment_id: "frag-round-on-number-line" count: 6 }
 }
@@ -231,7 +214,6 @@ worksheets {
 worksheets {
   id: "ws-long-division"
   title: "Long division"
-  minutes: 15
   seed: 118
   placements { fragment_id: "frag-division-facts" count: 10 stage: STAGE_REVIEW instruction: "Warm up: divide." }
   placements { fragment_id: "frag-long-division" }
@@ -245,7 +227,6 @@ worksheets {
 worksheets {
   id: "ws-time"
   title: "Telling time and elapsed time"
-  minutes: 12
   max_pages: 2
   seed: 119
   placements { fragment_id: "frag-read-clock" }
@@ -255,7 +236,6 @@ worksheets {
 worksheets {
   id: "ws-measure-and-plot"
   title: "Measure, then plot"
-  minutes: 15
   seed: 120
   max_pages: 2
   placements { fragment_id: "frag-measure-with-ruler" }
@@ -265,7 +245,6 @@ worksheets {
 worksheets {
   id: "ws-protractor"
   title: "Measuring angles"
-  minutes: 12
   seed: 121
   placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW instruction: "Warm up: tick acute, right or obtuse." }
   placements { fragment_id: "frag-read-protractor" }
@@ -274,16 +253,14 @@ worksheets {
 worksheets {
   id: "ws-lines-and-rays"
   title: "Lines, rays and segments"
-  minutes: 10
   seed: 122
-  placements { fragment_id: "frag-name-figures" }
+  placements { fragment_id: "frag-name-figures" count: 4 }
   placements { fragment_id: "frag-name-line-pairs" }
 }
 
 worksheets {
   id: "ws-factors-and-multiples"
   title: "Factors and multiples"
-  minutes: 15
   seed: 123
   max_pages: 2
   placements { fragment_id: "frag-shade-multiples" }

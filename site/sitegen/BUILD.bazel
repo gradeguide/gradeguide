@@ -17,6 +17,10 @@ go_library(
 
 go_test(
     name = "sitegen_test",
-    srcs = ["pages_test.go"],
+    srcs = [
+        "pages_test.go",
+        "sitegen_test.go",
+    ],
     embed = [":sitegen"],
+    deps = ["//proto/graph/v1"],
 )

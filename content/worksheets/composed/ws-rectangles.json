@@ -5,7 +5,6 @@
   "3.MD.D.8",
   "4.MD.A.3"
  ],
- "minutes": 15,
  "pages": [
   {
    "sections": [
@@ -430,7 +429,7 @@
      "estimatedHeight": 242
     }
    ],
-   "estimatedHeight": 771
+   "estimatedHeight": 779
   },
   {
    "sections": [
@@ -590,7 +589,7 @@
      "estimatedHeight": 346
     }
    ],
-   "estimatedHeight": 346
+   "estimatedHeight": 350
   }
  ],
  "key": [

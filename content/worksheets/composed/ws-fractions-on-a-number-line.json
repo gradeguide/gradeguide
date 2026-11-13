@@ -4,7 +4,6 @@
  "headerLabels": [
   "3.NF.A.2"
  ],
- "minutes": 15,
  "pages": [
   {
    "sections": [
@@ -304,7 +303,7 @@
      "estimatedHeight": 238
     }
    ],
-   "estimatedHeight": 738
+   "estimatedHeight": 746
   },
   {
    "sections": [
@@ -460,7 +459,7 @@
      "estimatedHeight": 180
     }
    ],
-   "estimatedHeight": 456
+   "estimatedHeight": 464
   }
  ],
  "key": [

@@ -1,3 +1,4 @@
+load("@rules_go//go:def.bzl", "go_test")
 load("@aspect_bazel_lib//lib:run_binary.bzl", "run_binary")
 
 # The data file the website reads and the static pages search engines read,
@@ -12,6 +13,8 @@ run_binary(
         "//content/worksheets:catalog",
         "//content/worksheets:composed_sheets",
         "//data:graph",
+        "//data:step-names.textproto",
+        "//content/worksheets:worksheets_prints",
     ],
     outs = ["math.json"],
     args = [
@@ -19,10 +22,20 @@ run_binary(
         "--curated=content/math",
         "--worksheets=content/worksheets",
         "--composed=content/worksheets/composed",
+        "--step-names=$(location //data:step-names.textproto)",
+        "--prints=$(location //content/worksheets:worksheets_prints)",
         "--out=$(location math.json)",
         "--pages=$(RULEDIR)/pages",
     ],
     out_dirs = ["pages"],
     tool = "//site/cmd/gradeguide-sitegen",
     visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "math_test",
+    srcs = ["math_test.go"],
+    data = [":math.json"],
+    env = {"MATH_JSON": "$(rlocationpath :math.json)"},
+    deps = ["@rules_go//go/runfiles"],
 )

@@ -79,55 +79,138 @@ type skill struct {
 	Month       int32          `json:"month"`
 	Also        []also         `json:"also,omitempty"`
 	Parts       []part         `json:"parts,omitempty"`
-	Steps       []string       `json:"steps,omitempty"`
+	Steps       []step         `json:"steps,omitempty"`
 	Worksheets  []worksheetRef `json:"worksheets,omitempty"`
 	// Path is the skill's own page, such as
 	// "/math/grade-4/4-nf-a-1-equivalent-fractions/".
 	Path string `json:"path"`
 }
 
+// step is one of a skill's smaller steps: a learning component that
+// supports it.
+type step struct {
+	// The component's id.
+	ID string `json:"id"`
+	// The short name, or the description when the step has none.
+	Name string `json:"name"`
+	// The full description.
+	Text string `json:"text"`
+}
+
 // worksheetRef is a printable worksheet listed under a skill.
 type worksheetRef struct {
-	ID      string `json:"id"`
-	Title   string `json:"title"`
-	Minutes int32  `json:"minutes,omitempty"`
-	Pages   int    `json:"pages"`
-	// The worksheet to print, from the site's root.
+	ID    string `json:"id"`
+	Title string `json:"title"`
+	Pages int    `json:"pages"`
+	// The worksheet's page, from the site's root.
 	Href string `json:"href"`
-	// The worksheet beside a copy filled in with the answers.
+	// The worksheet's page, opened with the answers shown.
 	AnswersHref string `json:"answersHref"`
+	// What the sheet does for this skill: "teaches", "practises", "checks"
+	// or "reviews", the first of these any of its parts does.
+	Role string `json:"role"`
+	// The skill's steps the sheet practises, and where.
+	Steps []worksheetStep `json:"steps,omitempty"`
+	// The print files, from the site's root, when they were built: the
+	// sheet as a PDF, the sheet with its answers as a PDF, and page one as a
+	// PNG about 240 pixels wide.
+	PDF        string `json:"pdf,omitempty"`
+	AnswersPDF string `json:"answersPdf,omitempty"`
+	Thumbnail  string `json:"thumbnail,omitempty"`
 }
 
-// Sheet is a worksheet in the catalogue, as AttachWorksheets needs it.
+// worksheetStep is one of a skill's steps that a part of a worksheet
+// practises.
+type worksheetStep struct {
+	StepID string `json:"stepId"`
+	// Such as "Part B, problems 5–8".
+	Where string `json:"where"`
+}
+
+// Role is what a part of a worksheet does for a standard, strongest first.
+// A sheet's role for a skill is the strongest of its parts' roles.
+type Role int
+
+const (
+	RoleTeaches Role = iota + 1
+	RolePractises
+	RoleChecks
+	RoleReviews
+)
+
+var roleNames = map[Role]string{RoleTeaches: "teaches", RolePractises: "practises", RoleChecks: "checks", RoleReviews: "reviews"}
+
+// Sheet is a worksheet in the catalogue, as Build needs it.
 type Sheet struct {
-	ID      string
-	Title   string
-	Minutes int32
-	Pages   int
-	// The codes of the standards, or lettered parts, the sheet teaches,
-	// practises or checks. Standards it only reviews are left out, so a
-	// warm-up does not list a sheet under the skill it warms up.
-	Codes []string
+	ID    string
+	Title string
+	Pages int
+	Parts []SheetPart
+	// Whether <id>.pdf, <id>-answers.pdf and <id>.png were built.
+	Printed bool
 }
 
-// AttachWorksheets lists each sheet under every shown skill it covers,
-// directly or through one of the skill's lettered parts, in the order given.
-func AttachWorksheets(s *site, sheets []Sheet) {
-	for i := range s.Skills {
-		sk := &s.Skills[i]
-		codes := map[string]bool{sk.Code: true}
-		for _, p := range sk.Parts {
-			codes[p.Code] = true
-		}
-		for _, sh := range sheets {
-			for _, c := range sh.Codes {
-				if codes[c] {
-					sk.Worksheets = append(sk.Worksheets, worksheetRef{sh.ID, sh.Title, sh.Minutes, sh.Pages, "/worksheets/?answers=0&only=" + sh.ID, "/worksheets/?only=" + sh.ID})
-					break
+// SheetPart is one section of a worksheet: one placed fragment.
+type SheetPart struct {
+	// Such as "Part B, problems 5–8".
+	Where string
+	// The standards, or lettered parts, the fragment is aligned to.
+	Standards []Aligned
+	// The learning components the fragment is aligned to.
+	Components []string
+}
+
+// Aligned is a standard code and what a part does for it.
+type Aligned struct {
+	Code string
+	Role Role
+}
+
+// worksheetsFor lists the sheets with a part aligned to sk or to one of its
+// lettered parts, with the steps of sk each practises: sheets that only
+// review sk last, otherwise in the order given. canonical maps a component
+// to the step that stands for it.
+func worksheetsFor(sk skill, sheets []Sheet, canonical map[string]string) []worksheetRef {
+	codes := map[string]bool{sk.Code: true}
+	for _, p := range sk.Parts {
+		codes[p.Code] = true
+	}
+	mine := map[string]bool{}
+	for _, st := range sk.Steps {
+		mine[st.ID] = true
+	}
+	var main, reviews []worksheetRef
+	for _, sh := range sheets {
+		var role Role
+		var steps []worksheetStep
+		for _, p := range sh.Parts {
+			for _, a := range p.Standards {
+				if codes[a.Code] && (role == 0 || a.Role < role) {
+					role = a.Role
+				}
+			}
+			for _, comp := range p.Components {
+				if id := canonical[comp]; mine[id] {
+					steps = append(steps, worksheetStep{id, p.Where})
 				}
 			}
 		}
+		if role == 0 {
+			continue
+		}
+		ref := worksheetRef{ID: sh.ID, Title: sh.Title, Pages: sh.Pages, Href: "/worksheets/?only=" + sh.ID, AnswersHref: "/worksheets/?only=" + sh.ID + "&answers=1", Role: roleNames[role], Steps: steps}
+		if sh.Printed {
+			ref.PDF = "/worksheets/" + sh.ID + ".pdf"
+			ref.AnswersPDF = "/worksheets/" + sh.ID + "-answers.pdf"
+			ref.Thumbnail = "/worksheets/" + sh.ID + ".png"
+		}
+		if role == RoleReviews {
+			reviews = append(reviews, ref)
+		} else {
+			main = append(main, ref)
+		}
 	}
+	return append(main, reviews...)
 }
 
 type credit struct {
@@ -144,7 +227,7 @@ var limitNote = regexp.MustCompile(`\s*\([^)]*limited[^)]*\)`)
 // Build returns the site data for g and its curated layer c. A standard
 // without curated text is left out; the import's own check already fails the
 // build when a K–8 standard has none.
-func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
+func Build(g *graphpb.Graph, c *graphpb.CuratedLayer, sheets []Sheet) (*site, error) {
 	out := &site{Version: g.GetSnapshot().GetVersion(), Grades: Grades}
 	creditSet := map[credit]bool{}
 	addCredit := func(a *graphpb.Attribution) {
@@ -228,11 +311,19 @@ func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
 		usedUnits[p.GetUnitId()] = true
 	}
 
-	steps := map[string][]string{}
 	components := map[string]*graphpb.Component{}
 	for _, comp := range g.GetComponents() {
 		components[comp.GetId()] = comp
 	}
+	names := map[string]string{}
+	for _, cc := range c.GetComponents() {
+		names[cc.GetComponentId()] = cc.GetName()
+	}
+	// Each shown skill's candidate steps, in link order, one per distinct
+	// description. canonical maps every supporting component to the
+	// candidate with its description.
+	candidates := map[string][]step{}
+	canonical := map[string]string{}
 	edges := map[[2]string]bool{}
 	for _, l := range g.GetLinks() {
 		switch l.GetKind() {
@@ -243,10 +334,23 @@ func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
 				continue
 			}
 			d := strings.TrimSpace(limitNote.ReplaceAllString(comp.GetDescription(), ""))
-			if d != "" && !contains(steps[to], d) && len(steps[to]) < maxComponents {
-				steps[to] = append(steps[to], d)
-				addCredit(comp.GetAttribution())
+			if d == "" {
+				continue
 			}
+			found := ""
+			for _, st := range candidates[to] {
+				if st.Text == d {
+					found = st.ID
+				}
+			}
+			if found == "" {
+				found = comp.GetId()
+				candidates[to] = append(candidates[to], step{ID: found, Text: d})
+			}
+			if names[found] == "" {
+				names[found] = names[comp.GetId()]
+			}
+			canonical[comp.GetId()] = found
 		case graphpb.Link_KIND_BUILDS_TOWARDS:
 			from, to := top[l.GetFromId()], top[l.GetToId()]
 			if from == "" || to == "" || from == to || edges[[2]string{from, to}] {
@@ -255,6 +359,42 @@ func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
 			edges[[2]string{from, to}] = true
 			out.Links = append(out.Links, [2]string{from, to})
 			addCredit(l.GetAttribution())
+		}
+	}
+
+	// A skill keeps every step a worksheet practises, then the others in
+	// link order up to maxComponents.
+	used := map[string]bool{}
+	for _, sh := range sheets {
+		for _, p := range sh.Parts {
+			for _, comp := range p.Components {
+				if id := canonical[comp]; id != "" {
+					used[id] = true
+				}
+			}
+		}
+	}
+	steps := map[string][]step{}
+	for to, cs := range candidates {
+		room := maxComponents
+		for _, st := range cs {
+			if used[st.ID] {
+				room--
+			}
+		}
+		for _, st := range cs {
+			if !used[st.ID] {
+				if room <= 0 {
+					continue
+				}
+				room--
+			}
+			st.Name = names[st.ID]
+			if st.Name == "" {
+				st.Name = st.Text
+			}
+			steps[to] = append(steps[to], st)
+			addCredit(components[st.ID].GetAttribution())
 		}
 	}
 
@@ -289,6 +429,7 @@ func Build(g *graphpb.Graph, c *graphpb.CuratedLayer) (*site, error) {
 		}
 		sort.Slice(sk.Also, func(i, j int) bool { return sk.Also[i].UnitID < sk.Also[j].UnitID })
 		addCredit(s.GetAttribution())
+		sk.Worksheets = worksheetsFor(sk, sheets, canonical)
 		out.Skills = append(out.Skills, sk)
 	}
 	if len(out.Skills) == 0 {
@@ -370,13 +511,4 @@ func codeLess(a, b string) bool {
 		return pa[i] < pb[i]
 	}
 	return len(pa) < len(pb)
-}
-
-func contains(list []string, s string) bool {
-	for _, x := range list {
-		if x == s {
-			return true
-		}
-	}
-	return false
 }

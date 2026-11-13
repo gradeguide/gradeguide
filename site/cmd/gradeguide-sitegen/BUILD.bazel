@@ -10,6 +10,7 @@ go_library(
         "//graph/worksheets",
         "//proto/graph/v1",
         "//site/sitegen",
+        "@org_golang_google_protobuf//encoding/prototext",
         "@org_golang_google_protobuf//proto",
     ],
 )

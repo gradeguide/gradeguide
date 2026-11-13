@@ -8,7 +8,6 @@
   "4.G.A.1",
   "4.MD.A.3"
  ],
- "minutes": 15,
  "pages": [
   {
    "sections": [
@@ -450,7 +449,7 @@
      "estimatedHeight": 236
     }
    ],
-   "estimatedHeight": 692
+   "estimatedHeight": 708
   },
   {
    "sections": [
@@ -692,7 +691,7 @@
      "estimatedHeight": 424
     }
    ],
-   "estimatedHeight": 603
+   "estimatedHeight": 611
   }
  ],
  "key": [

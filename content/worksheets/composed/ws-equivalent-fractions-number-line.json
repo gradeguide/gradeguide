@@ -6,7 +6,6 @@
   "3.NF.A.3",
   "4.NF.A.1"
  ],
- "minutes": 15,
  "pages": [
   {
    "sections": [
@@ -415,7 +414,7 @@
      "estimatedHeight": 106
     }
    ],
-   "estimatedHeight": 788
+   "estimatedHeight": 800
   },
   {
    "sections": [
@@ -612,7 +611,7 @@
      "estimatedHeight": 276
     }
    ],
-   "estimatedHeight": 382
+   "estimatedHeight": 390
   }
  ],
  "key": [
