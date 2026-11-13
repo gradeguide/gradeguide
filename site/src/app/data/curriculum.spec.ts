@@ -44,6 +44,34 @@ describe('Curriculum', () => {
   });
 });
 
+describe('Curriculum steps and worksheets', () => {
+  const data: SiteData = {
+    ...DATA,
+    skills: [
+      {
+        ...skill('s', '4.NF.A.1', '4', 1),
+        steps: ['Explain why $\\frac{a}{b}$ works', { id: 'c2', name: 'Short', text: 'Long' }],
+        worksheets: [
+          { id: 'r', title: 'r', pages: 1, href: '', answersHref: '', role: 'reviews' },
+          { id: 'p', title: 'p', pages: 1, href: '', answersHref: '', role: 'practises' },
+        ],
+      },
+    ],
+  };
+  const c = new Curriculum(data);
+
+  it('gives text-only steps an id and plain text', () => {
+    expect(c.steps('s')).toEqual([
+      { id: 's#1', name: 'Explain why a/b works', text: 'Explain why a/b works' },
+      { id: 'c2', name: 'Short', text: 'Long' },
+    ]);
+  });
+
+  it('lists review worksheets last', () => {
+    expect(c.worksheets('s').map((w) => w.id)).toEqual(['p', 'r']);
+  });
+});
+
 describe('plainStatement', () => {
   it('turns TeX into plain text', () => {
     expect(plainStatement('Explain why $\\frac{a}{b}$ equals $\\frac{(n \\times a)}{(n \\times b)}$.')).toBe('Explain why a/b equals (n × a)/(n × b).');

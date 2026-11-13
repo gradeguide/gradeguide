@@ -36,7 +36,10 @@ ts_config(
 
 angular_test(
     name = "app_test",
-    srcs = ["src/app/data/curriculum.spec.ts"],
+    srcs = [
+        "src/app/data/curriculum.spec.ts",
+        "src/app/skill/skill-worksheets.component.spec.ts",
+    ],
     tsconfig = ":spec_tsconfig",
     deps = [":app"],
 )
