@@ -71,8 +71,6 @@ export type WorksheetRole = 'teaches' | 'practises' | 'checks' | 'reviews';
 export interface WorksheetRef {
   id: string;
   title: string;
-  /** Not shown: how long a sheet takes depends on the child. */
-  minutes?: number;
   pages: number;
   /** The worksheet to print. */
   href: string;
