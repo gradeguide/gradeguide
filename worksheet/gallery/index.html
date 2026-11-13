@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Worksheets</title>
     <style>
+      @font-face { font-family: Andika; src: url(fonts/Andika-Regular.ttf); font-weight: 400; }
+      @font-face { font-family: Andika; src: url(fonts/Andika-Bold.ttf); font-weight: 700; }
       body { margin: 0; background: #e9e9e9; }
       @media print {
         body { background: white; }
         nav, .caption, .meta { display: none !important; }
+        article { padding: 0 !important; border: 0 !important; }
+        .cols { display: block !important; }
         .page { box-shadow: none !important; margin: 0 !important; break-after: page; }
+        .cols > div:last-child ws-sheet .page:last-child { break-after: auto; }
       }
       @page { size: letter; margin: 0; }
     </style>

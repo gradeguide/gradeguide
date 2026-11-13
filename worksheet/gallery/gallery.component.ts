@@ -19,10 +19,12 @@ import { compose } from '../engine/compose.js';
     @for (c of shown(); track c.id) {
       <article [id]="c.id" [attr.data-worksheet]="c.id">
         <div class="cols">
-          <div>
-            <div class="caption">Worksheet</div>
-            <ws-sheet [sheet]="c.sheet" />
-          </div>
+          @if (blank()) {
+            <div>
+              <div class="caption">Worksheet</div>
+              <ws-sheet [sheet]="c.sheet" />
+            </div>
+          }
           @if (answers()) {
             <div>
               <div class="caption">Filled in from the answer key</div>
@@ -38,7 +40,7 @@ import { compose } from '../engine/compose.js';
     }
   `,
   styles: `
-    :host { display: block; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    :host { display: block; font-family: Andika, 'Helvetica Neue', Arial, sans-serif; }
     nav { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 12px 16px; background: #f3f3f3; font-size: 13px; }
     article { padding: 16px; border-bottom: 1px solid #ccc; }
     .cols { display: flex; gap: 24px; flex-wrap: wrap; }
@@ -51,6 +53,8 @@ export class GalleryComponent {
   // Show only this worksheet id. Empty: all.
   readonly only = input('');
   readonly answers = input(true);
+  // Show the blank sheet. False with answers shows only the filled copy.
+  readonly blank = input(true);
   // Compose for children who write large.
   readonly large = input(false);
 

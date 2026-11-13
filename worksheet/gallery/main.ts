@@ -44,7 +44,9 @@ async function main() {
   // required.
   ref.setInput('library', library);
   ref.setInput('only', params.get('only') ?? '');
+  // answers=0: the blank sheet only. answers=only: the filled copy only.
   ref.setInput('answers', params.get('answers') !== '0');
+  ref.setInput('blank', params.get('answers') !== 'only');
   ref.setInput('large', params.get('writing') === 'large');
   app.attachView(ref.hostView);
   ref.changeDetectorRef.detectChanges();

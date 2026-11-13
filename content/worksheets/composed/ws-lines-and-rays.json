@@ -140,69 +140,6 @@
         }
        ],
        "key": "ray"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "lineFigure": {
-          "kind": "KIND_SEGMENT",
-          "points": [
-           "R",
-           "S"
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "line segment",
-           "line",
-           "ray"
-          ],
-          "field": {
-           "id": "q5",
-           "label": "name of the figure",
-           "answer": {
-            "text": "line segment"
-           }
-          }
-         }
-        }
-       ],
-       "key": "line segment"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "lineFigure": {
-          "kind": "KIND_SEGMENT",
-          "rotation": -30,
-          "points": [
-           "J",
-           "K"
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "line segment",
-           "line",
-           "ray"
-          ],
-          "field": {
-           "id": "q6",
-           "label": "name of the figure",
-           "answer": {
-            "text": "line segment"
-           }
-          }
-         }
-        }
-       ],
-       "key": "line segment"
       }
      ],
      "columns": 2,
@@ -215,14 +152,14 @@
       ],
       "rationale": "Figures are drawn at different slants so the child goes by arrows and endpoints, not by how the figure sits."
      },
-     "estimatedHeight": 506
+     "estimatedHeight": 364
     },
     {
      "label": "B",
      "instruction": "Are the lines parallel, perpendicular or just intersecting?",
      "items": [
       {
-       "label": "7",
+       "label": "5",
        "nodes": [
         {
          "lineFigure": {
@@ -237,7 +174,7 @@
            "intersecting"
           ],
           "field": {
-           "id": "q7",
+           "id": "q5",
            "label": "name of the figure",
            "answer": {
             "text": "parallel"
@@ -249,7 +186,7 @@
        "key": "parallel"
       },
       {
-       "label": "8",
+       "label": "6",
        "nodes": [
         {
          "lineFigure": {
@@ -264,7 +201,7 @@
            "intersecting"
           ],
           "field": {
-           "id": "q8",
+           "id": "q6",
            "label": "name of the figure",
            "answer": {
             "text": "perpendicular"
@@ -276,7 +213,7 @@
        "key": "perpendicular"
       },
       {
-       "label": "9",
+       "label": "7",
        "nodes": [
         {
          "lineFigure": {
@@ -292,7 +229,7 @@
            "intersecting"
           ],
           "field": {
-           "id": "q9",
+           "id": "q7",
            "label": "name of the figure",
            "answer": {
             "text": "intersecting"
@@ -304,7 +241,7 @@
        "key": "intersecting"
       },
       {
-       "label": "10",
+       "label": "8",
        "nodes": [
         {
          "lineFigure": {
@@ -320,7 +257,7 @@
            "intersecting"
           ],
           "field": {
-           "id": "q10",
+           "id": "q8",
            "label": "name of the figure",
            "answer": {
             "text": "intersecting"
@@ -347,7 +284,7 @@
      "estimatedHeight": 318
     }
    ],
-   "estimatedHeight": 824
+   "estimatedHeight": 690
   }
  ],
  "key": [
@@ -397,7 +334,7 @@
     "id": "q5",
     "label": "name of the figure",
     "answer": {
-     "text": "line segment"
+     "text": "parallel"
     }
    }
   },
@@ -407,7 +344,7 @@
     "id": "q6",
     "label": "name of the figure",
     "answer": {
-     "text": "line segment"
+     "text": "perpendicular"
     }
    }
   },
@@ -417,7 +354,7 @@
     "id": "q7",
     "label": "name of the figure",
     "answer": {
-     "text": "parallel"
+     "text": "intersecting"
     }
    }
   },
@@ -425,26 +362,6 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "name of the figure",
-    "answer": {
-     "text": "perpendicular"
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9",
-    "label": "name of the figure",
-    "answer": {
-     "text": "intersecting"
-    }
-   }
-  },
-  {
-   "itemLabel": "10",
-   "field": {
-    "id": "q10",
     "label": "name of the figure",
     "answer": {
      "text": "intersecting"

@@ -1,6 +1,7 @@
 """worksheet_library: a catalogue of worksheets, checked, composed and viewable."""
 
 load("@aspect_bazel_lib//lib:write_source_files.bzl", "write_source_files")
+load("@aspect_bazel_lib//lib:run_binary.bzl", "run_binary")
 load("@aspect_rules_js//js:defs.bzl", "js_run_binary")
 
 def worksheet_library(name, srcs = [], library = None, composed_dir = None):
@@ -11,6 +12,8 @@ def worksheet_library(name, srcs = [], library = None, composed_dir = None):
       <name>_composed: every worksheet composed, one JSON ComposedSheet per
         worksheet. The build fails if any worksheet has a problem.
       <name>_gallery: a directory to serve that shows every worksheet.
+      <name>_prints: every worksheet as <id>.pdf, <id>-answers.pdf and a
+        page-one <id>.png, rendered in a pinned headless Chromium.
       <name>_golden and <name>_golden_test, when composed_dir is set: the
         target that rewrites the checked-in composed sheets in composed_dir,
         and the test that they match.
@@ -59,18 +62,40 @@ def worksheet_library(name, srcs = [], library = None, composed_dir = None):
             ":" + name,
             "//worksheet/gallery",
             "//worksheet/gallery:index.html",
+            "//worksheet/fonts:OFL.txt",
+            "@andika_regular//file",
+            "@andika_bold//file",
         ],
         outs = [
             name + "_gallery/index.html",
             name + "_gallery/gallery.js",
             name + "_gallery/library.binpb",
+            name + "_gallery/fonts/Andika-Regular.ttf",
+            name + "_gallery/fonts/Andika-Bold.ttf",
+            name + "_gallery/fonts/OFL.txt",
         ],
         cmd = """
           d=$(RULEDIR)/{name}_gallery
           cp $(location //worksheet/gallery:index.html) $$d/index.html
           cp $(location //worksheet/gallery) $$d/gallery.js
           cp $(location :{name}) $$d/library.binpb
+          cp $(location @andika_regular//file) $$d/fonts/Andika-Regular.ttf
+          cp $(location @andika_bold//file) $$d/fonts/Andika-Bold.ttf
+          cp $(location //worksheet/fonts:OFL.txt) $$d/fonts/OFL.txt
         """.format(name = name),
+    )
+
+    # Every worksheet as print files: <id>.pdf, <id>-answers.pdf and <id>.png,
+    # page one about 240 pixels wide.
+    run_binary(
+        name = name + "_prints",
+        srcs = [":" + name + "_gallery"],
+        args = [
+            "--gallery=$(RULEDIR)/" + name + "_gallery",
+            "--out=$(RULEDIR)/" + name + "_prints",
+        ],
+        out_dirs = [name + "_prints"],
+        tool = "//worksheet/render:render-worksheets",
     )
 
     if composed_dir:

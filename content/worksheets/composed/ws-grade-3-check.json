@@ -766,7 +766,12 @@
       ]
      },
      "estimatedHeight": 186
-    },
+    }
+   ],
+   "estimatedHeight": 658
+  },
+  {
+   "sections": [
     {
      "label": "5",
      "instruction": "Subtract.",
@@ -854,12 +859,7 @@
       ]
      },
      "estimatedHeight": 168
-    }
-   ],
-   "estimatedHeight": 810
-  },
-  {
-   "sections": [
+    },
     {
      "label": "6",
      "instruction": "Find the area.",
@@ -991,7 +991,7 @@
      "estimatedHeight": 242
     }
    ],
-   "estimatedHeight": 242
+   "estimatedHeight": 418
   }
  ],
  "key": [
