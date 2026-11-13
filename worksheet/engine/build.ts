@@ -190,6 +190,12 @@ export function fieldsOf(nodes: readonly Node[]): Field[] {
       case 'workSpace':
         add(k.value.field);
         break;
+      case 'numberBond':
+        [k.value.whole, k.value.left, k.value.right].forEach((p) => add(p?.field));
+        break;
+      case 'numberGrid':
+        k.value.blanks.forEach((b) => add(b.field));
+        break;
     }
   };
   nodes.forEach(walk);

@@ -1,0 +1,940 @@
+{
+ "worksheetId": "ws-g1-equal-sign",
+ "title": "The equal sign",
+ "headerLabels": [
+  "1.OA.D.7",
+  "1.OA.D.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Is it true or false? Tick one.",
+     "explainer": "The = sign means both sides are worth the same.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "9"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is the equation true",
+           "answer": {
+            "text": "true"
+           }
+          }
+         }
+        }
+       ],
+       "key": "true"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "11"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is the equation true",
+           "answer": {
+            "text": "false"
+           }
+          }
+         }
+        }
+       ],
+       "key": "false"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "0"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is the equation true",
+           "answer": {
+            "text": "true"
+           }
+          }
+         }
+        }
+       ],
+       "key": "true"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "7"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is the equation true",
+           "answer": {
+            "text": "true"
+           }
+          }
+         }
+        }
+       ],
+       "key": "true"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "0"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is the equation true",
+           "answer": {
+            "text": "false"
+           }
+          }
+         }
+        }
+       ],
+       "key": "false"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "11"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is the equation true",
+           "answer": {
+            "text": "false"
+           }
+          }
+         }
+        }
+       ],
+       "key": "false"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "is the equation true",
+           "answer": {
+            "text": "false"
+           }
+          }
+         }
+        }
+       ],
+       "key": "false"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "13"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "true",
+           "false"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "is the equation true",
+           "answer": {
+            "text": "true"
+           }
+          }
+         }
+        }
+       ],
+       "key": "true"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-true-or-false",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Decide whether an equation is true by working out both sides.",
+      "principles": [
+       "PRINCIPLE_ERROR_ANALYSIS"
+      ],
+      "misconceptions": [
+       "Reading = as \"the answer comes next\", so 7 = 7 or 9 = 4 + 5 looks wrong."
+      ]
+     },
+     "estimatedHeight": 300
+    },
+    {
+     "label": "B",
+     "instruction": "Fill in the missing number.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "15"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "15 = ? + 12",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "12"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15 = 3 + 12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q10",
+             "label": "? − 6 = 4",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "4"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 − 6 = 4"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q11",
+             "label": "? + 1 = 13",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "13"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 + 1 = 13"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "11 = ? + 2",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11 = 9 + 2"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "7 − ? = 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 − 5 = 2"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q14",
+             "label": "? − 4 = 4",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "4"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 − 4 = 4"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q15",
+             "label": "? − 2 = 10",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 − 2 = 10"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "14 = ? + 6",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "14 = 8 + 6"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "19"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "19 = ? + 2",
+             "answer": {
+              "text": "17"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "19 = 17 + 2"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q18",
+             "label": "? − 12 = 6",
+             "answer": {
+              "text": "18"
+             }
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "12"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 − 12 = 6"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-missing-number",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the missing number in an addition or subtraction equation.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 550
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is the equation true",
+    "answer": {
+     "text": "true"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is the equation true",
+    "answer": {
+     "text": "false"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is the equation true",
+    "answer": {
+     "text": "true"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is the equation true",
+    "answer": {
+     "text": "true"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is the equation true",
+    "answer": {
+     "text": "false"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is the equation true",
+    "answer": {
+     "text": "false"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "is the equation true",
+    "answer": {
+     "text": "false"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "is the equation true",
+    "answer": {
+     "text": "true"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "15 = ? + 12",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "? − 6 = 4",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "? + 1 = 13",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "11 = ? + 2",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "7 − ? = 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "? − 4 = 4",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "? − 2 = 10",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "14 = ? + 6",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "19 = ? + 2",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "? − 12 = 6",
+    "answer": {
+     "text": "18"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Understand = as \"the same as\", and find missing numbers.",
+  "principles": [
+   "PRINCIPLE_ERROR_ANALYSIS"
+  ]
+ },
+ "advice": [
+  "\"Is it true or false? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Fill in the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

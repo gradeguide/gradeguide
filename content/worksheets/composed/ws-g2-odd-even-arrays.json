@@ -1,0 +1,617 @@
+{
+ "worksheetId": "ws-g2-odd-even-arrays",
+ "title": "Odd, even and arrays",
+ "headerLabels": [
+  "2.OA.C.3",
+  "2.OA.C.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Circle the dots in pairs. Is the number odd or even?",
+     "explainer": "Even numbers make pairs with none left over. An even number is a double: 8 = 4 + 4.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 9
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is 9 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 12
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is 12 odd or even",
+           "answer": {
+            "text": "even"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "half of 12",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "half of 12",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "even; 12 = 6 + 6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 11
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is 11 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 16
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is 16 odd or even",
+           "answer": {
+            "text": "even"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "half of 16",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "half of 16",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "even; 16 = 8 + 8"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 15
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is 15 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 5
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is 5 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-odd-even",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell whether a number up to 20 is odd or even by pairing, and write an even number as a double.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 352
+    },
+    {
+     "label": "B",
+     "instruction": "Write the total as an addition of the rows.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 5,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "5 rows of 3",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 + 3 + 3 + 3 + 3 = 15"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 3,
+          "cols": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "3 rows of 4",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 + 4 + 4 = 12"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "4 rows of 2",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 + 2 + 2 + 2 = 8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 2,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "2 rows of 3",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 + 3 = 6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-array-sums",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the total in an array of up to 5 rows and 5 columns by adding equal rows.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ]
+     },
+     "estimatedHeight": 328
+    }
+   ],
+   "estimatedHeight": 688
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is 9 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is 12 odd or even",
+    "answer": {
+     "text": "even"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "half of 12",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "half of 12",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is 11 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is 16 odd or even",
+    "answer": {
+     "text": "even"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "half of 16",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "half of 16",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is 15 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is 5 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "5 rows of 3",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3 rows of 4",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4 rows of 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "2 rows of 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Tell odd from even by pairing, then add the rows of an array.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,626 @@
+{
+ "worksheetId": "ws-g1-length",
+ "title": "Comparing and measuring length",
+ "headerLabels": [
+  "1.MD.A.1",
+  "1.MD.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick the longest and the shortest strip.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "A",
+            "units": 5
+           },
+           {
+            "name": "B",
+            "units": 2
+           },
+           {
+            "name": "C",
+            "units": 7
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q1",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q1-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "B"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; B"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 4
+           },
+           {
+            "name": "C",
+            "units": 6
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q2",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q2-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; A"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 5
+           },
+           {
+            "name": "C",
+            "units": 6
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q3",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q3-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; A"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 6
+           },
+           {
+            "name": "C",
+            "units": 5
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q4",
+              "label": "the longest strip",
+              "answer": {
+               "text": "B"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q4-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "B; A"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-order-three",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Put three lengths in order.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 454
+    },
+    {
+     "label": "B",
+     "instruction": "How many units long is the strip?",
+     "explainer": "Each box is one unit. The units touch, with no gaps and no overlaps.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Strip",
+            "units": 6
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "units long",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "units long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It is 6 units long."
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Strip",
+            "units": 3
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "units long",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "units long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It is 3 units long."
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "tapeDiagram": {
+          "tapes": [
+           {
+            "name": "Strip",
+            "units": 7
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It is"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "units long",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "units long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "It is 7 units long."
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-count-units",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Measure a length by counting equal units laid end to end.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 256
+    }
+   ],
+   "estimatedHeight": 718
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the longest strip",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "units long",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "units long",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "units long",
+    "answer": {
+     "text": "7"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Order three lengths, then measure lengths in units.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Tick the longest and the shortest strip.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"How many units long is the strip?\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

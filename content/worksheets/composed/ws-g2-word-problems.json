@@ -1,0 +1,322 @@
+{
+ "worksheetId": "ws-g2-word-problems",
+ "title": "Story problems within 100",
+ "headerLabels": [
+  "2.OA.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A class has 27 crayons. The teacher buys 45 more. How many crayons does the class have now?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q1",
+           "label": "crayons the class has",
+           "answer": {
+            "text": "72",
+            "also": [
+             "72 crayons"
+            ],
+            "work": "27 + 45"
+           }
+          }
+         }
+        }
+       ],
+       "key": "72"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "There are 63 apples in a basket. 28 apples are eaten. How many apples are left?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q2",
+           "label": "apples left",
+           "answer": {
+            "text": "35",
+            "also": [
+             "35 apples"
+            ],
+            "work": "63 − 28"
+           }
+          }
+         }
+        }
+       ],
+       "key": "35"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Lena scored 46 points. Omar scored 19 fewer points than Lena. How many points did Omar score?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q3",
+           "label": "points Omar scored",
+           "answer": {
+            "text": "27",
+            "also": [
+             "27 points"
+            ],
+            "work": "46 − 19"
+           }
+          }
+         }
+        }
+       ],
+       "key": "27"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "Kai has 34 cards. He gets 18 more cards. Then he gives 25 cards to his sister."
+           }
+          ],
+          "parts": [
+           {
+            "label": "4a",
+            "prompt": [
+             {
+              "text": "How many cards does Kai have after he gets more?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q4a",
+                "label": "cards after Kai gets more",
+                "answer": {
+                 "text": "52",
+                 "also": [
+                  "52 cards"
+                 ],
+                 "work": "34 + 18"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "4b",
+            "prompt": [
+             {
+              "text": "How many cards does Kai have at the end?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q4b",
+                "label": "cards Kai has at the end",
+                "answer": {
+                 "text": "27",
+                 "also": [
+                  "27 cards"
+                 ],
+                 "work": "52 − 25"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4a: 34 + 18 = 52; 4b: 52 − 25 = 27"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-word-problems-within-100",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve one- and two-step adding and subtracting stories within 100.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories mix adding and subtracting, comparing, and two steps, so the child decides what each one needs.",
+      "misconceptions": [
+       "Adding whenever a story says \"more\" or \"fewer\" without reading what is asked."
+      ]
+     },
+     "estimatedHeight": 764
+    }
+   ],
+   "estimatedHeight": 768
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A bus has 52 seats. 24 children and 9 grown-ups get on. How many seats are empty?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q5",
+           "label": "empty seats",
+           "answer": {
+            "text": "19",
+            "also": [
+             "19 seats"
+            ],
+            "work": "52 − 24 − 9"
+           }
+          }
+         }
+        }
+       ],
+       "key": "19"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-word-problems-within-100",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve one- and two-step adding and subtracting stories within 100.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories mix adding and subtracting, comparing, and two steps, so the child decides what each one needs.",
+      "misconceptions": [
+       "Adding whenever a story says \"more\" or \"fewer\" without reading what is asked."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 202
+    }
+   ],
+   "estimatedHeight": 206
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "crayons the class has",
+    "answer": {
+     "text": "72",
+     "also": [
+      "72 crayons"
+     ],
+     "work": "27 + 45"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "apples left",
+    "answer": {
+     "text": "35",
+     "also": [
+      "35 apples"
+     ],
+     "work": "63 − 28"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "points Omar scored",
+    "answer": {
+     "text": "27",
+     "also": [
+      "27 points"
+     ],
+     "work": "46 − 19"
+    }
+   }
+  },
+  {
+   "itemLabel": "4a",
+   "field": {
+    "id": "q4a",
+    "label": "cards after Kai gets more",
+    "answer": {
+     "text": "52",
+     "also": [
+      "52 cards"
+     ],
+     "work": "34 + 18"
+    }
+   }
+  },
+  {
+   "itemLabel": "4b",
+   "field": {
+    "id": "q4b",
+    "label": "cards Kai has at the end",
+    "answer": {
+     "text": "27",
+     "also": [
+      "27 cards"
+     ],
+     "work": "52 − 25"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "empty seats",
+    "answer": {
+     "text": "19",
+     "also": [
+      "19 seats"
+     ],
+     "work": "52 − 24 − 9"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve one- and two-step stories within 100.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

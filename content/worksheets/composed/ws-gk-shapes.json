@@ -1,0 +1,1124 @@
+{
+ "worksheetId": "ws-gk-shapes",
+ "title": "Shapes",
+ "headerLabels": [
+  "K.G.A.2",
+  "K.G.B.4",
+  "K.G.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick the name of the shape.",
+     "explainer": "A shape keeps its name when it is bigger, smaller or turned.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 2.5
+              },
+              {
+               "x": -0.65,
+               "y": 2.41
+              },
+              {
+               "x": -1.25,
+               "y": 2.17
+              },
+              {
+               "x": -1.77,
+               "y": 1.77
+              },
+              {
+               "x": -2.17,
+               "y": 1.25
+              },
+              {
+               "x": -2.41,
+               "y": 0.65
+              },
+              {
+               "x": -2.5
+              },
+              {
+               "x": -2.41,
+               "y": -0.65
+              },
+              {
+               "x": -2.17,
+               "y": -1.25
+              },
+              {
+               "x": -1.77,
+               "y": -1.77
+              },
+              {
+               "x": -1.25,
+               "y": -2.17
+              },
+              {
+               "x": -0.65,
+               "y": -2.41
+              },
+              {
+               "y": -2.5
+              },
+              {
+               "x": 0.65,
+               "y": -2.41
+              },
+              {
+               "x": 1.25,
+               "y": -2.17
+              },
+              {
+               "x": 1.77,
+               "y": -1.77
+              },
+              {
+               "x": 2.17,
+               "y": -1.25
+              },
+              {
+               "x": 2.41,
+               "y": -0.65
+              },
+              {
+               "x": 2.5
+              },
+              {
+               "x": 2.41,
+               "y": 0.65
+              },
+              {
+               "x": 2.17,
+               "y": 1.25
+              },
+              {
+               "x": 1.77,
+               "y": 1.77
+              },
+              {
+               "x": 1.25,
+               "y": 2.17
+              },
+              {
+               "x": 0.65,
+               "y": 2.41
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q1",
+              "label": "name of the shape",
+              "answer": {
+               "text": "circle"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "circle"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 3
+              },
+              {
+               "x": 3,
+               "y": 3
+              },
+              {
+               "y": 3
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q2",
+              "label": "name of the shape",
+              "answer": {
+               "text": "square"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "square"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2,
+               "y": 3.4640000000000004
+              },
+              {
+               "x": -1.6800000000000002,
+               "y": 1.8960000000000001
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q3",
+              "label": "name of the shape",
+              "answer": {
+               "text": "triangle"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "triangle"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.7999999999999998,
+               "y": 3.12
+              },
+              {
+               "x": 0.24,
+               "y": 4.02
+              },
+              {
+               "x": -1.56,
+               "y": 0.8999999999999999
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q4",
+              "label": "name of the shape",
+              "answer": {
+               "text": "rectangle"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "rectangle"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.7999999999999998
+              },
+              {
+               "x": 1.7999999999999998,
+               "y": 3
+              },
+              {
+               "y": 3
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q5",
+              "label": "name of the shape",
+              "answer": {
+               "text": "rectangle"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "rectangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-name-shapes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name circles, triangles, squares, rectangles and hexagons of any size or turn.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking a turned square is no longer a square."
+      ]
+     },
+     "estimatedHeight": 737
+    }
+   ],
+   "estimatedHeight": 741
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Tick the name of the shape.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 2.6
+              },
+              {
+               "x": -2.25,
+               "y": -1.3
+              },
+              {
+               "x": 2.25,
+               "y": -1.3
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "circle",
+              "triangle",
+              "square",
+              "rectangle",
+              "hexagon"
+             ],
+             "field": {
+              "id": "q6",
+              "label": "name of the shape",
+              "answer": {
+               "text": "triangle"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "triangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-name-shapes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name circles, triangles, squares, rectangles and hexagons of any size or turn.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "misconceptions": [
+       "Thinking a turned square is no longer a square."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 174
+    },
+    {
+     "label": "B",
+     "instruction": "Count the sides and corners.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -1.8,
+               "y": 1.04
+              },
+              {
+               "x": -1.544,
+               "y": -1.3920000000000001
+              },
+              {
+               "x": 0.8400000000000001,
+               "y": -1.904
+              },
+              {
+               "x": 2.064,
+               "y": 0.22400000000000003
+              },
+              {
+               "x": 0.43200000000000005,
+               "y": 2.032
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q7",
+                   "label": "sides",
+                   "answer": {
+                    "text": "5"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q7-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "5"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q7-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "pentagon"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5, 5, pentagon"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.4480000000000002,
+               "y": 5.408
+              },
+              {
+               "x": -1.2800000000000002,
+               "y": 4.488
+              },
+              {
+               "x": -1.904,
+               "y": 2.168
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q8",
+                   "label": "sides",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q8-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q8-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "quadrilateral"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4, quadrilateral"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.7680000000000002,
+               "y": 1.6
+              },
+              {
+               "x": 1.168,
+               "y": 4.368
+              },
+              {
+               "x": -1.6,
+               "y": 2.7680000000000002
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q9",
+                   "label": "sides",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q9-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q9-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "quadrilateral"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4, quadrilateral"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -2.008,
+               "y": 0.536
+              },
+              {
+               "x": 0.536,
+               "y": -2.008
+              },
+              {
+               "x": 1.4720000000000002,
+               "y": 1.4720000000000002
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q10",
+                   "label": "sides",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q10-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "3"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q10-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "triangle"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, 3, triangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-sides-corners",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe shapes by their sides and corners.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 619
+    }
+   ],
+   "estimatedHeight": 801
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Draw the shape.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Draw a rectangle."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q11",
+           "label": "a rectangle",
+           "answer": {
+            "text": "A closed shape with 4 straight sides and square corners"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 4 straight sides and square corners"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Draw a square."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q12",
+           "label": "a square",
+           "answer": {
+            "text": "A closed shape with 4 equal straight sides and square corners"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 4 equal straight sides and square corners"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "Draw a hexagon."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q13",
+           "label": "a hexagon",
+           "answer": {
+            "text": "A closed shape with 6 straight sides"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 6 straight sides"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "Draw a triangle."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q14",
+           "label": "a triangle",
+           "answer": {
+            "text": "A closed shape with 3 straight sides"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 3 straight sides"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-draw-shapes",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Draw triangles, squares, rectangles and hexagons.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ]
+     },
+     "estimatedHeight": 370
+    }
+   ],
+   "estimatedHeight": 374
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "name of the shape",
+    "answer": {
+     "text": "circle"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "name of the shape",
+    "answer": {
+     "text": "square"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "name of the shape",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "name of the shape",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "name of the shape",
+    "answer": {
+     "text": "triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "sides",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "corners",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "pentagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "quadrilateral"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "quadrilateral"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "sides",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "corners",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "a rectangle",
+    "answer": {
+     "text": "A closed shape with 4 straight sides and square corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "a square",
+    "answer": {
+     "text": "A closed shape with 4 equal straight sides and square corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "a hexagon",
+    "answer": {
+     "text": "A closed shape with 6 straight sides"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "a triangle",
+    "answer": {
+     "text": "A closed shape with 3 straight sides"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Name shapes, describe their sides and corners, and draw them.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Tick the name of the shape.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the sides and corners.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

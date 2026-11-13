@@ -140,6 +140,23 @@ message ItemKind {
     AreaByCounting area_by_counting = 110;
     CircleFraction circle_fraction = 111;
     ReadVolume read_volume = 112;
+    // Kindergarten to grade 2.
+    CountObjects count_objects = 44;
+    CompareNumbers compare_numbers = 45;
+    CountSequence count_sequence = 46;
+    AddSubtractFact add_subtract_fact = 47;
+    Equation equation = 48;
+    PlaceValueBlocks place_value_blocks = 49;
+    MentalMath mental_math = 50;
+    NumberForms number_forms = 51;
+    AddInColumns add_in_columns = 52;
+    ClockNearest clock_nearest = 53;
+    DataChart data_chart = 54;
+    ShapeAttributes shape_attributes = 55;
+    EqualShares equal_shares = 56;
+    PairsAndArrays pairs_and_arrays = 57;
+    NumberLineJumps number_line_jumps = 58;
+    LengthMeasure length_measure = 59;
   }
 }
 
@@ -346,6 +363,264 @@ message AreaByCounting {
 message CircleFraction {
   repeated int32 denominators = 1;
   bool child_shades = 2;
+}
+
+// Dots to count; write how many.
+message CountObjects {
+  // How many things. Zero: 1 to 10. For coins, the value in cents.
+  IntRange count = 1;
+  Mode mode = 2;
+  Picture picture = 3;
+
+  enum Picture {
+    // Dots in a line or an array.
+    PICTURE_DOTS = 0;
+    // Counters in ten frames.
+    PICTURE_TEN_FRAME = 1;
+    // Pictures of things in small groups.
+    PICTURE_GROUPS = 2;
+  }
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Write how many dots.
+    MODE_COUNT = 1;
+    // Write how many dots, then the number one more.
+    MODE_ONE_MORE = 2;
+    // Two rows of dots; tick the row with more, or "same".
+    MODE_COMPARE_GROUPS = 3;
+    // Coins; write how many cents.
+    MODE_COINS = 4;
+  }
+}
+
+// Two numbers to compare.
+message CompareNumbers {
+  IntRange numbers = 1;
+  // Write <, > or = in a circle. False: tick the greater number.
+  bool symbols = 2;
+}
+
+// A counting sequence with some numbers left out.
+message CountSequence {
+  // The first number. Rounded down to a multiple of the step.
+  IntRange start = 1;
+  // The counting step, such as 1, 5, 10 or 100, picked per item. Empty: 1.
+  repeated int32 steps = 2;
+  // Fill in missing numbers on four rows of a hundred chart instead. The
+  // steps are not used.
+  bool chart = 3;
+}
+
+// An addition or subtraction fact.
+message AddSubtractFact {
+  // The largest sum, or the largest number subtracted from. Zero: 10.
+  int32 max = 1;
+  Op op = 2;
+  // Draw the numbers as pictures in groups, crossing out what is taken
+  // away.
+  bool pictures = 3;
+  // Add three numbers instead of two.
+  bool three_addends = 4;
+
+  enum Op {
+    OP_UNSPECIFIED = 0;
+    OP_ADD = 1;
+    OP_SUBTRACT = 2;
+    // Half and half, in random order.
+    OP_MIXED = 3;
+  }
+}
+
+// An addition or subtraction equation to complete or judge.
+message Equation {
+  // The whole: the sum, or the number subtracted from. Zero: 2 to 10.
+  IntRange total = 1;
+  Mode mode = 2;
+  // For MODE_MISSING_PART, a model drawn with the equation.
+  Model model = 3;
+
+  enum Model {
+    MODEL_NONE = 0;
+    // A number bond with the missing part as a box.
+    MODEL_BOND = 1;
+    // A ten frame with one part filled.
+    MODEL_TEN_FRAME = 2;
+  }
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // "7 = 3 + ☐": break a number into two parts.
+    MODE_MISSING_PART = 1;
+    // "8 + 3 = 7 + 4": tick true or false.
+    MODE_TRUE_FALSE = 2;
+    // "3 + 8 = 8 + ☐": add in any order.
+    MODE_TURN_AROUND = 3;
+    // "11 − 4 = ☐ because 4 + ☐ = 11".
+    MODE_THINK_ADDITION = 4;
+    // An addition or subtraction with any one number missing.
+    MODE_MISSING_ANY = 5;
+  }
+}
+
+// Numbers as tens and ones, or hundreds, tens and ones.
+message PlaceValueBlocks {
+  IntRange number = 1;
+  Mode mode = 2;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Base-ten blocks; write the tens, the ones and the number. Hundreds
+    // too when the number is over 99.
+    MODE_READ_BLOCKS = 1;
+    // A teen number as "10 + ☐", with its blocks.
+    MODE_TEEN = 2;
+    // Counting in units: "10 ones = ☐ ten", "60 = ☐ tens",
+    // "4 hundreds = ☐".
+    MODE_UNITS = 3;
+  }
+}
+
+// Adding and subtracting in the head, by place value.
+message MentalMath {
+  Mode mode = 1;
+  // For MODE_TEN_MORE_LESS, a piece of a hundred chart around the number
+  // instead: fill in 1 and 10 more and less.
+  bool chart = 2;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A two-digit number plus a one-digit number, within 100.
+    MODE_PLUS_ONES = 1;
+    // A two-digit number plus a multiple of 10, within 100.
+    MODE_PLUS_TENS = 2;
+    // 10 more or 10 less than a two-digit number.
+    MODE_TEN_MORE_LESS = 3;
+    // A multiple of 10 minus a smaller multiple of 10.
+    MODE_SUBTRACT_TENS = 4;
+    // 10 or 100 more or less than a number from 100 to 900.
+    MODE_HUNDRED_MORE_LESS = 5;
+  }
+}
+
+// A three-digit number in digits, words and expanded form.
+message NumberForms {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // "300 + 40 + 7 = ☐".
+    MODE_EXPANDED_TO_NUMBER = 1;
+    // "347 = ☐ + ☐ + ☐".
+    MODE_NUMBER_TO_EXPANDED = 2;
+    // "three hundred forty-seven" to digits.
+    MODE_WORDS_TO_NUMBER = 3;
+  }
+}
+
+// Two-digit numbers added in columns.
+message AddInColumns {
+  // How many numbers to add, 2 to 4. Zero: 3.
+  int32 addends = 1;
+  // Ask why the sum regroups, on lines, after adding.
+  bool explain = 2;
+}
+
+// A clock showing a time on a step; write the time.
+message ClockNearest {
+  // Minutes between possible times: 60 for the hour, 30 for the half
+  // hour, 5 for five minutes. Zero: 30.
+  int32 step = 1;
+}
+
+// A small chart of made-up data, with questions read from it.
+message DataChart {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Tally marks in three categories.
+    MODE_TALLY = 1;
+    // A line plot of whole-inch lengths.
+    MODE_LINE_PLOT = 2;
+  }
+}
+
+// Flat shapes: name them, count sides and corners, draw them, or sort them.
+message ShapeAttributes {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A shape in any size or turn; tick its name.
+    MODE_NAME = 1;
+    // A shape; write how many sides and corners, and tick its name.
+    MODE_SIDES_CORNERS = 2;
+    // Draw a named shape: a triangle, square, rectangle or hexagon.
+    MODE_DRAW = 3;
+    // A row of shapes; count each kind.
+    MODE_SORT = 4;
+    // Draw a shape with a given number of sides, and name it.
+    MODE_DRAW_BY_SIDES = 5;
+  }
+}
+
+// A bar cut into parts, one shaded: name the share, or say whether the
+// parts are equal.
+message EqualShares {
+  // 2, 3 or 4. Empty: 2 and 4.
+  repeated int32 denominators = 1;
+  // Some bars are cut into unequal parts; tick equal or not equal.
+  bool unequal = 2;
+}
+
+// Pairs, arrays and rows of squares.
+message PairsAndArrays {
+  // For odd and even, the number; otherwise the rows and columns.
+  IntRange size = 1;
+  Mode mode = 2;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Dots in pairs; tick odd or even.
+    MODE_ODD_EVEN = 1;
+    // An array; write the total as a sum of equal rows.
+    MODE_ARRAY_SUM = 2;
+    // A rectangle cut into squares; count rows, columns and squares.
+    MODE_SQUARES = 3;
+  }
+}
+
+// Jumps along a number line from a start; write the sum or difference.
+message NumberLineJumps {
+  // The size of each jump: 1 or 10. Zero: 1.
+  int32 step = 1;
+  // The line runs from 0 to this. Zero: 20.
+  int32 end = 2;
+  bool subtract = 3;
+}
+
+// Comparing and measuring lengths.
+message LengthMeasure {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Two strips; tick the longer.
+    MODE_LONGER = 1;
+    // Three strips; tick the longest and the shortest.
+    MODE_ORDER_THREE = 2;
+    // A strip made of equal units; write how many units long.
+    MODE_COUNT_UNITS = 3;
+    // A bar on an inch ruler; write its whole-inch length.
+    MODE_RULER_INCHES = 4;
+    // Two bars on rulers; write how much longer one is.
+    MODE_HOW_MUCH_LONGER = 5;
+    // One length measured in big and small units.
+    MODE_TWO_UNITS = 6;
+    // Tick the likely length of an everyday object.
+    MODE_ESTIMATE = 7;
+  }
 }
 
 // A sum or difference set in columns.

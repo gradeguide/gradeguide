@@ -1,0 +1,670 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Grade 2 sheets for the skills grades-2-and-3.textproto does not cover.
+
+# Operations and algebraic thinking.
+
+fragments {
+  id: "frag-g2-word-problems-within-100"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve one- and two-step adding and subtracting stories within 100."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The stories mix adding and subtracting, comparing, and two steps, so the child decides what each one needs."
+    misconceptions: "Adding whenever a story says \"more\" or \"fewer\" without reading what is asked."
+  }
+  items {
+    count: 5
+    authored {
+      items {
+        nodes { text: "A class has 27 crayons. The teacher buys 45 more. How many crayons does the class have now?" }
+        nodes { work_space { field { label: "crayons the class has" answer { text: "72" work: "27 + 45" also: "72 crayons" } } } }
+      }
+      items {
+        nodes { text: "There are 63 apples in a basket. 28 apples are eaten. How many apples are left?" }
+        nodes { work_space { field { label: "apples left" answer { text: "35" work: "63 − 28" also: "35 apples" } } } }
+      }
+      items {
+        nodes { text: "Lena scored 46 points. Omar scored 19 fewer points than Lena. How many points did Omar score?" }
+        nodes { work_space { field { label: "points Omar scored" answer { text: "27" work: "46 − 19" also: "27 points" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "Kai has 34 cards. He gets 18 more cards. Then he gives 25 cards to his sister." }
+            parts {
+              prompt { text: "How many cards does Kai have after he gets more?" }
+              response { work_space { field { label: "cards after Kai gets more" answer { text: "52" work: "34 + 18" also: "52 cards" } } } }
+            }
+            parts {
+              prompt { text: "How many cards does Kai have at the end?" }
+              response { work_space { field { label: "cards Kai has at the end" answer { text: "27" work: "52 − 25" also: "27 cards" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "A bus has 52 seats. 24 children and 9 grown-ups get on. How many seats are empty?" }
+        nodes { work_space { field { label: "empty seats" answer { text: "19" work: "52 − 24 − 9" also: "19 seats" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g2-facts-within-20"
+  instruction: "Add or subtract."
+  stage: STAGE_PRACTICE
+  items { kind { add_subtract_fact { max: 20 op: OP_MIXED } } count: 20 }
+  design {
+    purpose: "Add and subtract within 20 quickly, from memory or a mental strategy."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+  }
+}
+
+fragments {
+  id: "frag-g2-odd-even"
+  instruction: "Circle the dots in pairs. Is the number odd or even?"
+  stage: STAGE_INTRODUCE
+  explainer: "Even numbers make pairs with none left over. An even number is a double: 8 = 4 + 4."
+  items { kind { pairs_and_arrays { size { min: 4 max: 20 } mode: MODE_ODD_EVEN } } count: 6 }
+  design {
+    purpose: "Tell whether a number up to 20 is odd or even by pairing, and write an even number as a double."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g2-array-sums"
+  instruction: "Write the total as an addition of the rows."
+  stage: STAGE_PRACTICE
+  items { kind { pairs_and_arrays { size { min: 2 max: 5 } mode: MODE_ARRAY_SUM } } count: 4 }
+  design {
+    purpose: "Find the total in an array of up to 5 rows and 5 columns by adding equal rows."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Number and operations in base ten.
+
+fragments {
+  id: "frag-g2-read-hundreds-blocks"
+  instruction: "Write the hundreds, tens and ones, then the number."
+  stage: STAGE_PRACTICE
+  items { kind { place_value_blocks { number { min: 101 max: 499 } mode: MODE_READ_BLOCKS } } count: 3 }
+  design {
+    purpose: "Read a three-digit number from its hundreds, tens and ones."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Writing 2 hundreds, 3 tens and 5 ones as 20035."
+  }
+}
+
+fragments {
+  id: "frag-g2-hundreds-units"
+  instruction: "Fill in the missing number."
+  stage: STAGE_INTRODUCE
+  explainer: "10 tens make 1 hundred. 600 is 6 hundreds, 0 tens and 0 ones."
+  items { kind { place_value_blocks { number { min: 100 max: 900 } mode: MODE_UNITS } } count: 8 }
+  design {
+    purpose: "See 100 as ten tens, and 100, 200 up to 900 as that many hundreds."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g2-skip-count"
+  instruction: "Skip count. Write the missing numbers."
+  stage: STAGE_PRACTICE
+  items { kind { count_sequence { start { min: 5 max: 400 } steps: [5, 10, 100] } } count: 8 }
+  design {
+    purpose: "Count within 1000, and skip count by 5s, 10s and 100s."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Going from 195 to 1100 instead of 200."
+  }
+}
+
+fragments {
+  id: "frag-g2-count-on-to-1000"
+  instruction: "Count on. Write the missing numbers."
+  stage: STAGE_PRACTICE
+  items { kind { count_sequence { start { min: 180 max: 994 } steps: [1] } } count: 4 }
+  design {
+    purpose: "Count on by ones across hundreds, up to 1000."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g2-expanded-to-number"
+  instruction: "Write the number."
+  stage: STAGE_PRACTICE
+  items { kind { number_forms { mode: MODE_EXPANDED_TO_NUMBER } } count: 4 }
+  design {
+    purpose: "Write a number from its expanded form."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Writing 400 + 6 as 46."
+  }
+}
+
+fragments {
+  id: "frag-g2-number-to-expanded"
+  instruction: "Write the number in expanded form."
+  stage: STAGE_PRACTICE
+  items { kind { number_forms { mode: MODE_NUMBER_TO_EXPANDED } } count: 4 }
+  design {
+    purpose: "Write a three-digit number as hundreds plus tens plus ones."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g2-words-to-number"
+  instruction: "Write the number in digits."
+  stage: STAGE_PRACTICE
+  items { kind { number_forms { mode: MODE_WORDS_TO_NUMBER } } count: 4 }
+  design {
+    purpose: "Read a number written in words and write it in digits."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g2-compare-three-digit"
+  instruction: "Write <, > or =."
+  stage: STAGE_PRACTICE
+  explainer: "Compare the hundreds first, then the tens, then the ones."
+  items { kind { compare_numbers { numbers { min: 100 max: 999 } symbols: true } } count: 10 }
+  design {
+    purpose: "Compare three-digit numbers with <, > and =."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Thinking 289 is greater than 312 because 8 and 9 are big digits."
+  }
+}
+
+fragments {
+  id: "frag-g2-add-3-digit"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 3 regroup: true } } count: 6 }
+  design {
+    purpose: "Add three-digit numbers, regrouping ones and tens."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g2-subtract-3-digit"
+  instruction: "Subtract."
+  stage: STAGE_PRACTICE
+  items { kind { column_add_subtract { digits: 3 subtract: true regroup: true } } count: 6 }
+  design {
+    purpose: "Subtract three-digit numbers, trading a hundred for tens or a ten for ones."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Taking the smaller digit from the larger in each column."
+  }
+}
+
+fragments {
+  id: "frag-g2-ten-hundred-more-less"
+  instruction: "Find 10 or 100 more or less."
+  stage: STAGE_PRACTICE
+  items { kind { mental_math { mode: MODE_HUNDRED_MORE_LESS } } count: 8 }
+  design {
+    purpose: "Find 10 more, 10 less, 100 more or 100 less than a number from 100 to 900 without counting."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    misconceptions: "Changing the ones digit for 10 more."
+  }
+}
+
+fragments {
+  id: "frag-g2-add-several"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { add_in_columns { addends: 3 } } count: 4 }
+  design {
+    purpose: "Add three or four two-digit numbers in columns."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+fragments {
+  id: "frag-g2-add-four"
+  instruction: "Add."
+  stage: STAGE_PRACTICE
+  items { kind { add_in_columns { addends: 4 } } count: 3 }
+  design {
+    purpose: "Add four two-digit numbers in columns."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g2-explain-regrouping"
+  instruction: "Add. Then explain."
+  stage: STAGE_STRETCH
+  items { kind { add_in_columns { explain: true } } count: 2 }
+  design {
+    purpose: "Explain why adding in columns works, using tens and ones."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    misconceptions: "Writing 13 under the ones instead of 3 and carrying a ten."
+  }
+}
+
+# Measurement and data.
+
+fragments {
+  id: "frag-g2-ruler-inches"
+  instruction: "How long is the bar? Measure to the nearest inch."
+  stage: STAGE_PRACTICE
+  explainer: "Line up the end of the bar with 0."
+  items { kind { length_measure { mode: MODE_RULER_INCHES } } count: 3 }
+  design {
+    purpose: "Measure a length in inches with a ruler."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Starting to measure from 1 instead of 0."
+  }
+}
+
+fragments {
+  id: "frag-g2-two-units"
+  instruction: "Both strips are the same length. Count the units in each."
+  stage: STAGE_PRACTICE
+  items { kind { length_measure { mode: MODE_TWO_UNITS } } count: 2 }
+  design {
+    purpose: "See that measuring with smaller units takes more of them."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    misconceptions: "Thinking the strip with more units is longer."
+  }
+}
+
+fragments {
+  id: "frag-g2-estimate-length"
+  instruction: "Tick the better estimate."
+  stage: STAGE_PRACTICE
+  items { kind { length_measure { mode: MODE_ESTIMATE } } count: 6 }
+  design {
+    purpose: "Estimate lengths in inches, feet, centimeters and meters."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}
+
+fragments {
+  id: "frag-g2-how-much-longer"
+  instruction: "Measure both bars. How much longer is bar A?"
+  stage: STAGE_PRACTICE
+  items { kind { length_measure { mode: MODE_HOW_MUCH_LONGER } } count: 1 }
+  design {
+    purpose: "Measure two lengths and find how much longer one is."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g2-length-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve adding and subtracting stories about lengths in the same unit."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A red ribbon is 35 inches long. A blue ribbon is 18 inches long. How much longer is the red ribbon?" }
+        nodes { work_space { field { label: "how much longer the red ribbon is" answer { text: "17" work: "35 − 18" also: "17 inches" } } } }
+      }
+      items {
+        nodes { text: "Zoe jumps 46 centimeters. Then she jumps 38 centimeters. How far does she jump in all?" }
+        nodes { work_space { field { label: "how far Zoe jumps" answer { text: "84" work: "46 + 38" also: "84 centimeters" also: "84 cm" } } } }
+      }
+      items {
+        nodes { text: "A rope is 90 feet long. Raj cuts off 25 feet. How long is the rope now?" }
+        nodes { work_space { field { label: "length of the rope now" answer { text: "65" work: "90 − 25" also: "65 feet" } } } }
+      }
+      items {
+        nodes { text: "A plant was 17 centimeters tall. It grew 8 centimeters. How tall is it now?" }
+        nodes { work_space { field { label: "height of the plant now" answer { text: "25" work: "17 + 8" also: "25 centimeters" also: "25 cm" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g2-number-line-tens"
+  instruction: "Count the jumps of 10. Write the answer."
+  stage: STAGE_GUIDED
+  items { kind { number_line_jumps { step: 10 end: 100 } } count: 2 }
+  design {
+    purpose: "Show adding tens as jumps on a number line from 0 to 100."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g2-number-line-back"
+  instruction: "Count the jumps back. Write the answer."
+  stage: STAGE_GUIDED
+  items { kind { number_line_jumps { step: 10 end: 100 subtract: true } } count: 2 }
+  design {
+    purpose: "Show subtracting tens as jumps back on a number line."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+fragments {
+  id: "frag-g2-clock-five-minutes"
+  instruction: "Write the time."
+  stage: STAGE_PRACTICE
+  explainer: "Count by 5s as the long hand goes past each number."
+  items { kind { clock_nearest { step: 5 } } count: 6 }
+  design {
+    purpose: "Tell time to the nearest five minutes."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Reading the number the long hand points to as the minutes: 4 for 20 minutes."
+  }
+}
+
+fragments {
+  id: "frag-g2-count-coins"
+  instruction: "How much money? Write the total in cents."
+  stage: STAGE_PRACTICE
+  explainer: "Start with the coin worth the most and count on: 25, 35, 40, 41."
+  items { kind { count_objects { count { min: 10 max: 99 } mode: MODE_COINS } } count: 6 }
+  design {
+    purpose: "Count a group of quarters, dimes, nickels and pennies."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    misconceptions: "Counting each coin as 1, or thinking a bigger coin is always worth more."
+  }
+}
+
+fragments {
+  id: "frag-g2-money-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve stories about coins and dollar bills."
+    principles: [PRINCIPLE_INTERLEAVING]
+    misconceptions: "Counting each coin as 1 instead of by its value."
+  }
+  items {
+    count: 5
+    authored {
+      items {
+        nodes { text: "Ana has 3 dimes and 1 nickel. A dime is worth 10¢. A nickel is worth 5¢. How many cents does Ana have?" }
+        nodes { work_space { field { label: "cents Ana has" answer { text: "35" work: "10 + 10 + 10 + 5" also: "35¢" } } } }
+      }
+      items {
+        nodes { text: "Ben has 2 quarters and 4 pennies. A quarter is worth 25¢. A penny is worth 1¢. How many cents does Ben have?" }
+        nodes { work_space { field { label: "cents Ben has" answer { text: "54" work: "25 + 25 + 1 + 1 + 1 + 1" also: "54¢" } } } }
+      }
+      items {
+        nodes { text: "Mia has $5. She buys a book for $3. How many dollars does she have left?" }
+        nodes { work_space { field { label: "dollars Mia has left" answer { text: "2" work: "5 − 3" also: "$2" } } } }
+      }
+      items {
+        nodes { text: "A pencil costs 45¢. Kai pays with 2 quarters. A quarter is worth 25¢. How much change does he get?" }
+        nodes { work_space { field { label: "change Kai gets" answer { text: "5" work: "25 + 25 − 45" also: "5¢" } } } }
+      }
+      items {
+        nodes { text: "Omar has one $10 bill and two $1 bills. How many dollars does he have?" }
+        nodes { work_space { field { label: "dollars Omar has" answer { text: "12" work: "10 + 1 + 1" also: "$12" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g2-line-plot"
+  instruction: "Use the line plot to answer."
+  stage: STAGE_PRACTICE
+  explainer: "Each × is one thing that was measured."
+  items { kind { data_chart { mode: MODE_LINE_PLOT } } count: 2 }
+  design {
+    purpose: "Read a line plot of lengths measured to the nearest inch."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+fragments {
+  id: "frag-g2-bar-graph"
+  instruction: "Use the bar graph to answer."
+  stage: STAGE_PRACTICE
+  items { kind { bar_graph_questions { values { min: 1 max: 10 } step: 1 } } count: 2 }
+  design {
+    purpose: "Read a bar graph with four groups and answer put-together, take-apart and compare questions."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+# Geometry.
+
+fragments {
+  id: "frag-g2-shape-features"
+  instruction: "Count the sides and corners. Tick the name."
+  stage: STAGE_PRACTICE
+  items { kind { shape_attributes { mode: MODE_SIDES_CORNERS } } count: 4 }
+  design {
+    purpose: "Name triangles, quadrilaterals, pentagons and hexagons by their sides and corners."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    misconceptions: "Thinking only a regular shape counts: a hexagon must look like a honeycomb cell."
+  }
+}
+
+fragments {
+  id: "frag-g2-draw-by-sides"
+  instruction: "Draw the shape. Then tick its name."
+  stage: STAGE_APPLY
+  items { kind { shape_attributes { mode: MODE_DRAW_BY_SIDES } } count: 2 }
+  design {
+    purpose: "Draw a shape with a given number of sides and corners, and name it."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+  }
+}
+
+fragments {
+  id: "frag-g2-rows-of-squares"
+  instruction: "Count the rows, the columns and the squares."
+  stage: STAGE_PRACTICE
+  items { kind { pairs_and_arrays { size { min: 2 max: 5 } mode: MODE_SQUARES } } count: 4 }
+  design {
+    purpose: "Count the squares in a rectangle cut into rows and columns."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+fragments {
+  id: "frag-g2-equal-shares"
+  instruction: "Are the parts equal shares? Tick one."
+  stage: STAGE_PRACTICE
+  items { kind { equal_shares { denominators: [2, 3, 4] unequal: true } } count: 2 }
+  design {
+    purpose: "Tell equal shares from parts that are not equal, in halves, thirds and fourths."
+    principles: [PRINCIPLE_ERROR_ANALYSIS]
+    misconceptions: "Calling any cut into three parts thirds."
+  }
+}
+
+worksheets {
+  id: "ws-g2-word-problems"
+  title: "Story problems within 100"
+  seed: 431
+  max_pages: 3
+  placements { fragment_id: "frag-g2-word-problems-within-100" }
+  design {
+    purpose: "Solve one- and two-step stories within 100."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+  home_tip: "Ask what the question wants before your child starts working."
+}
+
+worksheets {
+  id: "ws-g2-facts-within-20"
+  title: "Facts within 20"
+  seed: 432
+  max_pages: 1
+  placements { fragment_id: "frag-g2-facts-within-20" }
+  design {
+    purpose: "Add and subtract within 20 fluently."
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+  }
+}
+
+worksheets {
+  id: "ws-g2-odd-even-arrays"
+  title: "Odd, even and arrays"
+  seed: 433
+  max_pages: 2
+  placements { fragment_id: "frag-g2-odd-even" }
+  placements { fragment_id: "frag-g2-array-sums" }
+  design {
+    purpose: "Tell odd from even by pairing, then add the rows of an array."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g2-hundreds-tens-ones"
+  title: "Hundreds, tens and ones"
+  seed: 434
+  max_pages: 2
+  placements { fragment_id: "frag-g2-hundreds-units" }
+  placements { fragment_id: "frag-g2-read-hundreds-blocks" }
+  design {
+    purpose: "See a hundred as ten tens, then read three-digit numbers from blocks."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+}
+
+worksheets {
+  id: "ws-g2-counting-to-1000"
+  title: "Counting and skip counting to 1000"
+  seed: 435
+  max_pages: 1
+  placements { fragment_id: "frag-g2-count-on-to-1000" }
+  placements { fragment_id: "frag-g2-skip-count" }
+  design {
+    purpose: "Count on across hundreds, and skip count by 5s, 10s and 100s."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g2-read-write-compare"
+  title: "Reading, writing and comparing numbers to 1000"
+  seed: 436
+  max_pages: 2
+  placements { fragment_id: "frag-g2-expanded-to-number" }
+  placements { fragment_id: "frag-g2-number-to-expanded" }
+  placements { fragment_id: "frag-g2-words-to-number" }
+  placements { fragment_id: "frag-g2-compare-three-digit" }
+  design {
+    purpose: "Write numbers in digits, words and expanded form, then compare them."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g2-add-subtract-within-1000"
+  title: "Adding and subtracting within 1000"
+  seed: 437
+  max_pages: 2
+  placements { fragment_id: "frag-g2-ten-hundred-more-less" }
+  placements { fragment_id: "frag-g2-add-3-digit" }
+  placements { fragment_id: "frag-g2-subtract-3-digit" }
+  design {
+    purpose: "Find 10 or 100 more or less, then add and subtract three-digit numbers."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+  }
+}
+
+worksheets {
+  id: "ws-g2-adding-several-numbers"
+  title: "Adding several numbers"
+  seed: 438
+  max_pages: 2
+  placements { fragment_id: "frag-g2-add-several" }
+  placements { fragment_id: "frag-g2-add-four" }
+  placements { fragment_id: "frag-g2-explain-regrouping" }
+  design {
+    purpose: "Add three and four two-digit numbers, then explain why regrouping works."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+  }
+}
+
+worksheets {
+  id: "ws-g2-measuring-length"
+  title: "Measuring length"
+  seed: 439
+  max_pages: 3
+  placements { fragment_id: "frag-g2-ruler-inches" }
+  placements { fragment_id: "frag-g2-how-much-longer" }
+  placements { fragment_id: "frag-g2-two-units" }
+  placements { fragment_id: "frag-g2-estimate-length" }
+  design {
+    purpose: "Measure with a ruler, compare lengths, see how the unit changes the count, and estimate."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Measure a few things at home with a ruler, then guess before measuring the next."
+}
+
+worksheets {
+  id: "ws-g2-length-problems"
+  title: "Length problems and number lines"
+  seed: 440
+  max_pages: 3
+  placements { fragment_id: "frag-g2-number-line-tens" }
+  placements { fragment_id: "frag-g2-number-line-back" }
+  placements { fragment_id: "frag-g2-length-word-problems" }
+  design {
+    purpose: "Add and subtract on a number line, then solve length stories."
+    principles: [PRINCIPLE_NUMBER_LINE]
+  }
+}
+
+worksheets {
+  id: "ws-g2-time-and-money"
+  title: "Time and money"
+  seed: 441
+  max_pages: 3
+  placements { fragment_id: "frag-g2-clock-five-minutes" }
+  placements { fragment_id: "frag-g2-count-coins" }
+  placements { fragment_id: "frag-g2-money-word-problems" }
+  design {
+    purpose: "Tell time to five minutes, and solve money stories."
+    principles: [PRINCIPLE_INTERLEAVING]
+  }
+}
+
+worksheets {
+  id: "ws-g2-graphs"
+  title: "Line plots and bar graphs"
+  seed: 442
+  max_pages: 2
+  placements { fragment_id: "frag-g2-line-plot" }
+  placements { fragment_id: "frag-g2-bar-graph" }
+  design {
+    purpose: "Read a line plot of measurements and a bar graph."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+  }
+}
+
+worksheets {
+  id: "ws-g2-shapes"
+  title: "Shapes and equal shares"
+  seed: 443
+  max_pages: 3
+  placements { fragment_id: "frag-g2-shape-features" }
+  placements { fragment_id: "frag-g2-draw-by-sides" }
+  placements { fragment_id: "frag-g2-rows-of-squares" }
+  placements { fragment_id: "frag-g2-equal-shares" }
+  design {
+    purpose: "Name and draw shapes by their sides, count squares in rows and columns, and find equal shares."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+}

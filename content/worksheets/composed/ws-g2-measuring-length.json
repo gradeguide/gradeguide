@@ -1,0 +1,749 @@
+{
+ "worksheetId": "ws-g2-measuring-length",
+ "title": "Measuring length",
+ "headerLabels": [
+  "2.MD.A.1",
+  "2.MD.A.4",
+  "2.MD.A.2",
+  "2.MD.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "How long is the bar? Measure to the nearest inch.",
+     "explainer": "Line up the end of the bar with 0.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 1,
+          "barParts": 6
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 6 inches long."
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 1,
+          "barParts": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "1"
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 1 inches long."
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 1,
+          "barParts": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 3 inches long."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-ruler-inches",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Measure a length in inches with a ruler.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "misconceptions": [
+       "Starting to measure from 1 instead of 0."
+      ]
+     },
+     "estimatedHeight": 462
+    },
+    {
+     "label": "B",
+     "instruction": "Measure both bars. How much longer is bar A?",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Bar A"
+        },
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 1,
+          "barParts": 4
+         }
+        },
+        {
+         "text": "Bar B"
+        },
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 1,
+          "barParts": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "length of bar A",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "in."
+           },
+           {
+            "text": "B:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "length of bar B",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "in."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A is"
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "how much longer A is than B",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "inches longer."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A: 4 in. B: 2 in.; A is 2 inches longer."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-how-much-longer",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Measure two lengths and find how much longer one is.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ]
+     },
+     "estimatedHeight": 346
+    }
+   ],
+   "estimatedHeight": 816
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Both strips are the same length. Count the units in each.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "label": "big"
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 9,
+          "label": "small"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Big units:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "big units",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "Small units:"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "small units",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "It takes more of the"
+        },
+        {
+         "choices": {
+          "options": [
+           "big units",
+           "small units"
+          ],
+          "field": {
+           "id": "q5-3",
+           "label": "which unit takes more",
+           "answer": {
+            "text": "small units"
+           }
+          }
+         }
+        }
+       ],
+       "key": "Big units: 3 Small units: 9; small units"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 2,
+          "label": "big"
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 6,
+          "label": "small"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Big units:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "big units",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "Small units:"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "small units",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "It takes more of the"
+        },
+        {
+         "choices": {
+          "options": [
+           "big units",
+           "small units"
+          ],
+          "field": {
+           "id": "q6-3",
+           "label": "which unit takes more",
+           "answer": {
+            "text": "small units"
+           }
+          }
+         }
+        }
+       ],
+       "key": "Big units: 2 Small units: 6; small units"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-two-units",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "See that measuring with smaller units takes more of them.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "misconceptions": [
+       "Thinking the strip with more units is longer."
+      ]
+     },
+     "estimatedHeight": 422
+    },
+    {
+     "label": "D",
+     "instruction": "Tick the better estimate.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A crayon is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "3 inches",
+           "3 feet"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "length of a crayon",
+           "answer": {
+            "text": "3 inches"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3 inches"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A bed is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "2 centimeters",
+           "2 meters"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "length of a bed",
+           "answer": {
+            "text": "2 meters"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2 meters"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A school bus is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "12 meters",
+           "12 centimeters"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "length of a school bus",
+           "answer": {
+            "text": "12 meters"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12 meters"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "A shoe is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "8 feet",
+           "8 inches"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "length of a shoe",
+           "answer": {
+            "text": "8 inches"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8 inches"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "A door is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "7 inches",
+           "7 feet"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "length of a door",
+           "answer": {
+            "text": "7 feet"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7 feet"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "A pencil is about"
+        },
+        {
+         "choices": {
+          "options": [
+           "7 feet",
+           "7 inches"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "length of a pencil",
+           "answer": {
+            "text": "7 inches"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7 inches"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-estimate-length",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Estimate lengths in inches, feet, centimeters and meters.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ]
+     },
+     "estimatedHeight": 220
+    }
+   ],
+   "estimatedHeight": 650
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "length of bar A",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "length of bar B",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "how much longer A is than B",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "big units",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "small units",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "which unit takes more",
+    "answer": {
+     "text": "small units"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "big units",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "small units",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "which unit takes more",
+    "answer": {
+     "text": "small units"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "length of a crayon",
+    "answer": {
+     "text": "3 inches"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "length of a bed",
+    "answer": {
+     "text": "2 meters"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "length of a school bus",
+    "answer": {
+     "text": "12 meters"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "length of a shoe",
+    "answer": {
+     "text": "8 inches"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "length of a door",
+    "answer": {
+     "text": "7 feet"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "length of a pencil",
+    "answer": {
+     "text": "7 inches"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Measure with a ruler, compare lengths, see how the unit changes the count, and estimate.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"How long is the bar? Measure to the nearest inch.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Measure both bars. How much longer is bar A?\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Both strips are the same length. Count the units in each.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Tick the better estimate.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
