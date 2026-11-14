@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: divide.",
+     "instruction": "Divide.",
      "items": [
       {
        "label": "1",
@@ -344,16 +344,21 @@
        "key": "18 ÷ 9 = 2"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-division-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall division facts from multiplication.",
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 242
     },
     {
      "label": "B",
@@ -530,12 +535,19 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+      "rationale": "Some items divide exactly and some do not, so students check each remainder instead of always writing R0 or never writing one. Working space under each item leaves room for every step.",
+      "misconceptions": [
+       "A remainder greater than or equal to the divisor.",
+       "Leaving out a zero in the quotient when a place does not divide: 812 ÷ 4 = 23."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
+      ]
      },
      "estimatedHeight": 494
     }
    ],
-   "estimatedHeight": 692
+   "estimatedHeight": 744
   }
  ],
  "key": [
@@ -761,11 +773,11 @@
   }
  ],
  "design": {
-  "purpose": "Divide with remainders.",
+  "purpose": "Divide three-digit numbers by one-digit numbers, with remainders.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
   ],
-  "rationale": "Every step of long division is a division fact, so the warm-up recalls them first."
+  "rationale": "Every step of long division uses a division fact, so the sheet opens with them."
  },
  "advice": [
   "\"Divide. Write any remainder after R.\" is practice, and nothing on the sheet introduces it with a worked example."

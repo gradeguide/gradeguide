@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: multiply.",
+     "instruction": "Multiply.",
      "items": [
       {
        "label": "1",
@@ -282,11 +282,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -295,7 +299,7 @@
     },
     {
      "label": "B",
-     "instruction": "Fill in the blanks. Each sentence and the equation under it say the same thing.",
+     "instruction": "Write the missing number. The sentence and the equation under it mean the same thing.",
      "example": {
       "nodes": [
        {
@@ -345,7 +349,7 @@
         }
        }
       ],
-      "text": "\"15 is 3 times as many as 5\" is the same as **15 = 3 × 5**."
+      "text": "15 is 3 times as many as 5 means **15 = 3 × 5**."
      },
      "items": [
       {
@@ -618,9 +622,13 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions.",
+      "rationale": "Each item pairs a sentence with its equation, and the unknown moves between the product and each factor. Students cannot answer by matching words to positions, so they read what the comparison says. 4.OA.A.1 asks for both directions: sentence to equation and equation to sentence.",
       "misconceptions": [
-       "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+       "Reading times as many as adding: 3 times as many as 5 is 8.",
+       "Reversing the comparison: writing 5 = 3 × 15 for 15 is 3 times as many as 5."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 638
@@ -631,8 +639,84 @@
   {
    "sections": [
     {
+     "label": "B",
+     "instruction": "Write the missing number. The sentence and the equation under it mean the same thing.",
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q14",
+             "label": "7 times as many as 8",
+             "answer": {
+              "text": "56"
+             }
+            }
+           },
+           {
+            "text": "is 7 times as many as 8."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q14-2",
+             "label": "7 × 8",
+             "answer": {
+              "text": "56"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "8"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "56 is 7 times as many as 8.; 56 = 7 × 8"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-times-as-many-statements",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Read a multiplication equation as a comparison: 35 = 5 × 7 means 35 is 5 times as many as 7.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each item pairs a sentence with its equation, and the unknown moves between the product and each factor. Students cannot answer by matching words to positions, so they read what the comparison says. 4.OA.A.1 asks for both directions: sentence to equation and equation to sentence.",
+      "misconceptions": [
+       "Reading times as many as adding: 3 times as many as 5 is 8.",
+       "Reversing the comparison: writing 5 = 3 × 15 for 15 is 3 times as many as 5."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 130
+    },
+    {
      "label": "C",
-     "instruction": "Use the tape diagram. Write the answer under the brace.",
+     "instruction": "Use the tape diagram to solve. Write the answer in the box.",
      "example": {
       "nodes": [
        {
@@ -661,11 +745,11 @@
         }
        }
       ],
-      "text": "**3 times as many** means 3 tapes the same length as the smaller one: 4 + 4 + 4 = 3 × 4 = 12."
+      "text": "**3 times as many** is 3 tapes the same length as Ben's: 4 + 4 + 4 = 3 × 4 = 12."
      },
      "items": [
       {
-       "label": "14",
+       "label": "15",
        "nodes": [
         {
          "text": "Ana has 7 shells. Ben has 5 times as many. How many shells does Ben have?"
@@ -683,7 +767,7 @@
             "units": 5,
             "unitText": "7",
             "totalField": {
-             "id": "q14",
+             "id": "q15",
              "label": "shells Ben has",
              "answer": {
               "text": "35"
@@ -697,7 +781,7 @@
        "key": "35"
       },
       {
-       "label": "15",
+       "label": "16",
        "nodes": [
         {
          "text": "Mia has 5 shells. Omar has 4 times as many. How many shells does Omar have?"
@@ -715,7 +799,7 @@
             "units": 4,
             "unitText": "5",
             "totalField": {
-             "id": "q15",
+             "id": "q16",
              "label": "shells Omar has",
              "answer": {
               "text": "20"
@@ -733,20 +817,23 @@
      "fragmentId": "frag-times-as-many",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Solve multiplicative comparison word problems.",
+      "purpose": "Solve multiplicative comparison problems with a tape diagram.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Tape diagrams separate 'times as many' from 'more than', which children often solve by adding.",
+      "rationale": "Tape diagrams separate times as many from more than, which students often solve by adding. The larger tape is drawn as copies of the smaller one, so the multiplication is visible before it is written.",
       "misconceptions": [
-       "Reading '3 times as many' as '3 more'"
+       "Reading 3 times as many as 3 more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 514
     }
    ],
-   "estimatedHeight": 518
+   "estimatedHeight": 652
   }
  ],
  "key": [
@@ -934,9 +1021,19 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "shells Ben has",
+    "label": "7 times as many as 8",
     "answer": {
-     "text": "35"
+     "text": "56"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "7 × 8",
+    "answer": {
+     "text": "56"
     }
    }
   },
@@ -944,6 +1041,16 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
+    "label": "shells Ben has",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
     "label": "shells Omar has",
     "answer": {
      "text": "20"
@@ -952,14 +1059,11 @@
   }
  ],
  "design": {
-  "purpose": "Read and write multiplication as a comparison.",
+  "purpose": "Read and write multiplication equations as comparisons.",
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
   ],
   "rationale": "Sentences and equations come before tape diagrams, so the diagram shows what the sentence already said."
  },
- "advice": [
-  "Section \"Fill in the blanks. Each sentence and the equation under it say the same thing.\" was cut from 6 to 5 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

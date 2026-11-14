@@ -2,7 +2,6 @@
  "worksheetId": "ws-mass-and-volume",
  "title": "Mass and liquid volume",
  "headerLabels": [
-  "3.OA.C.7",
   "3.MD.A.2"
  ],
  "pages": [
@@ -10,294 +9,195 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: multiply.",
+     "instruction": "How much water is in each container? Write the amount.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
+         "measuringJug": {
+          "capacity": 10,
+          "step": 1,
+          "labelled": 2,
+          "level": 7,
+          "unit": "L"
+         }
+        },
+        {
          "math": {
           "atoms": [
            {
-            "text": "7"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "9"
-           },
-           {
-            "text": "="
-           },
-           {
             "blank": {
              "id": "q1",
-             "label": "7 × 9",
+             "label": "liters in the jug",
              "answer": {
-              "text": "63"
+              "text": "7",
+              "also": [
+               "7 L"
+              ]
              }
             }
+           },
+           {
+            "text": "liters"
            }
           ]
          }
         }
        ],
-       "key": "7 × 9 = 63"
+       "key": "7 liters"
       },
       {
        "label": "2",
        "nodes": [
         {
-         "math": {
-          "atoms": [
-           {
-            "text": "3"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "4"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q2",
-             "label": "3 × 4",
-             "answer": {
-              "text": "12"
-             }
-            }
-           }
-          ]
+         "measuringJug": {
+          "capacity": 10,
+          "step": 1,
+          "labelled": 2,
+          "level": 8,
+          "unit": "L"
          }
-        }
-       ],
-       "key": "3 × 4 = 12"
-      },
-      {
-       "label": "3",
-       "nodes": [
+        },
         {
          "math": {
           "atoms": [
            {
-            "text": "3"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "2"
-           },
-           {
-            "text": "="
-           },
-           {
             "blank": {
-             "id": "q3",
-             "label": "3 × 2",
+             "id": "q2",
+             "label": "liters in the jug",
              "answer": {
-              "text": "6"
+              "text": "8",
+              "also": [
+               "8 L"
+              ]
              }
             }
+           },
+           {
+            "text": "liters"
            }
           ]
          }
         }
        ],
-       "key": "3 × 2 = 6"
+       "key": "8 liters"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-read-volume",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read a liquid volume in liters from a scale marked every liter.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "3.MD.A.2 asks students to measure liquid volume, not only to compute with it. The scale is a vertical number line with only every second mark numbered, so students count on from the nearest number.",
+      "misconceptions": [
+       "Reading the nearest numbered mark instead of the mark the water reaches.",
+       "Treating each mark as 2 because the numbers go up by 2."
+      ]
+     },
+     "estimatedHeight": 302
+    },
+    {
+     "label": "B",
+     "instruction": "How much water is in each container? Write the amount.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "measuringJug": {
+          "capacity": 500,
+          "step": 50,
+          "labelled": 2,
+          "level": 100,
+          "unit": "mL"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "milliliters in the jug",
+             "answer": {
+              "text": "100",
+              "also": [
+               "100 mL"
+              ]
+             }
+            }
+           },
+           {
+            "text": "milliliters"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "100 milliliters"
       },
       {
        "label": "4",
        "nodes": [
         {
+         "measuringJug": {
+          "capacity": 500,
+          "step": 50,
+          "labelled": 2,
+          "level": 450,
+          "unit": "mL"
+         }
+        },
+        {
          "math": {
           "atoms": [
-           {
-            "text": "2"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "9"
-           },
-           {
-            "text": "="
-           },
            {
             "blank": {
              "id": "q4",
-             "label": "2 × 9",
+             "label": "milliliters in the jug",
              "answer": {
-              "text": "18"
+              "text": "450",
+              "also": [
+               "450 mL"
+              ]
              }
             }
+           },
+           {
+            "text": "milliliters"
            }
           ]
          }
         }
        ],
-       "key": "2 × 9 = 18"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "4"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "6"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "4 × 6",
-             "answer": {
-              "text": "24"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "4 × 6 = 24"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "4"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "8"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q6",
-             "label": "4 × 8",
-             "answer": {
-              "text": "32"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "4 × 8 = 32"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "7"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "3"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "7 × 3",
-             "answer": {
-              "text": "21"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "7 × 3 = 21"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "6"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "3"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "6 × 3",
-             "answer": {
-              "text": "18"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "6 × 3 = 18"
+       "key": "450 milliliters"
       }
      ],
-     "columns": 4,
-     "fragmentId": "frag-multiplication-facts",
-     "stage": "STAGE_REVIEW",
+     "columns": 2,
+     "fragmentId": "frag-read-volume-milliliters",
+     "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Read a liquid volume in milliliters from a scale marked every 50 milliliters.",
       "principles": [
-       "PRINCIPLE_RETRIEVAL_PRACTICE"
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
-      "references": [
-       "Roediger and Karpicke (2006), Psychological Science 17"
+      "rationale": "A jug marked in 50s makes students find the value of one mark before reading the level. It is the same skill as reading a scaled bar graph.",
+      "misconceptions": [
+       "Counting each mark as 1 or 10 milliliters."
       ]
      },
-     "estimatedHeight": 138
+     "estimatedHeight": 302
     },
     {
-     "label": "B",
+     "label": "C",
      "instruction": "Solve. Show your work.",
      "items": [
       {
-       "label": "9",
+       "label": "5",
        "nodes": [
         {
          "text": "A bag of rice has a mass of 5 kilograms. How many kilograms are in 4 bags?"
@@ -306,7 +206,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q9",
+           "id": "q5",
            "label": "A bag of rice has a mass of 5 kilograms. How many kilograms ",
            "answer": {
             "text": "20",
@@ -321,9 +221,35 @@
         }
        ],
        "key": "20"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-mass-volume-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve one-step problems about mass in grams and kilograms, and liquid volume in liters.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Every problem stays in one unit, so the arithmetic is the only step. The problems use multiplication and subtraction, as 3.MD.A.2 allows, with numbers students can work mentally or on paper.",
+      "misconceptions": [
+       "Thinking a heavier object must be bigger.",
+       "Adding the two masses when the question asks how much heavier."
+      ]
+     },
+     "estimatedHeight": 170
+    }
+   ],
+   "estimatedHeight": 786
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
       {
-       "label": "10",
+       "label": "6",
        "nodes": [
         {
          "text": "A bucket holds 9 liters. Pia fills it 3 times to water the garden. How many liters does she use?"
@@ -332,7 +258,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q10",
+           "id": "q6",
            "label": "A bucket holds 9 liters. Pia fills it 3 times to water the g",
            "answer": {
             "text": "27",
@@ -349,7 +275,7 @@
        "key": "27"
       },
       {
-       "label": "11",
+       "label": "7",
        "nodes": [
         {
          "text": "An apple has a mass of 180 grams and an orange has a mass of 145 grams. How much heavier is the apple?"
@@ -358,7 +284,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q11",
+           "id": "q7",
            "label": "An apple has a mass of 180 grams and an orange has a mass of",
            "answer": {
             "text": "35",
@@ -379,16 +305,21 @@
      "fragmentId": "frag-mass-volume-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Solve one-step problems about mass in grams and kilograms, and volume in liters.",
+      "purpose": "Solve one-step problems about mass in grams and kilograms, and liquid volume in liters.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Every problem stays in one unit, so the arithmetic, not a conversion, is the step."
+      "rationale": "Every problem stays in one unit, so the arithmetic is the only step. The problems use multiplication and subtraction, as 3.MD.A.2 allows, with numbers students can work mentally or on paper.",
+      "misconceptions": [
+       "Thinking a heavier object must be bigger.",
+       "Adding the two masses when the question asks how much heavier."
+      ]
      },
-     "estimatedHeight": 482
+     "continued": true,
+     "estimatedHeight": 346
     }
    ],
-   "estimatedHeight": 628
+   "estimatedHeight": 350
   }
  ],
  "key": [
@@ -396,9 +327,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "7 × 9",
+    "label": "liters in the jug",
     "answer": {
-     "text": "63"
+     "text": "7",
+     "also": [
+      "7 L"
+     ]
     }
    }
   },
@@ -406,9 +340,12 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "3 × 4",
+    "label": "liters in the jug",
     "answer": {
-     "text": "12"
+     "text": "8",
+     "also": [
+      "8 L"
+     ]
     }
    }
   },
@@ -416,9 +353,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "3 × 2",
+    "label": "milliliters in the jug",
     "answer": {
-     "text": "6"
+     "text": "100",
+     "also": [
+      "100 mL"
+     ]
     }
    }
   },
@@ -426,9 +366,12 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "2 × 9",
+    "label": "milliliters in the jug",
     "answer": {
-     "text": "18"
+     "text": "450",
+     "also": [
+      "450 mL"
+     ]
     }
    }
   },
@@ -436,46 +379,6 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "4 × 6",
-    "answer": {
-     "text": "24"
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
-    "label": "4 × 8",
-    "answer": {
-     "text": "32"
-    }
-   }
-  },
-  {
-   "itemLabel": "7",
-   "field": {
-    "id": "q7",
-    "label": "7 × 3",
-    "answer": {
-     "text": "21"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "6 × 3",
-    "answer": {
-     "text": "18"
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9",
     "label": "A bag of rice has a mass of 5 kilograms. How many kilograms ",
     "answer": {
      "text": "20",
@@ -488,9 +391,9 @@
    }
   },
   {
-   "itemLabel": "10",
+   "itemLabel": "6",
    "field": {
-    "id": "q10",
+    "id": "q6",
     "label": "A bucket holds 9 liters. Pia fills it 3 times to water the g",
     "answer": {
      "text": "27",
@@ -503,9 +406,9 @@
    }
   },
   {
-   "itemLabel": "11",
+   "itemLabel": "7",
    "field": {
-    "id": "q11",
+    "id": "q7",
     "label": "An apple has a mass of 180 grams and an orange has a mass of",
     "answer": {
      "text": "35",
@@ -519,10 +422,15 @@
   }
  ],
  "design": {
-  "purpose": "Solve problems about mass and liquid volume.",
+  "purpose": "Measure liquid volume from a scale, then solve one-step problems about mass and volume.",
   "principles": [
-   "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Students read liters from a scale marked every liter, then milliliters from a scale marked every 50. The word problems that follow use the same units, so measuring comes before computing."
  },
+ "advice": [
+  "\"How much water is in each container? Write the amount.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"How much water is in each container? Write the amount.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

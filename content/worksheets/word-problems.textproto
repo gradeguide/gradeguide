@@ -13,8 +13,10 @@ fragments {
   design {
     purpose: "Solve word problems that compare two amounts by multiplying or dividing."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story."
-    misconceptions: "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+    rationale: "The problems ask for the larger amount, the smaller amount, and how many times as many, so students decide between multiplying and dividing from the story. The last problem asks for both a times-as-many and a how-many-more answer, which separates multiplicative from additive comparison. A tape diagram is a useful drawing for each problem."
+    misconceptions: "Using addition for times as many: 9 times as much as 7 pounds is 16 pounds."
+    misconceptions: "Multiplying whenever the word times appears, including when the larger amount is given: 48 × 6 for the blue ribbon."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
   items {
     count: 4
@@ -58,8 +60,10 @@ fragments {
   design {
     purpose: "Solve problems that need two or more steps with whole numbers."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next."
+    rationale: "Each problem needs at least two operations. In three problems the parts lead through the steps, so students see how one answer feeds the next. The lamp problem gives no parts, so students plan the steps themselves."
     misconceptions: "Using every number in the story in one operation."
+    misconceptions: "Stopping after the first step."
+    references: "Woodward et al. (2012), IES practice guide, Improving Mathematical Problem Solving in Grades 4 Through 8"
   }
   items {
     count: 4
@@ -123,10 +127,12 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Divide multi-digit numbers in word problems, including what is left over."
+    purpose: "Divide multi-digit numbers by one-digit numbers in word problems."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "One problem in each pair asks for the leftover, so the child has to decide what the remainder means."
-    misconceptions: "Ignoring the leftover, or giving the remainder as the answer."
+    rationale: "The problems use both meanings of division: how many groups, as in the muffin boxes, and how many in each group, as in the stickers. The sticker problem has a second part that changes the total, so students divide again rather than reuse the first answer. Problems whose remainder must be interpreted are not included yet."
+    misconceptions: "Choosing the operation from a key word, such as each, instead of from the story."
+    misconceptions: "Dividing the smaller number by the larger."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
   items {
     count: 3
@@ -148,8 +154,8 @@ fragments {
               response { work_space { field { label: "How many stickers does each member get" answer { text: "14" work: "98 ÷ 7" also: "14 stickers" } } } }
             }
             parts {
-              prompt { text: "Then 7 more members join and the club gets 70 more stickers. All the stickers are shared equally again. How many does each member get now?" }
-              response { work_space { field { label: "Then 7 more members join and the club gets 70 more stickers." answer { text: "12" work: "(98 + 70) ÷ (7 + 7)" also: "12 stickers" } } } }
+              prompt { text: "The club gets 70 more stickers. All the stickers are shared equally again among the 7 members. How many does each member get now?" }
+              response { work_space { field { label: "stickers each member gets after 70 more" answer { text: "24" work: "(98 + 70) ÷ 7" also: "24 stickers" } } } }
             }
           }
         }
@@ -166,8 +172,10 @@ fragments {
   design {
     purpose: "Solve equal-groups and array problems with multiplication and division within 100."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups."
+    rationale: "The unknown is sometimes the total, sometimes the size of each group and sometimes the number of groups, which are the three equal-groups problem types in 3.OA.A.3. Students who draw the groups or an array can check the operation they chose."
     misconceptions: "Multiplying whenever two numbers appear."
+    misconceptions: "Treating the number of groups and the size of each group as the same kind of number, so 42 ÷ 7 and 42 ÷ 6 look the same."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
   items {
     count: 4
@@ -200,8 +208,10 @@ fragments {
   design {
     purpose: "Solve two-step problems with the four operations."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "The two parts make each step visible before a single-question problem asks for both."
+    rationale: "The first problem splits the two steps into parts. The other two ask a single question, so students find the hidden first step on their own. 3.OA.D.8 asks for exactly this kind of problem, with whole numbers and an unknown quantity."
     misconceptions: "Stopping after the first step."
+    misconceptions: "Subtracting the price of one ticket from $50 instead of the cost of all six."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
   items {
     count: 3
@@ -241,8 +251,10 @@ fragments {
   design {
     purpose: "Solve word problems that add, subtract or multiply fractions with the same denominator."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Each problem keeps one denominator, so the child can reason in counts of unit fractions."
+    rationale: "Each problem keeps one denominator, so students reason in counts of unit fractions. The problems cover joining, taking away, and equal groups of a fraction. Answers greater than 1 are accepted as fractions or as mixed numbers."
     misconceptions: "Adding denominators: 2/8 + 3/8 = 5/16."
+    misconceptions: "Multiplying both parts of the fraction by the whole number: 5 × 2/3 = 10/15."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
   items {
     count: 4
@@ -286,8 +298,9 @@ fragments {
   design {
     purpose: "Solve word problems about distance, time, liquid volume, mass and money."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table."
-    misconceptions: "Combining amounts in different units without converting."
+    rationale: "Each problem needs a conversion before or after the arithmetic, which is how measurements appear outside a conversion table. The conversion fact is printed in the problem, because 4.MD.A.2 assesses using it, not recalling it."
+    misconceptions: "Combining amounts in different units without converting: 2 liters − 650 milliliters = 648."
+    misconceptions: "Treating 1 hour 50 minutes as 150 minutes."
   }
   items {
     count: 4
@@ -329,9 +342,11 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Solve one-step problems about mass in grams and kilograms, and volume in liters."
+    purpose: "Solve one-step problems about mass in grams and kilograms, and liquid volume in liters."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Every problem stays in one unit, so the arithmetic, not a conversion, is the step."
+    rationale: "Every problem stays in one unit, so the arithmetic is the only step. The problems use multiplication and subtraction, as 3.MD.A.2 allows, with numbers students can work mentally or on paper."
+    misconceptions: "Thinking a heavier object must be bigger."
+    misconceptions: "Adding the two masses when the question asks how much heavier."
   }
   items {
     count: 3
@@ -358,10 +373,11 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Use the area and perimeter formulas for rectangles in real problems, including finding a missing side."
+    purpose: "Use area and perimeter of rectangles to solve problems, including finding a missing side."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Two problems give the area or perimeter and ask for a side, so the formula is used backwards."
+    rationale: "Two problems ask for an area or a perimeter, and two give one of them and ask for a side, so the calculation is used backwards. The contexts, a rug and a fence, point to area and perimeter, and students explain the choice by the units of the answer."
     misconceptions: "Confusing area and perimeter: the fence around a garden is its area."
+    misconceptions: "Dividing the perimeter of a square by 2 instead of 4."
   }
   items {
     count: 4

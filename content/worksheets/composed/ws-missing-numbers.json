@@ -279,20 +279,25 @@
        "key": "42 ÷ 6 = 7"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-division-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall division facts from multiplication.",
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
       ]
      },
-     "estimatedHeight": 138
+     "estimatedHeight": 190
     },
     {
      "label": "B",
-     "instruction": "Find the missing number.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "9",
@@ -691,20 +696,24 @@
        "key": "7 × 6 = 42"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-missing-factor",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find an unknown factor in a multiplication or division equation.",
+      "purpose": "Find an unknown number in a multiplication or division equation.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+      "rationale": "The unknown sits in different places, so students treat multiplication and division as one fact family. 3.OA.A.4 lists exactly these forms: 8 × ? = 48, 5 = ? ÷ 3 and 6 × 6 = ?.",
+      "misconceptions": [
+       "Multiplying the two numbers shown whatever the position of the box: 8 × ? = 24 answered 192.",
+       "Reading the equal sign as a signal to write the answer, so a box on the left looks wrong."
+      ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 242
     }
    ],
-   "estimatedHeight": 336
+   "estimatedHeight": 440
   }
  ],
  "key": [
@@ -914,10 +923,11 @@
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_RETRIEVAL_PRACTICE"
-  ]
+  ],
+  "rationale": "Division facts come first, then the same facts with the unknown in any position."
  },
  "advice": [
-  "\"Find the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

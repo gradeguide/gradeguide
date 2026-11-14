@@ -11,8 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the blanks.",
-     "explainer": "A full turn is 360 degrees. An angle that turns through 1/360 of a full turn is a one-degree angle.",
+     "instruction": "Write the missing number.",
+     "explainer": "A full turn is 360 degrees.",
      "items": [
       {
        "label": "1",
@@ -80,12 +80,10 @@
         {
          "angle": {
           "rays": [
-           125
+           120
           ],
           "arcs": [
-           {
-            "text": "125°"
-           }
+           {}
           ]
          }
         },
@@ -96,22 +94,43 @@
             "text": "It turns through"
            },
            {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "of a full turn."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It measures"
+           },
+           {
             "blank": {
              "id": "q3",
-             "label": "one-degree angles in 125°",
+             "label": "degrees in 1/3 of a turn",
              "answer": {
-              "text": "125"
+              "text": "120",
+              "also": [
+               "120°"
+              ]
              }
             }
            },
            {
-            "text": "one-degree angles."
+            "text": "degrees."
            }
           ]
          }
         }
        ],
-       "key": "It turns through 125 one-degree angles."
+       "key": "It measures 120 degrees."
       },
       {
        "label": "4",
@@ -119,12 +138,10 @@
         {
          "angle": {
           "rays": [
-           80
+           60
           ],
           "arcs": [
-           {
-            "text": "80°"
-           }
+           {}
           ]
          }
         },
@@ -133,94 +150,114 @@
           "atoms": [
            {
             "text": "It turns through"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "of a full turn."
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "It measures"
            },
            {
             "blank": {
              "id": "q4",
-             "label": "one-degree angles in 80°",
+             "label": "degrees in 1/6 of a turn",
              "answer": {
-              "text": "80"
+              "text": "60",
+              "also": [
+               "60°"
+              ]
              }
             }
            },
            {
-            "text": "one-degree angles."
+            "text": "degrees."
            }
           ]
          }
         }
        ],
-       "key": "It turns through 80 one-degree angles."
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "angle": {
-          "rays": [
-           55
-          ],
-          "arcs": [
-           {
-            "text": "55°"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "It turns through"
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "one-degree angles in 55°",
-             "answer": {
-              "text": "55"
-             }
-            }
-           },
-           {
-            "text": "one-degree angles."
-           }
-          ]
-         }
-        }
-       ],
-       "key": "It turns through 55 one-degree angles."
+       "key": "It measures 60 degrees."
       }
      ],
      "columns": 1,
      "fragmentId": "frag-angle-turns",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Measure an angle as a turn: a fraction of a circle, or a count of one-degree angles.",
+      "purpose": "Find the measure of an angle from the fraction of a full turn it makes.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "4.MD.C.5 defines a degree as 1/360 of a full turn. The items give an angle as a fraction of a turn, such as 1/8, so students find the degrees by dividing 360. Quarter, half and three-quarter turns give the benchmarks of 90, 180 and 270.",
+      "misconceptions": [
+       "Thinking a full turn is 100 degrees.",
+       "Treating 1/8 of a turn as 8 degrees."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 669
+     "estimatedHeight": 614
     }
    ],
-   "estimatedHeight": 673
+   "estimatedHeight": 618
   },
   {
    "sections": [
     {
      "label": "B",
-     "instruction": "Tick acute, right or obtuse.",
-     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
+     "explainer": "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle.",
      "items": [
       {
-       "label": "6",
+       "label": "5",
        "nodes": [
         {
          "angle": {
           "rotation": 25,
           "rays": [
            45
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "kind of angle",
+           "answer": {
+            "text": "acute"
+           }
+          }
+         }
+        }
+       ],
+       "key": "acute"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "angle": {
+          "rays": [
+           65
           ],
           "markRightAngles": true
          }
@@ -249,8 +286,9 @@
        "nodes": [
         {
          "angle": {
+          "rotation": 5,
           "rays": [
-           65
+           70
           ],
           "markRightAngles": true
          }
@@ -273,50 +311,23 @@
         }
        ],
        "key": "acute"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "angle": {
-          "rotation": 5,
-          "rays": [
-           70
-          ],
-          "markRightAngles": true
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "acute",
-           "right",
-           "obtuse"
-          ],
-          "field": {
-           "id": "q8",
-           "label": "kind of angle",
-           "answer": {
-            "text": "acute"
-           }
-          }
-         }
-        }
-       ],
-       "key": "acute"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 384
@@ -356,9 +367,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "one-degree angles in 125°",
+    "label": "degrees in 1/3 of a turn",
     "answer": {
-     "text": "125"
+     "text": "120",
+     "also": [
+      "120°"
+     ]
     }
    }
   },
@@ -366,9 +380,12 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "one-degree angles in 80°",
+    "label": "degrees in 1/6 of a turn",
     "answer": {
-     "text": "80"
+     "text": "60",
+     "also": [
+      "60°"
+     ]
     }
    }
   },
@@ -376,9 +393,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "one-degree angles in 55°",
+    "label": "kind of angle",
     "answer": {
-     "text": "55"
+     "text": "acute"
     }
    }
   },
@@ -401,26 +418,17 @@
      "text": "acute"
     }
    }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "kind of angle",
-    "answer": {
-     "text": "acute"
-    }
-   }
   }
  ],
  "design": {
-  "purpose": "Understand an angle's measure as an amount of turn.",
+  "purpose": "Measure an angle as a fraction of a full turn.",
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
-  ]
+  ],
+  "rationale": "Students find degrees from fractions of a turn, then classify angles. The second section connects a measure in degrees to acute, right and obtuse."
  },
  "advice": [
-  "Section \"Fill in the blanks.\" was cut from 6 to 5 items to fit."
+  "Section \"Write the missing number.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -254,6 +254,7 @@ worksheets {
   id: "ws-lines-and-rays"
   title: "Lines, rays and segments"
   seed: 122
+  max_pages: 2
   placements { fragment_id: "frag-name-figures" count: 4 }
   placements { fragment_id: "frag-name-line-pairs" }
 }

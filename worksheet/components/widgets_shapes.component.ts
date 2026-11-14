@@ -1,7 +1,7 @@
 // Components for the shape widgets, which draw from engine/draw_shapes.ts.
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
-import { type FractionCircle, type GridShape } from '../proto/v1/nodes_pb.js';
+import { type FractionCircle, type GridShape, type MeasuringJug } from '../proto/v1/nodes_pb.js';
 import * as draw from '../engine/draw_shapes.js';
 import { SvgComponent } from './svg.component.js';
 
@@ -30,4 +30,15 @@ export class FractionCircleComponent {
   readonly filled = input(false);
   protected readonly d = computed(() => draw.fractionCircle(this.node()));
   protected readonly field = computed(() => draw.circleField(this.node()));
+}
+
+@Component({
+  selector: 'ws-measuring-jug',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [SvgComponent],
+  template: `<ws-svg [d]="d()" />`,
+})
+export class MeasuringJugComponent {
+  readonly node = input.required<MeasuringJug>();
+  protected readonly d = computed(() => draw.measuringJug(this.node()));
 }

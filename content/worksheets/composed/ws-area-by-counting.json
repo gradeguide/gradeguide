@@ -11,8 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the shaded squares. Each square is 1 square unit.",
-     "explainer": "Area is how many unit squares cover a shape, with no gaps and no overlaps.",
+     "instruction": "Count the unit squares. Write the area.",
+     "explainer": "Each square is 1 square unit.",
      "example": {
       "nodes": [
        {
@@ -80,7 +80,7 @@
         }
        }
       ],
-      "text": "3 rows of 3 squares: **9 square units**."
+      "text": "3 rows of 3 squares cover the shape. The area is 9 square units."
      },
      "items": [
       {
@@ -472,11 +472,19 @@
      "fragmentId": "frag-area-by-counting",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Measure area by counting unit squares.",
+      "purpose": "Measure the area of a rectangle by counting unit squares.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Counting squares comes before the formula, so length times width is a shortcut for a count the child has already made."
+      "rationale": "Students count squares before they are given a formula, so length times width later describes a count they have already made. The example counts by rows, which is the step from counting one by one to multiplying. Side lengths stay at 6 or less so the squares can be counted without losing track.",
+      "misconceptions": [
+       "Counting the squares along the edges only, which gives a length around the shape instead of an area.",
+       "Counting a square twice where a row and a column meet."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
+      ]
      },
      "estimatedHeight": 806
     }
@@ -487,8 +495,8 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Find the area. Some shapes are two rectangles joined.",
-     "explainer": "Split an L shape into two rectangles, find each area, then add.",
+     "instruction": "Find the area of each shape.",
+     "explainer": "Split a shape into two rectangles. Add their areas.",
      "items": [
       {
        "label": "5",
@@ -747,24 +755,195 @@
         }
        ],
        "key": "Area = 20 square units"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 6,
+          "rows": 6,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 3,
+            "row": 1
+           },
+           {
+            "col": 4,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 4,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           },
+           {
+            "col": 4,
+            "row": 3
+           },
+           {
+            "col": 1,
+            "row": 4
+           },
+           {
+            "col": 2,
+            "row": 4
+           },
+           {
+            "col": 3,
+            "row": 4
+           },
+           {
+            "col": 4,
+            "row": 4
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "area in square units",
+             "answer": {
+              "text": "16"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 16 square units"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "gridShape": {
+          "cols": 5,
+          "rows": 5,
+          "cells": [
+           {
+            "col": 1,
+            "row": 1
+           },
+           {
+            "col": 2,
+            "row": 1
+           },
+           {
+            "col": 1,
+            "row": 2
+           },
+           {
+            "col": 2,
+            "row": 2
+           },
+           {
+            "col": 3,
+            "row": 2
+           },
+           {
+            "col": 1,
+            "row": 3
+           },
+           {
+            "col": 2,
+            "row": 3
+           },
+           {
+            "col": 3,
+            "row": 3
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "area in square units",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "square units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 8 square units"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-area-of-l-shapes",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find the area of shapes made of rectangles.",
+      "purpose": "Find the area of a shape made of two rectangles by adding their areas.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "3.MD.C.7.d asks students to see area as additive. Mixing L shapes with plain rectangles makes students decide whether a shape needs splitting. The grid stays visible, so a student can check the sum of the two areas by counting.",
       "misconceptions": [
-       "Multiplying the two longest sides of an L shape."
+       "Multiplying the two longest sides of an L shape.",
+       "Counting the overlap twice when the two rectangles are drawn to share a strip."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 334
+     "estimatedHeight": 556
     }
    ],
-   "estimatedHeight": 338
+   "estimatedHeight": 560
   }
  ],
  "key": [
@@ -827,16 +1006,34 @@
      "text": "20"
     }
    }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "area in square units",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "area in square units",
+    "answer": {
+     "text": "8"
+    }
+   }
   }
  ],
  "design": {
-  "purpose": "Find area by counting unit squares, then for shapes made of rectangles.",
+  "purpose": "Find area by counting unit squares, then for shapes made of two rectangles.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "Rectangles come first, with a worked example that counts by rows. The second section adds shapes made of two rectangles, so students use the same counting to see that areas add."
  },
- "advice": [
-  "Section \"Find the area. Some shapes are two rectangles joined.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

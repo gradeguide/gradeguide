@@ -154,17 +154,42 @@
      "fragmentId": "frag-column-add",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add four-digit numbers with the standard algorithm.",
+      "purpose": "Add multi-digit numbers with the standard algorithm.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Every item regroups at least once, so the carry boxes are used."
+      "rationale": "4.NBT.B.4 asks for fluency with the standard algorithm, which students met in grade 3 with smaller numbers, so the section has no worked example. Every item regroups at least once, so the boxes above each place are used, and some items regroup in more than one place.",
+      "misconceptions": [
+       "Writing a two-digit column sum without regrouping.",
+       "Adding the regrouped digit to the wrong column."
+      ]
      },
      "estimatedHeight": 302
     },
     {
      "label": "B",
      "instruction": "Subtract.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_SUBTRACT",
+         "operands": [
+          "9320",
+          "3509"
+         ],
+         "answer": {
+          "label": "9320 − 3509",
+          "answer": {
+           "text": "5811"
+          }
+         },
+         "carryBoxes": true
+        }
+       }
+      ],
+      "text": "Subtract each place from right to left. When the top digit is smaller, regroup 1 from the next place to the left."
+     },
      "items": [
       {
        "label": "7",
@@ -309,18 +334,21 @@
      "fragmentId": "frag-column-subtract",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Subtract four-digit numbers with the standard algorithm.",
+      "purpose": "Subtract multi-digit numbers with the standard algorithm.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Every item needs at least one regrouping, and some need it in several places or across a zero. The worked example states the rule in terms of places, not crossing out.",
       "misconceptions": [
-       "Subtracting the smaller digit from the larger in every column"
+       "Subtracting the smaller digit from the larger in every column.",
+       "Regrouping across a zero without reducing the next nonzero place."
       ]
      },
-     "estimatedHeight": 302
+     "estimatedHeight": 464
     }
    ],
-   "estimatedHeight": 612
+   "estimatedHeight": 774
   }
  ],
  "key": [
@@ -445,9 +473,13 @@
    }
   }
  ],
- "advice": [
-  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
- ],
+ "design": {
+  "purpose": "Add and subtract four-digit numbers with the standard algorithm.",
+  "principles": [
+   "PRINCIPLE_WORKED_EXAMPLE",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Addition comes first as a fluency check. Subtraction opens with a worked example whose top number has a zero in the ones place, a case students often get wrong. Every item regroups at least once."
+ },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

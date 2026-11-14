@@ -53,6 +53,7 @@ message Node {
 
     GridShape grid_shape = 90;
     FractionCircle fraction_circle = 91;
+    MeasuringJug measuring_jug = 92;
   }
 }
 
@@ -496,4 +497,15 @@ message FractionCircle {
   int32 parts = 1;
   int32 shaded = 2;
   Field shade_field = 3;
+}
+
+// MeasuringJug is a container with a scale up its side, filled to a level.
+// Marks are every step; every labelled-th mark has a number.
+message MeasuringJug {
+  int32 capacity = 1;
+  int32 step = 2;
+  int32 labelled = 3;
+  int32 level = 4;
+  // Printed under the scale, such as "mL" or "liters".
+  string unit = 5;
 }

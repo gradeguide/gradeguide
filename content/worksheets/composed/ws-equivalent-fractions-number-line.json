@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: what fraction is at the arrow?",
+     "instruction": "Write the fraction at the arrow.",
      "items": [
       {
        "label": "1",
@@ -84,20 +84,21 @@
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "rationale": "The number line shows a fraction as one number with a size, which an area model does not. Students count the spaces between marks, not the marks, so the fraction is a distance from 0. The IES fractions guide recommends the number line as a central representation from grade 3.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them.",
+       "Counting the 0 mark as the first jump."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, rec. 2",
-       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 180
     },
     {
      "label": "B",
-     "instruction": "The two lines are the same length. Write the missing number.",
+     "instruction": "The two number lines are the same length. Write the missing number.",
      "example": {
       "nodes": [
        {
@@ -153,7 +154,7 @@
         }
        }
       ],
-      "text": "Both arrows point to the **same place**, so the fractions are equal. Halves cut into 2 make fourths: 1/2 = 2/4."
+      "text": "Both arrows point to the **same place**, so the fractions are equal: 1/2 = 2/4."
      },
      "items": [
       {
@@ -279,28 +280,177 @@
      "fragmentId": "frag-equivalent-on-number-lines",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See two fractions at one point as one number with two names.",
+      "purpose": "Recognize two fractions at the same point as equal.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "Lining up two number lines makes equivalence a fact about position, before any rule about multiplying top and bottom. The rule is easier to keep once it explains something the child has seen.",
+      "rationale": "Lining up two number lines makes equivalence a fact about position, before any rule about multiplying the numerator and denominator. The second line cuts each part into 2 or 3, so the rule later explains something students have seen.",
       "misconceptions": [
-       "A bigger denominator means a bigger fraction"
+       "A bigger denominator means a bigger fraction, so 2/4 is more than 1/2."
       ],
       "references": [
-       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 502
-    },
+    }
+   ],
+   "estimatedHeight": 690
+  },
+  {
+   "sections": [
     {
-     "label": "C",
-     "instruction": "Fill in the box.",
+     "label": "B",
+     "instruction": "The two number lines are the same length. Write the missing number.",
      "items": [
       {
        "label": "5",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 3,
+          "labels": [
+           {
+            "tick": 2,
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 2
+         }
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 6,
+          "hasArrow": true,
+          "arrowTick": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 6,
+             "blankNumerator": true,
+             "field": {
+              "id": "q5",
+              "label": "numerator of the fraction equal to 2/3",
+              "answer": {
+               "text": "4"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 = 4/6"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 2,
+          "labels": [
+           {
+            "tick": 1,
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 1
+         }
+        },
+        {
+         "numberLine": {
+          "end": 1,
+          "partsPerUnit": 6,
+          "hasArrow": true,
+          "arrowTick": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 6,
+             "blankNumerator": true,
+             "field": {
+              "id": "q6",
+              "label": "numerator of the fraction equal to 1/2",
+              "answer": {
+               "text": "3"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 = 3/6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-equivalent-on-number-lines",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Recognize two fractions at the same point as equal.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "Lining up two number lines makes equivalence a fact about position, before any rule about multiplying the numerator and denominator. The second line cuts each part into 2 or 3, so the rule later explains something students have seen.",
+      "misconceptions": [
+       "A bigger denominator means a bigger fraction, so 2/4 is more than 1/2."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 254
+    },
+    {
+     "label": "C",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "7",
        "nodes": [
         {
          "math": {
@@ -319,7 +469,7 @@
              "given": 12,
              "blankNumerator": true,
              "field": {
-              "id": "q5",
+              "id": "q7",
               "label": "numerator equal to 2/3",
               "answer": {
                "text": "8"
@@ -334,7 +484,7 @@
        "key": "2/3 = 8/12"
       },
       {
-       "label": "6",
+       "label": "8",
        "nodes": [
         {
          "math": {
@@ -352,7 +502,7 @@
             "halfBlank": {
              "given": 12,
              "field": {
-              "id": "q6",
+              "id": "q8",
               "label": "denominator equal to 3/5",
               "answer": {
                "text": "20"
@@ -367,7 +517,7 @@
        "key": "3/5 = 12/20"
       },
       {
-       "label": "7",
+       "label": "9",
        "nodes": [
         {
          "math": {
@@ -385,7 +535,7 @@
             "halfBlank": {
              "given": 8,
              "field": {
-              "id": "q7",
+              "id": "q9",
               "label": "denominator equal to 2/5",
               "answer": {
                "text": "20"
@@ -398,32 +548,9 @@
         }
        ],
        "key": "2/5 = 8/20"
-      }
-     ],
-     "columns": 3,
-     "fragmentId": "frag-equivalent-missing",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Generate equivalent fractions without a picture.",
-      "principles": [
-       "PRINCIPLE_CONCRETENESS_FADING",
-       "PRINCIPLE_RETRIEVAL_PRACTICE"
-      ],
-      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
-     },
-     "estimatedHeight": 106
-    }
-   ],
-   "estimatedHeight": 800
-  },
-  {
-   "sections": [
-    {
-     "label": "C",
-     "instruction": "Fill in the box.",
-     "items": [
+      },
       {
-       "label": "8",
+       "label": "10",
        "nodes": [
         {
          "math": {
@@ -441,7 +568,7 @@
             "halfBlank": {
              "given": 2,
              "field": {
-              "id": "q8",
+              "id": "q10",
               "label": "denominator equal to 1/6",
               "answer": {
                "text": "12"
@@ -456,7 +583,7 @@
        "key": "1/6 = 2/12"
       },
       {
-       "label": "9",
+       "label": "11",
        "nodes": [
         {
          "math": {
@@ -475,7 +602,7 @@
              "given": 9,
              "blankNumerator": true,
              "field": {
-              "id": "q9",
+              "id": "q11",
               "label": "numerator equal to 1/3",
               "answer": {
                "text": "3"
@@ -490,7 +617,7 @@
        "key": "1/3 = 3/9"
       },
       {
-       "label": "10",
+       "label": "12",
        "nodes": [
         {
          "math": {
@@ -508,7 +635,7 @@
             "halfBlank": {
              "given": 3,
              "field": {
-              "id": "q10",
+              "id": "q12",
               "label": "denominator equal to 1/2",
               "answer": {
                "text": "6"
@@ -527,22 +654,25 @@
      "fragmentId": "frag-equivalent-missing",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Generate equivalent fractions without a picture.",
+      "purpose": "Write equivalent fractions without a model.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+      "rationale": "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions.",
+      "misconceptions": [
+       "Multiplying only the denominator: 2/3 = 2/6.",
+       "Adding the same number to the numerator and denominator."
+      ]
      },
-     "continued": true,
-     "estimatedHeight": 106
+     "estimatedHeight": 178
     },
     {
      "label": "D",
      "instruction": "Find the mistake.",
      "items": [
       {
-       "label": "11",
+       "label": "13",
        "nodes": [
         {
          "numberLine": {
@@ -565,7 +695,7 @@
           "atoms": [
            {
             "fractionBlank": {
-             "id": "q11",
+             "id": "q13",
              "label": "the right label for the first mark",
              "answer": {
               "text": "1/3"
@@ -579,7 +709,7 @@
          "lines": {
           "count": 2,
           "field": {
-           "id": "q11-2",
+           "id": "q13-2",
            "label": "why",
            "answer": {
             "text": "There are 3 equal jumps from 0 to 1, so each jump is 1/3. Count the jumps, not the marks."
@@ -595,14 +725,14 @@
      "fragmentId": "frag-mistake-counting-marks",
      "stage": "STAGE_MISTAKE",
      "design": {
-      "purpose": "Spot and explain the marks-not-jumps error.",
+      "purpose": "Find and explain the error of counting marks instead of jumps.",
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS",
        "PRINCIPLE_SELF_EXPLANATION"
       ],
-      "rationale": "Explaining why a worked answer is wrong helps children drop a misconception they would otherwise keep using. The error shown is the most common one on number lines.",
+      "rationale": "Explaining why a worked answer is wrong helps students drop a misconception they would otherwise keep using. The error shown is the most common one on fraction number lines.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them."
       ],
       "references": [
        "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
@@ -611,7 +741,7 @@
      "estimatedHeight": 276
     }
    ],
-   "estimatedHeight": 390
+   "estimatedHeight": 720
   }
  ],
  "key": [
@@ -662,9 +792,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "numerator equal to 2/3",
+    "label": "numerator of the fraction equal to 2/3",
     "answer": {
-     "text": "8"
+     "text": "4"
     }
    }
   },
@@ -672,9 +802,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "denominator equal to 3/5",
+    "label": "numerator of the fraction equal to 1/2",
     "answer": {
-     "text": "20"
+     "text": "3"
     }
    }
   },
@@ -682,9 +812,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "denominator equal to 2/5",
+    "label": "numerator equal to 2/3",
     "answer": {
-     "text": "20"
+     "text": "8"
     }
    }
   },
@@ -692,9 +822,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "denominator equal to 1/6",
+    "label": "denominator equal to 3/5",
     "answer": {
-     "text": "12"
+     "text": "20"
     }
    }
   },
@@ -702,9 +832,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "numerator equal to 1/3",
+    "label": "denominator equal to 2/5",
     "answer": {
-     "text": "3"
+     "text": "20"
     }
    }
   },
@@ -712,9 +842,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "denominator equal to 1/2",
+    "label": "denominator equal to 1/6",
     "answer": {
-     "text": "6"
+     "text": "12"
     }
    }
   },
@@ -722,6 +852,26 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
+    "label": "numerator equal to 1/3",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "denominator equal to 1/2",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
     "label": "the right label for the first mark",
     "answer": {
      "text": "1/3"
@@ -729,9 +879,9 @@
    }
   },
   {
-   "itemLabel": "11",
+   "itemLabel": "13",
    "field": {
-    "id": "q11-2",
+    "id": "q13-2",
     "label": "why",
     "answer": {
      "text": "There are 3 equal jumps from 0 to 1, so each jump is 1/3. Count the jumps, not the marks."
@@ -740,15 +890,12 @@
   }
  ],
  "design": {
-  "purpose": "Find equivalent fractions by seeing them at the same point.",
+  "purpose": "Find equivalent fractions as fractions at the same point on a number line.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_CONCRETENESS_FADING"
   ],
-  "rationale": "Starts by reading a fraction on a line, the skill everything after it uses. Then two lines show equivalence as position, then the boxes ask for it with no picture. The mistake at the end brings back the one error that breaks number-line reading."
+  "rationale": "The sheet starts with reading a fraction on a line, the skill every later section uses. Two lines then show equivalence as position, and the boxes ask for equivalent fractions with no picture. The mistake at the end returns to the error that breaks number-line reading."
  },
- "advice": [
-  "Section \"The two lines are the same length. Write the missing number.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

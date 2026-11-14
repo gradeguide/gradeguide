@@ -14,7 +14,7 @@
    "sections": [
     {
      "label": "1",
-     "instruction": "Fill in the box.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "1a",
@@ -155,18 +155,23 @@
      "fragmentId": "frag-equivalent-missing",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Generate equivalent fractions without a picture.",
+      "purpose": "Write equivalent fractions without a model.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+      "rationale": "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions.",
+      "misconceptions": [
+       "Multiplying only the denominator: 2/3 = 2/6.",
+       "Adding the same number to the numerator and denominator."
+      ]
      },
      "estimatedHeight": 178
     },
     {
      "label": "2",
-     "instruction": "Write <, > or =. Use a benchmark like 1/2 or a common denominator.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "Use a benchmark such as 1/2, or rewrite the fractions with a common denominator.",
      "items": [
       {
        "label": "2a",
@@ -305,21 +310,24 @@
      "fragmentId": "frag-compare-any",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Compare any two fractions.",
+      "purpose": "Compare two fractions with different numerators and denominators.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Mixing same-denominator, same-numerator and unlike pairs makes the child choose a strategy, which blocked practice never asks for.",
+      "rationale": "Mixing same-denominator, same-numerator and unlike pairs makes students choose a strategy for each pair, which a set of one type never asks for. Some pairs are equal, so = is a possible answer.",
+      "misconceptions": [
+       "Comparing only the numerators, or only the denominators.",
+       "Judging by the difference between numerator and denominator: 3/4 and 5/6 are equal because each is one part short."
+      ],
       "references": [
        "Rohrer and Taylor (2007), Instructional Science 35"
       ]
      },
-     "estimatedHeight": 178
+     "estimatedHeight": 204
     },
     {
      "label": "3",
-     "instruction": "Add. The denominators are the same.",
-     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "instruction": "Add.",
      "items": [
       {
        "label": "3a",
@@ -495,18 +503,23 @@
      "design": {
       "purpose": "Add fractions with the same denominator.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers.",
       "misconceptions": [
        "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 178
     },
     {
      "label": "4",
-     "instruction": "Use the bars. Multiply the whole number by the fraction.",
-     "explainer": "3 × 2/5 is three groups of two fifths: six fifths, or 6/5.",
+     "instruction": "Multiply. Use the fraction bars.",
+     "explainer": "3 × 2/5 is 3 groups of 2 fifths. That is 6 fifths, or 6/5.",
      "items": [
       {
        "label": "4a",
@@ -574,13 +587,16 @@
      "fragmentId": "frag-fraction-times-whole",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a fraction by a whole number as repeated groups of unit fractions.",
+      "purpose": "Multiply a fraction by a whole number as equal groups of a fraction.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d.",
+      "rationale": "The bars show each group, so students count unit fractions before writing n × a/d = (n × a)/d. The same equal-groups meaning of multiplication from grade 3 now applies to fractions.",
       "misconceptions": [
        "Multiplying the denominator too: 3 × 2/5 = 6/15."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 176
@@ -592,7 +608,7 @@
    "sections": [
     {
      "label": "4",
-     "instruction": "Use the bars. Multiply the whole number by the fraction.",
+     "instruction": "Multiply. Use the fraction bars.",
      "items": [
       {
        "label": "4b",
@@ -685,13 +701,16 @@
      "fragmentId": "frag-fraction-times-whole",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a fraction by a whole number as repeated groups of unit fractions.",
+      "purpose": "Multiply a fraction by a whole number as equal groups of a fraction.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d.",
+      "rationale": "The bars show each group, so students count unit fractions before writing n × a/d = (n × a)/d. The same equal-groups meaning of multiplication from grade 3 now applies to fractions.",
       "misconceptions": [
        "Multiplying the denominator too: 3 × 2/5 = 6/15."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "continued": true,
@@ -699,8 +718,8 @@
     },
     {
      "label": "5",
-     "instruction": "Write <, > or = in each circle.",
-     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "Compare the tenths first, then the hundredths. 0.4 is the same as 0.40.",
      "items": [
       {
        "label": "5a",
@@ -873,8 +892,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Pairs mix tenths with hundredths, so the decimal with more digits is sometimes the smaller one. Students compare place by place, or rewrite tenths as hundredths, instead of comparing digit strings as whole numbers.",
       "misconceptions": [
-       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4.",
+       "Thinking the decimal with fewer digits is larger, because hundredths are smaller than tenths: 0.4 > 0.45."
+      ],
+      "references": [
+       "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
       ]
      },
      "estimatedHeight": 164
@@ -1109,14 +1133,15 @@
   "principles": [
    "PRINCIPLE_INTERLEAVING",
    "PRINCIPLE_RETRIEVAL_PRACTICE"
-  ]
+  ],
+  "rationale": "Short sets from each fraction standard are mixed on one sheet, with no worked examples, so students recall each method without a model to copy."
  },
  "advice": [
-  "\"Fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write <, > or =. Use a benchmark like 1/2 or a common denominator.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Add. The denominators are the same.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use the bars. Multiply the whole number by the fraction.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply. Use the fraction bars.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

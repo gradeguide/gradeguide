@@ -124,9 +124,10 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
       const units = k.value.units || 1;
       const [d, t] = pickFresh(ctx, k.case, () => {
         const d = rng.pick(list(k.value.denominators, [2, 3, 4, 6, 8]));
-        let t = rng.int(1, d * units - 1);
+        const lo = k.value.pastOne && units > 1 ? d + 1 : 1;
+        let t = rng.int(lo, d * units - 1);
         while (t % d === 0) {
-          t = rng.int(1, d * units - 1);
+          t = rng.int(lo, d * units - 1);
         }
         return [d, t];
       });
@@ -156,7 +157,7 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
       ];
     }
     case 'shadedFraction': {
-      const [d, s] = pickFresh(ctx, k.case, () => {
+      const [d, s] = pickFresh(ctx, k.case + k.value.childShades, () => {
         const d = rng.pick(list(k.value.denominators, [2, 3, 4, 6, 8]));
         return [d, rng.int(1, d - 1)];
       });
@@ -268,7 +269,7 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
           if (k.value.subtract && y > x) {
             [x, y] = [y, x];
           }
-          if (x === y) {
+          if (x === y || (k.value.maxTotal && (k.value.subtract ? x : x + y) > k.value.maxTotal)) {
             continue;
           }
           if (!k.value.regroup || regroups(x, y, k.value.subtract)) {
@@ -385,7 +386,8 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
             const a = rng.int(1, d - 1);
             const w2 = rng.int(1, 3);
             const b = rng.int(1, d - 1);
-            if (!sub || w1 * d + a > w2 * d + b) {
+            const traded = sub ? a < b : a + b > d;
+            if ((!sub || w1 * d + a > w2 * d + b) && (!k.value.regroup || traded)) {
               return [d, w1, a, w2, b];
             }
           }
@@ -456,9 +458,9 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
     }
     case 'angleTurn': {
       // Fresh by what is asked, so no turn or angle appears twice.
-      const [form, i, deg] = pickFresh(ctx, k.case, () => {
+      const [form, i] = pickFresh(ctx, k.case, () => {
         const form = rng.int(0, 1);
-        return form === 0 ? [0, rng.int(0, 3), 0] : [1, 0, 5 * rng.int(3, 34)];
+        return [form, rng.int(0, form === 0 ? 3 : TURN_PARTS.length - 1)];
       });
       if (form === 0) {
         const [name, degrees] = [
@@ -469,9 +471,13 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
         ][i] as [string, number];
         return [math(`A ${name} turn is`, blank(ctx.fields.field(`degrees in a ${name} turn`, String(degrees), [`${degrees}°`])), 'degrees.')];
       }
+      // An angle given as a fraction of a full turn, to measure in degrees.
+      const [n, d] = TURN_PARTS[i];
+      const degrees = (360 * n) / d;
       return [
-        node({ case: 'angle', value: create(AngleSchema, { rotation: 0, rays: [deg], arcs: [create(Angle_ArcLabelSchema, { text: `${deg}°` })] }) }),
-        math('It turns through', blank(ctx.fields.field(`one-degree angles in ${deg}°`, String(deg))), 'one-degree angles.'),
+        node({ case: 'angle', value: create(AngleSchema, { rotation: 0, rays: [degrees], arcs: [create(Angle_ArcLabelSchema, { text: '' })] }) }),
+        math('It turns through', [n, d], 'of a full turn.'),
+        math('It measures', blank(ctx.fields.field(`degrees in ${frac(n, d)} of a turn`, String(degrees), [`${degrees}°`])), 'degrees.'),
       ];
     }
     case 'classifyShape': {
@@ -497,7 +503,7 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
       const [pts, parallel, right] = QUADS[i];
       return [
         node({ case: 'polygon', value: create(PolygonSchema, { points: big(pts) }) }),
-        math('Parallel pairs:', blank(f.field('pairs of parallel sides', String(parallel)))),
+        math('Pairs of parallel sides:', blank(f.field('pairs of parallel sides', String(parallel)))),
         math('Right angles:', blank(f.field('right angles', String(right)))),
       ];
     }
@@ -776,8 +782,8 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
       const hi = ticksWith[ticksWith.length - 1][1];
       return [
         node({ case: 'linePlot', value: create(LinePlotSchema, { start: 0, end: 2, partsPerUnit: ppu, counts, caption: 'Length of each leaf (inches)' }) }),
-        math(`How many leaves are ${mixed(askTick, ppu)} inch long?`, blank(ctx.fields.field(`leaves ${mixed(askTick, ppu)} inch long`, String(askCount)))),
-        math('Longest minus shortest:', blank(ctx.fields.field('longest minus shortest leaf', mixed(hi - lo, ppu), [`${hi - lo}/${ppu}`])), 'inch'),
+        math(`How many leaves are ${mixed(askTick, ppu)} ${askTick === ppu ? 'inch' : 'inches'} long?`, blank(ctx.fields.field(`leaves ${mixed(askTick, ppu)} inches long`, String(askCount)))),
+        math('The longest leaf is', blank(ctx.fields.field('longest minus shortest leaf', mixed(hi - lo, ppu), [`${hi - lo}/${ppu}`])), hi - lo === ppu ? 'inch longer than the shortest.' : 'inches longer than the shortest.'),
       ];
     }
     case 'readProtractor': {
@@ -945,6 +951,19 @@ type Pts = [number, number][];
 function big(pts: Pts) {
   return pts.map(([x, y]) => create(Polygon_PointSchema, { x: 2 * x, y: 2 * y }));
 }
+
+// Fractions of a full turn that come to a whole number of degrees, for
+// angles a child can draw: 30°, 40°, 45°, 60°, 72°, 120°, 135°, 150°.
+const TURN_PARTS: [number, number][] = [
+  [1, 12],
+  [1, 9],
+  [1, 8],
+  [1, 6],
+  [1, 5],
+  [1, 3],
+  [3, 8],
+  [5, 12],
+];
 
 // Quadrilaterals with their pairs of parallel sides and right angles.
 const QUADS: [Pts, number, number][] = [

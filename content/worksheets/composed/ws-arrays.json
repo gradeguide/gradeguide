@@ -12,7 +12,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "instruction": "Write a multiplication fact and a division fact for each array.",
      "example": {
       "nodes": [
        {
@@ -94,7 +94,7 @@
         }
        }
       ],
-      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+      "text": "3 rows of 5 dots: **3 × 5 = 15**. 15 dots in 3 equal rows: **15 ÷ 3 = 5**."
      },
      "items": [
       {
@@ -368,18 +368,25 @@
        "key": "4 × 6 = 24; 24 ÷ 4 = 6"
       }
      ],
-     "columns": 3,
+     "columns": 2,
      "fragmentId": "frag-array-facts",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Read one array as a multiplication and a division.",
+      "purpose": "Write a multiplication fact and a division fact for the same array.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes. Students write the rows first, so the first factor always names the number of rows, the convention most grade 3 programs use.",
+      "misconceptions": [
+       "Writing the division fact with the total last: 3 ÷ 15 = 5.",
+       "Counting every dot one by one instead of using the rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
+      ]
      },
-     "estimatedHeight": 426
+     "estimatedHeight": 608
     },
     {
      "label": "B",
@@ -681,54 +688,26 @@
         }
        ],
        "key": "20 ÷ 5 = 4"
-      },
-      {
-       "label": "13",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "35"
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "text": "7"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q13",
-             "label": "35 ÷ 7",
-             "answer": {
-              "text": "5"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "35 ÷ 7 = 5"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-division-facts",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Recall division facts from multiplication.",
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
       ]
      },
      "estimatedHeight": 190
     }
    ],
-   "estimatedHeight": 624
+   "estimatedHeight": 806
   }
  ],
  "key": [
@@ -1001,17 +980,18 @@
      "text": "4"
     }
    }
-  },
-  {
-   "itemLabel": "13",
-   "field": {
-    "id": "q13",
-    "label": "35 ÷ 7",
-    "answer": {
-     "text": "5"
-    }
-   }
   }
+ ],
+ "design": {
+  "purpose": "Write multiplication and division facts from arrays, then recall division facts.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Arrays show a multiplication fact and a division fact in one picture. The division facts that follow have no picture, so students use the related multiplication fact."
+ },
+ "advice": [
+  "Section \"Divide.\" was cut from 10 to 9 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

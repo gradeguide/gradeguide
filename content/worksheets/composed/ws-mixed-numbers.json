@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add. The denominators are the same.",
-     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "instruction": "Add.",
      "items": [
       {
        "label": "1",
@@ -192,18 +191,23 @@
      "design": {
       "purpose": "Add fractions with the same denominator.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers.",
       "misconceptions": [
        "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 178
     },
     {
      "label": "B",
      "instruction": "Add. Write the answer as a mixed number.",
-     "explainer": "Add the wholes, then the parts. If the parts make more than one whole, trade them for a whole.",
+     "explainer": "Add the whole numbers. Add the fractions. If the fractions make 1 or more, regroup them as a whole.",
      "items": [
       {
        "label": "5",
@@ -406,14 +410,19 @@
       "purpose": "Add mixed numbers with the same denominator.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Adding wholes and parts separately follows place value: the fraction parts work like ones that regroup into a whole. Some items regroup and some do not, so students check each sum of the parts.",
+      "misconceptions": [
+       "Leaving a fraction part of 1 or more in the answer: 3 5/4.",
+       "Adding the denominators of the fraction parts."
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 224
     },
     {
      "label": "C",
      "instruction": "Subtract. Write the answer as a mixed number.",
-     "explainer": "If there are not enough parts to take away, trade one whole for parts first.",
+     "explainer": "If there are not enough parts to subtract, regroup 1 whole as parts first.",
      "items": [
       {
        "label": "9",
@@ -422,12 +431,12 @@
          "math": {
           "atoms": [
            {
-            "text": "3"
+            "text": "4"
            },
            {
             "fraction": {
-             "num": 5,
-             "den": 8
+             "num": 1,
+             "den": 5
             }
            },
            {
@@ -439,7 +448,7 @@
            {
             "fraction": {
              "num": 2,
-             "den": 8
+             "den": 5
             }
            },
            {
@@ -448,11 +457,11 @@
            {
             "blank": {
              "id": "q9",
-             "label": "3 5/8 − 1 2/8",
+             "label": "4 1/5 − 1 2/5",
              "answer": {
-              "text": "2 3/8",
+              "text": "2 4/5",
               "also": [
-               "19/8"
+               "14/5"
               ]
              }
             }
@@ -461,7 +470,7 @@
          }
         }
        ],
-       "key": "3 5/8 − 1 2/8 = 2 3/8"
+       "key": "4 1/5 − 1 2/5 = 2 4/5"
       },
       {
        "label": "10",
@@ -469,6 +478,18 @@
         {
          "math": {
           "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 5
+            }
+           },
+           {
+            "text": "−"
+           },
            {
             "text": "3"
            },
@@ -479,29 +500,14 @@
             }
            },
            {
-            "text": "−"
-           },
-           {
-            "text": "2"
-           },
-           {
-            "fraction": {
-             "num": 2,
-             "den": 5
-            }
-           },
-           {
             "text": "="
            },
            {
             "blank": {
              "id": "q10",
-             "label": "3 4/5 − 2 2/5",
+             "label": "4 3/5 − 3 4/5",
              "answer": {
-              "text": "1 2/5",
-              "also": [
-               "7/5"
-              ]
+              "text": "4/5"
              }
             }
            }
@@ -509,7 +515,7 @@
          }
         }
        ],
-       "key": "3 4/5 − 2 2/5 = 1 2/5"
+       "key": "4 3/5 − 3 4/5 = 4/5"
       },
       {
        "label": "11",
@@ -523,19 +529,19 @@
            {
             "fraction": {
              "num": 2,
-             "den": 4
+             "den": 6
             }
            },
            {
             "text": "−"
            },
            {
-            "text": "1"
+            "text": "3"
            },
            {
             "fraction": {
-             "num": 1,
-             "den": 4
+             "num": 3,
+             "den": 6
             }
            },
            {
@@ -544,12 +550,9 @@
            {
             "blank": {
              "id": "q11",
-             "label": "4 2/4 − 1 1/4",
+             "label": "4 2/6 − 3 3/6",
              "answer": {
-              "text": "3 1/4",
-              "also": [
-               "13/4"
-              ]
+              "text": "5/6"
              }
             }
            }
@@ -557,7 +560,7 @@
          }
         }
        ],
-       "key": "4 2/4 − 1 1/4 = 3 1/4"
+       "key": "4 2/6 − 3 3/6 = 5/6"
       },
       {
        "label": "12",
@@ -566,12 +569,12 @@
          "math": {
           "atoms": [
            {
-            "text": "1"
+            "text": "3"
            },
            {
             "fraction": {
-             "num": 2,
-             "den": 3
+             "num": 1,
+             "den": 4
             }
            },
            {
@@ -582,8 +585,8 @@
            },
            {
             "fraction": {
-             "num": 1,
-             "den": 3
+             "num": 2,
+             "den": 4
             }
            },
            {
@@ -592,9 +595,12 @@
            {
             "blank": {
              "id": "q12",
-             "label": "1 2/3 − 1 1/3",
+             "label": "3 1/4 − 1 2/4",
              "answer": {
-              "text": "1/3"
+              "text": "1 3/4",
+              "also": [
+               "7/4"
+              ]
              }
             }
            }
@@ -602,25 +608,27 @@
          }
         }
        ],
-       "key": "1 2/3 − 1 1/3 = 1/3"
+       "key": "3 1/4 − 1 2/4 = 1 3/4"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-subtract-mixed-numbers",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Subtract mixed numbers with the same denominator, trading a whole when needed.",
+      "purpose": "Subtract mixed numbers with the same denominator, regrouping a whole as parts.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Every item needs a whole regrouped, which is the step 4.NF.B.3.c adds to subtraction. Regrouping 1 as 4/4 or 6/6 uses the same idea as regrouping a ten as 10 ones.",
       "misconceptions": [
-       "Subtracting the smaller fraction part from the larger whatever their order: 3 1/4 − 1 3/4 = 2 2/4."
+       "Subtracting the smaller fraction part from the larger whatever their order: 3 1/4 − 1 3/4 = 2 2/4.",
+       "Regrouping a whole as 10 parts whatever the denominator."
       ]
      },
      "estimatedHeight": 204
     }
    ],
-   "estimatedHeight": 624
+   "estimatedHeight": 618
   }
  ],
  "key": [
@@ -737,11 +745,11 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "3 5/8 − 1 2/8",
+    "label": "4 1/5 − 1 2/5",
     "answer": {
-     "text": "2 3/8",
+     "text": "2 4/5",
      "also": [
-      "19/8"
+      "14/5"
      ]
     }
    }
@@ -750,12 +758,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "3 4/5 − 2 2/5",
+    "label": "4 3/5 − 3 4/5",
     "answer": {
-     "text": "1 2/5",
-     "also": [
-      "7/5"
-     ]
+     "text": "4/5"
     }
    }
   },
@@ -763,12 +768,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "4 2/4 − 1 1/4",
+    "label": "4 2/6 − 3 3/6",
     "answer": {
-     "text": "3 1/4",
-     "also": [
-      "13/4"
-     ]
+     "text": "5/6"
     }
    }
   },
@@ -776,9 +778,12 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "1 2/3 − 1 1/3",
+    "label": "3 1/4 − 1 2/4",
     "answer": {
-     "text": "1/3"
+     "text": "1 3/4",
+     "also": [
+      "7/4"
+     ]
     }
    }
   }
@@ -787,7 +792,8 @@
   "purpose": "Add and subtract mixed numbers with the same denominator.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Adding fractions comes first, because the fraction parts of mixed numbers are added the same way. Subtraction comes last, and every item needs a whole regrouped."
  },
  "advice": [
   "\"Add. Write the answer as a mixed number.\" is practice, and nothing on the sheet introduces it with a worked example."

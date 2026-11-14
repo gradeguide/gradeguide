@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick acute, right or obtuse.",
-     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
+     "explainer": "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle.",
      "items": [
       {
        "label": "1",
@@ -111,21 +111,25 @@
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 374
     },
     {
      "label": "B",
-     "instruction": "Is the triangle acute, right or obtuse? Tick one.",
-     "explainer": "A right triangle has a right angle. An obtuse triangle has an angle bigger than a right angle. In an acute triangle every angle is smaller than a right angle.",
+     "instruction": "Is the triangle acute, right or obtuse? Check one.",
+     "explainer": "A right triangle has a right angle. An obtuse triangle has an obtuse angle. An acute triangle has three acute angles.",
      "items": [
       {
        "label": "4",
@@ -208,6 +212,14 @@
       "purpose": "Classify triangles by their largest angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The set shows each kind of triangle before any kind repeats. Students look at the largest angle, which decides the name, and compare it with a right angle.",
+      "misconceptions": [
+       "A triangle with one acute angle is an acute triangle.",
+       "A right triangle must have its right angle at the bottom left."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 272
@@ -219,7 +231,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Is the triangle acute, right or obtuse? Tick one.",
+     "instruction": "Is the triangle acute, right or obtuse? Check one.",
      "items": [
       {
        "label": "6",
@@ -292,6 +304,78 @@
         }
        ],
        "key": "right"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "y": 8
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 14
+           },
+           {
+            "y": 8
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "acute",
+           "right",
+           "obtuse"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "kind of triangle",
+           "answer": {
+            "text": "right"
+           }
+          }
+         }
+        }
+       ],
+       "key": "right"
       }
      ],
      "columns": 2,
@@ -301,13 +385,21 @@
       "purpose": "Classify triangles by their largest angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The set shows each kind of triangle before any kind repeats. Students look at the largest angle, which decides the name, and compare it with a right angle.",
+      "misconceptions": [
+       "A triangle with one acute angle is an acute triangle.",
+       "A right triangle must have its right angle at the bottom left."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "continued": true,
-     "estimatedHeight": 226
+     "estimatedHeight": 418
     }
    ],
-   "estimatedHeight": 230
+   "estimatedHeight": 422
   }
  ],
  "key": [
@@ -380,17 +472,37 @@
      "text": "right"
     }
    }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "right"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "kind of triangle",
+    "answer": {
+     "text": "right"
+    }
+   }
   }
  ],
  "design": {
-  "purpose": "Sort triangles by their angles.",
+  "purpose": "Classify triangles by their angles.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Classifying single angles comes first, because a triangle's name depends on its largest angle."
  },
  "advice": [
-  "\"Is the triangle acute, right or obtuse? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Is the triangle acute, right or obtuse? Tick one.\" was cut from 6 to 4 items to fit."
+  "\"Is the triangle acute, right or obtuse? Check one.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

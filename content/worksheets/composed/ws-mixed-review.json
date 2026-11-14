@@ -14,7 +14,7 @@
    "sections": [
     {
      "label": "1",
-     "instruction": "What fraction is at the arrow?",
+     "instruction": "Write the fraction at the arrow.",
      "items": [
       {
        "label": "1a",
@@ -87,20 +87,21 @@
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "rationale": "The number line shows a fraction as one number with a size, which an area model does not. Students count the spaces between marks, not the marks, so the fraction is a distance from 0. The IES fractions guide recommends the number line as a central representation from grade 3.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them.",
+       "Counting the 0 mark as the first jump."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, rec. 2",
-       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 180
     },
     {
      "label": "2",
-     "instruction": "Fill in the box.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "2a",
@@ -208,18 +209,22 @@
      "fragmentId": "frag-equivalent-missing",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Generate equivalent fractions without a picture.",
+      "purpose": "Write equivalent fractions without a model.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+      "rationale": "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions.",
+      "misconceptions": [
+       "Multiplying only the denominator: 2/3 = 2/6.",
+       "Adding the same number to the numerator and denominator."
+      ]
      },
      "estimatedHeight": 106
     },
     {
      "label": "3",
-     "instruction": "Fill in the area model, then the product.",
+     "instruction": "Complete the area model. Write the product.",
      "items": [
       {
        "label": "3a",
@@ -354,22 +359,26 @@
      "fragmentId": "frag-area-model-2-by-1",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "purpose": "Multiply a two-digit number by a one-digit number with an area model.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "rationale": "The area model shows the distributive property, which the standard algorithm hides. Splitting by place value gives one tens product and one ones product, and 4.NBT.B.5 names the area model as a way to explain the calculation.",
       "misconceptions": [
-       "Multiplying only the ones, or forgetting the tens are tens"
+       "Multiplying only the ones, or treating the tens digit as ones: 28 × 2 = 2 × 2 + 8 × 2.",
+       "Writing the two partial products side by side instead of adding them: 40 and 16 give 4016."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 170
     },
     {
      "label": "4",
-     "instruction": "Tick acute, right or obtuse.",
-     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
+     "explainer": "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle.",
      "items": [
       {
        "label": "4a",
@@ -438,13 +447,17 @@
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 236
@@ -456,7 +469,7 @@
    "sections": [
     {
      "label": "4",
-     "instruction": "Tick acute, right or obtuse.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
      "items": [
       {
        "label": "4c",
@@ -494,13 +507,17 @@
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "continued": true,
@@ -680,13 +697,14 @@
      "fragmentId": "frag-rectangle-area",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find a rectangle's area as length times width.",
+      "purpose": "Find the area of a rectangle by multiplying its side lengths.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "rationale": "The rectangles look like those in the perimeter section, so students must decide which measure the question asks for. Side lengths stay within the multiplication facts to 9 × 9.",
       "misconceptions": [
-       "Mixing up area and perimeter"
+       "Mixing up area and perimeter.",
+       "Writing the area in centimeters instead of square centimeters."
       ]
      },
      "estimatedHeight": 424
@@ -871,20 +889,20 @@
   }
  ],
  "design": {
-  "purpose": "Bring back four units' skills weeks after they were taught.",
+  "purpose": "Review skills from four grade 4 units weeks after they were taught.",
   "principles": [
    "PRINCIPLE_INTERLEAVING",
    "PRINCIPLE_RETRIEVAL_PRACTICE"
   ],
-  "rationale": "Spaced, mixed review keeps skills that blocked units let fade. No worked examples: the point is recall.",
+  "rationale": "Spaced, mixed review keeps skills that fade after a unit ends. There are no worked examples, because the purpose is recall.",
   "references": [
    "Rohrer and Taylor (2007), Instructional Science 35"
   ]
  },
  "advice": [
-  "\"What fraction is at the arrow?\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Fill in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Fill in the area model, then the product.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the fraction at the arrow.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Complete the area model. Write the product.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

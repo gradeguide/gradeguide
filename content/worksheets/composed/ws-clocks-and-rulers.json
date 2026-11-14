@@ -137,17 +137,21 @@
      "fragmentId": "frag-read-clock",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read an analogue clock to the minute.",
+      "purpose": "Read an analog clock to the nearest minute.",
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW"
       ],
-      "rationale": "Elapsed-time problems in 4.MD.A.2 assume the child can read the start time, which 3.MD.A.1 taught."
+      "rationale": "3.MD.A.1 asks for time to the nearest minute. The minutes are not on the hour or half hour, so students count by fives and then by ones from the nearest number.",
+      "misconceptions": [
+       "Reading the hour from the number the hour hand is nearest, even when it has not reached it.",
+       "Reading the number the minute hand points to as the minutes: 4 for 20 minutes past."
+      ]
      },
      "estimatedHeight": 422
     },
     {
      "label": "B",
-     "instruction": "How long is the grey bar?",
+     "instruction": "Write the length of each bar.",
      "items": [
       {
        "label": "5",
@@ -228,13 +232,14 @@
      "fragmentId": "frag-measure-with-ruler",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Measure to the nearest half or quarter inch.",
+      "purpose": "Measure lengths to the nearest half inch and quarter inch.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
-      "rationale": "A ruler is a number line. Reading one to a quarter inch produces the data line plots in 4.MD.B.4 use.",
+      "rationale": "A ruler is a number line with whole inches as units. Reading to the quarter inch produces the measurement data that line plots in 3.MD.B.4 and 4.MD.B.4 use.",
       "misconceptions": [
-       "Starting to count from 1 instead of 0"
+       "Starting to count from 1 instead of 0.",
+       "Counting the marks between whole inches as tenths."
       ]
      },
      "estimatedHeight": 302
@@ -315,11 +320,12 @@
   "purpose": "Tell time to the minute and measure lengths to the nearest half and quarter inch.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
-  ]
+  ],
+  "rationale": "A clock face and a ruler are both scales read from a starting point. Putting them on one sheet gives grade 3 measurement practice in two contexts."
  },
  "advice": [
-  "\"How long is the grey bar?\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"How long is the grey bar?\" was cut from 3 to 2 items to fit."
+  "\"Write the length of each bar.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Write the length of each bar.\" was cut from 3 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

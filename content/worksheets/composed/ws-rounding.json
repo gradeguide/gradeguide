@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Round. The number line shows which multiple is nearer.",
+     "instruction": "Round each number. Use the number line.",
      "items": [
       {
        "label": "1",
@@ -274,13 +274,17 @@
      "fragmentId": "frag-round-on-number-line",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Round to any place by seeing which multiple is nearer.",
+      "purpose": "Round multi-digit numbers to any place using a number line.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
-      "rationale": "Rounding as nearness on a line explains the rule instead of replacing it. Halfway rounds up, and the line shows why that case needs a rule.",
+      "rationale": "Rounding as finding the nearer multiple on a line explains the rule instead of replacing it. The line shows both multiples and the halfway point, so students see why a number at the halfway point needs a rule.",
       "misconceptions": [
-       "Rounding by looking only at the next digit, without knowing what it means"
+       "Rounding by looking only at the next digit, without knowing what it means.",
+       "Changing the digits to the right of the rounding place to anything other than zeros."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 490
@@ -369,8 +373,15 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Round multi-digit numbers to the nearest ten, hundred or thousand.",
+  "principles": [
+   "PRINCIPLE_NUMBER_LINE"
+  ],
+  "rationale": "Every item shows a number line between the two multiples, so the rounding place and the nearer multiple are both visible."
+ },
  "advice": [
-  "\"Round. The number line shows which multiple is nearer.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Round each number. Use the number line.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
