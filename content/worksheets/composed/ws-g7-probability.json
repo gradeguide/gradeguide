@@ -1,0 +1,732 @@
+{
+ "worksheetId": "ws-g7-probability",
+ "title": "Probability",
+ "headerLabels": [
+  "7.SP.C.5",
+  "7.SP.C.7.a",
+  "7.SP.C.7",
+  "7.SP.C.6",
+  "7.SP.C.7.b"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Check how likely the event is.",
+     "explainer": "A probability is a number from 0 (impossible) to 1 (certain). 1/2 is as likely as not.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A bag has 7 red and 1 blue marbles. One marble is picked without looking. Picking red is"
+        },
+        {
+         "choices": {
+          "options": [
+           "impossible",
+           "unlikely",
+           "as likely as not",
+           "likely",
+           "certain"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "chance of red from 7 red and 1 blue",
+           "answer": {
+            "text": "likely"
+           }
+          }
+         }
+        }
+       ],
+       "key": "likely"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A bag has 0 red and 7 blue marbles. One marble is picked without looking. Picking red is"
+        },
+        {
+         "choices": {
+          "options": [
+           "impossible",
+           "unlikely",
+           "as likely as not",
+           "likely",
+           "certain"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "chance of red from 0 red and 7 blue",
+           "answer": {
+            "text": "impossible"
+           }
+          }
+         }
+        }
+       ],
+       "key": "impossible"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A bag has 1 red and 8 blue marbles. One marble is picked without looking. Picking red is"
+        },
+        {
+         "choices": {
+          "options": [
+           "impossible",
+           "unlikely",
+           "as likely as not",
+           "likely",
+           "certain"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "chance of red from 1 red and 8 blue",
+           "answer": {
+            "text": "unlikely"
+           }
+          }
+         }
+        }
+       ],
+       "key": "unlikely"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A bag has 2 red and 6 blue marbles. One marble is picked without looking. Picking red is"
+        },
+        {
+         "choices": {
+          "options": [
+           "impossible",
+           "unlikely",
+           "as likely as not",
+           "likely",
+           "certain"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "chance of red from 2 red and 6 blue",
+           "answer": {
+            "text": "unlikely"
+           }
+          }
+         }
+        }
+       ],
+       "key": "unlikely"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-likelihood",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Describe a chance as impossible, unlikely, as likely as not, likely or certain.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Probability starts as words on a scale from impossible to certain, matched to numbers from 0 to 1. Each bag has a different mix of red and blue, including none and all red, so every word is used. The explainer ties 1/2 to as likely as not.",
+      "misconceptions": [
+       "Thinking unlikely means impossible.",
+       "Judging by the number of red marbles instead of the share of red marbles."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 308
+    },
+    {
+     "label": "B",
+     "instruction": "Find the probability.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A bag has 6 red and 6 blue marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(blue) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q5",
+             "label": "probability of blue",
+             "answer": {
+              "text": "1/2",
+              "also": [
+               "6/12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(blue) = 1/2"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A bag has 4 red, 5 blue and 2 green marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(blue) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q6",
+             "label": "probability of blue",
+             "answer": {
+              "text": "5/11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(blue) = 5/11"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A bag has 9 red, 1 blue and 4 green marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(blue) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q7",
+             "label": "probability of blue",
+             "answer": {
+              "text": "1/14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(blue) = 1/14"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A bag has 2 red, 7 blue and 1 green marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(green) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q8",
+             "label": "probability of green",
+             "answer": {
+              "text": "1/10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(green) = 1/10"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A bag has 5 red, 6 blue and 2 green marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(not green) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q9",
+             "label": "probability of not green",
+             "answer": {
+              "text": "11/13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(not green) = 11/13"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "A bag has 9 red, 9 blue and 6 green marbles. One marble is picked without looking."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P(not blue) ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q10",
+             "label": "probability of not blue",
+             "answer": {
+              "text": "5/8",
+              "also": [
+               "15/24"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "P(not blue) = 5/8"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-simple-probability",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the probability of an outcome when all outcomes are equally likely.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "When all outcomes are equally likely, a probability is the number of matching outcomes over the total. Some bags have three colors and some items ask for not a color, so the student counts the matching outcomes each time instead of copying a number.",
+      "misconceptions": [
+       "Writing the ratio of red to blue instead of red to all.",
+       "Counting only the named color for a not question."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 388
+    }
+   ],
+   "estimatedHeight": 704
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Use the probability to predict the number of times.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "A spinner has 8 equal parts. 1 part is red. It is spun 128 times. About how many times will it land on red?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "About"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "A spinner has 8 equal parts. 1 part is red. It is spun 128 times. About how many times will it land on red?",
+             "answer": {
+              "text": "16"
+             }
+            }
+           },
+           {
+            "text": "times"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "About 16 times"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "A spinner has 3 equal parts. 1 part is red. It is spun 24 times. About how many times will it land on red?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "About"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "A spinner has 3 equal parts. 1 part is red. It is spun 24 times. About how many times will it land on red?",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "times"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "About 8 times"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-expected-outcomes",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Predict about how often an outcome happens in many trials from its probability.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The student multiplies a probability by the number of trials to predict a count. The number of spins is a multiple of the spinner's parts, so the prediction is a whole number. The word about reminds the student that real results will vary.",
+      "misconceptions": [
+       "Thinking the prediction must happen exactly.",
+       "Dividing the trials by the number of red parts instead of all the parts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 230
+    },
+    {
+     "label": "D",
+     "instruction": "Use the results to estimate. Show your work.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A paper cup is tossed 60 times. It lands on its side 42 times."
+           }
+          ],
+          "parts": [
+           {
+            "label": "13a",
+            "prompt": [
+             {
+              "text": "Estimate the probability it lands on its side."
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 2,
+               "field": {
+                "id": "q13a",
+                "label": "probability of landing on its side",
+                "answer": {
+                 "text": "7/10",
+                 "also": [
+                  "0.7",
+                  "42/60"
+                 ],
+                 "work": "42/60"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "13b",
+            "prompt": [
+             {
+              "text": "About how many times would it land on its side in 200 tosses?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q13b",
+                "label": "landings on side in 200",
+                "answer": {
+                 "text": "140",
+                 "also": [
+                  "about 140"
+                 ],
+                 "work": "200 × 7/10"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13a: 42/60 = 7/10; 13b: 200 × 7/10 = 140"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "A spinner landed on blue 18 times in 40 spins. Predict about how many times it will land on blue in 100 spins."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q14",
+           "label": "blue in 100 spins",
+           "answer": {
+            "text": "45",
+            "also": [
+             "about 45"
+            ],
+            "work": "18 ÷ 40 × 100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "45"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-experimental-probability",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Estimate a probability from observed results, and use it to predict.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Results from a real experiment, such as tossing a paper cup, give a probability that no list of outcomes can. The student estimates it as a fraction of trials, then uses it to predict, as the standard asks. A cup is chosen because its outcomes are not equally likely.",
+      "misconceptions": [
+       "Assuming each outcome has the same chance, such as 1/2 for landing on its side.",
+       "Using the count of 42 as the probability."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 492
+    }
+   ],
+   "estimatedHeight": 730
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "chance of red from 7 red and 1 blue",
+    "answer": {
+     "text": "likely"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "chance of red from 0 red and 7 blue",
+    "answer": {
+     "text": "impossible"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "chance of red from 1 red and 8 blue",
+    "answer": {
+     "text": "unlikely"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "chance of red from 2 red and 6 blue",
+    "answer": {
+     "text": "unlikely"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "probability of blue",
+    "answer": {
+     "text": "1/2",
+     "also": [
+      "6/12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "probability of blue",
+    "answer": {
+     "text": "5/11"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "probability of blue",
+    "answer": {
+     "text": "1/14"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "probability of green",
+    "answer": {
+     "text": "1/10"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "probability of not green",
+    "answer": {
+     "text": "11/13"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "probability of not blue",
+    "answer": {
+     "text": "5/8",
+     "also": [
+      "15/24"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "A spinner has 8 equal parts. 1 part is red. It is spun 128 times. About how many times will it land on red?",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "A spinner has 3 equal parts. 1 part is red. It is spun 24 times. About how many times will it land on red?",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "13a",
+   "field": {
+    "id": "q13a",
+    "label": "probability of landing on its side",
+    "answer": {
+     "text": "7/10",
+     "also": [
+      "0.7",
+      "42/60"
+     ],
+     "work": "42/60"
+    }
+   }
+  },
+  {
+   "itemLabel": "13b",
+   "field": {
+    "id": "q13b",
+    "label": "landings on side in 200",
+    "answer": {
+     "text": "140",
+     "also": [
+      "about 140"
+     ],
+     "work": "200 × 7/10"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "blue in 100 spins",
+    "answer": {
+     "text": "45",
+     "also": [
+      "about 45"
+     ],
+     "work": "18 ÷ 40 × 100"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe and find probabilities, predict from them, and estimate them from results.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Use the probability to predict the number of times.\" was cut from 3 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

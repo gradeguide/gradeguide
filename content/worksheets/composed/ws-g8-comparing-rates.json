@@ -1,0 +1,667 @@
+{
+ "worksheetId": "ws-g8-comparing-rates",
+ "title": "Comparing rates of change",
+ "headerLabels": [
+  "8.EE.B.5",
+  "8.F.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Compare the two functions.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "dataTable": {
+             "title": "Function A",
+             "header": [
+              "x",
+              "y"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "2"
+                },
+                {
+                 "text": "21"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "4"
+                },
+                {
+                 "text": "37"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "6"
+                },
+                {
+                 "text": "53"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "8"
+                },
+                {
+                 "text": "69"
+                }
+               ]
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Function B:"
+              },
+              {
+               "text": "y = 4x + 1"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Rate of change of A:"
+              },
+              {
+               "blank": {
+                "id": "q1",
+                "label": "rate of change of A",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "of B:"
+              },
+              {
+               "blank": {
+                "id": "q1-2",
+                "label": "rate of change of B",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Faster rate of change:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B"
+          ],
+          "field": {
+           "id": "q1-3",
+           "label": "faster function",
+           "answer": {
+            "text": "A"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8, 4; A"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Function A is the line on the graph."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "x",
+          "yLabel": "y",
+          "points": [
+           {
+            "x": 10,
+            "y": 5,
+            "label": "(10, 50)"
+           }
+          ],
+          "segments": [
+           {
+            "x2": 10,
+            "y2": 5
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Function B:"
+           },
+           {
+            "text": "y = 8x + 3"
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Rate of change of A:"
+              },
+              {
+               "blank": {
+                "id": "q2",
+                "label": "rate of change of A",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "of B:"
+              },
+              {
+               "blank": {
+                "id": "q2-2",
+                "label": "rate of change of B",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Faster rate of change:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B"
+          ],
+          "field": {
+           "id": "q2-3",
+           "label": "faster function",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5, 8; B"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-compare-rates",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare the rates of change of two functions given in different forms.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "One function is a table or a graph and the other an equation, as 8.F.A.2 asks. Some tables step x by 2 or start past 0, so the student must divide the change in y by the change in x. Which function changes faster varies from item to item.",
+      "misconceptions": [
+       "Taking the step between y-values as the rate when x goes up by 2.",
+       "Comparing the starting values instead of the rates."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 790
+    }
+   ],
+   "estimatedHeight": 794
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Compare the two functions.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "dataTable": {
+             "title": "Function A",
+             "header": [
+              "x",
+              "y"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "1"
+                },
+                {
+                 "text": "11"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "2"
+                },
+                {
+                 "text": "15"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "3"
+                },
+                {
+                 "text": "19"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "4"
+                },
+                {
+                 "text": "23"
+                }
+               ]
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Function B:"
+              },
+              {
+               "text": "y = 2x + 2"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Rate of change of A:"
+              },
+              {
+               "blank": {
+                "id": "q3",
+                "label": "rate of change of A",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "of B:"
+              },
+              {
+               "blank": {
+                "id": "q3-2",
+                "label": "rate of change of B",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Faster rate of change:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B"
+          ],
+          "field": {
+           "id": "q3-3",
+           "label": "faster function",
+           "answer": {
+            "text": "A"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 2; A"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-compare-rates",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare the rates of change of two functions given in different forms.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "One function is a table or a graph and the other an equation, as 8.F.A.2 asks. Some tables step x by 2 or start past 0, so the student must divide the change in y by the change in x. Which function changes faster varies from item to item.",
+      "misconceptions": [
+       "Taking the step between y-values as the rate when x goes up by 2.",
+       "Comparing the starting values instead of the rates."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 348
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Car A's distance is d = 55t miles after t hours. Car B goes 186 miles in 3 hours. How many more miles an hour does car B go?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q4",
+           "label": "how much faster car B goes",
+           "answer": {
+            "text": "7",
+            "also": [
+             "7 miles per hour"
+            ],
+            "work": "186 ÷ 3 − 55"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Store A sells 6 pounds of rice for $9. Store B's cost is c = 1.40p for p pounds. How much less per pound is store B?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q5",
+           "label": "how much less per pound at store B",
+           "answer": {
+            "text": "0.10",
+            "also": [
+             "$0.10",
+             "0.1"
+            ],
+            "work": "9 ÷ 6 − 1.40"
+           }
+          }
+         }
+        }
+       ],
+       "key": "0.10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-compare-rate-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Compare two proportional relationships given in different ways.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each story gives one rate as an equation and the other as a total for an amount, as 8.EE.B.5 asks. The student finds both unit rates before comparing them. Plain working space leaves room for both steps.",
+      "misconceptions": [
+       "Comparing a total, such as 186 miles, with a rate, such as 55 miles an hour.",
+       "Dividing the wrong way, such as hours per mile."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
+      ]
+     },
+     "estimatedHeight": 410
+    }
+   ],
+   "estimatedHeight": 766
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "rate of change of A",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "rate of change of B",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "faster function",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "rate of change of A",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "rate of change of B",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "faster function",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "rate of change of A",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "rate of change of B",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "faster function",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "how much faster car B goes",
+    "answer": {
+     "text": "7",
+     "also": [
+      "7 miles per hour"
+     ],
+     "work": "186 ÷ 3 − 55"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "how much less per pound at store B",
+    "answer": {
+     "text": "0.10",
+     "also": [
+      "$0.10",
+      "0.1"
+     ],
+     "work": "9 ÷ 6 − 1.40"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare rates of change given in tables, equations and words.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Compare the two functions.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

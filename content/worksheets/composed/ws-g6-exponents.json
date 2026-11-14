@@ -1,0 +1,538 @@
+{
+ "worksheetId": "ws-g6-exponents",
+ "title": "Exponents and order of operations",
+ "headerLabels": [
+  "6.EE.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write as a power.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 × 7 × 7 × 7 × 7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "7 used 5 times as a factor",
+             "answer": {
+              "text": "7⁵",
+              "also": [
+               "7^5"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × 7 × 7 × 7 × 7 = 7⁵"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 × 4 × 4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "4 used 3 times as a factor",
+             "answer": {
+              "text": "4³",
+              "also": [
+               "4^3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × 4 × 4 = 4³"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5 × 5 × 5 × 5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "5 used 4 times as a factor",
+             "answer": {
+              "text": "5⁴",
+              "also": [
+               "5^4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 × 5 × 5 × 5 = 5⁴"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2 × 2 × 2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "2 used 3 times as a factor",
+             "answer": {
+              "text": "2³",
+              "also": [
+               "2^3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 2 × 2 = 2³"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-write-power",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Write a repeated product as a base and an exponent.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Writing a repeated product as a power shows what the exponent counts. The bases and exponents are small so the student sees the pattern, not large numbers.",
+      "misconceptions": [
+       "Writing the number of times as the base, such as 3 × 3 × 3 × 3 as 4³."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "B",
+     "instruction": "Evaluate. Do powers first, then × and ÷, then + and −.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(8 + 3)² − 5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "(8 + 3)² − 5",
+             "answer": {
+              "text": "116"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(8 + 3)² − 5 = 116"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24 ÷ 2² + 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "24 ÷ 2² + 6",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24 ÷ 2² + 6 = 12"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8² + 3²"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "8² + 3²",
+             "answer": {
+              "text": "73"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8² + 3² = 73"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8 + 5 × 5²"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "8 + 5 × 5²",
+             "answer": {
+              "text": "133"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 + 5 × 5² = 133"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5³ − 3 × 5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "5³ − 3 × 5",
+             "answer": {
+              "text": "110"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5³ − 3 × 5 = 110"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8³"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "8³",
+             "answer": {
+              "text": "512"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8³ = 512"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18 ÷ 3² + 2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "18 ÷ 3² + 2",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 ÷ 3² + 2 = 4"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2³"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "2³",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2³ = 8"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-evaluate-powers",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Evaluate powers and expressions that contain them, in the right order.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The items cycle through six forms: a single power, a sum with a power, a power of a sum, a difference, two squares added, and a division by a square. Each form puts the power in a different place, so the student has to apply the order of operations each time. Whole-number answers let the student check their work.",
+      "misconceptions": [
+       "Reading 5² as 5 × 2.",
+       "Working left to right, so 4 + 3 × 2² is 28."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 388
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "7 used 5 times as a factor",
+    "answer": {
+     "text": "7⁵",
+     "also": [
+      "7^5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "4 used 3 times as a factor",
+    "answer": {
+     "text": "4³",
+     "also": [
+      "4^3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "5 used 4 times as a factor",
+    "answer": {
+     "text": "5⁴",
+     "also": [
+      "5^4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 used 3 times as a factor",
+    "answer": {
+     "text": "2³",
+     "also": [
+      "2^3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "(8 + 3)² − 5",
+    "answer": {
+     "text": "116"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "24 ÷ 2² + 6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "8² + 3²",
+    "answer": {
+     "text": "73"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "8 + 5 × 5²",
+    "answer": {
+     "text": "133"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "5³ − 3 × 5",
+    "answer": {
+     "text": "110"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8³",
+    "answer": {
+     "text": "512"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "18 ÷ 3² + 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "2³",
+    "answer": {
+     "text": "8"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Write and evaluate powers, and use them in the order of operations.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

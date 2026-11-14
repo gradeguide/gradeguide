@@ -1,0 +1,1059 @@
+{
+ "worksheetId": "ws-g6-compare-integers",
+ "title": "Comparing integers and absolute value",
+ "headerLabels": [
+  "6.NS.C.7",
+  "6.NS.C.7.a",
+  "6.NS.C.7.b",
+  "6.NS.C.7.c",
+  "6.NS.C.7.d"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write <, > or =.",
+     "explainer": "On a number line, the number farther right is greater, so −2 > −8.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "compare": {
+             "id": "q1",
+             "label": "<, > or = between 10 and −13",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "−13"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 > −13"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−12"
+           },
+           {
+            "compare": {
+             "id": "q2",
+             "label": "<, > or = between −12 and −8",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "−8"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−12 < −8"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−19"
+           },
+           {
+            "compare": {
+             "id": "q3",
+             "label": "<, > or = between −19 and −6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "−6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−19 < −6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−1"
+           },
+           {
+            "compare": {
+             "id": "q4",
+             "label": "<, > or = between −1 and −2",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "−2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−1 > −2"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−14"
+           },
+           {
+            "compare": {
+             "id": "q5",
+             "label": "<, > or = between −14 and −5",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "−5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−14 < −5"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−15"
+           },
+           {
+            "compare": {
+             "id": "q6",
+             "label": "<, > or = between −15 and −6",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "−6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−15 < −6"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−7"
+           },
+           {
+            "compare": {
+             "id": "q7",
+             "label": "<, > or = between −7 and −17",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "−17"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−7 > −17"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−1"
+           },
+           {
+            "compare": {
+             "id": "q8",
+             "label": "<, > or = between −1 and −6",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "−6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−1 > −6"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g6-compare-integers",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare integers by their position on a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Most pairs are two negative numbers, where comparing by the digits gives the wrong answer. Some pairs mix signs as an easier check. The explainer gives the number-line rule the student can use for every pair.",
+      "misconceptions": [
+       "Thinking −8 is greater than −2 because 8 is greater than 2."
+      ]
+     },
+     "estimatedHeight": 164
+    },
+    {
+     "label": "B",
+     "instruction": "Write the numbers from least to greatest.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−13,  −7,  1,  0"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Least to greatest:"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "−13, −7, 1, 0 in order",
+             "answer": {
+              "text": "−13, −7, 0, 1",
+              "also": [
+               "-13, -7, 0, 1",
+               "−13,−7,0,1",
+               "-13,-7,0,1"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Least to greatest: −13, −7, 0, 1"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−1,  −5,  −3,  −6"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Least to greatest:"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "−1, −5, −3, −6 in order",
+             "answer": {
+              "text": "−6, −5, −3, −1",
+              "also": [
+               "-6, -5, -3, -1",
+               "−6,−5,−3,−1",
+               "-6,-5,-3,-1"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Least to greatest: −6, −5, −3, −1"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−1,  −4,  12,  9"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Least to greatest:"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "−1, −4, 12, 9 in order",
+             "answer": {
+              "text": "−4, −1, 9, 12",
+              "also": [
+               "-4, -1, 9, 12",
+               "−4,−1,9,12",
+               "-4,-1,9,12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Least to greatest: −4, −1, 9, 12"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-order-integers",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Order a set of positive and negative integers.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Each list has at least two negative numbers and four numbers in all. Ordering four numbers is harder than comparing two because the student has to place each one. The student can sketch a number line in the space if needed.",
+      "misconceptions": [
+       "Ordering negative numbers by their digits, so −1 comes before −5."
+      ]
+     },
+     "estimatedHeight": 322
+    },
+    {
+     "label": "C",
+     "instruction": "Check the correct answer.",
+     "items": [
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Which is colder?"
+        },
+        {
+         "choices": {
+          "options": [
+           "6°F",
+           "−24°F"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "Which is colder? 6°F or −24°F",
+           "answer": {
+            "text": "−24°F"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−24°F"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "Which is warmer?"
+        },
+        {
+         "choices": {
+          "options": [
+           "5°F",
+           "−9°F"
+          ],
+          "field": {
+           "id": "q13",
+           "label": "Which is warmer? 5°F or −9°F",
+           "answer": {
+            "text": "5°F"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5°F"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "Which is higher?"
+        },
+        {
+         "choices": {
+          "options": [
+           "−17 feet",
+           "−7 feet"
+          ],
+          "field": {
+           "id": "q14",
+           "label": "Which is higher? −17 feet or −7 feet",
+           "answer": {
+            "text": "−7 feet"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−7 feet"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "Which is lower?"
+        },
+        {
+         "choices": {
+          "options": [
+           "−24 feet",
+           "−22 feet"
+          ],
+          "field": {
+           "id": "q15",
+           "label": "Which is lower? −24 feet or −22 feet",
+           "answer": {
+            "text": "−24 feet"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−24 feet"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-integers-order-in-context",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Decide which of two temperatures or heights is colder, warmer, lower or higher.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Colder, warmer, lower and higher link the order of integers to real situations, as the standard asks. Every pair has at least one value below zero. The student ticks an answer so the focus stays on the comparison.",
+      "misconceptions": [
+       "Calling −20°F warmer than −5°F because 20 is more than 5."
+      ]
+     },
+     "estimatedHeight": 158
+    },
+    {
+     "label": "D",
+     "instruction": "Answer each question about absolute value.",
+     "explainer": "Absolute value is distance from 0, so it is never negative.",
+     "items": [
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "Which is farther from 0?"
+        },
+        {
+         "choices": {
+          "options": [
+           "−5",
+           "−8"
+          ],
+          "field": {
+           "id": "q16",
+           "label": "farther from 0: −5 or −8",
+           "answer": {
+            "text": "−8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−8"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "|12| ="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "absolute value of 12",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "|12| = 12"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "|−8| ="
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "absolute value of −8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "|−8| = 8"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-absolute-value",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find absolute value as distance from zero.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Absolute value is taught as distance from 0, so it is never negative. Some items ask for the value and some ask which of two numbers is farther from 0. That second form makes the student compare sizes without signs.",
+      "misconceptions": [
+       "Thinking |−7| is −7."
+      ]
+     },
+     "estimatedHeight": 122
+    }
+   ],
+   "estimatedHeight": 782
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Answer each question about absolute value.",
+     "items": [
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "|17| ="
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "absolute value of 17",
+             "answer": {
+              "text": "17"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "|17| = 17"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "text": "Which is farther from 0?"
+        },
+        {
+         "choices": {
+          "options": [
+           "−10",
+           "−15"
+          ],
+          "field": {
+           "id": "q20",
+           "label": "farther from 0: −10 or −15",
+           "answer": {
+            "text": "−15"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−15"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "|−18| ="
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "absolute value of −18",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "|−18| = 18"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-absolute-value",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find absolute value as distance from zero.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Absolute value is taught as distance from 0, so it is never negative. Some items ask for the value and some ask which of two numbers is farther from 0. That second form makes the student compare sizes without signs.",
+      "misconceptions": [
+       "Thinking |−7| is −7."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 96
+    },
+    {
+     "label": "E",
+     "instruction": "Answer each question about a bank account.",
+     "explainer": "A balance below $0 is a debt. A balance of −$30 is a debt of $30.",
+     "items": [
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A balance less than −$35 is a debt of more than $"
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "debt for a balance below −$35",
+             "answer": {
+              "text": "35"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A balance less than −$35 is a debt of more than $ 35"
+      },
+      {
+       "label": "23",
+       "nodes": [
+        {
+         "text": "Which balance is the greater debt?"
+        },
+        {
+         "choices": {
+          "options": [
+           "−$60",
+           "−$100"
+          ],
+          "field": {
+           "id": "q23",
+           "label": "the bigger debt",
+           "answer": {
+            "text": "−$100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "−$100"
+      },
+      {
+       "label": "24",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A balance of −$25 is a debt of $"
+           },
+           {
+            "blank": {
+             "id": "q24",
+             "label": "debt for a balance of −$25",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A balance of −$25 is a debt of $ 25"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-debt",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Tell a balance from the size of a debt, using absolute value.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Money in an account is the standard's own example for telling a balance from the size of a debt. One item compares two debts, one names a debt from a balance, and one states an inequality about a debt. This is a stretch because the student has to hold the sign and the size apart.",
+      "misconceptions": [
+       "Thinking a balance of −$40 is more money than −$25."
+      ]
+     },
+     "estimatedHeight": 226
+    }
+   ],
+   "estimatedHeight": 330
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "<, > or = between 10 and −13",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "<, > or = between −12 and −8",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "<, > or = between −19 and −6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "<, > or = between −1 and −2",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "<, > or = between −14 and −5",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "<, > or = between −15 and −6",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "<, > or = between −7 and −17",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "<, > or = between −1 and −6",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "−13, −7, 1, 0 in order",
+    "answer": {
+     "text": "−13, −7, 0, 1",
+     "also": [
+      "-13, -7, 0, 1",
+      "−13,−7,0,1",
+      "-13,-7,0,1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "−1, −5, −3, −6 in order",
+    "answer": {
+     "text": "−6, −5, −3, −1",
+     "also": [
+      "-6, -5, -3, -1",
+      "−6,−5,−3,−1",
+      "-6,-5,-3,-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "−1, −4, 12, 9 in order",
+    "answer": {
+     "text": "−4, −1, 9, 12",
+     "also": [
+      "-4, -1, 9, 12",
+      "−4,−1,9,12",
+      "-4,-1,9,12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "Which is colder? 6°F or −24°F",
+    "answer": {
+     "text": "−24°F"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "Which is warmer? 5°F or −9°F",
+    "answer": {
+     "text": "5°F"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "Which is higher? −17 feet or −7 feet",
+    "answer": {
+     "text": "−7 feet"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "Which is lower? −24 feet or −22 feet",
+    "answer": {
+     "text": "−24 feet"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "farther from 0: −5 or −8",
+    "answer": {
+     "text": "−8"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "absolute value of 12",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "absolute value of −8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "absolute value of 17",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "farther from 0: −10 or −15",
+    "answer": {
+     "text": "−15"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "absolute value of −18",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "debt for a balance below −$35",
+    "answer": {
+     "text": "35"
+    }
+   }
+  },
+  {
+   "itemLabel": "23",
+   "field": {
+    "id": "q23",
+    "label": "the bigger debt",
+    "answer": {
+     "text": "−$100"
+    }
+   }
+  },
+  {
+   "itemLabel": "24",
+   "field": {
+    "id": "q24",
+    "label": "debt for a balance of −$25",
+    "answer": {
+     "text": "25"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare and order integers, and use absolute value for distance and debt.",
+  "principles": [
+   "PRINCIPLE_NUMBER_LINE",
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the numbers from least to greatest.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Answer each question about absolute value.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,816 @@
+{
+ "worksheetId": "ws-g6-integers",
+ "title": "Positive and negative numbers",
+ "headerLabels": [
+  "6.NS.C.5",
+  "6.NS.C.6",
+  "6.NS.C.6.c",
+  "6.NS.C.6.a"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write an integer for each situation.",
+     "explainer": "Use a negative number for below zero, below sea level, a loss or a withdrawal.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "59 meters above sea level"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "59 meters above sea level",
+             "answer": {
+              "text": "59"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: 59"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "38 feet below sea level"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "38 feet below sea level",
+             "answer": {
+              "text": "−38",
+              "also": [
+               "-38"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: −38"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "a withdrawal of $52"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "a withdrawal of $52",
+             "answer": {
+              "text": "−52",
+              "also": [
+               "-52"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: −52"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "a gain of 51 yards"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "a gain of 51 yards",
+             "answer": {
+              "text": "51"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: 51"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "45 degrees below zero"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "45 degrees below zero",
+             "answer": {
+              "text": "−45",
+              "also": [
+               "-45"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: −45"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "a loss of 33 yards"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Integer:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "a loss of 33 yards",
+             "answer": {
+              "text": "−33",
+              "also": [
+               "-33"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Integer: −33"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-integers-in-context",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Use positive and negative numbers for amounts in opposite directions.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Negative numbers are introduced through situations a student knows: sea level, temperatures, money and yards in a game. Each phrase has one direction word, so the student links below, loss or withdrawal with a minus sign. This comes first because the context gives the sign meaning.",
+      "misconceptions": [
+       "Writing a positive number for a loss because the amount itself is positive."
+      ]
+     },
+     "estimatedHeight": 216
+    },
+    {
+     "label": "B",
+     "instruction": "Write the integer the arrow points to.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "numberLine": {
+          "start": -10,
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−10"
+           },
+           {
+            "tick": 5,
+            "text": "−5"
+           },
+           {
+            "tick": 10,
+            "text": "0"
+           },
+           {
+            "tick": 15,
+            "text": "5"
+           },
+           {
+            "tick": 20,
+            "text": "10"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 17,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The arrow is at"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the integer at the arrow",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The arrow is at 7"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "numberLine": {
+          "start": -10,
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−10"
+           },
+           {
+            "tick": 5,
+            "text": "−5"
+           },
+           {
+            "tick": 10,
+            "text": "0"
+           },
+           {
+            "tick": 15,
+            "text": "5"
+           },
+           {
+            "tick": 20,
+            "text": "10"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 12,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The arrow is at"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "the integer at the arrow",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The arrow is at 2"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "numberLine": {
+          "start": -10,
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−10"
+           },
+           {
+            "tick": 5,
+            "text": "−5"
+           },
+           {
+            "tick": 10,
+            "text": "0"
+           },
+           {
+            "tick": 15,
+            "text": "5"
+           },
+           {
+            "tick": 20,
+            "text": "10"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 8,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The arrow is at"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "the integer at the arrow",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The arrow is at −2"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "numberLine": {
+          "start": -10,
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−10"
+           },
+           {
+            "tick": 5,
+            "text": "−5"
+           },
+           {
+            "tick": 10,
+            "text": "0"
+           },
+           {
+            "tick": 15,
+            "text": "5"
+           },
+           {
+            "tick": 20,
+            "text": "10"
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 7,
+          "hideWholeLabels": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The arrow is at"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "the integer at the arrow",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The arrow is at −3"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-integer-number-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Locate integers on a number line that runs below zero.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The number line runs from −10 to 10 with only every fifth number labeled. Most arrows point left of zero, so the student counts back from 0 or from −5. Counting the unlabeled ticks makes the order of negative numbers concrete.",
+      "misconceptions": [
+       "Counting left of zero as −0, −1 … so every negative is off by one."
+      ]
+     },
+     "estimatedHeight": 538
+    }
+   ],
+   "estimatedHeight": 762
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write the opposite.",
+     "explainer": "Opposites are the same distance from 0 on either side. The opposite of the opposite is the number itself.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The opposite of −12 is"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "the opposite of −12",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The opposite of −12 is 12"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The opposite of −14 is"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "the opposite of −14",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The opposite of −14 is 14"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−(−2) ="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "the opposite of −2",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−(−2) = 2"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−(−8) ="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "the opposite of −8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−(−8) = 8"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The opposite of −9 is"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "the opposite of −9",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The opposite of −9 is 9"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−(−12) ="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "the opposite of −12",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−(−12) = 12"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-opposites",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the opposite of a number, and of an opposite.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Opposites are the same distance from 0 on either side. Half the items are the opposite of a negative number, written −(−n), so the student sees that the opposite of the opposite is the number itself.",
+      "misconceptions": [
+       "Thinking −(−5) is −5 because there is a minus sign."
+      ]
+     },
+     "estimatedHeight": 236
+    }
+   ],
+   "estimatedHeight": 240
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "59 meters above sea level",
+    "answer": {
+     "text": "59"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "38 feet below sea level",
+    "answer": {
+     "text": "−38",
+     "also": [
+      "-38"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "a withdrawal of $52",
+    "answer": {
+     "text": "−52",
+     "also": [
+      "-52"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "a gain of 51 yards",
+    "answer": {
+     "text": "51"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "45 degrees below zero",
+    "answer": {
+     "text": "−45",
+     "also": [
+      "-45"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "a loss of 33 yards",
+    "answer": {
+     "text": "−33",
+     "also": [
+      "-33"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the integer at the arrow",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the integer at the arrow",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the integer at the arrow",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the integer at the arrow",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the opposite of −12",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the opposite of −14",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "the opposite of −2",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "the opposite of −8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "the opposite of −9",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "the opposite of −12",
+    "answer": {
+     "text": "12"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use negative numbers in context, on a number line, and as opposites.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING",
+   "PRINCIPLE_NUMBER_LINE"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

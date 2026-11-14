@@ -521,11 +521,14 @@ export function baseTenBlocks(b: BaseTenBlocks): Drawing {
 export function longDivision(l: LongDivision, filled: boolean, w: L.Writing = L.STANDARD_WRITING): Drawing {
   const ds = l.dividend.toString();
   const dw = w.digit;
-  const left = 40;
+  // Room for the divisor: a one-digit divisor sits as it always has, and
+  // each further digit moves the bracket right.
+  const dl = String(l.divisor).length;
+  const left = 28 + 12 * dl;
   const top = 34;
   const right = left + ds.length * dw + 10;
   const shapes: Shape[] = [];
-  shapes.push({ t: 'text', x: left - 14, y: top + 24, s: String(l.divisor), size: 20 });
+  shapes.push({ t: 'text', x: left - 8 - 6 * dl, y: top + 24, s: String(l.divisor), size: 20 });
   shapes.push({ t: 'path', d: `M${left - 4} ${top + 32} Q${left + 4} ${top + 16} ${left - 4} ${top} L${right} ${top}`, w: 2 });
   [...ds].forEach((ch, i) => shapes.push({ t: 'text', x: left + 6 + i * dw + dw / 2, y: top + 24, s: ch, size: 20 }));
   shapes.push({ t: 'box', x: left + 4, y: 2, w: ds.length * dw, h: 26, field: fieldId(l.quotient), s: shown(l.quotient, filled), size: 17 });

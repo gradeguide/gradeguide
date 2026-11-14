@@ -1,0 +1,433 @@
+{
+ "worksheetId": "ws-g8-volume",
+ "title": "Volume of cylinders, cones and spheres",
+ "headerLabels": [
+  "8.G.C.9"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the volume. Use 3.14 for π.",
+     "explainer": "Cylinder: π × r × r × h. Cone: one third of that. Sphere: 4/3 × π × r × r × r.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A ball has a radius of 3 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_SPHERE",
+          "radiusLabel": "3 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "volume: A ball has a radius of 3 cm.",
+             "answer": {
+              "text": "113.04",
+              "also": [
+               "113.0",
+               "113"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 113.04 cubic cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A cylinder has a radius of 1 cm and a height of 9 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CYLINDER",
+          "radiusLabel": "1 cm",
+          "heightLabel": "9 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "volume: A cylinder has a radius of 1 cm and a height of 9 cm.",
+             "answer": {
+              "text": "28.26",
+              "also": [
+               "28.3",
+               "28"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 28.26 cubic cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A cone has a radius of 2 cm and a height of 9 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CONE",
+          "radiusLabel": "2 cm",
+          "heightLabel": "9 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "volume: A cone has a radius of 2 cm and a height of 9 cm.",
+             "answer": {
+              "text": "37.68",
+              "also": [
+               "37.7",
+               "38"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 37.68 cubic cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A ball has a radius of 6 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_SPHERE",
+          "radiusLabel": "6 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "volume: A ball has a radius of 6 cm.",
+             "answer": {
+              "text": "904.32",
+              "also": [
+               "904.3",
+               "904"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 904.32 cubic cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-volume",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the volume of cylinders, cones and spheres.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Cylinders, cones and spheres are mixed, so the student chooses the formula from the shape. Cone heights are multiples of 3 and sphere radii are 3 or 6, so the thirds come out exactly with 3.14. Room under each figure is for the multiplications.",
+      "misconceptions": [
+       "Forgetting the one third for a cone.",
+       "Using the diameter as the radius.",
+       "Squaring the height instead of the radius."
+      ]
+     },
+     "estimatedHeight": 694
+    }
+   ],
+   "estimatedHeight": 698
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the volume. Use 3.14 for π.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A cylinder has a radius of 1 cm and a height of 2 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CYLINDER",
+          "radiusLabel": "1 cm",
+          "heightLabel": "2 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "volume: A cylinder has a radius of 1 cm and a height of 2 cm.",
+             "answer": {
+              "text": "6.28",
+              "also": [
+               "6.3",
+               "6"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 6.28 cubic cm"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A cone has a radius of 5 cm and a height of 9 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CONE",
+          "radiusLabel": "5 cm",
+          "heightLabel": "9 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ≈"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "volume: A cone has a radius of 5 cm and a height of 9 cm.",
+             "answer": {
+              "text": "235.5",
+              "also": [
+               "236"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume ≈ 235.5 cubic cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-volume",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the volume of cylinders, cones and spheres.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Cylinders, cones and spheres are mixed, so the student chooses the formula from the shape. Cone heights are multiples of 3 and sphere radii are 3 or 6, so the thirds come out exactly with 3.14. Room under each figure is for the multiplications.",
+      "misconceptions": [
+       "Forgetting the one third for a cone.",
+       "Using the diameter as the radius.",
+       "Squaring the height instead of the radius."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 353
+    }
+   ],
+   "estimatedHeight": 357
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "volume: A ball has a radius of 3 cm.",
+    "answer": {
+     "text": "113.04",
+     "also": [
+      "113.0",
+      "113"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "volume: A cylinder has a radius of 1 cm and a height of 9 cm.",
+    "answer": {
+     "text": "28.26",
+     "also": [
+      "28.3",
+      "28"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "volume: A cone has a radius of 2 cm and a height of 9 cm.",
+    "answer": {
+     "text": "37.68",
+     "also": [
+      "37.7",
+      "38"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "volume: A ball has a radius of 6 cm.",
+    "answer": {
+     "text": "904.32",
+     "also": [
+      "904.3",
+      "904"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "volume: A cylinder has a radius of 1 cm and a height of 2 cm.",
+    "answer": {
+     "text": "6.28",
+     "also": [
+      "6.3",
+      "6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "volume: A cone has a radius of 5 cm and a height of 9 cm.",
+    "answer": {
+     "text": "235.5",
+     "also": [
+      "236"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the volume of cylinders, cones and spheres.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the volume. Use 3.14 for π.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

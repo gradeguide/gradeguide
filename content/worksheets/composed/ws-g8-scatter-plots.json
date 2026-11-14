@@ -1,0 +1,671 @@
+{
+ "worksheetId": "ws-g8-scatter-plots",
+ "title": "Scatter plots and linear models",
+ "headerLabels": [
+  "8.SP.A.1",
+  "8.SP.A.2",
+  "8.SP.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Check the association the scatter plot shows.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours studied",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 9,
+            "y": 8
+           },
+           {
+            "x": 6,
+            "y": 5
+           },
+           {
+            "x": 3,
+            "y": 4
+           },
+           {
+            "x": 10,
+            "y": 7
+           },
+           {
+            "x": 7,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 5
+           },
+           {
+            "x": 1,
+            "y": 1
+           },
+           {
+            "x": 8,
+            "y": 7
+           },
+           {
+            "x": 5,
+            "y": 4
+           },
+           {
+            "x": 2,
+            "y": 2
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "the association",
+           "answer": {
+            "text": "positive"
+           }
+          }
+         }
+        }
+       ],
+       "key": "positive"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Shoe size",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 4,
+            "y": 5
+           },
+           {
+            "x": 1,
+            "y": 2
+           },
+           {
+            "x": 8,
+            "y": 6
+           },
+           {
+            "x": 5,
+            "y": 3
+           },
+           {
+            "x": 2,
+            "y": 7
+           },
+           {
+            "x": 9,
+            "y": 4
+           },
+           {
+            "x": 6,
+            "y": 8
+           },
+           {
+            "x": 3,
+            "y": 5
+           },
+           {
+            "x": 10,
+            "y": 2
+           },
+           {
+            "x": 7,
+            "y": 6
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "the association",
+           "answer": {
+            "text": "no association"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no association"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Days absent",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 7,
+            "y": 4
+           },
+           {
+            "x": 4,
+            "y": 8
+           },
+           {
+            "x": 1,
+            "y": 9
+           },
+           {
+            "x": 8,
+            "y": 3
+           },
+           {
+            "x": 5,
+            "y": 7
+           },
+           {
+            "x": 2,
+            "y": 8
+           },
+           {
+            "x": 9,
+            "y": 4
+           },
+           {
+            "x": 6,
+            "y": 5
+           },
+           {
+            "x": 3,
+            "y": 6
+           },
+           {
+            "x": 10,
+            "y": 3
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "positive",
+           "negative",
+           "no association"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "the association",
+           "answer": {
+            "text": "negative"
+           }
+          }
+         }
+        }
+       ],
+       "key": "negative"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-scatter-association",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Describe the association in a scatter plot as positive, negative or none.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each plot shows one association: positive, negative or none, each once. The axes suit the association, such as days absent against test score. The points scatter around a trend, as real data does.",
+      "misconceptions": [
+       "Thinking a negative association means the values are below zero.",
+       "Thinking the points must lie on a line for there to be an association."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
+      ]
+     },
+     "estimatedHeight": 602
+    }
+   ],
+   "estimatedHeight": 606
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Use the line of fit to answer the questions.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A line of fit for hours studied and test score goes through (0, 30) and (10, 80)."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "yScale": 10,
+          "labelEvery": 2,
+          "xLabel": "Hours",
+          "yLabel": "Score",
+          "points": [
+           {
+            "x": 9,
+            "y": 9
+           },
+           {
+            "x": 6,
+            "y": 6
+           },
+           {
+            "x": 3,
+            "y": 5
+           },
+           {
+            "x": 10,
+            "y": 7
+           },
+           {
+            "x": 7,
+            "y": 7
+           },
+           {
+            "x": 4,
+            "y": 6
+           },
+           {
+            "x": 1,
+            "y": 3
+           },
+           {
+            "x": 8,
+            "y": 8
+           },
+           {
+            "x": 5,
+            "y": 5
+           },
+           {
+            "x": 2,
+            "y": 4
+           }
+          ],
+          "segments": [
+           {
+            "y1": 3,
+            "x2": 10,
+            "y2": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "slope of the line of fit",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "points per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predicted score for 3 hours:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "predicted score for 3 hours",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Slope: 5 points per hour; Predicted score for 3 hours: 45"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-line-of-fit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the slope of a line of fit and use it to predict.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The line of fit is drawn and two points on it are named, so its slope can be found exactly. The student reads the slope as points per hour and uses the line to predict. This is the use of a linear model 8.SP.A.2 and 8.SP.A.3 ask for.",
+      "misconceptions": [
+       "Predicting from the nearest data point instead of the line.",
+       "Reading the slope as the score where the line starts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
+      ]
+     },
+     "estimatedHeight": 404
+    },
+    {
+     "label": "C",
+     "instruction": "Use the linear model to answer the questions.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A phone plan costs y = 1.5x + 25 dollars for x gigabytes of data in a month."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predict the cost when x is 6:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the cost at 6",
+             "answer": {
+              "text": "34"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cost per gigabyte ($):"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "Cost per gigabyte ($)",
+             "answer": {
+              "text": "1.5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Monthly charge with no data ($):"
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "Monthly charge with no data ($)",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Predict the cost when x is 6: 34; Cost per gigabyte ($): 1.5; Monthly charge with no data ($): 25"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "The cost in dollars of x pounds of fruit plus a bag fee is y = 3.7x + 6."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Predict the cost when x is 4:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the cost at 4",
+             "answer": {
+              "text": "20.8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Cost per pound ($):"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "Cost per pound ($)",
+             "answer": {
+              "text": "3.7"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Bag fee ($):"
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "Bag fee ($)",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Predict the cost when x is 4: 20.8; Cost per pound ($): 3.7; Bag fee ($): 6"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-linear-models",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use a linear model to predict, and say what its slope means.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each model is a short story with an equation. The student predicts a value, then says what the slope and the starting value mean in the story, as 8.SP.A.3 asks. Decimal slopes keep the numbers close to real data.",
+      "misconceptions": [
+       "Mixing up the slope and the starting value.",
+       "Putting the y-value in for x."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
+      ]
+     },
+     "estimatedHeight": 366
+    }
+   ],
+   "estimatedHeight": 778
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the association",
+    "answer": {
+     "text": "positive"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the association",
+    "answer": {
+     "text": "no association"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the association",
+    "answer": {
+     "text": "negative"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "slope of the line of fit",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "predicted score for 3 hours",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the cost at 6",
+    "answer": {
+     "text": "34"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "Cost per gigabyte ($)",
+    "answer": {
+     "text": "1.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "Monthly charge with no data ($)",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the cost at 4",
+    "answer": {
+     "text": "20.8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "Cost per pound ($)",
+    "answer": {
+     "text": "3.7"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "Bag fee ($)",
+    "answer": {
+     "text": "6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe association in scatter plots, and use lines of fit and linear models.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "Section \"Use the line of fit to answer the questions.\" was cut from 2 to 1 items to fit.",
+  "Section \"Use the linear model to answer the questions.\" was cut from 3 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

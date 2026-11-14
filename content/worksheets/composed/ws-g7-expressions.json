@@ -1,0 +1,833 @@
+{
+ "worksheetId": "ws-g7-expressions",
+ "title": "Equivalent expressions",
+ "headerLabels": [
+  "7.EE.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Expand.",
+     "explainer": "Multiply every term inside by the number outside, sign and all: −2(x − 5) = −2x + 10.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4(x − 9)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "4(x − 9) expanded",
+             "answer": {
+              "text": "4x − 36",
+              "also": [
+               "4x - 36",
+               "4x−36",
+               "4x-36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4(x − 9) = 4x − 36"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7(x − 5)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "7(x − 5) expanded",
+             "answer": {
+              "text": "7x − 35",
+              "also": [
+               "7x - 35",
+               "7x−35",
+               "7x-35"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7(x − 5) = 7x − 35"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−4(4x + 7)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "−4(4x + 7) expanded",
+             "answer": {
+              "text": "−16x − 28",
+              "also": [
+               "-16x - 28",
+               "−16x−28",
+               "-16x-28"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−4(4x + 7) = −16x − 28"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2(4x − 8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "2(4x − 8) expanded",
+             "answer": {
+              "text": "8x − 16",
+              "also": [
+               "8x - 16",
+               "8x−16",
+               "8x-16"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2(4x − 8) = 8x − 16"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8(5x + 10)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "8(5x + 10) expanded",
+             "answer": {
+              "text": "40x + 80",
+              "also": [
+               "40x+80"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8(5x + 10) = 40x + 80"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−4(x − 9)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "−4(x − 9) expanded",
+             "answer": {
+              "text": "−4x + 36",
+              "also": [
+               "-4x + 36",
+               "−4x+36",
+               "-4x+36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−4(x − 9) = −4x + 36"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-expand-signed",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Expand expressions with negative numbers.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Expanding with a negative number outside the parentheses is where most sign errors start in algebra. The items mix positive and negative multipliers so the student cannot assume the signs. The worked example in the explainer shows the hardest case, a negative times a subtraction.",
+      "misconceptions": [
+       "Not multiplying the second term's sign: −2(x − 5) = −2x − 10.",
+       "Multiplying only the first term inside: 4(x − 9) = 4x − 9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 216
+    },
+    {
+     "label": "B",
+     "instruction": "Combine like terms.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7x + 4 + x + 8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "7x + 4 + x + 8 with like terms combined",
+             "answer": {
+              "text": "8x + 12",
+              "also": [
+               "8x+12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7x + 4 + x + 8 = 8x + 12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4x + 7 + 5x + 2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "4x + 7 + 5x + 2 with like terms combined",
+             "answer": {
+              "text": "9x + 9",
+              "also": [
+               "9x+9"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4x + 7 + 5x + 2 = 9x + 9"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6x + 7 + 8x + 5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "6x + 7 + 8x + 5 with like terms combined",
+             "answer": {
+              "text": "14x + 12",
+              "also": [
+               "14x+12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6x + 7 + 8x + 5 = 14x + 12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−4x + 11 − 5x + 7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "−4x + 11 − 5x + 7 with like terms combined",
+             "answer": {
+              "text": "−9x + 18",
+              "also": [
+               "-9x + 18",
+               "−9x+18",
+               "-9x+18"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−4x + 11 − 5x + 7 = −9x + 18"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−6x + 3 − 6x − 7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "−6x + 3 − 6x − 7 with like terms combined",
+             "answer": {
+              "text": "−12x − 4",
+              "also": [
+               "-12x - 4",
+               "−12x−4",
+               "-12x-4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−6x + 3 − 6x − 7 = −12x − 4"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−7x + 1 + 3x − 3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "−7x + 1 + 3x − 3 with like terms combined",
+             "answer": {
+              "text": "−4x − 2",
+              "also": [
+               "-4x - 2",
+               "−4x−2",
+               "-4x-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−7x + 1 + 3x − 3 = −4x − 2"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-combine-like-terms",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Collect like terms in linear expressions with negative coefficients.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each expression has two x terms and two numbers, some negative, so the student must pair terms by kind and carry each sign with its term. The answers are short, so a wrong pairing shows clearly.",
+      "misconceptions": [
+       "Adding a constant to a coefficient: 3x + 2 = 5x.",
+       "Dropping the minus sign in front of a term when moving it next to its like term."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 346
+    },
+    {
+     "label": "C",
+     "instruction": "Factor out the greatest common factor.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "45x + 40"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "45x + 40 with 5 factored out",
+             "answer": {
+              "text": "5(9x + 8)",
+              "also": [
+               "5(9x+8)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "45x + 40 = 5(9x + 8)"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6x − 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "6x − 6 with 6 factored out",
+             "answer": {
+              "text": "6(x − 1)",
+              "also": [
+               "6(x - 1)",
+               "6(x−1)",
+               "6(x-1)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6x − 6 = 6(x − 1)"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "20x − 25"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "20x − 25 with 5 factored out",
+             "answer": {
+              "text": "5(4x − 5)",
+              "also": [
+               "5(4x - 5)",
+               "5(4x−5)",
+               "5(4x-5)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20x − 25 = 5(4x − 5)"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12x − 4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "12x − 4 with 4 factored out",
+             "answer": {
+              "text": "4(3x − 1)",
+              "also": [
+               "4(3x - 1)",
+               "4(3x−1)",
+               "4(3x-1)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12x − 4 = 4(3x − 1)"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-factor-signed",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Factor linear expressions, including ones with a subtraction.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Factoring undoes expanding, so it comes after the two sections that build expressions. Each expression has a common factor from 2 to 9, and some have a subtraction inside. Checking by expanding the answer is quick, so the student can catch their own mistakes.",
+      "misconceptions": [
+       "Taking out a factor that does not divide both terms.",
+       "Leaving a 1 out: 6x − 6 = 6(x)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 138
+    }
+   ],
+   "estimatedHeight": 712
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "4(x − 9) expanded",
+    "answer": {
+     "text": "4x − 36",
+     "also": [
+      "4x - 36",
+      "4x−36",
+      "4x-36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "7(x − 5) expanded",
+    "answer": {
+     "text": "7x − 35",
+     "also": [
+      "7x - 35",
+      "7x−35",
+      "7x-35"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "−4(4x + 7) expanded",
+    "answer": {
+     "text": "−16x − 28",
+     "also": [
+      "-16x - 28",
+      "−16x−28",
+      "-16x-28"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2(4x − 8) expanded",
+    "answer": {
+     "text": "8x − 16",
+     "also": [
+      "8x - 16",
+      "8x−16",
+      "8x-16"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "8(5x + 10) expanded",
+    "answer": {
+     "text": "40x + 80",
+     "also": [
+      "40x+80"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "−4(x − 9) expanded",
+    "answer": {
+     "text": "−4x + 36",
+     "also": [
+      "-4x + 36",
+      "−4x+36",
+      "-4x+36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "7x + 4 + x + 8 with like terms combined",
+    "answer": {
+     "text": "8x + 12",
+     "also": [
+      "8x+12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "4x + 7 + 5x + 2 with like terms combined",
+    "answer": {
+     "text": "9x + 9",
+     "also": [
+      "9x+9"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "6x + 7 + 8x + 5 with like terms combined",
+    "answer": {
+     "text": "14x + 12",
+     "also": [
+      "14x+12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "−4x + 11 − 5x + 7 with like terms combined",
+    "answer": {
+     "text": "−9x + 18",
+     "also": [
+      "-9x + 18",
+      "−9x+18",
+      "-9x+18"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "−6x + 3 − 6x − 7 with like terms combined",
+    "answer": {
+     "text": "−12x − 4",
+     "also": [
+      "-12x - 4",
+      "−12x−4",
+      "-12x-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "−7x + 1 + 3x − 3 with like terms combined",
+    "answer": {
+     "text": "−4x − 2",
+     "also": [
+      "-4x - 2",
+      "−4x−2",
+      "-4x-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "45x + 40 with 5 factored out",
+    "answer": {
+     "text": "5(9x + 8)",
+     "also": [
+      "5(9x+8)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "6x − 6 with 6 factored out",
+    "answer": {
+     "text": "6(x − 1)",
+     "also": [
+      "6(x - 1)",
+      "6(x−1)",
+      "6(x-1)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "20x − 25 with 5 factored out",
+    "answer": {
+     "text": "5(4x − 5)",
+     "also": [
+      "5(4x - 5)",
+      "5(4x−5)",
+      "5(4x-5)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "12x − 4 with 4 factored out",
+    "answer": {
+     "text": "4(3x − 1)",
+     "also": [
+      "4(3x - 1)",
+      "4(3x−1)",
+      "4(3x-1)"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Expand, collect and factor linear expressions with negative numbers.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ]
+ },
+ "advice": [
+  "\"Expand.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Combine like terms.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Factor out the greatest common factor.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

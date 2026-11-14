@@ -1,0 +1,482 @@
+{
+ "worksheetId": "ws-g6-statistical-questions",
+ "title": "Statistical questions",
+ "headerLabels": [
+  "6.SP.A.1",
+  "6.SP.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Is it a statistical question? Check one.",
+     "explainer": "A statistical question expects answers that vary.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "How many hours do sixth graders sleep on a school night?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "statistical"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "How many books did each student in my grade read this summer?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "statistical"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "What time did I go to bed last night?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "not statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not statistical"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "How much does a gallon of milk cost at different stores?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "statistical"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "How many pets does my family have?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "not statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not statistical"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "How many days are in March?"
+        },
+        {
+         "choices": {
+          "options": [
+           "statistical",
+           "not statistical"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is it a statistical question",
+           "answer": {
+            "text": "not statistical"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not statistical"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-statistical-questions",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell a statistical question, whose answers vary, from one with a single answer.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some questions have answers that vary and some have one answer. The questions are about a student's own class and family, so the difference is easy to picture. This comes first because every later data sheet starts from a statistical question.",
+      "misconceptions": [
+       "Thinking any question with a number in the answer is statistical."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 286
+    },
+    {
+     "label": "B",
+     "instruction": "Does it measure center or spread? Check one.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "The interquartile range of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "what the interquartile range measures",
+           "answer": {
+            "text": "spread"
+           }
+          }
+         }
+        }
+       ],
+       "key": "spread"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "The range of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "what the range measures",
+           "answer": {
+            "text": "spread"
+           }
+          }
+         }
+        }
+       ],
+       "key": "spread"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "The mode of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "what the mode measures",
+           "answer": {
+            "text": "center"
+           }
+          }
+         }
+        }
+       ],
+       "key": "center"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "The mean of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "what the mean measures",
+           "answer": {
+            "text": "center"
+           }
+          }
+         }
+        }
+       ],
+       "key": "center"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "The mean absolute deviation of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "what the mean absolute deviation measures",
+           "answer": {
+            "text": "spread"
+           }
+          }
+         }
+        }
+       ],
+       "key": "spread"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "The median of a data set measures its"
+        },
+        {
+         "choices": {
+          "options": [
+           "center",
+           "spread"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "what the median measures",
+           "answer": {
+            "text": "center"
+           }
+          }
+         }
+        }
+       ],
+       "key": "center"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-center-or-spread",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Tell measures of center from measures of spread.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "This sorts the six measures the grade uses into center and spread. It is a short review that the student can return to before the data set sheets.",
+      "misconceptions": [
+       "Thinking the range is a measure of center because it uses the middle values."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 260
+    }
+   ],
+   "estimatedHeight": 554
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "not statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "not statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is it a statistical question",
+    "answer": {
+     "text": "not statistical"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "what the interquartile range measures",
+    "answer": {
+     "text": "spread"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "what the range measures",
+    "answer": {
+     "text": "spread"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "what the mode measures",
+    "answer": {
+     "text": "center"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "what the mean measures",
+    "answer": {
+     "text": "center"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "what the mean absolute deviation measures",
+    "answer": {
+     "text": "spread"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "what the median measures",
+    "answer": {
+     "text": "center"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Recognize statistical questions, and sort measures of center and spread.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Does it measure center or spread? Check one.\" reviews a prerequisite after new material; reviews usually come first."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

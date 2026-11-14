@@ -1,0 +1,804 @@
+{
+ "worksheetId": "ws-g6-unit-rates",
+ "title": "Unit rates",
+ "headerLabels": [
+  "6.RP.A.2",
+  "6.RP.A.3.b",
+  "6.RP.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the unit rate. Use it to answer the second question.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "6 apples cost $3.00."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One costs $"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "cost of one of 6 for $3.00",
+             "answer": {
+              "text": "0.50",
+              "also": [
+               "0.5",
+               "$0.50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11 apples cost $"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "cost of 11",
+             "answer": {
+              "text": "5.50",
+              "also": [
+               "5.5",
+               "$5.50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "One costs $ 0.50; 11 apples cost $ 5.50"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A cyclist rides 64 miles in 4 hours."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "miles per hour",
+             "answer": {
+              "text": "16"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 8 hours:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "miles in 8 hours",
+             "answer": {
+              "text": "128"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 16 miles per hour; In 8 hours: 128 miles"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A printer prints 9 pages in 3 minutes."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "pages per minute",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "pages per minute"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 6 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "pages in 6 minutes",
+             "answer": {
+              "text": "18"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 3 pages per minute; In 6 minutes: 18 pages"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A printer prints 42 pages in 6 minutes."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "pages per minute",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "pages per minute"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 12 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "pages in 12 minutes",
+             "answer": {
+              "text": "84"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 7 pages per minute; In 12 minutes: 84 pages"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "7 pens cost $5.25."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One costs $"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "cost of one of 7 for $5.25",
+             "answer": {
+              "text": "0.75",
+              "also": [
+               "$0.75"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5 pens cost $"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "cost of 5",
+             "answer": {
+              "text": "3.75",
+              "also": [
+               "$3.75"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "One costs $ 0.75; 5 pens cost $ 3.75"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A cyclist rides 112 miles in 8 hours."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "miles per hour",
+             "answer": {
+              "text": "14"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 5 hours:"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "miles in 5 hours",
+             "answer": {
+              "text": "70"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 14 miles per hour; In 5 hours: 70 miles"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-unit-rate",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a unit rate by dividing, and use it to find the amount for another number of units.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each item splits the work into two steps: find the rate for one, then scale it. Prices, speeds and printing rates use whole-number or cents answers so the student's attention stays on the ratio, not the arithmetic. The contexts change from item to item so the student cannot copy the last answer's form.",
+      "misconceptions": [
+       "Dividing the smaller number by the larger whatever the question asks.",
+       "Multiplying the total by the number of units instead of dividing to get the rate for one."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 400
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar go with 12 cups of flour?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q7",
+           "label": "cups of sugar for 12 cups of flour",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 cups"
+            ],
+            "work": "12 ÷ 3 × 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A car goes 150 miles on 5 gallons of gas. How far can it go on 8 gallons?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q8",
+           "label": "miles on 8 gallons",
+           "answer": {
+            "text": "240",
+            "also": [
+             "240 miles"
+            ],
+            "work": "150 ÷ 5 × 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "240"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-ratio-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve ratio and rate problems from stories.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "These stories mix three kinds of ratio problem: scaling a recipe, using a rate, and splitting a total in a given ratio. The last problem compares two unit prices, the everyday use of a unit rate. Plain working space lets the student choose a table, a double number line or division.",
+      "misconceptions": [
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11.",
+       "Treating a part-to-part ratio as part-to-whole: 2 blue for every 3 white read as 2 out of 3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 798
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Paint is mixed 2 cups of blue for every 3 cups of white. Mia wants 30 cups of paint in all. How many cups of blue does she need?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q9",
+           "label": "cups of blue in 30 cups",
+           "answer": {
+            "text": "12",
+            "also": [
+             "12 cups"
+            ],
+            "work": "30 ÷ (2 + 3) × 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "multiPartQuestion": {
+          "stem": [
+           {
+            "text": "A pack of 6 juice boxes costs $4.50. A pack of 10 costs $7.00."
+           }
+          ],
+          "parts": [
+           {
+            "label": "10a",
+            "prompt": [
+             {
+              "text": "How much is one box in the small pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10a",
+                "label": "cost of one box in the small pack",
+                "answer": {
+                 "text": "0.75",
+                 "also": [
+                  "$0.75"
+                 ],
+                 "work": "4.50 ÷ 6"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "10b",
+            "prompt": [
+             {
+              "text": "How much is one box in the large pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10b",
+                "label": "cost of one box in the large pack",
+                "answer": {
+                 "text": "0.70",
+                 "also": [
+                  "$0.70",
+                  "0.7"
+                 ],
+                 "work": "7.00 ÷ 10"
+                }
+               }
+              }
+             }
+            ]
+           },
+           {
+            "label": "10c",
+            "prompt": [
+             {
+              "text": "How much less does one box cost in the large pack?"
+             }
+            ],
+            "response": [
+             {
+              "workSpace": {
+               "rows": 3,
+               "field": {
+                "id": "q10c",
+                "label": "saving per box",
+                "answer": {
+                 "text": "0.05",
+                 "also": [
+                  "$0.05"
+                 ],
+                 "work": "0.75 − 0.70"
+                }
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10a: 4.50 ÷ 6 = 0.75; 10b: 7.00 ÷ 10 = 0.70; 10c: 0.75 − 0.70 = 0.05"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-ratio-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve ratio and rate problems from stories.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "These stories mix three kinds of ratio problem: scaling a recipe, using a rate, and splitting a total in a given ratio. The last problem compares two unit prices, the everyday use of a unit rate. Plain working space lets the student choose a table, a double number line or division.",
+      "misconceptions": [
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11.",
+       "Treating a part-to-part ratio as part-to-whole: 2 blue for every 3 white read as 2 out of 3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 690
+    }
+   ],
+   "estimatedHeight": 694
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "cost of one of 6 for $3.00",
+    "answer": {
+     "text": "0.50",
+     "also": [
+      "0.5",
+      "$0.50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "cost of 11",
+    "answer": {
+     "text": "5.50",
+     "also": [
+      "5.5",
+      "$5.50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "miles per hour",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "miles in 8 hours",
+    "answer": {
+     "text": "128"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "pages per minute",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "pages in 6 minutes",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "pages per minute",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "pages in 12 minutes",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "cost of one of 7 for $5.25",
+    "answer": {
+     "text": "0.75",
+     "also": [
+      "$0.75"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "cost of 5",
+    "answer": {
+     "text": "3.75",
+     "also": [
+      "$3.75"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "miles per hour",
+    "answer": {
+     "text": "14"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "miles in 5 hours",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "cups of sugar for 12 cups of flour",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 cups"
+     ],
+     "work": "12 ÷ 3 × 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "miles on 8 gallons",
+    "answer": {
+     "text": "240",
+     "also": [
+      "240 miles"
+     ],
+     "work": "150 ÷ 5 × 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "cups of blue in 30 cups",
+    "answer": {
+     "text": "12",
+     "also": [
+      "12 cups"
+     ],
+     "work": "30 ÷ (2 + 3) × 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10a",
+   "field": {
+    "id": "q10a",
+    "label": "cost of one box in the small pack",
+    "answer": {
+     "text": "0.75",
+     "also": [
+      "$0.75"
+     ],
+     "work": "4.50 ÷ 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "10b",
+   "field": {
+    "id": "q10b",
+    "label": "cost of one box in the large pack",
+    "answer": {
+     "text": "0.70",
+     "also": [
+      "$0.70",
+      "0.7"
+     ],
+     "work": "7.00 ÷ 10"
+    }
+   }
+  },
+  {
+   "itemLabel": "10c",
+   "field": {
+    "id": "q10c",
+    "label": "saving per box",
+    "answer": {
+     "text": "0.05",
+     "also": [
+      "$0.05"
+     ],
+     "work": "0.75 − 0.70"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find unit rates and use them and ratios to solve problems.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the unit rate. Use it to answer the second question.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

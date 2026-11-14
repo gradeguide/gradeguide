@@ -1,0 +1,819 @@
+{
+ "worksheetId": "ws-g8-slope",
+ "title": "Slope",
+ "headerLabels": [
+  "8.EE.B.6",
+  "8.F.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the slope triangle to find the slope.",
+     "explainer": "Slope is rise over run. Going down is a negative rise. Any slope triangle on the same line gives the same slope.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 3
+           },
+           {
+            "x": 4,
+            "y": 3
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "x2": 4,
+            "y2": 3,
+            "extend": true
+           },
+           {
+            "x1": 3,
+            "x2": 4,
+            "dashed": true,
+            "field": {
+             "id": "q1",
+             "label": "the run",
+             "answer": {
+              "text": "1"
+             }
+            }
+           },
+           {
+            "x1": 4,
+            "x2": 4,
+            "y2": 3,
+            "dashed": true,
+            "field": {
+             "id": "q1-2",
+             "label": "the rise",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope = rise ÷ run ="
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "the slope",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1, 3; Slope = rise ÷ run = 3"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 1,
+            "y": 7
+           },
+           {
+            "x": 4,
+            "y": 6
+           }
+          ],
+          "segments": [
+           {
+            "x1": 1,
+            "y1": 7,
+            "x2": 4,
+            "y2": 6,
+            "extend": true
+           },
+           {
+            "x1": 1,
+            "y1": 7,
+            "x2": 4,
+            "y2": 7,
+            "dashed": true,
+            "field": {
+             "id": "q2",
+             "label": "the run",
+             "answer": {
+              "text": "3"
+             }
+            },
+            "labelBefore": true
+           },
+           {
+            "x1": 4,
+            "y1": 7,
+            "x2": 4,
+            "y2": 6,
+            "dashed": true,
+            "field": {
+             "id": "q2-2",
+             "label": "the rise",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope = rise ÷ run ="
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "the slope",
+             "answer": {
+              "text": "−1/3",
+              "also": [
+               "-1/3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, −1; Slope = rise ÷ run = −1/3"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 3,
+            "y": 5
+           },
+           {
+            "x": 6,
+            "y": 3
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "y1": 5,
+            "x2": 6,
+            "y2": 3,
+            "extend": true
+           },
+           {
+            "x1": 3,
+            "y1": 5,
+            "x2": 6,
+            "y2": 5,
+            "dashed": true,
+            "field": {
+             "id": "q3",
+             "label": "the run",
+             "answer": {
+              "text": "3"
+             }
+            },
+            "labelBefore": true
+           },
+           {
+            "x1": 6,
+            "y1": 5,
+            "x2": 6,
+            "y2": 3,
+            "dashed": true,
+            "field": {
+             "id": "q3-2",
+             "label": "the rise",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope = rise ÷ run ="
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "the slope",
+             "answer": {
+              "text": "−2/3",
+              "also": [
+               "-2/3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, −2; Slope = rise ÷ run = −2/3"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 7,
+            "y": 9
+           },
+           {
+            "x": 10,
+            "y": 5
+           }
+          ],
+          "segments": [
+           {
+            "x1": 7,
+            "y1": 9,
+            "x2": 10,
+            "y2": 5,
+            "extend": true
+           },
+           {
+            "x1": 7,
+            "y1": 9,
+            "x2": 10,
+            "y2": 9,
+            "dashed": true,
+            "field": {
+             "id": "q4",
+             "label": "the run",
+             "answer": {
+              "text": "3"
+             }
+            },
+            "labelBefore": true
+           },
+           {
+            "x1": 10,
+            "y1": 9,
+            "x2": 10,
+            "y2": 5,
+            "dashed": true,
+            "field": {
+             "id": "q4-2",
+             "label": "the rise",
+             "answer": {
+              "text": "−4",
+              "also": [
+               "-4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope = rise ÷ run ="
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "the slope",
+             "answer": {
+              "text": "−4/3",
+              "also": [
+               "-4/3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, −4; Slope = rise ÷ run = −4/3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-slope-triangles",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Find the slope of a line from the rise and run of a slope triangle.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "A slope triangle on a grid shows the rise and the run as lengths the student can count. Falling lines make the rise negative, so the sign of the slope is seen, not told. This prepares for the formula in the next section.",
+      "misconceptions": [
+       "Writing run over rise.",
+       "Giving a falling line a positive slope.",
+       "Counting grid lines instead of the spaces between them."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
+      ]
+     },
+     "estimatedHeight": 680
+    }
+   ],
+   "estimatedHeight": 684
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the slope of the line through the two points.",
+     "explainer": "Slope = (change in y) ÷ (change in x). Subtract in the same order in both.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (5, −6) and (−1, 1) ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "slope through (5, −6) and (−1, 1)",
+             "answer": {
+              "text": "−7/6",
+              "also": [
+               "-7/6",
+               "7/−6",
+               "7/-6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (5, −6) and (−1, 1) = −7/6"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (1, −2) and (−6, 5) ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "slope through (1, −2) and (−6, 5)",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1",
+               "7/−7",
+               "7/-7"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (1, −2) and (−6, 5) = −1"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (3, 2) and (7, −2) ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "slope through (3, 2) and (7, −2)",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1",
+               "−4/4",
+               "-4/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (3, 2) and (7, −2) = −1"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (4, 2) and (0, −1) ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "slope through (4, 2) and (0, −1)",
+             "answer": {
+              "text": "3/4",
+              "also": [
+               "−3/−4",
+               "-3/-4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (4, 2) and (0, −1) = 3/4"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (−6, −6) and (2, 3) ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "slope through (−6, −6) and (2, 3)",
+             "answer": {
+              "text": "9/8"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (−6, −6) and (2, 3) = 9/8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Slope through (0, 8) and (−2, −2) ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "slope through (0, 8) and (−2, −2)",
+             "answer": {
+              "text": "5",
+              "also": [
+               "−10/−2",
+               "-10/-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        }
+       ],
+       "key": "Slope through (0, 8) and (−2, −2) = 5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-slope-from-points",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the slope between two points.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With coordinates and no grid, the student uses the change in y over the change in x. Negative coordinates come up, so subtracting a negative is practised. A line of room under each item is for the two differences.",
+      "misconceptions": [
+       "Subtracting the x-values in one order and the y-values in the other.",
+       "Putting the change in x on top."
+      ]
+     },
+     "estimatedHeight": 600
+    }
+   ],
+   "estimatedHeight": 604
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the run",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the rise",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "the slope",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the run",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the rise",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "the slope",
+    "answer": {
+     "text": "−1/3",
+     "also": [
+      "-1/3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the run",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "the rise",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "the slope",
+    "answer": {
+     "text": "−2/3",
+     "also": [
+      "-2/3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the run",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "the rise",
+    "answer": {
+     "text": "−4",
+     "also": [
+      "-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "the slope",
+    "answer": {
+     "text": "−4/3",
+     "also": [
+      "-4/3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "slope through (5, −6) and (−1, 1)",
+    "answer": {
+     "text": "−7/6",
+     "also": [
+      "-7/6",
+      "7/−6",
+      "7/-6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "slope through (1, −2) and (−6, 5)",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1",
+      "7/−7",
+      "7/-7"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "slope through (3, 2) and (7, −2)",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1",
+      "−4/4",
+      "-4/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "slope through (4, 2) and (0, −1)",
+    "answer": {
+     "text": "3/4",
+     "also": [
+      "−3/−4",
+      "-3/-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "slope through (−6, −6) and (2, 3)",
+    "answer": {
+     "text": "9/8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "slope through (0, 8) and (−2, −2)",
+    "answer": {
+     "text": "5",
+     "also": [
+      "−10/−2",
+      "-10/-2"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find slope from slope triangles and from two points.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

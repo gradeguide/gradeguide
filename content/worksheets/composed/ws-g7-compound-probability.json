@@ -1,0 +1,703 @@
+{
+ "worksheetId": "ws-g7-compound-probability",
+ "title": "Compound events",
+ "headerLabels": [
+  "7.SP.C.8.a",
+  "7.SP.C.8.b",
+  "7.SP.C.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the number of outcomes. Then find the probability.",
+     "explainer": "Use a list, table or tree diagram to show every outcome.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Toss two coins. Find the probability of two heads."
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "outcomes: Toss two coins. Find the probability of two heads.",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q1-2",
+             "label": "probability: Toss two coins. Find the probability of two heads.",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 4; P = 1/4"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4."
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "outcomes: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q2-2",
+             "label": "probability: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "2/12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 12; P = 1/6"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-compound-probability",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find probabilities of compound events from a sample space.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Compound events are found by listing the whole sample space. Two number cubes come with a 6-by-6 table to fill in, the model teachers use, and coin events have room for a list or tree. The student counts the outcomes before finding the probability, so the size of the sample space is never guessed.",
+      "misconceptions": [
+       "Counting heads-tails and tails-heads as one outcome.",
+       "Thinking there are 11 equally likely sums for two number cubes.",
+       "Adding the probabilities of the two parts instead of counting outcomes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 568
+    }
+   ],
+   "estimatedHeight": 572
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the number of outcomes. Then find the probability.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Roll two number cubes. Find the probability that the sum is 7."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "1",
+           "2",
+           "3",
+           "4",
+           "5",
+           "6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "outcomes: Roll two number cubes. Find the probability that the sum is 7.",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3-2",
+             "label": "probability: Roll two number cubes. Find the probability that the sum is 7.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "6/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 36; P = 1/6"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Roll two number cubes. Find the probability of doubles."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "1",
+           "2",
+           "3",
+           "4",
+           "5",
+           "6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Outcomes in the sample space:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "outcomes: Roll two number cubes. Find the probability of doubles.",
+             "answer": {
+              "text": "36"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P ="
+           },
+           {
+            "fractionBlank": {
+             "id": "q4-2",
+             "label": "probability: Roll two number cubes. Find the probability of doubles.",
+             "answer": {
+              "text": "1/6",
+              "also": [
+               "6/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Outcomes in the sample space: 36; P = 1/6"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-compound-probability",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find probabilities of compound events from a sample space.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Compound events are found by listing the whole sample space. Two number cubes come with a 6-by-6 table to fill in, the model teachers use, and coin events have room for a list or tree. The student counts the outcomes before finding the probability, so the size of the sample space is never guessed.",
+      "misconceptions": [
+       "Counting heads-tails and tails-heads as one outcome.",
+       "Thinking there are 11 equally likely sums for two number cubes.",
+       "Adding the probabilities of the two parts instead of counting outcomes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 782
+    }
+   ],
+   "estimatedHeight": 786
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "outcomes: Toss two coins. Find the probability of two heads.",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "probability: Toss two coins. Find the probability of two heads.",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "outcomes: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "probability: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "2/12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "outcomes: Roll two number cubes. Find the probability that the sum is 7.",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "probability: Roll two number cubes. Find the probability that the sum is 7.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "6/36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "outcomes: Roll two number cubes. Find the probability of doubles.",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "probability: Roll two number cubes. Find the probability of doubles.",
+    "answer": {
+     "text": "1/6",
+     "also": [
+      "6/36"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find probabilities of compound events from lists, tables and tree diagrams.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Find the number of outcomes. Then find the probability.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,1055 @@
+{
+ "worksheetId": "ws-g6-equations",
+ "title": "One-step equations",
+ "headerLabels": [
+  "6.EE.B.5",
+  "6.EE.B.7",
+  "6.EE.B.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Check the value that makes the equation true.",
+     "explainer": "Substitute each value for the variable. The solution makes both sides equal.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which value of x makes 4x + 12 = 40 true?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "1",
+           "6",
+           "7",
+           "8"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "solution of 4x + 12 = 40",
+           "answer": {
+            "text": "7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which value of x makes 3x + 8 = 32 true?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "2",
+           "5",
+           "8",
+           "10"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "solution of 3x + 8 = 32",
+           "answer": {
+            "text": "8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Which value of x makes 4x + 14 = 34 true?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "1",
+           "4",
+           "5",
+           "7"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "solution of 4x + 14 = 34",
+           "answer": {
+            "text": "5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-which-value-solves",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Find which of a set of values makes an equation true by substituting.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Before solving, the student tests values from a short list. This shows what a solution is: the value that makes both sides equal. The equations need two steps to solve, but substitution requires only evaluation.",
+      "misconceptions": [
+       "Stopping at the first value that makes one side look close."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 300
+    },
+    {
+     "label": "B",
+     "instruction": "Solve.",
+     "explainer": "Use the inverse operation. Subtract to undo addition. Divide to undo multiplication.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + 4 = 19"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "solution of x + 4 = 19",
+             "answer": {
+              "text": "15",
+              "also": [
+               "x = 15",
+               "x=15"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 15"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ÷ 3 = 14"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "solution of y ÷ 3 = 14",
+             "answer": {
+              "text": "42",
+              "also": [
+               "y = 42",
+               "y=42"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 42"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ÷ 9 = 5"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "solution of y ÷ 9 = 5",
+             "answer": {
+              "text": "45",
+              "also": [
+               "y = 45",
+               "y=45"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 45"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ÷ 11 = 16"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "n ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "solution of n ÷ 11 = 16",
+             "answer": {
+              "text": "176",
+              "also": [
+               "n = 176",
+               "n=176"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "n = 176"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7x = 91"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "solution of 7x = 91",
+             "answer": {
+              "text": "13",
+              "also": [
+               "x = 13",
+               "x=13"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 13"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x − 9 = 6"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "solution of x − 9 = 6",
+             "answer": {
+              "text": "15",
+              "also": [
+               "x = 15",
+               "x=15"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 15"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10y = 100"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "solution of 10y = 100",
+             "answer": {
+              "text": "10",
+              "also": [
+               "y = 10",
+               "y=10"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 10"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y + 2 = 20"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "solution of y + 2 = 20",
+             "answer": {
+              "text": "18",
+              "also": [
+               "y = 18",
+               "y=18"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 18"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x − 7 = 16"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "solution of x − 7 = 16",
+             "answer": {
+              "text": "23",
+              "also": [
+               "x = 23",
+               "x=23"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 23"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + 4 = 11"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "solution of x + 4 = 11",
+             "answer": {
+              "text": "7",
+              "also": [
+               "x = 7",
+               "x=7"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 7"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g6-one-step-equations",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Solve one-step equations by doing the inverse operation.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The four kinds of one-step equation are mixed: adding, subtracting, multiplying and dividing. All numbers are 0 or more, as the grade 6 standard asks. The explainer names the inverse for each operation.",
+      "misconceptions": [
+       "Doing the operation shown instead of its inverse: x + 4 = 10 gives x = 14."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 444
+    }
+   ],
+   "estimatedHeight": 752
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write an expression for each situation.",
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q14",
+             "label": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both.",
+             "answer": {
+              "text": "23x",
+              "also": [
+               "x(12 + 11)",
+               "x(12+11)",
+               "(12 + 11)x",
+               "(12+11)x"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "23x"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q15",
+             "label": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks.",
+             "answer": {
+              "text": "6 + 9x",
+              "also": [
+               "6+9x",
+               "9x + 6",
+               "9x+6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 + 9x"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "Sam is y years old. Mia is 3 years older. Write Mia's age."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q16",
+             "label": "Sam is y years old. Mia is 3 years older. Write Mia's age.",
+             "answer": {
+              "text": "y + 3",
+              "also": [
+               "y+3",
+               "3 + y",
+               "3+y"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y + 3"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q17",
+             "label": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece.",
+             "answer": {
+              "text": "y ÷ 10",
+              "also": [
+               "y÷10",
+               "y/10"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y ÷ 10"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-expressions-in-stories",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Write an expression with a variable for an amount in a story.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each story uses a variable for an unknown amount: cost, age, equal pieces or growth over time. The stories differ so the student decides which operation the words call for. The answer is an expression, not a number.",
+      "misconceptions": [
+       "Writing a number instead of an expression with the variable."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 346
+    },
+    {
+     "label": "D",
+     "instruction": "Write an equation. Solve it. Show your work.",
+     "items": [
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "text": "Mia had some money saved. She earned $15 more and then had $62. How much had she saved?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q18",
+           "label": "money saved before",
+           "answer": {
+            "text": "47",
+            "also": [
+             "$47"
+            ],
+            "work": "62 − 15"
+           }
+          }
+         }
+        }
+       ],
+       "key": "47"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "text": "A pack of 8 markers costs $12. What does one marker cost?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q19",
+           "label": "cost of one marker",
+           "answer": {
+            "text": "1.50",
+            "also": [
+             "$1.50",
+             "1.5"
+            ],
+            "work": "12 ÷ 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1.50"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "text": "Leo has read 3/4 of his book. That is 120 pages. How many pages long is the book?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q20",
+           "label": "pages in the book",
+           "answer": {
+            "text": "160",
+            "also": [
+             "160 pages"
+            ],
+            "work": "120 ÷ (3/4)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "160"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-equation-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Write and solve one-step equations for stories.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The three stories need addition, division and a fraction of a whole. The directions ask for an equation first, so the student names the unknown before calculating. The last story divides by a fraction, which links back to the fraction division sheet.",
+      "misconceptions": [
+       "Multiplying 120 by 3/4 instead of dividing."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 442
+    }
+   ],
+   "estimatedHeight": 796
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "solution of 4x + 12 = 40",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "solution of 3x + 8 = 32",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "solution of 4x + 14 = 34",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "solution of x + 4 = 19",
+    "answer": {
+     "text": "15",
+     "also": [
+      "x = 15",
+      "x=15"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "solution of y ÷ 3 = 14",
+    "answer": {
+     "text": "42",
+     "also": [
+      "y = 42",
+      "y=42"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "solution of y ÷ 9 = 5",
+    "answer": {
+     "text": "45",
+     "also": [
+      "y = 45",
+      "y=45"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "solution of n ÷ 11 = 16",
+    "answer": {
+     "text": "176",
+     "also": [
+      "n = 176",
+      "n=176"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "solution of 7x = 91",
+    "answer": {
+     "text": "13",
+     "also": [
+      "x = 13",
+      "x=13"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "solution of x − 9 = 6",
+    "answer": {
+     "text": "15",
+     "also": [
+      "x = 15",
+      "x=15"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "solution of 10y = 100",
+    "answer": {
+     "text": "10",
+     "also": [
+      "y = 10",
+      "y=10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "solution of y + 2 = 20",
+    "answer": {
+     "text": "18",
+     "also": [
+      "y = 18",
+      "y=18"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "solution of x − 7 = 16",
+    "answer": {
+     "text": "23",
+     "also": [
+      "x = 23",
+      "x=23"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "solution of x + 4 = 11",
+    "answer": {
+     "text": "7",
+     "also": [
+      "x = 7",
+      "x=7"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both.",
+    "answer": {
+     "text": "23x",
+     "also": [
+      "x(12 + 11)",
+      "x(12+11)",
+      "(12 + 11)x",
+      "(12+11)x"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks.",
+    "answer": {
+     "text": "6 + 9x",
+     "also": [
+      "6+9x",
+      "9x + 6",
+      "9x+6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "Sam is y years old. Mia is 3 years older. Write Mia's age.",
+    "answer": {
+     "text": "y + 3",
+     "also": [
+      "y+3",
+      "3 + y",
+      "3+y"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece.",
+    "answer": {
+     "text": "y ÷ 10",
+     "also": [
+      "y÷10",
+      "y/10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "money saved before",
+    "answer": {
+     "text": "47",
+     "also": [
+      "$47"
+     ],
+     "work": "62 − 15"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "cost of one marker",
+    "answer": {
+     "text": "1.50",
+     "also": [
+      "$1.50",
+      "1.5"
+     ],
+     "work": "12 ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "pages in the book",
+    "answer": {
+     "text": "160",
+     "also": [
+      "160 pages"
+     ],
+     "work": "120 ÷ (3/4)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find solutions by substituting, then by inverse operations, then for stories.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

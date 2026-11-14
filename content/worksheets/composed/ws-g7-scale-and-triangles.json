@@ -1,0 +1,755 @@
+{
+ "worksheetId": "ws-g7-scale-and-triangles",
+ "title": "Scale drawings, triangles and slices",
+ "headerLabels": [
+  "7.G.A.1",
+  "7.G.A.2",
+  "7.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the scale to find each length.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 4 feet. A wall is 62 feet long."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "On the plan:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "length on the plan",
+             "answer": {
+              "text": "15.5",
+              "also": [
+               "15.5 in",
+               "15.5in"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "On the plan: 15.5 inches"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 4 km. Two towns are 6 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "real length",
+             "answer": {
+              "text": "24",
+              "also": [
+               "24 km",
+               "24km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 24 km"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 2 feet. A wall is 14 inches long on the plan."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "real length",
+             "answer": {
+              "text": "28",
+              "also": [
+               "28 feet",
+               "28feet"
+              ]
+             }
+            }
+           },
+           {
+            "text": "feet"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 28 feet"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 20 km. Two towns are 5 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "real length",
+             "answer": {
+              "text": "100",
+              "also": [
+               "100 km",
+               "100km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 100 km"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "On a floor plan, 1 inch stands for 2 feet. A wall is 11 feet long."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "On the plan:"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "length on the plan",
+             "answer": {
+              "text": "5.5",
+              "also": [
+               "5.5 in",
+               "5.5in"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "On the plan: 5.5 inches"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "On a map, 1 cm stands for 2 km. Two towns are 12 cm apart on the map."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Real length:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "real length",
+             "answer": {
+              "text": "24",
+              "also": [
+               "24 km",
+               "24km"
+              ]
+             }
+            }
+           },
+           {
+            "text": "km"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Real length: 24 km"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-scale-drawings",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find real lengths from a scale drawing, and drawing lengths from real ones.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Half the items go from the drawing to the real length and half go back, so the student cannot just multiply every time. Maps use centimeters for kilometers and floor plans use inches for feet, two scales a student has seen. Some lengths are halves, so the reverse direction needs a division that does not come out whole.",
+      "misconceptions": [
+       "Multiplying when going from real length to the drawing.",
+       "Writing the answer in the drawing's units when the real length is asked for."
+      ]
+     },
+     "estimatedHeight": 502
+    },
+    {
+     "label": "B",
+     "instruction": "Can the side lengths form a triangle? Check one.",
+     "explainer": "The two shorter sides must add to more than the longest side.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Side lengths 4 cm, 4 cm and 11 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "can 4, 4, 11 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Side lengths 5 cm, 6 cm and 14 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "can 5, 6, 14 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Side lengths 3 cm, 11 cm and 13 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "can 3, 11, 13 make a triangle",
+           "answer": {
+            "text": "makes a triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "makes a triangle"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Side lengths 3 cm, 5 cm and 9 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "can 3, 5, 9 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Side lengths 4 cm, 9 cm and 17 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "can 4, 9, 17 make a triangle",
+           "answer": {
+            "text": "no triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no triangle"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Side lengths 2 cm, 11 cm and 12 cm"
+        },
+        {
+         "choices": {
+          "options": [
+           "makes a triangle",
+           "no triangle"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "can 2, 11, 12 make a triangle",
+           "answer": {
+            "text": "makes a triangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "makes a triangle"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-can-it-be-a-triangle",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Decide whether three side lengths make a triangle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The rule that the two shorter sides must add to more than the longest is printed on the sheet, so the student practises applying it. Some sets fail by a lot and some only just, so the student must add carefully rather than guess from the look of the numbers.",
+      "misconceptions": [
+       "Checking that any two sides add to more than the third, but using the two longest.",
+       "Thinking sides that add to exactly the longest side make a flat triangle that counts."
+      ]
+     },
+     "estimatedHeight": 246
+    }
+   ],
+   "estimatedHeight": 756
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Check the shape of the cross section.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "boxSolid": {
+          "length": 3,
+          "width": 2,
+          "height": 2
+         }
+        },
+        {
+         "text": "A box is sliced parallel to its base. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q13",
+           "label": "A box is sliced parallel to its base. What shape is the cross section?",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "boxSolid": {
+          "length": 3,
+          "width": 2,
+          "height": 2
+         }
+        },
+        {
+         "text": "A box is sliced straight down, parallel to its front. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q14",
+           "label": "A box is sliced straight down, parallel to its front. What shape is the cross section?",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "roundSolid": {
+          "kind": "KIND_CONE"
+         }
+        },
+        {
+         "text": "A cone is sliced parallel to its base. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q15",
+           "label": "A cone is sliced parallel to its base. What shape is the cross section?",
+           "answer": {
+            "text": "circle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "circle"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "roundSolid": {
+          "kind": "KIND_CYLINDER"
+         }
+        },
+        {
+         "text": "A cylinder is sliced parallel to its base. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q16",
+           "label": "A cylinder is sliced parallel to its base. What shape is the cross section?",
+           "answer": {
+            "text": "circle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "circle"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-cross-sections",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name the two-dimensional cross section made by slicing a rectangular prism, cylinder, cone or sphere.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each item shows a solid and describes a plane slice, and the student identifies the shape of the cross section. The solids are a rectangular prism, cylinder, cone and sphere. The drawing supports visualizing the slice before choosing.",
+      "misconceptions": [
+       "Naming the shape of the whole solid instead of the slice, such as a cylinder.",
+       "Thinking every slice of a box is a rectangle of the same size as a face."
+      ]
+     },
+     "estimatedHeight": 505
+    }
+   ],
+   "estimatedHeight": 509
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "length on the plan",
+    "answer": {
+     "text": "15.5",
+     "also": [
+      "15.5 in",
+      "15.5in"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "real length",
+    "answer": {
+     "text": "24",
+     "also": [
+      "24 km",
+      "24km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "real length",
+    "answer": {
+     "text": "28",
+     "also": [
+      "28 feet",
+      "28feet"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "real length",
+    "answer": {
+     "text": "100",
+     "also": [
+      "100 km",
+      "100km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "length on the plan",
+    "answer": {
+     "text": "5.5",
+     "also": [
+      "5.5 in",
+      "5.5in"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "real length",
+    "answer": {
+     "text": "24",
+     "also": [
+      "24 km",
+      "24km"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "can 4, 4, 11 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "can 5, 6, 14 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "can 3, 11, 13 make a triangle",
+    "answer": {
+     "text": "makes a triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "can 3, 5, 9 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "can 4, 9, 17 make a triangle",
+    "answer": {
+     "text": "no triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "can 2, 11, 12 make a triangle",
+    "answer": {
+     "text": "makes a triangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "A box is sliced parallel to its base. What shape is the cross section?",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "A box is sliced straight down, parallel to its front. What shape is the cross section?",
+    "answer": {
+     "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "A cone is sliced parallel to its base. What shape is the cross section?",
+    "answer": {
+     "text": "circle"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "A cylinder is sliced parallel to its base. What shape is the cross section?",
+    "answer": {
+     "text": "circle"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use scales, decide when sides make a triangle, and describe cross sections of solids.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the scale to find each length.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Can the side lengths form a triangle? Check one.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Check the shape of the cross section.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

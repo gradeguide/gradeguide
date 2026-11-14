@@ -28,6 +28,7 @@ import {
   DataTableComponent,
   WorkSpaceComponent,
 } from './widgets.component.js';
+import { G68WidgetComponent } from './widgets_g68.component.js';
 import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
 
 // NodeComponent draws any node by its kind. Rows and stacks draw their
@@ -63,6 +64,7 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
     WorkSpaceComponent,
     GridShapeComponent,
     FractionCircleComponent,
+    G68WidgetComponent,
     MeasuringJugComponent,
   ],
   host: { '[class]': 'kind()' },
@@ -179,6 +181,36 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
             </div>
           </div>
         }
+      }
+      @case ('doubleNumberLine') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('coordinatePlane') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('boxPlot') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('histogram') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('prismNet') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('heightShape') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('transversal') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('roundSolid') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('boxSolid') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('angleTriangle') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
       }
       @case ('choices') {
         <ws-choices [node]="k.value" [filled]="filled()" />

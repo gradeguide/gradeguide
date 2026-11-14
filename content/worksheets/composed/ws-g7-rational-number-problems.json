@@ -1,0 +1,352 @@
+{
+ "worksheetId": "ws-g7-rational-number-problems",
+ "title": "Problems with rational numbers",
+ "headerLabels": [
+  "7.NS.A.3",
+  "7.EE.B.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "At 6 a.m. it was −5°F. By noon it was 12°F. How many degrees did it rise?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q1",
+           "label": "degrees risen",
+           "answer": {
+            "text": "17",
+            "also": [
+             "17 degrees"
+            ],
+            "work": "12 + 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A diver is 30 feet below the surface. She rises 2 1/2 feet each minute. How many minutes until she reaches the surface?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q2",
+           "label": "minutes to the surface",
+           "answer": {
+            "text": "12",
+            "also": [
+             "12 minutes"
+            ],
+            "work": "30 ÷ (2 + 1/2)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Kim's account had −$18.50. She deposits $45.25. What is her balance now?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q3",
+           "label": "new balance",
+           "answer": {
+            "text": "26.75",
+            "also": [
+             "$26.75"
+            ],
+            "work": "45.25 − 18.50"
+           }
+          }
+         }
+        }
+       ],
+       "key": "26.75"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A hiker starts at 1,200 feet above sea level. Her height changes by −350 feet each hour for 3 hours. How high is she then?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q4",
+           "label": "height after 3 hours",
+           "answer": {
+            "text": "150",
+            "also": [
+             "150 feet"
+            ],
+            "work": "1,200 − 350 × 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "150"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-rational-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve problems with positive and negative numbers, fractions and decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story uses a different kind of rational number: a temperature below zero, a mixed number, money owed and a negative change in height. The student decides which operation the story needs before computing. There is room to show the working, so a teacher can see the setup as well as the answer.",
+      "misconceptions": [
+       "Subtracting 5 from 12 for a rise from −5 to 12 instead of adding.",
+       "Ignoring the negative sign on a debt."
+      ],
+      "references": [
+       "Rohrer and Taylor (2007), Instructional Science 35"
+      ]
+     },
+     "estimatedHeight": 682
+    }
+   ],
+   "estimatedHeight": 686
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A worker earns $25 an hour and gets a raise of 10%. What is her new hourly pay?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q5",
+           "label": "new hourly pay",
+           "answer": {
+            "text": "27.50",
+            "also": [
+             "$27.50",
+             "27.5"
+            ],
+            "work": "25 + 25 × 0.10"
+           }
+          }
+         }
+        }
+       ],
+       "key": "27.50"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A 9 3/4-inch board is cut into pieces 1 1/2 inches long, with 3/4 inch left over. How many pieces are there?"
+        },
+        {
+         "workSpace": {
+          "rows": 6,
+          "field": {
+           "id": "q6",
+           "label": "pieces",
+           "answer": {
+            "text": "6",
+            "also": [
+             "6 pieces"
+            ],
+            "work": "(9 + 3/4 − 3/4) ÷ (1 + 1/2)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A shirt costs $24. It is 1/4 off, then 6% tax is added to the sale price. What is the final cost?"
+        },
+        {
+         "workSpace": {
+          "rows": 6,
+          "field": {
+           "id": "q7",
+           "label": "price paid",
+           "answer": {
+            "text": "19.08",
+            "also": [
+             "$19.08"
+            ],
+            "work": "(24 − 24 × 1/4) × (1 + 0.06)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "19.08"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-multistep-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multistep problems that mix whole numbers, fractions, decimals and percents.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story needs two or more steps and a change of form, such as a fraction off and then a percent tax. The first story is the standard's own example of a 10% raise. The student chooses which form to work in and checks the answer makes sense.",
+      "misconceptions": [
+       "Adding the percents for a discount and a tax instead of applying them one after the other.",
+       "Forgetting to subtract the leftover piece before dividing the board."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 706
+    }
+   ],
+   "estimatedHeight": 710
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "degrees risen",
+    "answer": {
+     "text": "17",
+     "also": [
+      "17 degrees"
+     ],
+     "work": "12 + 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "minutes to the surface",
+    "answer": {
+     "text": "12",
+     "also": [
+      "12 minutes"
+     ],
+     "work": "30 ÷ (2 + 1/2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "new balance",
+    "answer": {
+     "text": "26.75",
+     "also": [
+      "$26.75"
+     ],
+     "work": "45.25 − 18.50"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "height after 3 hours",
+    "answer": {
+     "text": "150",
+     "also": [
+      "150 feet"
+     ],
+     "work": "1,200 − 350 × 3"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "new hourly pay",
+    "answer": {
+     "text": "27.50",
+     "also": [
+      "$27.50",
+      "27.5"
+     ],
+     "work": "25 + 25 × 0.10"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "pieces",
+    "answer": {
+     "text": "6",
+     "also": [
+      "6 pieces"
+     ],
+     "work": "(9 + 3/4 − 3/4) ÷ (1 + 1/2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "price paid",
+    "answer": {
+     "text": "19.08",
+     "also": [
+      "$19.08"
+     ],
+     "work": "(24 − 24 × 1/4) × (1 + 0.06)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve real-world problems with positive and negative numbers, fractions, decimals and percents.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

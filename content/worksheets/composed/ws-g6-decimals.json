@@ -1,0 +1,551 @@
+{
+ "worksheetId": "ws-g6-decimals",
+ "title": "Decimal operations",
+ "headerLabels": [
+  "6.NS.B.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add or subtract. Line up the decimal points.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2.1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "2.4 + 2.1",
+             "answer": {
+              "text": "4.5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "2.4 + 2.1 = 4.5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "43.416"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "34.3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "43.416 − 34.3",
+             "answer": {
+              "text": "9.116"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "43.416 − 34.3 = 9.116"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "59.987"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "4.01"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "59.987 − 4.01",
+             "answer": {
+              "text": "55.977"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "59.987 − 4.01 = 55.977"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "96.849"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "28.37"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "96.849 + 28.37",
+             "answer": {
+              "text": "125.219"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "96.849 + 28.37 = 125.219"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "32.1"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "20.1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "32.1 − 20.1",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "32.1 − 20.1 = 12"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "42.8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "49.159"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "42.8 + 49.159",
+             "answer": {
+              "text": "91.959"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "42.8 + 49.159 = 91.959"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-decimal-add-subtract",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add and subtract decimals with different numbers of places.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The two numbers have different numbers of decimal places, so lining up the decimal points matters. The sums and differences cover tenths to thousandths. Space under each item lets the student rewrite it in a column.",
+      "misconceptions": [
+       "Lining up the last digits instead of the decimal points.",
+       "Subtracting the smaller digit from the larger in each place instead of regrouping."
+      ]
+     },
+     "estimatedHeight": 400
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply or divide.",
+     "explainer": "To divide by a decimal, first move the decimal point in both numbers the same number of places to the right.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11.865"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "1.5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "11.865 ÷ 1.5",
+             "answer": {
+              "text": "7.91"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "11.865 ÷ 1.5 = 7.91"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.4"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "3.4 × 20",
+             "answer": {
+              "text": "68"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "3.4 × 20 = 68"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "22.9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "22.9 × 7",
+             "answer": {
+              "text": "160.3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "22.9 × 7 = 160.3"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "13.9"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "0.4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "13.9 × 0.4",
+             "answer": {
+              "text": "5.56"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "13.9 × 0.4 = 5.56"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-decimal-multiply-divide",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply and divide decimals.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Products use one or two decimal places and quotients end after one or two places, so answers stay exact. Some divisors are decimals, which practises moving both decimal points first. Room under each item is for the written method.",
+      "misconceptions": [
+       "Placing the decimal point in a product by lining it up with one factor.",
+       "Leaving the decimal point where it was in the dividend after moving it in the divisor."
+      ]
+     },
+     "estimatedHeight": 388
+    }
+   ],
+   "estimatedHeight": 796
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2.4 + 2.1",
+    "answer": {
+     "text": "4.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "43.416 − 34.3",
+    "answer": {
+     "text": "9.116"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "59.987 − 4.01",
+    "answer": {
+     "text": "55.977"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "96.849 + 28.37",
+    "answer": {
+     "text": "125.219"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "32.1 − 20.1",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "42.8 + 49.159",
+    "answer": {
+     "text": "91.959"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "11.865 ÷ 1.5",
+    "answer": {
+     "text": "7.91"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3.4 × 20",
+    "answer": {
+     "text": "68"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "22.9 × 7",
+    "answer": {
+     "text": "160.3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "13.9 × 0.4",
+    "answer": {
+     "text": "5.56"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add, subtract, multiply and divide decimals.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Add or subtract. Line up the decimal points.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Multiply or divide.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

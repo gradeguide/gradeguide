@@ -1,0 +1,997 @@
+{
+ "worksheetId": "ws-g8-pythagorean-theorem",
+ "title": "The Pythagorean theorem",
+ "headerLabels": [
+  "8.G.B.6",
+  "8.G.B.7",
+  "8.G.B.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find each area. Show your work.",
+     "explainer": "Four copies of a right triangle sit inside a large square. The space left over is a square on the hypotenuse.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "The large square has sides of 1 + 2 units. The tilted square inside it has sides c units long."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 3,
+          "yMax": 3,
+          "segments": [
+           {
+            "x2": 1,
+            "label": "1"
+           },
+           {
+            "x1": 1,
+            "x2": 3,
+            "label": "2"
+           },
+           {
+            "x1": 3,
+            "x2": 3,
+            "y2": 3
+           },
+           {
+            "x1": 3,
+            "y1": 3,
+            "y2": 3
+           },
+           {
+            "y1": 3,
+            "y2": 2,
+            "label": "1",
+            "labelBefore": true
+           },
+           {
+            "y1": 2,
+            "label": "2",
+            "labelBefore": true
+           },
+           {
+            "x1": 1,
+            "x2": 3,
+            "y2": 1
+           },
+           {
+            "x1": 3,
+            "y1": 1,
+            "x2": 2,
+            "y2": 3
+           },
+           {
+            "x1": 2,
+            "y1": 3,
+            "y2": 2
+           },
+           {
+            "y1": 2,
+            "x2": 1
+           }
+          ],
+          "noAxes": true,
+          "cell": 56
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Large square:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "large square 1 2",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One triangle:"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "one triangle 1 2",
+             "answer": {
+              "text": "1"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Tilted square:"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "tilted square 1 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1² + 2² ="
+           },
+           {
+            "blank": {
+             "id": "q1-4",
+             "label": "sum of squares 1 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Large square: 9 sq units; One triangle: 1 sq units; Tilted square: 5 sq units; 1² + 2² = 5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "The large square has sides of 2 + 3 units. The tilted square inside it has sides c units long."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 5,
+          "yMax": 5,
+          "segments": [
+           {
+            "x2": 2,
+            "label": "2"
+           },
+           {
+            "x1": 2,
+            "x2": 5,
+            "label": "3"
+           },
+           {
+            "x1": 5,
+            "x2": 5,
+            "y2": 5
+           },
+           {
+            "x1": 5,
+            "y1": 5,
+            "y2": 5
+           },
+           {
+            "y1": 5,
+            "y2": 3,
+            "label": "2",
+            "labelBefore": true
+           },
+           {
+            "y1": 3,
+            "label": "3",
+            "labelBefore": true
+           },
+           {
+            "x1": 2,
+            "x2": 5,
+            "y2": 2
+           },
+           {
+            "x1": 5,
+            "y1": 2,
+            "x2": 3,
+            "y2": 5
+           },
+           {
+            "x1": 3,
+            "y1": 5,
+            "y2": 3
+           },
+           {
+            "y1": 3,
+            "x2": 2
+           }
+          ],
+          "noAxes": true,
+          "cell": 33
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Large square:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "large square 2 3",
+             "answer": {
+              "text": "25"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "One triangle:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "one triangle 2 3",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Tilted square:"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "tilted square 2 3",
+             "answer": {
+              "text": "13"
+             }
+            }
+           },
+           {
+            "text": "sq units"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2² + 3² ="
+           },
+           {
+            "blank": {
+             "id": "q2-4",
+             "label": "sum of squares 2 3",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Large square: 25 sq units; One triangle: 3 sq units; Tilted square: 13 sq units; 2² + 3² = 13"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-pythagorean-proof",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Explain the Pythagorean theorem by finding the area of the square on the hypotenuse in two ways.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "This is the area proof found in most grade 8 programs. Students find the large square's area, take away four triangles, and compare what is left with a² + b². Small whole-number legs keep the grid countable, so the result is seen before it is used as a formula.",
+      "misconceptions": [
+       "Taking the tilted square's side as a + b or as a whole number of grid units.",
+       "Subtracting only one triangle from the large square."
+      ]
+     },
+     "estimatedHeight": 588
+    }
+   ],
+   "estimatedHeight": 592
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the length of the hypotenuse. Use a² + b² = c².",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "y": 9
+           }
+          ],
+          "sides": [
+           {
+            "text": "12 cm"
+           },
+           {
+            "field": {
+             "id": "q3",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "15",
+              "also": [
+               "15 cm",
+               "15cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "9 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "15"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 4
+           },
+           {
+            "y": 3
+           }
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "field": {
+             "id": "q4",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "5",
+              "also": [
+               "5 cm",
+               "5cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "3 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "y": 15
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 cm"
+           },
+           {
+            "field": {
+             "id": "q5",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "17",
+              "also": [
+               "17 cm",
+               "17cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "15 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "y": 16
+           }
+          ],
+          "sides": [
+           {
+            "text": "12 cm"
+           },
+           {
+            "field": {
+             "id": "q6",
+             "label": "the hypotenuse",
+             "answer": {
+              "text": "20",
+              "also": [
+               "20 cm",
+               "20cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "16 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "20"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-hypotenuse",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the hypotenuse of a right triangle.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Whole-number triples such as 3, 4, 5 and 8, 15, 17 keep the arithmetic to squares a student can check. Triangles are turned different ways, so the student finds the hypotenuse across from the right angle and not by where it sits. No triangle comes twice.",
+      "misconceptions": [
+       "Adding the legs instead of their squares.",
+       "Forgetting to take the square root at the end."
+      ]
+     },
+     "estimatedHeight": 502
+    },
+    {
+     "label": "C",
+     "instruction": "Find the missing leg.",
+     "explainer": "Subtract: b² = c² − a².",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 3
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "field": {
+             "id": "q7",
+             "label": "the missing leg",
+             "answer": {
+              "text": "3",
+              "also": [
+               "3 cm",
+               "3cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 6
+           },
+           {
+            "y": 8
+           }
+          ],
+          "sides": [
+           {
+            "field": {
+             "id": "q8",
+             "label": "the missing leg",
+             "answer": {
+              "text": "6",
+              "also": [
+               "6 cm",
+               "6cm"
+              ]
+             }
+            }
+           },
+           {
+            "text": "10 cm"
+           },
+           {
+            "text": "8 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-missing-leg",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find a leg of a right triangle from the other leg and the hypotenuse.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Finding a leg reverses the hypotenuse items, so the student subtracts squares instead of adding them. The hypotenuse is labeled in each diagram, so the student must first find which side it is.",
+      "misconceptions": [
+       "Adding the squares instead of subtracting them.",
+       "Subtracting the side lengths instead of their squares."
+      ]
+     },
+     "estimatedHeight": 294
+    }
+   ],
+   "estimatedHeight": 804
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Find the distance between A and B. Draw a right triangle.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -8,
+          "xMax": 8,
+          "yMin": -8,
+          "yMax": 8,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": 3,
+            "y": 7,
+            "label": "A"
+           },
+           {
+            "x": 8,
+            "y": -5,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "y1": 7,
+            "x2": 8,
+            "y2": -5
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Distance from A(3, 7) to B(8, −5) ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "distance from (3, 7) to (8, −5)",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Distance from A(3, 7) to B(8, −5) = 13"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -8,
+          "xMax": 8,
+          "yMin": -8,
+          "yMax": 8,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -6,
+            "y": -4,
+            "label": "A"
+           },
+           {
+            "x": -3,
+            "y": -8,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -6,
+            "y1": -4,
+            "x2": -3,
+            "y2": -8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Distance from A(−6, −4) to B(−3, −8) ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "distance from (−6, −4) to (−3, −8)",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Distance from A(−6, −4) to B(−3, −8) = 5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-distance-on-grid",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use the Pythagorean theorem to find the distance between two points.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Two points on a grid with the segment between them invite the student to draw a right triangle under it. The leg lengths come from counting squares or subtracting coordinates. This joins the theorem to coordinates, as 8.G.B.8 asks.",
+      "misconceptions": [
+       "Counting the squares the segment passes through.",
+       "Adding the leg lengths."
+      ]
+     },
+     "estimatedHeight": 618
+    }
+   ],
+   "estimatedHeight": 622
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "large square 1 2",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "one triangle 1 2",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "tilted square 1 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "sum of squares 1 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "large square 2 3",
+    "answer": {
+     "text": "25"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "one triangle 2 3",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "tilted square 2 3",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "sum of squares 2 3",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "15",
+     "also": [
+      "15 cm",
+      "15cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 cm",
+      "5cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "17",
+     "also": [
+      "17 cm",
+      "17cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the hypotenuse",
+    "answer": {
+     "text": "20",
+     "also": [
+      "20 cm",
+      "20cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the missing leg",
+    "answer": {
+     "text": "3",
+     "also": [
+      "3 cm",
+      "3cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the missing leg",
+    "answer": {
+     "text": "6",
+     "also": [
+      "6 cm",
+      "6cm"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "distance from (3, 7) to (8, −5)",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "distance from (−6, −4) to (−3, −8)",
+    "answer": {
+     "text": "5"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find missing sides of right triangles and distances on a grid.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
