@@ -1,0 +1,513 @@
+{
+ "worksheetId": "ws-add-subtract-within-100",
+ "title": "Add and subtract within 100",
+ "headerLabels": [
+  "2.NBT.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_ADD",
+         "operands": [
+          "35",
+          "19"
+         ],
+         "answer": {
+          "label": "35 + 19",
+          "answer": {
+           "text": "54"
+          }
+         },
+         "carryBoxes": true
+        }
+       }
+      ],
+      "text": "Add the ones first. When the ones make 10 or more, write the new ten in the box above the tens."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "39",
+           "61"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "39 + 61",
+           "answer": {
+            "text": "100"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "100"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "54",
+           "16"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "54 + 16",
+           "answer": {
+            "text": "70"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "70"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "28",
+           "29"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "28 + 29",
+           "answer": {
+            "text": "57"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "57"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "59",
+           "25"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "59 + 25",
+           "answer": {
+            "text": "84"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "84"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-add-within-100",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Add two-digit numbers with sums to 100, regrouping 10 ones as 1 ten.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every sum regroups and none passes 100, which keeps the set inside 2.NBT.B.5. The box above the tens column gives the new ten a fixed place, so students record it instead of holding it in their heads. Students who have not yet linked the written ten to a bundle of 10 ones benefit from base-ten blocks before this page.",
+      "misconceptions": [
+       "Writing both digits of the ones total under the ones column: 38 + 45 = 713.",
+       "Forgetting to add the regrouped ten to the tens column."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 330
+    },
+    {
+     "label": "B",
+     "instruction": "Subtract.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_SUBTRACT",
+         "operands": [
+          "50",
+          "19"
+         ],
+         "answer": {
+          "label": "50 − 19",
+          "answer": {
+           "text": "31"
+          }
+         },
+         "carryBoxes": true
+        }
+       }
+      ],
+      "text": "There are not enough ones to subtract. Trade 1 ten for 10 ones, then subtract the ones and the tens."
+     },
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "63",
+           "57"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "63 − 57",
+           "answer": {
+            "text": "6"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "50",
+           "17"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "50 − 17",
+           "answer": {
+            "text": "33"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "33"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "37",
+           "28"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "37 − 28",
+           "answer": {
+            "text": "9"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "75",
+           "19"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "75 − 19",
+           "answer": {
+            "text": "56"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "56"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "84",
+           "68"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "84 − 68",
+           "answer": {
+            "text": "16"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "16"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "90",
+           "86"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "90 − 86",
+           "answer": {
+            "text": "4"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "4"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "44",
+           "37"
+          ],
+          "answer": {
+           "id": "q11",
+           "label": "44 − 37",
+           "answer": {
+            "text": "7"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "86",
+           "27"
+          ],
+          "answer": {
+           "id": "q12",
+           "label": "86 − 27",
+           "answer": {
+            "text": "59"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "59"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-subtract-within-100",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract two-digit numbers within 100, trading 1 ten for 10 ones.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every item needs a trade in the ones column, so students decide when to regroup only by looking at the digits. The worked example names the trade as 1 ten for 10 ones, which is the place-value reason for crossing out and rewriting digits.",
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in each column, whichever is on top: 52 − 38 = 26.",
+       "Taking 1 ten from the tens column without adding 10 to the ones."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 464
+    }
+   ],
+   "estimatedHeight": 802
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "39 + 61",
+    "answer": {
+     "text": "100"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "54 + 16",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "28 + 29",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "59 + 25",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "63 − 57",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "50 − 17",
+    "answer": {
+     "text": "33"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "37 − 28",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "75 − 19",
+    "answer": {
+     "text": "56"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "84 − 68",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "90 − 86",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "44 − 37",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "86 − 27",
+    "answer": {
+     "text": "59"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract two-digit numbers within 100, with regrouping.",
+  "principles": [
+   "PRINCIPLE_WORKED_EXAMPLE",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Addition comes first because composing a ten is easier to see than decomposing one. Each section opens with a worked example. Subtraction has twice as many items because trading a ten is the step students most often get wrong."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -2,17 +2,18 @@
  "worksheetId": "ws-facts-check",
  "title": "Facts check",
  "headerLabels": [
-  "3.OA.C.7"
+  "3.OA.C.7",
+  "3.OA.A.2"
  ],
  "pages": [
   {
    "sections": [
     {
-     "label": "1",
-     "instruction": "Multiply. Circle any you had to stop and think about.",
+     "label": "A",
+     "instruction": "Multiply.",
      "items": [
       {
-       "label": "1a",
+       "label": "1",
        "nodes": [
         {
          "math": {
@@ -31,7 +32,7 @@
            },
            {
             "blank": {
-             "id": "q1a",
+             "id": "q1",
              "label": "5 × 9",
              "answer": {
               "text": "45"
@@ -45,7 +46,7 @@
        "key": "5 × 9 = 45"
       },
       {
-       "label": "1b",
+       "label": "2",
        "nodes": [
         {
          "math": {
@@ -64,7 +65,7 @@
            },
            {
             "blank": {
-             "id": "q1b",
+             "id": "q2",
              "label": "2 × 7",
              "answer": {
               "text": "14"
@@ -78,7 +79,7 @@
        "key": "2 × 7 = 14"
       },
       {
-       "label": "1c",
+       "label": "3",
        "nodes": [
         {
          "math": {
@@ -97,7 +98,7 @@
            },
            {
             "blank": {
-             "id": "q1c",
+             "id": "q3",
              "label": "6 × 7",
              "answer": {
               "text": "42"
@@ -111,7 +112,7 @@
        "key": "6 × 7 = 42"
       },
       {
-       "label": "1d",
+       "label": "4",
        "nodes": [
         {
          "math": {
@@ -130,7 +131,7 @@
            },
            {
             "blank": {
-             "id": "q1d",
+             "id": "q4",
              "label": "9 × 4",
              "answer": {
               "text": "36"
@@ -144,7 +145,7 @@
        "key": "9 × 4 = 36"
       },
       {
-       "label": "1e",
+       "label": "5",
        "nodes": [
         {
          "math": {
@@ -163,7 +164,7 @@
            },
            {
             "blank": {
-             "id": "q1e",
+             "id": "q5",
              "label": "5 × 2",
              "answer": {
               "text": "10"
@@ -177,7 +178,7 @@
        "key": "5 × 2 = 10"
       },
       {
-       "label": "1f",
+       "label": "6",
        "nodes": [
         {
          "math": {
@@ -196,7 +197,7 @@
            },
            {
             "blank": {
-             "id": "q1f",
+             "id": "q6",
              "label": "4 × 4",
              "answer": {
               "text": "16"
@@ -210,7 +211,7 @@
        "key": "4 × 4 = 16"
       },
       {
-       "label": "1g",
+       "label": "7",
        "nodes": [
         {
          "math": {
@@ -229,7 +230,7 @@
            },
            {
             "blank": {
-             "id": "q1g",
+             "id": "q7",
              "label": "2 × 4",
              "answer": {
               "text": "8"
@@ -243,7 +244,7 @@
        "key": "2 × 4 = 8"
       },
       {
-       "label": "1h",
+       "label": "8",
        "nodes": [
         {
          "math": {
@@ -262,7 +263,7 @@
            },
            {
             "blank": {
-             "id": "q1h",
+             "id": "q8",
              "label": "7 × 6",
              "answer": {
               "text": "42"
@@ -276,7 +277,7 @@
        "key": "7 × 6 = 42"
       },
       {
-       "label": "1i",
+       "label": "9",
        "nodes": [
         {
          "math": {
@@ -295,7 +296,7 @@
            },
            {
             "blank": {
-             "id": "q1i",
+             "id": "q9",
              "label": "3 × 8",
              "answer": {
               "text": "24"
@@ -309,7 +310,7 @@
        "key": "3 × 8 = 24"
       },
       {
-       "label": "1j",
+       "label": "10",
        "nodes": [
         {
          "math": {
@@ -328,7 +329,7 @@
            },
            {
             "blank": {
-             "id": "q1j",
+             "id": "q10",
              "label": "7 × 4",
              "answer": {
               "text": "28"
@@ -342,7 +343,7 @@
        "key": "7 × 4 = 28"
       },
       {
-       "label": "1k",
+       "label": "11",
        "nodes": [
         {
          "math": {
@@ -361,7 +362,7 @@
            },
            {
             "blank": {
-             "id": "q1k",
+             "id": "q11",
              "label": "8 × 2",
              "answer": {
               "text": "16"
@@ -375,7 +376,7 @@
        "key": "8 × 2 = 16"
       },
       {
-       "label": "1l",
+       "label": "12",
        "nodes": [
         {
          "math": {
@@ -394,7 +395,7 @@
            },
            {
             "blank": {
-             "id": "q1l",
+             "id": "q12",
              "label": "3 × 3",
              "answer": {
               "text": "9"
@@ -408,7 +409,7 @@
        "key": "3 × 3 = 9"
       },
       {
-       "label": "1m",
+       "label": "13",
        "nodes": [
         {
          "math": {
@@ -427,7 +428,7 @@
            },
            {
             "blank": {
-             "id": "q1m",
+             "id": "q13",
              "label": "4 × 6",
              "answer": {
               "text": "24"
@@ -441,7 +442,7 @@
        "key": "4 × 6 = 24"
       },
       {
-       "label": "1n",
+       "label": "14",
        "nodes": [
         {
          "math": {
@@ -460,7 +461,7 @@
            },
            {
             "blank": {
-             "id": "q1n",
+             "id": "q14",
              "label": "6 × 3",
              "answer": {
               "text": "18"
@@ -474,7 +475,7 @@
        "key": "6 × 3 = 18"
       },
       {
-       "label": "1o",
+       "label": "15",
        "nodes": [
         {
          "math": {
@@ -493,7 +494,7 @@
            },
            {
             "blank": {
-             "id": "q1o",
+             "id": "q15",
              "label": "8 × 4",
              "answer": {
               "text": "32"
@@ -507,7 +508,7 @@
        "key": "8 × 4 = 32"
       },
       {
-       "label": "1p",
+       "label": "16",
        "nodes": [
         {
          "math": {
@@ -526,7 +527,7 @@
            },
            {
             "blank": {
-             "id": "q1p",
+             "id": "q16",
              "label": "9 × 6",
              "answer": {
               "text": "54"
@@ -540,7 +541,7 @@
        "key": "9 × 6 = 54"
       },
       {
-       "label": "1q",
+       "label": "17",
        "nodes": [
         {
          "math": {
@@ -559,7 +560,7 @@
            },
            {
             "blank": {
-             "id": "q1q",
+             "id": "q17",
              "label": "5 × 6",
              "answer": {
               "text": "30"
@@ -573,7 +574,7 @@
        "key": "5 × 6 = 30"
       },
       {
-       "label": "1r",
+       "label": "18",
        "nodes": [
         {
          "math": {
@@ -592,7 +593,7 @@
            },
            {
             "blank": {
-             "id": "q1r",
+             "id": "q18",
              "label": "7 × 7",
              "answer": {
               "text": "49"
@@ -606,7 +607,7 @@
        "key": "7 × 7 = 49"
       },
       {
-       "label": "1s",
+       "label": "19",
        "nodes": [
         {
          "math": {
@@ -625,7 +626,7 @@
            },
            {
             "blank": {
-             "id": "q1s",
+             "id": "q19",
              "label": "5 × 5",
              "answer": {
               "text": "25"
@@ -639,7 +640,7 @@
        "key": "5 × 5 = 25"
       },
       {
-       "label": "1t",
+       "label": "20",
        "nodes": [
         {
          "math": {
@@ -658,7 +659,7 @@
            },
            {
             "blank": {
-             "id": "q1t",
+             "id": "q20",
              "label": "2 × 8",
              "answer": {
               "text": "16"
@@ -672,7 +673,7 @@
        "key": "2 × 8 = 16"
       },
       {
-       "label": "1u",
+       "label": "21",
        "nodes": [
         {
          "math": {
@@ -691,7 +692,7 @@
            },
            {
             "blank": {
-             "id": "q1u",
+             "id": "q21",
              "label": "3 × 2",
              "answer": {
               "text": "6"
@@ -705,7 +706,7 @@
        "key": "3 × 2 = 6"
       },
       {
-       "label": "1v",
+       "label": "22",
        "nodes": [
         {
          "math": {
@@ -724,7 +725,7 @@
            },
            {
             "blank": {
-             "id": "q1v",
+             "id": "q22",
              "label": "7 × 2",
              "answer": {
               "text": "14"
@@ -738,7 +739,7 @@
        "key": "7 × 2 = 14"
       },
       {
-       "label": "1w",
+       "label": "23",
        "nodes": [
         {
          "math": {
@@ -757,7 +758,7 @@
            },
            {
             "blank": {
-             "id": "q1w",
+             "id": "q23",
              "label": "8 × 6",
              "answer": {
               "text": "48"
@@ -771,7 +772,7 @@
        "key": "8 × 6 = 48"
       },
       {
-       "label": "1x",
+       "label": "24",
        "nodes": [
         {
          "math": {
@@ -790,7 +791,7 @@
            },
            {
             "blank": {
-             "id": "q1x",
+             "id": "q24",
              "label": "5 × 8",
              "answer": {
               "text": "40"
@@ -804,7 +805,7 @@
        "key": "5 × 8 = 40"
       },
       {
-       "label": "1y",
+       "label": "25",
        "nodes": [
         {
          "math": {
@@ -823,7 +824,7 @@
            },
            {
             "blank": {
-             "id": "q1y",
+             "id": "q25",
              "label": "6 × 8",
              "answer": {
               "text": "48"
@@ -837,7 +838,7 @@
        "key": "6 × 8 = 48"
       },
       {
-       "label": "1z",
+       "label": "26",
        "nodes": [
         {
          "math": {
@@ -856,7 +857,7 @@
            },
            {
             "blank": {
-             "id": "q1z",
+             "id": "q26",
              "label": "8 × 3",
              "answer": {
               "text": "24"
@@ -870,7 +871,7 @@
        "key": "8 × 3 = 24"
       },
       {
-       "label": "1aa",
+       "label": "27",
        "nodes": [
         {
          "math": {
@@ -889,7 +890,7 @@
            },
            {
             "blank": {
-             "id": "q1aa",
+             "id": "q27",
              "label": "4 × 7",
              "answer": {
               "text": "28"
@@ -903,7 +904,7 @@
        "key": "4 × 7 = 28"
       },
       {
-       "label": "1ab",
+       "label": "28",
        "nodes": [
         {
          "math": {
@@ -922,7 +923,7 @@
            },
            {
             "blank": {
-             "id": "q1ab",
+             "id": "q28",
              "label": "7 × 3",
              "answer": {
               "text": "21"
@@ -936,7 +937,7 @@
        "key": "7 × 3 = 21"
       },
       {
-       "label": "1ac",
+       "label": "29",
        "nodes": [
         {
          "math": {
@@ -955,7 +956,7 @@
            },
            {
             "blank": {
-             "id": "q1ac",
+             "id": "q29",
              "label": "9 × 5",
              "answer": {
               "text": "45"
@@ -969,7 +970,7 @@
        "key": "9 × 5 = 45"
       },
       {
-       "label": "1ad",
+       "label": "30",
        "nodes": [
         {
          "math": {
@@ -988,7 +989,7 @@
            },
            {
             "blank": {
-             "id": "q1ad",
+             "id": "q30",
              "label": "4 × 5",
              "answer": {
               "text": "20"
@@ -1006,11 +1007,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -1018,11 +1023,11 @@
      "estimatedHeight": 450
     },
     {
-     "label": "2",
+     "label": "B",
      "instruction": "Divide.",
      "items": [
       {
-       "label": "2a",
+       "label": "31",
        "nodes": [
         {
          "math": {
@@ -1041,7 +1046,7 @@
            },
            {
             "blank": {
-             "id": "q2a",
+             "id": "q31",
              "label": "30 ÷ 5",
              "answer": {
               "text": "6"
@@ -1055,7 +1060,7 @@
        "key": "30 ÷ 5 = 6"
       },
       {
-       "label": "2b",
+       "label": "32",
        "nodes": [
         {
          "math": {
@@ -1074,7 +1079,7 @@
            },
            {
             "blank": {
-             "id": "q2b",
+             "id": "q32",
              "label": "45 ÷ 5",
              "answer": {
               "text": "9"
@@ -1088,7 +1093,7 @@
        "key": "45 ÷ 5 = 9"
       },
       {
-       "label": "2c",
+       "label": "33",
        "nodes": [
         {
          "math": {
@@ -1107,7 +1112,7 @@
            },
            {
             "blank": {
-             "id": "q2c",
+             "id": "q33",
              "label": "45 ÷ 9",
              "answer": {
               "text": "5"
@@ -1121,7 +1126,7 @@
        "key": "45 ÷ 9 = 5"
       },
       {
-       "label": "2d",
+       "label": "34",
        "nodes": [
         {
          "math": {
@@ -1140,7 +1145,7 @@
            },
            {
             "blank": {
-             "id": "q2d",
+             "id": "q34",
              "label": "10 ÷ 2",
              "answer": {
               "text": "5"
@@ -1154,7 +1159,7 @@
        "key": "10 ÷ 2 = 5"
       },
       {
-       "label": "2e",
+       "label": "35",
        "nodes": [
         {
          "math": {
@@ -1173,7 +1178,7 @@
            },
            {
             "blank": {
-             "id": "q2e",
+             "id": "q35",
              "label": "27 ÷ 9",
              "answer": {
               "text": "3"
@@ -1187,7 +1192,7 @@
        "key": "27 ÷ 9 = 3"
       },
       {
-       "label": "2f",
+       "label": "36",
        "nodes": [
         {
          "math": {
@@ -1206,7 +1211,7 @@
            },
            {
             "blank": {
-             "id": "q2f",
+             "id": "q36",
              "label": "30 ÷ 6",
              "answer": {
               "text": "5"
@@ -1220,7 +1225,7 @@
        "key": "30 ÷ 6 = 5"
       },
       {
-       "label": "2g",
+       "label": "37",
        "nodes": [
         {
          "math": {
@@ -1239,7 +1244,7 @@
            },
            {
             "blank": {
-             "id": "q2g",
+             "id": "q37",
              "label": "63 ÷ 7",
              "answer": {
               "text": "9"
@@ -1253,7 +1258,7 @@
        "key": "63 ÷ 7 = 9"
       },
       {
-       "label": "2h",
+       "label": "38",
        "nodes": [
         {
          "math": {
@@ -1272,7 +1277,7 @@
            },
            {
             "blank": {
-             "id": "q2h",
+             "id": "q38",
              "label": "42 ÷ 6",
              "answer": {
               "text": "7"
@@ -1286,7 +1291,7 @@
        "key": "42 ÷ 6 = 7"
       },
       {
-       "label": "2i",
+       "label": "39",
        "nodes": [
         {
          "math": {
@@ -1305,7 +1310,7 @@
            },
            {
             "blank": {
-             "id": "q2i",
+             "id": "q39",
              "label": "12 ÷ 4",
              "answer": {
               "text": "3"
@@ -1319,7 +1324,7 @@
        "key": "12 ÷ 4 = 3"
       },
       {
-       "label": "2j",
+       "label": "40",
        "nodes": [
         {
          "math": {
@@ -1338,7 +1343,7 @@
            },
            {
             "blank": {
-             "id": "q2j",
+             "id": "q40",
              "label": "40 ÷ 8",
              "answer": {
               "text": "5"
@@ -1352,7 +1357,7 @@
        "key": "40 ÷ 8 = 5"
       },
       {
-       "label": "2k",
+       "label": "41",
        "nodes": [
         {
          "math": {
@@ -1371,7 +1376,7 @@
            },
            {
             "blank": {
-             "id": "q2k",
+             "id": "q41",
              "label": "28 ÷ 4",
              "answer": {
               "text": "7"
@@ -1385,7 +1390,7 @@
        "key": "28 ÷ 4 = 7"
       },
       {
-       "label": "2l",
+       "label": "42",
        "nodes": [
         {
          "math": {
@@ -1404,7 +1409,7 @@
            },
            {
             "blank": {
-             "id": "q2l",
+             "id": "q42",
              "label": "35 ÷ 7",
              "answer": {
               "text": "5"
@@ -1418,7 +1423,7 @@
        "key": "35 ÷ 7 = 5"
       },
       {
-       "label": "2m",
+       "label": "43",
        "nodes": [
         {
          "math": {
@@ -1437,7 +1442,7 @@
            },
            {
             "blank": {
-             "id": "q2m",
+             "id": "q43",
              "label": "81 ÷ 9",
              "answer": {
               "text": "9"
@@ -1451,7 +1456,7 @@
        "key": "81 ÷ 9 = 9"
       },
       {
-       "label": "2n",
+       "label": "44",
        "nodes": [
         {
          "math": {
@@ -1470,7 +1475,7 @@
            },
            {
             "blank": {
-             "id": "q2n",
+             "id": "q44",
              "label": "48 ÷ 6",
              "answer": {
               "text": "8"
@@ -1484,7 +1489,7 @@
        "key": "48 ÷ 6 = 8"
       },
       {
-       "label": "2o",
+       "label": "45",
        "nodes": [
         {
          "math": {
@@ -1503,7 +1508,7 @@
            },
            {
             "blank": {
-             "id": "q2o",
+             "id": "q45",
              "label": "16 ÷ 4",
              "answer": {
               "text": "4"
@@ -1517,26 +1522,31 @@
        "key": "16 ÷ 4 = 4"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-division-facts",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Recall division facts from multiplication.",
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
       ]
      },
-     "estimatedHeight": 242
+     "estimatedHeight": 294
     }
    ],
-   "estimatedHeight": 700
+   "estimatedHeight": 752
   }
  ],
  "key": [
   {
-   "itemLabel": "1a",
+   "itemLabel": "1",
    "field": {
-    "id": "q1a",
+    "id": "q1",
     "label": "5 × 9",
     "answer": {
      "text": "45"
@@ -1544,9 +1554,9 @@
    }
   },
   {
-   "itemLabel": "1b",
+   "itemLabel": "2",
    "field": {
-    "id": "q1b",
+    "id": "q2",
     "label": "2 × 7",
     "answer": {
      "text": "14"
@@ -1554,9 +1564,9 @@
    }
   },
   {
-   "itemLabel": "1c",
+   "itemLabel": "3",
    "field": {
-    "id": "q1c",
+    "id": "q3",
     "label": "6 × 7",
     "answer": {
      "text": "42"
@@ -1564,9 +1574,9 @@
    }
   },
   {
-   "itemLabel": "1d",
+   "itemLabel": "4",
    "field": {
-    "id": "q1d",
+    "id": "q4",
     "label": "9 × 4",
     "answer": {
      "text": "36"
@@ -1574,9 +1584,9 @@
    }
   },
   {
-   "itemLabel": "1e",
+   "itemLabel": "5",
    "field": {
-    "id": "q1e",
+    "id": "q5",
     "label": "5 × 2",
     "answer": {
      "text": "10"
@@ -1584,9 +1594,9 @@
    }
   },
   {
-   "itemLabel": "1f",
+   "itemLabel": "6",
    "field": {
-    "id": "q1f",
+    "id": "q6",
     "label": "4 × 4",
     "answer": {
      "text": "16"
@@ -1594,9 +1604,9 @@
    }
   },
   {
-   "itemLabel": "1g",
+   "itemLabel": "7",
    "field": {
-    "id": "q1g",
+    "id": "q7",
     "label": "2 × 4",
     "answer": {
      "text": "8"
@@ -1604,9 +1614,9 @@
    }
   },
   {
-   "itemLabel": "1h",
+   "itemLabel": "8",
    "field": {
-    "id": "q1h",
+    "id": "q8",
     "label": "7 × 6",
     "answer": {
      "text": "42"
@@ -1614,9 +1624,9 @@
    }
   },
   {
-   "itemLabel": "1i",
+   "itemLabel": "9",
    "field": {
-    "id": "q1i",
+    "id": "q9",
     "label": "3 × 8",
     "answer": {
      "text": "24"
@@ -1624,9 +1634,9 @@
    }
   },
   {
-   "itemLabel": "1j",
+   "itemLabel": "10",
    "field": {
-    "id": "q1j",
+    "id": "q10",
     "label": "7 × 4",
     "answer": {
      "text": "28"
@@ -1634,9 +1644,9 @@
    }
   },
   {
-   "itemLabel": "1k",
+   "itemLabel": "11",
    "field": {
-    "id": "q1k",
+    "id": "q11",
     "label": "8 × 2",
     "answer": {
      "text": "16"
@@ -1644,9 +1654,9 @@
    }
   },
   {
-   "itemLabel": "1l",
+   "itemLabel": "12",
    "field": {
-    "id": "q1l",
+    "id": "q12",
     "label": "3 × 3",
     "answer": {
      "text": "9"
@@ -1654,9 +1664,9 @@
    }
   },
   {
-   "itemLabel": "1m",
+   "itemLabel": "13",
    "field": {
-    "id": "q1m",
+    "id": "q13",
     "label": "4 × 6",
     "answer": {
      "text": "24"
@@ -1664,9 +1674,9 @@
    }
   },
   {
-   "itemLabel": "1n",
+   "itemLabel": "14",
    "field": {
-    "id": "q1n",
+    "id": "q14",
     "label": "6 × 3",
     "answer": {
      "text": "18"
@@ -1674,9 +1684,9 @@
    }
   },
   {
-   "itemLabel": "1o",
+   "itemLabel": "15",
    "field": {
-    "id": "q1o",
+    "id": "q15",
     "label": "8 × 4",
     "answer": {
      "text": "32"
@@ -1684,9 +1694,9 @@
    }
   },
   {
-   "itemLabel": "1p",
+   "itemLabel": "16",
    "field": {
-    "id": "q1p",
+    "id": "q16",
     "label": "9 × 6",
     "answer": {
      "text": "54"
@@ -1694,9 +1704,9 @@
    }
   },
   {
-   "itemLabel": "1q",
+   "itemLabel": "17",
    "field": {
-    "id": "q1q",
+    "id": "q17",
     "label": "5 × 6",
     "answer": {
      "text": "30"
@@ -1704,9 +1714,9 @@
    }
   },
   {
-   "itemLabel": "1r",
+   "itemLabel": "18",
    "field": {
-    "id": "q1r",
+    "id": "q18",
     "label": "7 × 7",
     "answer": {
      "text": "49"
@@ -1714,9 +1724,9 @@
    }
   },
   {
-   "itemLabel": "1s",
+   "itemLabel": "19",
    "field": {
-    "id": "q1s",
+    "id": "q19",
     "label": "5 × 5",
     "answer": {
      "text": "25"
@@ -1724,9 +1734,9 @@
    }
   },
   {
-   "itemLabel": "1t",
+   "itemLabel": "20",
    "field": {
-    "id": "q1t",
+    "id": "q20",
     "label": "2 × 8",
     "answer": {
      "text": "16"
@@ -1734,9 +1744,9 @@
    }
   },
   {
-   "itemLabel": "1u",
+   "itemLabel": "21",
    "field": {
-    "id": "q1u",
+    "id": "q21",
     "label": "3 × 2",
     "answer": {
      "text": "6"
@@ -1744,9 +1754,9 @@
    }
   },
   {
-   "itemLabel": "1v",
+   "itemLabel": "22",
    "field": {
-    "id": "q1v",
+    "id": "q22",
     "label": "7 × 2",
     "answer": {
      "text": "14"
@@ -1754,9 +1764,9 @@
    }
   },
   {
-   "itemLabel": "1w",
+   "itemLabel": "23",
    "field": {
-    "id": "q1w",
+    "id": "q23",
     "label": "8 × 6",
     "answer": {
      "text": "48"
@@ -1764,9 +1774,9 @@
    }
   },
   {
-   "itemLabel": "1x",
+   "itemLabel": "24",
    "field": {
-    "id": "q1x",
+    "id": "q24",
     "label": "5 × 8",
     "answer": {
      "text": "40"
@@ -1774,9 +1784,9 @@
    }
   },
   {
-   "itemLabel": "1y",
+   "itemLabel": "25",
    "field": {
-    "id": "q1y",
+    "id": "q25",
     "label": "6 × 8",
     "answer": {
      "text": "48"
@@ -1784,9 +1794,9 @@
    }
   },
   {
-   "itemLabel": "1z",
+   "itemLabel": "26",
    "field": {
-    "id": "q1z",
+    "id": "q26",
     "label": "8 × 3",
     "answer": {
      "text": "24"
@@ -1794,9 +1804,9 @@
    }
   },
   {
-   "itemLabel": "1aa",
+   "itemLabel": "27",
    "field": {
-    "id": "q1aa",
+    "id": "q27",
     "label": "4 × 7",
     "answer": {
      "text": "28"
@@ -1804,9 +1814,9 @@
    }
   },
   {
-   "itemLabel": "1ab",
+   "itemLabel": "28",
    "field": {
-    "id": "q1ab",
+    "id": "q28",
     "label": "7 × 3",
     "answer": {
      "text": "21"
@@ -1814,9 +1824,9 @@
    }
   },
   {
-   "itemLabel": "1ac",
+   "itemLabel": "29",
    "field": {
-    "id": "q1ac",
+    "id": "q29",
     "label": "9 × 5",
     "answer": {
      "text": "45"
@@ -1824,9 +1834,9 @@
    }
   },
   {
-   "itemLabel": "1ad",
+   "itemLabel": "30",
    "field": {
-    "id": "q1ad",
+    "id": "q30",
     "label": "4 × 5",
     "answer": {
      "text": "20"
@@ -1834,9 +1844,9 @@
    }
   },
   {
-   "itemLabel": "2a",
+   "itemLabel": "31",
    "field": {
-    "id": "q2a",
+    "id": "q31",
     "label": "30 ÷ 5",
     "answer": {
      "text": "6"
@@ -1844,9 +1854,9 @@
    }
   },
   {
-   "itemLabel": "2b",
+   "itemLabel": "32",
    "field": {
-    "id": "q2b",
+    "id": "q32",
     "label": "45 ÷ 5",
     "answer": {
      "text": "9"
@@ -1854,9 +1864,9 @@
    }
   },
   {
-   "itemLabel": "2c",
+   "itemLabel": "33",
    "field": {
-    "id": "q2c",
+    "id": "q33",
     "label": "45 ÷ 9",
     "answer": {
      "text": "5"
@@ -1864,9 +1874,9 @@
    }
   },
   {
-   "itemLabel": "2d",
+   "itemLabel": "34",
    "field": {
-    "id": "q2d",
+    "id": "q34",
     "label": "10 ÷ 2",
     "answer": {
      "text": "5"
@@ -1874,9 +1884,9 @@
    }
   },
   {
-   "itemLabel": "2e",
+   "itemLabel": "35",
    "field": {
-    "id": "q2e",
+    "id": "q35",
     "label": "27 ÷ 9",
     "answer": {
      "text": "3"
@@ -1884,9 +1894,9 @@
    }
   },
   {
-   "itemLabel": "2f",
+   "itemLabel": "36",
    "field": {
-    "id": "q2f",
+    "id": "q36",
     "label": "30 ÷ 6",
     "answer": {
      "text": "5"
@@ -1894,9 +1904,9 @@
    }
   },
   {
-   "itemLabel": "2g",
+   "itemLabel": "37",
    "field": {
-    "id": "q2g",
+    "id": "q37",
     "label": "63 ÷ 7",
     "answer": {
      "text": "9"
@@ -1904,9 +1914,9 @@
    }
   },
   {
-   "itemLabel": "2h",
+   "itemLabel": "38",
    "field": {
-    "id": "q2h",
+    "id": "q38",
     "label": "42 ÷ 6",
     "answer": {
      "text": "7"
@@ -1914,9 +1924,9 @@
    }
   },
   {
-   "itemLabel": "2i",
+   "itemLabel": "39",
    "field": {
-    "id": "q2i",
+    "id": "q39",
     "label": "12 ÷ 4",
     "answer": {
      "text": "3"
@@ -1924,9 +1934,9 @@
    }
   },
   {
-   "itemLabel": "2j",
+   "itemLabel": "40",
    "field": {
-    "id": "q2j",
+    "id": "q40",
     "label": "40 ÷ 8",
     "answer": {
      "text": "5"
@@ -1934,9 +1944,9 @@
    }
   },
   {
-   "itemLabel": "2k",
+   "itemLabel": "41",
    "field": {
-    "id": "q2k",
+    "id": "q41",
     "label": "28 ÷ 4",
     "answer": {
      "text": "7"
@@ -1944,9 +1954,9 @@
    }
   },
   {
-   "itemLabel": "2l",
+   "itemLabel": "42",
    "field": {
-    "id": "q2l",
+    "id": "q42",
     "label": "35 ÷ 7",
     "answer": {
      "text": "5"
@@ -1954,9 +1964,9 @@
    }
   },
   {
-   "itemLabel": "2m",
+   "itemLabel": "43",
    "field": {
-    "id": "q2m",
+    "id": "q43",
     "label": "81 ÷ 9",
     "answer": {
      "text": "9"
@@ -1964,9 +1974,9 @@
    }
   },
   {
-   "itemLabel": "2n",
+   "itemLabel": "44",
    "field": {
-    "id": "q2n",
+    "id": "q44",
     "label": "48 ÷ 6",
     "answer": {
      "text": "8"
@@ -1974,9 +1984,9 @@
    }
   },
   {
-   "itemLabel": "2o",
+   "itemLabel": "45",
    "field": {
-    "id": "q2o",
+    "id": "q45",
     "label": "16 ÷ 4",
     "answer": {
      "text": "4"
@@ -1985,10 +1995,11 @@
   }
  ],
  "design": {
-  "purpose": "Find which facts are not yet automatic.",
+  "purpose": "Find which multiplication and division facts are not yet automatic.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
-  ]
+  ],
+  "rationale": "A long set drawn from the whole table shows which facts need more practice. The sheet is untimed. A teacher can note the facts a student hesitates on and use them for the next practice set."
  },
  "advice": [
   "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example."

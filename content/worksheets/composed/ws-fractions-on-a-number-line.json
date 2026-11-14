@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "What fraction is at the arrow?",
+     "instruction": "Write the fraction at the arrow.",
      "example": {
       "nodes": [
        {
@@ -35,7 +35,7 @@
         }
        }
       ],
-      "text": "From 0 to 1 there are **4 equal jumps**, so each jump is 1/4. The arrow is 3 jumps from 0, so it is at **3/4**."
+      "text": "There are **4 equal jumps** from 0 to 1, so each jump is 1/4. The arrow is 3 jumps from 0. It points to **3/4**."
      },
      "items": [
       {
@@ -173,13 +173,14 @@
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "rationale": "The number line shows a fraction as one number with a size, which an area model does not. Students count the spaces between marks, not the marks, so the fraction is a distance from 0. The IES fractions guide recommends the number line as a central representation from grade 3.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them.",
+       "Counting the 0 mark as the first jump."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, rec. 2",
-       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 500
@@ -294,11 +295,14 @@
      "fragmentId": "frag-label-the-marks",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Label every unit fraction step from 0 to 1.",
+      "purpose": "Label each mark between 0 and 1 with its fraction.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
-      "rationale": "Labelling each mark in turn builds 3/4 as three jumps of 1/4, the idea 4.NF.B.3 later uses for adding fractions."
+      "rationale": "Labelling every mark in turn builds 3/4 as three jumps of 1/4, the idea 4.NF.B.3 later uses for adding fractions. The denominator stays the same along a line, so students see the numerator count up by one.",
+      "misconceptions": [
+       "Writing 1/3, 1/2, 1/1 along a line cut into thirds, changing the denominator instead of the numerator."
+      ]
      },
      "estimatedHeight": 238
     }
@@ -365,14 +369,14 @@
      "fragmentId": "frag-mistake-counting-marks",
      "stage": "STAGE_MISTAKE",
      "design": {
-      "purpose": "Spot and explain the marks-not-jumps error.",
+      "purpose": "Find and explain the error of counting marks instead of jumps.",
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS",
        "PRINCIPLE_SELF_EXPLANATION"
       ],
-      "rationale": "Explaining why a worked answer is wrong helps children drop a misconception they would otherwise keep using. The error shown is the most common one on number lines.",
+      "rationale": "Explaining why a worked answer is wrong helps students drop a misconception they would otherwise keep using. The error shown is the most common one on fraction number lines.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them."
       ],
       "references": [
        "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
@@ -382,7 +386,7 @@
     },
     {
      "label": "D",
-     "instruction": "What fraction is at the arrow? Some are more than 1.",
+     "instruction": "Write the fraction at the arrow. Each arrow is past 1.",
      "items": [
       {
        "label": "8",
@@ -392,7 +396,7 @@
           "end": 2,
           "partsPerUnit": 4,
           "hasArrow": true,
-          "arrowTick": 1
+          "arrowTick": 5
          }
         },
         {
@@ -403,7 +407,7 @@
              "id": "q8",
              "label": "the fraction at the arrow",
              "answer": {
-              "text": "1/4"
+              "text": "5/4"
              }
             }
            }
@@ -411,7 +415,7 @@
          }
         }
        ],
-       "key": "1/4"
+       "key": "5/4"
       },
       {
        "label": "9",
@@ -421,7 +425,7 @@
           "end": 2,
           "partsPerUnit": 3,
           "hasArrow": true,
-          "arrowTick": 1
+          "arrowTick": 4
          }
         },
         {
@@ -432,7 +436,7 @@
              "id": "q9",
              "label": "the fraction at the arrow",
              "answer": {
-              "text": "1/3"
+              "text": "4/3"
              }
             }
            }
@@ -440,20 +444,21 @@
          }
         }
        ],
-       "key": "1/3"
+       "key": "4/3"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-fraction-at-arrow-past-1",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "See that fractions go on past 1.",
+      "purpose": "Read fractions greater than 1 on a number line.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
-      "rationale": "A line to 2 breaks the idea that a fraction is always a part of one thing and less than 1.",
+      "rationale": "Every arrow is between 1 and 2, so students keep counting jumps past 1 and write a numerator larger than the denominator. This breaks the idea that a fraction is always part of one thing and less than 1.",
       "misconceptions": [
-       "Fractions are always less than 1"
+       "Fractions are always less than 1.",
+       "Starting the count again at 1, which gives 1/4 for 5/4."
       ]
      },
      "estimatedHeight": 180
@@ -611,7 +616,7 @@
     "id": "q8",
     "label": "the fraction at the arrow",
     "answer": {
-     "text": "1/4"
+     "text": "5/4"
     }
    }
   },
@@ -621,17 +626,17 @@
     "id": "q9",
     "label": "the fraction at the arrow",
     "answer": {
-     "text": "1/3"
+     "text": "4/3"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Place and read fractions as distances from 0.",
+  "purpose": "Read and place fractions as distances from 0 on a number line.",
   "principles": [
    "PRINCIPLE_NUMBER_LINE"
   ],
-  "rationale": "Reading a point comes before labelling every mark. The marks-not-jumps mistake comes once the child has labelled marks correctly, so they can see why it is wrong."
+  "rationale": "Reading one point comes before labeling every mark. The marks-not-jumps mistake comes after students have labeled marks correctly, so they can explain why it is wrong. The sheet ends with fractions greater than 1."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

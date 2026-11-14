@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Are the lines parallel, perpendicular or just intersecting?",
+     "instruction": "Are the lines parallel, perpendicular or intersecting? Check one.",
      "items": [
       {
        "label": "1",
@@ -100,12 +100,14 @@
      "fragmentId": "frag-name-line-pairs",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Tell parallel, perpendicular and intersecting lines apart.",
+      "purpose": "Identify parallel, perpendicular and intersecting lines.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Perpendicular pairs are drawn at a slant as well as upright, so students look for the right-angle mark instead of horizontal and vertical lines. Perpendicular lines also intersect, so students choose the most exact name.",
       "misconceptions": [
-       "Only horizontal and vertical lines can be perpendicular"
+       "Only horizontal and vertical lines can be perpendicular.",
+       "Lines that do not cross on the page are parallel, even when they would meet if extended."
       ]
      },
      "estimatedHeight": 318
@@ -139,7 +141,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Parallel pairs:"
+            "text": "Pairs of parallel sides:"
            },
            {
             "blank": {
@@ -172,7 +174,7 @@
          }
         }
        ],
-       "key": "Parallel pairs: 1; Right angles: 0"
+       "key": "Pairs of parallel sides: 1; Right angles: 0"
       },
       {
        "label": "5",
@@ -198,7 +200,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Parallel pairs:"
+            "text": "Pairs of parallel sides:"
            },
            {
             "blank": {
@@ -231,23 +233,27 @@
          }
         }
        ],
-       "key": "Parallel pairs: 1; Right angles: 2"
+       "key": "Pairs of parallel sides: 1; Right angles: 2"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-quadrilateral-features",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Describe quadrilaterals by parallel sides and right angles.",
+      "purpose": "Describe quadrilaterals by their pairs of parallel sides and their right angles.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names in 4.G.A.2: a parallelogram has two pairs of parallel sides, and a trapezoid has at least one. The set includes a kite and a shape with no parallel sides, so zero is a possible answer.",
+      "misconceptions": [
+       "Counting each parallel side separately, which gives 4 for a rectangle.",
+       "Calling any shape with a slanted side a trapezoid."
+      ]
      },
-     "estimatedHeight": 271
+     "estimatedHeight": 494
     }
    ],
-   "estimatedHeight": 597
+   "estimatedHeight": 820
   },
   {
    "sections": [
@@ -279,7 +285,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Parallel pairs:"
+            "text": "Pairs of parallel sides:"
            },
            {
             "blank": {
@@ -312,80 +318,22 @@
          }
         }
        ],
-       "key": "Parallel pairs: 2; Right angles: 4"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "polygon": {
-          "points": [
-           {
-            "y": 6
-           },
-           {
-            "x": 4
-           },
-           {
-            "x": 8,
-            "y": 6
-           },
-           {
-            "x": 4,
-            "y": 10
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Parallel pairs:"
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "0"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Right angles:"
-           },
-           {
-            "blank": {
-             "id": "q7-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Parallel pairs: 0; Right angles: 0"
+       "key": "Pairs of parallel sides: 2; Right angles: 4"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-quadrilateral-features",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Describe quadrilaterals by parallel sides and right angles.",
+      "purpose": "Describe quadrilaterals by their pairs of parallel sides and their right angles.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names in 4.G.A.2: a parallelogram has two pairs of parallel sides, and a trapezoid has at least one. The set includes a kite and a shape with no parallel sides, so zero is a possible answer.",
+      "misconceptions": [
+       "Counting each parallel side separately, which gives 4 for a rectangle.",
+       "Calling any shape with a slanted side a trapezoid."
+      ]
      },
      "continued": true,
      "estimatedHeight": 286
@@ -484,37 +432,18 @@
      "text": "4"
     }
    }
-  },
-  {
-   "itemLabel": "7",
-   "field": {
-    "id": "q7",
-    "label": "pairs of parallel sides",
-    "answer": {
-     "text": "0"
-    }
-   }
-  },
-  {
-   "itemLabel": "7",
-   "field": {
-    "id": "q7-2",
-    "label": "right angles",
-    "answer": {
-     "text": "0"
-    }
-   }
   }
  ],
  "design": {
   "purpose": "Describe quadrilaterals by their parallel sides and right angles.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Pairs of lines come first, so parallel and perpendicular are familiar before students look for them in the sides of a shape."
  },
  "advice": [
   "\"Count the pairs of parallel sides and the right angles.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Count the pairs of parallel sides and the right angles.\" was cut from 6 to 4 items to fit."
+  "Section \"Count the pairs of parallel sides and the right angles.\" was cut from 6 to 3 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -140,9 +140,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The two parts make each step visible before a single-question problem asks for both.",
+      "rationale": "The first problem splits the two steps into parts. The other two ask a single question, so students find the hidden first step on their own. 3.OA.D.8 asks for exactly this kind of problem, with whole numbers and an unknown quantity.",
       "misconceptions": [
-       "Stopping after the first step."
+       "Stopping after the first step.",
+       "Subtracting the price of one ticket from $50 instead of the cost of all six."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 712
@@ -214,7 +218,8 @@
   "purpose": "Solve two-step problems with the four operations.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
-  ]
+  ],
+  "rationale": "The first problem shows the two steps as parts. The others ask one question, so students find the first step themselves."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

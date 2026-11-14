@@ -1,0 +1,331 @@
+{
+ "worksheetId": "ws-clocks-and-rulers",
+ "title": "Clocks and rulers",
+ "headerLabels": [
+  "3.MD.A.1",
+  "3.MD.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the time.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 6,
+          "minute": 13
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "6:13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 6:13"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 8,
+          "minute": 12
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "8:12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 8:12"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 1,
+          "minute": 46
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "1:46"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 1:46"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 2,
+          "minute": 17
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "2:17"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 2:17"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-read-clock",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read an analog clock to the nearest minute.",
+      "principles": [
+       "PRINCIPLE_PREREQUISITE_REVIEW"
+      ],
+      "rationale": "3.MD.A.1 asks for time to the nearest minute. The minutes are not on the hour or half hour, so students count by fives and then by ones from the nearest number.",
+      "misconceptions": [
+       "Reading the hour from the number the hour hand is nearest, even when it has not reached it.",
+       "Reading the number the minute hand points to as the minutes: 4 for 20 minutes past."
+      ]
+     },
+     "estimatedHeight": 422
+    },
+    {
+     "label": "B",
+     "instruction": "Write the length of each bar.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 4,
+          "barParts": 10
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "2 1/2",
+              "also": [
+               "10/4"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 2 1/2 inches long."
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "ruler": {
+          "inches": 6,
+          "partsPerInch": 4,
+          "barParts": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The bar is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "length of the bar in inches",
+             "answer": {
+              "text": "2 1/4",
+              "also": [
+               "9/4"
+              ]
+             }
+            }
+           },
+           {
+            "text": "inches long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The bar is 2 1/4 inches long."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-measure-with-ruler",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Measure lengths to the nearest half inch and quarter inch.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "A ruler is a number line with whole inches as units. Reading to the quarter inch produces the measurement data that line plots in 3.MD.B.4 and 4.MD.B.4 use.",
+      "misconceptions": [
+       "Starting to count from 1 instead of 0.",
+       "Counting the marks between whole inches as tenths."
+      ]
+     },
+     "estimatedHeight": 302
+    }
+   ],
+   "estimatedHeight": 732
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "6:13"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "8:12"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "1:46"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "2:17"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "2 1/2",
+     "also": [
+      "10/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "length of the bar in inches",
+    "answer": {
+     "text": "2 1/4",
+     "also": [
+      "9/4"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Tell time to the minute and measure lengths to the nearest half and quarter inch.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ],
+  "rationale": "A clock face and a ruler are both scales read from a starting point. Putting them on one sheet gives grade 3 measurement practice in two contexts."
+ },
+ "advice": [
+  "\"Write the length of each bar.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Write the length of each bar.\" was cut from 3 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

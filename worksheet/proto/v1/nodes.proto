@@ -50,6 +50,10 @@ message Node {
     Lines lines = 31;
     WorkSpace work_space = 33;
     MultiPartQuestion multi_part_question = 34;
+
+    GridShape grid_shape = 90;
+    FractionCircle fraction_circle = 91;
+    MeasuringJug measuring_jug = 92;
   }
 }
 
@@ -471,4 +475,37 @@ message MultiPartQuestion {
     // Where the child answers: working space, blanks, lines.
     repeated Node response = 3;
   }
+}
+
+// GridShape is a shape made of unit squares on a square grid, for finding
+// area by counting squares. Cells are given by column and row from the top
+// left; the grid around them is drawn faintly.
+message GridShape {
+  int32 cols = 1;
+  int32 rows = 2;
+  repeated Cell cells = 3;
+
+  message Cell {
+    int32 col = 1;
+    int32 row = 2;
+  }
+}
+
+// FractionCircle is a circle cut into equal slices, some shaded. With
+// shade_field set, the child shades it, and the field says how many slices.
+message FractionCircle {
+  int32 parts = 1;
+  int32 shaded = 2;
+  Field shade_field = 3;
+}
+
+// MeasuringJug is a container with a scale up its side, filled to a level.
+// Marks are every step; every labelled-th mark has a number.
+message MeasuringJug {
+  int32 capacity = 1;
+  int32 step = 2;
+  int32 labelled = 3;
+  int32 level = 4;
+  // Printed under the scale, such as "mL" or "liters".
+  string unit = 5;
 }

@@ -54,7 +54,7 @@ function bold(s: string): { b: boolean; s: string }[] {
               }
               @if (s.example; as ex) {
                 <div class="example">
-                  <div class="look">Look first</div>
+                  <div class="look">Example</div>
                   <div class="ex-body">
                     <div class="ex-nodes">
                       @for (n of ex.nodes; track $index) {
@@ -95,7 +95,7 @@ function bold(s: string): { b: boolean; s: string }[] {
     header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #222; box-sizing: border-box; }
     h1 { font-size: 26px; margin: 4px 0 0; }
     .kicker { font-size: 12px; letter-spacing: .04em; color: #555; }
-    .name { font-size: 14px; line-height: 30px; text-align: right; }
+    .name { font-size: 14px; line-height: 30px; text-align: right; flex: none; margin-left: 16px; }
     .rule { display: inline-block; width: 150px; border-bottom: 1.2px solid #222; }
     .body { overflow: hidden; padding-top: 6px; box-sizing: border-box; }
     section { margin-bottom: 4px; }

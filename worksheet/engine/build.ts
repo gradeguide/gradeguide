@@ -133,6 +133,9 @@ export function fieldsOf(nodes: readonly Node[]): Field[] {
       case 'fractionBar':
         add(k.value.shadeField);
         break;
+      case 'fractionCircle':
+        add(k.value.shadeField);
+        break;
       case 'unitGrid':
         add(k.value.shadeField);
         break;

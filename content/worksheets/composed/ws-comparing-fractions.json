@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write <, > or =.",
+     "instruction": "Compare. Write <, > or =.",
      "items": [
       {
        "label": "1",
@@ -219,14 +219,17 @@
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW"
       ],
-      "rationale": "Same-size pieces are compared by counting, which children already trust. It is the starting point for comparing unlike pieces."
+      "rationale": "When the parts are the same size, students compare by counting parts, which they already trust. It is the starting point for comparing fractions with different denominators.",
+      "misconceptions": [
+       "Reversing the signs < and >."
+      ]
      },
      "estimatedHeight": 178
     },
     {
      "label": "B",
-     "instruction": "Write <, > or =.",
-     "explainer": "More pieces in the whole means smaller pieces.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "More parts in the whole means smaller parts.",
      "items": [
       {
        "label": "7",
@@ -431,13 +434,13 @@
      "fragmentId": "frag-compare-same-numerator",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Compare fractions with the same numerator by piece size.",
+      "purpose": "Compare fractions with the same numerator by the size of the parts.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Holding the numerator fixed isolates the one idea that conflicts with whole-number thinking: a bigger denominator means a smaller piece.",
+      "rationale": "Holding the numerator fixed isolates the one idea that conflicts with whole-number thinking: a bigger denominator means a smaller part.",
       "misconceptions": [
-       "1/8 is bigger than 1/4 because 8 is bigger than 4"
+       "1/8 is bigger than 1/4 because 8 is bigger than 4."
       ],
       "references": [
        "Ni and Zhou (2005), Educational Psychologist 40"
@@ -447,7 +450,8 @@
     },
     {
      "label": "C",
-     "instruction": "Write <, > or =. Use a benchmark like 1/2 or a common denominator.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "Use a benchmark such as 1/2, or rewrite the fractions with a common denominator.",
      "items": [
       {
        "label": "13",
@@ -751,19 +755,23 @@
      "fragmentId": "frag-compare-any",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Compare any two fractions.",
+      "purpose": "Compare two fractions with different numerators and denominators.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Mixing same-denominator, same-numerator and unlike pairs makes the child choose a strategy, which blocked practice never asks for.",
+      "rationale": "Mixing same-denominator, same-numerator and unlike pairs makes students choose a strategy for each pair, which a set of one type never asks for. Some pairs are equal, so = is a possible answer.",
+      "misconceptions": [
+       "Comparing only the numerators, or only the denominators.",
+       "Judging by the difference between numerator and denominator: 3/4 and 5/6 are equal because each is one part short."
+      ],
       "references": [
        "Rohrer and Taylor (2007), Instructional Science 35"
       ]
      },
-     "estimatedHeight": 250
+     "estimatedHeight": 276
     }
    ],
-   "estimatedHeight": 644
+   "estimatedHeight": 670
   }
  ],
  "key": [
@@ -979,12 +987,12 @@
   }
  ],
  "design": {
-  "purpose": "Compare fractions by choosing a strategy.",
+  "purpose": "Compare fractions by choosing a strategy for each pair.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_INTERLEAVING"
   ],
-  "rationale": "Two special cases the child can reason about, then a mixed set that asks which case each pair is."
+  "rationale": "Two special cases come first: the same denominator and the same numerator. A mixed set follows, in which students decide which case each pair is, or use a benchmark."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

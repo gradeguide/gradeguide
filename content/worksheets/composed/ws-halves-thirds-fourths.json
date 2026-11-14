@@ -1,0 +1,895 @@
+{
+ "worksheetId": "ws-halves-thirds-fourths",
+ "title": "Halves, thirds and fourths",
+ "headerLabels": [
+  "3.NF.A.1",
+  "3.G.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the fraction of the whole that is shaded.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shaded": [
+           0,
+           1
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q1",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "2/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 2,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q2",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "1/2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0,
+           1,
+           2
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q3",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "3/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/4"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q4",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q5",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0,
+           1
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q6",
+             "label": "the shaded fraction",
+             "answer": {
+              "text": "2/4",
+              "also": [
+               "1/2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/4"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-halves-thirds-fourths",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Name the shaded part of a rectangle cut into halves, thirds or fourths as a fraction.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each bar is cut into 2, 3 or 4 equal parts, the denominators grade 3 starts with. The bottom number names the parts in the whole and the top number counts the shaded parts. Keeping the denominators small lets students attend to that meaning before the parts get thin.",
+      "misconceptions": [
+       "Writing shaded parts over unshaded parts: 1 of 3 shaded is written 1/2.",
+       "Naming a part by its count without checking that the parts are equal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 266
+    },
+    {
+     "label": "B",
+     "instruction": "Write the fraction of the circle that is shaded.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shaded": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q7",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "1/4"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 is shaded."
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shaded": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q8",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "2/4"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/4 is shaded."
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 2,
+          "shaded": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q9",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "1/2"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 is shaded."
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shaded": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fractionBlank": {
+             "id": "q10",
+             "label": "fraction shaded",
+             "answer": {
+              "text": "2/3"
+             }
+            }
+           },
+           {
+            "text": "is shaded."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 is shaded."
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-circle-fractions",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Name the shaded part of a circle cut into halves, thirds or fourths as a fraction.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "A circle gives the same fractions a second shape, so students attach the fraction to equal parts of a whole rather than to bars. Thirds of a circle look different from thirds of a bar, which shows that equal parts are equal in area, not in shape.",
+      "misconceptions": [
+       "Treating any three pieces of a circle as thirds, whether or not they are the same size."
+      ]
+     },
+     "estimatedHeight": 390
+    },
+    {
+     "label": "C",
+     "instruction": "Shade the fraction.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q11",
+           "label": "shading of 2/4",
+           "answer": {
+            "text": "2 of 4 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2 of 4 parts shaded"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 2,
+          "shadeField": {
+           "id": "q12",
+           "label": "shading of 1/2",
+           "answer": {
+            "text": "1 of 2 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1 of 2 parts shaded"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q13",
+           "label": "shading of 3/4",
+           "answer": {
+            "text": "3 of 4 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3 of 4 parts shaded"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-shade-halves-thirds-fourths",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Shade a given number of halves, thirds or fourths of a rectangle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Going from the fraction to the picture checks that students know what each number in the fraction tells them. The parts are drawn, so the task is about the meaning of the numbers, not about cutting equal parts.",
+      "misconceptions": [
+       "Shading as many parts as the bottom number."
+      ]
+     },
+     "estimatedHeight": 150
+    }
+   ],
+   "estimatedHeight": 818
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Shade the fraction.",
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           }
+          ]
+         }
+        },
+        {
+         "fractionBar": {
+          "parts": 3,
+          "shadeField": {
+           "id": "q14",
+           "label": "shading of 2/3",
+           "answer": {
+            "text": "2 of 3 parts shaded"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2 of 3 parts shaded"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-shade-halves-thirds-fourths",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Shade a given number of halves, thirds or fourths of a rectangle.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Going from the fraction to the picture checks that students know what each number in the fraction tells them. The parts are drawn, so the task is about the meaning of the numbers, not about cutting equal parts.",
+      "misconceptions": [
+       "Shading as many parts as the bottom number."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 150
+    },
+    {
+     "label": "D",
+     "instruction": "Shade the fraction of the circle.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 4
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 4,
+          "shadeField": {
+           "id": "q15",
+           "label": "shade 2/4",
+           "answer": {
+            "text": "2/4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2/4"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shadeField": {
+           "id": "q16",
+           "label": "shade 1/3",
+           "answer": {
+            "text": "1/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1/3"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 3,
+          "shadeField": {
+           "id": "q17",
+           "label": "shade 2/3",
+           "answer": {
+            "text": "2/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2/3"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Shade"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "of the circle."
+           }
+          ]
+         }
+        },
+        {
+         "fractionCircle": {
+          "parts": 2,
+          "shadeField": {
+           "id": "q18",
+           "label": "shade 1/2",
+           "answer": {
+            "text": "1/2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "1/2"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-shade-circle-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Shade halves, thirds and fourths of a circle.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Shading reverses the previous section. Students read the denominator to check the circle has that many parts, then shade the number of parts the numerator gives.",
+      "misconceptions": [
+       "Shading as many parts as the bottom number."
+      ]
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 548
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "1/2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "3/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the shaded fraction",
+    "answer": {
+     "text": "2/4",
+     "also": [
+      "1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "fraction shaded",
+    "answer": {
+     "text": "1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "fraction shaded",
+    "answer": {
+     "text": "2/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "fraction shaded",
+    "answer": {
+     "text": "1/2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "fraction shaded",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "shading of 2/4",
+    "answer": {
+     "text": "2 of 4 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "shading of 1/2",
+    "answer": {
+     "text": "1 of 2 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "shading of 3/4",
+    "answer": {
+     "text": "3 of 4 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "shading of 2/3",
+    "answer": {
+     "text": "2 of 3 parts shaded"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "shade 2/4",
+    "answer": {
+     "text": "2/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "shade 1/3",
+    "answer": {
+     "text": "1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "shade 2/3",
+    "answer": {
+     "text": "2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "shade 1/2",
+    "answer": {
+     "text": "1/2"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Name and shade halves, thirds and fourths of rectangles and circles.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "Students read fractions from bars, then from circles, then shade both. The denominators stay at 2, 3 and 4, so the sheet suits the start of grade 3 fractions."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
