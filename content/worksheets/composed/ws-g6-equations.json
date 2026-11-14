@@ -590,6 +590,63 @@
         }
        ],
        "key": "6 + 9x"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "Sam is y years old. Mia is 3 years older. Write Mia's age."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q16",
+             "label": "Sam is y years old. Mia is 3 years older. Write Mia's age.",
+             "answer": {
+              "text": "y + 3",
+              "also": [
+               "y+3",
+               "3 + y",
+               "3+y"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y + 3"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q17",
+             "label": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece.",
+             "answer": {
+              "text": "y ÷ 10",
+              "also": [
+               "y÷10",
+               "y/10"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y ÷ 10"
       }
      ],
      "columns": 1,
@@ -608,14 +665,14 @@
        "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 346
     },
     {
      "label": "D",
      "instruction": "Write an equation. Solve it. Show your work.",
      "items": [
       {
-       "label": "16",
+       "label": "18",
        "nodes": [
         {
          "text": "Mia had some money saved. She earned $15 more and then had $62. How much had she saved?"
@@ -624,7 +681,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q16",
+           "id": "q18",
            "label": "money saved before",
            "answer": {
             "text": "47",
@@ -640,7 +697,7 @@
        "key": "47"
       },
       {
-       "label": "17",
+       "label": "19",
        "nodes": [
         {
          "text": "A pack of 8 markers costs $12. What does one marker cost?"
@@ -649,7 +706,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q17",
+           "id": "q19",
            "label": "cost of one marker",
            "answer": {
             "text": "1.50",
@@ -666,7 +723,7 @@
        "key": "1.50"
       },
       {
-       "label": "18",
+       "label": "20",
        "nodes": [
         {
          "text": "Leo has read 3/4 of his book. That is 120 pages. How many pages long is the book?"
@@ -675,7 +732,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q18",
+           "id": "q20",
            "label": "pages in the book",
            "answer": {
             "text": "160",
@@ -710,7 +767,7 @@
      "estimatedHeight": 442
     }
    ],
-   "estimatedHeight": 640
+   "estimatedHeight": 796
   }
  ],
  "key": [
@@ -919,6 +976,35 @@
    "itemLabel": "16",
    "field": {
     "id": "q16",
+    "label": "Sam is y years old. Mia is 3 years older. Write Mia's age.",
+    "answer": {
+     "text": "y + 3",
+     "also": [
+      "y+3",
+      "3 + y",
+      "3+y"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "A ribbon y inches long is cut into 10 equal pieces. Write the length of each piece.",
+    "answer": {
+     "text": "y ÷ 10",
+     "also": [
+      "y÷10",
+      "y/10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
     "label": "money saved before",
     "answer": {
      "text": "47",
@@ -930,9 +1016,9 @@
    }
   },
   {
-   "itemLabel": "17",
+   "itemLabel": "19",
    "field": {
-    "id": "q17",
+    "id": "q19",
     "label": "cost of one marker",
     "answer": {
      "text": "1.50",
@@ -945,9 +1031,9 @@
    }
   },
   {
-   "itemLabel": "18",
+   "itemLabel": "20",
    "field": {
-    "id": "q18",
+    "id": "q20",
     "label": "pages in the book",
     "answer": {
      "text": "160",
@@ -965,8 +1051,5 @@
    "PRINCIPLE_CONCRETENESS_FADING"
   ]
  },
- "advice": [
-  "Section \"Write an expression for each situation.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

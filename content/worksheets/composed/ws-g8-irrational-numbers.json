@@ -446,6 +446,78 @@
         }
        ],
        "key": "√87 is between 9 and 10"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "√142 is between"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "whole number just below √142",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "and"
+           },
+           {
+            "blank": {
+             "id": "q13-2",
+             "label": "whole number just above √142",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "√142 is between 11 and 12"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "√92 is between"
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "whole number just below √92",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "and"
+           },
+           {
+            "blank": {
+             "id": "q14-2",
+             "label": "whole number just above √92",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "√92 is between 9 and 10"
       }
      ],
      "columns": 1,
@@ -463,10 +535,10 @@
       ]
      },
      "continued": true,
-     "estimatedHeight": 190
+     "estimatedHeight": 294
     }
    ],
-   "estimatedHeight": 194
+   "estimatedHeight": 298
   }
  ],
  "key": [
@@ -629,6 +701,46 @@
      "text": "10"
     }
    }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "whole number just below √142",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "whole number just above √142",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "whole number just below √92",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "whole number just above √92",
+    "answer": {
+     "text": "10"
+    }
+   }
   }
  ],
  "design": {
@@ -637,8 +749,5 @@
    "PRINCIPLE_NUMBER_LINE"
   ]
  },
- "advice": [
-  "Section \"Write the two whole numbers the square root lies between.\" was cut from 6 to 4 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

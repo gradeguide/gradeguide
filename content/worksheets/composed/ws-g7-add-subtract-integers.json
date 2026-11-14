@@ -502,6 +502,96 @@
         }
        ],
        "key": "9 − (−7) = 9 + 7 = 16"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 − (−2)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "the opposite of −2",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "10 − (−2)",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 − (−2) = 10 + 2 = 12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−1 − (−11)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "−1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "the opposite of −11",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10-2",
+             "label": "−1 − (−11)",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−1 − (−11) = −1 + 11 = 10"
       }
      ],
      "columns": 1,
@@ -519,14 +609,14 @@
       ]
      },
      "continued": true,
-     "estimatedHeight": 190
+     "estimatedHeight": 294
     },
     {
      "label": "C",
      "instruction": "Add or subtract.",
      "items": [
       {
-       "label": "9",
+       "label": "11",
        "nodes": [
         {
          "math": {
@@ -539,7 +629,7 @@
            },
            {
             "blank": {
-             "id": "q9",
+             "id": "q11",
              "label": "−1.8 + (−11.7)",
              "answer": {
               "text": "−13.5",
@@ -556,7 +646,7 @@
        "key": "−1.8 + (−11.7) = −13.5"
       },
       {
-       "label": "10",
+       "label": "12",
        "nodes": [
         {
          "math": {
@@ -569,7 +659,7 @@
            },
            {
             "blank": {
-             "id": "q10",
+             "id": "q12",
              "label": "2.9 + (−6.7)",
              "answer": {
               "text": "−3.8",
@@ -586,7 +676,7 @@
        "key": "2.9 + (−6.7) = −3.8"
       },
       {
-       "label": "11",
+       "label": "13",
        "nodes": [
         {
          "math": {
@@ -599,7 +689,7 @@
            },
            {
             "blank": {
-             "id": "q11",
+             "id": "q13",
              "label": "−8.2 + (−6)",
              "answer": {
               "text": "−14.2",
@@ -616,7 +706,7 @@
        "key": "−8.2 + (−6) = −14.2"
       },
       {
-       "label": "12",
+       "label": "14",
        "nodes": [
         {
          "math": {
@@ -629,7 +719,7 @@
            },
            {
             "blank": {
-             "id": "q12",
+             "id": "q14",
              "label": "0.8 + (−10.9)",
              "answer": {
               "text": "−10.1",
@@ -646,7 +736,7 @@
        "key": "0.8 + (−10.9) = −10.1"
       },
       {
-       "label": "13",
+       "label": "15",
        "nodes": [
         {
          "math": {
@@ -659,7 +749,7 @@
            },
            {
             "blank": {
-             "id": "q13",
+             "id": "q15",
              "label": "−11.8 + (−7.5)",
              "answer": {
               "text": "−19.3",
@@ -676,7 +766,7 @@
        "key": "−11.8 + (−7.5) = −19.3"
       },
       {
-       "label": "14",
+       "label": "16",
        "nodes": [
         {
          "math": {
@@ -689,7 +779,7 @@
            },
            {
             "blank": {
-             "id": "q14",
+             "id": "q16",
              "label": "11.5 − (−0.9)",
              "answer": {
               "text": "12.4"
@@ -724,7 +814,7 @@
      "instruction": "Add or subtract. Write the answer in simplest form.",
      "items": [
       {
-       "label": "15",
+       "label": "17",
        "nodes": [
         {
          "math": {
@@ -758,7 +848,7 @@
            },
            {
             "blank": {
-             "id": "q15",
+             "id": "q17",
              "label": "the answer",
              "answer": {
               "text": "3/8"
@@ -772,7 +862,7 @@
        "key": "− 1/2 − (− 7/8 ) = 3/8"
       },
       {
-       "label": "16",
+       "label": "18",
        "nodes": [
         {
          "math": {
@@ -800,7 +890,7 @@
            },
            {
             "blank": {
-             "id": "q16",
+             "id": "q18",
              "label": "the answer",
              "answer": {
               "text": "−3/4",
@@ -817,7 +907,7 @@
        "key": "− 1/4 − 1/2 = −3/4"
       },
       {
-       "label": "17",
+       "label": "19",
        "nodes": [
         {
          "math": {
@@ -845,7 +935,7 @@
            },
            {
             "blank": {
-             "id": "q17",
+             "id": "q19",
              "label": "the answer",
              "answer": {
               "text": "1/6"
@@ -859,7 +949,7 @@
        "key": "− 1/2 + 2/3 = 1/6"
       },
       {
-       "label": "18",
+       "label": "20",
        "nodes": [
         {
          "math": {
@@ -893,7 +983,7 @@
            },
            {
             "blank": {
-             "id": "q18",
+             "id": "q20",
              "label": "the answer",
              "answer": {
               "text": "−1/2",
@@ -910,7 +1000,7 @@
        "key": "− 1/3 + (− 1/6 ) = −1/2"
       },
       {
-       "label": "19",
+       "label": "21",
        "nodes": [
         {
          "math": {
@@ -941,7 +1031,7 @@
            },
            {
             "blank": {
-             "id": "q19",
+             "id": "q21",
              "label": "the answer",
              "answer": {
               "text": "1/2"
@@ -955,7 +1045,7 @@
        "key": "1/6 − (− 1/3 ) = 1/2"
       },
       {
-       "label": "20",
+       "label": "22",
        "nodes": [
         {
          "math": {
@@ -986,7 +1076,7 @@
            },
            {
             "blank": {
-             "id": "q20",
+             "id": "q22",
              "label": "the answer",
              "answer": {
               "text": "1/3"
@@ -1017,7 +1107,7 @@
      "estimatedHeight": 250
     }
    ],
-   "estimatedHeight": 642
+   "estimatedHeight": 746
   }
  ],
  "key": [
@@ -1159,6 +1249,46 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
+    "label": "the opposite of −2",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "10 − (−2)",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the opposite of −11",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "−1 − (−11)",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
     "label": "−1.8 + (−11.7)",
     "answer": {
      "text": "−13.5",
@@ -1169,9 +1299,9 @@
    }
   },
   {
-   "itemLabel": "10",
+   "itemLabel": "12",
    "field": {
-    "id": "q10",
+    "id": "q12",
     "label": "2.9 + (−6.7)",
     "answer": {
      "text": "−3.8",
@@ -1182,9 +1312,9 @@
    }
   },
   {
-   "itemLabel": "11",
+   "itemLabel": "13",
    "field": {
-    "id": "q11",
+    "id": "q13",
     "label": "−8.2 + (−6)",
     "answer": {
      "text": "−14.2",
@@ -1195,9 +1325,9 @@
    }
   },
   {
-   "itemLabel": "12",
+   "itemLabel": "14",
    "field": {
-    "id": "q12",
+    "id": "q14",
     "label": "0.8 + (−10.9)",
     "answer": {
      "text": "−10.1",
@@ -1208,9 +1338,9 @@
    }
   },
   {
-   "itemLabel": "13",
+   "itemLabel": "15",
    "field": {
-    "id": "q13",
+    "id": "q15",
     "label": "−11.8 + (−7.5)",
     "answer": {
      "text": "−19.3",
@@ -1221,9 +1351,9 @@
    }
   },
   {
-   "itemLabel": "14",
+   "itemLabel": "16",
    "field": {
-    "id": "q14",
+    "id": "q16",
     "label": "11.5 − (−0.9)",
     "answer": {
      "text": "12.4"
@@ -1231,9 +1361,9 @@
    }
   },
   {
-   "itemLabel": "15",
+   "itemLabel": "17",
    "field": {
-    "id": "q15",
+    "id": "q17",
     "label": "the answer",
     "answer": {
      "text": "3/8"
@@ -1241,9 +1371,9 @@
    }
   },
   {
-   "itemLabel": "16",
+   "itemLabel": "18",
    "field": {
-    "id": "q16",
+    "id": "q18",
     "label": "the answer",
     "answer": {
      "text": "−3/4",
@@ -1254,9 +1384,9 @@
    }
   },
   {
-   "itemLabel": "17",
+   "itemLabel": "19",
    "field": {
-    "id": "q17",
+    "id": "q19",
     "label": "the answer",
     "answer": {
      "text": "1/6"
@@ -1264,9 +1394,9 @@
    }
   },
   {
-   "itemLabel": "18",
+   "itemLabel": "20",
    "field": {
-    "id": "q18",
+    "id": "q20",
     "label": "the answer",
     "answer": {
      "text": "−1/2",
@@ -1277,9 +1407,9 @@
    }
   },
   {
-   "itemLabel": "19",
+   "itemLabel": "21",
    "field": {
-    "id": "q19",
+    "id": "q21",
     "label": "the answer",
     "answer": {
      "text": "1/2"
@@ -1287,9 +1417,9 @@
    }
   },
   {
-   "itemLabel": "20",
+   "itemLabel": "22",
    "field": {
-    "id": "q20",
+    "id": "q22",
     "label": "the answer",
     "answer": {
      "text": "1/3"
@@ -1308,8 +1438,7 @@
   "\"Use the number line to add.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Subtract by adding the opposite.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Add or subtract.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Add or subtract. Write the answer in simplest form.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Subtract by adding the opposite.\" was cut from 6 to 4 items to fit."
+  "\"Add or subtract. Write the answer in simplest form.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

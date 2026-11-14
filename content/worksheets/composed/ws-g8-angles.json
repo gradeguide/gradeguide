@@ -194,7 +194,33 @@
         }
        ],
        "key": "140°"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-exterior-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find an exterior angle of a triangle from the two interior angles across from it.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the student uses the exterior angle fact. A student can check the answer by finding the third angle and subtracting it from 180°.",
+      "misconceptions": [
+       "Adding all three interior angles.",
+       "Taking the interior angle beside it as the exterior angle."
+      ]
+     },
+     "estimatedHeight": 274
+    }
+   ],
+   "estimatedHeight": 770
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the exterior angle in the box.",
+     "items": [
       {
        "label": "6",
        "nodes": [
@@ -229,7 +255,7 @@
        "key": "129°"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g8-exterior-angles",
      "stage": "STAGE_PRACTICE",
      "design": {
@@ -243,13 +269,9 @@
        "Taking the interior angle beside it as the exterior angle."
       ]
      },
-     "estimatedHeight": 274
-    }
-   ],
-   "estimatedHeight": 770
-  },
-  {
-   "sections": [
+     "continued": true,
+     "estimatedHeight": 248
+    },
     {
      "label": "C",
      "instruction": "The arrows mark parallel lines. Find the angles in the boxes.",
@@ -442,7 +464,7 @@
      "estimatedHeight": 456
     }
    ],
-   "estimatedHeight": 460
+   "estimatedHeight": 712
   }
  ],
  "key": [

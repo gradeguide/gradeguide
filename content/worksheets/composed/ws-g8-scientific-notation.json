@@ -637,6 +637,39 @@
         }
        ],
        "key": "2,000 times"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "A phone photo takes up about 2 × 10⁸ bytes. A long movie takes up about 6 × 10⁹ bytes. How many times as large is the second?"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q17",
+             "label": "6 × 10⁹ ÷ 2 × 10⁸",
+             "answer": {
+              "text": "30",
+              "also": [
+               "3 × 10¹",
+               "3×10¹",
+               "3 x 10^1",
+               "3x10^1"
+              ]
+             }
+            }
+           },
+           {
+            "text": "times"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 times"
       }
      ],
      "columns": 1,
@@ -656,10 +689,10 @@
        "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
-     "estimatedHeight": 230
+     "estimatedHeight": 328
     }
    ],
-   "estimatedHeight": 234
+   "estimatedHeight": 332
   }
  ],
  "key": [
@@ -921,6 +954,22 @@
      ]
     }
    }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "6 × 10⁹ ÷ 2 × 10⁸",
+    "answer": {
+     "text": "30",
+     "also": [
+      "3 × 10¹",
+      "3×10¹",
+      "3 x 10^1",
+      "3x10^1"
+     ]
+    }
+   }
   }
  ],
  "design": {
@@ -933,8 +982,7 @@
   "\"Write in scientific notation.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Write in standard form.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply or divide. Write the answer in scientific notation.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Divide. Write the answer in scientific notation.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Compare the two numbers.\" was cut from 3 to 2 items to fit."
+  "\"Divide. Write the answer in scientific notation.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

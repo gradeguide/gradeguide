@@ -855,6 +855,112 @@
         }
        ],
        "key": "2/11 ≈ 0.182; repeats"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 30,
+             "den": 25
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "30/25 to the nearest thousandth",
+             "answer": {
+              "text": "1.2",
+              "also": [
+               "1.200"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q21-2",
+           "label": "does 30/25 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "30/25 ≈ 1.2; ends"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 48,
+             "den": 40
+            }
+           },
+           {
+            "text": "≈"
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "48/40 to the nearest thousandth",
+             "answer": {
+              "text": "1.2",
+              "also": [
+               "1.200"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "ends",
+           "repeats"
+          ],
+          "field": {
+           "id": "q22-2",
+           "label": "does 48/40 end or repeat",
+           "answer": {
+            "text": "ends"
+           }
+          }
+         }
+        }
+       ],
+       "key": "48/40 ≈ 1.2; ends"
       }
      ],
      "columns": 2,
@@ -872,10 +978,10 @@
       ]
      },
      "continued": true,
-     "estimatedHeight": 236
+     "estimatedHeight": 438
     }
    ],
-   "estimatedHeight": 240
+   "estimatedHeight": 442
   }
  ],
  "key": [
@@ -1158,6 +1264,52 @@
      "text": "repeats"
     }
    }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "30/25 to the nearest thousandth",
+    "answer": {
+     "text": "1.2",
+     "also": [
+      "1.200"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21-2",
+    "label": "does 30/25 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "48/40 to the nearest thousandth",
+    "answer": {
+     "text": "1.2",
+     "also": [
+      "1.200"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22-2",
+    "label": "does 48/40 end or repeat",
+    "answer": {
+     "text": "ends"
+    }
+   }
   }
  ],
  "design": {
@@ -1170,8 +1322,7 @@
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write as a decimal. Check whether it terminates or repeats.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Write as a decimal. Check whether it terminates or repeats.\" was cut from 6 to 4 items to fit."
+  "\"Write as a decimal. Check whether it terminates or repeats.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

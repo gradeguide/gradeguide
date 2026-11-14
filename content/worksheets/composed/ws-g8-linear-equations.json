@@ -424,6 +424,37 @@
         }
        ],
        "key": "infinitely many"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6x − 1 = 4x + 19"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "solutions of 6x − 1 = 4x + 19",
+           "answer": {
+            "text": "one solution"
+           }
+          }
+         }
+        }
+       ],
+       "key": "one solution"
       }
      ],
      "columns": 1,
@@ -444,10 +475,10 @@
       ]
      },
      "continued": true,
-     "estimatedHeight": 194
+     "estimatedHeight": 274
     }
    ],
-   "estimatedHeight": 198
+   "estimatedHeight": 278
   }
  ],
  "key": [
@@ -576,6 +607,16 @@
      "text": "infinitely many"
     }
    }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "solutions of 6x − 1 = 4x + 19",
+    "answer": {
+     "text": "one solution"
+    }
+   }
   }
  ],
  "design": {
@@ -585,8 +626,7 @@
   ]
  },
  "advice": [
-  "\"Solve.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"How many solutions does the equation have? Check one.\" was cut from 4 to 3 items to fit."
+  "\"Solve.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
