@@ -473,7 +473,7 @@ describe('grade 6 to 8 item kinds', () => {
       expect(value(answers(ns)[0])).toBeCloseTo(total / n, 9);
     }
     for (const ns of items({ case: 'unitRate', value: { fractions: true } })) {
-      const [amount, time] = (textOf(ns).match(/(\d+ )?\d+\/\d+|\d+(?= mile| of)/g) ?? []).map(value);
+      const [amount, time] = (textOf(ns).match(/(\d+ )?\d+\/\d+|\d+(?= mile| of| wall)/g) ?? []).map(value);
       expect(value(answers(ns)[0])).toBeCloseTo(amount / time, 9);
     }
   });

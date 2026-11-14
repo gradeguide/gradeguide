@@ -87,6 +87,7 @@ alignments { fragment_id: "frag-g7-constant-of-proportionality" skill { code: "7
 alignments { fragment_id: "frag-g7-proportional-graph" skill { code: "7.RP.A.2.d" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g7-proportional-graph" skill { code: "7.RP.A.2.b" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g7-percent-word-problems" skill { code: "7.RP.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-equation-word-problems" skill { code: "7.EE.B.4.b" } role: ROLE_PRACTISES }
 
 # Grade 7: the number system.
 alignments { fragment_id: "frag-g7-add-on-number-line" skill { code: "7.NS.A.1.a" } role: ROLE_TEACHES }
@@ -123,6 +124,7 @@ alignments { fragment_id: "frag-g7-angle-equations" skill { code: "7.G.B.5" } ro
 alignments { fragment_id: "frag-g7-area" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g7-volume" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g7-surface-area" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g7-area-volume-problems" skill { code: "7.G.B.6" } role: ROLE_PRACTISES }
 
 # Grade 7: statistics and probability.
 alignments { fragment_id: "frag-g7-samples" skill { code: "7.SP.A.1" } role: ROLE_TEACHES }

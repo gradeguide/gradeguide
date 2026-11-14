@@ -309,15 +309,21 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const amount = mixedText(p * c, q * d);
         const rate = mixedText(p, q);
         const also = q === 1 ? [] : [`${p}/${q}`];
+        // Under one: "1/2 mile", "3/4 of a wall". One or more: "1 mile",
+        // "1 1/3 miles", "3 walls".
+        const under = p * c < q * d;
+        const many = p * c > q * d;
         if (form === 0) {
           return [
-            text(`${names[(c + p) % names.length]} walks ${amount} mile in ${fracText(c, d)} hour.`),
-            math('Speed:', blank(field(ctx, 'miles per hour', rate, also)), 'miles per hour'),
+            text(`${names[(c + p) % names.length]} walks ${amount} mile${many ? 's' : ''} in ${fracText(c, d)} hour.`),
+            work(2),
+            math(blank(field(ctx, 'miles per hour', rate, also)), 'miles per hour'),
           ];
         }
         return [
-          text(`A painter covers ${amount} of a wall in ${fracText(c, d)} hour.`),
-          math('Rate:', blank(field(ctx, 'walls per hour', rate, also)), 'walls per hour'),
+          text(`A painter covers ${under ? `${amount} of a wall` : `${amount} wall${many ? 's' : ''}`} in ${fracText(c, d)} hour.`),
+          work(2),
+          math(blank(field(ctx, 'walls per hour', rate, also)), 'walls per hour'),
         ];
       }
       const form = spread(ctx, k.case + 'form', 3);
@@ -384,7 +390,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         if (back) {
           return [
             text(`${key} ${what} ${num(len * s)} ${big} ${theme === 0 ? 'apart' : 'long'}.`),
-            math(`On ${where}:`, blank(field(ctx, `length on ${where}`, num(len), [`${num(len)} ${small}`])), theme === 0 ? 'cm' : 'inches'),
+            math(`On ${where}:`, blank(field(ctx, `length on ${where}`, num(len), [`${num(len)} ${theme === 0 ? 'cm' : 'in'}`])), theme === 0 ? 'cm' : 'inches'),
           ];
         }
         return [
@@ -1016,7 +1022,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         return [
           plane({ xMin: 0, xMax: 6, yMin: 0, yMax: 10, yScale: 5, labelEvery: 1, xLabel, yLabel, points: [gp(1, g, 'A'), gp(x, g * x, 'B')], segments: [seg(0, 0, 1, g, { extend: true })] }),
           math(`Point A is (1, `, blank(field(ctx, 'y at x = 1', String(kk))), ')'),
-          math(`${say}:`, blank(field(ctx, 'the unit rate', String(kk), [`${kk} ${unit}`])), unit),
+          math(`${say}:`, blank(field(ctx, 'the unit rate', String(kk))), unit),
           math(`Point B is (${x}, `, blank(field(ctx, `y at x = ${x}`, String(kk * x))), ')'),
           math('Equation: y =', blank(field(ctx, 'the equation', `${kk}x`))),
         ];
@@ -1039,7 +1045,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       }
       return [
         table(['x', 'y'], rows),
-        math('Constant of proportionality:', blank(field(ctx, 'constant of proportionality', num(kk)))),
+        math('k =', blank(field(ctx, 'constant of proportionality', num(kk)))),
         math('Equation: y =', blank(field(ctx, 'the equation', `${num(kk)}x`, [`${num(kk)} × x`]))),
       ];
     }
@@ -1139,6 +1145,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const near = (n / d).toFixed(3);
       return [
         math([n, d], '≈', blank(field(ctx, `${n}/${d} to the nearest thousandth`, ends ? num(n / d) : near, ends ? [near] : []))),
+        work(3),
         choices(ctx, `does ${n}/${d} end or repeat`, ['ends', 'repeats'], ends ? 'ends' : 'repeats'),
       ];
     }
@@ -1179,7 +1186,8 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         case: 'roundSolid',
         value: create(RoundSolidSchema, { kind, diameter: !!useD, radiusLabel: useD ? `${2 * r} cm` : `${r} cm`, heightLabel: ask === RoundMeasure_Ask.CYLINDER || ask === RoundMeasure_Ask.CONE ? `${h} cm` : '' }),
       });
-      return [text(say), figure, math(`${what} ≈`, blank(field(ctx, `${what.toLowerCase()}: ${say}`, num(v), also)), unit)];
+      // Circles get room to multiply by 3.14.
+      return [text(say), figure, ...(ask <= 2 ? [work(2)] : []), math(`${what} ≈`, blank(field(ctx, `${what.toLowerCase()}: ${say}`, num(v), also)), unit)];
     }
     case 'classify':
       return classify(k.value.topic, ctx);
@@ -1191,8 +1199,18 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const outcomes = space();
         const hits = outcomes.filter(test).length;
         const p = fracText(hits, outcomes.length);
+        // Two number cubes get the 6-by-6 table teachers use for their
+        // sample space; coins get room for a list or tree.
+        const space2 =
+          space === twoCubes
+            ? table(
+                ['', '1', '2', '3', '4', '5', '6'],
+                [1, 2, 3, 4, 5, 6].map((r) => [cellText(String(r)), ...[1, 2, 3, 4, 5, 6].map(() => cellText(''))]),
+              )
+            : work(3);
         return [
           text(say),
+          space2,
           math('Outcomes in the sample space:', blank(ctx.fields.field(`outcomes: ${say}`, String(outcomes.length)))),
           math('P =', fractionBlank(ctx.fields.field(`probability: ${say}`, p, unique([`${hits}/${outcomes.length}`]).filter((x) => x !== p)))),
         ];
@@ -1315,14 +1333,26 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           return [form, x, p];
         });
         const total = form === 0 ? 90 : 180;
+        const arc = (t: string) => create(Angle_ArcLabelSchema, { text: t });
+        // Each item draws the angles at their true size, labelled as in the
+        // sentence, with room to write the equation and solve it.
         if (form === 2) {
           const q = 5 * rng.int(1, 6);
           const v = p * x + q;
-          return [text(`Two vertical angles measure (${p === 1 ? '' : p}x + ${q})° and ${v}°.`), math('x =', blank(field(ctx, 'x', String(x))))];
+          const expr = `(${p === 1 ? '' : p}x + ${q})°`;
+          return [
+            text(`Two vertical angles measure ${expr} and ${v}°.`),
+            node({ case: 'angle', value: create(AngleSchema, { rotation: 10, rays: [v, 180, 180 + v], arcs: [arc(expr), arc(''), arc(`${v}°`)] }) }),
+            work(2),
+            math('x =', blank(field(ctx, 'x', String(x)))),
+          ];
         }
         const q = total - (p + 1) * x;
+        const expr = `(${p === 1 ? '' : p}x + ${q})°`;
         return [
-          text(`Two ${form === 0 ? 'complementary' : 'supplementary'} angles measure x° and (${p === 1 ? '' : p}x + ${q})°.`),
+          text(`Two ${form === 0 ? 'complementary' : 'supplementary'} angles measure x° and ${expr}.`),
+          node({ case: 'angle', value: create(AngleSchema, { rotation: 0, rays: [x, total], arcs: [arc('x°'), arc(expr)] }) }),
+          work(2),
           math('x =', blank(field(ctx, 'x', String(x)))),
         ];
       }
@@ -1412,7 +1442,16 @@ function solveEquation(form: SolveEquation_Form, inequality: boolean, neg: boole
   const also = inequality ? [`${v} ${ascii[r]} ${num(x)}`] : [`${v} = ${num(x)}`];
   const prompt = inequality ? 'Solution:' : `${v} =`;
   const rows = form === SolveEquation_Form.ONE_STEP ? [] : [work(form === SolveEquation_Form.BOTH_SIDES ? 3 : 2)];
-  return [math(eq), ...rows, math(prompt, blank(field(ctx, `solution of ${eq}`, answer, also)))];
+  const solved = [math(eq), ...rows, math(prompt, blank(field(ctx, `solution of ${eq}`, answer, also)))];
+  if (!inequality || form !== SolveEquation_Form.TWO_STEP) {
+    return solved;
+  }
+  // A two-step inequality is graphed too: a number line of eleven whole
+  // numbers for the child to draw on. Every other tick is labelled, the
+  // boundary among them, so two-digit negatives do not crowd.
+  const start = x - 2 * rng.int(1, 4);
+  const labels = [0, 2, 4, 6, 8, 10].map((i) => create(NumberLine_TickLabelSchema, { tick: i, value: { case: 'text', value: num(start + i) } }));
+  return [...solved, math('Graph it:'), node({ case: 'numberLine', value: create(NumberLineSchema, { start: 0, end: 10, partsPerUnit: 1, hideWholeLabels: true, labels }) })];
 }
 
 // Data sets with integer means, so a child can check by hand.
@@ -1593,8 +1632,15 @@ function signedArithmetic(opsIn: readonly number[], numbers: SignedArithmetic_Nu
       const ds = [2, 3, 4, 6, 8];
       const b = rng.pick(ds);
       const d = rng.pick(ds);
-      const a = nonzero(ctx, -b, b);
-      let c = nonzero(ctx, -d, d);
+      // Proper fractions in lowest terms, so 2/4 or 3/3 never appears.
+      let a = nonzero(ctx, -b + 1, b - 1);
+      while (gcd(Math.abs(a), b) !== 1) {
+        a = nonzero(ctx, -b + 1, b - 1);
+      }
+      let c = nonzero(ctx, -d + 1, d - 1);
+      while (gcd(Math.abs(c), d) !== 1) {
+        c = nonzero(ctx, -d + 1, d - 1);
+      }
       if (a > 0 && c > 0) {
         c = -c;
       }
@@ -1619,8 +1665,14 @@ function signedArithmetic(opsIn: readonly number[], numbers: SignedArithmetic_Nu
     }
     const scale = decimals ? 10 : 1;
     if (op === 3 || op === 4) {
-      const p = nonzero(ctx, -9, 9);
-      const q = (rngSign(ctx) * rng.int(2, decimals ? 39 : 9)) / scale;
+      // No factor of 1 or −1, which gives no practice, and at least one
+      // negative factor, since the signs are the point.
+      const p = rngSign(ctx) * rng.int(2, 9);
+      let qq = rng.int(2, decimals ? 39 : 9);
+      while (decimals && qq % 10 === 0) {
+        qq = rng.int(2, 39);
+      }
+      const q = ((p > 0 ? -1 : rngSign(ctx)) * qq) / scale;
       const r = Math.round(p * q * 100) / 100;
       return op === 3 ? [op, q, p] : [op, r, p];
     }

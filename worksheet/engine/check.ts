@@ -86,6 +86,13 @@ export function shownNumbers(nodes: readonly Node[]): Set<number> {
   const walk = (v: unknown, key: string) => {
     if (typeof v === 'string') {
       numbersIn(v).forEach((n) => out.add(n));
+      // A percent is out of 100, and 15% also shows 0.15.
+      if (/%|percent/.test(v)) {
+        out.add(100);
+      }
+      for (const m of v.matchAll(/(\d+(?:\.\d+)?)%/g)) {
+        out.add(Number(m[1]) / 100);
+      }
     } else if ((typeof v === 'number' || typeof v === 'bigint') && key === 'value') {
       out.add(Number(v));
     } else if (Array.isArray(v)) {
