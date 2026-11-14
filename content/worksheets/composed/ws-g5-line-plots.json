@@ -9,8 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the line plot.",
-     "explainer": "Each X is one amount. To share the total equally, divide it by how many there are.",
+     "instruction": "Use the line plot to answer the questions.",
      "items": [
       {
        "label": "1",
@@ -200,15 +199,23 @@
      "fragmentId": "frag-g5-line-plot-share",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Read a line plot of fractions and use fraction operations to find a total and an equal share.",
+      "purpose": "Read a line plot of fractional measurements and use fraction operations to find a total and an equal share.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The data are in eighths, as the standard specifies. Students read one count, add all the amounts, and then share the total equally. The equal share is the amount each container would hold if the total were redistributed.",
+      "misconceptions": [
+       "Counting the X marks instead of adding the amounts they stand for.",
+       "Dividing by the number of different values instead of the number of X marks."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for K-3 Categorical Data; 2-5 Measurement Data"
       ]
      },
-     "estimatedHeight": 592
+     "estimatedHeight": 566
     }
    ],
-   "estimatedHeight": 596
+   "estimatedHeight": 570
   }
  ],
  "key": [
@@ -292,7 +299,8 @@
   "purpose": "Answer questions from a line plot using fraction operations.",
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
-  ]
+  ],
+  "rationale": "Each plot is read, totalled and then shared equally."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

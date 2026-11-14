@@ -9,8 +9,32 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Work out the part in parentheses first.",
-     "explainer": "Parentheses show what to do first: (2 + 3) × 4 = 5 × 4 = 20.",
+     "instruction": "Solve. Work inside the parentheses first.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "30 − (5 × 2)"
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "value of 30 − (5 × 2)",
+            "answer": {
+             "text": "20"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Find the value inside the **parentheses** first. Then do the operation outside."
+     },
      "items": [
       {
        "label": "1",
@@ -287,19 +311,25 @@
      "fragmentId": "frag-g5-parentheses",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Evaluate expressions with parentheses.",
+      "purpose": "Evaluate expressions that contain parentheses.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each expression has one pair of parentheses and two operations, so the only decision is which operation comes first. The parentheses sit at the front in some items and at the end in others. Students who always work left to right get some items wrong, which shows them the parentheses matter.",
       "misconceptions": [
-       "Working left to right and ignoring the parentheses: 2 × (3 + 4) = 6 + 4."
+       "Working left to right and ignoring the parentheses: 2 × (3 + 4) worked as 2 × 3 + 4 = 10.",
+       "Treating parentheses as a sign to multiply only, and adding first in an expression such as 76 − (4 × 4)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
       ]
      },
-     "estimatedHeight": 320
+     "estimatedHeight": 376
     },
     {
      "label": "B",
-     "instruction": "Work from the inside out: parentheses, then brackets.",
+     "instruction": "Solve. Work inside the parentheses, then inside the brackets.",
      "items": [
       {
        "label": "11",
@@ -323,6 +353,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -351,6 +386,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "3 × [4 + (7 × 9)] = 201"
@@ -377,6 +417,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -405,6 +450,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "8 + [(4 + 2) × 9] = 62"
@@ -431,6 +481,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -459,6 +514,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "3 + [(4 + 3) × 6] = 45"
@@ -468,15 +528,23 @@
      "fragmentId": "frag-g5-brackets",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Evaluate expressions with parentheses inside brackets.",
+      "purpose": "Evaluate expressions with parentheses nested inside brackets.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Brackets add a second level of grouping, so students must work from the inside out. Each item has three operations, and the space under it holds one line per step. Writing each step keeps the order visible and makes errors easy to find.",
+      "misconceptions": [
+       "Working the brackets before the parentheses inside them.",
+       "Dropping a number while rewriting the expression after each step."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 400
     }
    ],
-   "estimatedHeight": 518
+   "estimatedHeight": 784
   }
  ],
  "key": [
@@ -645,7 +713,8 @@
   "purpose": "Evaluate expressions with parentheses and brackets.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "One level of grouping comes first, then nested grouping."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

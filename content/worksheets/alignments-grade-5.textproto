@@ -8,7 +8,9 @@
 alignments { fragment_id: "frag-g5-parentheses" skill { code: "5.OA.A.1" } role: ROLE_TEACHES }
 alignments { fragment_id: "frag-g5-brackets" skill { code: "5.OA.A.1" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-write-expressions" skill { code: "5.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-interpret-expressions" skill { code: "5.OA.A.2" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-two-patterns" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-graph-two-patterns" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-graph-a-pattern" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-graph-a-pattern" skill { code: "5.G.A.2" } role: ROLE_PRACTISES }
 
@@ -29,14 +31,19 @@ alignments { fragment_id: "frag-g5-round-decimals" skill { code: "5.NBT.A.4" } r
 alignments { fragment_id: "frag-g5-multiply-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_TEACHES }
 alignments { fragment_id: "frag-g5-multiply-3-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-multiply-4-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_PRACTISES }
-alignments { fragment_id: "frag-g5-divide-3-digits-by-2" skill { code: "5.NBT.B.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-divide-with-multiples" skill { code: "5.NBT.B.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-divide-3-digits-by-2" skill { code: "5.NBT.B.6" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-divide-4-digits-by-2" skill { code: "5.NBT.B.6" } role: ROLE_PRACTISES }
 
 # Decimal arithmetic.
 alignments { fragment_id: "frag-g5-add-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-add-decimals-in-a-line" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-subtract-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-subtract-decimals-in-a-line" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-multiply-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-multiply-decimals-by-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-divide-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-divide-by-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-decimal-word-problems" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
 
 # Fractions.
@@ -51,11 +58,13 @@ alignments { fragment_id: "frag-g5-fraction-times-whole" skill { code: "5.NF.B.4
 alignments { fragment_id: "frag-g5-fraction-times-fraction-model" skill { code: "5.NF.B.4.a" } role: ROLE_TEACHES }
 alignments { fragment_id: "frag-g5-fraction-times-fraction-model" skill { code: "5.NF.B.4.b" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-fraction-times-fraction" skill { code: "5.NF.B.4.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-fraction-area-tiles" skill { code: "5.NF.B.4.b" } role: ROLE_TEACHES }
 alignments { fragment_id: "frag-g5-fraction-area" skill { code: "5.NF.B.4.b" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-scaling" skill { code: "5.NF.B.5.a" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-scaling" skill { code: "5.NF.B.5.b" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-fraction-multiply-word-problems" skill { code: "5.NF.B.6" } role: ROLE_PRACTISES }
-alignments { fragment_id: "frag-g5-unit-fraction-by-whole" skill { code: "5.NF.B.7.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-unit-fraction-by-whole-model" skill { code: "5.NF.B.7.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-unit-fraction-by-whole" skill { code: "5.NF.B.7.a" } role: ROLE_PRACTISES }
 alignments { fragment_id: "frag-g5-whole-by-unit-fraction" skill { code: "5.NF.B.7.b" } role: ROLE_TEACHES }
 alignments { fragment_id: "frag-g5-unit-fraction-word-problems" skill { code: "5.NF.B.7.c" } role: ROLE_PRACTISES }
 

@@ -10,7 +10,7 @@
     {
      "label": "A",
      "instruction": "Multiply.",
-     "explainer": "Multiply as if there were no decimal points. Then count the digits after the points in both numbers: the answer has that many.",
+     "explainer": "Example: 2.4 × 3 = 7.2, because 24 tenths × 3 = 72 tenths.",
      "items": [
       {
        "label": "1",
@@ -127,7 +127,32 @@
         }
        ],
        "key": "8.2 × 6 = 49.2"
-      },
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a decimal to hundredths by a whole number.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A decimal times a whole number can be read as tenths or hundredths in groups: 2.4 × 3 is 24 tenths × 3. An estimate from the whole-number parts places the decimal point. Grade 5 relies on these place-value strategies before any rule for counting decimal places.",
+      "misconceptions": [
+       "Placing the decimal point by lining it up with the factors, as in addition.",
+       "Ignoring the decimal point and writing 2.4 × 3 = 72."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 368
+    },
+    {
+     "label": "B",
+     "instruction": "Multiply.",
+     "explainer": "Example: 0.3 × 0.4 = 0.12, because 3 tenths of 4 tenths is 12 hundredths.",
+     "items": [
       {
        "label": "5",
        "nodes": [
@@ -135,14 +160,14 @@
          "math": {
           "atoms": [
            {
-            "text": "0.19 × 2 ="
+            "text": "1.7 × 0.4 ="
            },
            {
             "blank": {
              "id": "q5",
-             "label": "0.19 × 2",
+             "label": "1.7 × 0.4",
              "answer": {
-              "text": "0.38"
+              "text": "0.68"
              }
             }
            }
@@ -155,7 +180,7 @@
          }
         }
        ],
-       "key": "0.19 × 2 = 0.38"
+       "key": "1.7 × 0.4 = 0.68"
       },
       {
        "label": "6",
@@ -164,14 +189,14 @@
          "math": {
           "atoms": [
            {
-            "text": "2.7 × 0.5 ="
+            "text": "0.6 × 0.9 ="
            },
            {
             "blank": {
              "id": "q6",
-             "label": "2.7 × 0.5",
+             "label": "0.6 × 0.9",
              "answer": {
-              "text": "1.35"
+              "text": "0.54"
              }
             }
            }
@@ -184,28 +209,8 @@
          }
         }
        ],
-       "key": "2.7 × 0.5 = 1.35"
-      }
-     ],
-     "columns": 2,
-     "fragmentId": "frag-g5-multiply-decimals",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Multiply decimals to hundredths.",
-      "principles": [
-       "PRINCIPLE_SYSTEMATIC_VARIATION"
-      ],
-      "misconceptions": [
-       "Thinking multiplying always makes a number bigger: 0.6 × 0.7 = 4.2."
-      ]
-     },
-     "estimatedHeight": 542
-    },
-    {
-     "label": "B",
-     "instruction": "Divide.",
-     "explainer": "To divide by a decimal, think how many of it fit: 3.6 ÷ 0.4 asks how many 4 tenths make 36 tenths.",
-     "items": [
+       "key": "0.6 × 0.9 = 0.54"
+      },
       {
        "label": "7",
        "nodes": [
@@ -213,12 +218,268 @@
          "math": {
           "atoms": [
            {
-            "text": "1.2 ÷ 0.3 ="
+            "text": "1.2 × 0.8 ="
            },
            {
             "blank": {
              "id": "q7",
-             "label": "1.2 ÷ 0.3",
+             "label": "1.2 × 0.8",
+             "answer": {
+              "text": "0.96"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "1.2 × 0.8 = 0.96"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1 × 0.5 ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "1 × 0.5",
+             "answer": {
+              "text": "0.5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "1 × 0.5 = 0.5"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-decimals-by-decimals",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Multiply two decimals in tenths.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A tenth of a tenth is a hundredth, so the product of two numbers in tenths is in hundredths. Some factors are less than 1, which makes the product smaller than the other factor. That result surprises students who expect multiplying to make numbers larger.",
+      "misconceptions": [
+       "Thinking multiplying always makes a number bigger: 0.6 × 0.7 = 4.2."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 368
+    }
+   ],
+   "estimatedHeight": 744
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Divide.",
+     "explainer": "Example: 7.2 ÷ 3 = 2.4, because 72 tenths ÷ 3 = 24 tenths.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10.5 ÷ 7 ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "10.5 ÷ 7",
+             "answer": {
+              "text": "1.5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "10.5 ÷ 7 = 1.5"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.42 ÷ 3 ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "3.42 ÷ 3",
+             "answer": {
+              "text": "1.14"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "3.42 ÷ 3 = 1.14"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide a decimal to hundredths by a whole number.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Dividing by a whole number shares tenths or hundredths into equal groups, so the quotient is in the same unit. Every item divides exactly. Students can check each answer by multiplying.",
+      "misconceptions": [
+       "Dropping the decimal point in the quotient: 7.2 ÷ 3 = 24."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 214
+    },
+    {
+     "label": "D",
+     "instruction": "Divide.",
+     "explainer": "Example: 3.6 ÷ 0.4 = 9, because 36 tenths ÷ 4 tenths = 9.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1.8 ÷ 0.2 ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "1.8 ÷ 0.2",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "1.8 ÷ 0.2 = 9"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2.1 ÷ 0.3 ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "2.1 ÷ 0.3",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "2.1 ÷ 0.3 = 7"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.6 ÷ 0.3 ="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "3.6 ÷ 0.3",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
+        }
+       ],
+       "key": "3.6 ÷ 0.3 = 12"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.2 ÷ 0.8 ="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "3.2 ÷ 0.8",
              "answer": {
               "text": "4"
              }
@@ -233,131 +494,29 @@
          }
         }
        ],
-       "key": "1.2 ÷ 0.3 = 4"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "3.85 ÷ 7 ="
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "3.85 ÷ 7",
-             "answer": {
-              "text": "0.55"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "workSpace": {
-          "rows": 3
-         }
-        }
-       ],
-       "key": "3.85 ÷ 7 = 0.55"
+       "key": "3.2 ÷ 0.8 = 4"
       }
      ],
      "columns": 2,
-     "fragmentId": "frag-g5-divide-decimals",
-     "stage": "STAGE_PRACTICE",
+     "fragmentId": "frag-g5-divide-by-decimals",
+     "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Divide decimals to hundredths by whole numbers and by decimals.",
+      "purpose": "Divide a decimal by a decimal in tenths.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Dividing by a decimal asks how many of it fit, so 3.6 ÷ 0.4 counts groups of 4 tenths in 36 tenths. Every quotient is a whole number. The quotient is larger than the dividend, which corrects the belief that dividing always makes a number smaller.",
+      "misconceptions": [
+       "Thinking dividing always makes a number smaller: 3.6 ÷ 0.4 = 0.9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 234
+     "estimatedHeight": 368
     }
    ],
-   "estimatedHeight": 784
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Divide.",
-     "items": [
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "73.6 ÷ 8 ="
-           },
-           {
-            "blank": {
-             "id": "q9",
-             "label": "73.6 ÷ 8",
-             "answer": {
-              "text": "9.2"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "workSpace": {
-          "rows": 3
-         }
-        }
-       ],
-       "key": "73.6 ÷ 8 = 9.2"
-      },
-      {
-       "label": "10",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "19.2 ÷ 2 ="
-           },
-           {
-            "blank": {
-             "id": "q10",
-             "label": "19.2 ÷ 2",
-             "answer": {
-              "text": "9.6"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "workSpace": {
-          "rows": 3
-         }
-        }
-       ],
-       "key": "19.2 ÷ 2 = 9.6"
-      }
-     ],
-     "columns": 2,
-     "fragmentId": "frag-g5-divide-decimals",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Divide decimals to hundredths by whole numbers and by decimals.",
-      "principles": [
-       "PRINCIPLE_SYSTEMATIC_VARIATION"
-      ]
-     },
-     "continued": true,
-     "estimatedHeight": 188
-    }
-   ],
-   "estimatedHeight": 192
+   "estimatedHeight": 590
   }
  ],
  "key": [
@@ -405,9 +564,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "0.19 × 2",
+    "label": "1.7 × 0.4",
     "answer": {
-     "text": "0.38"
+     "text": "0.68"
     }
    }
   },
@@ -415,9 +574,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "2.7 × 0.5",
+    "label": "0.6 × 0.9",
     "answer": {
-     "text": "1.35"
+     "text": "0.54"
     }
    }
   },
@@ -425,9 +584,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "1.2 ÷ 0.3",
+    "label": "1.2 × 0.8",
     "answer": {
-     "text": "4"
+     "text": "0.96"
     }
    }
   },
@@ -435,9 +594,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "3.85 ÷ 7",
+    "label": "1 × 0.5",
     "answer": {
-     "text": "0.55"
+     "text": "0.5"
     }
    }
   },
@@ -445,9 +604,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "73.6 ÷ 8",
+    "label": "10.5 ÷ 7",
     "answer": {
-     "text": "9.2"
+     "text": "1.5"
     }
    }
   },
@@ -455,9 +614,49 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "19.2 ÷ 2",
+    "label": "3.42 ÷ 3",
     "answer": {
-     "text": "9.6"
+     "text": "1.14"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "1.8 ÷ 0.2",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "2.1 ÷ 0.3",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "3.6 ÷ 0.3",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "3.2 ÷ 0.8",
+    "answer": {
+     "text": "4"
     }
    }
   }
@@ -466,12 +665,13 @@
   "purpose": "Multiply and divide decimals to hundredths.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Each operation is practised with a whole number first and a decimal second, so the harder case builds on the easier one."
  },
  "advice": [
   "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Divide.\" was cut from 6 to 4 items to fit."
+  "Section \"Divide.\" was cut from 4 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

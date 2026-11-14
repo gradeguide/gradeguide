@@ -11,8 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Find the volume by layers.",
-     "explainer": "Count the cubes in the bottom layer. Every layer is the same, so multiply by the number of layers.",
+     "instruction": "Find the volume. Count the cubes in the bottom layer first.",
      "items": [
       {
        "label": "1",
@@ -26,14 +25,15 @@
             "height": 2
            }
           ],
-          "showCubes": true
+          "showCubes": true,
+          "markBottomLayer": true
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "Cubes in the bottom layer:"
+            "text": "Bottom layer:"
            },
            {
             "blank": {
@@ -43,6 +43,9 @@
               "text": "6"
              }
             }
+           },
+           {
+            "text": "cubes"
            }
           ]
          }
@@ -87,7 +90,7 @@
          }
         }
        ],
-       "key": "Cubes in the bottom layer: 6; Layers: 2; Volume = 12 cubic units"
+       "key": "Bottom layer: 6 cubes; Layers: 2; Volume = 12 cubic units"
       },
       {
        "label": "2",
@@ -101,14 +104,15 @@
             "height": 4
            }
           ],
-          "showCubes": true
+          "showCubes": true,
+          "markBottomLayer": true
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "Cubes in the bottom layer:"
+            "text": "Bottom layer:"
            },
            {
             "blank": {
@@ -118,6 +122,9 @@
               "text": "6"
              }
             }
+           },
+           {
+            "text": "cubes"
            }
           ]
          }
@@ -162,29 +169,31 @@
          }
         }
        ],
-       "key": "Cubes in the bottom layer: 6; Layers: 4; Volume = 24 cubic units"
+       "key": "Bottom layer: 6 cubes; Layers: 4; Volume = 24 cubic units"
       }
      ],
-     "columns": 1,
+     "columns": 2,
      "fragmentId": "frag-g5-volume-layers",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "See that volume is the cubes in one layer times the number of layers.",
+      "purpose": "Find volume as the number of cubes in one layer times the number of layers.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The bottom layer is shaded darker, so students can count one layer. Every layer has the same number of cubes. Multiplying by the number of layers gives the volume, which is the base area times the height.",
+      "misconceptions": [
+       "Counting the bottom layer as only the front row of cubes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
-     "estimatedHeight": 563
-    }
-   ],
-   "estimatedHeight": 567
-  },
-  {
-   "sections": [
+     "estimatedHeight": 311
+    },
     {
      "label": "B",
      "instruction": "Find the volume.",
-     "explainer": "Volume = length × width × height, or the area of the base × height.",
+     "explainer": "V = l × w × h    V = B × h",
      "items": [
       {
        "label": "3",
@@ -355,17 +364,29 @@
      "fragmentId": "frag-g5-volume-formula",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find the volume of a box from its edge lengths.",
+      "purpose": "Find the volume of a rectangular prism from its edge lengths or its base area.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Most prisms give three edge lengths. Some give the area of the base and the height, which uses the second formula. The prisms are drawn in proportion to their edge lengths.",
+      "misconceptions": [
+       "Adding the edge lengths instead of multiplying them.",
+       "Multiplying the base area by another edge of the base instead of the height."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
      "estimatedHeight": 460
-    },
+    }
+   ],
+   "estimatedHeight": 779
+  },
+  {
+   "sections": [
     {
      "label": "C",
-     "instruction": "The shape is made of two boxes. Find its volume.",
-     "explainer": "Find the volume of each box, then add them.",
+     "instruction": "Find the volume of each figure.",
      "items": [
       {
        "label": "7",
@@ -554,124 +575,18 @@
      "fragmentId": "frag-g5-volume-combined",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Find the volume of a shape made of two boxes by adding their volumes.",
+      "purpose": "Find the volume of a figure made of two rectangular prisms by adding their volumes.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each figure is two prisms of the same width standing side by side. The answer lines ask for each prism and then the whole figure. Volume is additive, so the two volumes add to the total.",
+      "misconceptions": [
+       "Multiplying the total length by the taller height, as if the figure were one prism."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
-     "estimatedHeight": 348
-    }
-   ],
-   "estimatedHeight": 816
-  },
-  {
-   "sections": [
-    {
-     "label": "C",
-     "instruction": "The shape is made of two boxes. Find its volume.",
-     "items": [
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "solid": {
-          "boxes": [
-           {
-            "length": 5,
-            "width": 2,
-            "height": 6,
-            "lengthLabel": "5 cm",
-            "heightLabel": "6 cm"
-           },
-           {
-            "x": 5,
-            "length": 3,
-            "width": 2,
-            "height": 3,
-            "lengthLabel": "3 cm",
-            "widthLabel": "2 cm",
-            "heightLabel": "3 cm"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Left box:"
-           },
-           {
-            "blank": {
-             "id": "q9",
-             "label": "5 × 2 × 6",
-             "answer": {
-              "text": "60"
-             }
-            }
-           },
-           {
-            "text": "cubic cm"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Right box:"
-           },
-           {
-            "blank": {
-             "id": "q9-2",
-             "label": "3 × 2 × 3",
-             "answer": {
-              "text": "18"
-             }
-            }
-           },
-           {
-            "text": "cubic cm"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Whole shape:"
-           },
-           {
-            "blank": {
-             "id": "q9-3",
-             "label": "60 + 18",
-             "answer": {
-              "text": "78"
-             }
-            }
-           },
-           {
-            "text": "cubic cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Left box: 60 cubic cm; Right box: 18 cubic cm; Whole shape: 78 cubic cm"
-      }
-     ],
-     "columns": 2,
-     "fragmentId": "frag-g5-volume-combined",
-     "stage": "STAGE_STRETCH",
-     "design": {
-      "purpose": "Find the volume of a shape made of two boxes by adding their volumes.",
-      "principles": [
-       "PRINCIPLE_SYSTEMATIC_VARIATION"
-      ]
-     },
-     "continued": true,
      "estimatedHeight": 322
     },
     {
@@ -679,7 +594,7 @@
      "instruction": "Solve. Show your work.",
      "items": [
       {
-       "label": "10",
+       "label": "9",
        "nodes": [
         {
          "text": "A fish tank is 20 inches long, 10 inches wide and 12 inches tall. What is its volume?"
@@ -688,7 +603,7 @@
          "workSpace": {
           "rows": 4,
           "field": {
-           "id": "q10",
+           "id": "q9",
            "label": "volume of the tank",
            "answer": {
             "text": "2,400",
@@ -705,7 +620,7 @@
        "key": "2,400"
       },
       {
-       "label": "11",
+       "label": "10",
        "nodes": [
         {
          "text": "A box has a volume of 60 cubic cm. Its base is 4 cm long and 3 cm wide. How tall is the box?"
@@ -714,7 +629,7 @@
          "workSpace": {
           "rows": 4,
           "field": {
-           "id": "q11",
+           "id": "q10",
            "label": "height of the box",
            "answer": {
             "text": "5",
@@ -734,9 +649,16 @@
      "fragmentId": "frag-g5-volume-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Use the volume formula in real situations, including finding a missing edge.",
+      "purpose": "Use the volume formula in real situations, including finding a missing edge length.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The first problem uses the formula directly. The second gives the volume and the base, so students divide to find the height. Working backward shows that the formula relates three quantities.",
+      "misconceptions": [
+       "Multiplying all the numbers in the story, including the volume, to find a missing edge."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
      "estimatedHeight": 390
@@ -910,36 +832,6 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "5 × 2 × 6",
-    "answer": {
-     "text": "60"
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9-2",
-    "label": "3 × 2 × 3",
-    "answer": {
-     "text": "18"
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9-3",
-    "label": "60 + 18",
-    "answer": {
-     "text": "78"
-    }
-   }
-  },
-  {
-   "itemLabel": "10",
-   "field": {
-    "id": "q10",
     "label": "volume of the tank",
     "answer": {
      "text": "2,400",
@@ -952,9 +844,9 @@
    }
   },
   {
-   "itemLabel": "11",
+   "itemLabel": "10",
    "field": {
-    "id": "q11",
+    "id": "q10",
     "label": "height of the box",
     "answer": {
      "text": "5",
@@ -967,15 +859,14 @@
   }
  ],
  "design": {
-  "purpose": "Use the volume formulas, and add volumes of joined boxes.",
+  "purpose": "Use the volume formulas, and add the volumes of joined prisms.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ],
-  "rationale": "Layers of cubes come first so the formula is a count the child has already made."
+  "rationale": "Layers of cubes come first, so the formula is a count students have already made."
  },
  "advice": [
-  "\"Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Find the volume.\" was cut from 6 to 4 items to fit."
+  "\"Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

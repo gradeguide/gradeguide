@@ -192,8 +192,32 @@
     },
     {
      "label": "B",
-     "instruction": "Write <, > or = in each circle.",
-     "explainer": "Line up the decimal points. Compare tenths first, then hundredths, then thousandths. 0.4 is the same as 0.400.",
+     "instruction": "Compare. Write <, >, or =.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "0.286"
+          },
+          {
+           "compare": {
+            "label": "<, > or = between 0.286 and 0.538",
+            "answer": {
+             "text": "<"
+            }
+           }
+          },
+          {
+           "text": "0.538"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Line up the decimal points. Compare the digits **place by place**, from the left."
+     },
      "items": [
       {
        "label": "7",
@@ -202,25 +226,25 @@
          "math": {
           "atoms": [
            {
-            "text": "3.138"
+            "text": "3.312"
            },
            {
             "compare": {
              "id": "q7",
-             "label": "<, > or = between 3.138 and 3.2",
+             "label": "<, > or = between 3.312 and 3.4",
              "answer": {
               "text": "<"
              }
             }
            },
            {
-            "text": "3.2"
+            "text": "3.4"
            }
           ]
          }
         }
        ],
-       "key": "3.138 < 3.2"
+       "key": "3.312 < 3.4"
       },
       {
        "label": "8",
@@ -229,25 +253,25 @@
          "math": {
           "atoms": [
            {
-            "text": "4.160"
+            "text": "0.23"
            },
            {
             "compare": {
              "id": "q8",
-             "label": "<, > or = between 4.160 and 4.16",
+             "label": "<, > or = between 0.23 and 0.711",
              "answer": {
-              "text": "="
+              "text": "<"
              }
             }
            },
            {
-            "text": "4.16"
+            "text": "0.711"
            }
           ]
          }
         }
        ],
-       "key": "4.160 = 4.16"
+       "key": "0.23 < 0.711"
       },
       {
        "label": "9",
@@ -256,25 +280,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.430"
+            "text": "0.230"
            },
            {
             "compare": {
              "id": "q9",
-             "label": "<, > or = between 0.430 and 0.43",
+             "label": "<, > or = between 0.230 and 0.23",
              "answer": {
               "text": "="
              }
             }
            },
            {
-            "text": "0.43"
+            "text": "0.23"
            }
           ]
          }
         }
        ],
-       "key": "0.430 = 0.43"
+       "key": "0.230 = 0.23"
       },
       {
        "label": "10",
@@ -283,25 +307,25 @@
          "math": {
           "atoms": [
            {
-            "text": "2.349"
+            "text": "0.64"
            },
            {
             "compare": {
              "id": "q10",
-             "label": "<, > or = between 2.349 and 2.295",
+             "label": "<, > or = between 0.64 and 0.911",
              "answer": {
-              "text": ">"
+              "text": "<"
              }
             }
            },
            {
-            "text": "2.295"
+            "text": "0.911"
            }
           ]
          }
         }
        ],
-       "key": "2.349 > 2.295"
+       "key": "0.64 < 0.911"
       },
       {
        "label": "11",
@@ -310,25 +334,25 @@
          "math": {
           "atoms": [
            {
-            "text": "1.888"
+            "text": "0.2"
            },
            {
             "compare": {
              "id": "q11",
-             "label": "<, > or = between 1.888 and 1.52",
+             "label": "<, > or = between 0.2 and 0.172",
              "answer": {
               "text": ">"
              }
             }
            },
            {
-            "text": "1.52"
+            "text": "0.172"
            }
           ]
          }
         }
        ],
-       "key": "1.888 > 1.52"
+       "key": "0.2 > 0.172"
       },
       {
        "label": "12",
@@ -337,25 +361,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.188"
+            "text": "0.96"
            },
            {
             "compare": {
              "id": "q12",
-             "label": "<, > or = between 0.188 and 0.064",
+             "label": "<, > or = between 0.96 and 0.072",
              "answer": {
               "text": ">"
              }
             }
            },
            {
-            "text": "0.064"
+            "text": "0.072"
            }
           ]
          }
         }
        ],
-       "key": "0.188 > 0.064"
+       "key": "0.96 > 0.072"
       },
       {
        "label": "13",
@@ -364,25 +388,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.488"
+            "text": "0.257"
            },
            {
             "compare": {
              "id": "q13",
-             "label": "<, > or = between 0.488 and 0.5",
+             "label": "<, > or = between 0.257 and 0.3",
              "answer": {
               "text": "<"
              }
             }
            },
            {
-            "text": "0.5"
+            "text": "0.3"
            }
           ]
          }
         }
        ],
-       "key": "0.488 < 0.5"
+       "key": "0.257 < 0.3"
       },
       {
        "label": "14",
@@ -391,25 +415,25 @@
          "math": {
           "atoms": [
            {
-            "text": "9.050"
+            "text": "0.425"
            },
            {
             "compare": {
              "id": "q14",
-             "label": "<, > or = between 9.050 and 9.67",
+             "label": "<, > or = between 0.425 and 0.348",
              "answer": {
-              "text": "<"
+              "text": ">"
              }
             }
            },
            {
-            "text": "9.67"
+            "text": "0.348"
            }
           ]
          }
         }
        ],
-       "key": "9.050 < 9.67"
+       "key": "0.425 > 0.348"
       },
       {
        "label": "15",
@@ -418,25 +442,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.5"
+            "text": "9.950"
            },
            {
             "compare": {
              "id": "q15",
-             "label": "<, > or = between 0.5 and 0.474",
+             "label": "<, > or = between 9.950 and 9.95",
              "answer": {
-              "text": ">"
+              "text": "="
              }
             }
            },
            {
-            "text": "0.474"
+            "text": "9.95"
            }
           ]
          }
         }
        ],
-       "key": "0.5 > 0.474"
+       "key": "9.950 = 9.95"
       },
       {
        "label": "16",
@@ -445,25 +469,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.5"
+            "text": "0.88"
            },
            {
             "compare": {
              "id": "q16",
-             "label": "<, > or = between 0.5 and 0.414",
+             "label": "<, > or = between 0.88 and 0.829",
              "answer": {
               "text": ">"
              }
             }
            },
            {
-            "text": "0.414"
+            "text": "0.829"
            }
           ]
          }
         }
        ],
-       "key": "0.5 > 0.414"
+       "key": "0.88 > 0.829"
       },
       {
        "label": "17",
@@ -472,25 +496,25 @@
          "math": {
           "atoms": [
            {
-            "text": "3.870"
+            "text": "5.859"
            },
            {
             "compare": {
              "id": "q17",
-             "label": "<, > or = between 3.870 and 3.87",
+             "label": "<, > or = between 5.859 and 5.9",
              "answer": {
-              "text": "="
+              "text": "<"
              }
             }
            },
            {
-            "text": "3.87"
+            "text": "5.9"
            }
           ]
          }
         }
        ],
-       "key": "3.870 = 3.87"
+       "key": "5.859 < 5.9"
       },
       {
        "label": "18",
@@ -499,106 +523,25 @@
          "math": {
           "atoms": [
            {
-            "text": "0.840"
+            "text": "0.042"
            },
            {
             "compare": {
              "id": "q18",
-             "label": "<, > or = between 0.840 and 0.84",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "0.84"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "0.840 = 0.84"
-      },
-      {
-       "label": "19",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "0.32"
-           },
-           {
-            "compare": {
-             "id": "q19",
-             "label": "<, > or = between 0.32 and 0.320",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "0.320"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "0.32 = 0.320"
-      },
-      {
-       "label": "20",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "0.67"
-           },
-           {
-            "compare": {
-             "id": "q20",
-             "label": "<, > or = between 0.67 and 0.670",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "0.670"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "0.67 = 0.670"
-      },
-      {
-       "label": "21",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "1.179"
-           },
-           {
-            "compare": {
-             "id": "q21",
-             "label": "<, > or = between 1.179 and 1.61",
+             "label": "<, > or = between 0.042 and 0.63",
              "answer": {
               "text": "<"
              }
             }
            },
            {
-            "text": "1.61"
+            "text": "0.63"
            }
           ]
          }
         }
        ],
-       "key": "1.179 < 1.61"
+       "key": "0.042 < 0.63"
       }
      ],
      "columns": 3,
@@ -607,16 +550,22 @@
      "design": {
       "purpose": "Compare two decimals to thousandths.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "One pair in three has the shorter decimal larger, such as 0.4 and 0.389. These pairs catch students who think more digits means a larger number. A few pairs are equal with zeros added, such as 0.4 and 0.400, and the rest differ in one place.",
       "misconceptions": [
-       "Thinking the decimal with more digits is larger: 0.389 > 0.4."
+       "Thinking the decimal with more digits is larger: 0.389 > 0.4.",
+       "Thinking the decimal with fewer digits is larger because tenths are bigger than thousandths."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 340
+     "estimatedHeight": 324
     }
    ],
-   "estimatedHeight": 512
+   "estimatedHeight": 496
   }
  ],
  "key": [
@@ -684,7 +633,7 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "<, > or = between 3.138 and 3.2",
+    "label": "<, > or = between 3.312 and 3.4",
     "answer": {
      "text": "<"
     }
@@ -694,9 +643,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "<, > or = between 4.160 and 4.16",
+    "label": "<, > or = between 0.23 and 0.711",
     "answer": {
-     "text": "="
+     "text": "<"
     }
    }
   },
@@ -704,7 +653,7 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "<, > or = between 0.430 and 0.43",
+    "label": "<, > or = between 0.230 and 0.23",
     "answer": {
      "text": "="
     }
@@ -714,9 +663,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "<, > or = between 2.349 and 2.295",
+    "label": "<, > or = between 0.64 and 0.911",
     "answer": {
-     "text": ">"
+     "text": "<"
     }
    }
   },
@@ -724,7 +673,7 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "<, > or = between 1.888 and 1.52",
+    "label": "<, > or = between 0.2 and 0.172",
     "answer": {
      "text": ">"
     }
@@ -734,7 +683,7 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "<, > or = between 0.188 and 0.064",
+    "label": "<, > or = between 0.96 and 0.072",
     "answer": {
      "text": ">"
     }
@@ -744,7 +693,7 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "<, > or = between 0.488 and 0.5",
+    "label": "<, > or = between 0.257 and 0.3",
     "answer": {
      "text": "<"
     }
@@ -754,9 +703,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "<, > or = between 9.050 and 9.67",
+    "label": "<, > or = between 0.425 and 0.348",
     "answer": {
-     "text": "<"
+     "text": ">"
     }
    }
   },
@@ -764,9 +713,9 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
-    "label": "<, > or = between 0.5 and 0.474",
+    "label": "<, > or = between 9.950 and 9.95",
     "answer": {
-     "text": ">"
+     "text": "="
     }
    }
   },
@@ -774,7 +723,7 @@
    "itemLabel": "16",
    "field": {
     "id": "q16",
-    "label": "<, > or = between 0.5 and 0.414",
+    "label": "<, > or = between 0.88 and 0.829",
     "answer": {
      "text": ">"
     }
@@ -784,9 +733,9 @@
    "itemLabel": "17",
    "field": {
     "id": "q17",
-    "label": "<, > or = between 3.870 and 3.87",
+    "label": "<, > or = between 5.859 and 5.9",
     "answer": {
-     "text": "="
+     "text": "<"
     }
    }
   },
@@ -794,37 +743,7 @@
    "itemLabel": "18",
    "field": {
     "id": "q18",
-    "label": "<, > or = between 0.840 and 0.84",
-    "answer": {
-     "text": "="
-    }
-   }
-  },
-  {
-   "itemLabel": "19",
-   "field": {
-    "id": "q19",
-    "label": "<, > or = between 0.32 and 0.320",
-    "answer": {
-     "text": "="
-    }
-   }
-  },
-  {
-   "itemLabel": "20",
-   "field": {
-    "id": "q20",
-    "label": "<, > or = between 0.67 and 0.670",
-    "answer": {
-     "text": "="
-    }
-   }
-  },
-  {
-   "itemLabel": "21",
-   "field": {
-    "id": "q21",
-    "label": "<, > or = between 1.179 and 1.61",
+    "label": "<, > or = between 0.042 and 0.63",
     "answer": {
      "text": "<"
     }
@@ -835,10 +754,8 @@
   "purpose": "Compare decimals to thousandths.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Comparing to hundredths, from grade 4, comes first. The thousandths section then adds one more place."
  },
- "advice": [
-  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

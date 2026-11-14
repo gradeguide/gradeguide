@@ -10,7 +10,68 @@
     {
      "label": "A",
      "instruction": "Convert.",
-     "explainer": "1 m = 100 cm, 1 km = 1,000 m, 1 cm = 10 mm, 1 kg = 1,000 g, 1 L = 1,000 mL. 1 ft = 12 in, 1 yd = 3 ft, 1 gal = 4 qt, 1 lb = 16 oz, 1 hr = 60 min.",
+     "figure": [
+      {
+       "dataTable": {
+        "header": [
+         "Metric",
+         "Customary"
+        ],
+        "rows": [
+         {
+          "cells": [
+           {
+            "text": "1 km = 1,000 m"
+           },
+           {
+            "text": "1 yd = 3 ft"
+           }
+          ]
+         },
+         {
+          "cells": [
+           {
+            "text": "1 m = 100 cm"
+           },
+           {
+            "text": "1 ft = 12 in."
+           }
+          ]
+         },
+         {
+          "cells": [
+           {
+            "text": "1 cm = 10 mm"
+           },
+           {
+            "text": "1 gal = 4 qt"
+           }
+          ]
+         },
+         {
+          "cells": [
+           {
+            "text": "1 kg = 1,000 g"
+           },
+           {
+            "text": "1 lb = 16 oz"
+           }
+          ]
+         },
+         {
+          "cells": [
+           {
+            "text": "1 L = 1,000 mL"
+           },
+           {
+            "text": "1 hr = 60 min"
+           }
+          ]
+         }
+        ]
+       }
+      }
+     ],
      "items": [
       {
        "label": "1",
@@ -371,15 +432,20 @@
      "fragmentId": "frag-g5-convert-measure",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Convert between larger and smaller units of one system, including decimals.",
+      "purpose": "Convert between larger and smaller units of one measurement system, including decimals.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Items mix metric and customary units and both directions, so students decide each time whether to multiply or divide. Metric conversions use decimals, which applies multiplying and dividing by powers of 10. Customary conversions to larger units give a whole number and a remainder in the smaller unit.",
       "misconceptions": [
-       "Dividing when going to a smaller unit: 3 m = 0.03 cm."
+       "Dividing when converting to a smaller unit: 3 m = 0.03 cm.",
+       "Using 100 for every conversion, as if every system were metric."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
-     "estimatedHeight": 392
+     "estimatedHeight": 554
     },
     {
      "label": "B",
@@ -409,7 +475,36 @@
         }
        ],
        "key": "8"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-measurement-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multi-step problems that need a unit conversion.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each problem states the conversion it needs, so the challenge is when to convert, not recalling the fact. The problems cover capacity, length, mass and time. One problem has two parts, and the second part converts the first answer.",
+      "misconceptions": [
+       "Comparing or adding amounts in different units without converting first.",
+       "Treating 2 hours 15 minutes as 2.15 hours."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+      ]
+     },
+     "estimatedHeight": 222
+    }
+   ],
+   "estimatedHeight": 784
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
       {
        "label": "14",
        "nodes": [
@@ -434,31 +529,7 @@
         }
        ],
        "key": "2"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g5-measurement-word-problems",
-     "stage": "STAGE_APPLY",
-     "design": {
-      "purpose": "Solve problems with more than one step that need a unit conversion.",
-      "principles": [
-       "PRINCIPLE_INTERLEAVING"
-      ],
-      "misconceptions": [
-       "Comparing or adding amounts in different units without converting first."
-      ]
-     },
-     "estimatedHeight": 410
-    }
-   ],
-   "estimatedHeight": 810
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Solve. Show your work.",
-     "items": [
+      },
       {
        "label": "15",
        "nodes": [
@@ -559,19 +630,24 @@
      "fragmentId": "frag-g5-measurement-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Solve problems with more than one step that need a unit conversion.",
+      "purpose": "Solve multi-step problems that need a unit conversion.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Each problem states the conversion it needs, so the challenge is when to convert, not recalling the fact. The problems cover capacity, length, mass and time. One problem has two parts, and the second part converts the first answer.",
       "misconceptions": [
-       "Comparing or adding amounts in different units without converting first."
+       "Comparing or adding amounts in different units without converting first.",
+       "Treating 2 hours 15 minutes as 2.15 hours."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
       ]
      },
      "continued": true,
-     "estimatedHeight": 556
+     "estimatedHeight": 744
     }
    ],
-   "estimatedHeight": 560
+   "estimatedHeight": 748
   }
  ],
  "key": [
@@ -794,10 +870,11 @@
   }
  ],
  "design": {
-  "purpose": "Convert units, and use conversions in problems with more than one step.",
+  "purpose": "Convert units and use conversions in multi-step problems.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
-  ]
+  ],
+  "rationale": "Single conversions come first. The word problems then use a conversion as one step of several."
  },
  "advice": [
   "\"Convert.\" is practice, and nothing on the sheet introduces it with a worked example."

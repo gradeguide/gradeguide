@@ -544,6 +544,38 @@ describe('grade 5 item kinds', () => {
     }
   });
 
+  it('lists multiples of the divisor and leaves a full row for each step', () => {
+    for (const [r] of items({ case: 'divideByTwoDigits', value: { dividendDigits: 3, multiples: true } })) {
+      const [division, list] = (r.kind.value as { children: Node[] }).children;
+      const l = division.kind.value as { divisor: number; quotient: Field; workRows: number };
+      expect(l.workRows * 0.75).toBeGreaterThanOrEqual(2 * l.quotient.answer!.text.length + 1);
+      const rows = (list.kind.value as { children: Node[] }).children;
+      expect(rows.slice(1).map((n) => Number(ans(n)))).toEqual([2, 5, 10].map((m) => m * l.divisor));
+    }
+  });
+
+  it('adds and subtracts decimals written in a line, with different places', () => {
+    for (const op of [1, 2]) {
+      for (const [n] of items({ case: 'decimalArithmetic', value: { op, inALine: true } })) {
+        const [label] = String(atomsOf(n)[0].kind.value).split(' = ');
+        const [x, y] = label.split(op === 1 ? ' + ' : ' − ');
+        expect((x.split('.')[1] ?? '').length).not.toBe((y.split('.')[1] ?? '').length);
+        expect(Number(ans(n))).toBeCloseTo(op === 1 ? Number(x) + Number(y) : Number(x) - Number(y), 9);
+      }
+    }
+  });
+
+  it('tiles a fraction rectangle in a unit square', () => {
+    for (const [r] of items({ case: 'fractionMultiply', value: { mode: 3, tiles: true } })) {
+      const [grid, list] = (r.kind.value as { children: Node[] }).children;
+      const g = grid.kind.value as { cols: number; rows: number; shadedCols: number; shadedRows: number };
+      const [tile, count, area] = (list.kind.value as { children: Node[] }).children.map((n) => ans(n));
+      expect(tile).toBe(`1/${g.cols * g.rows}`);
+      expect(Number(count)).toBe(g.shadedCols * g.shadedRows);
+      expect(parseAnswer(area)).toBeCloseTo((g.shadedCols / g.cols) * (g.shadedRows / g.rows), 9);
+    }
+  });
+
   it('adds, subtracts, multiplies and divides decimals', () => {
     for (const op of [1, 2]) {
       for (const [n] of items({ case: 'decimalArithmetic', value: { op } })) {

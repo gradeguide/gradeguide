@@ -525,6 +525,9 @@ message Solid {
   repeated Box boxes = 1;
   // Draw the unit cubes on every face.
   bool show_cubes = 2;
+  // With show_cubes: shade the bottom layer of cubes darker, so the child
+  // can see one layer to count.
+  bool mark_bottom_layer = 3;
 
   message Box {
     // Where the box starts, in units from the left of the first box.
@@ -591,7 +594,7 @@ message DecimalChart {
   }
 }
 
-// FractionGrid is a rectangle cut into columns and rows. The first
+// FractionGrid is a square, one whole, cut into columns and rows. The first
 // shaded_cols columns and the first shaded_rows rows are shaded; where they
 // overlap is shaded darker. It shows a/b as a count of (b × d)ths, and the
 // product of two fractions as the overlap.
@@ -600,4 +603,23 @@ message FractionGrid {
   int32 rows = 2;
   int32 shaded_cols = 3;
   int32 shaded_rows = 4;
+  Shade shade = 5;
+  // Printed under the shaded columns, such as "3/4 m". Empty: none.
+  string cols_label = 6;
+  // Printed beside the shaded rows, such as "2/3 m". Empty: none.
+  string rows_label = 7;
+  // Printed along the top and right side of the whole, such as "1 m".
+  // Empty: none.
+  string whole_label = 8;
+
+  enum Shade {
+    // The shaded columns and rows light, their overlap dark.
+    SHADE_UNSPECIFIED = 0;
+    // Only the overlap, dark: a rectangle tiled inside the whole.
+    SHADE_OVERLAP = 1;
+    // The shaded columns light and the overlap dark; the shaded rows
+    // outside the columns stay white. It shows one part of a/b cut into
+    // equal shares.
+    SHADE_COLUMNS = 2;
+  }
 }

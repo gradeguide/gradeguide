@@ -1,6 +1,6 @@
 {
  "worksheetId": "ws-g5-fraction-word-problems",
- "title": "Fraction word problems: adding and subtracting",
+ "title": "Fraction stories: add and subtract",
  "headerLabels": [
   "5.NF.A.1",
   "5.NF.A.2"
@@ -11,7 +11,7 @@
     {
      "label": "A",
      "instruction": "Add. Write the answer in simplest form.",
-     "explainer": "Make the denominators the same first. For 1/3 + 1/4, use twelfths: 4/12 + 3/12 = 7/12.",
+     "explainer": "Example: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
      "items": [
       {
        "label": "1",
@@ -50,6 +50,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -93,6 +98,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "1/10 + 4/5 = 9/10"
@@ -102,15 +112,20 @@
      "fragmentId": "frag-g5-add-unlike-fractions",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Add fractions with different denominators by rewriting them with a common denominator.",
+      "purpose": "Add fractions with different denominators.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Some pairs of denominators share a factor, such as 4 and 6, and some do not, such as 3 and 4. When they share a factor, the product of the denominators works but is not the least. Some sums are more than 1 or can be simplified, so students check the answer's form.",
       "misconceptions": [
-       "Adding tops and bottoms: 1/3 + 1/4 = 2/7."
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Changing the denominator without changing the numerator: 1/3 written as 1/12."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 132
+     "estimatedHeight": 202
     },
     {
      "label": "B",
@@ -201,14 +216,19 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks.",
       "misconceptions": [
-       "Adding tops and bottoms: 2/3 + 1/4 = 3/7, which is less than 2/3."
+       "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3.",
+       "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 514
     }
    ],
-   "estimatedHeight": 654
+   "estimatedHeight": 724
   },
   {
    "sections": [
@@ -251,8 +271,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks.",
       "misconceptions": [
-       "Adding tops and bottoms: 2/3 + 1/4 = 3/7, which is less than 2/3."
+       "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3.",
+       "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
      "continued": true,
@@ -352,7 +377,8 @@
   "purpose": "Solve word problems that add and subtract fractions with different denominators.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Two calculations recall the procedure before the problems ask students to choose the operation."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

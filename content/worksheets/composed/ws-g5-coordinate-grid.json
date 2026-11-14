@@ -9,8 +9,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write where each point is.",
-     "explainer": "(3, 5) means 3 across from 0, then 5 up. Across comes first.",
+     "instruction": "Write the ordered pair for each point.",
+     "explainer": "(3, 5): start at 0, move 3 along the x-axis, then 5 up.",
      "items": [
       {
        "label": "1",
@@ -42,7 +42,7 @@
          "math": {
           "atoms": [
            {
-            "text": "A is at"
+            "text": "A"
            },
            {
             "blank": {
@@ -64,7 +64,7 @@
          "math": {
           "atoms": [
            {
-            "text": "B is at"
+            "text": "B"
            },
            {
             "blank": {
@@ -86,7 +86,7 @@
          "math": {
           "atoms": [
            {
-            "text": "C is at"
+            "text": "C"
            },
            {
             "blank": {
@@ -105,7 +105,7 @@
          }
         }
        ],
-       "key": "A is at (8, 5); B is at (4, 9); C is at (1, 9)"
+       "key": "A (8, 5); B (4, 9); C (1, 9)"
       },
       {
        "label": "2",
@@ -135,7 +135,7 @@
          "math": {
           "atoms": [
            {
-            "text": "A is at"
+            "text": "A"
            },
            {
             "blank": {
@@ -157,7 +157,7 @@
          "math": {
           "atoms": [
            {
-            "text": "B is at"
+            "text": "B"
            },
            {
             "blank": {
@@ -179,7 +179,7 @@
          "math": {
           "atoms": [
            {
-            "text": "C is at"
+            "text": "C"
            },
            {
             "blank": {
@@ -198,26 +198,36 @@
          }
         }
        ],
-       "key": "A is at (6, 3); B is at (5, 0); C is at (0, 6)"
+       "key": "A (6, 3); B (5, 0); C (0, 6)"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-g5-read-points",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Read the coordinates of points on a grid.",
+      "purpose": "Read the coordinates of points on a coordinate grid.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
+      "rationale": "The axes are labelled x and y, as the standard names them. Some points lie on an axis, so one coordinate is 0. No grid shows both (a, b) and (b, a), so a swapped pair is always wrong.",
       "misconceptions": [
-       "Swapping the numbers: writing (5, 3) for 3 across and 5 up."
+       "Swapping the coordinates: writing (5, 3) for 3 along and 5 up.",
+       "Counting gridlines from 1 instead of from 0."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 462
-    },
+     "estimatedHeight": 476
+    }
+   ],
+   "estimatedHeight": 480
+  },
+  {
+   "sections": [
     {
      "label": "B",
-     "instruction": "Plot the points.",
+     "instruction": "Plot and label each point.",
      "items": [
       {
        "label": "3",
@@ -268,15 +278,22 @@
      "fragmentId": "frag-g5-plot-points",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Plot points on a grid from their coordinates.",
+      "purpose": "Plot points on a coordinate grid from their coordinates.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Plotting reverses reading: students start from the ordered pair and find the point. Some points lie on an axis. Each point is labelled so it can be checked against the answer key.",
+      "misconceptions": [
+       "Plotting (0, 4) on the x-axis."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 350
+     "estimatedHeight": 404
     }
    ],
-   "estimatedHeight": 820
+   "estimatedHeight": 408
   }
  ],
  "key": [
@@ -389,7 +406,8 @@
   "purpose": "Read and plot points on a coordinate grid.",
   "principles": [
    "PRINCIPLE_NUMBER_LINE"
-  ]
+  ],
+  "rationale": "Reading points comes before plotting them, because reading shows the order of the coordinates."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

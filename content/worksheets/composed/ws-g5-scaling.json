@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write <, > or = without multiplying.",
-     "explainer": "Multiplying by a fraction less than 1 makes a number smaller. Multiplying by a fraction more than 1 makes it bigger.",
+     "instruction": "Compare. Write <, >, or =. Do not multiply.",
+     "explainer": "A number times a fraction less than 1 is less than the number.",
      "items": [
       {
        "label": "1",
@@ -21,7 +21,7 @@
           "atoms": [
            {
             "fraction": {
-             "num": 5,
+             "num": 2,
              "den": 3
             }
            },
@@ -29,247 +29,28 @@
             "text": "×"
            },
            {
-            "text": "22"
+            "text": "17"
            },
            {
             "compare": {
              "id": "q1",
-             "label": "<, > or = between 5/3 × 22 and 22",
+             "label": "<, > or = between 2/3 × 17 and 17",
              "answer": {
-              "text": ">"
+              "text": "<"
              }
             }
            },
            {
-            "text": "22"
+            "text": "17"
            }
           ]
          }
         }
        ],
-       "key": "5/3 × 22 > 22"
+       "key": "2/3 × 17 < 17"
       },
       {
        "label": "2",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "4"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "compare": {
-             "id": "q2",
-             "label": "<, > or = between 4 × 1/2 and 1/2",
-             "answer": {
-              "text": ">"
-             }
-            }
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "4 × 1/2 > 1/2"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 10,
-             "den": 7
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "31"
-           },
-           {
-            "compare": {
-             "id": "q3",
-             "label": "<, > or = between 10/7 × 31 and 31",
-             "answer": {
-              "text": ">"
-             }
-            }
-           },
-           {
-            "text": "31"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "10/7 × 31 > 31"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 13,
-             "den": 6
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "13"
-           },
-           {
-            "compare": {
-             "id": "q4",
-             "label": "<, > or = between 13/6 × 13 and 13",
-             "answer": {
-              "text": ">"
-             }
-            }
-           },
-           {
-            "text": "13"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "13/6 × 13 > 13"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 2,
-             "den": 2
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "15"
-           },
-           {
-            "compare": {
-             "id": "q5",
-             "label": "<, > or = between 2/2 × 15 and 15",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "15"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "2/2 × 15 = 15"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 5,
-             "den": 5
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "33"
-           },
-           {
-            "compare": {
-             "id": "q6",
-             "label": "<, > or = between 5/5 × 33 and 33",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "33"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "5/5 × 33 = 33"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 6,
-             "den": 6
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "36"
-           },
-           {
-            "compare": {
-             "id": "q7",
-             "label": "<, > or = between 6/6 × 36 and 36",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "36"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "6/6 × 36 = 36"
-      },
-      {
-       "label": "8",
        "nodes": [
         {
          "math": {
@@ -284,28 +65,64 @@
             "text": "×"
            },
            {
-            "text": "30"
+            "text": "14"
            },
            {
             "compare": {
-             "id": "q8",
-             "label": "<, > or = between 8/7 × 30 and 30",
+             "id": "q2",
+             "label": "<, > or = between 8/7 × 14 and 14",
              "answer": {
               "text": ">"
              }
             }
            },
            {
-            "text": "30"
+            "text": "14"
            }
           ]
          }
         }
        ],
-       "key": "8/7 × 30 > 30"
+       "key": "8/7 × 14 > 14"
       },
       {
-       "label": "9",
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "35"
+           },
+           {
+            "compare": {
+             "id": "q3",
+             "label": "<, > or = between 1/2 × 35 and 35",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "35"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 × 35 < 35"
+      },
+      {
+       "label": "4",
        "nodes": [
         {
          "math": {
@@ -324,7 +141,7 @@
            },
            {
             "compare": {
-             "id": "q9",
+             "id": "q4",
              "label": "<, > or = between 7/4 × 29 and 29",
              "answer": {
               "text": ">"
@@ -341,89 +158,14 @@
        "key": "7/4 × 29 > 29"
       },
       {
-       "label": "10",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "16"
-           },
-           {
-            "text": "×"
-           },
-           {
-            "fraction": {
-             "num": 4,
-             "den": 5
-            }
-           },
-           {
-            "compare": {
-             "id": "q10",
-             "label": "<, > or = between 16 × 4/5 and 4/5",
-             "answer": {
-              "text": ">"
-             }
-            }
-           },
-           {
-            "fraction": {
-             "num": 4,
-             "den": 5
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "16 × 4/5 > 4/5"
-      },
-      {
-       "label": "11",
+       "label": "5",
        "nodes": [
         {
          "math": {
           "atoms": [
            {
             "fraction": {
-             "num": 6,
-             "den": 6
-            }
-           },
-           {
-            "text": "×"
-           },
-           {
-            "text": "23"
-           },
-           {
-            "compare": {
-             "id": "q11",
-             "label": "<, > or = between 6/6 × 23 and 23",
-             "answer": {
-              "text": "="
-             }
-            }
-           },
-           {
-            "text": "23"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "6/6 × 23 = 23"
-      },
-      {
-       "label": "12",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 4,
+             "num": 8,
              "den": 8
             }
            },
@@ -435,10 +177,10 @@
            },
            {
             "compare": {
-             "id": "q12",
-             "label": "<, > or = between 4/8 × 13 and 13",
+             "id": "q5",
+             "label": "<, > or = between 8/8 × 13 and 13",
              "answer": {
-              "text": "<"
+              "text": "="
              }
             }
            },
@@ -449,25 +191,282 @@
          }
         }
        ],
-       "key": "4/8 × 13 < 13"
+       "key": "8/8 × 13 = 13"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 8,
+             "den": 7
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "40"
+           },
+           {
+            "compare": {
+             "id": "q6",
+             "label": "<, > or = between 8/7 × 40 and 40",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "40"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8/7 × 40 > 40"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 4,
+             "den": 7
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "40"
+           },
+           {
+            "compare": {
+             "id": "q7",
+             "label": "<, > or = between 4/7 × 40 and 40",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "40"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4/7 × 40 < 40"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 9,
+             "den": 5
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "38"
+           },
+           {
+            "compare": {
+             "id": "q8",
+             "label": "<, > or = between 9/5 × 38 and 38",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "38"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9/5 × 38 > 38"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 8
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "compare": {
+             "id": "q9",
+             "label": "<, > or = between 5/8 × 5 and 5",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5/8 × 5 < 5"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 7,
+             "den": 4
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "19"
+           },
+           {
+            "compare": {
+             "id": "q10",
+             "label": "<, > or = between 7/4 × 19 and 19",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "19"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7/4 × 19 > 19"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "36"
+           },
+           {
+            "compare": {
+             "id": "q11",
+             "label": "<, > or = between 1/4 × 36 and 36",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "36"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 × 36 < 36"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 7,
+             "den": 3
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "23"
+           },
+           {
+            "compare": {
+             "id": "q12",
+             "label": "<, > or = between 7/3 × 23 and 23",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "23"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7/3 × 23 > 23"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-g5-scaling",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Predict whether a product is bigger or smaller than a factor from the size of the other factor.",
+      "purpose": "Predict whether a product is greater or less than a factor from the size of the other factor.",
       "principles": [
        "PRINCIPLE_SELF_EXPLANATION"
       ],
+      "rationale": "Fractions less than 1 and greater than 1 take turns, and one item multiplies by a fraction equal to 1. The whole numbers are too large to multiply quickly. Students must reason about the size of the fraction instead.",
       "misconceptions": [
-       "Thinking multiplying always makes a number bigger."
+       "Thinking multiplying always makes a number bigger.",
+       "Comparing the numerators only, without seeing whether the fraction is more or less than 1."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 368
+     "estimatedHeight": 348
     }
    ],
-   "estimatedHeight": 372
+   "estimatedHeight": 352
   }
  ],
  "key": [
@@ -475,9 +474,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "<, > or = between 5/3 × 22 and 22",
+    "label": "<, > or = between 2/3 × 17 and 17",
     "answer": {
-     "text": ">"
+     "text": "<"
     }
    }
   },
@@ -485,7 +484,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "<, > or = between 4 × 1/2 and 1/2",
+    "label": "<, > or = between 8/7 × 14 and 14",
     "answer": {
      "text": ">"
     }
@@ -495,9 +494,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "<, > or = between 10/7 × 31 and 31",
+    "label": "<, > or = between 1/2 × 35 and 35",
     "answer": {
-     "text": ">"
+     "text": "<"
     }
    }
   },
@@ -505,7 +504,7 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "<, > or = between 13/6 × 13 and 13",
+    "label": "<, > or = between 7/4 × 29 and 29",
     "answer": {
      "text": ">"
     }
@@ -515,7 +514,7 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "<, > or = between 2/2 × 15 and 15",
+    "label": "<, > or = between 8/8 × 13 and 13",
     "answer": {
      "text": "="
     }
@@ -525,9 +524,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "<, > or = between 5/5 × 33 and 33",
+    "label": "<, > or = between 8/7 × 40 and 40",
     "answer": {
-     "text": "="
+     "text": ">"
     }
    }
   },
@@ -535,9 +534,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "<, > or = between 6/6 × 36 and 36",
+    "label": "<, > or = between 4/7 × 40 and 40",
     "answer": {
-     "text": "="
+     "text": "<"
     }
    }
   },
@@ -545,7 +544,7 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "<, > or = between 8/7 × 30 and 30",
+    "label": "<, > or = between 9/5 × 38 and 38",
     "answer": {
      "text": ">"
     }
@@ -555,9 +554,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "<, > or = between 7/4 × 29 and 29",
+    "label": "<, > or = between 5/8 × 5 and 5",
     "answer": {
-     "text": ">"
+     "text": "<"
     }
    }
   },
@@ -565,7 +564,7 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "<, > or = between 16 × 4/5 and 4/5",
+    "label": "<, > or = between 7/4 × 19 and 19",
     "answer": {
      "text": ">"
     }
@@ -575,9 +574,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "<, > or = between 6/6 × 23 and 23",
+    "label": "<, > or = between 1/4 × 36 and 36",
     "answer": {
-     "text": "="
+     "text": "<"
     }
    }
   },
@@ -585,9 +584,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "<, > or = between 4/8 × 13 and 13",
+    "label": "<, > or = between 7/3 × 23 and 23",
     "answer": {
-     "text": "<"
+     "text": ">"
     }
    }
   }
@@ -596,10 +595,11 @@
   "purpose": "Compare a product with a factor without multiplying.",
   "principles": [
    "PRINCIPLE_SELF_EXPLANATION"
-  ]
+  ],
+  "rationale": "Large whole numbers make reasoning about the fraction quicker than calculating."
  },
  "advice": [
-  "\"Write <, > or = without multiplying.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Compare. Write <, >, or =. Do not multiply.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

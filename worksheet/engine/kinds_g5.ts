@@ -18,6 +18,7 @@ import {
   DecimalChart_RowSchema,
   DecimalChartSchema,
   FractionBarSchema,
+  FractionGrid_Shade,
   FractionGridSchema,
   LinePlotSchema,
   LongDivisionSchema,
@@ -34,12 +35,13 @@ import {
   type ItemKind,
   CoordinatePoints_Mode,
   DecimalArithmetic_Op,
+  DecimalArithmetic_Second,
   DecimalForms_Mode,
   FractionMultiply_Mode,
   PrismVolume_Mode,
   ShapeHierarchy_Mode,
 } from '../proto/v1/worksheet_pb.js';
-import { type AtomSpec, blank, compare, frac, fractionBlank, gcd, halfBlank, math, node, row, text } from './build.js';
+import { type AtomSpec, blank, compare, frac, fractionBlank, gcd, halfBlank, math, node, row, stack, text } from './build.js';
 import { commas, mixed } from './draw.js';
 import { type Ctx, list, numberWithDigits, pickFresh, unique } from './kinds.js';
 
@@ -82,10 +84,12 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
             [expr, value] = [`${a} + [(${b} + ${c}) × ${d}]`, a + (b + c) * d];
         }
       }
-      return [math(expr, '=', blank(f.field(`value of ${expr}`, String(value))))];
+      const sum = math(expr, '=', blank(f.field(`value of ${expr}`, String(value))));
+      return brackets ? [sum, workSpace(2)] : [sum];
     }
     case 'expressionInWords': {
-      const [form, a, b, c] = pickFresh(ctx, k.case, () => [rng.int(0, 4), rng.int(2, 9), rng.int(2, 9), rng.int(2, 9)]);
+      const form = k.value.compare ? 4 : nth(ctx, k.case) % 4;
+      const [a, b, c] = pickFresh(ctx, k.case + form, () => [rng.int(2, 9), rng.int(2, 9), rng.int(2, 9)]);
       switch (form) {
         case 0:
           return [text(`Add ${a} and ${b}, then multiply by ${c}.`), math(blank(f.field('the expression', `(${a} + ${b}) × ${c}`, [`${c} × (${a} + ${b})`])))];
@@ -106,8 +110,42 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       }
     }
     case 'twoPatterns': {
-      const [a, times] = pickFresh(ctx, k.case, () => [rng.int(2, 6), rng.int(2, 4)]);
+      const graph = k.value.graph;
+      const [a, times] = pickFresh(ctx, k.case + graph, () => (graph ? [rng.int(2, 3), rng.int(2, 3)] : [rng.int(2, 6), rng.int(2, 4)]));
       const b = a * times;
+      if (graph) {
+        const pair = (step: number) => `(${step * a}, ${step * b})`;
+        const rows = [0, 1, 2, 3, 4].map((step) => {
+          const given = step < 2;
+          const cell = (v: string, label: string, also: string[] = []) =>
+            given
+              ? create(DataTable_CellSchema, { kind: { case: 'text', value: v } })
+              : create(DataTable_CellSchema, { kind: { case: 'field', value: f.field(label, v, also) } });
+          return create(DataTable_RowSchema, {
+            cells: [
+              create(DataTable_CellSchema, { kind: { case: 'text', value: String(step) } }),
+              cell(String(step * a), `step ${step} of add ${a}`),
+              cell(String(step * b), `step ${step} of add ${b}`),
+              cell(pair(step), `ordered pair for step ${step}`, [pair(step).replace(' ', '')]),
+            ],
+          });
+        });
+        return [
+          row(
+            node({ case: 'dataTable', value: create(DataTableSchema, { header: ['Step', `Add ${a}`, `Add ${b}`, 'Ordered pair'], rows }) }),
+            node({
+              case: 'coordinateGrid',
+              value: create(CoordinateGridSchema, {
+                xMax: 4 * a,
+                yMax: 4 * b,
+                yStep: a,
+                plotField: f.field('ordered pairs plotted', [0, 1, 2, 3, 4].map(pair).join('; ')),
+              }),
+            }),
+          ),
+          math('Each y-coordinate is', blank(f.field('how many times the x-coordinate', String(times))), 'times the x-coordinate.'),
+        ];
+      }
       const rows = [0, 1, 2, 3, 4].map((step) => {
         const cell = (v: number, rule: string) =>
           step < 2
@@ -131,7 +169,7 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const i = rng.int(0, len - 1 - gap);
         const digits = Array.from({ length: len }, (_, j) => {
           let x = rng.int(0, 9);
-          while (x === d || (j === 0 && x === 0)) {
+          while (x === d || ((j === 0 || j === len - 1) && x === 0)) {
             x = rng.int(0, 9);
           }
           return x;
@@ -197,9 +235,11 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     case 'decimalForms': {
       const mode = k.value.mode || DecimalForms_Mode.WORDS;
       if (mode === DecimalForms_Mode.COMPARE) {
+        // Mostly unequal pairs: one in six is equal, and one in three has
+        // the decimal with more digits smaller.
+        const form = [2, 1, 3, 0, 2, 1][nth(ctx, k.case + mode) % 6];
         const [x, px, y, py] = pickFresh(ctx, k.case + mode, () => {
           const w = rng.pick([0, 0, rng.int(1, 9)]);
-          const form = rng.int(0, 3);
           if (form === 0) {
             // Equal, with zeros on the end of one: 0.4 and 0.400.
             const t = rng.int(1, 99);
@@ -326,7 +366,13 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       return [
         node({
           case: 'columnArithmetic',
-          value: create(ColumnArithmeticSchema, { op: ColumnArithmetic_Op.MULTIPLY, operands: [BigInt(x), BigInt(y)], partials, answer: f.field(`${x} × ${y}`, String(x * y)) }),
+          value: create(ColumnArithmeticSchema, {
+            op: ColumnArithmetic_Op.MULTIPLY,
+            operands: [BigInt(x), BigInt(y)],
+            carryBoxes: true,
+            partials,
+            answer: f.field(`${x} × ${y}`, String(x * y)),
+          }),
         }),
       ];
     }
@@ -347,21 +393,58 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         }
       });
       const n = q * d + r;
-      return [
-        node({
-          case: 'longDivision',
-          value: create(LongDivisionSchema, {
-            dividend: BigInt(n),
-            divisor: d,
-            quotient: f.field(`${n} ÷ ${d}`, String(q)),
-            remainder: k.value.remainders ? f.field(`remainder of ${n} ÷ ${d}`, String(r)) : undefined,
-            workRows: 2 * String(q).length + 1,
-          }),
+      // Each quotient digit needs a row for its product and a row for the
+      // difference, plus one for the last remainder. The drawing gives each
+      // work row three quarters of a handwriting row, so ask for a third
+      // more to give each step a full row.
+      const steps = 2 * String(q).length + 1;
+      const division = node({
+        case: 'longDivision',
+        value: create(LongDivisionSchema, {
+          dividend: BigInt(n),
+          divisor: d,
+          quotient: f.field(`${n} ÷ ${d}`, String(q)),
+          remainder: k.value.remainders ? f.field(`remainder of ${n} ÷ ${d}`, String(r)) : undefined,
+          workRows: Math.ceil((steps * 4) / 3),
         }),
-      ];
+      });
+      if (!k.value.multiples) {
+        return [division];
+      }
+      // A table of multiples to estimate each quotient digit from.
+      const multiple = (m: number) => math(`${m} × ${d} =`, m === 1 ? String(d) : blank(f.field(`${m} × ${d}`, String(m * d))));
+      return [row(division, stack(multiple(1), multiple(2), multiple(5), multiple(10)))];
     }
     case 'decimalArithmetic': {
       const op = k.value.op || DecimalArithmetic_Op.ADD;
+      if ((op === DecimalArithmetic_Op.ADD || op === DecimalArithmetic_Op.SUBTRACT) && k.value.inALine) {
+        // Different numbers of places, so lining up the last digits gives a
+        // wrong answer: 4.5 + 2.37, 6 − 2.45.
+        const sub = op === DecimalArithmetic_Op.SUBTRACT;
+        const [x, px, y, py] = pickFresh(ctx, k.case + op + 'line', () => {
+          for (;;) {
+            const px = rng.int(0, 2);
+            let py = rng.int(1, 2);
+            if (py === px) {
+              py = px === 1 ? 2 : 1;
+            }
+            const x = px === 0 ? rng.int(2, 30) : rng.int(10 ** px + 1, 40 * 10 ** px);
+            const y = rng.int(10 ** (py - 1) + 1, 20 * 10 ** py);
+            if ((px > 0 && x % 10 === 0) || y % 10 === 0) {
+              continue;
+            }
+            if (!sub || x * 10 ** (2 - px) > y * 10 ** (2 - py)) {
+              return [x, px, y, py];
+            }
+          }
+        });
+        const p = Math.max(px, py);
+        const v = sub ? x * 10 ** (p - px) - y * 10 ** (p - py) : x * 10 ** (p - px) + y * 10 ** (p - py);
+        const full = fixed(v, p, p);
+        const answer = trimDecimal(full);
+        const label = `${fixed(x, px, px)} ${sub ? '−' : '+'} ${fixed(y, py, py)}`;
+        return [math(label, '=', blank(f.field(label, answer, full !== answer ? [full] : []))), workSpace(4)];
+      }
       if (op === DecimalArithmetic_Op.ADD || op === DecimalArithmetic_Op.SUBTRACT) {
         const sub = op === DecimalArithmetic_Op.SUBTRACT;
         const [p, x, y] = pickFresh(ctx, k.case + op, () => {
@@ -390,8 +473,9 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       }
       const divide = op === DecimalArithmetic_Op.DIVIDE;
       // Each value is [scaled integer, places].
-      const [a, b, c] = pickFresh(ctx, k.case + op, () => {
-        const form = rng.int(0, 2);
+      const second = k.value.second;
+      const [a, b, c] = pickFresh(ctx, k.case + op + second, () => {
+        const form = second === DecimalArithmetic_Second.WHOLE ? rng.int(0, 1) : second === DecimalArithmetic_Second.DECIMAL ? 2 : rng.int(0, 2);
         if (!divide) {
           if (form === 0) {
             return [[rng.int(11, 99), 1], [rng.int(2, 9), 0], 0] as const;
@@ -463,16 +547,19 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           math('=', blank(f.field(label, answer, also))),
         ];
       }
-      return [math(...operand(a, b), opText, ...operand(c, d), '=', blank(f.field(label, answer, also)))];
+      return [math(...operand(a, b), opText, ...operand(c, d), '=', blank(f.field(label, answer, also))), workSpace(2)];
     }
     case 'fractionAsDivision': {
-      const [form, a, b, i] = pickFresh(ctx, k.case, () => {
+      // Three of each form in order: division to fraction, fraction to
+      // division, then sharing stories.
+      const form = Math.min(2, Math.floor(nth(ctx, k.case) / 3));
+      const [a, b, i] = pickFresh(ctx, k.case + form, () => {
         const b = rng.int(2, 9);
         let a = rng.int(2, 3 * b);
-        while (a % b === 0) {
+        while (a % b === 0 || gcd(a, b) !== 1) {
           a = rng.int(2, 3 * b);
         }
-        return [rng.int(0, 2), a, b, rng.int(0, SHARES.length - 1)];
+        return [a, b, rng.int(0, SHARES.length - 1)];
       });
       const answer = frac(a, b);
       const also = unique([fracSimplest(a, b), mixed(a, b), mixedRaw(a, b)]).filter((x) => x !== answer);
@@ -482,10 +569,10 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       if (form === 1) {
         return [math([a, b], '=', blank(f.field(`numerator of ${frac(a, b)} as a division`, String(a))), '÷', blank(f.field(`denominator of ${frac(a, b)} as a division`, String(b))))];
       }
-      const [things, unit, people] = SHARES[i];
+      const [things, part, unit, people] = SHARES[i];
       return [
         text(`${b} ${people} share ${a} ${things} equally. How much does each get?`),
-        math('Each gets', blank(f.field(`${a} ${things} shared by ${b}`, answer, also)), unit),
+        math(blank(f.field(`${a} ${things} shared by ${b}`, answer, also)), a < b ? part : unit),
       ];
     }
     case 'fractionMultiply': {
@@ -502,8 +589,12 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         }
         const d = rng.int(2, 6);
         let c = rng.int(1, d - 1);
-        while (gcd(c, d) !== 1) {
+        // A tiled rectangle has at least two tiles to count.
+        while (gcd(c, d) !== 1 || (k.value.tiles && a * c < 2)) {
           c = rng.int(1, d - 1);
+          if (a * (d - 1) < 2) {
+            break;
+          }
         }
         return [a, b, c, d];
       });
@@ -511,6 +602,31 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const den = b * d;
       const answer = mixed(n, den);
       const also = unique([fracSimplest(n, den), frac(n, den), mixedRaw(n, den)]).filter((x) => x !== answer);
+      if (mode === FractionMultiply_Mode.AREA && k.value.tiles) {
+        const unit = rng.pick(['m', 'ft', 'yd']);
+        return [
+          row(
+            node({
+              case: 'fractionGrid',
+              value: create(FractionGridSchema, {
+                cols: b,
+                rows: d,
+                shadedCols: a,
+                shadedRows: c,
+                shade: FractionGrid_Shade.OVERLAP,
+                colsLabel: `${frac(a, b)} ${unit}`,
+                rowsLabel: `${frac(c, d)} ${unit}`,
+                wholeLabel: `1 ${unit}`,
+              }),
+            }),
+            stack(
+              math('Area of one tile:', fractionBlank(f.field(`area of a ${frac(1, b)} by ${frac(1, d)} tile`, frac(1, den))), `square ${unit}`),
+              math('Shaded tiles:', blank(f.field(`tiles in the ${frac(a, b)} by ${frac(c, d)} rectangle`, String(n)))),
+              math('Area =', blank(f.field(`${frac(a, b)} × ${frac(c, d)} square ${unit}`, answer, also)), `square ${unit}`),
+            ),
+          ),
+        ];
+      }
       if (mode === FractionMultiply_Mode.AREA) {
         const unit = rng.pick(['m', 'ft', 'in']);
         const pts = [
@@ -532,15 +648,19 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         ];
       }
       const right: AtomSpec = mode === FractionMultiply_Mode.WHOLE ? c : [c, d];
-      return [math([a, b], '×', right, '=', blank(f.field(`${frac(a, b)} × ${mode === FractionMultiply_Mode.WHOLE ? c : frac(c, d)}`, answer, also)))];
+      return [math([a, b], '×', right, '=', blank(f.field(`${frac(a, b)} × ${mode === FractionMultiply_Mode.WHOLE ? c : frac(c, d)}`, answer, also))), workSpace(2)];
     }
     case 'scalingCompare': {
-      const [n, a, b, byWhole] = pickFresh(ctx, k.case, () => {
+      // Less than 1 and more than 1 in turn, and the fifth item exactly 1.
+      const i = nth(ctx, k.case);
+      const [n, a, b, byWhole] = pickFresh(ctx, k.case + i, () => {
         const b = rng.int(2, 8);
-        const kind = rng.int(0, 5);
-        // Less than 1, more than 1, and now and then exactly 1.
-        const a = kind < 2 ? rng.int(1, b - 1) : kind < 5 ? rng.int(b + 1, 2 * b + 1) : b;
-        return [rng.int(4, 40), a, b, rng.next() < 0.3] as const;
+        const pickA = () => (i === 4 ? b : i % 2 === 0 ? rng.int(1, b - 1) : rng.int(b + 1, 2 * b + 1));
+        let a = pickA();
+        while (a !== b && gcd(a, b) !== 1) {
+          a = pickA();
+        }
+        return [rng.int(4, 40), a, b, i !== 4 && rng.next() < 0.25] as const;
       });
       if (byWhole) {
         // n × a/b against a/b: n is more than 1, so the product is larger.
@@ -559,8 +679,13 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         nodes.push(math(n, '÷', [1, b], '=', blank(f.field(`${n} ÷ ${frac(1, b)}`, String(n * b)))));
         return nodes;
       }
-      const [b, n] = pickFresh(ctx, k.case, () => [rng.int(2, 8), rng.int(2, 6)]);
-      return [math([1, b], '÷', n, '=', fractionBlank(f.field(`${frac(1, b)} ÷ ${n}`, frac(1, b * n))))];
+      const model = k.value.model;
+      const [b, n] = pickFresh(ctx, k.case, () => (model ? [rng.int(2, 5), rng.int(2, 4)] : [rng.int(2, 8), rng.int(2, 6)]));
+      const sum = math([1, b], '÷', n, '=', fractionBlank(f.field(`${frac(1, b)} ÷ ${n}`, frac(1, b * n))));
+      if (!model) {
+        return [sum];
+      }
+      return [node({ case: 'fractionGrid', value: create(FractionGridSchema, { cols: b, rows: n, shadedCols: 1, shadedRows: 1, shade: FractionGrid_Shade.COLUMNS }) }), sum];
     }
     case 'convertMeasure': {
       const [i, toSmall, m, s] = pickFresh(ctx, k.case, () => {
@@ -633,13 +758,13 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         create(Solid_BoxSchema, { x, length, width, height, lengthLabel: labels[0] ?? '', widthLabel: labels[1] ?? '', heightLabel: labels[2] ?? '' });
       if (mode === PrismVolume_Mode.COUNT || mode === PrismVolume_Mode.LAYERS) {
         const [l, w, h] = pickFresh(ctx, k.case + mode, () => [rng.int(2, 5), rng.int(2, 3), rng.int(2, 4)]);
-        const solid = node({ case: 'solid', value: create(SolidSchema, { boxes: [box(0, l, w, h)], showCubes: true }) });
+        const solid = node({ case: 'solid', value: create(SolidSchema, { boxes: [box(0, l, w, h)], showCubes: true, markBottomLayer: mode === PrismVolume_Mode.LAYERS }) });
         if (mode === PrismVolume_Mode.COUNT) {
           return [solid, math('Volume =', blank(f.field(`cubes in a ${l} by ${w} by ${h} box`, String(l * w * h))), 'cubic units')];
         }
         return [
           solid,
-          math('Cubes in the bottom layer:', blank(f.field(`cubes in a ${l} by ${w} layer`, String(l * w)))),
+          math('Bottom layer:', blank(f.field(`cubes in a ${l} by ${w} layer`, String(l * w))), 'cubes'),
           math('Layers:', blank(f.field('layers', String(h)))),
           math('Volume =', blank(f.field(`cubes in a ${l} by ${w} by ${h} box`, String(l * w * h))), 'cubic units'),
         ];
@@ -717,7 +842,7 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const points = pts.map(([x, y], i) => create(CoordinateGrid_PointSchema, { x, y, label: letters[i] }));
       return [
         node({ case: 'coordinateGrid', value: create(CoordinateGridSchema, { xMax: 10, yMax: 10, points }) }),
-        ...letters.map((l, i) => math(`${l} is at`, blank(f.field(`coordinates of ${l}`, at(i), [`${pts[i][0]}, ${pts[i][1]}`, at(i).replace(' ', '')])))),
+        ...letters.map((l, i) => math(`${l}`, blank(f.field(`coordinates of ${l}`, at(i), [`${pts[i][0]}, ${pts[i][1]}`, at(i).replace(' ', '')])))),
       ];
     }
     case 'shapeHierarchy': {
@@ -745,6 +870,17 @@ export function generateG5(kind: ItemKind, ctx: Ctx): Node[] | undefined {
 }
 
 const SUPERSCRIPT = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+
+// nth is how many items with this key came before this one on the
+// worksheet, so a generator can order its items or take turns between
+// forms.
+function nth(ctx: Ctx, key: string): number {
+  let i = 0;
+  while (!ctx.fresh(`${key}#${i}`)) {
+    i++;
+  }
+  return i;
+}
 
 // sup writes n in superscript digits, for an exponent: 3 is "³".
 function sup(n: number): string {
@@ -830,12 +966,13 @@ export function words(n: number): string {
   return `${ONES[Math.floor(n / 100)]} hundred` + (n % 100 ? ' ' + words(n % 100) : '');
 }
 
-// Equal-share stories: what is shared, its unit, and who shares it.
-const SHARES: [string, string, string][] = [
-  ['pizzas', 'of a pizza', 'friends'],
-  ['pounds of rice', 'pounds', 'families'],
-  ['feet of ribbon', 'feet', 'children'],
-  ['liters of juice', 'liters', 'tables'],
+// Equal-share stories: what is shared, its unit for a share less than 1
+// and for a share of 1 or more, and who shares it.
+const SHARES: [string, string, string, string][] = [
+  ['pizzas', 'of a pizza', 'pizzas', 'friends'],
+  ['pounds of rice', 'of a pound', 'pounds', 'families'],
+  ['feet of ribbon', 'of a foot', 'feet', 'children'],
+  ['liters of juice', 'of a liter', 'liters', 'tables'],
 ];
 
 // Units to convert: the larger, the smaller, how many of the smaller make

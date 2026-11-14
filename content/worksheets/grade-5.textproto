@@ -9,67 +9,121 @@
 
 fragments {
   id: "frag-g5-parentheses"
-  instruction: "Work out the part in parentheses first."
+  instruction: "Solve. Work inside the parentheses first."
   stage: STAGE_INTRODUCE
-  explainer: "Parentheses show what to do first: (2 + 3) × 4 = 5 × 4 = 20."
+  example {
+    item { numerical_expression {} }
+    seed: 3
+    text: "Find the value inside the **parentheses** first. Then do the operation outside."
+  }
   items { kind { numerical_expression {} } count: 10 min_count: 6 }
   max_columns: 2
   design {
-    purpose: "Evaluate expressions with parentheses."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Working left to right and ignoring the parentheses: 2 × (3 + 4) = 6 + 4."
+    purpose: "Evaluate expressions that contain parentheses."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each expression has one pair of parentheses and two operations, so the only decision is which operation comes first. The parentheses sit at the front in some items and at the end in others. Students who always work left to right get some items wrong, which shows them the parentheses matter."
+    misconceptions: "Working left to right and ignoring the parentheses: 2 × (3 + 4) worked as 2 × 3 + 4 = 10."
+    misconceptions: "Treating parentheses as a sign to multiply only, and adding first in an expression such as 76 − (4 × 4)."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-brackets"
-  instruction: "Work from the inside out: parentheses, then brackets."
+  instruction: "Solve. Work inside the parentheses, then inside the brackets."
   stage: STAGE_STRETCH
   items { kind { numerical_expression { brackets: true } } count: 6 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Evaluate expressions with parentheses inside brackets."
+    purpose: "Evaluate expressions with parentheses nested inside brackets."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Brackets add a second level of grouping, so students must work from the inside out. Each item has three operations, and the space under it holds one line per step. Writing each step keeps the order visible and makes errors easy to find."
+    misconceptions: "Working the brackets before the parentheses inside them."
+    misconceptions: "Dropping a number while rewriting the expression after each step."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-write-expressions"
-  instruction: "Write each calculation as an expression. Do not work it out."
+  instruction: "Write an expression for each calculation. Do not solve."
   stage: STAGE_PRACTICE
-  explainer: "\"Add 8 and 7, then multiply by 2\" is (8 + 7) × 2. The parentheses show the adding comes first."
-  items { kind { expression_in_words {} } count: 10 min_count: 6 }
+  example {
+    item { expression_in_words {} }
+    seed: 2
+    text: "The **parentheses** show which part to do first."
+  }
+  items { kind { expression_in_words {} } count: 8 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Write a calculation described in words as an expression, and read an expression without evaluating it."
-    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    misconceptions: "Leaving out the parentheses: \"add 8 and 7, then multiply by 2\" as 8 + 7 × 2."
+    purpose: "Write a calculation described in words as a numerical expression."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The words give the order of the steps, and the expression must show the same order with symbols. The four forms take turns, so students meet adding first, multiplying first, subtracting then dividing, and doubling a sum. Leaving the expression unsolved keeps attention on its structure."
+    misconceptions: "Leaving out the parentheses: \"add 8 and 7, then multiply by 2\" written as 8 + 7 × 2."
+    misconceptions: "Writing the numbers in the order they are read for \"subtract 4 from 10\", giving 4 − 10."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-interpret-expressions"
+  instruction: "Fill in the blank. Do not solve."
+  stage: STAGE_STRETCH
+  items { kind { expression_in_words { compare: true } } count: 3 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Compare an expression with one of its parts without evaluating it."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "The numbers in the parentheses are large on purpose, so working out the sum is slow and not needed. Students read 3 × (18,932 + 921) as three times the sum. This is the reading of expressions the standard asks for."
+    misconceptions: "Working out the whole expression before answering, and losing the relation in the arithmetic."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-two-patterns"
-  instruction: "Fill in both patterns. Then compare them."
+  instruction: "Complete each table. Then fill in the blank."
   stage: STAGE_PRACTICE
-  explainer: "Both patterns start at 0. Add the rule's number each step."
   items { kind { two_patterns {} } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Make two patterns from two rules and see how their terms are related."
+    purpose: "Generate two patterns from two rules and compare corresponding terms."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Side by side in a table, the terms show one pattern is always a set number of times the other."
+    rationale: "Both patterns start at 0, and one rule adds a multiple of the other. In the table, each term of the second pattern is the same number of times the term beside it. Students describe that relation in the sentence below the table."
+    misconceptions: "Comparing terms down one column instead of across the row."
+    misconceptions: "Describing the difference between terms, such as \"4 more\", when the relation is a number of times."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-graph-two-patterns"
+  instruction: "Complete the table. Plot each ordered pair on the grid."
+  stage: STAGE_APPLY
+  items { kind { two_patterns { graph: true } } count: 2 min_count: 1 }
+  max_columns: 1
+  design {
+    purpose: "Form ordered pairs from two patterns and graph them."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each row of the table becomes an ordered pair, with the first pattern as the x-coordinate. The plotted points lie on a straight line through (0, 0). The question under the graph asks for the same relation the table showed, now seen in the coordinates."
+    misconceptions: "Plotting the step number as the x-coordinate instead of the first pattern's term."
+    misconceptions: "Reversing the order of the coordinates when plotting."
+    references: "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-graph-a-pattern"
-  instruction: "The graph shows a pattern. Answer from the graph."
+  instruction: "Use the graph to answer the questions."
   stage: STAGE_APPLY
   items { kind { coordinate_points { mode: MODE_PROBLEM } } count: 2 min_count: 1 }
   max_columns: 2
   design {
-    purpose: "Read and extend a pattern shown as points on a coordinate grid."
+    purpose: "Read and extend a pattern graphed on a coordinate grid."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The graph shows the first points of a real situation, such as dollars earned each hour. The first question reads a plotted point. The second asks for a point past the plotted ones, so students extend the pattern by its rule."
+    misconceptions: "Reading the y-axis value from the wrong gridline when the axis counts by 2s, 3s or more."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -83,8 +137,9 @@ worksheets {
   design {
     purpose: "Evaluate expressions with parentheses and brackets."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "One level of grouping comes first, then nested grouping."
   }
-  home_tip: "Work out 2 + 3 × 4 and (2 + 3) × 4 together and compare."
+  home_tip: "Compare 2 + 3 × 4 with (2 + 3) × 4 and explain why the answers differ."
 }
 
 worksheets {
@@ -92,12 +147,15 @@ worksheets {
   title: "Writing expressions"
   seed: 502
   max_pages: 2
-  placements { fragment_id: "frag-g5-parentheses" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-g5-parentheses" count: 4 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-g5-write-expressions" }
+  placements { fragment_id: "frag-g5-interpret-expressions" }
   design {
-    purpose: "Write expressions from words and read them without working them out."
+    purpose: "Write expressions from words and interpret them without evaluating."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Evaluating a few expressions first recalls what parentheses do before students write their own."
   }
+  home_tip: "Describe a two-step calculation in words, such as \"add 5 and 3, then double it\", and write it with parentheses."
 }
 
 worksheets {
@@ -105,42 +163,57 @@ worksheets {
   title: "Two number patterns"
   seed: 503
   max_pages: 2
-  placements { fragment_id: "frag-g5-two-patterns" }
-  placements { fragment_id: "frag-g5-graph-a-pattern" }
+  placements { fragment_id: "frag-g5-two-patterns" count: 2 }
+  placements { fragment_id: "frag-g5-graph-two-patterns" count: 1 }
   design {
-    purpose: "Make, compare and graph number patterns."
+    purpose: "Generate, compare and graph two related number patterns."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The table shows the relation between the patterns first. The graph then shows the same relation as points on a line."
   }
-  home_tip: "Compare saving $3 a week with saving $6 a week."
+  home_tip: "Compare saving $3 a week with saving $6 a week. List both totals for five weeks."
 }
 
 # ── Place value and decimals ───────────────────────────────────────────────
 
 fragments {
   id: "frag-g5-ten-times"
-  instruction: "Write what each digit is worth. Then compare them."
+  instruction: "Write the value of each digit. Then compare the values."
   stage: STAGE_INTRODUCE
-  explainer: "Each place is worth 10 times the place to its right. In 0.33, the first 3 is worth 0.3 and the second 0.03."
-  items { kind { place_value_ten_times {} } count: 6 min_count: 4 }
+  example {
+    item { place_value_ten_times {} }
+    seed: 4
+    text: "Each place is worth **10 times** the place to its right, and **1/10** of the place to its left."
+  }
+  items { kind { place_value_ten_times {} } count: 6 min_count: 3 }
   max_columns: 2
   design {
-    purpose: "See that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as one place to its left."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Thinking places after the point grow to the right, as tens and hundreds do on the left."
+    purpose: "Recognize that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as the same digit one place to its left."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each number has the same digit twice, so the two values differ only by place. Most pairs are one place apart and some are two, which gives 10 times and 100 times. The comparison is asked both ways, as times as much and as a fraction of, because the standard names both."
+    misconceptions: "Thinking places after the decimal point grow to the right, as tens and hundreds do on the left."
+    misconceptions: "Thinking the digit further right is worth more because it comes later."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-powers-of-ten"
-  instruction: "Multiply or divide by a power of 10."
+  instruction: "Multiply or divide."
   stage: STAGE_PRACTICE
-  explainer: "10³ means 10 × 10 × 10 = 1,000. The small number says how many 10s to multiply."
+  example {
+    item { powers_of_ten {} }
+    seed: 1
+    text: "The exponent tells how many 10s are multiplied: **10³ = 10 × 10 × 10**."
+  }
   items { kind { powers_of_ten {} } count: 12 min_count: 6 }
   max_columns: 3
   design {
-    purpose: "Write powers of 10 with exponents, and multiply and divide whole numbers by them."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    purpose: "Write powers of 10 with exponents, and multiply and divide whole numbers by powers of 10."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Items mix three forms: a power of 10 alone, a number times a power of 10, and a number divided by one. Each form shows the pattern in the number of zeros. The exponent runs from 2 to 5 so the pattern holds beyond 1,000."
     misconceptions: "Reading 10³ as 10 × 3 = 30."
+    misconceptions: "Writing one zero too many or too few when the exponent is large."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -148,94 +221,130 @@ fragments {
   id: "frag-g5-powers-of-ten-chart"
   instruction: "Write the answer in the bottom row of the chart."
   stage: STAGE_GUIDED
-  explainer: "Times 10 moves every digit one place to the left. Divide by 10 moves every digit one place to the right. The decimal point stays put."
+  example {
+    item { powers_of_ten { decimals: true chart: true } }
+    seed: 2
+    text: "Each digit moves one place for each 10. The **decimal point stays** in its place."
+  }
   items { kind { powers_of_ten { decimals: true chart: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "See multiplying and dividing by 10, 100 and 1,000 as moving digits between places."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "The chart shows the digits moving while the point stays still, which is what \"moving the decimal point\" really means."
+    purpose: "Multiply and divide decimals by 10, 100 and 1,000 by moving digits between places."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The chart shows the digits moving while the decimal point stays fixed. The column headings show each place as a power of 10 and as its value. Students write each digit in its new place, including zeros that hold a place."
+    misconceptions: "Moving the digits the wrong way: to the right to multiply."
+    misconceptions: "Leaving out the zero in the ones place, writing .28 for 2.8 ÷ 10 with no 0 before the point."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-powers-of-ten-decimals"
-  instruction: "Multiply or divide. Watch where the decimal point goes."
+  instruction: "Multiply or divide."
   stage: STAGE_PRACTICE
-  explainer: "Times 10 moves each digit one place to the left. Divide by 10 moves each digit one place to the right."
   items { kind { powers_of_ten { decimals: true } } count: 12 min_count: 6 }
   max_columns: 3
   design {
-    purpose: "Multiply and divide decimals by 10, 100 and 1,000."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Adding a zero to the end of a decimal to multiply by 10: 4.7 × 10 = 4.70."
+    purpose: "Multiply and divide decimals by 10, 100 and 1,000 without a chart."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "These items follow the chart items and use the same numbers and powers. Some divisors are written with exponents, such as 10², so students connect both notations. The answers need zeros added or removed, so a rule of only adding zeros does not work."
+    misconceptions: "Adding a zero to the end of a decimal to multiply by 10: 4.7 × 10 written as 4.70."
+    misconceptions: "Counting zeros in 1,000 but moving the digits only one place."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
-  id: "frag-g5-decimal-words"
-  instruction: "Write the number."
-  stage: STAGE_INTRODUCE
-  explainer: "Say the whole number, then \"and\" for the point, then the decimal part with its last place: 4.026 is four and twenty-six thousandths."
-  items { kind { decimal_forms { mode: MODE_WORDS } } count: 6 min_count: 4 }
-  max_columns: 1
+  id: "frag-g5-decimal-chart"
+  instruction: "Write the number shown. Then write the value of the digit."
+  stage: STAGE_GUIDED
+  items { kind { decimal_forms { mode: MODE_CHART } } count: 4 min_count: 2 }
+  max_columns: 2
   design {
-    purpose: "Write a decimal to thousandths from its name."
-    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    misconceptions: "Writing twenty-six thousandths as 0.26, without the zero to hold the tenths place."
+    purpose: "Read a decimal to thousandths from a place-value chart and give the value of one digit."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The chart names each place, so the value of a digit can be read from its column. Some numbers have a zero in a place, which students must keep when they write the number. The chart comes before names and expanded form because it shows the places directly."
+    misconceptions: "Reading the digit in the tenths place as tens."
+    misconceptions: "Leaving out a zero that holds a place: 0.024 written as 0.24."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-decimal-expanded"
-  instruction: "Write the number."
+  instruction: "Write each number in standard form."
   stage: STAGE_PRACTICE
   items { kind { decimal_forms { mode: MODE_EXPANDED } } count: 4 min_count: 2 }
   max_columns: 1
   design {
     purpose: "Write a decimal to thousandths from its expanded form."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Expanded form uses fractions for the decimal places, such as 3 × 1/100, as the standard writes it. Places with a zero digit are left out of the expanded form. Students must notice the missing place and write a zero in it."
+    misconceptions: "Writing the digits side by side without zeros for the missing places: 6 × 1/10 + 6 × 1/1000 written as 0.66."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
-  id: "frag-g5-decimal-chart"
-  instruction: "Read the place-value chart."
-  stage: STAGE_GUIDED
-  explainer: "The dot is the decimal point. Places to its right are tenths, hundredths and thousandths."
-  items { kind { decimal_forms { mode: MODE_CHART } } count: 4 min_count: 2 }
-  max_columns: 2
+  id: "frag-g5-decimal-words"
+  instruction: "Write each number in standard form."
+  stage: STAGE_PRACTICE
+  example {
+    item { decimal_forms { mode: MODE_WORDS } }
+    seed: 6
+    text: "Read the decimal point as **and**. The last word names the place of the last digit."
+  }
+  items { kind { decimal_forms { mode: MODE_WORDS } } count: 6 min_count: 4 }
+  max_columns: 1
   design {
-    purpose: "Read a decimal to thousandths from a place-value chart, and the value of one of its digits."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Reading the digit in the tenths place as tens."
+    purpose: "Write a decimal to thousandths from its number name."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Number names come last because they hide the places that the chart and expanded form show. The final word, such as thousandths, tells how many digits follow the point. Some names have no whole-number part, so the answer begins with 0."
+    misconceptions: "Writing twenty-six thousandths as 0.26, without the zero that holds the tenths place."
+    misconceptions: "Writing \"and\" as a decimal point when it joins hundreds and tens, as in one hundred and five."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-compare-thousandths"
-  instruction: "Write <, > or = in each circle."
+  instruction: "Compare. Write <, >, or =."
   stage: STAGE_PRACTICE
-  explainer: "Line up the decimal points. Compare tenths first, then hundredths, then thousandths. 0.4 is the same as 0.400."
+  example {
+    item { decimal_forms { mode: MODE_COMPARE } }
+    seed: 2
+    text: "Line up the decimal points. Compare the digits **place by place**, from the left."
+  }
   items { kind { decimal_forms { mode: MODE_COMPARE } } count: 15 min_count: 9 }
   max_columns: 3
   design {
     purpose: "Compare two decimals to thousandths."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "One pair in three has the shorter decimal larger, such as 0.4 and 0.389. These pairs catch students who think more digits means a larger number. A few pairs are equal with zeros added, such as 0.4 and 0.400, and the rest differ in one place."
     misconceptions: "Thinking the decimal with more digits is larger: 0.389 > 0.4."
+    misconceptions: "Thinking the decimal with fewer digits is larger because tenths are bigger than thousandths."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-round-decimals-line"
-  instruction: "Use the number line to round."
+  instruction: "Round. Use the number line."
   stage: STAGE_GUIDED
-  explainer: "Find which end of the line the number is closer to. A number exactly halfway rounds up."
+  example {
+    item { round_decimal { number_line: true } }
+    seed: 3
+    text: "The middle mark is **halfway**. A number at the halfway mark or past it rounds up."
+  }
   items { kind { round_decimal { number_line: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Round a decimal using a number line between the two choices."
-    principles: [PRINCIPLE_NUMBER_LINE]
+    purpose: "Round a decimal using a number line between the two possible answers."
+    principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The number line shows the two possible answers at its ends and the halfway point between them. Students see which end the number is closer to before they apply a rule. The arrow marks the number on the line."
+    misconceptions: "Rounding by dropping digits, so 3.46 to the nearest tenth becomes 3.4."
+    misconceptions: "Labelling the ends of the line with the wrong place, such as tenths when rounding to hundredths."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -247,8 +356,11 @@ fragments {
   max_columns: 3
   design {
     purpose: "Round decimals to the nearest whole number, tenth or hundredth."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+    rationale: "The three places are mixed, so students read which place each item names before rounding. Some numbers have two more digits than the place they round to. Only the digit right after the rounding place decides the answer."
     misconceptions: "Rounding 3.46 to the nearest tenth as 3.4 by dropping the last digit."
+    misconceptions: "Rounding in two steps, 2.449 to 2.45 and then to 2.5, instead of once to 2.4."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -262,8 +374,9 @@ worksheets {
   design {
     purpose: "Understand that each place is worth 10 times the place to its right."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Comparing two equal digits comes first, because it isolates the 10-times relation. Reading the chart then uses that relation to name each place."
   }
-  home_tip: "Use a dollar, a dime and a penny: each is worth 10 of the next."
+  home_tip: "Use a dollar, a dime and a penny. Each coin is worth 10 of the next smaller one."
 }
 
 worksheets {
@@ -271,14 +384,15 @@ worksheets {
   title: "Powers of 10"
   seed: 512
   max_pages: 2
-  placements { fragment_id: "frag-g5-powers-of-ten" }
+  placements { fragment_id: "frag-g5-powers-of-ten" count: 9 }
   placements { fragment_id: "frag-g5-powers-of-ten-chart" }
-  placements { fragment_id: "frag-g5-powers-of-ten-decimals" }
+  placements { fragment_id: "frag-g5-powers-of-ten-decimals" count: 9 }
   design {
-    purpose: "Multiply and divide by powers of 10, and write them with exponents."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    purpose: "Multiply and divide by powers of 10, and write powers of 10 with exponents."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Whole numbers come first, where the pattern is in the zeros. The chart then shows the same pattern with decimals as digits moving, before the decimal items without the chart."
   }
-  home_tip: "Turn dollars into cents and back, and watch the decimal point move."
+  home_tip: "Change dollars to cents and cents to dollars, such as $4.25 and 425 cents, and note where the decimal point goes."
 }
 
 worksheets {
@@ -286,13 +400,15 @@ worksheets {
   title: "Reading and writing decimals"
   seed: 513
   max_pages: 2
-  placements { fragment_id: "frag-g5-decimal-words" }
-  placements { fragment_id: "frag-g5-decimal-expanded" }
   placements { fragment_id: "frag-g5-decimal-chart" }
+  placements { fragment_id: "frag-g5-decimal-expanded" }
+  placements { fragment_id: "frag-g5-decimal-words" }
   design {
-    purpose: "Read and write decimals to thousandths as numbers, names and expanded form."
-    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    purpose: "Read and write decimals to thousandths in standard form, expanded form and words."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The chart shows the places, expanded form names them, and number names hide them. The sections follow that order."
   }
+  home_tip: "Read the prices or weights on food labels aloud, saying \"and\" for the decimal point."
 }
 
 worksheets {
@@ -301,12 +417,13 @@ worksheets {
   seed: 514
   max_pages: 1
   placements { fragment_id: "frag-compare-decimals" count: 6 stage: STAGE_REVIEW }
-  placements { fragment_id: "frag-g5-compare-thousandths" }
+  placements { fragment_id: "frag-g5-compare-thousandths" count: 12 }
   design {
     purpose: "Compare decimals to thousandths."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Comparing to hundredths, from grade 4, comes first. The thousandths section then adds one more place."
   }
-  home_tip: "Ask them to read both numbers aloud before choosing the sign."
+  home_tip: "Read both numbers aloud before choosing the sign, such as \"four tenths\" and \"three hundred eighty-nine thousandths\"."
 }
 
 worksheets {
@@ -319,23 +436,31 @@ worksheets {
   design {
     purpose: "Round decimals to any place."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "The number line shows the two choices before the child rounds without it."
+    rationale: "The number line shows the two possible answers before students round without it."
   }
+  home_tip: "Round prices at the store to the nearest dollar and add them to estimate the total."
 }
 
 # ── Multiplying and dividing whole numbers ─────────────────────────────────
 
 fragments {
   id: "frag-g5-multiply-by-2-digits"
-  instruction: "Multiply. Write a row for each digit of the bottom number, then add."
+  instruction: "Multiply."
   stage: STAGE_GUIDED
-  explainer: "Multiply by the ones digit first. Then multiply by the tens: the row ends in 0 because you are multiplying by tens."
+  example {
+    item { multi_digit_multiply { top_digits: 2 bottom_digits: 2 } }
+    seed: 5
+    text: "Multiply by the ones. Then multiply by the tens: that row ends in **0**. Add the two rows."
+  }
   items { kind { multi_digit_multiply { top_digits: 2 bottom_digits: 2 } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Multiply two-digit numbers with the standard algorithm."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each partial product has its own row, labelled with what it stands for, such as 60 × 59. The labels link the algorithm to the place-value strategies from grade 4. Small boxes above the top number hold the regrouped digits."
     misconceptions: "Forgetting the zero in the tens row: 23 × 14 with 23 written for 10 × 23."
+    misconceptions: "Adding a regrouped digit from the ones row into the tens row."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -348,6 +473,9 @@ fragments {
   design {
     purpose: "Multiply a three-digit number by a two-digit number with the standard algorithm."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The steps are the same as for two-digit numbers, with one more digit in each row. Some top numbers contain a zero, which produces a zero in the partial product. The row labels stay, so a wrong row can be traced to its step."
+    misconceptions: "Skipping a zero digit in the top number and shifting the rest of the row left."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -360,32 +488,57 @@ fragments {
   design {
     purpose: "Multiply a four-digit number by a two-digit number with the standard algorithm."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Four-digit factors give five- and six-digit products, which tests whether regrouping is tracked across many places. Two items are enough to show fluency. Students who finish the earlier sections accurately are ready for them."
+    misconceptions: "Losing track of regrouped digits across four places."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-divide-with-multiples"
+  instruction: "Complete the multiples. Use them to divide."
+  stage: STAGE_GUIDED
+  items { kind { divide_by_two_digits { dividend_digits: 3 multiples: true } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Divide a three-digit number by a two-digit number, estimating each quotient digit from a list of multiples."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Choosing each quotient digit is the hard step with a two-digit divisor. A short list of 1, 2, 5 and 10 times the divisor turns that choice into a comparison. The list is a place-value strategy the standard names, and it is dropped in the next section."
+    misconceptions: "Keeping a first estimate that is too big or too small instead of adjusting it."
+    misconceptions: "Writing the first quotient digit over the wrong place of the dividend."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-divide-3-digits-by-2"
   instruction: "Divide."
-  stage: STAGE_GUIDED
-  explainer: "Round the divisor to estimate: for 252 ÷ 21, think 250 ÷ 20, about 12. Then check and adjust."
+  stage: STAGE_PRACTICE
   items { kind { divide_by_two_digits { dividend_digits: 3 } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Divide a three-digit number by a two-digit number."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "These items have no list of multiples, so students estimate by rounding the divisor. Every quotient has two digits and no remainder, so the answer can be checked by multiplying. The space under each item has a full row for every product and difference."
     misconceptions: "Keeping a first estimate that is too big or too small instead of adjusting it."
+    misconceptions: "Forgetting to bring down the next digit before the next step."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-divide-4-digits-by-2"
-  instruction: "Divide. Some have a remainder."
+  instruction: "Divide. Write the remainder."
   stage: STAGE_PRACTICE
   items { kind { divide_by_two_digits { dividend_digits: 4 remainders: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Divide a four-digit number by a two-digit number, with remainders."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Four-digit dividends give three-digit quotients, so the estimate-multiply-subtract cycle runs three times. Some items have a remainder of 0, so students decide whether one is left. The remainder must be less than the divisor, which checks the last estimate."
+    misconceptions: "Writing a remainder larger than the divisor."
+    misconceptions: "Leaving out a zero in the quotient when a partial dividend is smaller than the divisor."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -393,15 +546,16 @@ worksheets {
   id: "ws-g5-multiply-multi-digit"
   title: "Multiplying multi-digit numbers"
   seed: 521
-  max_pages: 3
+  max_pages: 2
   placements { fragment_id: "frag-g5-multiply-by-2-digits" }
   placements { fragment_id: "frag-g5-multiply-3-by-2-digits" }
   placements { fragment_id: "frag-g5-multiply-4-by-2-digits" }
   design {
     purpose: "Multiply multi-digit numbers with the standard algorithm."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The top factor grows from two to four digits while the steps stay the same."
   }
-  home_tip: "Estimate each product first, then check the answer is close."
+  home_tip: "Estimate each product first, such as 59 × 62 as about 60 × 60, then check the answer is close."
 }
 
 worksheets {
@@ -409,39 +563,82 @@ worksheets {
   title: "Dividing by two-digit numbers"
   seed: 522
   max_pages: 3
+  placements { fragment_id: "frag-g5-divide-with-multiples" }
   placements { fragment_id: "frag-g5-divide-3-digits-by-2" }
   placements { fragment_id: "frag-g5-divide-4-digits-by-2" }
   design {
     purpose: "Divide by two-digit numbers, estimating each digit of the quotient."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The list of multiples supports estimation first. It is then removed, and the dividends grow to four digits with remainders."
   }
-  home_tip: "Check an answer by multiplying it back."
+  home_tip: "Check each quotient by multiplying it by the divisor and adding the remainder."
 }
 
 # ── Decimal arithmetic ─────────────────────────────────────────────────────
 
 fragments {
   id: "frag-g5-add-decimals"
-  instruction: "Add. Keep the decimal points lined up."
+  instruction: "Add."
   stage: STAGE_PRACTICE
+  example {
+    item { decimal_arithmetic { op: OP_ADD } }
+    seed: 1
+    text: "Line up the **decimal points**. Add as with whole numbers."
+  }
   items { kind { decimal_arithmetic { op: OP_ADD } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Add decimals to hundredths."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Lining up the last digits instead of the decimal points."
+    purpose: "Add decimals to hundredths in columns."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The numbers are already set in columns with the points lined up, so the focus is regrouping across the point. Small boxes above the columns hold regrouped digits. Lining up numbers with different decimal places is practised in the next section."
+    misconceptions: "Forgetting to regroup from the tenths into the ones."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-add-decimals-in-a-line"
+  instruction: "Add. Write the numbers in columns first."
+  stage: STAGE_PRACTICE
+  items { kind { decimal_arithmetic { op: OP_ADD in_a_line: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Add decimals with different numbers of decimal places."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each pair has a different number of decimal places, and some include a whole number. Lining up the last digits gives a wrong answer, so students must line up the points. Writing a zero to fill an empty place is shown in the answer key."
+    misconceptions: "Lining up the last digits instead of the decimal points: 4.5 + 2.37 worked as 0.45 + 2.37."
+    misconceptions: "Not knowing where the decimal point is in a whole number such as 6."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-g5-subtract-decimals"
-  instruction: "Subtract. Keep the decimal points lined up."
+  instruction: "Subtract."
   stage: STAGE_PRACTICE
   items { kind { decimal_arithmetic { op: OP_SUBTRACT } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Subtract decimals to hundredths."
+    purpose: "Subtract decimals to hundredths in columns."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Subtraction follows addition with the same column layout. Most items need regrouping across the decimal point. The boxes above the columns hold the regrouped digits."
+    misconceptions: "Subtracting the smaller digit from the larger in each column, whichever number it is in."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-subtract-decimals-in-a-line"
+  instruction: "Subtract. Write the numbers in columns first."
+  stage: STAGE_STRETCH
+  items { kind { decimal_arithmetic { op: OP_SUBTRACT in_a_line: true } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Subtract decimals with different numbers of decimal places."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "When the first number has fewer decimal places, students write zeros in the empty places before subtracting. Items such as 6 − 2.45 need two zeros and regrouping across them. These are the hardest decimal subtractions at this grade."
+    misconceptions: "Bringing down the digits of the second number when the first has no digits above them: 6 − 2.45 = 4.45."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -449,13 +646,32 @@ fragments {
   id: "frag-g5-multiply-decimals"
   instruction: "Multiply."
   stage: STAGE_PRACTICE
-  explainer: "Multiply as if there were no decimal points. Then count the digits after the points in both numbers: the answer has that many."
-  items { kind { decimal_arithmetic { op: OP_MULTIPLY } } count: 6 min_count: 4 }
+  explainer: "Example: 2.4 × 3 = 7.2, because 24 tenths × 3 = 72 tenths."
+  items { kind { decimal_arithmetic { op: OP_MULTIPLY second: SECOND_WHOLE } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Multiply decimals to hundredths."
+    purpose: "Multiply a decimal to hundredths by a whole number."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A decimal times a whole number can be read as tenths or hundredths in groups: 2.4 × 3 is 24 tenths × 3. An estimate from the whole-number parts places the decimal point. Grade 5 relies on these place-value strategies before any rule for counting decimal places."
+    misconceptions: "Placing the decimal point by lining it up with the factors, as in addition."
+    misconceptions: "Ignoring the decimal point and writing 2.4 × 3 = 72."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-multiply-decimals-by-decimals"
+  instruction: "Multiply."
+  stage: STAGE_STRETCH
+  explainer: "Example: 0.3 × 0.4 = 0.12, because 3 tenths of 4 tenths is 12 hundredths."
+  items { kind { decimal_arithmetic { op: OP_MULTIPLY second: SECOND_DECIMAL } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Multiply two decimals in tenths."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A tenth of a tenth is a hundredth, so the product of two numbers in tenths is in hundredths. Some factors are less than 1, which makes the product smaller than the other factor. That result surprises students who expect multiplying to make numbers larger."
     misconceptions: "Thinking multiplying always makes a number bigger: 0.6 × 0.7 = 4.2."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -463,12 +679,31 @@ fragments {
   id: "frag-g5-divide-decimals"
   instruction: "Divide."
   stage: STAGE_PRACTICE
-  explainer: "To divide by a decimal, think how many of it fit: 3.6 ÷ 0.4 asks how many 4 tenths make 36 tenths."
-  items { kind { decimal_arithmetic { op: OP_DIVIDE } } count: 6 min_count: 4 }
+  explainer: "Example: 7.2 ÷ 3 = 2.4, because 72 tenths ÷ 3 = 24 tenths."
+  items { kind { decimal_arithmetic { op: OP_DIVIDE second: SECOND_WHOLE } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Divide decimals to hundredths by whole numbers and by decimals."
+    purpose: "Divide a decimal to hundredths by a whole number."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Dividing by a whole number shares tenths or hundredths into equal groups, so the quotient is in the same unit. Every item divides exactly. Students can check each answer by multiplying."
+    misconceptions: "Dropping the decimal point in the quotient: 7.2 ÷ 3 = 24."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-divide-by-decimals"
+  instruction: "Divide."
+  stage: STAGE_STRETCH
+  explainer: "Example: 3.6 ÷ 0.4 = 9, because 36 tenths ÷ 4 tenths = 9."
+  items { kind { decimal_arithmetic { op: OP_DIVIDE second: SECOND_DECIMAL } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Divide a decimal by a decimal in tenths."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Dividing by a decimal asks how many of it fit, so 3.6 ÷ 0.4 counts groups of 4 tenths in 36 tenths. Every quotient is a whole number. The quotient is larger than the dividend, which corrects the belief that dividing always makes a number smaller."
+    misconceptions: "Thinking dividing always makes a number smaller: 3.6 ÷ 0.4 = 0.9."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -477,13 +712,16 @@ worksheets {
   title: "Adding and subtracting decimals"
   seed: 531
   max_pages: 2
-  placements { fragment_id: "frag-g5-add-decimals" }
-  placements { fragment_id: "frag-g5-subtract-decimals" }
+  placements { fragment_id: "frag-g5-add-decimals" count: 3 }
+  placements { fragment_id: "frag-g5-add-decimals-in-a-line" }
+  placements { fragment_id: "frag-g5-subtract-decimals" count: 3 }
+  placements { fragment_id: "frag-g5-subtract-decimals-in-a-line" }
   design {
-    purpose: "Add and subtract decimals to hundredths in columns."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    purpose: "Add and subtract decimals to hundredths."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each operation starts with numbers already in columns, then moves to numbers written in a line that students set in columns themselves."
   }
-  home_tip: "Add up two prices from a receipt together."
+  home_tip: "Add two prices from a receipt, such as $4.50 and $2.35, then check the total on the receipt."
 }
 
 worksheets {
@@ -492,12 +730,15 @@ worksheets {
   seed: 532
   max_pages: 2
   placements { fragment_id: "frag-g5-multiply-decimals" }
+  placements { fragment_id: "frag-g5-multiply-decimals-by-decimals" }
   placements { fragment_id: "frag-g5-divide-decimals" }
+  placements { fragment_id: "frag-g5-divide-by-decimals" }
   design {
     purpose: "Multiply and divide decimals to hundredths."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each operation is practised with a whole number first and a decimal second, so the harder case builds on the easier one."
   }
-  home_tip: "Estimate first: 2.5 × 1.4 is between 2 × 1 and 3 × 2."
+  home_tip: "Estimate before calculating: 2.5 × 1.4 is between 2 × 1 and 3 × 2."
 }
 
 worksheets {
@@ -505,12 +746,14 @@ worksheets {
   title: "Decimal word problems"
   seed: 533
   max_pages: 2
-  placements { fragment_id: "frag-g5-add-decimals" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-g5-add-decimals" count: 3 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-g5-decimal-word-problems" }
   design {
     purpose: "Use decimal arithmetic to solve money and measurement problems."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "A few column additions come first, so the word problems test choosing the operation rather than the procedure."
   }
+  home_tip: "Plan a small purchase with a set amount of money, such as $10.00, and find the change."
 }
 
 # ── Fractions: adding and subtracting ──────────────────────────────────────
@@ -519,14 +762,16 @@ fragments {
   id: "frag-g5-unlike-fractions-model"
   instruction: "Use the grids to add."
   stage: STAGE_INTRODUCE
-  explainer: "Each grid is cut both ways, so both fractions are counted in the same small parts. Count the shaded parts in each grid, then add."
   items { kind { unlike_fractions { model: true denominators: [2, 3, 4, 5] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "See why fractions with different denominators are added by rewriting them in a common denominator."
+    purpose: "Add fractions with different denominators by rewriting them with a common denominator."
     principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Cutting the columns of one fraction by the rows of the other gives a common unit the child can count."
-    misconceptions: "Adding tops and bottoms: 1/3 + 1/4 = 2/7."
+    rationale: "Each grid is one whole cut into columns for one denominator and rows for the other. The cuts make both fractions countable in the same small parts. Students count the parts, write the equivalent fractions, and then add."
+    misconceptions: "Adding numerators and denominators: 1/3 + 1/4 = 2/7."
+    misconceptions: "Counting the parts in a grid without checking that both grids are cut the same way."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+    references: "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
   }
 }
 
@@ -534,13 +779,16 @@ fragments {
   id: "frag-g5-add-unlike-fractions"
   instruction: "Add. Write the answer in simplest form."
   stage: STAGE_PRACTICE
-  explainer: "Make the denominators the same first. For 1/3 + 1/4, use twelfths: 4/12 + 3/12 = 7/12."
+  explainer: "Example: 1/3 + 1/4 = 4/12 + 3/12 = 7/12"
   items { kind { unlike_fractions {} } count: 8 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Add fractions with different denominators by rewriting them with a common denominator."
+    purpose: "Add fractions with different denominators."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Adding tops and bottoms: 1/3 + 1/4 = 2/7."
+    rationale: "Some pairs of denominators share a factor, such as 4 and 6, and some do not, such as 3 and 4. When they share a factor, the product of the denominators works but is not the least. Some sums are more than 1 or can be simplified, so students check the answer's form."
+    misconceptions: "Adding numerators and denominators: 1/3 + 1/4 = 2/7."
+    misconceptions: "Changing the denominator without changing the numerator: 1/3 written as 1/12."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -553,32 +801,41 @@ fragments {
   design {
     purpose: "Subtract fractions with different denominators."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Subtraction uses the same common-denominator step as addition. Every first fraction is larger than the second, so each difference is positive. Some pairs look close in size, so students rewrite them before deciding which is larger."
+    misconceptions: "Subtracting numerators and denominators: 3/4 − 1/3 = 2/1."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-add-unlike-mixed"
-  instruction: "Add the mixed numbers."
+  instruction: "Add. Write the answer in simplest form."
   stage: STAGE_PRACTICE
-  explainer: "Add the whole numbers and the fractions. If the fractions make more than 1, trade them for a whole."
+  explainer: "Example: 2 1/2 + 1 2/3 = 2 3/6 + 1 4/6 = 3 7/6 = 4 1/6"
   items { kind { unlike_fractions { mixed: true denominators: [2, 3, 4, 5, 6, 8] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Add mixed numbers with different denominators."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Students add the whole numbers and the fractions separately after rewriting the fractions. Many fraction parts add to more than 1, so the sum must be regrouped. The worked line shows the regrouping step."
+    misconceptions: "Leaving an answer such as 3 7/6 without regrouping to 4 1/6."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-subtract-unlike-mixed"
-  instruction: "Subtract the mixed numbers."
+  instruction: "Subtract. Write the answer in simplest form."
   stage: STAGE_STRETCH
-  explainer: "If the fraction you take away is bigger, trade one whole for fraction parts first."
+  explainer: "Example: 3 1/4 − 1 1/2 = 2 5/4 − 1 2/4 = 1 3/4"
   items { kind { unlike_fractions { mixed: true subtract: true denominators: [2, 3, 4, 5, 6, 8] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Subtract mixed numbers with different denominators, trading a whole when needed."
+    purpose: "Subtract mixed numbers with different denominators, regrouping a whole when needed."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "In some items the second fraction part is larger than the first. Students then trade one whole for fraction parts, as in the worked line. Items with and without regrouping are mixed so students check every time."
+    misconceptions: "Subtracting the smaller fraction from the larger, whichever number it belongs to: 3 1/4 − 1 1/2 = 2 1/4."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -589,14 +846,14 @@ worksheets {
   max_pages: 2
   placements { fragment_id: "frag-equivalent-missing" count: 4 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-g5-unlike-fractions-model" }
-  placements { fragment_id: "frag-g5-add-unlike-fractions" }
-  placements { fragment_id: "frag-g5-subtract-unlike-fractions" }
+  placements { fragment_id: "frag-g5-add-unlike-fractions" count: 6 }
+  placements { fragment_id: "frag-g5-subtract-unlike-fractions" count: 6 }
   design {
     purpose: "Add and subtract fractions with different denominators."
-    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Finding equivalent fractions comes first, because it is the step that makes the denominators match."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Finding equivalent fractions comes first, because it is the step that makes the denominators match. The grids then show why, before the symbolic practice."
   }
-  home_tip: "Ask if the answer is more or less than 1 before working it out."
+  home_tip: "Before working out a sum, decide whether it is more or less than 1."
 }
 
 worksheets {
@@ -609,36 +866,42 @@ worksheets {
   design {
     purpose: "Add and subtract mixed numbers with different denominators."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Addition comes first because regrouping a sum is easier than regrouping before subtracting."
   }
+  home_tip: "Use measuring cups to show that 1 1/2 cups and 2/3 cup make more than 2 cups."
 }
 
 worksheets {
   id: "ws-g5-fraction-word-problems"
-  title: "Fraction word problems: adding and subtracting"
+  title: "Fraction stories: add and subtract"
   seed: 543
   max_pages: 2
-  placements { fragment_id: "frag-g5-add-unlike-fractions" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-g5-add-unlike-fractions" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-g5-unlike-fraction-word-problems" }
   design {
     purpose: "Solve word problems that add and subtract fractions with different denominators."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Two calculations recall the procedure before the problems ask students to choose the operation."
   }
-  home_tip: "Ask if the answer makes sense: is it more or less than each amount?"
+  home_tip: "Check whether each answer makes sense: a sum is more than each part, and a difference is less than the starting amount."
 }
 
 # ── Fractions: dividing and multiplying ────────────────────────────────────
 
 fragments {
   id: "frag-g5-fraction-as-division"
-  instruction: "Write each division as a fraction, or each fraction as a division."
+  instruction: "Fill in the boxes."
   stage: STAGE_INTRODUCE
-  explainer: "3 ÷ 4 = 3/4. Sharing 3 pizzas among 4 people gives each person 3/4 of a pizza."
+  explainer: "Example: 3 ÷ 4 = 3/4. If 4 people share 3 pizzas equally, each gets 3/4 of a pizza."
   items { kind { fraction_as_division {} } count: 9 min_count: 6 }
   max_columns: 2
   design {
-    purpose: "Understand a fraction a/b as a divided by b."
+    purpose: "Interpret a fraction a/b as a divided by b."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    misconceptions: "Thinking you cannot divide a smaller number by a larger one."
+    rationale: "The items come in three groups: division to fraction, fraction to division, and sharing stories. The stories give the symbols a meaning. Some quotients are more than 1, so students see that a/b works for any whole numbers."
+    misconceptions: "Thinking a smaller number cannot be divided by a larger one."
+    misconceptions: "Writing the divisor on top: 3 ÷ 4 written as 4/3."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -646,26 +909,36 @@ fragments {
   id: "frag-g5-fraction-times-whole"
   instruction: "Multiply. Write the answer in simplest form."
   stage: STAGE_INTRODUCE
-  explainer: "2/3 × 6 means 2/3 of 6. One third of 6 is 2, so two thirds is 4."
+  explainer: "Example: 2/3 × 6 = 4. One third of 6 is 2, so two thirds of 6 is 4."
   items { kind { fraction_multiply { mode: MODE_WHOLE } } count: 8 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Multiply a fraction by a whole number as a part of a quantity."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Half of the whole numbers are multiples of the denominator, so the answer is a whole number found by sharing. The rest give fraction answers, which students simplify or write as mixed numbers. Both kinds use the same reading: a/b of q is a parts of q cut into b equal parts."
+    misconceptions: "Multiplying the whole number by both numerator and denominator: 2/3 × 6 = 12/18."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-fraction-times-fraction-model"
-  instruction: "The grid shows the product. Write it as a fraction."
+  instruction: "Write the product shown by the grid."
   stage: STAGE_GUIDED
-  explainer: "The columns show the first fraction and the rows show the second. The dark part, where they overlap, is the product."
+  example {
+    item { fraction_multiply { mode: MODE_FRACTION model: true } }
+    seed: 2
+    text: "The columns show the first fraction and the rows show the second. The **dark** part is the product."
+  }
   items { kind { fraction_multiply { mode: MODE_FRACTION model: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "See the product of two fractions as part of a part, on an area model."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Counting dark parts out of all parts shows why the numerators and the denominators multiply."
+    purpose: "Find the product of two fractions as a part of a part on an area model."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The square is one whole. The dark overlap is the product: its parts are the numerators multiplied, and all the parts are the denominators multiplied. Counting both shows why the rule for multiplying fractions works."
+    misconceptions: "Counting the lightly shaded parts as part of the product."
+    misconceptions: "Using the number of shaded rows as the denominator."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -673,13 +946,37 @@ fragments {
   id: "frag-g5-fraction-times-fraction"
   instruction: "Multiply. Write the answer in simplest form."
   stage: STAGE_PRACTICE
-  explainer: "Multiply the numerators and the denominators: 2/3 × 4/5 = 8/15."
+  explainer: "Example: 2/3 × 4/5 = (2 × 4)/(3 × 5) = 8/15"
   items { kind { fraction_multiply { mode: MODE_FRACTION } } count: 8 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Multiply two fractions."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "These items follow the area models and use the rule they showed. Some products can be simplified, so students check the final form. Denominators stay at 6 or less to keep the products small."
     misconceptions: "Making the denominators the same first, as for adding."
+    misconceptions: "Multiplying the numerators and keeping one denominator: 2/3 × 4/3 = 8/3."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-fraction-area-tiles"
+  instruction: "Find the area of the shaded rectangle."
+  stage: STAGE_GUIDED
+  example {
+    item { fraction_multiply { mode: MODE_AREA tiles: true } }
+    seed: 3
+    text: "The square has sides of **1 unit**. Count the tiles in the rectangle. Then check by multiplying the side lengths."
+  }
+  items { kind { fraction_multiply { mode: MODE_AREA tiles: true } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Find the area of a rectangle with fraction side lengths by tiling it with unit-fraction tiles."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The rectangle sits inside a square of side 1, cut into tiles of side 1/b by 1/d. Students find the area of one tile, count the shaded tiles, and multiply. The standard asks for this tiling so that the area found by counting matches the product of the sides."
+    misconceptions: "Treating each tile as 1 square unit."
+    misconceptions: "Adding the side lengths instead of multiplying them."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -687,53 +984,82 @@ fragments {
   id: "frag-g5-fraction-area"
   instruction: "Find the area of each rectangle."
   stage: STAGE_APPLY
-  explainer: "Area is length times width, for fraction sides too: 1/2 m by 3/4 m is 3/8 square m."
   items { kind { fraction_multiply { mode: MODE_AREA } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Find the area of a rectangle with fraction side lengths by multiplying."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The rectangles are drawn to scale without tiles, so students multiply the side lengths. Each answer has square units. The drawings keep the sides in proportion, so a longer side looks longer."
+    misconceptions: "Writing the area in units instead of square units."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-scaling"
-  instruction: "Write <, > or = without multiplying."
+  instruction: "Compare. Write <, >, or =. Do not multiply."
   stage: STAGE_PRACTICE
-  explainer: "Multiplying by a fraction less than 1 makes a number smaller. Multiplying by a fraction more than 1 makes it bigger."
+  explainer: "A number times a fraction less than 1 is less than the number."
   items { kind { scaling_compare {} } count: 12 min_count: 6 }
   max_columns: 3
   design {
-    purpose: "Predict whether a product is bigger or smaller than a factor from the size of the other factor."
+    purpose: "Predict whether a product is greater or less than a factor from the size of the other factor."
     principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "Fractions less than 1 and greater than 1 take turns, and one item multiplies by a fraction equal to 1. The whole numbers are too large to multiply quickly. Students must reason about the size of the fraction instead."
     misconceptions: "Thinking multiplying always makes a number bigger."
+    misconceptions: "Comparing the numerators only, without seeing whether the fraction is more or less than 1."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+  }
+}
+
+fragments {
+  id: "frag-g5-unit-fraction-by-whole-model"
+  instruction: "Divide. Use the model."
+  stage: STAGE_INTRODUCE
+  example {
+    item { unit_fraction_divide { model: true } }
+    seed: 4
+    text: "The shaded column is the unit fraction. The rows cut it into equal shares. The **dark** share is the answer."
+  }
+  items { kind { unit_fraction_divide { model: true } } count: 3 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Divide a unit fraction by a whole number using an area model."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The square is one whole and the shaded column is 1/b of it. The rows cut that column into equal shares, and the dark share is the quotient. Because the rows cross the whole square, the model shows what fraction of the whole one share is."
+    misconceptions: "Naming the share by the parts of the column only: 1/3 ÷ 4 = 1/4."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-unit-fraction-by-whole"
   instruction: "Divide. Write the answer as a fraction."
-  stage: STAGE_INTRODUCE
-  explainer: "1/3 ÷ 4 shares one third into 4 equal parts. Each part is 1/12."
+  stage: STAGE_PRACTICE
   items { kind { unit_fraction_divide {} } count: 6 min_count: 4 }
   max_columns: 3
   design {
     purpose: "Divide a unit fraction by a whole number."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "These items follow the model and use larger denominators that would be hard to draw. Each answer is a unit fraction with a larger denominator. Students can check by multiplying the answer by the whole number."
+    misconceptions: "Multiplying the numerator instead of the denominator: 1/3 ÷ 4 = 4/3."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-whole-by-unit-fraction"
-  instruction: "Divide. Use the bars when they help."
+  instruction: "Divide."
   stage: STAGE_GUIDED
-  explainer: "4 ÷ 1/3 asks how many thirds are in 4 wholes. Each whole has 3 thirds, so 4 × 3 = 12."
+  explainer: "Example: 4 ÷ 1/3 = 12. Each whole has 3 thirds, so 4 wholes have 12 thirds."
   items { kind { unit_fraction_divide { whole_by_unit: true } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Divide a whole number by a unit fraction."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Thinking dividing always makes a number smaller."
+    rationale: "Dividing by 1/b asks how many b-ths fit in the whole number. Items with up to 4 wholes show one bar per whole, cut into b parts to count. Larger items have no bars, so students use the counting rule."
+    misconceptions: "Thinking dividing always makes a number smaller: 4 ÷ 1/3 = 4/3."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -744,10 +1070,11 @@ worksheets {
   max_pages: 1
   placements { fragment_id: "frag-g5-fraction-as-division" }
   design {
-    purpose: "Read a fraction as a division, and solve sharing problems."
+    purpose: "Interpret a fraction as division and solve sharing problems."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Symbols in both directions come before the stories that give them meaning."
   }
-  home_tip: "Share 3 crackers among 4 people and ask how much each gets."
+  home_tip: "Share 3 crackers equally among 4 people. Each person gets 3/4 of a cracker."
 }
 
 worksheets {
@@ -755,13 +1082,15 @@ worksheets {
   title: "Multiplying fractions"
   seed: 552
   max_pages: 2
-  placements { fragment_id: "frag-g5-fraction-times-whole" }
+  placements { fragment_id: "frag-g5-fraction-times-whole" count: 6 }
   placements { fragment_id: "frag-g5-fraction-times-fraction-model" }
-  placements { fragment_id: "frag-g5-fraction-times-fraction" }
+  placements { fragment_id: "frag-g5-fraction-times-fraction" count: 6 }
   design {
     purpose: "Multiply a fraction by a whole number and by a fraction."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "A fraction of a whole number comes first. The area model then shows a fraction of a fraction before the rule."
   }
+  home_tip: "Fold a sheet of paper in half, then fold the half into thirds. One small part is 1/3 of 1/2, or 1/6 of the sheet."
 }
 
 worksheets {
@@ -769,12 +1098,15 @@ worksheets {
   title: "Area with fraction sides"
   seed: 553
   max_pages: 2
-  placements { fragment_id: "frag-g5-fraction-times-fraction" count: 4 stage: STAGE_REVIEW }
-  placements { fragment_id: "frag-g5-fraction-area" }
+  placements { fragment_id: "frag-g5-fraction-times-fraction" count: 2 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-g5-fraction-area-tiles" }
+  placements { fragment_id: "frag-g5-fraction-area" count: 2 }
   design {
     purpose: "Find areas of rectangles with fraction side lengths."
-    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Tiled rectangles come before plain ones, so the product is first a count of tiles."
   }
+  home_tip: "Measure a small rectangle, such as a sticky note, in feet or meters and find its area as a fraction."
 }
 
 worksheets {
@@ -786,8 +1118,9 @@ worksheets {
   design {
     purpose: "Compare a product with a factor without multiplying."
     principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "Large whole numbers make reasoning about the fraction quicker than calculating."
   }
-  home_tip: "Ask: is half of 12 more or less than 12? What about one and a half of 12?"
+  home_tip: "Compare half of 12, all of 12 and one and a half times 12."
 }
 
 worksheets {
@@ -795,12 +1128,14 @@ worksheets {
   title: "Fraction word problems: multiplying"
   seed: 555
   max_pages: 2
-  placements { fragment_id: "frag-g5-fraction-times-whole" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-g5-fraction-times-whole" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-g5-fraction-multiply-word-problems" }
   design {
     purpose: "Solve word problems that multiply fractions and mixed numbers."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Two calculations recall the procedure before the problems ask students to recognize multiplication in a story."
   }
+  home_tip: "Halve or double a recipe and work out the new amount of each ingredient."
 }
 
 worksheets {
@@ -808,14 +1143,16 @@ worksheets {
   title: "Dividing with unit fractions"
   seed: 556
   max_pages: 3
+  placements { fragment_id: "frag-g5-unit-fraction-by-whole-model" }
   placements { fragment_id: "frag-g5-unit-fraction-by-whole" }
-  placements { fragment_id: "frag-g5-whole-by-unit-fraction" }
+  placements { fragment_id: "frag-g5-whole-by-unit-fraction" count: 4 }
   placements { fragment_id: "frag-g5-unit-fraction-word-problems" }
   design {
     purpose: "Divide unit fractions by whole numbers and whole numbers by unit fractions, and use both in word problems."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each kind of division starts with a model. The word problems then mix both kinds, so the story decides which way to divide."
   }
-  home_tip: "Ask how many quarter cups are in 2 cups, then check with a measuring cup."
+  home_tip: "Find how many 1/4-cup scoops are in 2 cups, then check with a measuring cup."
 }
 
 # ── Measurement and data ───────────────────────────────────────────────────
@@ -824,53 +1161,72 @@ fragments {
   id: "frag-g5-convert-measure"
   instruction: "Convert."
   stage: STAGE_PRACTICE
-  explainer: "1 m = 100 cm, 1 km = 1,000 m, 1 cm = 10 mm, 1 kg = 1,000 g, 1 L = 1,000 mL. 1 ft = 12 in, 1 yd = 3 ft, 1 gal = 4 qt, 1 lb = 16 oz, 1 hr = 60 min."
+  figure {
+    data_table {
+      header: ["Metric", "Customary"]
+      rows { cells { text: "1 km = 1,000 m" } cells { text: "1 yd = 3 ft" } }
+      rows { cells { text: "1 m = 100 cm" } cells { text: "1 ft = 12 in." } }
+      rows { cells { text: "1 cm = 10 mm" } cells { text: "1 gal = 4 qt" } }
+      rows { cells { text: "1 kg = 1,000 g" } cells { text: "1 lb = 16 oz" } }
+      rows { cells { text: "1 L = 1,000 mL" } cells { text: "1 hr = 60 min" } }
+    }
+  }
   items { kind { convert_measure {} } count: 12 min_count: 6 }
   max_columns: 2
   design {
-    purpose: "Convert between larger and smaller units of one system, including decimals."
+    purpose: "Convert between larger and smaller units of one measurement system, including decimals."
     principles: [PRINCIPLE_INTERLEAVING]
-    misconceptions: "Dividing when going to a smaller unit: 3 m = 0.03 cm."
+    rationale: "Items mix metric and customary units and both directions, so students decide each time whether to multiply or divide. Metric conversions use decimals, which applies multiplying and dividing by powers of 10. Customary conversions to larger units give a whole number and a remainder in the smaller unit."
+    misconceptions: "Dividing when converting to a smaller unit: 3 m = 0.03 cm."
+    misconceptions: "Using 100 for every conversion, as if every system were metric."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-line-plot-share"
-  instruction: "Use the line plot."
+  instruction: "Use the line plot to answer the questions."
   stage: STAGE_APPLY
-  explainer: "Each X is one amount. To share the total equally, divide it by how many there are."
   items { kind { line_plot_share {} } count: 2 min_count: 1 }
   max_columns: 1
   design {
-    purpose: "Read a line plot of fractions and use fraction operations to find a total and an equal share."
+    purpose: "Read a line plot of fractional measurements and use fraction operations to find a total and an equal share."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The data are in eighths, as the standard specifies. Students read one count, add all the amounts, and then share the total equally. The equal share is the amount each container would hold if the total were redistributed."
+    misconceptions: "Counting the X marks instead of adding the amounts they stand for."
+    misconceptions: "Dividing by the number of different values instead of the number of X marks."
+    references: "Common Core Standards Writing Team (2011), Progressions for K-3 Categorical Data; 2-5 Measurement Data"
   }
 }
 
 fragments {
   id: "frag-g5-volume-count"
-  instruction: "Count the cubes to find the volume."
+  instruction: "Find the volume. Each cube is 1 cubic unit."
   stage: STAGE_INTRODUCE
-  explainer: "Each small cube is 1 cubic unit. Volume is how many cubes fill the box, including the ones you cannot see."
   items { kind { prism_volume { mode: MODE_COUNT } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Find the volume of a box by counting unit cubes."
+    purpose: "Find the volume of a rectangular prism by counting unit cubes."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Counting only the cubes that show on the outside."
+    rationale: "Each prism is drawn with its unit cubes on three faces. The top and side faces are shaded differently so the cubes read as solid. Students must count the cubes that are hidden inside, which leads to counting by layers."
+    misconceptions: "Counting only the cube faces that show."
+    misconceptions: "Counting the edge cubes twice, once on each face."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-volume-layers"
-  instruction: "Find the volume by layers."
+  instruction: "Find the volume. Count the cubes in the bottom layer first."
   stage: STAGE_GUIDED
-  explainer: "Count the cubes in the bottom layer. Every layer is the same, so multiply by the number of layers."
   items { kind { prism_volume { mode: MODE_LAYERS } } count: 3 min_count: 2 }
   max_columns: 3
   design {
-    purpose: "See that volume is the cubes in one layer times the number of layers."
+    purpose: "Find volume as the number of cubes in one layer times the number of layers."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The bottom layer is shaded darker, so students can count one layer. Every layer has the same number of cubes. Multiplying by the number of layers gives the volume, which is the base area times the height."
+    misconceptions: "Counting the bottom layer as only the front row of cubes."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
 }
 
@@ -878,25 +1234,31 @@ fragments {
   id: "frag-g5-volume-formula"
   instruction: "Find the volume."
   stage: STAGE_PRACTICE
-  explainer: "Volume = length × width × height, or the area of the base × height."
+  explainer: "V = l × w × h    V = B × h"
   items { kind { prism_volume { mode: MODE_FORMULA } } count: 6 min_count: 3 }
   max_columns: 2
   design {
-    purpose: "Find the volume of a box from its edge lengths."
+    purpose: "Find the volume of a rectangular prism from its edge lengths or its base area."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Most prisms give three edge lengths. Some give the area of the base and the height, which uses the second formula. The prisms are drawn in proportion to their edge lengths."
+    misconceptions: "Adding the edge lengths instead of multiplying them."
+    misconceptions: "Multiplying the base area by another edge of the base instead of the height."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
 }
 
 fragments {
   id: "frag-g5-volume-combined"
-  instruction: "The shape is made of two boxes. Find its volume."
+  instruction: "Find the volume of each figure."
   stage: STAGE_STRETCH
-  explainer: "Find the volume of each box, then add them."
   items { kind { prism_volume { mode: MODE_COMBINED } } count: 3 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Find the volume of a shape made of two boxes by adding their volumes."
+    purpose: "Find the volume of a figure made of two rectangular prisms by adding their volumes."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each figure is two prisms of the same width standing side by side. The answer lines ask for each prism and then the whole figure. Volume is additive, so the two volumes add to the total."
+    misconceptions: "Multiplying the total length by the taller height, as if the figure were one prism."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
 }
 
@@ -908,22 +1270,25 @@ worksheets {
   placements { fragment_id: "frag-g5-convert-measure" }
   placements { fragment_id: "frag-g5-measurement-word-problems" }
   design {
-    purpose: "Convert units, and use conversions in problems with more than one step."
+    purpose: "Convert units and use conversions in multi-step problems."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Single conversions come first. The word problems then use a conversion as one step of several."
   }
-  home_tip: "Read a food label together and change grams to kilograms."
+  home_tip: "Read a food label and change grams to kilograms or ounces to pounds."
 }
 
 worksheets {
   id: "ws-g5-line-plots"
   title: "Line plots with fractions"
   seed: 562
-  max_pages: 2
+  max_pages: 1
   placements { fragment_id: "frag-g5-line-plot-share" }
   design {
     purpose: "Answer questions from a line plot using fraction operations."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each plot is read, totalled and then shared equally."
   }
+  home_tip: "Measure several pencils to the nearest 1/8 inch and make a line plot of the lengths."
 }
 
 worksheets {
@@ -936,8 +1301,9 @@ worksheets {
   design {
     purpose: "Find volume by counting cubes, then by layers."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Counting every cube comes first. Counting one layer and multiplying is the faster method that leads to the formula."
   }
-  home_tip: "Build a box from sugar cubes or blocks and count them."
+  home_tip: "Build a box from sugar cubes or blocks, count the cubes, and then count them by layers."
 }
 
 worksheets {
@@ -946,68 +1312,85 @@ worksheets {
   seed: 564
   max_pages: 3
   placements { fragment_id: "frag-g5-volume-layers" count: 2 stage: STAGE_REVIEW }
-  placements { fragment_id: "frag-g5-volume-formula" }
-  placements { fragment_id: "frag-g5-volume-combined" }
+  placements { fragment_id: "frag-g5-volume-formula" count: 4 }
+  placements { fragment_id: "frag-g5-volume-combined" count: 2 }
   placements { fragment_id: "frag-g5-volume-word-problems" }
   design {
-    purpose: "Use the volume formulas, and add volumes of joined boxes."
+    purpose: "Use the volume formulas, and add the volumes of joined prisms."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Layers of cubes come first so the formula is a count the child has already made."
+    rationale: "Layers of cubes come first, so the formula is a count students have already made."
   }
+  home_tip: "Measure a cereal box in inches and find its volume."
 }
 
 # ── Geometry ───────────────────────────────────────────────────────────────
 
 fragments {
   id: "frag-g5-read-points"
-  instruction: "Write where each point is."
+  instruction: "Write the ordered pair for each point."
   stage: STAGE_INTRODUCE
-  explainer: "(3, 5) means 3 across from 0, then 5 up. Across comes first."
+  explainer: "(3, 5): start at 0, move 3 along the x-axis, then 5 up."
   items { kind { coordinate_points { mode: MODE_READ } } count: 2 min_count: 1 }
   max_columns: 2
   design {
-    purpose: "Read the coordinates of points on a grid."
+    purpose: "Read the coordinates of points on a coordinate grid."
     principles: [PRINCIPLE_NUMBER_LINE]
-    misconceptions: "Swapping the numbers: writing (5, 3) for 3 across and 5 up."
+    rationale: "The axes are labelled x and y, as the standard names them. Some points lie on an axis, so one coordinate is 0. No grid shows both (a, b) and (b, a), so a swapped pair is always wrong."
+    misconceptions: "Swapping the coordinates: writing (5, 3) for 3 along and 5 up."
+    misconceptions: "Counting gridlines from 1 instead of from 0."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
 fragments {
   id: "frag-g5-plot-points"
-  instruction: "Plot the points."
+  instruction: "Plot and label each point."
   stage: STAGE_PRACTICE
   items { kind { coordinate_points { mode: MODE_PLOT } } count: 2 min_count: 1 }
   max_columns: 2
   design {
-    purpose: "Plot points on a grid from their coordinates."
+    purpose: "Plot points on a coordinate grid from their coordinates."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Plotting reverses reading: students start from the ordered pair and find the point. Some points lie on an axis. Each point is labelled so it can be checked against the answer key."
+    misconceptions: "Plotting (0, 4) on the x-axis."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
 fragments {
   id: "frag-g5-name-quadrilaterals"
-  instruction: "Tick the most exact name for each shape."
+  instruction: "Check the most specific name for each shape."
   stage: STAGE_PRACTICE
-  explainer: "A square is also a rectangle and a rhombus, but square is its most exact name."
+  example {
+    item { shape_hierarchy { mode: MODE_NAME } }
+    seed: 7
+    text: "A square is also a rectangle and a rhombus. **Square** is its most specific name."
+  }
   items { kind { shape_hierarchy { mode: MODE_NAME } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Classify quadrilaterals by their sides and angles."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each shape is labelled with its side lengths and marked with any right angles. Students use these properties, not the shape's position, to name it. Squares and rhombuses appear tilted as well as upright."
     misconceptions: "Thinking a square is not a rectangle."
+    misconceptions: "Calling a tilted square a diamond or a rhombus only."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
 fragments {
   id: "frag-g5-always-sometimes-never"
-  instruction: "Tick always, sometimes or never."
+  instruction: "Check always, sometimes, or never."
   stage: STAGE_STRETCH
   items { kind { shape_hierarchy { mode: MODE_ALWAYS_SOMETIMES_NEVER } } count: 8 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Reason about which shapes belong to which families."
+    purpose: "Reason about which quadrilaterals belong to which categories."
     principles: [PRINCIPLE_SELF_EXPLANATION]
-    rationale: "Deciding \"sometimes\" needs one example and one counterexample, which makes the child think about the properties."
+    rationale: "Deciding \"sometimes\" needs one example and one counterexample, which makes students use the properties of each category. The statements avoid trapezoids, whose definition varies between curricula. Statements about sides and angles appear with statements about categories."
+    misconceptions: "Thinking a square is not a rectangle."
+    misconceptions: "Reading \"a rectangle is sometimes a square\" as false because most rectangles are not squares."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -1021,8 +1404,9 @@ worksheets {
   design {
     purpose: "Read and plot points on a coordinate grid."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Reading points comes before plotting them, because reading shows the order of the coordinates."
   }
-  home_tip: "Play a simple battleship game on graph paper."
+  home_tip: "Play a short game of battleship on graph paper, naming each guess as an ordered pair."
 }
 
 worksheets {
@@ -1035,7 +1419,9 @@ worksheets {
   design {
     purpose: "Read and extend graphs of real situations."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Reading plain points comes first. The graphs then give the points a meaning."
   }
+  home_tip: "Graph the money saved each week at $2 a week, and predict the total after 10 weeks."
 }
 
 worksheets {
@@ -1043,11 +1429,12 @@ worksheets {
   title: "The quadrilateral family"
   seed: 573
   max_pages: 2
-  placements { fragment_id: "frag-g5-name-quadrilaterals" }
+  placements { fragment_id: "frag-g5-name-quadrilaterals" count: 4 }
   placements { fragment_id: "frag-g5-always-sometimes-never" }
   design {
-    purpose: "Classify quadrilaterals and reason about their families."
+    purpose: "Classify quadrilaterals and reason about their categories."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Naming single shapes comes before statements about whole categories."
   }
-  home_tip: "Play \"always, sometimes, never\": is a rhombus always a square?"
+  home_tip: "Find rectangles, squares and rhombuses around the house and name each one as specifically as possible."
 }

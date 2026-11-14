@@ -452,6 +452,9 @@ message LongDivisionItem {
   int32 dividend_digits = 1;
   // Some items leave a remainder.
   bool remainders = 2;
+  // Beside each division, a table of the divisor's multiples (1, 2, 5 and
+  // 10 times) for the child to fill in and estimate from.
+  bool multiples = 3;
 }
 
 // A clock; read the time, or find a time some minutes later.
@@ -523,11 +526,19 @@ message NumericalExpression {
 
 // A calculation in words to write as an expression, or an expression to
 // compare with a part of it without working it out.
-message ExpressionInWords {}
+message ExpressionInWords {
+  // Compare an expression with a part of it, such as 3 × (18,932 + 921)
+  // with 18,932 + 921, instead of writing one from words.
+  bool compare = 1;
+}
 
 // Two patterns from two "add" rules, both starting at 0, in a table; fill
 // it in and say how the terms compare.
-message TwoPatterns {}
+message TwoPatterns {
+  // Instead of comparing, write the corresponding terms as ordered pairs
+  // and plot them on a coordinate grid.
+  bool graph = 1;
+}
 
 // The same digit in two numbers, one place apart or two; how many times
 // the value of one is the value of the other.
@@ -582,6 +593,9 @@ message DivideByTwoDigits {
   int32 dividend_digits = 1;
   // Some items leave a remainder.
   bool remainders = 2;
+  // Beside each division, a table of the divisor's multiples (1, 2, 5 and
+  // 10 times) for the child to fill in and estimate from.
+  bool multiples = 3;
 }
 
 // A sum, difference, product or quotient of decimals to hundredths.
@@ -596,6 +610,18 @@ message DecimalArithmetic {
     // Written in a line, with room to work.
     OP_MULTIPLY = 3;
     OP_DIVIDE = 4;
+  }
+  // The second number of a product or quotient.
+  Second second = 2;
+  // With OP_ADD or OP_SUBTRACT: written in a line, the two numbers with
+  // different numbers of decimal places, and room to set them in columns.
+  bool in_a_line = 3;
+
+  enum Second {
+    // A whole number or a decimal.
+    SECOND_UNSPECIFIED = 0;
+    SECOND_WHOLE = 1;
+    SECOND_DECIMAL = 2;
   }
 }
 
@@ -631,6 +657,9 @@ message FractionMultiply {
   // With MODE_FRACTION: show the product on a grid, a/b of the columns and
   // c/d of the rows, overlapping in the product.
   bool model = 2;
+  // With MODE_AREA: draw the rectangle inside a unit square tiled in
+  // 1/b by 1/d tiles, so the child can count the tiles.
+  bool tiles = 3;
 }
 
 // A number times a fraction less than, equal to or more than 1; compare the
@@ -642,6 +671,9 @@ message ScalingCompare {}
 message UnitFractionDivide {
   // Whole number ÷ unit fraction, with fraction bars to count.
   bool whole_by_unit = 1;
+  // Unit fraction ÷ whole number: show 1/b of a square cut into equal
+  // shares, one share shaded dark.
+  bool model = 2;
 }
 
 // Converting between units of one system, both ways, including decimals.
