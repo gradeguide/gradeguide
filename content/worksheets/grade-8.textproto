@@ -9,7 +9,7 @@
 
 fragments {
   id: "frag-g8-rational-or-irrational"
-  instruction: "Is the number rational or irrational?"
+  instruction: "Is the number rational or irrational? Check one."
   stage: STAGE_INTRODUCE
   explainer: "A rational number can be written as a fraction of whole numbers. Its decimal ends or repeats."
   items { kind { classify { topic: TOPIC_RATIONAL } } count: 8 min_count: 6 }
@@ -17,7 +17,7 @@ fragments {
   design {
     purpose: "Tell rational numbers from irrational ones by their decimals and square roots."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "The items mix square roots of perfect squares, square roots of other numbers, fractions, ending and repeating decimals, and π. Each kind comes once before any repeats, so the child tests every number against the definition instead of its look. 3.14 sits beside π so the child sees that a rounded value of π is rational."
+    rationale: "The items mix square roots of perfect squares, square roots of other numbers, fractions, ending and repeating decimals, and π. Each kind comes once before any repeats, so the student tests every number against the definition instead of its look. 3.14 sits beside π so the student sees that a rounded value of π is rational."
     misconceptions: "Thinking every square root is irrational, such as √49."
     misconceptions: "Thinking a repeating decimal is irrational because it never ends."
     misconceptions: "Thinking 3.14 is irrational because it stands for π."
@@ -27,7 +27,7 @@ fragments {
 
 fragments {
   id: "frag-g8-estimate-roots"
-  instruction: "Between which two whole numbers is the square root?"
+  instruction: "Write the two whole numbers the square root lies between."
   stage: STAGE_PRACTICE
   explainer: "Find the perfect squares on either side: 36 < 40 < 49, so √40 is between 6 and 7."
   items { kind { exponents { mode: MODE_ESTIMATE_ROOT } } count: 6 min_count: 4 }
@@ -35,7 +35,7 @@ fragments {
   design {
     purpose: "Place a square root between two whole numbers to estimate it."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "Placing a square root between two whole numbers rests on knowing the perfect squares up to 144. The explainer shows the root squeezed between two perfect squares, which is how grade 8 estimates irrational numbers. Numbers up to 150 keep to squares a child knows."
+    rationale: "Placing a square root between two whole numbers depends on knowing the perfect squares up to 144. The explainer shows the root squeezed between two perfect squares, which is how grade 8 estimates irrational numbers. Numbers up to 150 keep to squares a student knows."
     misconceptions: "Halving the number instead of taking its square root, so √40 is near 20."
     misconceptions: "Writing the perfect squares, 36 and 49, instead of their roots, 6 and 7."
   }
@@ -47,13 +47,13 @@ fragments {
   id: "frag-g8-exponent-rules"
   instruction: "Write as a single power, or as a fraction."
   stage: STAGE_PRACTICE
-  explainer: "Multiplying adds exponents, dividing subtracts them, and a power of a power multiplies them. A negative exponent means one over."
+  explainer: "Multiplying adds exponents, dividing subtracts them, and a power of a power multiplies them. A negative exponent means the reciprocal: 2⁻³ = 1/2³."
   items { kind { exponents { mode: MODE_RULES } } count: 10 min_count: 6 }
   max_columns: 2
   design {
     purpose: "Use the properties of integer exponents."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Products, quotients and powers of powers are mixed, so the child picks the rule each time instead of repeating one. Negative and zero exponents come up inside the same items, as 8.EE.A.1 asks. The explainer states the rules in words the child can check each answer against."
+    rationale: "Products, quotients and powers of powers are mixed, so the student picks the rule each time instead of repeating one. Negative and zero exponents come up inside the same items, as 8.EE.A.1 asks. The explainer states the rules in words the student can check each answer against."
     misconceptions: "Multiplying the exponents when multiplying powers: 3² × 3⁴ = 3⁸."
     misconceptions: "Reading 2⁻³ as a negative number."
     misconceptions: "Thinking a power with exponent 0 is 0."
@@ -70,7 +70,7 @@ fragments {
   design {
     purpose: "Find square and cube roots of perfect squares and cubes, and solve x² = p and x³ = p."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Square and cube roots of perfect squares and cubes are mixed with x² = p and x³ = p. Seeing them together shows the child that solving these equations means taking a root. The condition x > 0 keeps to one answer, as grade 8 expects."
+    rationale: "Square and cube roots of perfect squares and cubes are mixed with x² = p and x³ = p. Seeing them together shows the student that solving these equations means taking a root. The condition x > 0 keeps to one answer, as grade 8 expects."
     misconceptions: "Dividing by 2 or 3 instead of taking the root, so √16 = 8."
     misconceptions: "Mixing up the square root and the cube root of 64."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
@@ -81,13 +81,13 @@ fragments {
   id: "frag-g8-scientific-notation"
   instruction: "Write in scientific notation."
   stage: STAGE_PRACTICE
-  explainer: "Move the decimal point until one nonzero digit is in front of it. The power of 10 counts the moves."
+  explainer: "Move the decimal point until one nonzero digit is to its left. The exponent of 10 is the number of places moved."
   items { kind { scientific_notation { mode: MODE_TO_SCIENTIFIC } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Write very large and very small numbers in scientific notation."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Large and small numbers are mixed, so the child decides the sign of the power each time. The explainer ties the power of 10 to how many places the decimal point moves. Front numbers with up to three digits make the child place the point after the first digit."
+    rationale: "Large and small numbers are mixed, so the student decides the sign of the power each time. The explainer ties the power of 10 to how many places the decimal point moves. First factors with up to three digits make the student place the point after the first digit."
     misconceptions: "Using a positive power of 10 for a number smaller than 1."
     misconceptions: "Leaving the front number at 10 or more, such as 12 × 10⁵."
     misconceptions: "Counting the zeros instead of the places the point moves."
@@ -104,7 +104,7 @@ fragments {
   design {
     purpose: "Write a number in scientific notation out in full."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Writing a number out in full reverses the section before, so the child checks the meaning of the power of 10 both ways. Negative powers come up, so the child places zeros after the decimal point."
+    rationale: "Writing a number out in full reverses the section before, so the student checks the meaning of the power of 10 both ways. Negative powers come up, so the student places zeros after the decimal point."
     misconceptions: "Adding as many zeros as the power instead of moving the point."
     misconceptions: "Moving the point the wrong way for a negative power."
   }
@@ -119,7 +119,7 @@ fragments {
   design {
     purpose: "Estimate how many times as large one quantity is as another, using powers of 10."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "8.EE.A.3 asks how many times as large one quantity is as another, each written as a single digit times a power of 10. Each item gives two quantities from one context, such as a town and a country, so the sizes mean something. The child divides the front numbers and subtracts the powers."
+    rationale: "8.EE.A.3 asks how many times as large one quantity is as another, each written as a single digit times a power of 10. Each item gives two quantities from one context, such as a town and a country, so the sizes mean something. The student divides the first factors and subtracts the exponents."
     misconceptions: "Subtracting the two numbers instead of dividing them."
     misconceptions: "Answering with the difference of the powers, such as 2, instead of 10²."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
@@ -130,13 +130,13 @@ fragments {
   id: "frag-g8-operations-scientific"
   instruction: "Multiply or divide. Write the answer in scientific notation."
   stage: STAGE_PRACTICE
-  explainer: "Multiply or divide the numbers in front, then the powers of 10. Adjust if the front number is not between 1 and 10."
+  explainer: "Multiply or divide the first factors. Then multiply or divide the powers of 10. Rewrite the answer if the first factor is not between 1 and 10."
   items { kind { scientific_notation { mode: MODE_MULTIPLY } } count: 3 min_count: 2 }
   max_columns: 1
   design {
     purpose: "Multiply numbers written in scientific notation."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Multiplying in scientific notation uses the exponent rule from earlier on the sheet. Some products have a front number of 10 or more, so the child must adjust it and the power. Three items keep the focus on the method."
+    rationale: "Multiplying in scientific notation uses the exponent rule from earlier on the sheet. Some products have a first factor of 10 or more, so the student must rewrite it and adjust the exponent. Three items keep the focus on the method."
     misconceptions: "Multiplying the exponents of 10 instead of adding them."
     misconceptions: "Leaving a front number of 10 or more, such as 12 × 10⁸."
   }
@@ -151,7 +151,7 @@ fragments {
   design {
     purpose: "Divide numbers written in scientific notation."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Division follows multiplication so the child can compare the two rules. Some quotients have a front number below 1, so the child must move the point and lower the power by one."
+    rationale: "Division follows multiplication so the student can compare the two rules. Some quotients have a first factor below 1, so the student must move the point and lower the power by one."
     misconceptions: "Dividing the exponents instead of subtracting them."
     misconceptions: "Subtracting a negative exponent as if it were positive."
   }
@@ -169,7 +169,7 @@ fragments {
   design {
     purpose: "Find the slope of a line from the rise and run of a slope triangle."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "A slope triangle on a grid shows the rise and the run as lengths the child can count. Falling lines make the rise negative, so the sign of the slope is seen, not told. This prepares for the formula in the next section."
+    rationale: "A slope triangle on a grid shows the rise and the run as lengths the student can count. Falling lines make the rise negative, so the sign of the slope is seen, not told. This prepares for the formula in the next section."
     misconceptions: "Writing run over rise."
     misconceptions: "Giving a falling line a positive slope."
     misconceptions: "Counting grid lines instead of the spaces between them."
@@ -187,7 +187,7 @@ fragments {
   design {
     purpose: "Find the slope between two points."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "With coordinates and no grid, the child uses the change in y over the change in x. Negative coordinates come up, so subtracting a negative is practised. A line of room under each item is for the two differences."
+    rationale: "With coordinates and no grid, the student uses the change in y over the change in x. Negative coordinates come up, so subtracting a negative is practised. A line of room under each item is for the two differences."
     misconceptions: "Subtracting the x-values in one order and the y-values in the other."
     misconceptions: "Putting the change in x on top."
   }
@@ -202,7 +202,7 @@ fragments {
   design {
     purpose: "Compare the rates of change of two functions given in different forms."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "One function is a table or a graph and the other an equation, as 8.F.A.2 asks. Some tables step x by 2 or start past 0, so the child must divide the change in y by the change in x. Which function changes faster varies from item to item."
+    rationale: "One function is a table or a graph and the other an equation, as 8.F.A.2 asks. Some tables step x by 2 or start past 0, so the student must divide the change in y by the change in x. Which function changes faster varies from item to item."
     misconceptions: "Taking the step between y-values as the rate when x goes up by 2."
     misconceptions: "Comparing the starting values instead of the rates."
     references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
@@ -217,7 +217,7 @@ fragments {
   design {
     purpose: "Compare two proportional relationships given in different ways."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Each story gives one rate as an equation and the other as a total for an amount, as 8.EE.B.5 asks. The child finds both unit rates before comparing them. Plain working space leaves room for both steps."
+    rationale: "Each story gives one rate as an equation and the other as a total for an amount, as 8.EE.B.5 asks. The student finds both unit rates before comparing them. Plain working space leaves room for both steps."
     misconceptions: "Comparing a total, such as 186 miles, with a rate, such as 55 miles an hour."
     misconceptions: "Dividing the wrong way, such as hours per mile."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
@@ -241,7 +241,7 @@ fragments {
   id: "frag-g8-equations-both-sides"
   instruction: "Solve."
   stage: STAGE_PRACTICE
-  explainer: "Collect the variable on one side and the numbers on the other."
+  explainer: "Move the variable terms to one side and the constants to the other."
   items { kind { solve_equation { form: FORM_BOTH_SIDES negatives: true } } count: 6 min_count: 4 }
   max_columns: 2
   design {
@@ -249,14 +249,14 @@ fragments {
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
     rationale: "Some equations need the distributive property or like terms combined before the variable can be collected, as 8.EE.C.7.b asks. Negative coefficients and solutions come up, so sign errors are practised where they happen. Each item has room for several lines of steps."
     misconceptions: "Moving a term across the equals sign without changing its sign."
-    misconceptions: "Multiplying only the first term inside the brackets."
+    misconceptions: "Multiplying only the first term inside the parentheses."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
   }
 }
 
 fragments {
   id: "frag-g8-how-many-solutions"
-  instruction: "How many solutions does it have?"
+  instruction: "How many solutions does the equation have? Check one."
   stage: STAGE_STRETCH
   explainer: "Simplify both sides. Different x-terms: one solution. Same x-terms, different numbers: none. Both sides the same: infinitely many."
   items { kind { classify { topic: TOPIC_SOLUTIONS } } count: 4 min_count: 3 }
@@ -264,7 +264,7 @@ fragments {
   design {
     purpose: "Tell whether a linear equation has one solution, no solution or infinitely many."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Six equation shapes, two for each answer, are mixed so the child cannot answer from how the equation looks. The child simplifies both sides and compares the x-terms and the numbers. This is the reasoning 8.EE.C.7.a asks for."
+    rationale: "Six equation shapes, two for each answer, are mixed so the student cannot answer from how the equation looks. The student simplifies both sides and compares the x-terms and the numbers. This is the reasoning 8.EE.C.7.a asks for."
     misconceptions: "Thinking that x-terms cancelling means x = 0."
     misconceptions: "Thinking every equation has exactly one solution."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
@@ -273,14 +273,15 @@ fragments {
 
 fragments {
   id: "frag-g8-systems-graph"
-  instruction: "Where do the lines cross? That point solves both equations."
+  instruction: "Write the point where the lines intersect."
+  explainer: "The point of intersection is the solution of the system."
   stage: STAGE_INTRODUCE
   items { kind { linear_relation { mode: MODE_SYSTEM_GRAPH } } count: 2 min_count: 1 }
   max_columns: 2
   design {
     purpose: "Solve a system of two linear equations by reading where their graphs cross."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Reading where two lines cross shows what the solution of a system means before any algebra. The crossing points are whole numbers inside the grid, so the reading is exact. Each line is also given as an equation, so the child can check the point in both."
+    rationale: "Reading where two lines cross shows what the solution of a system means before any algebra. The crossing points are whole numbers inside the grid, so the reading is exact. Each line is also given as an equation, so the student can check the point in both."
     misconceptions: "Reading where a line crosses an axis instead of where the lines cross."
     misconceptions: "Writing the coordinates in the wrong order."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
@@ -291,7 +292,7 @@ fragments {
   id: "frag-g8-systems"
   instruction: "Solve the system."
   stage: STAGE_PRACTICE
-  explainer: "If both equations say y = …, set them equal. If one adds x and y and the other subtracts, add the equations."
+  explainer: "If both equations are solved for y, set the expressions equal. If the y-terms are opposites, add the equations."
   items { kind { linear_relation { mode: MODE_SYSTEM } } count: 4 min_count: 4 }
   max_columns: 2
   design {
@@ -305,13 +306,13 @@ fragments {
 
 fragments {
   id: "frag-g8-system-word-problems"
-  instruction: "Write two equations and solve. Show your work."
+  instruction: "Write a system of equations. Solve it. Show your work."
   stage: STAGE_APPLY
   max_columns: 1
   design {
     purpose: "Write and solve a system of equations for a story."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Tickets and sharing stickers are stories a grade 8 child knows. Each has two unknowns and two facts, so two equations are the natural model. The parts ask for one unknown at a time, so the child can use the first answer to find the second."
+    rationale: "Tickets and sharing stickers are stories a grade 8 student knows. Each has two unknowns and two facts, so two equations are the natural model. The parts ask for one unknown at a time, so the student can use the first answer to find the second."
     misconceptions: "Writing one equation with two unknowns and guessing."
     misconceptions: "Using one ticket price for every ticket."
   }
@@ -356,14 +357,15 @@ fragments {
 
 fragments {
   id: "frag-g8-function-or-not"
-  instruction: "Is it a function? Each input may have only one output."
+  instruction: "Is the relation a function? Check one."
+  explainer: "A function has exactly one output for each input."
   stage: STAGE_INTRODUCE
   items { kind { classify { topic: TOPIC_FUNCTION } } count: 4 min_count: 2 }
   max_columns: 4
   design {
     purpose: "Decide whether a table is a function."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Tables are the simplest place to check that each input has only one output. Some tables have a repeated output and are still functions, which tests the definition directly. The inputs are not in order, so the child must look for a repeated x."
+    rationale: "Tables are the simplest place to check that each input has only one output. Some tables have a repeated output and are still functions, which tests the definition directly. The inputs are not in order, so the student must look for a repeated x."
     misconceptions: "Thinking a repeated output means it is not a function."
     misconceptions: "Thinking the x-values must go up in order."
     references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
@@ -372,7 +374,7 @@ fragments {
 
 fragments {
   id: "frag-g8-linear-or-not"
-  instruction: "Is the function linear?"
+  instruction: "Is the function linear? Check one."
   stage: STAGE_PRACTICE
   explainer: "A linear function can be written y = mx + b. Its graph is a straight line."
   items { kind { classify { topic: TOPIC_LINEAR } } count: 6 min_count: 4 }
@@ -380,7 +382,7 @@ fragments {
   design {
     purpose: "Tell linear functions from nonlinear ones by their equations."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Nine equation forms each appear once before any repeats, including y = a number and y = x divided by a number plus a number. The child decides whether the equation can be written as y = mx + b, not just whether it has an x. Squares, cubes, x times itself and x in the denominator are the nonlinear cases 8.F.A.3 contrasts."
+    rationale: "Nine equation forms each appear once before any repeats, including y = a number and y = x divided by a number plus a number. The student decides whether the equation can be written as y = mx + b, not just whether it has an x. Squares, cubes, x times itself and x in the denominator are the nonlinear cases 8.F.A.3 contrasts."
     misconceptions: "Thinking y = 5 is not linear because it has no x."
     misconceptions: "Thinking y = 3/x is linear because x has no power."
     references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
@@ -397,7 +399,7 @@ fragments {
   design {
     purpose: "Write the equation of a line through two points."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Finding the slope first and then b from one point is the method 8.F.B.4 builds. Points include negative coordinates, and when one has x = 0 the child can read b straight off. Room under each item is for both steps."
+    rationale: "Finding the slope first and then b from one point is the method 8.F.B.4 builds. Points include negative coordinates, and when one has x = 0 the student can read b straight off. Room under each item is for both steps."
     misconceptions: "Using the y of the first point as b when its x is not 0."
     misconceptions: "Finding the slope upside down, as change in x over change in y."
     references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
@@ -413,7 +415,7 @@ fragments {
   design {
     purpose: "Find the rate of change and initial value of a linear function from a table."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Each table comes from a linear rule and sometimes starts at x = 0 and sometimes not. The child reads the rate of change from the steps in y, then works back to b. Negative slopes come up."
+    rationale: "Each table comes from a linear rule and sometimes starts at x = 0 and sometimes not. The student reads the rate of change from the steps in y, then works back to b. Negative slopes come up."
     misconceptions: "Taking the first y in the table as b when the table does not start at x = 0."
     misconceptions: "Using the step in y as b."
     references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
@@ -445,7 +447,7 @@ fragments {
   design {
     purpose: "Use the triangle angle sum."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Each triangle is drawn to scale, with two angles given and one in a box. The missing angle moves from corner to corner. The drawing lets the child see whether the answer is about the right size."
+    rationale: "Each triangle is drawn to scale, with two angles given and one in a box. The missing angle moves from corner to corner. The drawing lets the student see whether the answer is about the right size."
     misconceptions: "Subtracting only one of the given angles from 180°."
     misconceptions: "Thinking the angles of a triangle add to 360°."
   }
@@ -461,7 +463,7 @@ fragments {
   design {
     purpose: "Find an exterior angle of a triangle from the two interior angles across from it."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the child uses the exterior angle fact. A child can check the answer by finding the third angle and subtracting it from 180°."
+    rationale: "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the student uses the exterior angle fact. A student can check the answer by finding the third angle and subtracting it from 180°."
     misconceptions: "Adding all three interior angles."
     misconceptions: "Taking the interior angle beside it as the exterior angle."
   }
@@ -477,7 +479,7 @@ fragments {
   design {
     purpose: "Find angles made when a transversal cuts parallel lines."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Each diagram gives one angle and asks for two others, one at each crossing. The child uses vertical, corresponding and alternate angles, and angles on a line. Different slants make the given angle sometimes acute and sometimes obtuse."
+    rationale: "Each diagram gives one angle and asks for two others, one at each crossing. The student uses vertical, corresponding and alternate angles, and angles on a line. Different slants make the given angle sometimes acute and sometimes obtuse."
     misconceptions: "Thinking all eight angles are equal."
     misconceptions: "Subtracting from 90° instead of 180° for angles on a line."
   }
@@ -485,14 +487,14 @@ fragments {
 
 fragments {
   id: "frag-g8-hypotenuse"
-  instruction: "Find the hypotenuse. a² + b² = c²."
+  instruction: "Find the length of the hypotenuse. Use a² + b² = c²."
   stage: STAGE_PRACTICE
   items { kind { pythagorean { mode: MODE_HYPOTENUSE } } count: 4 min_count: 4 }
   max_columns: 3
   design {
     purpose: "Find the hypotenuse of a right triangle."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Whole-number triples such as 3, 4, 5 and 8, 15, 17 keep the arithmetic to squares a child can check. Triangles are turned different ways, so the child finds the hypotenuse across from the right angle and not by where it sits. No triangle comes twice."
+    rationale: "Whole-number triples such as 3, 4, 5 and 8, 15, 17 keep the arithmetic to squares a student can check. Triangles are turned different ways, so the student finds the hypotenuse across from the right angle and not by where it sits. No triangle comes twice."
     misconceptions: "Adding the legs instead of their squares."
     misconceptions: "Forgetting to take the square root at the end."
   }
@@ -508,7 +510,7 @@ fragments {
   design {
     purpose: "Find a leg of a right triangle from the other leg and the hypotenuse."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Finding a leg reverses the hypotenuse items, so the child subtracts squares instead of adding them. The hypotenuse is labelled in each diagram, so the child must first find which side it is."
+    rationale: "Finding a leg reverses the hypotenuse items, so the student subtracts squares instead of adding them. The hypotenuse is labeled in each diagram, so the student must first find which side it is."
     misconceptions: "Adding the squares instead of subtracting them."
     misconceptions: "Subtracting the side lengths instead of their squares."
   }
@@ -516,14 +518,14 @@ fragments {
 
 fragments {
   id: "frag-g8-distance-on-grid"
-  instruction: "Find the distance between A and B. Draw a right triangle to help."
+  instruction: "Find the distance between A and B. Draw a right triangle."
   stage: STAGE_APPLY
   items { kind { pythagorean { mode: MODE_DISTANCE } } count: 2 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Use the Pythagorean theorem to find the distance between two points."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Two points on a grid with the segment between them invite the child to draw a right triangle under it. The leg lengths come from counting squares or subtracting coordinates. This joins the theorem to coordinates, as 8.G.B.8 asks."
+    rationale: "Two points on a grid with the segment between them invite the student to draw a right triangle under it. The leg lengths come from counting squares or subtracting coordinates. This joins the theorem to coordinates, as 8.G.B.8 asks."
     misconceptions: "Counting the squares the segment passes through."
     misconceptions: "Adding the leg lengths."
   }
@@ -539,7 +541,7 @@ fragments {
   design {
     purpose: "Find the volume of cylinders, cones and spheres."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Cylinders, cones and spheres are mixed, so the child chooses the formula from the shape. Cone heights are multiples of 3 and sphere radii are 3 or 6, so the thirds come out exactly with 3.14. Room under each figure is for the multiplications."
+    rationale: "Cylinders, cones and spheres are mixed, so the student chooses the formula from the shape. Cone heights are multiples of 3 and sphere radii are 3 or 6, so the thirds come out exactly with 3.14. Room under each figure is for the multiplications."
     misconceptions: "Forgetting the one third for a cone."
     misconceptions: "Using the diameter as the radius."
     misconceptions: "Squaring the height instead of the radius."
@@ -550,7 +552,7 @@ fragments {
 
 fragments {
   id: "frag-g8-scatter-association"
-  instruction: "What association does the scatter plot show?"
+  instruction: "Check the association the scatter plot shows."
   stage: STAGE_INTRODUCE
   items { kind { linear_relation { mode: MODE_SCATTER } } count: 3 min_count: 2 }
   max_columns: 3
@@ -566,14 +568,14 @@ fragments {
 
 fragments {
   id: "frag-g8-line-of-fit"
-  instruction: "Use the line of fit."
+  instruction: "Use the line of fit to answer the questions."
   stage: STAGE_PRACTICE
   items { kind { linear_relation { mode: MODE_LINE_OF_FIT } } count: 2 min_count: 1 }
   max_columns: 2
   design {
     purpose: "Find the slope of a line of fit and use it to predict."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The line of fit is drawn and two points on it are named, so its slope can be found exactly. The child reads the slope as points per hour and uses the line to predict. This is the use of a linear model 8.SP.A.2 and 8.SP.A.3 ask for."
+    rationale: "The line of fit is drawn and two points on it are named, so its slope can be found exactly. The student reads the slope as points per hour and uses the line to predict. This is the use of a linear model 8.SP.A.2 and 8.SP.A.3 ask for."
     misconceptions: "Predicting from the nearest data point instead of the line."
     misconceptions: "Reading the slope as the score where the line starts."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
@@ -582,14 +584,14 @@ fragments {
 
 fragments {
   id: "frag-g8-linear-models"
-  instruction: "Use the model."
+  instruction: "Use the linear model to answer the questions."
   stage: STAGE_APPLY
   items { kind { linear_relation { mode: MODE_PREDICT } } count: 3 min_count: 2 }
   max_columns: 1
   design {
     purpose: "Use a linear model to predict, and say what its slope means."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Each model is a short story with an equation. The child predicts a value, then says what the slope and the starting value mean in the story, as 8.SP.A.3 asks. Decimal slopes keep the numbers close to real data."
+    rationale: "Each model is a short story with an equation. The student predicts a value, then says what the slope and the starting value mean in the story, as 8.SP.A.3 asks. Decimal slopes keep the numbers close to real data."
     misconceptions: "Mixing up the slope and the starting value."
     misconceptions: "Putting the y-value in for x."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
@@ -598,14 +600,14 @@ fragments {
 
 fragments {
   id: "frag-g8-two-way-tables"
-  instruction: "Fill in the totals, then answer."
+  instruction: "Complete the totals. Then answer the questions."
   stage: STAGE_PRACTICE
   items { kind { two_way_table {} } count: 2 min_count: 1 }
   max_columns: 1
   design {
     purpose: "Complete a two-way table and find relative frequencies in a row or column."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The child fills in the totals first, so the row and column totals are there to divide by. The two fraction questions use different totals: one a column, one a row. The last question asks whether the shares differ, which is how a two-way table shows an association."
+    rationale: "The student fills in the totals first, so the row and column totals are there to divide by. The two fraction questions use different totals: one a column, one a row. The last question asks whether the shares differ, which is how a two-way table shows an association."
     misconceptions: "Dividing by the grand total when the question is about one row or column."
     misconceptions: "Comparing counts instead of fractions when the groups are different sizes."
     references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
@@ -623,7 +625,7 @@ worksheets {
     purpose: "Tell rational from irrational numbers, and estimate square roots."
     principles: [PRINCIPLE_NUMBER_LINE]
   }
-  home_tip: "Ask your child to find √50 on a calculator, then explain why it lies between 7 and 8."
+  home_tip: "Find √50 on a calculator. Discuss why it lies between 7 and 8."
 }
 
 worksheets {
@@ -637,7 +639,7 @@ worksheets {
     purpose: "Use the properties of exponents, and find square and cube roots."
     principles: [PRINCIPLE_INTERLEAVING]
   }
-  home_tip: "Ask your child to show why 2³ × 2² is 2⁵ by writing out all the 2s."
+  home_tip: "Write out all the 2s to show why 2³ × 2² = 2⁵."
 }
 
 worksheets {
@@ -682,7 +684,7 @@ worksheets {
     purpose: "Compare rates of change given in tables, equations and words."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
-  home_tip: "Compare the price per item of two pack sizes at the shop, and talk about which is the better deal."
+  home_tip: "Compare the price per item of two pack sizes at the store and decide which is the better buy."
 }
 
 worksheets {
@@ -696,7 +698,7 @@ worksheets {
     purpose: "Solve equations with the variable on both sides, and tell how many solutions one has."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
-  home_tip: "Ask your child to check an answer by putting it back into both sides of the equation."
+  home_tip: "Check an answer by substituting it into both sides of the equation."
 }
 
 worksheets {
@@ -727,7 +729,7 @@ worksheets {
     purpose: "Recognize functions and linear functions, and write linear rules."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
-  home_tip: "Ask your child whether a rule such as \"each person's birthday\" gives one output for each input, and why."
+  home_tip: "Ask whether a rule such as \"each person's birthday\" gives one output for each input, and why."
 }
 
 worksheets {

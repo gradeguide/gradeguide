@@ -623,7 +623,7 @@ describe('grade 6 to 8 item kinds', () => {
   it('evaluates expressions', () => {
     for (const neg of [false, true]) {
       for (const ns of items({ case: 'evaluateExpression', value: { negatives: neg } })) {
-        const m = textOf(ns).match(/Find (.*) when x = (−?\d+)(?: and y = (−?\d+))?/)!;
+        const m = textOf(ns).match(/Evaluate (.*) when x = (−?\d+)(?: and y = (−?\d+))?/)!;
         expect(value(answers(ns)[0])).toBe(algebra(m[1], { x: value(m[2]), y: m[3] ? value(m[3]) : 0 }));
       }
     }

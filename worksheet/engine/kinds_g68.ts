@@ -692,7 +692,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
             return [math(`A balance less than ${MINUS}$${a} is a debt of more than $`, blank(field(ctx, `debt for a balance below −$${a}`, String(a))))];
           }
           const big = Math.max(a, b);
-          return [text(`Which balance is the bigger debt?`), choices(ctx, 'the bigger debt', [`${MINUS}$${a}`, `${MINUS}$${b}`], `${MINUS}$${big}`)];
+          return [text('Which balance is the greater debt?'), choices(ctx, 'the bigger debt', [`${MINUS}$${a}`, `${MINUS}$${b}`], `${MINUS}$${big}`)];
         }
         default: {
           const [a, b] = pickFresh(ctx, k.case + mode, () => {
@@ -957,7 +957,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       ];
       const [expr, usesY, v] = forms[form];
       const vals = usesY ? `x = ${num(x)} and y = ${num(y)}` : `x = ${num(x)}`;
-      return [text(`Find ${expr} when ${vals}.`), work(1), math('Value:', blank(field(ctx, `${expr} when ${vals}`, num(v))))];
+      return [text(`Evaluate ${expr} when ${vals}.`), work(1), math('Value:', blank(field(ctx, `${expr} when ${vals}`, num(v))))];
     }
     case 'equivalentExpressions': {
       const mode = k.value.mode || EquivalentExpressions_Mode.EXPAND;
@@ -1009,7 +1009,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           const r = num(p / 100);
           const f = up ? 1 + p / 100 : 1 - p / 100;
           return [
-            text(`A price p goes ${up ? 'up' : 'down'} by ${p}%.`),
+            text(`A price p ${up ? 'increases' : 'decreases'} by ${p}%.`),
             math(`p ${up ? '+' : '−'} ${r}p =`, blank(field(ctx, `p ${up ? '+' : '−'} ${r}p`, num(f), [`${num(f)}p`, f.toFixed(2)])), 'p'),
           ];
         }
@@ -1032,7 +1032,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         return [
           text(story(m, b)),
           table([xHead, yHead], rows),
-          math('Which depends on the other?'),
+          math('Dependent variable:'),
           choices(ctx, 'the dependent variable', [xName, yName], yName),
         ];
       }
@@ -1137,7 +1137,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const g = gcd(halves, 8);
         return [
           solid(`${mixed(l, 2)} in`, `${mixed(w, 2)} in`, `${mixed(h, 2)} in`, [l, w, h]),
-          math('Cubes with ½-inch edges that fill it:', blank(field(ctx, 'half-inch cubes', String(halves)))),
+          math('Number of half-inch cubes:', blank(field(ctx, 'half-inch cubes', String(halves)))),
           math('Volume =', blank(field(ctx, 'volume in cubic inches', mixed(halves, 8), [`${halves / g}/${8 / g}`, num(halves / 8)])), 'cubic in'),
         ];
       }
@@ -1263,7 +1263,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const p = fracText(hit, total);
       const marbles = g === 0 ? `${r} red and ${b} blue` : `${r} red, ${b} blue and ${g} green`;
       return [
-        text(`A bag has ${marbles} marbles. Pick one without looking.`),
+        text(`A bag has ${marbles} marbles. One marble is picked without looking.`),
         math(`P(${not ? 'not ' : ''}${colors[w]}) =`, fractionBlank(ctx.fields.field(`probability of ${not ? 'not ' : ''}${colors[w]}`, p, unique([`${hit}/${total}`]).filter((x) => x !== p)))),
       ];
     }
@@ -1518,7 +1518,7 @@ function solveEquation(form: SolveEquation_Form, inequality: boolean, neg: boole
   // boundary among them, so two-digit negatives do not crowd.
   const start = x - 2 * rng.int(1, 4);
   const labels = [0, 2, 4, 6, 8, 10].map((i) => create(NumberLine_TickLabelSchema, { tick: i, value: { case: 'text', value: num(start + i) } }));
-  return [...solved, math('Graph it:'), node({ case: 'numberLine', value: create(NumberLineSchema, { start: 0, end: 10, partsPerUnit: 1, hideWholeLabels: true, labels }) })];
+  return [...solved, math('Graph the solution:'), node({ case: 'numberLine', value: create(NumberLineSchema, { start: 0, end: 10, partsPerUnit: 1, hideWholeLabels: true, labels }) })];
 }
 
 // Data sets with integer means, so a child can check by hand.
@@ -1605,7 +1605,7 @@ function dataSetStats(mode: DataSetStats_Mode, ctx: Ctx): Node[] {
     return [
       node({ case: 'linePlot', value: create(LinePlotSchema, { start, end: start + span, partsPerUnit: 1, counts, caption: 'Books each student read' }) }),
       row(
-        math('How many students?', blank(ctx.fields.field('number of data values', String(values.length)))),
+        math('Number of students:', blank(ctx.fields.field('number of data values', String(values.length)))),
         math('Median:', blank(ctx.fields.field('median', num(median(values))))),
         math('Range:', blank(ctx.fields.field('range', String(highest - lowest)))),
       ),
@@ -1787,7 +1787,7 @@ function classify(topic: Classify_Topic, ctx: Ctx): Node[] {
       const p = r / (r + b);
       const answer = p === 0 ? 'impossible' : p < 0.5 ? 'unlikely' : p === 0.5 ? 'as likely as not' : p < 1 ? 'likely' : 'certain';
       return [
-        text(`A bag has ${r} red and ${b} blue marbles. You pick one without looking. Picking red is`),
+        text(`A bag has ${r} red and ${b} blue marbles. One marble is picked without looking. Picking red is`),
         choices(ctx, `chance of red from ${r} red and ${b} blue`, ['impossible', 'unlikely', 'as likely as not', 'likely', 'certain'], answer),
       ];
     }
@@ -1998,7 +1998,7 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       const [m, b, x1, dx] = pickFresh(ctx, 'leq', () => [nonzero(ctx, -5, 5), rng.int(-9, 9), rng.int(-4, 4), rng.int(1, 4)]);
       const p = pt(x1, m * x1 + b);
       const q = pt(x1 + dx, m * (x1 + dx) + b);
-      return [text(`A line goes through ${p} and ${q}.`), work(2), math('y =', blank(field(ctx, `line through ${p} and ${q}`, linear(m, b))))];
+      return [text(`A line passes through ${p} and ${q}.`), work(2), math('y =', blank(field(ctx, `line through ${p} and ${q}`, linear(m, b))))];
     }
     case LinearRelation_Mode.SYSTEM: {
       const [form, x, y, a, c] = pickFresh(ctx, 'sys', () => {
@@ -2037,7 +2037,7 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
         // goes under the graph.
         ...(graph ? [text('Function A is the line on the graph.'), shown, math('Function B:', `y = ${linear(m2, b2)}`)] : [row(shown, math('Function B:', `y = ${linear(m2, b2)}`))]),
         row(math('Rate of change of A:', blank(field(ctx, 'rate of change of A', String(m1)))), math('of B:', blank(field(ctx, 'rate of change of B', String(m2))))),
-        math('Which grows faster?'),
+        math('Faster rate of change:'),
         choices(ctx, 'faster function', ['A', 'B'], m1 > m2 ? 'A' : 'B'),
       ];
     }
@@ -2117,7 +2117,7 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       return [
         text(`Line 1: y = ${linear(a, y - a * x)}. Line 2: y = ${linear(c, y - c * x)}.`),
         plane({ xMin: -6, xMax: 6, yMin: -6, yMax: 6, segments: [seg(x, y, x + 1, y + a, { extend: true }), seg(x, y, x + 1, y + c, { extend: true })] }),
-        math('They cross at (', blank(field(ctx, 'x where the lines cross', num(x))), ',', blank(field(ctx, 'y where the lines cross', num(y))), ')'),
+        math('The lines intersect at (', blank(field(ctx, 'x where the lines cross', num(x))), ',', blank(field(ctx, 'y where the lines cross', num(y))), ')'),
       ];
     }
     case LinearRelation_Mode.PREDICT: {
@@ -2256,7 +2256,7 @@ const STORIES: Phrase[] = [
 ];
 
 const INEQUALITIES: ((n: number, t: number) => [string, string, string[]])[] = [
-  (n) => [`You must be at least ${30 + (2 * n) / 5} inches tall to ride. Use h for height.`, `h ≥ ${30 + (2 * n) / 5}`, [`h >= ${30 + (2 * n) / 5}`, `${30 + (2 * n) / 5} ≤ h`]],
+  (n) => [`Riders must be at least ${30 + (2 * n) / 5} inches tall. Use h for height.`, `h ≥ ${30 + (2 * n) / 5}`, [`h >= ${30 + (2 * n) / 5}`, `${30 + (2 * n) / 5} ≤ h`]],
   (n) => [`Fewer than ${n} people fit in the room. Use p for people.`, `p < ${n}`, [`${n} > p`]],
   (n) => [`A bag can hold at most ${n} pounds. Use w for weight.`, `w ≤ ${n}`, [`w <= ${n}`, `${n} ≥ w`]],
   (n) => [`More than ${n} students signed up. Use s for students.`, `s > ${n}`, [`${n} < s`]],
@@ -2300,13 +2300,13 @@ const GRAPH_THEMES: [string, string, string, string][] = [
 // Slices through solids: the solid (0 a box, else a RoundSolid kind), the
 // slice, and its shape.
 const SLICES: [number, string, string][] = [
-  [0, 'Slice the box parallel to its base. What shape is the slice?', 'rectangle'],
-  [0, 'Slice the box straight down, parallel to its front. What shape is the slice?', 'rectangle'],
-  [2, 'Slice the cylinder parallel to its base. What shape is the slice?', 'circle'],
-  [2, 'Slice the cylinder straight down through its center. What shape is the slice?', 'rectangle'],
-  [3, 'Slice the cone parallel to its base. What shape is the slice?', 'circle'],
-  [3, 'Slice the cone straight down through its tip. What shape is the slice?', 'triangle'],
-  [4, 'Slice the ball anywhere. What shape is the slice?', 'circle'],
+  [0, 'A box is sliced parallel to its base. What shape is the cross section?', 'rectangle'],
+  [0, 'A box is sliced straight down, parallel to its front. What shape is the cross section?', 'rectangle'],
+  [2, 'A cylinder is sliced parallel to its base. What shape is the cross section?', 'circle'],
+  [2, 'A cylinder is sliced straight down through its center. What shape is the cross section?', 'rectangle'],
+  [3, 'A cone is sliced parallel to its base. What shape is the cross section?', 'circle'],
+  [3, 'A cone is sliced straight down through its tip. What shape is the cross section?', 'triangle'],
+  [4, 'A sphere is sliced by a plane. What shape is the cross section?', 'circle'],
 ];
 
 const STAT_QUESTIONS: [string, boolean][] = [
@@ -2340,14 +2340,14 @@ const twoCoins = () => coin.flatMap((a) => coin.map((b) => [a, b] as [string, st
 const coinCube = () => coin.flatMap((a) => cube.map((b) => [a, b] as [string, number]));
 const twoCubes = () => cube.flatMap((a) => cube.map((b) => [a, b] as [number, number]));
 const EVENTS: [string, () => unknown[][], (o: unknown[]) => boolean][] = [
-  ['Toss two coins. Find the chance of two heads.', twoCoins, (o) => o[0] === 'H' && o[1] === 'H'],
-  ['Toss two coins. Find the chance of one head and one tail.', twoCoins, (o) => o[0] !== o[1]],
-  ['Toss a coin and roll a number cube. Find the chance of heads and an even number.', coinCube, (o) => o[0] === 'H' && (o[1] as number) % 2 === 0],
-  ['Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.', coinCube, (o) => o[0] === 'T' && (o[1] as number) > 4],
-  ['Roll two number cubes. Find the chance the sum is 7.', twoCubes, (o) => (o[0] as number) + (o[1] as number) === 7],
-  ['Roll two number cubes. Find the chance of doubles.', twoCubes, (o) => o[0] === o[1]],
-  ['Roll two number cubes. Find the chance the sum is greater than 9.', twoCubes, (o) => (o[0] as number) + (o[1] as number) > 9],
-  ['Roll two number cubes. Find the chance both numbers are even.', twoCubes, (o) => (o[0] as number) % 2 === 0 && (o[1] as number) % 2 === 0],
+  ['Toss two coins. Find the probability of two heads.', twoCoins, (o) => o[0] === 'H' && o[1] === 'H'],
+  ['Toss two coins. Find the probability of one head and one tail.', twoCoins, (o) => o[0] !== o[1]],
+  ['Toss a coin and roll a number cube. Find the probability of heads and an even number.', coinCube, (o) => o[0] === 'H' && (o[1] as number) % 2 === 0],
+  ['Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.', coinCube, (o) => o[0] === 'T' && (o[1] as number) > 4],
+  ['Roll two number cubes. Find the probability that the sum is 7.', twoCubes, (o) => (o[0] as number) + (o[1] as number) === 7],
+  ['Roll two number cubes. Find the probability of doubles.', twoCubes, (o) => o[0] === o[1]],
+  ['Roll two number cubes. Find the probability that the sum is greater than 9.', twoCubes, (o) => (o[0] as number) + (o[1] as number) > 9],
+  ['Roll two number cubes. Find the probability that both numbers are even.', twoCubes, (o) => (o[0] as number) % 2 === 0 && (o[1] as number) % 2 === 0],
 ];
 
 const TRIPLES: [number, number, number][] = [
