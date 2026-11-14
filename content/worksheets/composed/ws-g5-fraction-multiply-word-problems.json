@@ -11,7 +11,7 @@
     {
      "label": "A",
      "instruction": "Multiply. Write the answer in simplest form.",
-     "explainer": "2/3 × 6 means 2/3 of 6. One third of 6 is 2, so two thirds is 4.",
+     "explainer": "Example: 2/3 × 6 = 4. One third of 6 is 2, so two thirds of 6 is 4.",
      "items": [
       {
        "label": "1",
@@ -47,6 +47,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -87,6 +92,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "2/5 × 5 = 2"
@@ -99,9 +109,16 @@
       "purpose": "Multiply a fraction by a whole number as a part of a quantity.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Half of the whole numbers are multiples of the denominator, so the answer is a whole number found by sharing. The rest give fraction answers, which students simplify or write as mixed numbers. Both kinds use the same reading: a/b of q is a parts of q cut into b equal parts.",
+      "misconceptions": [
+       "Multiplying the whole number by both numerator and denominator: 2/3 × 6 = 12/18."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 132
+     "estimatedHeight": 202
     },
     {
      "label": "B",
@@ -182,7 +199,36 @@
         }
        ],
        "key": "1 1/5"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-fraction-multiply-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that multiply fractions and mixed numbers.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The problems cover a fraction of a fraction, a fraction of a whole number, a whole number of fractions and an area with mixed-number sides. Each one is a multiplication, but the stories read differently. The last problem needs mixed numbers written as fractions first.",
+      "misconceptions": [
+       "Adding when a story says \"of\": 3/4 of 1/2 worked as 3/4 + 1/2.",
+       "Multiplying the whole numbers and the fractions of mixed numbers separately: 2 1/2 × 1 1/3 = 2 1/6."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 442
+    }
+   ],
+   "estimatedHeight": 652
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
       {
        "label": "6",
        "nodes": [
@@ -218,14 +264,20 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "The problems cover a fraction of a fraction, a fraction of a whole number, a whole number of fractions and an area with mixed-number sides. Each one is a multiplication, but the stories read differently. The last problem needs mixed numbers written as fractions first.",
       "misconceptions": [
-       "Adding when a story says \"of\": 3/4 of 1/2 as 3/4 + 1/2."
+       "Adding when a story says \"of\": 3/4 of 1/2 worked as 3/4 + 1/2.",
+       "Multiplying the whole numbers and the fractions of mixed numbers separately: 2 1/2 × 1 1/3 = 2 1/6."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 642
+     "continued": true,
+     "estimatedHeight": 234
     }
    ],
-   "estimatedHeight": 782
+   "estimatedHeight": 238
   }
  ],
  "key": [
@@ -318,7 +370,8 @@
   "purpose": "Solve word problems that multiply fractions and mixed numbers.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Two calculations recall the procedure before the problems ask students to recognize multiplication in a story."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

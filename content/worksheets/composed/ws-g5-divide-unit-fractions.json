@@ -11,26 +11,77 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Divide. Write the answer as a fraction.",
-     "explainer": "1/3 ÷ 4 shares one third into 4 equal parts. Each part is 1/12.",
+     "instruction": "Divide. Use the model.",
+     "example": {
+      "nodes": [
+       {
+        "fractionGrid": {
+         "cols": 5,
+         "rows": 2,
+         "shadedCols": 1,
+         "shadedRows": 1,
+         "shade": "SHADE_COLUMNS"
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "fraction": {
+            "num": 1,
+            "den": 5
+           }
+          },
+          {
+           "text": "÷"
+          },
+          {
+           "text": "2"
+          },
+          {
+           "text": "="
+          },
+          {
+           "fractionBlank": {
+            "label": "1/5 ÷ 2",
+            "answer": {
+             "text": "1/10"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The shaded column is the unit fraction. The rows cut it into equal shares. The **dark** share is the answer."
+     },
      "items": [
       {
        "label": "1",
        "nodes": [
+        {
+         "fractionGrid": {
+          "cols": 4,
+          "rows": 3,
+          "shadedCols": 1,
+          "shadedRows": 1,
+          "shade": "SHADE_COLUMNS"
+         }
+        },
         {
          "math": {
           "atoms": [
            {
             "fraction": {
              "num": 1,
-             "den": 2
+             "den": 4
             }
            },
            {
             "text": "÷"
            },
            {
-            "text": "4"
+            "text": "3"
            },
            {
             "text": "="
@@ -38,9 +89,9 @@
            {
             "fractionBlank": {
              "id": "q1",
-             "label": "1/2 ÷ 4",
+             "label": "1/4 ÷ 3",
              "answer": {
-              "text": "1/8"
+              "text": "1/12"
              }
             }
            }
@@ -48,25 +99,34 @@
          }
         }
        ],
-       "key": "1/2 ÷ 4 = 1/8"
+       "key": "1/4 ÷ 3 = 1/12"
       },
       {
        "label": "2",
        "nodes": [
+        {
+         "fractionGrid": {
+          "cols": 5,
+          "rows": 3,
+          "shadedCols": 1,
+          "shadedRows": 1,
+          "shade": "SHADE_COLUMNS"
+         }
+        },
         {
          "math": {
           "atoms": [
            {
             "fraction": {
              "num": 1,
-             "den": 3
+             "den": 5
             }
            },
            {
             "text": "÷"
            },
            {
-            "text": "5"
+            "text": "3"
            },
            {
             "text": "="
@@ -74,7 +134,7 @@
            {
             "fractionBlank": {
              "id": "q2",
-             "label": "1/3 ÷ 5",
+             "label": "1/5 ÷ 3",
              "answer": {
               "text": "1/15"
              }
@@ -84,10 +144,79 @@
          }
         }
        ],
-       "key": "1/3 ÷ 5 = 1/15"
+       "key": "1/5 ÷ 3 = 1/15"
       },
       {
        "label": "3",
+       "nodes": [
+        {
+         "fractionGrid": {
+          "cols": 4,
+          "rows": 2,
+          "shadedCols": 1,
+          "shadedRows": 1,
+          "shade": "SHADE_COLUMNS"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q3",
+             "label": "1/4 ÷ 2",
+             "answer": {
+              "text": "1/8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 ÷ 2 = 1/8"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-unit-fraction-by-whole-model",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Divide a unit fraction by a whole number using an area model.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "The square is one whole and the shaded column is 1/b of it. The rows cut that column into equal shares, and the dark share is the quotient. Because the rows cross the whole square, the model shows what fraction of the whole one share is.",
+      "misconceptions": [
+       "Naming the share by the parts of the column only: 1/3 ÷ 4 = 1/4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 450
+    },
+    {
+     "label": "B",
+     "instruction": "Divide. Write the answer as a fraction.",
+     "items": [
+      {
+       "label": "4",
        "nodes": [
         {
          "math": {
@@ -102,43 +231,7 @@
             "text": "÷"
            },
            {
-            "text": "5"
-           },
-           {
-            "text": "="
-           },
-           {
-            "fractionBlank": {
-             "id": "q3",
-             "label": "1/6 ÷ 5",
-             "answer": {
-              "text": "1/30"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "1/6 ÷ 5 = 1/30"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 1,
-             "den": 4
-            }
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "text": "4"
+            "text": "2"
            },
            {
             "text": "="
@@ -146,9 +239,9 @@
            {
             "fractionBlank": {
              "id": "q4",
-             "label": "1/4 ÷ 4",
+             "label": "1/6 ÷ 2",
              "answer": {
-              "text": "1/16"
+              "text": "1/12"
              }
             }
            }
@@ -156,46 +249,10 @@
          }
         }
        ],
-       "key": "1/4 ÷ 4 = 1/16"
+       "key": "1/6 ÷ 2 = 1/12"
       },
       {
        "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "text": "3"
-           },
-           {
-            "text": "="
-           },
-           {
-            "fractionBlank": {
-             "id": "q5",
-             "label": "1/2 ÷ 3",
-             "answer": {
-              "text": "1/6"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "1/2 ÷ 3 = 1/6"
-      },
-      {
-       "label": "6",
        "nodes": [
         {
          "math": {
@@ -217,7 +274,7 @@
            },
            {
             "fractionBlank": {
-             "id": "q6",
+             "id": "q5",
              "label": "1/5 ÷ 5",
              "answer": {
               "text": "1/25"
@@ -229,48 +286,356 @@
         }
        ],
        "key": "1/5 ÷ 5 = 1/25"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q6",
+             "label": "1/3 ÷ 5",
+             "answer": {
+              "text": "1/15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3 ÷ 5 = 1/15"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q7",
+             "label": "1/3 ÷ 4",
+             "answer": {
+              "text": "1/12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/3 ÷ 4 = 1/12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q8",
+             "label": "1/4 ÷ 4",
+             "answer": {
+              "text": "1/16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/4 ÷ 4 = 1/16"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 7
+            }
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "fractionBlank": {
+             "id": "q9",
+             "label": "1/7 ÷ 2",
+             "answer": {
+              "text": "1/14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/7 ÷ 2 = 1/14"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-g5-unit-fraction-by-whole",
-     "stage": "STAGE_INTRODUCE",
+     "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Divide a unit fraction by a whole number.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "These items follow the model and use larger denominators that would be hard to draw. Each answer is a unit fraction with a larger denominator. Students can check by multiplying the answer by the whole number.",
+      "misconceptions": [
+       "Multiplying the numerator instead of the denominator: 1/3 ÷ 4 = 4/3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 178
     },
     {
-     "label": "B",
-     "instruction": "Divide. Use the bars when they help.",
-     "explainer": "4 ÷ 1/3 asks how many thirds are in 4 wholes. Each whole has 3 thirds, so 4 × 3 = 12.",
+     "label": "C",
+     "instruction": "Divide.",
+     "explainer": "Example: 4 ÷ 1/3 = 12. Each whole has 3 thirds, so 4 wholes have 12 thirds.",
      "items": [
       {
-       "label": "7",
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "6 ÷ 1/5",
+             "answer": {
+              "text": "30"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 ÷ 1/5 = 30"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-whole-by-unit-fraction",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Divide a whole number by a unit fraction.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Dividing by 1/b asks how many b-ths fit in the whole number. Items with up to 4 wholes show one bar per whole, cut into b parts to count. Larger items have no bars, so students use the counting rule.",
+      "misconceptions": [
+       "Thinking dividing always makes a number smaller: 4 ÷ 1/3 = 4/3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 132
+    }
+   ],
+   "estimatedHeight": 772
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "11",
        "nodes": [
         {
          "row": {
           "children": [
            {
             "fractionBar": {
-             "parts": 3
+             "parts": 5
             }
            },
            {
             "fractionBar": {
-             "parts": 3
+             "parts": 5
             }
            },
            {
             "fractionBar": {
-             "parts": 3
+             "parts": 5
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "3 ÷ 1/5",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 ÷ 1/5 = 15"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "5 ÷ 1/4",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 ÷ 1/4 = 20"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionBar": {
+             "parts": 4
             }
            },
            {
             "fractionBar": {
-             "parts": 3
+             "parts": 4
+            }
+           },
+           {
+            "fractionBar": {
+             "parts": 4
+            }
+           },
+           {
+            "fractionBar": {
+             "parts": 4
             }
            }
           ]
@@ -288,146 +653,6 @@
            {
             "fraction": {
              "num": 1,
-             "den": 3
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "4 ÷ 1/3",
-             "answer": {
-              "text": "12"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "4 ÷ 1/3 = 12"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "row": {
-          "children": [
-           {
-            "fractionBar": {
-             "parts": 2
-            }
-           },
-           {
-            "fractionBar": {
-             "parts": 2
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "2"
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "2 ÷ 1/2",
-             "answer": {
-              "text": "4"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "2 ÷ 1/2 = 4"
-      },
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "6"
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 3
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q9",
-             "label": "6 ÷ 1/3",
-             "answer": {
-              "text": "18"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "6 ÷ 1/3 = 18"
-      },
-      {
-       "label": "10",
-       "nodes": [
-        {
-         "row": {
-          "children": [
-           {
-            "fractionBar": {
-             "parts": 4
-            }
-           },
-           {
-            "fractionBar": {
-             "parts": 4
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "2"
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "fraction": {
-             "num": 1,
              "den": 4
             }
            },
@@ -436,10 +661,10 @@
            },
            {
             "blank": {
-             "id": "q10",
-             "label": "2 ÷ 1/4",
+             "id": "q13",
+             "label": "4 ÷ 1/4",
              "answer": {
-              "text": "8"
+              "text": "16"
              }
             }
            }
@@ -447,43 +672,7 @@
          }
         }
        ],
-       "key": "2 ÷ 1/4 = 8"
-      },
-      {
-       "label": "11",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "5"
-           },
-           {
-            "text": "÷"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 3
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q11",
-             "label": "5 ÷ 1/3",
-             "answer": {
-              "text": "15"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "5 ÷ 1/3 = 15"
+       "key": "4 ÷ 1/4 = 16"
       }
      ],
      "columns": 1,
@@ -494,23 +683,23 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Dividing by 1/b asks how many b-ths fit in the whole number. Items with up to 4 wholes show one bar per whole, cut into b parts to count. Larger items have no bars, so students use the counting rule.",
       "misconceptions": [
-       "Thinking dividing always makes a number smaller."
+       "Thinking dividing always makes a number smaller: 4 ÷ 1/3 = 4/3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 602
-    }
-   ],
-   "estimatedHeight": 814
-  },
-  {
-   "sections": [
+     "continued": true,
+     "estimatedHeight": 388
+    },
     {
-     "label": "C",
+     "label": "D",
      "instruction": "Solve. Show your work.",
      "items": [
       {
-       "label": "12",
+       "label": "14",
        "nodes": [
         {
          "text": "3 friends share 1/2 pound of chocolate equally. How much chocolate does each friend get?"
@@ -519,7 +708,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q12",
+           "id": "q14",
            "label": "chocolate for each friend",
            "answer": {
             "text": "1/6",
@@ -535,7 +724,7 @@
        "key": "1/6"
       },
       {
-       "label": "13",
+       "label": "15",
        "nodes": [
         {
          "text": "How many 1/4-cup servings are in 5 cups of raisins?"
@@ -544,7 +733,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q13",
+           "id": "q15",
            "label": "servings",
            "answer": {
             "text": "20",
@@ -558,9 +747,37 @@
         }
        ],
        "key": "20"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-unit-fraction-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that divide a unit fraction by a whole number or a whole number by a unit fraction.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Two problems share a fraction among people and two count how many fractions fit in a whole number. The two kinds alternate, so students decide from each story which number is divided. A drawing in the work space can support either kind.",
+      "misconceptions": [
+       "Dividing the larger number by the smaller in every problem: 1/2 ÷ 3 worked as 3 ÷ 1/2."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 306
+    }
+   ],
+   "estimatedHeight": 702
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Solve. Show your work.",
+     "items": [
       {
-       "label": "14",
+       "label": "16",
        "nodes": [
         {
          "text": "Ben pours 1/3 liter of water equally into 2 cups. How much water is in each cup?"
@@ -569,7 +786,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q14",
+           "id": "q16",
            "label": "water in each cup",
            "answer": {
             "text": "1/6",
@@ -585,7 +802,7 @@
        "key": "1/6"
       },
       {
-       "label": "15",
+       "label": "17",
        "nodes": [
         {
          "text": "Zoe has 4 feet of ribbon. She cuts it into pieces that are each 1/5 of a foot long. How many pieces does she get?"
@@ -594,7 +811,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q15",
+           "id": "q17",
            "label": "pieces of ribbon",
            "answer": {
             "text": "20",
@@ -618,12 +835,19 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Two problems share a fraction among people and two count how many fractions fit, so the child decides which way round to divide."
+      "rationale": "Two problems share a fraction among people and two count how many fractions fit in a whole number. The two kinds alternate, so students decide from each story which number is divided. A drawing in the work space can support either kind.",
+      "misconceptions": [
+       "Dividing the larger number by the smaller in every problem: 1/2 ÷ 3 worked as 3 ÷ 1/2."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
      },
-     "estimatedHeight": 598
+     "continued": true,
+     "estimatedHeight": 326
     }
    ],
-   "estimatedHeight": 602
+   "estimatedHeight": 330
   }
  ],
  "key": [
@@ -631,9 +855,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "1/2 ÷ 4",
+    "label": "1/4 ÷ 3",
     "answer": {
-     "text": "1/8"
+     "text": "1/12"
     }
    }
   },
@@ -641,7 +865,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "1/3 ÷ 5",
+    "label": "1/5 ÷ 3",
     "answer": {
      "text": "1/15"
     }
@@ -651,9 +875,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "1/6 ÷ 5",
+    "label": "1/4 ÷ 2",
     "answer": {
-     "text": "1/30"
+     "text": "1/8"
     }
    }
   },
@@ -661,9 +885,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "1/4 ÷ 4",
+    "label": "1/6 ÷ 2",
     "answer": {
-     "text": "1/16"
+     "text": "1/12"
     }
    }
   },
@@ -671,16 +895,6 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "1/2 ÷ 3",
-    "answer": {
-     "text": "1/6"
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
     "label": "1/5 ÷ 5",
     "answer": {
      "text": "1/25"
@@ -688,12 +902,22 @@
    }
   },
   {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "1/3 ÷ 5",
+    "answer": {
+     "text": "1/15"
+    }
+   }
+  },
+  {
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "4 ÷ 1/3",
+    "label": "1/3 ÷ 4",
     "answer": {
-     "text": "12"
+     "text": "1/12"
     }
    }
   },
@@ -701,9 +925,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "2 ÷ 1/2",
+    "label": "1/4 ÷ 4",
     "answer": {
-     "text": "4"
+     "text": "1/16"
     }
    }
   },
@@ -711,9 +935,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "6 ÷ 1/3",
+    "label": "1/7 ÷ 2",
     "answer": {
-     "text": "18"
+     "text": "1/14"
     }
    }
   },
@@ -721,9 +945,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "2 ÷ 1/4",
+    "label": "6 ÷ 1/5",
     "answer": {
-     "text": "8"
+     "text": "30"
     }
    }
   },
@@ -731,7 +955,7 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "5 ÷ 1/3",
+    "label": "3 ÷ 1/5",
     "answer": {
      "text": "15"
     }
@@ -741,6 +965,26 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
+    "label": "5 ÷ 1/4",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "4 ÷ 1/4",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
     "label": "chocolate for each friend",
     "answer": {
      "text": "1/6",
@@ -752,9 +996,9 @@
    }
   },
   {
-   "itemLabel": "13",
+   "itemLabel": "15",
    "field": {
-    "id": "q13",
+    "id": "q15",
     "label": "servings",
     "answer": {
      "text": "20",
@@ -766,9 +1010,9 @@
    }
   },
   {
-   "itemLabel": "14",
+   "itemLabel": "16",
    "field": {
-    "id": "q14",
+    "id": "q16",
     "label": "water in each cup",
     "answer": {
      "text": "1/6",
@@ -780,9 +1024,9 @@
    }
   },
   {
-   "itemLabel": "15",
+   "itemLabel": "17",
    "field": {
-    "id": "q15",
+    "id": "q17",
     "label": "pieces of ribbon",
     "answer": {
      "text": "20",
@@ -798,10 +1042,8 @@
   "purpose": "Divide unit fractions by whole numbers and whole numbers by unit fractions, and use both in word problems.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "Each kind of division starts with a model. The word problems then mix both kinds, so the story decides which way to divide."
  },
- "advice": [
-  "Section \"Divide. Use the bars when they help.\" was cut from 6 to 5 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

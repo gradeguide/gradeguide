@@ -11,8 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write where each point is.",
-     "explainer": "(3, 5) means 3 across from 0, then 5 up. Across comes first.",
+     "instruction": "Write the ordered pair for each point.",
+     "explainer": "(3, 5): start at 0, move 3 along the x-axis, then 5 up.",
      "items": [
       {
        "label": "1",
@@ -43,7 +43,7 @@
          "math": {
           "atoms": [
            {
-            "text": "A is at"
+            "text": "A"
            },
            {
             "blank": {
@@ -65,7 +65,7 @@
          "math": {
           "atoms": [
            {
-            "text": "B is at"
+            "text": "B"
            },
            {
             "blank": {
@@ -87,7 +87,7 @@
          "math": {
           "atoms": [
            {
-            "text": "C is at"
+            "text": "C"
            },
            {
             "blank": {
@@ -106,31 +106,36 @@
          }
         }
        ],
-       "key": "A is at (1, 0); B is at (1, 6); C is at (9, 6)"
+       "key": "A (1, 0); B (1, 6); C (9, 6)"
       }
      ],
      "columns": 1,
      "fragmentId": "frag-g5-read-points",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read the coordinates of points on a grid.",
+      "purpose": "Read the coordinates of points on a coordinate grid.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
+      "rationale": "The axes are labelled x and y, as the standard names them. Some points lie on an axis, so one coordinate is 0. No grid shows both (a, b) and (b, a), so a swapped pair is always wrong.",
       "misconceptions": [
-       "Swapping the numbers: writing (5, 3) for 3 across and 5 up."
+       "Swapping the coordinates: writing (5, 3) for 3 along and 5 up.",
+       "Counting gridlines from 1 instead of from 0."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 462
+     "estimatedHeight": 476
     }
    ],
-   "estimatedHeight": 466
+   "estimatedHeight": 480
   },
   {
    "sections": [
     {
      "label": "B",
-     "instruction": "The graph shows a pattern. Answer from the graph.",
+     "instruction": "Use the graph to answer the questions.",
      "items": [
       {
        "label": "2",
@@ -207,9 +212,16 @@
      "fragmentId": "frag-g5-graph-a-pattern",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Read and extend a pattern shown as points on a coordinate grid.",
+      "purpose": "Read and extend a pattern graphed on a coordinate grid.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The graph shows the first points of a real situation, such as dollars earned each hour. The first question reads a plotted point. The second asks for a point past the plotted ones, so students extend the pattern by its rule.",
+      "misconceptions": [
+       "Reading the y-axis value from the wrong gridline when the axis counts by 2s, 3s or more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
      "estimatedHeight": 378
@@ -286,10 +298,11 @@
   "purpose": "Read and extend graphs of real situations.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Reading plain points comes first. The graphs then give the points a meaning."
  },
  "advice": [
-  "Section \"The graph shows a pattern. Answer from the graph.\" was cut from 2 to 1 items to fit."
+  "Section \"Use the graph to answer the questions.\" was cut from 2 to 1 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

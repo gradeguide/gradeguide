@@ -10,8 +10,61 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick the most exact name for each shape.",
-     "explainer": "A square is also a rectangle and a rhombus, but square is its most exact name.",
+     "instruction": "Check the most specific name for each shape.",
+     "example": {
+      "nodes": [
+       {
+        "polygon": {
+         "points": [
+          {},
+          {
+           "x": 4
+          },
+          {
+           "x": 4,
+           "y": 4
+          },
+          {
+           "y": 4
+          }
+         ],
+         "sides": [
+          {
+           "text": "4 cm"
+          },
+          {
+           "text": "4 cm"
+          },
+          {
+           "text": "4 cm"
+          },
+          {
+           "text": "4 cm"
+          }
+         ],
+         "markRightAngles": true
+        }
+       },
+       {
+        "choices": {
+         "options": [
+          "trapezoid",
+          "parallelogram",
+          "rectangle",
+          "rhombus",
+          "square"
+         ],
+         "field": {
+          "label": "most exact name of the shape",
+          "answer": {
+           "text": "square"
+          }
+         }
+        }
+       }
+      ],
+      "text": "A square is also a rectangle and a rhombus. **Square** is its most specific name."
+     },
      "items": [
       {
        "label": "1",
@@ -80,62 +133,6 @@
           "points": [
            {},
            {
-            "x": 4
-           },
-           {
-            "x": 4,
-            "y": 4
-           },
-           {
-            "y": 4
-           }
-          ],
-          "sides": [
-           {
-            "text": "4 cm"
-           },
-           {
-            "text": "4 cm"
-           },
-           {
-            "text": "4 cm"
-           },
-           {
-            "text": "4 cm"
-           }
-          ],
-          "markRightAngles": true
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "trapezoid",
-           "parallelogram",
-           "rectangle",
-           "rhombus",
-           "square"
-          ],
-          "field": {
-           "id": "q2",
-           "label": "most exact name of the shape",
-           "answer": {
-            "text": "square"
-           }
-          }
-         }
-        }
-       ],
-       "key": "square"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "polygon": {
-          "points": [
-           {},
-           {
             "x": 8
            },
            {
@@ -173,7 +170,7 @@
            "square"
           ],
           "field": {
-           "id": "q3",
+           "id": "q2",
            "label": "most exact name of the shape",
            "answer": {
             "text": "trapezoid"
@@ -185,7 +182,7 @@
        "key": "trapezoid"
       },
       {
-       "label": "4",
+       "label": "3",
        "nodes": [
         {
          "polygon": {
@@ -229,6 +226,92 @@
            "square"
           ],
           "field": {
+           "id": "q3",
+           "label": "most exact name of the shape",
+           "answer": {
+            "text": "rectangle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rectangle"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-name-quadrilaterals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Classify quadrilaterals by their sides and angles.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each shape is labelled with its side lengths and marked with any right angles. Students use these properties, not the shape's position, to name it. Squares and rhombuses appear tilted as well as upright.",
+      "misconceptions": [
+       "Thinking a square is not a rectangle.",
+       "Calling a tilted square a diamond or a rhombus only."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
+     },
+     "estimatedHeight": 742
+    }
+   ],
+   "estimatedHeight": 746
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Check the most specific name for each shape.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "x": 7,
+            "y": 2
+           },
+           {
+            "y": 2
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "2 cm"
+           },
+           {
+            "text": "7 cm"
+           },
+           {
+            "text": "2 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "trapezoid",
+           "parallelogram",
+           "rectangle",
+           "rhombus",
+           "square"
+          ],
+          "field": {
            "id": "q4",
            "label": "most exact name of the shape",
            "answer": {
@@ -247,22 +330,24 @@
      "design": {
       "purpose": "Classify quadrilaterals by their sides and angles.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each shape is labelled with its side lengths and marked with any right angles. Students use these properties, not the shape's position, to name it. Squares and rhombuses appear tilted as well as upright.",
       "misconceptions": [
-       "Thinking a square is not a rectangle."
+       "Thinking a square is not a rectangle.",
+       "Calling a tilted square a diamond or a rhombus only."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 740
-    }
-   ],
-   "estimatedHeight": 744
-  },
-  {
-   "sections": [
+     "continued": true,
+     "estimatedHeight": 160
+    },
     {
      "label": "B",
-     "instruction": "Tick always, sometimes or never.",
+     "instruction": "Check always, sometimes, or never.",
      "items": [
       {
        "label": "5",
@@ -363,22 +448,129 @@
         }
        ],
        "key": "always"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A square is ___ a rhombus."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "A square is ___ a rhombus.",
+           "answer": {
+            "text": "always"
+           }
+          }
+         }
+        }
+       ],
+       "key": "always"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "A quadrilateral is ___ a rectangle."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "A quadrilateral is ___ a rectangle.",
+           "answer": {
+            "text": "sometimes"
+           }
+          }
+         }
+        }
+       ],
+       "key": "sometimes"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "A parallelogram is ___ a rectangle."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "A parallelogram is ___ a rectangle.",
+           "answer": {
+            "text": "sometimes"
+           }
+          }
+         }
+        }
+       ],
+       "key": "sometimes"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "A square is ___ a rectangle."
+        },
+        {
+         "choices": {
+          "options": [
+           "always",
+           "sometimes",
+           "never"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "A square is ___ a rectangle.",
+           "answer": {
+            "text": "always"
+           }
+          }
+         }
+        }
+       ],
+       "key": "always"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-g5-always-sometimes-never",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Reason about which shapes belong to which families.",
+      "purpose": "Reason about which quadrilaterals belong to which categories.",
       "principles": [
        "PRINCIPLE_SELF_EXPLANATION"
       ],
-      "rationale": "Deciding \"sometimes\" needs one example and one counterexample, which makes the child think about the properties."
+      "rationale": "Deciding \"sometimes\" needs one example and one counterexample, which makes students use the properties of each category. The statements avoid trapezoids, whose definition varies between curricula. Statements about sides and angles appear with statements about categories.",
+      "misconceptions": [
+       "Thinking a square is not a rectangle.",
+       "Reading \"a rectangle is sometimes a square\" as false because most rectangles are not squares."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
      },
-     "estimatedHeight": 178
+     "estimatedHeight": 302
     }
    ],
-   "estimatedHeight": 182
+   "estimatedHeight": 470
   }
  ],
  "key": [
@@ -398,7 +590,7 @@
     "id": "q2",
     "label": "most exact name of the shape",
     "answer": {
-     "text": "square"
+     "text": "trapezoid"
     }
    }
   },
@@ -408,7 +600,7 @@
     "id": "q3",
     "label": "most exact name of the shape",
     "answer": {
-     "text": "trapezoid"
+     "text": "rectangle"
     }
    }
   },
@@ -461,18 +653,54 @@
      "text": "always"
     }
    }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "A square is ___ a rhombus.",
+    "answer": {
+     "text": "always"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "A quadrilateral is ___ a rectangle.",
+    "answer": {
+     "text": "sometimes"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "A parallelogram is ___ a rectangle.",
+    "answer": {
+     "text": "sometimes"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "A square is ___ a rectangle.",
+    "answer": {
+     "text": "always"
+    }
+   }
   }
  ],
  "design": {
-  "purpose": "Classify quadrilaterals and reason about their families.",
+  "purpose": "Classify quadrilaterals and reason about their categories.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Naming single shapes comes before statements about whole categories."
  },
- "advice": [
-  "\"Tick the most exact name for each shape.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Tick the most exact name for each shape.\" was cut from 6 to 4 items to fit.",
-  "Section \"Tick always, sometimes or never.\" was cut from 8 to 4 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

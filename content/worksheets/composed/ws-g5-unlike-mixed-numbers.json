@@ -9,8 +9,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add the mixed numbers.",
-     "explainer": "Add the whole numbers and the fractions. If the fractions make more than 1, trade them for a whole.",
+     "instruction": "Add. Write the answer in simplest form.",
+     "explainer": "Example: 2 1/2 + 1 2/3 = 2 3/6 + 1 4/6 = 3 7/6 = 4 1/6",
      "items": [
       {
        "label": "1",
@@ -56,6 +56,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -105,6 +110,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "4 1/3 + 3 3/4 = 8 1/12"
@@ -152,6 +162,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -202,6 +217,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "2 7/8 + 1 5/6 = 4 17/24"
@@ -214,14 +234,21 @@
       "purpose": "Add mixed numbers with different denominators.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Students add the whole numbers and the fractions separately after rewriting the fractions. Many fraction parts add to more than 1, so the sum must be regrouped. The worked line shows the regrouping step.",
+      "misconceptions": [
+       "Leaving an answer such as 3 7/6 without regrouping to 4 1/6."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 224
+     "estimatedHeight": 344
     },
     {
      "label": "B",
-     "instruction": "Subtract the mixed numbers.",
-     "explainer": "If the fraction you take away is bigger, trade one whole for fraction parts first.",
+     "instruction": "Subtract. Write the answer in simplest form.",
+     "explainer": "Example: 3 1/4 − 1 1/2 = 2 5/4 − 1 2/4 = 1 3/4",
      "items": [
       {
        "label": "5",
@@ -267,6 +294,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -317,6 +349,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "5 1/2 − 1 7/8 = 3 5/8"
@@ -364,6 +401,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -413,6 +455,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "3 1/4 − 2 1/2 = 3/4"
@@ -422,15 +469,22 @@
      "fragmentId": "frag-g5-subtract-unlike-mixed",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Subtract mixed numbers with different denominators, trading a whole when needed.",
+      "purpose": "Subtract mixed numbers with different denominators, regrouping a whole when needed.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "In some items the second fraction part is larger than the first. Students then trade one whole for fraction parts, as in the worked line. Items with and without regrouping are mixed so students check every time.",
+      "misconceptions": [
+       "Subtracting the smaller fraction from the larger, whichever number it belongs to: 3 1/4 − 1 1/2 = 2 1/4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 344
     }
    ],
-   "estimatedHeight": 436
+   "estimatedHeight": 696
   }
  ],
  "key": [
@@ -547,10 +601,11 @@
   "purpose": "Add and subtract mixed numbers with different denominators.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Addition comes first because regrouping a sum is easier than regrouping before subtracting."
  },
  "advice": [
-  "\"Add the mixed numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Add. Write the answer in simplest form.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

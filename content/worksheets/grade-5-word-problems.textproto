@@ -13,7 +13,10 @@ fragments {
   design {
     purpose: "Solve money and measurement problems with decimals."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Each operation appears once, so the child chooses it from the story."
+    rationale: "Each of the four operations appears once, so students choose the operation from the story. The last problem has two steps, and the second step uses the first answer. Money and length contexts keep the decimals to hundredths."
+    misconceptions: "Choosing the operation from a key word, such as \"left\", without reading the whole story."
+    misconceptions: "Lining up the last digits instead of the decimal points: 6.5 − 2.85."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
   }
   items {
     count: 4
@@ -57,7 +60,10 @@ fragments {
   design {
     purpose: "Solve word problems that add or subtract fractions with different denominators."
     principles: [PRINCIPLE_INTERLEAVING]
-    misconceptions: "Adding tops and bottoms: 2/3 + 1/4 = 3/7, which is less than 2/3."
+    rationale: "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks."
+    misconceptions: "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3."
+    misconceptions: "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
   items {
     count: 4
@@ -90,7 +96,10 @@ fragments {
   design {
     purpose: "Solve word problems that multiply fractions and mixed numbers."
     principles: [PRINCIPLE_INTERLEAVING]
-    misconceptions: "Adding when a story says \"of\": 3/4 of 1/2 as 3/4 + 1/2."
+    rationale: "The problems cover a fraction of a fraction, a fraction of a whole number, a whole number of fractions and an area with mixed-number sides. Each one is a multiplication, but the stories read differently. The last problem needs mixed numbers written as fractions first."
+    misconceptions: "Adding when a story says \"of\": 3/4 of 1/2 worked as 3/4 + 1/2."
+    misconceptions: "Multiplying the whole numbers and the fractions of mixed numbers separately: 2 1/2 × 1 1/3 = 2 1/6."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
   items {
     count: 4
@@ -123,7 +132,9 @@ fragments {
   design {
     purpose: "Solve word problems that divide a unit fraction by a whole number or a whole number by a unit fraction."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Two problems share a fraction among people and two count how many fractions fit, so the child decides which way round to divide."
+    rationale: "Two problems share a fraction among people and two count how many fractions fit in a whole number. The two kinds alternate, so students decide from each story which number is divided. A drawing in the work space can support either kind."
+    misconceptions: "Dividing the larger number by the smaller in every problem: 1/2 ÷ 3 worked as 3 ÷ 1/2."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
   }
   items {
     count: 4
@@ -154,9 +165,12 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Solve problems with more than one step that need a unit conversion."
+    purpose: "Solve multi-step problems that need a unit conversion."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem states the conversion it needs, so the challenge is when to convert, not recalling the fact. The problems cover capacity, length, mass and time. One problem has two parts, and the second part converts the first answer."
     misconceptions: "Comparing or adding amounts in different units without converting first."
+    misconceptions: "Treating 2 hours 15 minutes as 2.15 hours."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
   items {
     count: 4
@@ -198,8 +212,11 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Use the volume formula in real situations, including finding a missing edge."
+    purpose: "Use the volume formula in real situations, including finding a missing edge length."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The first problem uses the formula directly. The second gives the volume and the base, so students divide to find the height. Working backward shows that the formula relates three quantities."
+    misconceptions: "Multiplying all the numbers in the story, including the volume, to find a missing edge."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
   }
   items {
     count: 2

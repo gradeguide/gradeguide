@@ -10,27 +10,52 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write the number.",
-     "explainer": "Say the whole number, then \"and\" for the point, then the decimal part with its last place: 4.026 is four and twenty-six thousandths.",
+     "instruction": "Write the number shown. Then write the value of the digit.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
+         "decimalChart": {
+          "decimals": 2,
+          "headings": "HEADINGS_NAMES",
+          "rows": [
+           {
+            "number": "0.94"
+           }
+          ]
+         }
+        },
+        {
          "math": {
           "atoms": [
            {
-            "text": "fifty-nine hundredths"
-           },
-           {
-            "text": "="
+            "text": "The number is"
            },
            {
             "blank": {
              "id": "q1",
-             "label": "fifty-nine hundredths as a number",
+             "label": "the number in the chart",
              "answer": {
-              "text": "0.59"
+              "text": "0.94"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 9 is worth"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "value of the 9 in 0.94",
+             "answer": {
+              "text": "0.9"
              }
             }
            }
@@ -38,26 +63,52 @@
          }
         }
        ],
-       "key": "fifty-nine hundredths = 0.59"
+       "key": "The number is 0.94; The 9 is worth 0.9"
       },
       {
        "label": "2",
        "nodes": [
         {
+         "decimalChart": {
+          "decimals": 3,
+          "headings": "HEADINGS_NAMES",
+          "rows": [
+           {
+            "number": "6.222"
+           }
+          ]
+         }
+        },
+        {
          "math": {
           "atoms": [
            {
-            "text": "ninety-eight and three hundredths"
-           },
-           {
-            "text": "="
+            "text": "The number is"
            },
            {
             "blank": {
              "id": "q2",
-             "label": "ninety-eight and three hundredths as a number",
+             "label": "the number in the chart",
              "answer": {
-              "text": "98.03"
+              "text": "6.222"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 6 is worth"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "value of the 6 in 6.222",
+             "answer": {
+              "text": "6"
              }
             }
            }
@@ -65,26 +116,52 @@
          }
         }
        ],
-       "key": "ninety-eight and three hundredths = 98.03"
+       "key": "The number is 6.222; The 6 is worth 6"
       },
       {
        "label": "3",
        "nodes": [
         {
+         "decimalChart": {
+          "decimals": 2,
+          "headings": "HEADINGS_NAMES",
+          "rows": [
+           {
+            "number": "0.73"
+           }
+          ]
+         }
+        },
+        {
          "math": {
           "atoms": [
            {
-            "text": "five and seven hundred fifty-eight thousandths"
-           },
-           {
-            "text": "="
+            "text": "The number is"
            },
            {
             "blank": {
              "id": "q3",
-             "label": "five and seven hundred fifty-eight thousandths as a number",
+             "label": "the number in the chart",
              "answer": {
-              "text": "5.758"
+              "text": "0.73"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 7 is worth"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "value of the 7 in 0.73",
+             "answer": {
+              "text": "0.7"
              }
             }
            }
@@ -92,53 +169,52 @@
          }
         }
        ],
-       "key": "five and seven hundred fifty-eight thousandths = 5.758"
+       "key": "The number is 0.73; The 7 is worth 0.7"
       },
       {
        "label": "4",
        "nodes": [
         {
+         "decimalChart": {
+          "decimals": 3,
+          "headings": "HEADINGS_NAMES",
+          "rows": [
+           {
+            "number": "7.403"
+           }
+          ]
+         }
+        },
+        {
          "math": {
           "atoms": [
            {
-            "text": "four hundred ninety-nine thousandths"
-           },
-           {
-            "text": "="
+            "text": "The number is"
            },
            {
             "blank": {
              "id": "q4",
-             "label": "four hundred ninety-nine thousandths as a number",
+             "label": "the number in the chart",
              "answer": {
-              "text": "0.499"
+              "text": "7.403"
              }
             }
            }
           ]
          }
-        }
-       ],
-       "key": "four hundred ninety-nine thousandths = 0.499"
-      },
-      {
-       "label": "5",
-       "nodes": [
+        },
         {
          "math": {
           "atoms": [
            {
-            "text": "six and five hundred forty-eight thousandths"
-           },
-           {
-            "text": "="
+            "text": "The 4 is worth"
            },
            {
             "blank": {
-             "id": "q5",
-             "label": "six and five hundred forty-eight thousandths as a number",
+             "id": "q4-2",
+             "label": "value of the 4 in 7.403",
              "answer": {
-              "text": "6.548"
+              "text": "0.4"
              }
             }
            }
@@ -146,56 +222,34 @@
          }
         }
        ],
-       "key": "six and five hundred forty-eight thousandths = 6.548"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "four hundred forty-four thousandths"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q6",
-             "label": "four hundred forty-four thousandths as a number",
-             "answer": {
-              "text": "0.444"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "four hundred forty-four thousandths = 0.444"
+       "key": "The number is 7.403; The 4 is worth 0.4"
       }
      ],
-     "columns": 1,
-     "fragmentId": "frag-g5-decimal-words",
-     "stage": "STAGE_INTRODUCE",
+     "columns": 2,
+     "fragmentId": "frag-g5-decimal-chart",
+     "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Write a decimal to thousandths from its name.",
+      "purpose": "Read a decimal to thousandths from a place-value chart and give the value of one digit.",
       "principles": [
-       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+       "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "The chart names each place, so the value of a digit can be read from its column. Some numbers have a zero in a place, which students must keep when they write the number. The chart comes before names and expanded form because it shows the places directly.",
       "misconceptions": [
-       "Writing twenty-six thousandths as 0.26, without the zero to hold the tenths place."
+       "Reading the digit in the tenths place as tens.",
+       "Leaving out a zero that holds a place: 0.024 written as 0.24."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 392
+     "estimatedHeight": 376
     },
     {
      "label": "B",
-     "instruction": "Write the number.",
+     "instruction": "Write each number in standard form.",
      "items": [
       {
-       "label": "7",
+       "label": "5",
        "nodes": [
         {
          "math": {
@@ -232,7 +286,7 @@
            },
            {
             "blank": {
-             "id": "q7",
+             "id": "q5",
              "label": "the number in expanded form",
              "answer": {
               "text": "0.606"
@@ -246,7 +300,7 @@
        "key": "6 × 1/10 + 6 × 1/1000 = 0.606"
       },
       {
-       "label": "8",
+       "label": "6",
        "nodes": [
         {
          "math": {
@@ -295,7 +349,7 @@
            },
            {
             "blank": {
-             "id": "q8",
+             "id": "q6",
              "label": "the number in expanded form",
              "answer": {
               "text": "6.68"
@@ -309,7 +363,7 @@
        "key": "6 × 1 + 6 × 1/10 + 8 × 1/100 = 6.68"
       },
       {
-       "label": "9",
+       "label": "7",
        "nodes": [
         {
          "math": {
@@ -346,7 +400,7 @@
            },
            {
             "blank": {
-             "id": "q9",
+             "id": "q7",
              "label": "the number in expanded form",
              "answer": {
               "text": "0.209"
@@ -360,7 +414,7 @@
        "key": "2 × 1/10 + 9 × 1/1000 = 0.209"
       },
       {
-       "label": "10",
+       "label": "8",
        "nodes": [
         {
          "math": {
@@ -436,7 +490,7 @@
            },
            {
             "blank": {
-             "id": "q10",
+             "id": "q8",
              "label": "the number in expanded form",
              "answer": {
               "text": "26.752"
@@ -457,64 +511,69 @@
       "purpose": "Write a decimal to thousandths from its expanded form.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Expanded form uses fractions for the decimal places, such as 3 × 1/100, as the standard writes it. Places with a zero digit are left out of the expanded form. Students must notice the missing place and write a zero in it.",
+      "misconceptions": [
+       "Writing the digits side by side without zeros for the missing places: 6 × 1/10 + 6 × 1/1000 written as 0.66."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 322
     }
    ],
-   "estimatedHeight": 722
+   "estimatedHeight": 706
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Read the place-value chart.",
-     "explainer": "The dot is the decimal point. Places to its right are tenths, hundredths and thousandths.",
-     "items": [
-      {
-       "label": "11",
-       "nodes": [
-        {
-         "decimalChart": {
-          "decimals": 2,
-          "headings": "HEADINGS_NAMES",
-          "rows": [
-           {
-            "number": "5.85"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "The number is"
-           },
-           {
-            "blank": {
-             "id": "q11",
-             "label": "the number in the chart",
-             "answer": {
-              "text": "5.85"
-             }
+     "instruction": "Write each number in standard form.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "five and fifty-four hundredths"
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "five and fifty-four hundredths as a number",
+            "answer": {
+             "text": "5.54"
             }
            }
-          ]
-         }
-        },
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Read the decimal point as **and**. The last word names the place of the last digit."
+     },
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
         {
          "math": {
           "atoms": [
            {
-            "text": "The 8 is worth"
+            "text": "eighty-four and ninety-three hundredths"
+           },
+           {
+            "text": "="
            },
            {
             "blank": {
-             "id": "q11-2",
-             "label": "value of the 8 in 5.85",
+             "id": "q9",
+             "label": "eighty-four and ninety-three hundredths as a number",
              "answer": {
-              "text": "0.8"
+              "text": "84.93"
              }
             }
            }
@@ -522,53 +581,80 @@
          }
         }
        ],
-       "key": "The number is 5.85; The 8 is worth 0.8"
+       "key": "eighty-four and ninety-three hundredths = 84.93"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "thirty-five hundredths"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "thirty-five hundredths as a number",
+             "answer": {
+              "text": "0.35"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "thirty-five hundredths = 0.35"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "five hundred ninety-five thousandths"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "five hundred ninety-five thousandths as a number",
+             "answer": {
+              "text": "0.595"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "five hundred ninety-five thousandths = 0.595"
       },
       {
        "label": "12",
        "nodes": [
         {
-         "decimalChart": {
-          "high": 1,
-          "decimals": 2,
-          "headings": "HEADINGS_NAMES",
-          "rows": [
-           {
-            "number": "60.28"
-           }
-          ]
-         }
-        },
-        {
          "math": {
           "atoms": [
            {
-            "text": "The number is"
+            "text": "nine and twenty-six hundredths"
+           },
+           {
+            "text": "="
            },
            {
             "blank": {
              "id": "q12",
-             "label": "the number in the chart",
+             "label": "nine and twenty-six hundredths as a number",
              "answer": {
-              "text": "60.28"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "The 2 is worth"
-           },
-           {
-            "blank": {
-             "id": "q12-2",
-             "label": "value of the 2 in 60.28",
-             "answer": {
-              "text": "0.2"
+              "text": "9.26"
              }
             }
            }
@@ -576,25 +662,31 @@
          }
         }
        ],
-       "key": "The number is 60.28; The 2 is worth 0.2"
+       "key": "nine and twenty-six hundredths = 9.26"
       }
      ],
-     "columns": 2,
-     "fragmentId": "frag-g5-decimal-chart",
-     "stage": "STAGE_GUIDED",
+     "columns": 1,
+     "fragmentId": "frag-g5-decimal-words",
+     "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Read a decimal to thousandths from a place-value chart, and the value of one of its digits.",
+      "purpose": "Write a decimal to thousandths from its number name.",
       "principles": [
-       "PRINCIPLE_CONCRETENESS_FADING"
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Number names come last because they hide the places that the chart and expanded form show. The final word, such as thousandths, tells how many digits follow the point. Some names have no whole-number part, so the answer begins with 0.",
       "misconceptions": [
-       "Reading the digit in the tenths place as tens."
+       "Writing twenty-six thousandths as 0.26, without the zero that holds the tenths place.",
+       "Writing \"and\" as a decimal point when it joins hundreds and tens, as in one hundred and five."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 231
+     "estimatedHeight": 324
     }
    ],
-   "estimatedHeight": 235
+   "estimatedHeight": 328
   }
  ],
  "key": [
@@ -602,9 +694,19 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "fifty-nine hundredths as a number",
+    "label": "the number in the chart",
     "answer": {
-     "text": "0.59"
+     "text": "0.94"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "value of the 9 in 0.94",
+    "answer": {
+     "text": "0.9"
     }
    }
   },
@@ -612,9 +714,19 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "ninety-eight and three hundredths as a number",
+    "label": "the number in the chart",
     "answer": {
-     "text": "98.03"
+     "text": "6.222"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "value of the 6 in 6.222",
+    "answer": {
+     "text": "6"
     }
    }
   },
@@ -622,9 +734,19 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "five and seven hundred fifty-eight thousandths as a number",
+    "label": "the number in the chart",
     "answer": {
-     "text": "5.758"
+     "text": "0.73"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "value of the 7 in 0.73",
+    "answer": {
+     "text": "0.7"
     }
    }
   },
@@ -632,9 +754,19 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "four hundred ninety-nine thousandths as a number",
+    "label": "the number in the chart",
     "answer": {
-     "text": "0.499"
+     "text": "7.403"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "value of the 4 in 7.403",
+    "answer": {
+     "text": "0.4"
     }
    }
   },
@@ -642,9 +774,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "six and five hundred forty-eight thousandths as a number",
+    "label": "the number in expanded form",
     "answer": {
-     "text": "6.548"
+     "text": "0.606"
     }
    }
   },
@@ -652,9 +784,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "four hundred forty-four thousandths as a number",
+    "label": "the number in expanded form",
     "answer": {
-     "text": "0.444"
+     "text": "6.68"
     }
    }
   },
@@ -664,7 +796,7 @@
     "id": "q7",
     "label": "the number in expanded form",
     "answer": {
-     "text": "0.606"
+     "text": "0.209"
     }
    }
   },
@@ -674,7 +806,7 @@
     "id": "q8",
     "label": "the number in expanded form",
     "answer": {
-     "text": "6.68"
+     "text": "26.752"
     }
    }
   },
@@ -682,9 +814,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "the number in expanded form",
+    "label": "eighty-four and ninety-three hundredths as a number",
     "answer": {
-     "text": "0.209"
+     "text": "84.93"
     }
    }
   },
@@ -692,9 +824,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "the number in expanded form",
+    "label": "thirty-five hundredths as a number",
     "answer": {
-     "text": "26.752"
+     "text": "0.35"
     }
    }
   },
@@ -702,19 +834,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "the number in the chart",
+    "label": "five hundred ninety-five thousandths as a number",
     "answer": {
-     "text": "5.85"
-    }
-   }
-  },
-  {
-   "itemLabel": "11",
-   "field": {
-    "id": "q11-2",
-    "label": "value of the 8 in 5.85",
-    "answer": {
-     "text": "0.8"
+     "text": "0.595"
     }
    }
   },
@@ -722,31 +844,23 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "the number in the chart",
+    "label": "nine and twenty-six hundredths as a number",
     "answer": {
-     "text": "60.28"
-    }
-   }
-  },
-  {
-   "itemLabel": "12",
-   "field": {
-    "id": "q12-2",
-    "label": "value of the 2 in 60.28",
-    "answer": {
-     "text": "0.2"
+     "text": "9.26"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Read and write decimals to thousandths as numbers, names and expanded form.",
+  "purpose": "Read and write decimals to thousandths in standard form, expanded form and words.",
   "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING",
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
-  ]
+  ],
+  "rationale": "The chart shows the places, expanded form names them, and number names hide them. The sections follow that order."
  },
  "advice": [
-  "Section \"Read the place-value chart.\" was cut from 4 to 2 items to fit."
+  "Section \"Write each number in standard form.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

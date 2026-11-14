@@ -9,8 +9,48 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Multiply. Write a row for each digit of the bottom number, then add.",
-     "explainer": "Multiply by the ones digit first. Then multiply by the tens: the row ends in 0 because you are multiplying by tens.",
+     "instruction": "Multiply.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_MULTIPLY",
+         "operands": [
+          "77",
+          "26"
+         ],
+         "answer": {
+          "label": "77 × 26",
+          "answer": {
+           "text": "2002"
+          }
+         },
+         "carryBoxes": true,
+         "partials": [
+          {
+           "field": {
+            "label": "6 × 77",
+            "answer": {
+             "text": "462"
+            }
+           },
+           "note": "6 × 77"
+          },
+          {
+           "field": {
+            "label": "20 × 77",
+            "answer": {
+             "text": "1540"
+            }
+           },
+           "note": "20 × 77"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Multiply by the ones. Then multiply by the tens: that row ends in **0**. Add the two rows."
+     },
      "items": [
       {
        "label": "1",
@@ -29,6 +69,7 @@
             "text": "3658"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -73,6 +114,7 @@
             "text": "1311"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -117,6 +159,7 @@
             "text": "2240"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -161,6 +204,7 @@
             "text": "5456"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -195,14 +239,25 @@
      "design": {
       "purpose": "Multiply two-digit numbers with the standard algorithm.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Each partial product has its own row, labelled with what it stands for, such as 60 × 59. The labels link the algorithm to the place-value strategies from grade 4. Small boxes above the top number hold the regrouped digits.",
       "misconceptions": [
-       "Forgetting the zero in the tens row: 23 × 14 with 23 written for 10 × 23."
+       "Forgetting the zero in the tens row: 23 × 14 with 23 written for 10 × 23.",
+       "Adding a regrouped digit from the ones row into the tens row."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 448
-    },
+     "estimatedHeight": 662
+    }
+   ],
+   "estimatedHeight": 666
+  },
+  {
+   "sections": [
     {
      "label": "B",
      "instruction": "Multiply.",
@@ -224,6 +279,7 @@
             "text": "43175"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -268,6 +324,7 @@
             "text": "27348"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -303,15 +360,17 @@
       "purpose": "Multiply a three-digit number by a two-digit number with the standard algorithm.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The steps are the same as for two-digit numbers, with one more digit in each row. Some top numbers contain a zero, which produces a zero in the partial product. The row labels stay, so a wrong row can be traced to its step.",
+      "misconceptions": [
+       "Skipping a zero digit in the top number and shifting the rest of the row left."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 218
-    }
-   ],
-   "estimatedHeight": 674
-  },
-  {
-   "sections": [
+     "estimatedHeight": 234
+    },
     {
      "label": "C",
      "instruction": "Multiply.",
@@ -333,6 +392,7 @@
             "text": "376564"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -377,6 +437,7 @@
             "text": "300300"
            }
           },
+          "carryBoxes": true,
           "partials": [
            {
             "field": {
@@ -412,12 +473,19 @@
       "purpose": "Multiply a four-digit number by a two-digit number with the standard algorithm.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Four-digit factors give five- and six-digit products, which tests whether regrouping is tracked across many places. Two items are enough to show fluency. Students who finish the earlier sections accurately are ready for them.",
+      "misconceptions": [
+       "Losing track of regrouped digits across four places."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 218
+     "estimatedHeight": 234
     }
    ],
-   "estimatedHeight": 222
+   "estimatedHeight": 476
   }
  ],
  "key": [
@@ -666,11 +734,10 @@
   "purpose": "Multiply multi-digit numbers with the standard algorithm.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "The top factor grows from two to four digits while the steps stay the same."
  },
  "advice": [
-  "\"Multiply. Write a row for each digit of the bottom number, then add.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "Section \"Multiply.\" was cut from 4 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"

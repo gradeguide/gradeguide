@@ -163,7 +163,6 @@
     {
      "label": "B",
      "instruction": "Use the grids to add.",
-     "explainer": "Each grid is cut both ways, so both fractions are counted in the same small parts. Count the shaded parts in each grid, then add.",
      "items": [
       {
        "label": "5",
@@ -564,27 +563,32 @@
      "fragmentId": "frag-g5-unlike-fractions-model",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See why fractions with different denominators are added by rewriting them in a common denominator.",
+      "purpose": "Add fractions with different denominators by rewriting them with a common denominator.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Cutting the columns of one fraction by the rows of the other gives a common unit the child can count.",
+      "rationale": "Each grid is one whole cut into columns for one denominator and rows for the other. The cuts make both fractions countable in the same small parts. Students count the parts, write the equivalent fractions, and then add.",
       "misconceptions": [
-       "Adding tops and bottoms: 1/3 + 1/4 = 2/7."
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Counting the parts in a grid without checking that both grids are cut the same way."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5",
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
       ]
      },
-     "estimatedHeight": 512
+     "estimatedHeight": 510
     }
    ],
-   "estimatedHeight": 698
+   "estimatedHeight": 696
   },
   {
    "sections": [
     {
      "label": "C",
      "instruction": "Add. Write the answer in simplest form.",
-     "explainer": "Make the denominators the same first. For 1/3 + 1/4, use twelfths: 4/12 + 3/12 = 7/12.",
+     "explainer": "Example: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
      "items": [
       {
        "label": "9",
@@ -623,6 +627,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -666,6 +675,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "1/10 + 4/5 = 9/10"
@@ -708,6 +722,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "1/8 + 1/4 = 3/8"
@@ -747,6 +766,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "3/10 + 1/3 = 19/30"
@@ -756,15 +780,20 @@
      "fragmentId": "frag-g5-add-unlike-fractions",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add fractions with different denominators by rewriting them with a common denominator.",
+      "purpose": "Add fractions with different denominators.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Some pairs of denominators share a factor, such as 4 and 6, and some do not, such as 3 and 4. When they share a factor, the product of the denominators works but is not the least. Some sums are more than 1 or can be simplified, so students check the answer's form.",
       "misconceptions": [
-       "Adding tops and bottoms: 1/3 + 1/4 = 2/7."
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Changing the denominator without changing the numerator: 1/3 written as 1/12."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 344
     },
     {
      "label": "D",
@@ -804,6 +833,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -846,6 +880,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -890,6 +929,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "7/12 − 1/3 = 1/4"
@@ -933,6 +977,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "11/12 − 2/3 = 1/4"
@@ -974,6 +1023,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         }
        ],
@@ -1017,90 +1071,14 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         }
        ],
        "key": "5/6 − 1/8 = 17/24"
-      },
-      {
-       "label": "19",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 2,
-             "den": 3
-            }
-           },
-           {
-            "text": "−"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 10
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q19",
-             "label": "2/3 − 1/10",
-             "answer": {
-              "text": "17/30"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "2/3 − 1/10 = 17/30"
-      },
-      {
-       "label": "20",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "text": "−"
-           },
-           {
-            "fraction": {
-             "num": 5,
-             "den": 12
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q20",
-             "label": "1/2 − 5/12",
-             "answer": {
-              "text": "1/12",
-              "also": [
-               "2/24"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "1/2 − 5/12 = 1/12"
       }
      ],
      "columns": 2,
@@ -1110,12 +1088,19 @@
       "purpose": "Subtract fractions with different denominators.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Subtraction uses the same common-denominator step as addition. Every first fraction is larger than the second, so each difference is positive. Some pairs look close in size, so students rewrite them before deciding which is larger.",
+      "misconceptions": [
+       "Subtracting numerators and denominators: 3/4 − 1/3 = 2/1."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 322
+     "estimatedHeight": 460
     }
    ],
-   "estimatedHeight": 534
+   "estimatedHeight": 812
   }
  ],
  "key": [
@@ -1410,40 +1395,18 @@
      ]
     }
    }
-  },
-  {
-   "itemLabel": "19",
-   "field": {
-    "id": "q19",
-    "label": "2/3 − 1/10",
-    "answer": {
-     "text": "17/30"
-    }
-   }
-  },
-  {
-   "itemLabel": "20",
-   "field": {
-    "id": "q20",
-    "label": "1/2 − 5/12",
-    "answer": {
-     "text": "1/12",
-     "also": [
-      "2/24"
-     ]
-    }
-   }
   }
  ],
  "design": {
   "purpose": "Add and subtract fractions with different denominators.",
   "principles": [
-   "PRINCIPLE_PREREQUISITE_REVIEW"
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_CONCRETENESS_FADING"
   ],
-  "rationale": "Finding equivalent fractions comes first, because it is the step that makes the denominators match."
+  "rationale": "Finding equivalent fractions comes first, because it is the step that makes the denominators match. The grids then show why, before the symbolic practice."
  },
  "advice": [
-  "Section \"Add. Write the answer in simplest form.\" was cut from 8 to 4 items to fit."
+  "Section \"Add. Write the answer in simplest form.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

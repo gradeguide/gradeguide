@@ -10,8 +10,81 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write what each digit is worth. Then compare them.",
-     "explainer": "Each place is worth 10 times the place to its right. In 0.33, the first 3 is worth 0.3 and the second 0.03.",
+     "instruction": "Write the value of each digit. Then compare the values.",
+     "example": {
+      "nodes": [
+       {
+        "decimalChart": {
+         "high": 1,
+         "decimals": 2,
+         "headings": "HEADINGS_NAMES",
+         "rows": [
+          {
+           "number": "22.96"
+          }
+         ]
+        }
+       },
+       {
+        "text": "In 22.96, look at the two 2s."
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "The first 2 is worth"
+          },
+          {
+           "blank": {
+            "label": "value of the first 2 in 22.96",
+            "answer": {
+             "text": "20"
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "The second 2 is worth"
+          },
+          {
+           "blank": {
+            "label": "value of the second 2 in 22.96",
+            "answer": {
+             "text": "2"
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "The first 2 is worth"
+          },
+          {
+           "blank": {
+            "label": "first 2 compared with the second",
+            "answer": {
+             "text": "10"
+            }
+           }
+          },
+          {
+           "text": "times the second."
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Each place is worth **10 times** the place to its right, and **1/10** of the place to its left."
+     },
      "items": [
       {
        "label": "1",
@@ -170,137 +243,67 @@
         }
        ],
        "key": "The first 6 is worth 0.6; The second 6 is worth 0.06; The second 6 is worth 1/10 of the first."
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "decimalChart": {
-          "decimals": 3,
-          "headings": "HEADINGS_NAMES",
-          "rows": [
-           {
-            "number": "7.855"
-           }
-          ]
-         }
-        },
-        {
-         "text": "In 7.855, look at the two 5s."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "The first 5 is worth"
-           },
-           {
-            "blank": {
-             "id": "q3",
-             "label": "value of the first 5 in 7.855",
-             "answer": {
-              "text": "0.05"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "The second 5 is worth"
-           },
-           {
-            "blank": {
-             "id": "q3-2",
-             "label": "value of the second 5 in 7.855",
-             "answer": {
-              "text": "0.005"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "The first 5 is worth"
-           },
-           {
-            "blank": {
-             "id": "q3-3",
-             "label": "first 5 compared with the second",
-             "answer": {
-              "text": "10"
-             }
-            }
-           },
-           {
-            "text": "times the second."
-           }
-          ]
-         }
-        }
-       ],
-       "key": "The first 5 is worth 0.05; The second 5 is worth 0.005; The first 5 is worth 10 times the second."
       }
      ],
      "columns": 1,
      "fragmentId": "frag-g5-ten-times",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as one place to its left.",
+      "purpose": "Recognize that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as the same digit one place to its left.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each number has the same digit twice, so the two values differ only by place. Most pairs are one place apart and some are two, which gives 10 times and 100 times. The comparison is asked both ways, as times as much and as a fraction of, because the standard names both.",
       "misconceptions": [
-       "Thinking places after the point grow to the right, as tens and hundreds do on the left."
+       "Thinking places after the decimal point grow to the right, as tens and hundreds do on the left.",
+       "Thinking the digit further right is worth more because it comes later."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 803
+     "estimatedHeight": 785
     }
    ],
-   "estimatedHeight": 807
+   "estimatedHeight": 789
   },
   {
    "sections": [
     {
      "label": "A",
-     "instruction": "Write what each digit is worth. Then compare them.",
+     "instruction": "Write the value of each digit. Then compare the values.",
      "items": [
       {
-       "label": "4",
+       "label": "3",
        "nodes": [
         {
          "decimalChart": {
-          "decimals": 2,
+          "high": 1,
+          "decimals": 3,
           "headings": "HEADINGS_NAMES",
           "rows": [
            {
-            "number": "9.90"
+            "number": "73.131"
            }
           ]
          }
         },
         {
-         "text": "In 9.90, look at the two 9s."
+         "text": "In 73.131, look at the two 3s."
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "The first 9 is worth"
+            "text": "The first 3 is worth"
            },
            {
             "blank": {
-             "id": "q4",
-             "label": "value of the first 9 in 9.90",
+             "id": "q3",
+             "label": "value of the first 3 in 73.131",
              "answer": {
-              "text": "9"
+              "text": "3"
              }
             }
            }
@@ -311,14 +314,14 @@
          "math": {
           "atoms": [
            {
-            "text": "The second 9 is worth"
+            "text": "The second 3 is worth"
            },
            {
             "blank": {
-             "id": "q4-2",
-             "label": "value of the second 9 in 9.90",
+             "id": "q3-2",
+             "label": "value of the second 3 in 73.131",
              "answer": {
-              "text": "0.9"
+              "text": "0.03"
              }
             }
            }
@@ -329,16 +332,16 @@
          "math": {
           "atoms": [
            {
-            "text": "The second 9 is worth"
+            "text": "The second 3 is worth"
            },
            {
             "blank": {
-             "id": "q4-3",
-             "label": "second 9 compared with the first",
+             "id": "q3-3",
+             "label": "second 3 compared with the first",
              "answer": {
-              "text": "1/10",
+              "text": "1/100",
               "also": [
-               "0.1"
+               "0.01"
               ]
              }
             }
@@ -350,19 +353,25 @@
          }
         }
        ],
-       "key": "The first 9 is worth 9; The second 9 is worth 0.9; The second 9 is worth 1/10 of the first."
+       "key": "The first 3 is worth 3; The second 3 is worth 0.03; The second 3 is worth 1/100 of the first."
       }
      ],
      "columns": 1,
      "fragmentId": "frag-g5-ten-times",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as one place to its left.",
+      "purpose": "Recognize that a digit is worth 10 times as much as the same digit one place to its right, and 1/10 as much as the same digit one place to its left.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each number has the same digit twice, so the two values differ only by place. Most pairs are one place apart and some are two, which gives 10 times and 100 times. The comparison is asked both ways, as times as much and as a fraction of, because the standard names both.",
       "misconceptions": [
-       "Thinking places after the point grow to the right, as tens and hundreds do on the left."
+       "Thinking places after the decimal point grow to the right, as tens and hundreds do on the left.",
+       "Thinking the digit further right is worth more because it comes later."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
      "continued": true,
@@ -370,11 +379,10 @@
     },
     {
      "label": "B",
-     "instruction": "Read the place-value chart.",
-     "explainer": "The dot is the decimal point. Places to its right are tenths, hundredths and thousandths.",
+     "instruction": "Write the number shown. Then write the value of the digit.",
      "items": [
       {
-       "label": "5",
+       "label": "4",
        "nodes": [
         {
          "decimalChart": {
@@ -395,7 +403,7 @@
            },
            {
             "blank": {
-             "id": "q5",
+             "id": "q4",
              "label": "the number in the chart",
              "answer": {
               "text": "0.024"
@@ -413,7 +421,7 @@
            },
            {
             "blank": {
-             "id": "q5-2",
+             "id": "q4-2",
              "label": "value of the 2 in 0.024",
              "answer": {
               "text": "0.02"
@@ -427,7 +435,7 @@
        "key": "The number is 0.024; The 2 is worth 0.02"
       },
       {
-       "label": "6",
+       "label": "5",
        "nodes": [
         {
          "decimalChart": {
@@ -448,7 +456,7 @@
            },
            {
             "blank": {
-             "id": "q6",
+             "id": "q5",
              "label": "the number in the chart",
              "answer": {
               "text": "3.668"
@@ -466,7 +474,7 @@
            },
            {
             "blank": {
-             "id": "q6-2",
+             "id": "q5-2",
              "label": "value of the 3 in 3.668",
              "answer": {
               "text": "3"
@@ -480,7 +488,7 @@
        "key": "The number is 3.668; The 3 is worth 3"
       },
       {
-       "label": "7",
+       "label": "6",
        "nodes": [
         {
          "decimalChart": {
@@ -501,7 +509,7 @@
            },
            {
             "blank": {
-             "id": "q7",
+             "id": "q6",
              "label": "the number in the chart",
              "answer": {
               "text": "0.81"
@@ -519,7 +527,7 @@
            },
            {
             "blank": {
-             "id": "q7-2",
+             "id": "q6-2",
              "label": "value of the 8 in 0.81",
              "answer": {
               "text": "0.8"
@@ -533,7 +541,7 @@
        "key": "The number is 0.81; The 8 is worth 0.8"
       },
       {
-       "label": "8",
+       "label": "7",
        "nodes": [
         {
          "decimalChart": {
@@ -554,7 +562,7 @@
            },
            {
             "blank": {
-             "id": "q8",
+             "id": "q7",
              "label": "the number in the chart",
              "answer": {
               "text": "5.77"
@@ -572,7 +580,7 @@
            },
            {
             "blank": {
-             "id": "q8-2",
+             "id": "q7-2",
              "label": "value of the 5 in 5.77",
              "answer": {
               "text": "5"
@@ -590,18 +598,23 @@
      "fragmentId": "frag-g5-decimal-chart",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Read a decimal to thousandths from a place-value chart, and the value of one of its digits.",
+      "purpose": "Read a decimal to thousandths from a place-value chart and give the value of one digit.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "The chart names each place, so the value of a digit can be read from its column. Some numbers have a zero in a place, which students must keep when they write the number. The chart comes before names and expanded form because it shows the places directly.",
       "misconceptions": [
-       "Reading the digit in the tenths place as tens."
+       "Reading the digit in the tenths place as tens.",
+       "Leaving out a zero that holds a place: 0.024 written as 0.24."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 402
+     "estimatedHeight": 376
     }
    ],
-   "estimatedHeight": 685
+   "estimatedHeight": 659
   }
  ],
  "key": [
@@ -672,9 +685,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "value of the first 5 in 7.855",
+    "label": "value of the first 3 in 73.131",
     "answer": {
-     "text": "0.05"
+     "text": "3"
     }
    }
   },
@@ -682,9 +695,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "value of the second 5 in 7.855",
+    "label": "value of the second 3 in 73.131",
     "answer": {
-     "text": "0.005"
+     "text": "0.03"
     }
    }
   },
@@ -692,9 +705,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-3",
-    "label": "first 5 compared with the second",
+    "label": "second 3 compared with the first",
     "answer": {
-     "text": "10"
+     "text": "1/100",
+     "also": [
+      "0.01"
+     ]
     }
    }
   },
@@ -702,9 +718,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "value of the first 9 in 9.90",
+    "label": "the number in the chart",
     "answer": {
-     "text": "9"
+     "text": "0.024"
     }
    }
   },
@@ -712,22 +728,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "value of the second 9 in 9.90",
+    "label": "value of the 2 in 0.024",
     "answer": {
-     "text": "0.9"
-    }
-   }
-  },
-  {
-   "itemLabel": "4",
-   "field": {
-    "id": "q4-3",
-    "label": "second 9 compared with the first",
-    "answer": {
-     "text": "1/10",
-     "also": [
-      "0.1"
-     ]
+     "text": "0.02"
     }
    }
   },
@@ -737,7 +740,7 @@
     "id": "q5",
     "label": "the number in the chart",
     "answer": {
-     "text": "0.024"
+     "text": "3.668"
     }
    }
   },
@@ -745,9 +748,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5-2",
-    "label": "value of the 2 in 0.024",
+    "label": "value of the 3 in 3.668",
     "answer": {
-     "text": "0.02"
+     "text": "3"
     }
    }
   },
@@ -757,7 +760,7 @@
     "id": "q6",
     "label": "the number in the chart",
     "answer": {
-     "text": "3.668"
+     "text": "0.81"
     }
    }
   },
@@ -765,9 +768,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6-2",
-    "label": "value of the 3 in 3.668",
+    "label": "value of the 8 in 0.81",
     "answer": {
-     "text": "3"
+     "text": "0.8"
     }
    }
   },
@@ -777,7 +780,7 @@
     "id": "q7",
     "label": "the number in the chart",
     "answer": {
-     "text": "0.81"
+     "text": "5.77"
     }
    }
   },
@@ -785,26 +788,6 @@
    "itemLabel": "7",
    "field": {
     "id": "q7-2",
-    "label": "value of the 8 in 0.81",
-    "answer": {
-     "text": "0.8"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "the number in the chart",
-    "answer": {
-     "text": "5.77"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-2",
     "label": "value of the 5 in 5.77",
     "answer": {
      "text": "5"
@@ -816,10 +799,11 @@
   "purpose": "Understand that each place is worth 10 times the place to its right.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Comparing two equal digits comes first, because it isolates the 10-times relation. Reading the chart then uses that relation to name each place."
  },
  "advice": [
-  "Section \"Write what each digit is worth. Then compare them.\" was cut from 6 to 4 items to fit."
+  "Section \"Write the value of each digit. Then compare the values.\" was cut from 6 to 3 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

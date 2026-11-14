@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add. Keep the decimal points lined up.",
+     "instruction": "Add.",
      "items": [
       {
        "label": "1",
@@ -88,12 +88,17 @@
      "fragmentId": "frag-g5-add-decimals",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Add decimals to hundredths.",
+      "purpose": "Add decimals to hundredths in columns.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "The numbers are already set in columns with the points lined up, so the focus is regrouping across the point. Small boxes above the columns hold regrouped digits. Lining up numbers with different decimal places is practised in the next section.",
       "misconceptions": [
-       "Lining up the last digits instead of the decimal points."
+       "Forgetting to regroup from the tenths into the ones."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 168
@@ -186,7 +191,14 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each operation appears once, so the child chooses it from the story."
+      "rationale": "Each of the four operations appears once, so students choose the operation from the story. The last problem has two steps, and the second step uses the first answer. Money and length contexts keep the decimals to hundredths.",
+      "misconceptions": [
+       "Choosing the operation from a key word, such as \"left\", without reading the whole story.",
+       "Lining up the last digits instead of the decimal points: 6.5 − 2.85."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
      },
      "estimatedHeight": 442
     }
@@ -278,7 +290,14 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each operation appears once, so the child chooses it from the story."
+      "rationale": "Each of the four operations appears once, so students choose the operation from the story. The last problem has two steps, and the second step uses the first answer. Money and length contexts keep the decimals to hundredths.",
+      "misconceptions": [
+       "Choosing the operation from a key word, such as \"left\", without reading the whole story.",
+       "Lining up the last digits instead of the decimal points: 6.5 − 2.85."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
      },
      "continued": true,
      "estimatedHeight": 336
@@ -394,7 +413,8 @@
   "purpose": "Use decimal arithmetic to solve money and measurement problems.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "A few column additions come first, so the word problems test choosing the operation rather than the procedure."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }
