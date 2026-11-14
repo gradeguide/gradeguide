@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the scale.",
+     "instruction": "Use the scale to find each length.",
      "items": [
       {
        "label": "1",
@@ -32,8 +32,8 @@
              "answer": {
               "text": "15.5",
               "also": [
-               "15.5 inch",
-               "15.5inch"
+               "15.5 in",
+               "15.5in"
               ]
              }
             }
@@ -168,8 +168,8 @@
              "answer": {
               "text": "5.5",
               "also": [
-               "5.5 inch",
-               "5.5inch"
+               "5.5 in",
+               "5.5in"
               ]
              }
             }
@@ -226,15 +226,18 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Half the items go from the drawing to the real length and half go back, so the student cannot just multiply every time. Maps use centimeters for kilometers and floor plans use inches for feet, two scales a student has seen. Some lengths are halves, so the reverse direction needs a division that does not come out whole.",
       "misconceptions": [
-       "Multiplying when going from real length to the drawing."
+       "Multiplying when going from real length to the drawing.",
+       "Writing the answer in the drawing's units when the real length is asked for."
       ]
      },
      "estimatedHeight": 502
     },
     {
      "label": "B",
-     "instruction": "Can these side lengths make a triangle? The two shorter sides must add to more than the longest.",
+     "instruction": "Can the side lengths form a triangle? Check one.",
+     "explainer": "The two shorter sides must add to more than the longest side.",
      "items": [
       {
        "label": "7",
@@ -388,18 +391,23 @@
       "purpose": "Decide whether three side lengths make a triangle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The rule that the two shorter sides must add to more than the longest is printed on the sheet, so the student practises applying it. Some sets fail by a lot and some only just, so the student must add carefully rather than guess from the look of the numbers.",
+      "misconceptions": [
+       "Checking that any two sides add to more than the third, but using the two longest.",
+       "Thinking sides that add to exactly the longest side make a flat triangle that counts."
       ]
      },
-     "estimatedHeight": 220
+     "estimatedHeight": 246
     }
    ],
-   "estimatedHeight": 730
+   "estimatedHeight": 756
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Picture the slice. Tick its shape.",
+     "instruction": "Check the shape of the cross section.",
      "items": [
       {
        "label": "13",
@@ -412,7 +420,7 @@
          }
         },
         {
-         "text": "Slice the box parallel to its base. What shape is the slice?"
+         "text": "A box is sliced parallel to its base. What shape is the cross section?"
         },
         {
          "choices": {
@@ -423,7 +431,7 @@
           ],
           "field": {
            "id": "q13",
-           "label": "Slice the box parallel to its base. What shape is the slice?",
+           "label": "A box is sliced parallel to its base. What shape is the cross section?",
            "answer": {
             "text": "rectangle"
            }
@@ -444,7 +452,7 @@
          }
         },
         {
-         "text": "Slice the box straight down, parallel to its front. What shape is the slice?"
+         "text": "A box is sliced straight down, parallel to its front. What shape is the cross section?"
         },
         {
          "choices": {
@@ -455,7 +463,7 @@
           ],
           "field": {
            "id": "q14",
-           "label": "Slice the box straight down, parallel to its front. What shape is the slice?",
+           "label": "A box is sliced straight down, parallel to its front. What shape is the cross section?",
            "answer": {
             "text": "rectangle"
            }
@@ -464,21 +472,86 @@
         }
        ],
        "key": "rectangle"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "roundSolid": {
+          "kind": "KIND_CONE"
+         }
+        },
+        {
+         "text": "A cone is sliced parallel to its base. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q15",
+           "label": "A cone is sliced parallel to its base. What shape is the cross section?",
+           "answer": {
+            "text": "circle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "circle"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "roundSolid": {
+          "kind": "KIND_CYLINDER"
+         }
+        },
+        {
+         "text": "A cylinder is sliced parallel to its base. What shape is the cross section?"
+        },
+        {
+         "choices": {
+          "options": [
+           "circle",
+           "rectangle",
+           "triangle"
+          ],
+          "field": {
+           "id": "q16",
+           "label": "A cylinder is sliced parallel to its base. What shape is the cross section?",
+           "answer": {
+            "text": "circle"
+           }
+          }
+         }
+        }
+       ],
+       "key": "circle"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-g7-cross-sections",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Name the two-dimensional shape made by slicing a box, cylinder, cone or ball.",
+      "purpose": "Name the two-dimensional cross section made by slicing a rectangular prism, cylinder, cone or sphere.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each item shows a solid and describes a plane slice, and the student identifies the shape of the cross section. The solids are a rectangular prism, cylinder, cone and sphere. The drawing supports visualizing the slice before choosing.",
+      "misconceptions": [
+       "Naming the shape of the whole solid instead of the slice, such as a cylinder.",
+       "Thinking every slice of a box is a rectangle of the same size as a face."
       ]
      },
-     "estimatedHeight": 252
+     "estimatedHeight": 485
     }
    ],
-   "estimatedHeight": 256
+   "estimatedHeight": 489
   }
  ],
  "key": [
@@ -490,8 +563,8 @@
     "answer": {
      "text": "15.5",
      "also": [
-      "15.5 inch",
-      "15.5inch"
+      "15.5 in",
+      "15.5in"
      ]
     }
    }
@@ -546,8 +619,8 @@
     "answer": {
      "text": "5.5",
      "also": [
-      "5.5 inch",
-      "5.5inch"
+      "5.5 in",
+      "5.5in"
      ]
     }
    }
@@ -630,7 +703,7 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "Slice the box parallel to its base. What shape is the slice?",
+    "label": "A box is sliced parallel to its base. What shape is the cross section?",
     "answer": {
      "text": "rectangle"
     }
@@ -640,24 +713,43 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "Slice the box straight down, parallel to its front. What shape is the slice?",
+    "label": "A box is sliced straight down, parallel to its front. What shape is the cross section?",
     "answer": {
      "text": "rectangle"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "A cone is sliced parallel to its base. What shape is the cross section?",
+    "answer": {
+     "text": "circle"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "A cylinder is sliced parallel to its base. What shape is the cross section?",
+    "answer": {
+     "text": "circle"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Use scales, decide when sides make a triangle, and picture slices of solids.",
+  "purpose": "Use scales, decide when sides make a triangle, and describe cross sections of solids.",
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
   ]
  },
  "advice": [
-  "\"Use the scale.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Can these side lengths make a triangle? The two shorter sides must add to more than the longest.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Picture the slice. Tick its shape.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Picture the slice. Tick its shape.\" was cut from 4 to 2 items to fit."
+  "\"Use the scale to find each length.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Can the side lengths form a triangle? Check one.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Check the shape of the cross section.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

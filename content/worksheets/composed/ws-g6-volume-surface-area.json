@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Find how many half-inch cubes fill the box, then its volume.",
+     "instruction": "Find the number of half-inch cubes that fill the box. Find the volume.",
      "explainer": "8 half-inch cubes make 1 cubic inch. The volume is also length × width × height.",
      "items": [
       {
@@ -30,7 +30,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Cubes with ½-inch edges that fill it:"
+            "text": "Number of half-inch cubes:"
            },
            {
             "blank": {
@@ -71,7 +71,7 @@
          }
         }
        ],
-       "key": "Cubes with ½-inch edges that fill it: 441; Volume = 55 1/8 cubic in"
+       "key": "Number of half-inch cubes: 441; Volume = 55 1/8 cubic in"
       },
       {
        "label": "2",
@@ -90,7 +90,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Cubes with ½-inch edges that fill it:"
+            "text": "Number of half-inch cubes:"
            },
            {
             "blank": {
@@ -131,7 +131,7 @@
          }
         }
        ],
-       "key": "Cubes with ½-inch edges that fill it: 150; Volume = 18 3/4 cubic in"
+       "key": "Number of half-inch cubes: 150; Volume = 18 3/4 cubic in"
       },
       {
        "label": "3",
@@ -150,7 +150,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Cubes with ½-inch edges that fill it:"
+            "text": "Number of half-inch cubes:"
            },
            {
             "blank": {
@@ -191,7 +191,7 @@
          }
         }
        ],
-       "key": "Cubes with ½-inch edges that fill it: 245; Volume = 30 5/8 cubic in"
+       "key": "Number of half-inch cubes: 245; Volume = 30 5/8 cubic in"
       }
      ],
      "columns": 1,
@@ -201,6 +201,13 @@
       "purpose": "Find the volume of a box with fractional edges, by packing unit cubes and by multiplying.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The standard asks the student to pack a box with cubes of fractional edge length and see that this gives the same volume as multiplying. The student first counts half-inch cubes and then writes the volume. Eight half-inch cubes make one cubic inch, which links the two answers.",
+      "misconceptions": [
+       "Counting half-inch cubes and calling that number the volume in cubic inches."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
      "estimatedHeight": 757
@@ -213,7 +220,7 @@
     {
      "label": "B",
      "instruction": "Find the surface area from the net.",
-     "explainer": "Each face is labelled with its length and width. Add the areas of all 6.",
+     "explainer": "Each face is labeled with its length and width. Add the areas of all 6 faces.",
      "items": [
       {
        "label": "4",
@@ -223,7 +230,7 @@
           "length": 6,
           "width": 6,
           "height": 3,
-          "unit": "in"
+          "unit": "inches"
          }
         },
         {
@@ -258,7 +265,7 @@
           "length": 10,
           "width": 6,
           "height": 4,
-          "unit": "in"
+          "unit": "inches"
          }
         },
         {
@@ -294,8 +301,12 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "A net shows all six faces flat, so the student can see that each face has a matching face. Each face is labeled with its length and width. The total must include all six areas, not three.",
       "misconceptions": [
        "Adding only 3 faces, one of each size."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
      "estimatedHeight": 631
@@ -408,7 +419,7 @@
   ]
  },
  "advice": [
-  "\"Find how many half-inch cubes fill the box, then its volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the number of half-inch cubes that fill the box. Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Find the surface area from the net.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "Section \"Find the surface area from the net.\" was cut from 4 to 2 items to fit."
  ],

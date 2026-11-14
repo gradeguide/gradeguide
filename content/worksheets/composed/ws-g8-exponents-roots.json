@@ -11,7 +11,7 @@
     {
      "label": "A",
      "instruction": "Write as a single power, or as a fraction.",
-     "explainer": "Multiplying adds exponents, dividing subtracts them, and a power of a power multiplies them. A negative exponent means one over.",
+     "explainer": "Multiplying adds exponents, dividing subtracts them, and a power of a power multiplies them. A negative exponent means the reciprocal: 2⁻³ = 1/2³.",
      "items": [
       {
        "label": "1",
@@ -20,7 +20,7 @@
          "math": {
           "atoms": [
            {
-            "text": "2⁻⁴ × 2⁴"
+            "text": "2⁶ × 2²"
            },
            {
             "text": "="
@@ -28,12 +28,12 @@
            {
             "blank": {
              "id": "q1",
-             "label": "2⁻⁴ × 2⁴ as one power",
+             "label": "2⁶ × 2² as one power",
              "answer": {
-              "text": "2⁰",
+              "text": "2⁸",
               "also": [
-               "2^0",
-               "1"
+               "2^8",
+               "256"
               ]
              }
             }
@@ -42,7 +42,7 @@
          }
         }
        ],
-       "key": "2⁻⁴ × 2⁴ = 2⁰"
+       "key": "2⁶ × 2² = 2⁸"
       },
       {
        "label": "2",
@@ -51,20 +51,17 @@
          "math": {
           "atoms": [
            {
-            "text": "7³ × 7³"
+            "text": "7⁻⁴ ="
            },
            {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q2",
-             "label": "7³ × 7³ as one power",
-             "answer": {
-              "text": "7⁶",
-              "also": [
-               "7^6"
-              ]
+            "halfBlank": {
+             "given": 1,
+             "field": {
+              "id": "q2",
+              "label": "7 to the −4",
+              "answer": {
+               "text": "2401"
+              }
              }
             }
            }
@@ -72,7 +69,7 @@
          }
         }
        ],
-       "key": "7³ × 7³ = 7⁶"
+       "key": "7⁻⁴ = 1/2401"
       },
       {
        "label": "3",
@@ -81,17 +78,17 @@
          "math": {
           "atoms": [
            {
-            "text": "7⁻⁴ × 7⁴ ="
+            "text": "3⁶ × 3⁻⁶ ="
            },
            {
             "blank": {
              "id": "q3",
-             "label": "7⁻⁴ × 7⁴",
+             "label": "3⁶ × 3⁻⁶",
              "answer": {
               "text": "1",
               "also": [
-               "7⁰",
-               "7^0"
+               "3⁰",
+               "3^0"
               ]
              }
             }
@@ -100,7 +97,7 @@
          }
         }
        ],
-       "key": "7⁻⁴ × 7⁴ = 1"
+       "key": "3⁶ × 3⁻⁶ = 1"
       },
       {
        "label": "4",
@@ -109,7 +106,7 @@
          "math": {
           "atoms": [
            {
-            "text": "7⁴ ÷ 7¹"
+            "text": "(7⁵)²"
            },
            {
             "text": "="
@@ -117,12 +114,11 @@
            {
             "blank": {
              "id": "q4",
-             "label": "7⁴ ÷ 7¹ as one power",
+             "label": "(7⁵)² as one power",
              "answer": {
-              "text": "7³",
+              "text": "7¹⁰",
               "also": [
-               "7^3",
-               "343"
+               "7^10"
               ]
              }
             }
@@ -131,7 +127,7 @@
          }
         }
        ],
-       "key": "7⁴ ÷ 7¹ = 7³"
+       "key": "(7⁵)² = 7¹⁰"
       },
       {
        "label": "5",
@@ -140,17 +136,22 @@
          "math": {
           "atoms": [
            {
-            "text": "7³ × 7⁻³ ="
+            "text": "7⁻⁵ ÷ 7¹"
+           },
+           {
+            "text": "="
            },
            {
             "blank": {
              "id": "q5",
-             "label": "7³ × 7⁻³",
+             "label": "7⁻⁵ ÷ 7¹ as one power",
              "answer": {
-              "text": "1",
+              "text": "7⁻⁶",
               "also": [
-               "7⁰",
-               "7^0"
+               "7^-6",
+               "7^−6",
+               "1/7⁶",
+               "1/117649"
               ]
              }
             }
@@ -159,7 +160,7 @@
          }
         }
        ],
-       "key": "7³ × 7⁻³ = 1"
+       "key": "7⁻⁵ ÷ 7¹ = 7⁻⁶"
       },
       {
        "label": "6",
@@ -168,18 +169,17 @@
          "math": {
           "atoms": [
            {
-            "text": "2¹ × 2⁻¹ ="
+            "text": "2⁻⁴ ="
            },
            {
-            "blank": {
-             "id": "q6",
-             "label": "2¹ × 2⁻¹",
-             "answer": {
-              "text": "1",
-              "also": [
-               "2⁰",
-               "2^0"
-              ]
+            "halfBlank": {
+             "given": 1,
+             "field": {
+              "id": "q6",
+              "label": "2 to the −4",
+              "answer": {
+               "text": "16"
+              }
              }
             }
            }
@@ -187,7 +187,7 @@
          }
         }
        ],
-       "key": "2¹ × 2⁻¹ = 1"
+       "key": "2⁻⁴ = 1/16"
       },
       {
        "label": "7",
@@ -196,7 +196,7 @@
          "math": {
           "atoms": [
            {
-            "text": "(5⁻³)⁵"
+            "text": "5⁻³ × 5⁵"
            },
            {
             "text": "="
@@ -204,14 +204,12 @@
            {
             "blank": {
              "id": "q7",
-             "label": "(5⁻³)⁵ as one power",
+             "label": "5⁻³ × 5⁵ as one power",
              "answer": {
-              "text": "5⁻¹⁵",
+              "text": "5²",
               "also": [
-               "5^-15",
-               "5^−15",
-               "1/5¹⁵",
-               "1/30517578125"
+               "5^2",
+               "25"
               ]
              }
             }
@@ -220,7 +218,7 @@
          }
         }
        ],
-       "key": "(5⁻³)⁵ = 5⁻¹⁵"
+       "key": "5⁻³ × 5⁵ = 5²"
       },
       {
        "label": "8",
@@ -229,7 +227,7 @@
          "math": {
           "atoms": [
            {
-            "text": "5⁻⁵ ÷ 5⁻³"
+            "text": "3⁵ ÷ 3⁻²"
            },
            {
             "text": "="
@@ -237,14 +235,12 @@
            {
             "blank": {
              "id": "q8",
-             "label": "5⁻⁵ ÷ 5⁻³ as one power",
+             "label": "3⁵ ÷ 3⁻² as one power",
              "answer": {
-              "text": "5⁻²",
+              "text": "3⁷",
               "also": [
-               "5^-2",
-               "5^−2",
-               "1/5²",
-               "1/25"
+               "3^7",
+               "2187"
               ]
              }
             }
@@ -253,7 +249,7 @@
          }
         }
        ],
-       "key": "5⁻⁵ ÷ 5⁻³ = 5⁻²"
+       "key": "3⁵ ÷ 3⁻² = 3⁷"
       },
       {
        "label": "9",
@@ -262,7 +258,7 @@
          "math": {
           "atoms": [
            {
-            "text": "6³ ÷ 6⁵"
+            "text": "(3⁻⁵)¹"
            },
            {
             "text": "="
@@ -270,14 +266,14 @@
            {
             "blank": {
              "id": "q9",
-             "label": "6³ ÷ 6⁵ as one power",
+             "label": "(3⁻⁵)¹ as one power",
              "answer": {
-              "text": "6⁻²",
+              "text": "3⁻⁵",
               "also": [
-               "6^-2",
-               "6^−2",
-               "1/6²",
-               "1/36"
+               "3^-5",
+               "3^−5",
+               "1/3⁵",
+               "1/243"
               ]
              }
             }
@@ -286,7 +282,7 @@
          }
         }
        ],
-       "key": "6³ ÷ 6⁵ = 6⁻²"
+       "key": "(3⁻⁵)¹ = 3⁻⁵"
       },
       {
        "label": "10",
@@ -295,7 +291,7 @@
          "math": {
           "atoms": [
            {
-            "text": "(6⁻³)²"
+            "text": "3⁶ × 3⁴"
            },
            {
             "text": "="
@@ -303,14 +299,12 @@
            {
             "blank": {
              "id": "q10",
-             "label": "(6⁻³)² as one power",
+             "label": "3⁶ × 3⁴ as one power",
              "answer": {
-              "text": "6⁻⁶",
+              "text": "3¹⁰",
               "also": [
-               "6^-6",
-               "6^−6",
-               "1/6⁶",
-               "1/46656"
+               "3^10",
+               "59049"
               ]
              }
             }
@@ -319,10 +313,10 @@
          }
         }
        ],
-       "key": "(6⁻³)² = 6⁻⁶"
+       "key": "3⁶ × 3⁴ = 3¹⁰"
       }
      ],
-     "columns": 1,
+     "columns": 2,
      "fragmentId": "frag-g8-exponent-rules",
      "stage": "STAGE_PRACTICE",
      "design": {
@@ -330,12 +324,17 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Products, quotients and powers of powers are mixed, so the student picks the rule each time instead of repeating one. Negative and zero exponents come up inside the same items, as 8.EE.A.1 asks. The explainer states the rules in words the student can check each answer against.",
       "misconceptions": [
        "Multiplying the exponents when multiplying powers: 3² × 3⁴ = 3⁸.",
-       "Reading 2⁻³ as a negative number."
+       "Reading 2⁻³ as a negative number.",
+       "Thinking a power with exponent 0 is 0."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
-     "estimatedHeight": 600
+     "estimatedHeight": 380
     },
     {
      "label": "B",
@@ -412,28 +411,7 @@
         }
        ],
        "key": "x² = 169 and x > 0, so x = 13"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g8-roots",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Find square and cube roots of perfect squares and cubes, and solve x² = p and x³ = p.",
-      "principles": [
-       "PRINCIPLE_RETRIEVAL_PRACTICE"
-      ]
-     },
-     "estimatedHeight": 190
-    }
-   ],
-   "estimatedHeight": 798
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Find the root, or solve.",
-     "items": [
+      },
       {
        "label": "14",
        "nodes": [
@@ -505,6 +483,30 @@
         }
        ],
        "key": "√16 = 4"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "√225 ="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "square root of 225",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "√225 = 15"
       }
      ],
      "columns": 1,
@@ -514,13 +516,20 @@
       "purpose": "Find square and cube roots of perfect squares and cubes, and solve x² = p and x³ = p.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Square and cube roots of perfect squares and cubes are mixed with x² = p and x³ = p. Seeing them together shows the student that solving these equations means taking a root. The condition x > 0 keeps to one answer, as grade 8 expects.",
+      "misconceptions": [
+       "Dividing by 2 or 3 instead of taking the root, so √16 = 8.",
+       "Mixing up the square root and the cube root of 64."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
-     "continued": true,
-     "estimatedHeight": 190
+     "estimatedHeight": 398
     }
    ],
-   "estimatedHeight": 194
+   "estimatedHeight": 786
   }
  ],
  "key": [
@@ -528,12 +537,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "2⁻⁴ × 2⁴ as one power",
+    "label": "2⁶ × 2² as one power",
     "answer": {
-     "text": "2⁰",
+     "text": "2⁸",
      "also": [
-      "2^0",
-      "1"
+      "2^8",
+      "256"
      ]
     }
    }
@@ -542,12 +551,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "7³ × 7³ as one power",
+    "label": "7 to the −4",
     "answer": {
-     "text": "7⁶",
-     "also": [
-      "7^6"
-     ]
+     "text": "2401"
     }
    }
   },
@@ -555,12 +561,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "7⁻⁴ × 7⁴",
+    "label": "3⁶ × 3⁻⁶",
     "answer": {
      "text": "1",
      "also": [
-      "7⁰",
-      "7^0"
+      "3⁰",
+      "3^0"
      ]
     }
    }
@@ -569,12 +575,11 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "7⁴ ÷ 7¹ as one power",
+    "label": "(7⁵)² as one power",
     "answer": {
-     "text": "7³",
+     "text": "7¹⁰",
      "also": [
-      "7^3",
-      "343"
+      "7^10"
      ]
     }
    }
@@ -583,12 +588,14 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "7³ × 7⁻³",
+    "label": "7⁻⁵ ÷ 7¹ as one power",
     "answer": {
-     "text": "1",
+     "text": "7⁻⁶",
      "also": [
-      "7⁰",
-      "7^0"
+      "7^-6",
+      "7^−6",
+      "1/7⁶",
+      "1/117649"
      ]
     }
    }
@@ -597,13 +604,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "2¹ × 2⁻¹",
+    "label": "2 to the −4",
     "answer": {
-     "text": "1",
-     "also": [
-      "2⁰",
-      "2^0"
-     ]
+     "text": "16"
     }
    }
   },
@@ -611,14 +614,12 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "(5⁻³)⁵ as one power",
+    "label": "5⁻³ × 5⁵ as one power",
     "answer": {
-     "text": "5⁻¹⁵",
+     "text": "5²",
      "also": [
-      "5^-15",
-      "5^−15",
-      "1/5¹⁵",
-      "1/30517578125"
+      "5^2",
+      "25"
      ]
     }
    }
@@ -627,14 +628,12 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "5⁻⁵ ÷ 5⁻³ as one power",
+    "label": "3⁵ ÷ 3⁻² as one power",
     "answer": {
-     "text": "5⁻²",
+     "text": "3⁷",
      "also": [
-      "5^-2",
-      "5^−2",
-      "1/5²",
-      "1/25"
+      "3^7",
+      "2187"
      ]
     }
    }
@@ -643,14 +642,14 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "6³ ÷ 6⁵ as one power",
+    "label": "(3⁻⁵)¹ as one power",
     "answer": {
-     "text": "6⁻²",
+     "text": "3⁻⁵",
      "also": [
-      "6^-2",
-      "6^−2",
-      "1/6²",
-      "1/36"
+      "3^-5",
+      "3^−5",
+      "1/3⁵",
+      "1/243"
      ]
     }
    }
@@ -659,14 +658,12 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "(6⁻³)² as one power",
+    "label": "3⁶ × 3⁴ as one power",
     "answer": {
-     "text": "6⁻⁶",
+     "text": "3¹⁰",
      "also": [
-      "6^-6",
-      "6^−6",
-      "1/6⁶",
-      "1/46656"
+      "3^10",
+      "59049"
      ]
     }
    }
@@ -730,6 +727,16 @@
      "text": "4"
     }
    }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "square root of 225",
+    "answer": {
+     "text": "15"
+    }
+   }
   }
  ],
  "design": {
@@ -741,7 +748,7 @@
  "advice": [
   "\"Write as a single power, or as a fraction.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Find the root, or solve.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Find the root, or solve.\" was cut from 8 to 6 items to fit."
+  "Section \"Find the root, or solve.\" was cut from 8 to 7 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

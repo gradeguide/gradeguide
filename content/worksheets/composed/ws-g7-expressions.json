@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Multiply out the brackets.",
+     "instruction": "Expand.",
      "explainer": "Multiply every term inside by the number outside, sign and all: −2(x − 5) = −2x + 10.",
      "items": [
       {
@@ -211,8 +211,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Expanding with a negative number outside the parentheses is where most sign errors start in algebra. The items mix positive and negative multipliers so the student cannot assume the signs. The worked example in the explainer shows the hardest case, a negative times a subtraction.",
       "misconceptions": [
-       "Not multiplying the second term's sign: −2(x − 5) = −2x − 10."
+       "Not multiplying the second term's sign: −2(x − 5) = −2x − 10.",
+       "Multiplying only the first term inside: 4(x − 9) = 4x − 9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 216
@@ -416,8 +421,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each expression has two x terms and two numbers, some negative, so the student must pair terms by kind and carry each sign with its term. The answers are short, so a wrong pairing shows clearly.",
       "misconceptions": [
-       "Adding a constant to a coefficient: 3x + 2 = 5x."
+       "Adding a constant to a coefficient: 3x + 2 = 5x.",
+       "Dropping the minus sign in front of a term when moving it next to its like term."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 346
@@ -560,6 +570,14 @@
       "purpose": "Factor linear expressions, including ones with a subtraction.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Factoring undoes expanding, so it comes after the two sections that build expressions. Each expression has a common factor from 2 to 9, and some have a subtraction inside. Checking by expanding the answer is quick, so the student can catch their own mistakes.",
+      "misconceptions": [
+       "Taking out a factor that does not divide both terms.",
+       "Leaving a 1 out: 6x − 6 = 6(x)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 138
@@ -807,7 +825,7 @@
   ]
  },
  "advice": [
-  "\"Multiply out the brackets.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Expand.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Combine like terms.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Factor out the greatest common factor.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],

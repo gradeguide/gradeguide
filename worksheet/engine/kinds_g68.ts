@@ -64,6 +64,7 @@ import {
 import { type AtomSpec, blank, compare, fractionBlank, gcd, halfBlank, math, node, row, text } from './build.js';
 import { commas, mixed } from './draw.js';
 import { type Ctx, inRange, list, names, pickFresh, unique } from './kinds.js';
+import { generateG68Figures } from './kinds_g68_figures.js';
 
 const MINUS = '−';
 
@@ -100,29 +101,29 @@ function mixedText(n: number, d: number): string {
 
 // field gives a field whose answer also reads with a hyphen for a minus sign
 // and without spaces.
-function field(ctx: Ctx, label: string, answer: string, also: string[] = []): Field {
+export function field(ctx: Ctx, label: string, answer: string, also: string[] = []): Field {
   const all = [answer, ...also];
   const variants = all.flatMap((a) => [a, a.replaceAll(MINUS, '-'), a.replace(/\s+/g, ''), a.replaceAll(MINUS, '-').replace(/\s+/g, '')]);
   return ctx.fields.field(label, answer, unique(variants).filter((x) => x !== answer));
 }
 
-function choices(ctx: Ctx, label: string, options: string[], answer: string): Node {
+export function choices(ctx: Ctx, label: string, options: string[], answer: string): Node {
   return node({ case: 'choices', value: create(ChoicesSchema, { options, field: ctx.fields.field(label, answer) }) });
 }
 
-function work(rows: number): Node {
+export function work(rows: number): Node {
   return node({ case: 'workSpace', value: create(WorkSpaceSchema, { rows }) });
 }
 
-function cellText(s: string) {
+export function cellText(s: string) {
   return create(DataTable_CellSchema, { kind: { case: 'text', value: s } });
 }
 
-function cellField(f: Field) {
+export function cellField(f: Field) {
   return create(DataTable_CellSchema, { kind: { case: 'field', value: f } });
 }
 
-function table(header: string[], rows: ReturnType<typeof cellText>[][], title = ''): Node {
+export function table(header: string[], rows: ReturnType<typeof cellText>[][], title = ''): Node {
   return node({ case: 'dataTable', value: create(DataTableSchema, { title, header, rows: rows.map((cells) => create(DataTable_RowSchema, { cells })) }) });
 }
 
@@ -165,7 +166,7 @@ function moneyAlso(cents: number): string[] {
   return unique([num(cents / 100), `$${money(cents)}`]);
 }
 
-function pt(x: number, y: number): string {
+export function pt(x: number, y: number): string {
   return `(${num(x)}, ${num(y)})`;
 }
 
@@ -174,7 +175,7 @@ function rngSign(ctx: Ctx): number {
 }
 
 // nonzero picks a whole number from min to max that is not zero.
-function nonzero(ctx: Ctx, min: number, max: number): number {
+export function nonzero(ctx: Ctx, min: number, max: number): number {
   let v = ctx.rng.int(min, max);
   while (v === 0) {
     v = ctx.rng.int(min, max);
@@ -193,38 +194,22 @@ function signedFrac(n: number, d: number, after = false): AtomSpec[] {
 
 type PlaneInit = Parameters<typeof create<typeof CoordinatePlaneSchema>>[1];
 
-function plane(init: PlaneInit): Node {
+export function plane(init: PlaneInit): Node {
   return node({ case: 'coordinatePlane', value: create(CoordinatePlaneSchema, init) });
 }
 
-function gp(x: number, y: number, label = '') {
+export function gp(x: number, y: number, label = '') {
   return create(CoordinatePlane_PointSchema, { x, y, label });
 }
 
-function seg(x1: number, y1: number, x2: number, y2: number, more: { dashed?: boolean; label?: string; field?: Field; extend?: boolean; labelBefore?: boolean } = {}) {
+export function seg(x1: number, y1: number, x2: number, y2: number, more: { dashed?: boolean; label?: string; field?: Field; extend?: boolean; labelBefore?: boolean } = {}) {
   return create(CoordinatePlane_SegmentSchema, { x1, y1, x2, y2, ...more });
-}
-
-// moved is where a transformation takes (x, y): 0 translate by (dx, dy),
-// 1 and 2 reflect across the x and y axes, 3 and 4 rotate 90° and 180°
-// about the origin, 5 dilate by f from the origin.
-function moved(form: number, x: number, y: number, dx: number, dy: number, f: number): [number, number] {
-  return (
-    [
-      [x + dx, y + dy],
-      [x, -y],
-      [-x, y],
-      [-y, x],
-      [-x, -y],
-      [f * x, f * y],
-    ] as [number, number][]
-  )[form];
 }
 
 // spread picks an index below n that this worksheet has not used yet for
 // key, so items in a section vary their story or form. Once every index has
 // been used, it starts another round.
-function spread(ctx: Ctx, key: string, n: number): number {
+export function spread(ctx: Ctx, key: string, n: number): number {
   for (let round = 0; ; round++) {
     for (let i = 0; i < 40; i++) {
       const v = ctx.rng.int(0, n - 1);
@@ -243,6 +228,10 @@ function tick(top: string | Field, bottom: string | Field) {
 }
 
 export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
+  const drawn = generateG68Figures(kind, ctx);
+  if (drawn) {
+    return drawn;
+  }
   const { rng } = ctx;
   const k = kind.kind;
   switch (k.case) {
@@ -762,52 +751,6 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
               math('BC =', blank(field(ctx, 'length of BC', String(h)))),
               math('Area =', blank(field(ctx, 'area of the rectangle', String(w * h))), 'sq units'),
             ),
-          ];
-        }
-        case CoordinateGeometry_Mode.TRANSFORM: {
-          // A triangle and a move that keeps its image on the grid.
-          const [form, tri, dx, dy, f] = pickFresh(ctx, k.case + mode, () => {
-            for (;;) {
-              const tri: [number, number][] = [];
-              while (tri.length < 3) {
-                const q: [number, number] = [rng.int(-4, 4), rng.int(-4, 4)];
-                if (!tri.some(([a, b]) => a === q[0] || b === q[1])) {
-                  tri.push(q);
-                }
-              }
-              const form = rng.int(0, 5);
-              const [dx, dy, f] = [nonzero(ctx, -4, 4), nonzero(ctx, -4, 4), 2];
-              const img = tri.map(([x, y]) => moved(form, x, y, dx, dy, f));
-              if (img.every(([x, y]) => Math.abs(x) <= 7 && Math.abs(y) <= 7) && (form !== 5 || tri.every(([x, y]) => x !== 0 || y !== 0))) {
-                return [form, tri, dx, dy, f] as const;
-              }
-            }
-          });
-          const lr = (n: number) => `${Math.abs(n)} ${n > 0 ? 'right' : 'left'}`;
-          const ud = (n: number) => `${Math.abs(n)} ${n > 0 ? 'up' : 'down'}`;
-          const says = [
-            `Translate triangle ABC ${lr(dx)} and ${ud(dy)}.`,
-            'Reflect triangle ABC across the x-axis.',
-            'Reflect triangle ABC across the y-axis.',
-            'Rotate triangle ABC 90° counterclockwise about the origin.',
-            'Rotate triangle ABC 180° about the origin.',
-            `Dilate triangle ABC by a scale factor of ${f} from the origin.`,
-          ];
-          const img = tri.map(([x, y]) => moved(form, x, y, dx, dy, f));
-          const names = ['A', 'B', 'C'];
-          const drawn = img.map(([x, y], i) => `${names[i]}′${pt(x, y)}`).join(', ');
-          return [
-            text(says[form] + ' Draw the image, then write the coordinates of A′.'),
-            plane({
-              xMin: -7,
-              xMax: 7,
-              yMin: -7,
-              yMax: 7,
-              points: tri.map(([x, y], i) => gp(x, y, names[i])),
-              segments: tri.map(([x, y], i) => seg(x, y, tri[(i + 1) % 3][0], tri[(i + 1) % 3][1])),
-              plotField: ctx.fields.field('the image drawn', drawn),
-            }),
-            pair('A′', img[0][0], img[0][1]),
           ];
         }
         default: {

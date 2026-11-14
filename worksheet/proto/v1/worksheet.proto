@@ -171,6 +171,9 @@ message ItemKind {
     ScientificNotation scientific_notation = 107;
     LinearRelation linear_relation = 108;
     AngleFacts angle_facts = 109;
+    // Grades 6 to 8, drawing on a grid or axes. Fields 140 to 149.
+    Transformation transformation = 140;
+    SketchGraph sketch_graph = 141;
   }
 }
 
@@ -619,8 +622,6 @@ message CoordinateGeometry {
     MODE_DISTANCE = 3;
     // A rectangle by its vertices; find its sides and area.
     MODE_RECTANGLE = 4;
-    // Translate, reflect, rotate about the origin, or dilate from it.
-    MODE_TRANSFORM = 5;
   }
 }
 
@@ -763,6 +764,10 @@ message DataSetStats {
     MODE_DRAW_BOX_PLOT = 7;
     // A histogram; read counts from it.
     MODE_HISTOGRAM = 8;
+    // A short study; name what was measured, its unit and how many values.
+    MODE_ATTRIBUTE = 9;
+    // A dot plot; pick the mean or the median as the better center.
+    MODE_CHOOSE_CENTER = 10;
   }
 }
 
@@ -835,6 +840,8 @@ message Probability {
     MODE_COMPOUND = 2;
     // How many times to expect an outcome in many trials.
     MODE_EXPECTED = 3;
+    // Estimate a probability from a table of random digits.
+    MODE_SIMULATION = 4;
   }
 }
 
@@ -848,6 +855,9 @@ message Pythagorean {
     MODE_LEG = 2;
     // The distance between two points.
     MODE_DISTANCE = 3;
+    // The square on the hypotenuse drawn inside a larger square, to show
+    // a² + b² = c² by area.
+    MODE_SQUARE_AREAS = 4;
   }
 }
 
@@ -908,6 +918,45 @@ message AngleFacts {
     MODE_ALGEBRA = 4;
     // Parallel lines cut by a transversal.
     MODE_TRANSVERSAL = 5;
+  }
+}
+
+// A figure on a coordinate grid and its image after translations,
+// reflections, rotations about the origin and dilations from the origin.
+message Transformation {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // One move; draw the image and write a vertex's coordinates.
+    MODE_DRAW = 1;
+    // Two moves in turn; draw the final image.
+    MODE_DRAW_SEQUENCE = 2;
+    // A figure and its image after a rigid motion are drawn; compare their
+    // sides, angles and parallel sides.
+    MODE_PROPERTIES = 3;
+    // A figure and its image are drawn; name the one move between them.
+    MODE_NAME_MOVE = 4;
+    // A figure and its image after a reflection and a translation are
+    // drawn; complete the sequence.
+    MODE_NAME_SEQUENCE = 5;
+    // A figure and its image are drawn; decide whether they are congruent
+    // or only similar, and find the scale factor.
+    MODE_CONGRUENT_OR_SIMILAR = 6;
+  }
+}
+
+// A story in which a quantity changes over time, and its graph.
+message SketchGraph {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A story; sketch its graph on blank axes.
+    MODE_SKETCH = 1;
+    // A graph in lettered pieces; describe each piece and find the
+    // steepest.
+    MODE_DESCRIBE = 2;
   }
 }
 

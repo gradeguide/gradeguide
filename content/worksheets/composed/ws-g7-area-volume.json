@@ -109,58 +109,6 @@
         }
        ],
        "key": "Area = 28 sq cm"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "heightShape": {
-          "points": [
-           {},
-           {
-            "x": 10
-           },
-           {
-            "x": 9,
-            "y": 7
-           },
-           {
-            "x": 2,
-            "y": 7
-           }
-          ],
-          "apex": {
-           "x": 2,
-           "y": 7
-          },
-          "baseLabel": "10 cm",
-          "heightLabel": "7 cm",
-          "topLabel": "7 cm"
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Area ="
-           },
-           {
-            "blank": {
-             "id": "q3",
-             "label": "area in square cm",
-             "answer": {
-              "text": "59.5"
-             }
-            }
-           },
-           {
-            "text": "sq cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Area = 59.5 sq cm"
       }
      ],
      "columns": 2,
@@ -170,16 +118,21 @@
       "purpose": "Find the area of triangles and quadrilaterals.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "A short review of triangle, parallelogram and trapezoid area from grade 6, with the base and height marked. It reviews the formulas before the composite shapes later on the sheet. Slanted sides are labeled too, so the student must pick the height and not the slant side.",
+      "misconceptions": [
+       "Using a slanted side as the height.",
+       "Forgetting to halve for a triangle or trapezoid."
       ]
      },
-     "estimatedHeight": 470
+     "estimatedHeight": 252
     },
     {
      "label": "B",
      "instruction": "Find the volume.",
      "items": [
       {
-       "label": "4",
+       "label": "3",
        "nodes": [
         {
          "boxSolid": {
@@ -199,7 +152,7 @@
            },
            {
             "blank": {
-             "id": "q4",
+             "id": "q3",
              "label": "volume in cubic inches",
              "answer": {
               "text": "200"
@@ -216,7 +169,7 @@
        "key": "Volume = 200 cubic in"
       },
       {
-       "label": "5",
+       "label": "4",
        "nodes": [
         {
          "boxSolid": {
@@ -236,7 +189,7 @@
            },
            {
             "blank": {
-             "id": "q5",
+             "id": "q4",
              "label": "volume in cubic inches",
              "answer": {
               "text": "180"
@@ -260,12 +213,17 @@
       "purpose": "Find the volume of a right rectangular prism.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "A review of the volume of a box from its length, width and height. It comes before the real-world problems so the formula is in recent memory.",
+      "misconceptions": [
+       "Adding the three edges instead of multiplying them.",
+       "Writing the answer in square units."
       ]
      },
      "estimatedHeight": 222
     }
    ],
-   "estimatedHeight": 700
+   "estimatedHeight": 482
   },
   {
    "sections": [
@@ -274,14 +232,14 @@
      "instruction": "Find the surface area.",
      "items": [
       {
-       "label": "6",
+       "label": "5",
        "nodes": [
         {
          "prismNet": {
           "length": 8,
           "width": 7,
           "height": 6,
-          "unit": "in"
+          "unit": "inches"
          }
         },
         {
@@ -292,7 +250,7 @@
            },
            {
             "blank": {
-             "id": "q6",
+             "id": "q5",
              "label": "surface area in square inches",
              "answer": {
               "text": "292"
@@ -307,56 +265,225 @@
         }
        ],
        "key": "Surface area = 292 sq in"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "prismNet": {
-          "length": 9,
-          "width": 5,
-          "height": 6,
-          "unit": "in"
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Surface area ="
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "surface area in square inches",
-             "answer": {
-              "text": "258"
-             }
-            }
-           },
-           {
-            "text": "sq in"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Surface area = 258 sq in"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g7-surface-area",
      "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Find the surface area of a right rectangular prism from its net.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The net lays the box out flat, so the student sees all six faces and adds their areas. Each face is labeled with its two edges, so the student focuses on finding and adding the areas. Opposite faces match, which the student can use to save work.",
+      "misconceptions": [
+       "Counting only three faces.",
+       "Finding the volume instead of the surface area."
       ]
      },
      "estimatedHeight": 350
+    },
+    {
+     "label": "D",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A room has this shape. How many square meters of carpet cover its floor?"
+        },
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 8
+           },
+           {
+            "x": 8,
+            "y": 3
+           },
+           {
+            "x": 5,
+            "y": 3
+           },
+           {
+            "x": 5,
+            "y": 6
+           },
+           {
+            "y": 6
+           }
+          ],
+          "sides": [
+           {
+            "text": "8 m"
+           },
+           {
+            "text": "3 m"
+           },
+           {},
+           {},
+           {
+            "text": "5 m"
+           },
+           {
+            "text": "6 m"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q6",
+           "label": "area of the floor",
+           "answer": {
+            "text": "39",
+            "also": [
+             "39 m²",
+             "39 square meters",
+             "39 sq m"
+            ],
+            "work": "8 × 3 + 5 × 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "39"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-area-volume-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve real-world area, surface area and volume problems with composite shapes and prisms.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The standard asks for real-world problems with shapes made of simpler ones. A room made of two rectangles, a tent shaped like a triangular prism, a box to wrap and a garden bed to fill each need the student to split a shape or pick the right measure. The last story adds a step after the volume, dividing it into bags.",
+      "misconceptions": [
+       "Adding the two rectangles' lengths instead of their areas.",
+       "Not working out an unlabeled side from the labeled ones, such as 8 − 5 = 3.",
+       "Using surface area when the question asks how much a shape holds.",
+       "Finding a triangular prism's volume as base times height times length without halving."
+      ]
+     },
+     "estimatedHeight": 390
     }
    ],
-   "estimatedHeight": 354
+   "estimatedHeight": 748
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A tent is a triangular prism. Its 2 triangular ends each have a base of 6 feet and a height of 4 feet. The tent is 7 feet long. How much space is inside it?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q7",
+           "label": "volume of the tent",
+           "answer": {
+            "text": "84",
+            "also": [
+             "84 ft³",
+             "84 cubic feet"
+            ],
+            "work": "6 × 4 ÷ 2 × 7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "84"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A gift box is 10 inches long, 6 inches wide and 4 inches tall. How much wrapping paper covers it exactly, with no overlap?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q8",
+           "label": "surface area of the box",
+           "answer": {
+            "text": "248",
+            "also": [
+             "248 in²",
+             "248 square inches",
+             "248 sq in"
+            ],
+            "work": "10 × 6 + 10 × 6 + 10 × 4 + 10 × 4 + 6 × 4 + 6 × 4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "248"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A garden bed is 6 feet long and 3 feet wide. It is filled with soil 1 1/2 feet deep. Soil comes in bags of 3 cubic feet. How many bags are needed?"
+        },
+        {
+         "workSpace": {
+          "rows": 6,
+          "field": {
+           "id": "q9",
+           "label": "bags of soil",
+           "answer": {
+            "text": "9",
+            "also": [
+             "9 bags"
+            ],
+            "work": "6 × 3 × (1 + 1/2) ÷ 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "9"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-area-volume-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve real-world area, surface area and volume problems with composite shapes and prisms.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The standard asks for real-world problems with shapes made of simpler ones. A room made of two rectangles, a tent shaped like a triangular prism, a box to wrap and a garden bed to fill each need the student to split a shape or pick the right measure. The last story adds a step after the volume, dividing it into bags.",
+      "misconceptions": [
+       "Adding the two rectangles' lengths instead of their areas.",
+       "Not working out an unlabeled side from the labeled ones, such as 8 − 5 = 3.",
+       "Using surface area when the question asks how much a shape holds.",
+       "Finding a triangular prism's volume as base times height times length without halving."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 726
+    }
+   ],
+   "estimatedHeight": 730
   }
  ],
  "key": [
@@ -384,9 +511,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "area in square cm",
+    "label": "volume in cubic inches",
     "answer": {
-     "text": "59.5"
+     "text": "200"
     }
    }
   },
@@ -396,7 +523,7 @@
     "id": "q4",
     "label": "volume in cubic inches",
     "answer": {
-     "text": "200"
+     "text": "180"
     }
    }
   },
@@ -404,16 +531,6 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "volume in cubic inches",
-    "answer": {
-     "text": "180"
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
     "label": "surface area in square inches",
     "answer": {
      "text": "292"
@@ -421,12 +538,63 @@
    }
   },
   {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "area of the floor",
+    "answer": {
+     "text": "39",
+     "also": [
+      "39 m²",
+      "39 square meters",
+      "39 sq m"
+     ],
+     "work": "8 × 3 + 5 × 3"
+    }
+   }
+  },
+  {
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "surface area in square inches",
+    "label": "volume of the tent",
     "answer": {
-     "text": "258"
+     "text": "84",
+     "also": [
+      "84 ft³",
+      "84 cubic feet"
+     ],
+     "work": "6 × 4 ÷ 2 × 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "surface area of the box",
+    "answer": {
+     "text": "248",
+     "also": [
+      "248 in²",
+      "248 square inches",
+      "248 sq in"
+     ],
+     "work": "10 × 6 + 10 × 6 + 10 × 4 + 10 × 4 + 6 × 4 + 6 × 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "bags of soil",
+    "answer": {
+     "text": "9",
+     "also": [
+      "9 bags"
+     ],
+     "work": "6 × 3 × (1 + 1/2) ÷ 3"
     }
    }
   }
@@ -439,7 +607,8 @@
  },
  "advice": [
   "\"Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Find the surface area.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Find the surface area.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the surface area.\" was cut from 2 to 1 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

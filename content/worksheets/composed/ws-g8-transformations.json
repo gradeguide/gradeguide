@@ -1,6 +1,6 @@
 {
  "worksheetId": "ws-g8-transformations",
- "title": "Transformations on the coordinate plane",
+ "title": "Transformations",
  "headerLabels": [
   "8.G.A.3"
  ],
@@ -9,81 +9,120 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Draw the image, then write the coordinates of A′.",
+     "instruction": "Draw the image of triangle ABC. Write the coordinates of A′.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "Reflect triangle ABC across the x-axis. Draw the image, then write the coordinates of A′."
+         "text": "Rotate triangle ABC 180° about the origin."
         },
         {
          "coordinatePlane": {
-          "xMin": -7,
-          "xMax": 7,
-          "yMin": -7,
-          "yMax": 7,
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
           "points": [
            {
-            "x": 2,
-            "y": 4,
+            "x": 4,
+            "y": -4,
             "label": "A"
            },
            {
-            "x": -4,
-            "y": 1,
+            "x": 1,
+            "y": -2,
             "label": "B"
            },
            {
-            "x": -2,
-            "y": 2,
+            "x": 3,
+            "y": 4,
             "label": "C"
            }
           ],
           "segments": [
            {
-            "x1": 2,
-            "y1": 4,
-            "x2": -4,
-            "y2": 1
+            "x1": 4,
+            "y1": -4,
+            "x2": 1,
+            "y2": -2
            },
            {
-            "x1": -4,
-            "y1": 1,
-            "x2": -2,
-            "y2": 2
-           },
-           {
-            "x1": -2,
-            "y1": 2,
-            "x2": 2,
+            "x1": 1,
+            "y1": -2,
+            "x2": 3,
             "y2": 4
+           },
+           {
+            "x1": 3,
+            "y1": 4,
+            "x2": 4,
+            "y2": -4
            }
           ],
           "plotField": {
            "id": "q1",
-           "label": "the image drawn",
+           "label": "the image of (4, −4)",
            "answer": {
-            "text": "A′(2, −4), B′(−4, −1), C′(−2, −2)"
+            "text": "A′(−4, 4), B′(−1, 2), C′(−3, −4)"
            }
-          }
+          },
+          "answerSegments": [
+           {
+            "x1": -4,
+            "y1": 4,
+            "x2": -1,
+            "y2": 2
+           },
+           {
+            "x1": -1,
+            "y1": 2,
+            "x2": -3,
+            "y2": -4
+           },
+           {
+            "x1": -3,
+            "y1": -4,
+            "x2": -4,
+            "y2": 4
+           }
+          ],
+          "answerPoints": [
+           {
+            "x": -4,
+            "y": 4,
+            "label": "A′"
+           },
+           {
+            "x": -1,
+            "y": 2,
+            "label": "B′"
+           },
+           {
+            "x": -3,
+            "y": -4,
+            "label": "C′"
+           }
+          ],
+          "cell": 17
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "A′"
-           },
-           {
-            "text": "("
+            "text": "A′ ("
            },
            {
             "blank": {
              "id": "q1-2",
              "label": "A′ x",
              "answer": {
-              "text": "2"
+              "text": "−4",
+              "also": [
+               "-4"
+              ]
              }
             }
            },
@@ -95,10 +134,7 @@
              "id": "q1-3",
              "label": "A′ y",
              "answer": {
-              "text": "−4",
-              "also": [
-               "-4"
-              ]
+              "text": "4"
              }
             }
            },
@@ -109,75 +145,111 @@
          }
         }
        ],
-       "key": "A′(2, −4), B′(−4, −1), C′(−2, −2); A′ ( 2 , −4 )"
+       "key": "A′(−4, 4), B′(−1, 2), C′(−3, −4); A′ ( −4 , 4 )"
       },
       {
        "label": "2",
        "nodes": [
         {
-         "text": "Rotate triangle ABC 90° counterclockwise about the origin. Draw the image, then write the coordinates of A′."
+         "text": "Rotate triangle ABC 90° clockwise about the origin."
         },
         {
          "coordinatePlane": {
-          "xMin": -7,
-          "xMax": 7,
-          "yMin": -7,
-          "yMax": 7,
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
           "points": [
            {
-            "x": 2,
+            "x": 3,
+            "y": 3,
             "label": "A"
            },
            {
-            "x": -3,
-            "y": -4,
+            "x": 4,
+            "y": -1,
             "label": "B"
            },
            {
-            "y": 4,
+            "x": 2,
             "label": "C"
            }
           ],
           "segments": [
            {
-            "x1": 2,
-            "x2": -3,
-            "y2": -4
+            "x1": 3,
+            "y1": 3,
+            "x2": 4,
+            "y2": -1
            },
            {
-            "x1": -3,
-            "y1": -4,
-            "y2": 4
-           },
-           {
-            "y1": 4,
+            "x1": 4,
+            "y1": -1,
             "x2": 2
+           },
+           {
+            "x1": 2,
+            "x2": 3,
+            "y2": 3
            }
           ],
           "plotField": {
            "id": "q2",
-           "label": "the image drawn",
+           "label": "the image of (3, 3)",
            "answer": {
-            "text": "A′(0, 2), B′(4, −3), C′(−4, 0)"
+            "text": "A′(3, −3), B′(−1, −4), C′(0, −2)"
            }
-          }
+          },
+          "answerSegments": [
+           {
+            "x1": 3,
+            "y1": -3,
+            "x2": -1,
+            "y2": -4
+           },
+           {
+            "x1": -1,
+            "y1": -4,
+            "y2": -2
+           },
+           {
+            "y1": -2,
+            "x2": 3,
+            "y2": -3
+           }
+          ],
+          "answerPoints": [
+           {
+            "x": 3,
+            "y": -3,
+            "label": "A′"
+           },
+           {
+            "x": -1,
+            "y": -4,
+            "label": "B′"
+           },
+           {
+            "y": -2,
+            "label": "C′"
+           }
+          ],
+          "cell": 17
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "A′"
-           },
-           {
-            "text": "("
+            "text": "A′ ("
            },
            {
             "blank": {
              "id": "q2-2",
              "label": "A′ x",
              "answer": {
-              "text": "0"
+              "text": "3"
              }
             }
            },
@@ -189,7 +261,10 @@
              "id": "q2-3",
              "label": "A′ y",
              "answer": {
-              "text": "2"
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
              }
             }
            },
@@ -200,46 +275,74 @@
          }
         }
        ],
-       "key": "A′(0, 2), B′(4, −3), C′(−4, 0); A′ ( 0 , 2 )"
+       "key": "A′(3, −3), B′(−1, −4), C′(0, −2); A′ ( 3 , −3 )"
       },
       {
        "label": "3",
        "nodes": [
         {
-         "text": "Translate triangle ABC 2 left and 1 up. Draw the image, then write the coordinates of A′."
+         "text": "Reflect triangle ABC across the x-axis."
         },
         {
          "coordinatePlane": {
-          "xMin": -7,
-          "xMax": 7,
-          "yMin": -7,
-          "yMax": 7,
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
           "points": [
            {
-            "x": -1,
-            "y": 2,
+            "x": 2,
+            "y": -4,
             "label": "A"
            },
            {
-            "x": 4,
-            "y": 3,
+            "x": -2,
+            "y": -3,
             "label": "B"
            },
            {
             "x": -3,
-            "y": 1,
+            "y": -1,
             "label": "C"
            }
           ],
           "segments": [
            {
-            "x1": -1,
-            "y1": 2,
-            "x2": 4,
+            "x1": 2,
+            "y1": -4,
+            "x2": -2,
+            "y2": -3
+           },
+           {
+            "x1": -2,
+            "y1": -3,
+            "x2": -3,
+            "y2": -1
+           },
+           {
+            "x1": -3,
+            "y1": -1,
+            "x2": 2,
+            "y2": -4
+           }
+          ],
+          "plotField": {
+           "id": "q3",
+           "label": "the image of (2, −4)",
+           "answer": {
+            "text": "A′(2, 4), B′(−2, 3), C′(−3, 1)"
+           }
+          },
+          "answerSegments": [
+           {
+            "x1": 2,
+            "y1": 4,
+            "x2": -2,
             "y2": 3
            },
            {
-            "x1": 4,
+            "x1": -2,
             "y1": 3,
             "x2": -3,
             "y2": 1
@@ -247,37 +350,42 @@
            {
             "x1": -3,
             "y1": 1,
-            "x2": -1,
-            "y2": 2
+            "x2": 2,
+            "y2": 4
            }
           ],
-          "plotField": {
-           "id": "q3",
-           "label": "the image drawn",
-           "answer": {
-            "text": "A′(−3, 3), B′(2, 4), C′(−5, 2)"
+          "answerPoints": [
+           {
+            "x": 2,
+            "y": 4,
+            "label": "A′"
+           },
+           {
+            "x": -2,
+            "y": 3,
+            "label": "B′"
+           },
+           {
+            "x": -3,
+            "y": 1,
+            "label": "C′"
            }
-          }
+          ],
+          "cell": 17
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "A′"
-           },
-           {
-            "text": "("
+            "text": "A′ ("
            },
            {
             "blank": {
              "id": "q3-2",
              "label": "A′ x",
              "answer": {
-              "text": "−3",
-              "also": [
-               "-3"
-              ]
+              "text": "2"
              }
             }
            },
@@ -289,7 +397,7 @@
              "id": "q3-3",
              "label": "A′ y",
              "answer": {
-              "text": "3"
+              "text": "4"
              }
             }
            },
@@ -300,78 +408,111 @@
          }
         }
        ],
-       "key": "A′(−3, 3), B′(2, 4), C′(−5, 2); A′ ( −3 , 3 )"
+       "key": "A′(2, 4), B′(−2, 3), C′(−3, 1); A′ ( 2 , 4 )"
       },
       {
        "label": "4",
        "nodes": [
         {
-         "text": "Translate triangle ABC 1 right and 1 up. Draw the image, then write the coordinates of A′."
+         "text": "Dilate triangle ABC by a scale factor of 2 with the origin as the center."
         },
         {
          "coordinatePlane": {
-          "xMin": -7,
-          "xMax": 7,
-          "yMin": -7,
-          "yMax": 7,
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
           "points": [
            {
-            "x": 1,
-            "y": -2,
+            "x": 2,
             "label": "A"
            },
            {
-            "x": 3,
-            "y": -3,
+            "x": 1,
+            "y": 2,
             "label": "B"
            },
            {
-            "x": -1,
+            "x": -2,
+            "y": -2,
             "label": "C"
            }
           ],
           "segments": [
            {
-            "x1": 1,
-            "y1": -2,
-            "x2": 3,
-            "y2": -3
-           },
-           {
-            "x1": 3,
-            "y1": -3,
-            "x2": -1
-           },
-           {
-            "x1": -1,
+            "x1": 2,
             "x2": 1,
+            "y2": 2
+           },
+           {
+            "x1": 1,
+            "y1": 2,
+            "x2": -2,
             "y2": -2
+           },
+           {
+            "x1": -2,
+            "y1": -2,
+            "x2": 2
            }
           ],
           "plotField": {
            "id": "q4",
-           "label": "the image drawn",
+           "label": "the image of (2, 0)",
            "answer": {
-            "text": "A′(2, −1), B′(4, −2), C′(0, 1)"
+            "text": "A′(4, 0), B′(2, 4), C′(−4, −4)"
            }
-          }
+          },
+          "answerSegments": [
+           {
+            "x1": 4,
+            "x2": 2,
+            "y2": 4
+           },
+           {
+            "x1": 2,
+            "y1": 4,
+            "x2": -4,
+            "y2": -4
+           },
+           {
+            "x1": -4,
+            "y1": -4,
+            "x2": 4
+           }
+          ],
+          "answerPoints": [
+           {
+            "x": 4,
+            "label": "A′"
+           },
+           {
+            "x": 2,
+            "y": 4,
+            "label": "B′"
+           },
+           {
+            "x": -4,
+            "y": -4,
+            "label": "C′"
+           }
+          ],
+          "cell": 17
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "A′"
-           },
-           {
-            "text": "("
+            "text": "A′ ("
            },
            {
             "blank": {
              "id": "q4-2",
              "label": "A′ x",
              "answer": {
-              "text": "2"
+              "text": "4"
              }
             }
            },
@@ -383,9 +524,432 @@
              "id": "q4-3",
              "label": "A′ y",
              "answer": {
-              "text": "−1",
+              "text": "0"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′(4, 0), B′(2, 4), C′(−4, −4); A′ ( 4 , 0 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transformations",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Draw the image of a figure after a translation, reflection, rotation or dilation, and give its coordinates.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Students move each vertex on the grid and join the new points, which is how the move is done by hand before any rule is used. The moves vary from item to item, and the image never overlaps the figure, so each one is seen whole. Writing the coordinates of A′ links the drawing to the coordinate rule for that move.",
+      "misconceptions": [
+       "Rotating 90° by swapping x and y without changing a sign.",
+       "Reflecting across the x-axis by changing the sign of x.",
+       "Moving the figure the right distance in the wrong direction."
+      ]
+     },
+     "estimatedHeight": 770
+    }
+   ],
+   "estimatedHeight": 774
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Triangle A′B′C′ is the image of triangle ABC after one move. Name the move.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -2,
+            "y": -3,
+            "label": "A"
+           },
+           {
+            "x": -3,
+            "y": -1,
+            "label": "B"
+           },
+           {
+            "x": 4,
+            "y": -4,
+            "label": "C"
+           },
+           {
+            "x": 2,
+            "y": 3,
+            "label": "A′"
+           },
+           {
+            "x": 3,
+            "y": 1,
+            "label": "B′"
+           },
+           {
+            "x": -4,
+            "y": 4,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -2,
+            "y1": -3,
+            "x2": -3,
+            "y2": -1
+           },
+           {
+            "x1": -3,
+            "y1": -1,
+            "x2": 4,
+            "y2": -4
+           },
+           {
+            "x1": 4,
+            "y1": -4,
+            "x2": -2,
+            "y2": -3
+           },
+           {
+            "x1": 2,
+            "y1": 3,
+            "x2": 3,
+            "y2": 1
+           },
+           {
+            "x1": 3,
+            "y1": 1,
+            "x2": -4,
+            "y2": 4
+           },
+           {
+            "x1": -4,
+            "y1": 4,
+            "x2": 2,
+            "y2": 3
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Translation",
+           "Reflection",
+           "Rotation"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "move to (2, 3)",
+           "answer": {
+            "text": "Rotation"
+           }
+          }
+         }
+        },
+        {
+         "text": "Counterclockwise about the origin by:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "rotation angle",
+             "answer": {
+              "text": "180",
               "also": [
-               "-1"
+               "180°"
+              ]
+             }
+            }
+           },
+           {
+            "text": "°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rotation; 180 °"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -3,
+            "y": 3,
+            "label": "A"
+           },
+           {
+            "x": -1,
+            "y": -4,
+            "label": "B"
+           },
+           {
+            "x": -4,
+            "y": 2,
+            "label": "C"
+           },
+           {
+            "x": 3,
+            "y": 3,
+            "label": "A′"
+           },
+           {
+            "x": 1,
+            "y": -4,
+            "label": "B′"
+           },
+           {
+            "x": 4,
+            "y": 2,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -3,
+            "y1": 3,
+            "x2": -1,
+            "y2": -4
+           },
+           {
+            "x1": -1,
+            "y1": -4,
+            "x2": -4,
+            "y2": 2
+           },
+           {
+            "x1": -4,
+            "y1": 2,
+            "x2": -3,
+            "y2": 3
+           },
+           {
+            "x1": 3,
+            "y1": 3,
+            "x2": 1,
+            "y2": -4
+           },
+           {
+            "x1": 1,
+            "y1": -4,
+            "x2": 4,
+            "y2": 2
+           },
+           {
+            "x1": 4,
+            "y1": 2,
+            "x2": 3,
+            "y2": 3
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Translation",
+           "Reflection",
+           "Rotation"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "move to (3, 3)",
+           "answer": {
+            "text": "Reflection"
+           }
+          }
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Across:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "x-axis",
+              "y-axis"
+             ],
+             "field": {
+              "id": "q6-2",
+              "label": "reflection axis",
+              "answer": {
+               "text": "y-axis"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Reflection; y-axis"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": 3,
+            "label": "A"
+           },
+           {
+            "x": -2,
+            "y": 2,
+            "label": "B"
+           },
+           {
+            "x": 1,
+            "y": 3,
+            "label": "C"
+           },
+           {
+            "x": 1,
+            "y": -5,
+            "label": "A′"
+           },
+           {
+            "x": -4,
+            "y": -3,
+            "label": "B′"
+           },
+           {
+            "x": -1,
+            "y": -2,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "x2": -2,
+            "y2": 2
+           },
+           {
+            "x1": -2,
+            "y1": 2,
+            "x2": 1,
+            "y2": 3
+           },
+           {
+            "x1": 1,
+            "y1": 3,
+            "x2": 3
+           },
+           {
+            "x1": 1,
+            "y1": -5,
+            "x2": -4,
+            "y2": -3
+           },
+           {
+            "x1": -4,
+            "y1": -3,
+            "x2": -1,
+            "y2": -2
+           },
+           {
+            "x1": -1,
+            "y1": -2,
+            "x2": 1,
+            "y2": -5
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Translation",
+           "Reflection",
+           "Rotation"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "move to (1, −5)",
+           "answer": {
+            "text": "Translation"
+           }
+          }
+         }
+        },
+        {
+         "text": "(x, y) moves to:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(x +"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "translation x",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           },
+           {
+            "text": ", y +"
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "translation y",
+             "answer": {
+              "text": "−5",
+              "also": [
+               "-5"
               ]
              }
             }
@@ -397,25 +961,159 @@
          }
         }
        ],
-       "key": "A′(2, −1), B′(4, −2), C′(0, 1); A′ ( 2 , −1 )"
+       "key": "Translation; (x + −2 , y + −5 )"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -3,
+            "y": 1,
+            "label": "A"
+           },
+           {
+            "x": 4,
+            "y": 2,
+            "label": "B"
+           },
+           {
+            "x": 2,
+            "y": 3,
+            "label": "C"
+           },
+           {
+            "x": -3,
+            "y": -1,
+            "label": "A′"
+           },
+           {
+            "x": 4,
+            "y": -2,
+            "label": "B′"
+           },
+           {
+            "x": 2,
+            "y": -3,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -3,
+            "y1": 1,
+            "x2": 4,
+            "y2": 2
+           },
+           {
+            "x1": 4,
+            "y1": 2,
+            "x2": 2,
+            "y2": 3
+           },
+           {
+            "x1": 2,
+            "y1": 3,
+            "x2": -3,
+            "y2": 1
+           },
+           {
+            "x1": -3,
+            "y1": -1,
+            "x2": 4,
+            "y2": -2
+           },
+           {
+            "x1": 4,
+            "y1": -2,
+            "x2": 2,
+            "y2": -3
+           },
+           {
+            "x1": 2,
+            "y1": -3,
+            "x2": -3,
+            "y2": -1
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Translation",
+           "Reflection",
+           "Rotation"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "move to (−3, −1)",
+           "answer": {
+            "text": "Reflection"
+           }
+          }
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Across:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "x-axis",
+              "y-axis"
+             ],
+             "field": {
+              "id": "q8-2",
+              "label": "reflection axis",
+              "answer": {
+               "text": "x-axis"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Reflection; x-axis"
       }
      ],
      "columns": 2,
-     "fragmentId": "frag-g8-transformations",
+     "fragmentId": "frag-g8-name-the-move",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find the effect of translations, reflections, rotations and dilations on coordinates.",
+      "purpose": "Identify a translation, reflection or rotation from a figure and its image.",
       "principles": [
-       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+       "PRINCIPLE_SELF_EXPLANATION"
       ],
+      "rationale": "Working back from an image is the reverse of drawing one. Students first decide whether the figure slid, flipped or turned, then give the detail: the rule for a translation, the axis for a reflection, the angle for a rotation. Matching labels A and A′ show which vertex went where.",
       "misconceptions": [
-       "Rotating 90° by swapping x and y without changing a sign."
+       "Calling a 180° rotation a reflection because the figure looks upside down.",
+       "Reading the translation from A to A′ backwards, giving the opposite signs."
       ]
      },
-     "estimatedHeight": 794
+     "estimatedHeight": 678
     }
    ],
-   "estimatedHeight": 798
+   "estimatedHeight": 682
   }
  ],
  "key": [
@@ -423,9 +1121,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "the image drawn",
+    "label": "the image of (4, −4)",
     "answer": {
-     "text": "A′(2, −4), B′(−4, −1), C′(−2, −2)"
+     "text": "A′(−4, 4), B′(−1, 2), C′(−3, −4)"
     }
    }
   },
@@ -435,7 +1133,10 @@
     "id": "q1-2",
     "label": "A′ x",
     "answer": {
-     "text": "2"
+     "text": "−4",
+     "also": [
+      "-4"
+     ]
     }
    }
   },
@@ -445,10 +1146,7 @@
     "id": "q1-3",
     "label": "A′ y",
     "answer": {
-     "text": "−4",
-     "also": [
-      "-4"
-     ]
+     "text": "4"
     }
    }
   },
@@ -456,9 +1154,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "the image drawn",
+    "label": "the image of (3, 3)",
     "answer": {
-     "text": "A′(0, 2), B′(4, −3), C′(−4, 0)"
+     "text": "A′(3, −3), B′(−1, −4), C′(0, −2)"
     }
    }
   },
@@ -468,7 +1166,7 @@
     "id": "q2-2",
     "label": "A′ x",
     "answer": {
-     "text": "0"
+     "text": "3"
     }
    }
   },
@@ -477,26 +1175,6 @@
    "field": {
     "id": "q2-3",
     "label": "A′ y",
-    "answer": {
-     "text": "2"
-    }
-   }
-  },
-  {
-   "itemLabel": "3",
-   "field": {
-    "id": "q3",
-    "label": "the image drawn",
-    "answer": {
-     "text": "A′(−3, 3), B′(2, 4), C′(−5, 2)"
-    }
-   }
-  },
-  {
-   "itemLabel": "3",
-   "field": {
-    "id": "q3-2",
-    "label": "A′ x",
     "answer": {
      "text": "−3",
      "also": [
@@ -508,10 +1186,30 @@
   {
    "itemLabel": "3",
    "field": {
+    "id": "q3",
+    "label": "the image of (2, −4)",
+    "answer": {
+     "text": "A′(2, 4), B′(−2, 3), C′(−3, 1)"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
     "id": "q3-3",
     "label": "A′ y",
     "answer": {
-     "text": "3"
+     "text": "4"
     }
    }
   },
@@ -519,9 +1217,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "the image drawn",
+    "label": "the image of (2, 0)",
     "answer": {
-     "text": "A′(2, −1), B′(4, −2), C′(0, 1)"
+     "text": "A′(4, 0), B′(2, 4), C′(−4, −4)"
     }
    }
   },
@@ -531,7 +1229,7 @@
     "id": "q4-2",
     "label": "A′ x",
     "answer": {
-     "text": "2"
+     "text": "4"
     }
    }
   },
@@ -541,22 +1239,119 @@
     "id": "q4-3",
     "label": "A′ y",
     "answer": {
-     "text": "−1",
+     "text": "0"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "move to (2, 3)",
+    "answer": {
+     "text": "Rotation"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "rotation angle",
+    "answer": {
+     "text": "180",
      "also": [
-      "-1"
+      "180°"
      ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "move to (3, 3)",
+    "answer": {
+     "text": "Reflection"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "reflection axis",
+    "answer": {
+     "text": "y-axis"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "move to (1, −5)",
+    "answer": {
+     "text": "Translation"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "translation x",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "translation y",
+    "answer": {
+     "text": "−5",
+     "also": [
+      "-5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "move to (−3, −1)",
+    "answer": {
+     "text": "Reflection"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "reflection axis",
+    "answer": {
+     "text": "x-axis"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Draw transformations and describe their effect on coordinates.",
+  "purpose": "Draw translations, reflections, rotations and dilations, and name a move from its image.",
   "principles": [
-   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
   ]
  },
  "advice": [
-  "\"Draw the image, then write the coordinates of A′.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Draw the image of triangle ABC. Write the coordinates of A′.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Triangle A′B′C′ is the image of triangle ABC after one move. Name the move.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

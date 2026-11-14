@@ -586,19 +586,66 @@ describe('grade 6 to 8 item kinds', () => {
       const xAxis = textOf(ns).includes('x-axis');
       expect([x, y]).toEqual(xAxis ? [p.x, -p.y] : [-p.x, p.y]);
     }
-    for (const ns of items({ case: 'coordinateGeometry', value: { mode: 5 } }, 12)) {
+  });
+
+  it('transformations on a grid', () => {
+    const plotted = (n: Node) => n.kind.value as { points: { x: number; y: number }[]; answerPoints: { x: number; y: number; label: string }[] };
+    for (const ns of items({ case: 'transformation', value: { mode: 1 } }, 21)) {
       const t = textOf(ns);
-      const a = (ns[1].kind.value as { points: { x: number; y: number }[] }).points[0];
+      const a = plotted(ns[1]).points[0];
       const [x, y] = answers(ns).slice(-2).map(value);
-      if (t.includes('90°')) {
-        expect([x, y]).toEqual([-a.y, a.x].map((v) => v || 0));
-      } else if (t.includes('180°')) {
-        expect([x, y]).toEqual([-a.x, -a.y].map((v) => v || 0));
-      } else if (t.includes('x-axis')) {
-        expect([x, y]).toEqual([a.x, -a.y].map((v) => v || 0));
-      } else if (t.includes('scale factor')) {
-        expect([x, y]).toEqual([2 * a.x, 2 * a.y].map((v) => v || 0));
+      const want = t.includes('counterclockwise')
+        ? [-a.y, a.x]
+        : t.includes('clockwise')
+          ? [a.y, -a.x]
+          : t.includes('180°')
+            ? [-a.x, -a.y]
+            : t.includes('x-axis')
+              ? [a.x, -a.y]
+              : t.includes('y-axis')
+                ? [-a.x, a.y]
+                : t.includes('scale factor')
+                  ? [2 * a.x, 2 * a.y]
+                  : undefined;
+      if (want) {
+        expect([x, y]).toEqual(want.map((v) => v || 0));
       }
+      // The key draws the image where the answer says A′ is.
+      expect([plotted(ns[1]).answerPoints[0].x, plotted(ns[1]).answerPoints[0].y]).toEqual([x, y]);
+    }
+    for (const ns of items({ case: 'transformation', value: { mode: 5 } }, 10)) {
+      const p = plotted(ns.find((n) => n.kind.case === 'coordinatePlane')!).points;
+      const a = p[0];
+      const a2 = p[3];
+      const [axis, dx, dy] = answers(ns);
+      const r = axis === 'x-axis' ? [a.x, -a.y] : [-a.x, a.y];
+      expect([r[0] + value(dx), r[1] + value(dy)]).toEqual([a2.x, a2.y]);
+    }
+    for (const ns of items({ case: 'transformation', value: { mode: 6 } }, 12)) {
+      const [kind, scale] = answers(ns);
+      expect(kind === 'Congruent').toBe(scale === '1');
+    }
+  });
+
+  it('graphs sketched from a story', () => {
+    for (const ns of items({ case: 'sketchGraph', value: { mode: 2 } }, 6)) {
+      const graph = (ns[0].kind.value as { children: Node[] }).children[0];
+      const segs = (graph.kind.value as { segments: { y1: number; y2: number }[] }).segments;
+      const words = answers(ns).slice(0, segs.length);
+      segs.forEach((s, i) => expect(words[i]).toBe(s.y2 > s.y1 ? 'Increasing' : s.y2 < s.y1 ? 'Decreasing' : 'Constant'));
+    }
+  });
+
+  it('a simulation counts the trials it prints', () => {
+    for (const ns of items({ case: 'probability', value: { mode: 4 } }, 5)) {
+      const t = textOf(ns);
+      const last = Number(answers(ns)[0]);
+      const size = Number(t.match(/group of (\d) digits/)![1]);
+      expect(t).toContain(`${(last + 1) * 10}%`);
+      const groups = ns.filter((n) => n.kind.case === 'text' && /^\d+( +\d+)+$/.test(n.kind.value as string)).flatMap((n) => (n.kind.value as string).split(/ +/));
+      expect(groups.length).toBe(20);
+      expect(groups.every((g) => g.length === size)).toBeTrue();
+      expect(answers(ns)[2]).toBe(`${answers(ns)[1]}/20`);
     }
   });
 

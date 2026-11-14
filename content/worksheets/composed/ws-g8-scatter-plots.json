@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "What association does the scatter plot show?",
+     "instruction": "Check the association the scatter plot shows.",
      "items": [
       {
        "label": "1",
@@ -22,7 +22,7 @@
           "yMax": 10,
           "yScale": 10,
           "labelEvery": 2,
-          "xLabel": "Hours",
+          "xLabel": "Hours studied",
           "yLabel": "Score",
           "points": [
            {
@@ -96,7 +96,7 @@
           "yMax": 10,
           "yScale": 10,
           "labelEvery": 2,
-          "xLabel": "Hours",
+          "xLabel": "Shoe size",
           "yLabel": "Score",
           "points": [
            {
@@ -170,48 +170,48 @@
           "yMax": 10,
           "yScale": 10,
           "labelEvery": 2,
-          "xLabel": "Hours",
+          "xLabel": "Days absent",
           "yLabel": "Score",
           "points": [
            {
-            "x": 8,
-            "y": 5
-           },
-           {
-            "x": 5,
-            "y": 2
-           },
-           {
-            "x": 2,
-            "y": 6
-           },
-           {
-            "x": 9,
-            "y": 3
-           },
-           {
-            "x": 6,
-            "y": 7
-           },
-           {
-            "x": 3,
+            "x": 7,
             "y": 4
            },
            {
-            "x": 10,
+            "x": 4,
             "y": 8
            },
            {
-            "x": 7,
+            "x": 1,
+            "y": 9
+           },
+           {
+            "x": 8,
+            "y": 3
+           },
+           {
+            "x": 5,
+            "y": 7
+           },
+           {
+            "x": 2,
+            "y": 8
+           },
+           {
+            "x": 9,
+            "y": 4
+           },
+           {
+            "x": 6,
             "y": 5
            },
            {
-            "x": 4,
-            "y": 2
+            "x": 3,
+            "y": 6
            },
            {
-            "x": 1,
-            "y": 6
+            "x": 10,
+            "y": 3
            }
           ]
          }
@@ -227,13 +227,13 @@
            "id": "q3",
            "label": "the association",
            "answer": {
-            "text": "no association"
+            "text": "negative"
            }
           }
          }
         }
        ],
-       "key": "no association"
+       "key": "negative"
       }
      ],
      "columns": 2,
@@ -243,6 +243,14 @@
       "purpose": "Describe the association in a scatter plot as positive, negative or none.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each plot shows one association: positive, negative or none, each once. The axes suit the association, such as days absent against test score. The points scatter around a trend, as real data does.",
+      "misconceptions": [
+       "Thinking a negative association means the values are below zero.",
+       "Thinking the points must lie on a line for there to be an association."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
       ]
      },
      "estimatedHeight": 602
@@ -254,7 +262,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Use the line of fit.",
+     "instruction": "Use the line of fit to answer the questions.",
      "items": [
       {
        "label": "4",
@@ -371,30 +379,38 @@
       "purpose": "Find the slope of a line of fit and use it to predict.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The line of fit is drawn and two points on it are named, so its slope can be found exactly. The student reads the slope as points per hour and uses the line to predict. This is the use of a linear model 8.SP.A.2 and 8.SP.A.3 ask for.",
+      "misconceptions": [
+       "Predicting from the nearest data point instead of the line.",
+       "Reading the slope as the score where the line starts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
       ]
      },
      "estimatedHeight": 404
     },
     {
      "label": "C",
-     "instruction": "Use the model.",
+     "instruction": "Use the linear model to answer the questions.",
      "items": [
       {
        "label": "5",
        "nodes": [
         {
-         "text": "The distance in miles a hiker has walked after x hours is about y = 1.5x + 25."
+         "text": "A phone plan costs y = 1.5x + 25 dollars for x gigabytes of data in a month."
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "Predict the distance when x is 6:"
+            "text": "Predict the cost when x is 6:"
            },
            {
             "blank": {
              "id": "q5",
-             "label": "the distance at 6",
+             "label": "the cost at 6",
              "answer": {
               "text": "34"
              }
@@ -407,12 +423,12 @@
          "math": {
           "atoms": [
            {
-            "text": "Miles each hour:"
+            "text": "Cost per gigabyte ($):"
            },
            {
             "blank": {
              "id": "q5-2",
-             "label": "Miles each hour",
+             "label": "Cost per gigabyte ($)",
              "answer": {
               "text": "1.5"
              }
@@ -420,9 +436,27 @@
            }
           ]
          }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Monthly charge with no data ($):"
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "Monthly charge with no data ($)",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
         }
        ],
-       "key": "Predict the distance when x is 6: 34; Miles each hour: 1.5"
+       "key": "Predict the cost when x is 6: 34; Cost per gigabyte ($): 1.5; Monthly charge with no data ($): 25"
       },
       {
        "label": "6",
@@ -465,46 +499,19 @@
            }
           ]
          }
-        }
-       ],
-       "key": "Predict the cost when x is 4: 20.8; Cost per pound ($): 3.7"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "text": "The cost in dollars of x pounds of fruit plus a bag fee is y = 2x + 19."
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "Predict the cost when x is 9:"
+            "text": "Bag fee ($):"
            },
            {
             "blank": {
-             "id": "q7",
-             "label": "the cost at 9",
+             "id": "q6-3",
+             "label": "Bag fee ($)",
              "answer": {
-              "text": "37"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Cost per pound ($):"
-           },
-           {
-            "blank": {
-             "id": "q7-2",
-             "label": "Cost per pound ($)",
-             "answer": {
-              "text": "2"
+              "text": "6"
              }
             }
            }
@@ -512,7 +519,7 @@
          }
         }
        ],
-       "key": "Predict the cost when x is 9: 37; Cost per pound ($): 2"
+       "key": "Predict the cost when x is 4: 20.8; Cost per pound ($): 3.7; Bag fee ($): 6"
       }
      ],
      "columns": 1,
@@ -522,12 +529,20 @@
       "purpose": "Use a linear model to predict, and say what its slope means.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each model is a short story with an equation. The student predicts a value, then says what the slope and the starting value mean in the story, as 8.SP.A.3 asks. Decimal slopes keep the numbers close to real data.",
+      "misconceptions": [
+       "Mixing up the slope and the starting value.",
+       "Putting the y-value in for x."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
       ]
      },
-     "estimatedHeight": 400
+     "estimatedHeight": 366
     }
    ],
-   "estimatedHeight": 812
+   "estimatedHeight": 778
   }
  ],
  "key": [
@@ -557,7 +572,7 @@
     "id": "q3",
     "label": "the association",
     "answer": {
-     "text": "no association"
+     "text": "negative"
     }
    }
   },
@@ -585,7 +600,7 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "the distance at 6",
+    "label": "the cost at 6",
     "answer": {
      "text": "34"
     }
@@ -595,9 +610,19 @@
    "itemLabel": "5",
    "field": {
     "id": "q5-2",
-    "label": "Miles each hour",
+    "label": "Cost per gigabyte ($)",
     "answer": {
      "text": "1.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "Monthly charge with no data ($)",
+    "answer": {
+     "text": "25"
     }
    }
   },
@@ -622,22 +647,12 @@
    }
   },
   {
-   "itemLabel": "7",
+   "itemLabel": "6",
    "field": {
-    "id": "q7",
-    "label": "the cost at 9",
+    "id": "q6-3",
+    "label": "Bag fee ($)",
     "answer": {
-     "text": "37"
-    }
-   }
-  },
-  {
-   "itemLabel": "7",
-   "field": {
-    "id": "q7-2",
-    "label": "Cost per pound ($)",
-    "answer": {
-     "text": "2"
+     "text": "6"
     }
    }
   }
@@ -649,7 +664,8 @@
   ]
  },
  "advice": [
-  "Section \"Use the line of fit.\" was cut from 2 to 1 items to fit."
+  "Section \"Use the line of fit to answer the questions.\" was cut from 2 to 1 items to fit.",
+  "Section \"Use the linear model to answer the questions.\" was cut from 3 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

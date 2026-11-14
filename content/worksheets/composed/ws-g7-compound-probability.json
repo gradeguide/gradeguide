@@ -11,14 +11,19 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "List or count the outcomes, then find the probability.",
-     "explainer": "Make a list, table or tree of every outcome. Count the ones that match.",
+     "instruction": "Find the number of outcomes. Then find the probability.",
+     "explainer": "Use a list, table or tree diagram to show every outcome.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "Toss two coins. Find the chance of two heads."
+         "text": "Toss two coins. Find the probability of two heads."
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
         },
         {
          "math": {
@@ -29,7 +34,7 @@
            {
             "blank": {
              "id": "q1",
-             "label": "outcomes: Toss two coins. Find the chance of two heads.",
+             "label": "outcomes: Toss two coins. Find the probability of two heads.",
              "answer": {
               "text": "4"
              }
@@ -47,7 +52,7 @@
            {
             "fractionBlank": {
              "id": "q1-2",
-             "label": "probability: Toss two coins. Find the chance of two heads.",
+             "label": "probability: Toss two coins. Find the probability of two heads.",
              "answer": {
               "text": "1/4"
              }
@@ -63,7 +68,12 @@
        "label": "2",
        "nodes": [
         {
-         "text": "Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4."
+         "text": "Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4."
+        },
+        {
+         "workSpace": {
+          "rows": 3
+         }
         },
         {
          "math": {
@@ -74,7 +84,7 @@
            {
             "blank": {
              "id": "q2",
-             "label": "outcomes: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+             "label": "outcomes: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
              "answer": {
               "text": "12"
              }
@@ -92,7 +102,7 @@
            {
             "fractionBlank": {
              "id": "q2-2",
-             "label": "probability: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+             "label": "probability: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
              "answer": {
               "text": "1/6",
               "also": [
@@ -106,12 +116,207 @@
         }
        ],
        "key": "Outcomes in the sample space: 12; P = 1/6"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-compound-probability",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find probabilities of compound events from a sample space.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Compound events are found by listing the whole sample space. Two number cubes come with a 6-by-6 table to fill in, the model teachers use, and coin events have room for a list or tree. The student counts the outcomes before finding the probability, so the size of the sample space is never guessed.",
+      "misconceptions": [
+       "Counting heads-tails and tails-heads as one outcome.",
+       "Thinking there are 11 equally likely sums for two number cubes.",
+       "Adding the probabilities of the two parts instead of counting outcomes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 568
+    }
+   ],
+   "estimatedHeight": 572
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the number of outcomes. Then find the probability.",
+     "items": [
       {
        "label": "3",
        "nodes": [
         {
-         "text": "Roll two number cubes. Find the chance the sum is 7."
+         "text": "Roll two number cubes. Find the probability that the sum is 7."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "1",
+           "2",
+           "3",
+           "4",
+           "5",
+           "6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "math": {
@@ -122,7 +327,7 @@
            {
             "blank": {
              "id": "q3",
-             "label": "outcomes: Roll two number cubes. Find the chance the sum is 7.",
+             "label": "outcomes: Roll two number cubes. Find the probability that the sum is 7.",
              "answer": {
               "text": "36"
              }
@@ -140,7 +345,7 @@
            {
             "fractionBlank": {
              "id": "q3-2",
-             "label": "probability: Roll two number cubes. Find the chance the sum is 7.",
+             "label": "probability: Roll two number cubes. Find the probability that the sum is 7.",
              "answer": {
               "text": "1/6",
               "also": [
@@ -159,7 +364,172 @@
        "label": "4",
        "nodes": [
         {
-         "text": "Roll two number cubes. Find the chance of doubles."
+         "text": "Roll two number cubes. Find the probability of doubles."
+        },
+        {
+         "dataTable": {
+          "header": [
+           "",
+           "1",
+           "2",
+           "3",
+           "4",
+           "5",
+           "6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             },
+             {
+              "text": ""
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "math": {
@@ -170,7 +540,7 @@
            {
             "blank": {
              "id": "q4",
-             "label": "outcomes: Roll two number cubes. Find the chance of doubles.",
+             "label": "outcomes: Roll two number cubes. Find the probability of doubles.",
              "answer": {
               "text": "36"
              }
@@ -188,7 +558,7 @@
            {
             "fractionBlank": {
              "id": "q4-2",
-             "label": "probability: Roll two number cubes. Find the chance of doubles.",
+             "label": "probability: Roll two number cubes. Find the probability of doubles.",
              "answer": {
               "text": "1/6",
               "also": [
@@ -212,14 +582,21 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Compound events are found by listing the whole sample space. Two number cubes come with a 6-by-6 table to fill in, the model teachers use, and coin events have room for a list or tree. The student counts the outcomes before finding the probability, so the size of the sample space is never guessed.",
       "misconceptions": [
-       "Counting heads-tails and tails-heads as one outcome."
+       "Counting heads-tails and tails-heads as one outcome.",
+       "Thinking there are 11 equally likely sums for two number cubes.",
+       "Adding the probabilities of the two parts instead of counting outcomes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 628
+     "continued": true,
+     "estimatedHeight": 782
     }
    ],
-   "estimatedHeight": 632
+   "estimatedHeight": 786
   }
  ],
  "key": [
@@ -227,7 +604,7 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "outcomes: Toss two coins. Find the chance of two heads.",
+    "label": "outcomes: Toss two coins. Find the probability of two heads.",
     "answer": {
      "text": "4"
     }
@@ -237,7 +614,7 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-2",
-    "label": "probability: Toss two coins. Find the chance of two heads.",
+    "label": "probability: Toss two coins. Find the probability of two heads.",
     "answer": {
      "text": "1/4"
     }
@@ -247,7 +624,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "outcomes: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+    "label": "outcomes: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
     "answer": {
      "text": "12"
     }
@@ -257,7 +634,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-2",
-    "label": "probability: Toss a coin and roll a number cube. Find the chance of tails and a number greater than 4.",
+    "label": "probability: Toss a coin and roll a number cube. Find the probability of tails and a number greater than 4.",
     "answer": {
      "text": "1/6",
      "also": [
@@ -270,7 +647,7 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "outcomes: Roll two number cubes. Find the chance the sum is 7.",
+    "label": "outcomes: Roll two number cubes. Find the probability that the sum is 7.",
     "answer": {
      "text": "36"
     }
@@ -280,7 +657,7 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "probability: Roll two number cubes. Find the chance the sum is 7.",
+    "label": "probability: Roll two number cubes. Find the probability that the sum is 7.",
     "answer": {
      "text": "1/6",
      "also": [
@@ -293,7 +670,7 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "outcomes: Roll two number cubes. Find the chance of doubles.",
+    "label": "outcomes: Roll two number cubes. Find the probability of doubles.",
     "answer": {
      "text": "36"
     }
@@ -303,7 +680,7 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "probability: Roll two number cubes. Find the chance of doubles.",
+    "label": "probability: Roll two number cubes. Find the probability of doubles.",
     "answer": {
      "text": "1/6",
      "also": [
@@ -320,7 +697,7 @@
   ]
  },
  "advice": [
-  "\"List or count the outcomes, then find the probability.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Find the number of outcomes. Then find the probability.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

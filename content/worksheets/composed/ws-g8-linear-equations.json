@@ -12,7 +12,7 @@
     {
      "label": "A",
      "instruction": "Solve.",
-     "explainer": "Collect the variable on one side and the numbers on the other.",
+     "explainer": "Move the variable terms to one side and the constants to the other.",
      "items": [
       {
        "label": "1",
@@ -66,7 +66,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−5y = 3y − 56"
+            "text": "y − 3 + 7y = −5y − 81"
            }
           ]
          }
@@ -85,12 +85,15 @@
            {
             "blank": {
              "id": "q2",
-             "label": "solution of −5y = 3y − 56",
+             "label": "solution of y − 3 + 7y = −5y − 81",
              "answer": {
-              "text": "7",
+              "text": "−6",
               "also": [
-               "y = 7",
-               "y=7"
+               "-6",
+               "y = −6",
+               "y = -6",
+               "y=−6",
+               "y=-6"
               ]
              }
             }
@@ -99,7 +102,7 @@
          }
         }
        ],
-       "key": "y = 7"
+       "key": "y = −6"
       },
       {
        "label": "3",
@@ -108,7 +111,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−3n = 9n − 48"
+            "text": "5x − 4 = 2x + 17"
            }
           ]
          }
@@ -122,17 +125,17 @@
          "math": {
           "atoms": [
            {
-            "text": "n ="
+            "text": "x ="
            },
            {
             "blank": {
              "id": "q3",
-             "label": "solution of −3n = 9n − 48",
+             "label": "solution of 5x − 4 = 2x + 17",
              "answer": {
-              "text": "4",
+              "text": "7",
               "also": [
-               "n = 4",
-               "n=4"
+               "x = 7",
+               "x=7"
               ]
              }
             }
@@ -141,7 +144,7 @@
          }
         }
        ],
-       "key": "n = 4"
+       "key": "x = 7"
       },
       {
        "label": "4",
@@ -150,7 +153,7 @@
          "math": {
           "atoms": [
            {
-            "text": "3n + 8 = −3n − 46"
+            "text": "4x + 12 = 8x + 40"
            }
           ]
          }
@@ -164,20 +167,20 @@
          "math": {
           "atoms": [
            {
-            "text": "n ="
+            "text": "x ="
            },
            {
             "blank": {
              "id": "q4",
-             "label": "solution of 3n + 8 = −3n − 46",
+             "label": "solution of 4x + 12 = 8x + 40",
              "answer": {
-              "text": "−9",
+              "text": "−7",
               "also": [
-               "-9",
-               "n = −9",
-               "n = -9",
-               "n=−9",
-               "n=-9"
+               "-7",
+               "x = −7",
+               "x = -7",
+               "x=−7",
+               "x=-7"
               ]
              }
             }
@@ -186,7 +189,7 @@
          }
         }
        ],
-       "key": "n = −9"
+       "key": "x = −7"
       },
       {
        "label": "5",
@@ -195,7 +198,7 @@
          "math": {
           "atoms": [
            {
-            "text": "9n + 5 = −5n + 117"
+            "text": "4(n − 3) = 3n − 7"
            }
           ]
          }
@@ -214,12 +217,12 @@
            {
             "blank": {
              "id": "q5",
-             "label": "solution of 9n + 5 = −5n + 117",
+             "label": "solution of 4(n − 3) = 3n − 7",
              "answer": {
-              "text": "8",
+              "text": "5",
               "also": [
-               "n = 8",
-               "n=8"
+               "n = 5",
+               "n=5"
               ]
              }
             }
@@ -228,7 +231,7 @@
          }
         }
        ],
-       "key": "n = 8"
+       "key": "n = 5"
       },
       {
        "label": "6",
@@ -237,7 +240,7 @@
          "math": {
           "atoms": [
            {
-            "text": "3n − 6 = 5n"
+            "text": "x + 11 + 2x = 6x + 26"
            }
           ]
          }
@@ -251,20 +254,20 @@
          "math": {
           "atoms": [
            {
-            "text": "n ="
+            "text": "x ="
            },
            {
             "blank": {
              "id": "q6",
-             "label": "solution of 3n − 6 = 5n",
+             "label": "solution of x + 11 + 2x = 6x + 26",
              "answer": {
-              "text": "−3",
+              "text": "−5",
               "also": [
-               "-3",
-               "n = −3",
-               "n = -3",
-               "n=−3",
-               "n=-3"
+               "-5",
+               "x = −5",
+               "x = -5",
+               "x=−5",
+               "x=-5"
               ]
              }
             }
@@ -273,7 +276,7 @@
          }
         }
        ],
-       "key": "n = −3"
+       "key": "x = −5"
       }
      ],
      "columns": 2,
@@ -283,13 +286,21 @@
       "purpose": "Solve linear equations with the variable on both sides.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Some equations need the distributive property or like terms combined before the variable can be collected, as 8.EE.C.7.b asks. Negative coefficients and solutions come up, so sign errors are practised where they happen. Each item has room for several lines of steps.",
+      "misconceptions": [
+       "Moving a term across the equals sign without changing its sign.",
+       "Multiplying only the first term inside the parentheses."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
      "estimatedHeight": 654
     },
     {
      "label": "B",
-     "instruction": "How many solutions does it have?",
+     "instruction": "How many solutions does the equation have? Check one.",
      "explainer": "Simplify both sides. Different x-terms: one solution. Same x-terms, different numbers: none. Both sides the same: infinitely many.",
      "items": [
       {
@@ -299,7 +310,7 @@
          "math": {
           "atoms": [
            {
-            "text": "5(x + 5) = 5x + 25"
+            "text": "4x − 5 = 4x + 13"
            }
           ]
          }
@@ -313,7 +324,98 @@
           ],
           "field": {
            "id": "q7",
-           "label": "solutions of 5(x + 5) = 5x + 25",
+           "label": "solutions of 4x − 5 = 4x + 13",
+           "answer": {
+            "text": "no solution"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no solution"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-how-many-solutions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Tell whether a linear equation has one solution, no solution or infinitely many.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Six equation shapes, two for each answer, are mixed so the student cannot answer from how the equation looks. The student simplifies both sides and compares the x-terms and the numbers. This is the reasoning 8.EE.C.7.a asks for.",
+      "misconceptions": [
+       "Thinking that x-terms cancelling means x = 0.",
+       "Thinking every equation has exactly one solution."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
+      ]
+     },
+     "estimatedHeight": 160
+    }
+   ],
+   "estimatedHeight": 822
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "How many solutions does the equation have? Check one.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6(x + 6) = 6x + 4"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "solutions of 6(x + 6) = 6x + 4",
+           "answer": {
+            "text": "no solution"
+           }
+          }
+         }
+        }
+       ],
+       "key": "no solution"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2x + 8 + 5x = 7x + 8"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one solution",
+           "no solution",
+           "infinitely many"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "solutions of 2x + 8 + 5x = 7x + 8",
            "answer": {
             "text": "infinitely many"
            }
@@ -331,89 +433,14 @@
       "purpose": "Tell whether a linear equation has one solution, no solution or infinitely many.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
-      ]
-     },
-     "estimatedHeight": 160
-    }
-   ],
-   "estimatedHeight": 822
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "How many solutions does it have?",
-     "items": [
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "5(x + 3) = 5x + 18"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "one solution",
-           "no solution",
-           "infinitely many"
-          ],
-          "field": {
-           "id": "q8",
-           "label": "solutions of 5(x + 3) = 5x + 18",
-           "answer": {
-            "text": "no solution"
-           }
-          }
-         }
-        }
-       ],
-       "key": "no solution"
-      },
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "6(x + 2) = 6x + 17"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "one solution",
-           "no solution",
-           "infinitely many"
-          ],
-          "field": {
-           "id": "q9",
-           "label": "solutions of 6(x + 2) = 6x + 17",
-           "answer": {
-            "text": "no solution"
-           }
-          }
-         }
-        }
-       ],
-       "key": "no solution"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g8-how-many-solutions",
-     "stage": "STAGE_STRETCH",
-     "design": {
-      "purpose": "Tell whether a linear equation has one solution, no solution or infinitely many.",
-      "principles": [
-       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Six equation shapes, two for each answer, are mixed so the student cannot answer from how the equation looks. The student simplifies both sides and compares the x-terms and the numbers. This is the reasoning 8.EE.C.7.a asks for.",
+      "misconceptions": [
+       "Thinking that x-terms cancelling means x = 0.",
+       "Thinking every equation has exactly one solution."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
      "continued": true,
@@ -445,12 +472,15 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "solution of −5y = 3y − 56",
+    "label": "solution of y − 3 + 7y = −5y − 81",
     "answer": {
-     "text": "7",
+     "text": "−6",
      "also": [
-      "y = 7",
-      "y=7"
+      "-6",
+      "y = −6",
+      "y = -6",
+      "y=−6",
+      "y=-6"
      ]
     }
    }
@@ -459,12 +489,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "solution of −3n = 9n − 48",
+    "label": "solution of 5x − 4 = 2x + 17",
     "answer": {
-     "text": "4",
+     "text": "7",
      "also": [
-      "n = 4",
-      "n=4"
+      "x = 7",
+      "x=7"
      ]
     }
    }
@@ -473,15 +503,15 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "solution of 3n + 8 = −3n − 46",
+    "label": "solution of 4x + 12 = 8x + 40",
     "answer": {
-     "text": "−9",
+     "text": "−7",
      "also": [
-      "-9",
-      "n = −9",
-      "n = -9",
-      "n=−9",
-      "n=-9"
+      "-7",
+      "x = −7",
+      "x = -7",
+      "x=−7",
+      "x=-7"
      ]
     }
    }
@@ -490,12 +520,12 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "solution of 9n + 5 = −5n + 117",
+    "label": "solution of 4(n − 3) = 3n − 7",
     "answer": {
-     "text": "8",
+     "text": "5",
      "also": [
-      "n = 8",
-      "n=8"
+      "n = 5",
+      "n=5"
      ]
     }
    }
@@ -504,15 +534,15 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "solution of 3n − 6 = 5n",
+    "label": "solution of x + 11 + 2x = 6x + 26",
     "answer": {
-     "text": "−3",
+     "text": "−5",
      "also": [
-      "-3",
-      "n = −3",
-      "n = -3",
-      "n=−3",
-      "n=-3"
+      "-5",
+      "x = −5",
+      "x = -5",
+      "x=−5",
+      "x=-5"
      ]
     }
    }
@@ -521,9 +551,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "solutions of 5(x + 5) = 5x + 25",
+    "label": "solutions of 4x − 5 = 4x + 13",
     "answer": {
-     "text": "infinitely many"
+     "text": "no solution"
     }
    }
   },
@@ -531,7 +561,7 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "solutions of 5(x + 3) = 5x + 18",
+    "label": "solutions of 6(x + 6) = 6x + 4",
     "answer": {
      "text": "no solution"
     }
@@ -541,9 +571,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "solutions of 6(x + 2) = 6x + 17",
+    "label": "solutions of 2x + 8 + 5x = 7x + 8",
     "answer": {
-     "text": "no solution"
+     "text": "infinitely many"
     }
    }
   }
@@ -556,7 +586,7 @@
  },
  "advice": [
   "\"Solve.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"How many solutions does it have?\" was cut from 4 to 3 items to fit."
+  "Section \"How many solutions does the equation have? Check one.\" was cut from 4 to 3 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

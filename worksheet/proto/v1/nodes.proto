@@ -549,6 +549,19 @@ message CoordinatePlane {
   repeated Segment segments = 11;
   // Set when the child plots or draws on the plane: what is right.
   Field plot_field = 12;
+  // Drawn only in the answer key, in the answer colour: the image a child
+  // draws, or a sample sketch.
+  repeated Segment answer_segments = 13;
+  repeated Point answer_points = 14;
+  // Leave out the axes and their numbers, for a figure on a plain grid.
+  bool no_axes = 15;
+  // Leave out the numbers on the axes, for a sketch of a story.
+  bool no_numbers = 16;
+  // Leave out the grid lines.
+  bool no_grid = 17;
+  // The side of one grid square, in points. Zero: the plane fits in about
+  // 200 points.
+  int32 cell = 18;
 
   message Point {
     // In grid units.

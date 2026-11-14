@@ -12,7 +12,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Is the sample representative or biased?",
+     "instruction": "Is the sample representative or biased? Check one.",
      "explainer": "A representative sample is chosen at random from the whole group, so every member has the same chance.",
      "items": [
       {
@@ -167,6 +167,14 @@
       "purpose": "Tell a random, representative sample from a biased one.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each item describes how a sample was chosen, and the student decides whether it represents the whole group. The biased samples are the kind students meet: asking library users about library use, or a fan club about a film. A random sample from the whole group is the answer every time it is representative.",
+      "misconceptions": [
+       "Thinking a bigger sample is always a fair one, even if it is chosen from one group.",
+       "Thinking a random sample must give exactly the same results as the whole group."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 532
@@ -208,6 +216,14 @@
       "purpose": "Use data from a random sample to estimate a count in the whole group.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A random sample stands in for the whole group, so the student scales the sample's count up to the group's size. The numbers divide evenly, so the reasoning is clear. The last item asks for a percent, which is the same reasoning with a whole of 100.",
+      "misconceptions": [
+       "Using the sample count as the answer for the whole group.",
+       "Dividing the group size by the sample count and stopping there."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 222
@@ -250,7 +266,7 @@
        "label": "9",
        "nodes": [
         {
-         "text": "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it? (A percent is out of 100.)"
+         "text": "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it?"
         },
         {
          "workSpace": {
@@ -279,6 +295,14 @@
       "purpose": "Use data from a random sample to estimate a count in the whole group.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A random sample stands in for the whole group, so the student scales the sample's count up to the group's size. The numbers divide evenly, so the reasoning is clear. The last item asks for a percent, which is the same reasoning with a whole of 100.",
+      "misconceptions": [
+       "Using the sample count as the answer for the whole group.",
+       "Dividing the group size by the sample count and stopping there."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "continued": true,
@@ -375,6 +399,14 @@
       "purpose": "Compare two groups by their means, measured against their spread.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Two groups with the same spread differ only in their centers, so the student compares means and then measures the gap in MADs, as the standard asks. MAD is the mean absolute deviation, the average distance of the data from the mean. The data sets are small and the means are whole numbers, so the student can check the arithmetic.",
+      "misconceptions": [
+       "Comparing the largest values instead of the centers.",
+       "Thinking any difference in means shows the groups are really different, whatever the spread."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 254

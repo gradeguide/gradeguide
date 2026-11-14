@@ -10,7 +10,7 @@
     {
      "label": "A",
      "instruction": "Convert. Use the rate given.",
-     "explainer": "To go to the smaller unit, multiply by the rate. To go to the larger unit, divide.",
+     "explainer": "To convert to a smaller unit, multiply by the rate. To convert to a larger unit, divide by the rate.",
      "items": [
       {
        "label": "1",
@@ -139,36 +139,6 @@
        "label": "5",
        "nodes": [
         {
-         "text": "1 gallon = 4 quarts"
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "9 gallons ="
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "9 gallons in quarts",
-             "answer": {
-              "text": "36"
-             }
-            }
-           },
-           {
-            "text": "quarts"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "9 gallons = 36 quarts"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
          "text": "1 pound = 16 ounces"
         },
         {
@@ -179,7 +149,7 @@
            },
            {
             "blank": {
-             "id": "q6",
+             "id": "q5",
              "label": "176 ounces in pounds",
              "answer": {
               "text": "11"
@@ -196,7 +166,7 @@
        "key": "176 ounces = 11 pounds"
       },
       {
-       "label": "7",
+       "label": "6",
        "nodes": [
         {
          "text": "1 kilometer = 1,000 meters"
@@ -209,7 +179,7 @@
            },
            {
             "blank": {
-             "id": "q7",
+             "id": "q6",
              "label": "11,000 meters in kilometers",
              "answer": {
               "text": "11"
@@ -226,34 +196,64 @@
        "key": "11,000 meters = 11 kilometers"
       },
       {
-       "label": "8",
+       "label": "7",
        "nodes": [
         {
-         "text": "1 kilometer = 1,000 meters"
+         "text": "1 foot = 12 inches"
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "9,000 meters ="
+            "text": "8 feet ="
            },
            {
             "blank": {
-             "id": "q8",
-             "label": "9,000 meters in kilometers",
+             "id": "q7",
+             "label": "8 feet in inches",
              "answer": {
-              "text": "9"
+              "text": "96"
              }
             }
            },
            {
-            "text": "kilometers"
+            "text": "inches"
            }
           ]
          }
         }
        ],
-       "key": "9,000 meters = 9 kilometers"
+       "key": "8 feet = 96 inches"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "1 meter = 100 centimeters"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 meters ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "7 meters in centimeters",
+             "answer": {
+              "text": "700"
+             }
+            }
+           },
+           {
+            "text": "centimeters"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 meters = 700 centimeters"
       }
      ],
      "columns": 1,
@@ -264,14 +264,18 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each item gives the conversion rate, so the work is ratio reasoning, not remembering facts. Items switch between going to the smaller and to the larger unit, and the units change every item. That makes the student decide each time whether to multiply or divide.",
       "misconceptions": [
        "Multiplying when converting to a larger unit, so 36 inches becomes 432 feet."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
-     "estimatedHeight": 684
+     "estimatedHeight": 704
     }
    ],
-   "estimatedHeight": 688
+   "estimatedHeight": 708
   }
  ],
  "key": [
@@ -322,9 +326,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "9 gallons in quarts",
+    "label": "176 ounces in pounds",
     "answer": {
-     "text": "36"
+     "text": "11"
     }
    }
   },
@@ -332,7 +336,7 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "176 ounces in pounds",
+    "label": "11,000 meters in kilometers",
     "answer": {
      "text": "11"
     }
@@ -342,9 +346,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "11,000 meters in kilometers",
+    "label": "8 feet in inches",
     "answer": {
-     "text": "11"
+     "text": "96"
     }
    }
   },
@@ -352,9 +356,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "9,000 meters in kilometers",
+    "label": "7 meters in centimeters",
     "answer": {
-     "text": "9"
+     "text": "700"
     }
    }
   }

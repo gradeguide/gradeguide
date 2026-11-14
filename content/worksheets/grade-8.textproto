@@ -422,18 +422,129 @@ fragments {
   }
 }
 
+fragments {
+  id: "frag-g8-describe-graph"
+  instruction: "Describe each piece of the graph. Check one."
+  stage: STAGE_INTRODUCE
+  items { kind { sketch_graph { mode: MODE_DESCRIBE } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Describe where a graph is increasing, decreasing or constant, and where it changes fastest."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The graphs have no numbers, so students read the shape and not the values. Each piece is lettered so students describe one stretch at a time. Asking where the quantity changes fastest connects steepness with rate."
+    misconceptions: "Reading a graph of distance from home as a picture of the path walked."
+    misconceptions: "Calling a level piece decreasing because it is lower than the piece before it."
+  }
+}
+
+fragments {
+  id: "frag-g8-sketch-graph"
+  instruction: "Sketch a graph of the story."
+  stage: STAGE_APPLY
+  items { kind { sketch_graph { mode: MODE_SKETCH } } count: 4 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Sketch a graph that shows the qualities of a function described in words."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each story has three or four parts: rising, falling or staying the same, at different speeds. Students choose the direction and steepness of each piece. The axes have no scale, so the sketch shows how the quantity changes and not exact values. The answer key shows one correct sketch."
+    misconceptions: "Drawing a level piece as a gap or a point instead of a flat segment."
+    misconceptions: "Drawing a faster change with a longer piece instead of a steeper one."
+    misconceptions: "Letting the graph go back in time, to the left."
+  }
+}
+
 # Geometry.
 
 fragments {
   id: "frag-g8-transformations"
-  instruction: "Draw the image, then write the coordinates of A′."
+  instruction: "Draw the image of triangle ABC. Write the coordinates of A′."
   stage: STAGE_PRACTICE
-  items { kind { coordinate_geometry { mode: MODE_TRANSFORM } } count: 4 min_count: 2 }
+  items { kind { transformation { mode: MODE_DRAW } } count: 4 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Find the effect of translations, reflections, rotations and dilations on coordinates."
-    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    purpose: "Draw the image of a figure after a translation, reflection, rotation or dilation, and give its coordinates."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Students move each vertex on the grid and join the new points, which is how the move is done by hand before any rule is used. The moves vary from item to item, and the image never overlaps the figure, so each one is seen whole. Writing the coordinates of A′ links the drawing to the coordinate rule for that move."
     misconceptions: "Rotating 90° by swapping x and y without changing a sign."
+    misconceptions: "Reflecting across the x-axis by changing the sign of x."
+    misconceptions: "Moving the figure the right distance in the wrong direction."
+  }
+}
+
+fragments {
+  id: "frag-g8-name-the-move"
+  instruction: "Triangle A′B′C′ is the image of triangle ABC after one move. Name the move."
+  stage: STAGE_PRACTICE
+  items { kind { transformation { mode: MODE_NAME_MOVE } } count: 4 min_count: 4 }
+  max_columns: 2
+  design {
+    purpose: "Identify a translation, reflection or rotation from a figure and its image."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "Working back from an image is the reverse of drawing one. Students first decide whether the figure slid, flipped or turned, then give the detail: the rule for a translation, the axis for a reflection, the angle for a rotation. Matching labels A and A′ show which vertex went where."
+    misconceptions: "Calling a 180° rotation a reflection because the figure looks upside down."
+    misconceptions: "Reading the translation from A to A′ backwards, giving the opposite signs."
+  }
+}
+
+fragments {
+  id: "frag-g8-transformation-properties"
+  instruction: "Count the lengths on the grid. Answer the questions."
+  stage: STAGE_INTRODUCE
+  explainer: "Rotations, reflections and translations keep lengths and angle measures the same. Parallel lines stay parallel."
+  items { kind { transformation { mode: MODE_PROPERTIES } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Verify that rotations, reflections and translations keep lengths, angle measures and parallel lines."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "A right trapezoid has a horizontal and a vertical side that can be counted on the grid, a right angle, and a pair of parallel sides. Students measure the figure and its image and see that each length, the angle and the parallel pair carry over. This is the evidence the standard asks for before congruence is defined."
+    misconceptions: "Thinking a side that turns from horizontal to vertical changes length."
+    misconceptions: "Thinking a figure that is turned or flipped is no longer the same shape."
+  }
+}
+
+fragments {
+  id: "frag-g8-transformation-sequences"
+  instruction: "Do both moves in order. Draw the final image."
+  stage: STAGE_PRACTICE
+  items { kind { transformation { mode: MODE_DRAW_SEQUENCE } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Carry out a sequence of two moves on a figure."
+    principles: [PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "Each item is a reflection or rotation followed by a translation. Students draw the first image lightly and move it again, so the second move acts on the image and not on the original. The answer key shows the first image dashed and the final image solid."
+    misconceptions: "Applying the second move to the original figure."
+    misconceptions: "Doing the moves in the wrong order."
+  }
+}
+
+fragments {
+  id: "frag-g8-name-the-sequence"
+  instruction: "Complete the moves that take triangle ABC to triangle A″B″C″."
+  stage: STAGE_PRACTICE
+  items { kind { transformation { mode: MODE_NAME_SEQUENCE } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Describe a sequence of a reflection and a translation that maps one figure onto another."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "Two figures are congruent when a sequence of moves takes one onto the other. Here the sequence is a reflection and then a translation, so students first find which axis gives the right orientation, then find the slide from the reflected A to A″."
+    misconceptions: "Finding the translation from A to A″ without reflecting first."
+    misconceptions: "Choosing the axis by where the image sits instead of by which way it faces."
+  }
+}
+
+fragments {
+  id: "frag-g8-congruent-or-similar"
+  instruction: "Is triangle A′B′C′ congruent or similar to triangle ABC?"
+  stage: STAGE_APPLY
+  explainer: "Congruent figures have the same shape and size. Similar figures have the same shape; one may be a dilation of the other."
+  items { kind { transformation { mode: MODE_CONGRUENT_OR_SIMILAR } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Decide whether two figures are congruent or similar, find the scale factor, and describe a sequence of moves between them."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Congruent and similar pairs are mixed, so students compare side lengths before deciding. A scale factor of 2 or 1/2 keeps every vertex on the grid. Writing the sequence of moves in words is the description the standard asks for, and the answer key gives one correct sequence."
+    misconceptions: "Calling a dilated figure congruent because it has the same shape."
+    misconceptions: "Giving the scale factor from the image back to the figure, such as 2 for a reduction."
   }
 }
 
@@ -482,6 +593,22 @@ fragments {
     rationale: "Each diagram gives one angle and asks for two others, one at each crossing. The student uses vertical, corresponding and alternate angles, and angles on a line. Different slants make the given angle sometimes acute and sometimes obtuse."
     misconceptions: "Thinking all eight angles are equal."
     misconceptions: "Subtracting from 90° instead of 180° for angles on a line."
+  }
+}
+
+fragments {
+  id: "frag-g8-pythagorean-proof"
+  instruction: "Find each area. Show your work."
+  stage: STAGE_INTRODUCE
+  explainer: "Four copies of a right triangle sit inside a large square. The space left over is a square on the hypotenuse."
+  items { kind { pythagorean { mode: MODE_SQUARE_AREAS } } count: 2 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Explain the Pythagorean theorem by finding the area of the square on the hypotenuse in two ways."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "This is the area proof found in most grade 8 programs. Students find the large square's area, take away four triangles, and compare what is left with a² + b². Small whole-number legs keep the grid countable, so the result is seen before it is used as a formula."
+    misconceptions: "Taking the tilted square's side as a + b or as a whole number of grid units."
+    misconceptions: "Subtracting only one triangle from the large square."
   }
 }
 
@@ -734,15 +861,46 @@ worksheets {
 
 worksheets {
   id: "ws-g8-transformations"
-  title: "Transformations on the coordinate plane"
+  title: "Transformations"
   seed: 809
   max_pages: 2
   placements { fragment_id: "frag-g8-transformations" }
+  placements { fragment_id: "frag-g8-name-the-move" }
   design {
-    purpose: "Draw transformations and describe their effect on coordinates."
+    purpose: "Draw translations, reflections, rotations and dilations, and name a move from its image."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+  }
+  home_tip: "Trace the figure on thin paper, then slide, flip or turn the paper to check the image."
+}
+
+worksheets {
+  id: "ws-g8-congruence-similarity"
+  title: "Congruence and similarity"
+  seed: 815
+  max_pages: 3
+  placements { fragment_id: "frag-g8-transformation-properties" }
+  placements { fragment_id: "frag-g8-transformation-sequences" }
+  placements { fragment_id: "frag-g8-name-the-sequence" }
+  placements { fragment_id: "frag-g8-congruent-or-similar" }
+  design {
+    purpose: "Show that rigid motions keep lengths and angles, and use sequences of moves to show figures congruent or similar."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Trace a figure on thin paper and move the tracing onto its image. A figure that fits exactly is congruent."
+}
+
+worksheets {
+  id: "ws-g8-graphs-from-stories"
+  title: "Graphs that tell a story"
+  seed: 816
+  max_pages: 2
+  placements { fragment_id: "frag-g8-describe-graph" }
+  placements { fragment_id: "frag-g8-sketch-graph" }
+  design {
+    purpose: "Describe a graph in words and sketch a graph from words."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
-  home_tip: "Use tracing paper to check a rotation or reflection."
+  home_tip: "Sketch a graph of the water in a glass while it is filled and drunk, then compare sketches."
 }
 
 worksheets {
@@ -764,7 +922,8 @@ worksheets {
   id: "ws-g8-pythagorean-theorem"
   title: "The Pythagorean theorem"
   seed: 811
-  max_pages: 2
+  max_pages: 3
+  placements { fragment_id: "frag-g8-pythagorean-proof" }
   placements { fragment_id: "frag-g8-hypotenuse" }
   placements { fragment_id: "frag-g8-missing-leg" }
   placements { fragment_id: "frag-g8-distance-on-grid" }

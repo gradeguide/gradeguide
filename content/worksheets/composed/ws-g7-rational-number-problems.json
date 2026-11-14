@@ -120,6 +120,14 @@
       "purpose": "Solve problems with positive and negative numbers, fractions and decimals.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story uses a different kind of rational number: a temperature below zero, a mixed number, money owed and a negative change in height. The student decides which operation the story needs before computing. There is room to show the working, so a teacher can see the setup as well as the answer.",
+      "misconceptions": [
+       "Subtracting 5 from 12 for a rise from −5 to 12 instead of adding.",
+       "Ignoring the negative sign on a debt."
+      ],
+      "references": [
+       "Rohrer and Taylor (2007), Instructional Science 35"
       ]
      },
      "estimatedHeight": 682
@@ -137,7 +145,7 @@
        "label": "5",
        "nodes": [
         {
-         "text": "A worker earns $25 an hour and gets a raise of 10%, which is 0.10 of her pay. What is her new hourly pay?"
+         "text": "A worker earns $25 an hour and gets a raise of 10%. What is her new hourly pay?"
         },
         {
          "workSpace": {
@@ -188,7 +196,7 @@
        "label": "7",
        "nodes": [
         {
-         "text": "A shirt costs $24. It is 1/4 off, then 6% tax (0.06 of the sale price) is added. What do you pay?"
+         "text": "A shirt costs $24. It is 1/4 off, then 6% tax is added to the sale price. What is the final cost?"
         },
         {
          "workSpace": {
@@ -218,12 +226,19 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each story needs two or more steps and a change of form, so the child chooses which form to work in."
+      "rationale": "Each story needs two or more steps and a change of form, such as a fraction off and then a percent tax. The first story is the standard's own example of a 10% raise. The student chooses which form to work in and checks the answer makes sense.",
+      "misconceptions": [
+       "Adding the percents for a discount and a tax instead of applying them one after the other.",
+       "Forgetting to subtract the leftover piece before dividing the board."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
      },
-     "estimatedHeight": 726
+     "estimatedHeight": 706
     }
    ],
-   "estimatedHeight": 730
+   "estimatedHeight": 710
   }
  ],
  "key": [

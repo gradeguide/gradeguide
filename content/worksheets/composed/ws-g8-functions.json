@@ -11,7 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Is it a function? Each input may have only one output.",
+     "instruction": "Is the relation a function? Check one.",
+     "explainer": "A function has exactly one output for each input.",
      "items": [
       {
        "label": "1",
@@ -306,49 +307,24 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Tables are the simplest place to check that each input has only one output. Some tables have a repeated output and are still functions, which tests the definition directly. The inputs are not in order, so the student must look for a repeated x.",
       "misconceptions": [
-       "Thinking a repeated output means it is not a function."
+       "Thinking a repeated output means it is not a function.",
+       "Thinking the x-values must go up in order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
       ]
      },
-     "estimatedHeight": 442
+     "estimatedHeight": 468
     },
     {
      "label": "B",
-     "instruction": "Is the function linear?",
+     "instruction": "Is the function linear? Check one.",
      "explainer": "A linear function can be written y = mx + b. Its graph is a straight line.",
      "items": [
       {
        "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "y = 8 − 3x"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "linear",
-           "not linear"
-          ],
-          "field": {
-           "id": "q5",
-           "label": "is y = 8 − 3x linear",
-           "answer": {
-            "text": "linear"
-           }
-          }
-         }
-        }
-       ],
-       "key": "linear"
-      },
-      {
-       "label": "6",
        "nodes": [
         {
          "math": {
@@ -366,8 +342,38 @@
            "not linear"
           ],
           "field": {
-           "id": "q6",
+           "id": "q5",
            "label": "is y = 3(x + 8) linear",
+           "answer": {
+            "text": "linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "linear"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = x/3 + 8"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is y = x/3 + 8 linear",
            "answer": {
             "text": "linear"
            }
@@ -384,7 +390,7 @@
          "math": {
           "atoms": [
            {
-            "text": "y = 3/x"
+            "text": "y = 6 − 3x"
            }
           ]
          }
@@ -397,15 +403,15 @@
           ],
           "field": {
            "id": "q7",
-           "label": "is y = 3/x linear",
+           "label": "is y = 6 − 3x linear",
            "answer": {
-            "text": "not linear"
+            "text": "linear"
            }
           }
          }
         }
        ],
-       "key": "not linear"
+       "key": "linear"
       },
       {
        "label": "8",
@@ -414,7 +420,7 @@
          "math": {
           "atoms": [
            {
-            "text": "y = 2/x"
+            "text": "y = x² + 7"
            }
           ]
          }
@@ -427,7 +433,7 @@
           ],
           "field": {
            "id": "q8",
-           "label": "is y = 2/x linear",
+           "label": "is y = x² + 7 linear",
            "answer": {
             "text": "not linear"
            }
@@ -444,7 +450,7 @@
          "math": {
           "atoms": [
            {
-            "text": "y = 6(x + 3)"
+            "text": "y = x(x + 3)"
            }
           ]
          }
@@ -457,15 +463,15 @@
           ],
           "field": {
            "id": "q9",
-           "label": "is y = 6(x + 3) linear",
+           "label": "is y = x(x + 3) linear",
            "answer": {
-            "text": "linear"
+            "text": "not linear"
            }
           }
          }
         }
        ],
-       "key": "linear"
+       "key": "not linear"
       },
       {
        "label": "10",
@@ -474,7 +480,7 @@
          "math": {
           "atoms": [
            {
-            "text": "y = x² + 3"
+            "text": "y = 6/x"
            }
           ]
          }
@@ -487,7 +493,7 @@
           ],
           "field": {
            "id": "q10",
-           "label": "is y = x² + 3 linear",
+           "label": "is y = 6/x linear",
            "answer": {
             "text": "not linear"
            }
@@ -505,12 +511,20 @@
       "purpose": "Tell linear functions from nonlinear ones by their equations.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Nine equation forms each appear once before any repeats, including y = a number and y = x divided by a number plus a number. The student decides whether the equation can be written as y = mx + b, not just whether it has an x. Squares, cubes, x times itself and x in the denominator are the nonlinear cases 8.F.A.3 contrasts.",
+      "misconceptions": [
+       "Thinking y = 5 is not linear because it has no x.",
+       "Thinking y = 3/x is linear because x has no power."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
       ]
      },
      "estimatedHeight": 300
     }
    ],
-   "estimatedHeight": 750
+   "estimatedHeight": 776
   },
   {
    "sections": [
@@ -752,58 +766,41 @@
         }
        ],
        "key": "y = 3x + 4"
-      },
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g8-rule-from-table",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the rate of change and initial value of a linear function from a table.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each table comes from a linear rule and sometimes starts at x = 0 and sometimes not. The student reads the rate of change from the steps in y, then works back to b. Negative slopes come up.",
+      "misconceptions": [
+       "Taking the first y in the table as b when the table does not start at x = 0.",
+       "Using the step in y as b."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 254
+    },
+    {
+     "label": "D",
+     "instruction": "Write the equation of the line.",
+     "explainer": "Find the slope m first. Then put one point into y = mx + b to find b.",
+     "items": [
       {
        "label": "14",
        "nodes": [
         {
-         "dataTable": {
-          "header": [
-           "x",
-           "y"
-          ],
-          "rows": [
-           {
-            "cells": [
-             {
-              "text": "−2"
-             },
-             {
-              "text": "−3"
-             }
-            ]
-           },
-           {
-            "cells": [
-             {
-              "text": "−1"
-             },
-             {
-              "text": "−1"
-             }
-            ]
-           },
-           {
-            "cells": [
-             {
-              "text": "0"
-             },
-             {
-              "text": "1"
-             }
-            ]
-           },
-           {
-            "cells": [
-             {
-              "text": "1"
-             },
-             {
-              "text": "3"
-             }
-            ]
-           }
-          ]
+         "text": "A line passes through (−4, 28) and (−1, 13)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         },
         {
@@ -815,56 +812,6 @@
            {
             "blank": {
              "id": "q14",
-             "label": "the rule for the table",
-             "answer": {
-              "text": "2x + 1",
-              "also": [
-               "2x+1"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "y = 2x + 1"
-      }
-     ],
-     "columns": 3,
-     "fragmentId": "frag-g8-rule-from-table",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Find the rate of change and initial value of a linear function from a table.",
-      "principles": [
-       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
-      ],
-      "misconceptions": [
-       "Taking the first y in the table as b when the table does not start at x = 0."
-      ]
-     },
-     "estimatedHeight": 474
-    },
-    {
-     "label": "D",
-     "instruction": "Write the equation of the line.",
-     "explainer": "Find the slope m first. Then put one point into y = mx + b to find b.",
-     "items": [
-      {
-       "label": "15",
-       "nodes": [
-        {
-         "text": "A line goes through (−4, 28) and (−1, 13)."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "y ="
-           },
-           {
-            "blank": {
-             "id": "q15",
              "label": "line through (−4, 28) and (−1, 13)",
              "answer": {
               "text": "−5x + 8",
@@ -883,10 +830,15 @@
        "key": "y = −5x + 8"
       },
       {
-       "label": "16",
+       "label": "15",
        "nodes": [
         {
-         "text": "A line goes through (−2, 8) and (0, −2)."
+         "text": "A line passes through (−2, 8) and (0, −2)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         },
         {
          "math": {
@@ -896,7 +848,7 @@
            },
            {
             "blank": {
-             "id": "q16",
+             "id": "q15",
              "label": "line through (−2, 8) and (0, −2)",
              "answer": {
               "text": "−5x − 2",
@@ -915,10 +867,15 @@
        "key": "y = −5x − 2"
       },
       {
-       "label": "17",
+       "label": "16",
        "nodes": [
         {
-         "text": "A line goes through (−1, −7) and (0, −4)."
+         "text": "A line passes through (−1, −7) and (0, −4)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         },
         {
          "math": {
@@ -928,7 +885,7 @@
            },
            {
             "blank": {
-             "id": "q17",
+             "id": "q16",
              "label": "line through (−1, −7) and (0, −4)",
              "answer": {
               "text": "3x − 4",
@@ -945,21 +902,64 @@
         }
        ],
        "key": "y = 3x − 4"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "A line passes through (1, 6) and (2, 9)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "line through (1, 6) and (2, 9)",
+             "answer": {
+              "text": "3x + 3",
+              "also": [
+               "3x+3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 3x + 3"
       }
      ],
-     "columns": 1,
+     "columns": 2,
      "fragmentId": "frag-g8-line-through-points",
      "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Write the equation of a line through two points.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Finding the slope first and then b from one point is the method 8.F.B.4 builds. Points include negative coordinates, and when one has x = 0 the student can read b straight off. Room under each item is for both steps.",
+      "misconceptions": [
+       "Using the y of the first point as b when its x is not 0.",
+       "Finding the slope upside down, as change in x over change in y."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
       ]
      },
-     "estimatedHeight": 294
+     "estimatedHeight": 376
     }
    ],
-   "estimatedHeight": 776
+   "estimatedHeight": 638
   }
  ],
  "key": [
@@ -1007,7 +1007,7 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "is y = 8 − 3x linear",
+    "label": "is y = 3(x + 8) linear",
     "answer": {
      "text": "linear"
     }
@@ -1017,7 +1017,7 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "is y = 3(x + 8) linear",
+    "label": "is y = x/3 + 8 linear",
     "answer": {
      "text": "linear"
     }
@@ -1027,9 +1027,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "is y = 3/x linear",
+    "label": "is y = 6 − 3x linear",
     "answer": {
-     "text": "not linear"
+     "text": "linear"
     }
    }
   },
@@ -1037,7 +1037,7 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "is y = 2/x linear",
+    "label": "is y = x² + 7 linear",
     "answer": {
      "text": "not linear"
     }
@@ -1047,9 +1047,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "is y = 6(x + 3) linear",
+    "label": "is y = x(x + 3) linear",
     "answer": {
-     "text": "linear"
+     "text": "not linear"
     }
    }
   },
@@ -1057,7 +1057,7 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "is y = x² + 3 linear",
+    "label": "is y = 6/x linear",
     "answer": {
      "text": "not linear"
     }
@@ -1110,19 +1110,6 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "the rule for the table",
-    "answer": {
-     "text": "2x + 1",
-     "also": [
-      "2x+1"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "15",
-   "field": {
-    "id": "q15",
     "label": "line through (−4, 28) and (−1, 13)",
     "answer": {
      "text": "−5x + 8",
@@ -1135,9 +1122,9 @@
    }
   },
   {
-   "itemLabel": "16",
+   "itemLabel": "15",
    "field": {
-    "id": "q16",
+    "id": "q15",
     "label": "line through (−2, 8) and (0, −2)",
     "answer": {
      "text": "−5x − 2",
@@ -1150,9 +1137,9 @@
    }
   },
   {
-   "itemLabel": "17",
+   "itemLabel": "16",
    "field": {
-    "id": "q17",
+    "id": "q16",
     "label": "line through (−1, −7) and (0, −4)",
     "answer": {
      "text": "3x − 4",
@@ -1160,6 +1147,19 @@
       "3x - 4",
       "3x−4",
       "3x-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "line through (1, 6) and (2, 9)",
+    "answer": {
+     "text": "3x + 3",
+     "also": [
+      "3x+3"
      ]
     }
    }
@@ -1171,8 +1171,5 @@
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
   ]
  },
- "advice": [
-  "Section \"Write the equation of the line.\" was cut from 4 to 3 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

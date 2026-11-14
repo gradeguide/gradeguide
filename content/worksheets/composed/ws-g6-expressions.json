@@ -12,13 +12,13 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write an expression.",
+     "instruction": "Write an expression for each phrase.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "8 less than k"
+         "text": "k divided by 2"
         },
         {
          "math": {
@@ -26,13 +26,12 @@
            {
             "blank": {
              "id": "q1",
-             "label": "8 less than k",
+             "label": "k divided by 2",
              "answer": {
-              "text": "k − 8",
+              "text": "k ÷ 2",
               "also": [
-               "k - 8",
-               "k−8",
-               "k-8"
+               "k÷2",
+               "k/2"
               ]
              }
             }
@@ -41,13 +40,13 @@
          }
         }
        ],
-       "key": "k − 8"
+       "key": "k ÷ 2"
       },
       {
        "label": "2",
        "nodes": [
         {
-         "text": "n divided by 8"
+         "text": "the product of 8 and y"
         },
         {
          "math": {
@@ -55,12 +54,14 @@
            {
             "blank": {
              "id": "q2",
-             "label": "n divided by 8",
+             "label": "the product of 8 and y",
              "answer": {
-              "text": "n ÷ 8",
+              "text": "8y",
               "also": [
-               "n÷8",
-               "n/8"
+               "8 × y",
+               "8×y",
+               "y × 8",
+               "y×8"
               ]
              }
             }
@@ -69,13 +70,13 @@
          }
         }
        ],
-       "key": "n ÷ 8"
+       "key": "8y"
       },
       {
        "label": "3",
        "nodes": [
         {
-         "text": "m squared, plus 7"
+         "text": "11 more than m"
         },
         {
          "math": {
@@ -83,13 +84,13 @@
            {
             "blank": {
              "id": "q3",
-             "label": "m squared, plus 7",
+             "label": "11 more than m",
              "answer": {
-              "text": "m² + 7",
+              "text": "m + 11",
               "also": [
-               "m²+7",
-               "m^2 + 7",
-               "m^2+7"
+               "m+11",
+               "11 + m",
+               "11+m"
               ]
              }
             }
@@ -98,13 +99,13 @@
          }
         }
        ],
-       "key": "m² + 7"
+       "key": "m + 11"
       },
       {
        "label": "4",
        "nodes": [
         {
-         "text": "y squared, plus 9"
+         "text": "x squared, plus 12"
         },
         {
          "math": {
@@ -112,13 +113,13 @@
            {
             "blank": {
              "id": "q4",
-             "label": "y squared, plus 9",
+             "label": "x squared, plus 12",
              "answer": {
-              "text": "y² + 9",
+              "text": "x² + 12",
               "also": [
-               "y²+9",
-               "y^2 + 9",
-               "y^2+9"
+               "x²+12",
+               "x^2 + 12",
+               "x^2+12"
               ]
              }
             }
@@ -127,13 +128,13 @@
          }
         }
        ],
-       "key": "y² + 9"
+       "key": "x² + 12"
       },
       {
        "label": "5",
        "nodes": [
         {
-         "text": "10 less than 3 times m"
+         "text": "9 less than 11 times y"
         },
         {
          "math": {
@@ -141,13 +142,13 @@
            {
             "blank": {
              "id": "q5",
-             "label": "10 less than 3 times m",
+             "label": "9 less than 11 times y",
              "answer": {
-              "text": "3m − 10",
+              "text": "11y − 9",
               "also": [
-               "3m - 10",
-               "3m−10",
-               "3m-10"
+               "11y - 9",
+               "11y−9",
+               "11y-9"
               ]
              }
             }
@@ -156,13 +157,13 @@
          }
         }
        ],
-       "key": "3m − 10"
+       "key": "11y − 9"
       },
       {
        "label": "6",
        "nodes": [
         {
-         "text": "7 less than n"
+         "text": "3 times the sum of y and 5"
         },
         {
          "math": {
@@ -170,13 +171,13 @@
            {
             "blank": {
              "id": "q6",
-             "label": "7 less than n",
+             "label": "3 times the sum of y and 5",
              "answer": {
-              "text": "n − 7",
+              "text": "3(y + 5)",
               "also": [
-               "n - 7",
-               "n−7",
-               "n-7"
+               "3(y+5)",
+               "3(5 + y)",
+               "3(5+y)"
               ]
              }
             }
@@ -185,7 +186,7 @@
          }
         }
        ],
-       "key": "n − 7"
+       "key": "3(y + 5)"
       }
      ],
      "columns": 2,
@@ -196,8 +197,12 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Each phrase uses a different operation word, such as less than, product or divided by. Less than appears with the variable both first and second, because the order is the hardest part. The student writes in a blank so any correct form is accepted.",
       "misconceptions": [
        "Writing \"5 less than y\" as 5 − y."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 268
@@ -214,13 +219,7 @@
          "math": {
           "atoms": [
            {
-            "text": "In"
-           },
-           {
-            "text": "6k + 10"
-           },
-           {
-            "text": ":"
+            "text": "2 + 10k + 12x"
            }
           ]
          }
@@ -237,9 +236,9 @@
               {
                "blank": {
                 "id": "q7",
-                "label": "coefficient of k in 6k + 10",
+                "label": "coefficient of k in 2 + 10k + 12x",
                 "answer": {
-                 "text": "6"
+                 "text": "10"
                 }
                }
               }
@@ -255,9 +254,9 @@
               {
                "blank": {
                 "id": "q7-2",
-                "label": "constant in 6k + 10",
+                "label": "constant in 2 + 10k + 12x",
                 "answer": {
-                 "text": "10"
+                 "text": "2"
                 }
                }
               }
@@ -268,14 +267,14 @@
             "math": {
              "atoms": [
               {
-               "text": "Terms:"
+               "text": "Number of terms:"
               },
               {
                "blank": {
                 "id": "q7-3",
-                "label": "number of terms in 6k + 10",
+                "label": "number of terms in 2 + 10k + 12x",
                 "answer": {
-                 "text": "2"
+                 "text": "3"
                 }
                }
               }
@@ -286,7 +285,7 @@
          }
         }
        ],
-       "key": "6, 10, 2"
+       "key": "10, 2, 3"
       },
       {
        "label": "8",
@@ -295,13 +294,7 @@
          "math": {
           "atoms": [
            {
-            "text": "In"
-           },
-           {
-            "text": "2y + 10"
-           },
-           {
-            "text": ":"
+            "text": "10y + 3"
            }
           ]
          }
@@ -318,9 +311,9 @@
               {
                "blank": {
                 "id": "q8",
-                "label": "coefficient of y in 2y + 10",
+                "label": "coefficient of y in 10y + 3",
                 "answer": {
-                 "text": "2"
+                 "text": "10"
                 }
                }
               }
@@ -336,9 +329,9 @@
               {
                "blank": {
                 "id": "q8-2",
-                "label": "constant in 2y + 10",
+                "label": "constant in 10y + 3",
                 "answer": {
-                 "text": "10"
+                 "text": "3"
                 }
                }
               }
@@ -349,12 +342,12 @@
             "math": {
              "atoms": [
               {
-               "text": "Terms:"
+               "text": "Number of terms:"
               },
               {
                "blank": {
                 "id": "q8-3",
-                "label": "number of terms in 2y + 10",
+                "label": "number of terms in 10y + 3",
                 "answer": {
                  "text": "2"
                 }
@@ -367,7 +360,7 @@
          }
         }
        ],
-       "key": "2, 10, 2"
+       "key": "10, 3, 2"
       },
       {
        "label": "9",
@@ -376,13 +369,7 @@
          "math": {
           "atoms": [
            {
-            "text": "In"
-           },
-           {
-            "text": "6y − 9"
-           },
-           {
-            "text": ":"
+            "text": "12k − 7"
            }
           ]
          }
@@ -394,14 +381,14 @@
             "math": {
              "atoms": [
               {
-               "text": "Coefficient of y:"
+               "text": "Coefficient of k:"
               },
               {
                "blank": {
                 "id": "q9",
-                "label": "coefficient of y in 6y − 9",
+                "label": "coefficient of k in 12k − 7",
                 "answer": {
-                 "text": "6"
+                 "text": "12"
                 }
                }
               }
@@ -417,12 +404,12 @@
               {
                "blank": {
                 "id": "q9-2",
-                "label": "constant in 6y − 9",
+                "label": "constant in 12k − 7",
                 "answer": {
-                 "text": "−9",
+                 "text": "−7",
                  "also": [
-                  "-9",
-                  "9"
+                  "-7",
+                  "7"
                  ]
                 }
                }
@@ -434,12 +421,12 @@
             "math": {
              "atoms": [
               {
-               "text": "Terms:"
+               "text": "Number of terms:"
               },
               {
                "blank": {
                 "id": "q9-3",
-                "label": "number of terms in 6y − 9",
+                "label": "number of terms in 12k − 7",
                 "answer": {
                  "text": "2"
                 }
@@ -452,7 +439,7 @@
          }
         }
        ],
-       "key": "6, −9, 2"
+       "key": "12, −7, 2"
       }
      ],
      "columns": 1,
@@ -462,19 +449,31 @@
       "purpose": "Name the terms, coefficients and constant of an expression.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The student names the coefficient, the constant and the number of terms in expressions with two or three terms. One expression has a subtraction, so the constant is negative. These words are used in every later lesson on expressions.",
+      "misconceptions": [
+       "Calling the variable itself the coefficient."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 368
     },
     {
      "label": "C",
-     "instruction": "Substitute, then find the value.",
+     "instruction": "Evaluate each expression for the given values.",
      "items": [
       {
        "label": "10",
        "nodes": [
         {
-         "text": "Find 6(x + 6) when x = 2."
+         "text": "Evaluate 6(x + 6) when x = 2."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         },
         {
          "math": {
@@ -501,7 +500,12 @@
        "label": "11",
        "nodes": [
         {
-         "text": "Find 8(x + 11) when x = 4."
+         "text": "Evaluate x² − 9y when x = 5 and y = 6."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         },
         {
          "math": {
@@ -512,9 +516,12 @@
            {
             "blank": {
              "id": "q11",
-             "label": "8(x + 11) when x = 4",
+             "label": "x² − 9y when x = 5 and y = 6",
              "answer": {
-              "text": "120"
+              "text": "−29",
+              "also": [
+               "-29"
+              ]
              }
             }
            }
@@ -522,7 +529,7 @@
          }
         }
        ],
-       "key": "Value: 120"
+       "key": "Value: −29"
       }
      ],
      "columns": 2,
@@ -533,26 +540,35 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each expression has a different form: a product plus a number, parentheses, a square, and two variables. The student writes the substitution in the space before working it out. Small whole-number values keep the arithmetic easy.",
       "misconceptions": [
        "Reading 3x with x = 4 as 34."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
-     "estimatedHeight": 112
+     "estimatedHeight": 150
     }
    ],
-   "estimatedHeight": 760
+   "estimatedHeight": 798
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Substitute, then find the value.",
+     "instruction": "Evaluate each expression for the given values.",
      "items": [
       {
        "label": "12",
        "nodes": [
         {
-         "text": "Find x² + 9 when x = 8."
+         "text": "Evaluate x² + 11 when x = 9."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         },
         {
          "math": {
@@ -563,9 +579,9 @@
            {
             "blank": {
              "id": "q12",
-             "label": "x² + 9 when x = 8",
+             "label": "x² + 11 when x = 9",
              "answer": {
-              "text": "73"
+              "text": "92"
              }
             }
            }
@@ -573,13 +589,18 @@
          }
         }
        ],
-       "key": "Value: 73"
+       "key": "Value: 92"
       },
       {
        "label": "13",
        "nodes": [
         {
-         "text": "Find 4x − y when x = 4 and y = 7."
+         "text": "Evaluate 5x + 9 when x = 7."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         },
         {
          "math": {
@@ -590,9 +611,9 @@
            {
             "blank": {
              "id": "q13",
-             "label": "4x − y when x = 4 and y = 7",
+             "label": "5x + 9 when x = 7",
              "answer": {
-              "text": "9"
+              "text": "44"
              }
             }
            }
@@ -600,7 +621,71 @@
          }
         }
        ],
-       "key": "Value: 9"
+       "key": "Value: 44"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "Evaluate 8x − y when x = 8 and y = 7."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Value:"
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "8x − y when x = 8 and y = 7",
+             "answer": {
+              "text": "57"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Value: 57"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "Evaluate x² − 6y when x = 7 and y = 4."
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Value:"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "x² − 6y when x = 7 and y = 4",
+             "answer": {
+              "text": "25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Value: 25"
       }
      ],
      "columns": 2,
@@ -611,15 +696,19 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each expression has a different form: a product plus a number, parentheses, a square, and two variables. The student writes the substitution in the space before working it out. Small whole-number values keep the arithmetic easy.",
       "misconceptions": [
        "Reading 3x with x = 4 as 34."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "continued": true,
-     "estimatedHeight": 112
+     "estimatedHeight": 266
     }
    ],
-   "estimatedHeight": 116
+   "estimatedHeight": 270
   }
  ],
  "key": [
@@ -627,13 +716,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "8 less than k",
+    "label": "k divided by 2",
     "answer": {
-     "text": "k − 8",
+     "text": "k ÷ 2",
      "also": [
-      "k - 8",
-      "k−8",
-      "k-8"
+      "k÷2",
+      "k/2"
      ]
     }
    }
@@ -642,12 +730,14 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "n divided by 8",
+    "label": "the product of 8 and y",
     "answer": {
-     "text": "n ÷ 8",
+     "text": "8y",
      "also": [
-      "n÷8",
-      "n/8"
+      "8 × y",
+      "8×y",
+      "y × 8",
+      "y×8"
      ]
     }
    }
@@ -656,13 +746,13 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "m squared, plus 7",
+    "label": "11 more than m",
     "answer": {
-     "text": "m² + 7",
+     "text": "m + 11",
      "also": [
-      "m²+7",
-      "m^2 + 7",
-      "m^2+7"
+      "m+11",
+      "11 + m",
+      "11+m"
      ]
     }
    }
@@ -671,13 +761,13 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "y squared, plus 9",
+    "label": "x squared, plus 12",
     "answer": {
-     "text": "y² + 9",
+     "text": "x² + 12",
      "also": [
-      "y²+9",
-      "y^2 + 9",
-      "y^2+9"
+      "x²+12",
+      "x^2 + 12",
+      "x^2+12"
      ]
     }
    }
@@ -686,13 +776,13 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "10 less than 3 times m",
+    "label": "9 less than 11 times y",
     "answer": {
-     "text": "3m − 10",
+     "text": "11y − 9",
      "also": [
-      "3m - 10",
-      "3m−10",
-      "3m-10"
+      "11y - 9",
+      "11y−9",
+      "11y-9"
      ]
     }
    }
@@ -701,13 +791,13 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "7 less than n",
+    "label": "3 times the sum of y and 5",
     "answer": {
-     "text": "n − 7",
+     "text": "3(y + 5)",
      "also": [
-      "n - 7",
-      "n−7",
-      "n-7"
+      "3(y+5)",
+      "3(5 + y)",
+      "3(5+y)"
      ]
     }
    }
@@ -716,9 +806,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "coefficient of k in 6k + 10",
+    "label": "coefficient of k in 2 + 10k + 12x",
     "answer": {
-     "text": "6"
+     "text": "10"
     }
    }
   },
@@ -726,9 +816,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7-2",
-    "label": "constant in 6k + 10",
+    "label": "constant in 2 + 10k + 12x",
     "answer": {
-     "text": "10"
+     "text": "2"
     }
    }
   },
@@ -736,9 +826,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7-3",
-    "label": "number of terms in 6k + 10",
+    "label": "number of terms in 2 + 10k + 12x",
     "answer": {
-     "text": "2"
+     "text": "3"
     }
    }
   },
@@ -746,17 +836,7 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "coefficient of y in 2y + 10",
-    "answer": {
-     "text": "2"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-2",
-    "label": "constant in 2y + 10",
+    "label": "coefficient of y in 10y + 3",
     "answer": {
      "text": "10"
     }
@@ -765,8 +845,18 @@
   {
    "itemLabel": "8",
    "field": {
+    "id": "q8-2",
+    "label": "constant in 10y + 3",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
     "id": "q8-3",
-    "label": "number of terms in 2y + 10",
+    "label": "number of terms in 10y + 3",
     "answer": {
      "text": "2"
     }
@@ -776,9 +866,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "coefficient of y in 6y − 9",
+    "label": "coefficient of k in 12k − 7",
     "answer": {
-     "text": "6"
+     "text": "12"
     }
    }
   },
@@ -786,12 +876,12 @@
    "itemLabel": "9",
    "field": {
     "id": "q9-2",
-    "label": "constant in 6y − 9",
+    "label": "constant in 12k − 7",
     "answer": {
-     "text": "−9",
+     "text": "−7",
      "also": [
-      "-9",
-      "9"
+      "-7",
+      "7"
      ]
     }
    }
@@ -800,7 +890,7 @@
    "itemLabel": "9",
    "field": {
     "id": "q9-3",
-    "label": "number of terms in 6y − 9",
+    "label": "number of terms in 12k − 7",
     "answer": {
      "text": "2"
     }
@@ -820,9 +910,12 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "8(x + 11) when x = 4",
+    "label": "x² − 9y when x = 5 and y = 6",
     "answer": {
-     "text": "120"
+     "text": "−29",
+     "also": [
+      "-29"
+     ]
     }
    }
   },
@@ -830,9 +923,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "x² + 9 when x = 8",
+    "label": "x² + 11 when x = 9",
     "answer": {
-     "text": "73"
+     "text": "92"
     }
    }
   },
@@ -840,9 +933,29 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "4x − y when x = 4 and y = 7",
+    "label": "5x + 9 when x = 7",
     "answer": {
-     "text": "9"
+     "text": "44"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "8x − y when x = 8 and y = 7",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "x² − 6y when x = 7 and y = 4",
+    "answer": {
+     "text": "25"
     }
    }
   }
@@ -854,8 +967,7 @@
   ]
  },
  "advice": [
-  "\"Write an expression.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Substitute, then find the value.\" was cut from 6 to 4 items to fit."
+  "\"Write an expression for each phrase.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

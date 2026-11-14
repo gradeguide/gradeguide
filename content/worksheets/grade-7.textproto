@@ -823,6 +823,23 @@ fragments {
   }
 }
 
+fragments {
+  id: "frag-g7-simulation"
+  instruction: "Use the random digits to simulate the event."
+  stage: STAGE_APPLY
+  explainer: "Each digit from 0 to 9 is equally likely. For a 30% chance, let 3 of the 10 digits, 0 to 2, stand for a success."
+  items { kind { probability { mode: MODE_SIMULATION } } count: 2 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Design and use a simulation with random digits to estimate the probability of a compound event."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Random digits are the classroom tool for simulating chances given in tenths. Students choose the digits that stand for a success, then mark each group of digits as one trial and count the trials where the event happens. Twenty trials per item keep the counting short and give an estimate to compare with a classmate's."
+    misconceptions: "Counting single digits instead of whole groups as trials."
+    misconceptions: "Expecting the estimate to equal the exact probability."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+  }
+}
+
 worksheets {
   id: "ws-g7-proportional-relationships"
   title: "Proportional relationships"
@@ -1041,4 +1058,17 @@ worksheets {
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
   home_tip: "Roll two dice 30 times and tally the sums. Ask why 7 comes up most."
+}
+
+worksheets {
+  id: "ws-g7-simulation"
+  title: "Simulating chance events"
+  seed: 716
+  max_pages: 2
+  placements { fragment_id: "frag-g7-simulation" }
+  design {
+    purpose: "Estimate probabilities of compound events by simulation with random digits."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+  }
+  home_tip: "Flip a coin 3 times for each trial, 20 trials in all, and count the trials with exactly 2 heads."
 }

@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Multiply out the brackets.",
+     "instruction": "Expand.",
      "explainer": "Multiply each term inside by the number outside: 3(x + 4) = 3x + 12.",
      "items": [
       {
@@ -198,12 +198,16 @@
      "fragmentId": "frag-g6-expand",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Use the distributive property to write an equivalent expression without brackets.",
+      "purpose": "Use the distributive property to write an equivalent expression without parentheses.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each item multiplies a number by a sum with a variable. The explainer shows the distributive property once in full. In some items the variable has a coefficient, so the student multiplies two numbers instead of copying the variable.",
       "misconceptions": [
        "Multiplying only the first term: 3(x + 4) = 3x + 4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 216
@@ -340,13 +344,21 @@
       "purpose": "Write an expression as its greatest common factor times a sum.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Factoring is expanding in reverse. The two terms always share a factor larger than 1, and the part left in the parentheses has no common factor. That makes the greatest common factor the only right answer.",
+      "misconceptions": [
+       "Taking out a common factor that is not the greatest, such as 3 from 27x + 9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 138
     },
     {
      "label": "C",
-     "instruction": "Are the two expressions equivalent? Try a number for the variable to check.",
+     "instruction": "Are the two expressions equivalent? Check one.",
+     "explainer": "Substitute the same number for the variable in both expressions. Equivalent expressions give the same value.",
      "items": [
       {
        "label": "11",
@@ -573,15 +585,20 @@
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS"
       ],
+      "rationale": "Each pair is either equivalent or shows a common error, such as multiplying only the first term or turning x + x + x into x³. The explainer gives substitution as a test that does not depend on remembering a rule. Identifying the error in a nonequivalent pair helps students avoid it in their own work.",
       "misconceptions": [
        "Thinking x + x + x is x³.",
        "Thinking 2x + 3x is 5x²."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8",
+       "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
       ]
      },
-     "estimatedHeight": 274
+     "estimatedHeight": 320
     }
    ],
-   "estimatedHeight": 640
+   "estimatedHeight": 686
   }
  ],
  "key": [
@@ -783,7 +800,7 @@
   ]
  },
  "advice": [
-  "\"Multiply out the brackets.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Expand.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Factor out the greatest common factor.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"

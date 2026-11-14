@@ -1,6 +1,6 @@
 {
  "worksheetId": "ws-g7-multiply-divide-integers",
- "title": "Multiplying and dividing positive and negative numbers",
+ "title": "Multiplying and dividing rationals",
  "headerLabels": [
   "7.NS.A.2.a",
   "7.NS.A.2",
@@ -23,7 +23,7 @@
          "math": {
           "atoms": [
            {
-            "text": "15 ÷ 3"
+            "text": "−56 ÷ 7"
            },
            {
             "text": "="
@@ -31,9 +31,12 @@
            {
             "blank": {
              "id": "q1",
-             "label": "15 ÷ 3",
+             "label": "−56 ÷ 7",
              "answer": {
-              "text": "5"
+              "text": "−8",
+              "also": [
+               "-8"
+              ]
              }
             }
            }
@@ -41,7 +44,7 @@
          }
         }
        ],
-       "key": "15 ÷ 3 = 5"
+       "key": "−56 ÷ 7 = −8"
       },
       {
        "label": "2",
@@ -50,7 +53,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−3 × 1"
+            "text": "−2 × (−6)"
            },
            {
             "text": "="
@@ -58,12 +61,9 @@
            {
             "blank": {
              "id": "q2",
-             "label": "−3 × 1",
+             "label": "−2 × (−6)",
              "answer": {
-              "text": "−3",
-              "also": [
-               "-3"
-              ]
+              "text": "12"
              }
             }
            }
@@ -71,7 +71,7 @@
          }
         }
        ],
-       "key": "−3 × 1 = −3"
+       "key": "−2 × (−6) = 12"
       },
       {
        "label": "3",
@@ -80,7 +80,7 @@
          "math": {
           "atoms": [
            {
-            "text": "6 × (−8)"
+            "text": "6 × (−7)"
            },
            {
             "text": "="
@@ -88,11 +88,11 @@
            {
             "blank": {
              "id": "q3",
-             "label": "6 × (−8)",
+             "label": "6 × (−7)",
              "answer": {
-              "text": "−48",
+              "text": "−42",
               "also": [
-               "-48"
+               "-42"
               ]
              }
             }
@@ -101,7 +101,7 @@
          }
         }
        ],
-       "key": "6 × (−8) = −48"
+       "key": "6 × (−7) = −42"
       },
       {
        "label": "4",
@@ -110,7 +110,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−12 ÷ (−3)"
+            "text": "−8 × 4"
            },
            {
             "text": "="
@@ -118,9 +118,12 @@
            {
             "blank": {
              "id": "q4",
-             "label": "−12 ÷ (−3)",
+             "label": "−8 × 4",
              "answer": {
-              "text": "4"
+              "text": "−32",
+              "also": [
+               "-32"
+              ]
              }
             }
            }
@@ -128,7 +131,7 @@
          }
         }
        ],
-       "key": "−12 ÷ (−3) = 4"
+       "key": "−8 × 4 = −32"
       },
       {
        "label": "5",
@@ -137,7 +140,7 @@
          "math": {
           "atoms": [
            {
-            "text": "48 ÷ (−8)"
+            "text": "9 × (−6)"
            },
            {
             "text": "="
@@ -145,94 +148,7 @@
            {
             "blank": {
              "id": "q5",
-             "label": "48 ÷ (−8)",
-             "answer": {
-              "text": "−6",
-              "also": [
-               "-6"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "48 ÷ (−8) = −6"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−20 ÷ 4"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q6",
-             "label": "−20 ÷ 4",
-             "answer": {
-              "text": "−5",
-              "also": [
-               "-5"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "−20 ÷ 4 = −5"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−8 ÷ (−1)"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "−8 ÷ (−1)",
-             "answer": {
-              "text": "8"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "−8 ÷ (−1) = 8"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−6 × 9"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "−6 × 9",
+             "label": "9 × (−6)",
              "answer": {
               "text": "−54",
               "also": [
@@ -245,7 +161,97 @@
          }
         }
        ],
-       "key": "−6 × 9 = −54"
+       "key": "9 × (−6) = −54"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30 ÷ (−5)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "30 ÷ (−5)",
+             "answer": {
+              "text": "−6",
+              "also": [
+               "-6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 ÷ (−5) = −6"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−36 ÷ 4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "−36 ÷ 4",
+             "answer": {
+              "text": "−9",
+              "also": [
+               "-9"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−36 ÷ 4 = −9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−6 × 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "−6 × 6",
+             "answer": {
+              "text": "−36",
+              "also": [
+               "-36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−6 × 6 = −36"
       }
      ],
      "columns": 3,
@@ -256,8 +262,10 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "The sign rules for multiplying and dividing are practised on small facts the student already knows, so only the sign is new. Multiplication and division are mixed so the student sees the same rules hold for both. No item multiplies by 1 or −1, so every item requires a computation.",
       "misconceptions": [
-       "Thinking two negatives multiply to a negative."
+       "Thinking two negatives multiply to a negative.",
+       "Applying the addition rule and keeping the sign of the larger number."
       ]
      },
      "estimatedHeight": 216
@@ -279,14 +287,14 @@
             }
            },
            {
-            "text": "×"
+            "text": "÷"
            },
            {
             "text": "(−"
            },
            {
             "fraction": {
-             "num": 2,
+             "num": 1,
              "den": 6
             }
            },
@@ -301,9 +309,13 @@
              "id": "q9",
              "label": "the answer",
              "answer": {
-              "text": "−1/4",
+              "text": "−9/2",
               "also": [
-               "-1/4"
+               "-9/2",
+               "−4 1/2",
+               "-4 1/2",
+               "−41/2",
+               "-41/2"
               ]
              }
             }
@@ -312,7 +324,7 @@
          }
         }
        ],
-       "key": "3/4 × (− 2/6 ) = −1/4"
+       "key": "3/4 ÷ (− 1/6 ) = −9/2"
       },
       {
        "label": "10",
@@ -321,13 +333,16 @@
          "math": {
           "atoms": [
            {
+            "text": "−"
+           },
+           {
             "fraction": {
-             "num": 4,
-             "den": 4
+             "num": 1,
+             "den": 8
             }
            },
            {
-            "text": "÷"
+            "text": "×"
            },
            {
             "text": "(−"
@@ -335,7 +350,7 @@
            {
             "fraction": {
              "num": 2,
-             "den": 4
+             "den": 3
             }
            },
            {
@@ -349,10 +364,7 @@
              "id": "q10",
              "label": "the answer",
              "answer": {
-              "text": "−2",
-              "also": [
-               "-2"
-              ]
+              "text": "1/12"
              }
             }
            }
@@ -360,7 +372,7 @@
          }
         }
        ],
-       "key": "4/4 ÷ (− 2/4 ) = −2"
+       "key": "− 1/8 × (− 2/3 ) = 1/12"
       },
       {
        "label": "11",
@@ -373,20 +385,20 @@
            },
            {
             "fraction": {
-             "num": 1,
-             "den": 6
+             "num": 2,
+             "den": 3
             }
            },
            {
-            "text": "×"
+            "text": "÷"
            },
            {
             "text": "(−"
            },
            {
             "fraction": {
-             "num": 1,
-             "den": 3
+             "num": 3,
+             "den": 4
             }
            },
            {
@@ -400,7 +412,7 @@
              "id": "q11",
              "label": "the answer",
              "answer": {
-              "text": "1/18"
+              "text": "8/9"
              }
             }
            }
@@ -408,7 +420,7 @@
          }
         }
        ],
-       "key": "− 1/6 × (− 1/3 ) = 1/18"
+       "key": "− 2/3 ÷ (− 3/4 ) = 8/9"
       },
       {
        "label": "12",
@@ -417,12 +429,9 @@
          "math": {
           "atoms": [
            {
-            "text": "−"
-           },
-           {
             "fraction": {
-             "num": 3,
-             "den": 3
+             "num": 1,
+             "den": 2
             }
            },
            {
@@ -433,7 +442,7 @@
            },
            {
             "fraction": {
-             "num": 3,
+             "num": 2,
              "den": 3
             }
            },
@@ -448,7 +457,10 @@
              "id": "q12",
              "label": "the answer",
              "answer": {
-              "text": "1"
+              "text": "−3/4",
+              "also": [
+               "-3/4"
+              ]
              }
             }
            }
@@ -456,7 +468,7 @@
          }
         }
        ],
-       "key": "− 3/3 ÷ (− 3/3 ) = 1"
+       "key": "1/2 ÷ (− 2/3 ) = −3/4"
       }
      ],
      "columns": 2,
@@ -466,6 +478,11 @@
       "purpose": "Multiply and divide signed fractions, where −(p/q) = (−p)/q = p/(−q).",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Signed fractions use the same sign rules as integers. The fractions are proper and in lowest terms, so the student practises the rule and simplifying the answer, not tidying the question. Division by a fraction is done by multiplying by its reciprocal, as in grade 6.",
+      "misconceptions": [
+       "Flipping the first fraction instead of the second when dividing.",
+       "Thinking −(1/2) and (−1)/2 are different numbers."
       ]
      },
      "estimatedHeight": 178
@@ -481,7 +498,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−3.1 × (−3)"
+            "text": "−3.1 × (−2)"
            },
            {
             "text": "="
@@ -489,9 +506,9 @@
            {
             "blank": {
              "id": "q13",
-             "label": "−3.1 × (−3)",
+             "label": "−3.1 × (−2)",
              "answer": {
-              "text": "9.3"
+              "text": "6.2"
              }
             }
            }
@@ -499,7 +516,7 @@
          }
         }
        ],
-       "key": "−3.1 × (−3) = 9.3"
+       "key": "−3.1 × (−2) = 6.2"
       },
       {
        "label": "14",
@@ -508,7 +525,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−3.1 × (−1)"
+            "text": "−3.2 × (−8)"
            },
            {
             "text": "="
@@ -516,9 +533,9 @@
            {
             "blank": {
              "id": "q14",
-             "label": "−3.1 × (−1)",
+             "label": "−3.2 × (−8)",
              "answer": {
-              "text": "3.1"
+              "text": "25.6"
              }
             }
            }
@@ -526,7 +543,7 @@
          }
         }
        ],
-       "key": "−3.1 × (−1) = 3.1"
+       "key": "−3.2 × (−8) = 25.6"
       },
       {
        "label": "15",
@@ -535,7 +552,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−2.8 ÷ (−2)"
+            "text": "12.6 ÷ (−7)"
            },
            {
             "text": "="
@@ -543,38 +560,11 @@
            {
             "blank": {
              "id": "q15",
-             "label": "−2.8 ÷ (−2)",
+             "label": "12.6 ÷ (−7)",
              "answer": {
-              "text": "1.4"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "−2.8 ÷ (−2) = 1.4"
-      },
-      {
-       "label": "16",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "1.3 ÷ (−1)"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q16",
-             "label": "1.3 ÷ (−1)",
-             "answer": {
-              "text": "−1.3",
+              "text": "−1.8",
               "also": [
-               "-1.3"
+               "-1.8"
               ]
              }
             }
@@ -583,7 +573,37 @@
          }
         }
        ],
-       "key": "1.3 ÷ (−1) = −1.3"
+       "key": "12.6 ÷ (−7) = −1.8"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3.3 × (−4)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "3.3 × (−4)",
+             "answer": {
+              "text": "−13.2",
+              "also": [
+               "-13.2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3.3 × (−4) = −13.2"
       }
      ],
      "columns": 2,
@@ -593,14 +613,19 @@
       "purpose": "Multiply and divide signed decimals.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Signed decimals finish the set of rational numbers. One factor is a decimal and the other a whole number from 2 to 9, so the place value stays simple and the focus is the sign rule.",
+      "misconceptions": [
+       "Putting the decimal point in the wrong place after multiplying.",
+       "Forgetting that a negative divided by a negative is positive."
       ]
      },
      "estimatedHeight": 138
     },
     {
      "label": "D",
-     "instruction": "Write each fraction as a decimal, then tick whether it ends or repeats.",
-     "explainer": "Divide the numerator by the denominator. The digits either stop or start to repeat.",
+     "instruction": "Write as a decimal. Check whether it terminates or repeats.",
+     "explainer": "Divide the numerator by the denominator. Round a repeating decimal to the nearest thousandth.",
      "items": [
       {
        "label": "17",
@@ -627,6 +652,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
          }
         },
         {
@@ -678,6 +708,11 @@
          }
         },
         {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
          "choices": {
           "options": [
            "ends",
@@ -694,7 +729,33 @@
         }
        ],
        "key": "4/8 ≈ 0.5; ends"
-      },
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-fraction-to-decimal",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Change a fraction to a decimal by long division and tell whether it ends or repeats.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Long division of the numerator by the denominator shows that a fraction's decimal either ends or repeats, which is what the standard asks a student to know. Some denominators are made only of 2s and 5s and end; others, such as 3, 11 and 15, repeat. There is room under each fraction for the long division.",
+      "misconceptions": [
+       "Dividing the denominator by the numerator.",
+       "Thinking a fraction with a large denominator must repeat, such as 33/40."
+      ]
+     },
+     "estimatedHeight": 262
+    }
+   ],
+   "estimatedHeight": 810
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Write as a decimal. Check whether it terminates or repeats.",
+     "items": [
       {
        "label": "19",
        "nodes": [
@@ -720,6 +781,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 3
          }
         },
         {
@@ -768,6 +834,11 @@
          }
         },
         {
+         "workSpace": {
+          "rows": 3
+         }
+        },
+        {
          "choices": {
           "options": [
            "ends",
@@ -784,117 +855,27 @@
         }
        ],
        "key": "2/11 ≈ 0.182; repeats"
-      },
-      {
-       "label": "21",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 30,
-             "den": 25
-            }
-           },
-           {
-            "text": "≈"
-           },
-           {
-            "blank": {
-             "id": "q21",
-             "label": "30/25 to the nearest thousandth",
-             "answer": {
-              "text": "1.2",
-              "also": [
-               "1.200"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "ends",
-           "repeats"
-          ],
-          "field": {
-           "id": "q21-2",
-           "label": "does 30/25 end or repeat",
-           "answer": {
-            "text": "ends"
-           }
-          }
-         }
-        }
-       ],
-       "key": "30/25 ≈ 1.2; ends"
-      },
-      {
-       "label": "22",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "fraction": {
-             "num": 48,
-             "den": 40
-            }
-           },
-           {
-            "text": "≈"
-           },
-           {
-            "blank": {
-             "id": "q22",
-             "label": "48/40 to the nearest thousandth",
-             "answer": {
-              "text": "1.2",
-              "also": [
-               "1.200"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "ends",
-           "repeats"
-          ],
-          "field": {
-           "id": "q22-2",
-           "label": "does 48/40 end or repeat",
-           "answer": {
-            "text": "ends"
-           }
-          }
-         }
-        }
-       ],
-       "key": "48/40 ≈ 1.2; ends"
       }
      ],
-     "columns": 3,
+     "columns": 2,
      "fragmentId": "frag-g7-fraction-to-decimal",
      "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Change a fraction to a decimal by long division and tell whether it ends or repeats.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Long division of the numerator by the denominator shows that a fraction's decimal either ends or repeats, which is what the standard asks a student to know. Some denominators are made only of 2s and 5s and end; others, such as 3, 11 and 15, repeat. There is room under each fraction for the long division.",
+      "misconceptions": [
+       "Dividing the denominator by the numerator.",
+       "Thinking a fraction with a large denominator must repeat, such as 33/40."
       ]
      },
-     "estimatedHeight": 260
+     "continued": true,
+     "estimatedHeight": 236
     }
    ],
-   "estimatedHeight": 808
+   "estimatedHeight": 240
   }
  ],
  "key": [
@@ -902,9 +883,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "15 ÷ 3",
+    "label": "−56 ÷ 7",
     "answer": {
-     "text": "5"
+     "text": "−8",
+     "also": [
+      "-8"
+     ]
     }
    }
   },
@@ -912,12 +896,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "−3 × 1",
+    "label": "−2 × (−6)",
     "answer": {
-     "text": "−3",
-     "also": [
-      "-3"
-     ]
+     "text": "12"
     }
    }
   },
@@ -925,11 +906,11 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "6 × (−8)",
+    "label": "6 × (−7)",
     "answer": {
-     "text": "−48",
+     "text": "−42",
      "also": [
-      "-48"
+      "-42"
      ]
     }
    }
@@ -938,9 +919,12 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "−12 ÷ (−3)",
+    "label": "−8 × 4",
     "answer": {
-     "text": "4"
+     "text": "−32",
+     "also": [
+      "-32"
+     ]
     }
    }
   },
@@ -948,7 +932,20 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "48 ÷ (−8)",
+    "label": "9 × (−6)",
+    "answer": {
+     "text": "−54",
+     "also": [
+      "-54"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "30 ÷ (−5)",
     "answer": {
      "text": "−6",
      "also": [
@@ -958,25 +955,15 @@
    }
   },
   {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
-    "label": "−20 ÷ 4",
-    "answer": {
-     "text": "−5",
-     "also": [
-      "-5"
-     ]
-    }
-   }
-  },
-  {
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "−8 ÷ (−1)",
+    "label": "−36 ÷ 4",
     "answer": {
-     "text": "8"
+     "text": "−9",
+     "also": [
+      "-9"
+     ]
     }
    }
   },
@@ -984,11 +971,11 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "−6 × 9",
+    "label": "−6 × 6",
     "answer": {
-     "text": "−54",
+     "text": "−36",
      "also": [
-      "-54"
+      "-36"
      ]
     }
    }
@@ -999,9 +986,13 @@
     "id": "q9",
     "label": "the answer",
     "answer": {
-     "text": "−1/4",
+     "text": "−9/2",
      "also": [
-      "-1/4"
+      "-9/2",
+      "−4 1/2",
+      "-4 1/2",
+      "−41/2",
+      "-41/2"
      ]
     }
    }
@@ -1012,10 +1003,7 @@
     "id": "q10",
     "label": "the answer",
     "answer": {
-     "text": "−2",
-     "also": [
-      "-2"
-     ]
+     "text": "1/12"
     }
    }
   },
@@ -1025,7 +1013,7 @@
     "id": "q11",
     "label": "the answer",
     "answer": {
-     "text": "1/18"
+     "text": "8/9"
     }
    }
   },
@@ -1035,7 +1023,10 @@
     "id": "q12",
     "label": "the answer",
     "answer": {
-     "text": "1"
+     "text": "−3/4",
+     "also": [
+      "-3/4"
+     ]
     }
    }
   },
@@ -1043,9 +1034,9 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "−3.1 × (−3)",
+    "label": "−3.1 × (−2)",
     "answer": {
-     "text": "9.3"
+     "text": "6.2"
     }
    }
   },
@@ -1053,9 +1044,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "−3.1 × (−1)",
+    "label": "−3.2 × (−8)",
     "answer": {
-     "text": "3.1"
+     "text": "25.6"
     }
    }
   },
@@ -1063,9 +1054,12 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
-    "label": "−2.8 ÷ (−2)",
+    "label": "12.6 ÷ (−7)",
     "answer": {
-     "text": "1.4"
+     "text": "−1.8",
+     "also": [
+      "-1.8"
+     ]
     }
    }
   },
@@ -1073,11 +1067,11 @@
    "itemLabel": "16",
    "field": {
     "id": "q16",
-    "label": "1.3 ÷ (−1)",
+    "label": "3.3 × (−4)",
     "answer": {
-     "text": "−1.3",
+     "text": "−13.2",
      "also": [
-      "-1.3"
+      "-13.2"
      ]
     }
    }
@@ -1164,52 +1158,6 @@
      "text": "repeats"
     }
    }
-  },
-  {
-   "itemLabel": "21",
-   "field": {
-    "id": "q21",
-    "label": "30/25 to the nearest thousandth",
-    "answer": {
-     "text": "1.2",
-     "also": [
-      "1.200"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "21",
-   "field": {
-    "id": "q21-2",
-    "label": "does 30/25 end or repeat",
-    "answer": {
-     "text": "ends"
-    }
-   }
-  },
-  {
-   "itemLabel": "22",
-   "field": {
-    "id": "q22",
-    "label": "48/40 to the nearest thousandth",
-    "answer": {
-     "text": "1.2",
-     "also": [
-      "1.200"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "22",
-   "field": {
-    "id": "q22-2",
-    "label": "does 48/40 end or repeat",
-    "answer": {
-     "text": "ends"
-    }
-   }
   }
  ],
  "design": {
@@ -1222,7 +1170,8 @@
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply or divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write each fraction as a decimal, then tick whether it ends or repeats.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write as a decimal. Check whether it terminates or repeats.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Write as a decimal. Check whether it terminates or repeats.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

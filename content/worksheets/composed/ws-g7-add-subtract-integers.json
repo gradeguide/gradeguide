@@ -1,6 +1,6 @@
 {
  "worksheetId": "ws-g7-add-subtract-integers",
- "title": "Adding and subtracting positive and negative numbers",
+ "title": "Adding and subtracting rationals",
  "headerLabels": [
   "7.NS.A.1.a",
   "7.NS.A.1.b",
@@ -272,6 +272,11 @@
       "principles": [
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Grade 7 starts adding negative numbers on a number line, where adding a negative moves left. Each item names the start and the move in words, then asks for the sum, so the student sees that −6 + 7 is a move of 7 to the right from −6. Some moves cross zero, which is where students most often slip.",
+      "misconceptions": [
+       "Moving right for every addition, even when adding a negative.",
+       "Counting the starting tick as the first step of the move."
       ]
      },
      "estimatedHeight": 668
@@ -335,8 +340,10 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Subtracting a negative number is the hardest sign case, so the student rewrites each subtraction as adding the opposite before working it out. The first box asks only for the opposite, which makes the rewrite a step of its own. After this the student can add using the number line rules from the section before.",
       "misconceptions": [
-       "Thinking 3 − (−5) is −2."
+       "Thinking 3 − (−5) is −2.",
+       "Changing the sign of the first number as well as the second."
       ]
      },
      "estimatedHeight": 112
@@ -505,8 +512,10 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Subtracting a negative number is the hardest sign case, so the student rewrites each subtraction as adding the opposite before working it out. The first box asks only for the opposite, which makes the rewrite a step of its own. After this the student can add using the number line rules from the section before.",
       "misconceptions": [
-       "Thinking 3 − (−5) is −2."
+       "Thinking 3 − (−5) is −2.",
+       "Changing the sign of the first number as well as the second."
       ]
      },
      "continued": true,
@@ -635,6 +644,63 @@
         }
        ],
        "key": "0.8 + (−10.9) = −10.1"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−11.8 + (−7.5)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "−11.8 + (−7.5)",
+             "answer": {
+              "text": "−19.3",
+              "also": [
+               "-19.3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "−11.8 + (−7.5) = −19.3"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11.5 − (−0.9)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "11.5 − (−0.9)",
+             "answer": {
+              "text": "12.4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11.5 − (−0.9) = 12.4"
       }
      ],
      "columns": 2,
@@ -644,114 +710,19 @@
       "purpose": "Add and subtract positive and negative decimals.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The same rules now apply to decimals, such as −8.2 + (−6). Mixing addition and subtraction makes the student read each sign before working. The decimals have one place, so lining up the digits is easy and the signs are the focus.",
+      "misconceptions": [
+       "Subtracting the smaller from the larger and keeping the first number's sign.",
+       "Treating −1.8 + (−11.7) as a subtraction and getting −9.9."
       ]
      },
-     "estimatedHeight": 138
+     "estimatedHeight": 190
     },
     {
      "label": "D",
      "instruction": "Add or subtract. Write the answer in simplest form.",
      "items": [
-      {
-       "label": "13",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "text": "−"
-           },
-           {
-            "fraction": {
-             "num": 5,
-             "den": 8
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q13",
-             "label": "the answer",
-             "answer": {
-              "text": "−9/8",
-              "also": [
-               "-9/8",
-               "−1 1/8",
-               "-1 1/8",
-               "−11/8",
-               "-11/8"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "− 1/2 − 5/8 = −9/8"
-      },
-      {
-       "label": "14",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−"
-           },
-           {
-            "fraction": {
-             "num": 2,
-             "den": 3
-            }
-           },
-           {
-            "text": "−"
-           },
-           {
-            "text": "(−"
-           },
-           {
-            "fraction": {
-             "num": 1,
-             "den": 2
-            }
-           },
-           {
-            "text": ")"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q14",
-             "label": "the answer",
-             "answer": {
-              "text": "−1/6",
-              "also": [
-               "-1/6"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "− 2/3 − (− 1/2 ) = −1/6"
-      },
       {
        "label": "15",
        "nodes": [
@@ -763,8 +734,8 @@
            },
            {
             "fraction": {
-             "num": 2,
-             "den": 4
+             "num": 1,
+             "den": 2
             }
            },
            {
@@ -775,8 +746,8 @@
            },
            {
             "fraction": {
-             "num": 2,
-             "den": 2
+             "num": 7,
+             "den": 8
             }
            },
            {
@@ -790,7 +761,7 @@
              "id": "q15",
              "label": "the answer",
              "answer": {
-              "text": "1/2"
+              "text": "3/8"
              }
             }
            }
@@ -798,7 +769,7 @@
          }
         }
        ],
-       "key": "− 2/4 − (− 2/2 ) = 1/2"
+       "key": "− 1/2 − (− 7/8 ) = 3/8"
       },
       {
        "label": "16",
@@ -811,8 +782,53 @@
            },
            {
             "fraction": {
-             "num": 4,
-             "den": 8
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "the answer",
+             "answer": {
+              "text": "−3/4",
+              "also": [
+               "-3/4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "− 1/4 − 1/2 = −3/4"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
             }
            },
            {
@@ -829,7 +845,7 @@
            },
            {
             "blank": {
-             "id": "q16",
+             "id": "q17",
              "label": "the answer",
              "answer": {
               "text": "1/6"
@@ -840,7 +856,148 @@
          }
         }
        ],
-       "key": "− 4/8 + 2/3 = 1/6"
+       "key": "− 1/2 + 2/3 = 1/6"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "the answer",
+             "answer": {
+              "text": "−1/2",
+              "also": [
+               "-1/2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "− 1/3 + (− 1/6 ) = −1/2"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "the answer",
+             "answer": {
+              "text": "1/2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 − (− 1/3 ) = 1/2"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "(−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": ")"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q20",
+             "label": "the answer",
+             "answer": {
+              "text": "1/3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 + (− 1/6 ) = 1/3"
       }
      ],
      "columns": 2,
@@ -850,12 +1007,17 @@
       "purpose": "Add and subtract positive and negative fractions.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Signed fractions combine two hard skills: common denominators and sign rules. The fractions are proper and in lowest terms with denominators up to 8, so the common denominator is quick to find. The student writes the answer in simplest form.",
+      "misconceptions": [
+       "Adding numerators and denominators: −1/2 + 5/8 = 4/10.",
+       "Dropping the minus sign in front of a fraction."
       ]
      },
-     "estimatedHeight": 178
+     "estimatedHeight": 250
     }
    ],
-   "estimatedHeight": 518
+   "estimatedHeight": 642
   }
  ],
  "key": [
@@ -1049,15 +1211,11 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "the answer",
+    "label": "−11.8 + (−7.5)",
     "answer": {
-     "text": "−9/8",
+     "text": "−19.3",
      "also": [
-      "-9/8",
-      "−1 1/8",
-      "-1 1/8",
-      "−11/8",
-      "-11/8"
+      "-19.3"
      ]
     }
    }
@@ -1066,12 +1224,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "the answer",
+    "label": "11.5 − (−0.9)",
     "answer": {
-     "text": "−1/6",
-     "also": [
-      "-1/6"
-     ]
+     "text": "12.4"
     }
    }
   },
@@ -1081,7 +1236,7 @@
     "id": "q15",
     "label": "the answer",
     "answer": {
-     "text": "1/2"
+     "text": "3/8"
     }
    }
   },
@@ -1091,7 +1246,53 @@
     "id": "q16",
     "label": "the answer",
     "answer": {
+     "text": "−3/4",
+     "also": [
+      "-3/4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "the answer",
+    "answer": {
      "text": "1/6"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "the answer",
+    "answer": {
+     "text": "−1/2",
+     "also": [
+      "-1/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "the answer",
+    "answer": {
+     "text": "1/2"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "the answer",
+    "answer": {
+     "text": "1/3"
     }
    }
   }

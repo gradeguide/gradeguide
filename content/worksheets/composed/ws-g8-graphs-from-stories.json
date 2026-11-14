@@ -1,0 +1,726 @@
+{
+ "worksheetId": "ws-g8-graphs-from-stories",
+ "title": "Graphs that tell a story",
+ "headerLabels": [
+  "8.F.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Describe each piece of the graph. Check one.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "coordinatePlane": {
+             "xMax": 12,
+             "yMax": 8,
+             "xLabel": "Time",
+             "yLabel": "Oven temperature",
+             "segments": [
+              {
+               "y1": 1,
+               "x2": 3,
+               "y2": 7,
+               "label": "A",
+               "labelBefore": true
+              },
+              {
+               "x1": 3,
+               "y1": 7,
+               "x2": 6,
+               "y2": 7,
+               "label": "B"
+              },
+              {
+               "x1": 6,
+               "y1": 7,
+               "x2": 11,
+               "y2": 1,
+               "label": "C"
+              }
+             ],
+             "noNumbers": true,
+             "noGrid": true,
+             "cell": 16
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "A:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q1",
+                    "label": "piece A of Oven temperature",
+                    "answer": {
+                     "text": "Increasing"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "B:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q1-2",
+                    "label": "piece B of Oven temperature",
+                    "answer": {
+                     "text": "Constant"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "C:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q1-3",
+                    "label": "piece C of Oven temperature",
+                    "answer": {
+                     "text": "Decreasing"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "text": "Oven temperature changes fastest in piece:"
+              },
+              {
+               "choices": {
+                "options": [
+                 "A",
+                 "B",
+                 "C"
+                ],
+                "field": {
+                 "id": "q1-4",
+                 "label": "steepest piece of Oven temperature",
+                 "answer": {
+                  "text": "A"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Increasing, Constant, Decreasing, A"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "coordinatePlane": {
+             "xMax": 12,
+             "yMax": 8,
+             "xLabel": "Time",
+             "yLabel": "Gas in the tank",
+             "segments": [
+              {
+               "y1": 7,
+               "x2": 5,
+               "y2": 2,
+               "label": "A"
+              },
+              {
+               "x1": 5,
+               "y1": 2,
+               "x2": 6,
+               "y2": 7,
+               "label": "B",
+               "labelBefore": true
+              },
+              {
+               "x1": 6,
+               "y1": 7,
+               "x2": 11,
+               "y2": 3,
+               "label": "C"
+              }
+             ],
+             "noNumbers": true,
+             "noGrid": true,
+             "cell": 16
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "A:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q2",
+                    "label": "piece A of Gas in the tank",
+                    "answer": {
+                     "text": "Decreasing"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "B:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q2-2",
+                    "label": "piece B of Gas in the tank",
+                    "answer": {
+                     "text": "Increasing"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "row": {
+                "children": [
+                 {
+                  "math": {
+                   "atoms": [
+                    {
+                     "text": "C:"
+                    }
+                   ]
+                  }
+                 },
+                 {
+                  "choices": {
+                   "options": [
+                    "Increasing",
+                    "Decreasing",
+                    "Constant"
+                   ],
+                   "field": {
+                    "id": "q2-3",
+                    "label": "piece C of Gas in the tank",
+                    "answer": {
+                     "text": "Decreasing"
+                    }
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "text": "Gas in the tank changes fastest in piece:"
+              },
+              {
+               "choices": {
+                "options": [
+                 "A",
+                 "B",
+                 "C"
+                ],
+                "field": {
+                 "id": "q2-4",
+                 "label": "steepest piece of Gas in the tank",
+                 "answer": {
+                  "text": "B"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Decreasing, Increasing, Decreasing, B"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-describe-graph",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Describe where a graph is increasing, decreasing or constant, and where it changes fastest.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The graphs have no numbers, so students read the shape and not the values. Each piece is lettered so students describe one stretch at a time. Asking where the quantity changes fastest connects steepness with rate.",
+      "misconceptions": [
+       "Reading a graph of distance from home as a picture of the path walked.",
+       "Calling a level piece decreasing because it is lower than the piece before it."
+      ]
+     },
+     "estimatedHeight": 434
+    },
+    {
+     "label": "B",
+     "instruction": "Sketch a graph of the story.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A phone is fully charged in the morning. The battery runs down slowly all day. In the evening the phone charges quickly until it is full. Then it stays full."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 12,
+          "yMax": 8,
+          "xLabel": "Time",
+          "yLabel": "Battery charge",
+          "plotField": {
+           "id": "q3",
+           "label": "sketch of Battery charge",
+           "answer": {
+            "text": "decreasing, increasing, constant"
+           }
+          },
+          "answerSegments": [
+           {
+            "y1": 7,
+            "x2": 6,
+            "y2": 2
+           },
+           {
+            "x1": 6,
+            "y1": 2,
+            "x2": 8,
+            "y2": 7
+           },
+           {
+            "x1": 8,
+            "y1": 7,
+            "x2": 11,
+            "y2": 7
+           }
+          ],
+          "noNumbers": true,
+          "noGrid": true,
+          "cell": 16
+         }
+        }
+       ],
+       "key": "decreasing, increasing, constant"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A tub fills with water. The tap is turned off while Kai takes a bath. Then the plug is pulled and the tub drains slowly."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 12,
+          "yMax": 8,
+          "xLabel": "Time",
+          "yLabel": "Water in the tub",
+          "plotField": {
+           "id": "q4",
+           "label": "sketch of Water in the tub",
+           "answer": {
+            "text": "increasing, constant, decreasing"
+           }
+          },
+          "answerSegments": [
+           {
+            "x2": 3,
+            "y2": 6
+           },
+           {
+            "x1": 3,
+            "y1": 6,
+            "x2": 6,
+            "y2": 6
+           },
+           {
+            "x1": 6,
+            "y1": 6,
+            "x2": 11
+           }
+          ],
+          "noNumbers": true,
+          "noGrid": true,
+          "cell": 16
+         }
+        }
+       ],
+       "key": "increasing, constant, decreasing"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-sketch-graph",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Sketch a graph that shows the qualities of a function described in words.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each story has three or four parts: rising, falling or staying the same, at different speeds. Students choose the direction and steepness of each piece. The axes have no scale, so the sketch shows how the quantity changes and not exact values. The answer key shows one correct sketch.",
+      "misconceptions": [
+       "Drawing a level piece as a gap or a point instead of a flat segment.",
+       "Drawing a faster change with a longer piece instead of a steeper one.",
+       "Letting the graph go back in time, to the left."
+      ]
+     },
+     "estimatedHeight": 332
+    }
+   ],
+   "estimatedHeight": 774
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Sketch a graph of the story.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "An elevator rises from the ground floor. It stops to let people out. It rises again, faster. Then it goes all the way back down."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 12,
+          "yMax": 8,
+          "xLabel": "Time",
+          "yLabel": "Height above the ground",
+          "plotField": {
+           "id": "q5",
+           "label": "sketch of Height above the ground",
+           "answer": {
+            "text": "increasing, constant, increasing, decreasing"
+           }
+          },
+          "answerSegments": [
+           {
+            "x2": 3,
+            "y2": 3
+           },
+           {
+            "x1": 3,
+            "y1": 3,
+            "x2": 5,
+            "y2": 3
+           },
+           {
+            "x1": 5,
+            "y1": 3,
+            "x2": 7,
+            "y2": 7
+           },
+           {
+            "x1": 7,
+            "y1": 7,
+            "x2": 11
+           }
+          ],
+          "noNumbers": true,
+          "noGrid": true,
+          "cell": 16
+         }
+        }
+       ],
+       "key": "increasing, constant, increasing, decreasing"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Ana walks from home to the park at a steady pace. She plays at the park. Then she runs home."
+        },
+        {
+         "coordinatePlane": {
+          "xMax": 12,
+          "yMax": 8,
+          "xLabel": "Time",
+          "yLabel": "Distance from home",
+          "plotField": {
+           "id": "q6",
+           "label": "sketch of Distance from home",
+           "answer": {
+            "text": "increasing, constant, decreasing"
+           }
+          },
+          "answerSegments": [
+           {
+            "x2": 4,
+            "y2": 6
+           },
+           {
+            "x1": 4,
+            "y1": 6,
+            "x2": 8,
+            "y2": 6
+           },
+           {
+            "x1": 8,
+            "y1": 6,
+            "x2": 10
+           }
+          ],
+          "noNumbers": true,
+          "noGrid": true,
+          "cell": 16
+         }
+        }
+       ],
+       "key": "increasing, constant, decreasing"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-sketch-graph",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Sketch a graph that shows the qualities of a function described in words.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each story has three or four parts: rising, falling or staying the same, at different speeds. Students choose the direction and steepness of each piece. The axes have no scale, so the sketch shows how the quantity changes and not exact values. The answer key shows one correct sketch.",
+      "misconceptions": [
+       "Drawing a level piece as a gap or a point instead of a flat segment.",
+       "Drawing a faster change with a longer piece instead of a steeper one.",
+       "Letting the graph go back in time, to the left."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 312
+    }
+   ],
+   "estimatedHeight": 316
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "piece A of Oven temperature",
+    "answer": {
+     "text": "Increasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "piece B of Oven temperature",
+    "answer": {
+     "text": "Constant"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "piece C of Oven temperature",
+    "answer": {
+     "text": "Decreasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "steepest piece of Oven temperature",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "piece A of Gas in the tank",
+    "answer": {
+     "text": "Decreasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "piece B of Gas in the tank",
+    "answer": {
+     "text": "Increasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "piece C of Gas in the tank",
+    "answer": {
+     "text": "Decreasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "steepest piece of Gas in the tank",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "sketch of Battery charge",
+    "answer": {
+     "text": "decreasing, increasing, constant"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "sketch of Water in the tub",
+    "answer": {
+     "text": "increasing, constant, decreasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "sketch of Height above the ground",
+    "answer": {
+     "text": "increasing, constant, increasing, decreasing"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "sketch of Distance from home",
+    "answer": {
+     "text": "increasing, constant, decreasing"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe a graph in words and sketch a graph from words.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the graph.",
+     "instruction": "Use the graph to answer the questions.",
      "explainer": "A proportional graph is a straight line through (0, 0). The point where x is 1 shows the unit rate.",
      "items": [
       {
@@ -77,11 +77,7 @@
              "id": "q1-2",
              "label": "the unit rate",
              "answer": {
-              "text": "10",
-              "also": [
-               "10 pages",
-               "10pages"
-              ]
+              "text": "10"
              }
             }
            },
@@ -132,21 +128,407 @@
         }
        ],
        "key": "Point A is (1,  10 ); Pages per minute: 10 pages; Point B is (2,  20 ); Equation: y = 10x"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 6,
+          "yMax": 10,
+          "yScale": 5,
+          "labelEvery": 1,
+          "xLabel": "Hours",
+          "yLabel": "Miles",
+          "points": [
+           {
+            "x": 1,
+            "y": 1,
+            "label": "A"
+           },
+           {
+            "x": 2,
+            "y": 2,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x2": 1,
+            "y2": 1,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point A is (1, "
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "y at x = 1",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Miles per hour:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "the unit rate",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point B is (2, "
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "y at x = 2",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q2-4",
+             "label": "the equation",
+             "answer": {
+              "text": "5x"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Point A is (1,  5 ); Miles per hour: 5 miles; Point B is (2,  10 ); Equation: y = 5x"
       }
      ],
-     "columns": 1,
+     "columns": 2,
      "fragmentId": "frag-g7-proportional-graph",
      "stage": "STAGE_GUIDED",
      "design": {
       "purpose": "Read the unit rate and other points from the graph of a proportional relationship.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The graph is the third view of a proportional relationship after the table and the equation. The student reads the point where x is 1, which is the unit rate, then another point, then writes the equation. Each graph has a story on its axes, such as pages and minutes, so the unit rate has a meaning.",
+      "misconceptions": [
+       "Reading the unit rate from the point where y is 1 instead of where x is 1.",
+       "Thinking any straight line shows a proportional relationship, even one that does not pass through (0, 0)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 512
     }
    ],
    "estimatedHeight": 516
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the graph to answer the questions.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 6,
+          "yMax": 10,
+          "yScale": 5,
+          "labelEvery": 1,
+          "xLabel": "Minutes",
+          "yLabel": "Pages",
+          "points": [
+           {
+            "x": 1,
+            "y": 1,
+            "label": "A"
+           },
+           {
+            "x": 3,
+            "y": 3,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x2": 1,
+            "y2": 1,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point A is (1, "
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "y at x = 1",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pages per minute:"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "the unit rate",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point B is (3, "
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "y at x = 3",
+             "answer": {
+              "text": "15"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q3-4",
+             "label": "the equation",
+             "answer": {
+              "text": "5x"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Point A is (1,  5 ); Pages per minute: 5 pages; Point B is (3,  15 ); Equation: y = 5x"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMax": 6,
+          "yMax": 10,
+          "yScale": 5,
+          "labelEvery": 1,
+          "xLabel": "Minutes",
+          "yLabel": "Pages",
+          "points": [
+           {
+            "x": 1,
+            "y": 2,
+            "label": "A"
+           },
+           {
+            "x": 3,
+            "y": 6,
+            "label": "B"
+           }
+          ],
+          "segments": [
+           {
+            "x2": 1,
+            "y2": 2,
+            "extend": true
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point A is (1, "
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "y at x = 1",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pages per minute:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "the unit rate",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Point B is (3, "
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "y at x = 3",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q4-4",
+             "label": "the equation",
+             "answer": {
+              "text": "10x"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Point A is (1,  10 ); Pages per minute: 10 pages; Point B is (3,  30 ); Equation: y = 10x"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-proportional-graph",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Read the unit rate and other points from the graph of a proportional relationship.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The graph is the third view of a proportional relationship after the table and the equation. The student reads the point where x is 1, which is the unit rate, then another point, then writes the equation. Each graph has a story on its axes, such as pages and minutes, so the unit rate has a meaning.",
+      "misconceptions": [
+       "Reading the unit rate from the point where y is 1 instead of where x is 1.",
+       "Thinking any straight line shows a proportional relationship, even one that does not pass through (0, 0)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 466
+    }
+   ],
+   "estimatedHeight": 470
   }
  ],
  "key": [
@@ -166,11 +548,7 @@
     "id": "q1-2",
     "label": "the unit rate",
     "answer": {
-     "text": "10",
-     "also": [
-      "10 pages",
-      "10pages"
-     ]
+     "text": "10"
     }
    }
   },
@@ -193,6 +571,126 @@
      "text": "10x"
     }
    }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "y at x = 1",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the unit rate",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "y at x = 2",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "the equation",
+    "answer": {
+     "text": "5x"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "y at x = 1",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "the unit rate",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "y at x = 3",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "the equation",
+    "answer": {
+     "text": "5x"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "y at x = 1",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "the unit rate",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "y at x = 3",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-4",
+    "label": "the equation",
+    "answer": {
+     "text": "10x"
+    }
+   }
   }
  ],
  "design": {
@@ -202,8 +700,7 @@
   ]
  },
  "advice": [
-  "\"Use the graph.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Use the graph.\" was cut from 2 to 1 items to fit."
+  "\"Use the graph to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

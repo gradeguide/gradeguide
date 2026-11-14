@@ -12,7 +12,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Where do the lines cross? That point solves both equations.",
+     "instruction": "Write the point where the lines intersect.",
+     "explainer": "The point of intersection is the solution of the system.",
      "items": [
       {
        "label": "1",
@@ -47,7 +48,7 @@
          "math": {
           "atoms": [
            {
-            "text": "They cross at ("
+            "text": "The lines intersect at ("
            },
            {
             "blank": {
@@ -80,7 +81,7 @@
          }
         }
        ],
-       "key": "They cross at ( −4 , 2 )"
+       "key": "The lines intersect at ( −4 , 2 )"
       },
       {
        "label": "2",
@@ -113,7 +114,7 @@
          "math": {
           "atoms": [
            {
-            "text": "They cross at ("
+            "text": "The lines intersect at ("
            },
            {
             "blank": {
@@ -146,24 +147,37 @@
          }
         }
        ],
-       "key": "They cross at ( 0 , −2 )"
+       "key": "The lines intersect at ( 0 , −2 )"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g8-systems-graph",
      "stage": "STAGE_INTRODUCE",
      "design": {
       "purpose": "Solve a system of two linear equations by reading where their graphs cross.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Reading where two lines cross shows what the solution of a system means before any algebra. The crossing points are whole numbers inside the grid, so the reading is exact. Each line is also given as an equation, so the student can check the point in both.",
+      "misconceptions": [
+       "Reading where a line crosses an axis instead of where the lines cross.",
+       "Writing the coordinates in the wrong order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
-     "estimatedHeight": 352
-    },
+     "estimatedHeight": 696
+    }
+   ],
+   "estimatedHeight": 700
+  },
+  {
+   "sections": [
     {
      "label": "B",
      "instruction": "Solve the system.",
-     "explainer": "If both equations say y = …, set them equal. If one adds x and y and the other subtracts, add the equations.",
+     "explainer": "If both equations are solved for y, set the expressions equal. If the y-terms are opposites, add the equations.",
      "items": [
       {
        "label": "3",
@@ -288,6 +302,124 @@
         }
        ],
        "key": "x = 0  y = 7"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + y = 11"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x − y = −5"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "x for x + y = 11, x − y = −5",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": " y ="
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "y for x + y = 11, x − y = −5",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 3  y = 8"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x + y = 7"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x − y = −1"
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "x ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "x for x + y = 7, x − y = −1",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": " y ="
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "y for x + y = 7, x − y = −1",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x = 3  y = 4"
       }
      ],
      "columns": 2,
@@ -297,21 +429,26 @@
       "purpose": "Solve systems of two linear equations by substitution or elimination.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Two forms come up: both equations as y = …, solved by setting them equal, and x + y with x − y, solved by adding. These are the simple cases 8.EE.C.8.b expects by inspection or a few steps. The room between the equations and the answers is for those steps.",
+      "misconceptions": [
+       "Finding x and stopping without finding y.",
+       "Adding the equations without lining up like terms."
       ]
      },
-     "estimatedHeight": 290
+     "estimatedHeight": 500
     }
    ],
-   "estimatedHeight": 650
+   "estimatedHeight": 504
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Write two equations and solve. Show your work.",
+     "instruction": "Write a system of equations. Solve it. Show your work.",
      "items": [
       {
-       "label": "5",
+       "label": "7",
        "nodes": [
         {
          "multiPartQuestion": {
@@ -322,7 +459,7 @@
           ],
           "parts": [
            {
-            "label": "5a",
+            "label": "7a",
             "prompt": [
              {
               "text": "How many adult tickets did they buy?"
@@ -331,9 +468,9 @@
             "response": [
              {
               "workSpace": {
-               "rows": 6,
+               "rows": 4,
                "field": {
-                "id": "q5a",
+                "id": "q7a",
                 "label": "adult tickets",
                 "answer": {
                  "text": "5",
@@ -348,7 +485,7 @@
             ]
            },
            {
-            "label": "5b",
+            "label": "7b",
             "prompt": [
              {
               "text": "How many child tickets?"
@@ -357,9 +494,9 @@
             "response": [
              {
               "workSpace": {
-               "rows": 3,
+               "rows": 2,
                "field": {
-                "id": "q5b",
+                "id": "q7b",
                 "label": "child tickets",
                 "answer": {
                  "text": "5",
@@ -377,10 +514,10 @@
          }
         }
        ],
-       "key": "5a: (65 − 5 × 10) ÷ (8 − 5) = 5; 5b: 10 − 5 = 5"
+       "key": "7a: (65 − 5 × 10) ÷ (8 − 5) = 5; 7b: 10 − 5 = 5"
       },
       {
-       "label": "6",
+       "label": "8",
        "nodes": [
         {
          "multiPartQuestion": {
@@ -391,7 +528,7 @@
           ],
           "parts": [
            {
-            "label": "6a",
+            "label": "8a",
             "prompt": [
              {
               "text": "How many stickers does Leo get?"
@@ -402,7 +539,7 @@
               "workSpace": {
                "rows": 4,
                "field": {
-                "id": "q6a",
+                "id": "q8a",
                 "label": "Leo's stickers",
                 "answer": {
                  "text": "19",
@@ -414,7 +551,7 @@
             ]
            },
            {
-            "label": "6b",
+            "label": "8b",
             "prompt": [
              {
               "text": "How many does Mia get?"
@@ -423,9 +560,9 @@
             "response": [
              {
               "workSpace": {
-               "rows": 3,
+               "rows": 2,
                "field": {
-                "id": "q6b",
+                "id": "q8b",
                 "label": "Mia's stickers",
                 "answer": {
                  "text": "28",
@@ -440,7 +577,7 @@
          }
         }
        ],
-       "key": "6a: (47 − 9) ÷ 2 = 19; 6b: 19 + 9 = 28"
+       "key": "8a: (47 − 9) ÷ 2 = 19; 8b: 19 + 9 = 28"
       }
      ],
      "columns": 1,
@@ -450,12 +587,17 @@
       "purpose": "Write and solve a system of equations for a story.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Tickets and sharing stickers are stories a grade 8 student knows. Each has two unknowns and two facts, so two equations are the natural model. The parts ask for one unknown at a time, so the student can use the first answer to find the second.",
+      "misconceptions": [
+       "Writing one equation with two unknowns and guessing.",
+       "Using one ticket price for every ticket."
       ]
      },
-     "estimatedHeight": 766
+     "estimatedHeight": 638
     }
    ],
-   "estimatedHeight": 770
+   "estimatedHeight": 642
   }
  ],
  "key": [
@@ -552,9 +694,49 @@
    }
   },
   {
-   "itemLabel": "5a",
+   "itemLabel": "5",
    "field": {
-    "id": "q5a",
+    "id": "q5",
+    "label": "x for x + y = 11, x − y = −5",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "y for x + y = 11, x − y = −5",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "x for x + y = 7, x − y = −1",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "y for x + y = 7, x − y = −1",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "7a",
+   "field": {
+    "id": "q7a",
     "label": "adult tickets",
     "answer": {
      "text": "5",
@@ -566,9 +748,9 @@
    }
   },
   {
-   "itemLabel": "5b",
+   "itemLabel": "7b",
    "field": {
-    "id": "q5b",
+    "id": "q7b",
     "label": "child tickets",
     "answer": {
      "text": "5",
@@ -580,9 +762,9 @@
    }
   },
   {
-   "itemLabel": "6a",
+   "itemLabel": "8a",
    "field": {
-    "id": "q6a",
+    "id": "q8a",
     "label": "Leo's stickers",
     "answer": {
      "text": "19",
@@ -591,9 +773,9 @@
    }
   },
   {
-   "itemLabel": "6b",
+   "itemLabel": "8b",
    "field": {
-    "id": "q6b",
+    "id": "q8b",
     "label": "Mia's stickers",
     "answer": {
      "text": "28",
@@ -608,8 +790,5 @@
    "PRINCIPLE_CONCRETENESS_FADING"
   ]
  },
- "advice": [
-  "Section \"Solve the system.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

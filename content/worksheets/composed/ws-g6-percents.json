@@ -9,8 +9,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "The whole is 100%. Find the amount at the box.",
-     "explainer": "Split the whole into equal steps. Each step on the top line matches a step of percent below.",
+     "instruction": "Write the missing amount. The whole is 100%.",
+     "explainer": "Each equal step on the amount line matches an equal step on the percent line.",
      "items": [
       {
        "label": "1",
@@ -133,6 +133,13 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "A percent is a rate per 100, and the double number line shows the whole as 100% with equal steps below it. The student fills one box by counting equal steps, such as tenths or quarters of the whole. This builds the meaning of percent before the shortcut of multiplying by a fraction.",
+      "misconceptions": [
+       "Putting 100% at the part instead of at the whole."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 472
@@ -140,7 +147,7 @@
     {
      "label": "B",
      "instruction": "Find the percent of the number.",
-     "explainer": "A percent is a rate per 100. 30% of 60 is 30 for every 100, so 30/100 × 60.",
+     "explainer": "A percent is a rate per 100. 30% of 60 = 30/100 × 60 = 18.",
      "items": [
       {
        "label": "3",
@@ -294,6 +301,13 @@
       "purpose": "Find a percent of a quantity as a rate per 100.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "These items practise finding a percent of a number once the meaning is clear. The percents are friendly ones, such as 10%, 25% and 50%, and the wholes make whole-number answers, so the student can reason as well as calculate.",
+      "misconceptions": [
+       "Dividing by the percent: 20% of 80 written as 80 ÷ 20."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 216
@@ -365,8 +379,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Here the unknown moves: sometimes the whole, sometimes the percent. Mixing the three forms makes the student read which number is missing instead of applying one rule. It is a stretch section after the student can find a part.",
       "misconceptions": [
-       "Always multiplying, even when the part is given and the whole is asked for."
+       "Always multiplying, even when the part is given and the whole is asked for.",
+       "Writing the part as the percent, such as 15 is 15% of 60."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 86
@@ -449,8 +468,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Here the unknown moves: sometimes the whole, sometimes the percent. Mixing the three forms makes the student read which number is missing instead of applying one rule. It is a stretch section after the student can find a part.",
       "misconceptions": [
-       "Always multiplying, even when the part is given and the whole is asked for."
+       "Always multiplying, even when the part is given and the whole is asked for.",
+       "Writing the part as the percent, such as 15 is 15% of 60."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "continued": true,
@@ -464,7 +488,7 @@
        "label": "13",
        "nodes": [
         {
-         "text": "In a town of 2,400 people, 60% own a bike. (60% means 60 out of every 100.) How many people own a bike?"
+         "text": "In a town of 2,400 people, 60% own a bike, which is 60 per 100. How many people own a bike?"
         },
         {
          "workSpace": {
@@ -489,7 +513,7 @@
        "label": "14",
        "nodes": [
         {
-         "text": "Ben has answered 18 questions. That is 30% of the test. (30% means 30 out of every 100.) How many questions are on the test?"
+         "text": "Ben has answered 18 questions. That is 30% of the test, or 30 per 100. How many questions are on the test?"
         },
         {
          "workSpace": {
@@ -509,28 +533,7 @@
         }
        ],
        "key": "60"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g6-percent-word-problems",
-     "stage": "STAGE_APPLY",
-     "design": {
-      "purpose": "Solve percent problems from stories, including finding the whole.",
-      "principles": [
-       "PRINCIPLE_INTERLEAVING"
-      ]
-     },
-     "estimatedHeight": 410
-    }
-   ],
-   "estimatedHeight": 504
-  },
-  {
-   "sections": [
-    {
-     "label": "D",
-     "instruction": "Solve. Show your work.",
-     "items": [
+      },
       {
        "label": "15",
        "nodes": [
@@ -538,7 +541,7 @@
          "multiPartQuestion": {
           "stem": [
            {
-            "text": "A shirt costs $40. It is 25% off. (25% means 25 out of every 100.)"
+            "text": "A shirt costs $40. It is 25% off, which is $25 off every $100."
            }
           ],
           "parts": [
@@ -608,13 +611,19 @@
       "purpose": "Solve percent problems from stories, including finding the whole.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories cover a part of a total, a whole from a part, and a discount, the three uses of percent a sixth grader meets most. The discount has two parts so the student sees that the sale price is what is left after the percent is taken off.",
+      "misconceptions": [
+       "Taking the discount as the sale price."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
-     "continued": true,
-     "estimatedHeight": 368
+     "estimatedHeight": 724
     }
    ],
-   "estimatedHeight": 372
+   "estimatedHeight": 818
   }
  ],
  "key": [
@@ -811,7 +820,7 @@
   ]
  },
  "advice": [
-  "\"The whole is 100%. Find the amount at the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing amount. The whole is 100%.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Find the percent of the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "Section \"Find the missing number.\" was cut from 6 to 4 items to fit."
  ],

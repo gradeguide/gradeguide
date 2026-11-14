@@ -113,11 +113,171 @@
        "label": "3",
        "nodes": [
         {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 11,
+            "y": 8
+           },
+           {
+            "x": 1,
+            "y": 8
+           }
+          ],
+          "apex": {
+           "x": 1,
+           "y": 8
+          },
+          "baseLabel": "12 cm",
+          "heightLabel": "8 cm",
+          "topLabel": "10 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square cm",
+             "answer": {
+              "text": "88"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 88 sq cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 17,
+            "y": 6
+           },
+           {
+            "x": 8,
+            "y": 6
+           }
+          ],
+          "apex": {
+           "x": 8,
+           "y": 6
+          },
+          "baseLabel": "9 cm",
+          "heightLabel": "6 cm",
+          "sideLabels": [
+           "10 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square cm",
+             "answer": {
+              "text": "54"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 54 sq cm"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 16,
+            "y": 3
+           },
+           {
+            "x": 4,
+            "y": 3
+           }
+          ],
+          "apex": {
+           "x": 4,
+           "y": 3
+          },
+          "baseLabel": "12 cm",
+          "heightLabel": "3 cm",
+          "sideLabels": [
+           "5 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "area in square cm",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 36 sq cm"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
          "polygon": {
           "points": [
            {},
            {
-            "x": 13
+            "x": 5
            },
            {
             "y": 4
@@ -125,7 +285,7 @@
           ],
           "sides": [
            {
-            "text": "13 cm"
+            "text": "5 cm"
            },
            {},
            {
@@ -143,165 +303,10 @@
            },
            {
             "blank": {
-             "id": "q3",
-             "label": "area in square cm",
-             "answer": {
-              "text": "26"
-             }
-            }
-           },
-           {
-            "text": "sq cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Area = 26 sq cm"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "heightShape": {
-          "points": [
-           {},
-           {
-            "x": 10
-           },
-           {
-            "x": 11,
-            "y": 10
-           }
-          ],
-          "apex": {
-           "x": 11,
-           "y": 10
-          },
-          "baseLabel": "10 cm",
-          "heightLabel": "10 cm"
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Area ="
-           },
-           {
-            "blank": {
-             "id": "q4",
-             "label": "area in square cm",
-             "answer": {
-              "text": "50"
-             }
-            }
-           },
-           {
-            "text": "sq cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Area = 50 sq cm"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "heightShape": {
-          "points": [
-           {},
-           {
-            "x": 8
-           },
-           {
-            "x": 14,
-            "y": 8
-           },
-           {
-            "x": 6,
-            "y": 8
-           }
-          ],
-          "apex": {
-           "x": 6,
-           "y": 8
-          },
-          "baseLabel": "8 cm",
-          "heightLabel": "8 cm",
-          "sideLabels": [
-           "10 cm"
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Area ="
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "area in square cm",
-             "answer": {
-              "text": "64"
-             }
-            }
-           },
-           {
-            "text": "sq cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Area = 64 sq cm"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "heightShape": {
-          "points": [
-           {},
-           {
-            "x": 5
-           },
-           {
-            "x": 11,
-            "y": 8
-           },
-           {
-            "x": 6,
-            "y": 8
-           }
-          ],
-          "apex": {
-           "x": 6,
-           "y": 8
-          },
-          "baseLabel": "5 cm",
-          "heightLabel": "8 cm",
-          "sideLabels": [
-           "10 cm"
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Area ="
-           },
-           {
-            "blank": {
              "id": "q6",
              "label": "area in square cm",
              "answer": {
-              "text": "40"
+              "text": "10"
              }
             }
            },
@@ -312,7 +317,7 @@
          }
         }
        ],
-       "key": "Area = 40 sq cm"
+       "key": "Area = 10 sq cm"
       }
      ],
      "columns": 2,
@@ -323,15 +328,19 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "The items rotate through right triangles, other triangles, parallelograms and trapezoids. Each figure shows the height as a dashed line. A parallelogram's slanted side is labeled too, so the student has to choose the height, not just any side.",
       "misconceptions": [
        "Using a slanted side as the height.",
        "Forgetting to halve for a triangle."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 734
+     "estimatedHeight": 702
     }
    ],
-   "estimatedHeight": 738
+   "estimatedHeight": 706
   }
  ],
  "key": [
@@ -361,7 +370,7 @@
     "id": "q3",
     "label": "area in square cm",
     "answer": {
-     "text": "26"
+     "text": "88"
     }
    }
   },
@@ -371,7 +380,7 @@
     "id": "q4",
     "label": "area in square cm",
     "answer": {
-     "text": "50"
+     "text": "54"
     }
    }
   },
@@ -381,7 +390,7 @@
     "id": "q5",
     "label": "area in square cm",
     "answer": {
-     "text": "64"
+     "text": "36"
     }
    }
   },
@@ -391,7 +400,7 @@
     "id": "q6",
     "label": "area in square cm",
     "answer": {
-     "text": "40"
+     "text": "10"
     }
    }
   }

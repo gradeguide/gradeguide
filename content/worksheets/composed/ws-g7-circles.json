@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use 3.14 for π.",
+     "instruction": "Find the circumference or area. Use 3.14 for π.",
      "explainer": "Circumference = π × diameter. Area = π × radius × radius. The diameter is twice the radius.",
      "items": [
       {
@@ -22,6 +22,11 @@
          "roundSolid": {
           "kind": "KIND_CIRCLE",
           "radiusLabel": "4 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         },
         {
@@ -56,13 +61,17 @@
        "label": "2",
        "nodes": [
         {
-         "text": "A circle has a diameter of 12 cm."
+         "text": "A circle has a radius of 6 cm."
         },
         {
          "roundSolid": {
           "kind": "KIND_CIRCLE",
-          "radiusLabel": "12 cm",
-          "diameter": true
+          "radiusLabel": "6 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         },
         {
@@ -74,7 +83,7 @@
            {
             "blank": {
              "id": "q2",
-             "label": "circumference: A circle has a diameter of 12 cm.",
+             "label": "circumference: A circle has a radius of 6 cm.",
              "answer": {
               "text": "37.68",
               "also": [
@@ -97,12 +106,17 @@
        "label": "3",
        "nodes": [
         {
-         "text": "A circle has a radius of 3 cm."
+         "text": "A circle has a radius of 9 cm."
         },
         {
          "roundSolid": {
           "kind": "KIND_CIRCLE",
-          "radiusLabel": "3 cm"
+          "radiusLabel": "9 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         },
         {
@@ -114,12 +128,12 @@
            {
             "blank": {
              "id": "q3",
-             "label": "area: A circle has a radius of 3 cm.",
+             "label": "area: A circle has a radius of 9 cm.",
              "answer": {
-              "text": "28.26",
+              "text": "254.34",
               "also": [
-               "28.3",
-               "28"
+               "254.3",
+               "254"
               ]
              }
             }
@@ -131,18 +145,23 @@
          }
         }
        ],
-       "key": "Area ≈ 28.26 sq cm"
+       "key": "Area ≈ 254.34 sq cm"
       },
       {
        "label": "4",
        "nodes": [
         {
-         "text": "A circle has a radius of 13 cm."
+         "text": "A circle has a radius of 7 cm."
         },
         {
          "roundSolid": {
           "kind": "KIND_CIRCLE",
-          "radiusLabel": "13 cm"
+          "radiusLabel": "7 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
          }
         },
         {
@@ -154,12 +173,12 @@
            {
             "blank": {
              "id": "q4",
-             "label": "area: A circle has a radius of 13 cm.",
+             "label": "area: A circle has a radius of 7 cm.",
              "answer": {
-              "text": "530.66",
+              "text": "153.86",
               "also": [
-               "530.7",
-               "531"
+               "153.9",
+               "154"
               ]
              }
             }
@@ -171,88 +190,7 @@
          }
         }
        ],
-       "key": "Area ≈ 530.66 sq cm"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "text": "A circle has a diameter of 20 cm."
-        },
-        {
-         "roundSolid": {
-          "kind": "KIND_CIRCLE",
-          "radiusLabel": "20 cm",
-          "diameter": true
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Circumference ≈"
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "circumference: A circle has a diameter of 20 cm.",
-             "answer": {
-              "text": "62.8",
-              "also": [
-               "63"
-              ]
-             }
-            }
-           },
-           {
-            "text": "cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Circumference ≈ 62.8 cm"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "text": "A circle has a diameter of 26 cm."
-        },
-        {
-         "roundSolid": {
-          "kind": "KIND_CIRCLE",
-          "radiusLabel": "26 cm",
-          "diameter": true
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Area ≈"
-           },
-           {
-            "blank": {
-             "id": "q6",
-             "label": "area: A circle has a diameter of 26 cm.",
-             "answer": {
-              "text": "530.66",
-              "also": [
-               "530.7",
-               "531"
-              ]
-             }
-            }
-           },
-           {
-            "text": "sq cm"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Area ≈ 530.66 sq cm"
+       "key": "Area ≈ 153.86 sq cm"
       }
      ],
      "columns": 2,
@@ -263,14 +201,17 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Circumference and area are mixed, and some circles give the radius while others give the diameter, so the student must choose the right formula and the right length. The explainer gives both formulas. Each item has room to multiply by 3.14.",
       "misconceptions": [
-       "Using the diameter in place of the radius in the area formula."
+       "Using the diameter in place of the radius in the area formula.",
+       "Using the area formula when the circumference is asked for.",
+       "Squaring π instead of the radius."
       ]
      },
-     "estimatedHeight": 636
+     "estimatedHeight": 584
     }
    ],
-   "estimatedHeight": 640
+   "estimatedHeight": 588
   }
  ],
  "key": [
@@ -292,7 +233,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "circumference: A circle has a diameter of 12 cm.",
+    "label": "circumference: A circle has a radius of 6 cm.",
     "answer": {
      "text": "37.68",
      "also": [
@@ -306,12 +247,12 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "area: A circle has a radius of 3 cm.",
+    "label": "area: A circle has a radius of 9 cm.",
     "answer": {
-     "text": "28.26",
+     "text": "254.34",
      "also": [
-      "28.3",
-      "28"
+      "254.3",
+      "254"
      ]
     }
    }
@@ -320,39 +261,12 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "area: A circle has a radius of 13 cm.",
+    "label": "area: A circle has a radius of 7 cm.",
     "answer": {
-     "text": "530.66",
+     "text": "153.86",
      "also": [
-      "530.7",
-      "531"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "5",
-   "field": {
-    "id": "q5",
-    "label": "circumference: A circle has a diameter of 20 cm.",
-    "answer": {
-     "text": "62.8",
-     "also": [
-      "63"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
-    "label": "area: A circle has a diameter of 26 cm.",
-    "answer": {
-     "text": "530.66",
-     "also": [
-      "530.7",
-      "531"
+      "153.9",
+      "154"
      ]
     }
    }
@@ -365,7 +279,8 @@
   ]
  },
  "advice": [
-  "\"Use 3.14 for π.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Find the circumference or area. Use 3.14 for π.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the circumference or area. Use 3.14 for π.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -12,7 +12,7 @@
     {
      "label": "A",
      "instruction": "Solve.",
-     "explainer": "Undo the adding or subtracting first, then the multiplying or dividing.",
+     "explainer": "Undo addition or subtraction first. Then undo multiplication or division.",
      "items": [
       {
        "label": "1",
@@ -368,8 +368,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "The equations come in the forms the standard names: px + q = r and p(x + q) = r, plus x divided by a number. Some coefficients and solutions are negative, so the student must use the sign rules while solving. There is room to write each step.",
       "misconceptions": [
-       "Dividing before subtracting, so only part of the equation is divided."
+       "Dividing before subtracting, so only part of the equation is divided.",
+       "Distributing p(x + q) to px + q."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 724
@@ -382,7 +387,7 @@
     {
      "label": "B",
      "instruction": "Solve the inequality.",
-     "explainer": "Solve as an equation, but flip the sign when you multiply or divide by a negative number.",
+     "explainer": "Solve as an equation. Reverse the inequality sign when multiplying or dividing both sides by a negative number.",
      "items": [
       {
        "label": "9",
@@ -423,6 +428,47 @@
            }
           ]
          }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Graph the solution:"
+           }
+          ]
+         }
+        },
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−14"
+           },
+           {
+            "tick": 2,
+            "text": "−12"
+           },
+           {
+            "tick": 4,
+            "text": "−10"
+           },
+           {
+            "tick": 6,
+            "text": "−8"
+           },
+           {
+            "tick": 8,
+            "text": "−6"
+           },
+           {
+            "tick": 10,
+            "text": "−4"
+           }
+          ],
+          "hideWholeLabels": true
+         }
         }
        ],
        "key": "Solution: n > −6"
@@ -434,7 +480,7 @@
          "math": {
           "atoms": [
            {
-            "text": "3(y + 6) > −3"
+            "text": "−8n − 3 < −43"
            }
           ]
          }
@@ -453,22 +499,61 @@
            {
             "blank": {
              "id": "q10",
-             "label": "solution of 3(y + 6) > −3",
+             "label": "solution of −8n − 3 < −43",
              "answer": {
-              "text": "y > −7",
+              "text": "n > 5",
               "also": [
-               "y > -7",
-               "y>−7",
-               "y>-7"
+               "n>5"
               ]
              }
             }
            }
           ]
          }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Graph the solution:"
+           }
+          ]
+         }
+        },
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−1"
+           },
+           {
+            "tick": 2,
+            "text": "1"
+           },
+           {
+            "tick": 4,
+            "text": "3"
+           },
+           {
+            "tick": 6,
+            "text": "5"
+           },
+           {
+            "tick": 8,
+            "text": "7"
+           },
+           {
+            "tick": 10,
+            "text": "9"
+           }
+          ],
+          "hideWholeLabels": true
+         }
         }
        ],
-       "key": "Solution: y > −7"
+       "key": "Solution: n > 5"
       },
       {
        "label": "11",
@@ -477,7 +562,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−5y + 12 ≤ 72"
+            "text": "x ÷ 8 − 11 < −14"
            }
           ]
          }
@@ -496,26 +581,63 @@
            {
             "blank": {
              "id": "q11",
-             "label": "solution of −5y + 12 ≤ 72",
+             "label": "solution of x ÷ 8 − 11 < −14",
              "answer": {
-              "text": "y ≥ −12",
+              "text": "x < −24",
               "also": [
-               "y ≥ -12",
-               "y≥−12",
-               "y≥-12",
-               "y >= −12",
-               "y >= -12",
-               "y>=−12",
-               "y>=-12"
+               "x < -24",
+               "x<−24",
+               "x<-24"
               ]
              }
             }
            }
           ]
          }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Graph the solution:"
+           }
+          ]
+         }
+        },
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "−28"
+           },
+           {
+            "tick": 2,
+            "text": "−26"
+           },
+           {
+            "tick": 4,
+            "text": "−24"
+           },
+           {
+            "tick": 6,
+            "text": "−22"
+           },
+           {
+            "tick": 8,
+            "text": "−20"
+           },
+           {
+            "tick": 10,
+            "text": "−18"
+           }
+          ],
+          "hideWholeLabels": true
+         }
         }
        ],
-       "key": "Solution: y ≥ −12"
+       "key": "Solution: x < −24"
       },
       {
        "label": "12",
@@ -524,7 +646,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−2x + 6 ≥ 14"
+            "text": "−6x − 3 < −39"
            }
           ]
          }
@@ -543,26 +665,61 @@
            {
             "blank": {
              "id": "q12",
-             "label": "solution of −2x + 6 ≥ 14",
+             "label": "solution of −6x − 3 < −39",
              "answer": {
-              "text": "x ≤ −4",
+              "text": "x > 6",
               "also": [
-               "x ≤ -4",
-               "x≤−4",
-               "x≤-4",
-               "x <= −4",
-               "x <= -4",
-               "x<=−4",
-               "x<=-4"
+               "x>6"
               ]
              }
             }
            }
           ]
          }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Graph the solution:"
+           }
+          ]
+         }
+        },
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "2"
+           },
+           {
+            "tick": 2,
+            "text": "4"
+           },
+           {
+            "tick": 4,
+            "text": "6"
+           },
+           {
+            "tick": 6,
+            "text": "8"
+           },
+           {
+            "tick": 8,
+            "text": "10"
+           },
+           {
+            "tick": 10,
+            "text": "12"
+           }
+          ],
+          "hideWholeLabels": true
+         }
         }
        ],
-       "key": "Solution: x ≤ −4"
+       "key": "Solution: x > 6"
       }
      ],
      "columns": 2,
@@ -573,15 +730,26 @@
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS"
       ],
+      "rationale": "Inequalities are solved like equations, except the sign flips when both sides are multiplied or divided by a negative. About a third of the items have a negative coefficient, so the flip comes up without being the rule every time. The student graphs each solution on a number line, as the standard asks.",
       "misconceptions": [
-       "Keeping the sign the same after dividing by a negative number."
+       "Keeping the sign the same after dividing by a negative number.",
+       "Flipping the sign whenever a negative number appears anywhere.",
+       "Using a filled dot for < or > on the graph."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
-     "estimatedHeight": 392
-    },
+     "estimatedHeight": 648
+    }
+   ],
+   "estimatedHeight": 652
+  },
+  {
+   "sections": [
     {
      "label": "C",
-     "instruction": "Write an equation, solve it, and show your work.",
+     "instruction": "Write an equation or inequality. Solve it. Show your work.",
      "items": [
       {
        "label": "13",
@@ -607,28 +775,7 @@
         }
        ],
        "key": "8"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g7-equation-word-problems",
-     "stage": "STAGE_APPLY",
-     "design": {
-      "purpose": "Write and solve two-step equations for stories, with whole numbers, fractions and decimals.",
-      "principles": [
-       "PRINCIPLE_INTERLEAVING"
-      ]
-     },
-     "estimatedHeight": 222
-    }
-   ],
-   "estimatedHeight": 622
-  },
-  {
-   "sections": [
-    {
-     "label": "C",
-     "instruction": "Write an equation, solve it, and show your work.",
-     "items": [
+      },
       {
        "label": "14",
        "nodes": [
@@ -684,7 +831,7 @@
        "label": "16",
        "nodes": [
         {
-         "text": "Ben has $50 and saves $15 a week. How many weeks until he has at least $170?"
+         "text": "Ben has $50 and saves $15 a week. He wants at least $170. Write and solve an inequality for the number of weeks, w."
         },
         {
          "workSpace": {
@@ -695,7 +842,9 @@
            "answer": {
             "text": "8",
             "also": [
-             "8 weeks"
+             "w ≥ 8",
+             "w >= 8",
+             "8 weeks or more"
             ],
             "work": "(170 − 50) ÷ 15"
            }
@@ -713,13 +862,20 @@
       "purpose": "Write and solve two-step equations for stories, with whole numbers, fractions and decimals.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "These stories turn into the two-step equations practised earlier: a joining fee plus a monthly charge, a perimeter and a total spend. The last story asks for at least an amount, so it is an inequality. The student writes the equation or inequality before solving, which is the skill the standard asks for.",
+      "misconceptions": [
+       "Writing the steps in the order the numbers appear instead of the order of the story.",
+       "Answering an at-least question with an equation and forgetting the solution is a range."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
-     "continued": true,
-     "estimatedHeight": 590
+     "estimatedHeight": 798
     }
    ],
-   "estimatedHeight": 594
+   "estimatedHeight": 802
   }
  ],
  "key": [
@@ -863,13 +1019,11 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "solution of 3(y + 6) > −3",
+    "label": "solution of −8n − 3 < −43",
     "answer": {
-     "text": "y > −7",
+     "text": "n > 5",
      "also": [
-      "y > -7",
-      "y>−7",
-      "y>-7"
+      "n>5"
      ]
     }
    }
@@ -878,17 +1032,13 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "solution of −5y + 12 ≤ 72",
+    "label": "solution of x ÷ 8 − 11 < −14",
     "answer": {
-     "text": "y ≥ −12",
+     "text": "x < −24",
      "also": [
-      "y ≥ -12",
-      "y≥−12",
-      "y≥-12",
-      "y >= −12",
-      "y >= -12",
-      "y>=−12",
-      "y>=-12"
+      "x < -24",
+      "x<−24",
+      "x<-24"
      ]
     }
    }
@@ -897,17 +1047,11 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "solution of −2x + 6 ≥ 14",
+    "label": "solution of −6x − 3 < −39",
     "answer": {
-     "text": "x ≤ −4",
+     "text": "x > 6",
      "also": [
-      "x ≤ -4",
-      "x≤−4",
-      "x≤-4",
-      "x <= −4",
-      "x <= -4",
-      "x<=−4",
-      "x<=-4"
+      "x>6"
      ]
     }
    }
@@ -963,7 +1107,9 @@
     "answer": {
      "text": "8",
      "also": [
-      "8 weeks"
+      "w ≥ 8",
+      "w >= 8",
+      "8 weeks or more"
      ],
      "work": "(170 − 50) ÷ 15"
     }

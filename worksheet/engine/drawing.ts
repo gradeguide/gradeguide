@@ -10,9 +10,11 @@ export interface Drawing {
 }
 
 export type Shape =
-  | { t: 'line'; x1: number; y1: number; x2: number; y2: number; w?: number; dash?: string }
+  // color, when set, replaces the usual near-black, such as for an answer
+  // drawn in the key.
+  | { t: 'line'; x1: number; y1: number; x2: number; y2: number; w?: number; dash?: string; color?: string }
   | { t: 'rect'; x: number; y: number; w: number; h: number; fill?: string; sw?: number; dash?: string }
-  | { t: 'circle'; cx: number; cy: number; r: number; fill?: string }
+  | { t: 'circle'; cx: number; cy: number; r: number; fill?: string; color?: string }
   | { t: 'path'; d: string; fill?: string; w?: number }
   | { t: 'text'; x: number; y: number; s: string; size?: number; anchor?: 'start' | 'middle' | 'end'; italic?: boolean; answer?: boolean }
   // A box to write in. field is its data-field id, or null in a worked

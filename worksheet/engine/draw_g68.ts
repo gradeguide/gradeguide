@@ -7,6 +7,8 @@ import {
   type BoxPlot,
   type BoxSolid,
   type CoordinatePlane,
+  type CoordinatePlane_Point,
+  type CoordinatePlane_Segment,
   type DoubleNumberLine,
   type Field,
   type HeightShape,
@@ -110,52 +112,71 @@ export function doubleNumberLine(n: DoubleNumberLine, filled: boolean, w: L.Writ
   return { width: f1(right + 22), height: bottom + 14 + bh, shapes };
 }
 
+const ANSWER_COLOR = '#1a4f8a';
+
 export function coordinatePlane(p: CoordinatePlane, filled: boolean): Drawing {
   const cols = Math.max(1, p.xMax - p.xMin);
   const rows = Math.max(1, p.yMax - p.yMin);
-  const cell = Math.max(11, Math.min(20, Math.floor(200 / Math.max(cols, rows))));
-  const left = 34;
-  const top = 18;
+  const cell = p.cell || Math.max(11, Math.min(20, Math.floor(200 / Math.max(cols, rows))));
+  const axes = !p.noAxes;
+  const numbers = axes && !p.noNumbers;
+  const left = numbers ? 34 : axes ? 22 : 4;
+  // A sketch names its vertical axis above it, so it needs more room.
+  const top = !axes ? 4 : numbers ? 18 : 26;
   const gx = (x: number) => f1(left + (x - p.xMin) * cell);
   const gy = (y: number) => f1(top + (p.yMax - y) * cell);
   const every = p.labelEvery || (Math.max(cols, rows) <= 12 ? 1 : Math.max(cols, rows) <= 24 ? 2 : 5);
   const shapes: Shape[] = [];
-  for (let x = p.xMin; x <= p.xMax; x++) {
-    shapes.push({ t: 'line', x1: gx(x), y1: gy(p.yMin), x2: gx(x), y2: gy(p.yMax), w: 0.4 });
-  }
-  for (let y = p.yMin; y <= p.yMax; y++) {
-    shapes.push({ t: 'line', x1: gx(p.xMin), y1: gy(y), x2: gx(p.xMax), y2: gy(y), w: 0.4 });
+  if (!p.noGrid) {
+    for (let x = p.xMin; x <= p.xMax; x++) {
+      shapes.push({ t: 'line', x1: gx(x), y1: gy(p.yMin), x2: gx(x), y2: gy(p.yMax), w: axes ? 0.4 : 0.6 });
+    }
+    for (let y = p.yMin; y <= p.yMax; y++) {
+      shapes.push({ t: 'line', x1: gx(p.xMin), y1: gy(y), x2: gx(p.xMax), y2: gy(y), w: axes ? 0.4 : 0.6 });
+    }
   }
   // Axes run along zero, or along the plane's edge when zero is off it.
   const ax = p.yMin <= 0 && p.yMax >= 0 ? 0 : p.yMin;
   const ay = p.xMin <= 0 && p.xMax >= 0 ? 0 : p.xMin;
-  shapes.push({ t: 'line', x1: gx(p.xMin), y1: gy(ax), x2: gx(p.xMax) + 8, y2: gy(ax), w: 1.8 });
-  shapes.push({ t: 'line', x1: gx(ay), y1: gy(p.yMin), x2: gx(ay), y2: gy(p.yMax) - 8, w: 1.8 });
+  let width = gx(p.xMax) + 4;
+  if (axes) {
+    shapes.push({ t: 'line', x1: gx(p.xMin), y1: gy(ax), x2: gx(p.xMax) + 8, y2: gy(ax), w: 1.8 });
+    shapes.push({ t: 'line', x1: gx(ay), y1: gy(p.yMin), x2: gx(ay), y2: gy(p.yMax) - 8, w: 1.8 });
+  }
   const xs = p.xScale || 1;
   const ys = p.yScale || 1;
   const neg = (v: number) => (v < 0 ? '−' + String(-v) : String(v));
-  for (let x = p.xMin; x <= p.xMax; x++) {
-    if (x % every === 0 && !(x === ay && ax === 0 && ay === 0 && p.xMin < 0)) {
-      shapes.push({ t: 'text', x: gx(x), y: gy(ax) + 14, s: neg(x * xs), size: 10 });
+  if (numbers) {
+    for (let x = p.xMin; x <= p.xMax; x++) {
+      if (x % every === 0 && !(x === ay && ax === 0 && ay === 0 && p.xMin < 0)) {
+        shapes.push({ t: 'text', x: gx(x), y: gy(ax) + 14, s: neg(x * xs), size: 10 });
+      }
+    }
+    for (let y = p.yMin; y <= p.yMax; y++) {
+      if (y % every === 0 && !(y === ax && ay === 0 && p.yMin < 0)) {
+        shapes.push({ t: 'text', x: gx(ay) - 4, y: gy(y) + 4, s: neg(y * ys), size: 10, anchor: 'end' });
+      }
     }
   }
-  for (let y = p.yMin; y <= p.yMax; y++) {
-    if (y % every === 0 && !(y === ax && ay === 0 && p.yMin < 0)) {
-      shapes.push({ t: 'text', x: gx(ay) - 4, y: gy(y) + 4, s: neg(y * ys), size: 10, anchor: 'end' });
-    }
+  if (axes && numbers) {
+    width = gx(p.xMax) + 16;
+    shapes.push({ t: 'text', x: gx(p.xMax) + 10, y: gy(ax) + 4, s: p.xLabel || 'x', size: 12, anchor: 'start', italic: !p.xLabel });
+    shapes.push({ t: 'text', x: gx(ay), y: gy(p.yMax) - 10, s: p.yLabel || 'y', size: 12, italic: !p.yLabel });
+  } else if (axes) {
+    // A sketch's axes are named in words: along the bottom, and up the
+    // left side.
+    width = gx(p.xMax) + 12;
+    shapes.push({ t: 'text', x: (gx(p.xMin) + gx(p.xMax)) / 2, y: gy(ax) + 16, s: p.xLabel || 'x', size: 12 });
+    shapes.push({ t: 'text', x: gx(ay) - 4, y: 12, s: p.yLabel || 'y', size: 12, anchor: 'start' });
   }
-  const width = gx(p.xMax) + 16;
-  shapes.push({ t: 'text', x: gx(p.xMax) + 10, y: gy(ax) + 4, s: p.xLabel || 'x', size: 12, anchor: 'start', italic: !p.xLabel });
-  shapes.push({ t: 'text', x: gx(ay), y: gy(p.yMax) - 10, s: p.yLabel || 'y', size: 12, italic: !p.yLabel });
   const inside = (x: number, y: number) => x >= p.xMin && x <= p.xMax && y >= p.yMin && y <= p.yMax;
-  for (const s of p.segments) {
+  const drawSegment = (s: CoordinatePlane_Segment, color?: string) => {
     let [x1, y1, x2, y2] = [s.x1, s.y1, s.x2, s.y2];
     if (s.extend) {
       // Stretch to the grid's edge in both directions.
       const dx = x2 - x1;
       const dy = y2 - y1;
-      const ts = [-1e9, 1e9];
-      let [lo, hi] = ts;
+      let [lo, hi] = [-1e9, 1e9];
       const clip = (d: number, a: number, mn: number, mx: number) => {
         if (d === 0) {
           return;
@@ -169,7 +190,7 @@ export function coordinatePlane(p: CoordinatePlane, filled: boolean): Drawing {
       clip(dy, y1, p.yMin, p.yMax);
       [x1, y1, x2, y2] = [s.x1 + lo * dx, s.y1 + lo * dy, s.x1 + hi * dx, s.y1 + hi * dy];
     }
-    shapes.push({ t: 'line', x1: gx(x1), y1: gy(y1), x2: gx(x2), y2: gy(y2), w: 1.8, dash: s.dashed ? '5 3' : undefined });
+    shapes.push({ t: 'line', x1: gx(x1), y1: gy(y1), x2: gx(x2), y2: gy(y2), w: 1.8, dash: s.dashed ? '5 3' : undefined, color });
     const mx = (gx(s.x1) + gx(s.x2)) / 2;
     const my = (gy(s.y1) + gy(s.y2)) / 2;
     const horizontal = s.y1 === s.y2;
@@ -179,19 +200,25 @@ export function coordinatePlane(p: CoordinatePlane, filled: boolean): Drawing {
     if (s.field) {
       shapes.push({ t: 'box', x: f1(horizontal ? lx - 20 : side > 0 ? lx : lx - 40), y: f1(horizontal ? ly - 11 : ly - 11), w: 40, h: 22, field: fieldId(s.field), s: shown(s.field, filled) });
     } else if (s.label) {
-      shapes.push({ t: 'text', x: f1(lx), y: f1(ly + 4), s: s.label, size: 12, anchor: horizontal ? 'middle' : side > 0 ? 'start' : 'end' });
+      shapes.push({ t: 'text', x: f1(lx), y: f1(ly + 4), s: s.label, size: 12, anchor: horizontal ? 'middle' : side > 0 ? 'start' : 'end', answer: !!color });
     }
-  }
-  for (const q of p.points) {
+  };
+  const drawPoint = (q: CoordinatePlane_Point, color?: string) => {
     if (!inside(q.x, q.y)) {
-      continue;
+      return;
     }
-    shapes.push({ t: 'circle', cx: gx(q.x), cy: gy(q.y), r: 3.5 });
+    shapes.push({ t: 'circle', cx: gx(q.x), cy: gy(q.y), r: 3.5, color });
     if (q.label) {
-      shapes.push({ t: 'text', x: gx(q.x) + 6, y: gy(q.y) - 6, s: q.label, size: 13, anchor: 'start' });
+      shapes.push({ t: 'text', x: gx(q.x) + 6, y: gy(q.y) - 6, s: q.label, size: 13, anchor: 'start', answer: !!color });
     }
+  };
+  p.segments.forEach((s) => drawSegment(s));
+  p.points.forEach((q) => drawPoint(q));
+  if (filled) {
+    p.answerSegments.forEach((s) => drawSegment(s, ANSWER_COLOR));
+    p.answerPoints.forEach((q) => drawPoint(q, ANSWER_COLOR));
   }
-  let height = gy(p.yMin) + 20;
+  let height = gy(p.yMin) + (numbers ? 20 : axes ? 22 : 6);
   if (p.plotField) {
     const s = shown(p.plotField, filled);
     if (s) {

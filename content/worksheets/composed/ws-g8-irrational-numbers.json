@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Is the number rational or irrational?",
+     "instruction": "Is the number rational or irrational? Check one.",
      "explainer": "A rational number can be written as a fraction of whole numbers. Its decimal ends or repeats.",
      "items": [
       {
@@ -20,7 +20,7 @@
          "math": {
           "atoms": [
            {
-            "text": "π"
+            "text": "0.555…  (the 5s repeat forever)"
            }
           ]
          }
@@ -33,15 +33,15 @@
           ],
           "field": {
            "id": "q1",
-           "label": "is π rational",
+           "label": "is 0.555…  (the 5s repeat forever) rational",
            "answer": {
-            "text": "irrational"
+            "text": "rational"
            }
           }
          }
         }
        ],
-       "key": "irrational"
+       "key": "rational"
       },
       {
        "label": "2",
@@ -50,7 +50,7 @@
          "math": {
           "atoms": [
            {
-            "text": "π"
+            "text": "√2"
            }
           ]
          }
@@ -63,7 +63,7 @@
           ],
           "field": {
            "id": "q2",
-           "label": "is π rational",
+           "label": "is √2 rational",
            "answer": {
             "text": "irrational"
            }
@@ -80,7 +80,7 @@
          "math": {
           "atoms": [
            {
-            "text": "−12"
+            "text": "−√16"
            }
           ]
          }
@@ -93,7 +93,7 @@
           ],
           "field": {
            "id": "q3",
-           "label": "is −12 rational",
+           "label": "is −√16 rational",
            "answer": {
             "text": "rational"
            }
@@ -110,7 +110,7 @@
          "math": {
           "atoms": [
            {
-            "text": "0.444…  (4 repeats)"
+            "text": "√100"
            }
           ]
          }
@@ -123,7 +123,7 @@
           ],
           "field": {
            "id": "q4",
-           "label": "is 0.444…  (4 repeats) rational",
+           "label": "is √100 rational",
            "answer": {
             "text": "rational"
            }
@@ -135,96 +135,6 @@
       },
       {
        "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−4"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "rational",
-           "irrational"
-          ],
-          "field": {
-           "id": "q5",
-           "label": "is −4 rational",
-           "answer": {
-            "text": "rational"
-           }
-          }
-         }
-        }
-       ],
-       "key": "rational"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "11/12"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "rational",
-           "irrational"
-          ],
-          "field": {
-           "id": "q6",
-           "label": "is 11/12 rational",
-           "answer": {
-            "text": "rational"
-           }
-          }
-         }
-        }
-       ],
-       "key": "rational"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "−2"
-           }
-          ]
-         }
-        },
-        {
-         "choices": {
-          "options": [
-           "rational",
-           "irrational"
-          ],
-          "field": {
-           "id": "q7",
-           "label": "is −2 rational",
-           "answer": {
-            "text": "rational"
-           }
-          }
-         }
-        }
-       ],
-       "key": "rational"
-      },
-      {
-       "label": "8",
        "nodes": [
         {
          "math": {
@@ -242,8 +152,98 @@
            "irrational"
           ],
           "field": {
-           "id": "q8",
+           "id": "q5",
            "label": "is 0.1010010001…  (one more 0 each time) rational",
+           "answer": {
+            "text": "irrational"
+           }
+          }
+         }
+        }
+       ],
+       "key": "irrational"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10.45"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "rational",
+           "irrational"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is 10.45 rational",
+           "answer": {
+            "text": "rational"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rational"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6/7"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "rational",
+           "irrational"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "is 6/7 rational",
+           "answer": {
+            "text": "rational"
+           }
+          }
+         }
+        }
+       ],
+       "key": "rational"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "√65"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "rational",
+           "irrational"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "is √65 rational",
            "answer": {
             "text": "irrational"
            }
@@ -262,15 +262,19 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "The items mix square roots of perfect squares, square roots of other numbers, fractions, ending and repeating decimals, and π. Each kind comes once before any repeats, so the student tests every number against the definition instead of its look. 3.14 sits beside π so the student sees that a rounded value of π is rational.",
       "misconceptions": [
-       "Thinking every square root is irrational, such as √49."
+       "Thinking every square root is irrational, such as √49.",
+       "Thinking a repeating decimal is irrational because it never ends.",
+       "Thinking 3.14 is irrational because it stands for π.",
+       "Thinking a negative number cannot be rational."
       ]
      },
      "estimatedHeight": 700
     },
     {
      "label": "B",
-     "instruction": "Between which two whole numbers is the square root?",
+     "instruction": "Write the two whole numbers the square root lies between.",
      "explainer": "Find the perfect squares on either side: 36 < 40 < 49, so √40 is between 6 and 7.",
      "items": [
       {
@@ -317,6 +321,11 @@
       "purpose": "Place a square root between two whole numbers to estimate it.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Placing a square root between two whole numbers depends on knowing the perfect squares up to 144. The explainer shows the root squeezed between two perfect squares, which is how grade 8 estimates irrational numbers. Numbers up to 150 keep to squares a student knows.",
+      "misconceptions": [
+       "Halving the number instead of taking its square root, so √40 is near 20.",
+       "Writing the perfect squares, 36 and 49, instead of their roots, 6 and 7."
       ]
      },
      "estimatedHeight": 112
@@ -328,7 +337,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Between which two whole numbers is the square root?",
+     "instruction": "Write the two whole numbers the square root lies between.",
      "items": [
       {
        "label": "10",
@@ -446,6 +455,11 @@
       "purpose": "Place a square root between two whole numbers to estimate it.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Placing a square root between two whole numbers depends on knowing the perfect squares up to 144. The explainer shows the root squeezed between two perfect squares, which is how grade 8 estimates irrational numbers. Numbers up to 150 keep to squares a student knows.",
+      "misconceptions": [
+       "Halving the number instead of taking its square root, so √40 is near 20.",
+       "Writing the perfect squares, 36 and 49, instead of their roots, 6 and 7."
       ]
      },
      "continued": true,
@@ -460,9 +474,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "is π rational",
+    "label": "is 0.555…  (the 5s repeat forever) rational",
     "answer": {
-     "text": "irrational"
+     "text": "rational"
     }
    }
   },
@@ -470,7 +484,7 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "is π rational",
+    "label": "is √2 rational",
     "answer": {
      "text": "irrational"
     }
@@ -480,7 +494,7 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "is −12 rational",
+    "label": "is −√16 rational",
     "answer": {
      "text": "rational"
     }
@@ -490,7 +504,7 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "is 0.444…  (4 repeats) rational",
+    "label": "is √100 rational",
     "answer": {
      "text": "rational"
     }
@@ -500,9 +514,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "is −4 rational",
+    "label": "is 0.1010010001…  (one more 0 each time) rational",
     "answer": {
-     "text": "rational"
+     "text": "irrational"
     }
    }
   },
@@ -510,7 +524,7 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "is 11/12 rational",
+    "label": "is 10.45 rational",
     "answer": {
      "text": "rational"
     }
@@ -520,7 +534,7 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "is −2 rational",
+    "label": "is 6/7 rational",
     "answer": {
      "text": "rational"
     }
@@ -530,7 +544,7 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "is 0.1010010001…  (one more 0 each time) rational",
+    "label": "is √65 rational",
     "answer": {
      "text": "irrational"
     }
@@ -624,7 +638,7 @@
   ]
  },
  "advice": [
-  "Section \"Between which two whole numbers is the square root?\" was cut from 6 to 4 items to fit."
+  "Section \"Write the two whole numbers the square root lies between.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

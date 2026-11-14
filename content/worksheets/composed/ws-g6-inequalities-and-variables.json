@@ -10,14 +10,14 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write an inequality.",
+     "instruction": "Write an inequality for each situation.",
      "explainer": "\"At least\" means ≥. \"At most\" means ≤. \"More than\" means >. \"Fewer than\" means <.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "The temperature stayed above −9°F all night. Use t for temperature."
+         "text": "Fewer than 25 people fit in the room. Use p for people."
         },
         {
          "math": {
@@ -25,13 +25,13 @@
            {
             "blank": {
              "id": "q1",
-             "label": "The temperature stayed above −9°F all night. Use t for temperature.",
+             "label": "Fewer than 25 people fit in the room. Use p for people.",
              "answer": {
-              "text": "t > −9",
+              "text": "p < 25",
               "also": [
-               "t > -9",
-               "t>−9",
-               "t>-9"
+               "p<25",
+               "25 > p",
+               "25>p"
               ]
              }
             }
@@ -40,10 +40,101 @@
          }
         }
        ],
-       "key": "t > −9"
+       "key": "p < 25"
       },
       {
        "label": "2",
+       "nodes": [
+        {
+         "text": "A bag can hold at most 55 pounds. Use w for weight."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "A bag can hold at most 55 pounds. Use w for weight.",
+             "answer": {
+              "text": "w ≤ 55",
+              "also": [
+               "w≤55",
+               "w <= 55",
+               "w<=55",
+               "55 ≥ w",
+               "55≥w"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "w ≤ 55"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "More than 25 students signed up. Use s for students."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "More than 25 students signed up. Use s for students.",
+             "answer": {
+              "text": "s > 25",
+              "also": [
+               "s>25",
+               "25 < s",
+               "25<s"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "s > 25"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Riders must be at least 40 inches tall. Use h for height."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q4",
+             "label": "Riders must be at least 40 inches tall. Use h for height.",
+             "answer": {
+              "text": "h ≥ 40",
+              "also": [
+               "h≥40",
+               "h >= 40",
+               "h>=40",
+               "40 ≤ h",
+               "40≤h"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "h ≥ 40"
+      },
+      {
+       "label": "5",
        "nodes": [
         {
          "text": "The temperature stayed above −7°F all night. Use t for temperature."
@@ -53,7 +144,7 @@
           "atoms": [
            {
             "blank": {
-             "id": "q2",
+             "id": "q5",
              "label": "The temperature stayed above −7°F all night. Use t for temperature.",
              "answer": {
               "text": "t > −7",
@@ -70,95 +161,6 @@
         }
        ],
        "key": "t > −7"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "text": "A bag can hold at most 25 pounds. Use w for weight."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q3",
-             "label": "A bag can hold at most 25 pounds. Use w for weight.",
-             "answer": {
-              "text": "w ≤ 25",
-              "also": [
-               "w≤25",
-               "w <= 25",
-               "w<=25",
-               "25 ≥ w",
-               "25≥w"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "w ≤ 25"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "text": "Fewer than 35 people fit in the room. Use p for people."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q4",
-             "label": "Fewer than 35 people fit in the room. Use p for people.",
-             "answer": {
-              "text": "p < 35",
-              "also": [
-               "p<35",
-               "35 > p",
-               "35>p"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "p < 35"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "text": "More than 15 students signed up. Use s for students."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q5",
-             "label": "More than 15 students signed up. Use s for students.",
-             "answer": {
-              "text": "s > 15",
-              "also": [
-               "s>15",
-               "15 < s",
-               "15<s"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "s > 15"
       }
      ],
      "columns": 1,
@@ -169,15 +171,20 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Each story uses a different limit word: at least, at most, more than, fewer than, above. The explainer pairs each word with its symbol. One story has a negative temperature to link with the integer sheets.",
       "misconceptions": [
-       "Using > for \"at least\"."
+       "Using > for \"at least\".",
+       "Writing the variable on the wrong side, so p > 35 for fewer than 35."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 450
     },
     {
      "label": "B",
-     "instruction": "Fill in the table, then tick the dependent variable.",
+     "instruction": "Complete the table. Check the dependent variable.",
      "items": [
       {
        "label": "6",
@@ -273,7 +280,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Which depends on the other?"
+            "text": "Dependent variable:"
            }
           ]
          }
@@ -390,7 +397,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Which depends on the other?"
+            "text": "Dependent variable:"
            }
           ]
          }
@@ -421,6 +428,13 @@
       "purpose": "Use an equation to fill in a table, and tell the dependent from the independent variable.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "A story with an equation leads to a table of values. The student fills the table from the equation and then picks the variable that depends on the other. This connects an equation, a table and a situation for the same relationship.",
+      "misconceptions": [
+       "Choosing the independent variable as the one that depends, because it comes first in the table."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 360
@@ -434,13 +448,13 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "The temperature stayed above −9°F all night. Use t for temperature.",
+    "label": "Fewer than 25 people fit in the room. Use p for people.",
     "answer": {
-     "text": "t > −9",
+     "text": "p < 25",
      "also": [
-      "t > -9",
-      "t>−9",
-      "t>-9"
+      "p<25",
+      "25 > p",
+      "25>p"
      ]
     }
    }
@@ -449,13 +463,15 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "The temperature stayed above −7°F all night. Use t for temperature.",
+    "label": "A bag can hold at most 55 pounds. Use w for weight.",
     "answer": {
-     "text": "t > −7",
+     "text": "w ≤ 55",
      "also": [
-      "t > -7",
-      "t>−7",
-      "t>-7"
+      "w≤55",
+      "w <= 55",
+      "w<=55",
+      "55 ≥ w",
+      "55≥w"
      ]
     }
    }
@@ -464,15 +480,13 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "A bag can hold at most 25 pounds. Use w for weight.",
+    "label": "More than 25 students signed up. Use s for students.",
     "answer": {
-     "text": "w ≤ 25",
+     "text": "s > 25",
      "also": [
-      "w≤25",
-      "w <= 25",
-      "w<=25",
-      "25 ≥ w",
-      "25≥w"
+      "s>25",
+      "25 < s",
+      "25<s"
      ]
     }
    }
@@ -481,13 +495,15 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "Fewer than 35 people fit in the room. Use p for people.",
+    "label": "Riders must be at least 40 inches tall. Use h for height.",
     "answer": {
-     "text": "p < 35",
+     "text": "h ≥ 40",
      "also": [
-      "p<35",
-      "35 > p",
-      "35>p"
+      "h≥40",
+      "h >= 40",
+      "h>=40",
+      "40 ≤ h",
+      "40≤h"
      ]
     }
    }
@@ -496,13 +512,13 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "More than 15 students signed up. Use s for students.",
+    "label": "The temperature stayed above −7°F all night. Use t for temperature.",
     "answer": {
-     "text": "s > 15",
+     "text": "t > −7",
      "also": [
-      "s>15",
-      "15 < s",
-      "15<s"
+      "t > -7",
+      "t>−7",
+      "t>-7"
      ]
     }
    }
@@ -615,7 +631,7 @@
   ]
  },
  "advice": [
-  "\"Write an inequality.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write an inequality for each situation.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

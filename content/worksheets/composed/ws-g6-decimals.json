@@ -248,8 +248,10 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "The two numbers have different numbers of decimal places, so lining up the decimal points matters. The sums and differences cover tenths to thousandths. Space under each item lets the student rewrite it in a column.",
       "misconceptions": [
-       "Lining up the last digits instead of the decimal points."
+       "Lining up the last digits instead of the decimal points.",
+       "Subtracting the smaller digit from the larger in each place instead of regrouping."
       ]
      },
      "estimatedHeight": 400
@@ -257,7 +259,7 @@
     {
      "label": "B",
      "instruction": "Multiply or divide.",
-     "explainer": "When dividing by a decimal, move both decimal points the same number of places first.",
+     "explainer": "To divide by a decimal, first move the decimal point in both numbers the same number of places to the right.",
      "items": [
       {
        "label": "7",
@@ -420,14 +422,16 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Products use one or two decimal places and quotients end after one or two places, so answers stay exact. Some divisors are decimals, which practises moving both decimal points first. Room under each item is for the written method.",
       "misconceptions": [
-       "Placing the decimal point in a product by lining it up with one factor."
+       "Placing the decimal point in a product by lining it up with one factor.",
+       "Leaving the decimal point where it was in the dividend after moving it in the divisor."
       ]
      },
-     "estimatedHeight": 368
+     "estimatedHeight": 388
     }
    ],
-   "estimatedHeight": 776
+   "estimatedHeight": 796
   }
  ],
  "key": [

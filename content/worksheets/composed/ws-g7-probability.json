@@ -13,14 +13,14 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "How likely is it?",
+     "instruction": "Check how likely the event is.",
      "explainer": "A probability is a number from 0 (impossible) to 1 (certain). 1/2 is as likely as not.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "A bag has 7 red and 1 blue marbles. You pick one without looking. Picking red is"
+         "text": "A bag has 7 red and 1 blue marbles. One marble is picked without looking. Picking red is"
         },
         {
          "choices": {
@@ -47,7 +47,7 @@
        "label": "2",
        "nodes": [
         {
-         "text": "A bag has 0 red and 7 blue marbles. You pick one without looking. Picking red is"
+         "text": "A bag has 0 red and 7 blue marbles. One marble is picked without looking. Picking red is"
         },
         {
          "choices": {
@@ -74,7 +74,7 @@
        "label": "3",
        "nodes": [
         {
-         "text": "A bag has 1 red and 8 blue marbles. You pick one without looking. Picking red is"
+         "text": "A bag has 1 red and 8 blue marbles. One marble is picked without looking. Picking red is"
         },
         {
          "choices": {
@@ -101,7 +101,7 @@
        "label": "4",
        "nodes": [
         {
-         "text": "A bag has 2 red and 6 blue marbles. You pick one without looking. Picking red is"
+         "text": "A bag has 2 red and 6 blue marbles. One marble is picked without looking. Picking red is"
         },
         {
          "choices": {
@@ -132,6 +132,14 @@
       "purpose": "Describe a chance as impossible, unlikely, as likely as not, likely or certain.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Probability starts as words on a scale from impossible to certain, matched to numbers from 0 to 1. Each bag has a different mix of red and blue, including none and all red, so every word is used. The explainer ties 1/2 to as likely as not.",
+      "misconceptions": [
+       "Thinking unlikely means impossible.",
+       "Judging by the number of red marbles instead of the share of red marbles."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 308
@@ -144,7 +152,7 @@
        "label": "5",
        "nodes": [
         {
-         "text": "A bag has 6 red and 6 blue marbles. Pick one without looking."
+         "text": "A bag has 6 red and 6 blue marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -174,7 +182,7 @@
        "label": "6",
        "nodes": [
         {
-         "text": "A bag has 4 red, 5 blue and 2 green marbles. Pick one without looking."
+         "text": "A bag has 4 red, 5 blue and 2 green marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -201,7 +209,7 @@
        "label": "7",
        "nodes": [
         {
-         "text": "A bag has 9 red, 1 blue and 4 green marbles. Pick one without looking."
+         "text": "A bag has 9 red, 1 blue and 4 green marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -228,7 +236,7 @@
        "label": "8",
        "nodes": [
         {
-         "text": "A bag has 2 red, 7 blue and 1 green marbles. Pick one without looking."
+         "text": "A bag has 2 red, 7 blue and 1 green marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -255,7 +263,7 @@
        "label": "9",
        "nodes": [
         {
-         "text": "A bag has 5 red, 6 blue and 2 green marbles. Pick one without looking."
+         "text": "A bag has 5 red, 6 blue and 2 green marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -282,7 +290,7 @@
        "label": "10",
        "nodes": [
         {
-         "text": "A bag has 9 red, 9 blue and 6 green marbles. Pick one without looking."
+         "text": "A bag has 9 red, 9 blue and 6 green marbles. One marble is picked without looking."
         },
         {
          "math": {
@@ -317,8 +325,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "When all outcomes are equally likely, a probability is the number of matching outcomes over the total. Some bags have three colors and some items ask for not a color, so the student counts the matching outcomes each time instead of copying a number.",
       "misconceptions": [
-       "Writing the ratio of red to blue instead of red to all."
+       "Writing the ratio of red to blue instead of red to all.",
+       "Counting only the named color for a not question."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 388
@@ -330,7 +343,7 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "Predict.",
+     "instruction": "Use the probability to predict the number of times.",
      "items": [
       {
        "label": "11",
@@ -400,6 +413,14 @@
       "purpose": "Predict about how often an outcome happens in many trials from its probability.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The student multiplies a probability by the number of trials to predict a count. The number of spins is a multiple of the spinner's parts, so the prediction is a whole number. The word about reminds the student that real results will vary.",
+      "misconceptions": [
+       "Thinking the prediction must happen exactly.",
+       "Dividing the trials by the number of red parts instead of all the parts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 230
@@ -482,7 +503,7 @@
        "label": "14",
        "nodes": [
         {
-         "text": "A spinner landed on blue 18 times in 40 spins. About how many times would you expect blue in 100 spins?"
+         "text": "A spinner landed on blue 18 times in 40 spins. Predict about how many times it will land on blue in 100 spins."
         },
         {
          "workSpace": {
@@ -511,6 +532,14 @@
       "purpose": "Estimate a probability from observed results, and use it to predict.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Results from a real experiment, such as tossing a paper cup, give a probability that no list of outcomes can. The student estimates it as a fraction of trials, then uses it to predict, as the standard asks. A cup is chosen because its outcomes are not equally likely.",
+      "misconceptions": [
+       "Assuming each outcome has the same chance, such as 1/2 for landing on its side.",
+       "Using the count of 42 as the probability."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 492
@@ -697,7 +726,7 @@
   ]
  },
  "advice": [
-  "Section \"Predict.\" was cut from 3 to 2 items to fit."
+  "Section \"Use the probability to predict the number of times.\" was cut from 3 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -12,7 +12,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the dot plot.",
+     "instruction": "Use the dot plot to answer the questions.",
      "items": [
       {
        "label": "1",
@@ -45,7 +45,7 @@
             "math": {
              "atoms": [
               {
-               "text": "How many students?"
+               "text": "Number of students:"
               },
               {
                "blank": {
@@ -106,20 +106,20 @@
        "nodes": [
         {
          "linePlot": {
-          "start": 3,
-          "end": 13,
+          "start": 1,
+          "end": 11,
           "partsPerUnit": 1,
           "counts": [
            0,
            1,
-           3,
-           0,
            2,
-           3,
            1,
            1,
-           0,
+           4,
            1,
+           1,
+           1,
+           2,
            0
           ],
           "caption": "Books each student read"
@@ -132,14 +132,14 @@
             "math": {
              "atoms": [
               {
-               "text": "How many students?"
+               "text": "Number of students:"
               },
               {
                "blank": {
                 "id": "q2",
                 "label": "number of data values",
                 "answer": {
-                 "text": "12"
+                 "text": "14"
                 }
                }
               }
@@ -157,7 +157,7 @@
                 "id": "q2-2",
                 "label": "median",
                 "answer": {
-                 "text": "7.5"
+                 "text": "6"
                 }
                }
               }
@@ -186,7 +186,7 @@
          }
         }
        ],
-       "key": "12, 7.5, 8"
+       "key": "14, 6, 8"
       }
      ],
      "columns": 1,
@@ -197,22 +197,31 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "A dot plot shows each data value, so the student can count values and find the median by counting in from each end. Some numbers on the scale have no dots, so the median is not just the middle of the scale.",
       "misconceptions": [
        "Taking the middle number on the scale as the median."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 353
+     "estimatedHeight": 368
     },
     {
      "label": "B",
      "instruction": "Find the mean, median, mode and range.",
-     "explainer": "Put the data in order first. The mean is the total shared equally.",
+     "explainer": "Order the data first. The mean is the sum of the values divided by the number of values.",
      "items": [
       {
        "label": "3",
        "nodes": [
         {
-         "text": "Hours of sleep: 10, 7, 11, 11, 6"
+         "text": "Books read: 5, 10, 11, 5, 9"
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         },
         {
          "row": {
@@ -228,7 +237,7 @@
                 "id": "q3",
                 "label": "mean",
                 "answer": {
-                 "text": "9"
+                 "text": "8"
                 }
                }
               }
@@ -246,7 +255,7 @@
                 "id": "q3-2",
                 "label": "median",
                 "answer": {
-                 "text": "10"
+                 "text": "9"
                 }
                }
               }
@@ -264,7 +273,7 @@
                 "id": "q3-3",
                 "label": "mode",
                 "answer": {
-                 "text": "11"
+                 "text": "5"
                 }
                }
               }
@@ -282,7 +291,7 @@
                 "id": "q3-4",
                 "label": "range",
                 "answer": {
-                 "text": "5"
+                 "text": "6"
                 }
                }
               }
@@ -293,13 +302,18 @@
          }
         }
        ],
-       "key": "9, 10, 11, 5"
+       "key": "8, 9, 5, 6"
       },
       {
        "label": "4",
        "nodes": [
         {
-         "text": "Points scored: 16, 3, 20, 17, 7, 3"
+         "text": "Minutes to walk to school: 16, 16, 17, 9, 23, 15"
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         },
         {
          "row": {
@@ -315,7 +329,7 @@
                 "id": "q4",
                 "label": "mean",
                 "answer": {
-                 "text": "11"
+                 "text": "16"
                 }
                }
               }
@@ -333,7 +347,7 @@
                 "id": "q4-2",
                 "label": "median",
                 "answer": {
-                 "text": "11.5"
+                 "text": "16"
                 }
                }
               }
@@ -351,7 +365,7 @@
                 "id": "q4-3",
                 "label": "mode",
                 "answer": {
-                 "text": "3"
+                 "text": "16"
                 }
                }
               }
@@ -369,7 +383,7 @@
                 "id": "q4-4",
                 "label": "range",
                 "answer": {
-                 "text": "17"
+                 "text": "14"
                 }
                }
               }
@@ -380,94 +394,7 @@
          }
         }
        ],
-       "key": "11, 11.5, 3, 17"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "text": "Hours of sleep: 11, 10, 10, 9, 8, 6"
-        },
-        {
-         "row": {
-          "children": [
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Mean:"
-              },
-              {
-               "blank": {
-                "id": "q5",
-                "label": "mean",
-                "answer": {
-                 "text": "9"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Median:"
-              },
-              {
-               "blank": {
-                "id": "q5-2",
-                "label": "median",
-                "answer": {
-                 "text": "9.5"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Mode:"
-              },
-              {
-               "blank": {
-                "id": "q5-3",
-                "label": "mode",
-                "answer": {
-                 "text": "10"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Range:"
-              },
-              {
-               "blank": {
-                "id": "q5-4",
-                "label": "range",
-                "answer": {
-                 "text": "5"
-                }
-               }
-              }
-             ]
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "9, 9.5, 10, 5"
+       "key": "16, 16, 16, 14"
       }
      ],
      "columns": 1,
@@ -478,33 +405,38 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each small data set has exactly one mode and a whole-number mean. The student orders the data in the space before finding the median. Finding all four measures for one set shows they can be different.",
       "misconceptions": [
-       "Finding the median without ordering the data."
+       "Finding the median without ordering the data.",
+       "Adding the values but forgetting to divide by how many there are."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 294
+     "estimatedHeight": 356
     }
    ],
-   "estimatedHeight": 655
+   "estimatedHeight": 732
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Use the box plot.",
+     "instruction": "Use the box plot to answer the questions.",
      "items": [
       {
-       "label": "6",
+       "label": "5",
        "nodes": [
         {
          "boxPlot": {
           "start": 2,
           "end": 28,
           "step": 2,
-          "min": 6,
-          "q1": 9,
-          "median": 12,
-          "q3": 15,
+          "min": 4,
+          "q1": 7,
+          "median": 16,
+          "q3": 23,
           "max": 25,
           "caption": "Minutes to walk to school"
          }
@@ -520,10 +452,10 @@
               },
               {
                "blank": {
-                "id": "q6",
+                "id": "q5",
                 "label": "median",
                 "answer": {
-                 "text": "12"
+                 "text": "16"
                 }
                }
               }
@@ -538,10 +470,10 @@
               },
               {
                "blank": {
-                "id": "q6-2",
+                "id": "q5-2",
                 "label": "interquartile range",
                 "answer": {
-                 "text": "6"
+                 "text": "16"
                 }
                }
               }
@@ -556,10 +488,10 @@
               },
               {
                "blank": {
-                "id": "q6-3",
+                "id": "q5-3",
                 "label": "range",
                 "answer": {
-                 "text": "19"
+                 "text": "21"
                 }
                }
               }
@@ -570,7 +502,7 @@
          }
         }
        ],
-       "key": "12, 6, 19"
+       "key": "16, 16, 21"
       }
      ],
      "columns": 1,
@@ -581,8 +513,12 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "The student reads the median, the interquartile range and the range from a box plot. Each needs a subtraction or a careful reading of the scale.",
       "misconceptions": [
        "Reading the length of the box as the range."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 218
@@ -590,13 +526,134 @@
     {
      "label": "D",
      "instruction": "Find the quartiles, interquartile range, mean and mean absolute deviation.",
-     "explainer": "Quartiles are the medians of the lower and upper halves. Mean absolute deviation is the mean distance from the mean.",
+     "explainer": "Quartiles are the medians of the lower and upper halves. Mean absolute deviation (MAD) is the mean of each value's distance from the mean.",
      "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Books read: 1, 2, 11, 10, 4, 15, 12, 1"
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Lower quartile:"
+              },
+              {
+               "blank": {
+                "id": "q6",
+                "label": "lower quartile",
+                "answer": {
+                 "text": "1.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Upper quartile:"
+              },
+              {
+               "blank": {
+                "id": "q6-2",
+                "label": "upper quartile",
+                "answer": {
+                 "text": "11.5"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "IQR:"
+              },
+              {
+               "blank": {
+                "id": "q6-3",
+                "label": "interquartile range",
+                "answer": {
+                 "text": "10"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q6-4",
+                "label": "mean",
+                "answer": {
+                 "text": "7"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "MAD:"
+              },
+              {
+               "blank": {
+                "id": "q6-5",
+                "label": "mean absolute deviation",
+                "answer": {
+                 "text": "5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1.5, 11.5, 10; 7, 5"
+      },
       {
        "label": "7",
        "nodes": [
         {
-         "text": "Points scored: 11, 7, 2, 20, 16, 18, 16, 5, 18, 17"
+         "text": "Books read: 8, 8, 3, 2, 12, 2, 13, 2, 12, 8"
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
         },
         {
          "row": {
@@ -612,7 +669,7 @@
                 "id": "q7",
                 "label": "lower quartile",
                 "answer": {
-                 "text": "7"
+                 "text": "2"
                 }
                }
               }
@@ -630,7 +687,7 @@
                 "id": "q7-2",
                 "label": "upper quartile",
                 "answer": {
-                 "text": "18"
+                 "text": "12"
                 }
                }
               }
@@ -648,7 +705,7 @@
                 "id": "q7-3",
                 "label": "interquartile range",
                 "answer": {
-                 "text": "11"
+                 "text": "10"
                 }
                }
               }
@@ -672,7 +729,7 @@
                 "id": "q7-4",
                 "label": "mean",
                 "answer": {
-                 "text": "13"
+                 "text": "7"
                 }
                }
               }
@@ -690,7 +747,7 @@
                 "id": "q7-5",
                 "label": "mean absolute deviation",
                 "answer": {
-                 "text": "5.4"
+                 "text": "3.8"
                 }
                }
               }
@@ -701,118 +758,7 @@
          }
         }
        ],
-       "key": "7, 18, 11; 13, 5.4"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "text": "Minutes to walk to school: 14, 19, 7, 24, 25, 13, 24, 18"
-        },
-        {
-         "row": {
-          "children": [
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Lower quartile:"
-              },
-              {
-               "blank": {
-                "id": "q8",
-                "label": "lower quartile",
-                "answer": {
-                 "text": "13.5"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Upper quartile:"
-              },
-              {
-               "blank": {
-                "id": "q8-2",
-                "label": "upper quartile",
-                "answer": {
-                 "text": "24"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "IQR:"
-              },
-              {
-               "blank": {
-                "id": "q8-3",
-                "label": "interquartile range",
-                "answer": {
-                 "text": "10.5"
-                }
-               }
-              }
-             ]
-            }
-           }
-          ]
-         }
-        },
-        {
-         "row": {
-          "children": [
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "Mean:"
-              },
-              {
-               "blank": {
-                "id": "q8-4",
-                "label": "mean",
-                "answer": {
-                 "text": "18"
-                }
-               }
-              }
-             ]
-            }
-           },
-           {
-            "math": {
-             "atoms": [
-              {
-               "text": "MAD:"
-              },
-              {
-               "blank": {
-                "id": "q8-5",
-                "label": "mean absolute deviation",
-                "answer": {
-                 "text": "5"
-                }
-               }
-              }
-             ]
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "13.5, 24, 10.5; 18, 5"
+       "key": "2, 12, 10; 7, 3.8"
       }
      ],
      "columns": 1,
@@ -822,12 +768,19 @@
       "purpose": "Find the interquartile range and mean absolute deviation of a data set.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "Mean absolute deviation is new and needs several steps, so each set has a mean and a deviation that come out exactly. There is room to list the distances from the mean. Some sets have an even number of values, so a quartile can fall between two values.",
+      "misconceptions": [
+       "Using the distances with their signs, so they add to zero."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 324
+     "estimatedHeight": 592
     }
    ],
-   "estimatedHeight": 550
+   "estimatedHeight": 818
   }
  ],
  "key": [
@@ -867,7 +820,7 @@
     "id": "q2",
     "label": "number of data values",
     "answer": {
-     "text": "12"
+     "text": "14"
     }
    }
   },
@@ -877,7 +830,7 @@
     "id": "q2-2",
     "label": "median",
     "answer": {
-     "text": "7.5"
+     "text": "6"
     }
    }
   },
@@ -897,7 +850,7 @@
     "id": "q3",
     "label": "mean",
     "answer": {
-     "text": "9"
+     "text": "8"
     }
    }
   },
@@ -907,7 +860,7 @@
     "id": "q3-2",
     "label": "median",
     "answer": {
-     "text": "10"
+     "text": "9"
     }
    }
   },
@@ -917,7 +870,7 @@
     "id": "q3-3",
     "label": "mode",
     "answer": {
-     "text": "11"
+     "text": "5"
     }
    }
   },
@@ -927,7 +880,7 @@
     "id": "q3-4",
     "label": "range",
     "answer": {
-     "text": "5"
+     "text": "6"
     }
    }
   },
@@ -937,7 +890,7 @@
     "id": "q4",
     "label": "mean",
     "answer": {
-     "text": "11"
+     "text": "16"
     }
    }
   },
@@ -947,7 +900,7 @@
     "id": "q4-2",
     "label": "median",
     "answer": {
-     "text": "11.5"
+     "text": "16"
     }
    }
   },
@@ -957,7 +910,7 @@
     "id": "q4-3",
     "label": "mode",
     "answer": {
-     "text": "3"
+     "text": "16"
     }
    }
   },
@@ -967,7 +920,7 @@
     "id": "q4-4",
     "label": "range",
     "answer": {
-     "text": "17"
+     "text": "14"
     }
    }
   },
@@ -975,9 +928,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "mean",
+    "label": "median",
     "answer": {
-     "text": "9"
+     "text": "16"
     }
    }
   },
@@ -985,9 +938,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5-2",
-    "label": "median",
+    "label": "interquartile range",
     "answer": {
-     "text": "9.5"
+     "text": "16"
     }
    }
   },
@@ -995,19 +948,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5-3",
-    "label": "mode",
-    "answer": {
-     "text": "10"
-    }
-   }
-  },
-  {
-   "itemLabel": "5",
-   "field": {
-    "id": "q5-4",
     "label": "range",
     "answer": {
-     "text": "5"
+     "text": "21"
     }
    }
   },
@@ -1015,9 +958,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "median",
+    "label": "lower quartile",
     "answer": {
-     "text": "12"
+     "text": "1.5"
     }
    }
   },
@@ -1025,9 +968,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6-2",
-    "label": "interquartile range",
+    "label": "upper quartile",
     "answer": {
-     "text": "6"
+     "text": "11.5"
     }
    }
   },
@@ -1035,9 +978,29 @@
    "itemLabel": "6",
    "field": {
     "id": "q6-3",
-    "label": "range",
+    "label": "interquartile range",
     "answer": {
-     "text": "19"
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-4",
+    "label": "mean",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-5",
+    "label": "mean absolute deviation",
+    "answer": {
+     "text": "5"
     }
    }
   },
@@ -1047,7 +1010,7 @@
     "id": "q7",
     "label": "lower quartile",
     "answer": {
-     "text": "7"
+     "text": "2"
     }
    }
   },
@@ -1057,7 +1020,7 @@
     "id": "q7-2",
     "label": "upper quartile",
     "answer": {
-     "text": "18"
+     "text": "12"
     }
    }
   },
@@ -1067,7 +1030,7 @@
     "id": "q7-3",
     "label": "interquartile range",
     "answer": {
-     "text": "11"
+     "text": "10"
     }
    }
   },
@@ -1077,7 +1040,7 @@
     "id": "q7-4",
     "label": "mean",
     "answer": {
-     "text": "13"
+     "text": "7"
     }
    }
   },
@@ -1087,57 +1050,7 @@
     "id": "q7-5",
     "label": "mean absolute deviation",
     "answer": {
-     "text": "5.4"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "lower quartile",
-    "answer": {
-     "text": "13.5"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-2",
-    "label": "upper quartile",
-    "answer": {
-     "text": "24"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-3",
-    "label": "interquartile range",
-    "answer": {
-     "text": "10.5"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-4",
-    "label": "mean",
-    "answer": {
-     "text": "18"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8-5",
-    "label": "mean absolute deviation",
-    "answer": {
-     "text": "5"
+     "text": "3.8"
     }
    }
   }
@@ -1149,10 +1062,11 @@
   ]
  },
  "advice": [
-  "\"Use the dot plot.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the dot plot to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Find the mean, median, mode and range.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use the box plot.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"Use the box plot.\" was cut from 2 to 1 items to fit."
+  "\"Use the box plot to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the mean, median, mode and range.\" was cut from 3 to 2 items to fit.",
+  "Section \"Use the box plot to answer the questions.\" was cut from 2 to 1 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

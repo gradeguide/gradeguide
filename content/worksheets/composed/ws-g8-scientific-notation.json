@@ -11,7 +11,7 @@
     {
      "label": "A",
      "instruction": "Write in scientific notation.",
-     "explainer": "Move the decimal point until one nonzero digit is in front of it. The power of 10 counts the moves.",
+     "explainer": "Move the decimal point until one nonzero digit is to its left. The exponent of 10 is the number of places moved.",
      "items": [
       {
        "label": "1",
@@ -162,8 +162,14 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Large and small numbers are mixed, so the student decides the sign of the power each time. The explainer ties the power of 10 to how many places the decimal point moves. First factors with up to three digits make the student place the point after the first digit.",
       "misconceptions": [
-       "Using a positive power of 10 for a number smaller than 1."
+       "Using a positive power of 10 for a number smaller than 1.",
+       "Leaving the front number at 10 or more, such as 12 × 10⁵.",
+       "Counting the zeros instead of the places the point moves."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
      "estimatedHeight": 184
@@ -294,6 +300,11 @@
       "purpose": "Write a number in scientific notation out in full.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Writing a number out in full reverses the section before, so the student checks the meaning of the power of 10 both ways. Negative powers come up, so the student places zeros after the decimal point.",
+      "misconceptions": [
+       "Adding as many zeros as the power instead of moving the point.",
+       "Moving the point the wrong way for a negative power."
       ]
      },
      "estimatedHeight": 138
@@ -301,7 +312,7 @@
     {
      "label": "C",
      "instruction": "Multiply or divide. Write the answer in scientific notation.",
-     "explainer": "Multiply or divide the numbers in front, then the powers of 10. Adjust if the front number is not between 1 and 10.",
+     "explainer": "Multiply or divide the first factors. Then multiply or divide the powers of 10. Rewrite the answer if the first factor is not between 1 and 10.",
      "items": [
       {
        "label": "9",
@@ -416,6 +427,11 @@
       "purpose": "Multiply numbers written in scientific notation.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Multiplying in scientific notation uses the exponent rule from earlier on the sheet. Some products have a first factor of 10 or more, so the student must rewrite it and adjust the exponent. Three items keep the focus on the method.",
+      "misconceptions": [
+       "Multiplying the exponents of 10 instead of adding them.",
+       "Leaving a front number of 10 or more, such as 12 × 10⁸."
       ]
      },
      "estimatedHeight": 236
@@ -466,41 +482,6 @@
          "math": {
           "atoms": [
            {
-            "text": "(6 × 10⁵) ÷ (3 × 10⁵)"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q13",
-             "label": "(6 × 10⁵) ÷ (3 × 10⁵)",
-             "answer": {
-              "text": "2 × 10⁰",
-              "also": [
-               "2×10⁰",
-               "2 x 10^0",
-               "2x10^0",
-               "2 × 10^0",
-               "2×10^0",
-               "2*10^0"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "(6 × 10⁵) ÷ (3 × 10⁵) = 2 × 10⁰"
-      },
-      {
-       "label": "14",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
             "text": "(12 × 10⁵) ÷ (4 × 10⁻³)"
            },
            {
@@ -508,7 +489,7 @@
            },
            {
             "blank": {
-             "id": "q14",
+             "id": "q13",
              "label": "(12 × 10⁵) ÷ (4 × 10⁻³)",
              "answer": {
               "text": "3 × 10⁸",
@@ -528,6 +509,41 @@
         }
        ],
        "key": "(12 × 10⁵) ÷ (4 × 10⁻³) = 3 × 10⁸"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(8 × 10⁹) ÷ (4 × 10⁻¹)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "(8 × 10⁹) ÷ (4 × 10⁻¹)",
+             "answer": {
+              "text": "2 × 10¹⁰",
+              "also": [
+               "2×10¹⁰",
+               "2 x 10^10",
+               "2x10^10",
+               "2 × 10^10",
+               "2×10^10",
+               "2*10^10"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(8 × 10⁹) ÷ (4 × 10⁻¹) = 2 × 10¹⁰"
       }
      ],
      "columns": 1,
@@ -537,6 +553,11 @@
       "purpose": "Divide numbers written in scientific notation.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Division follows multiplication so the student can compare the two rules. Some quotients have a first factor below 1, so the student must move the point and lower the power by one.",
+      "misconceptions": [
+       "Dividing the exponents instead of subtracting them.",
+       "Subtracting a negative exponent as if it were positive."
       ]
      },
      "estimatedHeight": 190
@@ -554,7 +575,7 @@
        "label": "15",
        "nodes": [
         {
-         "text": "How many times as large as 2 × 10⁷ is 4 × 10⁹?"
+         "text": "A bacterium is about 1 × 10⁻⁶ meters long. A hair is about 3 × 10⁻⁴ meters wide. How many times as large is the second?"
         },
         {
          "math": {
@@ -562,14 +583,14 @@
            {
             "blank": {
              "id": "q15",
-             "label": "4 × 10⁹ ÷ 2 × 10⁷",
+             "label": "3 × 10⁻⁴ ÷ 1 × 10⁻⁶",
              "answer": {
-              "text": "200",
+              "text": "300",
               "also": [
-               "2 × 10²",
-               "2×10²",
-               "2 x 10^2",
-               "2x10^2"
+               "3 × 10²",
+               "3×10²",
+               "3 x 10^2",
+               "3x10^2"
               ]
              }
             }
@@ -581,13 +602,13 @@
          }
         }
        ],
-       "key": "200 times"
+       "key": "300 times"
       },
       {
        "label": "16",
        "nodes": [
         {
-         "text": "How many times as large as 2 × 10³ is 4 × 10⁵?"
+         "text": "A town has about 1 × 10⁴ people. A country has about 2 × 10⁷ people. How many times as large is the second?"
         },
         {
          "math": {
@@ -595,14 +616,15 @@
            {
             "blank": {
              "id": "q16",
-             "label": "4 × 10⁵ ÷ 2 × 10³",
+             "label": "2 × 10⁷ ÷ 1 × 10⁴",
              "answer": {
-              "text": "200",
+              "text": "2,000",
               "also": [
-               "2 × 10²",
-               "2×10²",
-               "2 x 10^2",
-               "2x10^2"
+               "2000",
+               "2 × 10³",
+               "2×10³",
+               "2 x 10^3",
+               "2x10^3"
               ]
              }
             }
@@ -614,7 +636,7 @@
          }
         }
        ],
-       "key": "200 times"
+       "key": "2,000 times"
       }
      ],
      "columns": 1,
@@ -624,12 +646,20 @@
       "purpose": "Estimate how many times as large one quantity is as another, using powers of 10.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "8.EE.A.3 asks how many times as large one quantity is as another, each written as a single digit times a power of 10. Each item gives two quantities from one context, such as a town and a country, so the sizes mean something. The student divides the first factors and subtracts the exponents.",
+      "misconceptions": [
+       "Subtracting the two numbers instead of dividing them.",
+       "Answering with the difference of the powers, such as 2, instead of 10²."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 230
     }
    ],
-   "estimatedHeight": 194
+   "estimatedHeight": 234
   }
  ],
  "key": [
@@ -827,24 +857,6 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "(6 × 10⁵) ÷ (3 × 10⁵)",
-    "answer": {
-     "text": "2 × 10⁰",
-     "also": [
-      "2×10⁰",
-      "2 x 10^0",
-      "2x10^0",
-      "2 × 10^0",
-      "2×10^0",
-      "2*10^0"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "14",
-   "field": {
-    "id": "q14",
     "label": "(12 × 10⁵) ÷ (4 × 10⁻³)",
     "answer": {
      "text": "3 × 10⁸",
@@ -860,17 +872,35 @@
    }
   },
   {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "(8 × 10⁹) ÷ (4 × 10⁻¹)",
+    "answer": {
+     "text": "2 × 10¹⁰",
+     "also": [
+      "2×10¹⁰",
+      "2 x 10^10",
+      "2x10^10",
+      "2 × 10^10",
+      "2×10^10",
+      "2*10^10"
+     ]
+    }
+   }
+  },
+  {
    "itemLabel": "15",
    "field": {
     "id": "q15",
-    "label": "4 × 10⁹ ÷ 2 × 10⁷",
+    "label": "3 × 10⁻⁴ ÷ 1 × 10⁻⁶",
     "answer": {
-     "text": "200",
+     "text": "300",
      "also": [
-      "2 × 10²",
-      "2×10²",
-      "2 x 10^2",
-      "2x10^2"
+      "3 × 10²",
+      "3×10²",
+      "3 x 10^2",
+      "3x10^2"
      ]
     }
    }
@@ -879,14 +909,15 @@
    "itemLabel": "16",
    "field": {
     "id": "q16",
-    "label": "4 × 10⁵ ÷ 2 × 10³",
+    "label": "2 × 10⁷ ÷ 1 × 10⁴",
     "answer": {
-     "text": "200",
+     "text": "2,000",
      "also": [
-      "2 × 10²",
-      "2×10²",
-      "2 x 10^2",
-      "2x10^2"
+      "2000",
+      "2 × 10³",
+      "2×10³",
+      "2 x 10^3",
+      "2x10^3"
      ]
     }
    }

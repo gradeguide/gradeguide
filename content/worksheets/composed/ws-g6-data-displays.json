@@ -134,13 +134,20 @@
       "purpose": "Organize a data set in a frequency table, the first step to a dot plot or histogram.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Tallying a list into a frequency table is the first step to a dot plot or a histogram. Some rows have a count of zero, so the student learns to record values that did not occur.",
+      "misconceptions": [
+       "Skipping a value that did not occur instead of writing 0."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 300
     },
     {
      "label": "B",
-     "instruction": "Use the histogram.",
+     "instruction": "Use the histogram to answer the questions.",
      "items": [
       {
        "label": "2",
@@ -240,8 +247,12 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "The student reads one bar, adds all the bars, and adds two bars. Equal intervals of 10 minutes are labeled under each bar. Reading counts, not values, is the main idea of a histogram.",
       "misconceptions": [
        "Reading a bar's height as a data value instead of a count."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 378
@@ -253,7 +264,7 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "Find the five-number summary, then draw the box plot.",
+     "instruction": "Find the five-number summary. Draw the box plot.",
      "explainer": "Order the data. The median splits it in half; the quartiles are the medians of each half.",
      "items": [
       {
@@ -261,6 +272,11 @@
        "nodes": [
         {
          "text": "Points scored: 3, 4, 19, 9, 9, 5, 8, 17, 14, 14, 20"
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
         },
         {
          "row": {
@@ -388,12 +404,19 @@
       "purpose": "Find a five-number summary and draw a box plot of it.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The data set has 11 values, so the median and quartiles are data values and not averages of two. The student orders the data in the space, finds the five-number summary, and then draws the box plot over a scale. Drawing it builds the understanding needed to read box plots.",
+      "misconceptions": [
+       "Finding the quartiles from the unordered list."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 270
+     "estimatedHeight": 340
     }
    ],
-   "estimatedHeight": 274
+   "estimatedHeight": 344
   }
  ],
  "key": [
@@ -556,8 +579,8 @@
  },
  "advice": [
   "\"Count how many games had each number of goals.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use the histogram.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Find the five-number summary, then draw the box plot.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Use the histogram to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the five-number summary. Draw the box plot.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

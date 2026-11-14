@@ -10,7 +10,7 @@
     {
      "label": "A",
      "instruction": "Divide.",
-     "explainer": "Estimate each digit of the quotient: how many 24s are in 98? About 4, since 4 × 25 = 100.",
+     "explainer": "Estimate each digit of the quotient. For 98 ÷ 24, think 100 ÷ 25 = 4.",
      "items": [
       {
        "label": "1",
@@ -129,8 +129,10 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Two-digit divisors make estimation the hard part, so the explainer shows rounding the divisor to estimate each digit. Four-digit dividends and some remainders give enough steps to build fluency without making the page long. Each item has room for the full written algorithm.",
       "misconceptions": [
-       "Leaving out a zero in the quotient when a step does not divide."
+       "Leaving out a zero in the quotient when a step does not divide.",
+       "Writing a quotient digit that is too big and not checking that the product fits."
       ]
      },
      "estimatedHeight": 616

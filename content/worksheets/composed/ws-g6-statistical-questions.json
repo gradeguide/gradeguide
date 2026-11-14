@@ -10,7 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Is it a statistical question? A statistical question expects answers that vary.",
+     "instruction": "Is it a statistical question? Check one.",
+     "explainer": "A statistical question expects answers that vary.",
      "items": [
       {
        "label": "1",
@@ -164,13 +165,20 @@
       "purpose": "Tell a statistical question, whose answers vary, from one with a single answer.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some questions have answers that vary and some have one answer. The questions are about a student's own class and family, so the difference is easy to picture. This comes first because every later data sheet starts from a statistical question.",
+      "misconceptions": [
+       "Thinking any question with a number in the answer is statistical."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
-     "estimatedHeight": 260
+     "estimatedHeight": 286
     },
     {
      "label": "B",
-     "instruction": "Does it measure center or spread?",
+     "instruction": "Does it measure center or spread? Check one.",
      "items": [
       {
        "label": "7",
@@ -324,12 +332,19 @@
       "purpose": "Tell measures of center from measures of spread.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "This sorts the six measures the grade uses into center and spread. It is a short review that the student can return to before the data set sheets.",
+      "misconceptions": [
+       "Thinking the range is a measure of center because it uses the middle values."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
       ]
      },
      "estimatedHeight": 260
     }
    ],
-   "estimatedHeight": 528
+   "estimatedHeight": 554
   }
  ],
  "key": [
@@ -461,7 +476,7 @@
   ]
  },
  "advice": [
-  "\"Does it measure center or spread?\" reviews a prerequisite after new material; reviews usually come first."
+  "\"Does it measure center or spread? Check one.\" reviews a prerequisite after new material; reviews usually come first."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -139,13 +139,20 @@
       "purpose": "Write a repeated product as a base and an exponent.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Writing a repeated product as a power shows what the exponent counts. The bases and exponents are small so the student sees the pattern, not large numbers.",
+      "misconceptions": [
+       "Writing the number of times as the base, such as 3 × 3 × 3 × 3 as 4³."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 138
     },
     {
      "label": "B",
-     "instruction": "Find the value. Do powers first, then × and ÷, then + and −.",
+     "instruction": "Evaluate. Do powers first, then × and ÷, then + and −.",
      "items": [
       {
        "label": "5",
@@ -154,7 +161,7 @@
          "math": {
           "atoms": [
            {
-            "text": "12 + 3 × 5²"
+            "text": "(8 + 3)² − 5"
            },
            {
             "text": "="
@@ -162,9 +169,9 @@
            {
             "blank": {
              "id": "q5",
-             "label": "12 + 3 × 5²",
+             "label": "(8 + 3)² − 5",
              "answer": {
-              "text": "87"
+              "text": "116"
              }
             }
            }
@@ -172,7 +179,7 @@
          }
         }
        ],
-       "key": "12 + 3 × 5² = 87"
+       "key": "(8 + 3)² − 5 = 116"
       },
       {
        "label": "6",
@@ -181,7 +188,7 @@
          "math": {
           "atoms": [
            {
-            "text": "8 + 6 × 4²"
+            "text": "24 ÷ 2² + 6"
            },
            {
             "text": "="
@@ -189,9 +196,9 @@
            {
             "blank": {
              "id": "q6",
-             "label": "8 + 6 × 4²",
+             "label": "24 ÷ 2² + 6",
              "answer": {
-              "text": "104"
+              "text": "12"
              }
             }
            }
@@ -199,7 +206,7 @@
          }
         }
        ],
-       "key": "8 + 6 × 4² = 104"
+       "key": "24 ÷ 2² + 6 = 12"
       },
       {
        "label": "7",
@@ -208,7 +215,7 @@
          "math": {
           "atoms": [
            {
-            "text": "5³ − 3 × 6"
+            "text": "8² + 3²"
            },
            {
             "text": "="
@@ -216,9 +223,9 @@
            {
             "blank": {
              "id": "q7",
-             "label": "5³ − 3 × 6",
+             "label": "8² + 3²",
              "answer": {
-              "text": "107"
+              "text": "73"
              }
             }
            }
@@ -226,7 +233,7 @@
          }
         }
        ],
-       "key": "5³ − 3 × 6 = 107"
+       "key": "8² + 3² = 73"
       },
       {
        "label": "8",
@@ -235,7 +242,7 @@
          "math": {
           "atoms": [
            {
-            "text": "10 + 3 × 3²"
+            "text": "8 + 5 × 5²"
            },
            {
             "text": "="
@@ -243,9 +250,9 @@
            {
             "blank": {
              "id": "q8",
-             "label": "10 + 3 × 3²",
+             "label": "8 + 5 × 5²",
              "answer": {
-              "text": "37"
+              "text": "133"
              }
             }
            }
@@ -253,7 +260,7 @@
          }
         }
        ],
-       "key": "10 + 3 × 3² = 37"
+       "key": "8 + 5 × 5² = 133"
       },
       {
        "label": "9",
@@ -262,7 +269,7 @@
          "math": {
           "atoms": [
            {
-            "text": "(8 + 4)² − 3"
+            "text": "5³ − 3 × 5"
            },
            {
             "text": "="
@@ -270,9 +277,9 @@
            {
             "blank": {
              "id": "q9",
-             "label": "(8 + 4)² − 3",
+             "label": "5³ − 3 × 5",
              "answer": {
-              "text": "141"
+              "text": "110"
              }
             }
            }
@@ -280,7 +287,7 @@
          }
         }
        ],
-       "key": "(8 + 4)² − 3 = 141"
+       "key": "5³ − 3 × 5 = 110"
       },
       {
        "label": "10",
@@ -289,7 +296,7 @@
          "math": {
           "atoms": [
            {
-            "text": "11 + 6 × 5²"
+            "text": "8³"
            },
            {
             "text": "="
@@ -297,9 +304,9 @@
            {
             "blank": {
              "id": "q10",
-             "label": "11 + 6 × 5²",
+             "label": "8³",
              "answer": {
-              "text": "161"
+              "text": "512"
              }
             }
            }
@@ -307,7 +314,7 @@
          }
         }
        ],
-       "key": "11 + 6 × 5² = 161"
+       "key": "8³ = 512"
       },
       {
        "label": "11",
@@ -316,7 +323,7 @@
          "math": {
           "atoms": [
            {
-            "text": "10 + 6 × 3²"
+            "text": "18 ÷ 3² + 2"
            },
            {
             "text": "="
@@ -324,9 +331,9 @@
            {
             "blank": {
              "id": "q11",
-             "label": "10 + 6 × 3²",
+             "label": "18 ÷ 3² + 2",
              "answer": {
-              "text": "64"
+              "text": "4"
              }
             }
            }
@@ -334,7 +341,7 @@
          }
         }
        ],
-       "key": "10 + 6 × 3² = 64"
+       "key": "18 ÷ 3² + 2 = 4"
       },
       {
        "label": "12",
@@ -343,7 +350,7 @@
          "math": {
           "atoms": [
            {
-            "text": "3³"
+            "text": "2³"
            },
            {
             "text": "="
@@ -351,9 +358,9 @@
            {
             "blank": {
              "id": "q12",
-             "label": "3³",
+             "label": "2³",
              "answer": {
-              "text": "27"
+              "text": "8"
              }
             }
            }
@@ -361,7 +368,7 @@
          }
         }
        ],
-       "key": "3³ = 27"
+       "key": "2³ = 8"
       }
      ],
      "columns": 2,
@@ -372,9 +379,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "The items cycle through six forms: a single power, a sum with a power, a power of a sum, a difference, two squares added, and a division by a square. Each form puts the power in a different place, so the student has to apply the order of operations each time. Whole-number answers let the student check their work.",
       "misconceptions": [
        "Reading 5² as 5 × 2.",
        "Working left to right, so 4 + 3 × 2² is 28."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 242
@@ -440,9 +451,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "12 + 3 × 5²",
+    "label": "(8 + 3)² − 5",
     "answer": {
-     "text": "87"
+     "text": "116"
     }
    }
   },
@@ -450,9 +461,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "8 + 6 × 4²",
+    "label": "24 ÷ 2² + 6",
     "answer": {
-     "text": "104"
+     "text": "12"
     }
    }
   },
@@ -460,9 +471,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "5³ − 3 × 6",
+    "label": "8² + 3²",
     "answer": {
-     "text": "107"
+     "text": "73"
     }
    }
   },
@@ -470,9 +481,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "10 + 3 × 3²",
+    "label": "8 + 5 × 5²",
     "answer": {
-     "text": "37"
+     "text": "133"
     }
    }
   },
@@ -480,9 +491,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "(8 + 4)² − 3",
+    "label": "5³ − 3 × 5",
     "answer": {
-     "text": "141"
+     "text": "110"
     }
    }
   },
@@ -490,9 +501,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "11 + 6 × 5²",
+    "label": "8³",
     "answer": {
-     "text": "161"
+     "text": "512"
     }
    }
   },
@@ -500,9 +511,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "10 + 6 × 3²",
+    "label": "18 ÷ 3² + 2",
     "answer": {
-     "text": "64"
+     "text": "4"
     }
    }
   },
@@ -510,9 +521,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "3³",
+    "label": "2³",
     "answer": {
-     "text": "27"
+     "text": "8"
     }
    }
   }

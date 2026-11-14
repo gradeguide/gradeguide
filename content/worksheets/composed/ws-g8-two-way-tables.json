@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the totals, then answer.",
+     "instruction": "Complete the totals. Then answer the questions.",
      "items": [
       {
        "label": "1",
@@ -139,9 +139,27 @@
            }
           ]
          }
+        },
+        {
+         "text": "Is a student who walks more likely to have a pet than one who rides?"
+        },
+        {
+         "choices": {
+          "options": [
+           "yes",
+           "no"
+          ],
+          "field": {
+           "id": "q1-8",
+           "label": "Is a student who walks more likely to have a pet than one who rides?",
+           "answer": {
+            "text": "no"
+           }
+          }
+         }
         }
        ],
-       "key": "31, 11, 17, 25, 42; Of the students who walk, what fraction have a pet? 11/17; Of the students with a pet, what fraction ride? 20/31"
+       "key": "31, 11, 17, 25, 42; Of the students who walk, what fraction have a pet? 11/17; Of the students with a pet, what fraction ride? 20/31; no"
       },
       {
        "label": "2",
@@ -150,28 +168,28 @@
          "dataTable": {
           "header": [
            "",
-           "Walks to school",
-           "Rides",
+           "Grade 7",
+           "Grade 8",
            "Total"
           ],
           "rows": [
            {
             "cells": [
              {
-              "text": "Has a pet"
+              "text": "Plays a sport"
              },
              {
               "text": "12"
              },
              {
-              "text": "26"
+              "text": "17"
              },
              {
               "field": {
                "id": "q2",
-               "label": "Has a pet total",
+               "label": "Plays a sport total",
                "answer": {
-                "text": "38"
+                "text": "29"
                }
               }
              }
@@ -180,20 +198,20 @@
            {
             "cells": [
              {
-              "text": "No pet"
+              "text": "No sport"
              },
              {
-              "text": "27"
+              "text": "25"
              },
              {
-              "text": "9"
+              "text": "12"
              },
              {
               "field": {
                "id": "q2-2",
-               "label": "No pet total",
+               "label": "No sport total",
                "answer": {
-                "text": "36"
+                "text": "37"
                }
               }
              }
@@ -207,18 +225,18 @@
              {
               "field": {
                "id": "q2-3",
-               "label": "Walks to school total",
+               "label": "Grade 7 total",
                "answer": {
-                "text": "39"
+                "text": "37"
                }
               }
              },
              {
               "field": {
                "id": "q2-4",
-               "label": "Rides total",
+               "label": "Grade 8 total",
                "answer": {
-                "text": "35"
+                "text": "29"
                }
               }
              },
@@ -227,7 +245,7 @@
                "id": "q2-5",
                "label": "grand total",
                "answer": {
-                "text": "74"
+                "text": "66"
                }
               }
              }
@@ -240,17 +258,14 @@
          "math": {
           "atoms": [
            {
-            "text": "Of the students who walk, what fraction have a pet?"
+            "text": "Of the grade 7 students, what fraction play a sport?"
            },
            {
             "fractionBlank": {
              "id": "q2-6",
-             "label": "Of the students who walk, what fraction have a pet?",
+             "label": "Of the grade 7 students, what fraction play a sport?",
              "answer": {
-              "text": "4/13",
-              "also": [
-               "12/39"
-              ]
+              "text": "12/37"
              }
             }
            }
@@ -261,25 +276,40 @@
          "math": {
           "atoms": [
            {
-            "text": "Of the students with a pet, what fraction ride?"
+            "text": "Of the students who play a sport, what fraction are in grade 8?"
            },
            {
             "fractionBlank": {
              "id": "q2-7",
-             "label": "Of the students with a pet, what fraction ride?",
+             "label": "Of the students who play a sport, what fraction are in grade 8?",
              "answer": {
-              "text": "13/19",
-              "also": [
-               "26/38"
-              ]
+              "text": "17/29"
              }
             }
            }
           ]
          }
+        },
+        {
+         "text": "Is a grade 7 student more likely to play a sport than a grade 8 student?"
+        },
+        {
+         "choices": {
+          "options": [
+           "yes",
+           "no"
+          ],
+          "field": {
+           "id": "q2-8",
+           "label": "Is a grade 7 student more likely to play a sport than a grade 8 student?",
+           "answer": {
+            "text": "no"
+           }
+          }
+         }
         }
        ],
-       "key": "38, 36, 39, 35, 74; Of the students who walk, what fraction have a pet? 4/13; Of the students with a pet, what fraction ride? 13/19"
+       "key": "29, 37, 37, 29, 66; Of the grade 7 students, what fraction play a sport? 12/37; Of the students who play a sport, what fraction are in grade 8? 17/29; no"
       }
      ],
      "columns": 1,
@@ -290,14 +320,19 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "The student fills in the totals first, so the row and column totals are there to divide by. The two fraction questions use different totals: one a column, one a row. The last question asks whether the shares differ, which is how a two-way table shows an association.",
       "misconceptions": [
-       "Dividing by the grand total when the question is about one row."
+       "Dividing by the grand total when the question is about one row or column.",
+       "Comparing counts instead of fractions when the groups are different sizes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Statistics and Probability"
       ]
      },
-     "estimatedHeight": 578
+     "estimatedHeight": 686
     }
    ],
-   "estimatedHeight": 582
+   "estimatedHeight": 690
   }
  ],
  "key": [
@@ -372,12 +407,22 @@
    }
   },
   {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-8",
+    "label": "Is a student who walks more likely to have a pet than one who rides?",
+    "answer": {
+     "text": "no"
+    }
+   }
+  },
+  {
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "Has a pet total",
+    "label": "Plays a sport total",
     "answer": {
-     "text": "38"
+     "text": "29"
     }
    }
   },
@@ -385,9 +430,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-2",
-    "label": "No pet total",
+    "label": "No sport total",
     "answer": {
-     "text": "36"
+     "text": "37"
     }
    }
   },
@@ -395,9 +440,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-3",
-    "label": "Walks to school total",
+    "label": "Grade 7 total",
     "answer": {
-     "text": "39"
+     "text": "37"
     }
    }
   },
@@ -405,9 +450,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-4",
-    "label": "Rides total",
+    "label": "Grade 8 total",
     "answer": {
-     "text": "35"
+     "text": "29"
     }
    }
   },
@@ -417,7 +462,7 @@
     "id": "q2-5",
     "label": "grand total",
     "answer": {
-     "text": "74"
+     "text": "66"
     }
    }
   },
@@ -425,12 +470,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-6",
-    "label": "Of the students who walk, what fraction have a pet?",
+    "label": "Of the grade 7 students, what fraction play a sport?",
     "answer": {
-     "text": "4/13",
-     "also": [
-      "12/39"
-     ]
+     "text": "12/37"
     }
    }
   },
@@ -438,12 +480,19 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-7",
-    "label": "Of the students with a pet, what fraction ride?",
+    "label": "Of the students who play a sport, what fraction are in grade 8?",
     "answer": {
-     "text": "13/19",
-     "also": [
-      "26/38"
-     ]
+     "text": "17/29"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-8",
+    "label": "Is a grade 7 student more likely to play a sport than a grade 8 student?",
+    "answer": {
+     "text": "no"
     }
    }
   }
@@ -455,7 +504,7 @@
   ]
  },
  "advice": [
-  "\"Fill in the totals, then answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Complete the totals. Then answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

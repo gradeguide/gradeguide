@@ -11,8 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick the value that makes the equation true.",
-     "explainer": "Try each value in place of the letter. The solution makes both sides equal.",
+     "instruction": "Check the value that makes the equation true.",
+     "explainer": "Substitute each value for the variable. The solution makes both sides equal.",
      "items": [
       {
        "label": "1",
@@ -118,6 +118,13 @@
       "purpose": "Find which of a set of values makes an equation true by substituting.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Before solving, the student tests values from a short list. This shows what a solution is: the value that makes both sides equal. The equations need two steps to solve, but substitution requires only evaluation.",
+      "misconceptions": [
+       "Stopping at the first value that makes one side look close."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 300
@@ -125,7 +132,7 @@
     {
      "label": "B",
      "instruction": "Solve.",
-     "explainer": "Undo the operation on the letter: subtract to undo +, divide to undo ×.",
+     "explainer": "Use the inverse operation. Subtract to undo addition. Divide to undo multiplication.",
      "items": [
       {
        "label": "4",
@@ -319,7 +326,7 @@
          "math": {
           "atoms": [
            {
-            "text": "x − 9 = −3"
+            "text": "x − 9 = 6"
            }
           ]
          }
@@ -333,12 +340,12 @@
            {
             "blank": {
              "id": "q9",
-             "label": "solution of x − 9 = −3",
+             "label": "solution of x − 9 = 6",
              "answer": {
-              "text": "6",
+              "text": "15",
               "also": [
-               "x = 6",
-               "x=6"
+               "x = 15",
+               "x=15"
               ]
              }
             }
@@ -347,7 +354,7 @@
          }
         }
        ],
-       "key": "x = 6"
+       "key": "x = 15"
       },
       {
        "label": "10",
@@ -430,7 +437,7 @@
          "math": {
           "atoms": [
            {
-            "text": "x − 7 = 9"
+            "text": "x − 7 = 16"
            }
           ]
          }
@@ -444,12 +451,12 @@
            {
             "blank": {
              "id": "q12",
-             "label": "solution of x − 7 = 9",
+             "label": "solution of x − 7 = 16",
              "answer": {
-              "text": "16",
+              "text": "23",
               "also": [
-               "x = 16",
-               "x=16"
+               "x = 23",
+               "x=23"
               ]
              }
             }
@@ -458,7 +465,7 @@
          }
         }
        ],
-       "key": "x = 16"
+       "key": "x = 23"
       },
       {
        "label": "13",
@@ -506,8 +513,12 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "The four kinds of one-step equation are mixed: adding, subtracting, multiplying and dividing. All numbers are 0 or more, as the grade 6 standard asks. The explainer names the inverse for each operation.",
       "misconceptions": [
        "Doing the operation shown instead of its inverse: x + 4 = 10 gives x = 14."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 444
@@ -519,13 +530,13 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "Write an expression for each.",
+     "instruction": "Write an expression for each situation.",
      "items": [
       {
        "label": "14",
        "nodes": [
         {
-         "text": "A plant is 8 cm tall and grows 12 cm a week. Write its height after k weeks."
+         "text": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both."
         },
         {
          "math": {
@@ -533,13 +544,14 @@
            {
             "blank": {
              "id": "q14",
-             "label": "A plant is 8 cm tall and grows 12 cm a week. Write its height after k weeks.",
+             "label": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both.",
              "answer": {
-              "text": "8 + 12k",
+              "text": "23x",
               "also": [
-               "8+12k",
-               "12k + 8",
-               "12k+8"
+               "x(12 + 11)",
+               "x(12+11)",
+               "(12 + 11)x",
+               "(12+11)x"
               ]
              }
             }
@@ -548,13 +560,13 @@
          }
         }
        ],
-       "key": "8 + 12k"
+       "key": "23x"
       },
       {
        "label": "15",
        "nodes": [
         {
-         "text": "A plant is 11 cm tall and grows 2 cm a week. Write its height after y weeks."
+         "text": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks."
         },
         {
          "math": {
@@ -562,13 +574,13 @@
            {
             "blank": {
              "id": "q15",
-             "label": "A plant is 11 cm tall and grows 2 cm a week. Write its height after y weeks.",
+             "label": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks.",
              "answer": {
-              "text": "11 + 2y",
+              "text": "6 + 9x",
               "also": [
-               "11+2y",
-               "2y + 11",
-               "2y+11"
+               "6+9x",
+               "9x + 6",
+               "9x+6"
               ]
              }
             }
@@ -577,7 +589,7 @@
          }
         }
        ],
-       "key": "11 + 2y"
+       "key": "6 + 9x"
       }
      ],
      "columns": 1,
@@ -587,13 +599,20 @@
       "purpose": "Write an expression with a variable for an amount in a story.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each story uses a variable for an unknown amount: cost, age, equal pieces or growth over time. The stories differ so the student decides which operation the words call for. The answer is an expression, not a number.",
+      "misconceptions": [
+       "Writing a number instead of an expression with the variable."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 190
     },
     {
      "label": "D",
-     "instruction": "Write an equation, solve it, and show your work.",
+     "instruction": "Write an equation. Solve it. Show your work.",
      "items": [
       {
        "label": "16",
@@ -679,6 +698,13 @@
       "purpose": "Write and solve one-step equations for stories.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The three stories need addition, division and a fraction of a whole. The directions ask for an equation first, so the student names the unknown before calculating. The last story divides by a fraction, which links back to the fraction division sheet.",
+      "misconceptions": [
+       "Multiplying 120 by 3/4 instead of dividing."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 442
@@ -792,12 +818,12 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "solution of x − 9 = −3",
+    "label": "solution of x − 9 = 6",
     "answer": {
-     "text": "6",
+     "text": "15",
      "also": [
-      "x = 6",
-      "x=6"
+      "x = 15",
+      "x=15"
      ]
     }
    }
@@ -834,12 +860,12 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "solution of x − 7 = 9",
+    "label": "solution of x − 7 = 16",
     "answer": {
-     "text": "16",
+     "text": "23",
      "also": [
-      "x = 16",
-      "x=16"
+      "x = 23",
+      "x=23"
      ]
     }
    }
@@ -862,13 +888,14 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "A plant is 8 cm tall and grows 12 cm a week. Write its height after k weeks.",
+    "label": "A ticket costs $12 and a snack costs $11. Write the cost for x people who each get both.",
     "answer": {
-     "text": "8 + 12k",
+     "text": "23x",
      "also": [
-      "8+12k",
-      "12k + 8",
-      "12k+8"
+      "x(12 + 11)",
+      "x(12+11)",
+      "(12 + 11)x",
+      "(12+11)x"
      ]
     }
    }
@@ -877,13 +904,13 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
-    "label": "A plant is 11 cm tall and grows 2 cm a week. Write its height after y weeks.",
+    "label": "A plant is 6 cm tall and grows 9 cm a week. Write its height after x weeks.",
     "answer": {
-     "text": "11 + 2y",
+     "text": "6 + 9x",
      "also": [
-      "11+2y",
-      "2y + 11",
-      "2y+11"
+      "6+9x",
+      "9x + 6",
+      "9x+6"
      ]
     }
    }
@@ -939,7 +966,7 @@
   ]
  },
  "advice": [
-  "Section \"Write an expression for each.\" was cut from 4 to 2 items to fit."
+  "Section \"Write an expression for each situation.\" was cut from 4 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

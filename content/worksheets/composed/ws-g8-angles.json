@@ -9,85 +9,24 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Find the angle.",
-     "explainer": "The angles of a triangle add to 180°. An exterior angle equals the two far interior angles added.",
+     "instruction": "Find the angle in the box.",
+     "explainer": "The angles of a triangle add to 180°.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "A triangle has angles of 24° and 19°."
-        },
-        {
-         "math": {
-          "atoms": [
+         "angleTriangle": {
+          "left": 38,
+          "right": 37,
+          "labels": [
            {
-            "text": "Third angle:"
+            "text": "38°"
            },
            {
-            "blank": {
+            "field": {
              "id": "q1",
-             "label": "third angle",
-             "answer": {
-              "text": "137°",
-              "also": [
-               "137"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Third angle: 137°"
-      },
-      {
-       "label": "2",
-       "nodes": [
-        {
-         "text": "A triangle has angles of 78° and 67°."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Third angle:"
-           },
-           {
-            "blank": {
-             "id": "q2",
-             "label": "third angle",
-             "answer": {
-              "text": "35°",
-              "also": [
-               "35"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Third angle: 35°"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "text": "A triangle has angles of 96° and 47°."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Third angle:"
-           },
-           {
-            "blank": {
-             "id": "q3",
-             "label": "third angle",
+             "label": "the missing angle",
              "answer": {
               "text": "37°",
               "also": [
@@ -95,42 +34,111 @@
               ]
              }
             }
+           },
+           {
+            "text": "105°"
            }
           ]
          }
         }
        ],
-       "key": "Third angle: 37°"
+       "key": "37°"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 68,
+          "right": 59,
+          "labels": [
+           {
+            "text": "68°"
+           },
+           {
+            "field": {
+             "id": "q2",
+             "label": "the missing angle",
+             "answer": {
+              "text": "59°",
+              "also": [
+               "59"
+              ]
+             }
+            }
+           },
+           {
+            "text": "53°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "59°"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 96,
+          "right": 43,
+          "labels": [
+           {
+            "text": "96°"
+           },
+           {
+            "field": {
+             "id": "q3",
+             "label": "the missing angle",
+             "answer": {
+              "text": "43°",
+              "also": [
+               "43"
+              ]
+             }
+            }
+           },
+           {
+            "text": "41°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "43°"
       },
       {
        "label": "4",
        "nodes": [
         {
-         "text": "A triangle has angles of 82° and 45°."
-        },
-        {
-         "math": {
-          "atoms": [
+         "angleTriangle": {
+          "left": 90,
+          "right": 40,
+          "labels": [
            {
-            "text": "Third angle:"
-           },
-           {
-            "blank": {
+            "field": {
              "id": "q4",
-             "label": "third angle",
+             "label": "the missing angle",
              "answer": {
-              "text": "53°",
+              "text": "90°",
               "also": [
-               "53"
+               "90"
               ]
              }
             }
+           },
+           {
+            "text": "40°"
+           },
+           {
+            "text": "50°"
            }
           ]
          }
         }
        ],
-       "key": "Third angle: 53°"
+       "key": "90°"
       }
      ],
      "columns": 2,
@@ -140,148 +148,105 @@
       "purpose": "Use the triangle angle sum.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each triangle is drawn to scale, with two angles given and one in a box. The missing angle moves from corner to corner. The drawing lets the student see whether the answer is about the right size.",
+      "misconceptions": [
+       "Subtracting only one of the given angles from 180°.",
+       "Thinking the angles of a triangle add to 360°."
       ]
      },
-     "estimatedHeight": 236
+     "estimatedHeight": 488
     },
     {
      "label": "B",
-     "instruction": "Find the exterior angle.",
+     "instruction": "Find the exterior angle in the box.",
+     "explainer": "An exterior angle equals the two interior angles across from it, added.",
      "items": [
       {
        "label": "5",
        "nodes": [
         {
-         "text": "A triangle has angles of 104° and 18°."
-        },
-        {
-         "math": {
-          "atoms": [
+         "angleTriangle": {
+          "left": 101,
+          "right": 40,
+          "labels": [
            {
-            "text": "Exterior angle at the third corner:"
+            "text": "101°"
            },
+           {},
            {
-            "blank": {
-             "id": "q5",
-             "label": "exterior angle",
-             "answer": {
-              "text": "122°",
-              "also": [
-               "122"
-              ]
-             }
+            "text": "39°"
+           }
+          ],
+          "exterior": {
+           "field": {
+            "id": "q5",
+            "label": "the exterior angle",
+            "answer": {
+             "text": "140°",
+             "also": [
+              "140"
+             ]
             }
            }
-          ]
+          }
          }
         }
        ],
-       "key": "Exterior angle at the third corner: 122°"
+       "key": "140°"
       },
       {
        "label": "6",
        "nodes": [
         {
-         "text": "A triangle has angles of 68° and 80°."
-        },
-        {
-         "math": {
-          "atoms": [
+         "angleTriangle": {
+          "left": 79,
+          "right": 51,
+          "labels": [
            {
-            "text": "Exterior angle at the third corner:"
+            "text": "79°"
            },
+           {},
            {
-            "blank": {
-             "id": "q6",
-             "label": "exterior angle",
-             "answer": {
-              "text": "148°",
-              "also": [
-               "148"
-              ]
-             }
+            "text": "50°"
+           }
+          ],
+          "exterior": {
+           "field": {
+            "id": "q6",
+            "label": "the exterior angle",
+            "answer": {
+             "text": "129°",
+             "also": [
+              "129"
+             ]
             }
            }
-          ]
+          }
          }
         }
        ],
-       "key": "Exterior angle at the third corner: 148°"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "text": "A triangle has angles of 57° and 77°."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Exterior angle at the third corner:"
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "exterior angle",
-             "answer": {
-              "text": "134°",
-              "also": [
-               "134"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Exterior angle at the third corner: 134°"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "text": "A triangle has angles of 56° and 71°."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Exterior angle at the third corner:"
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "exterior angle",
-             "answer": {
-              "text": "127°",
-              "also": [
-               "127"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Exterior angle at the third corner: 127°"
+       "key": "129°"
       }
      ],
-     "columns": 1,
+     "columns": 2,
      "fragmentId": "frag-g8-exterior-angles",
      "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Find an exterior angle of a triangle from the two interior angles across from it.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the student uses the exterior angle fact. A student can check the answer by finding the third angle and subtracting it from 180°.",
+      "misconceptions": [
+       "Adding all three interior angles.",
+       "Taking the interior angle beside it as the exterior angle."
       ]
      },
-     "estimatedHeight": 346
+     "estimatedHeight": 274
     }
    ],
-   "estimatedHeight": 590
+   "estimatedHeight": 770
   },
   {
    "sections": [
@@ -291,7 +256,7 @@
      "explainer": "Corresponding and alternate angles are equal. Angles beside each other on a line add to 180°.",
      "items": [
       {
-       "label": "9",
+       "label": "7",
        "nodes": [
         {
          "transversal": {
@@ -303,7 +268,7 @@
            },
            {
             "field": {
-             "id": "q9",
+             "id": "q7",
              "label": "angle at position 0",
              "answer": {
               "text": "60°",
@@ -316,7 +281,7 @@
            {
             "position": 7,
             "field": {
-             "id": "q9-2",
+             "id": "q7-2",
              "label": "angle at position 7",
              "answer": {
               "text": "120°",
@@ -333,7 +298,7 @@
        "key": "60°, 120°"
       },
       {
-       "label": "10",
+       "label": "8",
        "nodes": [
         {
          "transversal": {
@@ -346,7 +311,7 @@
            {
             "position": 5,
             "field": {
-             "id": "q10",
+             "id": "q8",
              "label": "angle at position 5",
              "answer": {
               "text": "65°",
@@ -358,7 +323,7 @@
            },
            {
             "field": {
-             "id": "q10-2",
+             "id": "q8-2",
              "label": "angle at position 0",
              "answer": {
               "text": "115°",
@@ -373,6 +338,91 @@
         }
        ],
        "key": "65°, 115°"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 55,
+          "labels": [
+           {
+            "position": 2,
+            "text": "55°"
+           },
+           {
+            "position": 7,
+            "field": {
+             "id": "q9",
+             "label": "angle at position 7",
+             "answer": {
+              "text": "125°",
+              "also": [
+               "125"
+              ]
+             }
+            }
+           },
+           {
+            "position": 4,
+            "field": {
+             "id": "q9-2",
+             "label": "angle at position 4",
+             "answer": {
+              "text": "55°",
+              "also": [
+               "55"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "125°, 55°"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 75,
+          "labels": [
+           {
+            "position": 4,
+            "text": "75°"
+           },
+           {
+            "field": {
+             "id": "q10",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "75°",
+              "also": [
+               "75"
+              ]
+             }
+            }
+           },
+           {
+            "position": 1,
+            "field": {
+             "id": "q10-2",
+             "label": "angle at position 1",
+             "answer": {
+              "text": "105°",
+              "also": [
+               "105"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "75°, 105°"
       }
      ],
      "columns": 2,
@@ -382,12 +432,17 @@
       "purpose": "Find angles made when a transversal cuts parallel lines.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each diagram gives one angle and asks for two others, one at each crossing. The student uses vertical, corresponding and alternate angles, and angles on a line. Different slants make the given angle sometimes acute and sometimes obtuse.",
+      "misconceptions": [
+       "Thinking all eight angles are equal.",
+       "Subtracting from 90° instead of 180° for angles on a line."
       ]
      },
-     "estimatedHeight": 258
+     "estimatedHeight": 456
     }
    ],
-   "estimatedHeight": 262
+   "estimatedHeight": 460
   }
  ],
  "key": [
@@ -395,33 +450,7 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "third angle",
-    "answer": {
-     "text": "137°",
-     "also": [
-      "137"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "2",
-   "field": {
-    "id": "q2",
-    "label": "third angle",
-    "answer": {
-     "text": "35°",
-     "also": [
-      "35"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "3",
-   "field": {
-    "id": "q3",
-    "label": "third angle",
+    "label": "the missing angle",
     "answer": {
      "text": "37°",
      "also": [
@@ -431,14 +460,40 @@
    }
   },
   {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the missing angle",
+    "answer": {
+     "text": "59°",
+     "also": [
+      "59"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the missing angle",
+    "answer": {
+     "text": "43°",
+     "also": [
+      "43"
+     ]
+    }
+   }
+  },
+  {
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "third angle",
+    "label": "the missing angle",
     "answer": {
-     "text": "53°",
+     "text": "90°",
      "also": [
-      "53"
+      "90"
      ]
     }
    }
@@ -447,11 +502,11 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "exterior angle",
+    "label": "the exterior angle",
     "answer": {
-     "text": "122°",
+     "text": "140°",
      "also": [
-      "122"
+      "140"
      ]
     }
    }
@@ -460,11 +515,11 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "exterior angle",
+    "label": "the exterior angle",
     "answer": {
-     "text": "148°",
+     "text": "129°",
      "also": [
-      "148"
+      "129"
      ]
     }
    }
@@ -473,32 +528,6 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "exterior angle",
-    "answer": {
-     "text": "134°",
-     "also": [
-      "134"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "exterior angle",
-    "answer": {
-     "text": "127°",
-     "also": [
-      "127"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9",
     "label": "angle at position 0",
     "answer": {
      "text": "60°",
@@ -509,9 +538,9 @@
    }
   },
   {
-   "itemLabel": "9",
+   "itemLabel": "7",
    "field": {
-    "id": "q9-2",
+    "id": "q7-2",
     "label": "angle at position 7",
     "answer": {
      "text": "120°",
@@ -522,9 +551,9 @@
    }
   },
   {
-   "itemLabel": "10",
+   "itemLabel": "8",
    "field": {
-    "id": "q10",
+    "id": "q8",
     "label": "angle at position 5",
     "answer": {
      "text": "65°",
@@ -535,14 +564,66 @@
    }
   },
   {
-   "itemLabel": "10",
+   "itemLabel": "8",
    "field": {
-    "id": "q10-2",
+    "id": "q8-2",
     "label": "angle at position 0",
     "answer": {
      "text": "115°",
      "also": [
       "115"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "angle at position 7",
+    "answer": {
+     "text": "125°",
+     "also": [
+      "125"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "angle at position 4",
+    "answer": {
+     "text": "55°",
+     "also": [
+      "55"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "75°",
+     "also": [
+      "75"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "angle at position 1",
+    "answer": {
+     "text": "105°",
+     "also": [
+      "105"
      ]
     }
    }
@@ -555,10 +636,10 @@
   ]
  },
  "advice": [
-  "\"Find the angle.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Find the exterior angle.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the angle in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the exterior angle in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"The arrows mark parallel lines. Find the angles in the boxes.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "Section \"The arrows mark parallel lines. Find the angles in the boxes.\" was cut from 4 to 2 items to fit."
+  "Section \"Find the exterior angle in the box.\" was cut from 4 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -163,6 +163,10 @@
       "purpose": "Find the greatest common factor of two numbers up to 100.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Both numbers are 100 or less and share a factor larger than 1, as the standard asks. The pairs are built from a common factor times two numbers with no common factor, so the answer is never just 1.",
+      "misconceptions": [
+       "Giving a common factor that is not the greatest, such as 2 for 12 and 18."
       ]
      },
      "estimatedHeight": 190
@@ -178,108 +182,12 @@
          "math": {
           "atoms": [
            {
-            "text": "LCM of 4 and 11 ="
+            "text": "LCM of 10 and 4 ="
            },
            {
             "blank": {
              "id": "q7",
-             "label": "LCM of 4 and 11",
-             "answer": {
-              "text": "44"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "LCM of 4 and 11 = 44"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "LCM of 2 and 4 ="
-           },
-           {
-            "blank": {
-             "id": "q8",
-             "label": "LCM of 2 and 4",
-             "answer": {
-              "text": "4"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "LCM of 2 and 4 = 4"
-      },
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "LCM of 12 and 4 ="
-           },
-           {
-            "blank": {
-             "id": "q9",
-             "label": "LCM of 12 and 4",
-             "answer": {
-              "text": "12"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "LCM of 12 and 4 = 12"
-      },
-      {
-       "label": "10",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "LCM of 3 and 10 ="
-           },
-           {
-            "blank": {
-             "id": "q10",
-             "label": "LCM of 3 and 10",
-             "answer": {
-              "text": "30"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "LCM of 3 and 10 = 30"
-      },
-      {
-       "label": "11",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "LCM of 4 and 5 ="
-           },
-           {
-            "blank": {
-             "id": "q11",
-             "label": "LCM of 4 and 5",
+             "label": "LCM of 10 and 4",
              "answer": {
               "text": "20"
              }
@@ -289,7 +197,103 @@
          }
         }
        ],
-       "key": "LCM of 4 and 5 = 20"
+       "key": "LCM of 10 and 4 = 20"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "LCM of 10 and 12 ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "LCM of 10 and 12",
+             "answer": {
+              "text": "60"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "LCM of 10 and 12 = 60"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "LCM of 5 and 2 ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "LCM of 5 and 2",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "LCM of 5 and 2 = 10"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "LCM of 5 and 8 ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "LCM of 5 and 8",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "LCM of 5 and 8 = 40"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "LCM of 4 and 6 ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "LCM of 4 and 6",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "LCM of 4 and 6 = 12"
       },
       {
        "label": "12",
@@ -298,14 +302,14 @@
          "math": {
           "atoms": [
            {
-            "text": "LCM of 7 and 9 ="
+            "text": "LCM of 6 and 11 ="
            },
            {
             "blank": {
              "id": "q12",
-             "label": "LCM of 7 and 9",
+             "label": "LCM of 6 and 11",
              "answer": {
-              "text": "63"
+              "text": "66"
              }
             }
            }
@@ -313,7 +317,7 @@
          }
         }
        ],
-       "key": "LCM of 7 and 9 = 63"
+       "key": "LCM of 6 and 11 = 66"
       }
      ],
      "columns": 2,
@@ -324,6 +328,7 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Both numbers are 12 or less, as the standard asks. Most pairs share a factor, so multiplying the two numbers gives a common multiple that is too big. Pairs where one number divides the other are left out because they are too easy at this grade.",
       "misconceptions": [
        "Multiplying the two numbers, which gives a common multiple but not always the least."
       ]
@@ -333,7 +338,7 @@
     {
      "label": "C",
      "instruction": "Write the sum as the greatest common factor times a sum.",
-     "explainer": "36 + 8 = 4 × (9 + 2), because 4 is the greatest factor of both.",
+     "explainer": "Example: 36 + 8 = 4 × (9 + 2). The greatest common factor of 36 and 8 is 4.",
      "items": [
       {
        "label": "13",
@@ -547,6 +552,13 @@
       "purpose": "Use the distributive property to write a sum with its greatest common factor outside.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "This links factors to the distributive property, which the student uses again with variables in expressions. The explainer shows one case in full. Boxes for the factor and both parts make the structure of the answer clear.",
+      "misconceptions": [
+       "Taking out a common factor that is not the greatest, such as 2 from 36 + 84."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
       ]
      },
      "estimatedHeight": 268
@@ -620,9 +632,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "LCM of 4 and 11",
+    "label": "LCM of 10 and 4",
     "answer": {
-     "text": "44"
+     "text": "20"
     }
    }
   },
@@ -630,9 +642,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "LCM of 2 and 4",
+    "label": "LCM of 10 and 12",
     "answer": {
-     "text": "4"
+     "text": "60"
     }
    }
   },
@@ -640,9 +652,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "LCM of 12 and 4",
+    "label": "LCM of 5 and 2",
     "answer": {
-     "text": "12"
+     "text": "10"
     }
    }
   },
@@ -650,9 +662,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "LCM of 3 and 10",
+    "label": "LCM of 5 and 8",
     "answer": {
-     "text": "30"
+     "text": "40"
     }
    }
   },
@@ -660,9 +672,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "LCM of 4 and 5",
+    "label": "LCM of 4 and 6",
     "answer": {
-     "text": "20"
+     "text": "12"
     }
    }
   },
@@ -670,9 +682,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "LCM of 7 and 9",
+    "label": "LCM of 6 and 11",
     "answer": {
-     "text": "63"
+     "text": "66"
     }
    }
   },

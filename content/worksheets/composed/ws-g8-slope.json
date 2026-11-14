@@ -346,12 +346,23 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "A slope triangle on a grid shows the rise and the run as lengths the student can count. Falling lines make the rise negative, so the sign of the slope is seen, not told. This prepares for the formula in the next section.",
       "misconceptions": [
-       "Writing run over rise."
+       "Writing run over rise.",
+       "Giving a falling line a positive slope.",
+       "Counting grid lines instead of the spaces between them."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, 6–8, Expressions and Equations"
       ]
      },
      "estimatedHeight": 680
-    },
+    }
+   ],
+   "estimatedHeight": 684
+  },
+  {
+   "sections": [
     {
      "label": "B",
      "instruction": "Find the slope of the line through the two points.",
@@ -382,31 +393,15 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         }
        ],
        "key": "Slope through (5, −6) and (−1, 1) = −7/6"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g8-slope-from-points",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Find the slope between two points.",
-      "principles": [
-       "PRINCIPLE_RETRIEVAL_PRACTICE"
-      ]
-     },
-     "estimatedHeight": 112
-    }
-   ],
-   "estimatedHeight": 800
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Find the slope of the line through the two points.",
-     "items": [
+      },
       {
        "label": "6",
        "nodes": [
@@ -431,6 +426,11 @@
             }
            }
           ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 1
          }
         }
        ],
@@ -461,6 +461,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         }
        ],
        "key": "Slope through (3, 2) and (7, −2) = −1"
@@ -489,6 +494,11 @@
            }
           ]
          }
+        },
+        {
+         "workSpace": {
+          "rows": 1
+         }
         }
        ],
        "key": "Slope through (4, 2) and (0, −1) = 3/4"
@@ -501,13 +511,17 @@
       "purpose": "Find the slope between two points.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With coordinates and no grid, the student uses the change in y over the change in x. Negative coordinates come up, so subtracting a negative is practised. A line of room under each item is for the two differences.",
+      "misconceptions": [
+       "Subtracting the x-values in one order and the y-values in the other.",
+       "Putting the change in x on top."
       ]
      },
-     "continued": true,
-     "estimatedHeight": 190
+     "estimatedHeight": 420
     }
    ],
-   "estimatedHeight": 194
+   "estimatedHeight": 424
   }
  ],
  "key": [

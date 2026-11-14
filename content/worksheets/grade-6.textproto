@@ -933,6 +933,39 @@ fragments {
 }
 
 fragments {
+  id: "frag-g6-describe-data"
+  instruction: "Read about the study. Answer the questions."
+  stage: STAGE_INTRODUCE
+  items { kind { data_set_stats { mode: MODE_ATTRIBUTE } } count: 2 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Describe a data set by what was measured, how it was measured, its unit, and the number of values."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "A data summary starts by saying what the numbers are. Each study names a real attribute, a tool and a unit, and the distractors are other things the class might have counted or measured. Counting the values is the number of observations the standard asks students to report."
+    misconceptions: "Naming the people or things studied as the attribute, such as \"the students\" instead of their plank times."
+    misconceptions: "Leaving off the unit, so 34 could be seconds or minutes."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+  }
+}
+
+fragments {
+  id: "frag-g6-choose-center"
+  instruction: "Find the mean and the median. Choose the better measure of center."
+  stage: STAGE_APPLY
+  explainer: "When one value is far from the rest, the median describes a typical value better than the mean."
+  items { kind { data_set_stats { mode: MODE_CHOOSE_CENTER } } count: 2 min_count: 2 }
+  max_columns: 1
+  design {
+    purpose: "Choose the mean or the median to describe a data set from the shape of its dot plot."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "One plot is balanced and one has a value far from the rest. Students compute both measures first, so they see the far value pull the mean away from where most data sit. The written reason asks students to connect the choice to the shape of the plot."
+    misconceptions: "Always choosing the mean because it uses every value."
+    misconceptions: "Thinking the mean and the median are always close."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+  }
+}
+
+fragments {
   id: "frag-g6-dot-plot"
   instruction: "Use the dot plot to answer the questions."
   stage: STAGE_GUIDED
@@ -1286,4 +1319,18 @@ worksheets {
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
   home_tip: "Write down everyone's shoe size and find the middle value together."
+}
+
+worksheets {
+  id: "ws-g6-describing-data"
+  title: "Describing a data set"
+  seed: 622
+  max_pages: 2
+  placements { fragment_id: "frag-g6-describe-data" }
+  placements { fragment_id: "frag-g6-choose-center" }
+  design {
+    purpose: "Report what a data set measures and choose a measure of center that fits its shape."
+    principles: [PRINCIPLE_SELF_EXPLANATION]
+  }
+  home_tip: "Look at a sports page or weather report and name what each list of numbers measures and its unit."
 }

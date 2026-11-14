@@ -11,13 +11,13 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Find the rate for one, then use it.",
+     "instruction": "Find the unit rate. Use it to answer the second question.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "text": "5 stickers cost $7.50."
+         "text": "6 apples cost $3.00."
         },
         {
          "math": {
@@ -28,12 +28,12 @@
            {
             "blank": {
              "id": "q1",
-             "label": "cost of one of 5 for $7.50",
+             "label": "cost of one of 6 for $3.00",
              "answer": {
-              "text": "1.50",
+              "text": "0.50",
               "also": [
-               "1.5",
-               "$1.50"
+               "0.5",
+               "$0.50"
               ]
              }
             }
@@ -45,17 +45,17 @@
          "math": {
           "atoms": [
            {
-            "text": "8 stickers cost $"
+            "text": "11 apples cost $"
            },
            {
             "blank": {
              "id": "q1-2",
-             "label": "cost of 8",
+             "label": "cost of 11",
              "answer": {
-              "text": "12.00",
+              "text": "5.50",
               "also": [
-               "12",
-               "$12.00"
+               "5.5",
+               "$5.50"
               ]
              }
             }
@@ -64,13 +64,13 @@
          }
         }
        ],
-       "key": "One costs $ 1.50; 8 stickers cost $ 12.00"
+       "key": "One costs $ 0.50; 11 apples cost $ 5.50"
       },
       {
        "label": "2",
        "nodes": [
         {
-         "text": "A cyclist rides 80 miles in 8 hours."
+         "text": "A cyclist rides 64 miles in 4 hours."
         },
         {
          "math": {
@@ -83,7 +83,7 @@
              "id": "q2",
              "label": "miles per hour",
              "answer": {
-              "text": "10"
+              "text": "16"
              }
             }
            },
@@ -97,14 +97,14 @@
          "math": {
           "atoms": [
            {
-            "text": "In 4 hours:"
+            "text": "In 8 hours:"
            },
            {
             "blank": {
              "id": "q2-2",
-             "label": "miles in 4 hours",
+             "label": "miles in 8 hours",
              "answer": {
-              "text": "40"
+              "text": "128"
              }
             }
            },
@@ -115,13 +115,13 @@
          }
         }
        ],
-       "key": "Rate: 10 miles per hour; In 4 hours: 40 miles"
+       "key": "Rate: 16 miles per hour; In 8 hours: 128 miles"
       },
       {
        "label": "3",
        "nodes": [
         {
-         "text": "A cyclist rides 77 miles in 7 hours."
+         "text": "A printer prints 9 pages in 3 minutes."
         },
         {
          "math": {
@@ -132,113 +132,9 @@
            {
             "blank": {
              "id": "q3",
-             "label": "miles per hour",
-             "answer": {
-              "text": "11"
-             }
-            }
-           },
-           {
-            "text": "miles per hour"
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "In 6 hours:"
-           },
-           {
-            "blank": {
-             "id": "q3-2",
-             "label": "miles in 6 hours",
-             "answer": {
-              "text": "66"
-             }
-            }
-           },
-           {
-            "text": "miles"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Rate: 11 miles per hour; In 6 hours: 66 miles"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "text": "5 muffins cost $2.00."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "One costs $"
-           },
-           {
-            "blank": {
-             "id": "q4",
-             "label": "cost of one of 5 for $2.00",
-             "answer": {
-              "text": "0.40",
-              "also": [
-               "0.4",
-               "$0.40"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "4 muffins cost $"
-           },
-           {
-            "blank": {
-             "id": "q4-2",
-             "label": "cost of 4",
-             "answer": {
-              "text": "1.60",
-              "also": [
-               "1.6",
-               "$1.60"
-              ]
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "One costs $ 0.40; 4 muffins cost $ 1.60"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "text": "A printer prints 77 pages in 7 minutes."
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Rate:"
-           },
-           {
-            "blank": {
-             "id": "q5",
              "label": "pages per minute",
              "answer": {
-              "text": "11"
+              "text": "3"
              }
             }
            },
@@ -252,14 +148,14 @@
          "math": {
           "atoms": [
            {
-            "text": "In 8 minutes:"
+            "text": "In 6 minutes:"
            },
            {
             "blank": {
-             "id": "q5-2",
-             "label": "pages in 8 minutes",
+             "id": "q3-2",
+             "label": "pages in 6 minutes",
              "answer": {
-              "text": "88"
+              "text": "18"
              }
             }
            },
@@ -270,13 +166,64 @@
          }
         }
        ],
-       "key": "Rate: 11 pages per minute; In 8 minutes: 88 pages"
+       "key": "Rate: 3 pages per minute; In 6 minutes: 18 pages"
       },
       {
-       "label": "6",
+       "label": "4",
        "nodes": [
         {
-         "text": "8 muffins cost $20.00."
+         "text": "A printer prints 42 pages in 6 minutes."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "pages per minute",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "pages per minute"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 12 minutes:"
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "pages in 12 minutes",
+             "answer": {
+              "text": "84"
+             }
+            }
+           },
+           {
+            "text": "pages"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 7 pages per minute; In 12 minutes: 84 pages"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "7 pens cost $5.25."
         },
         {
          "math": {
@@ -286,13 +233,12 @@
            },
            {
             "blank": {
-             "id": "q6",
-             "label": "cost of one of 8 for $20.00",
+             "id": "q5",
+             "label": "cost of one of 7 for $5.25",
              "answer": {
-              "text": "2.50",
+              "text": "0.75",
               "also": [
-               "2.5",
-               "$2.50"
+               "$0.75"
               ]
              }
             }
@@ -304,17 +250,16 @@
          "math": {
           "atoms": [
            {
-            "text": "7 muffins cost $"
+            "text": "5 pens cost $"
            },
            {
             "blank": {
-             "id": "q6-2",
-             "label": "cost of 7",
+             "id": "q5-2",
+             "label": "cost of 5",
              "answer": {
-              "text": "17.50",
+              "text": "3.75",
               "also": [
-               "17.5",
-               "$17.50"
+               "$3.75"
               ]
              }
             }
@@ -323,7 +268,58 @@
          }
         }
        ],
-       "key": "One costs $ 2.50; 7 muffins cost $ 17.50"
+       "key": "One costs $ 0.75; 5 pens cost $ 3.75"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A cyclist rides 112 miles in 8 hours."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Rate:"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "miles per hour",
+             "answer": {
+              "text": "14"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "In 5 hours:"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "miles in 5 hours",
+             "answer": {
+              "text": "70"
+             }
+            }
+           },
+           {
+            "text": "miles"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Rate: 14 miles per hour; In 5 hours: 70 miles"
       }
      ],
      "columns": 2,
@@ -334,8 +330,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Each item splits the work into two steps: find the rate for one, then scale it. Prices, speeds and printing rates use whole-number or cents answers so the student's attention stays on the ratio, not the arithmetic. The contexts change from item to item so the student cannot copy the last answer's form.",
       "misconceptions": [
-       "Dividing the smaller number by the larger whatever the question asks."
+       "Dividing the smaller number by the larger whatever the question asks.",
+       "Multiplying the total by the number of units instead of dividing to get the rate for one."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 400
@@ -403,8 +404,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "These stories mix three kinds of ratio problem: scaling a recipe, using a rate, and splitting a total in a given ratio. The last problem compares two unit prices, the everyday use of a unit rate. Plain working space lets the student choose a table, a double number line or division.",
       "misconceptions": [
-       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11.",
+       "Treating a part-to-part ratio as part-to-whole: 2 blue for every 3 white read as 2 out of 3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "estimatedHeight": 390
@@ -511,7 +517,7 @@
             "label": "10c",
             "prompt": [
              {
-              "text": "How much do you save on each box with the large pack?"
+              "text": "How much less does one box cost in the large pack?"
              }
             ],
             "response": [
@@ -548,8 +554,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "These stories mix three kinds of ratio problem: scaling a recipe, using a rate, and splitting a total in a given ratio. The last problem compares two unit prices, the everyday use of a unit rate. Plain working space lets the student choose a table, a double number line or division.",
       "misconceptions": [
-       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+       "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11.",
+       "Treating a part-to-part ratio as part-to-whole: 2 blue for every 3 white read as 2 out of 3."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
       ]
      },
      "continued": true,
@@ -564,12 +575,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "cost of one of 5 for $7.50",
+    "label": "cost of one of 6 for $3.00",
     "answer": {
-     "text": "1.50",
+     "text": "0.50",
      "also": [
-      "1.5",
-      "$1.50"
+      "0.5",
+      "$0.50"
      ]
     }
    }
@@ -578,12 +589,12 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-2",
-    "label": "cost of 8",
+    "label": "cost of 11",
     "answer": {
-     "text": "12.00",
+     "text": "5.50",
      "also": [
-      "12",
-      "$12.00"
+      "5.5",
+      "$5.50"
      ]
     }
    }
@@ -594,7 +605,7 @@
     "id": "q2",
     "label": "miles per hour",
     "answer": {
-     "text": "10"
+     "text": "16"
     }
    }
   },
@@ -602,9 +613,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-2",
-    "label": "miles in 4 hours",
+    "label": "miles in 8 hours",
     "answer": {
-     "text": "40"
+     "text": "128"
     }
    }
   },
@@ -612,9 +623,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "miles per hour",
+    "label": "pages per minute",
     "answer": {
-     "text": "11"
+     "text": "3"
     }
    }
   },
@@ -622,9 +633,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "miles in 6 hours",
+    "label": "pages in 6 minutes",
     "answer": {
-     "text": "66"
+     "text": "18"
     }
    }
   },
@@ -632,13 +643,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "cost of one of 5 for $2.00",
+    "label": "pages per minute",
     "answer": {
-     "text": "0.40",
-     "also": [
-      "0.4",
-      "$0.40"
-     ]
+     "text": "7"
     }
    }
   },
@@ -646,13 +653,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "cost of 4",
+    "label": "pages in 12 minutes",
     "answer": {
-     "text": "1.60",
-     "also": [
-      "1.6",
-      "$1.60"
-     ]
+     "text": "84"
     }
    }
   },
@@ -660,9 +663,12 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "pages per minute",
+    "label": "cost of one of 7 for $5.25",
     "answer": {
-     "text": "11"
+     "text": "0.75",
+     "also": [
+      "$0.75"
+     ]
     }
    }
   },
@@ -670,9 +676,12 @@
    "itemLabel": "5",
    "field": {
     "id": "q5-2",
-    "label": "pages in 8 minutes",
+    "label": "cost of 5",
     "answer": {
-     "text": "88"
+     "text": "3.75",
+     "also": [
+      "$3.75"
+     ]
     }
    }
   },
@@ -680,13 +689,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "cost of one of 8 for $20.00",
+    "label": "miles per hour",
     "answer": {
-     "text": "2.50",
-     "also": [
-      "2.5",
-      "$2.50"
-     ]
+     "text": "14"
     }
    }
   },
@@ -694,13 +699,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6-2",
-    "label": "cost of 7",
+    "label": "miles in 5 hours",
     "answer": {
-     "text": "17.50",
-     "also": [
-      "17.5",
-      "$17.50"
-     ]
+     "text": "70"
     }
    }
   },
@@ -797,7 +798,7 @@
   ]
  },
  "advice": [
-  "\"Find the rate for one, then use it.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Find the unit rate. Use it to answer the second question.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
