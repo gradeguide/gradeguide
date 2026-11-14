@@ -205,6 +205,9 @@ import { G68WidgetComponent } from './widgets_g68.component.js';
       @case ('boxSolid') {
         <ws-g68 [node]="node()" [filled]="filled()" />
       }
+      @case ('angleTriangle') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
       @case ('choices') {
         <ws-choices [node]="k.value" [filled]="filled()" />
       }
