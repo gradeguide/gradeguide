@@ -10,7 +10,44 @@
     {
      "label": "A",
      "instruction": "Write the missing number.",
-     "explainer": "A long block is a ten. Each small block is a one. 14 is a ten and 4 ones.",
+     "example": {
+      "nodes": [
+       {
+        "baseTenBlocks": {
+         "tens": 1,
+         "ones": 6,
+         "unit": 9
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "16"
+          },
+          {
+           "text": "="
+          },
+          {
+           "text": "10"
+          },
+          {
+           "text": "+"
+          },
+          {
+           "blank": {
+            "label": "ones in 16",
+            "answer": {
+             "text": "6"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "10 and 6 make **16**."
+     },
      "items": [
       {
        "label": "1",
@@ -18,7 +55,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 5
+          "ones": 5,
+          "unit": 9
          }
         },
         {
@@ -57,7 +95,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 5
+          "ones": 5,
+          "unit": 9
          }
         },
         {
@@ -96,7 +135,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 7
+          "ones": 7,
+          "unit": 9
          }
         },
         {
@@ -135,7 +175,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 8
+          "ones": 8,
+          "unit": 9
          }
         },
         {
@@ -174,7 +215,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 2
+          "ones": 2,
+          "unit": 9
          }
         },
         {
@@ -213,7 +255,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 1
+          "ones": 1,
+          "unit": 9
          }
         },
         {
@@ -252,7 +295,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 2
+          "ones": 2,
+          "unit": 9
          }
         },
         {
@@ -291,7 +335,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 1
+          "ones": 1,
+          "unit": 9
          }
         },
         {
@@ -329,19 +374,25 @@
      "fragmentId": "frag-gk-teen-numbers",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See numbers from 11 to 19 as ten ones and some more ones.",
+      "purpose": "Show numbers from 11 to 19 as ten ones and some more ones.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Each teen number appears as a rod of ten cubes and some single cubes, with an equation such as 14 = 10 + 4. In kindergarten the rod is ten ones joined together, not yet a unit called a ten. Half the equations give the parts and half give the whole, so students work in both directions.",
       "misconceptions": [
-       "Reading 14 as 1 and 4 instead of a ten and 4 ones."
+       "Reads 14 as 1 and 4 instead of ten and 4.",
+       "Writes the teen number in the order it is said, such as 41 for fourteen."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 426
+     "estimatedHeight": 734
     }
    ],
-   "estimatedHeight": 430
+   "estimatedHeight": 738
   }
  ],
  "key": [
@@ -427,7 +478,7 @@
   }
  ],
  "design": {
-  "purpose": "See each teen number as a ten and some ones.",
+  "purpose": "Show each teen number as ten ones and some more ones.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]

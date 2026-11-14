@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Find 10 or 100 more or less.",
+     "instruction": "Write the number.",
      "items": [
       {
        "label": "1",
@@ -237,8 +237,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Adding or subtracting 10 or 100 changes one digit, so students can answer mentally. This warms up the place-value thinking used in the column addition and subtraction that follows.",
       "misconceptions": [
-       "Changing the ones digit for 10 more."
+       "Changes the ones digit for 10 more.",
+       "Changes the tens digit for 100 more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 242
@@ -254,21 +259,21 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "928",
-           "802"
+           "174",
+           "294"
           ],
           "answer": {
            "id": "q9",
-           "label": "928 + 802",
+           "label": "174 + 294",
            "answer": {
-            "text": "1730"
+            "text": "468"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1730"
+       "key": "468"
       },
       {
        "label": "10",
@@ -277,21 +282,21 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "845",
-           "804"
+           "419",
+           "567"
           ],
           "answer": {
            "id": "q10",
-           "label": "845 + 804",
+           "label": "419 + 567",
            "answer": {
-            "text": "1649"
+            "text": "986"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1649"
+       "key": "986"
       },
       {
        "label": "11",
@@ -300,21 +305,21 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "494",
-           "713"
+           "183",
+           "518"
           ],
           "answer": {
            "id": "q11",
-           "label": "494 + 713",
+           "label": "183 + 518",
            "answer": {
-            "text": "1207"
+            "text": "701"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1207"
+       "key": "701"
       },
       {
        "label": "12",
@@ -323,21 +328,21 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "551",
-           "675"
+           "249",
+           "344"
           ],
           "answer": {
            "id": "q12",
-           "label": "551 + 675",
+           "label": "249 + 344",
            "answer": {
-            "text": "1226"
+            "text": "593"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1226"
+       "key": "593"
       },
       {
        "label": "13",
@@ -346,21 +351,21 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "940",
-           "242"
+           "195",
+           "585"
           ],
           "answer": {
            "id": "q13",
-           "label": "940 + 242",
+           "label": "195 + 585",
            "answer": {
-            "text": "1182"
+            "text": "780"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1182"
+       "key": "780"
       },
       {
        "label": "14",
@@ -369,30 +374,38 @@
          "columnArithmetic": {
           "op": "OP_ADD",
           "operands": [
-           "946",
-           "526"
+           "171",
+           "239"
           ],
           "answer": {
            "id": "q14",
-           "label": "946 + 526",
+           "label": "171 + 239",
            "answer": {
-            "text": "1472"
+            "text": "410"
            }
           },
           "carryBoxes": true
          }
         }
        ],
-       "key": "1472"
+       "key": "410"
       }
      ],
      "columns": 4,
      "fragmentId": "frag-g2-add-3-digit",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add three-digit numbers, regrouping ones and tens.",
+      "purpose": "Add two three-digit numbers with a sum under 1000, regrouping ones or tens.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every sum stays under 1000, within the grade 2 limit, and regroups in at least one place. The boxes above the columns give a place to record a new ten or a new hundred.",
+      "misconceptions": [
+       "Writes the two-digit sum of a column under that column instead of regrouping.",
+       "Forgets to add the regrouped ten or hundred."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 302
@@ -498,12 +511,17 @@
      "fragmentId": "frag-g2-subtract-3-digit",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Subtract three-digit numbers, trading a hundred for tens or a ten for ones.",
+      "purpose": "Subtract three-digit numbers, exchanging a hundred for tens or a ten for ones.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each item needs at least one exchange. Some have a zero in the top number, such as 605 − 309, where students must exchange across the zero.",
       "misconceptions": [
-       "Taking the smaller digit from the larger in each column."
+       "Subtracts the smaller digit from the larger in each column, whichever is on top.",
+       "Exchanges a ten but does not reduce the tens digit."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 168
@@ -568,12 +586,17 @@
      "fragmentId": "frag-g2-subtract-3-digit",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Subtract three-digit numbers, trading a hundred for tens or a ten for ones.",
+      "purpose": "Subtract three-digit numbers, exchanging a hundred for tens or a ten for ones.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each item needs at least one exchange. Some have a zero in the top number, such as 605 − 309, where students must exchange across the zero.",
       "misconceptions": [
-       "Taking the smaller digit from the larger in each column."
+       "Subtracts the smaller digit from the larger in each column, whichever is on top.",
+       "Exchanges a ten but does not reduce the tens digit."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "continued": true,
@@ -668,9 +691,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "928 + 802",
+    "label": "174 + 294",
     "answer": {
-     "text": "1730"
+     "text": "468"
     }
    }
   },
@@ -678,9 +701,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "845 + 804",
+    "label": "419 + 567",
     "answer": {
-     "text": "1649"
+     "text": "986"
     }
    }
   },
@@ -688,9 +711,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "494 + 713",
+    "label": "183 + 518",
     "answer": {
-     "text": "1207"
+     "text": "701"
     }
    }
   },
@@ -698,9 +721,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "551 + 675",
+    "label": "249 + 344",
     "answer": {
-     "text": "1226"
+     "text": "593"
     }
    }
   },
@@ -708,9 +731,9 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "940 + 242",
+    "label": "195 + 585",
     "answer": {
-     "text": "1182"
+     "text": "780"
     }
    }
   },
@@ -718,9 +741,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "946 + 526",
+    "label": "171 + 239",
     "answer": {
-     "text": "1472"
+     "text": "410"
     }
    }
   },
@@ -792,7 +815,7 @@
   ]
  },
  "advice": [
-  "\"Find 10 or 100 more or less.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],

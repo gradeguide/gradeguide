@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the sides and corners. Tick the name.",
+     "instruction": "Count the sides and corners. Mark the name.",
      "items": [
       {
        "label": "1",
@@ -371,13 +371,21 @@
       "purpose": "Name a shape by its sides and corners, not its color, size or turn.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The shapes include regular and irregular ones in different turns. The name follows from the number of sides, which are defining attributes, and not from how the shape looks at a glance.",
+      "misconceptions": [
+       "Names a shape only when it looks like the usual picture, so an irregular hexagon is not a hexagon.",
+       "Counts a corner that points inward as not a corner."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 600
     },
     {
      "label": "B",
-     "instruction": "Are the parts equal shares? Tick one.",
+     "instruction": "Mark equal shares or not equal shares.",
      "items": [
       {
        "label": "5",
@@ -516,8 +524,13 @@
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS"
       ],
+      "rationale": "Some bars are cut into equal parts and some are not, with the same number of parts. Students must check the sizes of the parts, not only count them, before naming halves or fourths.",
       "misconceptions": [
-       "Calling any cut into two parts halves."
+       "Calls any cut into two parts halves.",
+       "Calls parts unequal because one is shaded and the others are not."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 194
@@ -529,7 +542,7 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "What share is shaded? Tick one.",
+     "instruction": "Mark the name of the shaded part.",
      "items": [
       {
        "label": "9",
@@ -656,8 +669,13 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Each bar is cut into two or four equal shares with one shaded. Halves and fourths of the same bar appear side by side, so students can see that a fourth is smaller than a half.",
       "misconceptions": [
-       "Thinking one fourth is bigger than one half because 4 is bigger than 2."
+       "Thinks one fourth is bigger than one half because 4 is bigger than 2.",
+       "Names the share by the number of parts left unshaded."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 194
@@ -875,9 +893,9 @@
   ]
  },
  "advice": [
-  "\"Count the sides and corners. Tick the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Are the parts equal shares? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"What share is shaded? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Count the sides and corners. Mark the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark equal shares or not equal shares.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark the name of the shaded part.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

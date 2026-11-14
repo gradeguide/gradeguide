@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the missing number.",
-     "explainer": "The top circle is the whole. The two circles under it are its parts: 5 is 2 and 3, or 4 and 1.",
+     "instruction": "Write the missing part.",
      "items": [
       {
        "label": "1",
@@ -22,14 +21,14 @@
            "text": "9"
           },
           "left": {
-           "text": "1"
+           "text": "2"
           },
           "right": {
            "field": {
             "id": "q1",
-            "label": "9 − 1",
+            "label": "9 − 2",
             "answer": {
-             "text": "8"
+             "text": "7"
             }
            }
           }
@@ -45,7 +44,7 @@
             "text": "="
            },
            {
-            "text": "1"
+            "text": "2"
            },
            {
             "text": "+"
@@ -53,9 +52,9 @@
            {
             "blank": {
              "id": "q1-2",
-             "label": "9 − 1",
+             "label": "9 − 2",
              "answer": {
-              "text": "8"
+              "text": "7"
              }
             }
            }
@@ -63,7 +62,7 @@
          }
         }
        ],
-       "key": "8; 9 = 1 + 8"
+       "key": "7; 9 = 2 + 7"
       },
       {
        "label": "2",
@@ -128,14 +127,14 @@
           "left": {
            "field": {
             "id": "q3",
-            "label": "7 − 5",
+            "label": "7 − 4",
             "answer": {
-             "text": "2"
+             "text": "3"
             }
            }
           },
           "right": {
-           "text": "5"
+           "text": "4"
           }
          }
         },
@@ -151,9 +150,9 @@
            {
             "blank": {
              "id": "q3-2",
-             "label": "7 − 5",
+             "label": "7 − 4",
              "answer": {
-              "text": "2"
+              "text": "3"
              }
             }
            },
@@ -161,13 +160,13 @@
             "text": "+"
            },
            {
-            "text": "5"
+            "text": "4"
            }
           ]
          }
         }
        ],
-       "key": "2; 7 = 2 + 5"
+       "key": "3; 7 = 3 + 4"
       },
       {
        "label": "4",
@@ -178,14 +177,14 @@
            "text": "7"
           },
           "left": {
-           "text": "2"
+           "text": "3"
           },
           "right": {
            "field": {
             "id": "q4",
-            "label": "7 − 2",
+            "label": "7 − 3",
             "answer": {
-             "text": "5"
+             "text": "4"
             }
            }
           }
@@ -201,7 +200,7 @@
             "text": "="
            },
            {
-            "text": "2"
+            "text": "3"
            },
            {
             "text": "+"
@@ -209,9 +208,9 @@
            {
             "blank": {
              "id": "q4-2",
-             "label": "7 − 2",
+             "label": "7 − 3",
              "answer": {
-              "text": "5"
+              "text": "4"
              }
             }
            }
@@ -219,7 +218,7 @@
          }
         }
        ],
-       "key": "5; 7 = 2 + 5"
+       "key": "4; 7 = 3 + 4"
       },
       {
        "label": "5",
@@ -230,14 +229,14 @@
            "text": "10"
           },
           "left": {
-           "text": "4"
+           "text": "5"
           },
           "right": {
            "field": {
             "id": "q5",
-            "label": "10 − 4",
+            "label": "10 − 5",
             "answer": {
-             "text": "6"
+             "text": "5"
             }
            }
           }
@@ -253,7 +252,7 @@
             "text": "="
            },
            {
-            "text": "4"
+            "text": "5"
            },
            {
             "text": "+"
@@ -261,9 +260,9 @@
            {
             "blank": {
              "id": "q5-2",
-             "label": "10 − 4",
+             "label": "10 − 5",
              "answer": {
-              "text": "6"
+              "text": "5"
              }
             }
            }
@@ -271,7 +270,7 @@
          }
         }
        ],
-       "key": "6; 10 = 4 + 6"
+       "key": "5; 10 = 5 + 5"
       },
       {
        "label": "6",
@@ -284,14 +283,14 @@
           "left": {
            "field": {
             "id": "q6",
-            "label": "3 − 3",
+            "label": "3 − 2",
             "answer": {
-             "text": "0"
+             "text": "1"
             }
            }
           },
           "right": {
-           "text": "3"
+           "text": "2"
           }
          }
         },
@@ -307,9 +306,9 @@
            {
             "blank": {
              "id": "q6-2",
-             "label": "3 − 3",
+             "label": "3 − 2",
              "answer": {
-              "text": "0"
+              "text": "1"
              }
             }
            },
@@ -317,29 +316,37 @@
             "text": "+"
            },
            {
-            "text": "3"
+            "text": "2"
            }
           ]
          }
         }
        ],
-       "key": "0; 3 = 0 + 3"
+       "key": "1; 3 = 1 + 2"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-gk-break-apart",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Split numbers up to 10 into two parts in more than one way.",
+      "purpose": "Break a number up to 10 into two parts in more than one way.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A number bond shows the whole at the top and its two parts below. The same whole appears with different parts, so students see that a number can be split in several ways. The equation under each bond records the split with the whole first, as in 7 = 3 + 4.",
+      "misconceptions": [
+       "Adds the whole and the part shown instead of finding the missing part.",
+       "Reads 7 = 3 + 4 as wrong because the answer is on the left."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 436
+     "estimatedHeight": 410
     },
     {
      "label": "B",
-     "instruction": "How many more make 10?",
+     "instruction": "Write how many more make 10.",
      "items": [
       {
        "label": "7",
@@ -385,7 +392,7 @@
        "nodes": [
         {
          "tenFrame": {
-          "filled": 1,
+          "filled": 2,
           "frames": 1
          }
         },
@@ -393,7 +400,7 @@
          "math": {
           "atoms": [
            {
-            "text": "1"
+            "text": "2"
            },
            {
             "text": "+"
@@ -401,9 +408,9 @@
            {
             "blank": {
              "id": "q8",
-             "label": "10 − 1",
+             "label": "10 − 2",
              "answer": {
-              "text": "9"
+              "text": "8"
              }
             }
            },
@@ -417,7 +424,7 @@
          }
         }
        ],
-       "key": "1 + 9 = 10"
+       "key": "2 + 8 = 10"
       },
       {
        "label": "9",
@@ -463,7 +470,7 @@
        "nodes": [
         {
          "tenFrame": {
-          "filled": 4,
+          "filled": 5,
           "frames": 1
          }
         },
@@ -471,7 +478,7 @@
          "math": {
           "atoms": [
            {
-            "text": "4"
+            "text": "5"
            },
            {
             "text": "+"
@@ -479,9 +486,9 @@
            {
             "blank": {
              "id": "q10",
-             "label": "10 − 4",
+             "label": "10 − 5",
              "answer": {
-              "text": "6"
+              "text": "5"
              }
             }
            },
@@ -495,49 +502,10 @@
          }
         }
        ],
-       "key": "4 + 6 = 10"
+       "key": "5 + 5 = 10"
       },
       {
        "label": "11",
-       "nodes": [
-        {
-         "tenFrame": {
-          "filled": 2,
-          "frames": 1
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "2"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "blank": {
-             "id": "q11",
-             "label": "10 − 2",
-             "answer": {
-              "text": "8"
-             }
-            }
-           },
-           {
-            "text": "="
-           },
-           {
-            "text": "10"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "2 + 8 = 10"
-      },
-      {
-       "label": "12",
        "nodes": [
         {
          "tenFrame": {
@@ -556,7 +524,7 @@
            },
            {
             "blank": {
-             "id": "q12",
+             "id": "q11",
              "label": "10 − 8",
              "answer": {
               "text": "2"
@@ -574,6 +542,45 @@
         }
        ],
        "key": "8 + 2 = 10"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "tenFrame": {
+          "filled": 1,
+          "frames": 1
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "10 − 1",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 + 9 = 10"
       }
      ],
      "columns": 3,
@@ -584,12 +591,19 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "The empty squares in the ten frame are the missing part."
+      "rationale": "In a ten frame, the empty squares are the missing part, so students can count them. Pairs that make 10 are the basis of the make-ten strategy for adding within 20 in grade 1.",
+      "misconceptions": [
+       "Writes the number of counters instead of the number of empty squares.",
+       "Counts all ten squares and writes 10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
      },
      "estimatedHeight": 282
     }
    ],
-   "estimatedHeight": 726
+   "estimatedHeight": 700
   }
  ],
  "key": [
@@ -597,9 +611,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "9 − 1",
+    "label": "9 − 2",
     "answer": {
-     "text": "8"
+     "text": "7"
     }
    }
   },
@@ -607,9 +621,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-2",
-    "label": "9 − 1",
+    "label": "9 − 2",
     "answer": {
-     "text": "8"
+     "text": "7"
     }
    }
   },
@@ -637,9 +651,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "7 − 5",
+    "label": "7 − 4",
     "answer": {
-     "text": "2"
+     "text": "3"
     }
    }
   },
@@ -647,9 +661,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "7 − 5",
+    "label": "7 − 4",
     "answer": {
-     "text": "2"
+     "text": "3"
     }
    }
   },
@@ -657,9 +671,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "7 − 2",
+    "label": "7 − 3",
     "answer": {
-     "text": "5"
+     "text": "4"
     }
    }
   },
@@ -667,7 +681,17 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "7 − 2",
+    "label": "7 − 3",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "10 − 5",
     "answer": {
      "text": "5"
     }
@@ -676,20 +700,10 @@
   {
    "itemLabel": "5",
    "field": {
-    "id": "q5",
-    "label": "10 − 4",
-    "answer": {
-     "text": "6"
-    }
-   }
-  },
-  {
-   "itemLabel": "5",
-   "field": {
     "id": "q5-2",
-    "label": "10 − 4",
+    "label": "10 − 5",
     "answer": {
-     "text": "6"
+     "text": "5"
     }
    }
   },
@@ -697,9 +711,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "3 − 3",
+    "label": "3 − 2",
     "answer": {
-     "text": "0"
+     "text": "1"
     }
    }
   },
@@ -707,9 +721,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6-2",
-    "label": "3 − 3",
+    "label": "3 − 2",
     "answer": {
-     "text": "0"
+     "text": "1"
     }
    }
   },
@@ -727,9 +741,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "10 − 1",
+    "label": "10 − 2",
     "answer": {
-     "text": "9"
+     "text": "8"
     }
    }
   },
@@ -747,9 +761,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "10 − 4",
+    "label": "10 − 5",
     "answer": {
-     "text": "6"
+     "text": "5"
     }
    }
   },
@@ -757,9 +771,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "10 − 2",
+    "label": "10 − 8",
     "answer": {
-     "text": "8"
+     "text": "2"
     }
    }
   },
@@ -767,22 +781,22 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "10 − 8",
+    "label": "10 − 1",
     "answer": {
-     "text": "2"
+     "text": "9"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Split numbers into two parts, and find the partner that makes 10.",
+  "purpose": "Break numbers into two parts, and find the partner that makes 10.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
   ]
  },
  "advice": [
-  "\"Fill in the missing number.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"How many more make 10?\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the missing part.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write how many more make 10.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

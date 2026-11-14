@@ -1,6 +1,6 @@
 {
  "worksheetId": "ws-g2-read-write-compare",
- "title": "Reading, writing and comparing numbers to 1000",
+ "title": "Reading and writing numbers to 1000",
  "headerLabels": [
   "2.NBT.A.3",
   "2.NBT.A.4"
@@ -171,8 +171,13 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "Some expanded forms leave out a place, such as 800 + 50, so students must write a 0 to hold the place.",
       "misconceptions": [
-       "Writing 400 + 6 as 46."
+       "Writes 400 + 6 as 46.",
+       "Writes the parts side by side, such as 800501 for 800 + 50 + 1."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 138
@@ -393,13 +398,20 @@
       "purpose": "Write a three-digit number as hundreds plus tens plus ones.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Writing each digit as the value it stands for, such as 400 for the 4 in 473, makes the value of each place explicit.",
+      "misconceptions": [
+       "Writes the digits, such as 4 + 7 + 3, instead of their values."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 138
     },
     {
      "label": "C",
-     "instruction": "Write the number in digits.",
+     "instruction": "Write the number.",
      "items": [
       {
        "label": "9",
@@ -517,14 +529,21 @@
       "purpose": "Read a number written in words and write it in digits.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Number names include ones with a zero place, such as five hundred one, where the spoken name gives no word for the missing tens.",
+      "misconceptions": [
+       "Writes five hundred one as 51 or 5001.",
+       "Writes the teen part in spoken order, such as 571 for five hundred seventeen."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 190
     },
     {
      "label": "D",
-     "instruction": "Write <, > or =.",
-     "explainer": "Compare the hundreds first, then the tens, then the ones.",
+     "instruction": "Compare. Write <, > or =.",
      "items": [
       {
        "label": "13",
@@ -805,14 +824,19 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students compare the hundreds first, then the tens, then the ones. Pairs such as 593 and 600 have larger tens and ones in the smaller number, which tests whether students compare by place.",
       "misconceptions": [
-       "Thinking 289 is greater than 312 because 8 and 9 are big digits."
+       "Thinks 289 is greater than 312 because 8 and 9 are large digits.",
+       "Reverses the symbols."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 216
+     "estimatedHeight": 190
     }
    ],
-   "estimatedHeight": 698
+   "estimatedHeight": 672
   }
  ],
  "key": [
@@ -1126,8 +1150,8 @@
  "advice": [
   "\"Write the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Write the number in expanded form.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write the number in digits.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

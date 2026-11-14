@@ -2,7 +2,7 @@
 // message as a signal input and draws the Drawing from draw_k2.
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
-import { type Coins, type NumberBond, type NumberGrid, type PictureGroups, type TenFrame } from '../proto/v1/nodes_pb.js';
+import { type Coins, type LengthStrips, type NumberBond, type NumberGrid, type PictureGroups, type TallyChart, type TenFrame } from '../proto/v1/nodes_pb.js';
 import * as draw from '../engine/draw_k2.js';
 import { SvgComponent } from './svg.component.js';
 
@@ -64,4 +64,28 @@ export class CoinsComponent {
   readonly node = input.required<Coins>();
   readonly filled = input(false);
   protected readonly d = computed(() => draw.coins(this.node()));
+}
+
+@Component({
+  selector: 'ws-tally-chart',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [SvgComponent],
+  template: `<ws-svg [d]="d()" />`,
+})
+export class TallyChartComponent {
+  readonly node = input.required<TallyChart>();
+  readonly filled = input(false);
+  protected readonly d = computed(() => draw.tallyChart(this.node()));
+}
+
+@Component({
+  selector: 'ws-length-strips',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [SvgComponent],
+  template: `<ws-svg [d]="d()" />`,
+})
+export class LengthStripsComponent {
+  readonly node = input.required<LengthStrips>();
+  readonly filled = input(false);
+  protected readonly d = computed(() => draw.lengthStrips(this.node()));
 }

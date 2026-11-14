@@ -12,8 +12,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the missing number.",
-     "explainer": "10 ones make 1 ten. 40 is 4 tens and 0 ones.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "1",
@@ -115,10 +114,7 @@
          "math": {
           "atoms": [
            {
-            "text": "10"
-           },
-           {
-            "text": "ones"
+            "text": "20"
            },
            {
             "text": "="
@@ -126,93 +122,6 @@
            {
             "blank": {
              "id": "q4",
-             "label": "10 ones in tens",
-             "answer": {
-              "text": "1"
-             }
-            }
-           },
-           {
-            "text": "ten"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "10 ones = 1 ten"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "10"
-           },
-           {
-            "text": "ones"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "10 ones in tens",
-             "answer": {
-              "text": "1"
-             }
-            }
-           },
-           {
-            "text": "ten"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "10 ones = 1 ten"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q6",
-             "label": "tens in 90",
-             "answer": {
-              "text": "9"
-             }
-            }
-           },
-           {
-            "text": "tens"
-           },
-           {
-            "text": "="
-           },
-           {
-            "text": "90"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "9 tens = 90"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q7",
              "label": "tens in 20",
              "answer": {
               "text": "2"
@@ -221,18 +130,102 @@
            },
            {
             "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20 = 2 tens"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "tens"
            },
            {
             "text": "="
            },
            {
-            "text": "20"
+            "blank": {
+             "id": "q5",
+             "label": "2 tens",
+             "answer": {
+              "text": "20"
+             }
+            }
            }
           ]
          }
         }
        ],
        "key": "2 tens = 20"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "tens in 30",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 = 3 tens"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "90"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "tens in 90",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "90 = 9 tens"
       },
       {
        "label": "8",
@@ -269,12 +262,20 @@
      "fragmentId": "frag-g1-tens-units",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See 10 ones as a ten, and 10, 20 up to 90 as that many tens.",
+      "purpose": "Understand 10 ones as one ten, and 10, 20 up to 90 as that many tens.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The equations move between ones, tens and numbers, such as 10 ones = 1 ten and 60 = 6 tens. Treating a ten as a single unit is the central idea of grade 1 place value. The item that names 10 ones as a ten appears only once.",
+      "misconceptions": [
+       "Writes 60 tens for 60.",
+       "Thinks a ten and ten ones are different amounts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 216
+     "estimatedHeight": 190
     },
     {
      "label": "B",
@@ -286,7 +287,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 6
+          "ones": 6,
+          "unit": 9
          }
         },
         {
@@ -325,7 +327,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 9
+          "ones": 9,
+          "unit": 9
          }
         },
         {
@@ -364,7 +367,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 5
+          "ones": 5,
+          "unit": 9
          }
         },
         {
@@ -403,7 +407,8 @@
         {
          "baseTenBlocks": {
           "tens": 1,
-          "ones": 9
+          "ones": 9,
+          "unit": 9
          }
         },
         {
@@ -441,12 +446,19 @@
      "fragmentId": "frag-g1-teen-blocks",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "See numbers from 11 to 19 as a ten and some ones.",
+      "purpose": "Show numbers from 11 to 19 as a ten and some ones.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "These items repeat the kindergarten model, a ten rod and single cubes, now read as one ten and some ones. They connect the tens-and-ones section before to the teen numbers.",
+      "misconceptions": [
+       "Reads 17 as 1 and 7 instead of a ten and 7 ones."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 278
+     "estimatedHeight": 370
     },
     {
      "label": "C",
@@ -458,7 +470,8 @@
         {
          "baseTenBlocks": {
           "tens": 5,
-          "ones": 4
+          "ones": 4,
+          "unit": 6.5
          }
         },
         {
@@ -512,7 +525,8 @@
         {
          "baseTenBlocks": {
           "tens": 3,
-          "ones": 2
+          "ones": 2,
+          "unit": 6.5
          }
         },
         {
@@ -559,14 +573,44 @@
         }
        ],
        "key": "3 tens 2 ones = 32"
-      },
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-read-tens-ones",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a two-digit number from its tens and ones.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Students count the rods and the cubes separately, then write the number. Recording the tens and ones before the number shows how each digit comes from the blocks.",
+      "misconceptions": [
+       "Writes 3 tens and 5 ones as 305 or 8.",
+       "Counts each rod as 1 when finding the number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 177
+    }
+   ],
+   "estimatedHeight": 749
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write the tens, the ones and the number.",
+     "items": [
       {
        "label": "15",
        "nodes": [
         {
          "baseTenBlocks": {
           "tens": 8,
-          "ones": 8
+          "ones": 8,
+          "unit": 6.5
          }
         },
         {
@@ -620,7 +664,8 @@
         {
          "baseTenBlocks": {
           "tens": 5,
-          "ones": 6
+          "ones": 6,
+          "unit": 6.5
          }
         },
         {
@@ -677,14 +722,20 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Students count the rods and the cubes separately, then write the number. Recording the tens and ones before the number shows how each digit comes from the blocks.",
       "misconceptions": [
-       "Writing 3 tens and 5 ones as 305."
+       "Writes 3 tens and 5 ones as 305 or 8.",
+       "Counts each rod as 1 when finding the number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 278
+     "continued": true,
+     "estimatedHeight": 177
     }
    ],
-   "estimatedHeight": 784
+   "estimatedHeight": 181
   }
  ],
  "key": [
@@ -722,9 +773,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "10 ones in tens",
+    "label": "tens in 20",
     "answer": {
-     "text": "1"
+     "text": "2"
     }
    }
   },
@@ -732,9 +783,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "10 ones in tens",
+    "label": "2 tens",
     "answer": {
-     "text": "1"
+     "text": "20"
     }
    }
   },
@@ -742,9 +793,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "tens in 90",
+    "label": "tens in 30",
     "answer": {
-     "text": "9"
+     "text": "3"
     }
    }
   },
@@ -752,9 +803,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "tens in 20",
+    "label": "tens in 90",
     "answer": {
-     "text": "2"
+     "text": "9"
     }
    }
   },
@@ -930,7 +981,7 @@
   }
  ],
  "design": {
-  "purpose": "See a ten as ten ones, then read two-digit numbers as tens and ones.",
+  "purpose": "Understand a ten as ten ones, then read two-digit numbers as tens and ones.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]

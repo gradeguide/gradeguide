@@ -11,8 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the missing number.",
-     "explainer": "10 tens make 1 hundred. 600 is 6 hundreds, 0 tens and 0 ones.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "1",
@@ -174,10 +173,7 @@
          "math": {
           "atoms": [
            {
-            "text": "10"
-           },
-           {
-            "text": "tens"
+            "text": "600"
            },
            {
             "text": "="
@@ -185,53 +181,23 @@
            {
             "blank": {
              "id": "q6",
-             "label": "10 tens in hundreds",
+             "label": "hundreds in 600",
              "answer": {
-              "text": "1"
+              "text": "6"
              }
             }
-           },
-           {
-            "text": "hundred"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "10 tens = 1 hundred"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "2"
            },
            {
             "text": "hundreds"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q7",
-             "label": "2 hundreds",
-             "answer": {
-              "text": "200"
-             }
-            }
            }
           ]
          }
         }
        ],
-       "key": "2 hundreds = 200"
+       "key": "600 = 6 hundreds"
       },
       {
-       "label": "8",
+       "label": "7",
        "nodes": [
         {
          "math": {
@@ -247,7 +213,7 @@
            },
            {
             "blank": {
-             "id": "q8",
+             "id": "q7",
              "label": "4 hundreds",
              "answer": {
               "text": "400"
@@ -259,22 +225,60 @@
         }
        ],
        "key": "4 hundreds = 400"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "hundreds"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "5 hundreds",
+             "answer": {
+              "text": "500"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 hundreds = 500"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-g2-hundreds-units",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See 100 as ten tens, and 100, 200 up to 900 as that many hundreds.",
+      "purpose": "Understand 100 as ten tens, and 100, 200 up to 900 as that many hundreds.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The equations move between tens, hundreds and numbers, such as 10 tens = 1 hundred and 400 = 4 hundreds. This extends the grade 1 idea of a ten as a unit to a hundred as a unit. The item that names 10 tens as a hundred appears only once.",
+      "misconceptions": [
+       "Writes 400 hundreds for 400.",
+       "Thinks 10 tens is 1000."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 268
+     "estimatedHeight": 242
     },
     {
      "label": "B",
-     "instruction": "Write the hundreds, tens and ones, then the number.",
+     "instruction": "Write the hundreds, tens and ones. Then write the number.",
      "items": [
       {
        "label": "9",
@@ -504,14 +508,19 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Students count the flats, the rods and the cubes, then write the number. Recording each place first shows that each digit counts one kind of block.",
       "misconceptions": [
-       "Writing 2 hundreds, 3 tens and 5 ones as 20035."
+       "Writes 2 hundreds, 3 tens and 5 ones as 20035.",
+       "Counts a flat as 10 because it looks like a row of rods."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 532
     }
    ],
-   "estimatedHeight": 808
+   "estimatedHeight": 782
   }
  ],
  "key": [
@@ -569,9 +578,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "10 tens in hundreds",
+    "label": "hundreds in 600",
     "answer": {
-     "text": "1"
+     "text": "6"
     }
    }
   },
@@ -579,9 +588,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "2 hundreds",
+    "label": "4 hundreds",
     "answer": {
-     "text": "200"
+     "text": "400"
     }
    }
   },
@@ -589,9 +598,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "4 hundreds",
+    "label": "5 hundreds",
     "answer": {
-     "text": "400"
+     "text": "500"
     }
    }
   },
@@ -717,7 +726,7 @@
   }
  ],
  "design": {
-  "purpose": "See a hundred as ten tens, then read three-digit numbers from blocks.",
+  "purpose": "Understand a hundred as ten tens, then read three-digit numbers from blocks.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]

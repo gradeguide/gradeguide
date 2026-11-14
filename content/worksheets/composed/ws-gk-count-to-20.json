@@ -14,8 +14,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the pictures. Write how many.",
-     "explainer": "Touch each picture once as you count. The last number you say tells how many.",
+     "instruction": "Count. Write how many.",
      "example": {
       "nodes": [
        {
@@ -45,7 +44,7 @@
         }
        }
       ],
-      "text": "Touch and count: 1, 2, 3, 4. There are **4**."
+      "text": "1, 2, 3, 4. There are **4**."
      },
      "items": [
       {
@@ -210,18 +209,47 @@
         }
        ],
        "key": "How many? 5"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-count-dots-to-10",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Count up to 10 objects and write how many.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Pictures come in small groups of two to five, so students can keep track of which ones they have counted. Counts stay at 10 or under, the range kindergarten expects for counting objects. Writing the numeral after counting links the count to its written form.",
+      "misconceptions": [
+       "Counts one picture twice or skips a picture.",
+       "Says the numbers faster or slower than the pointing, so the count and the pictures do not match.",
+       "Counts again from 1 when asked how many, instead of giving the last number said."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Gelman and Gallistel (1978), The Child's Understanding of Number, Harvard University Press"
+      ]
+     },
+     "estimatedHeight": 638
+    }
+   ],
+   "estimatedHeight": 642
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the dots. Write how many.",
+     "items": [
       {
        "label": "6",
        "nodes": [
         {
-         "pictureGroups": {
-          "picture": "PICTURE_HEART",
-          "groups": [
-           5,
-           3,
-           2
-          ]
+         "dotArray": {
+          "rows": 4,
+          "cols": 4,
+          "gap": 24
          }
         },
         {
@@ -235,7 +263,7 @@
              "id": "q6",
              "label": "how many",
              "answer": {
-              "text": "10"
+              "text": "16"
              }
             }
            }
@@ -243,41 +271,16 @@
          }
         }
        ],
-       "key": "How many? 10"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-gk-count-dots-to-10",
-     "stage": "STAGE_INTRODUCE",
-     "design": {
-      "purpose": "Count up to 10 things in small groups, one number for each, and write how many.",
-      "principles": [
-       "PRINCIPLE_WORKED_EXAMPLE",
-       "PRINCIPLE_CONCRETENESS_FADING"
-      ],
-      "misconceptions": [
-       "Counting a picture twice or skipping one.",
-       "Recounting from 1 when asked how many, instead of using the last number said."
-      ]
-     },
-     "estimatedHeight": 760
-    }
-   ],
-   "estimatedHeight": 764
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Count the dots. Write how many.",
-     "items": [
+       "key": "How many? 16"
+      },
       {
        "label": "7",
        "nodes": [
         {
          "dotArray": {
           "rows": 4,
-          "cols": 4
+          "cols": 3,
+          "gap": 24
          }
         },
         {
@@ -291,7 +294,7 @@
              "id": "q7",
              "label": "how many",
              "answer": {
-              "text": "16"
+              "text": "12"
              }
             }
            }
@@ -299,15 +302,16 @@
          }
         }
        ],
-       "key": "How many? 16"
+       "key": "How many? 12"
       },
       {
        "label": "8",
        "nodes": [
         {
          "dotArray": {
-          "rows": 4,
-          "cols": 3
+          "rows": 1,
+          "cols": 13,
+          "gap": 24
          }
         },
         {
@@ -321,7 +325,7 @@
              "id": "q8",
              "label": "how many",
              "answer": {
-              "text": "12"
+              "text": "13"
              }
             }
            }
@@ -329,7 +333,7 @@
          }
         }
        ],
-       "key": "How many? 12"
+       "key": "How many? 13"
       },
       {
        "label": "9",
@@ -337,7 +341,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 13
+          "cols": 17,
+          "gap": 24
          }
         },
         {
@@ -351,36 +356,6 @@
              "id": "q9",
              "label": "how many",
              "answer": {
-              "text": "13"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "How many? 13"
-      },
-      {
-       "label": "10",
-       "nodes": [
-        {
-         "dotArray": {
-          "rows": 1,
-          "cols": 17
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "How many?"
-           },
-           {
-            "blank": {
-             "id": "q10",
-             "label": "how many",
-             "answer": {
               "text": "17"
              }
             }
@@ -392,7 +367,7 @@
        "key": "How many? 17"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-gk-count-dots-to-20",
      "stage": "STAGE_PRACTICE",
      "design": {
@@ -400,17 +375,55 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "The dots come in a line and in rows, so the child keeps track of what has been counted in more than one arrangement."
+      "rationale": "The dots appear in a line or in rows, the two arrangements in which kindergarten students count up to 20. A row arrangement lets students count row by row and keep their place. Numbers from 11 to 20 also practise writing the teen numerals.",
+      "misconceptions": [
+       "Loses track of the start in a line of dots and counts some twice.",
+       "Writes a teen number in the order it is said, such as 41 for fourteen."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
      },
-     "estimatedHeight": 256
-    },
+     "estimatedHeight": 554
+    }
+   ],
+   "estimatedHeight": 558
+  },
+  {
+   "sections": [
     {
      "label": "C",
-     "instruction": "How many counters? Write the number.",
-     "explainer": "A full ten frame is 10. Count on from 10 for the second frame.",
+     "instruction": "Write how many counters.",
+     "example": {
+      "nodes": [
+       {
+        "tenFrame": {
+         "filled": 14
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "How many?"
+          },
+          {
+           "blank": {
+            "label": "how many",
+            "answer": {
+             "text": "14"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "10 and 4 more. There are **14**."
+     },
      "items": [
       {
-       "label": "11",
+       "label": "10",
        "nodes": [
         {
          "tenFrame": {
@@ -425,7 +438,7 @@
            },
            {
             "blank": {
-             "id": "q11",
+             "id": "q10",
              "label": "how many",
              "answer": {
               "text": "9"
@@ -439,7 +452,7 @@
        "key": "How many? 9"
       },
       {
-       "label": "12",
+       "label": "11",
        "nodes": [
         {
          "tenFrame": {
@@ -454,7 +467,7 @@
            },
            {
             "blank": {
-             "id": "q12",
+             "id": "q11",
              "label": "how many",
              "answer": {
               "text": "7"
@@ -468,36 +481,7 @@
        "key": "How many? 7"
       },
       {
-       "label": "13",
-       "nodes": [
-        {
-         "tenFrame": {
-          "filled": 14
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "How many?"
-           },
-           {
-            "blank": {
-             "id": "q13",
-             "label": "how many",
-             "answer": {
-              "text": "14"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "How many? 14"
-      },
-      {
-       "label": "14",
+       "label": "12",
        "nodes": [
         {
          "tenFrame": {
@@ -512,7 +496,7 @@
            },
            {
             "blank": {
-             "id": "q14",
+             "id": "q12",
              "label": "how many",
              "answer": {
               "text": "20"
@@ -526,11 +510,11 @@
        "key": "How many? 20"
       },
       {
-       "label": "15",
+       "label": "13",
        "nodes": [
         {
          "tenFrame": {
-          "filled": 11
+          "filled": 10
          }
         },
         {
@@ -541,10 +525,10 @@
            },
            {
             "blank": {
-             "id": "q15",
+             "id": "q13",
              "label": "how many",
              "answer": {
-              "text": "11"
+              "text": "10"
              }
             }
            }
@@ -552,64 +536,36 @@
          }
         }
        ],
-       "key": "How many? 11"
-      },
-      {
-       "label": "16",
-       "nodes": [
-        {
-         "tenFrame": {
-          "filled": 19
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "How many?"
-           },
-           {
-            "blank": {
-             "id": "q16",
-             "label": "how many",
-             "answer": {
-              "text": "19"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "How many? 19"
+       "key": "How many? 10"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-gk-ten-frames",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Read numbers up to 20 from ten frames, seeing 5 and 10 at a glance.",
+      "purpose": "Read numbers up to 20 from ten frames, seeing 5 and 10 without counting each counter.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "A ten frame shows a number against the benchmarks 5 and 10, because each row holds 5 and a full frame holds 10. The worked example models counting on from a full frame. Numbers above 10 show a teen number as 10 and some more, which prepares for teen place value.",
       "misconceptions": [
-       "Counting every counter from 1 instead of seeing a full frame as 10."
+       "Counts every counter from 1 instead of seeing a full frame as 10.",
+       "Counts the empty squares as well as the counters."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 448
-    }
-   ],
-   "estimatedHeight": 712
-  },
-  {
-   "sections": [
+     "estimatedHeight": 574
+    },
     {
      "label": "D",
-     "instruction": "Count the dots. Then write the number that is one more.",
+     "instruction": "Write how many counters. Then write one more.",
      "items": [
       {
-       "label": "17",
+       "label": "14",
        "nodes": [
         {
          "tenFrame": {
@@ -621,7 +577,7 @@
           "atoms": [
            {
             "blank": {
-             "id": "q17",
+             "id": "q14",
              "label": "how many",
              "answer": {
               "text": "9"
@@ -633,7 +589,7 @@
            },
            {
             "blank": {
-             "id": "q17-2",
+             "id": "q14-2",
              "label": "one more than 9",
              "answer": {
               "text": "10"
@@ -647,7 +603,7 @@
        "key": "9 One more is 10"
       },
       {
-       "label": "18",
+       "label": "15",
        "nodes": [
         {
          "tenFrame": {
@@ -659,7 +615,7 @@
           "atoms": [
            {
             "blank": {
-             "id": "q18",
+             "id": "q15",
              "label": "how many",
              "answer": {
               "text": "2"
@@ -671,7 +627,7 @@
            },
            {
             "blank": {
-             "id": "q18-2",
+             "id": "q15-2",
              "label": "one more than 2",
              "answer": {
               "text": "3"
@@ -683,9 +639,38 @@
         }
        ],
        "key": "2 One more is 3"
-      },
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-one-more",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write the number that is one more than a counted number.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each count is shown in a ten frame with an empty square next in line, so one more counter has a place to go. Students write the count, then the next number. This shows that each number in the counting sequence is one more than the number before it.",
+      "misconceptions": [
+       "Writes the same number again for one more.",
+       "Counts all the counters again from 1 to find one more, instead of saying the next number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 158
+    }
+   ],
+   "estimatedHeight": 740
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Write how many counters. Then write one more.",
+     "items": [
       {
-       "label": "19",
+       "label": "16",
        "nodes": [
         {
          "tenFrame": {
@@ -697,7 +682,7 @@
           "atoms": [
            {
             "blank": {
-             "id": "q19",
+             "id": "q16",
              "label": "how many",
              "answer": {
               "text": "6"
@@ -709,7 +694,7 @@
            },
            {
             "blank": {
-             "id": "q19-2",
+             "id": "q16-2",
              "label": "one more than 6",
              "answer": {
               "text": "7"
@@ -721,59 +706,30 @@
         }
        ],
        "key": "6 One more is 7"
-      },
-      {
-       "label": "20",
-       "nodes": [
-        {
-         "tenFrame": {
-          "filled": 8
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "blank": {
-             "id": "q20",
-             "label": "how many",
-             "answer": {
-              "text": "8"
-             }
-            }
-           },
-           {
-            "text": "One more is"
-           },
-           {
-            "blank": {
-             "id": "q20-2",
-             "label": "one more than 8",
-             "answer": {
-              "text": "9"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "8 One more is 9"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-gk-one-more",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "See that the next counting number is one more.",
+      "purpose": "Write the number that is one more than a counted number.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each count is shown in a ten frame with an empty square next in line, so one more counter has a place to go. Students write the count, then the next number. This shows that each number in the counting sequence is one more than the number before it.",
+      "misconceptions": [
+       "Writes the same number again for one more.",
+       "Counts all the counters again from 1 to find one more, instead of saying the next number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 282
+     "continued": true,
+     "estimatedHeight": 158
     }
    ],
-   "estimatedHeight": 286
+   "estimatedHeight": 162
   }
  ],
  "key": [
@@ -833,7 +789,7 @@
     "id": "q6",
     "label": "how many",
     "answer": {
-     "text": "10"
+     "text": "16"
     }
    }
   },
@@ -843,7 +799,7 @@
     "id": "q7",
     "label": "how many",
     "answer": {
-     "text": "16"
+     "text": "12"
     }
    }
   },
@@ -853,7 +809,7 @@
     "id": "q8",
     "label": "how many",
     "answer": {
-     "text": "12"
+     "text": "13"
     }
    }
   },
@@ -863,7 +819,7 @@
     "id": "q9",
     "label": "how many",
     "answer": {
-     "text": "13"
+     "text": "17"
     }
    }
   },
@@ -873,7 +829,7 @@
     "id": "q10",
     "label": "how many",
     "answer": {
-     "text": "17"
+     "text": "9"
     }
    }
   },
@@ -883,7 +839,7 @@
     "id": "q11",
     "label": "how many",
     "answer": {
-     "text": "9"
+     "text": "7"
     }
    }
   },
@@ -893,7 +849,7 @@
     "id": "q12",
     "label": "how many",
     "answer": {
-     "text": "7"
+     "text": "20"
     }
    }
   },
@@ -903,7 +859,7 @@
     "id": "q13",
     "label": "how many",
     "answer": {
-     "text": "14"
+     "text": "10"
     }
    }
   },
@@ -913,7 +869,17 @@
     "id": "q14",
     "label": "how many",
     "answer": {
-     "text": "20"
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "one more than 9",
+    "answer": {
+     "text": "10"
     }
    }
   },
@@ -923,7 +889,17 @@
     "id": "q15",
     "label": "how many",
     "answer": {
-     "text": "11"
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-2",
+    "label": "one more than 2",
+    "answer": {
+     "text": "3"
     }
    }
   },
@@ -933,93 +909,23 @@
     "id": "q16",
     "label": "how many",
     "answer": {
-     "text": "19"
-    }
-   }
-  },
-  {
-   "itemLabel": "17",
-   "field": {
-    "id": "q17",
-    "label": "how many",
-    "answer": {
-     "text": "9"
-    }
-   }
-  },
-  {
-   "itemLabel": "17",
-   "field": {
-    "id": "q17-2",
-    "label": "one more than 9",
-    "answer": {
-     "text": "10"
-    }
-   }
-  },
-  {
-   "itemLabel": "18",
-   "field": {
-    "id": "q18",
-    "label": "how many",
-    "answer": {
-     "text": "2"
-    }
-   }
-  },
-  {
-   "itemLabel": "18",
-   "field": {
-    "id": "q18-2",
-    "label": "one more than 2",
-    "answer": {
-     "text": "3"
-    }
-   }
-  },
-  {
-   "itemLabel": "19",
-   "field": {
-    "id": "q19",
-    "label": "how many",
-    "answer": {
      "text": "6"
     }
    }
   },
   {
-   "itemLabel": "19",
+   "itemLabel": "16",
    "field": {
-    "id": "q19-2",
+    "id": "q16-2",
     "label": "one more than 6",
     "answer": {
      "text": "7"
     }
    }
-  },
-  {
-   "itemLabel": "20",
-   "field": {
-    "id": "q20",
-    "label": "how many",
-    "answer": {
-     "text": "8"
-    }
-   }
-  },
-  {
-   "itemLabel": "20",
-   "field": {
-    "id": "q20-2",
-    "label": "one more than 8",
-    "answer": {
-     "text": "9"
-    }
-   }
   }
  ],
  "design": {
-  "purpose": "Count up to 20 dots and write how many, then find one more.",
+  "purpose": "Count up to 20 objects, write how many, and find one more.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]

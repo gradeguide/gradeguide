@@ -11,7 +11,6 @@
     {
      "label": "A",
      "instruction": "Write the time.",
-     "explainer": "Count by 5s as the long hand goes past each number.",
      "items": [
       {
        "label": "1",
@@ -204,16 +203,20 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Students count by 5s from 12 to the long hand to find the minutes. Times late in the hour, where the short hand is close to the next number, test whether students read the hour correctly.",
       "misconceptions": [
-       "Reading the number the long hand points to as the minutes: 4 for 20 minutes."
+       "Reads the number the long hand points to as the minutes, such as 4 for 20 minutes.",
+       "Late in the hour, reads the hour from the next number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 642
+     "estimatedHeight": 616
     },
     {
      "label": "B",
-     "instruction": "How much money? Write the total in cents.",
-     "explainer": "Start with the coin worth the most and count on: 25, 35, 40, 41.",
+     "instruction": "Count the money. Write the total.",
      "items": [
       {
        "label": "7",
@@ -256,7 +259,36 @@
         }
        ],
        "key": "Total: 51 ¢"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-count-coins",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the value of a group of quarters, dimes, nickels and pennies.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The coins are drawn at their true relative sizes, with the penny copper and ridges on the dime and quarter, and each is named but not valued. Students must know each coin's value. The coins are ordered from greatest value to least, so students can count on: 25, 35, 40, 41.",
+      "misconceptions": [
+       "Counts each coin as 1.",
+       "Thinks a bigger coin is worth more, so a nickel is worth more than a dime."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 161
+    }
+   ],
+   "estimatedHeight": 785
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the money. Write the total.",
+     "items": [
       {
        "label": "8",
        "nodes": [
@@ -294,31 +326,7 @@
         }
        ],
        "key": "Total: 30 ¢"
-      }
-     ],
-     "columns": 2,
-     "fragmentId": "frag-g2-count-coins",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Count a group of quarters, dimes, nickels and pennies.",
-      "principles": [
-       "PRINCIPLE_CONCRETENESS_FADING"
-      ],
-      "misconceptions": [
-       "Counting each coin as 1, or thinking a bigger coin is always worth more."
-      ]
-     },
-     "estimatedHeight": 168
-    }
-   ],
-   "estimatedHeight": 818
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "How much money? Write the total in cents.",
-     "items": [
+      },
       {
        "label": "9",
        "nodes": [
@@ -400,119 +408,43 @@
         }
        ],
        "key": "Total: 32 ¢"
-      },
-      {
-       "label": "11",
-       "nodes": [
-        {
-         "coins": {
-          "coins": [
-           "COIN_QUARTER",
-           "COIN_PENNY",
-           "COIN_PENNY"
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Total:"
-           },
-           {
-            "blank": {
-             "id": "q11",
-             "label": "cents in all",
-             "answer": {
-              "text": "27",
-              "also": [
-               "27¢"
-              ]
-             }
-            }
-           },
-           {
-            "text": "¢"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Total: 27 ¢"
-      },
-      {
-       "label": "12",
-       "nodes": [
-        {
-         "coins": {
-          "coins": [
-           "COIN_DIME",
-           "COIN_DIME",
-           "COIN_DIME",
-           "COIN_NICKEL",
-           "COIN_NICKEL",
-           "COIN_PENNY"
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Total:"
-           },
-           {
-            "blank": {
-             "id": "q12",
-             "label": "cents in all",
-             "answer": {
-              "text": "41",
-              "also": [
-               "41¢"
-              ]
-             }
-            }
-           },
-           {
-            "text": "¢"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Total: 41 ¢"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g2-count-coins",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Count a group of quarters, dimes, nickels and pennies.",
+      "purpose": "Find the value of a group of quarters, dimes, nickels and pennies.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "The coins are drawn at their true relative sizes, with the penny copper and ridges on the dime and quarter, and each is named but not valued. Students must know each coin's value. The coins are ordered from greatest value to least, so students can count on: 25, 35, 40, 41.",
       "misconceptions": [
-       "Counting each coin as 1, or thinking a bigger coin is always worth more."
+       "Counts each coin as 1.",
+       "Thinks a bigger coin is worth more, so a nickel is worth more than a dime."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "continued": true,
-     "estimatedHeight": 250
+     "estimatedHeight": 414
     },
     {
      "label": "C",
      "instruction": "Solve. Show your work.",
      "items": [
       {
-       "label": "13",
+       "label": "11",
        "nodes": [
         {
-         "text": "Ana has 3 dimes and 1 nickel. A dime is worth 10¢. A nickel is worth 5¢. How many cents does Ana have?"
+         "text": "Ana has 3 dimes and 1 nickel. A dime is 10¢. A nickel is 5¢. How many cents does Ana have?"
         },
         {
          "workSpace": {
           "rows": 5,
           "field": {
-           "id": "q13",
+           "id": "q11",
            "label": "cents Ana has",
            "answer": {
             "text": "35",
@@ -526,18 +458,47 @@
         }
        ],
        "key": "35"
-      },
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-money-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve stories about coins and dollar bills.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story states the coin values it uses, so the task is to combine values rather than recall them. Recall is practised in the coin-counting section. The stories include finding a total, finding change and working in whole dollars. Students should write ¢ or $ with the answer.",
+      "misconceptions": [
+       "Counts each coin as 1 instead of by its value.",
+       "Mixes cents and dollars in one answer."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 234
+    }
+   ],
+   "estimatedHeight": 656
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
       {
-       "label": "14",
+       "label": "12",
        "nodes": [
         {
-         "text": "Ben has 2 quarters and 4 pennies. A quarter is worth 25¢. A penny is worth 1¢. How many cents does Ben have?"
+         "text": "Ben has 2 quarters and 4 pennies. A quarter is 25¢. A penny is 1¢. How many cents does Ben have?"
         },
         {
          "workSpace": {
           "rows": 7,
           "field": {
-           "id": "q14",
+           "id": "q12",
            "label": "cents Ben has",
            "answer": {
             "text": "54",
@@ -551,33 +512,9 @@
         }
        ],
        "key": "54"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g2-money-word-problems",
-     "stage": "STAGE_APPLY",
-     "design": {
-      "purpose": "Solve stories about coins and dollar bills.",
-      "principles": [
-       "PRINCIPLE_INTERLEAVING"
-      ],
-      "misconceptions": [
-       "Counting each coin as 1 instead of by its value."
-      ]
-     },
-     "estimatedHeight": 538
-    }
-   ],
-   "estimatedHeight": 796
-  },
-  {
-   "sections": [
-    {
-     "label": "C",
-     "instruction": "Solve. Show your work.",
-     "items": [
+      },
       {
-       "label": "15",
+       "label": "13",
        "nodes": [
         {
          "text": "Mia has $5. She buys a book for $3. How many dollars does she have left?"
@@ -586,7 +523,7 @@
          "workSpace": {
           "rows": 3,
           "field": {
-           "id": "q15",
+           "id": "q13",
            "label": "dollars Mia has left",
            "answer": {
             "text": "2",
@@ -602,16 +539,16 @@
        "key": "2"
       },
       {
-       "label": "16",
+       "label": "14",
        "nodes": [
         {
-         "text": "A pencil costs 45¢. Kai pays with 2 quarters. A quarter is worth 25¢. How much change does he get?"
+         "text": "A pencil costs 45¢. Kai pays with 2 quarters. A quarter is 25¢. How much change does he get?"
         },
         {
          "workSpace": {
           "rows": 4,
           "field": {
-           "id": "q16",
+           "id": "q14",
            "label": "change Kai gets",
            "answer": {
             "text": "5",
@@ -627,7 +564,7 @@
        "key": "5"
       },
       {
-       "label": "17",
+       "label": "15",
        "nodes": [
         {
          "text": "Omar has one $10 bill and two $1 bills. How many dollars does he have?"
@@ -636,7 +573,7 @@
          "workSpace": {
           "rows": 4,
           "field": {
-           "id": "q17",
+           "id": "q15",
            "label": "dollars Omar has",
            "answer": {
             "text": "12",
@@ -660,15 +597,20 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "Each story states the coin values it uses, so the task is to combine values rather than recall them. Recall is practised in the coin-counting section. The stories include finding a total, finding change and working in whole dollars. Students should write ¢ or $ with the answer.",
       "misconceptions": [
-       "Counting each coin as 1 instead of by its value."
+       "Counts each coin as 1 instead of by its value.",
+       "Mixes cents and dollars in one answer."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "continued": true,
-     "estimatedHeight": 526
+     "estimatedHeight": 810
     }
    ],
-   "estimatedHeight": 530
+   "estimatedHeight": 814
   }
  ],
  "key": [
@@ -791,32 +733,6 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "cents in all",
-    "answer": {
-     "text": "27",
-     "also": [
-      "27¢"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "12",
-   "field": {
-    "id": "q12",
-    "label": "cents in all",
-    "answer": {
-     "text": "41",
-     "also": [
-      "41¢"
-     ]
-    }
-   }
-  },
-  {
-   "itemLabel": "13",
-   "field": {
-    "id": "q13",
     "label": "cents Ana has",
     "answer": {
      "text": "35",
@@ -828,9 +744,9 @@
    }
   },
   {
-   "itemLabel": "14",
+   "itemLabel": "12",
    "field": {
-    "id": "q14",
+    "id": "q12",
     "label": "cents Ben has",
     "answer": {
      "text": "54",
@@ -842,9 +758,9 @@
    }
   },
   {
-   "itemLabel": "15",
+   "itemLabel": "13",
    "field": {
-    "id": "q15",
+    "id": "q13",
     "label": "dollars Mia has left",
     "answer": {
      "text": "2",
@@ -856,9 +772,9 @@
    }
   },
   {
-   "itemLabel": "16",
+   "itemLabel": "14",
    "field": {
-    "id": "q16",
+    "id": "q14",
     "label": "change Kai gets",
     "answer": {
      "text": "5",
@@ -870,9 +786,9 @@
    }
   },
   {
-   "itemLabel": "17",
+   "itemLabel": "15",
    "field": {
-    "id": "q17",
+    "id": "q15",
     "label": "dollars Omar has",
     "answer": {
      "text": "12",
@@ -885,14 +801,14 @@
   }
  ],
  "design": {
-  "purpose": "Tell time to five minutes, and solve money stories.",
+  "purpose": "Tell time to five minutes, and count and solve problems with money.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
   ]
  },
  "advice": [
   "\"Write the time.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"How much money? Write the total in cents.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Count the money. Write the total.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

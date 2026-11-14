@@ -11,8 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the jumps. Write the answer.",
-     "explainer": "Start at the arrow. Each jump is 1.",
+     "instruction": "Count the jumps. Write the sum.",
      "items": [
       {
        "label": "1",
@@ -430,15 +429,20 @@
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
+      "rationale": "Each jump of 1 is drawn from the starting number, so the sum is where the jumps land. Students write the landing number on the line and in the equation, which links counting on to addition.",
       "misconceptions": [
-       "Counting the starting number as the first jump."
+       "Counts the starting number as the first jump, giving one less than the sum.",
+       "Counts the tick marks instead of the jumps."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 498
+     "estimatedHeight": 472
     },
     {
      "label": "B",
-     "instruction": "Count the jumps back. Write the answer.",
+     "instruction": "Count the jumps back. Write the difference.",
      "items": [
       {
        "label": "4",
@@ -576,28 +580,7 @@
         }
        ],
        "key": "13; 19 − 6 = 13"
-      }
-     ],
-     "columns": 1,
-     "fragmentId": "frag-g1-count-back-number-line",
-     "stage": "STAGE_GUIDED",
-     "design": {
-      "purpose": "Subtract by counting back along a number line.",
-      "principles": [
-       "PRINCIPLE_NUMBER_LINE"
-      ]
-     },
-     "estimatedHeight": 180
-    }
-   ],
-   "estimatedHeight": 686
-  },
-  {
-   "sections": [
-    {
-     "label": "B",
-     "instruction": "Count the jumps back. Write the answer.",
-     "items": [
+      },
       {
        "label": "5",
        "nodes": [
@@ -740,14 +723,26 @@
       "purpose": "Subtract by counting back along a number line.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The jumps go to the left from the starting number, so subtraction is shown as counting back. This follows the counting-on items, so students see both operations on the same line.",
+      "misconceptions": [
+       "Counts the starting number as the first jump back, giving one more than the difference.",
+       "Jumps to the right because jumps have gone right in the section before."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "continued": true,
-     "estimatedHeight": 180
-    },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 806
+  },
+  {
+   "sections": [
     {
      "label": "C",
-     "instruction": "Use an addition fact to subtract.",
+     "instruction": "Subtract. Complete the addition fact.",
      "items": [
       {
        "label": "6",
@@ -1132,9 +1127,17 @@
      "fragmentId": "frag-g1-think-addition",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Solve a subtraction by finding the missing number in an addition.",
+      "purpose": "Solve a subtraction by finding the missing addend in a related addition.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each subtraction is paired with the addition that answers it, so 13 − 8 becomes 8 + ? = 13. Students who know addition facts can use them to subtract instead of counting back. The two boxes hold the same number.",
+      "misconceptions": [
+       "Writes the whole in the addition box instead of the missing part.",
+       "Does not see that the two answers must be equal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 322
@@ -1540,20 +1543,28 @@
        "key": "7 − 2 = 5"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-g1-facts-within-20",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add and subtract within 20, and know the facts within 10.",
+      "purpose": "Add and subtract within 20.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE",
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Facts within 20 are mixed with facts within 10, and addition with subtraction. Students may use strategies such as making ten, doubles or a related addition fact. Fluency is expected within 10 in grade 1 and within 20 in grade 2.",
+      "misconceptions": [
+       "Counts back one too many when subtracting.",
+       "Adds when the sign is minus."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 242
     }
    ],
-   "estimatedHeight": 704
+   "estimatedHeight": 572
   }
  ],
  "key": [
@@ -1899,15 +1910,15 @@
   }
  ],
  "design": {
-  "purpose": "Count on and back on a number line, think of subtraction as adding, then practise facts.",
+  "purpose": "Count on and back on a number line, use addition to subtract, then practise facts.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
   ]
  },
  "advice": [
-  "\"Count the jumps. Write the answer.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Count the jumps back. Write the answer.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use an addition fact to subtract.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the jumps. Write the sum.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the jumps back. Write the difference.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract. Complete the addition fact.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Add or subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"

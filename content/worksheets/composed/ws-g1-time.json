@@ -10,7 +10,6 @@
     {
      "label": "A",
      "instruction": "Write the time.",
-     "explainer": "The short hand shows the hour. When the long hand points to 12, it is o'clock.",
      "items": [
       {
        "label": "1",
@@ -113,7 +112,7 @@
        "nodes": [
         {
          "clock": {
-          "hour": 12
+          "hour": 8
          }
         },
         {
@@ -127,9 +126,9 @@
              "id": "q4",
              "label": "the time on the clock",
              "answer": {
-              "text": "12:00",
+              "text": "8:00",
               "also": [
-               "12 o'clock"
+               "8 o'clock"
               ]
              }
             }
@@ -138,24 +137,31 @@
          }
         }
        ],
-       "key": "The time is 12:00"
+       "key": "The time is 8:00"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-g1-clock-hour",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Tell time to the hour.",
+      "purpose": "Tell time to the hour on an analog clock.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "On the hour, the long hand points to 12 and the short hand points to the hour. Twelve o'clock is left out because the hands lie on top of each other. Students may write 5:00 or 5 o'clock.",
+      "misconceptions": [
+       "Reads the long hand as the hour.",
+       "Writes 12:5 for 5 o'clock, reading both hands as numbers."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 448
+     "estimatedHeight": 422
     },
     {
      "label": "B",
      "instruction": "Write the time.",
-     "explainer": "When the long hand points to 6, it is half past: 3:30. The short hand is halfway between two numbers.",
      "items": [
       {
        "label": "5",
@@ -226,14 +232,19 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Half-hour times are mixed with times on the hour. At half past, the short hand is halfway between two numbers, and students must read the earlier one.",
       "misconceptions": [
-       "Reading the hour from the number after the short hand at half past."
+       "At half past, reads the hour from the number after the short hand.",
+       "Writes 3:6 for half past 3, reading the number the long hand points to."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 274
+     "estimatedHeight": 228
     }
    ],
-   "estimatedHeight": 730
+   "estimatedHeight": 658
   },
   {
    "sections": [
@@ -314,8 +325,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Half-hour times are mixed with times on the hour. At half past, the short hand is halfway between two numbers, and students must read the earlier one.",
       "misconceptions": [
-       "Reading the hour from the number after the short hand at half past."
+       "At half past, reads the hour from the number after the short hand.",
+       "Writes 3:6 for half past 3, reading the number the long hand points to."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "continued": true,
@@ -371,9 +387,9 @@
     "id": "q4",
     "label": "the time on the clock",
     "answer": {
-     "text": "12:00",
+     "text": "8:00",
      "also": [
-      "12 o'clock"
+      "8 o'clock"
      ]
     }
    }

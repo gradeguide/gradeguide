@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Circle the dots in pairs. Is the number odd or even?",
-     "explainer": "Even numbers make pairs with none left over. An even number is a double: 8 = 4 + 4.",
+     "instruction": "Circle pairs of dots. Mark odd or even.",
      "items": [
       {
        "label": "1",
@@ -19,7 +18,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 9
+          "cols": 9,
+          "gap": 22
          }
         },
         {
@@ -46,7 +46,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 12
+          "cols": 12,
+          "gap": 22
          }
         },
         {
@@ -106,7 +107,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 11
+          "cols": 11,
+          "gap": 22
          }
         },
         {
@@ -133,7 +135,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 16
+          "cols": 16,
+          "gap": 22
          }
         },
         {
@@ -193,7 +196,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 15
+          "cols": 15,
+          "gap": 22
          }
         },
         {
@@ -220,7 +224,8 @@
         {
          "dotArray": {
           "rows": 1,
-          "cols": 5
+          "cols": 5,
+          "gap": 22
          }
         },
         {
@@ -242,20 +247,28 @@
        "key": "odd"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g2-odd-even",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Tell whether a number up to 20 is odd or even by pairing, and write an even number as a double.",
+      "purpose": "Tell whether a number up to 20 is odd or even by pairing, and write an even number as a sum of two equal addends.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Circling pairs shows whether one dot is left over, which is what makes a number odd. For an even number, students also write it as a double such as 12 = 6 + 6. The doubles link evenness to equal groups, which leads to multiplication in grade 3.",
+      "misconceptions": [
+       "Decides odd or even from the size of the number rather than from pairing.",
+       "Pairs dots across a gap and miscounts the one left over."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 352
+     "estimatedHeight": 566
     },
     {
      "label": "B",
-     "instruction": "Write the total as an addition of the rows.",
+     "instruction": "Write the total.",
      "items": [
       {
        "label": "7",
@@ -358,7 +371,36 @@
         }
        ],
        "key": "4 + 4 + 4 = 12"
-      },
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-array-sums",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the total in an array of up to 5 rows and 5 columns by adding equal rows.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each array is matched to a sum of equal addends, one for each row. Arrays stay within 5 by 5, the size grade 2 uses. Repeated addition in arrays prepares for multiplication in grade 3.",
+      "misconceptions": [
+       "Adds the number of rows and the number of columns.",
+       "Writes one addend for each column when the sum is by rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 764
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Write the total.",
+     "items": [
       {
        "label": "9",
        "nodes": [
@@ -457,12 +499,21 @@
       "purpose": "Find the total in an array of up to 5 rows and 5 columns by adding equal rows.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each array is matched to a sum of equal addends, one for each row. Arrays stay within 5 by 5, the size grade 2 uses. Repeated addition in arrays prepares for multiplication in grade 3.",
+      "misconceptions": [
+       "Adds the number of rows and the number of columns.",
+       "Writes one addend for each column when the sum is by rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 328
+     "continued": true,
+     "estimatedHeight": 172
     }
    ],
-   "estimatedHeight": 688
+   "estimatedHeight": 176
   }
  ],
  "key": [

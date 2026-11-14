@@ -551,6 +551,10 @@ describe('kindergarten to grade 2 item kinds', () => {
       }
       expect(xs[5]).toBeLessThanOrEqual(1000);
     }
+    for (const [n] of items({ case: 'countSequence', value: create(CountSequenceSchema, { start: { min: 150, max: 950 }, steps: [1], crossHundred: true }) })) {
+      const xs = line(n).split(' , ').map(Number);
+      expect(xs.some((x) => x % 100 === 0 && x > xs[0])).withContext(xs.join(', ')).toBeTrue();
+    }
   });
 
   it('adds and subtracts facts, with and without pictures', () => {
@@ -572,6 +576,9 @@ describe('kindergarten to grade 2 item kinds', () => {
     }
     for (const [n] of items({ case: 'addSubtractFact', value: create(AddSubtractFactSchema, { max: 20, threeAddends: true }) })) {
       holds(n);
+      // Two of the three numbers make 10.
+      const [a, b, c] = line(n).split('=')[0].split('+').map(Number);
+      expect(a + b === 10 || a + c === 10 || b + c === 10).withContext(line(n)).toBeTrue();
     }
   });
 
@@ -650,6 +657,15 @@ describe('kindergarten to grade 2 item kinds', () => {
         expect(c.answer!.answer!.text).toBe(String(c.operands.reduce((s, x) => s + Number(x), 0)));
       }
     }
+    for (const ns of items({ case: 'addInColumns', value: create(AddInColumnsSchema, { addends: 2, digits: 3 }) })) {
+      const [c] = find(ns, 'columnArithmetic');
+      const xs = c.operands.map(Number);
+      xs.forEach((x) => expect(x).toBeGreaterThanOrEqual(100));
+      expect(xs[0] + xs[1]).toBeLessThan(1000);
+      const ones = (xs[0] % 10) + (xs[1] % 10);
+      const tens = (Math.floor(xs[0] / 10) % 10) + (Math.floor(xs[1] / 10) % 10) + (ones >= 10 ? 1 : 0);
+      expect(ones >= 10 || tens >= 10).toBeTrue();
+    }
   });
 
   it('reads clocks on a step', () => {
@@ -663,10 +679,9 @@ describe('kindergarten to grade 2 item kinds', () => {
   });
 
   it('answers questions from tallies and line plots', () => {
-    const tallied = (s: string) => (s.match(/[|/]/g) ?? []).length;
     for (const ns of items({ case: 'dataChart', value: create(DataChartSchema, { mode: DataChart_Mode.TALLY }) })) {
-      const [t] = find(ns, 'dataTable');
-      const vs = t.rows.map((r) => tallied(r.cells[1].kind.value as string));
+      const [t] = find(ns, 'tallyChart');
+      const vs = t.rows.map((r) => r.count);
       const [first, more, all] = answers(ns).map(Number);
       expect(first).toBe(vs[0]);
       expect(more).toBe(Math.max(...vs) - Math.min(...vs));
@@ -689,8 +704,27 @@ describe('kindergarten to grade 2 item kinds', () => {
       expect(answers(ns)).toEqual([String(n), String(n), names[n]]);
     }
     for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.SORT }) })) {
+      // One small picture of each kind labels its count, so it is not counted.
       const sides = find(ns, 'polygon').map((p) => p.points.length);
-      expect(answers(ns)).toEqual([3, 4, 24].map((k) => String(sides.filter((x) => x === k).length)));
+      expect(answers(ns)).toEqual([3, 4, 24].map((k) => String(sides.filter((x) => x === k).length - 1)));
+    }
+    for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.SIDES_CORNERS, noNames: true }) })) {
+      const [p] = find(ns, 'polygon');
+      expect(answers(ns)).toEqual([String(p.points.length), String(p.points.length)]);
+      expect(find(ns, 'choices').length).toBe(0);
+    }
+    for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.FIND }) })) {
+      // The first polygon is the small picture of the shape to find; the
+      // rest are the row. Rectangles and squares both have 4 corners, so
+      // they are told apart by their sides' lengths.
+      const [target, ...row] = find(ns, 'polygon');
+      const key = (p: { points: { x: number; y: number }[] }) => {
+        const d = (i: number) => Math.hypot(p.points[i].x - p.points[(i + 1) % p.points.length].x, p.points[i].y - p.points[(i + 1) % p.points.length].y);
+        return p.points.length === 4 ? `4:${Math.abs(d(0) - d(1)) < 0.05}` : String(p.points.length);
+      };
+      const n = Number(answers(ns)[0]);
+      expect(n).toBe(row.filter((p) => key(p) === key(target)).length);
+      expect(n).toBeGreaterThanOrEqual(2);
     }
     for (const ns of items({ case: 'shapeAttributes', value: create(ShapeAttributesSchema, { mode: ShapeAttributes_Mode.NAME }) })) {
       const [p] = find(ns, 'polygon');
@@ -750,7 +784,7 @@ describe('kindergarten to grade 2 item kinds', () => {
   });
 
   it('compares and measures lengths', () => {
-    const units = (ns: readonly Node[]) => find(ns, 'tapeDiagram')[0].tapes.map((t) => t.units);
+    const units = (ns: readonly Node[]) => find(ns, 'lengthStrips')[0].strips.map((t) => t.units);
     for (const ns of items({ case: 'lengthMeasure', value: create(LengthMeasureSchema, { mode: LengthMeasure_Mode.LONGER }) })) {
       const [a, b] = units(ns);
       expect(answers(ns)).toEqual([a > b ? 'A' : 'B']);

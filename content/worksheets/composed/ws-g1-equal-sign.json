@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Is it true or false? Tick one.",
-     "explainer": "The = sign means both sides are worth the same.",
+     "instruction": "Mark true or false.",
      "items": [
       {
        "label": "1",
@@ -388,15 +387,21 @@
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS"
       ],
+      "rationale": "Equations put a number or a sum on either side of the = sign, and half are false by one. Students must compare the value of both sides, which builds the meaning of = as the same as. Equations such as 9 = 4 + 5 are included because many students first read = as the answer comes next.",
       "misconceptions": [
-       "Reading = as \"the answer comes next\", so 7 = 7 or 9 = 4 + 5 looks wrong."
+       "Reads = as the answer comes next, so 9 = 4 + 5 seems false.",
+       "Marks 2 + 9 = 1 + 11 false because 11 is not the sum of 2 and 9."
+      ],
+      "references": [
+       "McNeil and Alibali (2005), Child Development 76",
+       "Knuth, Stephens, McNeil and Alibali (2006), Journal for Research in Mathematics Education 37"
       ]
      },
-     "estimatedHeight": 300
+     "estimatedHeight": 274
     },
     {
      "label": "B",
-     "instruction": "Fill in the missing number.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "9",
@@ -736,12 +741,20 @@
       "purpose": "Find the missing number in an addition or subtraction equation.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The missing number moves to every position, and the equation sometimes starts with the total. Students must think about how the three numbers are related rather than compute from left to right.",
+      "misconceptions": [
+       "Adds the two numbers shown, whatever the position of the box.",
+       "In ? − 4 = 4, writes 0 instead of 8."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 242
     }
    ],
-   "estimatedHeight": 550
+   "estimatedHeight": 524
   }
  ],
  "key": [
@@ -927,14 +940,14 @@
   }
  ],
  "design": {
-  "purpose": "Understand = as \"the same as\", and find missing numbers.",
+  "purpose": "Read = as the same as, and find missing numbers.",
   "principles": [
    "PRINCIPLE_ERROR_ANALYSIS"
   ]
  },
  "advice": [
-  "\"Is it true or false? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Fill in the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Mark true or false.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

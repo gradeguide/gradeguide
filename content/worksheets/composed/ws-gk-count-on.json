@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the missing numbers on the hundred chart.",
-     "explainer": "Moving right is one more. Moving down is ten more.",
+     "instruction": "Write the missing numbers.",
      "items": [
       {
        "label": "1",
@@ -208,17 +207,24 @@
      "fragmentId": "frag-gk-hundred-chart",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Count to 100 by ones and see the tens on a hundred chart.",
+      "purpose": "Count to 100 by ones on a hundred chart.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The missing numbers form a path along a row and down a column. Along a row the numbers go up by one. Down a column the tens digit goes up by one and the ones digit stays the same, which shows the pattern in counting to 100.",
+      "misconceptions": [
+       "Writes the number to the left plus one at the start of a row, where the number above plus ten is the easier check.",
+       "Reverses the digits, such as 31 for 13."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 356
+     "estimatedHeight": 330
     },
     {
      "label": "B",
-     "instruction": "Count on. Write the missing numbers.",
-     "explainer": "Start at the first number and keep counting by ones.",
+     "instruction": "Write the missing numbers.",
      "items": [
       {
        "label": "3",
@@ -477,15 +483,20 @@
      "fragmentId": "frag-gk-count-on",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Count forward by ones from any number up to 100.",
+      "purpose": "Count forward by ones from a number other than 1, up to 100.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Each sequence starts partway through the count, so students cannot recite from 1. Some sequences cross a decade, such as 28, 29, 30, where errors are most common. One later number is printed so students can check their place.",
       "misconceptions": [
-       "Going from 29 to 20 or 210 instead of 30."
+       "After a number ending in 9, writes the wrong decade, such as 20 or 210 after 29.",
+       "Starts again from 1 instead of counting on from the number given."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 268
+     "estimatedHeight": 242
     },
     {
      "label": "C",
@@ -625,12 +636,20 @@
       "purpose": "Count by tens to 100.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Counting by tens is the second counting skill kindergarten asks for, after counting by ones. Starting at different tens keeps students from reciting from 10.",
+      "misconceptions": [
+       "Counts by ones after the first ten, such as 10, 20, 21.",
+       "Writes 100 as 1000 or 010."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 138
     }
    ],
-   "estimatedHeight": 774
+   "estimatedHeight": 722
   }
  ],
  "key": [
@@ -982,8 +1001,8 @@
   ]
  },
  "advice": [
-  "\"Fill in the missing numbers on the hundred chart.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Count on. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Count by tens. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"

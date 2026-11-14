@@ -413,10 +413,18 @@
      "fragmentId": "frag-gk-facts-within-5",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add and subtract within 5 quickly.",
+      "purpose": "Add and subtract within 5 fluently.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE",
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Facts within 5 are the facts kindergarten expects students to know fluently. Adding and subtracting are mixed, so students read each sign. Facts with 0 are included because they come up in later work.",
+      "misconceptions": [
+       "Adds when the sign is minus, because most practice so far has been adding.",
+       "Thinks subtracting 0 or adding 0 changes the number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 190
@@ -763,6 +771,14 @@
       "purpose": "Add and subtract within 10.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "These facts extend the within-5 facts above to 10, the range of kindergarten addition and subtraction. Students may count on fingers or use known facts; fluency within 10 is a grade 1 goal.",
+      "misconceptions": [
+       "Counts the starting number again when counting on, so 6 + 2 gives 7.",
+       "Subtracts the larger number from the smaller in the wrong order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 190
@@ -994,7 +1010,7 @@
   }
  ],
  "design": {
-  "purpose": "Add and subtract within 5 quickly, then within 10.",
+  "purpose": "Add and subtract within 5 fluently, then within 10.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
   ]

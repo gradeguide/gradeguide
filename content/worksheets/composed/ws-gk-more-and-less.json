@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Which row has more dots? Tick A, B or same.",
-     "explainer": "Match the dots in the two rows. The row with dots left over has more.",
+     "instruction": "Mark the row with more dots. Mark same if they are equal.",
      "items": [
       {
        "label": "1",
@@ -31,7 +30,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 4
+             "cols": 4,
+             "gap": 24
             }
            }
           ]
@@ -52,7 +52,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 6
+             "cols": 6,
+             "gap": 24
             }
            }
           ]
@@ -95,7 +96,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 5
+             "cols": 5,
+             "gap": 24
             }
            }
           ]
@@ -116,7 +118,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 5
+             "cols": 5,
+             "gap": 24
             }
            }
           ]
@@ -159,7 +162,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 3
+             "cols": 3,
+             "gap": 24
             }
            }
           ]
@@ -180,7 +184,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 3
+             "cols": 3,
+             "gap": 24
             }
            }
           ]
@@ -223,7 +228,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 5
+             "cols": 5,
+             "gap": 24
             }
            }
           ]
@@ -244,7 +250,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 6
+             "cols": 6,
+             "gap": 24
             }
            }
           ]
@@ -287,7 +294,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 6
+             "cols": 6,
+             "gap": 24
             }
            }
           ]
@@ -308,7 +316,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 10
+             "cols": 10,
+             "gap": 24
             }
            }
           ]
@@ -351,7 +360,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 10
+             "cols": 10,
+             "gap": 24
             }
            }
           ]
@@ -372,7 +382,8 @@
            {
             "dotArray": {
              "rows": 1,
-             "cols": 10
+             "cols": 10,
+             "gap": 24
             }
            }
           ]
@@ -406,15 +417,20 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "The two rows of dots start at the same place and are evenly spaced, so students can match the dots one to one or count each row. About one item in five has equal rows, so same is a real answer and not a trick.",
       "misconceptions": [
-       "Thinking the longer-looking row has more."
+       "Judges by how long a row looks rather than by how many dots it has.",
+       "Thinks two groups cannot be the same and always marks A or B."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 432
+     "estimatedHeight": 406
     },
     {
      "label": "B",
-     "instruction": "Tick the greater number.",
+     "instruction": "Mark the greater number.",
      "items": [
       {
        "label": "7",
@@ -634,12 +650,20 @@
       "purpose": "Tell which of two numbers from 1 to 10 is greater.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Students compare written numerals without pictures, after comparing groups of dots in the section before. The greater number is the one said later when counting. Pairs that differ by 1 make students think about the order of the counting sequence.",
+      "misconceptions": [
+       "Chooses the number that is written first or looks bigger.",
+       "Thinks 10 is less than 9 because 1 is less than 9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 142
     }
    ],
-   "estimatedHeight": 582
+   "estimatedHeight": 556
   }
  ],
  "key": [
@@ -811,8 +835,8 @@
   ]
  },
  "advice": [
-  "\"Which row has more dots? Tick A, B or same.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Tick the greater number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Mark the row with more dots. Mark same if they are equal.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark the greater number.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
