@@ -17,7 +17,10 @@ fragments {
   design {
     purpose: "Find unit rates from ratios of fractions."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Dividing the time by the distance."
+    rationale: "Grade 7 extends unit rates to quantities given as fractions, such as 1/2 mile in 1/4 hour. Every item is a distance or a part of a job in a fraction of an hour, so the child always divides the amount by the time. The answers are whole numbers or simple fractions, so the effort goes into the division of fractions, not into messy arithmetic."
+    misconceptions: "Dividing the time by the distance, which gives hours per mile."
+    misconceptions: "Multiplying 1/2 by 1/4 because both are fractions, which gives a rate smaller than the distance."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -25,24 +28,32 @@ fragments {
   id: "frag-g7-proportional-or-not"
   instruction: "Is y proportional to x? Check whether y ÷ x is the same in every row."
   stage: STAGE_INTRODUCE
-  items { kind { rule_table { mode: MODE_PROPORTIONAL } } count: 4 min_count: 2 }
+  items { kind { rule_table { mode: MODE_PROPORTIONAL } } count: 4 }
   max_columns: 4
   design {
     purpose: "Decide whether a table shows a proportional relationship."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A table is the first place grade 7 meets the test for a proportional relationship. Half the tables follow y = kx and half follow y = kx + b, so a table that grows steadily is not enough to say yes. The instruction names the check, y ÷ x in every row, so the child has one test to apply."
     misconceptions: "Calling any table that goes up by the same amount proportional, even y = 2x + 3."
+    misconceptions: "Checking only the first row instead of every row."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
 fragments {
   id: "frag-g7-constant-of-proportionality"
-  instruction: "Find the constant of proportionality and write the equation."
+  instruction: "Find the constant of proportionality, k, and write the equation."
   stage: STAGE_PRACTICE
-  items { kind { rule_table { mode: MODE_CONSTANT } } count: 3 min_count: 2 }
+  explainer: "In a proportional table, y ÷ x is the same in every row. That number is k, and the equation is y = kx."
+  items { kind { rule_table { mode: MODE_CONSTANT } } count: 2 }
   max_columns: 3
   design {
     purpose: "Find the constant of proportionality from a table and write y = kx."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Once a table is known to be proportional, the child finds k and writes y = kx. Some constants are halves, such as 2.5, so the child divides y by x rather than spotting a times-table fact. Writing the equation straight after finding k joins the table and the equation."
+    misconceptions: "Using the difference between rows as the constant instead of y ÷ x."
+    misconceptions: "Writing the equation as x = ky."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -51,11 +62,15 @@ fragments {
   instruction: "Use the graph."
   stage: STAGE_GUIDED
   explainer: "A proportional graph is a straight line through (0, 0). The point where x is 1 shows the unit rate."
-  items { kind { rule_table { mode: MODE_GRAPH } } count: 2 min_count: 1 }
+  items { kind { rule_table { mode: MODE_GRAPH } } count: 4 }
   max_columns: 2
   design {
     purpose: "Read the unit rate and other points from the graph of a proportional relationship."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The graph is the third view of a proportional relationship after the table and the equation. The child reads the point where x is 1, which is the unit rate, then another point, then writes the equation. Each graph has a story on its axes, such as pages and minutes, so the unit rate has a meaning."
+    misconceptions: "Reading the unit rate from the point where y is 1 instead of where x is 1."
+    misconceptions: "Thinking any straight line shows a proportional relationship, even one that does not pass through (0, 0)."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -65,32 +80,40 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Solve multistep percent problems: tax, tips, discounts, markups and percent change."
+    purpose: "Solve multistep percent problems: tax, tips, discounts, markups, percent change and percent error."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each story is a kind of percent problem from the grade 7 standard: tip, discount, tax, markup, percent increase and percent error. Most need two steps, finding the percent of the amount and then adding or taking it away. The amounts are easy to multiply, so the child can concentrate on what to do with the percent."
     misconceptions: "Finding the percent change from the new amount instead of the original."
+    misconceptions: "Stopping after finding the tip or discount instead of finding the new total."
+    misconceptions: "Taking 30% off by subtracting 30 dollars."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
   items {
-    count: 5
+    count: 6
     authored {
       items {
-        nodes { text: "A meal costs $48. Sam leaves a 15% tip, which is 0.15 of the cost. What is the total with the tip?" }
+        nodes { text: "A meal costs $48. Sam leaves a 15% tip. What is the total with the tip?" }
         nodes { work_space { field { label: "total with tip" answer { text: "55.20" work: "48 + 48 × 0.15" also: "$55.20" also: "55.2" } } } }
       }
       items {
-        nodes { text: "A $60 jacket is on sale for 30% off, which is 0.30 of the price. What is the sale price?" }
-        nodes { work_space { field { label: "sale price" answer { text: "42" work: "60 − 60 × 0.30" also: "$42" } } } }
+        nodes { text: "A $60 jacket is on sale for 30% off. What is the sale price?" }
+        nodes { work_space { field { label: "sale price" answer { text: "42" work: "60 − 60 × 0.30" also: "$42" also: "42.00" also: "$42.00" } } } }
       }
       items {
-        nodes { text: "A bike costs $250. Sales tax is 8%, which is 0.08 of the price. What is the total cost?" }
-        nodes { work_space { field { label: "total cost" answer { text: "270" work: "250 + 250 × 0.08" also: "$270" } } } }
+        nodes { text: "A bike costs $250. Sales tax is 8%. What is the total cost?" }
+        nodes { work_space { field { label: "total cost" answer { text: "270" work: "250 + 250 × 0.08" also: "$270" also: "270.00" also: "$270.00" } } } }
       }
       items {
-        nodes { text: "A store buys a lamp for $40 and marks it up 25% (25 out of every 100). What is the selling price?" }
-        nodes { work_space { field { label: "selling price" answer { text: "50" work: "40 + 40 ÷ 100 × 25" also: "$50" } } } }
+        nodes { text: "A store buys a lamp for $40 and marks the price up 25%. What is the selling price?" }
+        nodes { work_space { field { label: "selling price" answer { text: "50" work: "40 + 40 × 0.25" also: "$50" also: "50.00" also: "$50.00" } } } }
       }
       items {
-        nodes { text: "A town grew from 800 people to 920 people. By what percent did it grow? (A percent is out of 100.)" }
+        nodes { text: "A town grew from 800 people to 920 people. By what percent did it grow?" }
         nodes { work_space { field { label: "percent growth" answer { text: "15" work: "(920 − 800) ÷ 800 × 100" also: "15%" } } } }
+      }
+      items {
+        nodes { text: "Jo guessed that a jar held 80 marbles. It really held 100. What was the percent error of her guess?" }
+        nodes { work_space { field { label: "percent error" answer { text: "20" work: "(100 − 80) ÷ 100 × 100" also: "20%" } } } }
       }
     }
   }
@@ -108,6 +131,9 @@ fragments {
   design {
     purpose: "Add integers by moving along a number line."
     principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Grade 7 starts adding negative numbers on a number line, where adding a negative moves left. Each item names the start and the move in words, then asks for the sum, so the child sees that −6 + 7 is a move of 7 to the right from −6. Some moves cross zero, which is where children most often slip."
+    misconceptions: "Moving right for every addition, even when adding a negative."
+    misconceptions: "Counting the starting tick as the first step of the move."
   }
 }
 
@@ -121,7 +147,9 @@ fragments {
   design {
     purpose: "Rewrite subtraction as adding the opposite, then add."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Subtracting a negative number is the hardest sign case, so the child rewrites each subtraction as adding the opposite before working it out. The first box asks only for the opposite, which makes the rewrite a step of its own. After this the child can add using the number line rules from the section before."
     misconceptions: "Thinking 3 − (−5) is −2."
+    misconceptions: "Changing the sign of the first number as well as the second."
   }
 }
 
@@ -129,11 +157,14 @@ fragments {
   id: "frag-g7-add-subtract-rationals"
   instruction: "Add or subtract."
   stage: STAGE_PRACTICE
-  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_DECIMALS } } count: 4 min_count: 2 }
+  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_DECIMALS } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Add and subtract positive and negative decimals."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The same rules now apply to decimals, such as −8.2 + (−6). Mixing addition and subtraction makes the child read each sign before working. The decimals have one place, so lining up the digits is easy and the signs are the focus."
+    misconceptions: "Subtracting the smaller from the larger and keeping the first number's sign."
+    misconceptions: "Treating −1.8 + (−11.7) as a subtraction and getting −9.9."
   }
 }
 
@@ -141,11 +172,14 @@ fragments {
   id: "frag-g7-add-subtract-signed-fractions"
   instruction: "Add or subtract. Write the answer in simplest form."
   stage: STAGE_PRACTICE
-  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_FRACTIONS } } count: 4 min_count: 2 }
+  items { kind { signed_arithmetic { ops: [OP_ADD, OP_SUBTRACT] numbers: NUMBERS_FRACTIONS } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Add and subtract positive and negative fractions."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Signed fractions combine two hard skills: common denominators and sign rules. The fractions are proper and in lowest terms with denominators up to 8, so the common denominator is quick to find. The child writes the answer in simplest form."
+    misconceptions: "Adding numerators and denominators: −1/2 + 5/8 = 4/10."
+    misconceptions: "Dropping the minus sign in front of a fraction."
   }
 }
 
@@ -159,7 +193,9 @@ fragments {
   design {
     purpose: "Multiply and divide integers using the sign rules."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The sign rules for multiplying and dividing are practised on small facts the child already knows, so only the sign is new. Multiplication and division are mixed so the child sees the same rules hold for both. No item multiplies by 1 or −1, so every item is real practice."
     misconceptions: "Thinking two negatives multiply to a negative."
+    misconceptions: "Applying the addition rule and keeping the sign of the larger number."
   }
 }
 
@@ -172,6 +208,9 @@ fragments {
   design {
     purpose: "Multiply and divide signed fractions, where −(p/q) = (−p)/q = p/(−q)."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Signed fractions use the same sign rules as integers. The fractions are proper and in lowest terms, so the child practises the rule and simplifying the answer, not tidying the question. Division by a fraction is done by multiplying by its reciprocal, as in grade 6."
+    misconceptions: "Flipping the first fraction instead of the second when dividing."
+    misconceptions: "Thinking −(1/2) and (−1)/2 are different numbers."
   }
 }
 
@@ -184,12 +223,15 @@ fragments {
   design {
     purpose: "Multiply and divide signed decimals."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Signed decimals finish the set of rational numbers. One factor is a decimal and the other a whole number from 2 to 9, so the place value stays easy and the sign rule is the point."
+    misconceptions: "Putting the decimal point in the wrong place after multiplying."
+    misconceptions: "Forgetting that a negative divided by a negative is positive."
   }
 }
 
 fragments {
   id: "frag-g7-fraction-to-decimal"
-  instruction: "Write each fraction as a decimal, then tick whether it ends or repeats."
+  instruction: "Write each fraction as a decimal, to the nearest thousandth if it repeats. Tick whether it ends or repeats."
   stage: STAGE_PRACTICE
   explainer: "Divide the numerator by the denominator. The digits either stop or start to repeat."
   items { kind { fraction_to_decimal { repeating: true } } count: 6 min_count: 4 }
@@ -197,6 +239,9 @@ fragments {
   design {
     purpose: "Change a fraction to a decimal by long division and tell whether it ends or repeats."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Long division of the numerator by the denominator shows that a fraction's decimal either ends or repeats, which is what the standard asks a child to know. Some denominators are made only of 2s and 5s and end; others, such as 3, 11 and 15, repeat. There is room under each fraction for the long division."
+    misconceptions: "Dividing the denominator by the numerator."
+    misconceptions: "Thinking a fraction with a large denominator must repeat, such as 33/40."
   }
 }
 
@@ -208,6 +253,10 @@ fragments {
   design {
     purpose: "Solve problems with positive and negative numbers, fractions and decimals."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each story uses a different kind of rational number: a temperature below zero, a mixed number, money owed and a negative change in height. The child decides which operation the story needs before computing. There is room to show the working, so a teacher can see the setup as well as the answer."
+    misconceptions: "Subtracting 5 from 12 for a rise from −5 to 12 instead of adding."
+    misconceptions: "Ignoring the negative sign on a debt."
+    references: "Rohrer and Taylor (2007), Instructional Science 35"
   }
   items {
     count: 4
@@ -236,7 +285,7 @@ fragments {
 
 fragments {
   id: "frag-g7-expand-signed"
-  instruction: "Multiply out the brackets."
+  instruction: "Expand. Multiply each term in the parentheses."
   stage: STAGE_PRACTICE
   explainer: "Multiply every term inside by the number outside, sign and all: −2(x − 5) = −2x + 10."
   items { kind { equivalent_expressions { mode: MODE_EXPAND negatives: true } } count: 6 min_count: 4 }
@@ -244,7 +293,10 @@ fragments {
   design {
     purpose: "Expand expressions with negative numbers."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Expanding with a negative number outside the parentheses is where most sign errors start in algebra. The items mix positive and negative multipliers so the child cannot assume the signs. The worked example in the explainer shows the hardest case, a negative times a subtraction."
     misconceptions: "Not multiplying the second term's sign: −2(x − 5) = −2x − 10."
+    misconceptions: "Multiplying only the first term inside: 4(x − 9) = 4x − 9."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -257,7 +309,10 @@ fragments {
   design {
     purpose: "Collect like terms in linear expressions with negative coefficients."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Each expression has two x terms and two numbers, some negative, so the child must pair terms by kind and carry each sign with its term. The answers are short, so a wrong pairing shows clearly."
     misconceptions: "Adding a constant to a coefficient: 3x + 2 = 5x."
+    misconceptions: "Dropping the minus sign in front of a term when moving it next to its like term."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -270,6 +325,10 @@ fragments {
   design {
     purpose: "Factor linear expressions, including ones with a subtraction."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Factoring undoes expanding, so it comes after the two sections that build expressions. Each expression has a common factor from 2 to 9, and some have a subtraction inside. Checking by expanding the answer is quick, so the child can catch their own mistakes."
+    misconceptions: "Taking out a factor that does not divide both terms."
+    misconceptions: "Leaving a 1 out: 6x − 6 = 6(x)."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -283,6 +342,10 @@ fragments {
   design {
     purpose: "Rewrite a percent increase or decrease as a single multiplication."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Writing p + 0.05p as 1.05p shows that a percent change is one multiplication, which the standard gives as its example. Increases and decreases are mixed, so the child must decide whether to add or subtract the percent from 1. This is the shortcut behind the percent problems earlier on the sheet."
+    misconceptions: "Writing p − 0.2p as 0.2p."
+    misconceptions: "Writing a 25% increase as 1.25 + p."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -296,7 +359,10 @@ fragments {
   design {
     purpose: "Solve equations of the form px + q = r and p(x + q) = r."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The equations come in the forms the standard names: px + q = r and p(x + q) = r, plus x divided by a number. Some coefficients and solutions are negative, so the child must use the sign rules while solving. There is room to write each step."
     misconceptions: "Dividing before subtracting, so only part of the equation is divided."
+    misconceptions: "Distributing p(x + q) to px + q."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -310,18 +376,26 @@ fragments {
   design {
     purpose: "Solve inequalities of the form px + q > r, flipping the sign when dividing by a negative."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
+    rationale: "Inequalities are solved like equations, except the sign flips when both sides are multiplied or divided by a negative. About a third of the items have a negative coefficient, so the flip comes up without being the rule every time. The child graphs each solution on a number line, as the standard asks."
     misconceptions: "Keeping the sign the same after dividing by a negative number."
+    misconceptions: "Flipping the sign whenever a negative number appears anywhere."
+    misconceptions: "Using a filled dot for < or > on the graph."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
 fragments {
   id: "frag-g7-equation-word-problems"
-  instruction: "Write an equation, solve it, and show your work."
+  instruction: "Write an equation or inequality, solve it, and show your work."
   stage: STAGE_APPLY
   max_columns: 1
   design {
     purpose: "Write and solve two-step equations for stories, with whole numbers, fractions and decimals."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "These stories turn into the two-step equations practised earlier: a joining fee plus a monthly charge, a perimeter and a total spend. The last story asks for at least an amount, so it is an inequality. The child writes the equation or inequality before solving, which is the skill the standard asks for."
+    misconceptions: "Writing the steps in the order the numbers appear instead of the order of the story."
+    misconceptions: "Answering an at-least question with an equation and forgetting the solution is a range."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
   items {
     count: 4
@@ -339,8 +413,8 @@ fragments {
         nodes { work_space { field { label: "cost of each notebook" answer { text: "2.40" work: "(13.10 − 3.50) ÷ 4" also: "$2.40" also: "2.4" } } } }
       }
       items {
-        nodes { text: "Ben has $50 and saves $15 a week. How many weeks until he has at least $170?" }
-        nodes { work_space { field { label: "weeks" answer { text: "8" work: "(170 − 50) ÷ 15" also: "8 weeks" } } } }
+        nodes { text: "Ben has $50 and saves $15 a week. He wants at least $170. Write and solve an inequality for the number of weeks, w." }
+        nodes { work_space { field { label: "weeks" answer { text: "8" work: "(170 − 50) ÷ 15" also: "w ≥ 8" also: "w >= 8" also: "8 weeks or more" } } } }
       }
     }
   }
@@ -354,13 +428,16 @@ fragments {
   design {
     purpose: "Solve multistep problems that mix whole numbers, fractions, decimals and percents."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Each story needs two or more steps and a change of form, so the child chooses which form to work in."
+    rationale: "Each story needs two or more steps and a change of form, such as a fraction off and then a percent tax. The first story is the standard's own example of a 10% raise. The child chooses which form to work in and checks the answer makes sense."
+    misconceptions: "Adding the percents for a discount and a tax instead of applying them one after the other."
+    misconceptions: "Forgetting to subtract the leftover piece before dividing the board."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
   items {
     count: 3
     authored {
       items {
-        nodes { text: "A worker earns $25 an hour and gets a raise of 10%, which is 0.10 of her pay. What is her new hourly pay?" }
+        nodes { text: "A worker earns $25 an hour and gets a raise of 10%. What is her new hourly pay?" }
         nodes { work_space { field { label: "new hourly pay" answer { text: "27.50" work: "25 + 25 × 0.10" also: "$27.50" also: "27.5" } } } }
       }
       items {
@@ -368,7 +445,7 @@ fragments {
         nodes { work_space { field { label: "pieces" answer { text: "6" work: "(9 + 3/4 − 3/4) ÷ (1 + 1/2)" also: "6 pieces" } } } }
       }
       items {
-        nodes { text: "A shirt costs $24. It is 1/4 off, then 6% tax (0.06 of the sale price) is added. What do you pay?" }
+        nodes { text: "A shirt costs $24. It is 1/4 off, then 6% tax is added to the sale price. What do you pay?" }
         nodes { work_space { field { label: "price paid" answer { text: "19.08" work: "(24 − 24 × 1/4) × (1 + 0.06)" also: "$19.08" } } } }
       }
     }
@@ -386,7 +463,9 @@ fragments {
   design {
     purpose: "Find real lengths from a scale drawing, and drawing lengths from real ones."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Half the items go from the drawing to the real length and half go back, so the child cannot just multiply every time. Maps use centimeters for kilometers and floor plans use inches for feet, two scales a child has seen. Some lengths are halves, so the reverse direction needs a division that does not come out whole."
     misconceptions: "Multiplying when going from real length to the drawing."
+    misconceptions: "Writing the answer in the drawing's units when the real length is asked for."
   }
 }
 
@@ -399,6 +478,9 @@ fragments {
   design {
     purpose: "Decide whether three side lengths make a triangle."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The rule that the two shorter sides must add to more than the longest is printed in the instruction, so the child practises applying it. Some sets fail by a lot and some only just, so the child must add carefully rather than guess from the look of the numbers."
+    misconceptions: "Checking that any two sides add to more than the third, but using the two longest."
+    misconceptions: "Thinking sides that add to exactly the longest side make a flat triangle that counts."
   }
 }
 
@@ -406,17 +488,20 @@ fragments {
   id: "frag-g7-cross-sections"
   instruction: "Picture the slice. Tick its shape."
   stage: STAGE_PRACTICE
-  items { kind { classify { topic: TOPIC_CROSS_SECTION } } count: 4 min_count: 2 }
+  items { kind { classify { topic: TOPIC_CROSS_SECTION } } count: 4 }
   max_columns: 2
   design {
     purpose: "Name the two-dimensional shape made by slicing a box, cylinder, cone or ball."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each item shows a solid and describes a slice, and the child picks the shape of the cut face. The solids are a box, cylinder, cone and ball, the ones named in grade 7. Seeing the solid drawn helps a child picture the slice before choosing."
+    misconceptions: "Naming the shape of the whole solid instead of the slice, such as a cylinder."
+    misconceptions: "Thinking every slice of a box is a rectangle of the same size as a face."
   }
 }
 
 fragments {
   id: "frag-g7-circles"
-  instruction: "Use 3.14 for π."
+  instruction: "Find the circumference or area. Use 3.14 for π."
   stage: STAGE_PRACTICE
   explainer: "Circumference = π × diameter. Area = π × radius × radius. The diameter is twice the radius."
   items { kind { round_measure { asks: [ASK_CIRCUMFERENCE, ASK_CIRCLE_AREA] } } count: 6 min_count: 4 }
@@ -424,7 +509,10 @@ fragments {
   design {
     purpose: "Find the circumference and area of a circle from its radius or diameter."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Circumference and area are mixed, and some circles give the radius while others give the diameter, so the child must choose the right formula and the right length. The explainer gives both formulas. Each item has room to multiply by 3.14."
     misconceptions: "Using the diameter in place of the radius in the area formula."
+    misconceptions: "Using the area formula when the circumference is asked for."
+    misconceptions: "Squaring π instead of the radius."
   }
 }
 
@@ -433,11 +521,14 @@ fragments {
   instruction: "Find the missing angles."
   stage: STAGE_INTRODUCE
   explainer: "Angles across from each other are equal. Angles beside each other on a line add to 180°."
-  items { kind { angle_facts { mode: MODE_VERTICAL } } count: 2 min_count: 1 }
+  items { kind { angle_facts { mode: MODE_VERTICAL } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Use vertical and supplementary angles to find unknown angles."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The child finds the two angles next to a given one, using that vertical angles are equal and angles on a line add to 180°. The drawings are close to their true sizes, so the child can check an answer by eye. This sets up the equations in the next section."
+    misconceptions: "Thinking all four angles at a crossing are equal."
+    misconceptions: "Thinking angles next to each other are equal instead of adding to 180°."
   }
 }
 
@@ -446,11 +537,14 @@ fragments {
   instruction: "Write an equation and solve for x."
   stage: STAGE_PRACTICE
   explainer: "Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal."
-  items { kind { angle_facts { mode: MODE_ALGEBRA } } count: 4 min_count: 2 }
-  max_columns: 1
+  items { kind { angle_facts { mode: MODE_ALGEBRA } } count: 4 }
+  max_columns: 2
   design {
     purpose: "Write and solve equations for unknown angles."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each item gives two angles, one written with x, and says how they are related: complementary, supplementary or vertical. A drawing shows the angles labelled as in the sentence. The child writes an equation from the relationship and solves it, joining the angle facts to two-step equations."
+    misconceptions: "Setting complementary angles to add to 180°."
+    misconceptions: "Giving x as the answer when the angle's size is wanted, or the angle when x is wanted."
   }
 }
 
@@ -458,11 +552,14 @@ fragments {
   id: "frag-g7-area"
   instruction: "Find the area."
   stage: STAGE_REVIEW
-  items { kind { shape_area { shapes: [SHAPE_TRIANGLE, SHAPE_TRAPEZOID, SHAPE_PARALLELOGRAM] } } count: 3 min_count: 2 }
+  items { kind { shape_area { shapes: [SHAPE_TRIANGLE, SHAPE_TRAPEZOID, SHAPE_PARALLELOGRAM] } } count: 2 }
   max_columns: 3
   design {
     purpose: "Find the area of triangles and quadrilaterals."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "A short review of triangle, parallelogram and trapezoid area from grade 6, with the base and height marked. It warms up the formulas before the composite shapes later on the sheet. Slanted sides are labelled too, so the child must pick the height and not the slant side."
+    misconceptions: "Using a slanted side as the height."
+    misconceptions: "Forgetting to halve for a triangle or trapezoid."
   }
 }
 
@@ -475,6 +572,9 @@ fragments {
   design {
     purpose: "Find the volume of a right rectangular prism."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "A review of the volume of a box from its length, width and height. It comes before the real-world problems so the formula is fresh."
+    misconceptions: "Adding the three edges instead of multiplying them."
+    misconceptions: "Writing the answer in square units."
   }
 }
 
@@ -487,6 +587,63 @@ fragments {
   design {
     purpose: "Find the surface area of a right rectangular prism from its net."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The net lays the box out flat, so the child sees all six faces and adds their areas. Each face is labelled with its two edges, so the child focuses on finding and adding the areas. Opposite faces match, which the child can use to save work."
+    misconceptions: "Counting only three faces."
+    misconceptions: "Finding the volume instead of the surface area."
+  }
+}
+
+fragments {
+  id: "frag-g7-area-volume-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve real-world area, surface area and volume problems with composite shapes and prisms."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The standard asks for real-world problems with shapes made of simpler ones. A room made of two rectangles, a tent shaped like a triangular prism, a box to wrap and a garden bed to fill each need the child to split a shape or pick the right measure. The last story adds a step after the volume, dividing it into bags."
+    misconceptions: "Adding the two rectangles' lengths instead of their areas."
+    misconceptions: "Not working out an unlabelled side from the labelled ones, such as 8 − 5 = 3."
+    misconceptions: "Using surface area when the question asks how much a shape holds."
+    misconceptions: "Finding a triangular prism's volume as base times height times length without halving."
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A room has this shape. How many square meters of carpet cover its floor?" }
+        nodes {
+          polygon {
+            points { x: 0 y: 0 }
+            points { x: 8 y: 0 }
+            points { x: 8 y: 3 }
+            points { x: 5 y: 3 }
+            points { x: 5 y: 6 }
+            points { x: 0 y: 6 }
+            sides { text: "8 m" }
+            sides { text: "3 m" }
+            sides { text: "" }
+            sides { text: "" }
+            sides { text: "5 m" }
+            sides { text: "6 m" }
+            mark_right_angles: true
+          }
+        }
+        nodes { work_space { field { label: "area of the floor" answer { text: "39" work: "8 × 3 + 5 × 3" also: "39 m²" also: "39 square meters" also: "39 sq m" } } } }
+      }
+      items {
+        nodes { text: "A tent is a triangular prism. Its 2 triangular ends each have a base of 6 feet and a height of 4 feet. The tent is 7 feet long. How much space is inside it?" }
+        nodes { work_space { field { label: "volume of the tent" answer { text: "84" work: "6 × 4 ÷ 2 × 7" also: "84 ft³" also: "84 cubic feet" } } } }
+      }
+      items {
+        nodes { text: "A gift box is 10 inches long, 6 inches wide and 4 inches tall. How much wrapping paper covers it exactly, with no overlap?" }
+        nodes { work_space { rows: 5 field { label: "surface area of the box" answer { text: "248" work: "10 × 6 + 10 × 6 + 10 × 4 + 10 × 4 + 6 × 4 + 6 × 4" also: "248 in²" also: "248 square inches" also: "248 sq in" } } } }
+      }
+      items {
+        nodes { text: "A garden bed is 6 feet long and 3 feet wide. It is filled with soil 1 1/2 feet deep. Soil comes in bags of 3 cubic feet. How many bags are needed?" }
+        nodes { work_space { field { label: "bags of soil" answer { text: "9" work: "6 × 3 × (1 + 1/2) ÷ 3" also: "9 bags" } } } }
+      }
+    }
   }
 }
 
@@ -502,6 +659,10 @@ fragments {
   design {
     purpose: "Tell a random, representative sample from a biased one."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each item describes how a sample was chosen, and the child decides whether it represents the whole group. The biased samples are the kind children meet: asking library users about library use, or a fan club about a film. A random sample from the whole group is the answer every time it is representative."
+    misconceptions: "Thinking a bigger sample is always a fair one, even if it is chosen from one group."
+    misconceptions: "Thinking a random sample must give exactly the same results as the whole group."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -513,6 +674,10 @@ fragments {
   design {
     purpose: "Use data from a random sample to estimate a count in the whole group."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "A random sample stands in for the whole group, so the child scales the sample's count up to the group's size. The numbers divide evenly, so the reasoning is clear. The last item asks for a percent, which is the same reasoning with a whole of 100."
+    misconceptions: "Using the sample count as the answer for the whole group."
+    misconceptions: "Dividing the group size by the sample count and stopping there."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
   items {
     count: 3
@@ -526,7 +691,7 @@ fragments {
         nodes { work_space { field { label: "bruised apples" answer { text: "150" work: "2,000 ÷ 40 × 3" also: "about 150" } } } }
       }
       items {
-        nodes { text: "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it? (A percent is out of 100.)" }
+        nodes { text: "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it?" }
         nodes { work_space { field { label: "percent who support" answer { text: "65" work: "52 ÷ 80 × 100" also: "65%" } } } }
       }
     }
@@ -543,6 +708,10 @@ fragments {
   design {
     purpose: "Compare two groups by their means, measured against their spread."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Two groups with the same spread differ only in their centers, so the child compares means and then measures the gap in MADs, as the standard asks. MAD is the mean absolute deviation, the average distance of the data from the mean. The data sets are small and the means are whole numbers, so the child can check the arithmetic."
+    misconceptions: "Comparing the largest values instead of the centers."
+    misconceptions: "Thinking any difference in means shows the groups are really different, whatever the spread."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -556,6 +725,10 @@ fragments {
   design {
     purpose: "Describe a chance as impossible, unlikely, as likely as not, likely or certain."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Probability starts as words on a scale from impossible to certain, matched to numbers from 0 to 1. Each bag has a different mix of red and blue, including none and all red, so every word is used. The explainer ties 1/2 to as likely as not."
+    misconceptions: "Thinking unlikely means impossible."
+    misconceptions: "Judging by the number of red marbles instead of the share of red marbles."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -568,19 +741,26 @@ fragments {
   design {
     purpose: "Find the probability of an outcome when all outcomes are equally likely."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "When all outcomes are equally likely, a probability is the number of matching outcomes over the total. Some bags have three colors and some items ask for not a color, so the child counts the matching outcomes each time instead of copying a number."
     misconceptions: "Writing the ratio of red to blue instead of red to all."
+    misconceptions: "Counting only the named color for a not question."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
 fragments {
   id: "frag-g7-expected-outcomes"
-  instruction: "Predict."
+  instruction: "Use the probability to predict about how many times."
   stage: STAGE_APPLY
   items { kind { probability { mode: MODE_EXPECTED } } count: 3 min_count: 2 }
   max_columns: 1
   design {
     purpose: "Predict about how often an outcome happens in many trials from its probability."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The child multiplies a probability by the number of trials to predict a count. The number of spins is a multiple of the spinner's parts, so the prediction is a whole number. The word about reminds the child that real results will vary."
+    misconceptions: "Thinking the prediction must happen exactly."
+    misconceptions: "Dividing the trials by the number of red parts instead of all the parts."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -592,6 +772,10 @@ fragments {
   design {
     purpose: "Estimate a probability from observed results, and use it to predict."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Results from a real experiment, such as tossing a paper cup, give a probability that no list of outcomes can. The child estimates it as a fraction of trials, then uses it to predict, as the standard asks. A cup is chosen because its outcomes are not equally likely."
+    misconceptions: "Assuming each outcome has the same chance, such as 1/2 for landing on its side."
+    misconceptions: "Using the count of 42 as the probability."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
   items {
     count: 2
@@ -624,12 +808,16 @@ fragments {
   instruction: "List or count the outcomes, then find the probability."
   stage: STAGE_PRACTICE
   explainer: "Make a list, table or tree of every outcome. Count the ones that match."
-  items { kind { probability { mode: MODE_COMPOUND } } count: 4 min_count: 2 }
+  items { kind { probability { mode: MODE_COMPOUND } } count: 4 }
   max_columns: 1
   design {
     purpose: "Find probabilities of compound events from a sample space."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Compound events are found by listing the whole sample space. Two number cubes come with a 6-by-6 table to fill in, the model teachers use, and coin events have room for a list or tree. The child counts the outcomes before finding the probability, so the size of the sample space is never guessed."
     misconceptions: "Counting heads-tails and tails-heads as one outcome."
+    misconceptions: "Thinking there are 11 equally likely sums for two number cubes."
+    misconceptions: "Adding the probabilities of the two parts instead of counting outcomes."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -658,6 +846,7 @@ worksheets {
     purpose: "Read the unit rate and equation from the graph of a proportional relationship."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Graph the cost of 1, 2 and 3 of something you buy. Ask what the point at 1 means."
 }
 
 worksheets {
@@ -671,11 +860,12 @@ worksheets {
     purpose: "Solve tax, tip, discount, markup and percent change problems."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "At a shop or restaurant, ask your child to work out a 20% tip or a sale price before you pay."
 }
 
 worksheets {
   id: "ws-g7-add-subtract-integers"
-  title: "Adding and subtracting positive and negative numbers"
+  title: "Adding and subtracting rationals"
   seed: 704
   max_pages: 2
   placements { fragment_id: "frag-g7-add-on-number-line" }
@@ -686,11 +876,12 @@ worksheets {
     purpose: "Add and subtract rational numbers, first on a number line, then by adding the opposite."
     principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_NUMBER_LINE]
   }
+  home_tip: "Use a thermometer or an elevator with floors below ground. Ask how far it is from −3 to 5."
 }
 
 worksheets {
   id: "ws-g7-multiply-divide-integers"
-  title: "Multiplying and dividing positive and negative numbers"
+  title: "Multiplying and dividing rationals"
   seed: 705
   max_pages: 2
   placements { fragment_id: "frag-g7-multiply-divide-integers" }
@@ -701,6 +892,7 @@ worksheets {
     purpose: "Multiply and divide rational numbers, and write fractions as decimals."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Ask why a negative times a negative is positive. Losing 3 debts of $5 makes you $15 richer."
 }
 
 worksheets {
@@ -714,6 +906,7 @@ worksheets {
     purpose: "Solve real-world problems with positive and negative numbers, fractions, decimals and percents."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Before solving, ask your child to guess a rough answer. Then check the real answer is close."
 }
 
 worksheets {
@@ -728,6 +921,7 @@ worksheets {
     purpose: "Expand, collect and factor linear expressions with negative numbers."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Ask your child to check an answer by putting x = 2 into both expressions. They should match."
 }
 
 worksheets {
@@ -742,6 +936,7 @@ worksheets {
     purpose: "Solve two-step equations and inequalities, then use them for stories."
     principles: [PRINCIPLE_ERROR_ANALYSIS, PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Ask your child to check a solution by putting it back into the equation."
 }
 
 worksheets {
@@ -756,6 +951,7 @@ worksheets {
     purpose: "Use scales, decide when sides make a triangle, and picture slices of solids."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Look at a map's scale together and work out how far apart two places really are."
 }
 
 worksheets {
@@ -782,20 +978,23 @@ worksheets {
     purpose: "Use vertical, complementary and supplementary angles to find unknown angles."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Find two crossing lines, such as a pair of scissors, and point out the equal angles across from each other."
 }
 
 worksheets {
   id: "ws-g7-area-volume"
   title: "Area, volume and surface area"
   seed: 712
-  max_pages: 2
+  max_pages: 3
   placements { fragment_id: "frag-g7-area" }
   placements { fragment_id: "frag-g7-volume" }
   placements { fragment_id: "frag-g7-surface-area" }
+  placements { fragment_id: "frag-g7-area-volume-problems" }
   design {
     purpose: "Solve area, volume and surface area problems."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Measure a room or a box at home and ask how much carpet or wrapping paper it would need."
 }
 
 worksheets {
@@ -810,6 +1009,7 @@ worksheets {
     purpose: "Judge samples, estimate from them, and compare two groups."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "When you see a poll, ask who was asked and whether that group was fair."
 }
 
 worksheets {
@@ -825,6 +1025,7 @@ worksheets {
     purpose: "Describe and find probabilities, predict from them, and estimate them from results."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Toss a coin 20 times and count the heads. Ask if 10 heads was certain."
 }
 
 worksheets {
@@ -837,4 +1038,5 @@ worksheets {
     purpose: "Find probabilities of compound events from lists, tables and tree diagrams."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Roll two dice 30 times and tally the sums. Ask why 7 comes up most."
 }
