@@ -193,7 +193,7 @@ fragments {
   instruction: "Convert. Use the rate given."
   stage: STAGE_PRACTICE
   explainer: "To go to the smaller unit, multiply by the rate. To go to the larger unit, divide."
-  items { kind { convert_measure {} } count: 8 min_count: 6 }
+  items { kind { rate_conversion {} } count: 8 min_count: 6 }
   max_columns: 2
   design {
     purpose: "Use a conversion rate to change a measurement from one unit to another, both ways."
@@ -271,7 +271,7 @@ fragments {
   id: "frag-g6-decimal-add-subtract"
   instruction: "Add or subtract. Line up the decimal points."
   stage: STAGE_PRACTICE
-  items { kind { decimal_arithmetic { ops: [OP_ADD, OP_SUBTRACT] } } count: 6 min_count: 4 }
+  items { kind { decimal_operations { ops: [OP_ADD, OP_SUBTRACT] } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Add and subtract decimals with different numbers of places."
@@ -285,7 +285,7 @@ fragments {
   instruction: "Multiply or divide."
   stage: STAGE_PRACTICE
   explainer: "When dividing by a decimal, move both decimal points the same number of places first."
-  items { kind { decimal_arithmetic { ops: [OP_MULTIPLY, OP_DIVIDE] } } count: 6 min_count: 4 }
+  items { kind { decimal_operations { ops: [OP_MULTIPLY, OP_DIVIDE] } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Multiply and divide decimals."
@@ -443,7 +443,7 @@ fragments {
   instruction: "Write the coordinates of P, then tick its quadrant."
   stage: STAGE_INTRODUCE
   explainer: "Quadrant I is (+, +), II is (−, +), III is (−, −) and IV is (+, −)."
-  items { kind { coordinate_points { mode: MODE_QUADRANT } } count: 4 min_count: 2 }
+  items { kind { coordinate_geometry { mode: MODE_QUADRANT } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Name the quadrant of a point from the signs of its coordinates."
@@ -456,7 +456,7 @@ fragments {
   instruction: "Plot the reflection, then write its coordinates."
   stage: STAGE_PRACTICE
   explainer: "A reflection across the x-axis changes the sign of y. Across the y-axis, it changes the sign of x."
-  items { kind { coordinate_points { mode: MODE_REFLECT } } count: 4 min_count: 2 }
+  items { kind { coordinate_geometry { mode: MODE_REFLECT } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Reflect a point across an axis by changing the sign of one coordinate."
@@ -470,7 +470,7 @@ fragments {
   instruction: "Find the distance between the points."
   stage: STAGE_PRACTICE
   explainer: "When two points share a coordinate, count across zero: from −3 to 5 is 3 + 5 = 8."
-  items { kind { coordinate_points { mode: MODE_DISTANCE } } count: 2 min_count: 2 }
+  items { kind { coordinate_geometry { mode: MODE_DISTANCE } } count: 2 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Find the distance between two points that share an x or a y coordinate."
@@ -483,7 +483,7 @@ fragments {
   id: "frag-g6-rectangle-on-grid"
   instruction: "Find D, the side lengths and the area."
   stage: STAGE_APPLY
-  items { kind { coordinate_points { mode: MODE_RECTANGLE } } count: 1 }
+  items { kind { coordinate_geometry { mode: MODE_RECTANGLE } } count: 1 }
   max_columns: 1
   design {
     purpose: "Find side lengths and area of a rectangle from the coordinates of its corners."

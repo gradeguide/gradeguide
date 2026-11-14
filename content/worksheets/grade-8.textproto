@@ -348,7 +348,7 @@ fragments {
   id: "frag-g8-transformations"
   instruction: "Draw the image, then write the coordinates of A′."
   stage: STAGE_PRACTICE
-  items { kind { coordinate_points { mode: MODE_TRANSFORM } } count: 4 min_count: 2 }
+  items { kind { coordinate_geometry { mode: MODE_TRANSFORM } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Find the effect of translations, reflections, rotations and dilations on coordinates."

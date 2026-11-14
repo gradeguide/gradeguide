@@ -40,9 +40,9 @@ import {
 import {
   type ItemKind,
   Classify_Topic,
-  CoordinatePoints_Mode,
+  CoordinateGeometry_Mode,
   DataSetStats_Mode,
-  DecimalArithmetic_Op,
+  DecimalOperations_Op,
   EquivalentExpressions_Mode,
   Exponents_Mode,
   GcfLcm_Ask,
@@ -356,7 +356,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       }
       return [math(`${num(part)} is`, blank(field(ctx, `${num(part)} as a percent of ${w}`, `${p}%`, [String(p)])), `of ${w}`)];
     }
-    case 'convertMeasure': {
+    case 'rateConversion': {
       if (k.value.scale) {
         const [theme, s, len, back] = pickFresh(ctx, k.case + 's', () => [rng.int(0, 1), rng.pick([2, 4, 5, 10, 20, 25, 50]), rng.int(2, 15) + (rng.next() < 0.25 ? 0.5 : 0), rng.int(0, 1)]);
         const [small, big, what] = theme === 0 ? ['cm', 'km', 'Two towns are'] : ['inch', 'feet', 'A wall is'];
@@ -435,11 +435,11 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         }),
       ];
     }
-    case 'decimalArithmetic': {
+    case 'decimalOperations': {
       const ops = list(k.value.ops, [1, 2, 3, 4]);
       const [op, x, xs, y, ys] = pickFresh(ctx, k.case, () => {
         const op = rng.pick(ops);
-        if (op === DecimalArithmetic_Op.ADD || op === DecimalArithmetic_Op.SUBTRACT) {
+        if (op === DecimalOperations_Op.ADD || op === DecimalOperations_Op.SUBTRACT) {
           const px = rng.int(1, 3);
           const py = rng.int(1, 3);
           let x = rng.int(10 ** px + 1, 10 ** (px + 2) - 1);
@@ -448,12 +448,12 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           y = y % 10 === 0 ? y + 1 : y;
           let [a, b] = [x / 10 ** px, y / 10 ** py];
           let [as, bs] = [a.toFixed(px), b.toFixed(py)];
-          if (op === DecimalArithmetic_Op.SUBTRACT && b > a) {
+          if (op === DecimalOperations_Op.SUBTRACT && b > a) {
             [a, b, as, bs] = [b, a, bs, as];
           }
           return [op, a, as, b, bs];
         }
-        if (op === DecimalArithmetic_Op.MULTIPLY) {
+        if (op === DecimalOperations_Op.MULTIPLY) {
           const x = rng.int(12, 299);
           const py = rng.int(0, 2);
           const y = py === 0 ? rng.int(3, 24) : rng.int(2, 9) + (py === 2 ? 10 * rng.int(0, 2) : 0);
@@ -647,13 +647,13 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         }
       }
     }
-    case 'coordinatePoints': {
-      const mode = k.value.mode || CoordinatePoints_Mode.REFLECT;
+    case 'coordinateGeometry': {
+      const mode = k.value.mode || CoordinateGeometry_Mode.REFLECT;
       const pair = (label: string, x: number, y: number): Node =>
         math(label, '(', blank(field(ctx, `${label} x`, num(x))), ',', blank(field(ctx, `${label} y`, num(y))), ')');
       const six = { xMin: -6, xMax: 6, yMin: -6, yMax: 6 };
       switch (mode) {
-        case CoordinatePoints_Mode.QUADRANT: {
+        case CoordinateGeometry_Mode.QUADRANT: {
           const [x, y] = pickFresh(ctx, k.case + mode, () => [nonzero(ctx, -6, 6), nonzero(ctx, -6, 6)]);
           const q = x > 0 ? (y > 0 ? 'I' : 'IV') : y > 0 ? 'II' : 'III';
           return [
@@ -663,7 +663,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
             choices(ctx, `quadrant of ${pt(x, y)}`, ['I', 'II', 'III', 'IV'], q),
           ];
         }
-        case CoordinatePoints_Mode.DISTANCE: {
+        case CoordinateGeometry_Mode.DISTANCE: {
           const [same, c, p, q] = pickFresh(ctx, k.case + mode, () => {
             const p = nonzero(ctx, -6, 6);
             let q = nonzero(ctx, -6, 6);
@@ -678,7 +678,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
             math(`A${pt(ax, ay)} to B${pt(bx, by)}:`, blank(field(ctx, `distance from ${pt(ax, ay)} to ${pt(bx, by)}`, String(Math.abs(p - q)))), 'units'),
           ];
         }
-        case CoordinatePoints_Mode.RECTANGLE: {
+        case CoordinateGeometry_Mode.RECTANGLE: {
           const [x1, x2, y1, y2] = pickFresh(ctx, k.case + mode, () => [rng.int(-6, -1), rng.int(1, 6), rng.int(1, 6), rng.int(-6, -1)]);
           const w = x2 - x1;
           const h = y1 - y2;
@@ -693,7 +693,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
             ),
           ];
         }
-        case CoordinatePoints_Mode.TRANSFORM: {
+        case CoordinateGeometry_Mode.TRANSFORM: {
           // A triangle and a move that keeps its image on the grid.
           const [form, tri, dx, dy, f] = pickFresh(ctx, k.case + mode, () => {
             for (;;) {

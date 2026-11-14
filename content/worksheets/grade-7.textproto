@@ -381,7 +381,7 @@ fragments {
   id: "frag-g7-scale-drawings"
   instruction: "Use the scale."
   stage: STAGE_PRACTICE
-  items { kind { convert_measure { scale: true } } count: 6 min_count: 4 }
+  items { kind { rate_conversion { scale: true } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Find real lengths from a scale drawing, and drawing lengths from real ones."

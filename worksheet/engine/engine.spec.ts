@@ -495,7 +495,7 @@ describe('grade 6 to 8 item kinds', () => {
   });
 
   it('converts units with the rate given', () => {
-    for (const ns of items({ case: 'convertMeasure', value: {} })) {
+    for (const ns of items({ case: 'rateConversion', value: {} })) {
       const [, per, n] = nums(textOf(ns).replace(/,/g, ''));
       const a = value(answers(ns)[0]);
       expect(a === n * per || a * per === n).toBeTrue();
@@ -519,7 +519,7 @@ describe('grade 6 to 8 item kinds', () => {
   });
 
   it('decimal arithmetic', () => {
-    for (const ns of items({ case: 'decimalArithmetic', value: {} })) {
+    for (const ns of items({ case: 'decimalOperations', value: {} })) {
       const [lhs] = textOf(ns).split('=');
       expect(value(answers(ns)[0])).toBeCloseTo(evaluate(lhs.trim())!, 9);
     }
@@ -577,13 +577,13 @@ describe('grade 6 to 8 item kinds', () => {
   });
 
   it('coordinate reflections and transformations', () => {
-    for (const ns of items({ case: 'coordinatePoints', value: { mode: 2 } }, 10)) {
+    for (const ns of items({ case: 'coordinateGeometry', value: { mode: 2 } }, 10)) {
       const p = (ns[1].kind.value as { points: { x: number; y: number }[] }).points[0];
       const [x, y] = answers(ns).slice(-2).map(value);
       const xAxis = textOf(ns).includes('x-axis');
       expect([x, y]).toEqual(xAxis ? [p.x, -p.y] : [-p.x, p.y]);
     }
-    for (const ns of items({ case: 'coordinatePoints', value: { mode: 5 } }, 12)) {
+    for (const ns of items({ case: 'coordinateGeometry', value: { mode: 5 } }, 12)) {
       const t = textOf(ns);
       const a = (ns[1].kind.value as { points: { x: number; y: number }[] }).points[0];
       const [x, y] = answers(ns).slice(-2).map(value);

@@ -145,14 +145,14 @@ message ItemKind {
     RatioTable ratio_table = 81;
     UnitRate unit_rate = 82;
     PercentOf percent_of = 83;
-    ConvertMeasure convert_measure = 84;
+    RateConversion rate_conversion = 84;
     DivideFractions divide_fractions = 85;
     MultiDigitDivision multi_digit_division = 86;
-    DecimalArithmetic decimal_arithmetic = 87;
+    DecimalOperations decimal_operations = 87;
     GcfLcm gcf_lcm = 88;
     TwoWayTable two_way_table = 89;
     Integers integers = 90;
-    CoordinatePoints coordinate_points = 91;
+    CoordinateGeometry coordinate_geometry = 91;
     Exponents exponents = 92;
     WriteExpression write_expression = 93;
     EvaluateExpression evaluate_expression = 94;
@@ -535,7 +535,7 @@ message PercentOf {
 
 // Convert between units with a given rate, or between a scale drawing and
 // real lengths.
-message ConvertMeasure {
+message RateConversion {
   bool scale = 1;
 }
 
@@ -553,7 +553,7 @@ message MultiDigitDivision {
 }
 
 // A sum, difference, product or quotient of decimals.
-message DecimalArithmetic {
+message DecimalOperations {
   repeated Op ops = 1;
 
   enum Op {
@@ -607,7 +607,7 @@ message Integers {
 }
 
 // Points on a coordinate plane.
-message CoordinatePoints {
+message CoordinateGeometry {
   Mode mode = 1;
 
   enum Mode {
@@ -768,7 +768,7 @@ message DataSetStats {
 
 // Add, subtract, multiply or divide signed numbers.
 message SignedArithmetic {
-  repeated DecimalArithmetic.Op ops = 1;
+  repeated DecimalOperations.Op ops = 1;
   Numbers numbers = 2;
   // Show addition on a number line.
   bool number_line = 3;
