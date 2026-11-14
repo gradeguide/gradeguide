@@ -1,0 +1,451 @@
+{
+ "worksheetId": "ws-g1-time",
+ "title": "Time to the hour and half hour",
+ "headerLabels": [
+  "1.MD.B.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the time.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "5:00",
+              "also": [
+               "5 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 5:00"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "9:00",
+              "also": [
+               "9 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 9:00"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "3:00",
+              "also": [
+               "3 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 3:00"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 8
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "8:00",
+              "also": [
+               "8 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 8:00"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-clock-hour",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell time to the hour on an analog clock.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "On the hour, the long hand points to 12 and the short hand points to the hour. Twelve o'clock is left out because the hands lie on top of each other. Students may write 5:00 or 5 o'clock.",
+      "misconceptions": [
+       "Reads the long hand as the hour.",
+       "Writes 12:5 for 5 o'clock, reading both hands as numbers."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 422
+    },
+    {
+     "label": "B",
+     "instruction": "Write the time.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 2,
+          "minute": 30
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "2:30"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 2:30"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 1,
+          "minute": 30
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "1:30"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 1:30"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-clock-half-hour",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell time to the hour and half hour.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Half-hour times are mixed with times on the hour. At half past, the short hand is halfway between two numbers, and students must read the earlier one.",
+      "misconceptions": [
+       "At half past, reads the hour from the number after the short hand.",
+       "Writes 3:6 for half past 3, reading the number the long hand points to."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 228
+    }
+   ],
+   "estimatedHeight": 658
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Write the time.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 8
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "8:00",
+              "also": [
+               "8 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 8:00"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "3:00",
+              "also": [
+               "3 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 3:00"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-clock-half-hour",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell time to the hour and half hour.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Half-hour times are mixed with times on the hour. At half past, the short hand is halfway between two numbers, and students must read the earlier one.",
+      "misconceptions": [
+       "At half past, reads the hour from the number after the short hand.",
+       "Writes 3:6 for half past 3, reading the number the long hand points to."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 228
+    }
+   ],
+   "estimatedHeight": 232
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "5:00",
+     "also": [
+      "5 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "9:00",
+     "also": [
+      "9 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "3:00",
+     "also": [
+      "3 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "8:00",
+     "also": [
+      "8 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "2:30"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "1:30"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "8:00",
+     "also": [
+      "8 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "3:00",
+     "also": [
+      "3 o'clock"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read clocks to the hour, then to the half hour.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

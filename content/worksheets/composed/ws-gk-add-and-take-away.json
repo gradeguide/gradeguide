@@ -1,0 +1,720 @@
+{
+ "worksheetId": "ws-gk-add-and-take-away",
+ "title": "Adding and taking away",
+ "headerLabels": [
+  "K.OA.A.1",
+  "K.OA.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count all the pictures. Write how many in all.",
+     "example": {
+      "nodes": [
+       {
+        "pictureGroups": {
+         "picture": "PICTURE_APPLE",
+         "groups": [
+          5,
+          1
+         ],
+         "framed": true
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "5"
+          },
+          {
+           "text": "+"
+          },
+          {
+           "text": "1"
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "5 + 1",
+            "answer": {
+             "text": "6"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "5 and 1 make **6**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_APPLE",
+          "groups": [
+           1,
+           6
+          ],
+          "framed": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "1 + 6",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 + 6 = 7"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_STAR",
+          "groups": [
+           8,
+           2
+          ],
+          "framed": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "8 + 2",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 + 2 = 10"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_HEART",
+          "groups": [
+           2,
+           1
+          ],
+          "framed": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "2 + 1",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 + 1 = 3"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_BALL",
+          "groups": [
+           2,
+           4
+          ],
+          "framed": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "2 + 4",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 + 4 = 6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-add-pictures",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Add two groups of pictures with a total up to 10.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each group sits in its own frame, so the two addends stay visible as two parts of the whole. The equation under the pictures connects putting groups together with the + sign. Students may count all the pictures or count on from the first group.",
+      "misconceptions": [
+       "Counts only one group and writes that number as the total.",
+       "Writes one of the two numbers in the equation instead of the total."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 437
+    },
+    {
+     "label": "B",
+     "instruction": "Write how many are left.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_STAR",
+          "groups": [
+           8
+          ],
+          "crossedOut": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "8 − 4",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 − 4 = 4"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_APPLE",
+          "groups": [
+           9
+          ],
+          "crossedOut": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "9 − 2",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 − 2 = 7"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_STAR",
+          "groups": [
+           6
+          ],
+          "crossedOut": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "6 − 4",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 − 4 = 2"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "pictureGroups": {
+          "picture": "PICTURE_STAR",
+          "groups": [
+           9
+          ],
+          "crossedOut": 8
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "9 − 8",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 − 8 = 1"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-gk-subtract-pictures",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Subtract within 10 by counting the pictures that are not crossed out.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Crossed-out pictures show the amount taken away, while still showing the whole the subtraction starts from. Students count what is left and match it to the equation.",
+      "misconceptions": [
+       "Counts the crossed-out pictures instead of the pictures left.",
+       "Counts every picture, crossed out or not."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 304
+    }
+   ],
+   "estimatedHeight": 749
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Listen to the story. Draw or write to solve.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Mia has 4 red apples and 3 green apples. How many apples does she have?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q9",
+           "label": "apples Mia has",
+           "answer": {
+            "text": "7",
+            "also": [
+             "7 apples"
+            ],
+            "work": "4 + 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "There are 9 ducks in the pond. 5 ducks swim away. How many ducks are left?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q10",
+           "label": "ducks left",
+           "answer": {
+            "text": "4",
+            "also": [
+             "4 ducks"
+            ],
+            "work": "9 − 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Ben has 6 toy cars. He gets 2 more. How many cars does Ben have now?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q11",
+           "label": "cars Ben has",
+           "answer": {
+            "text": "8",
+            "also": [
+             "8 cars"
+            ],
+            "work": "6 + 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "There are 10 cookies on a plate. Kai eats 3. How many cookies are left?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q12",
+           "label": "cookies left",
+           "answer": {
+            "text": "7",
+            "also": [
+             "7 cookies"
+            ],
+            "work": "10 − 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve adding and taking-away stories within 10.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "An adult reads each story aloud, so reading does not stand in the way of the mathematics. Kindergarten students solve stories by acting them out or drawing, so the working space is blank and an answer may be a drawing or a number. Two stories put together and two take away.",
+      "misconceptions": [
+       "Adds both numbers in every story, including take-away stories.",
+       "Draws the objects in detail and loses track of how many."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
+      ]
+     },
+     "estimatedHeight": 706
+    }
+   ],
+   "estimatedHeight": 710
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "1 + 6",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "8 + 2",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2 + 1",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 + 4",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "8 − 4",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "9 − 2",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "6 − 4",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "9 − 8",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "apples Mia has",
+    "answer": {
+     "text": "7",
+     "also": [
+      "7 apples"
+     ],
+     "work": "4 + 3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "ducks left",
+    "answer": {
+     "text": "4",
+     "also": [
+      "4 ducks"
+     ],
+     "work": "9 − 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "cars Ben has",
+    "answer": {
+     "text": "8",
+     "also": [
+      "8 cars"
+     ],
+     "work": "6 + 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "cookies left",
+    "answer": {
+     "text": "7",
+     "also": [
+      "7 cookies"
+     ],
+     "work": "10 − 3"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and take away with pictures, then in stories.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

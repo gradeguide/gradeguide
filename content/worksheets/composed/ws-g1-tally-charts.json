@@ -1,0 +1,276 @@
+{
+ "worksheetId": "ws-g1-tally-charts",
+ "title": "Tally charts",
+ "headerLabels": [
+  "1.MD.C.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the tally chart. Answer the questions.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "tallyChart": {
+          "title": "How we get to school",
+          "header": [
+           "Way",
+           "Tally"
+          ],
+          "rows": [
+           {
+            "label": "Walk",
+            "count": 12
+           },
+           {
+            "label": "Bus",
+            "count": 2
+           },
+           {
+            "label": "Car",
+            "count": 9
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many children walk?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "children: Walk",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more children walk than come by bus?"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "Walk minus Bus",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many children in all?"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "total children",
+             "answer": {
+              "text": "23"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many children walk? 12; How many more children walk than come by bus? 10; How many children in all? 23"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "tallyChart": {
+          "title": "Birds at the feeder",
+          "header": [
+           "Bird",
+           "Tally"
+          ],
+          "rows": [
+           {
+            "label": "Robins",
+            "count": 10
+           },
+           {
+            "label": "Finches",
+            "count": 9
+           },
+           {
+            "label": "Jays",
+            "count": 7
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many robins?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "birds: Robins",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many more robins than jays?"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "Robins minus Jays",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many birds in all?"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "total birds",
+             "answer": {
+              "text": "26"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many robins? 10; How many more robins than jays? 3; How many birds in all? 26"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-tally",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a tally chart with three groups: how many in one group, how many more, and how many in all.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Tally marks are drawn in groups of five, four strokes crossed by a fifth, so students can count by fives and then ones. The three questions ask for a count, a comparison and a total, which are the questions grade 1 asks of data with up to three categories.",
+      "misconceptions": [
+       "Counts a group of five as four, missing the crossing stroke.",
+       "Answers how many more with the larger count instead of the difference."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K–3, Categorical Data; Grades 2–5, Measurement Data"
+      ]
+     },
+     "estimatedHeight": 636
+    }
+   ],
+   "estimatedHeight": 640
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "children: Walk",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "Walk minus Bus",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "total children",
+    "answer": {
+     "text": "23"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "birds: Robins",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "Robins minus Jays",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "total birds",
+    "answer": {
+     "text": "26"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Answer questions from data in three groups.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Use the tally chart. Answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

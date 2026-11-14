@@ -1,0 +1,391 @@
+{
+ "worksheetId": "ws-g1-word-problems",
+ "title": "Story problems within 20",
+ "headerLabels": [
+  "1.OA.A.1",
+  "1.OA.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Ana has 8 shells. She finds some more. Now she has 13 shells. How many shells did she find?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q1",
+           "label": "shells Ana found",
+           "answer": {
+            "text": "5",
+            "also": [
+             "5 shells"
+            ],
+            "work": "13 − 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Omar has 15 stickers. Zoe has 9 stickers. How many more stickers does Omar have than Zoe?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q2",
+           "label": "how many more stickers Omar has",
+           "answer": {
+            "text": "6",
+            "also": [
+             "6 stickers"
+            ],
+            "work": "15 − 9"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Some birds sat on a fence. 6 flew away. Then 7 birds were left. How many birds were on the fence at first?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q3",
+           "label": "birds at first",
+           "answer": {
+            "text": "13",
+            "also": [
+             "13 birds"
+            ],
+            "work": "7 + 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "13"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "There are 12 children on the bus. 7 are girls. The rest are boys. How many boys are on the bus?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "boys on the bus",
+           "answer": {
+            "text": "5",
+            "also": [
+             "5 boys"
+            ],
+            "work": "12 − 7"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Raj has 9 marbles. Lena has 4 more marbles than Raj. How many marbles does Lena have?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "marbles Lena has",
+           "answer": {
+            "text": "13",
+            "also": [
+             "13 marbles"
+            ],
+            "work": "9 + 4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "13"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-word-problems-within-20",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve adding and subtracting stories within 20, with the unknown in any position.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories cover adding to, taking from, putting together and comparing, with the unknown as the result, the change or the start. Mixing the types means students must decide what each story asks rather than apply one operation to all. The working space is blank so students can draw, use a number line or write an equation.",
+      "misconceptions": [
+       "Adds whenever a story says more, including in comparing stories.",
+       "In a start-unknown story, adds or subtracts the two numbers in the order they appear.",
+       "Answers how many in all when the story asks how many more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
+      ]
+     },
+     "estimatedHeight": 754
+    }
+   ],
+   "estimatedHeight": 758
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Mia picks 5 red flowers, 4 yellow flowers and 6 white flowers. How many flowers does she pick?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q6",
+           "label": "flowers Mia picks",
+           "answer": {
+            "text": "15",
+            "also": [
+             "15 flowers"
+            ],
+            "work": "5 + 4 + 6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "15"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Ben reads 3 books on Monday, 7 books on Tuesday and 2 books on Wednesday. How many books does he read?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q7",
+           "label": "books Ben reads",
+           "answer": {
+            "text": "12",
+            "also": [
+             "12 books"
+            ],
+            "work": "3 + 7 + 2"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A pet shop has 8 cats, 2 dogs and 5 rabbits. How many animals does it have?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q8",
+           "label": "animals in the shop",
+           "answer": {
+            "text": "15",
+            "also": [
+             "15 animals"
+            ],
+            "work": "8 + 2 + 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "15"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-three-addend-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve stories that add three numbers with a total up to 20.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story has three numbers to add, and two of them make 10 in two of the stories. Students can add in any order, so they may find the ten first. The contexts are familiar ones: flowers, books and pets.",
+      "misconceptions": [
+       "Adds only the first two numbers in the story.",
+       "Loses one number when adding in a different order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 578
+    }
+   ],
+   "estimatedHeight": 582
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "shells Ana found",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 shells"
+     ],
+     "work": "13 − 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "how many more stickers Omar has",
+    "answer": {
+     "text": "6",
+     "also": [
+      "6 stickers"
+     ],
+     "work": "15 − 9"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "birds at first",
+    "answer": {
+     "text": "13",
+     "also": [
+      "13 birds"
+     ],
+     "work": "7 + 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "boys on the bus",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 boys"
+     ],
+     "work": "12 − 7"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "marbles Lena has",
+    "answer": {
+     "text": "13",
+     "also": [
+      "13 marbles"
+     ],
+     "work": "9 + 4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "flowers Mia picks",
+    "answer": {
+     "text": "15",
+     "also": [
+      "15 flowers"
+     ],
+     "work": "5 + 4 + 6"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "books Ben reads",
+    "answer": {
+     "text": "12",
+     "also": [
+      "12 books"
+     ],
+     "work": "3 + 7 + 2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "animals in the shop",
+    "answer": {
+     "text": "15",
+     "also": [
+      "15 animals"
+     ],
+     "work": "8 + 2 + 5"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve adding and subtracting stories, including stories with three numbers.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

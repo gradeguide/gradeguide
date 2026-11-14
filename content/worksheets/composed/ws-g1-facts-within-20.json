@@ -1,0 +1,1925 @@
+{
+ "worksheetId": "ws-g1-facts-within-20",
+ "title": "Adding and subtracting within 20",
+ "headerLabels": [
+  "1.OA.C.5",
+  "1.OA.B.4",
+  "1.OA.C.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the jumps. Write the sum.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 20,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "1"
+           },
+           {
+            "tick": 2,
+            "text": "2"
+           },
+           {
+            "tick": 3,
+            "text": "3"
+           },
+           {
+            "tick": 4,
+            "text": "4"
+           },
+           {
+            "tick": 5,
+            "text": "5"
+           },
+           {
+            "tick": 6,
+            "text": "6"
+           },
+           {
+            "tick": 7,
+            "text": "7"
+           },
+           {
+            "tick": 8,
+            "text": "8"
+           },
+           {
+            "tick": 9,
+            "text": "9"
+           },
+           {
+            "tick": 10,
+            "text": "10"
+           },
+           {
+            "tick": 11,
+            "text": "11"
+           },
+           {
+            "tick": 12,
+            "text": "12"
+           },
+           {
+            "tick": 14,
+            "text": "14"
+           },
+           {
+            "tick": 15,
+            "text": "15"
+           },
+           {
+            "tick": 16,
+            "text": "16"
+           },
+           {
+            "tick": 17,
+            "text": "17"
+           },
+           {
+            "tick": 18,
+            "text": "18"
+           },
+           {
+            "tick": 19,
+            "text": "19"
+           },
+           {
+            "tick": 20,
+            "text": "20"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 13,
+            "field": {
+             "id": "q1",
+             "label": "where 10 + 3 lands",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 10,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           10,
+           11,
+           12
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 + 3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "10 + 3",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13; 10 + 3 = 13"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 20,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "1"
+           },
+           {
+            "tick": 2,
+            "text": "2"
+           },
+           {
+            "tick": 3,
+            "text": "3"
+           },
+           {
+            "tick": 4,
+            "text": "4"
+           },
+           {
+            "tick": 5,
+            "text": "5"
+           },
+           {
+            "tick": 6,
+            "text": "6"
+           },
+           {
+            "tick": 7,
+            "text": "7"
+           },
+           {
+            "tick": 8,
+            "text": "8"
+           },
+           {
+            "tick": 10,
+            "text": "10"
+           },
+           {
+            "tick": 11,
+            "text": "11"
+           },
+           {
+            "tick": 12,
+            "text": "12"
+           },
+           {
+            "tick": 13,
+            "text": "13"
+           },
+           {
+            "tick": 14,
+            "text": "14"
+           },
+           {
+            "tick": 15,
+            "text": "15"
+           },
+           {
+            "tick": 16,
+            "text": "16"
+           },
+           {
+            "tick": 17,
+            "text": "17"
+           },
+           {
+            "tick": 18,
+            "text": "18"
+           },
+           {
+            "tick": 19,
+            "text": "19"
+           },
+           {
+            "tick": 20,
+            "text": "20"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 9,
+            "field": {
+             "id": "q2",
+             "label": "where 3 + 6 lands",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 3,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           3,
+           4,
+           5,
+           6,
+           7,
+           8
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 + 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "3 + 6",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9; 3 + 6 = 9"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 20,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "1"
+           },
+           {
+            "tick": 2,
+            "text": "2"
+           },
+           {
+            "tick": 3,
+            "text": "3"
+           },
+           {
+            "tick": 4,
+            "text": "4"
+           },
+           {
+            "tick": 5,
+            "text": "5"
+           },
+           {
+            "tick": 6,
+            "text": "6"
+           },
+           {
+            "tick": 7,
+            "text": "7"
+           },
+           {
+            "tick": 8,
+            "text": "8"
+           },
+           {
+            "tick": 9,
+            "text": "9"
+           },
+           {
+            "tick": 10,
+            "text": "10"
+           },
+           {
+            "tick": 11,
+            "text": "11"
+           },
+           {
+            "tick": 12,
+            "text": "12"
+           },
+           {
+            "tick": 13,
+            "text": "13"
+           },
+           {
+            "tick": 14,
+            "text": "14"
+           },
+           {
+            "tick": 15,
+            "text": "15"
+           },
+           {
+            "tick": 17,
+            "text": "17"
+           },
+           {
+            "tick": 18,
+            "text": "18"
+           },
+           {
+            "tick": 19,
+            "text": "19"
+           },
+           {
+            "tick": 20,
+            "text": "20"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 16,
+            "field": {
+             "id": "q3",
+             "label": "where 11 + 5 lands",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 11,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           11,
+           12,
+           13,
+           14,
+           15
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11 + 5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "11 + 5",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16; 11 + 5 = 16"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-count-on-number-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Add by counting on along a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Each jump of 1 is drawn from the starting number, so the sum is where the jumps land. Students write the landing number on the line and in the equation, which links counting on to addition.",
+      "misconceptions": [
+       "Counts the starting number as the first jump, giving one less than the sum.",
+       "Counts the tick marks instead of the jumps."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 472
+    },
+    {
+     "label": "B",
+     "instruction": "Count the jumps back. Write the difference.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 20,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "1"
+           },
+           {
+            "tick": 2,
+            "text": "2"
+           },
+           {
+            "tick": 3,
+            "text": "3"
+           },
+           {
+            "tick": 4,
+            "text": "4"
+           },
+           {
+            "tick": 5,
+            "text": "5"
+           },
+           {
+            "tick": 6,
+            "text": "6"
+           },
+           {
+            "tick": 7,
+            "text": "7"
+           },
+           {
+            "tick": 8,
+            "text": "8"
+           },
+           {
+            "tick": 9,
+            "text": "9"
+           },
+           {
+            "tick": 10,
+            "text": "10"
+           },
+           {
+            "tick": 11,
+            "text": "11"
+           },
+           {
+            "tick": 12,
+            "text": "12"
+           },
+           {
+            "tick": 14,
+            "text": "14"
+           },
+           {
+            "tick": 15,
+            "text": "15"
+           },
+           {
+            "tick": 16,
+            "text": "16"
+           },
+           {
+            "tick": 17,
+            "text": "17"
+           },
+           {
+            "tick": 18,
+            "text": "18"
+           },
+           {
+            "tick": 19,
+            "text": "19"
+           },
+           {
+            "tick": 20,
+            "text": "20"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 13,
+            "field": {
+             "id": "q4",
+             "label": "where 19 − 6 lands",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 19,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           13,
+           14,
+           15,
+           16,
+           17,
+           18
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "19 − 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "19 − 6",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13; 19 − 6 = 13"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 20,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "1"
+           },
+           {
+            "tick": 2,
+            "text": "2"
+           },
+           {
+            "tick": 3,
+            "text": "3"
+           },
+           {
+            "tick": 4,
+            "text": "4"
+           },
+           {
+            "tick": 5,
+            "text": "5"
+           },
+           {
+            "tick": 6,
+            "text": "6"
+           },
+           {
+            "tick": 7,
+            "text": "7"
+           },
+           {
+            "tick": 8,
+            "text": "8"
+           },
+           {
+            "tick": 9,
+            "text": "9"
+           },
+           {
+            "tick": 10,
+            "text": "10"
+           },
+           {
+            "tick": 12,
+            "text": "12"
+           },
+           {
+            "tick": 13,
+            "text": "13"
+           },
+           {
+            "tick": 14,
+            "text": "14"
+           },
+           {
+            "tick": 15,
+            "text": "15"
+           },
+           {
+            "tick": 16,
+            "text": "16"
+           },
+           {
+            "tick": 17,
+            "text": "17"
+           },
+           {
+            "tick": 18,
+            "text": "18"
+           },
+           {
+            "tick": 19,
+            "text": "19"
+           },
+           {
+            "tick": 20,
+            "text": "20"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 11,
+            "field": {
+             "id": "q5",
+             "label": "where 14 − 3 lands",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 14,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           11,
+           12,
+           13
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14 − 3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "14 − 3",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11; 14 − 3 = 11"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-count-back-number-line",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Subtract by counting back along a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The jumps go to the left from the starting number, so subtraction is shown as counting back. This follows the counting-on items, so students see both operations on the same line.",
+      "misconceptions": [
+       "Counts the starting number as the first jump back, giving one more than the difference.",
+       "Jumps to the right because jumps have gone right in the section before."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 806
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Subtract. Complete the addition fact.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "15"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "18 − 15",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "15"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "15 + ? = 18",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "18"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 − 15 = 3; because 15 + 3 = 18"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "9 − 6",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "6 + ? = 9",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "9"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 − 6 = 3; because 6 + 3 = 9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "18"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "18 − 6",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "6 + ? = 18",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "18"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18 − 6 = 12; because 6 + 12 = 18"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "6 − 4",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "4 + ? = 6",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 − 4 = 2; because 4 + 2 = 6"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "14 − 3",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q10-2",
+             "label": "3 + ? = 14",
+             "answer": {
+              "text": "11"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "14"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "14 − 3 = 11; because 3 + 11 = 14"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "6 − 1",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "because"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q11-2",
+             "label": "1 + ? = 6",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 − 1 = 5; because 1 + 5 = 6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-think-addition",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Solve a subtraction by finding the missing addend in a related addition.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each subtraction is paired with the addition that answers it, so 13 − 8 becomes 8 + ? = 13. Students who know addition facts can use them to subtract instead of counting back. The two boxes hold the same number.",
+      "misconceptions": [
+       "Writes the whole in the addition box instead of the missing part.",
+       "Does not see that the two answers must be equal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 322
+    },
+    {
+     "label": "D",
+     "instruction": "Add or subtract.",
+     "items": [
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "13"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "13 − 6",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13 − 6 = 7"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "17"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "17 − 9",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "17 − 9 = 8"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "7 + 8",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 + 8 = 15"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "9 − 2",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 − 2 = 7"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "9 + 2",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 + 2 = 11"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "6 + 5",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 + 5 = 11"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "4 + 9",
+             "answer": {
+              "text": "13"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 + 9 = 13"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "5 + 3",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 + 3 = 8"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q20",
+             "label": "3 + 3",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 + 3 = 6"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "7 + 3",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 + 3 = 10"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "10 − 6",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 − 6 = 4"
+      },
+      {
+       "label": "23",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q23",
+             "label": "7 − 2",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 − 2 = 5"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-facts-within-20",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add and subtract within 20.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE",
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Facts within 20 are mixed with facts within 10, and addition with subtraction. Students may use strategies such as making ten, doubles or a related addition fact. Fluency is expected within 10 in grade 1 and within 20 in grade 2.",
+      "misconceptions": [
+       "Counts back one too many when subtracting.",
+       "Adds when the sign is minus."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 242
+    }
+   ],
+   "estimatedHeight": 572
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "where 10 + 3 lands",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "10 + 3",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "where 3 + 6 lands",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "3 + 6",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "where 11 + 5 lands",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "11 + 5",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "where 19 − 6 lands",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "19 − 6",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "where 14 − 3 lands",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "14 − 3",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "18 − 15",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "15 + ? = 18",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "9 − 6",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "6 + ? = 9",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "18 − 6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "6 + ? = 18",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "6 − 4",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "4 + ? = 6",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "14 − 3",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "3 + ? = 14",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "6 − 1",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "1 + ? = 6",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "13 − 6",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "17 − 9",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "7 + 8",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "9 − 2",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "9 + 2",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "6 + 5",
+    "answer": {
+     "text": "11"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "4 + 9",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "5 + 3",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "3 + 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "7 + 3",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "10 − 6",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "23",
+   "field": {
+    "id": "q23",
+    "label": "7 − 2",
+    "answer": {
+     "text": "5"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Count on and back on a number line, use addition to subtract, then practise facts.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Count the jumps. Write the sum.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the jumps back. Write the difference.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Subtract. Complete the addition fact.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add or subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

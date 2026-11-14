@@ -1,0 +1,1552 @@
+{
+ "worksheetId": "ws-g1-add-subtract-tens",
+ "title": "Adding and subtracting with tens",
+ "headerLabels": [
+  "1.NBT.C.4",
+  "1.NBT.C.5",
+  "1.NBT.C.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "47"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "47 + 8",
+             "answer": {
+              "text": "55"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "47 + 8 = 55"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "73"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "73 + 8",
+             "answer": {
+              "text": "81"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "73 + 8 = 81"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "49"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "49 + 5",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "49 + 5 = 54"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "76"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "76 + 4",
+             "answer": {
+              "text": "80"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "76 + 4 = 80"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "70"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "70 + 8",
+             "answer": {
+              "text": "78"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "70 + 8 = 78"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "39"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "39 + 8",
+             "answer": {
+              "text": "47"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "39 + 8 = 47"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-plus-ones",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add a one-digit number to a two-digit number, making a new ten when needed.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Some sums stay within the same ten and some make a new ten, as in 47 + 8. Students add ones to ones and, when the ones make 10 or more, add one more ten.",
+      "misconceptions": [
+       "Writes 47 + 8 as 415 by writing the ones sum after the tens.",
+       "Adds the one-digit number to the tens digit."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "B",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "31"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "30"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "31 + 30",
+             "answer": {
+              "text": "61"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "31 + 30 = 61"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "40"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "40 + 10",
+             "answer": {
+              "text": "50"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40 + 10 = 50"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "76"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "76 + 10",
+             "answer": {
+              "text": "86"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "76 + 10 = 86"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "36"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "50"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "36 + 50",
+             "answer": {
+              "text": "86"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "36 + 50 = 86"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "70"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "70 + 20",
+             "answer": {
+              "text": "90"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "70 + 20 = 90"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "47"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "47 + 10",
+             "answer": {
+              "text": "57"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "47 + 10 = 57"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-plus-tens",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add a multiple of 10 to a two-digit number by adding tens to tens.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Adding a multiple of 10 changes only the tens digit. Students who see this can add without counting.",
+      "misconceptions": [
+       "Adds the tens to the ones digit, so 36 + 50 gives 41."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "C",
+     "instruction": "Complete the hundred chart.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 74,
+          "rows": 3,
+          "cols": 3,
+          "blanks": [
+           {
+            "number": 75,
+            "field": {
+             "id": "q13",
+             "label": "10 less than 85",
+             "answer": {
+              "text": "75"
+             }
+            }
+           },
+           {
+            "number": 84,
+            "field": {
+             "id": "q13-2",
+             "label": "1 less than 85",
+             "answer": {
+              "text": "84"
+             }
+            }
+           },
+           {
+            "number": 86,
+            "field": {
+             "id": "q13-3",
+             "label": "1 more than 85",
+             "answer": {
+              "text": "86"
+             }
+            }
+           },
+           {
+            "number": 95,
+            "field": {
+             "id": "q13-4",
+             "label": "10 more than 85",
+             "answer": {
+              "text": "95"
+             }
+            }
+           }
+          ],
+          "hidden": [
+           74,
+           76,
+           94,
+           96
+          ],
+          "rowStep": 10
+         }
+        }
+       ],
+       "key": "75, 84, 86, 95"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 57,
+          "rows": 3,
+          "cols": 3,
+          "blanks": [
+           {
+            "number": 58,
+            "field": {
+             "id": "q14",
+             "label": "10 less than 68",
+             "answer": {
+              "text": "58"
+             }
+            }
+           },
+           {
+            "number": 67,
+            "field": {
+             "id": "q14-2",
+             "label": "1 less than 68",
+             "answer": {
+              "text": "67"
+             }
+            }
+           },
+           {
+            "number": 69,
+            "field": {
+             "id": "q14-3",
+             "label": "1 more than 68",
+             "answer": {
+              "text": "69"
+             }
+            }
+           },
+           {
+            "number": 78,
+            "field": {
+             "id": "q14-4",
+             "label": "10 more than 68",
+             "answer": {
+              "text": "78"
+             }
+            }
+           }
+          ],
+          "hidden": [
+           57,
+           59,
+           77,
+           79
+          ],
+          "rowStep": 10
+         }
+        }
+       ],
+       "key": "58, 67, 69, 78"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 64,
+          "rows": 3,
+          "cols": 3,
+          "blanks": [
+           {
+            "number": 65,
+            "field": {
+             "id": "q15",
+             "label": "10 less than 75",
+             "answer": {
+              "text": "65"
+             }
+            }
+           },
+           {
+            "number": 74,
+            "field": {
+             "id": "q15-2",
+             "label": "1 less than 75",
+             "answer": {
+              "text": "74"
+             }
+            }
+           },
+           {
+            "number": 76,
+            "field": {
+             "id": "q15-3",
+             "label": "1 more than 75",
+             "answer": {
+              "text": "76"
+             }
+            }
+           },
+           {
+            "number": 85,
+            "field": {
+             "id": "q15-4",
+             "label": "10 more than 75",
+             "answer": {
+              "text": "85"
+             }
+            }
+           }
+          ],
+          "hidden": [
+           64,
+           66,
+           84,
+           86
+          ],
+          "rowStep": 10
+         }
+        }
+       ],
+       "key": "65, 74, 76, 85"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 7,
+          "rows": 3,
+          "cols": 3,
+          "blanks": [
+           {
+            "number": 8,
+            "field": {
+             "id": "q16",
+             "label": "10 less than 18",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "number": 17,
+            "field": {
+             "id": "q16-2",
+             "label": "1 less than 18",
+             "answer": {
+              "text": "17"
+             }
+            }
+           },
+           {
+            "number": 19,
+            "field": {
+             "id": "q16-3",
+             "label": "1 more than 18",
+             "answer": {
+              "text": "19"
+             }
+            }
+           },
+           {
+            "number": 28,
+            "field": {
+             "id": "q16-4",
+             "label": "10 more than 18",
+             "answer": {
+              "text": "28"
+             }
+            }
+           }
+          ],
+          "hidden": [
+           7,
+           9,
+           27,
+           29
+          ],
+          "rowStep": 10
+         }
+        }
+       ],
+       "key": "8, 17, 19, 28"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g1-chart-ten-more-less",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Find 1 more, 1 less, 10 more and 10 less on a piece of a hundred chart.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each piece of the chart shows a number with the four numbers around it missing. Moving across changes the ones digit and moving up or down changes the tens digit, which prepares students to find 10 more and 10 less mentally.",
+      "misconceptions": [
+       "Writes the number below as 1 more.",
+       "Changes the ones digit when moving up or down."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 150
+    },
+    {
+     "label": "D",
+     "instruction": "Write the number.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 86"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "10 more than 86",
+             "answer": {
+              "text": "96"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 86 is 96"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 19"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "10 more than 19",
+             "answer": {
+              "text": "29"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 19 is 29"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 72"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q19",
+             "label": "10 more than 72",
+             "answer": {
+              "text": "82"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 72 is 82"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 more than 48"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q20",
+             "label": "10 more than 48",
+             "answer": {
+              "text": "58"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 more than 48 is 58"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 less than 94"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q21",
+             "label": "10 less than 94",
+             "answer": {
+              "text": "84"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 less than 94 is 84"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 less than 27"
+           },
+           {
+            "text": "is"
+           },
+           {
+            "blank": {
+             "id": "q22",
+             "label": "10 less than 27",
+             "answer": {
+              "text": "17"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 less than 27 is 17"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-ten-more-less",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find 10 more or 10 less than a two-digit number without counting.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "These items follow the hundred-chart pieces, which show 10 more as the number below. Students now find 10 more or 10 less without the chart.",
+      "misconceptions": [
+       "Changes the ones digit instead of the tens digit.",
+       "Counts on by ones ten times and loses count."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "E",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "23",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "20"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q23",
+             "label": "20 − 10",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20 − 10 = 10"
+      },
+      {
+       "label": "24",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q24",
+             "label": "30 − 20",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 − 20 = 10"
+      },
+      {
+       "label": "25",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "80"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "40"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q25",
+             "label": "80 − 40",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "80 − 40 = 40"
+      },
+      {
+       "label": "26",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "40"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q26",
+             "label": "40 − 10",
+             "answer": {
+              "text": "30"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40 − 10 = 30"
+      },
+      {
+       "label": "27",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "70"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "60"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q27",
+             "label": "70 − 60",
+             "answer": {
+              "text": "10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "70 − 60 = 10"
+      },
+      {
+       "label": "28",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "40"
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q28",
+             "label": "40 − 20",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40 − 20 = 20"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-subtract-tens",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract a multiple of 10 from a larger multiple of 10.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every number is a multiple of 10 from 10 to 90, so 70 − 40 can be thought of as 7 tens − 4 tens. This uses known facts within 10.",
+      "misconceptions": [
+       "Subtracts 4 instead of 40 from 70.",
+       "Writes 3 instead of 30 for 7 tens − 4 tens."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 138
+    }
+   ],
+   "estimatedHeight": 774
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "47 + 8",
+    "answer": {
+     "text": "55"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "73 + 8",
+    "answer": {
+     "text": "81"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "49 + 5",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "76 + 4",
+    "answer": {
+     "text": "80"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "70 + 8",
+    "answer": {
+     "text": "78"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "39 + 8",
+    "answer": {
+     "text": "47"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "31 + 30",
+    "answer": {
+     "text": "61"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "40 + 10",
+    "answer": {
+     "text": "50"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "76 + 10",
+    "answer": {
+     "text": "86"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "36 + 50",
+    "answer": {
+     "text": "86"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "70 + 20",
+    "answer": {
+     "text": "90"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "47 + 10",
+    "answer": {
+     "text": "57"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "10 less than 85",
+    "answer": {
+     "text": "75"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "1 less than 85",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-3",
+    "label": "1 more than 85",
+    "answer": {
+     "text": "86"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-4",
+    "label": "10 more than 85",
+    "answer": {
+     "text": "95"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "10 less than 68",
+    "answer": {
+     "text": "58"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "1 less than 68",
+    "answer": {
+     "text": "67"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-3",
+    "label": "1 more than 68",
+    "answer": {
+     "text": "69"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-4",
+    "label": "10 more than 68",
+    "answer": {
+     "text": "78"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "10 less than 75",
+    "answer": {
+     "text": "65"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-2",
+    "label": "1 less than 75",
+    "answer": {
+     "text": "74"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-3",
+    "label": "1 more than 75",
+    "answer": {
+     "text": "76"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-4",
+    "label": "10 more than 75",
+    "answer": {
+     "text": "85"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "10 less than 18",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-2",
+    "label": "1 less than 18",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-3",
+    "label": "1 more than 18",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-4",
+    "label": "10 more than 18",
+    "answer": {
+     "text": "28"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "10 more than 86",
+    "answer": {
+     "text": "96"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "10 more than 19",
+    "answer": {
+     "text": "29"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "10 more than 72",
+    "answer": {
+     "text": "82"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "10 more than 48",
+    "answer": {
+     "text": "58"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "10 less than 94",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "10 less than 27",
+    "answer": {
+     "text": "17"
+    }
+   }
+  },
+  {
+   "itemLabel": "23",
+   "field": {
+    "id": "q23",
+    "label": "20 − 10",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "24",
+   "field": {
+    "id": "q24",
+    "label": "30 − 20",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "25",
+   "field": {
+    "id": "q25",
+    "label": "80 − 40",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "26",
+   "field": {
+    "id": "q26",
+    "label": "40 − 10",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "27",
+   "field": {
+    "id": "q27",
+    "label": "70 − 60",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "28",
+   "field": {
+    "id": "q28",
+    "label": "40 − 20",
+    "answer": {
+     "text": "20"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add within 100, find 10 more and 10 less, and subtract tens.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

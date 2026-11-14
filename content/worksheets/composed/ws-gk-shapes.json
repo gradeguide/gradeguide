@@ -1,0 +1,1799 @@
+{
+ "worksheetId": "ws-gk-shapes",
+ "title": "Shapes",
+ "headerLabels": [
+  "K.G.A.2",
+  "K.G.B.4",
+  "K.G.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Circle the shapes. Write how many.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Circle all the circles."
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.6400000000000001
+              },
+              {
+               "x": -0.164,
+               "y": 0.6200000000000001
+              },
+              {
+               "x": -0.32000000000000006,
+               "y": 0.5559999999999999
+              },
+              {
+               "x": -0.45199999999999996,
+               "y": 0.45199999999999996
+              },
+              {
+               "x": -0.5559999999999999,
+               "y": 0.32000000000000006
+              },
+              {
+               "x": -0.6200000000000001,
+               "y": 0.164
+              },
+              {
+               "x": -0.6400000000000001
+              },
+              {
+               "x": -0.6200000000000001,
+               "y": -0.164
+              },
+              {
+               "x": -0.5559999999999999,
+               "y": -0.32000000000000006
+              },
+              {
+               "x": -0.45199999999999996,
+               "y": -0.45199999999999996
+              },
+              {
+               "x": -0.32000000000000006,
+               "y": -0.5559999999999999
+              },
+              {
+               "x": -0.164,
+               "y": -0.6200000000000001
+              },
+              {
+               "y": -0.6400000000000001
+              },
+              {
+               "x": 0.164,
+               "y": -0.6200000000000001
+              },
+              {
+               "x": 0.32000000000000006,
+               "y": -0.5559999999999999
+              },
+              {
+               "x": 0.45199999999999996,
+               "y": -0.45199999999999996
+              },
+              {
+               "x": 0.5559999999999999,
+               "y": -0.32000000000000006
+              },
+              {
+               "x": 0.6200000000000001,
+               "y": -0.164
+              },
+              {
+               "x": 0.6400000000000001
+              },
+              {
+               "x": 0.6200000000000001,
+               "y": 0.164
+              },
+              {
+               "x": 0.5559999999999999,
+               "y": 0.32000000000000006
+              },
+              {
+               "x": 0.45199999999999996,
+               "y": 0.45199999999999996
+              },
+              {
+               "x": 0.32000000000000006,
+               "y": 0.5559999999999999
+              },
+              {
+               "x": 0.164,
+               "y": 0.6200000000000001
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.6,
+               "y": 2.7680000000000002
+              },
+              {
+               "x": 0.21600000000000003,
+               "y": 3.568
+              },
+              {
+               "x": -1.3840000000000001,
+               "y": 0.8
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 1.2800000000000002
+              },
+              {
+               "x": -0.328,
+               "y": 1.2400000000000002
+              },
+              {
+               "x": -0.6400000000000001,
+               "y": 1.1119999999999999
+              },
+              {
+               "x": -0.9039999999999999,
+               "y": 0.9039999999999999
+              },
+              {
+               "x": -1.1119999999999999,
+               "y": 0.6400000000000001
+              },
+              {
+               "x": -1.2400000000000002,
+               "y": 0.328
+              },
+              {
+               "x": -1.2800000000000002
+              },
+              {
+               "x": -1.2400000000000002,
+               "y": -0.328
+              },
+              {
+               "x": -1.1119999999999999,
+               "y": -0.6400000000000001
+              },
+              {
+               "x": -0.9039999999999999,
+               "y": -0.9039999999999999
+              },
+              {
+               "x": -0.6400000000000001,
+               "y": -1.1119999999999999
+              },
+              {
+               "x": -0.328,
+               "y": -1.2400000000000002
+              },
+              {
+               "y": -1.2800000000000002
+              },
+              {
+               "x": 0.328,
+               "y": -1.2400000000000002
+              },
+              {
+               "x": 0.6400000000000001,
+               "y": -1.1119999999999999
+              },
+              {
+               "x": 0.9039999999999999,
+               "y": -0.9039999999999999
+              },
+              {
+               "x": 1.1119999999999999,
+               "y": -0.6400000000000001
+              },
+              {
+               "x": 1.2400000000000002,
+               "y": -0.328
+              },
+              {
+               "x": 1.2800000000000002
+              },
+              {
+               "x": 1.2400000000000002,
+               "y": 0.328
+              },
+              {
+               "x": 1.1119999999999999,
+               "y": 0.6400000000000001
+              },
+              {
+               "x": 0.9039999999999999,
+               "y": 0.9039999999999999
+              },
+              {
+               "x": 0.6400000000000001,
+               "y": 1.1119999999999999
+              },
+              {
+               "x": 0.328,
+               "y": 1.2400000000000002
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.452,
+               "y": 0.84
+              },
+              {
+               "x": 0.612,
+               "y": 2.292
+              },
+              {
+               "x": -0.84,
+               "y": 1.452
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": 0.35200000000000004,
+               "y": 1.312
+              },
+              {
+               "x": -0.96,
+               "y": 0.96
+              },
+              {
+               "x": -1.312,
+               "y": -0.35200000000000004
+              },
+              {
+               "x": -0.35200000000000004,
+               "y": -1.312
+              },
+              {
+               "x": 0.96,
+               "y": -0.96
+              },
+              {
+               "x": 1.312,
+               "y": 0.35200000000000004
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -1.016,
+               "y": 1.016
+              },
+              {
+               "x": -0.376,
+               "y": -1.3920000000000001
+              },
+              {
+               "x": 1.3920000000000001,
+               "y": 0.376
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.96
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": 0.9299999999999999
+              },
+              {
+               "x": -0.48,
+               "y": 0.834
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": -0.834,
+               "y": 0.48
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": -0.96
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": -0.834,
+               "y": -0.48
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": -0.48,
+               "y": -0.834
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "y": -0.96
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "x": 0.48,
+               "y": -0.834
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": 0.834,
+               "y": -0.48
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": 0.96
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": 0.834,
+               "y": 0.48
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": 0.48,
+               "y": 0.834
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": 0.9299999999999999
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.316,
+               "y": 0.624
+              },
+              {
+               "x": 2.01,
+               "y": 1.782
+              },
+              {
+               "x": -0.312,
+               "y": 1.158
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "how many circles",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 2"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Circle all the triangles."
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.7200000000000001
+              },
+              {
+               "x": -0.6240000000000001,
+               "y": -0.36000000000000004
+              },
+              {
+               "x": 0.6240000000000001,
+               "y": -0.36000000000000004
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.936,
+               "y": 1.1199999999999999
+              },
+              {
+               "x": 0.8160000000000001,
+               "y": 3.056
+              },
+              {
+               "x": -1.1199999999999999,
+               "y": 1.936
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -1.016,
+               "y": 1.016
+              },
+              {
+               "x": -0.376,
+               "y": -1.3920000000000001
+              },
+              {
+               "x": 1.3920000000000001,
+               "y": 0.376
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.2399999999999998
+              },
+              {
+               "x": 2.2399999999999998,
+               "y": 2.2399999999999998
+              },
+              {
+               "y": 2.2399999999999998
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.4
+              },
+              {
+               "x": 2.4,
+               "y": 1.2
+              },
+              {
+               "y": 1.2
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -0.7200000000000001,
+               "y": 1.2480000000000002
+              },
+              {
+               "x": -0.7200000000000001,
+               "y": -1.2480000000000002
+              },
+              {
+               "x": 1.4400000000000002
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.68
+              },
+              {
+               "x": 1.68,
+               "y": 1.68
+              },
+              {
+               "y": 1.68
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 1.2800000000000002
+              },
+              {
+               "x": -0.328,
+               "y": 1.2400000000000002
+              },
+              {
+               "x": -0.6400000000000001,
+               "y": 1.1119999999999999
+              },
+              {
+               "x": -0.9039999999999999,
+               "y": 0.9039999999999999
+              },
+              {
+               "x": -1.1119999999999999,
+               "y": 0.6400000000000001
+              },
+              {
+               "x": -1.2400000000000002,
+               "y": 0.328
+              },
+              {
+               "x": -1.2800000000000002
+              },
+              {
+               "x": -1.2400000000000002,
+               "y": -0.328
+              },
+              {
+               "x": -1.1119999999999999,
+               "y": -0.6400000000000001
+              },
+              {
+               "x": -0.9039999999999999,
+               "y": -0.9039999999999999
+              },
+              {
+               "x": -0.6400000000000001,
+               "y": -1.1119999999999999
+              },
+              {
+               "x": -0.328,
+               "y": -1.2400000000000002
+              },
+              {
+               "y": -1.2800000000000002
+              },
+              {
+               "x": 0.328,
+               "y": -1.2400000000000002
+              },
+              {
+               "x": 0.6400000000000001,
+               "y": -1.1119999999999999
+              },
+              {
+               "x": 0.9039999999999999,
+               "y": -0.9039999999999999
+              },
+              {
+               "x": 1.1119999999999999,
+               "y": -0.6400000000000001
+              },
+              {
+               "x": 1.2400000000000002,
+               "y": -0.328
+              },
+              {
+               "x": 1.2800000000000002
+              },
+              {
+               "x": 1.2400000000000002,
+               "y": 0.328
+              },
+              {
+               "x": 1.1119999999999999,
+               "y": 0.6400000000000001
+              },
+              {
+               "x": 0.9039999999999999,
+               "y": 0.9039999999999999
+              },
+              {
+               "x": 0.6400000000000001,
+               "y": 1.1119999999999999
+              },
+              {
+               "x": 0.328,
+               "y": 1.2400000000000002
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "how many triangles",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 2"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-name-shapes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find circles, triangles, squares, rectangles and hexagons of any size or turn.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The adult reads the shape name, and a small picture of the shape appears beside it. The row mixes the target shape with others in different sizes and turns, so students must recognise the shape whatever its size or direction. Rectangles that are not squares and triangles with unequal sides are included.",
+      "misconceptions": [
+       "Thinks a turned square is no longer a square.",
+       "Recognises a triangle only when it is equal-sided and points up.",
+       "Calls a long rectangle a square."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 733
+    }
+   ],
+   "estimatedHeight": 737
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Circle the shapes. Write how many.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Circle all the circles."
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.6400000000000001
+              },
+              {
+               "x": -0.164,
+               "y": 0.6200000000000001
+              },
+              {
+               "x": -0.32000000000000006,
+               "y": 0.5559999999999999
+              },
+              {
+               "x": -0.45199999999999996,
+               "y": 0.45199999999999996
+              },
+              {
+               "x": -0.5559999999999999,
+               "y": 0.32000000000000006
+              },
+              {
+               "x": -0.6200000000000001,
+               "y": 0.164
+              },
+              {
+               "x": -0.6400000000000001
+              },
+              {
+               "x": -0.6200000000000001,
+               "y": -0.164
+              },
+              {
+               "x": -0.5559999999999999,
+               "y": -0.32000000000000006
+              },
+              {
+               "x": -0.45199999999999996,
+               "y": -0.45199999999999996
+              },
+              {
+               "x": -0.32000000000000006,
+               "y": -0.5559999999999999
+              },
+              {
+               "x": -0.164,
+               "y": -0.6200000000000001
+              },
+              {
+               "y": -0.6400000000000001
+              },
+              {
+               "x": 0.164,
+               "y": -0.6200000000000001
+              },
+              {
+               "x": 0.32000000000000006,
+               "y": -0.5559999999999999
+              },
+              {
+               "x": 0.45199999999999996,
+               "y": -0.45199999999999996
+              },
+              {
+               "x": 0.5559999999999999,
+               "y": -0.32000000000000006
+              },
+              {
+               "x": 0.6200000000000001,
+               "y": -0.164
+              },
+              {
+               "x": 0.6400000000000001
+              },
+              {
+               "x": 0.6200000000000001,
+               "y": 0.164
+              },
+              {
+               "x": 0.5559999999999999,
+               "y": 0.32000000000000006
+              },
+              {
+               "x": 0.45199999999999996,
+               "y": 0.45199999999999996
+              },
+              {
+               "x": 0.32000000000000006,
+               "y": 0.5559999999999999
+              },
+              {
+               "x": 0.164,
+               "y": 0.6200000000000001
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.96
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": 0.9299999999999999
+              },
+              {
+               "x": -0.48,
+               "y": 0.834
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": -0.834,
+               "y": 0.48
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": -0.96
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": -0.834,
+               "y": -0.48
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": -0.48,
+               "y": -0.834
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "y": -0.96
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "x": 0.48,
+               "y": -0.834
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": 0.834,
+               "y": -0.48
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": 0.96
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": 0.834,
+               "y": 0.48
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": 0.48,
+               "y": 0.834
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": 0.9299999999999999
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": 0.35200000000000004,
+               "y": 1.312
+              },
+              {
+               "x": -0.96,
+               "y": 0.96
+              },
+              {
+               "x": -1.312,
+               "y": -0.35200000000000004
+              },
+              {
+               "x": -0.35200000000000004,
+               "y": -1.312
+              },
+              {
+               "x": 0.96,
+               "y": -0.96
+              },
+              {
+               "x": 1.312,
+               "y": 0.35200000000000004
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -0.7200000000000001,
+               "y": 1.2480000000000002
+              },
+              {
+               "x": -0.7200000000000001,
+               "y": -1.2480000000000002
+              },
+              {
+               "x": 1.4400000000000002
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.4
+              },
+              {
+               "x": 2.4,
+               "y": 1.2
+              },
+              {
+               "y": 1.2
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "y": 0.96
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": 0.9299999999999999
+              },
+              {
+               "x": -0.48,
+               "y": 0.834
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": -0.834,
+               "y": 0.48
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": -0.96
+              },
+              {
+               "x": -0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": -0.834,
+               "y": -0.48
+              },
+              {
+               "x": -0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": -0.48,
+               "y": -0.834
+              },
+              {
+               "x": -0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "y": -0.96
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": -0.9299999999999999
+              },
+              {
+               "x": 0.48,
+               "y": -0.834
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": -0.6779999999999999
+              },
+              {
+               "x": 0.834,
+               "y": -0.48
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": -0.24599999999999997
+              },
+              {
+               "x": 0.96
+              },
+              {
+               "x": 0.9299999999999999,
+               "y": 0.24599999999999997
+              },
+              {
+               "x": 0.834,
+               "y": 0.48
+              },
+              {
+               "x": 0.6779999999999999,
+               "y": 0.6779999999999999
+              },
+              {
+               "x": 0.48,
+               "y": 0.834
+              },
+              {
+               "x": 0.24599999999999997,
+               "y": 0.9299999999999999
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": 0.51,
+               "y": 0.882
+              },
+              {
+               "x": -0.51,
+               "y": 0.882
+              },
+              {
+               "x": -1.02
+              },
+              {
+               "x": -0.51,
+               "y": -0.882
+              },
+              {
+               "x": 0.51,
+               "y": -0.882
+              },
+              {
+               "x": 1.02
+              }
+             ]
+            }
+           },
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 1.698,
+               "y": 1.698
+              },
+              {
+               "x": 0.846,
+               "y": 2.544
+              },
+              {
+               "x": -0.846,
+               "y": 0.846
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "How many?"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "how many circles",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "How many? 2"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-name-shapes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find circles, triangles, squares, rectangles and hexagons of any size or turn.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The adult reads the shape name, and a small picture of the shape appears beside it. The row mixes the target shape with others in different sizes and turns, so students must recognise the shape whatever its size or direction. Rectangles that are not squares and triangles with unequal sides are included.",
+      "misconceptions": [
+       "Thinks a turned square is no longer a square.",
+       "Recognises a triangle only when it is equal-sided and points up.",
+       "Calls a long rectangle a square."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 372
+    },
+    {
+     "label": "B",
+     "instruction": "Count the sides and corners. Write how many.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.4000000000000004,
+               "y": 4.16
+              },
+              {
+               "x": 0.32000000000000006,
+               "y": 5.36
+              },
+              {
+               "x": -2.08,
+               "y": 1.2000000000000002
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Sides:"
+              },
+              {
+               "blank": {
+                "id": "q4",
+                "label": "sides",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              },
+              {
+               "text": "Corners:"
+              },
+              {
+               "blank": {
+                "id": "q4-2",
+                "label": "corners",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 0.8320000000000001,
+               "y": 3.088
+              },
+              {
+               "x": -2.2640000000000002,
+               "y": 3.9200000000000004
+              },
+              {
+               "x": -3.088,
+               "y": 0.8320000000000001
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Sides:"
+              },
+              {
+               "blank": {
+                "id": "q5",
+                "label": "sides",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              },
+              {
+               "text": "Corners:"
+              },
+              {
+               "blank": {
+                "id": "q5-2",
+                "label": "corners",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-sides-corners",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe shapes by the number of sides and corners.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Counting sides and corners gives students words for comparing shapes. Every shape has as many corners as sides, which students may notice. Shape names are left out because kindergarten students are not expected to read them.",
+      "misconceptions": [
+       "Counts the same side twice by going round the shape more than once.",
+       "Counts corners and sides as one total."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 338
+    }
+   ],
+   "estimatedHeight": 718
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the sides and corners. Write how many.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 4.16,
+               "y": 2.4000000000000004
+              },
+              {
+               "x": 0.18400000000000002,
+               "y": 2.8800000000000003
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Sides:"
+              },
+              {
+               "blank": {
+                "id": "q6",
+                "label": "sides",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              },
+              {
+               "text": "Corners:"
+              },
+              {
+               "blank": {
+                "id": "q6-2",
+                "label": "corners",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, 3"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": -2.008,
+               "y": 0.536
+              },
+              {
+               "x": 0.536,
+               "y": -2.008
+              },
+              {
+               "x": 1.4720000000000002,
+               "y": 1.4720000000000002
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Sides:"
+              },
+              {
+               "blank": {
+                "id": "q7",
+                "label": "sides",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              },
+              {
+               "text": "Corners:"
+              },
+              {
+               "blank": {
+                "id": "q7-2",
+                "label": "corners",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3, 3"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-gk-sides-corners",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe shapes by the number of sides and corners.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Counting sides and corners gives students words for comparing shapes. Every shape has as many corners as sides, which students may notice. Shape names are left out because kindergarten students are not expected to read them.",
+      "misconceptions": [
+       "Counts the same side twice by going round the shape more than once.",
+       "Counts corners and sides as one total."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 282
+    },
+    {
+     "label": "C",
+     "instruction": "Draw the shape.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Draw a rectangle."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q8",
+           "label": "a rectangle",
+           "answer": {
+            "text": "A closed shape with 4 straight sides and square corners"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 4 straight sides and square corners"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Draw a square."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q9",
+           "label": "a square",
+           "answer": {
+            "text": "A closed shape with 4 equal straight sides and square corners"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 4 equal straight sides and square corners"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Draw a hexagon."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q10",
+           "label": "a hexagon",
+           "answer": {
+            "text": "A closed shape with 6 straight sides"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 6 straight sides"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Draw a triangle."
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "style": "STYLE_BLANK",
+          "field": {
+           "id": "q11",
+           "label": "a triangle",
+           "answer": {
+            "text": "A closed shape with 3 straight sides"
+           }
+          }
+         }
+        }
+       ],
+       "key": "A closed shape with 3 straight sides"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-draw-shapes",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Draw triangles, squares, rectangles and hexagons.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Drawing a shape requires attention to its sides and corners, as in the section before. A shape counts as correct when it has the right number of straight sides and is closed, even if the lines are not straight.",
+      "misconceptions": [
+       "Leaves a gap so the shape is not closed.",
+       "Draws a square for a rectangle, or the reverse."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 370
+    }
+   ],
+   "estimatedHeight": 660
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "how many circles",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "how many triangles",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "how many circles",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "sides",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "corners",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "sides",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "corners",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "a rectangle",
+    "answer": {
+     "text": "A closed shape with 4 straight sides and square corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "a square",
+    "answer": {
+     "text": "A closed shape with 4 equal straight sides and square corners"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "a hexagon",
+    "answer": {
+     "text": "A closed shape with 6 straight sides"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "a triangle",
+    "answer": {
+     "text": "A closed shape with 3 straight sides"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find shapes of any size or turn, count their sides and corners, and draw them.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Circle the shapes. Write how many.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the sides and corners. Write how many.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

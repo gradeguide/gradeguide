@@ -1,0 +1,668 @@
+{
+ "worksheetId": "ws-g2-odd-even-arrays",
+ "title": "Odd, even and arrays",
+ "headerLabels": [
+  "2.OA.C.3",
+  "2.OA.C.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Circle pairs of dots. Mark odd or even.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 9,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is 9 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 12,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is 12 odd or even",
+           "answer": {
+            "text": "even"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "half of 12",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "half of 12",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "even; 12 = 6 + 6"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 11,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is 11 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 16,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is 16 odd or even",
+           "answer": {
+            "text": "even"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "16"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "half of 16",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "half of 16",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "even; 16 = 8 + 8"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 15,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is 15 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 1,
+          "cols": 5,
+          "gap": 22
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "odd",
+           "even"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is 5 odd or even",
+           "answer": {
+            "text": "odd"
+           }
+          }
+         }
+        }
+       ],
+       "key": "odd"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-odd-even",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell whether a number up to 20 is odd or even by pairing, and write an even number as a sum of two equal addends.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Circling pairs shows whether one dot is left over, which is what makes a number odd. For an even number, students also write it as a double such as 12 = 6 + 6. The doubles link evenness to equal groups, which leads to multiplication in grade 3.",
+      "misconceptions": [
+       "Decides odd or even from the size of the number rather than from pairing.",
+       "Pairs dots across a gap and miscounts the one left over."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 566
+    },
+    {
+     "label": "B",
+     "instruction": "Write the total.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 5,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "5 rows of 3",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 + 3 + 3 + 3 + 3 = 15"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 3,
+          "cols": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "3 rows of 4",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 + 4 + 4 = 12"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-array-sums",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the total in an array of up to 5 rows and 5 columns by adding equal rows.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each array is matched to a sum of equal addends, one for each row. Arrays stay within 5 by 5, the size grade 2 uses. Repeated addition in arrays prepares for multiplication in grade 3.",
+      "misconceptions": [
+       "Adds the number of rows and the number of columns.",
+       "Writes one addend for each column when the sum is by rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 764
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Write the total.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 4,
+          "cols": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "4 rows of 2",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 + 2 + 2 + 2 = 8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "dotArray": {
+          "rows": 2,
+          "cols": 3
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "2 rows of 3",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 + 3 = 6"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-array-sums",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the total in an array of up to 5 rows and 5 columns by adding equal rows.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each array is matched to a sum of equal addends, one for each row. Arrays stay within 5 by 5, the size grade 2 uses. Repeated addition in arrays prepares for multiplication in grade 3.",
+      "misconceptions": [
+       "Adds the number of rows and the number of columns.",
+       "Writes one addend for each column when the sum is by rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 172
+    }
+   ],
+   "estimatedHeight": 176
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is 9 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is 12 odd or even",
+    "answer": {
+     "text": "even"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "half of 12",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "half of 12",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is 11 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is 16 odd or even",
+    "answer": {
+     "text": "even"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "half of 16",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "half of 16",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is 15 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is 5 odd or even",
+    "answer": {
+     "text": "odd"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "5 rows of 3",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3 rows of 4",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4 rows of 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "2 rows of 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Tell odd from even by pairing, then add the rows of an array.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

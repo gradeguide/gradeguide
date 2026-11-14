@@ -1,0 +1,901 @@
+{
+ "worksheetId": "ws-g1-shapes-and-shares",
+ "title": "Shapes, halves and fourths",
+ "headerLabels": [
+  "1.G.A.1",
+  "1.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the sides and corners. Mark the name.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.7680000000000002,
+               "y": 1.6
+              },
+              {
+               "x": 3.3600000000000003,
+               "y": 3.7840000000000007
+              },
+              {
+               "x": 1.168,
+               "y": 4.368
+              },
+              {
+               "x": -1.6,
+               "y": 2.7680000000000002
+              },
+              {
+               "x": -0.10400000000000001,
+               "y": 1.784
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q1",
+                   "label": "sides",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q1-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q1-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "hexagon"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 6, hexagon"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 2.8000000000000003,
+               "y": 4.848
+              },
+              {
+               "x": -0.08000000000000002,
+               "y": 4.664000000000001
+              },
+              {
+               "x": -1.2800000000000002,
+               "y": 2.584
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q2",
+                   "label": "sides",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q2-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q2-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "quadrilateral"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4, quadrilateral"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {},
+              {
+               "x": 3.2
+              },
+              {
+               "x": 3.2,
+               "y": 3.2
+              },
+              {
+               "y": 3.2
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q3",
+                   "label": "sides",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q3-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "4"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q3-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "quadrilateral"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 4, quadrilateral"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "polygon": {
+             "points": [
+              {
+               "x": 2
+              },
+              {
+               "x": 1,
+               "y": 1.736
+              },
+              {
+               "x": -1,
+               "y": 1.736
+              },
+              {
+               "x": -2
+              },
+              {
+               "x": -1,
+               "y": -1.736
+              },
+              {
+               "x": 1,
+               "y": -1.736
+              }
+             ]
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "Sides:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q4",
+                   "label": "sides",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 },
+                 {
+                  "text": "Corners:"
+                 },
+                 {
+                  "blank": {
+                   "id": "q4-2",
+                   "label": "corners",
+                   "answer": {
+                    "text": "6"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "choices": {
+                "options": [
+                 "triangle",
+                 "quadrilateral",
+                 "pentagon",
+                 "hexagon"
+                ],
+                "field": {
+                 "id": "q4-3",
+                 "label": "name of the shape",
+                 "answer": {
+                  "text": "hexagon"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 6, hexagon"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-shape-features",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name a shape by its sides and corners, not its color, size or turn.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The shapes include regular and irregular ones in different turns. The name follows from the number of sides, which are defining attributes, and not from how the shape looks at a glance.",
+      "misconceptions": [
+       "Names a shape only when it looks like the usual picture, so an irregular hexagon is not a hexagon.",
+       "Counts a corner that points inward as not a corner."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 600
+    },
+    {
+     "label": "B",
+     "instruction": "Mark equal shares or not equal shares.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equal shares"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ],
+          "widths": [
+           1,
+           2,
+           1,
+           2
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "not equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equal shares"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "equal shares"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           0
+          ],
+          "widths": [
+           1,
+           1,
+           1,
+           2
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "equal shares",
+           "not equal shares"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "are the parts equal",
+           "answer": {
+            "text": "not equal shares"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not equal shares"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-equal-or-not",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell equal shares from parts that are not equal.",
+      "principles": [
+       "PRINCIPLE_ERROR_ANALYSIS"
+      ],
+      "rationale": "Some bars are cut into equal parts and some are not, with the same number of parts. Students must check the sizes of the parts, not only count them, before naming halves or fourths.",
+      "misconceptions": [
+       "Calls any cut into two parts halves.",
+       "Calls parts unequal because one is shaded and the others are not."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 194
+    }
+   ],
+   "estimatedHeight": 802
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Mark the name of the shaded part.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 2,
+          "shaded": [
+           1
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one half",
+           "one fourth"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "the shaded share",
+           "answer": {
+            "text": "one half"
+           }
+          }
+         }
+        }
+       ],
+       "key": "one half"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           1
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one half",
+           "one fourth"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "the shaded share",
+           "answer": {
+            "text": "one fourth"
+           }
+          }
+         }
+        }
+       ],
+       "key": "one fourth"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 4,
+          "shaded": [
+           3
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one half",
+           "one fourth"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "the shaded share",
+           "answer": {
+            "text": "one fourth"
+           }
+          }
+         }
+        }
+       ],
+       "key": "one fourth"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "fractionBar": {
+          "parts": 2,
+          "shaded": [
+           0
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "one half",
+           "one fourth"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "the shaded share",
+           "answer": {
+            "text": "one half"
+           }
+          }
+         }
+        }
+       ],
+       "key": "one half"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-halves-fourths",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Name one of two equal shares as one half and one of four as one fourth.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each bar is cut into two or four equal shares with one shaded. Halves and fourths of the same bar appear side by side, so students can see that a fourth is smaller than a half.",
+      "misconceptions": [
+       "Thinks one fourth is bigger than one half because 4 is bigger than 2.",
+       "Names the share by the number of parts left unshaded."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
+      ]
+     },
+     "estimatedHeight": 194
+    }
+   ],
+   "estimatedHeight": 198
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "sides",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "corners",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "hexagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "quadrilateral"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "sides",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "corners",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "quadrilateral"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "sides",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "corners",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "name of the shape",
+    "answer": {
+     "text": "hexagon"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "equal shares"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "not equal shares"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "equal shares"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "are the parts equal",
+    "answer": {
+     "text": "not equal shares"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the shaded share",
+    "answer": {
+     "text": "one half"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the shaded share",
+    "answer": {
+     "text": "one fourth"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the shaded share",
+    "answer": {
+     "text": "one fourth"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the shaded share",
+    "answer": {
+     "text": "one half"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Describe shapes by their features, then split them into equal shares.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ]
+ },
+ "advice": [
+  "\"Count the sides and corners. Mark the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark equal shares or not equal shares.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark the name of the shaded part.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

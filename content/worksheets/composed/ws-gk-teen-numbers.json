@@ -1,0 +1,487 @@
+{
+ "worksheetId": "ws-gk-teen-numbers",
+ "title": "Teen numbers",
+ "headerLabels": [
+  "K.NBT.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the missing number.",
+     "example": {
+      "nodes": [
+       {
+        "baseTenBlocks": {
+         "tens": 1,
+         "ones": 6,
+         "unit": 9
+        }
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "16"
+          },
+          {
+           "text": "="
+          },
+          {
+           "text": "10"
+          },
+          {
+           "text": "+"
+          },
+          {
+           "blank": {
+            "label": "ones in 16",
+            "answer": {
+             "text": "6"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "10 and 6 make **16**."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 5,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "15"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "ones in 15",
+             "answer": {
+              "text": "5"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15 = 10 + 5"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 5,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "10 + 5",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 5 = 15"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 7,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "17"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "ones in 17",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "17 = 10 + 7"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 8,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "10 + 8",
+             "answer": {
+              "text": "18"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 8 = 18"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 2,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "ones in 12",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 = 10 + 2"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 1,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "11"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "ones in 11",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "11 = 10 + 1"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 2,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "10 + 2",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 2 = 12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 1,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "10 + 1",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 1 = 11"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-gk-teen-numbers",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Show numbers from 11 to 19 as ten ones and some more ones.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each teen number appears as a rod of ten cubes and some single cubes, with an equation such as 14 = 10 + 4. In kindergarten the rod is ten ones joined together, not yet a unit called a ten. Half the equations give the parts and half give the whole, so students work in both directions.",
+      "misconceptions": [
+       "Reads 14 as 1 and 4 instead of ten and 4.",
+       "Writes the teen number in the order it is said, such as 41 for fourteen."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 734
+    }
+   ],
+   "estimatedHeight": 738
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "ones in 15",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "10 + 5",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "ones in 17",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "10 + 8",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "ones in 12",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "ones in 11",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "10 + 2",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "10 + 1",
+    "answer": {
+     "text": "11"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Show each teen number as ten ones and some more ones.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

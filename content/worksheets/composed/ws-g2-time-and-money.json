@@ -1,0 +1,814 @@
+{
+ "worksheetId": "ws-g2-time-and-money",
+ "title": "Time and money",
+ "headerLabels": [
+  "2.MD.C.7",
+  "2.MD.C.8"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the time.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 9,
+          "minute": 5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "9:05"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 9:05"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 12,
+          "minute": 45
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "12:45"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 12:45"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 4
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "4:00",
+              "also": [
+               "4 o'clock"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 4:00"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 1,
+          "minute": 25
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "1:25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 1:25"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 8,
+          "minute": 15
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "8:15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 8:15"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "clock": {
+          "hour": 3,
+          "minute": 25
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The time is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the time on the clock",
+             "answer": {
+              "text": "3:25"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The time is 3:25"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-clock-five-minutes",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell time to the nearest five minutes.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Students count by 5s from 12 to the long hand to find the minutes. Times late in the hour, where the short hand is close to the next number, test whether students read the hour correctly.",
+      "misconceptions": [
+       "Reads the number the long hand points to as the minutes, such as 4 for 20 minutes.",
+       "Late in the hour, reads the hour from the next number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 616
+    },
+    {
+     "label": "B",
+     "instruction": "Count the money. Write the total.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "coins": {
+          "coins": [
+           "COIN_QUARTER",
+           "COIN_DIME",
+           "COIN_NICKEL",
+           "COIN_NICKEL",
+           "COIN_NICKEL",
+           "COIN_PENNY"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "cents in all",
+             "answer": {
+              "text": "51",
+              "also": [
+               "51¢"
+              ]
+             }
+            }
+           },
+           {
+            "text": "¢"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Total: 51 ¢"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-count-coins",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the value of a group of quarters, dimes, nickels and pennies.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The coins are drawn at their true relative sizes, with the penny copper and ridges on the dime and quarter, and each is named but not valued. Students must know each coin's value. The coins are ordered from greatest value to least, so students can count on: 25, 35, 40, 41.",
+      "misconceptions": [
+       "Counts each coin as 1.",
+       "Thinks a bigger coin is worth more, so a nickel is worth more than a dime."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 161
+    }
+   ],
+   "estimatedHeight": 785
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Count the money. Write the total.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "coins": {
+          "coins": [
+           "COIN_QUARTER",
+           "COIN_NICKEL"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total:"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "cents in all",
+             "answer": {
+              "text": "30",
+              "also": [
+               "30¢"
+              ]
+             }
+            }
+           },
+           {
+            "text": "¢"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Total: 30 ¢"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "coins": {
+          "coins": [
+           "COIN_QUARTER",
+           "COIN_DIME",
+           "COIN_DIME",
+           "COIN_DIME",
+           "COIN_NICKEL",
+           "COIN_PENNY"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total:"
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "cents in all",
+             "answer": {
+              "text": "61",
+              "also": [
+               "61¢"
+              ]
+             }
+            }
+           },
+           {
+            "text": "¢"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Total: 61 ¢"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "coins": {
+          "coins": [
+           "COIN_QUARTER",
+           "COIN_NICKEL",
+           "COIN_PENNY",
+           "COIN_PENNY"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Total:"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "cents in all",
+             "answer": {
+              "text": "32",
+              "also": [
+               "32¢"
+              ]
+             }
+            }
+           },
+           {
+            "text": "¢"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Total: 32 ¢"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-count-coins",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the value of a group of quarters, dimes, nickels and pennies.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The coins are drawn at their true relative sizes, with the penny copper and ridges on the dime and quarter, and each is named but not valued. Students must know each coin's value. The coins are ordered from greatest value to least, so students can count on: 25, 35, 40, 41.",
+      "misconceptions": [
+       "Counts each coin as 1.",
+       "Thinks a bigger coin is worth more, so a nickel is worth more than a dime."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 414
+    },
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Ana has 3 dimes and 1 nickel. A dime is 10¢. A nickel is 5¢. How many cents does Ana have?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q11",
+           "label": "cents Ana has",
+           "answer": {
+            "text": "35",
+            "also": [
+             "35¢"
+            ],
+            "work": "10 + 10 + 10 + 5"
+           }
+          }
+         }
+        }
+       ],
+       "key": "35"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-money-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve stories about coins and dollar bills.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story states the coin values it uses, so the task is to combine values rather than recall them. Recall is practised in the coin-counting section. The stories include finding a total, finding change and working in whole dollars. Students should write ¢ or $ with the answer.",
+      "misconceptions": [
+       "Counts each coin as 1 instead of by its value.",
+       "Mixes cents and dollars in one answer."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 234
+    }
+   ],
+   "estimatedHeight": 656
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Ben has 2 quarters and 4 pennies. A quarter is 25¢. A penny is 1¢. How many cents does Ben have?"
+        },
+        {
+         "workSpace": {
+          "rows": 7,
+          "field": {
+           "id": "q12",
+           "label": "cents Ben has",
+           "answer": {
+            "text": "54",
+            "also": [
+             "54¢"
+            ],
+            "work": "25 + 25 + 1 + 1 + 1 + 1"
+           }
+          }
+         }
+        }
+       ],
+       "key": "54"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "Mia has $5. She buys a book for $3. How many dollars does she have left?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q13",
+           "label": "dollars Mia has left",
+           "answer": {
+            "text": "2",
+            "also": [
+             "$2"
+            ],
+            "work": "5 − 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "A pencil costs 45¢. Kai pays with 2 quarters. A quarter is 25¢. How much change does he get?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q14",
+           "label": "change Kai gets",
+           "answer": {
+            "text": "5",
+            "also": [
+             "5¢"
+            ],
+            "work": "25 + 25 − 45"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "Omar has one $10 bill and two $1 bills. How many dollars does he have?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q15",
+           "label": "dollars Omar has",
+           "answer": {
+            "text": "12",
+            "also": [
+             "$12"
+            ],
+            "work": "10 + 1 + 1"
+           }
+          }
+         }
+        }
+       ],
+       "key": "12"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-money-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve stories about coins and dollar bills.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story states the coin values it uses, so the task is to combine values rather than recall them. Recall is practised in the coin-counting section. The stories include finding a total, finding change and working in whole dollars. Students should write ¢ or $ with the answer.",
+      "misconceptions": [
+       "Counts each coin as 1 instead of by its value.",
+       "Mixes cents and dollars in one answer."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 810
+    }
+   ],
+   "estimatedHeight": 814
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "9:05"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "12:45"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "4:00",
+     "also": [
+      "4 o'clock"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "1:25"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "8:15"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the time on the clock",
+    "answer": {
+     "text": "3:25"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "cents in all",
+    "answer": {
+     "text": "51",
+     "also": [
+      "51¢"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "cents in all",
+    "answer": {
+     "text": "30",
+     "also": [
+      "30¢"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "cents in all",
+    "answer": {
+     "text": "61",
+     "also": [
+      "61¢"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "cents in all",
+    "answer": {
+     "text": "32",
+     "also": [
+      "32¢"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "cents Ana has",
+    "answer": {
+     "text": "35",
+     "also": [
+      "35¢"
+     ],
+     "work": "10 + 10 + 10 + 5"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "cents Ben has",
+    "answer": {
+     "text": "54",
+     "also": [
+      "54¢"
+     ],
+     "work": "25 + 25 + 1 + 1 + 1 + 1"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "dollars Mia has left",
+    "answer": {
+     "text": "2",
+     "also": [
+      "$2"
+     ],
+     "work": "5 − 3"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "change Kai gets",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5¢"
+     ],
+     "work": "25 + 25 − 45"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "dollars Omar has",
+    "answer": {
+     "text": "12",
+     "also": [
+      "$12"
+     ],
+     "work": "10 + 1 + 1"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Tell time to five minutes, and count and solve problems with money.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Write the time.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the money. Write the total.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

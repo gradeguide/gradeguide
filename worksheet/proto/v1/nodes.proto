@@ -54,6 +54,14 @@ message Node {
     GridShape grid_shape = 90;
     FractionCircle fraction_circle = 91;
     MeasuringJug measuring_jug = 92;
+    // Kindergarten to grade 2.
+    TenFrame ten_frame = 35;
+    NumberBond number_bond = 36;
+    PictureGroups picture_groups = 37;
+    NumberGrid number_grid = 38;
+    Coins coins = 39;
+    TallyChart tally_chart = 60;
+    LengthStrips length_strips = 61;
   }
 }
 
@@ -213,6 +221,9 @@ message AreaModel {
 message DotArray {
   int32 rows = 1;
   int32 cols = 2;
+  // Distance between dot centres. Zero: the standard 18. Larger dots are
+  // easier for a young child to touch and count.
+  int32 gap = 3;
 }
 
 // TapeDiagram is one or more labelled tapes made of equal units, for
@@ -329,6 +340,8 @@ message BaseTenBlocks {
   int32 hundreds = 2;
   int32 tens = 3;
   int32 ones = 4;
+  // Side of a unit cube. Zero: the standard 4.4.
+  double unit = 5;
 }
 
 // LongDivision is a dividend under a division bracket, with room to work.
@@ -508,4 +521,107 @@ message MeasuringJug {
   int32 level = 4;
   // Printed under the scale, such as "mL" or "liters".
   string unit = 5;
+}
+
+// TenFrame is one or more 2 by 5 frames with counters filled in reading
+// order, a frame at a time.
+message TenFrame {
+  int32 filled = 1;
+  // How many frames. Zero: enough for filled, at least one.
+  int32 frames = 2;
+}
+
+// NumberBond is a whole in a circle joined to its two parts below. Each
+// circle shows a number or holds a field.
+message NumberBond {
+  Part whole = 1;
+  Part left = 2;
+  Part right = 3;
+
+  message Part {
+    string text = 1;
+    Field field = 2;
+  }
+}
+
+// PictureGroups is simple pictures of one thing in groups, such as 3 apples
+// and 4 apples, for counting. The last crossed_out pictures are crossed out,
+// for taking away.
+message PictureGroups {
+  Picture picture = 1;
+  repeated int32 groups = 2;
+  int32 crossed_out = 3;
+  // Draw a frame round each group, so two groups to add stay apart.
+  bool framed = 4;
+
+  enum Picture {
+    PICTURE_UNSPECIFIED = 0;
+    PICTURE_STAR = 1;
+    PICTURE_APPLE = 2;
+    PICTURE_HEART = 3;
+    PICTURE_BALL = 4;
+  }
+}
+
+// NumberGrid is a piece of a hundred chart: rows by cols of numbers from
+// start, each row row_step more than the one above, some left as boxes to
+// fill in.
+message NumberGrid {
+  int32 start = 1;
+  int32 rows = 2;
+  int32 cols = 3;
+  repeated Cell blanks = 4;
+  // Cells drawn empty, with no number and no box, so a piece of the chart
+  // can have a shape such as a plus sign.
+  repeated int32 hidden = 5;
+  // How much each row adds. Zero: cols, so the numbers run on.
+  int32 row_step = 6;
+
+  message Cell {
+    int32 number = 1;
+    Field field = 2;
+  }
+}
+
+// Coins is a row of US coins at their true relative sizes, each with its
+// name, a copper penny and ridged edges on the dime and quarter.
+message Coins {
+  repeated Coin coins = 1;
+
+  enum Coin {
+    COIN_UNSPECIFIED = 0;
+    COIN_PENNY = 1;
+    COIN_NICKEL = 2;
+    COIN_DIME = 3;
+    COIN_QUARTER = 4;
+  }
+}
+
+// TallyChart is a chart of tally marks: a label and its marks on each row,
+// in groups of four strokes crossed by a fifth.
+message TallyChart {
+  string title = 1;
+  // The column headings, such as "Way" and "Tally".
+  repeated string header = 2;
+  repeated Row rows = 3;
+
+  message Row {
+    string label = 1;
+    int32 count = 2;
+  }
+}
+
+// LengthStrips is one or more strips, drawn as pencils, lined up at the
+// left so their lengths compare. With cubes, a row of unit cubes lies end
+// to end under the first strip, as long as it.
+message LengthStrips {
+  repeated Strip strips = 1;
+  bool cubes = 2;
+
+  message Strip {
+    // Printed at the left, such as "A".
+    string name = 1;
+    // The length in units.
+    int32 units = 2;
+  }
 }

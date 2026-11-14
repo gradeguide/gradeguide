@@ -29,6 +29,15 @@ import {
   WorkSpaceComponent,
 } from './widgets.component.js';
 import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
+import {
+  CoinsComponent,
+  LengthStripsComponent,
+  NumberBondComponent,
+  NumberGridComponent,
+  PictureGroupsComponent,
+  TallyChartComponent,
+  TenFrameComponent,
+} from './widgets_k2.component.js';
 
 // NodeComponent draws any node by its kind. Rows and stacks draw their
 // children with this component again.
@@ -37,6 +46,13 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MathComponent,
+    TenFrameComponent,
+    NumberBondComponent,
+    PictureGroupsComponent,
+    NumberGridComponent,
+    CoinsComponent,
+    TallyChartComponent,
+    LengthStripsComponent,
     NumberLineComponent,
     FractionBarComponent,
     FractionWallComponent,
@@ -179,6 +195,27 @@ import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } fr
             </div>
           </div>
         }
+      }
+      @case ('tenFrame') {
+        <ws-ten-frame [node]="k.value" [filled]="filled()" />
+      }
+      @case ('numberBond') {
+        <ws-number-bond [node]="k.value" [filled]="filled()" />
+      }
+      @case ('pictureGroups') {
+        <ws-picture-groups [node]="k.value" [filled]="filled()" />
+      }
+      @case ('numberGrid') {
+        <ws-number-grid [node]="k.value" [filled]="filled()" />
+      }
+      @case ('coins') {
+        <ws-coins [node]="k.value" [filled]="filled()" />
+      }
+      @case ('tallyChart') {
+        <ws-tally-chart [node]="k.value" [filled]="filled()" />
+      }
+      @case ('lengthStrips') {
+        <ws-length-strips [node]="k.value" [filled]="filled()" />
       }
       @case ('choices') {
         <ws-choices [node]="k.value" [filled]="filled()" />

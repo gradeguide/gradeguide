@@ -1,0 +1,717 @@
+{
+ "worksheetId": "ws-g2-length-problems",
+ "title": "Length problems and number lines",
+ "headerLabels": [
+  "2.MD.B.6",
+  "2.MD.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the jumps of 10. Write the sum.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "10"
+           },
+           {
+            "tick": 2,
+            "text": "20"
+           },
+           {
+            "tick": 3,
+            "text": "30"
+           },
+           {
+            "tick": 4,
+            "text": "40"
+           },
+           {
+            "tick": 6,
+            "text": "60"
+           },
+           {
+            "tick": 7,
+            "text": "70"
+           },
+           {
+            "tick": 8,
+            "text": "80"
+           },
+           {
+            "tick": 9,
+            "text": "90"
+           },
+           {
+            "tick": 10,
+            "text": "100"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 5,
+            "field": {
+             "id": "q1",
+             "label": "where 30 + 20 lands",
+             "answer": {
+              "text": "50"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 3,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           3,
+           4
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30 + 20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "30 + 20",
+             "answer": {
+              "text": "50"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "50; 30 + 20 = 50"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "10"
+           },
+           {
+            "tick": 2,
+            "text": "20"
+           },
+           {
+            "tick": 3,
+            "text": "30"
+           },
+           {
+            "tick": 5,
+            "text": "50"
+           },
+           {
+            "tick": 6,
+            "text": "60"
+           },
+           {
+            "tick": 7,
+            "text": "70"
+           },
+           {
+            "tick": 8,
+            "text": "80"
+           },
+           {
+            "tick": 9,
+            "text": "90"
+           },
+           {
+            "tick": 10,
+            "text": "100"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 4,
+            "field": {
+             "id": "q2",
+             "label": "where 30 + 10 lands",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 3,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           3
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30 + 10"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "30 + 10",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40; 30 + 10 = 40"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-number-line-tens",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Show adding tens as jumps on a number line from 0 to 100.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The number line is marked in tens, so each jump is one length of 10. This represents a sum as a length from 0, the model grade 2 uses for addition on a number line.",
+      "misconceptions": [
+       "Counts each jump as 1 instead of 10.",
+       "Counts the starting mark as a jump."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 326
+    },
+    {
+     "label": "B",
+     "instruction": "Count the jumps back. Write the difference.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "10"
+           },
+           {
+            "tick": 2,
+            "text": "20"
+           },
+           {
+            "tick": 3,
+            "text": "30"
+           },
+           {
+            "tick": 4,
+            "text": "40"
+           },
+           {
+            "tick": 5,
+            "text": "50"
+           },
+           {
+            "tick": 6,
+            "text": "60"
+           },
+           {
+            "tick": 8,
+            "text": "80"
+           },
+           {
+            "tick": 9,
+            "text": "90"
+           },
+           {
+            "tick": 10,
+            "text": "100"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 7,
+            "field": {
+             "id": "q3",
+             "label": "where 90 − 20 lands",
+             "answer": {
+              "text": "70"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 9,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           7,
+           8
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "90 − 20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "90 − 20",
+             "answer": {
+              "text": "70"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "70; 90 − 20 = 70"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "numberLine": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "labels": [
+           {
+            "text": "0"
+           },
+           {
+            "tick": 1,
+            "text": "10"
+           },
+           {
+            "tick": 2,
+            "text": "20"
+           },
+           {
+            "tick": 3,
+            "text": "30"
+           },
+           {
+            "tick": 5,
+            "text": "50"
+           },
+           {
+            "tick": 6,
+            "text": "60"
+           },
+           {
+            "tick": 7,
+            "text": "70"
+           },
+           {
+            "tick": 8,
+            "text": "80"
+           },
+           {
+            "tick": 9,
+            "text": "90"
+           },
+           {
+            "tick": 10,
+            "text": "100"
+           }
+          ],
+          "blanks": [
+           {
+            "tick": 4,
+            "field": {
+             "id": "q4",
+             "label": "where 70 − 30 lands",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ],
+          "hasArrow": true,
+          "arrowTick": 7,
+          "hideWholeLabels": true,
+          "jumpTicks": [
+           4,
+           5,
+           6
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "70 − 30"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "70 − 30",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "40; 70 − 30 = 40"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-number-line-back",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Show subtracting tens as jumps back on a number line.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Jumps to the left show subtraction as moving back along the line. Placed after the adding items, they show both operations on the same model.",
+      "misconceptions": [
+       "Counts the starting mark as the first jump back.",
+       "Jumps to the right, as in the adding items."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 326
+    }
+   ],
+   "estimatedHeight": 660
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A red ribbon is 35 inches long. A blue ribbon is 18 inches long. How much longer is the red ribbon?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q5",
+           "label": "how much longer the red ribbon is",
+           "answer": {
+            "text": "17",
+            "also": [
+             "17 inches"
+            ],
+            "work": "35 − 18"
+           }
+          }
+         }
+        }
+       ],
+       "key": "17"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Zoe jumps 46 centimeters. Then she jumps 38 centimeters. How far does she jump in all?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q6",
+           "label": "how far Zoe jumps",
+           "answer": {
+            "text": "84",
+            "also": [
+             "84 centimeters",
+             "84 cm"
+            ],
+            "work": "46 + 38"
+           }
+          }
+         }
+        }
+       ],
+       "key": "84"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A rope is 90 feet long. Raj cuts off 25 feet. How long is the rope now?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q7",
+           "label": "length of the rope now",
+           "answer": {
+            "text": "65",
+            "also": [
+             "65 feet"
+            ],
+            "work": "90 − 25"
+           }
+          }
+         }
+        }
+       ],
+       "key": "65"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A plant was 17 centimeters tall. It grew 8 centimeters. How tall is it now?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q8",
+           "label": "height of the plant now",
+           "answer": {
+            "text": "25",
+            "also": [
+             "25 centimeters",
+             "25 cm"
+            ],
+            "work": "17 + 8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "25"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g2-length-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve adding and subtracting stories about lengths in the same unit.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories use inches, feet and centimeters, with both lengths in the same unit. They mix comparing, joining and removing, so students decide whether to add or subtract. Students should write the unit with the answer.",
+      "misconceptions": [
+       "Adds the two lengths in a how-much-longer story.",
+       "Leaves out the unit, or writes the wrong one."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 598
+    }
+   ],
+   "estimatedHeight": 602
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "where 30 + 20 lands",
+    "answer": {
+     "text": "50"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "30 + 20",
+    "answer": {
+     "text": "50"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "where 30 + 10 lands",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "30 + 10",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "where 90 − 20 lands",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "90 − 20",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "where 70 − 30 lands",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "70 − 30",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "how much longer the red ribbon is",
+    "answer": {
+     "text": "17",
+     "also": [
+      "17 inches"
+     ],
+     "work": "35 − 18"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "how far Zoe jumps",
+    "answer": {
+     "text": "84",
+     "also": [
+      "84 centimeters",
+      "84 cm"
+     ],
+     "work": "46 + 38"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "length of the rope now",
+    "answer": {
+     "text": "65",
+     "also": [
+      "65 feet"
+     ],
+     "work": "90 − 25"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "height of the plant now",
+    "answer": {
+     "text": "25",
+     "also": [
+      "25 centimeters",
+      "25 cm"
+     ],
+     "work": "17 + 8"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract on a number line, then solve length stories.",
+  "principles": [
+   "PRINCIPLE_NUMBER_LINE"
+  ]
+ },
+ "advice": [
+  "\"Count the jumps of 10. Write the sum.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the jumps back. Write the difference.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
