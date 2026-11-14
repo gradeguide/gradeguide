@@ -2,9 +2,8 @@
  "worksheetId": "ws-shapes-grade-3",
  "title": "Sorting quadrilaterals",
  "headerLabels": [
-  "4.G.A.2",
   "3.G.A.1",
-  "2.G.A.3",
+  "3.NF.A.1",
   "3.G.A.2"
  ],
  "pages": [
@@ -12,7 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the pairs of parallel sides and the right angles.",
+     "instruction": "Check yes or no for each name.",
+     "explainer": "A rectangle has 4 square corners. A rhombus has 4 sides of equal length. A square has both.",
      "items": [
       {
        "label": "1",
@@ -22,32 +22,57 @@
           "points": [
            {},
            {
-            "x": 12,
-            "y": 2
+            "x": 4
            },
            {
-            "x": 10,
-            "y": 8
+            "x": 4,
+            "y": 4
            },
            {
-            "x": 2,
-            "y": 6
+            "y": 4
            }
-          ]
+          ],
+          "sides": [
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           },
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Parallel pairs:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rectangle?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q1",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "0"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q1",
+              "label": "is it a rectangle",
+              "answer": {
+               "text": "yes"
+              }
              }
             }
            }
@@ -55,17 +80,59 @@
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Right angles:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rhombus?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q1-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q1-2",
+              "label": "is it a rhombus",
+              "answer": {
+               "text": "yes"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A square?"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q1-3",
+              "label": "is it a square",
+              "answer": {
+               "text": "yes"
+              }
              }
             }
            }
@@ -73,7 +140,7 @@
          }
         }
        ],
-       "key": "Parallel pairs: 0; Right angles: 0"
+       "key": "yes; yes; yes"
       },
       {
        "label": "2",
@@ -83,31 +150,58 @@
           "points": [
            {},
            {
-            "x": 10
+            "x": 6
            },
            {
-            "x": 14,
-            "y": 6
+            "x": 9,
+            "y": 4
            },
            {
-            "x": 4,
-            "y": 6
+            "x": 3,
+            "y": 4
            }
-          ]
+          ],
+          "sides": [
+           {
+            "text": "6 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "6 cm"
+           },
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Parallel pairs:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rectangle?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q2",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "2"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q2",
+              "label": "is it a rectangle",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -115,17 +209,59 @@
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Right angles:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rhombus?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q2-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q2-2",
+              "label": "is it a rhombus",
+              "answer": {
+               "text": "no"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A square?"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q2-3",
+              "label": "is it a square",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -133,7 +269,7 @@
          }
         }
        ],
-       "key": "Parallel pairs: 2; Right angles: 0"
+       "key": "no; no; no"
       },
       {
        "label": "3",
@@ -143,30 +279,58 @@
           "points": [
            {},
            {
-            "x": 8
+            "x": 9
            },
            {
-            "x": 8,
-            "y": 8
+            "x": 6,
+            "y": 4
            },
            {
-            "y": 8
+            "x": 3,
+            "y": 4
            }
-          ]
+          ],
+          "sides": [
+           {
+            "text": "9 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "3 cm"
+           },
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Parallel pairs:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rectangle?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q3",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "2"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q3",
+              "label": "is it a rectangle",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -174,17 +338,59 @@
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Right angles:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rhombus?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q3-2",
-             "label": "right angles",
-             "answer": {
-              "text": "4"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q3-2",
+              "label": "is it a rhombus",
+              "answer": {
+               "text": "no"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A square?"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q3-3",
+              "label": "is it a square",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -192,7 +398,7 @@
          }
         }
        ],
-       "key": "Parallel pairs: 2; Right angles: 4"
+       "key": "no; no; no"
       },
       {
        "label": "4",
@@ -200,157 +406,60 @@
         {
          "polygon": {
           "points": [
-           {
-            "y": 4
-           },
-           {
-            "x": 6
-           },
-           {
-            "x": 12,
-            "y": 4
-           },
-           {
-            "x": 6,
-            "y": 8
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Parallel pairs:"
-           },
-           {
-            "blank": {
-             "id": "q4",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "2"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Right angles:"
-           },
-           {
-            "blank": {
-             "id": "q4-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Parallel pairs: 2; Right angles: 0"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "polygon": {
-          "points": [
            {},
            {
-            "x": 14
-           },
-           {
-            "x": 10,
-            "y": 6
-           },
-           {
-            "x": 4,
-            "y": 6
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Parallel pairs:"
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "1"
-             }
-            }
-           }
-          ]
-         }
-        },
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "Right angles:"
-           },
-           {
-            "blank": {
-             "id": "q5-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "Parallel pairs: 1; Right angles: 0"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "polygon": {
-          "points": [
-           {
-            "y": 6
-           },
-           {
-            "x": 4
+            "x": 5
            },
            {
             "x": 8,
-            "y": 6
+            "y": 4
            },
            {
-            "x": 4,
-            "y": 10
+            "x": 3,
+            "y": 4
            }
-          ]
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           },
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Parallel pairs:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rectangle?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q6",
-             "label": "pairs of parallel sides",
-             "answer": {
-              "text": "0"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q4",
+              "label": "is it a rectangle",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -358,17 +467,59 @@
          }
         },
         {
-         "math": {
-          "atoms": [
+         "row": {
+          "children": [
            {
-            "text": "Right angles:"
+            "math": {
+             "atoms": [
+              {
+               "text": "A rhombus?"
+              }
+             ]
+            }
            },
            {
-            "blank": {
-             "id": "q6-2",
-             "label": "right angles",
-             "answer": {
-              "text": "0"
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q4-2",
+              "label": "is it a rhombus",
+              "answer": {
+               "text": "yes"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A square?"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "yes",
+              "no"
+             ],
+             "field": {
+              "id": "q4-3",
+              "label": "is it a square",
+              "answer": {
+               "text": "no"
+              }
              }
             }
            }
@@ -376,33 +527,34 @@
          }
         }
        ],
-       "key": "Parallel pairs: 0; Right angles: 0"
+       "key": "no; yes; no"
       }
      ],
      "columns": 2,
-     "fragmentId": "frag-quadrilateral-features",
-     "stage": "STAGE_PRACTICE",
+     "fragmentId": "frag-quadrilateral-names",
+     "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Describe quadrilaterals by parallel sides and right angles.",
+      "purpose": "Decide whether a quadrilateral is a rectangle, a rhombus or a square from its sides and corners.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+      "rationale": "3.G.A.1 asks students to see that one shape can belong to several categories. Answering yes or no for each name, instead of choosing one name, makes a square a rectangle and a rhombus at once. Side lengths are printed and square corners are marked, so students decide from the attributes rather than from how the shape looks. One square is drawn turned on a corner so students do not rely on its position.",
+      "misconceptions": [
+       "A square is not a rectangle because a rectangle has two long sides and two short sides.",
+       "A square turned on its corner is a different shape, often called a diamond."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
+      ]
      },
-     "estimatedHeight": 790
-    }
-   ],
-   "estimatedHeight": 794
-  },
-  {
-   "sections": [
+     "estimatedHeight": 608
+    },
     {
      "label": "B",
-     "instruction": "Write the fraction that is shaded.",
-     "explainer": "The whole is cut into equal parts. Count the shaded parts, then all the parts.",
+     "instruction": "Write the fraction of the whole that is shaded.",
      "items": [
       {
-       "label": "7",
+       "label": "5",
        "nodes": [
         {
          "fractionBar": {
@@ -418,7 +570,7 @@
           "atoms": [
            {
             "fractionBlank": {
-             "id": "q7",
+             "id": "q5",
              "label": "the shaded fraction",
              "answer": {
               "text": "2/3"
@@ -432,7 +584,7 @@
        "key": "2/3"
       },
       {
-       "label": "8",
+       "label": "6",
        "nodes": [
         {
          "fractionBar": {
@@ -449,7 +601,7 @@
           "atoms": [
            {
             "fractionBlank": {
-             "id": "q8",
+             "id": "q6",
              "label": "the shaded fraction",
              "answer": {
               "text": "3/4"
@@ -463,7 +615,7 @@
        "key": "3/4"
       },
       {
-       "label": "9",
+       "label": "7",
        "nodes": [
         {
          "fractionBar": {
@@ -478,7 +630,7 @@
           "atoms": [
            {
             "fractionBlank": {
-             "id": "q9",
+             "id": "q7",
              "label": "the shaded fraction",
              "answer": {
               "text": "1/2"
@@ -496,15 +648,23 @@
      "fragmentId": "frag-halves-thirds-fourths",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Name halves, thirds and fourths of a shape cut into equal parts.",
+      "purpose": "Name the shaded part of a rectangle cut into halves, thirds or fourths as a fraction.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each bar is cut into 2, 3 or 4 equal parts, the denominators grade 3 starts with. The bottom number names the parts in the whole and the top number counts the shaded parts. Keeping the denominators small lets students attend to that meaning before the parts get thin.",
+      "misconceptions": [
+       "Writing shaded parts over unshaded parts: 1 of 3 shaded is written 1/2.",
+       "Naming a part by its count without checking that the parts are equal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 176
+     "estimatedHeight": 150
     }
    ],
-   "estimatedHeight": 180
+   "estimatedHeight": 766
   }
  ],
  "key": [
@@ -512,9 +672,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "pairs of parallel sides",
+    "label": "is it a rectangle",
     "answer": {
-     "text": "0"
+     "text": "yes"
     }
    }
   },
@@ -522,9 +682,19 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-2",
-    "label": "right angles",
+    "label": "is it a rhombus",
     "answer": {
-     "text": "0"
+     "text": "yes"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "is it a square",
+    "answer": {
+     "text": "yes"
     }
    }
   },
@@ -532,9 +702,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "pairs of parallel sides",
+    "label": "is it a rectangle",
     "answer": {
-     "text": "2"
+     "text": "no"
     }
    }
   },
@@ -542,9 +712,19 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-2",
-    "label": "right angles",
+    "label": "is it a rhombus",
     "answer": {
-     "text": "0"
+     "text": "no"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "is it a square",
+    "answer": {
+     "text": "no"
     }
    }
   },
@@ -552,9 +732,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "pairs of parallel sides",
+    "label": "is it a rectangle",
     "answer": {
-     "text": "2"
+     "text": "no"
     }
    }
   },
@@ -562,9 +742,19 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "right angles",
+    "label": "is it a rhombus",
     "answer": {
-     "text": "4"
+     "text": "no"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "is it a square",
+    "answer": {
+     "text": "no"
     }
    }
   },
@@ -572,9 +762,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "pairs of parallel sides",
+    "label": "is it a rectangle",
     "answer": {
-     "text": "2"
+     "text": "no"
     }
    }
   },
@@ -582,9 +772,19 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "right angles",
+    "label": "is it a rhombus",
     "answer": {
-     "text": "0"
+     "text": "yes"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "is it a square",
+    "answer": {
+     "text": "no"
     }
    }
   },
@@ -592,19 +792,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "pairs of parallel sides",
+    "label": "the shaded fraction",
     "answer": {
-     "text": "1"
-    }
-   }
-  },
-  {
-   "itemLabel": "5",
-   "field": {
-    "id": "q5-2",
-    "label": "right angles",
-    "answer": {
-     "text": "0"
+     "text": "2/3"
     }
    }
   },
@@ -612,19 +802,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "pairs of parallel sides",
+    "label": "the shaded fraction",
     "answer": {
-     "text": "0"
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6-2",
-    "label": "right angles",
-    "answer": {
-     "text": "0"
+     "text": "3/4"
     }
    }
   },
@@ -634,40 +814,17 @@
     "id": "q7",
     "label": "the shaded fraction",
     "answer": {
-     "text": "2/3"
-    }
-   }
-  },
-  {
-   "itemLabel": "8",
-   "field": {
-    "id": "q8",
-    "label": "the shaded fraction",
-    "answer": {
-     "text": "3/4"
-    }
-   }
-  },
-  {
-   "itemLabel": "9",
-   "field": {
-    "id": "q9",
-    "label": "the shaded fraction",
-    "answer": {
      "text": "1/2"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Describe quadrilaterals by their sides and angles, and split shapes into equal parts.",
+  "purpose": "Sort quadrilaterals by their sides and corners, and name equal parts of a shape.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Both grade 3 geometry standards are on one page. The quadrilaterals section asks about each name separately, so students see that one shape can have more than one name. The second section names equal parts of a shape as fractions, as 3.G.A.2 asks."
  },
- "advice": [
-  "\"Count the pairs of parallel sides and the right angles.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Write the fraction that is shaded.\" is practice, and nothing on the sheet introduces it with a worked example."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

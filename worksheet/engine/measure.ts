@@ -60,6 +60,8 @@ function drawing(n: Node, w: Writing): Drawing | undefined {
       return shapes.gridShape(k.value);
     case 'fractionCircle':
       return shapes.fractionCircle(k.value);
+    case 'measuringJug':
+      return shapes.measuringJug(k.value);
     case 'dataTable':
       return draw.dataTable(k.value, false, w);
   }
@@ -97,7 +99,7 @@ export function minWidth(n: Node, w: Writing = STANDARD_WRITING): number {
       return Math.max(0, ...k.value.children.map((c) => minWidth(c, w)));
     case 'choices':
       // A tick box, its gap, the option's text, and the gap to the next.
-      return k.value.options.reduce((w, o) => w + 16 + 5 + o.length * 6.8 + 12, 0);
+      return k.value.options.reduce((w, o) => w + 16 + 5 + o.length * 6.4 + 12, 0);
     case 'lines':
       return 220;
     case 'workSpace':

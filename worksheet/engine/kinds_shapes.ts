@@ -1,10 +1,21 @@
-// Item kinds that use the shape widgets: area by counting unit squares, and
-// halves, thirds and fourths of a circle.
+// Item kinds that use the shape widgets: area by counting unit squares,
+// halves, thirds and fourths of a circle, naming quadrilaterals, and reading
+// a measuring jug.
 import { create } from '@bufbuild/protobuf';
 
-import { type Node, FractionCircleSchema, GridShape_CellSchema, GridShapeSchema } from '../proto/v1/nodes_pb.js';
-import { type ItemKind } from '../proto/v1/worksheet_pb.js';
-import { blank, fractionBlank, frac, math, node } from './build.js';
+import {
+  type Node,
+  ChoicesSchema,
+  FractionCircleSchema,
+  GridShape_CellSchema,
+  GridShapeSchema,
+  MeasuringJugSchema,
+  Polygon_PointSchema,
+  Polygon_SideLabelSchema,
+  PolygonSchema,
+} from '../proto/v1/nodes_pb.js';
+import { type ItemKind, ClassifyShape_Family, ReadVolume_Unit } from '../proto/v1/worksheet_pb.js';
+import { blank, fractionBlank, frac, math, node, row } from './build.js';
 import { type Ctx, inRange, list, pickFresh } from './kinds.js';
 
 export function generateShapes(kind: ItemKind, ctx: Ctx): Node[] | undefined {
@@ -48,7 +59,53 @@ export function generateShapes(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         math(fractionBlank(ctx.fields.field('fraction shaded', frac(n, d))), 'is shaded.'),
       ];
     }
+    case 'classifyShape': {
+      if (k.value.family !== ClassifyShape_Family.QUADRILATERAL_NAMES) {
+        return undefined;
+      }
+      const i = pickFresh(ctx, k.case + k.value.family, () => rng.int(0, NAMED_QUADS.length - 1));
+      const [pts, names] = NAMED_QUADS[i];
+      const sides = pts.map((p, j) => {
+        const q = pts[(j + 1) % pts.length];
+        return create(Polygon_SideLabelSchema, { text: `${Math.round(Math.hypot(q[0] - p[0], q[1] - p[1]))} cm` });
+      });
+      const ask = (name: string, yes: boolean) =>
+        row(math(`A ${name}?`), node({ case: 'choices', value: create(ChoicesSchema, { options: ['yes', 'no'], field: ctx.fields.field(`is it a ${name}`, yes ? 'yes' : 'no') }) }));
+      return [
+        node({
+          case: 'polygon',
+          value: create(PolygonSchema, { points: pts.map(([x, y]) => create(Polygon_PointSchema, { x, y })), sides, markRightAngles: true }),
+        }),
+        ask('rectangle', names.includes('rectangle')),
+        ask('rhombus', names.includes('rhombus')),
+        ask('square', names.includes('square')),
+      ];
+    }
+    case 'readVolume': {
+      const ml = k.value.unit === ReadVolume_Unit.MILLILITERS;
+      const [capacity, step, labelled, unit, word] = ml ? [500, 50, 2, 'mL', 'milliliters'] : [10, 1, 2, 'L', 'liters'];
+      const level = pickFresh(ctx, k.case + k.value.unit, () => step * rng.int(1, capacity / step - 1));
+      return [
+        node({ case: 'measuringJug', value: create(MeasuringJugSchema, { capacity, step, labelled, level, unit }) }),
+        // The box is sized for the number and a short unit; the word is printed.
+        math(blank(ctx.fields.field(`${word} in the jug`, String(level), [`${level} ${unit}`])), word),
+      ];
+    }
   }
   return undefined;
 }
+
+type Pts = [number, number][];
+
+// Quadrilaterals with whole-number sides, in centimeters, and the names that
+// fit each. A square turned on its corner is still a square.
+const NAMED_QUADS: [Pts, string[]][] = [
+  [[[0, 0], [4, 0], [4, 4], [0, 4]], ['rectangle', 'rhombus', 'square']],
+  [[[0, 3], [4, 0], [7, 4], [3, 7]], ['rectangle', 'rhombus', 'square']],
+  [[[0, 0], [7, 0], [7, 3], [0, 3]], ['rectangle']],
+  [[[0, 0], [3, 0], [3, 5], [0, 5]], ['rectangle']],
+  [[[0, 0], [5, 0], [8, 4], [3, 4]], ['rhombus']],
+  [[[0, 0], [6, 0], [9, 4], [3, 4]], []],
+  [[[0, 0], [9, 0], [6, 4], [3, 4]], []],
+];
 

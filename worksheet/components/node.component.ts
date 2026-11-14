@@ -28,8 +28,8 @@ import {
   DataTableComponent,
   WorkSpaceComponent,
 } from './widgets.component.js';
-import { FractionCircleComponent, GridShapeComponent } from './widgets_shapes.component.js';
 import { G68WidgetComponent } from './widgets_g68.component.js';
+import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
 
 // NodeComponent draws any node by its kind. Rows and stacks draw their
 // children with this component again.
@@ -65,6 +65,7 @@ import { G68WidgetComponent } from './widgets_g68.component.js';
     GridShapeComponent,
     FractionCircleComponent,
     G68WidgetComponent,
+    MeasuringJugComponent,
   ],
   host: { '[class]': 'kind()' },
   template: `
@@ -148,6 +149,9 @@ import { G68WidgetComponent } from './widgets_g68.component.js';
       }
       @case ('fractionCircle') {
         <ws-fraction-circle [node]="k.value" [filled]="filled()" />
+      }
+      @case ('measuringJug') {
+        <ws-measuring-jug [node]="k.value" />
       }
       @case ('barGraph') {
         <ws-bar-graph [node]="k.value" [filled]="filled()" />

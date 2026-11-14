@@ -103,22 +103,26 @@
      "fragmentId": "frag-hundredths-grid",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Write hundredths as fractions and decimals.",
+      "purpose": "Write hundredths as fractions and as decimals.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The grid ties decimal notation to the fraction it stands for, so 0.3 and 0.30 can be seen to be the same amount.",
+      "rationale": "The grid ties decimal notation to the fraction it stands for. Students see that 0.3 and 0.30 shade the same amount.",
       "misconceptions": [
-       "0.30 is bigger than 0.3"
+       "0.30 is bigger than 0.3.",
+       "Writing 7 hundredths as 0.7."
+      ],
+      "references": [
+       "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
       ]
      },
      "estimatedHeight": 250
     },
     {
      "label": "B",
-     "instruction": "Write <, > or = in each circle.",
-     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "Compare the tenths first, then the hundredths. 0.4 is the same as 0.40.",
      "items": [
       {
        "label": "3",
@@ -453,8 +457,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Pairs mix tenths with hundredths, so the decimal with more digits is sometimes the smaller one. Students compare place by place, or rewrite tenths as hundredths, instead of comparing digit strings as whole numbers.",
       "misconceptions": [
-       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4.",
+       "Thinking the decimal with fewer digits is larger, because hundredths are smaller than tenths: 0.4 > 0.45."
+      ],
+      "references": [
+       "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
       ]
      },
      "estimatedHeight": 268
@@ -636,10 +645,10 @@
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
   ],
-  "rationale": "The grids show 0.4 as 40 hundredths before the child compares 0.4 with 0.38 in symbols."
+  "rationale": "The grids show 0.4 as 40 hundredths before students compare 0.4 with 0.38 in symbols."
  },
  "advice": [
-  "\"Write <, > or = in each circle.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

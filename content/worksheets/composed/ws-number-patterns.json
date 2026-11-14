@@ -282,16 +282,21 @@
      "fragmentId": "frag-continue-the-pattern",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Generate a number pattern from a rule.",
+      "purpose": "Write the terms of a number pattern from a rule.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The rule and the first three terms are given, so students check the rule against the terms before extending the pattern. Steps up to 12 keep each addition mental while crossing tens.",
+      "misconceptions": [
+       "Adding the step to the first term every time instead of to the last term.",
+       "Continuing by the ones digit only: 18, 25, 32, 39, 46, 43."
       ]
      },
      "estimatedHeight": 346
     },
     {
      "label": "B",
-     "instruction": "What is the rule? Write the number added each time.",
+     "instruction": "Write the rule for each pattern.",
      "items": [
       {
        "label": "5",
@@ -530,7 +535,11 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Finding the rule reverses the previous section, so the child checks a rule against several pairs of terms rather than one."
+      "rationale": "Finding the rule reverses the previous section. Students check the rule against every pair of terms, not only the first, which is how 4.OA.C.5 expects a rule to be confirmed.",
+      "misconceptions": [
+       "Writing the first term as the rule.",
+       "Finding the difference of the first two terms only and not checking the rest."
+      ]
      },
      "estimatedHeight": 226
     },
@@ -566,11 +575,14 @@
      "fragmentId": "frag-shade-multiples",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "See multiples as a pattern on a hundred chart.",
+      "purpose": "Shade the multiples of a number on a hundred chart and describe the pattern.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+      "rationale": "Shaded multiples form columns or diagonals on the chart, a pattern students can describe and extend. Shading two numbers shows that every multiple of 6 is also a multiple of 3.",
+      "misconceptions": [
+       "Shading numbers that contain the digit, such as 14 and 24 for multiples of 4."
+      ]
      },
      "estimatedHeight": 215
     }
@@ -751,15 +763,15 @@
   }
  ],
  "design": {
-  "purpose": "Make and describe number patterns from a rule.",
+  "purpose": "Write and describe number patterns from a rule.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
   ],
-  "rationale": "Following a rule comes before finding one; shading multiples ends with a pattern in a grid instead of a list."
+  "rationale": "Following a rule comes before finding one. Shading multiples ends the sheet with a pattern in a grid instead of a list."
  },
  "advice": [
   "\"Follow the rule. Write the next three numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"What is the rule? Write the number added each time.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the rule for each pattern.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

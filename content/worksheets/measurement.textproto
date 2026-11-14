@@ -12,7 +12,9 @@ fragments {
   design {
     purpose: "Express lengths in a larger unit in terms of a smaller unit."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "A table shows that each row is the first row times a number, which is the multiplication the conversion is."
+    rationale: "The first row of each table gives the relationship, such as 1 foot = 12 inches. Each later row is that row multiplied, which is the multiplication a conversion is. 4.MD.A.1 asks for these tables, recorded as number pairs."
+    misconceptions: "Dividing instead of multiplying, because the new unit is smaller."
+    misconceptions: "Adding the conversion number for each row: 2 feet = 24, 3 feet = 25."
   }
 }
 
@@ -23,33 +25,42 @@ fragments {
   items { kind { unit_conversion { conversions: [CONVERSION_HOURS_MINUTES, CONVERSION_MINUTES_SECONDS, CONVERSION_KILOGRAMS_GRAMS, CONVERSION_POUNDS_OUNCES, CONVERSION_LITERS_MILLILITERS] } } count: 3 min_count: 2 }
   max_columns: 3
   design {
-    purpose: "Express times, masses and volumes in a smaller unit."
+    purpose: "Express times, masses and liquid volumes in a smaller unit."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Time, mass and volume conversions sit together so students read the relationship in the first row of each table instead of assuming a factor of 10 or 100."
+    misconceptions: "Using 100 minutes in an hour."
+    misconceptions: "Using 10 ounces in a pound."
   }
 }
 
 fragments {
   id: "frag-angle-turns"
-  instruction: "Fill in the blanks."
+  instruction: "Write the missing number."
   stage: STAGE_INTRODUCE
-  explainer: "A full turn is 360 degrees. An angle that turns through 1/360 of a full turn is a one-degree angle."
+  explainer: "A full turn is 360 degrees."
   items { kind { angle_turn {} } count: 6 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Measure an angle as a turn: a fraction of a circle, or a count of one-degree angles."
+    purpose: "Find the measure of an angle from the fraction of a full turn it makes."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "4.MD.C.5 defines a degree as 1/360 of a full turn. The items give an angle as a fraction of a turn, such as 1/8, so students find the degrees by dividing 360. Quarter, half and three-quarter turns give the benchmarks of 90, 180 and 270."
+    misconceptions: "Thinking a full turn is 100 degrees."
+    misconceptions: "Treating 1/8 of a turn as 8 degrees."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-bar-graph-questions"
-  instruction: "Use the bar graph to answer."
+  instruction: "Use the bar graph to answer the questions."
   stage: STAGE_PRACTICE
   items { kind { bar_graph_questions { values { min: 2 max: 20 } step: 2 } } count: 2 min_count: 1 }
   max_columns: 2
   design {
-    purpose: "Read a scaled bar graph and answer how many, how many more, and how many in all."
+    purpose: "Read a scaled bar graph and answer how many, how many more and how many in all."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "The scale counts by 2, so odd values fall between gridlines and the child has to read the scale, not count lines."
+    rationale: "The scale counts by 2, so odd values fall halfway between gridlines and students read the scale rather than counting lines. The three questions match the one-step and two-step problems 3.MD.B.3 describes."
+    misconceptions: "Counting gridlines as 1 each when the scale counts by 2."
+    misconceptions: "Answering how many more with the larger value."
   }
 }

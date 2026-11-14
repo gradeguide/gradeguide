@@ -102,7 +102,14 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+      "rationale": "Some items divide exactly and some do not, so students check each remainder instead of always writing R0 or never writing one. Working space under each item leaves room for every step.",
+      "misconceptions": [
+       "A remainder greater than or equal to the divisor.",
+       "Leaving out a zero in the quotient when a place does not divide: 812 ÷ 4 = 23."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
+      ]
      },
      "estimatedHeight": 264
     },
@@ -165,13 +172,17 @@
      "fragmentId": "frag-division-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Divide multi-digit numbers in word problems, including what is left over.",
+      "purpose": "Divide multi-digit numbers by one-digit numbers in word problems.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "One problem in each pair asks for the leftover, so the child has to decide what the remainder means.",
+      "rationale": "The problems use both meanings of division: how many groups, as in the muffin boxes, and how many in each group, as in the stickers. The sticker problem has a second part that changes the total, so students divide again rather than reuse the first answer. Problems whose remainder must be interpreted are not included yet.",
       "misconceptions": [
-       "Ignoring the leftover, or giving the remainder as the answer."
+       "Choosing the operation from a key word, such as each, instead of from the story.",
+       "Dividing the smaller number by the larger."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 326
@@ -226,22 +237,22 @@
             "label": "6b",
             "prompt": [
              {
-              "text": "Then 7 more members join and the club gets 70 more stickers. All the stickers are shared equally again. How many does each member get now?"
+              "text": "The club gets 70 more stickers. All the stickers are shared equally again among the 7 members. How many does each member get now?"
              }
             ],
             "response": [
              {
               "workSpace": {
-               "rows": 5,
+               "rows": 4,
                "field": {
                 "id": "q6b",
-                "label": "Then 7 more members join and the club gets 70 more stickers.",
+                "label": "stickers each member gets after 70 more",
                 "answer": {
-                 "text": "12",
+                 "text": "24",
                  "also": [
-                  "12 stickers"
+                  "24 stickers"
                  ],
-                 "work": "(98 + 70) ÷ (7 + 7)"
+                 "work": "(98 + 70) ÷ 7"
                 }
                }
               }
@@ -252,27 +263,31 @@
          }
         }
        ],
-       "key": "6a: 98 ÷ 7 = 14; 6b: (98 + 70) ÷ (7 + 7) = 12"
+       "key": "6a: 98 ÷ 7 = 14; 6b: (98 + 70) ÷ 7 = 24"
       }
      ],
      "columns": 1,
      "fragmentId": "frag-division-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Divide multi-digit numbers in word problems, including what is left over.",
+      "purpose": "Divide multi-digit numbers by one-digit numbers in word problems.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "One problem in each pair asks for the leftover, so the child has to decide what the remainder means.",
+      "rationale": "The problems use both meanings of division: how many groups, as in the muffin boxes, and how many in each group, as in the stickers. The sticker problem has a second part that changes the total, so students divide again rather than reuse the first answer. Problems whose remainder must be interpreted are not included yet.",
       "misconceptions": [
-       "Ignoring the leftover, or giving the remainder as the answer."
+       "Choosing the operation from a key word, such as each, instead of from the story.",
+       "Dividing the smaller number by the larger."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "continued": true,
-     "estimatedHeight": 420
+     "estimatedHeight": 388
     }
    ],
-   "estimatedHeight": 424
+   "estimatedHeight": 392
   }
  ],
  "key": [
@@ -382,22 +397,23 @@
    "itemLabel": "6b",
    "field": {
     "id": "q6b",
-    "label": "Then 7 more members join and the club gets 70 more stickers.",
+    "label": "stickers each member gets after 70 more",
     "answer": {
-     "text": "12",
+     "text": "24",
      "also": [
-      "12 stickers"
+      "24 stickers"
      ],
-     "work": "(98 + 70) ÷ (7 + 7)"
+     "work": "(98 + 70) ÷ 7"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Divide in context.",
+  "purpose": "Divide multi-digit numbers in word problems.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Three long divisions come first, then problems that need the same calculation."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

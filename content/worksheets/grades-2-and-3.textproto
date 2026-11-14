@@ -1,16 +1,26 @@
 # proto-file: worksheet/proto/v1/worksheet.proto
 # proto-message: gradeguide.worksheet.v1.Library
 #
-# Grade 2 sheets, and grade 3 skills that had no sheet of their own.
+# Grade 2 addition and subtraction within 100, and grade 3 skills that had no
+# sheet of their own.
 
 fragments {
   id: "frag-add-within-100"
   instruction: "Add."
-  stage: STAGE_PRACTICE
-  items { kind { column_add_subtract { digits: 2 regroup: true } } count: 8 min_count: 4 }
+  stage: STAGE_INTRODUCE
+  example {
+    item { column_add_subtract { digits: 2 regroup: true max_total: 100 } }
+    seed: 4
+    text: "Add the ones first. When the ones make 10 or more, write the new ten in the box above the tens."
+  }
+  items { kind { column_add_subtract { digits: 2 regroup: true max_total: 100 } } count: 8 min_count: 4 }
   design {
-    purpose: "Add two-digit numbers in columns, regrouping ten ones as a ten."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    purpose: "Add two-digit numbers with sums to 100, regrouping 10 ones as 1 ten."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every sum regroups and none passes 100, which keeps the set inside 2.NBT.B.5. The box above the tens column gives the new ten a fixed place, so students record it instead of holding it in their heads. Students who have not yet linked the written ten to a bundle of 10 ones benefit from base-ten blocks before this page."
+    misconceptions: "Writing both digits of the ones total under the ones column: 38 + 45 = 713."
+    misconceptions: "Forgetting to add the regrouped ten to the tens column."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -18,23 +28,34 @@ fragments {
   id: "frag-subtract-within-100"
   instruction: "Subtract."
   stage: STAGE_PRACTICE
-  items { kind { column_add_subtract { digits: 2 subtract: true regroup: true } } count: 8 min_count: 4 }
+  example {
+    item { column_add_subtract { digits: 2 subtract: true regroup: true max_total: 100 } }
+    seed: 6
+    text: "There are not enough ones to subtract. Trade 1 ten for 10 ones, then subtract the ones and the tens."
+  }
+  items { kind { column_add_subtract { digits: 2 subtract: true regroup: true max_total: 100 } } count: 8 min_count: 4 }
   design {
-    purpose: "Subtract two-digit numbers in columns, trading a ten for ten ones."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Taking the smaller digit from the larger in each column: 52 − 38 = 26."
+    purpose: "Subtract two-digit numbers within 100, trading 1 ten for 10 ones."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every item needs a trade in the ones column, so students decide when to regroup only by looking at the digits. The worked example names the trade as 1 ten for 10 ones, which is the place-value reason for crossing out and rewriting digits."
+    misconceptions: "Subtracting the smaller digit from the larger in each column, whichever is on top: 52 − 38 = 26."
+    misconceptions: "Taking 1 ten from the tens column without adding 10 to the ones."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-halves-thirds-fourths"
-  instruction: "Write the fraction that is shaded."
+  instruction: "Write the fraction of the whole that is shaded."
   stage: STAGE_INTRODUCE
-  explainer: "The whole is cut into equal parts. Count the shaded parts, then all the parts."
   items { kind { shaded_fraction { denominators: [2, 3, 4] model: MODEL_BAR } } count: 6 min_count: 3 }
   design {
-    purpose: "Name halves, thirds and fourths of a shape cut into equal parts."
+    purpose: "Name the shaded part of a rectangle cut into halves, thirds or fourths as a fraction."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each bar is cut into 2, 3 or 4 equal parts, the denominators grade 3 starts with. The bottom number names the parts in the whole and the top number counts the shaded parts. Keeping the denominators small lets students attend to that meaning before the parts get thin."
+    misconceptions: "Writing shaded parts over unshaded parts: 1 of 3 shaded is written 1/2."
+    misconceptions: "Naming a part by its count without checking that the parts are equal."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
 
@@ -44,97 +65,160 @@ fragments {
   stage: STAGE_PRACTICE
   items { kind { shaded_fraction { denominators: [2, 3, 4] child_shades: true } } count: 4 min_count: 2 }
   design {
-    purpose: "Shade halves, thirds and fourths."
+    purpose: "Shade a given number of halves, thirds or fourths of a rectangle."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Going from the fraction to the picture checks that students know what each number in the fraction tells them. The parts are drawn, so the task is about the meaning of the numbers, not about cutting equal parts."
+    misconceptions: "Shading as many parts as the bottom number."
   }
 }
 
 fragments {
   id: "frag-area-by-counting"
-  instruction: "Count the shaded squares. Each square is 1 square unit."
+  instruction: "Count the unit squares. Write the area."
   stage: STAGE_INTRODUCE
-  explainer: "Area is how many unit squares cover a shape, with no gaps and no overlaps."
+  explainer: "Each square is 1 square unit."
   example {
     item { area_by_counting { side { min: 3 max: 3 } } }
     seed: 2
-    text: "3 rows of 3 squares: **9 square units**."
+    text: "3 rows of 3 squares cover the shape. The area is 9 square units."
   }
   items { kind { area_by_counting { side { min: 2 max: 6 } } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Measure area by counting unit squares."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Counting squares comes before the formula, so length times width is a shortcut for a count the child has already made."
+    purpose: "Measure the area of a rectangle by counting unit squares."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Students count squares before they are given a formula, so length times width later describes a count they have already made. The example counts by rows, which is the step from counting one by one to multiplying. Side lengths stay at 6 or less so the squares can be counted without losing track."
+    misconceptions: "Counting the squares along the edges only, which gives a length around the shape instead of an area."
+    misconceptions: "Counting a square twice where a row and a column meet."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-area-of-l-shapes"
-  instruction: "Find the area. Some shapes are two rectangles joined."
+  instruction: "Find the area of each shape."
   stage: STAGE_PRACTICE
-  explainer: "Split an L shape into two rectangles, find each area, then add."
+  explainer: "Split a shape into two rectangles. Add their areas."
   items { kind { area_by_counting { side { min: 3 max: 6 } l_shapes: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Find the area of shapes made of rectangles."
+    purpose: "Find the area of a shape made of two rectangles by adding their areas."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "3.MD.C.7.d asks students to see area as additive. Mixing L shapes with plain rectangles makes students decide whether a shape needs splitting. The grid stays visible, so a student can check the sum of the two areas by counting."
     misconceptions: "Multiplying the two longest sides of an L shape."
+    misconceptions: "Counting the overlap twice when the two rectangles are drawn to share a strip."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K-5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-circle-fractions"
-  instruction: "What part of the circle is shaded?"
-  stage: STAGE_INTRODUCE
+  instruction: "Write the fraction of the circle that is shaded."
+  stage: STAGE_GUIDED
   items { kind { circle_fraction { denominators: [2, 3, 4] } } count: 4 min_count: 2 }
   max_columns: 4
   design {
-    purpose: "Name halves, thirds and fourths of a circle."
+    purpose: "Name the shaded part of a circle cut into halves, thirds or fourths as a fraction."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A circle gives the same fractions a second shape, so students attach the fraction to equal parts of a whole rather than to bars. Thirds of a circle look different from thirds of a bar, which shows that equal parts are equal in area, not in shape."
+    misconceptions: "Treating any three pieces of a circle as thirds, whether or not they are the same size."
   }
 }
 
 fragments {
   id: "frag-shade-circle-fractions"
-  instruction: "Shade the part of the circle."
+  instruction: "Shade the fraction of the circle."
   stage: STAGE_PRACTICE
   items { kind { circle_fraction { denominators: [2, 3, 4] child_shades: true } } count: 4 min_count: 2 }
   max_columns: 4
   design {
     purpose: "Shade halves, thirds and fourths of a circle."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Shading reverses the previous section. Students read the denominator to check the circle has that many parts, then shade the number of parts the numerator gives."
+    misconceptions: "Shading as many parts as the bottom number."
+  }
+}
+
+fragments {
+  id: "frag-quadrilateral-names"
+  instruction: "Check yes or no for each name."
+  stage: STAGE_INTRODUCE
+  explainer: "A rectangle has 4 square corners. A rhombus has 4 sides of equal length. A square has both."
+  items { kind { classify_shape { family: FAMILY_QUADRILATERAL_NAMES } } count: 4 min_count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Decide whether a quadrilateral is a rectangle, a rhombus or a square from its sides and corners."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "3.G.A.1 asks students to see that one shape can belong to several categories. Answering yes or no for each name, instead of choosing one name, makes a square a rectangle and a rhombus at once. Side lengths are printed and square corners are marked, so students decide from the attributes rather than from how the shape looks. One square is drawn turned on a corner so students do not rely on its position."
+    misconceptions: "A square is not a rectangle because a rectangle has two long sides and two short sides."
+    misconceptions: "A square turned on its corner is a different shape, often called a diamond."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
+  }
+}
+
+fragments {
+  id: "frag-read-volume"
+  instruction: "How much water is in each container? Write the amount."
+  stage: STAGE_GUIDED
+  items { kind { read_volume { unit: UNIT_LITERS } } count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Read a liquid volume in liters from a scale marked every liter."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "3.MD.A.2 asks students to measure liquid volume, not only to compute with it. The scale is a vertical number line with only every second mark numbered, so students count on from the nearest number."
+    misconceptions: "Reading the nearest numbered mark instead of the mark the water reaches."
+    misconceptions: "Treating each mark as 2 because the numbers go up by 2."
+  }
+}
+
+fragments {
+  id: "frag-read-volume-milliliters"
+  instruction: "How much water is in each container? Write the amount."
+  stage: STAGE_PRACTICE
+  items { kind { read_volume { unit: UNIT_MILLILITERS } } count: 2 }
+  max_columns: 2
+  design {
+    purpose: "Read a liquid volume in milliliters from a scale marked every 50 milliliters."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A jug marked in 50s makes students find the value of one mark before reading the level. It is the same skill as reading a scaled bar graph."
+    misconceptions: "Counting each mark as 1 or 10 milliliters."
   }
 }
 
 worksheets {
   id: "ws-area-by-counting"
   title: "Area by counting squares"
+  home_tip: "Students can cover a book or a tile with sticky notes and count the notes to find its area."
   seed: 307
   max_pages: 2
   placements { fragment_id: "frag-area-by-counting" }
   placements { fragment_id: "frag-area-of-l-shapes" }
   design {
-    purpose: "Find area by counting unit squares, then for shapes made of rectangles."
+    purpose: "Find area by counting unit squares, then for shapes made of two rectangles."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Rectangles come first, with a worked example that counts by rows. The second section adds shapes made of two rectangles, so students use the same counting to see that areas add."
   }
 }
 
 worksheets {
   id: "ws-add-subtract-within-100"
   title: "Add and subtract within 100"
+  home_tip: "Ask the student to say what the small 1 above the tens column stands for: 1 ten, or 10 ones."
   seed: 301
   max_pages: 2
-  placements { fragment_id: "frag-add-within-100" }
+  placements { fragment_id: "frag-add-within-100" count: 4 }
   placements { fragment_id: "frag-subtract-within-100" }
   design {
-    purpose: "Add and subtract two-digit numbers, regrouping."
-    principles: [PRINCIPLE_INTERLEAVING]
+    purpose: "Add and subtract two-digit numbers within 100, with regrouping."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Addition comes first because composing a ten is easier to see than decomposing one. Each section opens with a worked example. Subtraction has twice as many items because trading a ten is the step students most often get wrong."
   }
 }
 
 worksheets {
   id: "ws-halves-thirds-fourths"
   title: "Halves, thirds and fourths"
+  home_tip: "Fold a paper strip into 2, 3 or 4 equal parts and ask the student to name one part and then all the parts."
   seed: 302
   max_pages: 2
   placements { fragment_id: "frag-halves-thirds-fourths" }
@@ -143,13 +227,15 @@ worksheets {
   placements { fragment_id: "frag-shade-circle-fractions" }
   design {
     purpose: "Name and shade halves, thirds and fourths of rectangles and circles."
-    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Students read fractions from bars, then from circles, then shade both. The denominators stay at 2, 3 and 4, so the sheet suits the start of grade 3 fractions."
   }
 }
 
 worksheets {
   id: "ws-clocks-and-rulers"
   title: "Clocks and rulers"
+  home_tip: "Ask the student to read a wall clock at a time that is not on the hour, then measure a pencil to the nearest half inch."
   seed: 303
   max_pages: 2
   placements { fragment_id: "frag-read-clock" }
@@ -157,45 +243,54 @@ worksheets {
   design {
     purpose: "Tell time to the minute and measure lengths to the nearest half and quarter inch."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "A clock face and a ruler are both scales read from a starting point. Putting them on one sheet gives grade 3 measurement practice in two contexts."
   }
 }
 
 worksheets {
   id: "ws-area-and-perimeter-grade-3"
   title: "Area and perimeter of rectangles"
+  home_tip: "Ask whether a fence or a rug fits each question, and why."
   seed: 304
   max_pages: 2
-  placements { fragment_id: "frag-rectangle-area" count: 2 }
-  placements { fragment_id: "frag-rectangle-perimeter" count: 2 stage: STAGE_PRACTICE }
+  placements { fragment_id: "frag-area-by-counting" count: 2 stage: STAGE_REVIEW omit_example: true }
+  placements { fragment_id: "frag-rectangle-area" count: 3 stage: STAGE_PRACTICE }
+  placements { fragment_id: "frag-rectangle-perimeter" count: 3 stage: STAGE_PRACTICE }
+  placements { fragment_id: "frag-rectangle-missing-side" count: 2 }
   design {
-    purpose: "Find the area and perimeter of rectangles."
-    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    purpose: "Find the area and perimeter of rectangles, and a missing side from the area."
+    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_INTERLEAVING]
+    rationale: "Counting squares comes first, so multiplying side lengths has a meaning. Perimeter follows area on the same kind of picture, which makes students choose between the two. The last section runs the area calculation backwards, as 3.MD.C.7 and 3.MD.D.8 both ask."
   }
 }
 
 worksheets {
   id: "ws-division-and-patterns"
   title: "Division facts and patterns"
+  home_tip: "For each division fact, ask for the multiplication fact that checks it."
   seed: 305
   max_pages: 2
   placements { fragment_id: "frag-division-facts" }
   placements { fragment_id: "frag-missing-factor" count: 6 }
   placements { fragment_id: "frag-shade-multiples" count: 1 }
   design {
-    purpose: "Divide within 100, and see patterns in multiples."
+    purpose: "Divide within 100, and find patterns in multiples."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Division facts come first, then the same facts with the unknown moved, so students treat multiplication and division as one fact family. Shading multiples on a hundred chart ends the sheet with a pattern students can describe."
   }
 }
 
 worksheets {
   id: "ws-shapes-grade-3"
   title: "Sorting quadrilaterals"
+  home_tip: "Ask the student to find a rectangle at home that is also a square, and one that is not."
   seed: 306
   max_pages: 2
-  placements { fragment_id: "frag-quadrilateral-features" }
-  placements { fragment_id: "frag-halves-thirds-fourths" count: 3 stage: STAGE_PRACTICE omit_example: true }
+  placements { fragment_id: "frag-quadrilateral-names" }
+  placements { fragment_id: "frag-halves-thirds-fourths" count: 3 stage: STAGE_PRACTICE }
   design {
-    purpose: "Describe quadrilaterals by their sides and angles, and split shapes into equal parts."
+    purpose: "Sort quadrilaterals by their sides and corners, and name equal parts of a shape."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Both grade 3 geometry standards are on one page. The quadrilaterals section asks about each name separately, so students see that one shape can have more than one name. The second section names equal parts of a shape as fractions, as 3.G.A.2 asks."
   }
 }

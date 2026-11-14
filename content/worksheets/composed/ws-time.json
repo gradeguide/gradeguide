@@ -137,11 +137,15 @@
      "fragmentId": "frag-read-clock",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read an analogue clock to the minute.",
+      "purpose": "Read an analog clock to the nearest minute.",
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW"
       ],
-      "rationale": "Elapsed-time problems in 4.MD.A.2 assume the child can read the start time, which 3.MD.A.1 taught."
+      "rationale": "3.MD.A.1 asks for time to the nearest minute. The minutes are not on the hour or half hour, so students count by fives and then by ones from the nearest number.",
+      "misconceptions": [
+       "Reading the hour from the number the hour hand is nearest, even when it has not reached it.",
+       "Reading the number the minute hand points to as the minutes: 4 for 20 minutes past."
+      ]
      },
      "estimatedHeight": 422
     },
@@ -220,12 +224,13 @@
      "fragmentId": "frag-elapsed-time",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add a duration to a time.",
+      "purpose": "Add a time interval to a start time.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Some intervals cross the hour, so students regroup 60 minutes as 1 hour. The start time is on a clock face, which links reading time to elapsed time.",
       "misconceptions": [
-       "Treating 60 minutes like 100 when crossing the hour"
+       "Treating 60 minutes like 100 when crossing the hour: 2:50 plus 20 minutes is 2:70."
       ]
      },
      "estimatedHeight": 274
@@ -277,12 +282,13 @@
      "fragmentId": "frag-elapsed-time",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add a duration to a time.",
+      "purpose": "Add a time interval to a start time.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Some intervals cross the hour, so students regroup 60 minutes as 1 hour. The start time is on a clock face, which links reading time to elapsed time.",
       "misconceptions": [
-       "Treating 60 minutes like 100 when crossing the hour"
+       "Treating 60 minutes like 100 when crossing the hour: 2:50 plus 20 minutes is 2:70."
       ]
      },
      "continued": true,
@@ -364,6 +370,13 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Read a clock to the minute, then add a time interval.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Reading the start time comes first, because every elapsed-time item starts from a clock face."
+ },
  "advice": [
   "\"Find the end time.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],

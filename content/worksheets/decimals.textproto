@@ -5,14 +5,17 @@
 
 fragments {
   id: "frag-compare-decimals"
-  instruction: "Write <, > or = in each circle."
+  instruction: "Compare. Write <, > or =."
   stage: STAGE_PRACTICE
-  explainer: "Compare tenths first, then hundredths. 0.4 is the same as 0.40."
+  explainer: "Compare the tenths first, then the hundredths. 0.4 is the same as 0.40."
   items { kind { compare_decimals {} } count: 12 min_count: 6 }
   max_columns: 3
   design {
     purpose: "Compare two decimals to hundredths."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Pairs mix tenths with hundredths, so the decimal with more digits is sometimes the smaller one. Students compare place by place, or rewrite tenths as hundredths, instead of comparing digit strings as whole numbers."
     misconceptions: "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+    misconceptions: "Thinking the decimal with fewer digits is larger, because hundredths are smaller than tenths: 0.4 > 0.45."
+    references: "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
   }
 }

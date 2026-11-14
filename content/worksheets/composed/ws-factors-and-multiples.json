@@ -63,17 +63,20 @@
      "fragmentId": "frag-shade-multiples",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See multiples as a pattern on a hundred chart.",
+      "purpose": "Shade the multiples of a number on a hundred chart and describe the pattern.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+      "rationale": "Shaded multiples form columns or diagonals on the chart, a pattern students can describe and extend. Shading two numbers shows that every multiple of 6 is also a multiple of 3.",
+      "misconceptions": [
+       "Shading numbers that contain the digit, such as 14 and 24 for multiples of 4."
+      ]
      },
      "estimatedHeight": 215
     },
     {
      "label": "B",
-     "instruction": "List every factor pair. Then tick prime or composite.",
+     "instruction": "List all the factor pairs. Then check prime or composite.",
      "items": [
       {
        "label": "3",
@@ -248,11 +251,15 @@
      "fragmentId": "frag-factor-pairs",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find all factor pairs of a number up to 100 and decide whether it is prime.",
+      "purpose": "Find all factor pairs of a whole number and decide whether it is prime or composite.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Listing pairs in order, from 1 up, gives a check for when the list is complete."
+      "rationale": "Listing pairs in order from 1 up gives a check for when the list is complete: the pairs start to repeat. A number with only the pair 1 and itself is prime.",
+      "misconceptions": [
+       "Leaving out the pair 1 and the number itself.",
+       "All odd numbers are prime."
+      ]
      },
      "estimatedHeight": 270
     }
@@ -362,5 +369,12 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Find multiples and factor pairs, and decide whether a number is prime or composite.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "Shading multiples comes first, because a factor of a number is a number it is a multiple of. Factor pairs then lead to the prime or composite decision."
+ },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -1,6 +1,6 @@
-// Geometry for the shape widgets: shapes on a grid of unit squares, and
-// fraction circles.
-import { type FractionCircle, type GridShape } from '../proto/v1/nodes_pb.js';
+// Geometry for the shape widgets: shapes on a grid of unit squares,
+// fraction circles, and measuring jugs.
+import { type FractionCircle, type GridShape, type MeasuringJug } from '../proto/v1/nodes_pb.js';
 import { type Drawing, type Shape } from './drawing.js';
 import { SHADE, fieldId } from './field.js';
 
@@ -44,4 +44,33 @@ export function fractionCircle(f: FractionCircle): Drawing {
 // fieldOf is the field a fraction circle is, when the child shades it.
 export function circleField(f: FractionCircle): string | null {
   return fieldId(f.shadeField);
+}
+
+// A jug's scale runs JUG_SCALE pixels from empty to full.
+const JUG_SCALE = 160;
+
+export function measuringJug(j: MeasuringJug): Drawing {
+  const left = 44;
+  const right = 120;
+  const bottom = 184;
+  const top = bottom - JUG_SCALE - 12;
+  const at = (v: number) => bottom - (v / Math.max(1, j.capacity)) * JUG_SCALE;
+  const shapes: Shape[] = [];
+  if (j.level > 0) {
+    shapes.push({ t: 'rect', x: left, y: at(j.level), w: right - left, h: bottom - at(j.level), fill: SHADE, sw: 0 });
+  }
+  // The jug: open at the top, with a lip on the right for pouring.
+  shapes.push({ t: 'path', d: `M${left} ${top} L${left} ${bottom} L${right} ${bottom} L${right} ${top} L${right + 8} ${top - 6}`, w: 2 });
+  const step = Math.max(1, j.step);
+  const every = Math.max(1, j.labelled);
+  for (let v = step, i = 1; v <= j.capacity; v += step, i++) {
+    const y = at(v);
+    const major = i % every === 0;
+    shapes.push({ t: 'line', x1: left, y1: y, x2: left + (major ? 16 : 9), y2: y, w: major ? 1.4 : 1 });
+    if (major) {
+      shapes.push({ t: 'text', x: left - 5, y: y + 4, s: String(v), size: 12, anchor: 'end' });
+    }
+  }
+  shapes.push({ t: 'text', x: (left + right) / 2, y: bottom + 16, s: j.unit, size: 12 });
+  return { width: right + 14, height: bottom + 22, shapes };
 }

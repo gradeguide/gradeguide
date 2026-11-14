@@ -16,7 +16,7 @@
    "sections": [
     {
      "label": "1",
-     "instruction": "Multiply. Circle any you had to stop and think about.",
+     "instruction": "Multiply.",
      "items": [
       {
        "label": "1a",
@@ -419,11 +419,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -432,7 +436,7 @@
     },
     {
      "label": "2",
-     "instruction": "Find the missing number.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "2a",
@@ -567,21 +571,25 @@
        "key": "27 ÷ 3 = 9"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-missing-factor",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Find an unknown factor in a multiplication or division equation.",
+      "purpose": "Find an unknown number in a multiplication or division equation.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+      "rationale": "The unknown sits in different places, so students treat multiplication and division as one fact family. 3.OA.A.4 lists exactly these forms: 8 × ? = 48, 5 = ? ÷ 3 and 6 × 6 = ?.",
+      "misconceptions": [
+       "Multiplying the two numbers shown whatever the position of the box: 8 × ? = 24 answered 192.",
+       "Reading the equal sign as a signal to write the answer, so a box on the left looks wrong."
+      ]
      },
-     "estimatedHeight": 86
+     "estimatedHeight": 138
     },
     {
      "label": "3",
-     "instruction": "What fraction is at the arrow?",
+     "instruction": "Write the fraction at the arrow.",
      "items": [
       {
        "label": "3a",
@@ -654,20 +662,21 @@
        "PRINCIPLE_NUMBER_LINE",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3.",
+      "rationale": "The number line shows a fraction as one number with a size, which an area model does not. Students count the spaces between marks, not the marks, so the fraction is a distance from 0. The IES fractions guide recommends the number line as a central representation from grade 3.",
       "misconceptions": [
-       "Counting tick marks instead of the spaces between them"
+       "Counting tick marks instead of the spaces between them.",
+       "Counting the 0 mark as the first jump."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, rec. 2",
-       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2",
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 180
     },
     {
      "label": "4",
-     "instruction": "Round. The number line shows which multiple is nearer.",
+     "instruction": "Round each number. Use the number line.",
      "items": [
       {
        "label": "4a",
@@ -763,12 +772,17 @@
       "purpose": "Round three-digit numbers to the nearest 10 or 100.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Each number sits on a line between the two multiples it could round to, so students choose the nearer one by distance. 3.NBT.A.1 asks for rounding to both places, and the items mix them.",
+      "misconceptions": [
+       "Rounding to the wrong place, such as to the nearest 10 when asked for the nearest 100.",
+       "Rounding 203 to 300 because rounding means going up."
       ]
      },
      "estimatedHeight": 186
     }
    ],
-   "estimatedHeight": 658
+   "estimatedHeight": 710
   },
   {
    "sections": [
@@ -850,12 +864,15 @@
      "fragmentId": "frag-column-subtract-3-digit",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Subtract three-digit numbers in columns, regrouping.",
+      "purpose": "Subtract three-digit numbers within 1,000, regrouping.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Every item needs at least one regrouping, and some numbers have a zero in the tens place, which makes students regroup from the hundreds.",
       "misconceptions": [
-       "Subtracting the smaller digit from the larger in each column, whichever is on top."
+       "Subtracting the smaller digit from the larger in each column, whichever is on top.",
+       "Regrouping across a zero without reducing the hundreds."
       ]
      },
      "estimatedHeight": 168
@@ -979,13 +996,14 @@
      "fragmentId": "frag-rectangle-area",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Find a rectangle's area as length times width.",
+      "purpose": "Find the area of a rectangle by multiplying its side lengths.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "rationale": "The rectangles look like those in the perimeter section, so students must decide which measure the question asks for. Side lengths stay within the multiplication facts to 9 × 9.",
       "misconceptions": [
-       "Mixing up area and perimeter"
+       "Mixing up area and perimeter.",
+       "Writing the area in centimeters instead of square centimeters."
       ]
      },
      "estimatedHeight": 242
@@ -1256,7 +1274,7 @@
   }
  ],
  "design": {
-  "purpose": "Check the grade 3 skills grade 4 builds on.",
+  "purpose": "Check the grade 3 skills that grade 4 builds on.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
   ],

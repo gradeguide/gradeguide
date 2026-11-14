@@ -61,3 +61,14 @@ angular_test(
         "//worksheet/proto/v1:v1_ts",
     ],
 )
+
+angular_test(
+    name = "kinds_review_test",
+    srcs = ["kinds_review.spec.ts"],
+    tsconfig = tsconfig_with(["jasmine", "node"]),
+    deps = [
+        ":engine",
+        "//:node_modules/@bufbuild/protobuf",
+        "//worksheet/proto/v1:v1_ts",
+    ],
+)

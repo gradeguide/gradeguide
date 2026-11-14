@@ -347,20 +347,25 @@
        "key": "14 ÷ 2 = 7"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-division-facts",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Recall division facts from multiplication.",
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
       ]
      },
-     "estimatedHeight": 190
+     "estimatedHeight": 242
     },
     {
      "label": "B",
-     "instruction": "Find the missing number.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "11",
@@ -561,15 +566,19 @@
        "key": "8 ÷ 4 = 2"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-missing-factor",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find an unknown factor in a multiplication or division equation.",
+      "purpose": "Find an unknown number in a multiplication or division equation.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+      "rationale": "The unknown sits in different places, so students treat multiplication and division as one fact family. 3.OA.A.4 lists exactly these forms: 8 × ? = 48, 5 = ? ÷ 3 and 6 × 6 = ?.",
+      "misconceptions": [
+       "Multiplying the two numbers shown whatever the position of the box: 8 × ? = 24 answered 192.",
+       "Reading the equal sign as a signal to write the answer, so a box on the left looks wrong."
+      ]
      },
      "estimatedHeight": 138
     },
@@ -605,16 +614,19 @@
      "fragmentId": "frag-shade-multiples",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "See multiples as a pattern on a hundred chart.",
+      "purpose": "Shade the multiples of a number on a hundred chart and describe the pattern.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+      "rationale": "Shaded multiples form columns or diagonals on the chart, a pattern students can describe and extend. Shading two numbers shows that every multiple of 6 is also a multiple of 3.",
+      "misconceptions": [
+       "Shading numbers that contain the digit, such as 14 and 24 for multiples of 4."
+      ]
      },
      "estimatedHeight": 215
     }
    ],
-   "estimatedHeight": 555
+   "estimatedHeight": 607
   }
  ],
  "key": [
@@ -790,14 +802,15 @@
   }
  ],
  "design": {
-  "purpose": "Divide within 100, and see patterns in multiples.",
+  "purpose": "Divide within 100, and find patterns in multiples.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
-  ]
+  ],
+  "rationale": "Division facts come first, then the same facts with the unknown moved, so students treat multiplication and division as one fact family. Shading multiples on a hundred chart ends the sheet with a pattern students can describe."
  },
  "advice": [
   "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Find the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
