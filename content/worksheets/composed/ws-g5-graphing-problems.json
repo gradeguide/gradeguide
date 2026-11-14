@@ -1,0 +1,395 @@
+{
+ "worksheetId": "ws-g5-graphing-problems",
+ "title": "Graphing to solve problems",
+ "headerLabels": [
+  "5.G.A.1",
+  "5.OA.B.3",
+  "5.G.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the ordered pair for each point.",
+     "explainer": "(3, 5): start at 0, move 3 along the x-axis, then 5 up.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 10,
+          "yMax": 10,
+          "points": [
+           {
+            "x": 1,
+            "label": "A"
+           },
+           {
+            "x": 1,
+            "y": 6,
+            "label": "B"
+           },
+           {
+            "x": 9,
+            "y": 6,
+            "label": "C"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "coordinates of A",
+             "answer": {
+              "text": "(1, 0)",
+              "also": [
+               "1, 0",
+               "(1,0)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "B"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "coordinates of B",
+             "answer": {
+              "text": "(1, 6)",
+              "also": [
+               "1, 6",
+               "(1,6)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "C"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "coordinates of C",
+             "answer": {
+              "text": "(9, 6)",
+              "also": [
+               "9, 6",
+               "(9,6)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A (1, 0); B (1, 6); C (9, 6)"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-read-points",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Read the coordinates of points on a coordinate grid.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The axes are labelled x and y, as the standard names them. Some points lie on an axis, so one coordinate is 0. No grid shows both (a, b) and (b, a), so a swapped pair is always wrong.",
+      "misconceptions": [
+       "Swapping the coordinates: writing (5, 3) for 3 along and 5 up.",
+       "Counting gridlines from 1 instead of from 0."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
+     },
+     "estimatedHeight": 476
+    }
+   ],
+   "estimatedHeight": 480
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Use the graph to answer the questions.",
+     "items": [
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 8,
+          "yMax": 16,
+          "yStep": 2,
+          "xTitle": "Boxes",
+          "yTitle": "Pencils",
+          "points": [
+           {},
+           {
+            "x": 1,
+            "y": 2
+           },
+           {
+            "x": 2,
+            "y": 4
+           },
+           {
+            "x": 3,
+            "y": 6
+           },
+           {
+            "x": 4,
+            "y": 8
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pencils after 3 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "pencils after 3 boxes",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "If the pattern goes on, pencils after 8 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "pencils after 8 boxes",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Pencils after 3 boxes: 6; If the pattern goes on, pencils after 8 boxes: 16"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 8,
+          "yMax": 80,
+          "yStep": 10,
+          "xTitle": "Boxes",
+          "yTitle": "Pencils",
+          "points": [
+           {},
+           {
+            "x": 1,
+            "y": 10
+           },
+           {
+            "x": 2,
+            "y": 20
+           },
+           {
+            "x": 3,
+            "y": 30
+           },
+           {
+            "x": 4,
+            "y": 40
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pencils after 3 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "pencils after 3 boxes",
+             "answer": {
+              "text": "30"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "If the pattern goes on, pencils after 6 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "pencils after 6 boxes",
+             "answer": {
+              "text": "60"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Pencils after 3 boxes: 30; If the pattern goes on, pencils after 6 boxes: 60"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-graph-a-pattern",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Read and extend a pattern graphed on a coordinate grid.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The graph shows the first points of a real situation, such as dollars earned each hour. The first question reads a plotted point. The second asks for a point past the plotted ones, so students extend the pattern by its rule.",
+      "misconceptions": [
+       "Reading the y-axis value from the wrong gridline when the axis counts by 2s, 3s or more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
+     },
+     "estimatedHeight": 722
+    }
+   ],
+   "estimatedHeight": 726
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "coordinates of A",
+    "answer": {
+     "text": "(1, 0)",
+     "also": [
+      "1, 0",
+      "(1,0)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "coordinates of B",
+    "answer": {
+     "text": "(1, 6)",
+     "also": [
+      "1, 6",
+      "(1,6)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "coordinates of C",
+    "answer": {
+     "text": "(9, 6)",
+     "also": [
+      "9, 6",
+      "(9,6)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "pencils after 3 boxes",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "pencils after 8 boxes",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "pencils after 3 boxes",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "pencils after 6 boxes",
+    "answer": {
+     "text": "60"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Read and extend graphs of real situations.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Reading plain points comes first. The graphs then give the points a meaning."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

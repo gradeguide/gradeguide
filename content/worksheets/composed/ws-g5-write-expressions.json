@@ -1,0 +1,694 @@
+{
+ "worksheetId": "ws-g5-write-expressions",
+ "title": "Writing expressions",
+ "headerLabels": [
+  "5.OA.A.1",
+  "5.OA.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Work inside the parentheses first.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(64 + 32) ÷ 8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "value of (64 + 32) ÷ 8",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(64 + 32) ÷ 8 = 12"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2 × (9 + 8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "value of 2 × (9 + 8)",
+             "answer": {
+              "text": "34"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × (9 + 8) = 34"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6 × (4 + 4)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "value of 6 × (4 + 4)",
+             "answer": {
+              "text": "48"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × (4 + 4) = 48"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "28 − (4 × 2)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "value of 28 − (4 × 2)",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "28 − (4 × 2) = 20"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-parentheses",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Evaluate expressions that contain parentheses.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each expression has one pair of parentheses and two operations, so the only decision is which operation comes first. The parentheses sit at the front in some items and at the end in others. Students who always work left to right get some items wrong, which shows them the parentheses matter.",
+      "misconceptions": [
+       "Working left to right and ignoring the parentheses: 2 × (3 + 4) worked as 2 × 3 + 4 = 10.",
+       "Treating parentheses as a sign to multiply only, and adding first in an expression such as 76 − (4 × 4)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "B",
+     "instruction": "Write an expression for each calculation. Do not solve.",
+     "example": {
+      "nodes": [
+       {
+        "text": "Add 7 and 4, then multiply by 4."
+       },
+       {
+        "math": {
+         "atoms": [
+          {
+           "blank": {
+            "label": "the expression",
+            "answer": {
+             "text": "(7 + 4) × 4",
+             "also": [
+              "4 × (7 + 4)"
+             ]
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The **parentheses** show which part to do first."
+     },
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Multiply 3 by 7, then add 2."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q5",
+             "label": "the expression",
+             "answer": {
+              "text": "3 × 7 + 2",
+              "also": [
+               "(3 × 7) + 2",
+               "2 + 3 × 7"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × 7 + 2"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Subtract 3 from 27, then divide by 8."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the expression",
+             "answer": {
+              "text": "(27 − 3) ÷ 8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(27 − 3) ÷ 8"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "Double the sum of 7 and 2."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the expression",
+             "answer": {
+              "text": "2 × (7 + 2)",
+              "also": [
+               "(7 + 2) × 2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × (7 + 2)"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "Add 2 and 4, then multiply by 8."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q8",
+             "label": "the expression",
+             "answer": {
+              "text": "(2 + 4) × 8",
+              "also": [
+               "8 × (2 + 4)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(2 + 4) × 8"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "Multiply 8 by 8, then add 4."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q9",
+             "label": "the expression",
+             "answer": {
+              "text": "8 × 8 + 4",
+              "also": [
+               "(8 × 8) + 4",
+               "4 + 8 × 8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 8 + 4"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Subtract 2 from 50, then divide by 8."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q10",
+             "label": "the expression",
+             "answer": {
+              "text": "(50 − 2) ÷ 8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(50 − 2) ÷ 8"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "Double the sum of 3 and 7."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q11",
+             "label": "the expression",
+             "answer": {
+              "text": "2 × (3 + 7)",
+              "also": [
+               "(3 + 7) × 2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × (3 + 7)"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "Add 4 and 2, then multiply by 3."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q12",
+             "label": "the expression",
+             "answer": {
+              "text": "(4 + 2) × 3",
+              "also": [
+               "3 × (4 + 2)"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(4 + 2) × 3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-write-expressions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write a calculation described in words as a numerical expression.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The words give the order of the steps, and the expression must show the same order with symbols. The four forms take turns, so students meet adding first, multiplying first, subtracting then dividing, and doubling a sum. Leaving the expression unsolved keeps attention on its structure.",
+      "misconceptions": [
+       "Leaving out the parentheses: \"add 8 and 7, then multiply by 2\" written as 8 + 7 × 2.",
+       "Writing the numbers in the order they are read for \"subtract 4 from 10\", giving 4 − 10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 452
+    },
+    {
+     "label": "C",
+     "instruction": "Fill in the blank. Do not solve.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9 × (6,595 + 259) is"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "times as large as 6,595 + 259",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "times as large as 6,595 + 259."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × (6,595 + 259) is 9 times as large as 6,595 + 259."
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9 × (9,795 + 470) is"
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "times as large as 9,795 + 470",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "times as large as 9,795 + 470."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 × (9,795 + 470) is 9 times as large as 9,795 + 470."
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 × (5,941 + 642) is"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "times as large as 5,941 + 642",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "times as large as 5,941 + 642."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × (5,941 + 642) is 4 times as large as 5,941 + 642."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-interpret-expressions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Compare an expression with one of its parts without evaluating it.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "The numbers in the parentheses are large on purpose, so working out the sum is slow and not needed. Students read 3 × (18,932 + 921) as three times the sum. This is the reading of expressions the standard asks for.",
+      "misconceptions": [
+       "Working out the whole expression before answering, and losing the relation in the arithmetic."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 792
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "value of (64 + 32) ÷ 8",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "value of 2 × (9 + 8)",
+    "answer": {
+     "text": "34"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "value of 6 × (4 + 4)",
+    "answer": {
+     "text": "48"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "value of 28 − (4 × 2)",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the expression",
+    "answer": {
+     "text": "3 × 7 + 2",
+     "also": [
+      "(3 × 7) + 2",
+      "2 + 3 × 7"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the expression",
+    "answer": {
+     "text": "(27 − 3) ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the expression",
+    "answer": {
+     "text": "2 × (7 + 2)",
+     "also": [
+      "(7 + 2) × 2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the expression",
+    "answer": {
+     "text": "(2 + 4) × 8",
+     "also": [
+      "8 × (2 + 4)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the expression",
+    "answer": {
+     "text": "8 × 8 + 4",
+     "also": [
+      "(8 × 8) + 4",
+      "4 + 8 × 8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the expression",
+    "answer": {
+     "text": "(50 − 2) ÷ 8"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the expression",
+    "answer": {
+     "text": "2 × (3 + 7)",
+     "also": [
+      "(3 + 7) × 2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the expression",
+    "answer": {
+     "text": "(4 + 2) × 3",
+     "also": [
+      "3 × (4 + 2)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "times as large as 6,595 + 259",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "times as large as 9,795 + 470",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "times as large as 5,941 + 642",
+    "answer": {
+     "text": "4"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Write expressions from words and interpret them without evaluating.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Evaluating a few expressions first recalls what parentheses do before students write their own."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

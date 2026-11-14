@@ -140,6 +140,28 @@ message ItemKind {
     AreaByCounting area_by_counting = 110;
     CircleFraction circle_fraction = 111;
     ReadVolume read_volume = 112;
+
+    // Grade 5 kinds, generated in engine/kinds_g5.ts.
+    NumericalExpression numerical_expression = 60;
+    ExpressionInWords expression_in_words = 61;
+    TwoPatterns two_patterns = 62;
+    PlaceValueTenTimes place_value_ten_times = 63;
+    PowersOfTen powers_of_ten = 64;
+    DecimalForms decimal_forms = 65;
+    RoundDecimal round_decimal = 66;
+    MultiDigitMultiply multi_digit_multiply = 67;
+    DivideByTwoDigits divide_by_two_digits = 68;
+    DecimalArithmetic decimal_arithmetic = 69;
+    UnlikeFractions unlike_fractions = 70;
+    FractionAsDivision fraction_as_division = 71;
+    FractionMultiply fraction_multiply = 72;
+    ScalingCompare scaling_compare = 73;
+    UnitFractionDivide unit_fraction_divide = 74;
+    ConvertMeasure convert_measure = 75;
+    LinePlotShare line_plot_share = 76;
+    PrismVolume prism_volume = 77;
+    CoordinatePoints coordinate_points = 78;
+    ShapeHierarchy shape_hierarchy = 79;
   }
 }
 
@@ -430,6 +452,9 @@ message LongDivisionItem {
   int32 dividend_digits = 1;
   // Some items leave a remainder.
   bool remainders = 2;
+  // Beside each division, a table of the divisor's multiples (1, 2, 5 and
+  // 10 times) for the child to fill in and estimate from.
+  bool multiples = 3;
 }
 
 // A clock; read the time, or find a time some minutes later.
@@ -488,6 +513,220 @@ message ReadVolume {
     UNIT_LITERS = 1;
     // A 500-milliliter jug marked every 50 milliliters.
     UNIT_MILLILITERS = 2;
+  }
+}
+
+// ── Grade 5 ──────────────────────────────────────────────────────────────
+
+// An expression with parentheses to evaluate, such as (6 + 4) × 3.
+message NumericalExpression {
+  // Some items nest parentheses inside brackets: 2 × [5 + (3 × 4)].
+  bool brackets = 1;
+}
+
+// A calculation in words to write as an expression, or an expression to
+// compare with a part of it without working it out.
+message ExpressionInWords {
+  // Compare an expression with a part of it, such as 3 × (18,932 + 921)
+  // with 18,932 + 921, instead of writing one from words.
+  bool compare = 1;
+}
+
+// Two patterns from two "add" rules, both starting at 0, in a table; fill
+// it in and say how the terms compare.
+message TwoPatterns {
+  // Instead of comparing, write the corresponding terms as ordered pairs
+  // and plot them on a coordinate grid.
+  bool graph = 1;
+}
+
+// The same digit in two numbers, one place apart or two; how many times
+// the value of one is the value of the other.
+message PlaceValueTenTimes {}
+
+// Powers of ten: exponents, and multiplying or dividing by 10, 100 and
+// 1,000.
+message PowersOfTen {
+  // Multiply and divide decimals, such as 4.7 × 100 and 52.3 ÷ 10,
+  // instead of whole numbers and exponents.
+  bool decimals = 1;
+  // With decimals: show the number in a powers-of-ten chart, and write the
+  // answer in the row under it.
+  bool chart = 2;
+}
+
+// A decimal to thousandths in another form, or two to compare.
+message DecimalForms {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Number name to number: "four and twenty-six thousandths".
+    MODE_WORDS = 1;
+    // Expanded form with fractions to number.
+    MODE_EXPANDED = 2;
+    // A place-value chart; write the number and the value of one digit.
+    MODE_CHART = 3;
+    // Two decimals to thousandths; write <, > or =.
+    MODE_COMPARE = 4;
+  }
+}
+
+// A decimal to round to a whole number, tenths or hundredths.
+message RoundDecimal {
+  // 0 for a whole number, 1 for tenths, 2 for hundredths.
+  repeated int32 places = 1;
+  // Show the number on a number line between the two choices.
+  bool number_line = 2;
+}
+
+// A multi-digit by two- or three-digit product set in columns, with a row
+// for each digit of the bottom number before the total.
+message MultiDigitMultiply {
+  int32 top_digits = 1;
+  int32 bottom_digits = 2;
+}
+
+// A long division with a two-digit divisor.
+message DivideByTwoDigits {
+  // Digits in the dividend, 3 or 4.
+  int32 dividend_digits = 1;
+  // Some items leave a remainder.
+  bool remainders = 2;
+  // Beside each division, a table of the divisor's multiples (1, 2, 5 and
+  // 10 times) for the child to fill in and estimate from.
+  bool multiples = 3;
+}
+
+// A sum, difference, product or quotient of decimals to hundredths.
+message DecimalArithmetic {
+  Op op = 1;
+
+  enum Op {
+    OP_UNSPECIFIED = 0;
+    // Set in columns with the decimal points lined up.
+    OP_ADD = 1;
+    OP_SUBTRACT = 2;
+    // Written in a line, with room to work.
+    OP_MULTIPLY = 3;
+    OP_DIVIDE = 4;
+  }
+  // The second number of a product or quotient.
+  Second second = 2;
+  // With OP_ADD or OP_SUBTRACT: written in a line, the two numbers with
+  // different numbers of decimal places, and room to set them in columns.
+  bool in_a_line = 3;
+
+  enum Second {
+    // A whole number or a decimal.
+    SECOND_UNSPECIFIED = 0;
+    SECOND_WHOLE = 1;
+    SECOND_DECIMAL = 2;
+  }
+}
+
+// a/b + c/d or a/b − c/d with different denominators.
+message UnlikeFractions {
+  // Pairs of denominators are picked from these. Empty: 2 to 12.
+  repeated int32 denominators = 1;
+  bool subtract = 2;
+  // Mixed numbers instead of fractions less than one.
+  bool mixed = 3;
+  // Show each fraction on a grid cut both ways, and write both in the
+  // common denominator before the answer. Fractions only.
+  bool model = 4;
+}
+
+// a ÷ b written as the fraction a/b, sometimes as an equal share.
+message FractionAsDivision {}
+
+// A fraction times a whole number or a fraction, or the area of a
+// rectangle with fraction sides.
+message FractionMultiply {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // a/b × q, such as 2/3 × 6.
+    MODE_WHOLE = 1;
+    // a/b × c/d.
+    MODE_FRACTION = 2;
+    // A rectangle with fraction side lengths; find its area.
+    MODE_AREA = 3;
+  }
+  // With MODE_FRACTION: show the product on a grid, a/b of the columns and
+  // c/d of the rows, overlapping in the product.
+  bool model = 2;
+  // With MODE_AREA: draw the rectangle inside a unit square tiled in
+  // 1/b by 1/d tiles, so the child can count the tiles.
+  bool tiles = 3;
+}
+
+// A number times a fraction less than, equal to or more than 1; compare the
+// product with the number without multiplying.
+message ScalingCompare {}
+
+// A unit fraction divided by a whole number, or a whole number by a unit
+// fraction.
+message UnitFractionDivide {
+  // Whole number ÷ unit fraction, with fraction bars to count.
+  bool whole_by_unit = 1;
+  // Unit fraction ÷ whole number: show 1/b of a square cut into equal
+  // shares, one share shaded dark.
+  bool model = 2;
+}
+
+// Converting between units of one system, both ways, including decimals.
+message ConvertMeasure {}
+
+// A line plot of amounts in eighths; find the total and the equal share.
+message LinePlotShare {}
+
+// A box drawn in cubes or with labelled edges; find its volume.
+message PrismVolume {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Count unit cubes.
+    MODE_COUNT = 1;
+    // Cubes in a layer, how many layers, and the volume.
+    MODE_LAYERS = 2;
+    // Edge lengths given; multiply.
+    MODE_FORMULA = 3;
+    // Two boxes joined; add their volumes.
+    MODE_COMBINED = 4;
+  }
+}
+
+// Points on a coordinate grid: read them, plot them, or read a graph of a
+// situation.
+message CoordinatePoints {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // Write the coordinates of labelled points.
+    MODE_READ = 1;
+    // Plot and label given points.
+    MODE_PLOT = 2;
+    // Points from a rule, such as dollars earned each hour; answer
+    // questions from the graph.
+    MODE_PROBLEM = 3;
+  }
+}
+
+// The family of quadrilaterals: name a shape, or say whether a statement is
+// always, sometimes or never true.
+message ShapeHierarchy {
+  Mode mode = 1;
+
+  enum Mode {
+    MODE_UNSPECIFIED = 0;
+    // A drawn quadrilateral; tick its most specific name.
+    MODE_NAME = 1;
+    // "A rectangle is ___ a square."
+    MODE_ALWAYS_SOMETIMES_NEVER = 2;
   }
 }
 

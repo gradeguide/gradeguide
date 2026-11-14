@@ -394,3 +394,357 @@ describe('item kinds', () => {
   });
 });
 
+// Grade 5 kinds: each answer recomputed from what the item prints.
+describe('grade 5 item kinds', () => {
+  type Init = Parameters<typeof create<typeof ItemKindSchema>>[1];
+  const items = (kind: NonNullable<Init>['kind'], n = 40) => {
+    const rng = new Rng(11);
+    const used = new Set<string>();
+    const fresh = (k: string) => !used.has(k) && !!used.add(k);
+    return Array.from({ length: n }, (_, i) => generate(create(ItemKindSchema, { kind }), { rng, fields: new Fields(`q${i}`), fresh }));
+  };
+  const atomsOf = (n: Node) => (n.kind.case === 'math' ? n.kind.value.atoms : []);
+  const fieldOf = (n: Node, i = 0) => fieldsOf([n])[i];
+  const ans = (n: Node, i = 0) => fieldOf(n, i)?.answer?.text ?? '';
+  const num = (s: string) => parseAnswer(s.replace(/[^\d.,/ ]/g, '').trim());
+  // value reads a math atom as a number: a fraction, a mixed number's whole,
+  // or a number in text.
+  const value = (a: ReturnType<typeof atomsOf>[number]) =>
+    a.kind.case === 'fraction' ? a.kind.value.num / a.kind.value.den : a.kind.case === 'text' ? num(a.kind.value) : NaN;
+  const unsup = (s: string) => s.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g, (m) => '^' + [...m].map((c) => '⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c)).join(''));
+  const arith = (s: string) => evaluate(unsup(s).replace(/,/g, '').replace(/10\^(\d+)/g, (_, e) => String(10 ** Number(e))).replace(/\[/g, '(').replace(/\]/g, ')'));
+
+  it('evaluates expressions with parentheses and brackets', () => {
+    for (const brackets of [false, true]) {
+      for (const [n] of items({ case: 'numericalExpression', value: { brackets } })) {
+        const [e] = atomsOf(n);
+        expect(arith(String(e.kind.value))).toBe(Number(ans(n)));
+      }
+    }
+  });
+
+  it('writes expressions that use the numbers in the words', () => {
+    for (const ns of items({ case: 'expressionInWords', value: {} })) {
+      const answer = ans(ns[ns.length - 1]);
+      if (ns.length === 1) {
+        // "c × (big + small) is ☐ times as large as big + small."
+        expect(String(atomsOf(ns[0])[0].kind.value).startsWith(answer + ' × (')).toBeTrue();
+        continue;
+      }
+      const words = ns[0].kind.value as string;
+      expect(arith(answer)).withContext(answer).toBeDefined();
+      for (const x of words.match(/\d+/g) ?? []) {
+        expect(answer).toContain(x);
+      }
+    }
+  });
+
+  it('fills in two patterns and compares them', () => {
+    for (const [table, ratio] of items({ case: 'twoPatterns', value: {} })) {
+      const t = table.kind.value as { header: string[]; rows: { cells: { kind: { case: string; value: unknown } }[] }[] };
+      const [a, b] = t.header.slice(1).map((h) => Number(h.replace('Add ', '')));
+      t.rows.forEach((r, step) => {
+        const cell = (i: number) => {
+          const k = r.cells[i].kind;
+          return Number(k.case === 'text' ? k.value : (k.value as Field).answer!.text);
+        };
+        expect(cell(1)).toBe(step * a);
+        expect(cell(2)).toBe(step * b);
+      });
+      expect(Number(ans(ratio))).toBe(b / a);
+    }
+  });
+
+  it('compares the values of a digit in two places', () => {
+    for (const [chart, , first, second, compared] of items({ case: 'placeValueTenTimes', value: {} })) {
+      expect(chart.kind.case).toBe('decimalChart');
+      const r = num(ans(first)) / num(ans(second));
+      const text = atomsOf(compared).map((a) => a.kind.value).join(' ');
+      expect(num(ans(compared))).toBeCloseTo(text.includes('of the first') ? 1 / r : r, 9);
+    }
+  });
+
+  it('multiplies and divides by powers of ten', () => {
+    for (const [n] of items({ case: 'powersOfTen', value: {} })) {
+      expect(arith(String(atomsOf(n)[0].kind.value).replace(/=$/, ''))).toBe(num(ans(n)));
+    }
+    for (const [n] of items({ case: 'powersOfTen', value: { decimals: true } })) {
+      expect(arith(String(atomsOf(n)[0].kind.value).replace(/=$/, ''))).toBeCloseTo(num(ans(n)), 9);
+    }
+    for (const [t, chart] of items({ case: 'powersOfTen', value: { decimals: true, chart: true } })) {
+      const rows = (chart.kind.value as { rows: { number: string; field?: Field }[] }).rows;
+      expect(String(arith(t.kind.value as string))).toBeDefined();
+      expect(arith(t.kind.value as string)).toBeCloseTo(num(rows[1].field!.answer!.text), 9);
+      expect(num(rows[0].number)).toBe(num((t.kind.value as string).split(' ')[0]));
+    }
+  });
+
+  it('reads decimals in expanded form and in a chart', () => {
+    for (const [n] of items({ case: 'decimalForms', value: { mode: 2 } })) {
+      const atoms = atomsOf(n);
+      let sum = 0;
+      for (let i = 0; i < atoms.length - 2; i += 4) {
+        sum += value(atoms[i]) * value(atoms[i + 2]);
+      }
+      expect(sum).toBeCloseTo(num(ans(n)), 9);
+    }
+    for (const [chart, number, digit] of items({ case: 'decimalForms', value: { mode: 3 } })) {
+      const shown = (chart.kind.value as { rows: { number: string }[] }).rows[0].number;
+      expect(ans(number)).toBe(shown);
+      expect(num(ans(digit))).toBeGreaterThan(0);
+    }
+    for (const [n] of items({ case: 'decimalForms', value: { mode: 1 } })) {
+      expect(ans(n)).toMatch(/^\d+\.\d{2,3}$/);
+    }
+  });
+
+  it('compares decimals to thousandths', () => {
+    for (const [n] of items({ case: 'decimalForms', value: { mode: 4 } })) {
+      const [a, c, b] = atomsOf(n);
+      const x = Number(a.kind.value);
+      const y = Number(b.kind.value);
+      expect((c.kind.value as Field).answer!.text).toBe(x > y ? '>' : x < y ? '<' : '=');
+    }
+  });
+
+  it('rounds decimals', () => {
+    for (const numberLine of [false, true]) {
+      for (const ns of items({ case: 'roundDecimal', value: { numberLine } })) {
+        const t = ns[0].kind.value as string;
+        const x = Number(t.match(/Round ([\d.]+)/)![1]);
+        const p = ['whole number', 'tenth', 'hundredth'].findIndex((w) => t.endsWith(w + '.'));
+        const want = Math.round(x * 10 ** p + 1e-9) / 10 ** p;
+        expect(Number(ans(ns[ns.length - 1]))).toBeCloseTo(want, 9);
+      }
+    }
+  });
+
+  it('multiplies multi-digit numbers with a row per digit', () => {
+    for (const [n] of items({ case: 'multiDigitMultiply', value: { topDigits: 3, bottomDigits: 2 } })) {
+      const c = n.kind.value as { operands: bigint[]; partials: { field: Field }[]; answer: Field };
+      const [x, y] = c.operands.map(Number);
+      const rows = c.partials.map((p) => Number(p.field.answer!.text));
+      expect(rows.reduce((s, r) => s + r, 0)).toBe(x * y);
+      expect(Number(c.answer.answer!.text)).toBe(x * y);
+      String(y)
+        .split('')
+        .reverse()
+        .forEach((d, i) => expect(rows[i]).toBe(x * Number(d) * 10 ** i));
+    }
+  });
+
+  it('divides by two-digit numbers', () => {
+    for (const [n] of items({ case: 'divideByTwoDigits', value: { dividendDigits: 4, remainders: true } })) {
+      const l = n.kind.value as { dividend: bigint; divisor: number; quotient: Field; remainder: Field };
+      expect(l.divisor).toBeGreaterThanOrEqual(10);
+      const q = Number(l.quotient.answer!.text);
+      const r = Number(l.remainder.answer!.text);
+      expect(q * l.divisor + r).toBe(Number(l.dividend));
+      expect(r).toBeLessThan(l.divisor);
+    }
+  });
+
+  it('lists multiples of the divisor and leaves a full row for each step', () => {
+    for (const [r] of items({ case: 'divideByTwoDigits', value: { dividendDigits: 3, multiples: true } })) {
+      const [division, list] = (r.kind.value as { children: Node[] }).children;
+      const l = division.kind.value as { divisor: number; quotient: Field; workRows: number };
+      expect(l.workRows * 0.75).toBeGreaterThanOrEqual(2 * l.quotient.answer!.text.length + 1);
+      const rows = (list.kind.value as { children: Node[] }).children;
+      expect(rows.slice(1).map((n) => Number(ans(n)))).toEqual([2, 5, 10].map((m) => m * l.divisor));
+    }
+  });
+
+  it('adds and subtracts decimals written in a line, with different places', () => {
+    for (const op of [1, 2]) {
+      for (const [n] of items({ case: 'decimalArithmetic', value: { op, inALine: true } })) {
+        const [label] = String(atomsOf(n)[0].kind.value).split(' = ');
+        const [x, y] = label.split(op === 1 ? ' + ' : ' − ');
+        expect((x.split('.')[1] ?? '').length).not.toBe((y.split('.')[1] ?? '').length);
+        expect(Number(ans(n))).toBeCloseTo(op === 1 ? Number(x) + Number(y) : Number(x) - Number(y), 9);
+      }
+    }
+  });
+
+  it('tiles a fraction rectangle in a unit square', () => {
+    for (const [r] of items({ case: 'fractionMultiply', value: { mode: 3, tiles: true } })) {
+      const [grid, list] = (r.kind.value as { children: Node[] }).children;
+      const g = grid.kind.value as { cols: number; rows: number; shadedCols: number; shadedRows: number };
+      const [tile, count, area] = (list.kind.value as { children: Node[] }).children.map((n) => ans(n));
+      expect(tile).toBe(`1/${g.cols * g.rows}`);
+      expect(Number(count)).toBe(g.shadedCols * g.shadedRows);
+      expect(parseAnswer(area)).toBeCloseTo((g.shadedCols / g.cols) * (g.shadedRows / g.rows), 9);
+    }
+  });
+
+  it('adds, subtracts, multiplies and divides decimals', () => {
+    for (const op of [1, 2]) {
+      for (const [n] of items({ case: 'decimalArithmetic', value: { op } })) {
+        const c = n.kind.value as { operands: bigint[]; decimalPlaces: number; answer: Field };
+        const [x, y] = c.operands.map((v) => Number(v) / 10 ** c.decimalPlaces);
+        expect(Number(c.answer.answer!.text)).toBeCloseTo(op === 1 ? x + y : x - y, 9);
+      }
+    }
+    for (const op of [3, 4]) {
+      for (const [n] of items({ case: 'decimalArithmetic', value: { op } })) {
+        expect(arith(String(atomsOf(n)[0].kind.value).replace(/=$/, ''))).toBeCloseTo(Number(ans(n)), 9);
+      }
+    }
+  });
+
+  it('adds and subtracts fractions with unlike denominators', () => {
+    for (const subtract of [false, true]) {
+      for (const mixed of [false, true]) {
+        for (const [n] of items({ case: 'unlikeFractions', value: { subtract, mixed } })) {
+          const atoms = atomsOf(n);
+          const op = atoms.findIndex((a) => a.kind.value === '+' || a.kind.value === '−');
+          const side = (as: typeof atoms) => as.reduce((s, a) => s + value(a), 0);
+          const x = side(atoms.slice(0, op));
+          const y = side(atoms.slice(op + 1, atoms.length - 2));
+          expect(parseAnswer(ans(n))).toBeCloseTo(subtract ? x - y : x + y, 9);
+        }
+      }
+    }
+    for (const [grids, step, total] of items({ case: 'unlikeFractions', value: { model: true, denominators: [2, 3, 4, 5] } })) {
+      const [g1, g2] = (grids.kind.value as { children: Node[] }).children.map((c) => c.kind.value as { cols: number; rows: number; shadedCols: number; shadedRows: number });
+      expect(Number(ans(step, 0))).toBe(g1.shadedCols * g1.rows);
+      expect(Number(ans(step, 1))).toBe(g2.shadedRows * g2.cols);
+      expect(parseAnswer(ans(total))).toBeCloseTo((Number(ans(step, 0)) + Number(ans(step, 1))) / (g1.cols * g1.rows), 9);
+    }
+  });
+
+  it('reads fractions as division', () => {
+    for (const ns of items({ case: 'fractionAsDivision', value: {} })) {
+      const last = ns[ns.length - 1];
+      const atoms = atomsOf(last);
+      if (atoms[0].kind.case === 'fraction') {
+        expect(Number(ans(last, 0)) / Number(ans(last, 1))).toBeCloseTo(value(atoms[0]), 9);
+      } else if (atoms[1]?.kind.value === '÷') {
+        expect(parseAnswer(ans(last))).toBeCloseTo(value(atoms[0]) / value(atoms[2]), 9);
+      } else {
+        const [b, a] = (ns[0].kind.value as string).match(/\d+/g)!.map(Number);
+        expect(parseAnswer(ans(last))).toBeCloseTo(a / b, 9);
+      }
+    }
+  });
+
+  it('multiplies fractions', () => {
+    for (const mode of [1, 2]) {
+      for (const [n] of items({ case: 'fractionMultiply', value: { mode } })) {
+        const [a, , b] = atomsOf(n);
+        expect(parseAnswer(ans(n))).toBeCloseTo(value(a) * value(b), 9);
+      }
+    }
+    for (const [poly, area] of items({ case: 'fractionMultiply', value: { mode: 3 } })) {
+      const sides = (poly.kind.value as { sides: { text: string }[] }).sides.slice(0, 2).map((s) => parseAnswer(s.text.split(' ')[0]));
+      expect(parseAnswer(ans(area))).toBeCloseTo(sides[0] * sides[1], 9);
+    }
+    for (const [grid, n] of items({ case: 'fractionMultiply', value: { mode: 2, model: true } })) {
+      const g = grid.kind.value as { cols: number; rows: number; shadedCols: number; shadedRows: number };
+      expect(parseAnswer(ans(n))).toBeCloseTo((g.shadedCols * g.shadedRows) / (g.cols * g.rows), 9);
+    }
+  });
+
+  it('compares products by scaling', () => {
+    for (const [n] of items({ case: 'scalingCompare', value: {} })) {
+      const atoms = atomsOf(n);
+      const c = atoms.findIndex((a) => a.kind.case === 'compare');
+      const product = value(atoms[0]) * value(atoms[2]);
+      const other = value(atoms[c + 1]);
+      expect(ans(n)).toBe(product > other + 1e-9 ? '>' : product < other - 1e-9 ? '<' : '=');
+    }
+  });
+
+  it('divides with unit fractions', () => {
+    for (const wholeByUnit of [false, true]) {
+      for (const ns of items({ case: 'unitFractionDivide', value: { wholeByUnit } }, 20)) {
+        const n = ns[ns.length - 1];
+        const [a, , b] = atomsOf(n);
+        expect(parseAnswer(ans(n))).toBeCloseTo(value(a) / value(b), 9);
+      }
+    }
+  });
+
+  it('converts units', () => {
+    const per: Record<string, number> = { m: 100, km: 1000, cm: 10, kg: 1000, L: 1000, ft: 12, yd: 3, gal: 4, lb: 16, hr: 60 };
+    const smallOf: Record<string, string> = { m: 'cm', km: 'm', cm: 'mm', kg: 'g', L: 'mL', ft: 'in', yd: 'ft', gal: 'qt', lb: 'oz', hr: 'min' };
+    for (const [n] of items({ case: 'convertMeasure', value: {} })) {
+      const atoms = atomsOf(n);
+      const [x, unit] = String(atoms[0].kind.value).replace(' =', '').split(' ');
+      const big = Object.keys(per).find((b) => b === unit && smallOf[b] === String(atoms[2].kind.value));
+      if (big) {
+        expect(num(ans(n))).toBeCloseTo(num(x) * per[big], 9);
+        continue;
+      }
+      const bigUnit = String(atoms[2].kind.value);
+      if (atoms.length === 3) {
+        expect(num(ans(n))).toBeCloseTo(num(x) / per[bigUnit], 9);
+      } else {
+        expect(Number(ans(n, 0)) * per[bigUnit] + Number(ans(n, 1))).toBe(num(x));
+      }
+    }
+  });
+
+  it('finds the total and equal share from a line plot', () => {
+    for (const [plot, count, total, , share] of items({ case: 'linePlotShare', value: {} }, 20)) {
+      const p = plot.kind.value as { counts: number[]; partsPerUnit: number };
+      const n = p.counts.reduce((s, c) => s + c, 0);
+      const sum = p.counts.reduce((s, c, t) => s + (c * t) / p.partsPerUnit, 0);
+      expect(Number(ans(count))).toBeGreaterThan(0);
+      expect(parseAnswer(ans(total))).toBeCloseTo(sum, 9);
+      expect(parseAnswer(ans(share))).toBeCloseTo(sum / n, 9);
+    }
+  });
+
+  it('finds volumes', () => {
+    type Box = { length: number; width: number; height: number };
+    const vol = (b: Box) => b.length * b.width * b.height;
+    for (const mode of [1, 2, 3, 4]) {
+      for (const ns of items({ case: 'prismVolume', value: { mode } }, 20)) {
+        const boxes = (ns[0].kind.value as { boxes: Box[] }).boxes;
+        const last = ns[ns.length - 1];
+        expect(Number(ans(last))).toBe(boxes.reduce((s, b) => s + vol(b), 0));
+        if (mode === 2) {
+          expect(Number(ans(ns[1]))).toBe(boxes[0].length * boxes[0].width);
+          expect(Number(ans(ns[2]))).toBe(boxes[0].height);
+        }
+      }
+    }
+  });
+
+  it('reads, plots and graphs points', () => {
+    for (const [grid, ...rest] of items({ case: 'coordinatePoints', value: { mode: 1 } }, 10)) {
+      const pts = (grid.kind.value as { points: { x: number; y: number }[] }).points;
+      rest.forEach((r, i) => expect(ans(r)).toBe(`(${pts[i].x}, ${pts[i].y})`));
+    }
+    for (const [t, grid] of items({ case: 'coordinatePoints', value: { mode: 2 } }, 10)) {
+      const plot = (grid.kind.value as { plotField: Field }).plotField.answer!.text;
+      expect((t.kind.value as string).replace('Plot and label ', '').replace(/\.$/, '')).toBe(plot.replace(/; /g, ', '));
+    }
+    for (const [grid, at3, later] of items({ case: 'coordinatePoints', value: { mode: 3 } }, 10)) {
+      const pts = (grid.kind.value as { points: { x: number; y: number }[] }).points;
+      const rate = pts[1].y / pts[1].x;
+      pts.forEach((p) => expect(p.y).toBe(rate * p.x));
+      expect(Number(ans(at3))).toBe(3 * rate);
+      const x = Number(String(atomsOf(later)[0].kind.value).match(/after (\d+)/)![1]);
+      expect(Number(ans(later))).toBe(x * rate);
+    }
+  });
+
+  it('names quadrilaterals by their sides and angles', () => {
+    for (const [poly, choice] of items({ case: 'shapeHierarchy', value: { mode: 1 } }, 10)) {
+      const p = poly.kind.value as { points: { x: number; y: number }[]; sides: { text: string }[] };
+      const v = p.points.map((q, i) => {
+        const r = p.points[(i + 1) % 4];
+        return [r.x - q.x, r.y - q.y];
+      });
+      const lens = v.map(([x, y]) => Math.hypot(x, y));
+      lens.forEach((l, i) => expect(l).toBeCloseTo(Number(p.sides[i].text.split(' ')[0]), 9));
+      const parallel = (a: number[], b: number[]) => Math.abs(a[0] * b[1] - a[1] * b[0]) < 1e-9;
+      const pairs = Number(parallel(v[0], v[2])) + Number(parallel(v[1], v[3]));
+      const right = Math.abs(v[0][0] * v[1][0] + v[0][1] * v[1][1]) < 1e-9;
+      const equal = lens.every((l) => Math.abs(l - lens[0]) < 1e-9);
+      const want = pairs < 2 ? 'trapezoid' : right && equal ? 'square' : right ? 'rectangle' : equal ? 'rhombus' : 'parallelogram';
+      expect(ans(choice)).toBe(want);
+    }
+  });
+});

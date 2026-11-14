@@ -1,0 +1,872 @@
+{
+ "worksheetId": "ws-g5-volume-formulas",
+ "title": "Volume formulas",
+ "headerLabels": [
+  "5.MD.C.5.a",
+  "5.MD.C.5.b",
+  "5.MD.C.5.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the volume. Count the cubes in the bottom layer first.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 2,
+            "width": 3,
+            "height": 2
+           }
+          ],
+          "showCubes": true,
+          "markBottomLayer": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Bottom layer:"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "cubes in a 2 by 3 layer",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "cubes"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Layers:"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "layers",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "cubes in a 2 by 3 by 2 box",
+             "answer": {
+              "text": "12"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Bottom layer: 6 cubes; Layers: 2; Volume = 12 cubic units"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 3,
+            "width": 2,
+            "height": 4
+           }
+          ],
+          "showCubes": true,
+          "markBottomLayer": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Bottom layer:"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "cubes in a 3 by 2 layer",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "cubes"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Layers:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "layers",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "cubes in a 3 by 2 by 4 box",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cubic units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Bottom layer: 6 cubes; Layers: 4; Volume = 24 cubic units"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-volume-layers",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Find volume as the number of cubes in one layer times the number of layers.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The bottom layer is shaded darker, so students can count one layer. Every layer has the same number of cubes. Multiplying by the number of layers gives the volume, which is the base area times the height.",
+      "misconceptions": [
+       "Counting the bottom layer as only the front row of cubes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+      ]
+     },
+     "estimatedHeight": 311
+    },
+    {
+     "label": "B",
+     "instruction": "Find the volume.",
+     "explainer": "V = l × w × h    V = B × h",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 7,
+            "width": 2,
+            "height": 6,
+            "lengthLabel": "7 ft",
+            "widthLabel": "2 ft",
+            "heightLabel": "6 ft"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "7 × 2 × 6",
+             "answer": {
+              "text": "84"
+             }
+            }
+           },
+           {
+            "text": "cubic ft"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 84 cubic ft"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 12,
+            "width": 3,
+            "height": 5,
+            "lengthLabel": "12 cm",
+            "widthLabel": "3 cm",
+            "heightLabel": "5 cm"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "12 × 3 × 5",
+             "answer": {
+              "text": "180"
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 180 cubic cm"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 8,
+            "width": 6,
+            "height": 8,
+            "lengthLabel": "8 m",
+            "widthLabel": "6 m",
+            "heightLabel": "8 m"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "8 × 6 × 8",
+             "answer": {
+              "text": "384"
+             }
+            }
+           },
+           {
+            "text": "cubic m"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 384 cubic m"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 11,
+            "width": 3,
+            "height": 7,
+            "lengthLabel": "11 m",
+            "widthLabel": "3 m",
+            "heightLabel": "7 m"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Volume ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "11 × 3 × 7",
+             "answer": {
+              "text": "231"
+             }
+            }
+           },
+           {
+            "text": "cubic m"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Volume = 231 cubic m"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-volume-formula",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the volume of a rectangular prism from its edge lengths or its base area.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Most prisms give three edge lengths. Some give the area of the base and the height, which uses the second formula. The prisms are drawn in proportion to their edge lengths.",
+      "misconceptions": [
+       "Adding the edge lengths instead of multiplying them.",
+       "Multiplying the base area by another edge of the base instead of the height."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+      ]
+     },
+     "estimatedHeight": 460
+    }
+   ],
+   "estimatedHeight": 779
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the volume of each figure.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 3,
+            "width": 3,
+            "height": 4,
+            "lengthLabel": "3 in",
+            "heightLabel": "4 in"
+           },
+           {
+            "x": 3,
+            "length": 3,
+            "width": 3,
+            "height": 6,
+            "lengthLabel": "3 in",
+            "widthLabel": "3 in",
+            "heightLabel": "6 in"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Left box:"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "3 × 3 × 4",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right box:"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "3 × 3 × 6",
+             "answer": {
+              "text": "54"
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Whole shape:"
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "36 + 54",
+             "answer": {
+              "text": "90"
+             }
+            }
+           },
+           {
+            "text": "cubic in"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Left box: 36 cubic in; Right box: 54 cubic in; Whole shape: 90 cubic in"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "solid": {
+          "boxes": [
+           {
+            "length": 5,
+            "width": 2,
+            "height": 5,
+            "lengthLabel": "5 cm",
+            "heightLabel": "5 cm"
+           },
+           {
+            "x": 5,
+            "length": 4,
+            "width": 2,
+            "height": 3,
+            "lengthLabel": "4 cm",
+            "widthLabel": "2 cm",
+            "heightLabel": "3 cm"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Left box:"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "5 × 2 × 5",
+             "answer": {
+              "text": "50"
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Right box:"
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "4 × 2 × 3",
+             "answer": {
+              "text": "24"
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Whole shape:"
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "50 + 24",
+             "answer": {
+              "text": "74"
+             }
+            }
+           },
+           {
+            "text": "cubic cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Left box: 50 cubic cm; Right box: 24 cubic cm; Whole shape: 74 cubic cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-volume-combined",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Find the volume of a figure made of two rectangular prisms by adding their volumes.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each figure is two prisms of the same width standing side by side. The answer lines ask for each prism and then the whole figure. Volume is additive, so the two volumes add to the total.",
+      "misconceptions": [
+       "Multiplying the total length by the taller height, as if the figure were one prism."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+      ]
+     },
+     "estimatedHeight": 322
+    },
+    {
+     "label": "D",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A fish tank is 20 inches long, 10 inches wide and 12 inches tall. What is its volume?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q9",
+           "label": "volume of the tank",
+           "answer": {
+            "text": "2,400",
+            "also": [
+             "2400",
+             "2,400 cubic inches"
+            ],
+            "work": "20 × 10 × 12"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2,400"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "A box has a volume of 60 cubic cm. Its base is 4 cm long and 3 cm wide. How tall is the box?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q10",
+           "label": "height of the box",
+           "answer": {
+            "text": "5",
+            "also": [
+             "5 cm"
+            ],
+            "work": "60 ÷ (4 × 3)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-volume-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use the volume formula in real situations, including finding a missing edge length.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The first problem uses the formula directly. The second gives the volume and the base, so students divide to find the height. Working backward shows that the formula relates three quantities.",
+      "misconceptions": [
+       "Multiplying all the numbers in the story, including the volume, to find a missing edge."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+      ]
+     },
+     "estimatedHeight": 390
+    }
+   ],
+   "estimatedHeight": 720
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "cubes in a 2 by 3 layer",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "layers",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "cubes in a 2 by 3 by 2 box",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "cubes in a 3 by 2 layer",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "layers",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "cubes in a 3 by 2 by 4 box",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "7 × 2 × 6",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "12 × 3 × 5",
+    "answer": {
+     "text": "180"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "8 × 6 × 8",
+    "answer": {
+     "text": "384"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "11 × 3 × 7",
+    "answer": {
+     "text": "231"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "3 × 3 × 4",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "3 × 3 × 6",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "36 + 54",
+    "answer": {
+     "text": "90"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "5 × 2 × 5",
+    "answer": {
+     "text": "50"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "4 × 2 × 3",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "50 + 24",
+    "answer": {
+     "text": "74"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "volume of the tank",
+    "answer": {
+     "text": "2,400",
+     "also": [
+      "2400",
+      "2,400 cubic inches"
+     ],
+     "work": "20 × 10 × 12"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "height of the box",
+    "answer": {
+     "text": "5",
+     "also": [
+      "5 cm"
+     ],
+     "work": "60 ÷ (4 × 3)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use the volume formulas, and add the volumes of joined prisms.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Layers of cubes come first, so the formula is a count students have already made."
+ },
+ "advice": [
+  "\"Find the volume.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

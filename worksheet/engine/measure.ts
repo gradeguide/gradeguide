@@ -4,6 +4,7 @@
 import { type Node } from '../proto/v1/nodes_pb.js';
 import * as draw from './draw.js';
 import * as shapes from './draw_shapes.js';
+import * as drawG5 from './draw_g5.js';
 import { blankWidth } from './field.js';
 import { type Drawing } from './drawing.js';
 import { NODE_GAP, STANDARD_WRITING, type Writing, textHeight } from './layout.js';
@@ -59,6 +60,14 @@ function drawing(n: Node, w: Writing): Drawing | undefined {
       return shapes.measuringJug(k.value);
     case 'dataTable':
       return draw.dataTable(k.value, false, w);
+    case 'solid':
+      return drawG5.solid(k.value);
+    case 'coordinateGrid':
+      return drawG5.coordinateGrid(k.value, false);
+    case 'decimalChart':
+      return drawG5.decimalChart(k.value, false, w);
+    case 'fractionGrid':
+      return drawG5.fractionGrid(k.value);
   }
   return undefined;
 }

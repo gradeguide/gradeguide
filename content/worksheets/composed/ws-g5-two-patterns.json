@@ -1,0 +1,819 @@
+{
+ "worksheetId": "ws-g5-two-patterns",
+ "title": "Two number patterns",
+ "headerLabels": [
+  "5.OA.B.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Complete each table. Then fill in the blank.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Step",
+           "Add 2",
+           "Add 6"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "2"
+             },
+             {
+              "text": "6"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q1",
+               "label": "step 2 of add 2",
+               "answer": {
+                "text": "4"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-2",
+               "label": "step 2 of add 6",
+               "answer": {
+                "text": "12"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q1-3",
+               "label": "step 3 of add 2",
+               "answer": {
+                "text": "6"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-4",
+               "label": "step 3 of add 6",
+               "answer": {
+                "text": "18"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q1-5",
+               "label": "step 4 of add 2",
+               "answer": {
+                "text": "8"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q1-6",
+               "label": "step 4 of add 6",
+               "answer": {
+                "text": "24"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each term of \"Add 6\" is"
+           },
+           {
+            "blank": {
+             "id": "q1-7",
+             "label": "how many times the add 2 term",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "times the term of \"Add 2\"."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 12, 6, 18, 8, 24; Each term of \"Add 6\" is 3 times the term of \"Add 2\"."
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "Step",
+           "Add 3",
+           "Add 9"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             },
+             {
+              "text": "0"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "3"
+             },
+             {
+              "text": "9"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "field": {
+               "id": "q2",
+               "label": "step 2 of add 3",
+               "answer": {
+                "text": "6"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-2",
+               "label": "step 2 of add 9",
+               "answer": {
+                "text": "18"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "field": {
+               "id": "q2-3",
+               "label": "step 3 of add 3",
+               "answer": {
+                "text": "9"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-4",
+               "label": "step 3 of add 9",
+               "answer": {
+                "text": "27"
+               }
+              }
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "field": {
+               "id": "q2-5",
+               "label": "step 4 of add 3",
+               "answer": {
+                "text": "12"
+               }
+              }
+             },
+             {
+              "field": {
+               "id": "q2-6",
+               "label": "step 4 of add 9",
+               "answer": {
+                "text": "36"
+               }
+              }
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each term of \"Add 9\" is"
+           },
+           {
+            "blank": {
+             "id": "q2-7",
+             "label": "how many times the add 3 term",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "times the term of \"Add 3\"."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6, 18, 9, 27, 12, 36; Each term of \"Add 9\" is 3 times the term of \"Add 3\"."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-two-patterns",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Generate two patterns from two rules and compare corresponding terms.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Both patterns start at 0, and one rule adds a multiple of the other. In the table, each term of the second pattern is the same number of times the term beside it. Students describe that relation in the sentence below the table.",
+      "misconceptions": [
+       "Comparing terms down one column instead of across the row.",
+       "Describing the difference between terms, such as \"4 more\", when the relation is a number of times."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 538
+    }
+   ],
+   "estimatedHeight": 542
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Complete the table. Plot each ordered pair on the grid.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "dataTable": {
+             "header": [
+              "Step",
+              "Add 2",
+              "Add 4",
+              "Ordered pair"
+             ],
+             "rows": [
+              {
+               "cells": [
+                {
+                 "text": "0"
+                },
+                {
+                 "text": "0"
+                },
+                {
+                 "text": "0"
+                },
+                {
+                 "text": "(0, 0)"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "1"
+                },
+                {
+                 "text": "2"
+                },
+                {
+                 "text": "4"
+                },
+                {
+                 "text": "(2, 4)"
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "2"
+                },
+                {
+                 "field": {
+                  "id": "q3",
+                  "label": "step 2 of add 2",
+                  "answer": {
+                   "text": "4"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-2",
+                  "label": "step 2 of add 4",
+                  "answer": {
+                   "text": "8"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-3",
+                  "label": "ordered pair for step 2",
+                  "answer": {
+                   "text": "(4, 8)",
+                   "also": [
+                    "(4,8)"
+                   ]
+                  }
+                 }
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "3"
+                },
+                {
+                 "field": {
+                  "id": "q3-4",
+                  "label": "step 3 of add 2",
+                  "answer": {
+                   "text": "6"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-5",
+                  "label": "step 3 of add 4",
+                  "answer": {
+                   "text": "12"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-6",
+                  "label": "ordered pair for step 3",
+                  "answer": {
+                   "text": "(6, 12)",
+                   "also": [
+                    "(6,12)"
+                   ]
+                  }
+                 }
+                }
+               ]
+              },
+              {
+               "cells": [
+                {
+                 "text": "4"
+                },
+                {
+                 "field": {
+                  "id": "q3-7",
+                  "label": "step 4 of add 2",
+                  "answer": {
+                   "text": "8"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-8",
+                  "label": "step 4 of add 4",
+                  "answer": {
+                   "text": "16"
+                  }
+                 }
+                },
+                {
+                 "field": {
+                  "id": "q3-9",
+                  "label": "ordered pair for step 4",
+                  "answer": {
+                   "text": "(8, 16)",
+                   "also": [
+                    "(8,16)"
+                   ]
+                  }
+                 }
+                }
+               ]
+              }
+             ]
+            }
+           },
+           {
+            "coordinateGrid": {
+             "xMax": 8,
+             "yMax": 16,
+             "yStep": 2,
+             "plotField": {
+              "id": "q3-10",
+              "label": "ordered pairs plotted",
+              "answer": {
+               "text": "(0, 0); (2, 4); (4, 8); (6, 12); (8, 16)"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Each y-coordinate is"
+           },
+           {
+            "blank": {
+             "id": "q3-11",
+             "label": "how many times the x-coordinate",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "times the x-coordinate."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4, 8, (4, 8), 6, 12, (6, 12), 8, 16, (8, 16), (0, 0); (2, 4); (4, 8); (6, 12); (8, 16); Each y-coordinate is 2 times the x-coordinate."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-graph-two-patterns",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Form ordered pairs from two patterns and graph them.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each row of the table becomes an ordered pair, with the first pattern as the x-coordinate. The plotted points lie on a straight line through (0, 0). The question under the graph asks for the same relation the table showed, now seen in the coordinates.",
+      "misconceptions": [
+       "Plotting the step number as the x-coordinate instead of the first pattern's term.",
+       "Reversing the order of the coordinates when plotting."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 350
+    }
+   ],
+   "estimatedHeight": 354
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "step 2 of add 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "step 2 of add 6",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "step 3 of add 2",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "step 3 of add 6",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "step 4 of add 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "step 4 of add 6",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "how many times the add 2 term",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "step 2 of add 3",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "step 2 of add 9",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "step 3 of add 3",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "step 3 of add 9",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "step 4 of add 3",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "step 4 of add 9",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-7",
+    "label": "how many times the add 3 term",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "step 2 of add 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "step 2 of add 4",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "ordered pair for step 2",
+    "answer": {
+     "text": "(4, 8)",
+     "also": [
+      "(4,8)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "step 3 of add 2",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-5",
+    "label": "step 3 of add 4",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-6",
+    "label": "ordered pair for step 3",
+    "answer": {
+     "text": "(6, 12)",
+     "also": [
+      "(6,12)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-7",
+    "label": "step 4 of add 2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-8",
+    "label": "step 4 of add 4",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-9",
+    "label": "ordered pair for step 4",
+    "answer": {
+     "text": "(8, 16)",
+     "also": [
+      "(8,16)"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-10",
+    "label": "ordered pairs plotted",
+    "answer": {
+     "text": "(0, 0); (2, 4); (4, 8); (6, 12); (8, 16)"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-11",
+    "label": "how many times the x-coordinate",
+    "answer": {
+     "text": "2"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Generate, compare and graph two related number patterns.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "The table shows the relation between the patterns first. The graph then shows the same relation as points on a line."
+ },
+ "advice": [
+  "\"Complete each table. Then fill in the blank.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

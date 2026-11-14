@@ -1,0 +1,611 @@
+{
+ "worksheetId": "ws-g5-unlike-mixed-numbers",
+ "title": "Adding and subtracting mixed numbers",
+ "headerLabels": [
+  "5.NF.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add. Write the answer in simplest form.",
+     "explainer": "Example: 2 1/2 + 1 2/3 = 2 3/6 + 1 4/6 = 3 7/6 = 4 1/6",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "fraction": {
+             "num": 5,
+             "den": 8
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "4 5/8 + 3 1/6",
+             "answer": {
+              "text": "7 19/24",
+              "also": [
+               "187/24",
+               "374/48"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "4 5/8 + 3 1/6 = 7 19/24"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "4 1/3 + 3 3/4",
+             "answer": {
+              "text": "8 1/12",
+              "also": [
+               "97/12"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "4 1/3 + 3 3/4 = 8 1/12"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "fraction": {
+             "num": 7,
+             "den": 8
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "2 7/8 + 3 3/5",
+             "answer": {
+              "text": "6 19/40",
+              "also": [
+               "259/40"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "2 7/8 + 3 3/5 = 6 19/40"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "fraction": {
+             "num": 7,
+             "den": 8
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "2 7/8 + 1 5/6",
+             "answer": {
+              "text": "4 17/24",
+              "also": [
+               "113/24",
+               "226/48"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "2 7/8 + 1 5/6 = 4 17/24"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-add-unlike-mixed",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add mixed numbers with different denominators.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Students add the whole numbers and the fractions separately after rewriting the fractions. Many fraction parts add to more than 1, so the sum must be regrouped. The worked line shows the regrouping step.",
+      "misconceptions": [
+       "Leaving an answer such as 3 7/6 without regrouping to 4 1/6."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 344
+    },
+    {
+     "label": "B",
+     "instruction": "Subtract. Write the answer in simplest form.",
+     "explainer": "Example: 3 1/4 − 1 1/2 = 2 5/4 − 1 2/4 = 1 3/4",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "4 1/2 − 1 1/4",
+             "answer": {
+              "text": "3 1/4",
+              "also": [
+               "13/4",
+               "26/8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "4 1/2 − 1 1/4 = 3 1/4"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "fraction": {
+             "num": 7,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "5 1/2 − 1 7/8",
+             "answer": {
+              "text": "3 5/8",
+              "also": [
+               "29/8",
+               "58/16"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5 1/2 − 1 7/8 = 3 5/8"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "5 1/2 − 1 2/3",
+             "answer": {
+              "text": "3 5/6",
+              "also": [
+               "23/6"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5 1/2 − 1 2/3 = 3 5/6"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "3 1/4 − 2 1/2",
+             "answer": {
+              "text": "3/4",
+              "also": [
+               "6/8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3 1/4 − 2 1/2 = 3/4"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-subtract-unlike-mixed",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Subtract mixed numbers with different denominators, regrouping a whole when needed.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "In some items the second fraction part is larger than the first. Students then trade one whole for fraction parts, as in the worked line. Items with and without regrouping are mixed so students check every time.",
+      "misconceptions": [
+       "Subtracting the smaller fraction from the larger, whichever number it belongs to: 3 1/4 − 1 1/2 = 2 1/4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 344
+    }
+   ],
+   "estimatedHeight": 696
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "4 5/8 + 3 1/6",
+    "answer": {
+     "text": "7 19/24",
+     "also": [
+      "187/24",
+      "374/48"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "4 1/3 + 3 3/4",
+    "answer": {
+     "text": "8 1/12",
+     "also": [
+      "97/12"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "2 7/8 + 3 3/5",
+    "answer": {
+     "text": "6 19/40",
+     "also": [
+      "259/40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 7/8 + 1 5/6",
+    "answer": {
+     "text": "4 17/24",
+     "also": [
+      "113/24",
+      "226/48"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "4 1/2 − 1 1/4",
+    "answer": {
+     "text": "3 1/4",
+     "also": [
+      "13/4",
+      "26/8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "5 1/2 − 1 7/8",
+    "answer": {
+     "text": "3 5/8",
+     "also": [
+      "29/8",
+      "58/16"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "5 1/2 − 1 2/3",
+    "answer": {
+     "text": "3 5/6",
+     "also": [
+      "23/6"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3 1/4 − 2 1/2",
+    "answer": {
+     "text": "3/4",
+     "also": [
+      "6/8"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract mixed numbers with different denominators.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "Addition comes first because regrouping a sum is easier than regrouping before subtracting."
+ },
+ "advice": [
+  "\"Add. Write the answer in simplest form.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

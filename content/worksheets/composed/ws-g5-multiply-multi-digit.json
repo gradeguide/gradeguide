@@ -1,0 +1,891 @@
+{
+ "worksheetId": "ws-g5-multiply-multi-digit",
+ "title": "Multiplying multi-digit numbers",
+ "headerLabels": [
+  "5.NBT.B.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Multiply.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_MULTIPLY",
+         "operands": [
+          "77",
+          "26"
+         ],
+         "answer": {
+          "label": "77 × 26",
+          "answer": {
+           "text": "2002"
+          }
+         },
+         "carryBoxes": true,
+         "partials": [
+          {
+           "field": {
+            "label": "6 × 77",
+            "answer": {
+             "text": "462"
+            }
+           },
+           "note": "6 × 77"
+          },
+          {
+           "field": {
+            "label": "20 × 77",
+            "answer": {
+             "text": "1540"
+            }
+           },
+           "note": "20 × 77"
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Multiply by the ones. Then multiply by the tens: that row ends in **0**. Add the two rows."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "59",
+           "62"
+          ],
+          "answer": {
+           "id": "q1-3",
+           "label": "59 × 62",
+           "answer": {
+            "text": "3658"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q1",
+             "label": "2 × 59",
+             "answer": {
+              "text": "118"
+             }
+            },
+            "note": "2 × 59"
+           },
+           {
+            "field": {
+             "id": "q1-2",
+             "label": "60 × 59",
+             "answer": {
+              "text": "3540"
+             }
+            },
+            "note": "60 × 59"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "118, 3540, 3658"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "69",
+           "19"
+          ],
+          "answer": {
+           "id": "q2-3",
+           "label": "69 × 19",
+           "answer": {
+            "text": "1311"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q2",
+             "label": "9 × 69",
+             "answer": {
+              "text": "621"
+             }
+            },
+            "note": "9 × 69"
+           },
+           {
+            "field": {
+             "id": "q2-2",
+             "label": "10 × 69",
+             "answer": {
+              "text": "690"
+             }
+            },
+            "note": "10 × 69"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "621, 690, 1311"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "64",
+           "35"
+          ],
+          "answer": {
+           "id": "q3-3",
+           "label": "64 × 35",
+           "answer": {
+            "text": "2240"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q3",
+             "label": "5 × 64",
+             "answer": {
+              "text": "320"
+             }
+            },
+            "note": "5 × 64"
+           },
+           {
+            "field": {
+             "id": "q3-2",
+             "label": "30 × 64",
+             "answer": {
+              "text": "1920"
+             }
+            },
+            "note": "30 × 64"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "320, 1920, 2240"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "88",
+           "62"
+          ],
+          "answer": {
+           "id": "q4-3",
+           "label": "88 × 62",
+           "answer": {
+            "text": "5456"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q4",
+             "label": "2 × 88",
+             "answer": {
+              "text": "176"
+             }
+            },
+            "note": "2 × 88"
+           },
+           {
+            "field": {
+             "id": "q4-2",
+             "label": "60 × 88",
+             "answer": {
+              "text": "5280"
+             }
+            },
+            "note": "60 × 88"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "176, 5280, 5456"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-by-2-digits",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Multiply two-digit numbers with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Each partial product has its own row, labelled with what it stands for, such as 60 × 59. The labels link the algorithm to the place-value strategies from grade 4. Small boxes above the top number hold the regrouped digits.",
+      "misconceptions": [
+       "Forgetting the zero in the tens row: 23 × 14 with 23 written for 10 × 23.",
+       "Adding a regrouped digit from the ones row into the tens row."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 662
+    }
+   ],
+   "estimatedHeight": 666
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "785",
+           "55"
+          ],
+          "answer": {
+           "id": "q5-3",
+           "label": "785 × 55",
+           "answer": {
+            "text": "43175"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q5",
+             "label": "5 × 785",
+             "answer": {
+              "text": "3925"
+             }
+            },
+            "note": "5 × 785"
+           },
+           {
+            "field": {
+             "id": "q5-2",
+             "label": "50 × 785",
+             "answer": {
+              "text": "39250"
+             }
+            },
+            "note": "50 × 785"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3925, 39250, 43175"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "318",
+           "86"
+          ],
+          "answer": {
+           "id": "q6-3",
+           "label": "318 × 86",
+           "answer": {
+            "text": "27348"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q6",
+             "label": "6 × 318",
+             "answer": {
+              "text": "1908"
+             }
+            },
+            "note": "6 × 318"
+           },
+           {
+            "field": {
+             "id": "q6-2",
+             "label": "80 × 318",
+             "answer": {
+              "text": "25440"
+             }
+            },
+            "note": "80 × 318"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1908, 25440, 27348"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "304",
+           "32"
+          ],
+          "answer": {
+           "id": "q7-3",
+           "label": "304 × 32",
+           "answer": {
+            "text": "9728"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q7",
+             "label": "2 × 304",
+             "answer": {
+              "text": "608"
+             }
+            },
+            "note": "2 × 304"
+           },
+           {
+            "field": {
+             "id": "q7-2",
+             "label": "30 × 304",
+             "answer": {
+              "text": "9120"
+             }
+            },
+            "note": "30 × 304"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "608, 9120, 9728"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "917",
+           "13"
+          ],
+          "answer": {
+           "id": "q8-3",
+           "label": "917 × 13",
+           "answer": {
+            "text": "11921"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q8",
+             "label": "3 × 917",
+             "answer": {
+              "text": "2751"
+             }
+            },
+            "note": "3 × 917"
+           },
+           {
+            "field": {
+             "id": "q8-2",
+             "label": "10 × 917",
+             "answer": {
+              "text": "9170"
+             }
+            },
+            "note": "10 × 917"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2751, 9170, 11921"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-3-by-2-digits",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Multiply a three-digit number by a two-digit number with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The steps are the same as for two-digit numbers, with one more digit in each row. Some top numbers contain a zero, which produces a zero in the partial product. The row labels stay, so a wrong row can be traced to its step.",
+      "misconceptions": [
+       "Skipping a zero digit in the top number and shifting the rest of the row left."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 434
+    },
+    {
+     "label": "C",
+     "instruction": "Multiply.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "4006",
+           "94"
+          ],
+          "answer": {
+           "id": "q9-3",
+           "label": "4006 × 94",
+           "answer": {
+            "text": "376564"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q9",
+             "label": "4 × 4006",
+             "answer": {
+              "text": "16024"
+             }
+            },
+            "note": "4 × 4,006"
+           },
+           {
+            "field": {
+             "id": "q9-2",
+             "label": "90 × 4006",
+             "answer": {
+              "text": "360540"
+             }
+            },
+            "note": "90 × 4,006"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "16024, 360540, 376564"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "3850",
+           "78"
+          ],
+          "answer": {
+           "id": "q10-3",
+           "label": "3850 × 78",
+           "answer": {
+            "text": "300300"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q10",
+             "label": "8 × 3850",
+             "answer": {
+              "text": "30800"
+             }
+            },
+            "note": "8 × 3,850"
+           },
+           {
+            "field": {
+             "id": "q10-2",
+             "label": "70 × 3850",
+             "answer": {
+              "text": "269500"
+             }
+            },
+            "note": "70 × 3,850"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30800, 269500, 300300"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-multiply-4-by-2-digits",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Multiply a four-digit number by a two-digit number with the standard algorithm.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Four-digit factors give five- and six-digit products, which tests whether regrouping is tracked across many places. Two items are enough to show fluency. Students who finish the earlier sections accurately are ready for them.",
+      "misconceptions": [
+       "Losing track of regrouped digits across four places."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 234
+    }
+   ],
+   "estimatedHeight": 676
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "2 × 59",
+    "answer": {
+     "text": "118"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "60 × 59",
+    "answer": {
+     "text": "3540"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "59 × 62",
+    "answer": {
+     "text": "3658"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "9 × 69",
+    "answer": {
+     "text": "621"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "10 × 69",
+    "answer": {
+     "text": "690"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "69 × 19",
+    "answer": {
+     "text": "1311"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "5 × 64",
+    "answer": {
+     "text": "320"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "30 × 64",
+    "answer": {
+     "text": "1920"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "64 × 35",
+    "answer": {
+     "text": "2240"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "2 × 88",
+    "answer": {
+     "text": "176"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "60 × 88",
+    "answer": {
+     "text": "5280"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "88 × 62",
+    "answer": {
+     "text": "5456"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "5 × 785",
+    "answer": {
+     "text": "3925"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "50 × 785",
+    "answer": {
+     "text": "39250"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "785 × 55",
+    "answer": {
+     "text": "43175"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "6 × 318",
+    "answer": {
+     "text": "1908"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "80 × 318",
+    "answer": {
+     "text": "25440"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "318 × 86",
+    "answer": {
+     "text": "27348"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "2 × 304",
+    "answer": {
+     "text": "608"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "30 × 304",
+    "answer": {
+     "text": "9120"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "304 × 32",
+    "answer": {
+     "text": "9728"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "3 × 917",
+    "answer": {
+     "text": "2751"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "10 × 917",
+    "answer": {
+     "text": "9170"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "917 × 13",
+    "answer": {
+     "text": "11921"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4 × 4006",
+    "answer": {
+     "text": "16024"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "90 × 4006",
+    "answer": {
+     "text": "360540"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "4006 × 94",
+    "answer": {
+     "text": "376564"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8 × 3850",
+    "answer": {
+     "text": "30800"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "70 × 3850",
+    "answer": {
+     "text": "269500"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "3850 × 78",
+    "answer": {
+     "text": "300300"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Multiply multi-digit numbers with the standard algorithm.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "The top factor grows from two to four digits while the steps stay the same."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

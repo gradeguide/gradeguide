@@ -207,12 +207,15 @@ export function tapeDiagram(t: TapeDiagram, filled: boolean): Drawing {
 }
 
 export function columnArithmetic(c: ColumnArithmetic, filled: boolean, w: L.Writing = L.STANDARD_WRITING): Drawing {
-  const nums = c.operands.map((x) => x.toString());
+  // With decimal places, every number has a digit before the point.
+  const places = c.decimalPlaces;
+  const nums = c.operands.map((x) => x.toString().padStart(places + 1, '0'));
+  const digitsOf = (s: string) => s.replace('.', '');
   // Without partials, one column more than the longest number, for a carry
   // into a new place. With partials, as wide as the longest answer row.
   const cols =
     c.partials.length > 0
-      ? Math.max(...nums.map((s) => s.length), ...[...c.partials.map((p) => p.field), c.answer].map((f) => (f?.answer?.text ?? '').length))
+      ? Math.max(...nums.map((s) => s.length), ...[...c.partials.map((p) => p.field), c.answer].map((f) => digitsOf(f?.answer?.text ?? '').length))
       : Math.max(...nums.map((s) => s.length)) + 1;
   const dw = w.digit;
   const rh = dw * 1.25;
@@ -227,7 +230,14 @@ export function columnArithmetic(c: ColumnArithmetic, filled: boolean, w: L.Writ
     }
   }
   const sign = c.op === ColumnArithmetic_Op.SUBTRACT ? '−' : c.op === ColumnArithmetic_Op.MULTIPLY ? '×' : '+';
+  // point draws the decimal point on the row whose top is at y.
+  const point = (y: number) => {
+    if (places > 0) {
+      shapes.push({ t: 'circle', cx: right - places * dw, cy: y + rh - 8, r: 2.2, fill: '#222' });
+    }
+  };
   nums.forEach((s, r) => {
+    point(y);
     if (r === nums.length - 1) {
       shapes.push({ t: 'text', x: left - 6, y: y + rh - 7, s: sign, size: 20 });
     }
@@ -238,7 +248,8 @@ export function columnArithmetic(c: ColumnArithmetic, filled: boolean, w: L.Writ
   });
   // boxRow draws a row of digit boxes read as one field, right-aligned.
   const boxRow = (f: ColumnArithmetic['answer']) => {
-    const ans = shown(f, filled);
+    const ans = digitsOf(shown(f, filled));
+    point(y);
     for (let i = 0; i < cols; i++) {
       const ch = ans.length >= cols - i ? ans[ans.length - (cols - i)] : '';
       shapes.push({ t: 'box', x: left + i * dw + 2, y, w: dw - 4, h: rh - 4, field: i === 0 ? fieldId(f) : null, s: ch ?? '', size: 17 });
@@ -521,11 +532,12 @@ export function baseTenBlocks(b: BaseTenBlocks): Drawing {
 export function longDivision(l: LongDivision, filled: boolean, w: L.Writing = L.STANDARD_WRITING): Drawing {
   const ds = l.dividend.toString();
   const dw = w.digit;
-  const left = 40;
+  // Room for the divisor: 40 for one digit, 12 more for each further digit.
+  const left = 28 + 12 * String(l.divisor).length;
   const top = 34;
   const right = left + ds.length * dw + 10;
   const shapes: Shape[] = [];
-  shapes.push({ t: 'text', x: left - 14, y: top + 24, s: String(l.divisor), size: 20 });
+  shapes.push({ t: 'text', x: left - 14 - (String(l.divisor).length - 1) * 6, y: top + 24, s: String(l.divisor), size: 20 });
   shapes.push({ t: 'path', d: `M${left - 4} ${top + 32} Q${left + 4} ${top + 16} ${left - 4} ${top} L${right} ${top}`, w: 2 });
   [...ds].forEach((ch, i) => shapes.push({ t: 'text', x: left + 6 + i * dw + dw / 2, y: top + 24, s: ch, size: 20 }));
   shapes.push({ t: 'box', x: left + 4, y: 2, w: ds.length * dw, h: 26, field: fieldId(l.quotient), s: shown(l.quotient, filled), size: 17 });
