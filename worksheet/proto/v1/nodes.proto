@@ -63,6 +63,7 @@ message Node {
     Transversal transversal = 71;
     RoundSolid round_solid = 72;
     BoxSolid box_solid = 73;
+    AngleTriangle angle_triangle = 158;
   }
 }
 
@@ -677,4 +678,20 @@ message BoxSolid {
   double length = 4;
   double width = 5;
   double height = 6;
+}
+
+// AngleTriangle is a triangle drawn from two of its angles, with an arc and
+// a label inside each corner, and optionally an exterior angle.
+message AngleTriangle {
+  // The interior angles at the bottom left and bottom right corners, in
+  // degrees. The top corner's is what is left of 180.
+  double left = 1;
+  double right = 2;
+  // Labels for the bottom left, bottom right and top corners, in that order.
+  // An empty label leaves its corner unmarked. A field makes it the angle to
+  // find.
+  repeated Angle.ArcLabel labels = 3;
+  // When set, the base runs on past the bottom right corner and this labels
+  // the exterior angle there.
+  Angle.ArcLabel exterior = 4;
 }

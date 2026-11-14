@@ -552,9 +552,13 @@ describe('grade 6 to 8 item kinds', () => {
       expect(cell(0, 3)).toBe(cell(0, 1) + cell(0, 2));
       expect(cell(2, 1)).toBe(cell(0, 1) + cell(1, 1));
       expect(cell(2, 3)).toBe(cell(0, 3) + cell(1, 3));
-      const [f1, f2] = answers(ns).slice(-2).map(value);
+      const all = answers(ns);
+      const [f1, f2] = all.slice(-3, -1).map(value);
       expect(f1).toBeCloseTo(cell(0, 1) / cell(2, 1), 9);
       expect(f2).toBeCloseTo(cell(0, 2) / cell(0, 3), 9);
+      const [p1, p2] = [cell(0, 1) / cell(2, 1), cell(0, 2) / cell(2, 2)];
+      expect(Math.abs(p1 - p2)).toBeGreaterThanOrEqual(0.15);
+      expect(all[all.length - 1]).toBe(p1 > p2 ? 'yes' : 'no');
     }
   });
 
@@ -823,9 +827,19 @@ describe('grade 6 to 8 item kinds', () => {
         expect(value(l.field!.answer!.text)).toBe(l.position % 2 === 0 ? t.degrees : 180 - t.degrees);
       }
     }
+    type Tri = { left: number; right: number; labels: { text: string; field?: Field }[]; exterior?: { field?: Field } };
     for (const ns of items({ case: 'angleFacts', value: { mode: 2 } }, 10)) {
-      const [a, b] = nums(textOf(ns));
-      expect(value(answers(ns)[0])).toBe(180 - a - b);
+      const t = ns[0].kind.value as Tri;
+      const angles = [t.left, t.right, 180 - t.left - t.right];
+      t.labels.forEach((l, i) => {
+        expect(angles[i]).toBeGreaterThanOrEqual(35);
+        expect(value(l.field ? l.field.answer!.text : l.text)).toBe(angles[i]);
+      });
+      expect(t.labels.filter((l) => l.field).length).toBe(1);
+    }
+    for (const ns of items({ case: 'angleFacts', value: { mode: 3 } }, 10)) {
+      const t = ns[0].kind.value as Tri;
+      expect(value(t.exterior!.field!.answer!.text)).toBe(180 - t.right);
     }
   });
 });

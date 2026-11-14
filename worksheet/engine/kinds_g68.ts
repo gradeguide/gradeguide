@@ -9,6 +9,7 @@ import {
   type Node,
   Angle_ArcLabelSchema,
   AngleSchema,
+  AngleTriangleSchema,
   BoxPlotSchema,
   BoxSolidSchema,
   ChoicesSchema,
@@ -515,8 +516,18 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       ];
     }
     case 'twoWayTable': {
-      const [theme, c] = pickFresh(ctx, k.case, () => [rng.int(0, TWO_WAY.length - 1), [rng.int(5, 30), rng.int(5, 30), rng.int(5, 30), rng.int(5, 30)]]);
-      const [rowNames, colNames, ofCol, ofRow] = TWO_WAY[theme];
+      const theme = pickFresh(ctx, k.case + 'theme', () => rng.int(0, TWO_WAY.length - 1));
+      // Counts whose two columns differ clearly in the first row's share, so
+      // the association question has a plain answer.
+      const c = pickFresh(ctx, k.case, () => {
+        for (;;) {
+          const c = [rng.int(5, 30), rng.int(5, 30), rng.int(5, 30), rng.int(5, 30)];
+          if (Math.abs(c[0] / (c[0] + c[2]) - c[1] / (c[1] + c[3])) >= 0.15) {
+            return c;
+          }
+        }
+      });
+      const [rowNames, colNames, ofCol, ofRow, compare] = TWO_WAY[theme];
       const [a, b, x, y] = c;
       const tbl = table(
         ['', colNames[0], colNames[1], 'Total'],
@@ -537,6 +548,8 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         tbl,
         math(ofCol, fractionBlank(ctx.fields.field(ofCol, f1, unique([`${a}/${a + x}`]).filter((s) => s !== f1)))),
         math(ofRow, fractionBlank(ctx.fields.field(ofRow, f2, unique([`${b}/${a + b}`]).filter((s) => s !== f2)))),
+        text(compare),
+        choices(ctx, compare, ['yes', 'no'], a / (a + x) > b / (b + y) ? 'yes' : 'no'),
       ];
     }
     case 'integers': {
@@ -759,7 +772,17 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           return [math(Array(e).fill(b).join(' × '), '=', blank(field(ctx, `${b} used ${e} times as a factor`, ans, also)))];
         }
         case Exponents_Mode.RULES: {
-          const [form, b, m, n] = pickFresh(ctx, k.case + mode, () => [rng.int(0, 4), rng.int(2, 7), nonzero(ctx, -5, 6), nonzero(ctx, -4, 5)]);
+          // Each form before any repeats, and only the last form may come out
+          // as 1, so the sheet is not full of answers of 1.
+          const form = pickFresh(ctx, k.case + mode + 'form', () => rng.int(0, 4));
+          const [b, m, n] = pickFresh(ctx, k.case + mode, () => {
+            for (;;) {
+              const [b, m, n] = [rng.int(2, 7), nonzero(ctx, -5, 6), nonzero(ctx, -4, 5)];
+              if (form === 3 || form === 4 || (form === 0 ? m + n : form === 1 ? m - n : m) !== 0) {
+                return [b, m, n];
+              }
+            }
+          });
           if (form === 3) {
             const e = Math.abs(n) + 1;
             return [math(`${b}${sup(-e)} =`, halfBlank(1, false, field(ctx, `${b} to the −${e}`, String(b ** e))))];
@@ -769,6 +792,9 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           }
           const [lhs, e] =
             form === 0 ? [`${b}${sup(m)} × ${b}${sup(n)}`, m + n] : form === 1 ? [`${b}${sup(m)} ÷ ${b}${sup(n)}`, m - n] : [`(${b}${sup(m)})${sup(Math.abs(n))}`, m * Math.abs(n)];
+          if (e === 0) {
+            return [math(lhs, '=', blank(field(ctx, `${lhs} as one power`, '1', [`${b}⁰`, `${b}^0`])))];
+          }
           const [ans, also] = power(b, e);
           const value = e >= 0 ? b ** e : 0;
           const extra = e >= 0 && value <= 100000 ? [String(value)] : e < 0 ? [`1/${b}${sup(-e)}`, `1/${b ** -e}`] : [];
@@ -1076,11 +1102,12 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'roundMeasure': {
       const asks = list(k.value.asks, [1, 2]);
-      const [ask, r, h, useD] = pickFresh(ctx, k.case, () => {
-        const ask = rng.pick(asks);
+      // Each kind of figure in turn before any repeats.
+      const ask = pickFresh(ctx, k.case + 'ask', () => rng.pick(asks));
+      const [r, h, useD] = pickFresh(ctx, k.case + ask, () => {
         const r = ask === RoundMeasure_Ask.SPHERE ? rng.pick([3, 6]) : ask === RoundMeasure_Ask.CYLINDER || ask === RoundMeasure_Ask.CONE ? rng.int(1, 6) : rng.int(2, 15);
-        const h = ask === RoundMeasure_Ask.CONE ? 3 * rng.int(1, 5) : rng.int(2, 12);
-        return [ask, r, h, ask <= 2 ? rng.int(0, 1) : 0];
+        const h = ask === RoundMeasure_Ask.CONE ? 3 * rng.int(1, 5) : ask === RoundMeasure_Ask.CYLINDER ? rng.int(2, 12) : 0;
+        return [r, h, ask <= 2 ? rng.int(0, 1) : 0];
       });
       // Hundredths of the answer, computed in whole numbers.
       const hundredths =
@@ -1111,7 +1138,9 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         case: 'roundSolid',
         value: create(RoundSolidSchema, { kind, diameter: !!useD, radiusLabel: useD ? `${2 * r} cm` : `${r} cm`, heightLabel: ask === RoundMeasure_Ask.CYLINDER || ask === RoundMeasure_Ask.CONE ? `${h} cm` : '' }),
       });
-      return [text(say), figure, math(`${what} ≈`, blank(field(ctx, `${what.toLowerCase()}: ${say}`, num(v), also)), unit)];
+      // A solid's volume takes several multiplications, so it gets room.
+      const room = ask >= RoundMeasure_Ask.CYLINDER ? [work(2)] : [];
+      return [text(say), figure, ...room, math(`${what} ≈`, blank(field(ctx, `${what.toLowerCase()}: ${say}`, num(v), also)), unit)];
     }
     case 'classify':
       return classify(k.value.topic, ctx);
@@ -1156,12 +1185,20 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'pythagorean': {
       const mode = k.value.mode || Pythagorean_Mode.HYPOTENUSE;
-      const [ti, flip, x1, y1, sx, sy] = pickFresh(ctx, k.case + mode, () => [rng.int(0, TRIPLES.length - 1), rng.int(0, 1), rng.int(-6, 6), rng.int(-6, 6), rngSign(ctx), rngSign(ctx)]);
-      const [a, b, c] = TRIPLES[ti];
+      // Fresh by the triangle's sides, not their order, so no triangle comes
+      // twice turned around.
+      const ti = pickFresh(ctx, k.case + mode + 'triple', () => {
+        const i = rng.int(0, TRIPLES.length - 1);
+        return TRIPLES.findIndex((t) => t[2] === TRIPLES[i][2] && Math.min(t[0], t[1]) === Math.min(TRIPLES[i][0], TRIPLES[i][1]));
+      });
+      const [flip, sx] = [rng.int(0, 1), rngSign(ctx)];
+      const [a, b, c] = rng.next() < 0.5 ? TRIPLES[ti] : [TRIPLES[ti][1], TRIPLES[ti][0], TRIPLES[ti][2]];
       if (mode === Pythagorean_Mode.DISTANCE) {
         // Legs short enough to fit on a grid from −8 to 8.
-        const [i, fx, fy] = pickFresh(ctx, k.case + 'grid', () => [rng.int(0, 3), rng.int(0, 99), rng.int(0, 99)]);
-        const [ga, gb, gc] = [[3, 4, 5], [6, 8, 10], [4, 3, 5], [8, 6, 10]][i];
+        // A different triangle for each item, turned either way.
+        const i = pickFresh(ctx, k.case + 'grid', () => rng.int(0, 2));
+        const [fx, fy] = [rng.int(0, 99), rng.int(0, 99)];
+        const [ga, gb, gc] = rng.next() < 0.5 ? [[3, 4, 5], [6, 8, 10], [5, 12, 13]][i] : [[4, 3, 5], [8, 6, 10], [12, 5, 13]][i];
         const ax = -8 + (fx % (17 - ga));
         const ay = -8 + (fy % (17 - gb));
         const [bx, by] = sx > 0 ? [ax + ga, ay + gb] : [ax + ga, ay];
@@ -1183,15 +1220,17 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const vleg = flip ? 1 : 2;
       const sides = [S(''), S(''), S('')];
       if (mode === Pythagorean_Mode.LEG) {
-        sides[0] = S(`${a} cm`);
+        // The missing leg is the bottom one, so its box sits below the
+        // triangle, clear of the hypotenuse's label.
+        sides[0] = F('the missing leg', a);
         sides[hyp] = S(`${c} cm`);
-        sides[vleg] = F('the missing leg', b);
+        sides[vleg] = S(`${b} cm`);
       } else {
         sides[0] = S(`${a} cm`);
         sides[vleg] = S(`${b} cm`);
         sides[hyp] = F('the hypotenuse', c);
       }
-      return [node({ case: 'polygon', value: create(PolygonSchema, { points: pts, sides, markRightAngles: true }) })];
+      return [node({ case: 'polygon', value: create(PolygonSchema, { points: pts, sides, markRightAngles: true }) }), work(2)];
     }
     case 'scientificNotation':
       return scientific(k.value.mode, ctx);
@@ -1258,15 +1297,33 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           math('x =', blank(field(ctx, 'x', String(x)))),
         ];
       }
-      const [a, b] = pickFresh(ctx, k.case + mode, () => {
-        const a = rng.int(20, 110);
-        return [a, rng.int(15, 160 - a)];
+      // A drawn triangle with every angle from 35° to 105°, so the arcs and
+      // labels fit inside it. Bottom left a, bottom right b, top c.
+      const [a, b, ask] = pickFresh(ctx, k.case + mode, () => {
+        for (;;) {
+          const a = rng.int(35, 105);
+          const b = rng.int(35, 105);
+          if (180 - a - b >= 35) {
+            return [a, b, rng.int(0, 2)];
+          }
+        }
       });
-      const say = `A triangle has angles of ${a}° and ${b}°.`;
+      const c = 180 - a - b;
+      const deg = (v: number) => create(Angle_ArcLabelSchema, { text: `${v}°` });
+      const find = (label: string, v: number) => create(Angle_ArcLabelSchema, { field: field(ctx, label, `${v}°`, [String(v)]) });
       if (mode === AngleFacts_Mode.EXTERIOR) {
-        return [text(say), math('Exterior angle at the third corner:', blank(field(ctx, 'exterior angle', `${a + b}°`, [String(a + b)])))];
+        // The exterior angle at the bottom right equals the two far angles
+        // added: a + c.
+        return [
+          node({
+            case: 'angleTriangle',
+            value: create(AngleTriangleSchema, { left: a, right: b, labels: [deg(a), create(Angle_ArcLabelSchema, {}), deg(c)], exterior: find('the exterior angle', a + c) }),
+          }),
+        ];
       }
-      return [text(say), math('Third angle:', blank(field(ctx, 'third angle', `${180 - a - b}°`, [String(180 - a - b)])))];
+      const angles = [a, b, c];
+      const labels = angles.map((v, i) => (i === ask ? find('the missing angle', v) : deg(v)));
+      return [node({ case: 'angleTriangle', value: create(AngleTriangleSchema, { left: a, right: b, labels }) })];
     }
   }
   return undefined;
@@ -1321,6 +1378,18 @@ function solveEquation(form: SolveEquation_Form, inequality: boolean, neg: boole
         const b = rng.int(-12, 12);
         if (a !== c) {
           const d = a * x + b - c * x;
+          // Some need the distributive property or like terms collected
+          // first, as 8.EE.C.7.b asks.
+          const shape = rng.int(0, 2);
+          if (shape === 1 && a > 0) {
+            const p = nonzero(ctx, -6, 6);
+            const d2 = a * (x + p) - c * x;
+            return [`${a}(${linear(1, p, v)}) ${rel} ${linear(c, d2, v)}`, x, a - c < 0];
+          }
+          if (shape === 2 && a > 2) {
+            const a1 = rng.int(1, a - 1);
+            return [`${linear(a1, b, v)} + ${coefTerm(a - a1, v)} ${rel} ${linear(c, d, v)}`, x, a - c < 0];
+          }
           return [`${linear(a, b, v)} ${rel} ${linear(c, d, v)}`, x, a - c < 0];
         }
       }
@@ -1611,15 +1680,23 @@ function classify(topic: Classify_Topic, ctx: Ctx): Node[] {
       return [text(`Side lengths ${a} cm, ${b} cm and ${c} cm`), choices(ctx, `can ${a}, ${b}, ${c} make a triangle`, ['makes a triangle', 'no triangle'], ok ? 'makes a triangle' : 'no triangle')];
     }
     case Classify_Topic.RATIONAL: {
-      const [form, n] = pickFresh(ctx, 'rational', () => [rng.int(0, 6), rng.int(2, 12)]);
+      // Each form once before any repeats, so the sheet mixes square roots,
+      // fractions, decimals and π.
+      const form = pickFresh(ctx, 'rational-form', () => rng.int(0, 10));
+      const n = rng.int(2, 12);
+      const d = rng.int(1, 9);
       const forms: [string, boolean][] = [
         [`√${n * n}`, true],
         [`√${n * n + 1}`, false],
         [`${n}/${n + 1}`, true],
         ['π', false],
-        [`0.${n}${n}${n}…  (${n} repeats)`, true],
-        [`0.1010010001…  (one more 0 each time)`, false],
+        [`0.${d}${d}${d}…  (the ${d}s repeat forever)`, true],
+        ['0.1010010001…  (one more 0 each time)', false],
         [num(-n), true],
+        ['3.14', true],
+        [`${n}.${d}5`, true],
+        [`√${rng.pick([2, 3, 5, 7])}`, false],
+        [`${MINUS}√${n * n}`, true],
       ];
       const [say, rational] = forms[form];
       return [math(say), choices(ctx, `is ${say} rational`, ['rational', 'irrational'], rational ? 'rational' : 'irrational')];
@@ -1648,19 +1725,23 @@ function classify(topic: Classify_Topic, ctx: Ctx): Node[] {
       return [table(['x', 'y'], rows), choices(ctx, 'is the table a function', ['function', 'not a function'], isFn ? 'function' : 'not a function')];
     }
     case Classify_Topic.SOLUTIONS: {
-      const [form, a, b, c] = pickFresh(ctx, 'solutions', () => {
-        const a = rng.int(2, 6);
-        const b = rng.int(1, 9);
-        let c = rng.int(1, 20);
-        while (c === a * b) {
-          c = rng.int(1, 20);
-        }
-        return [rng.int(0, 2), a, b, c];
-      });
+      // Six shapes, two for each answer, so a child cannot answer from the
+      // shape alone. Each shape once before any repeats.
+      const form = pickFresh(ctx, 'solutions-form', () => rng.int(0, 5));
+      const a = rng.int(2, 6);
+      const b = rng.int(1, 9);
+      const e = rng.int(2, 5);
+      let c = rng.int(1, 20);
+      while (c === a * b || c === b) {
+        c = rng.int(1, 20);
+      }
       const eqs: [string, string][] = [
         [`${a}(x + ${b}) = ${a}x + ${a * b}`, 'infinitely many'],
         [`${a}(x + ${b}) = ${a}x + ${c}`, 'no solution'],
         [`${a}(x + ${b}) = ${a + 1}x + ${c}`, 'one solution'],
+        [`${a}x + ${b} + ${e}x = ${a + e}x + ${b}`, 'infinitely many'],
+        [`${a}x − ${b} = ${a}x + ${c}`, 'no solution'],
+        [`${a + e}x − ${b} = ${a}x + ${c}`, 'one solution'],
       ];
       const [eq, answer] = eqs[form];
       return [math(eq), choices(ctx, `solutions of ${eq}`, ['one solution', 'no solution', 'infinitely many'], answer)];
@@ -1674,7 +1755,10 @@ function classify(topic: Classify_Topic, ctx: Ctx): Node[] {
       return [fig, text(say), choices(ctx, say, ['circle', 'rectangle', 'triangle'], answer)];
     }
     case Classify_Topic.LINEAR: {
-      const [form, m, b] = pickFresh(ctx, 'linear', () => [rng.int(0, 5), rng.int(2, 6), rng.int(1, 9)]);
+      // Each form once before any repeats.
+      const form = pickFresh(ctx, 'linear-form', () => rng.int(0, 8));
+      const m = rng.int(2, 6);
+      const b = rng.int(1, 9);
       const forms: [string, boolean][] = [
         [`y = ${m}x + ${b}`, true],
         [`y = x² + ${b}`, false],
@@ -1682,6 +1766,9 @@ function classify(topic: Classify_Topic, ctx: Ctx): Node[] {
         [`y = ${b} − ${m}x`, true],
         [`y = ${m}(x + ${b})`, true],
         [`y = ${m}x³`, false],
+        [`y = ${b}`, true],
+        [`y = x/${m} + ${b}`, true],
+        [`y = x(x + ${b})`, false],
       ];
       const [eq, lin] = forms[form];
       return [math(eq), choices(ctx, `is ${eq} linear`, ['linear', 'not linear'], lin ? 'linear' : 'not linear')];
@@ -1739,9 +1826,15 @@ function scientific(mode: ScientificNotation_Mode, ctx: Ctx): Node[] {
   };
   if (mode === ScientificNotation_Mode.MULTIPLY || mode === ScientificNotation_Mode.DIVIDE) {
     const [a, m, b, n] = pickFresh(ctx, 'sci' + mode, () => {
-      const b = rng.int(2, 5);
-      const a = mode === ScientificNotation_Mode.DIVIDE ? b * rng.pick([1.5, 2, 2.5, 3, 4, 0.5]) : rng.pick([1.5, 2, 2.5, 3, 4, 6, 1.2]);
-      return [Math.round(a * 10) / 10, rng.int(3, 9), b, rng.int(-4, 6)];
+      for (;;) {
+        const b = rng.int(2, 5);
+        const a = Math.round((mode === ScientificNotation_Mode.DIVIDE ? b * rng.pick([1.5, 2, 2.5, 3, 4, 0.5]) : rng.pick([1.5, 2, 2.5, 3, 4, 6, 1.2])) * 10) / 10;
+        const [m, n] = [rng.int(3, 9), rng.int(-4, 6)];
+        // An answer times 10⁰ reads oddly; pick again.
+        if ((mode === ScientificNotation_Mode.MULTIPLY ? normal(a * b, m + n) : normal(a / b, m - n))[1] !== 0) {
+          return [a, m, b, n];
+        }
+      }
     });
     const [c, e] = mode === ScientificNotation_Mode.MULTIPLY ? normal(a * b, m + n) : normal(a / b, m - n);
     const [ans, also] = sciText(c, e);
@@ -1750,11 +1843,19 @@ function scientific(mode: ScientificNotation_Mode, ctx: Ctx): Node[] {
     return [math(lhs, '=', blank(field(ctx, lhs, ans, also)))];
   }
   if (mode === ScientificNotation_Mode.COMPARE) {
-    const [b, t, m, n] = pickFresh(ctx, 'scic', () => [rng.int(1, 4), rng.int(2, 4), rng.int(5, 12), rng.int(2, 4)]);
+    // A context each, with exponents in its range, so the numbers are
+    // believable sizes. The ratio is always a whole number.
+    const i = pickFresh(ctx, 'scic-context', () => rng.int(0, SCI_COMPARE.length - 1));
+    const [, , lo, hi] = SCI_COMPARE[i];
+    const [b, t, m, n] = pickFresh(ctx, 'scic', () => [rng.int(1, 3), rng.int(2, 4), rng.int(lo, hi), rng.int(1, 3)]);
+    const [smallSay, bigSay] = SCI_COMPARE[i];
     const big = `${b * t} × 10${sup(m)}`;
     const small = `${b} × 10${sup(m - n)}`;
     const times = t * 10 ** n;
-    return [text(`How many times as large as ${small} is ${big}?`), math(blank(field(ctx, `${big} ÷ ${small}`, commas(times), [String(times), `${t} × 10${sup(n)}`, `${t} x 10^${n}`])), 'times')];
+    return [
+      text(`${smallSay.replace('#', small)} ${bigSay.replace('#', big)} How many times as large is the second?`),
+      math(blank(field(ctx, `${big} ÷ ${small}`, commas(times), [String(times), `${t} × 10${sup(n)}`, `${t} x 10^${n}`])), 'times'),
+    ];
   }
   const [c, e] = pickFresh(ctx, 'sci' + mode, () => [coef(), rng.next() < 0.6 ? rng.int(3, 9) : -rng.int(2, 6)]);
   const std = standardForm(c, e);
@@ -1774,7 +1875,7 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       const [m, b, x1, dx] = pickFresh(ctx, 'leq', () => [nonzero(ctx, -5, 5), rng.int(-9, 9), rng.int(-4, 4), rng.int(1, 4)]);
       const p = pt(x1, m * x1 + b);
       const q = pt(x1 + dx, m * (x1 + dx) + b);
-      return [text(`A line goes through ${p} and ${q}.`), math('y =', blank(field(ctx, `line through ${p} and ${q}`, linear(m, b))))];
+      return [text(`A line goes through ${p} and ${q}.`), work(2), math('y =', blank(field(ctx, `line through ${p} and ${q}`, linear(m, b))))];
     }
     case LinearRelation_Mode.SYSTEM: {
       const [form, x, y, a, c] = pickFresh(ctx, 'sys', () => {
@@ -1789,17 +1890,29 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       return [math(e1), math(e2), work(2), math('x =', blank(field(ctx, `x for ${e1}, ${e2}`, num(x))), ' y =', blank(field(ctx, `y for ${e1}, ${e2}`, num(y))))];
     }
     case LinearRelation_Mode.COMPARE: {
-      const [m1, b1, m2, b2] = pickFresh(ctx, 'lcmp', () => {
+      // Function A is a table whose x steps by 1 or 2 from 0, 1 or 2, or a
+      // proportional graph; B is an equation. The table's step means a child
+      // must divide the change in y by the change in x.
+      // Each form once before any repeats, and a fresh pair of rates.
+      const form = pickFresh(ctx, 'lcmp-form', () => rng.int(0, 2));
+      const [m1, m2] = pickFresh(ctx, 'lcmp', () => {
         const m1 = rng.int(2, 9);
         let m2 = rng.int(2, 9);
         while (m2 === m1) {
           m2 = rng.int(2, 9);
         }
-        return [m1, rng.int(0, 10), m2, rng.int(0, 10)];
+        return [m1, m2];
       });
-      const rows = [0, 1, 2, 3].map((x) => [cellText(String(x)), cellText(String(m1 * x + b1))]);
+      const [b1, b2, start, step] = [rng.int(0, 10), rng.int(0, 10), rng.int(0, 2), form === 1 ? 2 : 1];
+      const graph = form === 2;
+      const xs = [0, 1, 2, 3].map((i) => start + step * i);
+      const shown = graph
+        ? plane({ xMin: 0, xMax: 10, yMin: 0, yMax: 10, yScale: 10, labelEvery: 2, xLabel: 'x', yLabel: 'y', points: [gp(10, m1, `(10, ${10 * m1})`)], segments: [seg(0, 0, 10, m1)] })
+        : table(['x', 'y'], xs.map((x) => [cellText(String(x)), cellText(String(m1 * x + b1))]), 'Function A');
       return [
-        row(table(['x', 'y'], rows, 'Function A'), math('Function B:', `y = ${linear(m2, b2)}`)),
+        // The graph's point label needs the room to its right, so function B
+        // goes under the graph.
+        ...(graph ? [text('Function A is the line on the graph.'), shown, math('Function B:', `y = ${linear(m2, b2)}`)] : [row(shown, math('Function B:', `y = ${linear(m2, b2)}`))]),
         row(math('Rate of change of A:', blank(field(ctx, 'rate of change of A', String(m1)))), math('of B:', blank(field(ctx, 'rate of change of B', String(m2))))),
         math('Which grows faster?'),
         choices(ctx, 'faster function', ['A', 'B'], m1 > m2 ? 'A' : 'B'),
@@ -1837,7 +1950,9 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
     case LinearRelation_Mode.SCATTER:
     case LinearRelation_Mode.LINE_OF_FIT: {
       const fit = mode === LinearRelation_Mode.LINE_OF_FIT;
-      const [kind, b, e, seedPts] = pickFresh(ctx, 'scatter' + mode, () => [fit ? 0 : rng.int(0, 2), rng.int(2, 5), rng.int(3, 5), rng.int(0, 999)]);
+      // Without a line, each association once before any repeats.
+      const kind = fit ? 0 : pickFresh(ctx, 'scatter-kind', () => rng.int(0, 2));
+      const [b, e, seedPts] = pickFresh(ctx, 'scatter' + mode, () => [rng.int(2, 5), rng.int(3, 5), rng.int(0, 999)]);
       // Points near a line: rising, falling, or none at all.
       const pts: [number, number][] = [];
       for (let i = 0; i < 10; i++) {
@@ -1849,7 +1964,8 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
         const y = kind === 0 ? (fit ? b : 1) + g * x + noise / 2 : kind === 1 ? 9.5 - g * x - noise / 2 : 2 + ((i * 53 + seedPts) % 7);
         pts.push([x, Math.max(0, Math.min(10, Math.round(y)))]);
       }
-      const [xLabel, yLabel] = ['Hours', 'Score'];
+      // Axes that suit the association, so the plot makes sense.
+      const [xLabel, yLabel] = fit ? ['Hours', 'Score'] : SCATTER_AXES[kind];
       const base = { xMin: 0, xMax: 10, yMin: 0, yMax: 10, yScale: 10, labelEvery: 2, xLabel, yLabel, points: pts.map(([x, y]) => gp(x, y)) };
       if (!fit) {
         const answer = ['positive', 'negative', 'no association'][kind];
@@ -1882,13 +1998,15 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       ];
     }
     case LinearRelation_Mode.PREDICT: {
-      const [i, m10, b, x] = pickFresh(ctx, 'pred', () => [rng.int(0, MODELS.length - 1), rng.int(5, 40), rng.int(2, 30), rng.int(3, 12)]);
+      const i = pickFresh(ctx, 'pred-model', () => rng.int(0, MODELS.length - 1));
+      const [m10, b, x] = pickFresh(ctx, 'pred', () => [rng.int(5, 40), rng.int(2, 30), rng.int(3, 12)]);
       const m = m10 / 10;
-      const [say, xw, yw, rate] = MODELS[i];
+      const [say, xw, yw, rate, start] = MODELS[i];
       return [
         text(say.replace('#', `${num(m)}x + ${b}`)),
         math(`Predict ${yw} when ${xw} is ${x}:`, blank(field(ctx, `${yw} at ${x}`, num(m * x + b)))),
         math(`${rate}:`, blank(field(ctx, rate, num(m)))),
+        math(`${start}:`, blank(field(ctx, start, String(b)))),
       ];
     }
     default: {
@@ -1902,12 +2020,22 @@ function linearRelation(mode: LinearRelation_Mode, ctx: Ctx): Node[] {
       });
       const s = fracText(y2 - y1, x2 - x1);
       const also = unique([`${num(y2 - y1)}/${num(x2 - x1)}`]).filter((x) => x !== s && !x.endsWith('/1'));
-      return [math(`Slope through ${pt(x1, y1)} and ${pt(x2, y2)} =`, blank(field(ctx, `slope through ${pt(x1, y1)} and ${pt(x2, y2)}`, s, also)))];
+      return [math(`Slope through ${pt(x1, y1)} and ${pt(x2, y2)} =`, blank(field(ctx, `slope through ${pt(x1, y1)} and ${pt(x2, y2)}`, s, also))), work(1)];
     }
   }
 }
 
 const VARS = ['x', 'n', 'y', 'm', 'k'];
+
+// Quantities to compare in scientific notation: the smaller, the larger
+// with # for the number, and the range of the larger one's power of 10.
+const SCI_COMPARE: [string, string, number, number][] = [
+  ['A town has about # people.', 'A country has about # people.', 7, 8],
+  ['A bacterium is about # meters long.', 'A hair is about # meters wide.', -4, -4],
+  ['A grain of fine sand is about # meters wide.', 'A pebble is about # meters wide.', -2, -2],
+  ['A phone photo takes up about # bytes.', 'A long movie takes up about # bytes.', 9, 10],
+  ['A pond holds about # liters of water.', 'A large lake holds about # liters.', 11, 13],
+];
 
 const RATIO_SCENES: [string, string, string][] = [
   ['red marbles', 'blue marbles', 'in a bag'],
@@ -1943,12 +2071,31 @@ const MEASURES: [string, string, number, string][] = [
   ['quarts', 'cups', 4, 'quart'],
 ];
 
-// Row names, column names, and two questions: a fraction of the first
-// column, and of the first row.
-const TWO_WAY: [[string, string], [string, string], string, string][] = [
-  [['Plays a sport', 'No sport'], ['Grade 7', 'Grade 8'], 'Of the grade 7 students, what fraction play a sport?', 'Of the students who play a sport, what fraction are in grade 8?'],
-  [['Has a pet', 'No pet'], ['Walks to school', 'Rides'], 'Of the students who walk, what fraction have a pet?', 'Of the students with a pet, what fraction ride?'],
-  [['Likes pizza best', 'Likes tacos best'], ['Grade 6', 'Grade 7'], 'Of the grade 6 students, what fraction like pizza best?', 'Of the students who like pizza best, what fraction are in grade 7?'],
+// Row names, column names, and three questions: a fraction of the first
+// column, a fraction of the first row, and whether the first row's share is
+// larger in the first column than in the second.
+const TWO_WAY: [[string, string], [string, string], string, string, string][] = [
+  [
+    ['Plays a sport', 'No sport'],
+    ['Grade 7', 'Grade 8'],
+    'Of the grade 7 students, what fraction play a sport?',
+    'Of the students who play a sport, what fraction are in grade 8?',
+    'Is a grade 7 student more likely to play a sport than a grade 8 student?',
+  ],
+  [
+    ['Has a pet', 'No pet'],
+    ['Walks to school', 'Rides'],
+    'Of the students who walk, what fraction have a pet?',
+    'Of the students with a pet, what fraction ride?',
+    'Is a student who walks more likely to have a pet than one who rides?',
+  ],
+  [
+    ['Likes pizza best', 'Likes tacos best'],
+    ['Grade 6', 'Grade 7'],
+    'Of the grade 6 students, what fraction like pizza best?',
+    'Of the students who like pizza best, what fraction are in grade 7?',
+    'Is a grade 6 student more likely to like pizza best than a grade 7 student?',
+  ],
 ];
 
 // Phrases for an integer, with # for the number, and the integer's sign.
@@ -2094,10 +2241,18 @@ const TRIPLES: [number, number, number][] = [
   [15, 8, 17],
 ];
 
-// Linear models: the story with # for the rule, the x and y words, and what
-// the slope means.
-const MODELS: [string, string, string, string][] = [
-  ['A plant\'s height in cm after x weeks is about y = #.', 'x', 'the height', 'Growth each week (cm)'],
-  ['The cost in dollars of x pounds of fruit plus a bag fee is y = #.', 'x', 'the cost', 'Cost per pound ($)'],
-  ['The distance in miles a hiker has walked after x hours is about y = #.', 'x', 'the distance', 'Miles each hour'],
+// Linear models: the story with # for the rule, the x and y words, what the
+// slope means, and what the starting value means.
+const MODELS: [string, string, string, string, string][] = [
+  ["A plant's height in cm after x weeks is about y = #.", 'x', 'the height', 'Growth each week (cm)', 'Height at the start (cm)'],
+  ['The cost in dollars of x pounds of fruit plus a bag fee is y = #.', 'x', 'the cost', 'Cost per pound ($)', 'Bag fee ($)'],
+  ['The water in a tank, in gallons, after x minutes of filling is y = #.', 'x', 'the water', 'Gallons added each minute', 'Gallons at the start'],
+  ['A phone plan costs y = # dollars for x gigabytes of data in a month.', 'x', 'the cost', 'Cost per gigabyte ($)', 'Monthly charge with no data ($)'],
+];
+
+// Scatter plot axes for a positive association, a negative one, and none.
+const SCATTER_AXES: [string, string][] = [
+  ['Hours studied', 'Score'],
+  ['Days absent', 'Score'],
+  ['Shoe size', 'Score'],
 ];

@@ -2,6 +2,8 @@
 // draw.ts. measure.ts and the components both call drawG68, so a size
 // estimate cannot drift from the drawing.
 import {
+  type Angle_ArcLabel,
+  type AngleTriangle,
   type BoxPlot,
   type BoxSolid,
   type CoordinatePlane,
@@ -45,6 +47,8 @@ export function drawG68(n: Node, filled: boolean, w: L.Writing = L.STANDARD_WRIT
       return roundSolid(k.value);
     case 'boxSolid':
       return boxSolid(k.value);
+    case 'angleTriangle':
+      return angleTriangle(k.value, filled);
   }
   return undefined;
 }
@@ -61,6 +65,8 @@ export function fieldsG68(n: Node): (Field | undefined)[] {
       return [k.value.drawField];
     case 'transversal':
       return k.value.labels.map((l) => l.field);
+    case 'angleTriangle':
+      return [...k.value.labels.map((l) => l.field), k.value.exterior?.field];
   }
   return [];
 }
@@ -391,7 +397,9 @@ export function roundSolid(r: RoundSolid): Drawing {
       shapes.push({ t: 'line', x1: cx - R, y1: base, x2: cx, y2: apex, w: 1.8 }, { t: 'line', x1: cx + R, y1: base, x2: cx, y2: apex, w: 1.8 });
       shapes.push({ t: 'line', x1: cx, y1: apex, x2: cx, y2: base, w: 1.2, dash: '4 3' });
       radius(base, base + ry + 13);
-      shapes.push({ t: 'text', x: cx - 6, y: (apex + base) / 2 + 4, s: r.heightLabel, size: 12, anchor: 'end' });
+      // Inside the cone, right of the dashed height and low enough that the
+      // label clears the slanted side.
+      shapes.push({ t: 'text', x: cx + 3, y: base - 18, s: r.heightLabel, size: 12, anchor: 'start' });
       return { width: 170, height: base + ry + 18, shapes };
     }
     default: {
@@ -424,4 +432,61 @@ export function boxSolid(b: BoxSolid): Drawing {
     { t: 'text', x: f1(x0 + L_ + dx / 2 + 6), y: f1(y0 + H - dy / 2 + 12), s: b.widthLabel, size: 12, anchor: 'start' },
   ];
   return { width: f1(x0 + L_ + dx + 70), height: f1(y0 + H + 22), shapes };
+}
+
+// angleTriangle draws a triangle from its two base angles. Each corner gets
+// an arc and its label on the angle's bisector, far enough in to clear the
+// sides; an exterior angle runs the base on past the bottom right corner.
+export function angleTriangle(t: AngleTriangle, filled: boolean): Drawing {
+  const l = t.left || 60;
+  const r = t.right || 60;
+  // Math coordinates, y upward, base from (0, 0) to (base, 0). The base is
+  // as long as fits a 320 px column and 150 px of height.
+  const ext = t.exterior ? 70 : 0;
+  const pad = 24;
+  const reach = (b: number) => (b * Math.sin(rad(r))) / Math.sin(rad(l + r));
+  const ax1 = reach(1) * Math.cos(rad(l));
+  const span = Math.max(1, ax1) - Math.min(0, ax1);
+  const base = Math.min(240, 150 / (reach(1) * Math.sin(rad(l))), (320 - 2 * pad - ext) / span);
+  const d = reach(base);
+  const apex = [d * Math.cos(rad(l)), d * Math.sin(rad(l))];
+  const minX = Math.min(0, apex[0]);
+  const maxX = Math.max(base + ext, apex[0]);
+  const top = 26;
+  const height = apex[1];
+  const X = (x: number) => f1(pad + x - minX);
+  const Y = (y: number) => f1(top + height - y);
+  const shapes: Shape[] = [{ t: 'path', d: `M${X(0)} ${Y(0)} L${X(base)} ${Y(0)} L${X(apex[0])} ${Y(apex[1])} Z`, w: 2 }];
+  if (t.exterior) {
+    shapes.push({ t: 'line', x1: X(base), y1: Y(0), x2: X(base + ext), y2: Y(0), w: 2 });
+  }
+  // An arc at (vx, vy) from direction a1 to a2, counterclockwise, and the
+  // label on its bisector.
+  const corner = (vx: number, vy: number, a1: number, a2: number, label: Angle_ArcLabel | undefined, least = 30) => {
+    if (!label || (!label.text && !label.field)) {
+      return;
+    }
+    const ar = 16;
+    const p1 = [X(vx + ar * Math.cos(rad(a1))), Y(vy + ar * Math.sin(rad(a1)))];
+    const p2 = [X(vx + ar * Math.cos(rad(a2))), Y(vy + ar * Math.sin(rad(a2)))];
+    shapes.push({ t: 'path', d: `M${p1[0]} ${p1[1]} A${ar} ${ar} 0 0 0 ${p2[0]} ${p2[1]}`, w: 1.2 });
+    const half = (a2 - a1) / 2;
+    // Far enough along the bisector that the label clears both sides: a
+    // box needs more room than a number.
+    const dist = Math.min(80, Math.max(least, (label.field ? 20 : 14) / Math.sin(rad(half))));
+    const lx = X(vx + dist * Math.cos(rad(a1 + half)));
+    const ly = Y(vy + dist * Math.sin(rad(a1 + half)));
+    if (label.field) {
+      shapes.push({ t: 'box', x: f1(lx - 22), y: f1(ly - 10), w: 44, h: 20, field: fieldId(label.field), s: shown(label.field, filled), size: 12 });
+    } else {
+      shapes.push({ t: 'text', x: lx, y: f1(ly + 4), s: label.text, size: 13 });
+    }
+  };
+  const [lb, rb, tb] = t.labels;
+  corner(0, 0, 0, l, lb);
+  corner(base, 0, 180 - r, 180, rb);
+  corner(apex[0], apex[1], 180 + l, 360 - r, tb);
+  // The exterior label sits well out, so it reads as outside the triangle.
+  corner(base, 0, 0, 180 - r, t.exterior, 44);
+  return { width: f1(pad * 2 + maxX - minX), height: f1(top + height + 20), shapes };
 }
