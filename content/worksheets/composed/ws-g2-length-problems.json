@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the jumps of 10. Write the answer.",
+     "instruction": "Count the jumps of 10. Write the sum.",
      "items": [
       {
        "label": "1",
@@ -205,13 +205,21 @@
       "purpose": "Show adding tens as jumps on a number line from 0 to 100.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The number line is marked in tens, so each jump is one length of 10. This represents a sum as a length from 0, the model grade 2 uses for addition on a number line.",
+      "misconceptions": [
+       "Counts each jump as 1 instead of 10.",
+       "Counts the starting mark as a jump."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 326
     },
     {
      "label": "B",
-     "instruction": "Count the jumps back. Write the answer.",
+     "instruction": "Count the jumps back. Write the difference.",
      "items": [
       {
        "label": "3",
@@ -408,6 +416,14 @@
       "purpose": "Show subtracting tens as jumps back on a number line.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Jumps to the left show subtraction as moving back along the line. Placed after the adding items, they show both operations on the same model.",
+      "misconceptions": [
+       "Counts the starting mark as the first jump back.",
+       "Jumps to the right, as in the adding items."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 326
@@ -531,6 +547,14 @@
       "purpose": "Solve adding and subtracting stories about lengths in the same unit.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The stories use inches, feet and centimeters, with both lengths in the same unit. They mix comparing, joining and removing, so students decide whether to add or subtract. Students should write the unit with the answer.",
+      "misconceptions": [
+       "Adds the two lengths in a how-much-longer story.",
+       "Leaves out the unit, or writes the wrong one."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 598
@@ -686,8 +710,8 @@
   ]
  },
  "advice": [
-  "\"Count the jumps of 10. Write the answer.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Count the jumps back. Write the answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Count the jumps of 10. Write the sum.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Count the jumps back. Write the difference.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -9,105 +9,10 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the missing numbers on the chart.",
+     "instruction": "Write the missing numbers.",
      "items": [
       {
        "label": "1",
-       "nodes": [
-        {
-         "numberGrid": {
-          "start": 61,
-          "rows": 4,
-          "cols": 10,
-          "blanks": [
-           {
-            "number": 65,
-            "field": {
-             "id": "q1",
-             "label": "hundred chart, 65",
-             "answer": {
-              "text": "65"
-             }
-            }
-           },
-           {
-            "number": 75,
-            "field": {
-             "id": "q1-2",
-             "label": "hundred chart, 75",
-             "answer": {
-              "text": "75"
-             }
-            }
-           },
-           {
-            "number": 76,
-            "field": {
-             "id": "q1-3",
-             "label": "hundred chart, 76",
-             "answer": {
-              "text": "76"
-             }
-            }
-           },
-           {
-            "number": 77,
-            "field": {
-             "id": "q1-4",
-             "label": "hundred chart, 77",
-             "answer": {
-              "text": "77"
-             }
-            }
-           },
-           {
-            "number": 78,
-            "field": {
-             "id": "q1-5",
-             "label": "hundred chart, 78",
-             "answer": {
-              "text": "78"
-             }
-            }
-           },
-           {
-            "number": 88,
-            "field": {
-             "id": "q1-6",
-             "label": "hundred chart, 88",
-             "answer": {
-              "text": "88"
-             }
-            }
-           },
-           {
-            "number": 89,
-            "field": {
-             "id": "q1-7",
-             "label": "hundred chart, 89",
-             "answer": {
-              "text": "89"
-             }
-            }
-           },
-           {
-            "number": 90,
-            "field": {
-             "id": "q1-8",
-             "label": "hundred chart, 90",
-             "answer": {
-              "text": "90"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "65, 75, 76, 77, 78, 88, 89, 90"
-      },
-      {
-       "label": "2",
        "nodes": [
         {
          "numberGrid": {
@@ -116,19 +21,104 @@
           "cols": 10,
           "blanks": [
            {
-            "number": 82,
+            "number": 75,
             "field": {
-             "id": "q2",
-             "label": "hundred chart, 82",
+             "id": "q1",
+             "label": "hundred chart, 75",
              "answer": {
-              "text": "82"
+              "text": "75"
              }
             }
            },
            {
+            "number": 85,
+            "field": {
+             "id": "q1-2",
+             "label": "hundred chart, 85",
+             "answer": {
+              "text": "85"
+             }
+            }
+           },
+           {
+            "number": 86,
+            "field": {
+             "id": "q1-3",
+             "label": "hundred chart, 86",
+             "answer": {
+              "text": "86"
+             }
+            }
+           },
+           {
+            "number": 87,
+            "field": {
+             "id": "q1-4",
+             "label": "hundred chart, 87",
+             "answer": {
+              "text": "87"
+             }
+            }
+           },
+           {
+            "number": 88,
+            "field": {
+             "id": "q1-5",
+             "label": "hundred chart, 88",
+             "answer": {
+              "text": "88"
+             }
+            }
+           },
+           {
+            "number": 98,
+            "field": {
+             "id": "q1-6",
+             "label": "hundred chart, 98",
+             "answer": {
+              "text": "98"
+             }
+            }
+           },
+           {
+            "number": 99,
+            "field": {
+             "id": "q1-7",
+             "label": "hundred chart, 99",
+             "answer": {
+              "text": "99"
+             }
+            }
+           },
+           {
+            "number": 100,
+            "field": {
+             "id": "q1-8",
+             "label": "hundred chart, 100",
+             "answer": {
+              "text": "100"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "75, 85, 86, 87, 88, 98, 99, 100"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "numberGrid": {
+          "start": 81,
+          "rows": 4,
+          "cols": 10,
+          "blanks": [
+           {
             "number": 92,
             "field": {
-             "id": "q2-2",
+             "id": "q2",
              "label": "hundred chart, 92",
              "answer": {
               "text": "92"
@@ -138,7 +128,7 @@
            {
             "number": 102,
             "field": {
-             "id": "q2-3",
+             "id": "q2-2",
              "label": "hundred chart, 102",
              "answer": {
               "text": "102"
@@ -146,52 +136,62 @@
             }
            },
            {
-            "number": 103,
+            "number": 112,
+            "field": {
+             "id": "q2-3",
+             "label": "hundred chart, 112",
+             "answer": {
+              "text": "112"
+             }
+            }
+           },
+           {
+            "number": 113,
             "field": {
              "id": "q2-4",
-             "label": "hundred chart, 103",
+             "label": "hundred chart, 113",
              "answer": {
-              "text": "103"
+              "text": "113"
              }
             }
            },
            {
-            "number": 104,
+            "number": 114,
             "field": {
              "id": "q2-5",
-             "label": "hundred chart, 104",
+             "label": "hundred chart, 114",
              "answer": {
-              "text": "104"
+              "text": "114"
              }
             }
            },
            {
-            "number": 105,
+            "number": 115,
             "field": {
              "id": "q2-6",
-             "label": "hundred chart, 105",
+             "label": "hundred chart, 115",
              "answer": {
-              "text": "105"
+              "text": "115"
              }
             }
            },
            {
-            "number": 106,
+            "number": 116,
             "field": {
              "id": "q2-7",
-             "label": "hundred chart, 106",
+             "label": "hundred chart, 116",
              "answer": {
-              "text": "106"
+              "text": "116"
              }
             }
            },
            {
-            "number": 107,
+            "number": 117,
             "field": {
              "id": "q2-8",
-             "label": "hundred chart, 107",
+             "label": "hundred chart, 117",
              "answer": {
-              "text": "107"
+              "text": "117"
              }
             }
            }
@@ -199,7 +199,7 @@
          }
         }
        ],
-       "key": "82, 92, 102, 103, 104, 105, 106, 107"
+       "key": "92, 102, 112, 113, 114, 115, 116, 117"
       }
      ],
      "columns": 1,
@@ -209,13 +209,21 @@
       "purpose": "Read and write numbers up to 120 on a chart, across 100.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each chart piece runs to 110 or 120, so the path of missing numbers crosses 100. The chart shows that the pattern of ones and tens continues past 100.",
+      "misconceptions": [
+       "Writes 1001, 1002 for the numbers after 100.",
+       "Changes the ones digit when moving down a column."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 330
     },
     {
      "label": "B",
-     "instruction": "Count on. Write the missing numbers.",
+     "instruction": "Write the missing numbers.",
      "items": [
       {
        "label": "3",
@@ -730,8 +738,13 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Starting numbers run from 40 to 114, so many sequences cross a decade or cross 100. Writing numbers past 100 is new in grade 1 and is where most errors occur.",
       "misconceptions": [
-       "Writing 100 and 1 as 1001 instead of 101."
+       "Writes 101 as 1001 or 1001 as the number after 100.",
+       "After 109, writes 200 or 1010 instead of 110."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 450
@@ -745,16 +758,6 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "hundred chart, 65",
-    "answer": {
-     "text": "65"
-    }
-   }
-  },
-  {
-   "itemLabel": "1",
-   "field": {
-    "id": "q1-2",
     "label": "hundred chart, 75",
     "answer": {
      "text": "75"
@@ -764,10 +767,20 @@
   {
    "itemLabel": "1",
    "field": {
-    "id": "q1-3",
-    "label": "hundred chart, 76",
+    "id": "q1-2",
+    "label": "hundred chart, 85",
     "answer": {
-     "text": "76"
+     "text": "85"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "hundred chart, 86",
+    "answer": {
+     "text": "86"
     }
    }
   },
@@ -775,9 +788,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-4",
-    "label": "hundred chart, 77",
+    "label": "hundred chart, 87",
     "answer": {
-     "text": "77"
+     "text": "87"
     }
    }
   },
@@ -785,16 +798,6 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-5",
-    "label": "hundred chart, 78",
-    "answer": {
-     "text": "78"
-    }
-   }
-  },
-  {
-   "itemLabel": "1",
-   "field": {
-    "id": "q1-6",
     "label": "hundred chart, 88",
     "answer": {
      "text": "88"
@@ -804,10 +807,20 @@
   {
    "itemLabel": "1",
    "field": {
-    "id": "q1-7",
-    "label": "hundred chart, 89",
+    "id": "q1-6",
+    "label": "hundred chart, 98",
     "answer": {
-     "text": "89"
+     "text": "98"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "hundred chart, 99",
+    "answer": {
+     "text": "99"
     }
    }
   },
@@ -815,9 +828,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-8",
-    "label": "hundred chart, 90",
+    "label": "hundred chart, 100",
     "answer": {
-     "text": "90"
+     "text": "100"
     }
    }
   },
@@ -825,16 +838,6 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "hundred chart, 82",
-    "answer": {
-     "text": "82"
-    }
-   }
-  },
-  {
-   "itemLabel": "2",
-   "field": {
-    "id": "q2-2",
     "label": "hundred chart, 92",
     "answer": {
      "text": "92"
@@ -844,7 +847,7 @@
   {
    "itemLabel": "2",
    "field": {
-    "id": "q2-3",
+    "id": "q2-2",
     "label": "hundred chart, 102",
     "answer": {
      "text": "102"
@@ -854,10 +857,20 @@
   {
    "itemLabel": "2",
    "field": {
-    "id": "q2-4",
-    "label": "hundred chart, 103",
+    "id": "q2-3",
+    "label": "hundred chart, 112",
     "answer": {
-     "text": "103"
+     "text": "112"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "hundred chart, 113",
+    "answer": {
+     "text": "113"
     }
    }
   },
@@ -865,9 +878,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-5",
-    "label": "hundred chart, 104",
+    "label": "hundred chart, 114",
     "answer": {
-     "text": "104"
+     "text": "114"
     }
    }
   },
@@ -875,9 +888,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-6",
-    "label": "hundred chart, 105",
+    "label": "hundred chart, 115",
     "answer": {
-     "text": "105"
+     "text": "115"
     }
    }
   },
@@ -885,9 +898,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-7",
-    "label": "hundred chart, 106",
+    "label": "hundred chart, 116",
     "answer": {
-     "text": "106"
+     "text": "116"
     }
    }
   },
@@ -895,9 +908,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-8",
-    "label": "hundred chart, 107",
+    "label": "hundred chart, 117",
     "answer": {
-     "text": "107"
+     "text": "117"
     }
    }
   },
@@ -1149,8 +1162,8 @@
   ]
  },
  "advice": [
-  "\"Fill in the missing numbers on the chart.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Count on. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

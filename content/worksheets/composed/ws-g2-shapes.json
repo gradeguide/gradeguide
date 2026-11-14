@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count the sides and corners. Tick the name.",
+     "instruction": "Count the sides and corners. Mark the name.",
      "items": [
       {
        "label": "1",
@@ -368,15 +368,20 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Regular and irregular shapes appear in different turns. Students name each by counting sides and corners, which are the defining attributes, rather than by its overall look.",
       "misconceptions": [
-       "Thinking only a regular shape counts: a hexagon must look like a honeycomb cell."
+       "Thinks only a regular shape counts, so a hexagon must look like a honeycomb cell.",
+       "Calls any four-sided shape a square or a rectangle."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 558
     },
     {
      "label": "B",
-     "instruction": "Draw the shape. Then tick its name.",
+     "instruction": "Draw the shape. Mark its name.",
      "items": [
       {
        "label": "5",
@@ -425,6 +430,14 @@
       "purpose": "Draw a shape with a given number of sides and corners, and name it.",
       "principles": [
        "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Students draw from a description of the attributes rather than copy a picture. Any closed shape with the right number of straight sides is correct, which shows that many different shapes share one name.",
+      "misconceptions": [
+       "Draws a shape that is not closed.",
+       "Draws one more or one fewer corner than sides."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 230
@@ -436,7 +449,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Draw the shape. Then tick its name.",
+     "instruction": "Draw the shape. Mark its name.",
      "items": [
       {
        "label": "6",
@@ -485,6 +498,14 @@
       "purpose": "Draw a shape with a given number of sides and corners, and name it.",
       "principles": [
        "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Students draw from a description of the attributes rather than copy a picture. Any closed shape with the right number of straight sides is correct, which shows that many different shapes share one name.",
+      "misconceptions": [
+       "Draws a shape that is not closed.",
+       "Draws one more or one fewer corner than sides."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "continued": true,
@@ -492,7 +513,7 @@
     },
     {
      "label": "C",
-     "instruction": "Count the rows, the columns and the squares.",
+     "instruction": "Write the number of rows, columns and squares.",
      "items": [
       {
        "label": "7",
@@ -742,13 +763,21 @@
       "purpose": "Count the squares in a rectangle cut into rows and columns.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Students count rows and columns before the total, which links the rectangle to repeated addition and later to area. Rectangles stay within 5 by 5.",
+      "misconceptions": [
+       "Swaps rows and columns.",
+       "Counts the squares around the edge only."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 408
     },
     {
      "label": "D",
-     "instruction": "Are the parts equal shares? Tick one.",
+     "instruction": "Mark equal shares or not equal shares.",
      "items": [
       {
        "label": "11",
@@ -823,8 +852,13 @@
       "principles": [
        "PRINCIPLE_ERROR_ANALYSIS"
       ],
+      "rationale": "Bars are cut into two, three or four parts, some equal and some not. Students check the size of each part before deciding, which is required before naming thirds or fourths.",
       "misconceptions": [
-       "Calling any cut into three parts thirds."
+       "Calls any cut into three parts thirds.",
+       "Thinks the shaded part must be bigger or smaller than the others."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
       ]
      },
      "estimatedHeight": 114
@@ -1142,9 +1176,9 @@
   ]
  },
  "advice": [
-  "\"Count the sides and corners. Tick the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Count the rows, the columns and the squares.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Are the parts equal shares? Tick one.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Count the sides and corners. Mark the name.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the number of rows, columns and squares.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark equal shares or not equal shares.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

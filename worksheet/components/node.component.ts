@@ -29,7 +29,15 @@ import {
   WorkSpaceComponent,
 } from './widgets.component.js';
 import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
-import { CoinsComponent, NumberBondComponent, NumberGridComponent, PictureGroupsComponent, TenFrameComponent } from './widgets_k2.component.js';
+import {
+  CoinsComponent,
+  LengthStripsComponent,
+  NumberBondComponent,
+  NumberGridComponent,
+  PictureGroupsComponent,
+  TallyChartComponent,
+  TenFrameComponent,
+} from './widgets_k2.component.js';
 
 // NodeComponent draws any node by its kind. Rows and stacks draw their
 // children with this component again.
@@ -43,6 +51,8 @@ import { CoinsComponent, NumberBondComponent, NumberGridComponent, PictureGroups
     PictureGroupsComponent,
     NumberGridComponent,
     CoinsComponent,
+    TallyChartComponent,
+    LengthStripsComponent,
     NumberLineComponent,
     FractionBarComponent,
     FractionWallComponent,
@@ -200,6 +210,12 @@ import { CoinsComponent, NumberBondComponent, NumberGridComponent, PictureGroups
       }
       @case ('coins') {
         <ws-coins [node]="k.value" [filled]="filled()" />
+      }
+      @case ('tallyChart') {
+        <ws-tally-chart [node]="k.value" [filled]="filled()" />
+      }
+      @case ('lengthStrips') {
+        <ws-length-strips [node]="k.value" [filled]="filled()" />
       }
       @case ('choices') {
         <ws-choices [node]="k.value" [filled]="filled()" />

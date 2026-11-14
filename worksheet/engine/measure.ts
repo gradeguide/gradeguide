@@ -70,6 +70,10 @@ function drawing(n: Node, w: Writing): Drawing | undefined {
       return drawK2.numberGrid(k.value, false);
     case 'coins':
       return drawK2.coins(k.value);
+    case 'tallyChart':
+      return drawK2.tallyChart(k.value);
+    case 'lengthStrips':
+      return drawK2.lengthStrips(k.value);
   }
   return undefined;
 }

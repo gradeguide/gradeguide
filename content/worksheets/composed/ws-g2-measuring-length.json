@@ -12,8 +12,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "How long is the bar? Measure to the nearest inch.",
-     "explainer": "Line up the end of the bar with 0.",
+     "instruction": "Measure the bar. Write the length in inches.",
      "items": [
       {
        "label": "1",
@@ -126,15 +125,20 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
+      "rationale": "Each bar starts at 0 on the ruler. Students read the length as the number of inch spaces the bar covers, which connects the ruler to the unit cubes of grade 1.",
       "misconceptions": [
-       "Starting to measure from 1 instead of 0."
+       "Starts measuring from 1 instead of 0.",
+       "Counts the tick marks instead of the spaces between them."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 462
+     "estimatedHeight": 436
     },
     {
      "label": "B",
-     "instruction": "Measure both bars. How much longer is bar A?",
+     "instruction": "Measure both bars. Write how much longer bar A is.",
      "items": [
       {
        "label": "4",
@@ -227,18 +231,26 @@
       "purpose": "Measure two lengths and find how much longer one is.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Students record both measurements before finding the difference. The two bars sit on rulers that line up, so the difference can also be seen as the part of bar A that extends past bar B.",
+      "misconceptions": [
+       "Adds the two lengths instead of finding the difference.",
+       "Writes the length of the longer bar as the answer."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 346
     }
    ],
-   "estimatedHeight": 816
+   "estimatedHeight": 790
   },
   {
    "sections": [
     {
      "label": "C",
-     "instruction": "Both strips are the same length. Count the units in each.",
+     "instruction": "Both strips are the same length. Write how many units in each.",
      "items": [
       {
        "label": "5",
@@ -286,7 +298,7 @@
          }
         },
         {
-         "text": "It takes more of the"
+         "text": "Mark the unit that is needed more times."
         },
         {
          "choices": {
@@ -352,7 +364,7 @@
          }
         },
         {
-         "text": "It takes more of the"
+         "text": "Mark the unit that is needed more times."
         },
         {
          "choices": {
@@ -377,19 +389,24 @@
      "fragmentId": "frag-g2-two-units",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "See that measuring with smaller units takes more of them.",
+      "purpose": "Understand that measuring with smaller units takes more of them.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
+      "rationale": "The same length is cut into big units and into small units. Students count both and see that the smaller unit gives the larger number, which explains why 12 inches and 1 foot are the same length.",
       "misconceptions": [
-       "Thinking the strip with more units is longer."
+       "Thinks the strip with more units is longer.",
+       "Thinks the number of units does not depend on the size of the unit."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 422
     },
     {
      "label": "D",
-     "instruction": "Tick the better estimate.",
+     "instruction": "Mark the better estimate.",
      "items": [
       {
        "label": "7",
@@ -543,6 +560,14 @@
       "purpose": "Estimate lengths in inches, feet, centimeters and meters.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Both choices use the same number with different units, so students must judge the size of the unit. The objects are everyday ones, such as a pencil, a door and a bus.",
+      "misconceptions": [
+       "Chooses by the number alone, without thinking about the unit.",
+       "Confuses inches with feet, or centimeters with meters."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
      "estimatedHeight": 220
@@ -740,10 +765,10 @@
   ]
  },
  "advice": [
-  "\"How long is the bar? Measure to the nearest inch.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Measure both bars. How much longer is bar A?\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Both strips are the same length. Count the units in each.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Tick the better estimate.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Measure the bar. Write the length in inches.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Measure both bars. Write how much longer bar A is.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Both strips are the same length. Write how many units in each.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark the better estimate.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

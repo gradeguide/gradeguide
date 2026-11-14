@@ -142,13 +142,19 @@
      "fragmentId": "frag-g1-word-problems-within-20",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Solve adding and subtracting stories within 20, with the unknown in any place.",
+      "purpose": "Solve adding and subtracting stories within 20, with the unknown in any position.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The stories mix adding to, taking from, putting together and comparing, and the unknown is the result, the change or the start.",
+      "rationale": "The stories cover adding to, taking from, putting together and comparing, with the unknown as the result, the change or the start. Mixing the types means students must decide what each story asks rather than apply one operation to all. The working space is blank so students can draw, use a number line or write an equation.",
       "misconceptions": [
-       "Adding whenever a story says \"more\"."
+       "Adds whenever a story says more, including in comparing stories.",
+       "In a start-unknown story, adds or subtracts the two numbers in the order they appear.",
+       "Answers how many in all when the story asks how many more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
       ]
      },
      "estimatedHeight": 754
@@ -245,6 +251,14 @@
       "purpose": "Solve stories that add three numbers with a total up to 20.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story has three numbers to add, and two of them make 10 in two of the stories. Students can add in any order, so they may find the ten first. The contexts are familiar ones: flowers, books and pets.",
+      "misconceptions": [
+       "Adds only the first two numbers in the story.",
+       "Loses one number when adding in a different order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 578

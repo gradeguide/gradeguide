@@ -1,23 +1,26 @@
 # proto-file: worksheet/proto/v1/worksheet.proto
 # proto-message: gradeguide.worksheet.v1.Library
 #
-# Kindergarten and grade 1 sheets. A grown-up reads the instructions aloud;
-# the child counts, writes numbers and ticks answers.
+# Kindergarten and grade 1 sheets. An adult reads the directions aloud;
+# the student counts, writes numbers and marks answers.
 
 # Kindergarten: counting and cardinality.
 
 fragments {
   id: "frag-gk-count-dots-to-10"
-  instruction: "Count the pictures. Write how many."
+  instruction: "Count. Write how many."
   stage: STAGE_INTRODUCE
-  explainer: "Touch each picture once as you count. The last number you say tells how many."
-  example { item { count_objects { count { min: 4 max: 4 } picture: PICTURE_GROUPS } } seed: 1 text: "Touch and count: 1, 2, 3, 4. There are **4**." }
-  items { kind { count_objects { count { min: 1 max: 10 } picture: PICTURE_GROUPS } } count: 6 }
+  example { item { count_objects { count { min: 4 max: 4 } picture: PICTURE_GROUPS } } seed: 1 text: "1, 2, 3, 4. There are **4**." }
+  items { kind { count_objects { count { min: 1 max: 10 } picture: PICTURE_GROUPS } } count: 5 }
   design {
-    purpose: "Count up to 10 things in small groups, one number for each, and write how many."
+    purpose: "Count up to 10 objects and write how many."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Counting a picture twice or skipping one."
-    misconceptions: "Recounting from 1 when asked how many, instead of using the last number said."
+    rationale: "Pictures come in small groups of two to five, so students can keep track of which ones they have counted. Counts stay at 10 or under, the range kindergarten expects for counting objects. Writing the numeral after counting links the count to its written form."
+    misconceptions: "Counts one picture twice or skips a picture."
+    misconceptions: "Says the numbers faster or slower than the pointing, so the count and the pictures do not match."
+    misconceptions: "Counts again from 1 when asked how many, instead of giving the last number said."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+    references: "Gelman and Gallistel (1978), The Child's Understanding of Number, Harvard University Press"
   }
 }
 
@@ -29,57 +32,72 @@ fragments {
   design {
     purpose: "Count up to 20 dots in a line or in rows, and write the number."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "The dots come in a line and in rows, so the child keeps track of what has been counted in more than one arrangement."
+    rationale: "The dots appear in a line or in rows, the two arrangements in which kindergarten students count up to 20. A row arrangement lets students count row by row and keep their place. Numbers from 11 to 20 also practise writing the teen numerals."
+    misconceptions: "Loses track of the start in a line of dots and counts some twice."
+    misconceptions: "Writes a teen number in the order it is said, such as 41 for fourteen."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-ten-frames"
-  instruction: "How many counters? Write the number."
+  instruction: "Write how many counters."
   stage: STAGE_PRACTICE
-  explainer: "A full ten frame is 10. Count on from 10 for the second frame."
-  items { kind { count_objects { count { min: 3 max: 20 } picture: PICTURE_TEN_FRAME } } count: 6 }
+  example { item { count_objects { count { min: 14 max: 14 } picture: PICTURE_TEN_FRAME } } seed: 1 text: "10 and 4 more. There are **14**." }
+  items { kind { count_objects { count { min: 3 max: 20 } picture: PICTURE_TEN_FRAME } } count: 4 }
   design {
-    purpose: "Read numbers up to 20 from ten frames, seeing 5 and 10 at a glance."
-    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    misconceptions: "Counting every counter from 1 instead of seeing a full frame as 10."
+    purpose: "Read numbers up to 20 from ten frames, seeing 5 and 10 without counting each counter."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A ten frame shows a number against the benchmarks 5 and 10, because each row holds 5 and a full frame holds 10. The worked example models counting on from a full frame. Numbers above 10 show a teen number as 10 and some more, which prepares for teen place value."
+    misconceptions: "Counts every counter from 1 instead of seeing a full frame as 10."
+    misconceptions: "Counts the empty squares as well as the counters."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-one-more"
-  instruction: "Count the dots. Then write the number that is one more."
+  instruction: "Write how many counters. Then write one more."
   stage: STAGE_PRACTICE
-  items { kind { count_objects { count { min: 1 max: 9 } mode: MODE_ONE_MORE picture: PICTURE_TEN_FRAME } } count: 4 }
+  items { kind { count_objects { count { min: 1 max: 9 } mode: MODE_ONE_MORE picture: PICTURE_TEN_FRAME } } count: 3 }
   design {
-    purpose: "See that the next counting number is one more."
+    purpose: "Write the number that is one more than a counted number."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each count is shown in a ten frame with an empty square next in line, so one more counter has a place to go. Students write the count, then the next number. This shows that each number in the counting sequence is one more than the number before it."
+    misconceptions: "Writes the same number again for one more."
+    misconceptions: "Counts all the counters again from 1 to find one more, instead of saying the next number."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-count-on"
-  instruction: "Count on. Write the missing numbers."
+  instruction: "Write the missing numbers."
   stage: STAGE_PRACTICE
-  explainer: "Start at the first number and keep counting by ones."
   items { kind { count_sequence { start { min: 3 max: 94 } steps: [1] } } count: 4 }
   design {
-    purpose: "Count forward by ones from any number up to 100."
+    purpose: "Count forward by ones from a number other than 1, up to 100."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Going from 29 to 20 or 210 instead of 30."
+    rationale: "Each sequence starts partway through the count, so students cannot recite from 1. Some sequences cross a decade, such as 28, 29, 30, where errors are most common. One later number is printed so students can check their place."
+    misconceptions: "After a number ending in 9, writes the wrong decade, such as 20 or 210 after 29."
+    misconceptions: "Starts again from 1 instead of counting on from the number given."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-hundred-chart"
-  instruction: "Fill in the missing numbers on the hundred chart."
+  instruction: "Write the missing numbers."
   max_columns: 1
   stage: STAGE_PRACTICE
-  explainer: "Moving right is one more. Moving down is ten more."
   items { kind { count_sequence { start { min: 1 max: 61 } chart: true } } count: 2 }
   design {
-    purpose: "Count to 100 by ones and see the tens on a hundred chart."
+    purpose: "Count to 100 by ones on a hundred chart."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The missing numbers form a path along a row and down a column. Along a row the numbers go up by one. Down a column the tens digit goes up by one and the ones digit stays the same, which shows the pattern in counting to 100."
+    misconceptions: "Writes the number to the left plus one at the start of a row, where the number above plus ten is the easier check."
+    misconceptions: "Reverses the digits, such as 31 for 13."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -91,30 +109,40 @@ fragments {
   design {
     purpose: "Count by tens to 100."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Counting by tens is the second counting skill kindergarten asks for, after counting by ones. Starting at different tens keeps students from reciting from 10."
+    misconceptions: "Counts by ones after the first ten, such as 10, 20, 21."
+    misconceptions: "Writes 100 as 1000 or 010."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-compare-groups"
-  instruction: "Which row has more dots? Tick A, B or same."
+  instruction: "Mark the row with more dots. Mark same if they are equal."
   stage: STAGE_PRACTICE
-  explainer: "Match the dots in the two rows. The row with dots left over has more."
   items { kind { count_objects { count { min: 2 max: 10 } mode: MODE_COMPARE_GROUPS } } count: 6 }
   design {
     purpose: "Tell whether one group has more, fewer or the same number as another."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Thinking the longer-looking row has more."
+    rationale: "The two rows of dots start at the same place and are evenly spaced, so students can match the dots one to one or count each row. About one item in five has equal rows, so same is a real answer and not a trick."
+    misconceptions: "Judges by how long a row looks rather than by how many dots it has."
+    misconceptions: "Thinks two groups cannot be the same and always marks A or B."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-greater-number"
-  instruction: "Tick the greater number."
+  instruction: "Mark the greater number."
   stage: STAGE_PRACTICE
   items { kind { compare_numbers { numbers { min: 1 max: 10 } } } count: 10 }
   design {
     purpose: "Tell which of two numbers from 1 to 10 is greater."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Students compare written numerals without pictures, after comparing groups of dots in the section before. The greater number is the one said later when counting. Pairs that differ by 1 make students think about the order of the counting sequence."
+    misconceptions: "Chooses the number that is written first or looks bigger."
+    misconceptions: "Thinks 10 is less than 9 because 1 is less than 9."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -122,24 +150,32 @@ fragments {
 
 fragments {
   id: "frag-gk-add-pictures"
-  instruction: "Count both groups. Write the total."
+  instruction: "Count all the pictures. Write how many in all."
   stage: STAGE_INTRODUCE
-  example { item { add_subtract_fact { max: 6 op: OP_ADD pictures: true } } seed: 3 text: "Count all of them together." }
-  items { kind { add_subtract_fact { max: 10 op: OP_ADD pictures: true } } count: 6 }
+  example { item { add_subtract_fact { max: 6 op: OP_ADD pictures: true } } seed: 3 text: "5 and 1 make **6**." }
+  items { kind { add_subtract_fact { max: 10 op: OP_ADD pictures: true } } count: 4 }
   design {
-    purpose: "Show adding as putting two groups together."
+    purpose: "Add two groups of pictures with a total up to 10."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each group sits in its own frame, so the two addends stay visible as two parts of the whole. The equation under the pictures connects putting groups together with the + sign. Students may count all the pictures or count on from the first group."
+    misconceptions: "Counts only one group and writes that number as the total."
+    misconceptions: "Writes one of the two numbers in the equation instead of the total."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-subtract-pictures"
-  instruction: "Some are crossed out. Write how many are left."
+  instruction: "Write how many are left."
   stage: STAGE_GUIDED
-  items { kind { add_subtract_fact { max: 10 op: OP_SUBTRACT pictures: true } } count: 6 }
+  items { kind { add_subtract_fact { max: 10 op: OP_SUBTRACT pictures: true } } count: 4 }
   design {
-    purpose: "Show taking away by crossing out pictures."
+    purpose: "Subtract within 10 by counting the pictures that are not crossed out."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Crossed-out pictures show the amount taken away, while still showing the whole the subtraction starts from. Students count what is left and match it to the equation."
+    misconceptions: "Counts the crossed-out pictures instead of the pictures left."
+    misconceptions: "Counts every picture, crossed out or not."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -151,7 +187,11 @@ fragments {
   design {
     purpose: "Solve adding and taking-away stories within 10."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "A grown-up reads each story aloud. Drawing the things in the story is a good way to solve it."
+    rationale: "An adult reads each story aloud, so reading does not stand in the way of the mathematics. Kindergarten students solve stories by acting them out or drawing, so the working space is blank and an answer may be a drawing or a number. Two stories put together and two take away."
+    misconceptions: "Adds both numbers in every story, including take-away stories."
+    misconceptions: "Draws the objects in detail and loses track of how many."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+    references: "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
   }
   items {
     count: 4
@@ -182,8 +222,12 @@ fragments {
   stage: STAGE_PRACTICE
   items { kind { add_subtract_fact { max: 5 op: OP_MIXED } } count: 12 }
   design {
-    purpose: "Add and subtract within 5 quickly."
+    purpose: "Add and subtract within 5 fluently."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+    rationale: "Facts within 5 are the facts kindergarten expects students to know fluently. Adding and subtracting are mixed, so students read each sign. Facts with 0 are included because they come up in later work."
+    misconceptions: "Adds when the sign is minus, because most practice so far has been adding."
+    misconceptions: "Thinks subtracting 0 or adding 0 changes the number."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -195,30 +239,40 @@ fragments {
   design {
     purpose: "Add and subtract within 10."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "These facts extend the within-5 facts above to 10, the range of kindergarten addition and subtraction. Students may count on fingers or use known facts; fluency within 10 is a grade 1 goal."
+    misconceptions: "Counts the starting number again when counting on, so 6 + 2 gives 7."
+    misconceptions: "Subtracts the larger number from the smaller in the wrong order."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-break-apart"
-  instruction: "Fill in the missing number."
+  instruction: "Write the missing part."
   stage: STAGE_PRACTICE
-  explainer: "The top circle is the whole. The two circles under it are its parts: 5 is 2 and 3, or 4 and 1."
   items { kind { equation { total { min: 3 max: 10 } mode: MODE_MISSING_PART model: MODEL_BOND } } count: 6 }
   design {
-    purpose: "Split numbers up to 10 into two parts in more than one way."
+    purpose: "Break a number up to 10 into two parts in more than one way."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A number bond shows the whole at the top and its two parts below. The same whole appears with different parts, so students see that a number can be split in several ways. The equation under each bond records the split with the whole first, as in 7 = 3 + 4."
+    misconceptions: "Adds the whole and the part shown instead of finding the missing part."
+    misconceptions: "Reads 7 = 3 + 4 as wrong because the answer is on the left."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-gk-make-ten"
-  instruction: "How many more make 10?"
+  instruction: "Write how many more make 10."
   stage: STAGE_PRACTICE
   items { kind { equation { total { min: 10 max: 10 } mode: MODE_MISSING_PART model: MODEL_TEN_FRAME } } count: 6 }
   design {
     purpose: "Find the number that makes 10 with a number from 1 to 9."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "The empty squares in the ten frame are the missing part."
+    rationale: "In a ten frame, the empty squares are the missing part, so students can count them. Pairs that make 10 are the basis of the make-ten strategy for adding within 20 in grade 1."
+    misconceptions: "Writes the number of counters instead of the number of empty squares."
+    misconceptions: "Counts all ten squares and writes 10."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -226,12 +280,15 @@ fragments {
   id: "frag-gk-teen-numbers"
   instruction: "Write the missing number."
   stage: STAGE_INTRODUCE
-  explainer: "A long block is a ten. Each small block is a one. 14 is a ten and 4 ones."
+  example { item { place_value_blocks { mode: MODE_TEEN } } seed: 1 text: "10 and 6 make **16**." }
   items { kind { place_value_blocks { mode: MODE_TEEN } } count: 8 }
   design {
-    purpose: "See numbers from 11 to 19 as ten ones and some more ones."
-    principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    misconceptions: "Reading 14 as 1 and 4 instead of a ten and 4 ones."
+    purpose: "Show numbers from 11 to 19 as ten ones and some more ones."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each teen number appears as a rod of ten cubes and some single cubes, with an equation such as 14 = 10 + 4. In kindergarten the rod is ten ones joined together, not yet a unit called a ten. Half the equations give the parts and half give the whole, so students work in both directions."
+    misconceptions: "Reads 14 as 1 and 4 instead of ten and 4."
+    misconceptions: "Writes the teen number in the order it is said, such as 41 for fourteen."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
@@ -239,47 +296,62 @@ fragments {
 
 fragments {
   id: "frag-gk-longer"
-  instruction: "Which strip is longer? Tick A or B."
+  instruction: "Mark the longer pencil."
   stage: STAGE_PRACTICE
   items { kind { length_measure { mode: MODE_LONGER } } count: 6 }
   design {
     purpose: "Compare two lengths that start at the same place."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The pencils start at the same line, so the one that reaches further is longer. The pencils carry no unit marks, because kindergarten compares lengths directly before measuring them."
+    misconceptions: "Looks only at where the pencils end and ignores where they start."
+    misconceptions: "Calls the thicker or darker object longer."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-gk-sort-shapes"
-  instruction: "Sort the shapes. Count each kind."
+  instruction: "Count each kind of shape. Write how many."
   stage: STAGE_PRACTICE
   items { kind { shape_attributes { mode: MODE_SORT } } count: 2 }
   design {
     purpose: "Sort shapes into groups and count each group."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each count sits beside a small picture of its shape, so students who cannot read the shape names can still do the task. Triangles appear in different turns, so students sort by shape and not by direction."
+    misconceptions: "Counts a turned triangle as a different kind of shape."
+    misconceptions: "Counts every shape in the row for each kind."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K–3, Categorical Data; Grades 2–5, Measurement Data"
   }
 }
 
 fragments {
   id: "frag-gk-name-shapes"
-  instruction: "Tick the name of the shape."
+  instruction: "Circle the shapes. Write how many."
   stage: STAGE_PRACTICE
-  explainer: "A shape keeps its name when it is bigger, smaller or turned."
-  items { kind { shape_attributes { mode: MODE_NAME } } count: 6 }
+  items { kind { shape_attributes { mode: MODE_FIND } } count: 3 }
   design {
-    purpose: "Name circles, triangles, squares, rectangles and hexagons of any size or turn."
+    purpose: "Find circles, triangles, squares, rectangles and hexagons of any size or turn."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Thinking a turned square is no longer a square."
+    rationale: "The adult reads the shape name, and a small picture of the shape appears beside it. The row mixes the target shape with others in different sizes and turns, so students must recognise the shape whatever its size or direction. Rectangles that are not squares and triangles with unequal sides are included."
+    misconceptions: "Thinks a turned square is no longer a square."
+    misconceptions: "Recognises a triangle only when it is equal-sided and points up."
+    misconceptions: "Calls a long rectangle a square."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
 fragments {
   id: "frag-gk-sides-corners"
-  instruction: "Count the sides and corners."
+  instruction: "Count the sides and corners. Write how many."
   stage: STAGE_PRACTICE
-  items { kind { shape_attributes { mode: MODE_SIDES_CORNERS } } count: 4 }
+  items { kind { shape_attributes { mode: MODE_SIDES_CORNERS no_names: true } } count: 4 }
   design {
-    purpose: "Describe shapes by their sides and corners."
+    purpose: "Describe shapes by the number of sides and corners."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Counting sides and corners gives students words for comparing shapes. Every shape has as many corners as sides, which students may notice. Shape names are left out because kindergarten students are not expected to read them."
+    misconceptions: "Counts the same side twice by going round the shape more than once."
+    misconceptions: "Counts corners and sides as one total."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
@@ -291,6 +363,10 @@ fragments {
   design {
     purpose: "Draw triangles, squares, rectangles and hexagons."
     principles: [PRINCIPLE_SELF_EXPLANATION]
+    rationale: "Drawing a shape requires attention to its sides and corners, as in the section before. A shape counts as correct when it has the right number of straight sides and is closed, even if the lines are not straight."
+    misconceptions: "Leaves a gap so the shape is not closed."
+    misconceptions: "Draws a square for a rectangle, or the reverse."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
@@ -298,16 +374,16 @@ worksheets {
   id: "ws-gk-count-to-20"
   title: "Counting to 20"
   seed: 401
-  max_pages: 3
+  max_pages: 4
   placements { fragment_id: "frag-gk-count-dots-to-10" }
   placements { fragment_id: "frag-gk-count-dots-to-20" }
   placements { fragment_id: "frag-gk-ten-frames" }
   placements { fragment_id: "frag-gk-one-more" }
   design {
-    purpose: "Count up to 20 dots and write how many, then find one more."
+    purpose: "Count up to 20 objects, write how many, and find one more."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
-  home_tip: "Let your child touch each dot as they count."
+  home_tip: "Count small objects such as spoons or buttons together, touching each one. Ask how many there are, and accept the last number counted as the answer."
 }
 
 worksheets {
@@ -322,7 +398,7 @@ worksheets {
     purpose: "Count on by ones from any number, and count by tens."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
-  home_tip: "Say the numbers aloud together before writing them."
+  home_tip: "Start counting aloud from a number other than 1, such as 27, and continue together past the next ten."
 }
 
 worksheets {
@@ -336,6 +412,7 @@ worksheets {
     purpose: "Compare groups of dots, then compare written numbers."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Put out two small groups of objects and ask which has more. Line the objects up in pairs to check."
 }
 
 worksheets {
@@ -350,7 +427,7 @@ worksheets {
     purpose: "Add and take away with pictures, then in stories."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
-  home_tip: "Read the stories aloud. Drawing the things in the story is a fine way to solve it."
+  home_tip: "Read each story aloud. A drawing of the objects in the story is a complete answer at this age."
 }
 
 worksheets {
@@ -361,9 +438,10 @@ worksheets {
   placements { fragment_id: "frag-gk-facts-within-5" }
   placements { fragment_id: "frag-gk-facts-within-10" }
   design {
-    purpose: "Add and subtract within 5 quickly, then within 10."
+    purpose: "Add and subtract within 5 fluently, then within 10."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Fingers are a sound tool for these facts. Practise the facts within 5 a few at a time until they come without counting."
 }
 
 worksheets {
@@ -374,10 +452,10 @@ worksheets {
   placements { fragment_id: "frag-gk-break-apart" }
   placements { fragment_id: "frag-gk-make-ten" }
   design {
-    purpose: "Split numbers into two parts, and find the partner that makes 10."
+    purpose: "Break numbers into two parts, and find the partner that makes 10."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
-  home_tip: "Use ten fingers: hold up some and ask how many are down."
+  home_tip: "Hold up some fingers on two hands and ask how many more make 10."
 }
 
 worksheets {
@@ -387,9 +465,10 @@ worksheets {
   max_pages: 2
   placements { fragment_id: "frag-gk-teen-numbers" }
   design {
-    purpose: "See each teen number as a ten and some ones."
+    purpose: "Show each teen number as ten ones and some more ones."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Make teen numbers with ten fingers and some objects, saying for example: ten and four make fourteen."
 }
 
 worksheets {
@@ -401,14 +480,15 @@ worksheets {
   placements { fragment_id: "frag-gk-sides-corners" }
   placements { fragment_id: "frag-gk-draw-shapes" }
   design {
-    purpose: "Name shapes, describe their sides and corners, and draw them."
+    purpose: "Find shapes of any size or turn, count their sides and corners, and draw them."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
+  home_tip: "Look for circles, triangles, squares and rectangles around the home, including ones that are tilted or very small."
 }
 
 worksheets {
   id: "ws-gk-compare-and-sort"
-  title: "Longer and sorting"
+  title: "Comparing and sorting"
   seed: 409
   max_pages: 2
   placements { fragment_id: "frag-gk-longer" }
@@ -417,6 +497,7 @@ worksheets {
     purpose: "Compare two lengths, and sort and count shapes."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Line up two objects, such as a spoon and a fork, at one end and ask which is longer."
 }
 
 # Grade 1: operations and algebraic thinking.
@@ -427,10 +508,14 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Solve adding and subtracting stories within 20, with the unknown in any place."
+    purpose: "Solve adding and subtracting stories within 20, with the unknown in any position."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "The stories mix adding to, taking from, putting together and comparing, and the unknown is the result, the change or the start."
-    misconceptions: "Adding whenever a story says \"more\"."
+    rationale: "The stories cover adding to, taking from, putting together and comparing, with the unknown as the result, the change or the start. Mixing the types means students must decide what each story asks rather than apply one operation to all. The working space is blank so students can draw, use a number line or write an equation."
+    misconceptions: "Adds whenever a story says more, including in comparing stories."
+    misconceptions: "In a start-unknown story, adds or subtracts the two numbers in the order they appear."
+    misconceptions: "Answers how many in all when the story asks how many more."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+    references: "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
   }
   items {
     count: 5
@@ -467,6 +552,10 @@ fragments {
   design {
     purpose: "Solve stories that add three numbers with a total up to 20."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each story has three numbers to add, and two of them make 10 in two of the stories. Students can add in any order, so they may find the ten first. The contexts are familiar ones: flowers, books and pets."
+    misconceptions: "Adds only the first two numbers in the story."
+    misconceptions: "Loses one number when adding in a different order."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
   items {
     count: 3
@@ -489,48 +578,61 @@ fragments {
 
 fragments {
   id: "frag-g1-add-three-numbers"
-  instruction: "Add. Look for two numbers that make 10."
+  instruction: "Add. Make a ten first."
   stage: STAGE_PRACTICE
   items { kind { add_subtract_fact { max: 20 three_addends: true } } count: 8 }
   design {
-    purpose: "Add three numbers with a total up to 20."
+    purpose: "Add three numbers by first adding two that make 10."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every item contains two numbers that make 10, and the pair is not always side by side. Students choose which two to add first, which uses the associative and commutative properties without naming them. Adding 10 and a one-digit number is easier than adding the numbers in order."
+    misconceptions: "Adds only from left to right and misses the ten."
+    misconceptions: "Adds one of the numbers twice after reordering."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-g1-turn-around"
-  instruction: "Fill in the missing number."
+  instruction: "Write the missing number."
   stage: STAGE_PRACTICE
-  explainer: "You can add in any order: 3 + 8 is the same as 8 + 3."
   items { kind { equation { total { min: 5 max: 18 } mode: MODE_TURN_AROUND } } count: 8 }
   design {
-    purpose: "Use adding in any order to make adding easier."
+    purpose: "Use the fact that adding in either order gives the same sum."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each equation shows the same two numbers on both sides in a different order, with one number missing. Students can answer without computing the sum, which draws attention to the property. Doubles are left out because both orders look the same."
+    misconceptions: "Writes the sum in the box instead of the missing addend."
+    misconceptions: "Thinks the = sign must be followed by the answer, so an equation with sums on both sides seems wrong."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-g1-count-on-number-line"
-  instruction: "Count the jumps. Write the answer."
+  instruction: "Count the jumps. Write the sum."
   stage: STAGE_GUIDED
-  explainer: "Start at the arrow. Each jump is 1."
   items { kind { number_line_jumps { step: 1 end: 20 } } count: 3 }
   design {
     purpose: "Add by counting on along a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
-    misconceptions: "Counting the starting number as the first jump."
+    rationale: "Each jump of 1 is drawn from the starting number, so the sum is where the jumps land. Students write the landing number on the line and in the equation, which links counting on to addition."
+    misconceptions: "Counts the starting number as the first jump, giving one less than the sum."
+    misconceptions: "Counts the tick marks instead of the jumps."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-g1-count-back-number-line"
-  instruction: "Count the jumps back. Write the answer."
+  instruction: "Count the jumps back. Write the difference."
   stage: STAGE_GUIDED
   items { kind { number_line_jumps { step: 1 end: 20 subtract: true } } count: 2 }
   design {
     purpose: "Subtract by counting back along a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "The jumps go to the left from the starting number, so subtraction is shown as counting back. This follows the counting-on items, so students see both operations on the same line."
+    misconceptions: "Counts the starting number as the first jump back, giving one more than the difference."
+    misconceptions: "Jumps to the right because jumps have gone right in the section before."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -540,43 +642,58 @@ fragments {
   stage: STAGE_PRACTICE
   items { kind { add_subtract_fact { max: 20 op: OP_MIXED } } count: 12 }
   design {
-    purpose: "Add and subtract within 20, and know the facts within 10."
+    purpose: "Add and subtract within 20."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE, PRINCIPLE_INTERLEAVING]
+    rationale: "Facts within 20 are mixed with facts within 10, and addition with subtraction. Students may use strategies such as making ten, doubles or a related addition fact. Fluency is expected within 10 in grade 1 and within 20 in grade 2."
+    misconceptions: "Counts back one too many when subtracting."
+    misconceptions: "Adds when the sign is minus."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-g1-think-addition"
-  instruction: "Use an addition fact to subtract."
+  instruction: "Subtract. Complete the addition fact."
   stage: STAGE_PRACTICE
   items { kind { equation { total { min: 6 max: 18 } mode: MODE_THINK_ADDITION } } count: 6 }
   design {
-    purpose: "Solve a subtraction by finding the missing number in an addition."
+    purpose: "Solve a subtraction by finding the missing addend in a related addition."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each subtraction is paired with the addition that answers it, so 13 − 8 becomes 8 + ? = 13. Students who know addition facts can use them to subtract instead of counting back. The two boxes hold the same number."
+    misconceptions: "Writes the whole in the addition box instead of the missing part."
+    misconceptions: "Does not see that the two answers must be equal."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-g1-true-or-false"
-  instruction: "Is it true or false? Tick one."
+  instruction: "Mark true or false."
   stage: STAGE_PRACTICE
-  explainer: "The = sign means both sides are worth the same."
   items { kind { equation { total { min: 4 max: 15 } mode: MODE_TRUE_FALSE } } count: 8 }
   design {
     purpose: "Decide whether an equation is true by working out both sides."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
-    misconceptions: "Reading = as \"the answer comes next\", so 7 = 7 or 9 = 4 + 5 looks wrong."
+    rationale: "Equations put a number or a sum on either side of the = sign, and half are false by one. Students must compare the value of both sides, which builds the meaning of = as the same as. Equations such as 9 = 4 + 5 are included because many students first read = as the answer comes next."
+    misconceptions: "Reads = as the answer comes next, so 9 = 4 + 5 seems false."
+    misconceptions: "Marks 2 + 9 = 1 + 11 false because 11 is not the sum of 2 and 9."
+    references: "McNeil and Alibali (2005), Child Development 76"
+    references: "Knuth, Stephens, McNeil and Alibali (2006), Journal for Research in Mathematics Education 37"
   }
 }
 
 fragments {
   id: "frag-g1-missing-number"
-  instruction: "Fill in the missing number."
+  instruction: "Write the missing number."
   stage: STAGE_PRACTICE
   items { kind { equation { total { min: 5 max: 20 } mode: MODE_MISSING_ANY } } count: 10 }
   design {
     purpose: "Find the missing number in an addition or subtraction equation."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The missing number moves to every position, and the equation sometimes starts with the total. Students must think about how the three numbers are related rather than compute from left to right."
+    misconceptions: "Adds the two numbers shown, whatever the position of the box."
+    misconceptions: "In ? − 4 = 4, writes 0 instead of 8."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
   }
 }
 
@@ -591,7 +708,7 @@ worksheets {
     purpose: "Solve adding and subtracting stories, including stories with three numbers."
     principles: [PRINCIPLE_INTERLEAVING]
   }
-  home_tip: "Ask your child to tell the story back in their own words first."
+  home_tip: "Before solving, ask for the story to be retold in the student's own words. A drawing is a good way to show the work."
 }
 
 worksheets {
@@ -602,9 +719,10 @@ worksheets {
   placements { fragment_id: "frag-g1-add-three-numbers" }
   placements { fragment_id: "frag-g1-turn-around" }
   design {
-    purpose: "Add three numbers and use adding in any order."
+    purpose: "Add three numbers by making ten, and use adding in any order."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Practise the pairs that make 10, such as 3 and 7 or 6 and 4, until they are quick."
 }
 
 worksheets {
@@ -617,9 +735,10 @@ worksheets {
   placements { fragment_id: "frag-g1-think-addition" }
   placements { fragment_id: "frag-g1-facts-within-20" }
   design {
-    purpose: "Count on and back on a number line, think of subtraction as adding, then practise facts."
+    purpose: "Count on and back on a number line, use addition to subtract, then practise facts."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "For a subtraction such as 13 − 8, ask what to add to 8 to make 13."
 }
 
 worksheets {
@@ -630,46 +749,57 @@ worksheets {
   placements { fragment_id: "frag-g1-true-or-false" }
   placements { fragment_id: "frag-g1-missing-number" }
   design {
-    purpose: "Understand = as \"the same as\", and find missing numbers."
+    purpose: "Read = as the same as, and find missing numbers."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
   }
+  home_tip: "Read the = sign aloud as \"is the same as\". Equations such as 9 = 4 + 5 are true."
 }
 
 # Grade 1: number and place value.
 
 fragments {
   id: "frag-g1-count-to-120"
-  instruction: "Count on. Write the missing numbers."
+  instruction: "Write the missing numbers."
   stage: STAGE_PRACTICE
   items { kind { count_sequence { start { min: 40 max: 114 } steps: [1] } } count: 8 }
   design {
     purpose: "Count and write numbers up to 120 from any starting number."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Writing 100 and 1 as 1001 instead of 101."
+    rationale: "Starting numbers run from 40 to 114, so many sequences cross a decade or cross 100. Writing numbers past 100 is new in grade 1 and is where most errors occur."
+    misconceptions: "Writes 101 as 1001 or 1001 as the number after 100."
+    misconceptions: "After 109, writes 200 or 1010 instead of 110."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-chart-to-120"
-  instruction: "Fill in the missing numbers on the chart."
+  instruction: "Write the missing numbers."
   max_columns: 1
   stage: STAGE_PRACTICE
-  items { kind { count_sequence { start { min: 61 max: 81 } chart: true } } count: 2 }
+  items { kind { count_sequence { start { min: 71 max: 81 } chart: true } } count: 2 }
   design {
     purpose: "Read and write numbers up to 120 on a chart, across 100."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each chart piece runs to 110 or 120, so the path of missing numbers crosses 100. The chart shows that the pattern of ones and tens continues past 100."
+    misconceptions: "Writes 1001, 1002 for the numbers after 100."
+    misconceptions: "Changes the ones digit when moving down a column."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-tens-units"
-  instruction: "Fill in the missing number."
+  instruction: "Write the missing number."
   stage: STAGE_INTRODUCE
-  explainer: "10 ones make 1 ten. 40 is 4 tens and 0 ones."
   items { kind { place_value_blocks { number { min: 10 max: 99 } mode: MODE_UNITS } } count: 8 }
   design {
-    purpose: "See 10 ones as a ten, and 10, 20 up to 90 as that many tens."
+    purpose: "Understand 10 ones as one ten, and 10, 20 up to 90 as that many tens."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The equations move between ones, tens and numbers, such as 10 ones = 1 ten and 60 = 6 tens. Treating a ten as a single unit is the central idea of grade 1 place value. The item that names 10 ones as a ten appears only once."
+    misconceptions: "Writes 60 tens for 60."
+    misconceptions: "Thinks a ten and ten ones are different amounts."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
@@ -679,8 +809,11 @@ fragments {
   stage: STAGE_PRACTICE
   items { kind { place_value_blocks { mode: MODE_TEEN } } count: 4 }
   design {
-    purpose: "See numbers from 11 to 19 as a ten and some ones."
+    purpose: "Show numbers from 11 to 19 as a ten and some ones."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "These items repeat the kindergarten model, a ten rod and single cubes, now read as one ten and some ones. They connect the tens-and-ones section before to the teen numbers."
+    misconceptions: "Reads 17 as 1 and 7 instead of a ten and 7 ones."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
@@ -692,77 +825,100 @@ fragments {
   design {
     purpose: "Read a two-digit number from its tens and ones."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Writing 3 tens and 5 ones as 305."
+    rationale: "Students count the rods and the cubes separately, then write the number. Recording the tens and ones before the number shows how each digit comes from the blocks."
+    misconceptions: "Writes 3 tens and 5 ones as 305 or 8."
+    misconceptions: "Counts each rod as 1 when finding the number."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-compare-two-digit"
-  instruction: "Write <, > or =."
+  instruction: "Compare. Write <, > or =."
   stage: STAGE_PRACTICE
-  explainer: "Compare the tens first. If the tens are the same, compare the ones."
   items { kind { compare_numbers { numbers { min: 10 max: 99 } symbols: true } } count: 12 }
   design {
     purpose: "Compare two-digit numbers with <, > and =."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Thinking 29 is greater than 31 because 9 is greater than 1."
+    rationale: "Students compare the tens first, and the ones only when the tens are equal. Some pairs have a larger ones digit in the smaller number, such as 69 and 71, which tests whether students compare by place."
+    misconceptions: "Thinks 29 is greater than 31 because 9 is greater than 1."
+    misconceptions: "Reverses the symbols, reading > as less than."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-plus-ones"
   instruction: "Add."
+  max_columns: 3
   stage: STAGE_PRACTICE
-  items { kind { mental_math { mode: MODE_PLUS_ONES } } count: 8 }
+  items { kind { mental_math { mode: MODE_PLUS_ONES } } count: 6 }
   design {
     purpose: "Add a one-digit number to a two-digit number, making a new ten when needed."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Some sums stay within the same ten and some make a new ten, as in 47 + 8. Students add ones to ones and, when the ones make 10 or more, add one more ten."
+    misconceptions: "Writes 47 + 8 as 415 by writing the ones sum after the tens."
+    misconceptions: "Adds the one-digit number to the tens digit."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-plus-tens"
-  instruction: "Add tens."
+  instruction: "Add."
   stage: STAGE_PRACTICE
   items { kind { mental_math { mode: MODE_PLUS_TENS } } count: 6 }
   design {
     purpose: "Add a multiple of 10 to a two-digit number by adding tens to tens."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Adding a multiple of 10 changes only the tens digit. Students who see this can add without counting."
+    misconceptions: "Adds the tens to the ones digit, so 36 + 50 gives 41."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-ten-more-less"
-  instruction: "Find 10 more or 10 less."
+  instruction: "Write the number."
   stage: STAGE_PRACTICE
   items { kind { mental_math { mode: MODE_TEN_MORE_LESS } } count: 6 }
   design {
     purpose: "Find 10 more or 10 less than a two-digit number without counting."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Changing the ones digit instead of the tens digit."
+    rationale: "These items follow the hundred-chart pieces, which show 10 more as the number below. Students now find 10 more or 10 less without the chart."
+    misconceptions: "Changes the ones digit instead of the tens digit."
+    misconceptions: "Counts on by ones ten times and loses count."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-chart-ten-more-less"
-  instruction: "Fill in 1 more, 1 less, 10 more and 10 less."
+  instruction: "Complete the hundred chart."
   stage: STAGE_INTRODUCE
-  explainer: "On a hundred chart, the number below is 10 more and the number above is 10 less."
   items { kind { mental_math { mode: MODE_TEN_MORE_LESS chart: true } } count: 4 }
   design {
-    purpose: "See 10 more and 10 less as moving down and up a hundred chart."
+    purpose: "Find 1 more, 1 less, 10 more and 10 less on a piece of a hundred chart."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each piece of the chart shows a number with the four numbers around it missing. Moving across changes the ones digit and moving up or down changes the tens digit, which prepares students to find 10 more and 10 less mentally."
+    misconceptions: "Writes the number below as 1 more."
+    misconceptions: "Changes the ones digit when moving up or down."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
 fragments {
   id: "frag-g1-subtract-tens"
-  instruction: "Subtract tens."
+  instruction: "Subtract."
   stage: STAGE_PRACTICE
   items { kind { mental_math { mode: MODE_SUBTRACT_TENS } } count: 6 }
   design {
     purpose: "Subtract a multiple of 10 from a larger multiple of 10."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every number is a multiple of 10 from 10 to 90, so 70 − 40 can be thought of as 7 tens − 4 tens. This uses known facts within 10."
+    misconceptions: "Subtracts 4 instead of 40 from 70."
+    misconceptions: "Writes 3 instead of 30 for 7 tens − 4 tens."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
   }
 }
 
@@ -777,6 +933,7 @@ worksheets {
     purpose: "Count on and write numbers up to 120."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Count aloud past 100 together, from about 95 to 120, and write a few of the numbers."
 }
 
 worksheets {
@@ -788,9 +945,10 @@ worksheets {
   placements { fragment_id: "frag-g1-teen-blocks" }
   placements { fragment_id: "frag-g1-read-tens-ones" }
   design {
-    purpose: "See a ten as ten ones, then read two-digit numbers as tens and ones."
+    purpose: "Understand a ten as ten ones, then read two-digit numbers as tens and ones."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Bundle sticks or straws in tens, then count a pile as tens and ones."
 }
 
 worksheets {
@@ -803,6 +961,7 @@ worksheets {
     purpose: "Compare two-digit numbers by their tens, then their ones."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Compare two numbers by asking which has more tens. Compare the ones only when the tens are the same."
 }
 
 worksheets {
@@ -819,30 +978,38 @@ worksheets {
     purpose: "Add within 100, find 10 more and 10 less, and subtract tens."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Name a number such as 46 and ask for 10 more and 10 less. Only the tens digit changes."
 }
 
 # Grade 1: measurement, data and shapes.
 
 fragments {
   id: "frag-g1-order-three"
-  instruction: "Tick the longest and the shortest strip."
+  instruction: "Mark the longest pencil. Mark the shortest pencil."
   stage: STAGE_PRACTICE
   items { kind { length_measure { mode: MODE_ORDER_THREE } } count: 4 }
   design {
-    purpose: "Put three lengths in order."
+    purpose: "Order three lengths from longest to shortest."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The three pencils start at the same line and carry no unit marks, so students compare them directly. Finding both the longest and the shortest places all three in order."
+    misconceptions: "Marks the same pencil as longest and shortest."
+    misconceptions: "Compares where the pencils end without checking that they start together."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-g1-count-units"
-  instruction: "How many units long is the strip?"
+  instruction: "Write how many cubes long."
   stage: STAGE_PRACTICE
-  explainer: "Each box is one unit. The units touch, with no gaps and no overlaps."
   items { kind { length_measure { mode: MODE_COUNT_UNITS } } count: 3 }
   design {
     purpose: "Measure a length by counting equal units laid end to end."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "A row of cubes lies under each pencil, starting where the pencil starts, with no gaps and no overlaps. Students count the cubes to give the length in units. This is the model of measuring that rulers build on in grade 2."
+    misconceptions: "Counts the lines between cubes instead of the cubes."
+    misconceptions: "Thinks units may have gaps or overlap and still give the length."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
   }
 }
 
@@ -850,11 +1017,14 @@ fragments {
   id: "frag-g1-clock-hour"
   instruction: "Write the time."
   stage: STAGE_INTRODUCE
-  explainer: "The short hand shows the hour. When the long hand points to 12, it is o'clock."
   items { kind { clock_nearest { step: 60 } } count: 4 }
   design {
-    purpose: "Tell time to the hour."
+    purpose: "Tell time to the hour on an analog clock."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "On the hour, the long hand points to 12 and the short hand points to the hour. Twelve o'clock is left out because the hands lie on top of each other. Students may write 5:00 or 5 o'clock."
+    misconceptions: "Reads the long hand as the hour."
+    misconceptions: "Writes 12:5 for 5 o'clock, reading both hands as numbers."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
   }
 }
 
@@ -862,59 +1032,74 @@ fragments {
   id: "frag-g1-clock-half-hour"
   instruction: "Write the time."
   stage: STAGE_PRACTICE
-  explainer: "When the long hand points to 6, it is half past: 3:30. The short hand is halfway between two numbers."
   items { kind { clock_nearest { step: 30 } } count: 4 }
   design {
     purpose: "Tell time to the hour and half hour."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Reading the hour from the number after the short hand at half past."
+    rationale: "Half-hour times are mixed with times on the hour. At half past, the short hand is halfway between two numbers, and students must read the earlier one."
+    misconceptions: "At half past, reads the hour from the number after the short hand."
+    misconceptions: "Writes 3:6 for half past 3, reading the number the long hand points to."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
   }
 }
 
 fragments {
   id: "frag-g1-tally"
-  instruction: "Use the tally chart to answer."
+  instruction: "Use the tally chart. Answer the questions."
   stage: STAGE_PRACTICE
-  explainer: "Each | is one. ||||/ is a group of 5."
   items { kind { data_chart { mode: MODE_TALLY } } count: 2 }
   design {
-    purpose: "Read a chart in three groups: how many in each, how many more, how many in all."
+    purpose: "Read a tally chart with three groups: how many in one group, how many more, and how many in all."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Tally marks are drawn in groups of five, four strokes crossed by a fifth, so students can count by fives and then ones. The three questions ask for a count, a comparison and a total, which are the questions grade 1 asks of data with up to three categories."
+    misconceptions: "Counts a group of five as four, missing the crossing stroke."
+    misconceptions: "Answers how many more with the larger count instead of the difference."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K–3, Categorical Data; Grades 2–5, Measurement Data"
   }
 }
 
 fragments {
   id: "frag-g1-shape-features"
-  instruction: "Count the sides and corners. Tick the name."
+  instruction: "Count the sides and corners. Mark the name."
   stage: STAGE_PRACTICE
   items { kind { shape_attributes { mode: MODE_SIDES_CORNERS } } count: 4 }
   design {
     purpose: "Name a shape by its sides and corners, not its color, size or turn."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The shapes include regular and irregular ones in different turns. The name follows from the number of sides, which are defining attributes, and not from how the shape looks at a glance."
+    misconceptions: "Names a shape only when it looks like the usual picture, so an irregular hexagon is not a hexagon."
+    misconceptions: "Counts a corner that points inward as not a corner."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
 fragments {
   id: "frag-g1-halves-fourths"
-  instruction: "What share is shaded? Tick one."
+  instruction: "Mark the name of the shaded part."
   stage: STAGE_PRACTICE
   items { kind { equal_shares { denominators: [2, 4] } } count: 4 }
   design {
     purpose: "Name one of two equal shares as one half and one of four as one fourth."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    misconceptions: "Thinking one fourth is bigger than one half because 4 is bigger than 2."
+    rationale: "Each bar is cut into two or four equal shares with one shaded. Halves and fourths of the same bar appear side by side, so students can see that a fourth is smaller than a half."
+    misconceptions: "Thinks one fourth is bigger than one half because 4 is bigger than 2."
+    misconceptions: "Names the share by the number of parts left unshaded."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
 fragments {
   id: "frag-g1-equal-or-not"
-  instruction: "Are the parts equal shares? Tick one."
+  instruction: "Mark equal shares or not equal shares."
   stage: STAGE_PRACTICE
   items { kind { equal_shares { denominators: [2, 4] unequal: true } } count: 4 }
   design {
     purpose: "Tell equal shares from parts that are not equal."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
-    misconceptions: "Calling any cut into two parts halves."
+    rationale: "Some bars are cut into equal parts and some are not, with the same number of parts. Students must check the sizes of the parts, not only count them, before naming halves or fourths."
+    misconceptions: "Calls any cut into two parts halves."
+    misconceptions: "Calls parts unequal because one is shaded and the others are not."
+    references: "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–6, Geometry"
   }
 }
 
@@ -929,6 +1114,7 @@ worksheets {
     purpose: "Order three lengths, then measure lengths in units."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Measure a spoon or a shoe with paper clips laid end to end, with no gaps."
 }
 
 worksheets {
@@ -942,6 +1128,7 @@ worksheets {
     purpose: "Read clocks to the hour, then to the half hour."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Read an analog clock together at the hour and half hour during the day. Name the short hand first."
 }
 
 worksheets {
@@ -954,6 +1141,7 @@ worksheets {
     purpose: "Answer questions from data in three groups."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Keep a tally of something for a day, such as cars that pass or cups of water, and count the groups of five."
 }
 
 worksheets {
@@ -968,4 +1156,5 @@ worksheets {
     purpose: "Describe shapes by their features, then split them into equal shares."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
+  home_tip: "Cut a sandwich or a sheet of paper into halves and fourths, and check that the parts are the same size."
 }

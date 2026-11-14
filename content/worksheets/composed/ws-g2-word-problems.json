@@ -164,9 +164,14 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The stories mix adding and subtracting, comparing, and two steps, so the child decides what each one needs.",
+      "rationale": "The stories mix adding, subtracting, comparing and two steps, so students decide what each one needs. Numbers need regrouping in most stories, which practises grade 2 addition and subtraction in context. The two-step story is split into parts so the first result is recorded before it is used.",
       "misconceptions": [
-       "Adding whenever a story says \"more\" or \"fewer\" without reading what is asked."
+       "Adds whenever a story says more, and subtracts whenever it says fewer, without reading what is asked.",
+       "In a two-step story, stops after the first step."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
       ]
      },
      "estimatedHeight": 764
@@ -184,7 +189,7 @@
        "label": "5",
        "nodes": [
         {
-         "text": "A bus has 52 seats. 24 children and 9 grown-ups get on. How many seats are empty?"
+         "text": "A bus has 52 seats. 24 children and 9 adults get on. How many seats are empty?"
         },
         {
          "workSpace": {
@@ -214,9 +219,14 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The stories mix adding and subtracting, comparing, and two steps, so the child decides what each one needs.",
+      "rationale": "The stories mix adding, subtracting, comparing and two steps, so students decide what each one needs. Numbers need regrouping in most stories, which practises grade 2 addition and subtraction in context. The two-step story is split into parts so the first result is recorded before it is used.",
       "misconceptions": [
-       "Adding whenever a story says \"more\" or \"fewer\" without reading what is asked."
+       "Adds whenever a story says more, and subtracts whenever it says fewer, without reading what is asked.",
+       "In a two-step story, stops after the first step."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking",
+       "Carpenter, Fennema, Franke, Levi and Empson (1999), Children's Mathematics: Cognitively Guided Instruction, Heinemann"
       ]
      },
      "continued": true,

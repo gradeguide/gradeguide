@@ -604,88 +604,30 @@
         }
        ],
        "key": "15 − 8 = 7"
-      },
-      {
-       "label": "19",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "12"
-           },
-           {
-            "text": "−"
-           },
-           {
-            "text": "6"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q19",
-             "label": "12 − 6",
-             "answer": {
-              "text": "6"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "12 − 6 = 6"
-      },
-      {
-       "label": "20",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "8"
-           },
-           {
-            "text": "−"
-           },
-           {
-            "text": "2"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q20",
-             "label": "8 − 2",
-             "answer": {
-              "text": "6"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "8 − 2 = 6"
       }
      ],
-     "columns": 4,
+     "columns": 3,
      "fragmentId": "frag-g2-facts-within-20",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add and subtract within 20 quickly, from memory or a mental strategy.",
+      "purpose": "Add and subtract within 20 fluently, using mental strategies.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE",
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Grade 2 expects fluency with sums and differences within 20. Adding and subtracting are mixed so students read each sign and choose a strategy, such as making ten, doubles or a related addition fact.",
+      "misconceptions": [
+       "Counts on or back by ones for every fact instead of using known facts.",
+       "Counts the starting number when counting back, giving one more than the difference."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 294
+     "estimatedHeight": 346
     }
    ],
-   "estimatedHeight": 298
+   "estimatedHeight": 350
   }
  ],
  "key": [
@@ -866,26 +808,6 @@
     "label": "15 − 8",
     "answer": {
      "text": "7"
-    }
-   }
-  },
-  {
-   "itemLabel": "19",
-   "field": {
-    "id": "q19",
-    "label": "12 − 6",
-    "answer": {
-     "text": "6"
-    }
-   }
-  },
-  {
-   "itemLabel": "20",
-   "field": {
-    "id": "q20",
-    "label": "8 − 2",
-    "answer": {
-     "text": "6"
     }
    }
   }

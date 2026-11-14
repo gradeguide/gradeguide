@@ -9,8 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write <, > or =.",
-     "explainer": "Compare the tens first. If the tens are the same, compare the ones.",
+     "instruction": "Compare. Write <, > or =.",
      "items": [
       {
        "label": "1",
@@ -345,14 +344,19 @@
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students compare the tens first, and the ones only when the tens are equal. Some pairs have a larger ones digit in the smaller number, such as 69 and 71, which tests whether students compare by place.",
       "misconceptions": [
-       "Thinking 29 is greater than 31 because 9 is greater than 1."
+       "Thinks 29 is greater than 31 because 9 is greater than 1.",
+       "Reverses the symbols, reading > as less than."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
-     "estimatedHeight": 216
+     "estimatedHeight": 190
     }
    ],
-   "estimatedHeight": 220
+   "estimatedHeight": 194
   }
  ],
  "key": [
@@ -484,7 +488,7 @@
   ]
  },
  "advice": [
-  "\"Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

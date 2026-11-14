@@ -12,11 +12,10 @@ import {
   CoinsSchema,
   ColumnArithmetic_Op,
   ColumnArithmeticSchema,
-  DataTable_CellSchema,
-  DataTable_RowSchema,
-  DataTableSchema,
   DotArraySchema,
   FractionBarSchema,
+  LengthStrips_StripSchema,
+  LengthStripsSchema,
   LinePlotSchema,
   LinesSchema,
   NumberBond_PartSchema,
@@ -31,8 +30,8 @@ import {
   Polygon_PointSchema,
   PolygonSchema,
   RulerSchema,
-  TapeDiagram_TapeSchema,
-  TapeDiagramSchema,
+  TallyChart_RowSchema,
+  TallyChartSchema,
   TenFrameSchema,
   UnitGridSchema,
   WorkSpace_Style,
@@ -78,8 +77,8 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         });
         const answer = a > b ? 'A' : a < b ? 'B' : 'same';
         return [
-          row(math('A'), dots(1, a)),
-          row(math('B'), dots(1, b)),
+          row(math('A'), dots(1, a, K_GAP)),
+          row(math('B'), dots(1, b, K_GAP)),
           node({ case: 'choices', value: create(ChoicesSchema, { options: ['A', 'B', 'same'], field: f.field('the row with more dots', answer) }) }),
         ];
       }
@@ -114,6 +113,10 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const [step, start, keep] = pickFresh(ctx, k.case, () => {
         const step = rng.pick(list(k.value.steps, [1]));
         let start = inRange(rng, k.value.start, 1, 90);
+        if (k.value.crossHundred && step === 1) {
+          // Two to four numbers before the hundred, so the blanks cross it.
+          start = 100 * Math.max(1, Math.round(start / 100)) - rng.int(2, 4);
+        }
         start = Math.max(step === 1 ? 0 : step, start - (start % step));
         // One of the later numbers is shown, so the child checks against it.
         return [step, Math.min(start, 1000 - 5 * step), rng.int(2, 5)];
@@ -132,12 +135,17 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const max = k.value.max || 10;
       const op = k.value.op || AddSubtractFact_Op.ADD;
       if (k.value.threeAddends) {
+        // Two of the three numbers make 10, so the child can add them
+        // first. The pair is not always side by side.
         const [a, b, c] = pickFresh(ctx, k.case + 3, () => {
           for (;;) {
-            const xs = [rng.int(1, 9), rng.int(1, 9), rng.int(1, 9)];
-            if (xs[0] + xs[1] + xs[2] <= max) {
-              return xs;
+            const x = rng.int(1, 9);
+            const other = rng.int(1, 9);
+            if (10 + other > max) {
+              continue;
             }
+            const order = rng.int(0, 2);
+            return order === 0 ? [x, 10 - x, other] : order === 1 ? [x, other, 10 - x] : [other, x, 10 - x];
           }
         });
         return [math(a, '+', b, '+', c, '=', blank(f.field(`${a} + ${b} + ${c}`, String(a + b + c))))];
@@ -162,7 +170,7 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         return k.value.pictures ? [pictures(rng, [w], a), math(w, '−', a, '=', blank(field))] : [math(w, '−', a, '=', blank(field))];
       }
       const field = f.field(`${a} + ${b}`, String(w));
-      return k.value.pictures ? [pictures(rng, [a, b]), math(a, '+', b, '=', blank(field))] : [math(a, '+', b, '=', blank(field))];
+      return k.value.pictures ? [pictures(rng, [a, b], 0, true), math(a, '+', b, '=', blank(field))] : [math(a, '+', b, '=', blank(field))];
     }
     case 'equation': {
       return equation(k.value.mode || Equation_Mode.MISSING_PART, k.value.total, k.value.model, ctx);
@@ -198,11 +206,17 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'addInColumns': {
       const count = k.value.explain ? 2 : Math.min(4, Math.max(2, k.value.addends || 3));
-      const xs = pickFresh(ctx, k.case + count + k.value.explain, () => {
+      const three = k.value.digits === 3;
+      const xs = pickFresh(ctx, k.case + count + k.value.explain + three, () => {
         for (;;) {
-          const xs = Array.from({ length: count }, () => rng.int(11, 79));
+          const xs = Array.from({ length: count }, () => (three ? rng.int(101, 899) : rng.int(11, 79)));
           const ones = xs.reduce((s, x) => s + (x % 10), 0);
-          if (ones >= 10) {
+          const tens = xs.reduce((s, x) => s + (Math.floor(x / 10) % 10), 0) + (ones >= 10 ? 1 : 0);
+          if (!three && ones >= 10) {
+            return xs;
+          }
+          // Three-digit sums stay under 1000, so the answer has three digits, and regroup at least once.
+          if (three && xs.reduce((s, x) => s + x, 0) < 1000 && (ones >= 10 || tens >= 10)) {
             return xs;
           }
         }
@@ -217,7 +231,7 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       if (k.value.explain) {
         const ones = xs.reduce((s, x) => s + (x % 10), 0);
         nodes.push(
-          text('Why does a 1 go above the tens?'),
+          text('Explain why a 1 is written above the tens.'),
           node({
             case: 'lines',
             value: create(LinesSchema, {
@@ -231,7 +245,17 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'clockNearest': {
       const step = k.value.step || 30;
-      const [h, m] = pickFresh(ctx, k.case + step, () => [rng.int(1, 12), step >= 60 ? 0 : step * rng.int(0, 60 / step - 1)]);
+      const [h, m] = pickFresh(ctx, k.case + step, () => {
+        for (;;) {
+          const h = rng.int(1, 12);
+          const m = step >= 60 ? 0 : step * rng.int(0, 60 / step - 1);
+          // At 12:00 the hands lie on top of each other and are hard to tell
+          // apart.
+          if (h !== 12 || m !== 0) {
+            return [h, m];
+          }
+        }
+      });
       const also = m === 0 ? [`${h} o'clock`] : [];
       return [node({ case: 'clock', value: create(ClockSchema, { hour: h, minute: m }) }), math('The time is', blank(f.field('the time on the clock', timeText(h, m), also)))];
     }
@@ -239,7 +263,7 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       return dataChart(k.value.mode || DataChart_Mode.TALLY, ctx);
     }
     case 'shapeAttributes': {
-      return shapeAttributes(k.value.mode || ShapeAttributes_Mode.NAME, ctx);
+      return shapeAttributes(k.value.mode || ShapeAttributes_Mode.NAME, k.value.noNames, ctx);
     }
     case 'equalShares': {
       const ds = list(k.value.denominators, [2, 4]);
@@ -265,7 +289,7 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       if (mode === PairsAndArrays_Mode.ODD_EVEN) {
         const n = pickFresh(ctx, k.case + mode, () => inRange(rng, k.value.size, 2, 20));
         const even = n % 2 === 0;
-        const out = [dots(1, n), node({ case: 'choices', value: create(ChoicesSchema, { options: ['odd', 'even'], field: f.field(`is ${n} odd or even`, even ? 'even' : 'odd') }) })];
+        const out = [dots(1, n, 22), node({ case: 'choices', value: create(ChoicesSchema, { options: ['odd', 'even'], field: f.field(`is ${n} odd or even`, even ? 'even' : 'odd') }) })];
         if (even) {
           out.push(math(n, '=', blank(f.field(`half of ${n}`, String(n / 2))), '+', blank(f.field(`half of ${n}`, String(n / 2)))));
         }
@@ -320,8 +344,12 @@ export function generateK2(kind: ItemKind, ctx: Ctx): Node[] | undefined {
   }
 }
 
-function dots(rows: number, cols: number): Node {
-  return node({ case: 'dotArray', value: create(DotArraySchema, { rows, cols }) });
+// Dots for a young child to touch and count are drawn further apart than
+// the standard dots.
+const K_GAP = 24;
+
+function dots(rows: number, cols: number, gap = 0): Node {
+  return node({ case: 'dotArray', value: create(DotArraySchema, { rows, cols, gap }) });
 }
 
 // arrangement lays n dots in a line, or in an array of two to four rows
@@ -364,7 +392,14 @@ function equation(mode: Equation_Mode, total: IntRange | undefined, model: Equat
   const f = ctx.fields;
   const [t, a, form] = pickFresh(ctx, 'equation' + mode, () => {
     const t = inRange(rng, total, 2, 10);
-    return [t, rng.int(mode === Equation_Mode.MISSING_PART ? 0 : 1, t - 1), rng.int(0, 5)];
+    // A part of 0 leaves an empty circle, and a turn-around of a double
+    // shows nothing, so neither is used.
+    for (;;) {
+      const a = rng.int(1, t - 1);
+      if (mode !== Equation_Mode.TURN_AROUND || 2 * a !== t) {
+        return [t, a, rng.int(0, 5)];
+      }
+    }
   });
   const b = t - a;
   switch (mode) {
@@ -426,19 +461,29 @@ function equation(mode: Equation_Mode, total: IntRange | undefined, model: Equat
   }
 }
 
+// Base-ten blocks drawn larger for younger children: a kindergarten ten
+// rod is about an inch and a half long.
+const K_BLOCK = 9;
+const G1_BLOCK = 6.5;
+
 function placeValueBlocks(mode: PlaceValueBlocks_Mode, range: IntRange | undefined, ctx: Ctx): Node[] {
   const { rng } = ctx;
   const f = ctx.fields;
   if (mode === PlaceValueBlocks_Mode.TEEN) {
     const [n, form] = pickFresh(ctx, 'teen', () => [rng.int(11, 19), rng.int(0, 1)]);
-    const blocks = node({ case: 'baseTenBlocks', value: create(BaseTenBlocksSchema, { tens: 1, ones: n - 10 }) });
+    const blocks = node({ case: 'baseTenBlocks', value: create(BaseTenBlocksSchema, { tens: 1, ones: n - 10, unit: K_BLOCK }) });
     return form === 0
       ? [blocks, math(n, '=', 10, '+', blank(f.field(`ones in ${n}`, String(n - 10))))]
       : [blocks, math(10, '+', n - 10, '=', blank(f.field(`10 + ${n - 10}`, String(n))))];
   }
   if (mode === PlaceValueBlocks_Mode.UNITS) {
     const hundreds = (range?.max ?? 99) > 99;
-    const [form, x] = pickFresh(ctx, 'units' + hundreds, () => [rng.int(0, 3), rng.int(hundreds ? 1 : 2, 9)]);
+    // The first form has no number to vary, so it carries none and is used
+    // once.
+    const [form, x] = pickFresh(ctx, 'units' + hundreds, () => {
+      const form = rng.int(0, 3);
+      return [form, form === 0 ? 0 : rng.int(hundreds ? 1 : 2, 9)];
+    });
     const [unit, size, small] = hundreds ? ['hundreds', 100, 'tens'] : ['tens', 10, 'ones'];
     switch (form) {
       case 0:
@@ -463,7 +508,7 @@ function placeValueBlocks(mode: PlaceValueBlocks_Mode, range: IntRange | undefin
   const h = Math.floor(n / 100);
   const t = Math.floor(n / 10) % 10;
   const o = n % 10;
-  const blocks = node({ case: 'baseTenBlocks', value: create(BaseTenBlocksSchema, { hundreds: h, tens: t, ones: o }) });
+  const blocks = node({ case: 'baseTenBlocks', value: create(BaseTenBlocksSchema, { hundreds: h, tens: t, ones: o, unit: h ? 0 : G1_BLOCK }) });
   if (h) {
     return [
       blocks,
@@ -539,7 +584,7 @@ function dataChart(mode: DataChart_Mode, ctx: Ctx): Node[] {
       node({ case: 'linePlot', value: create(LinePlotSchema, { start, end: start + 6, partsPerUnit: 1, counts, caption }) }),
       math(`How many ${noun} are ${start + askTick} inches long?`, blank(f.field(`${noun} ${start + askTick} inches long`, String(askCount)))),
       math(`How many ${noun} were measured?`, blank(f.field(`${noun} measured`, String(total)))),
-      math('Longest minus shortest:', blank(f.field(`longest minus shortest ${noun}`, String(hi - lo))), 'inches'),
+      math(`How much longer is the longest than the shortest?`, blank(f.field(`longest minus shortest ${noun}`, String(hi - lo))), 'inches'),
     ];
   }
   const [theme, values] = pickFresh(ctx, 'tally', () => {
@@ -552,37 +597,28 @@ function dataChart(mode: DataChart_Mode, ctx: Ctx): Node[] {
     }
     return [rng.int(0, TALLY_THEMES.length - 1), vs];
   });
-  const [title, labels, noun] = TALLY_THEMES[theme];
-  const rows = labels.map((l, i) =>
-    create(DataTable_RowSchema, {
-      cells: [create(DataTable_CellSchema, { kind: { case: 'text', value: l } }), create(DataTable_CellSchema, { kind: { case: 'text', value: tally(values[i]) } })],
-    }),
-  );
+  const [title, labels, noun, heading, asks, compares] = TALLY_THEMES[theme];
+  const rows = labels.map((label, i) => create(TallyChart_RowSchema, { label, count: values[i] }));
   const hi = values.indexOf(Math.max(...values));
   const lo = values.indexOf(Math.min(...values));
   return [
-    node({ case: 'dataTable', value: create(DataTableSchema, { title, header: [noun === 'votes' ? 'Choice' : 'Kind', 'Tally'], rows }) }),
-    math(`How many for ${labels[0]}?`, blank(f.field(`${noun} for ${labels[0]}`, String(values[0])))),
-    math(`How many more for ${labels[hi]} than for ${labels[lo]}?`, blank(f.field(`${labels[hi]} minus ${labels[lo]}`, String(values[hi] - values[lo])))),
-    math('How many in all?', blank(f.field(`total ${noun}`, String(values.reduce((x, y) => x + y, 0))))),
+    node({ case: 'tallyChart', value: create(TallyChartSchema, { title, header: [heading, 'Tally'], rows }) }),
+    math(asks(labels[0]), blank(f.field(`${noun}: ${labels[0]}`, String(values[0])))),
+    math(compares(labels[hi], labels[lo]), blank(f.field(`${labels[hi]} minus ${labels[lo]}`, String(values[hi] - values[lo])))),
+    math(`How many ${noun} in all?`, blank(f.field(`total ${noun}`, String(values.reduce((x, y) => x + y, 0))))),
   ];
 }
 
-// tally writes n as tally marks: groups of five, each four strokes and a
-// slash.
-function tally(n: number): string {
-  const groups: string[] = [];
-  for (let left = n; left > 0; left -= 5) {
-    groups.push(left >= 5 ? '||||/' : '|'.repeat(left));
-  }
-  return groups.join('  ');
-}
-
-function shapeAttributes(mode: ShapeAttributes_Mode, ctx: Ctx): Node[] {
+function shapeAttributes(mode: ShapeAttributes_Mode, noNames: boolean, ctx: Ctx): Node[] {
   const { rng } = ctx;
   const f = ctx.fields;
   switch (mode) {
     case ShapeAttributes_Mode.SIDES_CORNERS: {
+      if (noNames) {
+        const i = pickFresh(ctx, 'sidesK', () => rng.int(0, SIDED_K.length - 1));
+        const pts = SIDED_K[i];
+        return [row(polygon(turn(pts, 15 * rng.int(0, 5)), 0.8), math('Sides:', blank(f.field('sides', String(pts.length))), 'Corners:', blank(f.field('corners', String(pts.length)))))];
+      }
       const i = pickFresh(ctx, 'sides', () => rng.int(0, SIDED.length - 1));
       const [pts, name] = SIDED[i];
       const n = pts.length;
@@ -618,16 +654,34 @@ function shapeAttributes(mode: ShapeAttributes_Mode, ctx: Ctx): Node[] {
           }
         }
       });
-      const shapes = kinds.map((x) => polygon(turn(SORTED[x][0], x === 2 ? 0 : 15 * rng.int(0, 2)), 0.5));
-      const rows = SORTED.map(([, plural], x) =>
-        create(DataTable_RowSchema, {
-          cells: [
-            create(DataTable_CellSchema, { kind: { case: 'text', value: plural } }),
-            create(DataTable_CellSchema, { kind: { case: 'field', value: f.field(`how many ${plural}`, String(kinds.filter((y) => y === x).length)) } }),
-          ],
-        }),
+      const shapes = kinds.map((x) => polygon(turn(SORTED[x][0], x === 2 ? 0 : 15 * rng.int(0, 2)), 0.9));
+      // Each count sits by a small picture of its shape, not its name, so a
+      // child who cannot read yet can do it.
+      const counts = SORTED.map(([pts, plural], x) =>
+        row(polygon(pts, 0.6), math('How many?', blank(f.field(`how many ${plural}`, String(kinds.filter((y) => y === x).length))))),
       );
-      return [row(...shapes), node({ case: 'dataTable', value: create(DataTableSchema, { header: ['Shape', 'How many'], rows }) })];
+      return [row(...shapes), ...counts];
+    }
+    case ShapeAttributes_Mode.FIND: {
+      const [target, kinds] = pickFresh(ctx, 'find', () => {
+        const target = rng.int(0, FOUND.length - 1);
+        for (;;) {
+          const ks = Array.from({ length: 7 }, () => rng.int(0, FOUND.length - 1));
+          const n = ks.filter((k) => k === target).length;
+          if (n >= 2 && n <= 4) {
+            return [target, ks];
+          }
+        }
+      });
+      const [, name] = FOUND[target];
+      // Shapes of the target kind come in different sizes and turns.
+      const shapes = kinds.map((x) => polygon(turn(FOUND[x][0], FOUND[x][1] === 'circle' ? 0 : 15 * rng.int(0, 5)), rng.pick([0.6, 0.8])));
+      const n = kinds.filter((k) => k === target).length;
+      return [
+        row(math(`Circle all the ${name}s.`), polygon(FOUND[target][0], 0.4)),
+        row(...shapes),
+        math('How many?', blank(f.field(`how many ${name}s`, String(n)))),
+      ];
     }
     default: {
       const i = pickFresh(ctx, 'name', () => rng.int(0, NAMED.length - 1));
@@ -646,10 +700,12 @@ function shapeAttributes(mode: ShapeAttributes_Mode, ctx: Ctx): Node[] {
 function lengthMeasure(mode: LengthMeasure_Mode, ctx: Ctx): Node[] {
   const { rng } = ctx;
   const f = ctx.fields;
+  // Pencils, not strips of boxes: comparing lengths comes before measuring
+  // them in units.
   const tapes = (lengths: number[]) =>
     node({
-      case: 'tapeDiagram',
-      value: create(TapeDiagramSchema, { tapes: lengths.map((units, i) => create(TapeDiagram_TapeSchema, { name: 'ABC'[i], units })) }),
+      case: 'lengthStrips',
+      value: create(LengthStripsSchema, { strips: lengths.map((units, i) => create(LengthStrips_StripSchema, { name: 'ABC'[i], units })) }),
     });
   const ruler = (inches: number) => node({ case: 'ruler', value: create(RulerSchema, { inches: 6, partsPerInch: 1, barParts: inches }) });
   switch (mode) {
@@ -673,10 +729,10 @@ function lengthMeasure(mode: LengthMeasure_Mode, ctx: Ctx): Node[] {
       ];
     }
     case LengthMeasure_Mode.COUNT_UNITS: {
-      const n = pickFresh(ctx, 'units', () => rng.int(3, 12));
+      const n = pickFresh(ctx, 'units', () => rng.int(3, 10));
       return [
-        node({ case: 'tapeDiagram', value: create(TapeDiagramSchema, { tapes: [create(TapeDiagram_TapeSchema, { name: 'Strip', units: n })] }) }),
-        math('It is', blank(f.field('units long', String(n))), 'units long.'),
+        node({ case: 'lengthStrips', value: create(LengthStripsSchema, { strips: [create(LengthStrips_StripSchema, { units: n })], cubes: true }) }),
+        math('The pencil is', blank(f.field('cubes long', String(n))), 'cubes long.'),
       ];
     }
     case LengthMeasure_Mode.RULER_INCHES: {
@@ -704,7 +760,7 @@ function lengthMeasure(mode: LengthMeasure_Mode, ctx: Ctx): Node[] {
         node({ case: 'fractionBar', value: create(FractionBarSchema, { parts: big, label: 'big' }) }),
         node({ case: 'fractionBar', value: create(FractionBarSchema, { parts: small, label: 'small' }) }),
         math('Big units:', blank(f.field('big units', String(big))), 'Small units:', blank(f.field('small units', String(small)))),
-        text('It takes more of the'),
+        text('Mark the unit that is needed more times.'),
         node({ case: 'choices', value: create(ChoicesSchema, { options: ['big units', 'small units'], field: f.field('which unit takes more', 'small units') }) }),
       ];
     }
@@ -818,6 +874,26 @@ const SORTED: [Pts, string][] = [
   [regular(24, 1.1), 'circles'],
 ];
 
+// Shapes to find in a row, with their names. A rectangle that is not a
+// square and a triangle that is not equal-sided are both included.
+const FOUND: [Pts, string][] = [
+  [regular(24, 1.6), 'circle'],
+  [regular(3, 1.8), 'triangle'],
+  [[[0, 0], [2.8, 0], [2.8, 2.8], [0, 2.8]], 'square'],
+  [[[0, 0], [4, 0], [4, 2], [0, 2]], 'rectangle'],
+  [regular(6, 1.7, 0), 'hexagon'],
+];
+
+// Shapes for a kindergartner to count sides and corners on.
+const SIDED_K: Pts[] = [
+  regular(3, 2.6),
+  [[0, 0], [6, 0], [2, 3]],
+  [[0, 0], [4, 0], [4, 4], [0, 4]],
+  [[0, 0], [6, 0], [6, 3], [0, 3]],
+  regular(5, 2.6),
+  regular(6, 2.5, 0),
+];
+
 const SHARE: Record<number, string> = { 2: 'one half', 3: 'one third', 4: 'one fourth' };
 
 // Unequal cuts for each number of parts.
@@ -827,12 +903,20 @@ const UNEQUAL: Record<number, number[][]> = {
   4: [[1, 1, 1, 2], [1, 2, 1, 2], [2, 1, 1, 3]],
 };
 
-// Tally themes: title, three labels, and what is counted.
-const TALLY_THEMES: [string, string[], string][] = [
-  ['Favorite snack', ['Apples', 'Crackers', 'Yogurt'], 'votes'],
-  ['Birds at the feeder', ['Robins', 'Finches', 'Jays'], 'birds'],
-  ['How we get to school', ['Walk', 'Bus', 'Car'], 'children'],
-  ['Weather this month', ['Sunny', 'Cloudy', 'Rainy'], 'days'],
+// Tally themes: title, three labels, what is counted, the label column's
+// heading, and the first question about a label.
+const TALLY_THEMES: [string, string[], string, string, (l: string) => string, (a: string, b: string) => string][] = [
+  ['Favorite snack', ['Apples', 'Crackers', 'Yogurt'], 'votes', 'Snack', (l) => `How many votes for ${l.toLowerCase()}?`, (a, b) => `How many more votes for ${a.toLowerCase()} than ${b.toLowerCase()}?`],
+  ['Birds at the feeder', ['Robins', 'Finches', 'Jays'], 'birds', 'Bird', (l) => `How many ${l.toLowerCase()}?`, (a, b) => `How many more ${a.toLowerCase()} than ${b.toLowerCase()}?`],
+  [
+    'How we get to school',
+    ['Walk', 'Bus', 'Car'],
+    'children',
+    'Way',
+    (l) => (l === 'Walk' ? 'How many children walk?' : `How many children come by ${l.toLowerCase()}?`),
+    (a, b) => `How many more children ${a === 'Walk' ? 'walk' : `come by ${a.toLowerCase()}`} than ${b === 'Walk' ? 'walk' : `come by ${b.toLowerCase()}`}?`,
+  ],
+  ['Weather this month', ['Sunny', 'Cloudy', 'Rainy'], 'days', 'Weather', (l) => `How many days were ${l.toLowerCase()}?`, (a, b) => `How many more ${a.toLowerCase()} days than ${b.toLowerCase()} days?`],
 ];
 
 // Line plot themes: what is measured, and the caption.
@@ -867,8 +951,8 @@ const PICTURES = [PictureGroups_Picture.STAR, PictureGroups_Picture.APPLE, Pictu
 
 // pictures draws groups of one kind of picture, the last crossedOut of them
 // crossed out.
-function pictures(rng: Rng, groups: number[], crossedOut = 0): Node {
-  return node({ case: 'pictureGroups', value: create(PictureGroupsSchema, { picture: rng.pick(PICTURES), groups, crossedOut }) });
+function pictures(rng: Rng, groups: number[], crossedOut = 0, framed = false): Node {
+  return node({ case: 'pictureGroups', value: create(PictureGroupsSchema, { picture: rng.pick(PICTURES), groups, crossedOut, framed }) });
 }
 
 // counted draws n things to count: dots, ten frames, or pictures in small
@@ -887,7 +971,7 @@ function counted(rng: Rng, n: number, how: CountObjects_Picture): Node {
     return pictures(rng, groups);
   }
   const [r, c] = arrangement(rng, n);
-  return dots(r, c);
+  return dots(r, c, K_GAP);
 }
 
 // hundredChart is four rows of a hundred chart with a path of boxes to fill

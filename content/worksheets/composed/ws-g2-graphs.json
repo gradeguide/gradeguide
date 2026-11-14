@@ -10,8 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the line plot to answer.",
-     "explainer": "Each × is one thing that was measured.",
+     "instruction": "Use the line plot. Answer the questions.",
      "items": [
       {
        "label": "1",
@@ -73,7 +72,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Longest minus shortest:"
+            "text": "How much longer is the longest than the shortest?"
            },
            {
             "blank": {
@@ -91,7 +90,7 @@
          }
         }
        ],
-       "key": "How many shells are 6 inches long? 3; How many shells were measured? 8; Longest minus shortest: 3 inches"
+       "key": "How many shells are 6 inches long? 3; How many shells were measured? 8; How much longer is the longest than the shortest? 3 inches"
       },
       {
        "label": "2",
@@ -153,7 +152,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Longest minus shortest:"
+            "text": "How much longer is the longest than the shortest?"
            },
            {
             "blank": {
@@ -171,7 +170,7 @@
          }
         }
        ],
-       "key": "How many crayons are 4 inches long? 1; How many crayons were measured? 8; Longest minus shortest: 4 inches"
+       "key": "How many crayons are 4 inches long? 1; How many crayons were measured? 8; How much longer is the longest than the shortest? 4 inches"
       }
      ],
      "columns": 1,
@@ -181,18 +180,26 @@
       "purpose": "Read a line plot of lengths measured to the nearest inch.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each × stands for one object at its measured length. The questions ask for one count, the total number of objects, and the difference between the longest and shortest, which uses the scale as a number line.",
+      "misconceptions": [
+       "Counts the numbers on the scale instead of the ×s.",
+       "Gives the number of objects at the longest length instead of the difference in length."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K–3, Categorical Data; Grades 2–5, Measurement Data"
       ]
      },
-     "estimatedHeight": 570
+     "estimatedHeight": 544
     }
    ],
-   "estimatedHeight": 574
+   "estimatedHeight": 548
   },
   {
    "sections": [
     {
      "label": "B",
-     "instruction": "Use the bar graph to answer.",
+     "instruction": "Use the bar graph. Answer the questions.",
      "items": [
       {
        "label": "3",
@@ -372,6 +379,14 @@
       "purpose": "Read a bar graph with four groups and answer put-together, take-apart and compare questions.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The scale counts by ones, so each bar's height can be read directly. The questions ask for a value, a difference and a total, the three kinds grade 2 asks of a bar graph.",
+      "misconceptions": [
+       "Reads the height from the wrong gridline.",
+       "Answers how many more with the larger value instead of the difference."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K–3, Categorical Data; Grades 2–5, Measurement Data"
       ]
      },
      "estimatedHeight": 722
@@ -509,8 +524,8 @@
   ]
  },
  "advice": [
-  "\"Use the line plot to answer.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use the bar graph to answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Use the line plot. Answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the bar graph. Answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

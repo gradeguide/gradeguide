@@ -166,14 +166,17 @@ export function areaModel(a: AreaModel, filled: boolean, w: L.Writing = L.STANDA
 }
 
 export function dotArray(d: DotArray): Drawing {
-  const g = L.DOT_GAP;
+  const g = d.gap || L.DOT_GAP;
+  // The radius and margin grow with the gap, keeping the standard look at 18.
+  const r = Math.round((5 * g) / 18);
+  const m = r + 5;
   const shapes: Shape[] = [];
-  for (let r = 0; r < d.rows; r++) {
+  for (let row = 0; row < d.rows; row++) {
     for (let c = 0; c < d.cols; c++) {
-      shapes.push({ t: 'circle', cx: 10 + c * g, cy: 10 + r * g, r: 5 });
+      shapes.push({ t: 'circle', cx: m + c * g, cy: m + row * g, r });
     }
   }
-  return { width: d.cols * g + 4, height: d.rows * g + 4, shapes };
+  return { width: d.cols * g + 2 * m - 16, height: d.rows * g + 2 * m - 16, shapes };
 }
 
 export function tapeDiagram(t: TapeDiagram, filled: boolean): Drawing {
@@ -474,7 +477,7 @@ export function placeValueChart(c: PlaceValueChart, filled: boolean): Drawing {
 }
 
 export function baseTenBlocks(b: BaseTenBlocks): Drawing {
-  const u = 4.4;
+  const u = b.unit || 4.4;
   const shapes: Shape[] = [];
   let x = 2;
   const top = 12;

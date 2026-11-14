@@ -10,14 +10,14 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick the longest and the shortest strip.",
+     "instruction": "Mark the longest pencil. Mark the shortest pencil.",
      "items": [
       {
        "label": "1",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
             "name": "A",
             "units": 5
@@ -102,8 +102,8 @@
        "label": "2",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
             "name": "A",
             "units": 2
@@ -188,8 +188,8 @@
        "label": "3",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
             "name": "A",
             "units": 2
@@ -274,8 +274,8 @@
        "label": "4",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
             "name": "A",
             "units": 2
@@ -361,143 +361,158 @@
      "fragmentId": "frag-g1-order-three",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Put three lengths in order.",
+      "purpose": "Order three lengths from longest to shortest.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The three pencils start at the same line and carry no unit marks, so students compare them directly. Finding both the longest and the shortest places all three in order.",
+      "misconceptions": [
+       "Marks the same pencil as longest and shortest.",
+       "Compares where the pencils end without checking that they start together."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 454
+     "estimatedHeight": 426
     },
     {
      "label": "B",
-     "instruction": "How many units long is the strip?",
-     "explainer": "Each box is one unit. The units touch, with no gaps and no overlaps.",
+     "instruction": "Write how many cubes long.",
      "items": [
       {
        "label": "5",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
-            "name": "Strip",
-            "units": 6
+            "units": 5
            }
-          ]
+          ],
+          "cubes": true
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "It is"
+            "text": "The pencil is"
            },
            {
             "blank": {
              "id": "q5",
-             "label": "units long",
+             "label": "cubes long",
              "answer": {
-              "text": "6"
+              "text": "5"
              }
             }
            },
            {
-            "text": "units long."
+            "text": "cubes long."
            }
           ]
          }
         }
        ],
-       "key": "It is 6 units long."
+       "key": "The pencil is 5 cubes long."
       },
       {
        "label": "6",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
-            "name": "Strip",
             "units": 3
            }
-          ]
+          ],
+          "cubes": true
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "It is"
+            "text": "The pencil is"
            },
            {
             "blank": {
              "id": "q6",
-             "label": "units long",
+             "label": "cubes long",
              "answer": {
               "text": "3"
              }
             }
            },
            {
-            "text": "units long."
+            "text": "cubes long."
            }
           ]
          }
         }
        ],
-       "key": "It is 3 units long."
+       "key": "The pencil is 3 cubes long."
       },
       {
        "label": "7",
        "nodes": [
         {
-         "tapeDiagram": {
-          "tapes": [
+         "lengthStrips": {
+          "strips": [
            {
-            "name": "Strip",
-            "units": 7
+            "units": 6
            }
-          ]
+          ],
+          "cubes": true
          }
         },
         {
          "math": {
           "atoms": [
            {
-            "text": "It is"
+            "text": "The pencil is"
            },
            {
             "blank": {
              "id": "q7",
-             "label": "units long",
+             "label": "cubes long",
              "answer": {
-              "text": "7"
+              "text": "6"
              }
             }
            },
            {
-            "text": "units long."
+            "text": "cubes long."
            }
           ]
          }
         }
        ],
-       "key": "It is 7 units long."
+       "key": "The pencil is 6 cubes long."
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-g1-count-units",
      "stage": "STAGE_PRACTICE",
      "design": {
       "purpose": "Measure a length by counting equal units laid end to end.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A row of cubes lies under each pencil, starting where the pencil starts, with no gaps and no overlaps. Students count the cubes to give the length in units. This is the model of measuring that rulers build on in grade 2.",
+      "misconceptions": [
+       "Counts the lines between cubes instead of the cubes.",
+       "Thinks units may have gaps or overlap and still give the length."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
       ]
      },
-     "estimatedHeight": 256
+     "estimatedHeight": 370
     }
    ],
-   "estimatedHeight": 718
+   "estimatedHeight": 804
   }
  ],
  "key": [
@@ -585,9 +600,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "units long",
+    "label": "cubes long",
     "answer": {
-     "text": "6"
+     "text": "5"
     }
    }
   },
@@ -595,7 +610,7 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "units long",
+    "label": "cubes long",
     "answer": {
      "text": "3"
     }
@@ -605,9 +620,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "units long",
+    "label": "cubes long",
     "answer": {
-     "text": "7"
+     "text": "6"
     }
    }
   }
@@ -619,8 +634,8 @@
   ]
  },
  "advice": [
-  "\"Tick the longest and the shortest strip.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"How many units long is the strip?\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Mark the longest pencil. Mark the shortest pencil.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write how many cubes long.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

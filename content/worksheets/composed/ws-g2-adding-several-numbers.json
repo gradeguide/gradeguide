@@ -113,9 +113,17 @@
      "fragmentId": "frag-g2-add-several",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add three or four two-digit numbers in columns.",
+      "purpose": "Add three two-digit numbers in columns.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With three addends, the ones column can make more than one ten, so the regrouped number may be 2. Students can look for pairs that make 10 within the ones column.",
+      "misconceptions": [
+       "Records only 1 ten when the ones make 20 or more.",
+       "Skips one addend in a column."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 198
@@ -207,6 +215,14 @@
       "purpose": "Add four two-digit numbers in columns.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Four addends is the most grade 2 asks for. The ones often make 20 or more, so students record 2 tens, not 1.",
+      "misconceptions": [
+       "Records only 1 ten when the ones make 20 or more.",
+       "Loses track of which numbers in a column have been added."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 228
@@ -236,7 +252,7 @@
          }
         },
         {
-         "text": "Why does a 1 go above the tens?"
+         "text": "Explain why a 1 is written above the tens."
         },
         {
          "lines": {
@@ -274,7 +290,7 @@
          }
         },
         {
-         "text": "Why does a 1 go above the tens?"
+         "text": "Explain why a 1 is written above the tens."
         },
         {
          "lines": {
@@ -300,8 +316,13 @@
       "principles": [
        "PRINCIPLE_SELF_EXPLANATION"
       ],
+      "rationale": "Students explain in words why a 1 is written above the tens column. A complete answer says that the ones made a new ten, and the ten belongs with the other tens.",
       "misconceptions": [
-       "Writing 13 under the ones instead of 3 and carrying a ten."
+       "Writes 13 under the ones instead of 3 and a new ten.",
+       "Describes the steps without saying that the 1 is a ten."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 264

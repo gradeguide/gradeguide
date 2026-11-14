@@ -410,6 +410,9 @@ message CountSequence {
   // Fill in missing numbers on four rows of a hundred chart instead. The
   // steps are not used.
   bool chart = 3;
+  // Start just before a hundred, so the count crosses it: 197, 198, 199,
+  // 200.
+  bool cross_hundred = 4;
 }
 
 // An addition or subtraction fact.
@@ -524,6 +527,9 @@ message AddInColumns {
   int32 addends = 1;
   // Ask why the sum regroups, on lines, after adding.
   bool explain = 2;
+  // Digits in each number, 2 or 3. Zero: 2. Three-digit sums stay under
+  // 1000.
+  int32 digits = 3;
 }
 
 // A clock showing a time on a step; write the time.
@@ -562,7 +568,13 @@ message ShapeAttributes {
     MODE_SORT = 4;
     // Draw a shape with a given number of sides, and name it.
     MODE_DRAW_BY_SIDES = 5;
+    // A row of mixed shapes and a named shape drawn small; circle each
+    // one of that kind and write how many. Needs no reading.
+    MODE_FIND = 6;
   }
+  // For MODE_SIDES_CORNERS, leave out the names, which a kindergartner
+  // cannot read yet.
+  bool no_names = 2;
 }
 
 // A bar cut into parts, one shaded: name the share, or say whether the

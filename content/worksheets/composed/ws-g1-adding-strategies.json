@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add. Look for two numbers that make 10.",
+     "instruction": "Add. Make a ten first.",
      "items": [
       {
        "label": "1",
@@ -19,19 +19,19 @@
          "math": {
           "atoms": [
            {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
             "text": "8"
            },
            {
             "text": "+"
            },
            {
-            "text": "5"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "5"
+            "text": "2"
            },
            {
             "text": "="
@@ -39,9 +39,9 @@
            {
             "blank": {
              "id": "q1",
-             "label": "8 + 5 + 5",
+             "label": "6 + 8 + 2",
              "answer": {
-              "text": "18"
+              "text": "16"
              }
             }
            }
@@ -49,7 +49,7 @@
          }
         }
        ],
-       "key": "8 + 5 + 5 = 18"
+       "key": "6 + 8 + 2 = 16"
       },
       {
        "label": "2",
@@ -64,202 +64,7 @@
             "text": "+"
            },
            {
-            "text": "4"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "8"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q2",
-             "label": "8 + 4 + 8",
-             "answer": {
-              "text": "20"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "8 + 4 + 8 = 20"
-      },
-      {
-       "label": "3",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "1"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "6"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "1"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q3",
-             "label": "1 + 6 + 1",
-             "answer": {
-              "text": "8"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "1 + 6 + 1 = 8"
-      },
-      {
-       "label": "4",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
             "text": "5"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "1"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "7"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q4",
-             "label": "5 + 1 + 7",
-             "answer": {
-              "text": "13"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "5 + 1 + 7 = 13"
-      },
-      {
-       "label": "5",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "6"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "4"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "3"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q5",
-             "label": "6 + 4 + 3",
-             "answer": {
-              "text": "13"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "6 + 4 + 3 = 13"
-      },
-      {
-       "label": "6",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "1"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "7"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "5"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q6",
-             "label": "1 + 7 + 5",
-             "answer": {
-              "text": "13"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "1 + 7 + 5 = 13"
-      },
-      {
-       "label": "7",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "6"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "9"
            },
            {
             "text": "+"
@@ -272,10 +77,10 @@
            },
            {
             "blank": {
-             "id": "q7",
-             "label": "6 + 9 + 2",
+             "id": "q2",
+             "label": "8 + 5 + 2",
              "answer": {
-              "text": "17"
+              "text": "15"
              }
             }
            }
@@ -283,10 +88,10 @@
          }
         }
        ],
-       "key": "6 + 9 + 2 = 17"
+       "key": "8 + 5 + 2 = 15"
       },
       {
-       "label": "8",
+       "label": "3",
        "nodes": [
         {
          "math": {
@@ -298,7 +103,46 @@
             "text": "+"
            },
            {
-            "text": "7"
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "4 + 8 + 2",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 + 8 + 2 = 14"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
            },
            {
             "text": "+"
@@ -311,8 +155,125 @@
            },
            {
             "blank": {
-             "id": "q8",
-             "label": "4 + 7 + 6",
+             "id": "q4",
+             "label": "1 + 9 + 6",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 + 9 + 6 = 16"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "1 + 5 + 5",
+             "answer": {
+              "text": "11"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 + 5 + 5 = 11"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "6 + 4 + 4",
+             "answer": {
+              "text": "14"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 + 4 + 4 = 14"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "1 + 7 + 9",
              "answer": {
               "text": "17"
              }
@@ -322,24 +283,70 @@
          }
         }
        ],
-       "key": "4 + 7 + 6 = 17"
+       "key": "1 + 7 + 9 = 17"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "6 + 4 + 9",
+             "answer": {
+              "text": "19"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 + 4 + 9 = 19"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-g1-add-three-numbers",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add three numbers with a total up to 20.",
+      "purpose": "Add three numbers by first adding two that make 10.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every item contains two numbers that make 10, and the pair is not always side by side. Students choose which two to add first, which uses the associative and commutative properties without naming them. Adding 10 and a one-digit number is easier than adding the numbers in order.",
+      "misconceptions": [
+       "Adds only from left to right and misses the ten.",
+       "Adds one of the numbers twice after reordering."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 190
     },
     {
      "label": "B",
-     "instruction": "Fill in the missing number.",
-     "explainer": "You can add in any order: 3 + 8 is the same as 8 + 3.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "9",
@@ -348,13 +355,13 @@
          "math": {
           "atoms": [
            {
-            "text": "3"
+            "text": "5"
            },
            {
             "text": "+"
            },
            {
-            "text": "3"
+            "text": "1"
            },
            {
             "text": "="
@@ -362,9 +369,9 @@
            {
             "blank": {
              "id": "q9",
-             "label": "3 + 3 = ? + 3",
+             "label": "5 + 1 = ? + 5",
              "answer": {
-              "text": "3"
+              "text": "1"
              }
             }
            },
@@ -372,16 +379,172 @@
             "text": "+"
            },
            {
-            "text": "3"
+            "text": "5"
            }
           ]
          }
         }
        ],
-       "key": "3 + 3 = 3 + 3"
+       "key": "5 + 1 = 1 + 5"
       },
       {
        "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "1"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "1 + 6 = 6 + ?",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 + 6 = 6 + 1"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "8 + 5 = 5 + ?",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 + 5 = 5 + 8"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "12"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "12 + 2 = ? + 12",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "12"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "12 + 2 = 2 + 12"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "7 + 8 = 8 + ?",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 + 8 = 8 + 7"
+      },
+      {
+       "label": "14",
        "nodes": [
         {
          "math": {
@@ -393,34 +556,34 @@
             "text": "+"
            },
            {
-            "text": "10"
+            "text": "5"
            },
            {
             "text": "="
            },
            {
-            "text": "10"
+            "blank": {
+             "id": "q14",
+             "label": "3 + 5 = ? + 3",
+             "answer": {
+              "text": "5"
+             }
+            }
            },
            {
             "text": "+"
            },
            {
-            "blank": {
-             "id": "q10",
-             "label": "3 + 10 = 10 + ?",
-             "answer": {
-              "text": "3"
-             }
-            }
+            "text": "3"
            }
           ]
          }
         }
        ],
-       "key": "3 + 10 = 10 + 3"
+       "key": "3 + 5 = 5 + 3"
       },
       {
-       "label": "11",
+       "label": "15",
        "nodes": [
         {
          "math": {
@@ -439,7 +602,7 @@
            },
            {
             "blank": {
-             "id": "q11",
+             "id": "q15",
              "label": "4 + 3 = ? + 4",
              "answer": {
               "text": "3"
@@ -459,175 +622,19 @@
        "key": "4 + 3 = 3 + 4"
       },
       {
-       "label": "12",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "7"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "3"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q12",
-             "label": "7 + 3 = ? + 7",
-             "answer": {
-              "text": "3"
-             }
-            }
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "7"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "7 + 3 = 3 + 7"
-      },
-      {
-       "label": "13",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "5"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "2"
-           },
-           {
-            "text": "="
-           },
-           {
-            "text": "2"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "blank": {
-             "id": "q13",
-             "label": "5 + 2 = 2 + ?",
-             "answer": {
-              "text": "5"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "5 + 2 = 2 + 5"
-      },
-      {
-       "label": "14",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "2"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "4"
-           },
-           {
-            "text": "="
-           },
-           {
-            "text": "4"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "blank": {
-             "id": "q14",
-             "label": "2 + 4 = 4 + ?",
-             "answer": {
-              "text": "2"
-             }
-            }
-           }
-          ]
-         }
-        }
-       ],
-       "key": "2 + 4 = 4 + 2"
-      },
-      {
-       "label": "15",
-       "nodes": [
-        {
-         "math": {
-          "atoms": [
-           {
-            "text": "4"
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "13"
-           },
-           {
-            "text": "="
-           },
-           {
-            "blank": {
-             "id": "q15",
-             "label": "4 + 13 = ? + 4",
-             "answer": {
-              "text": "13"
-             }
-            }
-           },
-           {
-            "text": "+"
-           },
-           {
-            "text": "4"
-           }
-          ]
-         }
-        }
-       ],
-       "key": "4 + 13 = 13 + 4"
-      },
-      {
        "label": "16",
        "nodes": [
         {
          "math": {
           "atoms": [
            {
-            "text": "7"
+            "text": "11"
            },
            {
             "text": "+"
            },
            {
-            "text": "5"
+            "text": "2"
            },
            {
             "text": "="
@@ -635,9 +642,9 @@
            {
             "blank": {
              "id": "q16",
-             "label": "7 + 5 = ? + 7",
+             "label": "11 + 2 = ? + 11",
              "answer": {
-              "text": "5"
+              "text": "2"
              }
             }
            },
@@ -645,28 +652,36 @@
             "text": "+"
            },
            {
-            "text": "7"
+            "text": "11"
            }
           ]
          }
         }
        ],
-       "key": "7 + 5 = 5 + 7"
+       "key": "11 + 2 = 2 + 11"
       }
      ],
      "columns": 3,
      "fragmentId": "frag-g1-turn-around",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Use adding in any order to make adding easier.",
+      "purpose": "Use the fact that adding in either order gives the same sum.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each equation shows the same two numbers on both sides in a different order, with one number missing. Students can answer without computing the sum, which draws attention to the property. Doubles are left out because both orders look the same.",
+      "misconceptions": [
+       "Writes the sum in the box instead of the missing addend.",
+       "Thinks the = sign must be followed by the answer, so an equation with sums on both sides seems wrong."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
       ]
      },
-     "estimatedHeight": 216
+     "estimatedHeight": 190
     }
    ],
-   "estimatedHeight": 414
+   "estimatedHeight": 388
   }
  ],
  "key": [
@@ -674,9 +689,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "8 + 5 + 5",
+    "label": "6 + 8 + 2",
     "answer": {
-     "text": "18"
+     "text": "16"
     }
    }
   },
@@ -684,9 +699,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "8 + 4 + 8",
+    "label": "8 + 5 + 2",
     "answer": {
-     "text": "20"
+     "text": "15"
     }
    }
   },
@@ -694,9 +709,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "1 + 6 + 1",
+    "label": "4 + 8 + 2",
     "answer": {
-     "text": "8"
+     "text": "14"
     }
    }
   },
@@ -704,9 +719,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "5 + 1 + 7",
+    "label": "1 + 9 + 6",
     "answer": {
-     "text": "13"
+     "text": "16"
     }
    }
   },
@@ -714,9 +729,9 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "6 + 4 + 3",
+    "label": "1 + 5 + 5",
     "answer": {
-     "text": "13"
+     "text": "11"
     }
    }
   },
@@ -724,9 +739,9 @@
    "itemLabel": "6",
    "field": {
     "id": "q6",
-    "label": "1 + 7 + 5",
+    "label": "6 + 4 + 4",
     "answer": {
-     "text": "13"
+     "text": "14"
     }
    }
   },
@@ -734,7 +749,7 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "6 + 9 + 2",
+    "label": "1 + 7 + 9",
     "answer": {
      "text": "17"
     }
@@ -744,9 +759,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "4 + 7 + 6",
+    "label": "6 + 4 + 9",
     "answer": {
-     "text": "17"
+     "text": "19"
     }
    }
   },
@@ -754,9 +769,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "3 + 3 = ? + 3",
+    "label": "5 + 1 = ? + 5",
     "answer": {
-     "text": "3"
+     "text": "1"
     }
    }
   },
@@ -764,9 +779,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "3 + 10 = 10 + ?",
+    "label": "1 + 6 = 6 + ?",
     "answer": {
-     "text": "3"
+     "text": "1"
     }
    }
   },
@@ -774,9 +789,9 @@
    "itemLabel": "11",
    "field": {
     "id": "q11",
-    "label": "4 + 3 = ? + 4",
+    "label": "8 + 5 = 5 + ?",
     "answer": {
-     "text": "3"
+     "text": "8"
     }
    }
   },
@@ -784,9 +799,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "7 + 3 = ? + 7",
+    "label": "12 + 2 = ? + 12",
     "answer": {
-     "text": "3"
+     "text": "2"
     }
    }
   },
@@ -794,9 +809,9 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "5 + 2 = 2 + ?",
+    "label": "7 + 8 = 8 + ?",
     "answer": {
-     "text": "5"
+     "text": "7"
     }
    }
   },
@@ -804,9 +819,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "2 + 4 = 4 + ?",
+    "label": "3 + 5 = ? + 3",
     "answer": {
-     "text": "2"
+     "text": "5"
     }
    }
   },
@@ -814,9 +829,9 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
-    "label": "4 + 13 = ? + 4",
+    "label": "4 + 3 = ? + 4",
     "answer": {
-     "text": "13"
+     "text": "3"
     }
    }
   },
@@ -824,22 +839,22 @@
    "itemLabel": "16",
    "field": {
     "id": "q16",
-    "label": "7 + 5 = ? + 7",
+    "label": "11 + 2 = ? + 11",
     "answer": {
-     "text": "5"
+     "text": "2"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Add three numbers and use adding in any order.",
+  "purpose": "Add three numbers by making ten, and use adding in any order.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
   ]
  },
  "advice": [
-  "\"Add. Look for two numbers that make 10.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Fill in the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Add. Make a ten first.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

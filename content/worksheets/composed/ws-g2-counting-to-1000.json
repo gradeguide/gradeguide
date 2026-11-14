@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Count on. Write the missing numbers.",
+     "instruction": "Write the missing numbers.",
      "items": [
       {
        "label": "1",
@@ -18,13 +18,13 @@
          "math": {
           "atoms": [
            {
-            "text": "188"
+            "text": "197"
            },
            {
             "text": ","
            },
            {
-            "text": "189"
+            "text": "198"
            },
            {
             "text": ","
@@ -32,17 +32,11 @@
            {
             "blank": {
              "id": "q1",
-             "label": "counting by 1s from 188, number 3",
+             "label": "counting by 1s from 197, number 3",
              "answer": {
-              "text": "190"
+              "text": "199"
              }
             }
-           },
-           {
-            "text": ","
-           },
-           {
-            "text": "191"
            },
            {
             "text": ","
@@ -50,9 +44,9 @@
            {
             "blank": {
              "id": "q1-2",
-             "label": "counting by 1s from 188, number 5",
+             "label": "counting by 1s from 197, number 4",
              "answer": {
-              "text": "192"
+              "text": "200"
              }
             }
            },
@@ -60,11 +54,17 @@
             "text": ","
            },
            {
+            "text": "201"
+           },
+           {
+            "text": ","
+           },
+           {
             "blank": {
              "id": "q1-3",
-             "label": "counting by 1s from 188, number 6",
+             "label": "counting by 1s from 197, number 6",
              "answer": {
-              "text": "193"
+              "text": "202"
              }
             }
            }
@@ -72,7 +72,7 @@
          }
         }
        ],
-       "key": "188 , 189 , 190 , 191 , 192 , 193"
+       "key": "197 , 198 , 199 , 200 , 201 , 202"
       },
       {
        "label": "2",
@@ -81,19 +81,13 @@
          "math": {
           "atoms": [
            {
-            "text": "727"
+            "text": "298"
            },
            {
             "text": ","
            },
            {
-            "text": "728"
-           },
-           {
-            "text": ","
-           },
-           {
-            "text": "729"
+            "text": "299"
            },
            {
             "text": ","
@@ -101,9 +95,9 @@
            {
             "blank": {
              "id": "q2",
-             "label": "counting by 1s from 727, number 4",
+             "label": "counting by 1s from 298, number 3",
              "answer": {
-              "text": "730"
+              "text": "300"
              }
             }
            },
@@ -113,9 +107,9 @@
            {
             "blank": {
              "id": "q2-2",
-             "label": "counting by 1s from 727, number 5",
+             "label": "counting by 1s from 298, number 4",
              "answer": {
-              "text": "731"
+              "text": "301"
              }
             }
            },
@@ -123,11 +117,17 @@
             "text": ","
            },
            {
+            "text": "302"
+           },
+           {
+            "text": ","
+           },
+           {
             "blank": {
              "id": "q2-3",
-             "label": "counting by 1s from 727, number 6",
+             "label": "counting by 1s from 298, number 6",
              "answer": {
-              "text": "732"
+              "text": "303"
              }
             }
            }
@@ -135,7 +135,7 @@
          }
         }
        ],
-       "key": "727 , 728 , 729 , 730 , 731 , 732"
+       "key": "298 , 299 , 300 , 301 , 302 , 303"
       },
       {
        "label": "3",
@@ -144,13 +144,13 @@
          "math": {
           "atoms": [
            {
-            "text": "733"
+            "text": "697"
            },
            {
             "text": ","
            },
            {
-            "text": "734"
+            "text": "698"
            },
            {
             "text": ","
@@ -158,9 +158,9 @@
            {
             "blank": {
              "id": "q3",
-             "label": "counting by 1s from 733, number 3",
+             "label": "counting by 1s from 697, number 3",
              "answer": {
-              "text": "735"
+              "text": "699"
              }
             }
            },
@@ -170,9 +170,9 @@
            {
             "blank": {
              "id": "q3-2",
-             "label": "counting by 1s from 733, number 4",
+             "label": "counting by 1s from 697, number 4",
              "answer": {
-              "text": "736"
+              "text": "700"
              }
             }
            },
@@ -182,9 +182,9 @@
            {
             "blank": {
              "id": "q3-3",
-             "label": "counting by 1s from 733, number 5",
+             "label": "counting by 1s from 697, number 5",
              "answer": {
-              "text": "737"
+              "text": "701"
              }
             }
            },
@@ -192,13 +192,13 @@
             "text": ","
            },
            {
-            "text": "738"
+            "text": "702"
            }
           ]
          }
         }
        ],
-       "key": "733 , 734 , 735 , 736 , 737 , 738"
+       "key": "697 , 698 , 699 , 700 , 701 , 702"
       },
       {
        "label": "4",
@@ -207,13 +207,13 @@
          "math": {
           "atoms": [
            {
-            "text": "722"
+            "text": "796"
            },
            {
             "text": ","
            },
            {
-            "text": "723"
+            "text": "797"
            },
            {
             "text": ","
@@ -221,9 +221,9 @@
            {
             "blank": {
              "id": "q4",
-             "label": "counting by 1s from 722, number 3",
+             "label": "counting by 1s from 796, number 3",
              "answer": {
-              "text": "724"
+              "text": "798"
              }
             }
            },
@@ -231,11 +231,17 @@
             "text": ","
            },
            {
+            "text": "799"
+           },
+           {
+            "text": ","
+           },
+           {
             "blank": {
              "id": "q4-2",
-             "label": "counting by 1s from 722, number 4",
+             "label": "counting by 1s from 796, number 5",
              "answer": {
-              "text": "725"
+              "text": "800"
              }
             }
            },
@@ -245,32 +251,34 @@
            {
             "blank": {
              "id": "q4-3",
-             "label": "counting by 1s from 722, number 5",
+             "label": "counting by 1s from 796, number 6",
              "answer": {
-              "text": "726"
+              "text": "801"
              }
             }
-           },
-           {
-            "text": ","
-           },
-           {
-            "text": "727"
            }
           ]
          }
         }
        ],
-       "key": "722 , 723 , 724 , 725 , 726 , 727"
+       "key": "796 , 797 , 798 , 799 , 800 , 801"
       }
      ],
      "columns": 1,
      "fragmentId": "frag-g2-count-on-to-1000",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Count on by ones across hundreds, up to 1000.",
+      "purpose": "Count on by ones across a hundred, up to 1000.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Every sequence starts two to four numbers before a hundred, so the missing numbers cross it, as in 298, 299, 300. Crossing a hundred is where counting errors are most common.",
+      "misconceptions": [
+       "Writes 2910 or 2100 after 299.",
+       "Changes the hundreds digit but not the tens digit, writing 390 after 299."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 242
@@ -788,12 +796,17 @@
      "fragmentId": "frag-g2-skip-count",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Count within 1000, and skip count by 5s, 10s and 100s.",
+      "purpose": "Skip count by 5s, 10s and 100s within 1000.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
+      "rationale": "The step changes from item to item, so students find it from the numbers shown. Starting numbers are not always multiples of 100, so counts by 10s and 5s cross a hundred.",
       "misconceptions": [
-       "Going from 195 to 1100 instead of 200."
+       "Goes from 195 to 1100 instead of 200.",
+       "Changes the wrong digit when counting by 10s or 100s."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
       ]
      },
      "estimatedHeight": 450
@@ -807,9 +820,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1",
-    "label": "counting by 1s from 188, number 3",
+    "label": "counting by 1s from 197, number 3",
     "answer": {
-     "text": "190"
+     "text": "199"
     }
    }
   },
@@ -817,9 +830,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-2",
-    "label": "counting by 1s from 188, number 5",
+    "label": "counting by 1s from 197, number 4",
     "answer": {
-     "text": "192"
+     "text": "200"
     }
    }
   },
@@ -827,9 +840,9 @@
    "itemLabel": "1",
    "field": {
     "id": "q1-3",
-    "label": "counting by 1s from 188, number 6",
+    "label": "counting by 1s from 197, number 6",
     "answer": {
-     "text": "193"
+     "text": "202"
     }
    }
   },
@@ -837,9 +850,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2",
-    "label": "counting by 1s from 727, number 4",
+    "label": "counting by 1s from 298, number 3",
     "answer": {
-     "text": "730"
+     "text": "300"
     }
    }
   },
@@ -847,9 +860,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-2",
-    "label": "counting by 1s from 727, number 5",
+    "label": "counting by 1s from 298, number 4",
     "answer": {
-     "text": "731"
+     "text": "301"
     }
    }
   },
@@ -857,9 +870,9 @@
    "itemLabel": "2",
    "field": {
     "id": "q2-3",
-    "label": "counting by 1s from 727, number 6",
+    "label": "counting by 1s from 298, number 6",
     "answer": {
-     "text": "732"
+     "text": "303"
     }
    }
   },
@@ -867,9 +880,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3",
-    "label": "counting by 1s from 733, number 3",
+    "label": "counting by 1s from 697, number 3",
     "answer": {
-     "text": "735"
+     "text": "699"
     }
    }
   },
@@ -877,9 +890,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-2",
-    "label": "counting by 1s from 733, number 4",
+    "label": "counting by 1s from 697, number 4",
     "answer": {
-     "text": "736"
+     "text": "700"
     }
    }
   },
@@ -887,9 +900,9 @@
    "itemLabel": "3",
    "field": {
     "id": "q3-3",
-    "label": "counting by 1s from 733, number 5",
+    "label": "counting by 1s from 697, number 5",
     "answer": {
-     "text": "737"
+     "text": "701"
     }
    }
   },
@@ -897,9 +910,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "counting by 1s from 722, number 3",
+    "label": "counting by 1s from 796, number 3",
     "answer": {
-     "text": "724"
+     "text": "798"
     }
    }
   },
@@ -907,9 +920,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-2",
-    "label": "counting by 1s from 722, number 4",
+    "label": "counting by 1s from 796, number 5",
     "answer": {
-     "text": "725"
+     "text": "800"
     }
    }
   },
@@ -917,9 +930,9 @@
    "itemLabel": "4",
    "field": {
     "id": "q4-3",
-    "label": "counting by 1s from 722, number 5",
+    "label": "counting by 1s from 796, number 6",
     "answer": {
-     "text": "726"
+     "text": "801"
     }
    }
   },
@@ -1171,7 +1184,7 @@
   ]
  },
  "advice": [
-  "\"Count on. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Skip count. Write the missing numbers.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
