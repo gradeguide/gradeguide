@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write <, > or = in each circle.",
-     "explainer": "Compare tenths first, then hundredths. 0.4 is the same as 0.40.",
+     "instruction": "Compare. Write <, > or =.",
+     "explainer": "Compare the tenths first, then the hundredths. 0.4 is the same as 0.40.",
      "items": [
       {
        "label": "1",
@@ -184,8 +184,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Pairs mix tenths with hundredths, so the decimal with more digits is sometimes the smaller one. Students compare place by place, or rewrite tenths as hundredths, instead of comparing digit strings as whole numbers.",
       "misconceptions": [
-       "Thinking the decimal with more digits is larger: 0.38 > 0.4."
+       "Thinking the decimal with more digits is larger: 0.38 > 0.4.",
+       "Thinking the decimal with fewer digits is larger, because hundredths are smaller than tenths: 0.4 > 0.45."
+      ],
+      "references": [
+       "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
       ]
      },
      "estimatedHeight": 164

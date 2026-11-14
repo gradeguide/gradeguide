@@ -206,6 +206,76 @@
         }
        ],
        "key": "Pencils after 3 boxes: 6; If the pattern goes on, pencils after 8 boxes: 16"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinateGrid": {
+          "xMax": 8,
+          "yMax": 80,
+          "yStep": 10,
+          "xTitle": "Boxes",
+          "yTitle": "Pencils",
+          "points": [
+           {},
+           {
+            "x": 1,
+            "y": 10
+           },
+           {
+            "x": 2,
+            "y": 20
+           },
+           {
+            "x": 3,
+            "y": 30
+           },
+           {
+            "x": 4,
+            "y": 40
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Pencils after 3 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "pencils after 3 boxes",
+             "answer": {
+              "text": "30"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "If the pattern goes on, pencils after 6 boxes:"
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "pencils after 6 boxes",
+             "answer": {
+              "text": "60"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Pencils after 3 boxes: 30; If the pattern goes on, pencils after 6 boxes: 60"
       }
      ],
      "columns": 1,
@@ -224,10 +294,10 @@
        "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
       ]
      },
-     "estimatedHeight": 378
+     "estimatedHeight": 722
     }
    ],
-   "estimatedHeight": 382
+   "estimatedHeight": 726
   }
  ],
  "key": [
@@ -292,6 +362,26 @@
      "text": "16"
     }
    }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "pencils after 3 boxes",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "pencils after 6 boxes",
+    "answer": {
+     "text": "60"
+    }
+   }
   }
  ],
  "design": {
@@ -301,8 +391,5 @@
   ],
   "rationale": "Reading plain points comes first. The graphs then give the points a meaning."
  },
- "advice": [
-  "Section \"Use the graph to answer the questions.\" was cut from 2 to 1 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -351,6 +351,96 @@
         }
        ],
        "key": "1908, 25440, 27348"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "304",
+           "32"
+          ],
+          "answer": {
+           "id": "q7-3",
+           "label": "304 × 32",
+           "answer": {
+            "text": "9728"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q7",
+             "label": "2 × 304",
+             "answer": {
+              "text": "608"
+             }
+            },
+            "note": "2 × 304"
+           },
+           {
+            "field": {
+             "id": "q7-2",
+             "label": "30 × 304",
+             "answer": {
+              "text": "9120"
+             }
+            },
+            "note": "30 × 304"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "608, 9120, 9728"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_MULTIPLY",
+          "operands": [
+           "917",
+           "13"
+          ],
+          "answer": {
+           "id": "q8-3",
+           "label": "917 × 13",
+           "answer": {
+            "text": "11921"
+           }
+          },
+          "carryBoxes": true,
+          "partials": [
+           {
+            "field": {
+             "id": "q8",
+             "label": "3 × 917",
+             "answer": {
+              "text": "2751"
+             }
+            },
+            "note": "3 × 917"
+           },
+           {
+            "field": {
+             "id": "q8-2",
+             "label": "10 × 917",
+             "answer": {
+              "text": "9170"
+             }
+            },
+            "note": "10 × 917"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2751, 9170, 11921"
       }
      ],
      "columns": 2,
@@ -369,14 +459,14 @@
        "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 234
+     "estimatedHeight": 434
     },
     {
      "label": "C",
      "instruction": "Multiply.",
      "items": [
       {
-       "label": "7",
+       "label": "9",
        "nodes": [
         {
          "columnArithmetic": {
@@ -386,7 +476,7 @@
            "94"
           ],
           "answer": {
-           "id": "q7-3",
+           "id": "q9-3",
            "label": "4006 × 94",
            "answer": {
             "text": "376564"
@@ -396,7 +486,7 @@
           "partials": [
            {
             "field": {
-             "id": "q7",
+             "id": "q9",
              "label": "4 × 4006",
              "answer": {
               "text": "16024"
@@ -406,7 +496,7 @@
            },
            {
             "field": {
-             "id": "q7-2",
+             "id": "q9-2",
              "label": "90 × 4006",
              "answer": {
               "text": "360540"
@@ -421,7 +511,7 @@
        "key": "16024, 360540, 376564"
       },
       {
-       "label": "8",
+       "label": "10",
        "nodes": [
         {
          "columnArithmetic": {
@@ -431,7 +521,7 @@
            "78"
           ],
           "answer": {
-           "id": "q8-3",
+           "id": "q10-3",
            "label": "3850 × 78",
            "answer": {
             "text": "300300"
@@ -441,7 +531,7 @@
           "partials": [
            {
             "field": {
-             "id": "q8",
+             "id": "q10",
              "label": "8 × 3850",
              "answer": {
               "text": "30800"
@@ -451,7 +541,7 @@
            },
            {
             "field": {
-             "id": "q8-2",
+             "id": "q10-2",
              "label": "70 × 3850",
              "answer": {
               "text": "269500"
@@ -485,7 +575,7 @@
      "estimatedHeight": 234
     }
    ],
-   "estimatedHeight": 476
+   "estimatedHeight": 676
   }
  ],
  "key": [
@@ -673,9 +763,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "4 × 4006",
+    "label": "2 × 304",
     "answer": {
-     "text": "16024"
+     "text": "608"
     }
    }
   },
@@ -683,9 +773,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7-2",
-    "label": "90 × 4006",
+    "label": "30 × 304",
     "answer": {
-     "text": "360540"
+     "text": "9120"
     }
    }
   },
@@ -693,9 +783,9 @@
    "itemLabel": "7",
    "field": {
     "id": "q7-3",
-    "label": "4006 × 94",
+    "label": "304 × 32",
     "answer": {
-     "text": "376564"
+     "text": "9728"
     }
    }
   },
@@ -703,9 +793,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "8 × 3850",
+    "label": "3 × 917",
     "answer": {
-     "text": "30800"
+     "text": "2751"
     }
    }
   },
@@ -713,9 +803,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8-2",
-    "label": "70 × 3850",
+    "label": "10 × 917",
     "answer": {
-     "text": "269500"
+     "text": "9170"
     }
    }
   },
@@ -723,6 +813,66 @@
    "itemLabel": "8",
    "field": {
     "id": "q8-3",
+    "label": "917 × 13",
+    "answer": {
+     "text": "11921"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "4 × 4006",
+    "answer": {
+     "text": "16024"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "90 × 4006",
+    "answer": {
+     "text": "360540"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "4006 × 94",
+    "answer": {
+     "text": "376564"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "8 × 3850",
+    "answer": {
+     "text": "30800"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "70 × 3850",
+    "answer": {
+     "text": "269500"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
     "label": "3850 × 78",
     "answer": {
      "text": "300300"
@@ -737,8 +887,5 @@
   ],
   "rationale": "The top factor grows from two to four digits while the steps stay the same."
  },
- "advice": [
-  "Section \"Multiply.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
