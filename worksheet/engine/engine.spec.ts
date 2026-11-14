@@ -431,8 +431,7 @@ describe('grade 6 to 8 item kinds', () => {
       .replace(/−/g, '-')
       .replace(/×/g, '*')
       .replace(/÷/g, '/')
-      .replace(/²/g, '**2')
-      .replace(/³/g, '**3');
+      .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g, (e) => '**' + [...e].map((c) => '⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c)).join(''));
     for (const [k, v] of Object.entries(vars)) {
       js = js.replace(new RegExp(`(\\d|\\))${k}`, 'g'), `$1*(${v})`).replace(new RegExp(k, 'g'), `(${v})`);
     }

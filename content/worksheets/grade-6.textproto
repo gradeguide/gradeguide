@@ -11,14 +11,16 @@ fragments {
   id: "frag-g6-ratio-language"
   instruction: "Write each ratio."
   stage: STAGE_INTRODUCE
-  explainer: "A ratio compares two amounts. The order matters: the ratio of cats to dogs is the cats first."
-  example { item { ratio_language {} } seed: 11 text: "The amounts go in the order the sentence names them." }
+  explainer: "A ratio compares two amounts. Write them in the order the question names them: the ratio of cats to dogs has the cats first."
+  example { item { ratio_language {} } seed: 2 }
   items { kind { ratio_language {} } count: 6 min_count: 4 }
   design {
     purpose: "Write a ratio of two amounts, or of a part to the whole, in the order asked."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Ratios start with words before tables or graphs, so this section only asks for the two numbers in the right order. Each story names two kinds of thing, and some ask for a part to the whole, so the child has to read which amounts the question wants. The worked example shows a part-to-whole ratio, the form children most often get wrong."
     misconceptions: "Writing the amounts in the order they appear instead of the order asked."
     misconceptions: "Using a part where the whole is asked for."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -32,7 +34,10 @@ fragments {
   design {
     purpose: "Complete a table of equivalent ratios by multiplying both amounts by the same number."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A ratio table makes equivalent ratios visible as rows that are all the same multiple of the first row. The rows grow by 2, 3 and then larger jumps, so the child must find the multiplier rather than count on. Blanks switch columns so both directions of the ratio are used."
     misconceptions: "Adding the same number to both amounts instead of multiplying."
+    misconceptions: "Finding one missing number by adding the gap between rows instead of using the multiplier."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -46,7 +51,9 @@ fragments {
   design {
     purpose: "Find equivalent ratios on a double number line."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_NUMBER_LINE]
+    rationale: "The double number line is the model the standards name for ratio reasoning in grade 6. Equal spacing shows that each tick is one more copy of the first pair. It comes before the table so the child sees the two quantities growing together before working with columns of numbers."
     misconceptions: "Counting up by the same amount on both lines instead of by each line's own step."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -58,7 +65,10 @@ fragments {
   design {
     purpose: "Find a unit rate by dividing, and use it to find the amount for another number of units."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each item splits the work into two steps: find the rate for one, then scale it. Prices, speeds and printing rates use whole-number or cents answers so the child's attention stays on the ratio, not the arithmetic. The contexts change from item to item so the child cannot copy the last answer's form."
     misconceptions: "Dividing the smaller number by the larger whatever the question asks."
+    misconceptions: "Multiplying the total by the number of units instead of dividing to get the rate for one."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -70,7 +80,10 @@ fragments {
   design {
     purpose: "Solve ratio and rate problems from stories."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "These stories mix three kinds of ratio problem: scaling a recipe, using a rate, and splitting a total in a given ratio. The last problem compares two unit prices, the everyday use of a unit rate. Plain working space lets the child choose a table, a double number line or division."
     misconceptions: "Adding the difference instead of scaling: 3 cups to 2 becomes 12 cups to 11."
+    misconceptions: "Treating a part-to-part ratio as part-to-whole: 2 blue for every 3 white read as 2 out of 3."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
   items {
     count: 4
@@ -120,6 +133,9 @@ fragments {
   design {
     purpose: "Find a percent of a quantity on a double number line from 0% to 100%."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_NUMBER_LINE]
+    rationale: "A percent is a rate per 100, and the double number line shows the whole as 100% with equal steps below it. The child fills one box by counting equal steps, such as tenths or quarters of the whole. This builds the meaning of percent before the shortcut of multiplying by a fraction."
+    misconceptions: "Putting 100% at the part instead of at the whole."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -133,6 +149,9 @@ fragments {
   design {
     purpose: "Find a percent of a quantity as a rate per 100."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "These items practise finding a percent of a number once the meaning is clear. The percents are friendly ones, such as 10%, 25% and 50%, and the wholes make whole-number answers, so the child can reason as well as calculate."
+    misconceptions: "Dividing by the percent: 20% of 80 written as 80 ÷ 20."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -145,7 +164,10 @@ fragments {
   design {
     purpose: "Find the whole, or the percent, when the other two are known."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Here the unknown moves: sometimes the whole, sometimes the percent. Mixing the three forms makes the child read which number is missing instead of applying one rule. It is a stretch section after the child can find a part."
     misconceptions: "Always multiplying, even when the part is given and the whole is asked for."
+    misconceptions: "Writing the part as the percent, such as 15 is 15% of 60."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -157,22 +179,25 @@ fragments {
   design {
     purpose: "Solve percent problems from stories, including finding the whole."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The stories cover a part of a total, a whole from a part, and a discount, the three uses of percent a sixth grader meets most. The discount has two parts so the child sees that the sale price is what is left after the percent is taken off."
+    misconceptions: "Taking the discount as the sale price."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
   items {
     count: 3
     authored {
       items {
-        nodes { text: "In a town of 2,400 people, 60% own a bike. (60% means 60 out of every 100.) How many people own a bike?" }
+        nodes { text: "In a town of 2,400 people, 60% own a bike, which is 60 per 100. How many people own a bike?" }
         nodes { work_space { field { label: "people who own a bike" answer { text: "1440" work: "2,400 ÷ 100 × 60" also: "1,440" } } } }
       }
       items {
-        nodes { text: "Ben has answered 18 questions. That is 30% of the test. (30% means 30 out of every 100.) How many questions are on the test?" }
+        nodes { text: "Ben has answered 18 questions. That is 30% of the test, or 30 per 100. How many questions are on the test?" }
         nodes { work_space { field { label: "questions on the test" answer { text: "60" work: "18 ÷ 30 × 100" also: "60 questions" } } } }
       }
       items {
         nodes {
           multi_part_question {
-            stem { text: "A shirt costs $40. It is 25% off. (25% means 25 out of every 100.)" }
+            stem { text: "A shirt costs $40. It is 25% off, which is $25 off every $100." }
             parts {
               prompt { text: "How many dollars off is that?" }
               response { work_space { field { label: "dollars off" answer { text: "10" work: "40 ÷ 100 × 25" also: "$10" } } } }
@@ -198,7 +223,9 @@ fragments {
   design {
     purpose: "Use a conversion rate to change a measurement from one unit to another, both ways."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Each item gives the conversion rate, so the work is ratio reasoning, not remembering facts. Items switch between going to the smaller and to the larger unit, and the units change every item. That makes the child decide each time whether to multiply or divide."
     misconceptions: "Multiplying when converting to a larger unit, so 36 inches becomes 432 feet."
+    references: "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
   }
 }
 
@@ -209,11 +236,12 @@ fragments {
   instruction: "Divide. Write the answer in simplest form."
   stage: STAGE_PRACTICE
   explainer: "To divide by a fraction, multiply by its reciprocal: 2/3 ÷ 4/5 = 2/3 × 5/4."
-  example { item { divide_fractions {} } seed: 5 text: "Ask: how many of the second fit in the first?" }
+  example { item { divide_fractions {} } seed: 22 text: "Multiply by the reciprocal: 5/6 × 3/1 = 15/6 = 2 1/2. So 2 1/2 thirds fit in 5/6." }
   items { kind { divide_fractions {} } count: 10 min_count: 6 }
   design {
     purpose: "Divide fractions and whole numbers by fractions."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The items include a fraction divided by a fraction, a whole number by a fraction, and a fraction by a whole number. All fractions in the questions are in simplest form so the only new skill is the division. The worked example shows the reciprocal step and then reads the answer as how many thirds fit in 5/6, which keeps the meaning of division in view."
     misconceptions: "Flipping the first fraction instead of the second."
     misconceptions: "Expecting a quotient always to be smaller than the number divided."
   }
@@ -227,7 +255,9 @@ fragments {
   design {
     purpose: "Use fraction division to answer how many fit in, or how much in each share."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each story is one of the two meanings of division: how many groups, or how much in each group. The area problem shows division as finding a missing side. Small numbers let the child check an answer with a sketch."
     misconceptions: "Dividing the larger number by the smaller whatever the story says."
+    misconceptions: "Writing 1/2 ÷ 3 as 3 ÷ 1/2 because the whole number comes first in the story."
   }
   items {
     count: 4
@@ -263,7 +293,9 @@ fragments {
   design {
     purpose: "Divide multi-digit numbers by two-digit numbers with the standard algorithm."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Two-digit divisors make estimation the hard part, so the explainer shows rounding the divisor to estimate each digit. Four-digit dividends and some remainders give enough steps to build fluency without making the page long. Each item has room for the full written algorithm."
     misconceptions: "Leaving out a zero in the quotient when a step does not divide."
+    misconceptions: "Writing a quotient digit that is too big and not checking that the product fits."
   }
 }
 
@@ -276,7 +308,9 @@ fragments {
   design {
     purpose: "Add and subtract decimals with different numbers of places."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The two numbers have different numbers of decimal places, so lining up the decimal points matters. The sums and differences cover tenths to thousandths. Space under each item lets the child rewrite it in a column."
     misconceptions: "Lining up the last digits instead of the decimal points."
+    misconceptions: "Subtracting the smaller digit from the larger in each place instead of regrouping."
   }
 }
 
@@ -290,7 +324,9 @@ fragments {
   design {
     purpose: "Multiply and divide decimals."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Products use one or two decimal places and quotients end after one or two places, so answers stay exact. Some divisors are decimals, which practises moving both decimal points first. Room under each item is for the written method."
     misconceptions: "Placing the decimal point in a product by lining it up with one factor."
+    misconceptions: "Leaving the decimal point where it was in the dividend after moving it in the divisor."
   }
 }
 
@@ -303,6 +339,8 @@ fragments {
   design {
     purpose: "Find the greatest common factor of two numbers up to 100."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Both numbers are 100 or less and share a factor larger than 1, as the standard asks. The pairs are built from a common factor times two numbers with no common factor, so the answer is never just 1."
+    misconceptions: "Giving a common factor that is not the greatest, such as 2 for 12 and 18."
   }
 }
 
@@ -315,6 +353,7 @@ fragments {
   design {
     purpose: "Find the least common multiple of two numbers up to 12."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Both numbers are 12 or less, as the standard asks. Most pairs share a factor, so multiplying the two numbers gives a common multiple that is too big. Pairs where one number divides the other are left out because they are too easy at this grade."
     misconceptions: "Multiplying the two numbers, which gives a common multiple but not always the least."
   }
 }
@@ -329,6 +368,9 @@ fragments {
   design {
     purpose: "Use the distributive property to write a sum with its greatest common factor outside."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "This links factors to the distributive property, which the child uses again with variables in expressions. The explainer shows one case in full. Boxes for the factor and both parts make the structure of the answer clear."
+    misconceptions: "Taking out a common factor that is not the greatest, such as 2 from 36 + 84."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -344,6 +386,8 @@ fragments {
   design {
     purpose: "Use positive and negative numbers for amounts in opposite directions."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Negative numbers are introduced through situations a child knows: sea level, temperatures, money and yards in a game. Each phrase has one direction word, so the child links below, loss or withdrawal with a minus sign. This comes first because the context gives the sign meaning."
+    misconceptions: "Writing a positive number for a loss because the amount itself is positive."
   }
 }
 
@@ -356,6 +400,7 @@ fragments {
   design {
     purpose: "Locate integers on a number line that runs below zero."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "The number line runs from −10 to 10 with only every fifth number labelled. Most arrows point left of zero, so the child counts back from 0 or from −5. Counting the unlabelled ticks makes the order of negative numbers concrete."
     misconceptions: "Counting left of zero as −0, −1 … so every negative is off by one."
   }
 }
@@ -365,11 +410,13 @@ fragments {
   instruction: "Find the opposite."
   stage: STAGE_PRACTICE
   explainer: "Opposites are the same distance from 0 on either side. The opposite of the opposite is the number itself."
-  items { kind { integers { mode: MODE_OPPOSITE } } count: 6 min_count: 4 }
+  items { kind { integers { mode: MODE_OPPOSITE } } count: 6 min_count: 6 }
   max_columns: 3
   design {
     purpose: "Find the opposite of a number, and of an opposite."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Opposites are the same distance from 0 on either side. Half the items are the opposite of a negative number, written −(−n), so the child sees that the opposite of the opposite is the number itself."
+    misconceptions: "Thinking −(−5) is −5 because there is a minus sign."
   }
 }
 
@@ -382,6 +429,7 @@ fragments {
   design {
     purpose: "Compare integers by their position on a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Most pairs are two negative numbers, where comparing by the digits gives the wrong answer. Some pairs mix signs as an easier check. The explainer gives the number-line rule the child can use for every pair."
     misconceptions: "Thinking −8 is greater than −2 because 8 is greater than 2."
   }
 }
@@ -396,6 +444,8 @@ fragments {
   design {
     purpose: "Find absolute value as distance from zero."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Absolute value is taught as distance from 0, so it is never negative. Some items ask for the value and some ask which of two numbers is farther from 0. That second form makes the child compare sizes without signs."
+    misconceptions: "Thinking |−7| is −7."
   }
 }
 
@@ -408,6 +458,8 @@ fragments {
   design {
     purpose: "Order a set of positive and negative integers."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Each list has at least two negative numbers and four numbers in all. Ordering four numbers is harder than comparing two because the child has to place each one. The child can sketch a number line in the space if needed."
+    misconceptions: "Ordering negative numbers by their digits, so −1 comes before −5."
   }
 }
 
@@ -420,6 +472,7 @@ fragments {
   design {
     purpose: "Decide which of two temperatures or heights is colder, warmer, lower or higher."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Colder, warmer, lower and higher link the order of integers to real situations, as the standard asks. Every pair has at least one value below zero. The child ticks an answer so the focus stays on the comparison."
     misconceptions: "Calling −20°F warmer than −5°F because 20 is more than 5."
   }
 }
@@ -434,6 +487,7 @@ fragments {
   design {
     purpose: "Tell a balance from the size of a debt, using absolute value."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Money in an account is the standard's own example for telling a balance from the size of a debt. One item compares two debts, one names a debt from a balance, and one states an inequality about a debt. This is a stretch because the child has to hold the sign and the size apart."
     misconceptions: "Thinking a balance of −$40 is more money than −$25."
   }
 }
@@ -448,6 +502,8 @@ fragments {
   design {
     purpose: "Name the quadrant of a point from the signs of its coordinates."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each point is in a different quadrant, so all four sign patterns appear. The child writes the coordinates before naming the quadrant, so the signs come from reading the grid. The explainer gives the sign pattern for each quadrant to check against."
+    misconceptions: "Reading the y coordinate first."
   }
 }
 
@@ -461,6 +517,7 @@ fragments {
   design {
     purpose: "Reflect a point across an axis by changing the sign of one coordinate."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The child plots the reflection on the grid and then writes its coordinates. Seeing the point flip over the axis shows which sign changes. Reflections across both axes are mixed so the child cannot use one rule for all."
     misconceptions: "Changing the sign of the coordinate named by the axis: across the x-axis, changing x."
   }
 }
@@ -475,6 +532,7 @@ fragments {
   design {
     purpose: "Find the distance between two points that share an x or a y coordinate."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "The two points share a coordinate and lie on opposite sides of an axis. The child adds the two distances from the axis, using absolute value. The grid lets the child count to check."
     misconceptions: "Subtracting the numbers without their signs: from −3 to 5 is 2."
   }
 }
@@ -488,6 +546,9 @@ fragments {
   design {
     purpose: "Find side lengths and area of a rectangle from the coordinates of its corners."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "This combines plotting, distance and area in one problem, as 6.G.A.3 asks. The fourth corner must be found from the other three. Side lengths cross an axis, so the child uses distance across zero."
+    misconceptions: "Finding a side length by subtracting coordinates without their signs."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -502,6 +563,9 @@ fragments {
   design {
     purpose: "Write a repeated product as a base and an exponent."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Writing a repeated product as a power shows what the exponent counts. The bases and exponents are small so the child sees the pattern, not large numbers."
+    misconceptions: "Writing the number of times as the base, such as 3 × 3 × 3 × 3 as 4³."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -514,8 +578,10 @@ fragments {
   design {
     purpose: "Evaluate powers and expressions that contain them, in the right order."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The items cycle through six forms: a single power, a sum with a power, a power of a sum, a difference, two squares added, and a division by a square. Each form puts the power in a different place, so the child has to apply the order of operations each time. Whole-number answers let the child check their work."
     misconceptions: "Reading 5² as 5 × 2."
     misconceptions: "Working left to right, so 4 + 3 × 2² is 28."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -528,7 +594,9 @@ fragments {
   design {
     purpose: "Turn words such as \"less than\" and \"the product of\" into an expression."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each phrase uses a different operation word, such as less than, product or divided by. Less than appears with the variable both first and second, because the order is the hardest part. The child writes in a blank so any correct form is accepted."
     misconceptions: "Writing \"5 less than y\" as 5 − y."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -542,6 +610,9 @@ fragments {
   design {
     purpose: "Name the terms, coefficients and constant of an expression."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The child names the coefficient, the constant and the number of terms in expressions with two or three terms. One expression has a subtraction, so the constant is negative. These words are used in every later lesson on expressions."
+    misconceptions: "Calling the variable itself the coefficient."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -549,12 +620,14 @@ fragments {
   id: "frag-g6-evaluate-expressions"
   instruction: "Substitute, then find the value."
   stage: STAGE_PRACTICE
-  items { kind { evaluate_expression {} } count: 6 min_count: 4 }
+  items { kind { evaluate_expression {} } count: 6 min_count: 6 }
   max_columns: 2
   design {
     purpose: "Evaluate an expression for given values of its variables."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Each expression has a different form: a product plus a number, brackets, a square, and two variables. The child writes the substitution in the space before working it out. Small whole-number values keep the arithmetic easy."
     misconceptions: "Reading 3x with x = 4 as 34."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -568,7 +641,9 @@ fragments {
   design {
     purpose: "Use the distributive property to write an equivalent expression without brackets."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Each item multiplies a number by a sum with a variable. The explainer shows the distributive property once in full. Some brackets have a number in front of the variable, so the child multiplies two numbers, not just copies the variable."
     misconceptions: "Multiplying only the first term: 3(x + 4) = 3x + 4."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -581,6 +656,9 @@ fragments {
   design {
     purpose: "Write an expression as its greatest common factor times a sum."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Factoring is expanding in reverse. The two terms always share a factor larger than 1, and the part left in the brackets has no common factor. That makes the greatest common factor the only right answer."
+    misconceptions: "Taking out a common factor that is not the greatest, such as 3 from 27x + 9."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -593,8 +671,11 @@ fragments {
   design {
     purpose: "Decide whether two expressions are equal for every value of the variable."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
+    rationale: "Each pair is either equivalent or shows a common error, such as multiplying only the first term or turning x + x + x into x³. The instruction tells the child to try a number, which gives a check that does not depend on remembering a rule. Spotting the error in a wrong answer helps the child avoid it."
     misconceptions: "Thinking x + x + x is x³."
     misconceptions: "Thinking 2x + 3x is 5x²."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+    references: "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
   }
 }
 
@@ -608,6 +689,9 @@ fragments {
   design {
     purpose: "Find which of a set of values makes an equation true by substituting."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Before solving, the child tests values from a short list. This shows what a solution is: the value that makes both sides equal. The equations need two steps, which is fine because the child is only substituting."
+    misconceptions: "Stopping at the first value that makes one side look close."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -621,7 +705,9 @@ fragments {
   design {
     purpose: "Solve one-step equations by doing the inverse operation."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The four kinds of one-step equation are mixed: adding, subtracting, multiplying and dividing. All numbers are 0 or more, as the grade 6 standard asks. The explainer names the inverse for each operation."
     misconceptions: "Doing the operation shown instead of its inverse: x + 4 = 10 gives x = 14."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -634,6 +720,9 @@ fragments {
   design {
     purpose: "Write an expression with a variable for an amount in a story."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Each story uses a variable for an unknown amount: cost, age, equal pieces or growth over time. The stories differ so the child decides which operation the words call for. The answer is an expression, not a number."
+    misconceptions: "Writing a number instead of an expression with the variable."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -645,6 +734,9 @@ fragments {
   design {
     purpose: "Write and solve one-step equations for stories."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The three stories need addition, division and a fraction of a whole. The instruction asks for an equation first, so the child names the unknown before calculating. The last story divides by a fraction, which links back to the fraction division sheet."
+    misconceptions: "Multiplying 120 by 3/4 instead of dividing."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
   items {
     count: 3
@@ -675,7 +767,10 @@ fragments {
   design {
     purpose: "Write an inequality for a limit in a story, and see it has many solutions."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Each story uses a different limit word: at least, at most, more than, fewer than, above. The explainer pairs each word with its symbol. One story has a negative temperature to link with the integer sheets."
     misconceptions: "Using > for \"at least\"."
+    misconceptions: "Writing the variable on the wrong side, so p > 35 for fewer than 35."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -688,6 +783,9 @@ fragments {
   design {
     purpose: "Use an equation to fill in a table, and tell the dependent from the independent variable."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A story with an equation leads to a table of values. The child fills the table from the equation and then picks the variable that depends on the other. This connects an equation, a table and a situation for the same relationship."
+    misconceptions: "Choosing the independent variable as the one that depends, because it comes first in the table."
+    references: "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
   }
 }
 
@@ -703,8 +801,10 @@ fragments {
   design {
     purpose: "Find the area of right triangles, other triangles, parallelograms and trapezoids."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The items rotate through right triangles, other triangles, parallelograms and trapezoids. Each figure shows the height as a dashed line. A parallelogram's slanted side is labelled too, so the child has to choose the height, not just any side."
     misconceptions: "Using a slanted side as the height."
     misconceptions: "Forgetting to halve for a triangle."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -718,6 +818,9 @@ fragments {
   design {
     purpose: "Find the volume of a box with fractional edges, by packing unit cubes and by multiplying."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "The standard asks the child to pack a box with cubes of fractional edge length and see that this gives the same volume as multiplying. The child first counts half-inch cubes and then writes the volume. Eight half-inch cubes make one cubic inch, which links the two answers."
+    misconceptions: "Counting half-inch cubes and calling that number the volume in cubic inches."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -731,7 +834,9 @@ fragments {
   design {
     purpose: "Find the surface area of a box from its length, width and height."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A net shows all six faces flat, so the child can see that each face has a matching face. Each face is labelled with its length and width. Adding six areas, not three, is the point."
     misconceptions: "Adding only 3 faces, one of each size."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
   }
 }
 
@@ -746,6 +851,9 @@ fragments {
   design {
     purpose: "Tell a statistical question, whose answers vary, from one with a single answer."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Some questions have answers that vary and some have one answer. The questions are about a child's own class and family, so the difference is easy to picture. This comes first because every later data sheet starts from a statistical question."
+    misconceptions: "Thinking any question with a number in the answer is statistical."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -758,6 +866,9 @@ fragments {
   design {
     purpose: "Tell measures of center from measures of spread."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "This sorts the six measures the grade uses into center and spread. It is a short review that the child can return to before the data set sheets."
+    misconceptions: "Thinking the range is a measure of center because it uses the middle values."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -769,6 +880,9 @@ fragments {
   design {
     purpose: "Organize a data set in a frequency table, the first step to a dot plot or histogram."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Tallying a list into a frequency table is the first step to a dot plot or a histogram. Some rows have a count of zero, so the child learns to record values that did not occur."
+    misconceptions: "Skipping a value that did not occur instead of writing 0."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -780,7 +894,9 @@ fragments {
   design {
     purpose: "Read how many values fall in each interval of a histogram."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The child reads one bar, adds all the bars, and adds two bars. Equal intervals of 10 minutes are labelled under each bar. Reading counts, not values, is the main idea of a histogram."
     misconceptions: "Reading a bar's height as a data value instead of a count."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -793,6 +909,9 @@ fragments {
   design {
     purpose: "Find a five-number summary and draw a box plot of it."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The data set has 11 values, so the median and quartiles are data values and not averages of two. The child orders the data in the space, finds the five-number summary, and then draws the box plot over a scale. Drawing it builds the understanding needed to read box plots."
+    misconceptions: "Finding the quartiles from the unordered list."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -805,7 +924,9 @@ fragments {
   design {
     purpose: "Read the median, interquartile range and range from a box plot."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The child reads the median, the interquartile range and the range from a box plot. Each needs a subtraction or a careful reading of the scale."
     misconceptions: "Reading the length of the box as the range."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -818,7 +939,9 @@ fragments {
   design {
     purpose: "Read the number of values, the median and the range from a dot plot."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "A dot plot shows each data value, so the child can count values and find the median by counting in from each end. Some numbers on the scale have no dots, so the median is not just the middle of the scale."
     misconceptions: "Taking the middle number on the scale as the median."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -832,7 +955,10 @@ fragments {
   design {
     purpose: "Find the mean, median, mode and range of a small data set."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Each small data set has exactly one mode and a whole-number mean. The child orders the data in the space before finding the median. Finding all four measures for one set shows they can be different."
     misconceptions: "Finding the median without ordering the data."
+    misconceptions: "Adding the values but forgetting to divide by how many there are."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -840,12 +966,15 @@ fragments {
   id: "frag-g6-quartiles-mad"
   instruction: "Find the quartiles, interquartile range, mean and mean absolute deviation."
   stage: STAGE_STRETCH
-  explainer: "Quartiles are the medians of the lower and upper halves. Mean absolute deviation is the mean distance from the mean."
+  explainer: "Quartiles are the medians of the lower and upper halves. Mean absolute deviation (MAD) is the mean of each value's distance from the mean."
   items { kind { data_set_stats { mode: MODE_SPREAD } } count: 2 min_count: 1 }
   max_columns: 1
   design {
     purpose: "Find the interquartile range and mean absolute deviation of a data set."
     principles: [PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "Mean absolute deviation is new and needs several steps, so each set has a mean and a deviation that come out exactly. There is room to list the distances from the mean. Some sets have an even number of values, so a quartile can fall between two values."
+    misconceptions: "Using the distances with their signs, so they add to zero."
+    references: "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
   }
 }
 
@@ -882,7 +1011,7 @@ worksheets {
   id: "ws-g6-percents"
   title: "Percents"
   seed: 603
-  max_pages: 3
+  max_pages: 2
   placements { fragment_id: "frag-g6-percent-double-number-line" }
   placements { fragment_id: "frag-g6-percent-of" }
   placements { fragment_id: "frag-g6-percent-whole-or-rate" }
@@ -891,6 +1020,7 @@ worksheets {
     purpose: "Find a percent of a number, then the whole or the percent, then use them in stories."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Look at a sale sign together and work out how many dollars come off."
 }
 
 worksheets {
@@ -903,6 +1033,7 @@ worksheets {
     purpose: "Convert measurements with a rate, in both directions."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
+  home_tip: "Measure something at home in feet, then ask how many inches that is."
 }
 
 worksheets {
@@ -929,6 +1060,7 @@ worksheets {
     purpose: "Divide fluently with the standard algorithm and two-digit divisors."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Ask your child to estimate first, such as about how many 24s make 100."
 }
 
 worksheets {
@@ -942,6 +1074,7 @@ worksheets {
     purpose: "Add, subtract, multiply and divide decimals."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Add up two prices from a receipt and check the total together."
 }
 
 worksheets {
@@ -956,6 +1089,7 @@ worksheets {
     purpose: "Find greatest common factors and least common multiples, and factor a sum."
     principles: [PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Ask: buns come in packs of 8 and sausages in packs of 6. What is the smallest number of each that matches?"
 }
 
 worksheets {
@@ -987,6 +1121,7 @@ worksheets {
     purpose: "Compare and order integers, and use absolute value for distance and debt."
     principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_INTERLEAVING]
   }
+  home_tip: "Ask which is colder, −8°F or −3°F, and why."
 }
 
 worksheets {
@@ -1016,6 +1151,7 @@ worksheets {
     purpose: "Write and evaluate powers, and use them in the order of operations."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
   }
+  home_tip: "Ask your child to explain why 3² is 9 and not 6."
 }
 
 worksheets {
@@ -1030,6 +1166,7 @@ worksheets {
     purpose: "Write expressions from words, name their parts, and evaluate them."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Make up a rule such as \"3 more than your age\" and ask your child to write it with a letter."
 }
 
 worksheets {
@@ -1044,6 +1181,7 @@ worksheets {
     purpose: "Expand and factor expressions, and tell when two are equivalent."
     principles: [PRINCIPLE_ERROR_ANALYSIS]
   }
+  home_tip: "Pick a number for x and check together whether two expressions give the same answer."
 }
 
 worksheets {
@@ -1059,6 +1197,7 @@ worksheets {
     purpose: "Find solutions by substituting, then by inverse operations, then for stories."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Play a guess-my-number game: I added 7 and got 20. What was my number?"
 }
 
 worksheets {
@@ -1072,6 +1211,7 @@ worksheets {
     purpose: "Write inequalities for limits, and relate two variables with an equation and a table."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Find a sign with a limit, such as a height rule for a ride, and say it as an inequality."
 }
 
 worksheets {
@@ -1098,6 +1238,7 @@ worksheets {
     purpose: "Find the volume of boxes with fractional edges, and the surface area of boxes."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
   }
+  home_tip: "Unfold a cereal box to see its six faces laid flat."
 }
 
 worksheets {
@@ -1111,6 +1252,7 @@ worksheets {
     purpose: "Recognize statistical questions, and sort measures of center and spread."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
   }
+  home_tip: "Ask a question the family would all answer differently, such as how long each person slept."
 }
 
 worksheets {
@@ -1125,6 +1267,7 @@ worksheets {
     purpose: "Organize data in a table, read a histogram, and draw a box plot."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Count how many minutes each person reads in a week and make a table together."
 }
 
 worksheets {
@@ -1140,4 +1283,5 @@ worksheets {
     purpose: "Describe a data set by its center and spread, from a dot plot and from a list."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
   }
+  home_tip: "Write down everyone's shoe size and find the middle value together."
 }

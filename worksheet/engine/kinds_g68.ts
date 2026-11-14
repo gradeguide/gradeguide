@@ -220,6 +220,20 @@ function moved(form: number, x: number, y: number, dx: number, dy: number, f: nu
   )[form];
 }
 
+// spread picks an index below n that this worksheet has not used yet for
+// key, so items in a section vary their story or form. Once every index has
+// been used, it starts another round.
+function spread(ctx: Ctx, key: string, n: number): number {
+  for (let round = 0; ; round++) {
+    for (let i = 0; i < 40; i++) {
+      const v = ctx.rng.int(0, n - 1);
+      if (ctx.fresh(`${key}#${round}#${v}`)) {
+        return v;
+      }
+    }
+  }
+}
+
 function tick(top: string | Field, bottom: string | Field) {
   return create(DoubleNumberLine_TickSchema, {
     ...(typeof top === 'string' ? { top } : { topField: top }),
@@ -232,30 +246,34 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
   const k = kind.kind;
   switch (k.case) {
     case 'ratioLanguage': {
-      const [s, a, b, form] = pickFresh(ctx, k.case, () => {
+      const s = spread(ctx, k.case, RATIO_SCENES.length);
+      const [a, b, form] = pickFresh(ctx, k.case + s, () => {
         const a = rng.int(2, 12);
         let b = rng.int(2, 12);
         while (b === a) {
           b = rng.int(2, 12);
         }
-        return [rng.int(0, RATIO_SCENES.length - 1), a, b, rng.int(0, 2)];
+        return [a, b, rng.int(0, 2)];
       });
       const [first, second, where] = RATIO_SCENES[s];
-      const [x, xn, y, yn] = form === 0 ? [first, a, second, b] : form === 1 ? [second, b, first, a] : [first, a, `all the ${first.split(' ').pop()} and ${second.split(' ').pop()}`, a + b];
+      const [p1, p2] = [first.split(' ').pop(), second.split(' ').pop()];
+      const all = p1 === p2 ? `all the ${p1}` : `all the ${p1} and ${p2}`;
+      const [x, xn, y, yn] = form === 0 ? [first, a, second, b] : form === 1 ? [second, b, first, a] : [first, a, all, a + b];
       return [
         text(`There are ${a} ${first} and ${b} ${second} ${where}. Write the ratio of ${x} to ${y}.`),
         math(blank(field(ctx, `${x} in the ratio`, String(xn))), ':', blank(field(ctx, `${y} in the ratio`, String(yn)))),
       ];
     }
     case 'ratioTable': {
-      const [theme, a, b, mults, flip] = pickFresh(ctx, k.case, () => {
+      const theme = spread(ctx, k.case, TABLE_THEMES.length);
+      const [a, b, mults, flip] = pickFresh(ctx, k.case, () => {
         let a = inRange(rng, k.value.parts, 2, 9);
         let b = inRange(rng, k.value.parts, 2, 9);
         while (a === b || gcd(a, b) !== 1) {
           a = inRange(rng, k.value.parts, 2, 9);
           b = inRange(rng, k.value.parts, 2, 9);
         }
-        return [rng.int(0, TABLE_THEMES.length - 1), a, b, [1, 2, 3, rng.int(4, 6), rng.int(7, 10)], rng.int(0, 1)];
+        return [a, b, [1, 2, 3, rng.int(4, 6), rng.int(7, 10)], rng.int(0, 1)];
       });
       const [left, right] = TABLE_THEMES[theme];
       if (k.value.doubleNumberLine) {
@@ -302,15 +320,16 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           math('Rate:', blank(field(ctx, 'walls per hour', rate, also)), 'walls per hour'),
         ];
       }
-      const [form, u, n, m, item] = pickFresh(ctx, k.case, () => {
-        const form = rng.int(0, 2);
+      const form = spread(ctx, k.case + 'form', 3);
+      const item = spread(ctx, k.case + 'item', RATE_ITEMS.length);
+      const [u, n, m] = pickFresh(ctx, k.case, () => {
         const u = form === 0 ? rng.pick([25, 40, 50, 75, 120, 125, 150, 250]) : form === 1 ? rng.int(6, 16) : rng.int(3, 12);
         const n = rng.int(3, 8);
         let m = rng.int(2, 12);
         while (m === n) {
           m = rng.int(2, 12);
         }
-        return [form, u, n, m, rng.int(0, RATE_ITEMS.length - 1)];
+        return [u, n, m];
       });
       if (form === 0) {
         const thing = RATE_ITEMS[item];
@@ -373,7 +392,8 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           math('Real length:', blank(field(ctx, 'real length', num(len * s), [`${num(len * s)} ${big}`])), big),
         ];
       }
-      const [i, n, toSmall] = pickFresh(ctx, k.case, () => [rng.int(0, MEASURES.length - 1), rng.int(2, 12), rng.int(0, 1)]);
+      const i = spread(ctx, k.case, MEASURES.length);
+      const [n, toSmall] = pickFresh(ctx, k.case + i, () => [rng.int(2, 12), rng.int(0, 1)]);
       const [big, small, per, one] = MEASURES[i];
       const many = n * per;
       const also = many >= 1000 ? [String(many)] : [];
@@ -390,7 +410,15 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const b = rng.pick(ds);
         const d = rng.pick(ds);
         const forms = k.value.mixed ? [0, 1, 2, 3, 3] : [0, 0, 1, 2];
-        return [rng.pick(forms), rng.int(1, 4), rng.int(1, b - 1), b, rng.int(1, d - 1), d];
+        // Fractions in the question are in simplest form.
+        const top = (den: number) => {
+          let t = rng.int(1, den - 1);
+          while (gcd(t, den) !== 1) {
+            t = rng.int(1, den - 1);
+          }
+          return t;
+        };
+        return [rng.pick(forms), rng.int(1, 4), top(b), b, top(d), d];
       });
       // Each form as dividend p/q ÷ divisor r/s.
       const [p, q, r, s, atoms]: [number, number, number, number, AtomSpec[]] =
@@ -479,13 +507,16 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const [ask, a, b, g] = pickFresh(ctx, k.case, () => {
         const ask = k.value.ask || rng.int(1, 3);
         if (ask === GcfLcm_Ask.LCM) {
-          let a = rng.int(2, 12);
-          let b = rng.int(2, 12);
-          while (a === b || (a * b) / gcd(a, b) > 120) {
-            a = rng.int(2, 12);
-            b = rng.int(2, 12);
+          // Most pairs share a factor, so the product is not the least
+          // common multiple; neither divides the other.
+          const shared = rng.next() < 0.65;
+          for (;;) {
+            const a = rng.int(2, 12);
+            const b = rng.int(2, 12);
+            if (a !== b && a % b !== 0 && b % a !== 0 && (a * b) / gcd(a, b) <= 120 && (gcd(a, b) > 1) === shared) {
+              return [ask, a, b, 0];
+            }
           }
-          return [ask, a, b, 0];
         }
         for (;;) {
           const g = rng.int(2, 12);
@@ -544,9 +575,11 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       switch (mode) {
         case Integers_Mode.NUMBER_LINE: {
           const t = pickFresh(ctx, k.case + mode, () => {
-            let t = rng.int(1, 19);
+            // Mostly negative, the new part of the line.
+            const negative = rng.next() < 0.7;
+            let t = negative ? rng.int(1, 9) : rng.int(11, 19);
             while (t % 5 === 0) {
-              t = rng.int(1, 19);
+              t = negative ? rng.int(1, 9) : rng.int(11, 19);
             }
             return t;
           });
@@ -557,19 +590,25 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           ];
         }
         case Integers_Mode.OPPOSITE: {
-          const [n, form] = pickFresh(ctx, k.case + mode, () => [nonzero(ctx, -15, 15), rng.int(0, 1)]);
+          // The second form is the opposite of a negative number, −(−n).
+          const [n, form] = pickFresh(ctx, k.case + mode, () => {
+            const form = rng.int(0, 1);
+            const n = nonzero(ctx, -15, 15);
+            return [form === 1 ? -Math.abs(n) : n, form];
+          });
           return form === 0
             ? [math(`The opposite of ${num(n)} is`, blank(field(ctx, `the opposite of ${num(n)}`, num(-n))))]
             : [math(`${MINUS}(${num(n)}) =`, blank(field(ctx, `the opposite of ${num(n)}`, num(-n))))];
         }
         case Integers_Mode.ABSOLUTE_VALUE: {
-          const [a, b, form] = pickFresh(ctx, k.case + mode, () => {
+          const form = spread(ctx, k.case + mode, 3);
+          const [a, b] = pickFresh(ctx, k.case + mode, () => {
             const a = nonzero(ctx, -20, -1);
             let b = nonzero(ctx, -20, 20);
             while (Math.abs(b) === Math.abs(a)) {
               b = nonzero(ctx, -20, 20);
             }
-            return [a, b, rng.int(0, 2)];
+            return [a, b];
           });
           if (form === 2) {
             const far = Math.abs(a) > Math.abs(b) ? a : b;
@@ -593,18 +632,20 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           return [math(xs.map(num).join(',  ')), math('Least to greatest:', blank(field(ctx, `${xs.map(num).join(', ')} in order`, sorted.join(', '))))];
         }
         case Integers_Mode.CONTEXT: {
-          const [i, n] = pickFresh(ctx, k.case + mode, () => [rng.int(0, CONTEXTS.length - 1), rng.int(2, 60)]);
+          const i = spread(ctx, k.case + mode, CONTEXTS.length);
+          const n = pickFresh(ctx, k.case + mode + i, () => rng.int(2, 60));
           const [phrase, sign] = CONTEXTS[i];
           return [text(phrase.replace('#', String(n))), math('Integer:', blank(field(ctx, phrase.replace('#', String(n)), num(sign * n))))];
         }
         case Integers_Mode.ORDER_IN_CONTEXT: {
-          const [form, a, b] = pickFresh(ctx, k.case + mode, () => {
+          const form = spread(ctx, k.case + mode, 4);
+          const [a, b] = pickFresh(ctx, k.case + mode, () => {
             const a = rng.int(-30, 10);
             let b = rng.int(-30, -1);
             while (b === a) {
               b = rng.int(-30, -1);
             }
-            return [rng.int(0, 3), a, b];
+            return [a, b];
           });
           const [q, unit, low] = [
             ['Which is colder?', '°F', true],
@@ -616,13 +657,14 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           return [text(q), choices(ctx, `${q} ${num(a)}${unit} or ${num(b)}${unit}`, [num(a) + unit, num(b) + unit], num(pick) + unit)];
         }
         case Integers_Mode.DEBT: {
-          const [form, a, b] = pickFresh(ctx, k.case + mode, () => {
+          const form = spread(ctx, k.case + mode, 3);
+          const [a, b] = pickFresh(ctx, k.case + mode, () => {
             const a = 5 * rng.int(2, 20);
             let b = 5 * rng.int(2, 20);
             while (b === a) {
               b = 5 * rng.int(2, 20);
             }
-            return [rng.int(0, 2), a, b];
+            return [a, b];
           });
           if (form === 0) {
             return [math(`A balance of ${MINUS}$${a} is a debt of $`, blank(field(ctx, `debt for a balance of −$${a}`, String(a))))];
@@ -635,6 +677,15 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         }
         default: {
           const [a, b] = pickFresh(ctx, k.case + mode, () => {
+            // Most pairs are both negative, where children slip most.
+            if (rng.next() < 0.6) {
+              const a = rng.int(-20, -1);
+              let b = rng.int(-20, -1);
+              while (b === a) {
+                b = rng.int(-20, -1);
+              }
+              return [a, b];
+            }
             const a = rng.int(-20, 20);
             let b = rng.int(-20, 20);
             while (b === a || (a >= 0 && b >= 0)) {
@@ -654,7 +705,8 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       const six = { xMin: -6, xMax: 6, yMin: -6, yMax: 6 };
       switch (mode) {
         case CoordinateGeometry_Mode.QUADRANT: {
-          const [x, y] = pickFresh(ctx, k.case + mode, () => [nonzero(ctx, -6, 6), nonzero(ctx, -6, 6)]);
+          const quad = spread(ctx, k.case + 'quadrant', 4);
+          const [x, y] = pickFresh(ctx, k.case + mode, () => [(quad === 0 || quad === 3 ? 1 : -1) * rng.int(1, 5), (quad < 2 ? 1 : -1) * rng.int(1, 5)]);
           const q = x > 0 ? (y > 0 ? 'I' : 'IV') : y > 0 ? 'II' : 'III';
           return [
             plane({ ...six, points: [gp(x, y, 'P')] }),
@@ -740,7 +792,8 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           ];
         }
         default: {
-          const [x, y, axis] = pickFresh(ctx, k.case + mode, () => [nonzero(ctx, -6, 6), nonzero(ctx, -6, 6), rng.int(0, 1)]);
+          const axis = spread(ctx, k.case + 'axis', 2);
+          const [x, y] = pickFresh(ctx, k.case + mode + axis, () => [nonzero(ctx, -6, 6), nonzero(ctx, -6, 6)]);
           const [nx, ny] = axis === 0 ? [x, -y] : [-x, y];
           return [
             text(`Plot A′, the reflection of A across the ${axis === 0 ? 'x' : 'y'}-axis.`),
@@ -800,12 +853,25 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
           return [math(`√${n} is between`, blank(field(ctx, `whole number just below √${n}`, String(lo))), 'and', blank(field(ctx, `whole number just above √${n}`, String(lo + 1))))];
         }
         default: {
-          const [form, a, b, c] = pickFresh(ctx, k.case + mode, () => [rng.int(0, 3), rng.int(2, 9), rng.int(2, 6), rng.int(2, 5)]);
+          const form = spread(ctx, k.case + mode, 6);
+          const [a, b, c] = pickFresh(ctx, k.case + mode + form, () => {
+            for (;;) {
+              const [a, b, c] = [rng.int(2, 9), rng.int(2, 6), rng.int(2, 5)];
+              // Keep c³ − a × b at 0 or more.
+              if (form !== 3 || c ** 3 >= a * b) {
+                return [a, b, c];
+              }
+            }
+          });
+          // A single power stays under 1,000.
+          const e = c > 4 || (c === 4 && a > 5) ? 3 : c;
           const forms: [string, number][] = [
-            [`${a}${sup(c > 4 ? 3 : c)}`, a ** (c > 4 ? 3 : c)],
+            [`${a}${sup(e)}`, a ** e],
             [`${a + 4} + ${b} × ${c}²`, a + 4 + b * c * c],
             [`(${a} + ${b})² − ${c}`, (a + b) ** 2 - c],
             [`${c}³ − ${a} × ${b}`, c ** 3 - a * b],
+            [`${a}² + ${b}²`, a * a + b * b],
+            [`${b * c * c} ÷ ${c}² + ${a}`, b + a],
           ];
           const [expr, v] = forms[form];
           return [math(expr, '=', blank(field(ctx, expr, num(v))))];
@@ -814,14 +880,15 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'writeExpression': {
       const mode = k.value.mode || WriteExpression_Mode.FROM_WORDS;
-      const [i, a, b, vi] = pickFresh(ctx, k.case + mode, () => {
-        const n = mode === WriteExpression_Mode.INEQUALITY ? INEQUALITIES.length : mode === WriteExpression_Mode.CONTEXT ? STORIES.length : mode === WriteExpression_Mode.PARTS ? 3 : WORDS.length;
+      const n = mode === WriteExpression_Mode.INEQUALITY ? INEQUALITIES.length : mode === WriteExpression_Mode.CONTEXT ? STORIES.length : mode === WriteExpression_Mode.PARTS ? 3 : WORDS.length;
+      const i = spread(ctx, k.case + mode, n);
+      const [a, b, vi] = pickFresh(ctx, k.case + mode + i, () => {
         const a = rng.int(2, 12);
         let b = rng.int(2, 12);
         while (b === a) {
           b = rng.int(2, 12);
         }
-        return [rng.int(0, n - 1), a, b, rng.int(0, VARS.length - 1)];
+        return [a, b, rng.int(0, VARS.length - 1)];
       });
       const v = VARS[vi];
       if (mode === WriteExpression_Mode.PARTS) {
@@ -829,11 +896,11 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
         const [expr, terms] = i === 0 ? [`${a}${v} + ${b}`, 2] : i === 1 ? [`${b} + ${a}${v} + ${a + b}${w}`, 3] : [`${a}${v} − ${b}`, 2];
         const constant = i === 2 ? num(-b) : String(b);
         return [
-          math('In', expr, ':'),
+          math(expr),
           row(
             math(`Coefficient of ${v}:`, blank(field(ctx, `coefficient of ${v} in ${expr}`, String(a)))),
             math('Constant:', blank(field(ctx, `constant in ${expr}`, constant, i === 2 ? [String(b)] : []))),
-            math('Terms:', blank(field(ctx, `number of terms in ${expr}`, String(terms)))),
+            math('Number of terms:', blank(field(ctx, `number of terms in ${expr}`, String(terms)))),
           ),
         ];
       }
@@ -843,9 +910,10 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'evaluateExpression': {
       const neg = k.value.negatives;
-      const [form, a, b, x, y] = pickFresh(ctx, k.case, () => {
+      const form = spread(ctx, k.case, 5);
+      const [a, b, x, y] = pickFresh(ctx, k.case + form, () => {
         const pickV = () => (neg ? nonzero(ctx, -9, 9) : rng.int(1, 9));
-        return [rng.int(0, 4), rng.int(2, 9), rng.int(1, 12), pickV(), pickV()];
+        return [rng.int(2, 9), rng.int(1, 12), pickV(), pickV()];
       });
       // Each form: the expression, which variables it uses, and its value.
       const forms: [string, boolean, number][] = [
@@ -857,7 +925,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       ];
       const [expr, usesY, v] = forms[form];
       const vals = usesY ? `x = ${num(x)} and y = ${num(y)}` : `x = ${num(x)}`;
-      return [text(`Find ${expr} when ${vals}.`), math('Value:', blank(field(ctx, `${expr} when ${vals}`, num(v))))];
+      return [text(`Find ${expr} when ${vals}.`), work(1), math('Value:', blank(field(ctx, `${expr} when ${vals}`, num(v))))];
     }
     case 'equivalentExpressions': {
       const mode = k.value.mode || EquivalentExpressions_Mode.EXPAND;
@@ -977,11 +1045,11 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
     }
     case 'shapeArea': {
       const shapes = list(k.value.shapes, [1, 2, 3, 4]);
-      const [shape, b, h, o, t] = pickFresh(ctx, k.case, () => {
-        const shape = rng.pick(shapes);
+      const shape = shapes[spread(ctx, k.case, shapes.length)];
+      const [b, h, o, t] = pickFresh(ctx, k.case + shape, () => {
         const b = rng.int(5, 14);
         const [o, h] = shape === ShapeArea_Shape.PARALLELOGRAM ? rng.pick([[3, 4], [4, 3], [6, 8], [5, 12], [8, 6]] as const) : [rng.int(1, 3), rng.int(3, 10)];
-        return [shape, b, h, o, rng.int(-2, b + 2)];
+        return [b, h, o, rng.int(-2, b + 2)];
       });
       const P = (x: number, y: number) => create(Polygon_PointSchema, { x, y });
       const S = (s: string) => create(Polygon_SideLabelSchema, { text: s });
@@ -1026,7 +1094,7 @@ export function generateG68(kind: ItemKind, ctx: Ctx): Node[] | undefined {
       if (k.value.surfaceArea) {
         const [l, w, h] = pickFresh(ctx, k.case + 's', () => [rng.int(3, 10), rng.int(2, 7), rng.int(2, 7)]);
         return [
-          node({ case: 'prismNet', value: create(PrismNetSchema, { length: l, width: w, height: h, unit: 'in' }) }),
+          node({ case: 'prismNet', value: create(PrismNetSchema, { length: l, width: w, height: h, unit: 'inches' }) }),
           math('Surface area =', blank(field(ctx, 'surface area in square inches', String(2 * (l * w + l * h + w * h)))), 'sq in'),
         ];
       }
@@ -1305,7 +1373,9 @@ function solveEquation(form: SolveEquation_Form, inequality: boolean, neg: boole
         return [`${v} + ${a} ${rel} ${num(x + a)}`, x, false];
       }
       if (shape === 1) {
-        return [`${v} − ${a} ${rel} ${num(x - a)}`, x, false];
+        // Without negatives, keep the right side at 0 or more.
+        const y = neg ? x : x + a;
+        return [`${v} − ${a} ${rel} ${num(y - a)}`, y, false];
       }
       if (shape === 2) {
         const c = neg ? coef() : a;
@@ -1349,7 +1419,7 @@ function solveEquation(form: SolveEquation_Form, inequality: boolean, neg: boole
 function dataSetStats(mode: DataSetStats_Mode, ctx: Ctx): Node[] {
   const { rng } = ctx;
   mode = mode || DataSetStats_Mode.CENTER;
-  const theme = rng.int(0, DATA_THEMES.length - 1);
+  const theme = spread(ctx, 'dataTheme', DATA_THEMES.length);
   const [what, lo, hi] = DATA_THEMES[theme];
   const sum = (xs: number[]) => xs.reduce((s, x) => s + x, 0);
   const median = (xs: number[]) => {
@@ -1384,6 +1454,7 @@ function dataSetStats(mode: DataSetStats_Mode, ctx: Ctx): Node[] {
     }
     return [
       text(`${what}: ${xs.join(', ')}`),
+      work(2),
       row(
         math('Min:', blank(ctx.fields.field('minimum', String(mn)))),
         math('Q1:', blank(ctx.fields.field('lower quartile', String(q1)))),
@@ -1476,6 +1547,7 @@ function dataSetStats(mode: DataSetStats_Mode, ctx: Ctx): Node[] {
     const q3 = median(s.slice(s.length - half));
     return [
       text(`${what}: ${xs.join(', ')}`),
+      work(4),
       row(
         math('Lower quartile:', blank(ctx.fields.field('lower quartile', num(q1)))),
         math('Upper quartile:', blank(ctx.fields.field('upper quartile', num(q3)))),
@@ -1501,6 +1573,7 @@ function dataSetStats(mode: DataSetStats_Mode, ctx: Ctx): Node[] {
   const mode2 = [...counts.entries()].find(([, c]) => c === 2)![0];
   return [
     text(`${what}: ${xs.join(', ')}`),
+    work(2),
     row(
       math('Mean:', blank(ctx.fields.field('mean', num(sum(xs) / xs.length)))),
       math('Median:', blank(ctx.fields.field('median', num(median(xs))))),
@@ -1986,7 +2059,7 @@ const STORIES: Phrase[] = [
 ];
 
 const INEQUALITIES: ((n: number, t: number) => [string, string, string[]])[] = [
-  (n) => [`You must be at least ${n} inches tall to ride. Use h for height.`, `h ≥ ${n}`, [`h >= ${n}`, `${n} ≤ h`]],
+  (n) => [`You must be at least ${30 + (2 * n) / 5} inches tall to ride. Use h for height.`, `h ≥ ${30 + (2 * n) / 5}`, [`h >= ${30 + (2 * n) / 5}`, `${30 + (2 * n) / 5} ≤ h`]],
   (n) => [`Fewer than ${n} people fit in the room. Use p for people.`, `p < ${n}`, [`${n} > p`]],
   (n) => [`A bag can hold at most ${n} pounds. Use w for weight.`, `w ≤ ${n}`, [`w <= ${n}`, `${n} ≥ w`]],
   (n) => [`More than ${n} students signed up. Use s for students.`, `s > ${n}`, [`${n} < s`]],

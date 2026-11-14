@@ -611,7 +611,7 @@ message PrismNet {
   int32 length = 1;
   int32 width = 2;
   int32 height = 3;
-  // Such as "cm".
+  // The unit name, such as "inches", printed as "Lengths in inches".
   string unit = 4;
 }
 

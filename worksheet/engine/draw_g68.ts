@@ -279,8 +279,8 @@ export function prismNet(n: PrismNet): Drawing {
   face(0, w, w, h, w, h);
   face(w + l, w, w, h, w, h);
   const width = f1(x0 * 2 + (2 * w + l) * s);
-  shapes.push({ t: 'text', x: width + 6, y: 14, s: `in ${n.unit || 'units'}`, size: 11, anchor: 'start', italic: true });
-  return { width: width + 60, height: f1(y0 * 2 + (2 * w + 2 * h) * s), shapes };
+  shapes.push({ t: 'text', x: width + 6, y: 14, s: `Lengths in ${n.unit || 'units'}`, size: 11, anchor: 'start', italic: true });
+  return { width: width + 110, height: f1(y0 * 2 + (2 * w + 2 * h) * s), shapes };
 }
 
 export function heightShape(p: HeightShape): Drawing {
