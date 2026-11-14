@@ -418,6 +418,68 @@
         }
        ],
        "key": "9.3"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "2.8 ÷ 10"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "2.8"
+           },
+           {
+            "field": {
+             "id": "q12",
+             "label": "2.8 ÷ 10",
+             "answer": {
+              "text": "0.28"
+             }
+            },
+            "note": "÷ 10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.28"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "text": "3.65 ÷ 10"
+        },
+        {
+         "decimalChart": {
+          "high": 3,
+          "decimals": 3,
+          "headings": "HEADINGS_POWERS",
+          "rows": [
+           {
+            "number": "3.65"
+           },
+           {
+            "field": {
+             "id": "q13",
+             "label": "3.65 ÷ 10",
+             "answer": {
+              "text": "0.365"
+             }
+            },
+            "note": "÷ 10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "0.365"
       }
      ],
      "columns": 1,
@@ -439,14 +501,14 @@
       ]
      },
      "continued": true,
-     "estimatedHeight": 189
+     "estimatedHeight": 499
     },
     {
      "label": "C",
      "instruction": "Multiply or divide.",
      "items": [
       {
-       "label": "12",
+       "label": "14",
        "nodes": [
         {
          "math": {
@@ -456,7 +518,7 @@
            },
            {
             "blank": {
-             "id": "q12",
+             "id": "q14",
              "label": "2.7 × 10",
              "answer": {
               "text": "27"
@@ -470,7 +532,7 @@
        "key": "2.7 × 10 = 27"
       },
       {
-       "label": "13",
+       "label": "15",
        "nodes": [
         {
          "math": {
@@ -480,7 +542,7 @@
            },
            {
             "blank": {
-             "id": "q13",
+             "id": "q15",
              "label": "3.73 × 100",
              "answer": {
               "text": "373"
@@ -494,7 +556,7 @@
        "key": "3.73 × 100 = 373"
       },
       {
-       "label": "14",
+       "label": "16",
        "nodes": [
         {
          "math": {
@@ -504,7 +566,7 @@
            },
            {
             "blank": {
-             "id": "q14",
+             "id": "q16",
              "label": "0.34 × 10",
              "answer": {
               "text": "3.4"
@@ -518,7 +580,7 @@
        "key": "0.34 × 10¹ = 3.4"
       },
       {
-       "label": "15",
+       "label": "17",
        "nodes": [
         {
          "math": {
@@ -528,7 +590,7 @@
            },
            {
             "blank": {
-             "id": "q15",
+             "id": "q17",
              "label": "81.1 × 100",
              "answer": {
               "text": "8,110",
@@ -545,7 +607,7 @@
        "key": "81.1 × 10² = 8,110"
       },
       {
-       "label": "16",
+       "label": "18",
        "nodes": [
         {
          "math": {
@@ -555,7 +617,7 @@
            },
            {
             "blank": {
-             "id": "q16",
+             "id": "q18",
              "label": "6.81 ÷ 10",
              "answer": {
               "text": "0.681"
@@ -569,7 +631,7 @@
        "key": "6.81 ÷ 10 = 0.681"
       },
       {
-       "label": "17",
+       "label": "19",
        "nodes": [
         {
          "math": {
@@ -579,7 +641,7 @@
            },
            {
             "blank": {
-             "id": "q17",
+             "id": "q19",
              "label": "6.8 ÷ 10",
              "answer": {
               "text": "0.68"
@@ -593,7 +655,7 @@
        "key": "6.8 ÷ 10¹ = 0.68"
       },
       {
-       "label": "18",
+       "label": "20",
        "nodes": [
         {
          "math": {
@@ -603,7 +665,7 @@
            },
            {
             "blank": {
-             "id": "q18",
+             "id": "q20",
              "label": "3 ÷ 10",
              "answer": {
               "text": "0.3"
@@ -617,7 +679,7 @@
        "key": "3 ÷ 10 = 0.3"
       },
       {
-       "label": "19",
+       "label": "21",
        "nodes": [
         {
          "math": {
@@ -627,7 +689,7 @@
            },
            {
             "blank": {
-             "id": "q19",
+             "id": "q21",
              "label": "82 ÷ 1,000",
              "answer": {
               "text": "0.082"
@@ -641,7 +703,7 @@
        "key": "82 ÷ 1,000 = 0.082"
       },
       {
-       "label": "20",
+       "label": "22",
        "nodes": [
         {
          "math": {
@@ -651,7 +713,7 @@
            },
            {
             "blank": {
-             "id": "q20",
+             "id": "q22",
              "label": "8.41 ÷ 10",
              "answer": {
               "text": "0.841"
@@ -686,7 +748,7 @@
      "estimatedHeight": 294
     }
    ],
-   "estimatedHeight": 491
+   "estimatedHeight": 801
   }
  ],
  "key": [
@@ -825,9 +887,9 @@
    "itemLabel": "12",
    "field": {
     "id": "q12",
-    "label": "2.7 × 10",
+    "label": "2.8 ÷ 10",
     "answer": {
-     "text": "27"
+     "text": "0.28"
     }
    }
   },
@@ -835,9 +897,9 @@
    "itemLabel": "13",
    "field": {
     "id": "q13",
-    "label": "3.73 × 100",
+    "label": "3.65 ÷ 10",
     "answer": {
-     "text": "373"
+     "text": "0.365"
     }
    }
   },
@@ -845,9 +907,9 @@
    "itemLabel": "14",
    "field": {
     "id": "q14",
-    "label": "0.34 × 10",
+    "label": "2.7 × 10",
     "answer": {
-     "text": "3.4"
+     "text": "27"
     }
    }
   },
@@ -855,6 +917,26 @@
    "itemLabel": "15",
    "field": {
     "id": "q15",
+    "label": "3.73 × 100",
+    "answer": {
+     "text": "373"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "0.34 × 10",
+    "answer": {
+     "text": "3.4"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
     "label": "81.1 × 100",
     "answer": {
      "text": "8,110",
@@ -865,9 +947,9 @@
    }
   },
   {
-   "itemLabel": "16",
+   "itemLabel": "18",
    "field": {
-    "id": "q16",
+    "id": "q18",
     "label": "6.81 ÷ 10",
     "answer": {
      "text": "0.681"
@@ -875,9 +957,9 @@
    }
   },
   {
-   "itemLabel": "17",
+   "itemLabel": "19",
    "field": {
-    "id": "q17",
+    "id": "q19",
     "label": "6.8 ÷ 10",
     "answer": {
      "text": "0.68"
@@ -885,9 +967,9 @@
    }
   },
   {
-   "itemLabel": "18",
+   "itemLabel": "20",
    "field": {
-    "id": "q18",
+    "id": "q20",
     "label": "3 ÷ 10",
     "answer": {
      "text": "0.3"
@@ -895,9 +977,9 @@
    }
   },
   {
-   "itemLabel": "19",
+   "itemLabel": "21",
    "field": {
-    "id": "q19",
+    "id": "q21",
     "label": "82 ÷ 1,000",
     "answer": {
      "text": "0.082"
@@ -905,9 +987,9 @@
    }
   },
   {
-   "itemLabel": "20",
+   "itemLabel": "22",
    "field": {
-    "id": "q20",
+    "id": "q22",
     "label": "8.41 ÷ 10",
     "answer": {
      "text": "0.841"
@@ -922,8 +1004,5 @@
   ],
   "rationale": "Whole numbers come first, where the pattern is in the zeros. The chart then shows the same pattern with decimals as digits moving, before the decimal items without the chart."
  },
- "advice": [
-  "Section \"Write the answer in the bottom row of the chart.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

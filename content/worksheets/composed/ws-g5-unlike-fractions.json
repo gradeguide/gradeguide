@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the box.",
+     "instruction": "Write the missing number.",
      "items": [
       {
        "label": "1",
@@ -151,12 +151,16 @@
      "fragmentId": "frag-equivalent-missing",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Generate equivalent fractions without a picture.",
+      "purpose": "Write equivalent fractions without a model.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+      "rationale": "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions.",
+      "misconceptions": [
+       "Multiplying only the denominator: 2/3 = 2/6.",
+       "Adding the same number to the numerator and denominator."
+      ]
      },
      "estimatedHeight": 178
     },

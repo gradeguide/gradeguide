@@ -663,6 +663,60 @@
         }
        ],
        "key": "nine and twenty-six hundredths = 9.26"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "thirty-seven thousandths"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "thirty-seven thousandths as a number",
+             "answer": {
+              "text": "0.037"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "thirty-seven thousandths = 0.037"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "eight and thirty-six thousandths"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "eight and thirty-six thousandths as a number",
+             "answer": {
+              "text": "8.036"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "eight and thirty-six thousandths = 8.036"
       }
      ],
      "columns": 1,
@@ -683,10 +737,10 @@
        "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
       ]
      },
-     "estimatedHeight": 324
+     "estimatedHeight": 428
     }
    ],
-   "estimatedHeight": 328
+   "estimatedHeight": 432
   }
  ],
  "key": [
@@ -849,6 +903,26 @@
      "text": "9.26"
     }
    }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "thirty-seven thousandths as a number",
+    "answer": {
+     "text": "0.037"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "eight and thirty-six thousandths as a number",
+    "answer": {
+     "text": "8.036"
+    }
+   }
   }
  ],
  "design": {
@@ -859,8 +933,5 @@
   ],
   "rationale": "The chart shows the places, expanded form names them, and number names hide them. The sections follow that order."
  },
- "advice": [
-  "Section \"Write each number in standard form.\" was cut from 6 to 4 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }
