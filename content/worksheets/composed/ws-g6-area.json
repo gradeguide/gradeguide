@@ -1,0 +1,418 @@
+{
+ "worksheetId": "ws-g6-area",
+ "title": "Area of triangles and quadrilaterals",
+ "headerLabels": [
+  "6.G.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the area.",
+     "explainer": "Triangle: half of base × height. Parallelogram: base × height. Trapezoid: half the sum of the bases × height.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 7
+           },
+           {
+            "y": 5
+           }
+          ],
+          "sides": [
+           {
+            "text": "7 cm"
+           },
+           {},
+           {
+            "text": "5 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area in square cm",
+             "answer": {
+              "text": "17.5"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 17.5 sq cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 10
+           },
+           {
+            "x": 2,
+            "y": 9
+           }
+          ],
+          "apex": {
+           "x": 2,
+           "y": 9
+          },
+          "baseLabel": "10 cm",
+          "heightLabel": "9 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "area in square cm",
+             "answer": {
+              "text": "45"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 45 sq cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 11,
+            "y": 8
+           },
+           {
+            "x": 1,
+            "y": 8
+           }
+          ],
+          "apex": {
+           "x": 1,
+           "y": 8
+          },
+          "baseLabel": "12 cm",
+          "heightLabel": "8 cm",
+          "topLabel": "10 cm"
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area in square cm",
+             "answer": {
+              "text": "88"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 88 sq cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 9
+           },
+           {
+            "x": 17,
+            "y": 6
+           },
+           {
+            "x": 8,
+            "y": 6
+           }
+          ],
+          "apex": {
+           "x": 8,
+           "y": 6
+          },
+          "baseLabel": "9 cm",
+          "heightLabel": "6 cm",
+          "sideLabels": [
+           "10 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area in square cm",
+             "answer": {
+              "text": "54"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 54 sq cm"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "heightShape": {
+          "points": [
+           {},
+           {
+            "x": 12
+           },
+           {
+            "x": 16,
+            "y": 3
+           },
+           {
+            "x": 4,
+            "y": 3
+           }
+          ],
+          "apex": {
+           "x": 4,
+           "y": 3
+          },
+          "baseLabel": "12 cm",
+          "heightLabel": "3 cm",
+          "sideLabels": [
+           "5 cm"
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "area in square cm",
+             "answer": {
+              "text": "36"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 36 sq cm"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "polygon": {
+          "points": [
+           {},
+           {
+            "x": 5
+           },
+           {
+            "y": 4
+           }
+          ],
+          "sides": [
+           {
+            "text": "5 cm"
+           },
+           {},
+           {
+            "text": "4 cm"
+           }
+          ],
+          "markRightAngles": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "area in square cm",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area = 10 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-shape-area",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the area of right triangles, other triangles, parallelograms and trapezoids.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "The items rotate through right triangles, other triangles, parallelograms and trapezoids. Each figure shows the height as a dashed line. A parallelogram's slanted side is labeled too, so the student has to choose the height, not just any side.",
+      "misconceptions": [
+       "Using a slanted side as the height.",
+       "Forgetting to halve for a triangle."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
+     },
+     "estimatedHeight": 702
+    }
+   ],
+   "estimatedHeight": 706
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area in square cm",
+    "answer": {
+     "text": "17.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "area in square cm",
+    "answer": {
+     "text": "45"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area in square cm",
+    "answer": {
+     "text": "88"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area in square cm",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "area in square cm",
+    "answer": {
+     "text": "36"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "area in square cm",
+    "answer": {
+     "text": "10"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the area of triangles, parallelograms and trapezoids.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the area.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

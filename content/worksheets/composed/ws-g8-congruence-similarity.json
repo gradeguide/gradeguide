@@ -1,0 +1,1875 @@
+{
+ "worksheetId": "ws-g8-congruence-similarity",
+ "title": "Congruence and similarity",
+ "headerLabels": [
+  "8.G.A.1",
+  "8.G.A.1.a",
+  "8.G.A.1.b",
+  "8.G.A.1.c",
+  "8.G.A.2",
+  "8.G.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Count the lengths on the grid. Answer the questions.",
+     "explainer": "Rotations, reflections and translations keep lengths and angle measures the same. Parallel lines stay parallel.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Trapezoid A′B′C′D′ is the image of trapezoid ABCD after a rotation of 90° clockwise about the origin."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -5,
+            "label": "A"
+           },
+           {
+            "x": -1,
+            "label": "B"
+           },
+           {
+            "x": -3,
+            "y": 3,
+            "label": "C"
+           },
+           {
+            "x": -5,
+            "y": 3,
+            "label": "D"
+           },
+           {
+            "y": 5,
+            "label": "A′"
+           },
+           {
+            "y": 1,
+            "label": "B′"
+           },
+           {
+            "x": 3,
+            "y": 3,
+            "label": "C′"
+           },
+           {
+            "x": 3,
+            "y": 5,
+            "label": "D′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -5,
+            "x2": -1
+           },
+           {
+            "x1": -1,
+            "x2": -3,
+            "y2": 3
+           },
+           {
+            "x1": -3,
+            "y1": 3,
+            "x2": -5,
+            "y2": 3
+           },
+           {
+            "x1": -5,
+            "y1": 3,
+            "x2": -5
+           },
+           {
+            "y1": 5,
+            "y2": 1
+           },
+           {
+            "y1": 1,
+            "x2": 3,
+            "y2": 3
+           },
+           {
+            "x1": 3,
+            "y1": 3,
+            "x2": 3,
+            "y2": 5
+           },
+           {
+            "x1": 3,
+            "y1": 5,
+            "y2": 5
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "AB ="
+              },
+              {
+               "blank": {
+                "id": "q1",
+                "label": "AB",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A′B′ ="
+              },
+              {
+               "blank": {
+                "id": "q1-2",
+                "label": "A′B′",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "AD ="
+              },
+              {
+               "blank": {
+                "id": "q1-3",
+                "label": "AD",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A′D′ ="
+              },
+              {
+               "blank": {
+                "id": "q1-4",
+                "label": "A′D′",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "DC ="
+              },
+              {
+               "blank": {
+                "id": "q1-5",
+                "label": "DC",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "D′C′ ="
+              },
+              {
+               "blank": {
+                "id": "q1-6",
+                "label": "D′C′",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "∠A = 90°,"
+           },
+           {
+            "text": "∠A′ ="
+           },
+           {
+            "blank": {
+             "id": "q1-7",
+             "label": "angle A′",
+             "answer": {
+              "text": "90",
+              "also": [
+               "90°"
+              ]
+             }
+            }
+           },
+           {
+            "text": "°"
+           }
+          ]
+         }
+        },
+        {
+         "text": "AB ∥ DC. Is A′B′ ∥ D′C′?"
+        },
+        {
+         "choices": {
+          "options": [
+           "Yes",
+           "No"
+          ],
+          "field": {
+           "id": "q1-8",
+           "label": "A′B′ parallel to D′C′",
+           "answer": {
+            "text": "Yes"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 4; 3, 3; 2, 2; ∠A = 90°, ∠A′ = 90 °; Yes"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Trapezoid A′B′C′D′ is the image of trapezoid ABCD after a reflection across the y-axis."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -5,
+            "y": -2,
+            "label": "A"
+           },
+           {
+            "x": -1,
+            "y": -2,
+            "label": "B"
+           },
+           {
+            "x": -3,
+            "y": 1,
+            "label": "C"
+           },
+           {
+            "x": -5,
+            "y": 1,
+            "label": "D"
+           },
+           {
+            "x": 5,
+            "y": -2,
+            "label": "A′"
+           },
+           {
+            "x": 1,
+            "y": -2,
+            "label": "B′"
+           },
+           {
+            "x": 3,
+            "y": 1,
+            "label": "C′"
+           },
+           {
+            "x": 5,
+            "y": 1,
+            "label": "D′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -5,
+            "y1": -2,
+            "x2": -1,
+            "y2": -2
+           },
+           {
+            "x1": -1,
+            "y1": -2,
+            "x2": -3,
+            "y2": 1
+           },
+           {
+            "x1": -3,
+            "y1": 1,
+            "x2": -5,
+            "y2": 1
+           },
+           {
+            "x1": -5,
+            "y1": 1,
+            "x2": -5,
+            "y2": -2
+           },
+           {
+            "x1": 5,
+            "y1": -2,
+            "x2": 1,
+            "y2": -2
+           },
+           {
+            "x1": 1,
+            "y1": -2,
+            "x2": 3,
+            "y2": 1
+           },
+           {
+            "x1": 3,
+            "y1": 1,
+            "x2": 5,
+            "y2": 1
+           },
+           {
+            "x1": 5,
+            "y1": 1,
+            "x2": 5,
+            "y2": -2
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "AB ="
+              },
+              {
+               "blank": {
+                "id": "q2",
+                "label": "AB",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A′B′ ="
+              },
+              {
+               "blank": {
+                "id": "q2-2",
+                "label": "A′B′",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "AD ="
+              },
+              {
+               "blank": {
+                "id": "q2-3",
+                "label": "AD",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A′D′ ="
+              },
+              {
+               "blank": {
+                "id": "q2-4",
+                "label": "A′D′",
+                "answer": {
+                 "text": "3"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "DC ="
+              },
+              {
+               "blank": {
+                "id": "q2-5",
+                "label": "DC",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "D′C′ ="
+              },
+              {
+               "blank": {
+                "id": "q2-6",
+                "label": "D′C′",
+                "answer": {
+                 "text": "2"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "∠A = 90°,"
+           },
+           {
+            "text": "∠A′ ="
+           },
+           {
+            "blank": {
+             "id": "q2-7",
+             "label": "angle A′",
+             "answer": {
+              "text": "90",
+              "also": [
+               "90°"
+              ]
+             }
+            }
+           },
+           {
+            "text": "°"
+           }
+          ]
+         }
+        },
+        {
+         "text": "AB ∥ DC. Is A′B′ ∥ D′C′?"
+        },
+        {
+         "choices": {
+          "options": [
+           "Yes",
+           "No"
+          ],
+          "field": {
+           "id": "q2-8",
+           "label": "A′B′ parallel to D′C′",
+           "answer": {
+            "text": "Yes"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 4; 3, 3; 2, 2; ∠A = 90°, ∠A′ = 90 °; Yes"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transformation-properties",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Verify that rotations, reflections and translations keep lengths, angle measures and parallel lines.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A right trapezoid has a horizontal and a vertical side that can be counted on the grid, a right angle, and a pair of parallel sides. Students measure the figure and its image and see that each length, the angle and the parallel pair carry over. This is the evidence the standard asks for before congruence is defined.",
+      "misconceptions": [
+       "Thinking a side that turns from horizontal to vertical changes length.",
+       "Thinking a figure that is turned or flipped is no longer the same shape."
+      ]
+     },
+     "estimatedHeight": 600
+    }
+   ],
+   "estimatedHeight": 604
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Do both moves in order. Draw the final image.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Reflect triangle ABC across the x-axis. Translate the image 1 unit right."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": 3,
+            "y": 1,
+            "label": "A"
+           },
+           {
+            "x": 1,
+            "y": 3,
+            "label": "B"
+           },
+           {
+            "x": -4,
+            "y": 2,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "y1": 1,
+            "x2": 1,
+            "y2": 3
+           },
+           {
+            "x1": 1,
+            "y1": 3,
+            "x2": -4,
+            "y2": 2
+           },
+           {
+            "x1": -4,
+            "y1": 2,
+            "x2": 3,
+            "y2": 1
+           }
+          ],
+          "plotField": {
+           "id": "q3",
+           "label": "the final image of (3, 1)",
+           "answer": {
+            "text": "A″(4, −1), B″(2, −3), C″(−3, −2)"
+           }
+          },
+          "answerSegments": [
+           {
+            "x1": 3,
+            "y1": -1,
+            "x2": 1,
+            "y2": -3,
+            "dashed": true
+           },
+           {
+            "x1": 1,
+            "y1": -3,
+            "x2": -4,
+            "y2": -2,
+            "dashed": true
+           },
+           {
+            "x1": -4,
+            "y1": -2,
+            "x2": 3,
+            "y2": -1,
+            "dashed": true
+           },
+           {
+            "x1": 4,
+            "y1": -1,
+            "x2": 2,
+            "y2": -3
+           },
+           {
+            "x1": 2,
+            "y1": -3,
+            "x2": -3,
+            "y2": -2
+           },
+           {
+            "x1": -3,
+            "y1": -2,
+            "x2": 4,
+            "y2": -1
+           }
+          ],
+          "answerPoints": [
+           {
+            "x": 4,
+            "y": -1,
+            "label": "A″"
+           },
+           {
+            "x": 2,
+            "y": -3,
+            "label": "B″"
+           },
+           {
+            "x": -3,
+            "y": -2,
+            "label": "C″"
+           }
+          ],
+          "cell": 17
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A″ ("
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "A″ x",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-3",
+             "label": "A″ y",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A″(4, −1), B″(2, −3), C″(−3, −2); A″ ( 4 , −1 )"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Rotate triangle ABC 90° counterclockwise about the origin. Translate the image 1 unit right."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -3,
+            "y": -4,
+            "label": "A"
+           },
+           {
+            "x": -4,
+            "y": -3,
+            "label": "B"
+           },
+           {
+            "x": 2,
+            "y": -2,
+            "label": "C"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -3,
+            "y1": -4,
+            "x2": -4,
+            "y2": -3
+           },
+           {
+            "x1": -4,
+            "y1": -3,
+            "x2": 2,
+            "y2": -2
+           },
+           {
+            "x1": 2,
+            "y1": -2,
+            "x2": -3,
+            "y2": -4
+           }
+          ],
+          "plotField": {
+           "id": "q4",
+           "label": "the final image of (−3, −4)",
+           "answer": {
+            "text": "A″(5, −3), B″(4, −4), C″(3, 2)"
+           }
+          },
+          "answerSegments": [
+           {
+            "x1": 4,
+            "y1": -3,
+            "x2": 3,
+            "y2": -4,
+            "dashed": true
+           },
+           {
+            "x1": 3,
+            "y1": -4,
+            "x2": 2,
+            "y2": 2,
+            "dashed": true
+           },
+           {
+            "x1": 2,
+            "y1": 2,
+            "x2": 4,
+            "y2": -3,
+            "dashed": true
+           },
+           {
+            "x1": 5,
+            "y1": -3,
+            "x2": 4,
+            "y2": -4
+           },
+           {
+            "x1": 4,
+            "y1": -4,
+            "x2": 3,
+            "y2": 2
+           },
+           {
+            "x1": 3,
+            "y1": 2,
+            "x2": 5,
+            "y2": -3
+           }
+          ],
+          "answerPoints": [
+           {
+            "x": 5,
+            "y": -3,
+            "label": "A″"
+           },
+           {
+            "x": 4,
+            "y": -4,
+            "label": "B″"
+           },
+           {
+            "x": 3,
+            "y": 2,
+            "label": "C″"
+           }
+          ],
+          "cell": 17
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A″ ("
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "A″ x",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-3",
+             "label": "A″ y",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A″(5, −3), B″(4, −4), C″(3, 2); A″ ( 5 , −3 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transformation-sequences",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Carry out a sequence of two moves on a figure.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "Each item is a reflection or rotation followed by a translation. Students draw the first image lightly and move it again, so the second move acts on the image and not on the original. The answer key shows the first image dashed and the final image solid.",
+      "misconceptions": [
+       "Applying the second move to the original figure.",
+       "Doing the moves in the wrong order."
+      ]
+     },
+     "estimatedHeight": 422
+    },
+    {
+     "label": "C",
+     "instruction": "Complete the moves that take triangle ABC to triangle A″B″C″.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": -2,
+            "y": -2,
+            "label": "A"
+           },
+           {
+            "x": 1,
+            "y": -1,
+            "label": "B"
+           },
+           {
+            "x": -4,
+            "y": 1,
+            "label": "C"
+           },
+           {
+            "y": 2,
+            "label": "A″"
+           },
+           {
+            "x": -3,
+            "y": 3,
+            "label": "B″"
+           },
+           {
+            "x": 2,
+            "y": 5,
+            "label": "C″"
+           }
+          ],
+          "segments": [
+           {
+            "x1": -2,
+            "y1": -2,
+            "x2": 1,
+            "y2": -1
+           },
+           {
+            "x1": 1,
+            "y1": -1,
+            "x2": -4,
+            "y2": 1
+           },
+           {
+            "x1": -4,
+            "y1": 1,
+            "x2": -2,
+            "y2": -2
+           },
+           {
+            "y1": 2,
+            "x2": -3,
+            "y2": 3
+           },
+           {
+            "x1": -3,
+            "y1": 3,
+            "x2": 2,
+            "y2": 5
+           },
+           {
+            "x1": 2,
+            "y1": 5,
+            "y2": 2
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "text": "Reflect across the:"
+        },
+        {
+         "choices": {
+          "options": [
+           "x-axis",
+           "y-axis"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "first reflection axis",
+           "answer": {
+            "text": "y-axis"
+           }
+          }
+         }
+        },
+        {
+         "text": "Then translate. (x, y) moves to:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(x +"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "then translate x",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           },
+           {
+            "text": ", y +"
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "then translate y",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y-axis; (x + −2 , y + 4 )"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": 3,
+            "y": 3,
+            "label": "A"
+           },
+           {
+            "x": -1,
+            "y": 4,
+            "label": "B"
+           },
+           {
+            "y": 1,
+            "label": "C"
+           },
+           {
+            "x": 4,
+            "y": -4,
+            "label": "A″"
+           },
+           {
+            "y": -5,
+            "label": "B″"
+           },
+           {
+            "x": 1,
+            "y": -2,
+            "label": "C″"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 3,
+            "y1": 3,
+            "x2": -1,
+            "y2": 4
+           },
+           {
+            "x1": -1,
+            "y1": 4,
+            "y2": 1
+           },
+           {
+            "y1": 1,
+            "x2": 3,
+            "y2": 3
+           },
+           {
+            "x1": 4,
+            "y1": -4,
+            "y2": -5
+           },
+           {
+            "y1": -5,
+            "x2": 1,
+            "y2": -2
+           },
+           {
+            "x1": 1,
+            "y1": -2,
+            "x2": 4,
+            "y2": -4
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "text": "Reflect across the:"
+        },
+        {
+         "choices": {
+          "options": [
+           "x-axis",
+           "y-axis"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "first reflection axis",
+           "answer": {
+            "text": "x-axis"
+           }
+          }
+         }
+        },
+        {
+         "text": "Then translate. (x, y) moves to:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(x +"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "then translate x",
+             "answer": {
+              "text": "1"
+             }
+            }
+           },
+           {
+            "text": ", y +"
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "then translate y",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "x-axis; (x + 1 , y + −1 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-name-the-sequence",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Describe a sequence of a reflection and a translation that maps one figure onto another.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Two figures are congruent when a sequence of moves takes one onto the other. Here the sequence is a reflection and then a translation, so students first find which axis gives the right orientation, then find the slide from the reflected A to A″.",
+      "misconceptions": [
+       "Finding the translation from A to A″ without reflecting first.",
+       "Choosing the axis by where the image sits instead of by which way it faces."
+      ]
+     },
+     "estimatedHeight": 382
+    }
+   ],
+   "estimatedHeight": 812
+  },
+  {
+   "sections": [
+    {
+     "label": "D",
+     "instruction": "Is triangle A′B′C′ congruent or similar to triangle ABC?",
+     "explainer": "Congruent figures have the same shape and size. Similar figures have the same shape; one may be a dilation of the other.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "y": 2,
+            "label": "A"
+           },
+           {
+            "x": 2,
+            "label": "B"
+           },
+           {
+            "x": 1,
+            "y": -2,
+            "label": "C"
+           },
+           {
+            "x": -1,
+            "y": -3,
+            "label": "A′"
+           },
+           {
+            "x": -3,
+            "y": -1,
+            "label": "B′"
+           },
+           {
+            "x": -2,
+            "y": 1,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "y1": 2,
+            "x2": 2
+           },
+           {
+            "x1": 2,
+            "x2": 1,
+            "y2": -2
+           },
+           {
+            "x1": 1,
+            "y1": -2,
+            "y2": 2
+           },
+           {
+            "x1": -1,
+            "y1": -3,
+            "x2": -3,
+            "y2": -1
+           },
+           {
+            "x1": -3,
+            "y1": -1,
+            "x2": -2,
+            "y2": 1
+           },
+           {
+            "x1": -2,
+            "y1": 1,
+            "x2": -1,
+            "y2": -3
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Congruent",
+           "Similar, not congruent"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "congruent or similar: (−1, −3)",
+           "answer": {
+            "text": "Congruent"
+           }
+          }
+         }
+        },
+        {
+         "text": "Scale factor from ABC to A′B′C′:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "scale factor to (−1, −3)",
+             "answer": {
+              "text": "1"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "Describe a sequence of moves that takes ABC to A′B′C′."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q7-3",
+           "label": "sequence to (−1, −3)",
+           "answer": {
+            "text": "Rotate 180° about the origin, then translate 1 unit left and 1 unit down."
+           }
+          }
+         }
+        }
+       ],
+       "key": "Congruent; 1; Rotate 180° about the origin, then translate 1 unit left and 1 unit down."
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "labelEvery": 2,
+          "points": [
+           {
+            "x": 2,
+            "label": "A"
+           },
+           {
+            "y": 2,
+            "label": "B"
+           },
+           {
+            "x": -1,
+            "y": -2,
+            "label": "C"
+           },
+           {
+            "x": 4,
+            "label": "A′"
+           },
+           {
+            "y": 4,
+            "label": "B′"
+           },
+           {
+            "x": -2,
+            "y": -4,
+            "label": "C′"
+           }
+          ],
+          "segments": [
+           {
+            "x1": 2,
+            "y2": 2
+           },
+           {
+            "y1": 2,
+            "x2": -1,
+            "y2": -2
+           },
+           {
+            "x1": -1,
+            "y1": -2,
+            "x2": 2
+           },
+           {
+            "x1": 4,
+            "y2": 4
+           },
+           {
+            "y1": 4,
+            "x2": -2,
+            "y2": -4
+           },
+           {
+            "x1": -2,
+            "y1": -4,
+            "x2": 4
+           }
+          ],
+          "cell": 14
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Congruent",
+           "Similar, not congruent"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "congruent or similar: (4, 0)",
+           "answer": {
+            "text": "Similar, not congruent"
+           }
+          }
+         }
+        },
+        {
+         "text": "Scale factor from ABC to A′B′C′:"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "scale factor to (4, 0)",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "Describe a sequence of moves that takes ABC to A′B′C′."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q8-3",
+           "label": "sequence to (4, 0)",
+           "answer": {
+            "text": "Dilate by a scale factor of 2 with the origin as the center."
+           }
+          }
+         }
+        }
+       ],
+       "key": "Similar, not congruent; 2; Dilate by a scale factor of 2 with the origin as the center."
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-congruent-or-similar",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Decide whether two figures are congruent or similar, find the scale factor, and describe a sequence of moves between them.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Congruent and similar pairs are mixed, so students compare side lengths before deciding. A scale factor of 2 or 1/2 keeps every vertex on the grid. Writing the sequence of moves in words is the description the standard asks for, and the answer key gives one correct sequence.",
+      "misconceptions": [
+       "Calling a dilated figure congruent because it has the same shape.",
+       "Giving the scale factor from the image back to the figure, such as 2 for a reduction."
+      ]
+     },
+     "estimatedHeight": 518
+    }
+   ],
+   "estimatedHeight": 522
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "AB",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "A′B′",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "AD",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "A′D′",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-5",
+    "label": "DC",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-6",
+    "label": "D′C′",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-7",
+    "label": "angle A′",
+    "answer": {
+     "text": "90",
+     "also": [
+      "90°"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-8",
+    "label": "A′B′ parallel to D′C′",
+    "answer": {
+     "text": "Yes"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "AB",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "A′B′",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "AD",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "A′D′",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-5",
+    "label": "DC",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-6",
+    "label": "D′C′",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-7",
+    "label": "angle A′",
+    "answer": {
+     "text": "90",
+     "also": [
+      "90°"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-8",
+    "label": "A′B′ parallel to D′C′",
+    "answer": {
+     "text": "Yes"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the final image of (3, 1)",
+    "answer": {
+     "text": "A″(4, −1), B″(2, −3), C″(−3, −2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "A″ x",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "A″ y",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the final image of (−3, −4)",
+    "answer": {
+     "text": "A″(5, −3), B″(4, −4), C″(3, 2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "A″ x",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "A″ y",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "first reflection axis",
+    "answer": {
+     "text": "y-axis"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "then translate x",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "then translate y",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "first reflection axis",
+    "answer": {
+     "text": "x-axis"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "then translate x",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "then translate y",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "congruent or similar: (−1, −3)",
+    "answer": {
+     "text": "Congruent"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "scale factor to (−1, −3)",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "sequence to (−1, −3)",
+    "answer": {
+     "text": "Rotate 180° about the origin, then translate 1 unit left and 1 unit down."
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "congruent or similar: (4, 0)",
+    "answer": {
+     "text": "Similar, not congruent"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "scale factor to (4, 0)",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "sequence to (4, 0)",
+    "answer": {
+     "text": "Dilate by a scale factor of 2 with the origin as the center."
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Show that rigid motions keep lengths and angles, and use sequences of moves to show figures congruent or similar.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

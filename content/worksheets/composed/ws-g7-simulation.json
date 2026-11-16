@@ -1,0 +1,276 @@
+{
+ "worksheetId": "ws-g7-simulation",
+ "title": "Simulating chance events",
+ "headerLabels": [
+  "7.SP.C.8.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Use the random digits to simulate the event.",
+     "explainer": "Each digit from 0 to 9 is equally likely. For a 30% chance, let 3 of the 10 digits, 0 to 2, stand for a success.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A prize is in 40% of cereal boxes. Simulate buying 3 boxes."
+        },
+        {
+         "text": "Each group of 3 digits is one trial. Starting at 0, choose the digits that stand for a box with a prize."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Digits: 0 to"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "digits for a box with a prize",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "671   034   865   455   610   277   496   558   714   778"
+        },
+        {
+         "text": "594   621   218   842   585   579   385   155   978   465"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Trials in which at least 1 box has a prize:"
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "trials: A prize is in 40% of cereal boxes. Simulate buying 3 boxes.",
+             "answer": {
+              "text": "10"
+             }
+            }
+           },
+           {
+            "text": "out of 20"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Estimated probability:"
+           },
+           {
+            "blank": {
+             "id": "q1-3",
+             "label": "estimate: A prize is in 40% of cereal boxes. Simulate buying 3 boxes.",
+             "answer": {
+              "text": "10/20",
+              "also": [
+               "1/2",
+               "0.5",
+               "50%"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Digits: 0 to 3; Trials in which at least 1 box has a prize: 10 out of 20; Estimated probability: 10/20"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A guess on a true-false question is right 50% of the time. Simulate guessing on 4 questions."
+        },
+        {
+         "text": "Each group of 4 digits is one trial. Starting at 0, choose the digits that stand for a right answer."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Digits: 0 to"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "digits for a right answer",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "4002   5447   9600   4971   1944   1264   0833   7062   0918   8408"
+        },
+        {
+         "text": "0572   0279   6551   7457   1501   2806   9200   0951   4509   6224"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Trials in which at least 3 guesses are right:"
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "trials: A guess on a true-false question is right 50% of the time. Simulate guessing on 4 questions.",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "out of 20"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Estimated probability:"
+           },
+           {
+            "blank": {
+             "id": "q2-3",
+             "label": "estimate: A guess on a true-false question is right 50% of the time. Simulate guessing on 4 questions.",
+             "answer": {
+              "text": "7/20",
+              "also": [
+               "0.35",
+               "35%"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Digits: 0 to 4; Trials in which at least 3 guesses are right: 7 out of 20; Estimated probability: 7/20"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-simulation",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Design and use a simulation with random digits to estimate the probability of a compound event.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Random digits are the classroom tool for simulating chances given in tenths. Students choose the digits that stand for a success, then mark each group of digits as one trial and count the trials where the event happens. Twenty trials per item keep the counting short and give an estimate to compare with a classmate's.",
+      "misconceptions": [
+       "Counting single digits instead of whole groups as trials.",
+       "Expecting the estimate to equal the exact probability."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 628
+    }
+   ],
+   "estimatedHeight": 632
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "digits for a box with a prize",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "trials: A prize is in 40% of cereal boxes. Simulate buying 3 boxes.",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "estimate: A prize is in 40% of cereal boxes. Simulate buying 3 boxes.",
+    "answer": {
+     "text": "10/20",
+     "also": [
+      "1/2",
+      "0.5",
+      "50%"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "digits for a right answer",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "trials: A guess on a true-false question is right 50% of the time. Simulate guessing on 4 questions.",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "estimate: A guess on a true-false question is right 50% of the time. Simulate guessing on 4 questions.",
+    "answer": {
+     "text": "7/20",
+     "also": [
+      "0.35",
+      "35%"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Estimate probabilities of compound events by simulation with random digits.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -70,6 +70,7 @@ import { commas, mixed } from './draw.js';
 import { generateShapes } from './kinds_shapes.js';
 import { generateK2 } from './kinds_k2.js';
 import { generateG5 } from './kinds_g5.js';
+import { generateG68 } from './kinds_g68.js';
 import { type Rng } from './rng.js';
 
 // Ctx is what a generator gets: random numbers, field ids, and a check that
@@ -126,6 +127,10 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
   const g5 = generateG5(kind, ctx);
   if (g5) {
     return g5;
+  }
+  const g68 = generateG68(kind, ctx);
+  if (g68) {
+    return g68;
   }
   const { rng } = ctx;
   const k = kind.kind;

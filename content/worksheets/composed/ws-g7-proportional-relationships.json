@@ -1,0 +1,959 @@
+{
+ "worksheetId": "ws-g7-proportional-relationships",
+ "title": "Proportional relationships",
+ "headerLabels": [
+  "7.RP.A.1",
+  "7.RP.A.2.a",
+  "7.RP.A.2",
+  "7.RP.A.2.b",
+  "7.RP.A.2.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the unit rate.",
+     "explainer": "Divide the amount by the time: 1/2 mile in 1/4 hour is 1/2 ÷ 1/4 = 2 miles per hour.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "Omar walks 1/2 mile in 1/6 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "miles per hour",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 miles per hour"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Lena walks 1 mile in 1/4 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "miles per hour",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 miles per hour"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A painter covers 1 1/3 walls in 1/3 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q3",
+             "label": "walls per hour",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "walls per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 walls per hour"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "Omar walks 3/4 mile in 1/2 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q4",
+             "label": "miles per hour",
+             "answer": {
+              "text": "1 1/2",
+              "also": [
+               "11/2",
+               "3/2"
+              ]
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1 1/2 miles per hour"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A painter covers 3 walls in 1/2 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q5",
+             "label": "walls per hour",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "walls per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 walls per hour"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Zoe walks 3 miles in 3/4 hour."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q6",
+             "label": "miles per hour",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "miles per hour"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 miles per hour"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-unit-rate-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find unit rates from ratios of fractions.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Grade 7 extends unit rates to quantities given as fractions, such as 1/2 mile in 1/4 hour. Every item is a distance or a part of a job in a fraction of an hour, so the student always divides the amount by the time. The answers are whole numbers or simple fractions, so the effort goes into the division of fractions, not into messy arithmetic.",
+      "misconceptions": [
+       "Dividing the time by the distance, which gives hours per mile.",
+       "Multiplying 1/2 by 1/4 because both are fractions, which gives a rate smaller than the distance."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 504
+    },
+    {
+     "label": "B",
+     "instruction": "Is y proportional to x? Check one.",
+     "explainer": "In a proportional table, y ÷ x is the same in every row.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "17"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "text": "59"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "text": "73"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "12"
+             },
+             {
+              "text": "87"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "proportional",
+           "not proportional"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "is the table proportional",
+           "answer": {
+            "text": "not proportional"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not proportional"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "8"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "text": "32"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "text": "40"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "12"
+             },
+             {
+              "text": "48"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "proportional",
+           "not proportional"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "is the table proportional",
+           "answer": {
+            "text": "proportional"
+           }
+          }
+         }
+        }
+       ],
+       "key": "proportional"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-proportional-or-not",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Decide whether a table shows a proportional relationship.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A table is the first place grade 7 meets the test for a proportional relationship. Half the tables follow y = kx and half follow y = kx + b, so a table that grows steadily is not enough to say yes. The explainer names the test, y ÷ x in every row, so the student has one test to apply.",
+      "misconceptions": [
+       "Calling any table that goes up by the same amount proportional, even y = 2x + 3.",
+       "Checking only the first row instead of every row."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 264
+    }
+   ],
+   "estimatedHeight": 776
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Is y proportional to x? Check one.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "11"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "21"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "text": "51"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "12"
+             },
+             {
+              "text": "61"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "proportional",
+           "not proportional"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "is the table proportional",
+           "answer": {
+            "text": "not proportional"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not proportional"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "12"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": "18"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "text": "30"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "12"
+             },
+             {
+              "text": "36"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "proportional",
+           "not proportional"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "is the table proportional",
+           "answer": {
+            "text": "proportional"
+           }
+          }
+         }
+        }
+       ],
+       "key": "proportional"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-proportional-or-not",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Decide whether a table shows a proportional relationship.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "A table is the first place grade 7 meets the test for a proportional relationship. Half the tables follow y = kx and half follow y = kx + b, so a table that grows steadily is not enough to say yes. The explainer names the test, y ÷ x in every row, so the student has one test to apply.",
+      "misconceptions": [
+       "Calling any table that goes up by the same amount proportional, even y = 2x + 3.",
+       "Checking only the first row instead of every row."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 238
+    },
+    {
+     "label": "C",
+     "instruction": "Find the constant of proportionality, k. Write the equation.",
+     "explainer": "In a proportional table, y ÷ x is the same in every row. That number is k, and the equation is y = kx.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "12"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "24"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "text": "48"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "10"
+             },
+             {
+              "text": "60"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "k ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "constant of proportionality",
+             "answer": {
+              "text": "6"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q11-2",
+             "label": "the equation",
+             "answer": {
+              "text": "6x",
+              "also": [
+               "6 × x",
+               "6×x"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "k = 6; Equation: y = 6x"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "14"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": "42"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "8"
+             },
+             {
+              "text": "56"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "12"
+             },
+             {
+              "text": "84"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "k ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "constant of proportionality",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Equation: y ="
+           },
+           {
+            "blank": {
+             "id": "q12-2",
+             "label": "the equation",
+             "answer": {
+              "text": "7x",
+              "also": [
+               "7 × x",
+               "7×x"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "k = 7; Equation: y = 7x"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-constant-of-proportionality",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the constant of proportionality from a table and write y = kx.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Once a table is known to be proportional, the student finds k and writes y = kx. Some constants are halves, such as 2.5, so the student divides y by x rather than spotting a times-table fact. Writing the equation straight after finding k joins the table and the equation.",
+      "misconceptions": [
+       "Using the difference between rows as the constant instead of y ÷ x.",
+       "Writing the equation as x = ky."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 344
+    }
+   ],
+   "estimatedHeight": 590
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "miles per hour",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "miles per hour",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "walls per hour",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "miles per hour",
+    "answer": {
+     "text": "1 1/2",
+     "also": [
+      "11/2",
+      "3/2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "walls per hour",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "miles per hour",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "is the table proportional",
+    "answer": {
+     "text": "not proportional"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "is the table proportional",
+    "answer": {
+     "text": "proportional"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "is the table proportional",
+    "answer": {
+     "text": "not proportional"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "is the table proportional",
+    "answer": {
+     "text": "proportional"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "constant of proportionality",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11-2",
+    "label": "the equation",
+    "answer": {
+     "text": "6x",
+     "also": [
+      "6 × x",
+      "6×x"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "constant of proportionality",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12-2",
+    "label": "the equation",
+    "answer": {
+     "text": "7x",
+     "also": [
+      "7 × x",
+      "7×x"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find unit rates with fractions, and recognize proportional tables and their constants.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Find the unit rate.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

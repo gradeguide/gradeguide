@@ -1,0 +1,562 @@
+{
+ "worksheetId": "ws-g7-sampling",
+ "title": "Samples and comparing groups",
+ "headerLabels": [
+  "7.SP.A.1",
+  "7.SP.A.2",
+  "7.SP.B.3",
+  "7.SP.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Is the sample representative or biased? Check one.",
+     "explainer": "A representative sample is chosen at random from the whole group, so every member has the same chance.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "To find how often people in a town use the library, ask people leaving the library."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "biased"
+           }
+          }
+         }
+        }
+       ],
+       "key": "biased"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "To find the favorite sport at a school, ask the 30 students on the soccer team."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "biased"
+           }
+          }
+         }
+        }
+       ],
+       "key": "biased"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "To find the average height of seventh graders in a state, measure 50 picked at random from all of them."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "representative"
+           }
+          }
+         }
+        }
+       ],
+       "key": "representative"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "To find how late students go to bed, draw 25 names from a hat that holds every student's name."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "representative"
+           }
+          }
+         }
+        }
+       ],
+       "key": "representative"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "To find the favorite sport at a school, ask 30 students picked at random from the school list."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "representative"
+           }
+          }
+         }
+        }
+       ],
+       "key": "representative"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "To find how much people like a new movie, ask people as they leave a fan club meeting for it."
+        },
+        {
+         "choices": {
+          "options": [
+           "representative",
+           "biased"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is the sample representative",
+           "answer": {
+            "text": "biased"
+           }
+          }
+         }
+        }
+       ],
+       "key": "biased"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-samples",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Tell a random, representative sample from a biased one.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each item describes how a sample was chosen, and the student decides whether it represents the whole group. The biased samples are the kind students meet: asking library users about library use, or a fan club about a film. A random sample from the whole group is the answer every time it is representative.",
+      "misconceptions": [
+       "Thinking a bigger sample is always a fair one, even if it is chosen from one group.",
+       "Thinking a random sample must give exactly the same results as the whole group."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 532
+    },
+    {
+     "label": "B",
+     "instruction": "Use the sample to estimate. Show your work.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "In a random sample of 50 students, 12 walk to school. There are 600 students in the school. About how many walk?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q7",
+           "label": "students who walk",
+           "answer": {
+            "text": "144",
+            "also": [
+             "about 144"
+            ],
+            "work": "600 ÷ 50 × 12"
+           }
+          }
+         }
+        }
+       ],
+       "key": "144"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-inference-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use data from a random sample to estimate a count in the whole group.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A random sample stands in for the whole group, so the student scales the sample's count up to the group's size. The numbers divide evenly, so the reasoning is clear. The last item asks for a percent, which is the same reasoning with a whole of 100.",
+      "misconceptions": [
+       "Using the sample count as the answer for the whole group.",
+       "Dividing the group size by the sample count and stopping there."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 222
+    }
+   ],
+   "estimatedHeight": 762
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Use the sample to estimate. Show your work.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A farmer checks 40 apples picked at random and finds 3 bruised. About how many of her 2,000 apples are bruised?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q8",
+           "label": "bruised apples",
+           "answer": {
+            "text": "150",
+            "also": [
+             "about 150"
+            ],
+            "work": "2,000 ÷ 40 × 3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "150"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "In a random sample of 80 voters, 52 support a new park. About what percent of all voters support it?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q9",
+           "label": "percent who support",
+           "answer": {
+            "text": "65",
+            "also": [
+             "65%"
+            ],
+            "work": "52 ÷ 80 × 100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "65"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-inference-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Use data from a random sample to estimate a count in the whole group.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A random sample stands in for the whole group, so the student scales the sample's count up to the group's size. The numbers divide evenly, so the reasoning is clear. The last item asks for a percent, which is the same reasoning with a whole of 100.",
+      "misconceptions": [
+       "Using the sample count as the answer for the whole group.",
+       "Dividing the group size by the sample count and stopping there."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 410
+    },
+    {
+     "label": "C",
+     "instruction": "Compare the two groups.",
+     "explainer": "Dividing the difference in means by the mean absolute deviation shows how far apart the groups are.",
+     "items": [
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "Hours of sleep, group A: 10, 8, 8, 7, 7"
+        },
+        {
+         "text": "Hours of sleep, group B: 9, 9, 10, 10, 12"
+        },
+        {
+         "text": "Each group has a mean absolute deviation of 0.8."
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean of A:"
+              },
+              {
+               "blank": {
+                "id": "q10",
+                "label": "mean of group A",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean of B:"
+              },
+              {
+               "blank": {
+                "id": "q10-2",
+                "label": "mean of group B",
+                "answer": {
+                 "text": "10"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The difference in means is"
+           },
+           {
+            "blank": {
+             "id": "q10-3",
+             "label": "difference in means as a multiple of the MAD",
+             "answer": {
+              "text": "2.5"
+             }
+            }
+           },
+           {
+            "text": "times the MAD."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8, 10; The difference in means is 2.5 times the MAD."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-compare-groups",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare two groups by their means, measured against their spread.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Two groups with the same spread differ only in their centers, so the student compares means and then measures the gap in MADs, as the standard asks. MAD is the mean absolute deviation, the average distance of the data from the mean. The data sets are small and the means are whole numbers, so the student can check the arithmetic.",
+      "misconceptions": [
+       "Comparing the largest values instead of the centers.",
+       "Thinking any difference in means shows the groups are really different, whatever the spread."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 254
+    }
+   ],
+   "estimatedHeight": 672
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "biased"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "biased"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "representative"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "representative"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "representative"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is the sample representative",
+    "answer": {
+     "text": "biased"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "students who walk",
+    "answer": {
+     "text": "144",
+     "also": [
+      "about 144"
+     ],
+     "work": "600 ÷ 50 × 12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "bruised apples",
+    "answer": {
+     "text": "150",
+     "also": [
+      "about 150"
+     ],
+     "work": "2,000 ÷ 40 × 3"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "percent who support",
+    "answer": {
+     "text": "65",
+     "also": [
+      "65%"
+     ],
+     "work": "52 ÷ 80 × 100"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "mean of group A",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "mean of group B",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-3",
+    "label": "difference in means as a multiple of the MAD",
+    "answer": {
+     "text": "2.5"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Judge samples, estimate from them, and compare two groups.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "Section \"Compare the two groups.\" was cut from 2 to 1 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

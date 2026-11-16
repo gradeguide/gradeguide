@@ -1,0 +1,1131 @@
+{
+ "worksheetId": "ws-g6-coordinates",
+ "title": "The coordinate plane",
+ "headerLabels": [
+  "6.NS.C.6.b",
+  "6.NS.C.6.c",
+  "6.NS.C.8",
+  "6.G.A.3"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the coordinates of P. Check its quadrant.",
+     "explainer": "Quadrant I is (+, +), II is (−, +), III is (−, −) and IV is (+, −).",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -5,
+            "y": 5,
+            "label": "P"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "P x",
+             "answer": {
+              "text": "−5",
+              "also": [
+               "-5"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q1-2",
+             "label": "P y",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Quadrant:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "I",
+           "II",
+           "III",
+           "IV"
+          ],
+          "field": {
+           "id": "q1-3",
+           "label": "quadrant of (−5, 5)",
+           "answer": {
+            "text": "II"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P ( −5 , 5 ); II"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -1,
+            "y": -4,
+            "label": "P"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "P x",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q2-2",
+             "label": "P y",
+             "answer": {
+              "text": "−4",
+              "also": [
+               "-4"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Quadrant:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "I",
+           "II",
+           "III",
+           "IV"
+          ],
+          "field": {
+           "id": "q2-3",
+           "label": "quadrant of (−1, −4)",
+           "answer": {
+            "text": "III"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P ( −1 , −4 ); III"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": 5,
+            "y": 4,
+            "label": "P"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "P x",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q3-2",
+             "label": "P y",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Quadrant:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "I",
+           "II",
+           "III",
+           "IV"
+          ],
+          "field": {
+           "id": "q3-3",
+           "label": "quadrant of (5, 4)",
+           "answer": {
+            "text": "I"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P ( 5 , 4 ); I"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": 5,
+            "y": -3,
+            "label": "P"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "P"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "P x",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q4-2",
+             "label": "P y",
+             "answer": {
+              "text": "−3",
+              "also": [
+               "-3"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Quadrant:"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "I",
+           "II",
+           "III",
+           "IV"
+          ],
+          "field": {
+           "id": "q4-3",
+           "label": "quadrant of (5, −3)",
+           "answer": {
+            "text": "IV"
+           }
+          }
+         }
+        }
+       ],
+       "key": "P ( 5 , −3 ); IV"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-quadrants",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Name the quadrant of a point from the signs of its coordinates.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each point is in a different quadrant, so all four sign patterns appear. The student writes the coordinates before naming the quadrant, so the signs come from reading the grid. The explainer gives the sign pattern for each quadrant to check against.",
+      "misconceptions": [
+       "Reading the y coordinate first."
+      ]
+     },
+     "estimatedHeight": 788
+    }
+   ],
+   "estimatedHeight": 792
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Plot the reflection. Write its coordinates.",
+     "explainer": "A reflection across the x-axis changes the sign of y. Across the y-axis, it changes the sign of x.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Plot A′, the reflection of A across the y-axis."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -2,
+            "y": 2,
+            "label": "A"
+           }
+          ],
+          "plotField": {
+           "id": "q5",
+           "label": "the reflection plotted",
+           "answer": {
+            "text": "A′ at (2, 2)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′ at (2, 2); A′ ( 2 , 2 )"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Plot A′, the reflection of A across the x-axis."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -2,
+            "y": -5,
+            "label": "A"
+           }
+          ],
+          "plotField": {
+           "id": "q6",
+           "label": "the reflection plotted",
+           "answer": {
+            "text": "A′ at (−2, 5)"
+           }
+          }
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A′"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "A′ x",
+             "answer": {
+              "text": "−2",
+              "also": [
+               "-2"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "A′ y",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A′ at (−2, 5); A′ ( −2 , 5 )"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g6-reflect-points",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Reflect a point across an axis by changing the sign of one coordinate.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "The student plots the reflection on the grid and then writes its coordinates. Seeing the point flip over the axis shows which sign changes. Reflections across both axes are mixed so the student cannot use one rule for all.",
+      "misconceptions": [
+       "Changing the sign of the coordinate named by the axis: across the x-axis, changing x."
+      ]
+     },
+     "estimatedHeight": 436
+    },
+    {
+     "label": "C",
+     "instruction": "Find the distance between the points.",
+     "explainer": "When the points are on opposite sides of an axis, add their distances from the axis. From −3 to 5 is 3 + 5 = 8.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": 1,
+            "y": -2,
+            "label": "A"
+           },
+           {
+            "x": 1,
+            "y": 2,
+            "label": "B"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A(1, −2) to B(1, 2):"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "distance from (1, −2) to (1, 2)",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A(1, −2) to B(1, 2): 4 units"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-distance-on-grid",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the distance between two points that share an x or a y coordinate.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The two points share a coordinate and lie on opposite sides of an axis. The student adds the two distances from the axis, using absolute value. The grid lets the student count to check.",
+      "misconceptions": [
+       "Subtracting the numbers without their signs: from −3 to 5 is 2."
+      ]
+     },
+     "estimatedHeight": 372
+    }
+   ],
+   "estimatedHeight": 816
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Find the distance between the points.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -6,
+            "y": 3,
+            "label": "A"
+           },
+           {
+            "x": -6,
+            "y": -2,
+            "label": "B"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "A(−6, 3) to B(−6, −2):"
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "distance from (−6, 3) to (−6, −2)",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "units"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "A(−6, 3) to B(−6, −2): 5 units"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-distance-on-grid",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the distance between two points that share an x or a y coordinate.",
+      "principles": [
+       "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "The two points share a coordinate and lie on opposite sides of an axis. The student adds the two distances from the axis, using absolute value. The grid lets the student count to check.",
+      "misconceptions": [
+       "Subtracting the numbers without their signs: from −3 to 5 is 2."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 326
+    },
+    {
+     "label": "D",
+     "instruction": "Find point D. Then find the side lengths and the area.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A(−1, 2), B(5, 2) and C(5, −5) are corners of rectangle ABCD."
+        },
+        {
+         "coordinatePlane": {
+          "xMin": -6,
+          "xMax": 6,
+          "yMin": -6,
+          "yMax": 6,
+          "points": [
+           {
+            "x": -1,
+            "y": 2,
+            "label": "A"
+           },
+           {
+            "x": 5,
+            "y": 2,
+            "label": "B"
+           },
+           {
+            "x": 5,
+            "y": -5,
+            "label": "C"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "D"
+           },
+           {
+            "text": "("
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "D x",
+             "answer": {
+              "text": "−1",
+              "also": [
+               "-1"
+              ]
+             }
+            }
+           },
+           {
+            "text": ","
+           },
+           {
+            "blank": {
+             "id": "q9-2",
+             "label": "D y",
+             "answer": {
+              "text": "−5",
+              "also": [
+               "-5"
+              ]
+             }
+            }
+           },
+           {
+            "text": ")"
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "AB ="
+              },
+              {
+               "blank": {
+                "id": "q9-3",
+                "label": "length of AB",
+                "answer": {
+                 "text": "6"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "BC ="
+              },
+              {
+               "blank": {
+                "id": "q9-4",
+                "label": "length of BC",
+                "answer": {
+                 "text": "7"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Area ="
+              },
+              {
+               "blank": {
+                "id": "q9-5",
+                "label": "area of the rectangle",
+                "answer": {
+                 "text": "42"
+                }
+               }
+              },
+              {
+               "text": "sq units"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "D ( −1 , −5 ); 6, 7, 42"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-rectangle-on-grid",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Find side lengths and area of a rectangle from the coordinates of its corners.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "This combines plotting, distance and area in one problem, as 6.G.A.3 asks. The fourth corner must be found from the other three. Side lengths cross an axis, so the student uses distance across zero.",
+      "misconceptions": [
+       "Finding a side length by subtracting coordinates without their signs."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for Geometry, K-6"
+      ]
+     },
+     "estimatedHeight": 396
+    }
+   ],
+   "estimatedHeight": 730
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "P x",
+    "answer": {
+     "text": "−5",
+     "also": [
+      "-5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "P y",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "quadrant of (−5, 5)",
+    "answer": {
+     "text": "II"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "P x",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "P y",
+    "answer": {
+     "text": "−4",
+     "also": [
+      "-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "quadrant of (−1, −4)",
+    "answer": {
+     "text": "III"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "P x",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "P y",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "quadrant of (5, 4)",
+    "answer": {
+     "text": "I"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "P x",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "P y",
+    "answer": {
+     "text": "−3",
+     "also": [
+      "-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "quadrant of (5, −3)",
+    "answer": {
+     "text": "IV"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the reflection plotted",
+    "answer": {
+     "text": "A′ at (2, 2)"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the reflection plotted",
+    "answer": {
+     "text": "A′ at (−2, 5)"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "A′ x",
+    "answer": {
+     "text": "−2",
+     "also": [
+      "-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "A′ y",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "distance from (1, −2) to (1, 2)",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "distance from (−6, 3) to (−6, −2)",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "D x",
+    "answer": {
+     "text": "−1",
+     "also": [
+      "-1"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "D y",
+    "answer": {
+     "text": "−5",
+     "also": [
+      "-5"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-3",
+    "label": "length of AB",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-4",
+    "label": "length of BC",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-5",
+    "label": "area of the rectangle",
+    "answer": {
+     "text": "42"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use the signs of coordinates for quadrants, reflections and distances.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "Section \"Plot the reflection. Write its coordinates.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

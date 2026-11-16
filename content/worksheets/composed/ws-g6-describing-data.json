@@ -1,0 +1,720 @@
+{
+ "worksheetId": "ws-g6-describing-data",
+ "title": "Describing a data set",
+ "headerLabels": [
+  "6.SP.B.5.a",
+  "6.SP.B.5.b",
+  "6.SP.B.5.d",
+  "6.SP.B.5.c"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Read about the study. Answer the questions.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit."
+        },
+        {
+         "text": "Data: 66, 48, 49, 51, 56, 58, 64, 62, 53"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "What was measured?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Number of mornings",
+           "Depth of the pond",
+           "Temperature of the pond water"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "attribute: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+           "answer": {
+            "text": "Temperature of the pond water"
+           }
+          }
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Unit:"
+              },
+              {
+               "blank": {
+                "id": "q1-2",
+                "label": "unit: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+                "answer": {
+                 "text": "degrees Fahrenheit",
+                 "also": [
+                  "degreesFahrenheit",
+                  "degrees",
+                  "°F",
+                  "degrees F",
+                  "degreesF",
+                  "F"
+                 ]
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Number of values:"
+              },
+              {
+               "blank": {
+                "id": "q1-3",
+                "label": "number of values: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+                "answer": {
+                 "text": "9"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Tool used:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "Thermometer",
+              "Measuring tape",
+              "Meter stick"
+             ],
+             "field": {
+              "id": "q1-4",
+              "label": "tool: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+              "answer": {
+               "text": "Thermometer"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Temperature of the pond water; degrees Fahrenheit, 9; Thermometer"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "Students weighed their backpacks on the morning of a school day, to the nearest pound."
+        },
+        {
+         "text": "Data: 16, 11, 8, 19, 8, 19, 8, 16"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "What was measured?"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "Color of each backpack",
+           "Weight of each backpack",
+           "Number of books in each backpack"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "attribute: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+           "answer": {
+            "text": "Weight of each backpack"
+           }
+          }
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Unit:"
+              },
+              {
+               "blank": {
+                "id": "q2-2",
+                "label": "unit: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+                "answer": {
+                 "text": "pounds",
+                 "also": [
+                  "pound",
+                  "lb"
+                 ]
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Number of values:"
+              },
+              {
+               "blank": {
+                "id": "q2-3",
+                "label": "number of values: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+                "answer": {
+                 "text": "8"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Tool used:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "Measuring tape",
+              "Scale",
+              "Meter stick"
+             ],
+             "field": {
+              "id": "q2-4",
+              "label": "tool: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+              "answer": {
+               "text": "Scale"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Weight of each backpack; pounds, 8; Scale"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-describe-data",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Describe a data set by what was measured, how it was measured, its unit, and the number of values.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "A data summary starts by saying what the numbers are. Each study names a real attribute, a tool and a unit, and the distractors are other things the class might have counted or measured. Counting the values is the number of observations the standard asks students to report.",
+      "misconceptions": [
+       "Naming the people or things studied as the attribute, such as \"the students\" instead of their plank times.",
+       "Leaving off the unit, so 34 could be seconds or minutes."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 494
+    }
+   ],
+   "estimatedHeight": 498
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the mean and the median. Choose the better measure of center.",
+     "explainer": "When one value is far from the rest, the median describes a typical value better than the mean.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "linePlot": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "counts": [
+           0,
+           1,
+           2,
+           2,
+           3,
+           2,
+           2,
+           1,
+           0,
+           0,
+           0
+          ],
+          "caption": "Pets owned by each student"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q3",
+                "label": "mean: 0,1,2,2,3,2,2,1,0,0,0",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q3-2",
+                "label": "median: 0,1,2,2,3,2,2,1,0,0,0",
+                "answer": {
+                 "text": "4"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Better measure of center:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "Mean",
+              "Median"
+             ],
+             "field": {
+              "id": "q3-3",
+              "label": "better center: 0,1,2,2,3,2,2,1,0,0,0",
+              "answer": {
+               "text": "Mean"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "Explain your choice."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q3-4",
+           "label": "why: 0,1,2,2,3,2,2,1,0,0,0",
+           "answer": {
+            "text": "Mean. The data are balanced around the middle, so the mean and median are equal and the mean uses every value."
+           }
+          }
+         }
+        }
+       ],
+       "key": "4, 4; Mean; Mean. The data are balanced around the middle, so the mean and median are equal and the mean uses every value."
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "linePlot": {
+          "end": 10,
+          "partsPerUnit": 1,
+          "counts": [
+           2,
+           3,
+           1,
+           0,
+           3,
+           0,
+           0,
+           0,
+           0,
+           1,
+           0
+          ],
+          "caption": "Books each student read this month"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Mean:"
+              },
+              {
+               "blank": {
+                "id": "q4",
+                "label": "mean: 2,3,1,0,3,0,0,0,0,1,0",
+                "answer": {
+                 "text": "2.6"
+                }
+               }
+              }
+             ]
+            }
+           },
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Median:"
+              },
+              {
+               "blank": {
+                "id": "q4-2",
+                "label": "median: 2,3,1,0,3,0,0,0,0,1,0",
+                "answer": {
+                 "text": "1.5"
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Better measure of center:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "Mean",
+              "Median"
+             ],
+             "field": {
+              "id": "q4-3",
+              "label": "better center: 2,3,1,0,3,0,0,0,0,1,0",
+              "answer": {
+               "text": "Median"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "text": "Explain your choice."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q4-4",
+           "label": "why: 2,3,1,0,3,0,0,0,0,1,0",
+           "answer": {
+            "text": "Median. The value 9 is far from the rest and pulls the mean up, so the median is closer to most values."
+           }
+          }
+         }
+        }
+       ],
+       "key": "2.6, 1.5; Median; Median. The value 9 is far from the rest and pulls the mean up, so the median is closer to most values."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g6-choose-center",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Choose the mean or the median to describe a data set from the shape of its dot plot.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "One plot is balanced and one has a value far from the rest. Students compute both measures first, so they see the far value pull the mean away from where most data sit. The written reason asks students to connect the choice to the shape of the plot.",
+      "misconceptions": [
+       "Always choosing the mean because it uses every value.",
+       "Thinking the mean and the median are always close."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Statistics and Probability, 6-8"
+      ]
+     },
+     "estimatedHeight": 814
+    }
+   ],
+   "estimatedHeight": 818
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "attribute: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+    "answer": {
+     "text": "Temperature of the pond water"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "unit: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+    "answer": {
+     "text": "degrees Fahrenheit",
+     "also": [
+      "degreesFahrenheit",
+      "degrees",
+      "°F",
+      "degrees F",
+      "degreesF",
+      "F"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "number of values: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "tool: A class recorded the water temperature of a pond each morning, to the nearest degree Fahrenheit.",
+    "answer": {
+     "text": "Thermometer"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "attribute: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+    "answer": {
+     "text": "Weight of each backpack"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "unit: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+    "answer": {
+     "text": "pounds",
+     "also": [
+      "pound",
+      "lb"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "number of values: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "tool: Students weighed their backpacks on the morning of a school day, to the nearest pound.",
+    "answer": {
+     "text": "Scale"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "mean: 0,1,2,2,3,2,2,1,0,0,0",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "median: 0,1,2,2,3,2,2,1,0,0,0",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-3",
+    "label": "better center: 0,1,2,2,3,2,2,1,0,0,0",
+    "answer": {
+     "text": "Mean"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-4",
+    "label": "why: 0,1,2,2,3,2,2,1,0,0,0",
+    "answer": {
+     "text": "Mean. The data are balanced around the middle, so the mean and median are equal and the mean uses every value."
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "mean: 2,3,1,0,3,0,0,0,0,1,0",
+    "answer": {
+     "text": "2.6"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "median: 2,3,1,0,3,0,0,0,0,1,0",
+    "answer": {
+     "text": "1.5"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-3",
+    "label": "better center: 2,3,1,0,3,0,0,0,0,1,0",
+    "answer": {
+     "text": "Median"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-4",
+    "label": "why: 2,3,1,0,3,0,0,0,0,1,0",
+    "answer": {
+     "text": "Median. The value 9 is far from the rest and pulls the mean up, so the median is closer to most values."
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Report what a data set measures and choose a measure of center that fits its shape.",
+  "principles": [
+   "PRINCIPLE_SELF_EXPLANATION"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

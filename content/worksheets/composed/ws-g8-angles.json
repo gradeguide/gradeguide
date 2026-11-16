@@ -1,0 +1,667 @@
+{
+ "worksheetId": "ws-g8-angles",
+ "title": "Angles in triangles and parallel lines",
+ "headerLabels": [
+  "8.G.A.5"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the angle in the box.",
+     "explainer": "The angles of a triangle add to 180°.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 38,
+          "right": 37,
+          "labels": [
+           {
+            "text": "38°"
+           },
+           {
+            "field": {
+             "id": "q1",
+             "label": "the missing angle",
+             "answer": {
+              "text": "37°",
+              "also": [
+               "37"
+              ]
+             }
+            }
+           },
+           {
+            "text": "105°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "37°"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 68,
+          "right": 59,
+          "labels": [
+           {
+            "text": "68°"
+           },
+           {
+            "field": {
+             "id": "q2",
+             "label": "the missing angle",
+             "answer": {
+              "text": "59°",
+              "also": [
+               "59"
+              ]
+             }
+            }
+           },
+           {
+            "text": "53°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "59°"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 96,
+          "right": 43,
+          "labels": [
+           {
+            "text": "96°"
+           },
+           {
+            "field": {
+             "id": "q3",
+             "label": "the missing angle",
+             "answer": {
+              "text": "43°",
+              "also": [
+               "43"
+              ]
+             }
+            }
+           },
+           {
+            "text": "41°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "43°"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 90,
+          "right": 40,
+          "labels": [
+           {
+            "field": {
+             "id": "q4",
+             "label": "the missing angle",
+             "answer": {
+              "text": "90°",
+              "also": [
+               "90"
+              ]
+             }
+            }
+           },
+           {
+            "text": "40°"
+           },
+           {
+            "text": "50°"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "90°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-triangle-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Use the triangle angle sum.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each triangle is drawn to scale, with two angles given and one in a box. The missing angle moves from corner to corner. The drawing lets the student see whether the answer is about the right size.",
+      "misconceptions": [
+       "Subtracting only one of the given angles from 180°.",
+       "Thinking the angles of a triangle add to 360°."
+      ]
+     },
+     "estimatedHeight": 488
+    },
+    {
+     "label": "B",
+     "instruction": "Find the exterior angle in the box.",
+     "explainer": "An exterior angle equals the two interior angles across from it, added.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 101,
+          "right": 40,
+          "labels": [
+           {
+            "text": "101°"
+           },
+           {},
+           {
+            "text": "39°"
+           }
+          ],
+          "exterior": {
+           "field": {
+            "id": "q5",
+            "label": "the exterior angle",
+            "answer": {
+             "text": "140°",
+             "also": [
+              "140"
+             ]
+            }
+           }
+          }
+         }
+        }
+       ],
+       "key": "140°"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-exterior-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find an exterior angle of a triangle from the two interior angles across from it.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the student uses the exterior angle fact. A student can check the answer by finding the third angle and subtracting it from 180°.",
+      "misconceptions": [
+       "Adding all three interior angles.",
+       "Taking the interior angle beside it as the exterior angle."
+      ]
+     },
+     "estimatedHeight": 274
+    }
+   ],
+   "estimatedHeight": 770
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Find the exterior angle in the box.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "angleTriangle": {
+          "left": 79,
+          "right": 51,
+          "labels": [
+           {
+            "text": "79°"
+           },
+           {},
+           {
+            "text": "50°"
+           }
+          ],
+          "exterior": {
+           "field": {
+            "id": "q6",
+            "label": "the exterior angle",
+            "answer": {
+             "text": "129°",
+             "also": [
+              "129"
+             ]
+            }
+           }
+          }
+         }
+        }
+       ],
+       "key": "129°"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g8-exterior-angles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find an exterior angle of a triangle from the two interior angles across from it.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The base runs on past one corner, so the exterior angle is drawn and not just named. The two far angles are given and the angle beside it is not, so the student uses the exterior angle fact. A student can check the answer by finding the third angle and subtracting it from 180°.",
+      "misconceptions": [
+       "Adding all three interior angles.",
+       "Taking the interior angle beside it as the exterior angle."
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 248
+    },
+    {
+     "label": "C",
+     "instruction": "The arrows mark parallel lines. Find the angles in the boxes.",
+     "explainer": "Corresponding and alternate angles are equal. Angles beside each other on a line add to 180°.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 60,
+          "labels": [
+           {
+            "position": 2,
+            "text": "60°"
+           },
+           {
+            "field": {
+             "id": "q7",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "60°",
+              "also": [
+               "60"
+              ]
+             }
+            }
+           },
+           {
+            "position": 7,
+            "field": {
+             "id": "q7-2",
+             "label": "angle at position 7",
+             "answer": {
+              "text": "120°",
+              "also": [
+               "120"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "60°, 120°"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 115,
+          "labels": [
+           {
+            "position": 7,
+            "text": "65°"
+           },
+           {
+            "position": 5,
+            "field": {
+             "id": "q8",
+             "label": "angle at position 5",
+             "answer": {
+              "text": "65°",
+              "also": [
+               "65"
+              ]
+             }
+            }
+           },
+           {
+            "field": {
+             "id": "q8-2",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "115°",
+              "also": [
+               "115"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "65°, 115°"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 55,
+          "labels": [
+           {
+            "position": 2,
+            "text": "55°"
+           },
+           {
+            "position": 7,
+            "field": {
+             "id": "q9",
+             "label": "angle at position 7",
+             "answer": {
+              "text": "125°",
+              "also": [
+               "125"
+              ]
+             }
+            }
+           },
+           {
+            "position": 4,
+            "field": {
+             "id": "q9-2",
+             "label": "angle at position 4",
+             "answer": {
+              "text": "55°",
+              "also": [
+               "55"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "125°, 55°"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "transversal": {
+          "degrees": 75,
+          "labels": [
+           {
+            "position": 4,
+            "text": "75°"
+           },
+           {
+            "field": {
+             "id": "q10",
+             "label": "angle at position 0",
+             "answer": {
+              "text": "75°",
+              "also": [
+               "75"
+              ]
+             }
+            }
+           },
+           {
+            "position": 1,
+            "field": {
+             "id": "q10-2",
+             "label": "angle at position 1",
+             "answer": {
+              "text": "105°",
+              "also": [
+               "105"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "75°, 105°"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-transversals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find angles made when a transversal cuts parallel lines.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each diagram gives one angle and asks for two others, one at each crossing. The student uses vertical, corresponding and alternate angles, and angles on a line. Different slants make the given angle sometimes acute and sometimes obtuse.",
+      "misconceptions": [
+       "Thinking all eight angles are equal.",
+       "Subtracting from 90° instead of 180° for angles on a line."
+      ]
+     },
+     "estimatedHeight": 456
+    }
+   ],
+   "estimatedHeight": 712
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the missing angle",
+    "answer": {
+     "text": "37°",
+     "also": [
+      "37"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the missing angle",
+    "answer": {
+     "text": "59°",
+     "also": [
+      "59"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the missing angle",
+    "answer": {
+     "text": "43°",
+     "also": [
+      "43"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the missing angle",
+    "answer": {
+     "text": "90°",
+     "also": [
+      "90"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the exterior angle",
+    "answer": {
+     "text": "140°",
+     "also": [
+      "140"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the exterior angle",
+    "answer": {
+     "text": "129°",
+     "also": [
+      "129"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "60°",
+     "also": [
+      "60"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "angle at position 7",
+    "answer": {
+     "text": "120°",
+     "also": [
+      "120"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "angle at position 5",
+    "answer": {
+     "text": "65°",
+     "also": [
+      "65"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "115°",
+     "also": [
+      "115"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "angle at position 7",
+    "answer": {
+     "text": "125°",
+     "also": [
+      "125"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "angle at position 4",
+    "answer": {
+     "text": "55°",
+     "also": [
+      "55"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "angle at position 0",
+    "answer": {
+     "text": "75°",
+     "also": [
+      "75"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10-2",
+    "label": "angle at position 1",
+    "answer": {
+     "text": "105°",
+     "also": [
+      "105"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Use angle sums, exterior angles and parallel lines to find angles.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the angle in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Find the exterior angle in the box.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"The arrows mark parallel lines. Find the angles in the boxes.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the exterior angle in the box.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

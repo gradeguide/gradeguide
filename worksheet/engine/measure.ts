@@ -6,11 +6,16 @@ import * as draw from './draw.js';
 import * as shapes from './draw_shapes.js';
 import * as drawK2 from './draw_k2.js';
 import * as drawG5 from './draw_g5.js';
+import { drawG68 } from './draw_g68.js';
 import { blankWidth } from './field.js';
 import { type Drawing } from './drawing.js';
 import { NODE_GAP, STANDARD_WRITING, type Writing, textHeight } from './layout.js';
 
 function drawing(n: Node, w: Writing): Drawing | undefined {
+  const g68 = drawG68(n, false, w);
+  if (g68) {
+    return g68;
+  }
   const k = n.kind;
   switch (k.case) {
     case 'numberLine':
