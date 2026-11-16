@@ -5,6 +5,7 @@ import { type Node } from '../proto/v1/nodes_pb.js';
 import * as draw from './draw.js';
 import * as shapes from './draw_shapes.js';
 import * as drawK2 from './draw_k2.js';
+import * as drawG5 from './draw_g5.js';
 import { blankWidth } from './field.js';
 import { type Drawing } from './drawing.js';
 import { NODE_GAP, STANDARD_WRITING, type Writing, textHeight } from './layout.js';
@@ -74,6 +75,14 @@ function drawing(n: Node, w: Writing): Drawing | undefined {
       return drawK2.tallyChart(k.value);
     case 'lengthStrips':
       return drawK2.lengthStrips(k.value);
+    case 'solid':
+      return drawG5.solid(k.value);
+    case 'coordinateGrid':
+      return drawG5.coordinateGrid(k.value, false);
+    case 'decimalChart':
+      return drawG5.decimalChart(k.value, false, w);
+    case 'fractionGrid':
+      return drawG5.fractionGrid(k.value);
   }
   return undefined;
 }

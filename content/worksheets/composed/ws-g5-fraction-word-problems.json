@@ -1,0 +1,384 @@
+{
+ "worksheetId": "ws-g5-fraction-word-problems",
+ "title": "Fraction stories: add and subtract",
+ "headerLabels": [
+  "5.NF.A.1",
+  "5.NF.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add. Write the answer in simplest form.",
+     "explainer": "Example: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "3/4 + 1/6",
+             "answer": {
+              "text": "11/12",
+              "also": [
+               "22/24"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3/4 + 1/6 = 11/12"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 10
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 4,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "1/10 + 4/5",
+             "answer": {
+              "text": "9/10",
+              "also": [
+               "45/50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "1/10 + 4/5 = 9/10"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-add-unlike-fractions",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Add fractions with different denominators.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some pairs of denominators share a factor, such as 4 and 6, and some do not, such as 3 and 4. When they share a factor, the product of the denominators works but is not the least. Some sums are more than 1 or can be simplified, so students check the answer's form.",
+      "misconceptions": [
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Changing the denominator without changing the numerator: 1/3 written as 1/12."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 202
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "Ana walks 2/3 of a mile to school and then 1/4 of a mile to the library. How far does she walk?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q3",
+           "label": "distance walked",
+           "answer": {
+            "text": "11/12",
+            "also": [
+             "11/12 mile"
+            ],
+            "work": "2/3 + 1/4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "11/12"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A jug holds 3/4 of a liter of juice. Ben drinks 1/3 of a liter. How much juice is left?"
+        },
+        {
+         "workSpace": {
+          "rows": 3,
+          "field": {
+           "id": "q4",
+           "label": "juice left",
+           "answer": {
+            "text": "5/12",
+            "also": [
+             "5/12 liter"
+            ],
+            "work": "3/4 − 1/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "5/12"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "Lena uses 1 1/2 cups of flour for bread and 2/3 cup for muffins. How much flour does she use?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q5",
+           "label": "flour used",
+           "answer": {
+            "text": "2 1/6",
+            "also": [
+             "13/6",
+             "2 1/6 cups"
+            ],
+            "work": "1 + 1/2 + 2/3"
+           }
+          }
+         }
+        }
+       ],
+       "key": "2 1/6"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-unlike-fraction-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that add or subtract fractions with different denominators.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks.",
+      "misconceptions": [
+       "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3.",
+       "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 514
+    }
+   ],
+   "estimatedHeight": 724
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "A board is 5 3/4 feet long. Zoe cuts off 2 1/3 feet. How long is the board now?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q6",
+           "label": "length of the board",
+           "answer": {
+            "text": "3 5/12",
+            "also": [
+             "41/12",
+             "3 5/12 feet"
+            ],
+            "work": "5 + 3/4 − (2 + 1/3)"
+           }
+          }
+         }
+        }
+       ],
+       "key": "3 5/12"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-unlike-fraction-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve word problems that add or subtract fractions with different denominators.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks.",
+      "misconceptions": [
+       "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3.",
+       "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 234
+    }
+   ],
+   "estimatedHeight": 238
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "3/4 + 1/6",
+    "answer": {
+     "text": "11/12",
+     "also": [
+      "22/24"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "1/10 + 4/5",
+    "answer": {
+     "text": "9/10",
+     "also": [
+      "45/50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "distance walked",
+    "answer": {
+     "text": "11/12",
+     "also": [
+      "11/12 mile"
+     ],
+     "work": "2/3 + 1/4"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "juice left",
+    "answer": {
+     "text": "5/12",
+     "also": [
+      "5/12 liter"
+     ],
+     "work": "3/4 − 1/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "flour used",
+    "answer": {
+     "text": "2 1/6",
+     "also": [
+      "13/6",
+      "2 1/6 cups"
+     ],
+     "work": "1 + 1/2 + 2/3"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "length of the board",
+    "answer": {
+     "text": "3 5/12",
+     "also": [
+      "41/12",
+      "3 5/12 feet"
+     ],
+     "work": "5 + 3/4 − (2 + 1/3)"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve word problems that add and subtract fractions with different denominators.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Two calculations recall the procedure before the problems ask students to choose the operation."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

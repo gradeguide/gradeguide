@@ -1,0 +1,720 @@
+{
+ "worksheetId": "ws-g5-parentheses",
+ "title": "Parentheses and brackets",
+ "headerLabels": [
+  "5.OA.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Work inside the parentheses first.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "text": "30 − (5 × 2)"
+          },
+          {
+           "text": "="
+          },
+          {
+           "blank": {
+            "label": "value of 30 − (5 × 2)",
+            "answer": {
+             "text": "20"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "Find the value inside the **parentheses** first. Then do the operation outside."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "76 − (4 × 4)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "value of 76 − (4 × 4)",
+             "answer": {
+              "text": "60"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "76 − (4 × 4) = 60"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(4 + 6) × 6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "value of (4 + 6) × 6",
+             "answer": {
+              "text": "60"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(4 + 6) × 6 = 60"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(56 + 64) ÷ 8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "value of (56 + 64) ÷ 8",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(56 + 64) ÷ 8 = 15"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 × (8 + 4)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "value of 7 × (8 + 4)",
+             "answer": {
+              "text": "84"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × (8 + 4) = 84"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 × (2 + 2)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "value of 3 × (2 + 2)",
+             "answer": {
+              "text": "12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 × (2 + 2) = 12"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "67 − (3 × 9)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "value of 67 − (3 × 9)",
+             "answer": {
+              "text": "40"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "67 − (3 × 9) = 40"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "44 − (8 × 3)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "value of 44 − (8 × 3)",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "44 − (8 × 3) = 20"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "7 × (3 + 8)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "value of 7 × (3 + 8)",
+             "answer": {
+              "text": "77"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 × (3 + 8) = 77"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "4 × (2 + 3)"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "value of 4 × (2 + 3)",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4 × (2 + 3) = 20"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "(12 − 3) × 3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "value of (12 − 3) × 3",
+             "answer": {
+              "text": "27"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "(12 − 3) × 3 = 27"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-parentheses",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Evaluate expressions that contain parentheses.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each expression has one pair of parentheses and two operations, so the only decision is which operation comes first. The parentheses sit at the front in some items and at the end in others. Students who always work left to right get some items wrong, which shows them the parentheses matter.",
+      "misconceptions": [
+       "Working left to right and ignoring the parentheses: 2 × (3 + 4) worked as 2 × 3 + 4 = 10.",
+       "Treating parentheses as a sign to multiply only, and adding first in an expression such as 76 − (4 × 4)."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 376
+    },
+    {
+     "label": "B",
+     "instruction": "Solve. Work inside the parentheses, then inside the brackets.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8 + [(4 + 8) × 7]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "value of 8 + [(4 + 8) × 7]",
+             "answer": {
+              "text": "92"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "8 + [(4 + 8) × 7] = 92"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 × [4 + (7 × 9)]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "value of 3 × [4 + (7 × 9)]",
+             "answer": {
+              "text": "201"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3 × [4 + (7 × 9)] = 201"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 + [(9 + 5) × 9]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "value of 3 + [(9 + 5) × 9]",
+             "answer": {
+              "text": "129"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3 + [(9 + 5) × 9] = 129"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8 + [(4 + 2) × 9]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "value of 8 + [(4 + 2) × 9]",
+             "answer": {
+              "text": "62"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "8 + [(4 + 2) × 9] = 62"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6 + [(5 + 7) × 7]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "value of 6 + [(5 + 7) × 7]",
+             "answer": {
+              "text": "90"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "6 + [(5 + 7) × 7] = 90"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "3 + [(4 + 3) × 6]"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "value of 3 + [(4 + 3) × 6]",
+             "answer": {
+              "text": "45"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3 + [(4 + 3) × 6] = 45"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-brackets",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Evaluate expressions with parentheses nested inside brackets.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Brackets add a second level of grouping, so students must work from the inside out. Each item has three operations, and the space under it holds one line per step. Writing each step keeps the order visible and makes errors easy to find.",
+      "misconceptions": [
+       "Working the brackets before the parentheses inside them.",
+       "Dropping a number while rewriting the expression after each step."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Operations and Algebraic Thinking, K-5"
+      ]
+     },
+     "estimatedHeight": 400
+    }
+   ],
+   "estimatedHeight": 784
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "value of 76 − (4 × 4)",
+    "answer": {
+     "text": "60"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "value of (4 + 6) × 6",
+    "answer": {
+     "text": "60"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "value of (56 + 64) ÷ 8",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "value of 7 × (8 + 4)",
+    "answer": {
+     "text": "84"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "value of 3 × (2 + 2)",
+    "answer": {
+     "text": "12"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "value of 67 − (3 × 9)",
+    "answer": {
+     "text": "40"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "value of 44 − (8 × 3)",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "value of 7 × (3 + 8)",
+    "answer": {
+     "text": "77"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "value of 4 × (2 + 3)",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "value of (12 − 3) × 3",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "value of 8 + [(4 + 8) × 7]",
+    "answer": {
+     "text": "92"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "value of 3 × [4 + (7 × 9)]",
+    "answer": {
+     "text": "201"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "value of 3 + [(9 + 5) × 9]",
+    "answer": {
+     "text": "129"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "value of 8 + [(4 + 2) × 9]",
+    "answer": {
+     "text": "62"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "value of 6 + [(5 + 7) × 7]",
+    "answer": {
+     "text": "90"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "value of 3 + [(4 + 3) × 6]",
+    "answer": {
+     "text": "45"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Evaluate expressions with parentheses and brackets.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "One level of grouping comes first, then nested grouping."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

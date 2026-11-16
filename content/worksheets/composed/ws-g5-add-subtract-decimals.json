@@ -1,0 +1,685 @@
+{
+ "worksheetId": "ws-g5-add-subtract-decimals",
+ "title": "Adding and subtracting decimals",
+ "headerLabels": [
+  "5.NBT.B.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_ADD",
+         "operands": [
+          "126",
+          "2642"
+         ],
+         "answer": {
+          "label": "1.26 + 26.42",
+          "answer": {
+           "text": "27.68"
+          }
+         },
+         "carryBoxes": true,
+         "decimalPlaces": 2
+        }
+       }
+      ],
+      "text": "Line up the **decimal points**. Add as with whole numbers."
+     },
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "9532",
+           "4217"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "95.32 + 42.17",
+           "answer": {
+            "text": "137.49"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "137.49"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "1168",
+           "2409"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "11.68 + 24.09",
+           "answer": {
+            "text": "35.77"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 2
+         }
+        }
+       ],
+       "key": "35.77"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "567",
+           "454"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "56.7 + 45.4",
+           "answer": {
+            "text": "102.1"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "102.1"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-add-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add decimals to hundredths in columns.",
+      "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The numbers are already set in columns with the points lined up, so the focus is regrouping across the point. Small boxes above the columns hold regrouped digits. Lining up numbers with different decimal places is practised in the next section.",
+      "misconceptions": [
+       "Forgetting to regroup from the tenths into the ones."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 330
+    },
+    {
+     "label": "B",
+     "instruction": "Add. Write the numbers in columns first.",
+     "items": [
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "35.11 + 17.8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "35.11 + 17.8",
+             "answer": {
+              "text": "52.91"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "35.11 + 17.8 = 52.91"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "5.79 + 19.7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "5.79 + 19.7",
+             "answer": {
+              "text": "25.49"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "5.79 + 19.7 = 25.49"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "32.6 + 17.96"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "32.6 + 17.96",
+             "answer": {
+              "text": "50.56"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "32.6 + 17.96 = 50.56"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10 + 12.3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "10 + 12.3",
+             "answer": {
+              "text": "22.3"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "10 + 12.3 = 22.3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-add-decimals-in-a-line",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add decimals with different numbers of decimal places.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Each pair has a different number of decimal places, and some include a whole number. Lining up the last digits gives a wrong answer, so students must line up the points. Writing a zero to fill an empty place is shown in the answer key.",
+      "misconceptions": [
+       "Lining up the last digits instead of the decimal points: 4.5 + 2.37 worked as 0.45 + 2.37.",
+       "Not knowing where the decimal point is in a whole number such as 6."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 406
+    }
+   ],
+   "estimatedHeight": 744
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Subtract.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "513",
+           "125"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "51.3 − 12.5",
+           "answer": {
+            "text": "38.8"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "38.8"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "467",
+           "415"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "46.7 − 41.5",
+           "answer": {
+            "text": "5.2"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "5.2"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_SUBTRACT",
+          "operands": [
+           "92",
+           "31"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "9.2 − 3.1",
+           "answer": {
+            "text": "6.1"
+           }
+          },
+          "carryBoxes": true,
+          "decimalPlaces": 1
+         }
+        }
+       ],
+       "key": "6.1"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g5-subtract-decimals",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract decimals to hundredths in columns.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Subtraction follows addition with the same column layout. Most items need regrouping across the decimal point. The boxes above the columns hold the regrouped digits.",
+      "misconceptions": [
+       "Subtracting the smaller digit from the larger in each column, whichever number it is in."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 168
+    },
+    {
+     "label": "D",
+     "instruction": "Subtract. Write the numbers in columns first.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "23 − 19.04"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "23 − 19.04",
+             "answer": {
+              "text": "3.96"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "23 − 19.04 = 3.96"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "20.9 − 18.63"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "20.9 − 18.63",
+             "answer": {
+              "text": "2.27"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "20.9 − 18.63 = 2.27"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "39.18 − 13.2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "39.18 − 13.2",
+             "answer": {
+              "text": "25.98"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "39.18 − 13.2 = 25.98"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "21.2 − 0.43"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "21.2 − 0.43",
+             "answer": {
+              "text": "20.77"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 4
+         }
+        }
+       ],
+       "key": "21.2 − 0.43 = 20.77"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-subtract-decimals-in-a-line",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Subtract decimals with different numbers of decimal places.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "When the first number has fewer decimal places, students write zeros in the empty places before subtracting. Items such as 6 − 2.45 need two zeros and regrouping across them. These are the hardest decimal subtractions at this grade.",
+      "misconceptions": [
+       "Bringing down the digits of the second number when the first has no digits above them: 6 − 2.45 = 4.45."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 406
+    }
+   ],
+   "estimatedHeight": 582
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "95.32 + 42.17",
+    "answer": {
+     "text": "137.49"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "11.68 + 24.09",
+    "answer": {
+     "text": "35.77"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "56.7 + 45.4",
+    "answer": {
+     "text": "102.1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "35.11 + 17.8",
+    "answer": {
+     "text": "52.91"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "5.79 + 19.7",
+    "answer": {
+     "text": "25.49"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "32.6 + 17.96",
+    "answer": {
+     "text": "50.56"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "10 + 12.3",
+    "answer": {
+     "text": "22.3"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "51.3 − 12.5",
+    "answer": {
+     "text": "38.8"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "46.7 − 41.5",
+    "answer": {
+     "text": "5.2"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "9.2 − 3.1",
+    "answer": {
+     "text": "6.1"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "23 − 19.04",
+    "answer": {
+     "text": "3.96"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "20.9 − 18.63",
+    "answer": {
+     "text": "2.27"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "39.18 − 13.2",
+    "answer": {
+     "text": "25.98"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "21.2 − 0.43",
+    "answer": {
+     "text": "20.77"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract decimals to hundredths.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Each operation starts with numbers already in columns, then moves to numbers written in a line that students set in columns themselves."
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

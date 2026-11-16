@@ -69,6 +69,7 @@ import {
 import { commas, mixed } from './draw.js';
 import { generateShapes } from './kinds_shapes.js';
 import { generateK2 } from './kinds_k2.js';
+import { generateG5 } from './kinds_g5.js';
 import { type Rng } from './rng.js';
 
 // Ctx is what a generator gets: random numbers, field ids, and a check that
@@ -103,7 +104,7 @@ export function list(xs: readonly number[], fallback: number[]): readonly number
 }
 
 // simplest gives the other names a fraction reading may also take.
-function simplest(n: number, d: number): string[] {
+export function simplest(n: number, d: number): string[] {
   const g = gcd(n, d);
   if (g === 1) {
     return [];
@@ -121,6 +122,10 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
   const k2 = generateK2(kind, ctx);
   if (k2) {
     return k2;
+  }
+  const g5 = generateG5(kind, ctx);
+  if (g5) {
+    return g5;
   }
   const { rng } = ctx;
   const k = kind.kind;
@@ -884,7 +889,7 @@ function reduced(rng: Rng, d: number): number {
 
 // numberWithDigits picks a number with exactly n digits. With zeros false,
 // no digit is zero, so an area model has a part for every place.
-function numberWithDigits(rng: Rng, n: number, zeros = false): number {
+export function numberWithDigits(rng: Rng, n: number, zeros = false): number {
   let v = rng.int(1, 9);
   for (let i = 1; i < n; i++) {
     v = v * 10 + (zeros ? rng.int(0, 9) : rng.int(1, 9));
@@ -893,7 +898,7 @@ function numberWithDigits(rng: Rng, n: number, zeros = false): number {
 }
 
 // places splits n by place value, largest first: 345 is [300, 40, 5].
-function places(n: number): number[] {
+export function places(n: number): number[] {
   const out: number[] = [];
   let p = 1;
   while (n > 0) {
@@ -923,13 +928,13 @@ function regroups(x: number, y: number, subtract: boolean): boolean {
 
 // mixedOf writes n/d as a mixed number without reducing the fraction part,
 // as a child adding same-denominator fractions would: 9/4 is "2 1/4".
-function mixedOf(n: number, d: number): string {
+export function mixedOf(n: number, d: number): string {
   const w = Math.floor(n / d);
   const r = n - w * d;
   return w === 0 ? frac(r, d) : r === 0 ? String(w) : `${w} ${frac(r, d)}`;
 }
 
-function unique(xs: string[]): string[] {
+export function unique(xs: string[]): string[] {
   return [...new Set(xs)];
 }
 
@@ -950,11 +955,11 @@ const CONVERSIONS: Record<number, [string, string, number]> = {
   [UnitConversion_Conversion.LITERS_MILLILITERS]: ['liters', 'milliliters', 1000],
 };
 
-type Pts = [number, number][];
+export type Pts = [number, number][];
 
 // big turns grid points into polygon points at twice the size, so a shape
 // the child draws on is drawn as large as a polygon may be.
-function big(pts: Pts) {
+export function big(pts: Pts) {
   return pts.map(([x, y]) => create(Polygon_PointSchema, { x: 2 * x, y: 2 * y }));
 }
 

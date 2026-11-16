@@ -1,0 +1,1416 @@
+{
+ "worksheetId": "ws-g5-unlike-fractions",
+ "title": "Adding and subtracting unlike fractions",
+ "headerLabels": [
+  "4.NF.A.1",
+  "5.NF.A.1"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q1",
+              "label": "denominator equal to 1/2",
+              "answer": {
+               "text": "8"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 = 4/8"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q2",
+              "label": "numerator equal to 1/5",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/5 = 2/10"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "blankNumerator": true,
+             "field": {
+              "id": "q3",
+              "label": "numerator equal to 1/6",
+              "answer": {
+               "text": "2"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 = 2/12"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 4,
+             "field": {
+              "id": "q4",
+              "label": "denominator equal to 1/6",
+              "answer": {
+               "text": "24"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/6 = 4/24"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-equivalent-missing",
+     "stage": "STAGE_REVIEW",
+     "design": {
+      "purpose": "Write equivalent fractions without a model.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions.",
+      "misconceptions": [
+       "Multiplying only the denominator: 2/3 = 2/6.",
+       "Adding the same number to the numerator and denominator."
+      ]
+     },
+     "estimatedHeight": 178
+    },
+    {
+     "label": "B",
+     "instruction": "Use the grids to add.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionGrid": {
+             "cols": 2,
+             "rows": 5,
+             "shadedCols": 1
+            }
+           },
+           {
+            "fractionGrid": {
+             "cols": 2,
+             "rows": 5,
+             "shadedRows": 2
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q5",
+              "label": "1/2 in 10ths",
+              "answer": {
+               "text": "5"
+              }
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q5-2",
+              "label": "2/5 in 10ths",
+              "answer": {
+               "text": "4"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "1/2 + 2/5",
+             "answer": {
+              "text": "9/10"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/2 + 2/5 = 5/10 + 4/10; = 9/10"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionGrid": {
+             "cols": 3,
+             "rows": 5,
+             "shadedCols": 2
+            }
+           },
+           {
+            "fractionGrid": {
+             "cols": 3,
+             "rows": 5,
+             "shadedRows": 2
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 15,
+             "blankNumerator": true,
+             "field": {
+              "id": "q6",
+              "label": "2/3 in 15ths",
+              "answer": {
+               "text": "10"
+              }
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "halfBlank": {
+             "given": 15,
+             "blankNumerator": true,
+             "field": {
+              "id": "q6-2",
+              "label": "2/5 in 15ths",
+              "answer": {
+               "text": "6"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "2/3 + 2/5",
+             "answer": {
+              "text": "1 1/15",
+              "also": [
+               "16/15"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 + 2/5 = 10/15 + 6/15; = 1 1/15"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionGrid": {
+             "cols": 3,
+             "rows": 4,
+             "shadedCols": 2
+            }
+           },
+           {
+            "fractionGrid": {
+             "cols": 3,
+             "rows": 4,
+             "shadedRows": 1
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "blankNumerator": true,
+             "field": {
+              "id": "q7",
+              "label": "2/3 in 12ths",
+              "answer": {
+               "text": "8"
+              }
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "halfBlank": {
+             "given": 12,
+             "blankNumerator": true,
+             "field": {
+              "id": "q7-2",
+              "label": "1/4 in 12ths",
+              "answer": {
+               "text": "3"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "2/3 + 1/4",
+             "answer": {
+              "text": "11/12"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2/3 + 1/4 = 8/12 + 3/12; = 11/12"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "fractionGrid": {
+             "cols": 5,
+             "rows": 2,
+             "shadedCols": 4
+            }
+           },
+           {
+            "fractionGrid": {
+             "cols": 5,
+             "rows": 2,
+             "shadedRows": 1
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 4,
+             "den": 5
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q8",
+              "label": "4/5 in 10ths",
+              "answer": {
+               "text": "8"
+              }
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "halfBlank": {
+             "given": 10,
+             "blankNumerator": true,
+             "field": {
+              "id": "q8-2",
+              "label": "1/2 in 10ths",
+              "answer": {
+               "text": "5"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "4/5 + 1/2",
+             "answer": {
+              "text": "1 3/10",
+              "also": [
+               "13/10"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "4/5 + 1/2 = 8/10 + 5/10; = 1 3/10"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-unlike-fractions-model",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Add fractions with different denominators by rewriting them with a common denominator.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING",
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each grid is one whole cut into columns for one denominator and rows for the other. The cuts make both fractions countable in the same small parts. Students count the parts, write the equivalent fractions, and then add.",
+      "misconceptions": [
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Counting the parts in a grid without checking that both grids are cut the same way."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5",
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
+      ]
+     },
+     "estimatedHeight": 510
+    }
+   ],
+   "estimatedHeight": 696
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Add. Write the answer in simplest form.",
+     "explainer": "Example: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 4
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 6
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "3/4 + 1/6",
+             "answer": {
+              "text": "11/12",
+              "also": [
+               "22/24"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3/4 + 1/6 = 11/12"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 10
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 4,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "1/10 + 4/5",
+             "answer": {
+              "text": "9/10",
+              "also": [
+               "45/50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "1/10 + 4/5 = 9/10"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 8
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 4
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "1/8 + 1/4",
+             "answer": {
+              "text": "3/8",
+              "also": [
+               "12/32"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "1/8 + 1/4 = 3/8"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 10
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "3/10 + 1/3",
+             "answer": {
+              "text": "19/30"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "3/10 + 1/3 = 19/30"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-add-unlike-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add fractions with different denominators.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Some pairs of denominators share a factor, such as 4 and 6, and some do not, such as 3 and 4. When they share a factor, the product of the denominators works but is not the least. Some sums are more than 1 or can be simplified, so students check the answer's form.",
+      "misconceptions": [
+       "Adding numerators and denominators: 1/3 + 1/4 = 2/7.",
+       "Changing the denominator without changing the numerator: 1/3 written as 1/12."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 344
+    },
+    {
+     "label": "D",
+     "instruction": "Subtract. Write the answer in simplest form.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 5
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "5/6 − 2/5",
+             "answer": {
+              "text": "13/30"
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5/6 − 2/5 = 13/30"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 2
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "1/2 − 1/8",
+             "answer": {
+              "text": "3/8",
+              "also": [
+               "6/16"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "1/2 − 1/8 = 3/8"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 7,
+             "den": 12
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "7/12 − 1/3",
+             "answer": {
+              "text": "1/4",
+              "also": [
+               "3/12",
+               "9/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "7/12 − 1/3 = 1/4"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 11,
+             "den": 12
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 2,
+             "den": 3
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "11/12 − 2/3",
+             "answer": {
+              "text": "1/4",
+              "also": [
+               "3/12",
+               "9/36"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "11/12 − 2/3 = 1/4"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 3,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "5/6 − 3/8",
+             "answer": {
+              "text": "11/24",
+              "also": [
+               "22/48"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5/6 − 3/8 = 11/24"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 5,
+             "den": 6
+            }
+           },
+           {
+            "text": "−"
+           },
+           {
+            "fraction": {
+             "num": 1,
+             "den": 8
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q18",
+             "label": "5/6 − 1/8",
+             "answer": {
+              "text": "17/24",
+              "also": [
+               "34/48"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        }
+       ],
+       "key": "5/6 − 1/8 = 17/24"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-subtract-unlike-fractions",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Subtract fractions with different denominators.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Subtraction uses the same common-denominator step as addition. Every first fraction is larger than the second, so each difference is positive. Some pairs look close in size, so students rewrite them before deciding which is larger.",
+      "misconceptions": [
+       "Subtracting numerators and denominators: 3/4 − 1/3 = 2/1."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+      ]
+     },
+     "estimatedHeight": 460
+    }
+   ],
+   "estimatedHeight": 812
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "denominator equal to 1/2",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "numerator equal to 1/5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "numerator equal to 1/6",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "denominator equal to 1/6",
+    "answer": {
+     "text": "24"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "1/2 in 10ths",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "2/5 in 10ths",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "1/2 + 2/5",
+    "answer": {
+     "text": "9/10"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "2/3 in 15ths",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "2/5 in 15ths",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "2/3 + 2/5",
+    "answer": {
+     "text": "1 1/15",
+     "also": [
+      "16/15"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "2/3 in 12ths",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "1/4 in 12ths",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "2/3 + 1/4",
+    "answer": {
+     "text": "11/12"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "4/5 in 10ths",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "1/2 in 10ths",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "4/5 + 1/2",
+    "answer": {
+     "text": "1 3/10",
+     "also": [
+      "13/10"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "3/4 + 1/6",
+    "answer": {
+     "text": "11/12",
+     "also": [
+      "22/24"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "1/10 + 4/5",
+    "answer": {
+     "text": "9/10",
+     "also": [
+      "45/50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "1/8 + 1/4",
+    "answer": {
+     "text": "3/8",
+     "also": [
+      "12/32"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "3/10 + 1/3",
+    "answer": {
+     "text": "19/30"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "5/6 − 2/5",
+    "answer": {
+     "text": "13/30"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "1/2 − 1/8",
+    "answer": {
+     "text": "3/8",
+     "also": [
+      "6/16"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "7/12 − 1/3",
+    "answer": {
+     "text": "1/4",
+     "also": [
+      "3/12",
+      "9/36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "11/12 − 2/3",
+    "answer": {
+     "text": "1/4",
+     "also": [
+      "3/12",
+      "9/36"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "5/6 − 3/8",
+    "answer": {
+     "text": "11/24",
+     "also": [
+      "22/48"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "5/6 − 1/8",
+    "answer": {
+     "text": "17/24",
+     "also": [
+      "34/48"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add and subtract fractions with different denominators.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Finding equivalent fractions comes first, because it is the step that makes the denominators match. The grids then show why, before the symbolic practice."
+ },
+ "advice": [
+  "Section \"Add. Write the answer in simplest form.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

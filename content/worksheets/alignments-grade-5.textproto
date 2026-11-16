@@ -1,0 +1,87 @@
+# proto-file: proto/graph/v1/alignment.proto
+# proto-message: gradeguide.graph.v1.WorksheetAlignments
+#
+# Which grade 5 standards each grade 5 fragment covers. See
+# alignments.textproto for the rules.
+
+# Operations and algebraic thinking.
+alignments { fragment_id: "frag-g5-parentheses" skill { code: "5.OA.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-brackets" skill { code: "5.OA.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-write-expressions" skill { code: "5.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-interpret-expressions" skill { code: "5.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-two-patterns" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-graph-two-patterns" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-graph-a-pattern" skill { code: "5.OA.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-graph-a-pattern" skill { code: "5.G.A.2" } role: ROLE_PRACTISES }
+
+# Place value and decimals.
+alignments { fragment_id: "frag-g5-ten-times" skill { code: "5.NBT.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-powers-of-ten" skill { code: "5.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-powers-of-ten-chart" skill { code: "5.NBT.A.2" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-powers-of-ten-decimals" skill { code: "5.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-decimal-words" skill { code: "5.NBT.A.3.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-decimal-expanded" skill { code: "5.NBT.A.3.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-decimal-chart" skill { code: "5.NBT.A.3.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-decimal-chart" skill { code: "5.NBT.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-compare-thousandths" skill { code: "5.NBT.A.3.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-round-decimals-line" skill { code: "5.NBT.A.4" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-round-decimals" skill { code: "5.NBT.A.4" } role: ROLE_PRACTISES }
+
+# Multiplying and dividing whole numbers.
+alignments { fragment_id: "frag-g5-multiply-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-multiply-3-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-multiply-4-by-2-digits" skill { code: "5.NBT.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-divide-with-multiples" skill { code: "5.NBT.B.6" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-divide-3-digits-by-2" skill { code: "5.NBT.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-divide-4-digits-by-2" skill { code: "5.NBT.B.6" } role: ROLE_PRACTISES }
+
+# Decimal arithmetic.
+alignments { fragment_id: "frag-g5-add-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-add-decimals-in-a-line" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-subtract-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-subtract-decimals-in-a-line" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-multiply-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-multiply-decimals-by-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-divide-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-divide-by-decimals" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-decimal-word-problems" skill { code: "5.NBT.B.7" } role: ROLE_PRACTISES }
+
+# Fractions.
+alignments { fragment_id: "frag-g5-unlike-fractions-model" skill { code: "5.NF.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-add-unlike-fractions" skill { code: "5.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-subtract-unlike-fractions" skill { code: "5.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-add-unlike-mixed" skill { code: "5.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-subtract-unlike-mixed" skill { code: "5.NF.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-unlike-fraction-word-problems" skill { code: "5.NF.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-fraction-as-division" skill { code: "5.NF.B.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-fraction-times-whole" skill { code: "5.NF.B.4.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-fraction-times-fraction-model" skill { code: "5.NF.B.4.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-fraction-times-fraction-model" skill { code: "5.NF.B.4.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-fraction-times-fraction" skill { code: "5.NF.B.4.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-fraction-area-tiles" skill { code: "5.NF.B.4.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-fraction-area" skill { code: "5.NF.B.4.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-scaling" skill { code: "5.NF.B.5.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-scaling" skill { code: "5.NF.B.5.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-fraction-multiply-word-problems" skill { code: "5.NF.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-unit-fraction-by-whole-model" skill { code: "5.NF.B.7.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-unit-fraction-by-whole" skill { code: "5.NF.B.7.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-whole-by-unit-fraction" skill { code: "5.NF.B.7.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-unit-fraction-word-problems" skill { code: "5.NF.B.7.c" } role: ROLE_PRACTISES }
+
+# Measurement and data.
+alignments { fragment_id: "frag-g5-convert-measure" skill { code: "5.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-measurement-word-problems" skill { code: "5.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-line-plot-share" skill { code: "5.MD.B.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-volume-count" skill { code: "5.MD.C.3.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-volume-count" skill { code: "5.MD.C.3.b" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-volume-count" skill { code: "5.MD.C.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-volume-layers" skill { code: "5.MD.C.5.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-volume-formula" skill { code: "5.MD.C.5.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-volume-word-problems" skill { code: "5.MD.C.5.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-volume-combined" skill { code: "5.MD.C.5.c" } role: ROLE_PRACTISES }
+
+# Geometry.
+alignments { fragment_id: "frag-g5-read-points" skill { code: "5.G.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g5-plot-points" skill { code: "5.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-name-quadrilaterals" skill { code: "5.G.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g5-always-sometimes-never" skill { code: "5.G.B.3" } role: ROLE_PRACTISES }

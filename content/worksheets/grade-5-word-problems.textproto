@@ -1,0 +1,234 @@
+# proto-file: worksheet/proto/v1/worksheet.proto
+# proto-message: gradeguide.worksheet.v1.Library
+#
+# Grade 5 word problems. Each answer carries the working that produces it;
+# the composer checks the working comes to the answer and uses only numbers
+# the problem shows.
+
+fragments {
+  id: "frag-g5-decimal-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve money and measurement problems with decimals."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each of the four operations appears once, so students choose the operation from the story. The last problem has two steps, and the second step uses the first answer. Money and length contexts keep the decimals to hundredths."
+    misconceptions: "Choosing the operation from a key word, such as \"left\", without reading the whole story."
+    misconceptions: "Lining up the last digits instead of the decimal points: 6.5 − 2.85."
+    references: "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "Mia buys a notebook for $3.75 and a pen for $1.49. How much does she spend?" }
+        nodes { work_space { field { label: "cost of the notebook and the pen" answer { text: "5.24" work: "3.75 + 1.49" also: "$5.24" } } } }
+      }
+      items {
+        nodes { text: "A ribbon is 6.5 meters long. Kai cuts off 2.85 meters. How much ribbon is left?" }
+        nodes { work_space { field { label: "ribbon left" answer { text: "3.65" work: "6.5 − 2.85" also: "3.65 meters" } } } }
+      }
+      items {
+        nodes { text: "One bag of apples weighs 2.4 pounds. How much do 6 bags weigh?" }
+        nodes { work_space { field { label: "weight of 6 bags" answer { text: "14.4" work: "2.4 × 6" also: "14.4 pounds" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "Omar shares $12.60 equally among 4 friends." }
+            parts {
+              prompt { text: "How much does each friend get?" }
+              response { work_space { field { label: "each friend's share" answer { text: "3.15" work: "12.60 ÷ 4" also: "$3.15" } } } }
+            }
+            parts {
+              prompt { text: "Each friend spends $1.75. How much does each have left?" }
+              response { work_space { field { label: "money left for each friend" answer { text: "1.40" work: "3.15 − 1.75" also: "1.4" also: "$1.40" } } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g5-unlike-fraction-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems that add or subtract fractions with different denominators."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Two problems add and two subtract, and two use mixed numbers. The contexts are distances, amounts of juice and lengths of wood. Each answer can be checked for sense against the amounts in the story, as the standard asks."
+    misconceptions: "Adding numerators and denominators: 2/3 + 1/4 = 3/7, which is less than 2/3."
+    misconceptions: "Leaving the answer in twelfths when it can be simplified or written as a mixed number."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "Ana walks 2/3 of a mile to school and then 1/4 of a mile to the library. How far does she walk?" }
+        nodes { work_space { field { label: "distance walked" answer { text: "11/12" work: "2/3 + 1/4" also: "11/12 mile" } } } }
+      }
+      items {
+        nodes { text: "A jug holds 3/4 of a liter of juice. Ben drinks 1/3 of a liter. How much juice is left?" }
+        nodes { work_space { field { label: "juice left" answer { text: "5/12" work: "3/4 − 1/3" also: "5/12 liter" } } } }
+      }
+      items {
+        nodes { text: "Lena uses 1 1/2 cups of flour for bread and 2/3 cup for muffins. How much flour does she use?" }
+        nodes { work_space { field { label: "flour used" answer { text: "2 1/6" work: "1 + 1/2 + 2/3" also: "13/6" also: "2 1/6 cups" } } } }
+      }
+      items {
+        nodes { text: "A board is 5 3/4 feet long. Zoe cuts off 2 1/3 feet. How long is the board now?" }
+        nodes { work_space { field { label: "length of the board" answer { text: "3 5/12" work: "5 + 3/4 − (2 + 1/3)" also: "41/12" also: "3 5/12 feet" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g5-fraction-multiply-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems that multiply fractions and mixed numbers."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The problems cover a fraction of a fraction, a fraction of a whole number, a whole number of fractions and an area with mixed-number sides. Each one is a multiplication, but the stories read differently. The last problem needs mixed numbers written as fractions first."
+    misconceptions: "Adding when a story says \"of\": 3/4 of 1/2 worked as 3/4 + 1/2."
+    misconceptions: "Multiplying the whole numbers and the fractions of mixed numbers separately: 2 1/2 × 1 1/3 = 2 1/6."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A recipe uses 3/4 cup of sugar. Mia makes 1/2 of the recipe. How much sugar does she use?" }
+        nodes { work_space { field { label: "sugar used" answer { text: "3/8" work: "3/4 × 1/2" also: "3/8 cup" } } } }
+      }
+      items {
+        nodes { text: "There are 24 students in a class. 5/8 of them walk to school. How many students walk?" }
+        nodes { work_space { field { label: "students who walk" answer { text: "15" work: "5/8 × 24" also: "15 students" } } } }
+      }
+      items {
+        nodes { text: "Kai runs 3 times around a track that is 2/5 of a mile long. How far does he run?" }
+        nodes { work_space { field { label: "distance run" answer { text: "1 1/5" work: "3 × 2/5" also: "6/5" also: "1 1/5 miles" } } } }
+      }
+      items {
+        nodes { text: "A garden bed is 2 1/2 meters long and 1 1/3 meters wide. What is its area?" }
+        nodes { work_space { field { label: "area of the bed" answer { text: "3 1/3" work: "(2 + 1/2) × (1 + 1/3)" also: "10/3" also: "3 1/3 square meters" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g5-unit-fraction-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve word problems that divide a unit fraction by a whole number or a whole number by a unit fraction."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Two problems share a fraction among people and two count how many fractions fit in a whole number. The two kinds alternate, so students decide from each story which number is divided. A drawing in the work space can support either kind."
+    misconceptions: "Dividing the larger number by the smaller in every problem: 1/2 ÷ 3 worked as 3 ÷ 1/2."
+    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "3 friends share 1/2 pound of chocolate equally. How much chocolate does each friend get?" }
+        nodes { work_space { field { label: "chocolate for each friend" answer { text: "1/6" work: "1/2 ÷ 3" also: "1/6 pound" } } } }
+      }
+      items {
+        nodes { text: "How many 1/4-cup servings are in 5 cups of raisins?" }
+        nodes { work_space { field { label: "servings" answer { text: "20" work: "5 ÷ (1/4)" also: "20 servings" } } } }
+      }
+      items {
+        nodes { text: "Ben pours 1/3 liter of water equally into 2 cups. How much water is in each cup?" }
+        nodes { work_space { field { label: "water in each cup" answer { text: "1/6" work: "1/3 ÷ 2" also: "1/6 liter" } } } }
+      }
+      items {
+        nodes { text: "Zoe has 4 feet of ribbon. She cuts it into pieces that are each 1/5 of a foot long. How many pieces does she get?" }
+        nodes { work_space { field { label: "pieces of ribbon" answer { text: "20" work: "4 ÷ (1/5)" also: "20 pieces" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g5-measurement-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Solve multi-step problems that need a unit conversion."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem states the conversion it needs, so the challenge is when to convert, not recalling the fact. The problems cover capacity, length, mass and time. One problem has two parts, and the second part converts the first answer."
+    misconceptions: "Comparing or adding amounts in different units without converting first."
+    misconceptions: "Treating 2 hours 15 minutes as 2.15 hours."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+  }
+  items {
+    count: 4
+    authored {
+      items {
+        nodes { text: "A pitcher holds 2 liters of water. 1 liter is 1,000 milliliters. How many 250-milliliter glasses can it fill?" }
+        nodes { work_space { field { label: "glasses filled" answer { text: "8" work: "2 × 1,000 ÷ 250" also: "8 glasses" } } } }
+      }
+      items {
+        nodes { text: "Ana's rope is 3 yards long. Ben's rope is 7 feet long. 1 yard is 3 feet. How many feet longer is Ana's rope?" }
+        nodes { work_space { field { label: "how much longer" answer { text: "2" work: "3 × 3 − 7" also: "2 feet" } } } }
+      }
+      items {
+        nodes {
+          multi_part_question {
+            stem { text: "A box of crackers weighs 450 grams. 1 kilogram is 1,000 grams." }
+            parts {
+              prompt { text: "How many grams do 6 boxes weigh?" }
+              response { work_space { field { label: "grams in 6 boxes" answer { text: "2,700" work: "450 × 6" also: "2700" also: "2,700 grams" } } } }
+            }
+            parts {
+              prompt { text: "How many kilograms is that?" }
+              response { work_space { field { label: "kilograms in 6 boxes" answer { text: "2.7" work: "2,700 ÷ 1,000" also: "2.7 kilograms" } } } }
+            }
+          }
+        }
+      }
+      items {
+        nodes { text: "A movie is 2 hours 15 minutes long. Kai has watched 50 minutes of it. 1 hour is 60 minutes. How many minutes are left?" }
+        nodes { work_space { field { label: "minutes left" answer { text: "85" work: "2 × 60 + 15 − 50" also: "85 minutes" } } } }
+      }
+    }
+  }
+}
+
+fragments {
+  id: "frag-g5-volume-word-problems"
+  instruction: "Solve. Show your work."
+  stage: STAGE_APPLY
+  max_columns: 1
+  design {
+    purpose: "Use the volume formula in real situations, including finding a missing edge length."
+    principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The first problem uses the formula directly. The second gives the volume and the base, so students divide to find the height. Working backward shows that the formula relates three quantities."
+    misconceptions: "Multiplying all the numbers in the story, including the volume, to find a missing edge."
+    references: "Common Core Standards Writing Team (2012), Progressions for Geometric Measurement, 3-5"
+  }
+  items {
+    count: 2
+    authored {
+      items {
+        nodes { text: "A fish tank is 20 inches long, 10 inches wide and 12 inches tall. What is its volume?" }
+        nodes { work_space { field { label: "volume of the tank" answer { text: "2,400" work: "20 × 10 × 12" also: "2400" also: "2,400 cubic inches" } } } }
+      }
+      items {
+        nodes { text: "A box has a volume of 60 cubic cm. Its base is 4 cm long and 3 cm wide. How tall is the box?" }
+        nodes { work_space { field { label: "height of the box" answer { text: "5" work: "60 ÷ (4 × 3)" also: "5 cm" } } } }
+      }
+    }
+  }
+}

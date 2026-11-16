@@ -1,0 +1,538 @@
+{
+ "worksheetId": "ws-g5-divide-by-two-digits",
+ "title": "Dividing by two-digit numbers",
+ "headerLabels": [
+  "5.NBT.B.6"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Complete the multiples. Use them to divide.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "longDivision": {
+             "dividend": "715",
+             "divisor": 55,
+             "quotient": {
+              "id": "q1",
+              "label": "715 ÷ 55",
+              "answer": {
+               "text": "13"
+              }
+             },
+             "workRows": 7
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "1 × 55 ="
+                 },
+                 {
+                  "text": "55"
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "2 × 55 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q1-2",
+                   "label": "2 × 55",
+                   "answer": {
+                    "text": "110"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "5 × 55 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q1-3",
+                   "label": "5 × 55",
+                   "answer": {
+                    "text": "275"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "10 × 55 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q1-4",
+                   "label": "10 × 55",
+                   "answer": {
+                    "text": "550"
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "13, 110, 275, 550"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "longDivision": {
+             "dividend": "846",
+             "divisor": 47,
+             "quotient": {
+              "id": "q2",
+              "label": "846 ÷ 47",
+              "answer": {
+               "text": "18"
+              }
+             },
+             "workRows": 7
+            }
+           },
+           {
+            "stack": {
+             "children": [
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "1 × 47 ="
+                 },
+                 {
+                  "text": "47"
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "2 × 47 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q2-2",
+                   "label": "2 × 47",
+                   "answer": {
+                    "text": "94"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "5 × 47 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q2-3",
+                   "label": "5 × 47",
+                   "answer": {
+                    "text": "235"
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "math": {
+                "atoms": [
+                 {
+                  "text": "10 × 47 ="
+                 },
+                 {
+                  "blank": {
+                   "id": "q2-4",
+                   "label": "10 × 47",
+                   "answer": {
+                    "text": "470"
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "18, 94, 235, 470"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g5-divide-with-multiples",
+     "stage": "STAGE_GUIDED",
+     "design": {
+      "purpose": "Divide a three-digit number by a two-digit number, estimating each quotient digit from a list of multiples.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Choosing each quotient digit is the hard step with a two-digit divisor. A short list of 1, 2, 5 and 10 times the divisor turns that choice into a comparison. The list is a place-value strategy the standard names, and it is dropped in the next section.",
+      "misconceptions": [
+       "Keeping a first estimate that is too big or too small instead of adjusting it.",
+       "Writing the first quotient digit over the wrong place of the dividend."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 542
+    }
+   ],
+   "estimatedHeight": 546
+  },
+  {
+   "sections": [
+    {
+     "label": "B",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "975",
+          "divisor": 75,
+          "quotient": {
+           "id": "q3",
+           "label": "975 ÷ 75",
+           "answer": {
+            "text": "13"
+           }
+          },
+          "workRows": 7
+         }
+        }
+       ],
+       "key": "13"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "855",
+          "divisor": 57,
+          "quotient": {
+           "id": "q4",
+           "label": "855 ÷ 57",
+           "answer": {
+            "text": "15"
+           }
+          },
+          "workRows": 7
+         }
+        }
+       ],
+       "key": "15"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-3-digits-by-2",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide a three-digit number by a two-digit number.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "These items have no list of multiples, so students estimate by rounding the divisor. Every quotient has two digits and no remainder, so the answer can be checked by multiplying. The space under each item has a full row for every product and difference.",
+      "misconceptions": [
+       "Keeping a first estimate that is too big or too small instead of adjusting it.",
+       "Forgetting to bring down the next digit before the next step."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 288
+    },
+    {
+     "label": "C",
+     "instruction": "Divide. Write the remainder.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "8817",
+          "divisor": 59,
+          "quotient": {
+           "id": "q5",
+           "label": "8817 ÷ 59",
+           "answer": {
+            "text": "149"
+           }
+          },
+          "remainder": {
+           "id": "q5-2",
+           "label": "remainder of 8817 ÷ 59",
+           "answer": {
+            "text": "26"
+           }
+          },
+          "workRows": 10
+         }
+        }
+       ],
+       "key": "149, 26"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "longDivision": {
+          "dividend": "2336",
+          "divisor": 84,
+          "quotient": {
+           "id": "q6",
+           "label": "2336 ÷ 84",
+           "answer": {
+            "text": "27"
+           }
+          },
+          "remainder": {
+           "id": "q6-2",
+           "label": "remainder of 2336 ÷ 84",
+           "answer": {
+            "text": "68"
+           }
+          },
+          "workRows": 7
+         }
+        }
+       ],
+       "key": "27, 68"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g5-divide-4-digits-by-2",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Divide a four-digit number by a two-digit number, with remainders.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Four-digit dividends give three-digit quotients, so the estimate-multiply-subtract cycle runs three times. Some items have a remainder of 0, so students decide whether one is left. The remainder must be less than the divisor, which checks the last estimate.",
+      "misconceptions": [
+       "Writing a remainder larger than the divisor.",
+       "Leaving out a zero in the quotient when a partial dividend is smaller than the divisor."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for Number and Operations in Base Ten, K-5"
+      ]
+     },
+     "estimatedHeight": 360
+    }
+   ],
+   "estimatedHeight": 656
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "715 ÷ 55",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "2 × 55",
+    "answer": {
+     "text": "110"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-3",
+    "label": "5 × 55",
+    "answer": {
+     "text": "275"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-4",
+    "label": "10 × 55",
+    "answer": {
+     "text": "550"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "846 ÷ 47",
+    "answer": {
+     "text": "18"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "2 × 47",
+    "answer": {
+     "text": "94"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-3",
+    "label": "5 × 47",
+    "answer": {
+     "text": "235"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-4",
+    "label": "10 × 47",
+    "answer": {
+     "text": "470"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "975 ÷ 75",
+    "answer": {
+     "text": "13"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "855 ÷ 57",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "8817 ÷ 59",
+    "answer": {
+     "text": "149"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "remainder of 8817 ÷ 59",
+    "answer": {
+     "text": "26"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "2336 ÷ 84",
+    "answer": {
+     "text": "27"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "remainder of 2336 ÷ 84",
+    "answer": {
+     "text": "68"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide by two-digit numbers, estimating each digit of the quotient.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "The list of multiples supports estimation first. It is then removed, and the dividends grow to four digits with remainders."
+ },
+ "advice": [
+  "\"Complete the multiples. Use them to divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Divide. Write the remainder.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Divide.\" was cut from 4 to 2 items to fit.",
+  "Section \"Divide. Write the remainder.\" was cut from 4 to 2 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
