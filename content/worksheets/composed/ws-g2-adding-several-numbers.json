@@ -1,0 +1,457 @@
+{
+ "worksheetId": "ws-g2-adding-several-numbers",
+ "title": "Adding several numbers",
+ "headerLabels": [
+  "2.NBT.B.6",
+  "2.NBT.B.9"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "75",
+           "15",
+           "58"
+          ],
+          "answer": {
+           "id": "q1",
+           "label": "75 + 15 + 58",
+           "answer": {
+            "text": "148"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "148"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "26",
+           "28",
+           "74"
+          ],
+          "answer": {
+           "id": "q2",
+           "label": "26 + 28 + 74",
+           "answer": {
+            "text": "128"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "128"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "19",
+           "37",
+           "17"
+          ],
+          "answer": {
+           "id": "q3",
+           "label": "19 + 37 + 17",
+           "answer": {
+            "text": "73"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "73"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "32",
+           "55",
+           "68"
+          ],
+          "answer": {
+           "id": "q4",
+           "label": "32 + 55 + 68",
+           "answer": {
+            "text": "155"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "155"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g2-add-several",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add three two-digit numbers in columns.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "With three addends, the ones column can make more than one ten, so the regrouped number may be 2. Students can look for pairs that make 10 within the ones column.",
+      "misconceptions": [
+       "Records only 1 ten when the ones make 20 or more.",
+       "Skips one addend in a column."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 198
+    },
+    {
+     "label": "B",
+     "instruction": "Add.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "12",
+           "47",
+           "19",
+           "24"
+          ],
+          "answer": {
+           "id": "q5",
+           "label": "12 + 47 + 19 + 24",
+           "answer": {
+            "text": "102"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "102"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "63",
+           "36",
+           "53",
+           "33"
+          ],
+          "answer": {
+           "id": "q6",
+           "label": "63 + 36 + 53 + 33",
+           "answer": {
+            "text": "185"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "185"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "65",
+           "24",
+           "66",
+           "44"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "65 + 24 + 66 + 44",
+           "answer": {
+            "text": "199"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "199"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g2-add-four",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Add four two-digit numbers in columns.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Four addends is the most grade 2 asks for. The ones often make 20 or more, so students record 2 tens, not 1.",
+      "misconceptions": [
+       "Records only 1 ten when the ones make 20 or more.",
+       "Loses track of which numbers in a column have been added."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 228
+    },
+    {
+     "label": "C",
+     "instruction": "Add. Then explain.",
+     "items": [
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "78",
+           "27"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "78 + 27",
+           "answer": {
+            "text": "105"
+           }
+          },
+          "carryBoxes": true
+         }
+        },
+        {
+         "text": "Explain why a 1 is written above the tens."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q8-2",
+           "label": "why the sum regroups",
+           "answer": {
+            "text": "The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+           }
+          }
+         }
+        }
+       ],
+       "key": "105; The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "38",
+           "47"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "38 + 47",
+           "answer": {
+            "text": "85"
+           }
+          },
+          "carryBoxes": true
+         }
+        },
+        {
+         "text": "Explain why a 1 is written above the tens."
+        },
+        {
+         "lines": {
+          "count": 2,
+          "field": {
+           "id": "q9-2",
+           "label": "why the sum regroups",
+           "answer": {
+            "text": "The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+           }
+          }
+         }
+        }
+       ],
+       "key": "85; The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-explain-regrouping",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Explain why adding in columns works, using tens and ones.",
+      "principles": [
+       "PRINCIPLE_SELF_EXPLANATION"
+      ],
+      "rationale": "Students explain in words why a 1 is written above the tens column. A complete answer says that the ones made a new ten, and the ten belongs with the other tens.",
+      "misconceptions": [
+       "Writes 13 under the ones instead of 3 and a new ten.",
+       "Describes the steps without saying that the 1 is a ten."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 264
+    }
+   ],
+   "estimatedHeight": 702
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "75 + 15 + 58",
+    "answer": {
+     "text": "148"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "26 + 28 + 74",
+    "answer": {
+     "text": "128"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "19 + 37 + 17",
+    "answer": {
+     "text": "73"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "32 + 55 + 68",
+    "answer": {
+     "text": "155"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "12 + 47 + 19 + 24",
+    "answer": {
+     "text": "102"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "63 + 36 + 53 + 33",
+    "answer": {
+     "text": "185"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "65 + 24 + 66 + 44",
+    "answer": {
+     "text": "199"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "78 + 27",
+    "answer": {
+     "text": "105"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "why the sum regroups",
+    "answer": {
+     "text": "The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "38 + 47",
+    "answer": {
+     "text": "85"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9-2",
+    "label": "why the sum regroups",
+    "answer": {
+     "text": "The ones make 15, which is 1 ten and 5 ones. The ten goes with the other tens."
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Add three and four two-digit numbers, then explain why regrouping works.",
+  "principles": [
+   "PRINCIPLE_SELF_EXPLANATION"
+  ]
+ },
+ "advice": [
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

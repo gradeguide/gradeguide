@@ -1,0 +1,1157 @@
+{
+ "worksheetId": "ws-g2-read-write-compare",
+ "title": "Reading and writing numbers to 1000",
+ "headerLabels": [
+  "2.NBT.A.3",
+  "2.NBT.A.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the number.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "800"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "50"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "800 + 50",
+             "answer": {
+              "text": "850"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "800 + 50 = 850"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "600"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "80"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "1"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "600 + 80 + 1",
+             "answer": {
+              "text": "681"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "600 + 80 + 1 = 681"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "900"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "40"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "8"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "900 + 40 + 8",
+             "answer": {
+              "text": "948"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "900 + 40 + 8 = 948"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "900"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "30"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "900 + 30 + 7",
+             "answer": {
+              "text": "937"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "900 + 30 + 7 = 937"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-expanded-to-number",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write a number from its expanded form.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Some expanded forms leave out a place, such as 800 + 50, so students must write a 0 to hold the place.",
+      "misconceptions": [
+       "Writes 400 + 6 as 46.",
+       "Writes the parts side by side, such as 800501 for 800 + 50 + 1."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "B",
+     "instruction": "Write the number in expanded form.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "828"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "hundreds in 828",
+             "answer": {
+              "text": "800"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q5-2",
+             "label": "tens in 828",
+             "answer": {
+              "text": "20"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q5-3",
+             "label": "ones in 828",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "828 = 800 + 20 + 8"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "473"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "hundreds in 473",
+             "answer": {
+              "text": "400"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "tens in 473",
+             "answer": {
+              "text": "70"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q6-3",
+             "label": "ones in 473",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "473 = 400 + 70 + 3"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "139"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "hundreds in 139",
+             "answer": {
+              "text": "100"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "tens in 139",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q7-3",
+             "label": "ones in 139",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "139 = 100 + 30 + 9"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "633"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "hundreds in 633",
+             "answer": {
+              "text": "600"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q8-2",
+             "label": "tens in 633",
+             "answer": {
+              "text": "30"
+             }
+            }
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q8-3",
+             "label": "ones in 633",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "633 = 600 + 30 + 3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g2-number-to-expanded",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write a three-digit number as hundreds plus tens plus ones.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Writing each digit as the value it stands for, such as 400 for the 4 in 473, makes the value of each place explicit.",
+      "misconceptions": [
+       "Writes the digits, such as 4 + 7 + 3, instead of their values."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "C",
+     "instruction": "Write the number.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "five hundred one"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "five hundred one in digits",
+             "answer": {
+              "text": "501"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 501"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "five hundred eighty-seven"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "five hundred eighty-seven in digits",
+             "answer": {
+              "text": "587"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 587"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "text": "seven hundred eighty-six"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "seven hundred eighty-six in digits",
+             "answer": {
+              "text": "786"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 786"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "text": "two hundred seventy-five"
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "two hundred seventy-five in digits",
+             "answer": {
+              "text": "275"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "= 275"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g2-words-to-number",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a number written in words and write it in digits.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Number names include ones with a zero place, such as five hundred one, where the spoken name gives no word for the missing tens.",
+      "misconceptions": [
+       "Writes five hundred one as 51 or 5001.",
+       "Writes the teen part in spoken order, such as 571 for five hundred seventeen."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "D",
+     "instruction": "Compare. Write <, > or =.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "181"
+           },
+           {
+            "compare": {
+             "id": "q13",
+             "label": "<, > or = between 181 and 440",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "440"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "181 < 440"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "311"
+           },
+           {
+            "compare": {
+             "id": "q14",
+             "label": "<, > or = between 311 and 786",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "786"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "311 < 786"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "457"
+           },
+           {
+            "compare": {
+             "id": "q15",
+             "label": "<, > or = between 457 and 950",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "950"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "457 < 950"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "897"
+           },
+           {
+            "compare": {
+             "id": "q16",
+             "label": "<, > or = between 897 and 246",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "246"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "897 > 246"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "144"
+           },
+           {
+            "compare": {
+             "id": "q17",
+             "label": "<, > or = between 144 and 802",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "802"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "144 < 802"
+      },
+      {
+       "label": "18",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "136"
+           },
+           {
+            "compare": {
+             "id": "q18",
+             "label": "<, > or = between 136 and 660",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "660"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "136 < 660"
+      },
+      {
+       "label": "19",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "268"
+           },
+           {
+            "compare": {
+             "id": "q19",
+             "label": "<, > or = between 268 and 145",
+             "answer": {
+              "text": ">"
+             }
+            }
+           },
+           {
+            "text": "145"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "268 > 145"
+      },
+      {
+       "label": "20",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "433"
+           },
+           {
+            "compare": {
+             "id": "q20",
+             "label": "<, > or = between 433 and 585",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "585"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "433 < 585"
+      },
+      {
+       "label": "21",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "593"
+           },
+           {
+            "compare": {
+             "id": "q21",
+             "label": "<, > or = between 593 and 600",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "600"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "593 < 600"
+      },
+      {
+       "label": "22",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "375"
+           },
+           {
+            "compare": {
+             "id": "q22",
+             "label": "<, > or = between 375 and 384",
+             "answer": {
+              "text": "<"
+             }
+            }
+           },
+           {
+            "text": "384"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "375 < 384"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-g2-compare-three-digit",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Compare three-digit numbers with <, > and =.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Students compare the hundreds first, then the tens, then the ones. Pairs such as 593 and 600 have larger tens and ones in the smaller number, which tests whether students compare by place.",
+      "misconceptions": [
+       "Thinks 289 is greater than 312 because 8 and 9 are large digits.",
+       "Reverses the symbols."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 190
+    }
+   ],
+   "estimatedHeight": 672
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "800 + 50",
+    "answer": {
+     "text": "850"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "600 + 80 + 1",
+    "answer": {
+     "text": "681"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "900 + 40 + 8",
+    "answer": {
+     "text": "948"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "900 + 30 + 7",
+    "answer": {
+     "text": "937"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "hundreds in 828",
+    "answer": {
+     "text": "800"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-2",
+    "label": "tens in 828",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5-3",
+    "label": "ones in 828",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "hundreds in 473",
+    "answer": {
+     "text": "400"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "tens in 473",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-3",
+    "label": "ones in 473",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "hundreds in 139",
+    "answer": {
+     "text": "100"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "tens in 139",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-3",
+    "label": "ones in 139",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "hundreds in 633",
+    "answer": {
+     "text": "600"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-2",
+    "label": "tens in 633",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8-3",
+    "label": "ones in 633",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "five hundred one in digits",
+    "answer": {
+     "text": "501"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "five hundred eighty-seven in digits",
+    "answer": {
+     "text": "587"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "seven hundred eighty-six in digits",
+    "answer": {
+     "text": "786"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "two hundred seventy-five in digits",
+    "answer": {
+     "text": "275"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "<, > or = between 181 and 440",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "<, > or = between 311 and 786",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "<, > or = between 457 and 950",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "<, > or = between 897 and 246",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "<, > or = between 144 and 802",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "18",
+   "field": {
+    "id": "q18",
+    "label": "<, > or = between 136 and 660",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "19",
+   "field": {
+    "id": "q19",
+    "label": "<, > or = between 268 and 145",
+    "answer": {
+     "text": ">"
+    }
+   }
+  },
+  {
+   "itemLabel": "20",
+   "field": {
+    "id": "q20",
+    "label": "<, > or = between 433 and 585",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "21",
+   "field": {
+    "id": "q21",
+    "label": "<, > or = between 593 and 600",
+    "answer": {
+     "text": "<"
+    }
+   }
+  },
+  {
+   "itemLabel": "22",
+   "field": {
+    "id": "q22",
+    "label": "<, > or = between 375 and 384",
+    "answer": {
+     "text": "<"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Write numbers in digits, words and expanded form, then compare them.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "advice": [
+  "\"Write the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the number in expanded form.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the number.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Compare. Write <, > or =.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

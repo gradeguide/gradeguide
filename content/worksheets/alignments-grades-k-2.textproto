@@ -1,0 +1,106 @@
+# proto-file: proto/graph/v1/alignment.proto
+# proto-message: gradeguide.graph.v1.WorksheetAlignments
+#
+# Alignments for the kindergarten to grade 2 sheets in grades-k-2-*.textproto.
+
+# Kindergarten.
+alignments { fragment_id: "frag-gk-count-dots-to-10" skill { code: "K.CC.B.4" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-gk-count-dots-to-10" skill { code: "K.CC.B.4.a" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-dots-to-10" skill { code: "K.CC.B.4.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-dots-to-10" skill { code: "K.CC.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-dots-to-20" skill { code: "K.CC.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-dots-to-20" skill { code: "K.CC.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-one-more" skill { code: "K.CC.B.4.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-on" skill { code: "K.CC.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-on" skill { code: "K.CC.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-count-by-tens" skill { code: "K.CC.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-compare-groups" skill { code: "K.CC.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-greater-number" skill { code: "K.CC.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-add-pictures" skill { code: "K.OA.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-gk-subtract-pictures" skill { code: "K.OA.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-word-problems" skill { code: "K.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-facts-within-5" skill { code: "K.OA.A.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-facts-within-10" skill { code: "K.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-break-apart" skill { code: "K.OA.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-make-ten" skill { code: "K.OA.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-teen-numbers" skill { code: "K.NBT.A.1" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-gk-longer" skill { code: "K.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-sort-shapes" skill { code: "K.MD.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-name-shapes" skill { code: "K.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-sides-corners" skill { code: "K.G.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-draw-shapes" skill { code: "K.G.B.5" } role: ROLE_PRACTISES }
+
+# Grade 1.
+alignments { fragment_id: "frag-g1-word-problems-within-20" skill { code: "1.OA.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-three-addend-word-problems" skill { code: "1.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-add-three-numbers" skill { code: "1.OA.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-add-three-numbers" skill { code: "1.OA.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-turn-around" skill { code: "1.OA.B.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g1-count-on-number-line" skill { code: "1.OA.C.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g1-count-back-number-line" skill { code: "1.OA.C.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-think-addition" skill { code: "1.OA.B.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-facts-within-20" skill { code: "1.OA.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-true-or-false" skill { code: "1.OA.D.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-missing-number" skill { code: "1.OA.D.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-count-to-120" skill { code: "1.NBT.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-tens-units" skill { code: "1.NBT.B.2.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g1-tens-units" skill { code: "1.NBT.B.2.c" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-teen-blocks" skill { code: "1.NBT.B.2.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-read-tens-ones" skill { code: "1.NBT.B.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-compare-two-digit" skill { code: "1.NBT.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-plus-ones" skill { code: "1.NBT.C.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-plus-tens" skill { code: "1.NBT.C.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-ten-more-less" skill { code: "1.NBT.C.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-subtract-tens" skill { code: "1.NBT.C.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-order-three" skill { code: "1.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-count-units" skill { code: "1.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-clock-hour" skill { code: "1.MD.B.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g1-clock-half-hour" skill { code: "1.MD.B.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-tally" skill { code: "1.MD.C.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-shape-features" skill { code: "1.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-halves-fourths" skill { code: "1.G.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-equal-or-not" skill { code: "1.G.A.3" } role: ROLE_PRACTISES }
+
+# Grade 2.
+alignments { fragment_id: "frag-g2-word-problems-within-100" skill { code: "2.OA.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-facts-within-20" skill { code: "2.OA.B.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-odd-even" skill { code: "2.OA.C.3" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g2-array-sums" skill { code: "2.OA.C.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-hundreds-units" skill { code: "2.NBT.A.1.a" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g2-hundreds-units" skill { code: "2.NBT.A.1.b" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-read-hundreds-blocks" skill { code: "2.NBT.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-skip-count" skill { code: "2.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-count-on-to-1000" skill { code: "2.NBT.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-expanded-to-number" skill { code: "2.NBT.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-number-to-expanded" skill { code: "2.NBT.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-words-to-number" skill { code: "2.NBT.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-compare-three-digit" skill { code: "2.NBT.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-add-3-digit" skill { code: "2.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-subtract-3-digit" skill { code: "2.NBT.B.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-ten-hundred-more-less" skill { code: "2.NBT.B.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-add-several" skill { code: "2.NBT.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-add-four" skill { code: "2.NBT.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-explain-regrouping" skill { code: "2.NBT.B.9" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-ruler-inches" skill { code: "2.MD.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-two-units" skill { code: "2.MD.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-estimate-length" skill { code: "2.MD.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-how-much-longer" skill { code: "2.MD.A.4" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-length-word-problems" skill { code: "2.MD.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-number-line-tens" skill { code: "2.MD.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-number-line-back" skill { code: "2.MD.B.6" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-clock-five-minutes" skill { code: "2.MD.C.7" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-money-word-problems" skill { code: "2.MD.C.8" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-line-plot" skill { code: "2.MD.D.9" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-bar-graph" skill { code: "2.MD.D.10" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-shape-features" skill { code: "2.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-draw-by-sides" skill { code: "2.G.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-rows-of-squares" skill { code: "2.G.A.2" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g2-equal-shares" skill { code: "2.G.A.3" } role: ROLE_PRACTISES }
+
+# Sheets drawn with ten frames, hundred charts and coins.
+alignments { fragment_id: "frag-gk-ten-frames" skill { code: "K.CC.B.5" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-ten-frames" skill { code: "K.CC.A.3" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-gk-hundred-chart" skill { code: "K.CC.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-chart-to-120" skill { code: "1.NBT.A.1" } role: ROLE_PRACTISES }
+alignments { fragment_id: "frag-g1-chart-ten-more-less" skill { code: "1.NBT.C.5" } role: ROLE_TEACHES }
+alignments { fragment_id: "frag-g2-count-coins" skill { code: "2.MD.C.8" } role: ROLE_PRACTISES }

@@ -68,6 +68,7 @@ import {
 } from './build.js';
 import { commas, mixed } from './draw.js';
 import { generateShapes } from './kinds_shapes.js';
+import { generateK2 } from './kinds_k2.js';
 import { type Rng } from './rng.js';
 
 // Ctx is what a generator gets: random numbers, field ids, and a check that
@@ -110,12 +111,16 @@ function simplest(n: number, d: number): string[] {
   return d / g === 1 ? [String(n / g)] : [frac(n / g, d / g)];
 }
 
-const names = ['Ana', 'Ben', 'Kai', 'Mia', 'Omar', 'Lena', 'Raj', 'Zoe'];
+export const names = ['Ana', 'Ben', 'Kai', 'Mia', 'Omar', 'Lena', 'Raj', 'Zoe'];
 
 export function generate(kind: ItemKind, ctx: Ctx): Node[] {
   const shaped = generateShapes(kind, ctx);
   if (shaped) {
     return shaped;
+  }
+  const k2 = generateK2(kind, ctx);
+  if (k2) {
+    return k2;
   }
   const { rng } = ctx;
   const k = kind.kind;
@@ -845,8 +850,9 @@ export function generate(kind: ItemKind, ctx: Ctx): Node[] {
     }
     case undefined:
       throw new Error('item kind not set');
+    default:
+      throw new Error(`no generator for item kind ${k.case}`);
   }
-  throw new Error(`no generator for item kind ${k.case ?? 'none'}`);
 }
 
 const placeName = ['one', 'ten', 'hundred', 'thousand', 'ten thousand', 'hundred thousand'];
@@ -854,7 +860,7 @@ const placeName = ['one', 'ten', 'hundred', 'thousand', 'ten thousand', 'hundred
 const placeNames = placeName.map((n) => n + 's');
 
 // timeText writes a time as h:mm.
-function timeText(h: number, m: number): string {
+export function timeText(h: number, m: number): string {
   return `${h}:${String(m).padStart(2, '0')}`;
 }
 

@@ -1,0 +1,641 @@
+{
+ "worksheetId": "ws-g1-length",
+ "title": "Comparing and measuring length",
+ "headerLabels": [
+  "1.MD.A.1",
+  "1.MD.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Mark the longest pencil. Mark the shortest pencil.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "name": "A",
+            "units": 5
+           },
+           {
+            "name": "B",
+            "units": 2
+           },
+           {
+            "name": "C",
+            "units": 7
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q1",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q1-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "B"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; B"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 4
+           },
+           {
+            "name": "C",
+            "units": 6
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q2",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q2-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; A"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 5
+           },
+           {
+            "name": "C",
+            "units": 6
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q3",
+              "label": "the longest strip",
+              "answer": {
+               "text": "C"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q3-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "C; A"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "name": "A",
+            "units": 2
+           },
+           {
+            "name": "B",
+            "units": 6
+           },
+           {
+            "name": "C",
+            "units": 5
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Longest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q4",
+              "label": "the longest strip",
+              "answer": {
+               "text": "B"
+              }
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "Shortest:"
+              }
+             ]
+            }
+           },
+           {
+            "choices": {
+             "options": [
+              "A",
+              "B",
+              "C"
+             ],
+             "field": {
+              "id": "q4-2",
+              "label": "the shortest strip",
+              "answer": {
+               "text": "A"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "B; A"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-order-three",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Order three lengths from longest to shortest.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The three pencils start at the same line and carry no unit marks, so students compare them directly. Finding both the longest and the shortest places all three in order.",
+      "misconceptions": [
+       "Marks the same pencil as longest and shortest.",
+       "Compares where the pencils end without checking that they start together."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 426
+    },
+    {
+     "label": "B",
+     "instruction": "Write how many cubes long.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "units": 5
+           }
+          ],
+          "cubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The pencil is"
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "cubes long",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "cubes long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The pencil is 5 cubes long."
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "units": 3
+           }
+          ],
+          "cubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The pencil is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "cubes long",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "cubes long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The pencil is 3 cubes long."
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "lengthStrips": {
+          "strips": [
+           {
+            "units": 6
+           }
+          ],
+          "cubes": true
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The pencil is"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "cubes long",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "cubes long."
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The pencil is 6 cubes long."
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g1-count-units",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Measure a length by counting equal units laid end to end.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "A row of cubes lies under each pencil, starting where the pencil starts, with no gaps and no overlaps. Students count the cubes to give the length in units. This is the model of measuring that rulers build on in grade 2.",
+      "misconceptions": [
+       "Counts the lines between cubes instead of the cubes.",
+       "Thinks units may have gaps or overlap and still give the length."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2012), Progressions for the Common Core State Standards in Mathematics, K–5, Geometric Measurement"
+      ]
+     },
+     "estimatedHeight": 370
+    }
+   ],
+   "estimatedHeight": 804
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the longest strip",
+    "answer": {
+     "text": "C"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the longest strip",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4-2",
+    "label": "the shortest strip",
+    "answer": {
+     "text": "A"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "cubes long",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "cubes long",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "cubes long",
+    "answer": {
+     "text": "6"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Order three lengths, then measure lengths in units.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Mark the longest pencil. Mark the shortest pencil.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write how many cubes long.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

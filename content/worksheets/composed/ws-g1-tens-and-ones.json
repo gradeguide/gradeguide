@@ -1,0 +1,990 @@
+{
+ "worksheetId": "ws-g1-tens-and-ones",
+ "title": "Tens and ones",
+ "headerLabels": [
+  "1.NBT.B.2.a",
+  "1.NBT.B.2.c",
+  "1.NBT.B.2.b",
+  "1.NBT.B.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q1",
+             "label": "tens in 70",
+             "answer": {
+              "text": "7"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "70"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7 tens = 70"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q2",
+             "label": "tens in 60",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "60"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 tens = 60"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "ones"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "10 ones in tens",
+             "answer": {
+              "text": "1"
+             }
+            }
+           },
+           {
+            "text": "ten"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 ones = 1 ten"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "20"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "tens in 20",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "20 = 2 tens"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "2"
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "2 tens",
+             "answer": {
+              "text": "20"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 tens = 20"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "30"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "tens in 30",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "30 = 3 tens"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "90"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "tens in 90",
+             "answer": {
+              "text": "9"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "90 = 9 tens"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q8",
+             "label": "tens in 80",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "80"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 tens = 80"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-tens-units",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Understand 10 ones as one ten, and 10, 20 up to 90 as that many tens.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "The equations move between ones, tens and numbers, such as 10 ones = 1 ten and 60 = 6 tens. Treating a ten as a single unit is the central idea of grade 1 place value. The item that names 10 ones as a ten appears only once.",
+      "misconceptions": [
+       "Writes 60 tens for 60.",
+       "Thinks a ten and ten ones are different amounts."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 190
+    },
+    {
+     "label": "B",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 6,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "6"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "10 + 6",
+             "answer": {
+              "text": "16"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 6 = 16"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 9,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "10 + 9",
+             "answer": {
+              "text": "19"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 9 = 19"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 5,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "10 + 5",
+             "answer": {
+              "text": "15"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 + 5 = 15"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 1,
+          "ones": 9,
+          "unit": 9
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "19"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           },
+           {
+            "text": "+"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "ones in 19",
+             "answer": {
+              "text": "9"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "19 = 10 + 9"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g1-teen-blocks",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Show numbers from 11 to 19 as a ten and some ones.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "These items repeat the kindergarten model, a ten rod and single cubes, now read as one ten and some ones. They connect the tens-and-ones section before to the teen numbers.",
+      "misconceptions": [
+       "Reads 17 as 1 and 7 instead of a ten and 7 ones."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 370
+    },
+    {
+     "label": "C",
+     "instruction": "Write the tens, the ones and the number.",
+     "items": [
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 5,
+          "ones": 4,
+          "unit": 6.5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q13",
+             "label": "tens",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "blank": {
+             "id": "q13-2",
+             "label": "ones",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "ones"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q13-3",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "54"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 tens 4 ones = 54"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 3,
+          "ones": 2,
+          "unit": 6.5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q14",
+             "label": "tens",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "blank": {
+             "id": "q14-2",
+             "label": "ones",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "ones"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q14-3",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "32"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3 tens 2 ones = 32"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-read-tens-ones",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a two-digit number from its tens and ones.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Students count the rods and the cubes separately, then write the number. Recording the tens and ones before the number shows how each digit comes from the blocks.",
+      "misconceptions": [
+       "Writes 3 tens and 5 ones as 305 or 8.",
+       "Counts each rod as 1 when finding the number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "estimatedHeight": 177
+    }
+   ],
+   "estimatedHeight": 749
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write the tens, the ones and the number.",
+     "items": [
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 8,
+          "ones": 8,
+          "unit": 6.5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q15",
+             "label": "tens",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "blank": {
+             "id": "q15-2",
+             "label": "ones",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "ones"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q15-3",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "88"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 tens 8 ones = 88"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "baseTenBlocks": {
+          "tens": 5,
+          "ones": 6,
+          "unit": 6.5
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q16",
+             "label": "tens",
+             "answer": {
+              "text": "5"
+             }
+            }
+           },
+           {
+            "text": "tens"
+           },
+           {
+            "blank": {
+             "id": "q16-2",
+             "label": "ones",
+             "answer": {
+              "text": "6"
+             }
+            }
+           },
+           {
+            "text": "ones"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q16-3",
+             "label": "the number the blocks show",
+             "answer": {
+              "text": "56"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "5 tens 6 ones = 56"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g1-read-tens-ones",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Read a two-digit number from its tens and ones.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "Students count the rods and the cubes separately, then write the number. Recording the tens and ones before the number shows how each digit comes from the blocks.",
+      "misconceptions": [
+       "Writes 3 tens and 5 ones as 305 or 8.",
+       "Counts each rod as 1 when finding the number."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, K–5, Number and Operations in Base Ten"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 177
+    }
+   ],
+   "estimatedHeight": 181
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "tens in 70",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "tens in 60",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "10 ones in tens",
+    "answer": {
+     "text": "1"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "tens in 20",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "2 tens",
+    "answer": {
+     "text": "20"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "tens in 30",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "tens in 90",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "tens in 80",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "10 + 6",
+    "answer": {
+     "text": "16"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "10 + 9",
+    "answer": {
+     "text": "19"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "10 + 5",
+    "answer": {
+     "text": "15"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "ones in 19",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "tens",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-2",
+    "label": "ones",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13-3",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "54"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "tens",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-2",
+    "label": "ones",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14-3",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "32"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "tens",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-2",
+    "label": "ones",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15-3",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "88"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "tens",
+    "answer": {
+     "text": "5"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-2",
+    "label": "ones",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16-3",
+    "label": "the number the blocks show",
+    "answer": {
+     "text": "56"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Understand a ten as ten ones, then read two-digit numbers as tens and ones.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -1,0 +1,842 @@
+{
+ "worksheetId": "ws-gk-more-and-less",
+ "title": "More, fewer and the same",
+ "headerLabels": [
+  "K.CC.C.6",
+  "K.CC.C.7"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Mark the row with more dots. Mark same if they are equal.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 4,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 6,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "B"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 5,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 5,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "same"
+           }
+          }
+         }
+        }
+       ],
+       "key": "same"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 3,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 3,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "same"
+           }
+          }
+         }
+        }
+       ],
+       "key": "same"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 5,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 6,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "B"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 6,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 10,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "B"
+           }
+          }
+         }
+        }
+       ],
+       "key": "B"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "A"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 10,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "row": {
+          "children": [
+           {
+            "math": {
+             "atoms": [
+              {
+               "text": "B"
+              }
+             ]
+            }
+           },
+           {
+            "dotArray": {
+             "rows": 1,
+             "cols": 10,
+             "gap": 24
+            }
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "A",
+           "B",
+           "same"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "the row with more dots",
+           "answer": {
+            "text": "same"
+           }
+          }
+         }
+        }
+       ],
+       "key": "same"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-gk-compare-groups",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell whether one group has more, fewer or the same number as another.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "The two rows of dots start at the same place and are evenly spaced, so students can match the dots one to one or count each row. About one item in five has equal rows, so same is a real answer and not a trick.",
+      "misconceptions": [
+       "Judges by how long a row looks rather than by how many dots it has.",
+       "Thinks two groups cannot be the same and always marks A or B."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 406
+    },
+    {
+     "label": "B",
+     "instruction": "Mark the greater number.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "6",
+           "10"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "the greater of 6 and 10",
+           "answer": {
+            "text": "10"
+           }
+          }
+         }
+        }
+       ],
+       "key": "10"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "2",
+           "6"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "the greater of 2 and 6",
+           "answer": {
+            "text": "6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "5",
+           "8"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "the greater of 5 and 8",
+           "answer": {
+            "text": "8"
+           }
+          }
+         }
+        }
+       ],
+       "key": "8"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "5",
+           "10"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "the greater of 5 and 10",
+           "answer": {
+            "text": "10"
+           }
+          }
+         }
+        }
+       ],
+       "key": "10"
+      },
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "4",
+           "2"
+          ],
+          "field": {
+           "id": "q11",
+           "label": "the greater of 4 and 2",
+           "answer": {
+            "text": "4"
+           }
+          }
+         }
+        }
+       ],
+       "key": "4"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "1",
+           "6"
+          ],
+          "field": {
+           "id": "q12",
+           "label": "the greater of 1 and 6",
+           "answer": {
+            "text": "6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "9",
+           "5"
+          ],
+          "field": {
+           "id": "q13",
+           "label": "the greater of 9 and 5",
+           "answer": {
+            "text": "9"
+           }
+          }
+         }
+        }
+       ],
+       "key": "9"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "10",
+           "1"
+          ],
+          "field": {
+           "id": "q14",
+           "label": "the greater of 10 and 1",
+           "answer": {
+            "text": "10"
+           }
+          }
+         }
+        }
+       ],
+       "key": "10"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "6",
+           "5"
+          ],
+          "field": {
+           "id": "q15",
+           "label": "the greater of 6 and 5",
+           "answer": {
+            "text": "6"
+           }
+          }
+         }
+        }
+       ],
+       "key": "6"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "choices": {
+          "options": [
+           "10",
+           "7"
+          ],
+          "field": {
+           "id": "q16",
+           "label": "the greater of 10 and 7",
+           "answer": {
+            "text": "10"
+           }
+          }
+         }
+        }
+       ],
+       "key": "10"
+      }
+     ],
+     "columns": 4,
+     "fragmentId": "frag-gk-greater-number",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell which of two numbers from 1 to 10 is greater.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Students compare written numerals without pictures, after comparing groups of dots in the section before. The greater number is the one said later when counting. Pairs that differ by 1 make students think about the order of the counting sequence.",
+      "misconceptions": [
+       "Chooses the number that is written first or looks bigger.",
+       "Thinks 10 is less than 9 because 1 is less than 9."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K–5, Operations and Algebraic Thinking"
+      ]
+     },
+     "estimatedHeight": 142
+    }
+   ],
+   "estimatedHeight": 556
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "same"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "same"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "B"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the row with more dots",
+    "answer": {
+     "text": "same"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the greater of 6 and 10",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "the greater of 2 and 6",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "the greater of 5 and 8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "the greater of 5 and 10",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the greater of 4 and 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the greater of 1 and 6",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "the greater of 9 and 5",
+    "answer": {
+     "text": "9"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "the greater of 10 and 1",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "the greater of 6 and 5",
+    "answer": {
+     "text": "6"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "the greater of 10 and 7",
+    "answer": {
+     "text": "10"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Compare groups of dots, then compare written numbers.",
+  "principles": [
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ]
+ },
+ "advice": [
+  "\"Mark the row with more dots. Mark same if they are equal.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Mark the greater number.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}
