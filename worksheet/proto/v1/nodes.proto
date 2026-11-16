@@ -632,6 +632,8 @@ message LengthStrips {
     // The length in units.
     int32 units = 2;
   }
+}
+
 // Solid is one or more boxes standing side by side on a table, drawn at a
 // slant so three faces show. Lengths run left to right, widths away from the
 // viewer, heights up.
