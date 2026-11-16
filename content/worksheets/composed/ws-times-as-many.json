@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: multiply.",
+     "instruction": "Multiply.",
      "items": [
       {
        "label": "1",
@@ -347,11 +347,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -360,7 +364,7 @@
     },
     {
      "label": "B",
-     "instruction": "Use the tape diagram. Write the answer under the brace.",
+     "instruction": "Use the tape diagram to solve. Write the answer in the box.",
      "example": {
       "nodes": [
        {
@@ -389,7 +393,7 @@
         }
        }
       ],
-      "text": "**3 times as many** means 3 tapes the same length as the smaller one: 4 + 4 + 4 = 3 × 4 = 12."
+      "text": "**3 times as many** is 3 tapes the same length as Ben's: 4 + 4 + 4 = 3 × 4 = 12."
      },
      "items": [
       {
@@ -461,14 +465,17 @@
      "fragmentId": "frag-times-as-many",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Solve multiplicative comparison word problems.",
+      "purpose": "Solve multiplicative comparison problems with a tape diagram.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Tape diagrams separate 'times as many' from 'more than', which children often solve by adding.",
+      "rationale": "Tape diagrams separate times as many from more than, which students often solve by adding. The larger tape is drawn as copies of the smaller one, so the multiplication is visible before it is written.",
       "misconceptions": [
-       "Reading '3 times as many' as '3 more'"
+       "Reading 3 times as many as 3 more."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 514
@@ -599,8 +606,16 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Solve times-as-many problems with tape diagrams.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_WORKED_EXAMPLE"
+  ],
+  "rationale": "The facts come first because each problem ends in a multiplication fact. The worked example shows the larger tape as copies of the smaller one."
+ },
  "advice": [
-  "Section \"Use the tape diagram. Write the answer under the brace.\" was cut from 3 to 2 items to fit."
+  "Section \"Use the tape diagram to solve. Write the answer in the box.\" was cut from 3 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

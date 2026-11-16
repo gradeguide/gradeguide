@@ -11,8 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add. The denominators are the same.",
-     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "instruction": "Add.",
      "items": [
       {
        "label": "1",
@@ -189,13 +188,18 @@
      "design": {
       "purpose": "Add fractions with the same denominator.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers.",
       "misconceptions": [
        "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 178
     },
     {
      "label": "B",
@@ -287,15 +291,19 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem keeps one denominator, so the child can reason in counts of unit fractions.",
+      "rationale": "Each problem keeps one denominator, so students reason in counts of unit fractions. The problems cover joining, taking away, and equal groups of a fraction. Answers greater than 1 are accepted as fractions or as mixed numbers.",
       "misconceptions": [
-       "Adding denominators: 2/8 + 3/8 = 5/16."
+       "Adding denominators: 2/8 + 3/8 = 5/16.",
+       "Multiplying both parts of the fraction by the whole number: 5 × 2/3 = 10/15."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 526
     }
    ],
-   "estimatedHeight": 738
+   "estimatedHeight": 712
   },
   {
    "sections": [
@@ -383,9 +391,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem keeps one denominator, so the child can reason in counts of unit fractions.",
+      "rationale": "Each problem keeps one denominator, so students reason in counts of unit fractions. The problems cover joining, taking away, and equal groups of a fraction. Answers greater than 1 are accepted as fractions or as mixed numbers.",
       "misconceptions": [
-       "Adding denominators: 2/8 + 3/8 = 5/16."
+       "Adding denominators: 2/8 + 3/8 = 5/16.",
+       "Multiplying both parts of the fraction by the whole number: 5 × 2/3 = 10/15."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "continued": true,
@@ -527,7 +539,8 @@
   "purpose": "Solve word problems with fractions that share a denominator.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "Adding fractions comes first, so the calculation in each problem is familiar and the work is in reading the story."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

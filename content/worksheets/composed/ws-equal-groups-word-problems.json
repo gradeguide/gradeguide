@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "instruction": "Write a multiplication fact and a division fact for each array.",
      "example": {
       "nodes": [
        {
@@ -93,7 +93,7 @@
         }
        }
       ],
-      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+      "text": "3 rows of 5 dots: **3 × 5 = 15**. 15 dots in 3 equal rows: **15 ÷ 3 = 5**."
      },
      "items": [
       {
@@ -281,12 +281,19 @@
      "fragmentId": "frag-array-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read one array as a multiplication and a division.",
+      "purpose": "Write a multiplication fact and a division fact for the same array.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes. Students write the rows first, so the first factor always names the number of rows, the convention most grade 3 programs use.",
+      "misconceptions": [
+       "Writing the division fact with the total last: 3 ÷ 15 = 5.",
+       "Counting every dot one by one instead of using the rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
+      ]
      },
      "estimatedHeight": 426
     },
@@ -353,9 +360,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups.",
+      "rationale": "The unknown is sometimes the total, sometimes the size of each group and sometimes the number of groups, which are the three equal-groups problem types in 3.OA.A.3. Students who draw the groups or an array can check the operation they chose.",
       "misconceptions": [
-       "Multiplying whenever two numbers appear."
+       "Multiplying whenever two numbers appear.",
+       "Treating the number of groups and the size of each group as the same kind of number, so 42 ÷ 7 and 42 ÷ 6 look the same."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 306
@@ -428,9 +439,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The unknown is sometimes the total, sometimes the size of a group and sometimes the number of groups.",
+      "rationale": "The unknown is sometimes the total, sometimes the size of each group and sometimes the number of groups, which are the three equal-groups problem types in 3.OA.A.3. Students who draw the groups or an array can check the operation they chose.",
       "misconceptions": [
-       "Multiplying whenever two numbers appear."
+       "Multiplying whenever two numbers appear.",
+       "Treating the number of groups and the size of each group as the same kind of number, so 42 ÷ 7 and 42 ÷ 6 look the same."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "continued": true,
@@ -623,7 +638,7 @@
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
   ],
-  "rationale": "Arrays first, because an equal-groups story is an array with the rows named."
+  "rationale": "Arrays come first, because an equal-groups story is an array with the rows named."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

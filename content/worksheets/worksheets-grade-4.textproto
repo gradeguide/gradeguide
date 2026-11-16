@@ -9,13 +9,14 @@
 worksheets {
   id: "ws-comparison-sentences"
   title: "Times as many: sentences and equations"
+  home_tip: "Ask the student to say a times-as-many sentence for 4 × 6 = 24, such as 24 is 4 times as many as 6."
   seed: 201
   max_pages: 2
-  placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-multiplication-facts" count: 8 }
   placements { fragment_id: "frag-times-as-many-statements" }
   placements { fragment_id: "frag-times-as-many" count: 2 stage: STAGE_PRACTICE }
   design {
-    purpose: "Read and write multiplication as a comparison."
+    purpose: "Read and write multiplication equations as comparisons."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
     rationale: "Sentences and equations come before tape diagrams, so the diagram shows what the sentence already said."
   }
@@ -24,58 +25,66 @@ worksheets {
 worksheets {
   id: "ws-comparison-word-problems"
   title: "Comparison word problems"
+  home_tip: "Ask the student to draw a tape diagram for one problem before writing an equation."
   seed: 202
   max_pages: 2
   placements { fragment_id: "frag-times-as-many-statements" count: 4 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-comparison-word-problems" }
   design {
-    purpose: "Solve problems that compare by multiplying or dividing."
+    purpose: "Solve problems that compare two amounts by multiplying or dividing."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "The comparison sentences come first, so students have the language of times as many before reading it in a story."
   }
 }
 
 worksheets {
   id: "ws-multistep-word-problems"
   title: "Problems with more than one step"
+  home_tip: "Before solving, ask the student to say what must be found first."
   seed: 203
   max_pages: 3
   placements { fragment_id: "frag-multistep-word-problems" }
   design {
     purpose: "Solve multi-step problems with whole numbers."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Each problem mixes operations, and most split the steps into parts, so students practice planning a solution one step at a time."
   }
 }
 
 worksheets {
   id: "ws-number-patterns"
   title: "Number patterns"
+  home_tip: "Ask the student to make up a rule, write five numbers, and describe something the numbers have in common, such as all being even."
   seed: 204
   max_pages: 2
   placements { fragment_id: "frag-continue-the-pattern" }
   placements { fragment_id: "frag-find-the-rule" }
   placements { fragment_id: "frag-shade-multiples" count: 1 stage: STAGE_STRETCH }
   design {
-    purpose: "Make and describe number patterns from a rule."
+    purpose: "Write and describe number patterns from a rule."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Following a rule comes before finding one; shading multiples ends with a pattern in a grid instead of a list."
+    rationale: "Following a rule comes before finding one. Shading multiples ends the sheet with a pattern in a grid instead of a list."
   }
 }
 
 worksheets {
   id: "ws-missing-numbers"
   title: "Find the missing number"
+  home_tip: "For each missing number, ask the student to say the whole fact family it belongs to."
   seed: 205
   placements { fragment_id: "frag-division-facts" count: 8 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-missing-factor" }
   design {
     purpose: "Find an unknown number in a multiplication or division fact."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Division facts come first, then the same facts with the unknown in any position."
   }
 }
 
 worksheets {
   id: "ws-equal-groups-word-problems"
   title: "Equal groups word problems"
+  home_tip: "Ask the student to draw the groups for one problem and check the answer by counting."
   seed: 206
   max_pages: 2
   placements { fragment_id: "frag-array-facts" count: 2 stage: STAGE_REVIEW }
@@ -83,19 +92,21 @@ worksheets {
   design {
     purpose: "Solve equal-groups problems by multiplying or dividing."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Arrays first, because an equal-groups story is an array with the rows named."
+    rationale: "Arrays come first, because an equal-groups story is an array with the rows named."
   }
 }
 
 worksheets {
   id: "ws-two-step-word-problems"
   title: "Two-step word problems"
+  home_tip: "Ask the student to check each answer by estimating: is it about the size the story suggests?"
   seed: 207
   max_pages: 2
   placements { fragment_id: "frag-two-step-word-problems" }
   design {
     purpose: "Solve two-step problems with the four operations."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "The first problem shows the two steps as parts. The others ask one question, so students find the first step themselves."
   }
 }
 
@@ -104,40 +115,46 @@ worksheets {
 worksheets {
   id: "ws-add-subtract-within-1000"
   title: "Add and subtract within 1,000"
+  home_tip: "Ask the student to round both numbers to the nearest hundred and check that the answer is close to the estimate."
   seed: 208
   max_pages: 2
   placements { fragment_id: "frag-round-to-tens-and-hundreds" stage: STAGE_REVIEW }
   placements { fragment_id: "frag-column-add-3-digit" }
   placements { fragment_id: "frag-column-subtract-3-digit" }
   design {
-    purpose: "Add and subtract three-digit numbers, with rounding to check."
-    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    purpose: "Round three-digit numbers, then add and subtract within 1,000."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "Rounding comes first so students can estimate each sum and difference. Each operation then opens with a worked example."
   }
 }
 
 worksheets {
   id: "ws-partial-products"
   title: "Partial products"
+  home_tip: "Ask the student to say what each partial product stands for, such as 8 × 70."
   seed: 209
   placements { fragment_id: "frag-multiply-tens" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-partial-products" }
   placements { fragment_id: "frag-column-multiply" count: 4 }
   design {
-    purpose: "Multiply with partial products, then the standard algorithm."
+    purpose: "Multiply with partial products, then with the standard algorithm."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Multiplying by tens and hundreds comes first, because every partial product is one of those. The column method then writes the same partial products in a shorter form."
   }
 }
 
 worksheets {
   id: "ws-division-word-problems"
   title: "Division word problems"
+  home_tip: "Ask the student to check each answer by multiplying."
   seed: 210
   max_pages: 2
   placements { fragment_id: "frag-long-division" count: 3 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-division-word-problems" }
   design {
-    purpose: "Divide in context."
+    purpose: "Divide multi-digit numbers in word problems."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Three long divisions come first, then problems that need the same calculation."
   }
 }
 
@@ -146,46 +163,51 @@ worksheets {
 worksheets {
   id: "ws-decompose-fractions"
   title: "Fractions in parts"
+  home_tip: "Ask the student to show 5/8 as a sum in two different ways."
   seed: 211
   placements { fragment_id: "frag-name-the-shaded-fraction" count: 2 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-decompose-fraction" }
-  placements { fragment_id: "frag-add-fractions" count: 4 }
+  placements { fragment_id: "frag-add-fractions" count: 4 omit_example: true }
   design {
-    purpose: "See a fraction as a sum of unit fractions, then add fractions."
+    purpose: "Write a fraction as a sum of fractions with the same denominator, then add fractions."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Naming shaded fractions reviews counting unit fractions. Decomposing a fraction comes before adding, because addition reverses the same step."
   }
 }
 
 worksheets {
   id: "ws-add-subtract-fractions"
   title: "Add and subtract fractions"
-  home_tip: "If they add the bottom numbers, ask what size the pieces are."
+  home_tip: "If the student adds the denominators, ask what size the parts are before and after adding."
   seed: 212
   placements { fragment_id: "frag-add-fractions" }
   placements { fragment_id: "frag-subtract-fractions" }
   design {
     purpose: "Add and subtract fractions with the same denominator."
-    principles: [PRINCIPLE_INTERLEAVING]
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "A worked example sets out the rule in words: the parts keep their size, so only the numerators change. Subtraction follows with the same denominators."
   }
 }
 
 worksheets {
   id: "ws-mixed-numbers"
   title: "Mixed numbers"
-  home_tip: "Have them say the whole numbers first, then the parts."
+  home_tip: "Ask the student to say the whole numbers first, then the fractions, then check whether the fractions make a whole."
   seed: 213
-  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-add-mixed-numbers" }
   placements { fragment_id: "frag-subtract-mixed-numbers" }
   design {
     purpose: "Add and subtract mixed numbers with the same denominator."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Adding fractions comes first, because the fraction parts of mixed numbers are added the same way. Subtraction comes last, and every item needs a whole regrouped."
   }
 }
 
 worksheets {
   id: "ws-fraction-times-whole"
   title: "Multiply a fraction by a whole number"
+  home_tip: "Ask the student to say 4 × 3/8 as 4 groups of 3 eighths."
   seed: 214
   max_pages: 2
   placements { fragment_id: "frag-decompose-fraction" count: 2 stage: STAGE_REVIEW }
@@ -193,50 +215,55 @@ worksheets {
   design {
     purpose: "Multiply a fraction by a whole number."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Decomposing a fraction into unit fractions comes first, so a product such as 3 × 2/5 reads as a count of fifths."
   }
 }
 
 worksheets {
   id: "ws-fraction-word-problems"
   title: "Fraction word problems"
-  home_tip: "Ask them to draw the pizza or ribbon before writing any numbers."
+  home_tip: "Ask the student to draw the pizza or the ribbon before writing any numbers."
   seed: 215
   max_pages: 2
-  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-add-fractions" count: 4 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-fraction-word-problems" }
   design {
     purpose: "Solve word problems with fractions that share a denominator."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Adding fractions comes first, so the calculation in each problem is familiar and the work is in reading the story."
   }
 }
 
 worksheets {
   id: "ws-compare-decimals"
   title: "Compare decimals"
+  home_tip: "Compare two prices such as $0.40 and $0.38, and ask the student which is more and why."
   seed: 216
   placements { fragment_id: "frag-hundredths-grid" count: 2 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-compare-decimals" }
   design {
     purpose: "Compare decimals to hundredths."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The grids show 0.4 as 40 hundredths before the child compares 0.4 with 0.38 in symbols."
+    rationale: "The grids show 0.4 as 40 hundredths before students compare 0.4 with 0.38 in symbols."
   }
 }
 
 worksheets {
   id: "ws-fractions-review"
   title: "Fractions review"
+  home_tip: "Ask the student which section felt hardest, and look back at that skill together."
   seed: 217
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }
   placements { fragment_id: "frag-equivalent-missing" count: 4 }
   placements { fragment_id: "frag-compare-any" count: 4 }
-  placements { fragment_id: "frag-add-fractions" count: 4 }
+  placements { fragment_id: "frag-add-fractions" count: 4 omit_example: true }
   placements { fragment_id: "frag-fraction-times-whole" count: 2 }
   placements { fragment_id: "frag-compare-decimals" count: 6 }
   design {
     purpose: "Review the grade 4 fraction and decimal skills together."
     principles: [PRINCIPLE_INTERLEAVING, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Short sets from each fraction standard are mixed on one sheet, with no worked examples, so students recall each method without a model to copy."
   }
 }
 
@@ -245,19 +272,22 @@ worksheets {
 worksheets {
   id: "ws-convert-units"
   title: "Convert units"
+  home_tip: "Ask the student to find the number of inches in their height in feet, or the minutes in a 2-hour trip."
   seed: 218
   max_pages: 2
   placements { fragment_id: "frag-convert-length" }
   placements { fragment_id: "frag-convert-time-and-mass" }
   design {
-    purpose: "Convert larger units to smaller ones."
+    purpose: "Convert measurements from a larger unit to a smaller unit."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Length conversions come first, then time, mass and volume. Every table starts with a row that states the relationship."
   }
 }
 
 worksheets {
   id: "ws-measurement-word-problems"
   title: "Measurement word problems"
+  home_tip: "Ask the student to say which unit the answer should be in before solving."
   seed: 219
   max_pages: 2
   placements { fragment_id: "frag-convert-time-and-mass" count: 1 stage: STAGE_REVIEW }
@@ -265,58 +295,67 @@ worksheets {
   design {
     purpose: "Solve problems with measurements, converting units where needed."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "One conversion table comes first as a reminder that each conversion is a multiplication."
   }
 }
 
 worksheets {
   id: "ws-angle-turns"
   title: "Angles are turns"
+  home_tip: "Stand and turn a quarter turn, a half turn and a full turn, and ask the student how many degrees each one is."
   seed: 220
   max_pages: 2
   placements { fragment_id: "frag-angle-turns" }
   placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_PRACTICE }
   design {
-    purpose: "Understand an angle's measure as an amount of turn."
+    purpose: "Measure an angle as a fraction of a full turn."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Students find degrees from fractions of a turn, then classify angles. The second section connects a measure in degrees to acute, right and obtuse."
   }
 }
 
 worksheets {
   id: "ws-area-perimeter-word-problems"
   title: "Area and perimeter problems"
+  home_tip: "Measure a table or a rug together and find both its area and its perimeter."
   seed: 221
   max_pages: 2
   placements { fragment_id: "frag-rectangle-perimeter" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-rectangle-area" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-area-perimeter-word-problems" }
   design {
-    purpose: "Use area and perimeter in real problems."
+    purpose: "Use area and perimeter to solve problems."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Drawn rectangles come first, then problems where students picture the rectangle from the story."
   }
 }
 
 worksheets {
   id: "ws-bar-graphs"
   title: "Read bar graphs"
-  home_tip: "Make a quick bar graph together of something at home, like socks by colour."
+  home_tip: "Make a bar graph together of something at home, such as socks by color, with a scale that counts by 2."
   seed: 222
   placements { fragment_id: "frag-bar-graph-questions" }
   design {
     purpose: "Answer questions from a scaled bar graph."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Two graphs with the same three questions let students apply the same reading steps to new data."
   }
 }
 
 worksheets {
   id: "ws-mass-and-volume"
   title: "Mass and liquid volume"
+  home_tip: "Fill a measuring jug to different marks and ask the student to read each amount."
   seed: 223
   max_pages: 2
-  placements { fragment_id: "frag-multiplication-facts" count: 8 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-read-volume" }
+  placements { fragment_id: "frag-read-volume-milliliters" }
   placements { fragment_id: "frag-mass-volume-word-problems" }
   design {
-    purpose: "Solve problems about mass and liquid volume."
-    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    purpose: "Measure liquid volume from a scale, then solve one-step problems about mass and volume."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Students read liters from a scale marked every liter, then milliliters from a scale marked every 50. The word problems that follow use the same units, so measuring comes before computing."
   }
 }
 
@@ -325,19 +364,22 @@ worksheets {
 worksheets {
   id: "ws-classify-triangles"
   title: "Triangles by their angles"
+  home_tip: "Ask the student to draw one acute, one right and one obtuse triangle and label the largest angle."
   seed: 224
   max_pages: 2
   placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-classify-triangles" }
   design {
-    purpose: "Sort triangles by their angles."
+    purpose: "Classify triangles by their angles."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Classifying single angles comes first, because a triangle's name depends on its largest angle."
   }
 }
 
 worksheets {
   id: "ws-quadrilaterals"
   title: "Parallel sides and right angles"
+  home_tip: "Ask the student to find a shape at home with exactly one pair of parallel sides."
   seed: 225
   max_pages: 2
   placements { fragment_id: "frag-name-line-pairs" count: 3 stage: STAGE_REVIEW }
@@ -345,18 +387,21 @@ worksheets {
   design {
     purpose: "Describe quadrilaterals by their parallel sides and right angles."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Pairs of lines come first, so parallel and perpendicular are familiar before students look for them in the sides of a shape."
   }
 }
 
 worksheets {
   id: "ws-symmetry"
   title: "Lines of symmetry"
+  home_tip: "Fold paper shapes to test each line of symmetry the student draws."
   seed: 226
   max_pages: 2
   placements { fragment_id: "frag-lines-of-symmetry" }
   design {
-    purpose: "Find lines of symmetry."
+    purpose: "Find and draw lines of symmetry."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The shapes have different numbers of lines of symmetry, including none, so students test each possible line."
   }
 }
 
@@ -365,6 +410,7 @@ worksheets {
 worksheets {
   id: "ws-grade-3-check"
   title: "Ready for grade 4?"
+  home_tip: "Note which section took the longest; that skill is the one to practice before grade 4 begins."
   seed: 227
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }
@@ -372,10 +418,10 @@ worksheets {
   placements { fragment_id: "frag-missing-factor" count: 4 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-fraction-at-arrow" count: 2 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-round-to-tens-and-hundreds" count: 2 stage: STAGE_REVIEW }
-  placements { fragment_id: "frag-column-subtract-3-digit" count: 3 stage: STAGE_REVIEW }
+  placements { fragment_id: "frag-column-subtract-3-digit" count: 3 stage: STAGE_REVIEW omit_example: true }
   placements { fragment_id: "frag-rectangle-area" count: 2 stage: STAGE_REVIEW }
   design {
-    purpose: "Check the grade 3 skills grade 4 builds on."
+    purpose: "Check the grade 3 skills that grade 4 builds on."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
     rationale: "Short sets from each grade 3 domain show which prerequisite needs work before a grade 4 unit starts."
   }

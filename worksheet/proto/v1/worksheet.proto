@@ -137,6 +137,9 @@ message ItemKind {
     LinesOfSymmetry lines_of_symmetry = 41;
     MissingFactor missing_factor = 42;
     BarGraphQuestions bar_graph_questions = 43;
+    AreaByCounting area_by_counting = 110;
+    CircleFraction circle_fraction = 111;
+    ReadVolume read_volume = 112;
   }
 }
 
@@ -145,6 +148,8 @@ message FractionAtArrow {
   repeated int32 denominators = 1;
   // How many units the line runs, from 0. Zero: 1.
   int32 units = 2;
+  // Put every arrow past 1, between two whole numbers.
+  bool past_one = 3;
 }
 
 // A number line with boxes under its part ticks; label each.
@@ -257,6 +262,9 @@ message FractionAddSubtract {
   repeated int32 denominators = 1;
   bool subtract = 2;
   bool mixed = 3;
+  // With mixed: the fraction parts make a whole to trade when adding, or
+  // need a whole traded when subtracting.
+  bool regroup = 4;
 }
 
 // a/d written as a sum of two fractions with the same denominator, one part
@@ -304,6 +312,9 @@ message ClassifyShape {
     FAMILY_UNSPECIFIED = 0;
     FAMILY_TRIANGLES = 1;
     FAMILY_QUADRILATERALS = 2;
+    // Squares, rectangles, rhombuses and other quadrilaterals, with side
+    // lengths: answer yes or no for each name.
+    FAMILY_QUADRILATERAL_NAMES = 3;
   }
 }
 
@@ -322,12 +333,30 @@ message BarGraphQuestions {
   int32 step = 2;
 }
 
+// A shape of unit squares on a grid: a rectangle or an L, to find its area
+// by counting squares.
+message AreaByCounting {
+  IntRange side = 1;
+  // Also draw L shapes, which are two rectangles joined.
+  bool l_shapes = 2;
+}
+
+// A circle cut into halves, thirds or fourths: name the shaded part, or
+// shade a given part.
+message CircleFraction {
+  repeated int32 denominators = 1;
+  bool child_shades = 2;
+}
+
 // A sum or difference set in columns.
 message ColumnAddSubtract {
   int32 digits = 1;
   bool subtract = 2;
   // At least one column regroups.
   bool regroup = 3;
+  // The sum, or the number subtracted from, is at most this, as in "within
+  // 100". Zero: no limit beyond the digits.
+  int32 max_total = 4;
 }
 
 // A product of a many-digit and a one-digit number, set in columns.
@@ -446,6 +475,20 @@ message FactorPairs {
 // A hundred chart; shade the multiples of a number.
 message ShadeMultiples {
   repeated int32 of = 1;
+}
+
+// A measuring jug with a scale, filled to a mark; write how much liquid is
+// in it.
+message ReadVolume {
+  Unit unit = 1;
+
+  enum Unit {
+    UNIT_UNSPECIFIED = 0;
+    // A 10-liter bucket marked every liter.
+    UNIT_LITERS = 1;
+    // A 500-milliliter jug marked every 50 milliliters.
+    UNIT_MILLILITERS = 2;
+  }
 }
 
 // Worksheet is fragments in order, fitted to pages.

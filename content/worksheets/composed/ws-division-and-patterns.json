@@ -1,0 +1,816 @@
+{
+ "worksheetId": "ws-division-and-patterns",
+ "title": "Division facts and patterns",
+ "headerLabels": [
+  "3.OA.C.7",
+  "3.OA.A.2",
+  "3.OA.A.4",
+  "3.OA.B.6",
+  "4.OA.B.4",
+  "3.OA.D.9"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Divide.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "6 ÷ 2",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 ÷ 2 = 3"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "49"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "49 ÷ 7",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "49 ÷ 7 = 7"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "32"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "4"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "32 ÷ 4",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "32 ÷ 4 = 8"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "24"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "24 ÷ 3",
+             "answer": {
+              "text": "8"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "24 ÷ 3 = 8"
+      },
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "7"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q5",
+             "label": "14 ÷ 7",
+             "answer": {
+              "text": "2"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "14 ÷ 7 = 2"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "15"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "15 ÷ 5",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "15 ÷ 5 = 3"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "8 ÷ 2",
+             "answer": {
+              "text": "4"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 ÷ 2 = 4"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "27"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "9"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "27 ÷ 9",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "27 ÷ 9 = 3"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "9"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "3"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "9 ÷ 3",
+             "answer": {
+              "text": "3"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9 ÷ 3 = 3"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "14"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "text": "2"
+           },
+           {
+            "text": "="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "14 ÷ 2",
+             "answer": {
+              "text": "7"
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "14 ÷ 2 = 7"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-division-facts",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Recall division facts within 100 from the related multiplication facts.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3.",
+      "misconceptions": [
+       "Dividing the larger digit by the smaller one regardless of order.",
+       "Giving the product instead of the missing factor."
+      ]
+     },
+     "estimatedHeight": 242
+    },
+    {
+     "label": "B",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "24 ÷ 8",
+             "answer": {
+              "text": "3"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "24"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 × 3 = 24"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "10"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "10 ÷ 5",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "5"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "10 ÷ 2 = 5"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "blank": {
+             "id": "q13",
+             "label": "10 ÷ 5",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "×"
+           },
+           {
+            "text": "5"
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "10"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "2 × 5 = 10"
+      },
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "64"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "64 ÷ 8",
+             "answer": {
+              "text": "8"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "8"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "64 ÷ 8 = 8"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "6"
+           },
+           {
+            "text": "×"
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "12 ÷ 6",
+             "answer": {
+              "text": "2"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "12"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "6 × 2 = 12"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "8"
+           },
+           {
+            "text": "÷"
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "8 ÷ 2",
+             "answer": {
+              "text": "4"
+             }
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "text": "2"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "8 ÷ 4 = 2"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-missing-factor",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find an unknown number in a multiplication or division equation.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "The unknown sits in different places, so students treat multiplication and division as one fact family. 3.OA.A.4 lists exactly these forms: 8 × ? = 48, 5 = ? ÷ 3 and 6 × 6 = ?.",
+      "misconceptions": [
+       "Multiplying the two numbers shown whatever the position of the box: 8 × ? = 24 answered 192.",
+       "Reading the equal sign as a signal to write the answer, so a box on the left looks wrong."
+      ]
+     },
+     "estimatedHeight": 138
+    },
+    {
+     "label": "C",
+     "instruction": "Shade the multiples.",
+     "items": [
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "Shade every multiple of 7."
+        },
+        {
+         "numberChart": {
+          "start": 1,
+          "rows": 5,
+          "cols": 10,
+          "shadeField": {
+           "id": "q17",
+           "label": "multiples of 7 up to 50",
+           "answer": {
+            "text": "7, 14, 21, 28, 35, 42, 49"
+           }
+          }
+         }
+        }
+       ],
+       "key": "7, 14, 21, 28, 35, 42, 49"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-shade-multiples",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Shade the multiples of a number on a hundred chart and describe the pattern.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Shaded multiples form columns or diagonals on the chart, a pattern students can describe and extend. Shading two numbers shows that every multiple of 6 is also a multiple of 3.",
+      "misconceptions": [
+       "Shading numbers that contain the digit, such as 14 and 24 for multiples of 4."
+      ]
+     },
+     "estimatedHeight": 215
+    }
+   ],
+   "estimatedHeight": 607
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "6 ÷ 2",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "49 ÷ 7",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "32 ÷ 4",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "24 ÷ 3",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "14 ÷ 7",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "15 ÷ 5",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "8 ÷ 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "27 ÷ 9",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "9 ÷ 3",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "14 ÷ 2",
+    "answer": {
+     "text": "7"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "24 ÷ 8",
+    "answer": {
+     "text": "3"
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "10 ÷ 5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "10 ÷ 5",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "64 ÷ 8",
+    "answer": {
+     "text": "8"
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "12 ÷ 6",
+    "answer": {
+     "text": "2"
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "8 ÷ 2",
+    "answer": {
+     "text": "4"
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "multiples of 7 up to 50",
+    "answer": {
+     "text": "7, 14, 21, 28, 35, 42, 49"
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Divide within 100, and find patterns in multiples.",
+  "principles": [
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "Division facts come first, then the same facts with the unknown moved, so students treat multiplication and division as one fact family. Shading multiples on a hundred chart ends the sheet with a pattern students can describe."
+ },
+ "advice": [
+  "\"Divide.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Write the missing number.\" is practice, and nothing on the sheet introduces it with a worked example."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

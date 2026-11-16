@@ -110,9 +110,14 @@
      "fragmentId": "frag-convert-time-and-mass",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Express times, masses and volumes in a smaller unit.",
+      "purpose": "Express times, masses and liquid volumes in a smaller unit.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Time, mass and volume conversions sit together so students read the relationship in the first row of each table instead of assuming a factor of 10 or 100.",
+      "misconceptions": [
+       "Using 100 minutes in an hour.",
+       "Using 10 ounces in a pound."
       ]
      },
      "estimatedHeight": 268
@@ -207,9 +212,10 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table.",
+      "rationale": "Each problem needs a conversion before or after the arithmetic, which is how measurements appear outside a conversion table. The conversion fact is printed in the problem, because 4.MD.A.2 assesses using it, not recalling it.",
       "misconceptions": [
-       "Combining amounts in different units without converting."
+       "Combining amounts in different units without converting: 2 liters − 650 milliliters = 648.",
+       "Treating 1 hour 50 minutes as 150 minutes."
       ]
      },
      "estimatedHeight": 514
@@ -302,9 +308,10 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "The problems mix units and need a conversion before or after the arithmetic, which is how measurements turn up outside a table.",
+      "rationale": "Each problem needs a conversion before or after the arithmetic, which is how measurements appear outside a conversion table. The conversion fact is printed in the problem, because 4.MD.A.2 assesses using it, not recalling it.",
       "misconceptions": [
-       "Combining amounts in different units without converting."
+       "Combining amounts in different units without converting: 2 liters − 650 milliliters = 648.",
+       "Treating 1 hour 50 minutes as 150 minutes."
       ]
      },
      "continued": true,
@@ -433,7 +440,8 @@
   "purpose": "Solve problems with measurements, converting units where needed.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "One conversion table comes first as a reminder that each conversion is a multiplication."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

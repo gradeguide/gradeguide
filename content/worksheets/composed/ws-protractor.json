@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: tick acute, right or obtuse.",
-     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
+     "explainer": "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle.",
      "items": [
       {
        "label": "1",
@@ -111,21 +111,25 @@
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 351
     },
     {
      "label": "B",
-     "instruction": "Read the protractor.",
-     "explainer": "Start at the 0 where the bottom ray lies, and count up to the other ray.",
+     "instruction": "Write the measure of each angle.",
+     "explainer": "Start at the 0 on the bottom ray. Count up to the other ray.",
      "items": [
       {
        "label": "4",
@@ -264,9 +268,10 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "One scale, with the first ray always on 0, isolates reading the scale before the two-scale protractor of a real classroom.",
+      "rationale": "The protractor has one scale, and the first ray always lies on 0, so students practice reading the scale before using a classroom protractor with two scales.",
       "misconceptions": [
-       "Reading the wrong scale, giving 180 minus the angle"
+       "Reading the wrong scale, which gives 180 minus the angle.",
+       "Reading the nearest labeled number instead of counting the marks past it."
       ]
      },
      "estimatedHeight": 452
@@ -359,8 +364,15 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Measure angles with a protractor.",
+  "principles": [
+   "PRINCIPLE_PREREQUISITE_REVIEW"
+  ],
+  "rationale": "Classifying angles first gives an estimate to check each protractor reading against: an acute angle cannot measure 150 degrees."
+ },
  "advice": [
-  "\"Read the protractor.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the measure of each angle.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

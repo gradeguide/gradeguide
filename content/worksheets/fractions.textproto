@@ -10,16 +10,17 @@ fragments {
   example {
     item { shaded_fraction { denominators: 4 model: MODEL_BAR } }
     seed: 3
-    text: "The bar is cut into **4 equal parts**, so each part is a fourth. Count the shaded parts for the top number."
+    text: "The bar has **4 equal parts**. 1 part is shaded, so **1/4** of the bar is shaded."
   }
   items { kind { shaded_fraction { denominators: [2, 3, 4, 6, 8] model: MODEL_BAR } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Name a fraction of a whole from an area model."
+    purpose: "Name the shaded part of a whole as a fraction."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Bars come before number lines because a part of a shape is easier to see than a distance. Denominators vary so the child reads the bottom number every time instead of assuming fourths."
-    misconceptions: "Counting shaded and unshaded parts as top and bottom numbers"
-    references: "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
+    rationale: "Bars come before number lines because a part of a shape is easier to see than a distance. The denominator changes from item to item, so students read the number of equal parts every time instead of assuming fourths. The worked example names both numbers of the fraction in words."
+    misconceptions: "Writing shaded parts over unshaded parts: 2 of 6 shaded is written 2/4."
+    misconceptions: "Writing the number of unshaded parts on top."
+    references: "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2"
   }
 }
 
@@ -30,44 +31,47 @@ fragments {
   items { kind { shaded_fraction { denominators: [3, 4, 6, 8] child_shades: true } } count: 4 }
   max_columns: 2
   design {
-    purpose: "Make a fraction, not just read one."
+    purpose: "Shade a given fraction of a bar."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Reversing the task, from fraction to picture, checks that the child knows what each number does."
+    rationale: "Reversing the task, from fraction to picture, checks that students know what each number in the fraction does. Bars cut into sixths and eighths make students count parts carefully before shading."
+    misconceptions: "Shading as many parts as the denominator."
   }
 }
 
 fragments {
   id: "frag-fraction-at-arrow"
-  instruction: "What fraction is at the arrow?"
+  instruction: "Write the fraction at the arrow."
   stage: STAGE_GUIDED
   example {
     item { fraction_at_arrow { denominators: 4 } }
     seed: 5
-    text: "From 0 to 1 there are **4 equal jumps**, so each jump is 1/4. The arrow is 3 jumps from 0, so it is at **3/4**."
+    text: "There are **4 equal jumps** from 0 to 1, so each jump is 1/4. The arrow is 3 jumps from 0. It points to **3/4**."
   }
   items { kind { fraction_at_arrow { denominators: [3, 4, 6, 8] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Read a fraction as a distance from 0 on a number line."
     principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_WORKED_EXAMPLE]
-    rationale: "The number line shows a fraction as one number with a size, which area models do not. The IES fractions guide recommends it as the central representation from grade 3."
-    misconceptions: "Counting tick marks instead of the spaces between them"
-    references: "Siegler et al. (2010), IES practice guide, rec. 2"
-    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+    rationale: "The number line shows a fraction as one number with a size, which an area model does not. Students count the spaces between marks, not the marks, so the fraction is a distance from 0. The IES fractions guide recommends the number line as a central representation from grade 3."
+    misconceptions: "Counting tick marks instead of the spaces between them."
+    misconceptions: "Counting the 0 mark as the first jump."
+    references: "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2"
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-fraction-at-arrow-past-1"
-  instruction: "What fraction is at the arrow? Some are more than 1."
+  instruction: "Write the fraction at the arrow. Each arrow is past 1."
   stage: STAGE_STRETCH
-  items { kind { fraction_at_arrow { denominators: [2, 3, 4] units: 2 } } count: 2 }
+  items { kind { fraction_at_arrow { denominators: [2, 3, 4] units: 2 past_one: true } } count: 2 }
   max_columns: 2
   design {
-    purpose: "See that fractions go on past 1."
+    purpose: "Read fractions greater than 1 on a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "A line to 2 breaks the idea that a fraction is always a part of one thing and less than 1."
-    misconceptions: "Fractions are always less than 1"
+    rationale: "Every arrow is between 1 and 2, so students keep counting jumps past 1 and write a numerator larger than the denominator. This breaks the idea that a fraction is always part of one thing and less than 1."
+    misconceptions: "Fractions are always less than 1."
+    misconceptions: "Starting the count again at 1, which gives 1/4 for 5/4."
   }
 }
 
@@ -78,9 +82,10 @@ fragments {
   items { kind { label_ticks { denominators: [3, 4, 5, 6] } } count: 2 }
   max_columns: 1
   design {
-    purpose: "Label every unit fraction step from 0 to 1."
+    purpose: "Label each mark between 0 and 1 with its fraction."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "Labelling each mark in turn builds 3/4 as three jumps of 1/4, the idea 4.NF.B.3 later uses for adding fractions."
+    rationale: "Labelling every mark in turn builds 3/4 as three jumps of 1/4, the idea 4.NF.B.3 later uses for adding fractions. The denominator stays the same along a line, so students see the numerator count up by one."
+    misconceptions: "Writing 1/3, 1/2, 1/1 along a line cut into thirds, changing the denominator instead of the numerator."
   }
 }
 
@@ -91,101 +96,108 @@ fragments {
   items { kind { find_mistake_number_line { denominators: [3, 4, 5] } } count: 1 }
   max_columns: 1
   design {
-    purpose: "Spot and explain the marks-not-jumps error."
+    purpose: "Find and explain the error of counting marks instead of jumps."
     principles: [PRINCIPLE_ERROR_ANALYSIS, PRINCIPLE_SELF_EXPLANATION]
-    rationale: "Explaining why a worked answer is wrong helps children drop a misconception they would otherwise keep using. The error shown is the most common one on number lines."
-    misconceptions: "Counting tick marks instead of the spaces between them"
+    rationale: "Explaining why a worked answer is wrong helps students drop a misconception they would otherwise keep using. The error shown is the most common one on fraction number lines."
+    misconceptions: "Counting tick marks instead of the spaces between them."
     references: "Booth, Lange, Koedinger and Newton (2013), Learning and Instruction 25"
   }
 }
 
 fragments {
   id: "frag-equivalent-on-number-lines"
-  instruction: "The two lines are the same length. Write the missing number."
+  instruction: "The two number lines are the same length. Write the missing number."
   stage: STAGE_INTRODUCE
   example {
     item { equivalent_on_number_lines { denominators: 2 factors: 2 } }
     seed: 5
-    text: "Both arrows point to the **same place**, so the fractions are equal. Halves cut into 2 make fourths: 1/2 = 2/4."
+    text: "Both arrows point to the **same place**, so the fractions are equal: 1/2 = 2/4."
   }
   items { kind { equivalent_on_number_lines { denominators: [2, 3, 4] factors: [2, 3] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "See two fractions at one point as one number with two names."
+    purpose: "Recognize two fractions at the same point as equal."
     principles: [PRINCIPLE_NUMBER_LINE, PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_WORKED_EXAMPLE]
-    rationale: "Lining up two number lines makes equivalence a fact about position, before any rule about multiplying top and bottom. The rule is easier to keep once it explains something the child has seen."
-    misconceptions: "A bigger denominator means a bigger fraction"
-    references: "Common Core Standards Writing Team (2013), Progressions for Number and Operations—Fractions, 3-5"
+    rationale: "Lining up two number lines makes equivalence a fact about position, before any rule about multiplying the numerator and denominator. The second line cuts each part into 2 or 3, so the rule later explains something students have seen."
+    misconceptions: "A bigger denominator means a bigger fraction, so 2/4 is more than 1/2."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-equivalent-with-wall"
-  instruction: "Use the fraction wall to fill in the box."
+  instruction: "Use the fraction strips. Write the missing number."
   stage: STAGE_GUIDED
   figure { fraction_wall { denominators: [2, 3, 4, 6, 8] label_pieces: true } }
-  items { kind { equivalent_missing { denominators: [2, 3, 4] factors: 2 } } count: 6 min_count: 3 }
+  items { kind { equivalent_missing { denominators: [2, 3, 4] factors: 2 } } count: 5 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Find equivalent fractions by lining up pieces."
+    purpose: "Find equivalent fractions by lining up fraction strips."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "The wall is the concrete step: the child can check each answer by eye. Later sections take the wall away."
+    rationale: "The strips are the concrete step: students can check each answer by eye. Every item doubles the denominator, so each answer is on the strips. Later sections remove the strips."
+    misconceptions: "Adding the same number to the numerator and denominator: 1/2 = 2/3."
     references: "Fyfe, McNeil, Son and Goldstone (2014), Educational Psychology Review 26"
   }
 }
 
 fragments {
   id: "frag-equivalent-missing"
-  instruction: "Fill in the box."
+  instruction: "Write the missing number."
   stage: STAGE_PRACTICE
   items { kind { equivalent_missing { denominators: [2, 3, 4, 5, 6] factors: [2, 3, 4] mix_blank_side: true } } count: 9 min_count: 6 }
   max_columns: 3
   design {
-    purpose: "Generate equivalent fractions without a picture."
+    purpose: "Write equivalent fractions without a model."
     principles: [PRINCIPLE_CONCRETENESS_FADING, PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "With no model, the child has to use the multiplying rule. Some boxes are denominators, so the rule is used both ways."
+    rationale: "With no model, students multiply the numerator and the denominator by the same number. Some boxes are denominators, so the rule is used in both directions."
+    misconceptions: "Multiplying only the denominator: 2/3 = 2/6."
+    misconceptions: "Adding the same number to the numerator and denominator."
   }
 }
 
 fragments {
   id: "frag-compare-same-denominator"
-  instruction: "Write <, > or =."
+  instruction: "Compare. Write <, > or =."
   stage: STAGE_REVIEW
   items { kind { compare_fractions { denominators: [4, 6, 8] mode: MODE_SAME_DENOMINATOR } } count: 6 min_count: 3 }
   max_columns: 3
   design {
     purpose: "Compare fractions with the same denominator."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Same-size pieces are compared by counting, which children already trust. It is the starting point for comparing unlike pieces."
+    rationale: "When the parts are the same size, students compare by counting parts, which they already trust. It is the starting point for comparing fractions with different denominators."
+    misconceptions: "Reversing the signs < and >."
   }
 }
 
 fragments {
   id: "frag-compare-same-numerator"
-  instruction: "Write <, > or =."
-  explainer: "More pieces in the whole means smaller pieces."
+  instruction: "Compare. Write <, > or =."
+  explainer: "More parts in the whole means smaller parts."
   stage: STAGE_INTRODUCE
   items { kind { compare_fractions { denominators: [2, 3, 4, 6, 8] mode: MODE_SAME_NUMERATOR } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Compare fractions with the same numerator by piece size."
+    purpose: "Compare fractions with the same numerator by the size of the parts."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Holding the numerator fixed isolates the one idea that conflicts with whole-number thinking: a bigger denominator means a smaller piece."
-    misconceptions: "1/8 is bigger than 1/4 because 8 is bigger than 4"
+    rationale: "Holding the numerator fixed isolates the one idea that conflicts with whole-number thinking: a bigger denominator means a smaller part."
+    misconceptions: "1/8 is bigger than 1/4 because 8 is bigger than 4."
     references: "Ni and Zhou (2005), Educational Psychologist 40"
   }
 }
 
 fragments {
   id: "frag-compare-any"
-  instruction: "Write <, > or =. Use a benchmark like 1/2 or a common denominator."
+  instruction: "Compare. Write <, > or =."
+  explainer: "Use a benchmark such as 1/2, or rewrite the fractions with a common denominator."
   stage: STAGE_PRACTICE
   items { kind { compare_fractions { denominators: [2, 3, 4, 5, 6, 8, 10, 12] mode: MODE_ANY } } count: 9 min_count: 6 }
   max_columns: 3
   design {
-    purpose: "Compare any two fractions."
+    purpose: "Compare two fractions with different numerators and denominators."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Mixing same-denominator, same-numerator and unlike pairs makes the child choose a strategy, which blocked practice never asks for."
+    rationale: "Mixing same-denominator, same-numerator and unlike pairs makes students choose a strategy for each pair, which a set of one type never asks for. Some pairs are equal, so = is a possible answer."
+    misconceptions: "Comparing only the numerators, or only the denominators."
+    misconceptions: "Judging by the difference between numerator and denominator: 3/4 and 5/6 are equal because each is one part short."
     references: "Rohrer and Taylor (2007), Instructional Science 35"
   }
 }
@@ -197,27 +209,44 @@ fragments {
   example {
     item { hundredths_grid {} }
     seed: 21
-    text: "The square is **one whole** cut into 100 equal parts. Each part is 1/100, or 0.01."
+    text: "The square is **1 whole** cut into 100 equal parts. Each part is 1/100, or 0.01."
   }
   items { kind { hundredths_grid {} } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Write hundredths as fractions and decimals."
+    purpose: "Write hundredths as fractions and as decimals."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_WORKED_EXAMPLE]
-    rationale: "The grid ties decimal notation to the fraction it stands for, so 0.3 and 0.30 can be seen to be the same amount."
-    misconceptions: "0.30 is bigger than 0.3"
+    rationale: "The grid ties decimal notation to the fraction it stands for. Students see that 0.3 and 0.30 shade the same amount."
+    misconceptions: "0.30 is bigger than 0.3."
+    misconceptions: "Writing 7 hundredths as 0.7."
+    references: "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
   }
 }
 
 fragments {
   id: "frag-tenths-grid"
-  instruction: "Write the shaded part as a fraction and as a decimal."
+  instruction: "Write the shaded part as a fraction and as a decimal. Each column is 1 tenth."
   stage: STAGE_PRACTICE
   items { kind { hundredths_grid { tenths: true } } count: 2 }
   max_columns: 2
   design {
-    purpose: "See tenths as a number of hundredths."
+    purpose: "Write tenths shaded on a hundredths grid as a fraction and a decimal."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Tenths shaded on a hundredths grid accept both 3/10 and 30/100, the equivalence 4.NF.C.5 uses to add tenths and hundredths."
+    rationale: "Tenths shaded on a hundredths grid can be named 3/10 or 30/100, and both answers are accepted. This is the equivalence 4.NF.C.5 uses to add tenths and hundredths."
+    misconceptions: "Writing 3 tenths as 0.03."
+  }
+}
+
+fragments {
+  id: "frag-tenths-as-hundredths"
+  instruction: "Write the missing number."
+  stage: STAGE_PRACTICE
+  items { kind { equivalent_missing { denominators: 10 factors: 10 } } count: 4 min_count: 2 }
+  max_columns: 3
+  design {
+    purpose: "Write a fraction with denominator 10 as an equal fraction with denominator 100."
+    principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "After the grids, students write the same equivalence with no picture. 4.NF.C.5 needs it before tenths and hundredths can be added."
+    misconceptions: "Writing 3/10 = 3/100."
   }
 }

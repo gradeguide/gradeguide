@@ -5,14 +5,18 @@
 
 fragments {
   id: "frag-classify-triangles"
-  instruction: "Is the triangle acute, right or obtuse? Tick one."
+  instruction: "Is the triangle acute, right or obtuse? Check one."
   stage: STAGE_PRACTICE
-  explainer: "A right triangle has a right angle. An obtuse triangle has an angle bigger than a right angle. In an acute triangle every angle is smaller than a right angle."
+  explainer: "A right triangle has a right angle. An obtuse triangle has an obtuse angle. An acute triangle has three acute angles."
   items { kind { classify_shape { family: FAMILY_TRIANGLES } } count: 6 min_count: 3 }
   max_columns: 3
   design {
     purpose: "Classify triangles by their largest angle."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The set shows each kind of triangle before any kind repeats. Students look at the largest angle, which decides the name, and compare it with a right angle."
+    misconceptions: "A triangle with one acute angle is an acute triangle."
+    misconceptions: "A right triangle must have its right angle at the bottom left."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
   }
 }
 
@@ -23,21 +27,25 @@ fragments {
   items { kind { classify_shape { family: FAMILY_QUADRILATERALS } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Describe quadrilaterals by parallel sides and right angles."
+    purpose: "Describe quadrilaterals by their pairs of parallel sides and their right angles."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names: a parallelogram has two pairs of parallel sides, a trapezoid at least one."
+    rationale: "Counting features, rather than naming shapes, works for every quadrilateral and leads to the names in 4.G.A.2: a parallelogram has two pairs of parallel sides, and a trapezoid has at least one. The set includes a kite and a shape with no parallel sides, so zero is a possible answer."
+    misconceptions: "Counting each parallel side separately, which gives 4 for a rectangle."
+    misconceptions: "Calling any shape with a slanted side a trapezoid."
   }
 }
 
 fragments {
   id: "frag-lines-of-symmetry"
-  instruction: "How many lines of symmetry does each shape have? Draw them, then write the number."
+  instruction: "Draw all the lines of symmetry. Write how many."
   stage: STAGE_PRACTICE
   items { kind { lines_of_symmetry {} } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Find lines of symmetry in a shape."
+    purpose: "Find and draw the lines of symmetry of a shape."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "The shapes have from 0 to 6 lines of symmetry, so students cannot assume every shape has one or two. Drawing each line before counting makes students test it by folding the shape in their heads."
     misconceptions: "Drawing a diagonal of a rectangle as a line of symmetry."
+    misconceptions: "Finding one line and stopping."
   }
 }

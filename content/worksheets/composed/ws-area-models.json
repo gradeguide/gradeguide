@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: multiply.",
+     "instruction": "Multiply.",
      "items": [
       {
        "label": "1",
@@ -347,11 +347,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -360,7 +364,7 @@
     },
     {
      "label": "B",
-     "instruction": "Fill in the area model, then the product.",
+     "instruction": "Complete the area model. Write the product.",
      "example": {
       "nodes": [
        {
@@ -419,7 +423,7 @@
         }
        }
       ],
-      "text": "Split the big number by place value. Multiply each part, then **add the parts**."
+      "text": "Split 28 into 20 and 8. Multiply each part by 2. Add the parts: **40 + 16 = 56**."
      },
      "items": [
       {
@@ -683,14 +687,18 @@
      "fragmentId": "frag-area-model-2-by-1",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "purpose": "Multiply a two-digit number by a one-digit number with an area model.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "rationale": "The area model shows the distributive property, which the standard algorithm hides. Splitting by place value gives one tens product and one ones product, and 4.NBT.B.5 names the area model as a way to explain the calculation.",
       "misconceptions": [
-       "Multiplying only the ones, or forgetting the tens are tens"
+       "Multiplying only the ones, or treating the tens digit as ones: 28 × 2 = 2 × 2 + 8 × 2.",
+       "Writing the two partial products side by side instead of adding them: 40 and 16 give 4016."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 470
@@ -702,7 +710,7 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "Fill in the area model, then the product.",
+     "instruction": "Complete the area model. Write the product.",
      "items": [
       {
        "label": "15",
@@ -871,19 +879,24 @@
        "key": "5400, 480, 180, 16; 98 × 62 = 6076"
       }
      ],
-     "columns": 2,
+     "columns": 1,
      "fragmentId": "frag-area-model-2-by-2",
      "stage": "STAGE_STRETCH",
      "design": {
       "purpose": "Multiply two two-digit numbers with four partial products.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Splitting both factors gives four cells: tens times tens, tens times ones, ones times tens and ones times ones. It extends the previous section by one row, so the structure stays familiar.",
+      "misconceptions": [
+       "Multiplying tens by tens and ones by ones only, which leaves out two partial products: 74 × 62 = 4200 + 8.",
+       "Writing 70 × 60 as 420."
       ]
      },
-     "estimatedHeight": 286
+     "estimatedHeight": 538
     }
    ],
-   "estimatedHeight": 290
+   "estimatedHeight": 542
   }
  ],
  "key": [
@@ -1209,12 +1222,12 @@
   }
  ],
  "design": {
-  "purpose": "Multiply by splitting numbers by place value.",
+  "purpose": "Multiply by splitting factors by place value.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_WORKED_EXAMPLE"
   ],
-  "rationale": "Every cell of an area model is a basic fact times a power of ten, so the warm-up recalls the facts the cells need."
+  "rationale": "Every cell of an area model is a basic fact times a power of ten, so the sheet opens with the facts the cells need. One-digit factors come before two-digit ones."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

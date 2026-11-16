@@ -5,20 +5,22 @@
 
 fragments {
   id: "frag-times-as-many-statements"
-  instruction: "Fill in the blanks. Each sentence and the equation under it say the same thing."
+  instruction: "Write the missing number. The sentence and the equation under it mean the same thing."
   stage: STAGE_INTRODUCE
   example {
     item { times_as_many_statement { times { min: 3 max: 3 } smaller { min: 5 max: 5 } } }
     seed: 1
-    text: "\"15 is 3 times as many as 5\" is the same as **15 = 3 × 5**."
+    text: "15 is 3 times as many as 5 means **15 = 3 × 5**."
   }
   items { kind { times_as_many_statement { times { min: 2 max: 9 } smaller { min: 2 max: 9 } } } count: 6 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Read a multiplication equation as a comparison: 35 = 5 × 7 means 35 is 5 times as many as 7."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions."
-    misconceptions: "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+    rationale: "Each item pairs a sentence with its equation, and the unknown moves between the product and each factor. Students cannot answer by matching words to positions, so they read what the comparison says. 4.OA.A.1 asks for both directions: sentence to equation and equation to sentence."
+    misconceptions: "Reading times as many as adding: 3 times as many as 5 is 8."
+    misconceptions: "Reversing the comparison: writing 5 = 3 × 15 for 15 is 3 times as many as 5."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
 }
 
@@ -29,33 +31,40 @@ fragments {
   items { kind { number_pattern { start { min: 1 max: 30 } step { min: 2 max: 12 } } } count: 4 min_count: 2 }
   max_columns: 1
   design {
-    purpose: "Generate a number pattern from a rule."
+    purpose: "Write the terms of a number pattern from a rule."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "The rule and the first three terms are given, so students check the rule against the terms before extending the pattern. Steps up to 12 keep each addition mental while crossing tens."
+    misconceptions: "Adding the step to the first term every time instead of to the last term."
+    misconceptions: "Continuing by the ones digit only: 18, 25, 32, 39, 46, 43."
   }
 }
 
 fragments {
   id: "frag-find-the-rule"
-  instruction: "What is the rule? Write the number added each time."
+  instruction: "Write the rule for each pattern."
   stage: STAGE_PRACTICE
   items { kind { number_pattern { start { min: 2 max: 40 } step { min: 3 max: 15 } find_rule: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Find the rule of an adding pattern from its terms."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Finding the rule reverses the previous section, so the child checks a rule against several pairs of terms rather than one."
+    rationale: "Finding the rule reverses the previous section. Students check the rule against every pair of terms, not only the first, which is how 4.OA.C.5 expects a rule to be confirmed."
+    misconceptions: "Writing the first term as the rule."
+    misconceptions: "Finding the difference of the first two terms only and not checking the rest."
   }
 }
 
 fragments {
   id: "frag-missing-factor"
-  instruction: "Find the missing number."
+  instruction: "Write the missing number."
   stage: STAGE_PRACTICE
   items { kind { missing_factor { factors { min: 2 max: 9 } } } count: 12 min_count: 6 }
   design {
-    purpose: "Find an unknown factor in a multiplication or division equation."
+    purpose: "Find an unknown number in a multiplication or division equation."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "The unknown sits in different places, so the child thinks of multiplication and division as one fact family."
+    rationale: "The unknown sits in different places, so students treat multiplication and division as one fact family. 3.OA.A.4 lists exactly these forms: 8 × ? = 48, 5 = ? ÷ 3 and 6 × 6 = ?."
+    misconceptions: "Multiplying the two numbers shown whatever the position of the box: 8 × ? = 24 answered 192."
+    misconceptions: "Reading the equal sign as a signal to write the answer, so a box on the left looks wrong."
   }
 }
 
@@ -63,10 +72,18 @@ fragments {
   id: "frag-column-add-3-digit"
   instruction: "Add."
   stage: STAGE_PRACTICE
-  items { kind { column_add_subtract { digits: 3 regroup: true } } count: 6 min_count: 3 }
+  example {
+    item { column_add_subtract { digits: 3 regroup: true max_total: 1000 } }
+    seed: 7
+    text: "Add the ones, then the tens, then the hundreds. Write a regrouped ten or hundred in the box above the next place."
+  }
+  items { kind { column_add_subtract { digits: 3 regroup: true max_total: 1000 } } count: 6 min_count: 3 }
   design {
-    purpose: "Add three-digit numbers in columns, regrouping."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    purpose: "Add three-digit numbers with sums to 1,000, regrouping."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "3.NBT.A.2 asks for fluency within 1,000, so no sum passes 1,000. Every item regroups at least once, and some regroup twice."
+    misconceptions: "Writing a two-digit column sum without regrouping."
+    misconceptions: "Adding the regrouped digit to the wrong column."
   }
 }
 
@@ -74,21 +91,31 @@ fragments {
   id: "frag-column-subtract-3-digit"
   instruction: "Subtract."
   stage: STAGE_PRACTICE
-  items { kind { column_add_subtract { digits: 3 subtract: true regroup: true } } count: 6 min_count: 3 }
+  example {
+    item { column_add_subtract { digits: 3 subtract: true regroup: true max_total: 1000 } }
+    seed: 7
+    text: "Subtract the ones, then the tens, then the hundreds. When the top digit is smaller, regroup 1 from the next place to the left."
+  }
+  items { kind { column_add_subtract { digits: 3 subtract: true regroup: true max_total: 1000 } } count: 6 min_count: 3 }
   design {
-    purpose: "Subtract three-digit numbers in columns, regrouping."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    purpose: "Subtract three-digit numbers within 1,000, regrouping."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every item needs at least one regrouping, and some numbers have a zero in the tens place, which makes students regroup from the hundreds."
     misconceptions: "Subtracting the smaller digit from the larger in each column, whichever is on top."
+    misconceptions: "Regrouping across a zero without reducing the hundreds."
   }
 }
 
 fragments {
   id: "frag-round-to-tens-and-hundreds"
-  instruction: "Round. The number line shows which multiple is nearer."
+  instruction: "Round each number. Use the number line."
   stage: STAGE_GUIDED
   items { kind { round_on_number_line { digits: 3 places: [10, 100] } } count: 4 min_count: 2 }
   design {
     purpose: "Round three-digit numbers to the nearest 10 or 100."
     principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Each number sits on a line between the two multiples it could round to, so students choose the nearer one by distance. 3.NBT.A.1 asks for rounding to both places, and the items mix them."
+    misconceptions: "Rounding to the wrong place, such as to the nearest 10 when asked for the nearest 100."
+    misconceptions: "Rounding 203 to 300 because rounding means going up."
   }
 }

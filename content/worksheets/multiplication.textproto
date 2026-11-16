@@ -7,42 +7,49 @@
 
 fragments {
   id: "frag-multiply-tens"
-  instruction: "Multiply by tens and hundreds. Use the basic fact."
+  instruction: "Multiply. Use a basic fact."
   stage: STAGE_INTRODUCE
-  explainer: "3 × 40 is 3 × 4 tens. That is 12 tens, or 120."
+  explainer: "3 × 40 = 3 × 4 tens = 12 tens = 120"
   items { kind { multiply_by_tens { factors { min: 2 max: 9 } places: [10, 100] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Multiply a one-digit number by a multiple of 10 or 100 using a basic fact."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros."
-    misconceptions: "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+    rationale: "Students write the product in units of tens or hundreds before writing it as a number, so the zeros come from place value rather than a rule about adding zeros. 3.NBT.A.3 asks for exactly this use of place value."
+    misconceptions: "Counting zeros in the factors to place them in the product, which fails for 5 × 40 = 200."
+    misconceptions: "Writing 12 tens as 102."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-break-apart"
-  instruction: "Break the second number apart. Multiply each part, then add."
+  instruction: "Break apart the second factor. Multiply each part. Add the products."
   stage: STAGE_GUIDED
   items { kind { break_apart { factors { min: 6 max: 9 } } } count: 3 min_count: 2 }
   max_columns: 1
   design {
     purpose: "Use the distributive property to find a hard fact from two easier ones."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Splitting at 5 uses the fives facts most children already know, and is the same move the area model and partial products make with place value."
+    rationale: "Splitting at 5 uses the fives facts most students already know. It is the same step the area model and partial products take with place value, so this section prepares for both."
+    misconceptions: "Multiplying only the first part and adding the second: 7 × 8 = 7 × 5 + 3."
+    misconceptions: "Adding the parts of the factor instead of the products."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-partial-products"
-  instruction: "Multiply each place, then add the partial products."
+  instruction: "Multiply each place. Add the partial products."
   stage: STAGE_GUIDED
   items { kind { partial_products { top_digits: 3 } } count: 3 min_count: 2 }
   max_columns: 3
   design {
     purpose: "Multiply a three-digit number by a one-digit number with partial products."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+    rationale: "Each row is one cell of an area model written as a number, and the note beside it names the product. The standard algorithm that follows writes the same rows in a shorter form."
+    misconceptions: "Multiplying the digit 4 in 542 as 4 instead of 40."
+    misconceptions: "Lining up the partial products by their left digits."
   }
 }
 
@@ -52,9 +59,11 @@ fragments {
   stage: STAGE_APPLY
   max_columns: 1
   design {
-    purpose: "Choose and use multiplication to solve problems from a graph, a table and a comparison."
+    purpose: "Solve multiplication problems that take their numbers from a graph, a table and a comparison."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+    rationale: "Each problem takes its numbers from a different source, so students locate the numbers before choosing a strategy. The graph's scale counts by 2 and every bar ends on a gridline, so reading the graph is not where the problem goes wrong."
+    misconceptions: "Using the number of packs as the number of stickers."
+    misconceptions: "Adding 6 to 14 for 6 times as tall."
   }
   items {
     count: 3
@@ -67,19 +76,19 @@ fragments {
               bar_graph {
                 title: "Sticker packs bought"
                 value_axis: "Packs"
-                step: 4
+                step: 2
                 bars { label: "Room 4" value: 16 }
-                bars { label: "Room 5" value: 23 }
+                bars { label: "Room 5" value: 22 }
                 bars { label: "Room 6" value: 12 }
               }
             }
             parts {
               prompt { text: "How many stickers did Room 5 get?" }
-              response { work_space { field { label: "stickers Room 5 got" answer { text: "184" work: "23 × 8" also: "184 stickers" } } } }
+              response { work_space { field { label: "stickers Room 5 got" answer { text: "176" work: "22 × 8" also: "176 stickers" } } } }
             }
             parts {
               prompt { text: "How many more stickers did Room 5 get than Room 6?" }
-              response { work_space { field { label: "how many more stickers" answer { text: "88" work: "184 − 12 × 8" also: "88 stickers" } } } }
+              response { work_space { field { label: "how many more stickers" answer { text: "80" work: "176 − 12 × 8" also: "80 stickers" } } } }
             }
           }
         }
@@ -124,10 +133,10 @@ fragments {
 worksheets {
   id: "ws-multiplication-strategies"
   title: "Many ways to multiply"
-  home_tip: "Let them pick the strategy for each problem; ask which felt fastest."
+  home_tip: "For one problem, ask the student to show two different ways to multiply and check that the answers match."
   seed: 140
   max_pages: 4
-  placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-multiplication-facts" count: 10 }
   placements { fragment_id: "frag-array-facts" count: 2 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-multiply-tens" }
   placements { fragment_id: "frag-break-apart" }
@@ -138,6 +147,6 @@ worksheets {
   design {
     purpose: "Practise each multiplication strategy in turn, then use them in word problems."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Facts and arrays come first because every later strategy is built from basic facts. Tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so the child chooses the strategy."
+    rationale: "Facts and arrays come first because every later strategy is built from basic facts. Multiplying by tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so students choose the strategy. The sheet is long and suits two sessions, with the break before the area model."
   }
 }

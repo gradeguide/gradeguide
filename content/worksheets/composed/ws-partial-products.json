@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Multiply by tens and hundreds. Use the basic fact.",
-     "explainer": "3 × 40 is 3 × 4 tens. That is 12 tens, or 120.",
+     "instruction": "Multiply. Use a basic fact.",
+     "explainer": "3 × 40 = 3 × 4 tens = 12 tens = 120",
      "items": [
       {
        "label": "1",
@@ -160,16 +160,20 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros.",
+      "rationale": "Students write the product in units of tens or hundreds before writing it as a number, so the zeros come from place value rather than a rule about adding zeros. 3.NBT.A.3 asks for exactly this use of place value.",
       "misconceptions": [
-       "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+       "Counting zeros in the factors to place them in the product, which fails for 5 × 40 = 200.",
+       "Writing 12 tens as 102."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 156
     },
     {
      "label": "B",
-     "instruction": "Multiply each place, then add the partial products.",
+     "instruction": "Multiply each place. Add the partial products.",
      "items": [
       {
        "label": "3",
@@ -342,7 +346,11 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+      "rationale": "Each row is one cell of an area model written as a number, and the note beside it names the product. The standard algorithm that follows writes the same rows in a shorter form.",
+      "misconceptions": [
+       "Multiplying the digit 4 in 542 as 4 instead of 40.",
+       "Lining up the partial products by their left digits."
+      ]
      },
      "estimatedHeight": 248
     },
@@ -451,7 +459,11 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+      "rationale": "This section follows the area model and partial products, so each regrouped digit stands for a partial product students have already written in full.",
+      "misconceptions": [
+       "Adding the regrouped digit before multiplying the next place.",
+       "Forgetting to add the regrouped digit at all."
+      ]
      },
      "estimatedHeight": 168
     }
@@ -662,13 +674,14 @@
   }
  ],
  "design": {
-  "purpose": "Multiply with partial products, then the standard algorithm.",
+  "purpose": "Multiply with partial products, then with the standard algorithm.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "Multiplying by tens and hundreds comes first, because every partial product is one of those. The column method then writes the same partial products in a shorter form."
  },
  "advice": [
-  "\"Multiply each place, then add the partial products.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Multiply each place. Add the partial products.\" is practice, and nothing on the sheet introduces it with a worked example.",
   "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"

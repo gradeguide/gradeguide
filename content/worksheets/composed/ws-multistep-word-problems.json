@@ -158,9 +158,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next.",
+      "rationale": "Each problem needs at least two operations. In three problems the parts lead through the steps, so students see how one answer feeds the next. The lamp problem gives no parts, so students plan the steps themselves.",
       "misconceptions": [
-       "Using every number in the story in one operation."
+       "Using every number in the story in one operation.",
+       "Stopping after the first step."
+      ],
+      "references": [
+       "Woodward et al. (2012), IES practice guide, Improving Mathematical Problem Solving in Grades 4 Through 8"
       ]
      },
      "estimatedHeight": 658
@@ -279,9 +283,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem needs at least two operations, and the parts lead through them, so the child sees how one answer feeds the next.",
+      "rationale": "Each problem needs at least two operations. In three problems the parts lead through the steps, so students see how one answer feeds the next. The lamp problem gives no parts, so students plan the steps themselves.",
       "misconceptions": [
-       "Using every number in the story in one operation."
+       "Using every number in the story in one operation.",
+       "Stopping after the first step."
+      ],
+      "references": [
+       "Woodward et al. (2012), IES practice guide, Improving Mathematical Problem Solving in Grades 4 Through 8"
       ]
      },
      "continued": true,
@@ -397,7 +405,8 @@
   "purpose": "Solve multi-step problems with whole numbers.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
-  ]
+  ],
+  "rationale": "Each problem mixes operations, and most split the steps into parts, so students practice planning a solution one step at a time."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

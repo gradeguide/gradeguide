@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the area model, then the product.",
+     "instruction": "Complete the area model. Write the product.",
      "items": [
       {
        "label": "1",
@@ -144,14 +144,18 @@
      "fragmentId": "frag-area-model-2-by-1",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "purpose": "Multiply a two-digit number by a one-digit number with an area model.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "rationale": "The area model shows the distributive property, which the standard algorithm hides. Splitting by place value gives one tens product and one ones product, and 4.NBT.B.5 names the area model as a way to explain the calculation.",
       "misconceptions": [
-       "Multiplying only the ones, or forgetting the tens are tens"
+       "Multiplying only the ones, or treating the tens digit as ones: 28 × 2 = 2 × 2 + 8 × 2.",
+       "Writing the two partial products side by side instead of adding them: 40 and 16 give 4016."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 170
@@ -353,7 +357,11 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+      "rationale": "This section follows the area model and partial products, so each regrouped digit stands for a partial product students have already written in full.",
+      "misconceptions": [
+       "Adding the regrouped digit before multiplying the next place.",
+       "Forgetting to add the regrouped digit at all."
+      ]
      },
      "estimatedHeight": 302
     }
@@ -504,10 +512,11 @@
   }
  ],
  "design": {
-  "purpose": "Move from partial products to the standard algorithm.",
+  "purpose": "Move from partial products in an area model to the standard algorithm.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "Two area models come first, so the regrouped digits in the column method stand for partial products students have just written in full."
  },
  "advice": [
   "\"Multiply.\" is practice, and nothing on the sheet introduces it with a worked example."

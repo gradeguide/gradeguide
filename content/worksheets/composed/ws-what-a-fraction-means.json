@@ -35,7 +35,7 @@
         }
        }
       ],
-      "text": "The bar is cut into **4 equal parts**, so each part is a fourth. Count the shaded parts for the top number."
+      "text": "The bar has **4 equal parts**. 1 part is shaded, so **1/4** of the bar is shaded."
      },
      "items": [
       {
@@ -231,17 +231,18 @@
      "fragmentId": "frag-name-the-shaded-fraction",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Name a fraction of a whole from an area model.",
+      "purpose": "Name the shaded part of a whole as a fraction.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Bars come before number lines because a part of a shape is easier to see than a distance. Denominators vary so the child reads the bottom number every time instead of assuming fourths.",
+      "rationale": "Bars come before number lines because a part of a shape is easier to see than a distance. The denominator changes from item to item, so students read the number of equal parts every time instead of assuming fourths. The worked example names both numbers of the fraction in words.",
       "misconceptions": [
-       "Counting shaded and unshaded parts as top and bottom numbers"
+       "Writing shaded parts over unshaded parts: 2 of 6 shaded is written 2/4.",
+       "Writing the number of unshaded parts on top."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2"
       ]
      },
      "estimatedHeight": 410
@@ -294,8 +295,8 @@
            },
            {
             "fraction": {
-             "num": 5,
-             "den": 8
+             "num": 1,
+             "den": 3
             }
            }
           ]
@@ -303,18 +304,18 @@
         },
         {
          "fractionBar": {
-          "parts": 8,
+          "parts": 3,
           "shadeField": {
            "id": "q8",
-           "label": "shading of 5/8",
+           "label": "shading of 1/3",
            "answer": {
-            "text": "5 of 8 parts shaded"
+            "text": "1 of 3 parts shaded"
            }
           }
          }
         }
        ],
-       "key": "5 of 8 parts shaded"
+       "key": "1 of 3 parts shaded"
       },
       {
        "label": "9",
@@ -327,8 +328,8 @@
            },
            {
             "fraction": {
-             "num": 3,
-             "den": 4
+             "num": 5,
+             "den": 8
             }
            }
           ]
@@ -336,18 +337,18 @@
         },
         {
          "fractionBar": {
-          "parts": 4,
+          "parts": 8,
           "shadeField": {
            "id": "q9",
-           "label": "shading of 3/4",
+           "label": "shading of 5/8",
            "answer": {
-            "text": "3 of 4 parts shaded"
+            "text": "5 of 8 parts shaded"
            }
           }
          }
         }
        ],
-       "key": "3 of 4 parts shaded"
+       "key": "5 of 8 parts shaded"
       },
       {
        "label": "10",
@@ -361,7 +362,7 @@
            {
             "fraction": {
              "num": 3,
-             "den": 8
+             "den": 6
             }
            }
           ]
@@ -369,29 +370,32 @@
         },
         {
          "fractionBar": {
-          "parts": 8,
+          "parts": 6,
           "shadeField": {
            "id": "q10",
-           "label": "shading of 3/8",
+           "label": "shading of 3/6",
            "answer": {
-            "text": "3 of 8 parts shaded"
+            "text": "3 of 6 parts shaded"
            }
           }
          }
         }
        ],
-       "key": "3 of 8 parts shaded"
+       "key": "3 of 6 parts shaded"
       }
      ],
      "columns": 2,
      "fragmentId": "frag-shade-the-fraction",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Make a fraction, not just read one.",
+      "purpose": "Shade a given fraction of a bar.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Reversing the task, from fraction to picture, checks that the child knows what each number does."
+      "rationale": "Reversing the task, from fraction to picture, checks that students know what each number in the fraction does. Bars cut into sixths and eighths make students count parts carefully before shading.",
+      "misconceptions": [
+       "Shading as many parts as the denominator."
+      ]
      },
      "estimatedHeight": 266
     }
@@ -480,9 +484,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "shading of 5/8",
+    "label": "shading of 1/3",
     "answer": {
-     "text": "5 of 8 parts shaded"
+     "text": "1 of 3 parts shaded"
     }
    }
   },
@@ -490,9 +494,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "shading of 3/4",
+    "label": "shading of 5/8",
     "answer": {
-     "text": "3 of 4 parts shaded"
+     "text": "5 of 8 parts shaded"
     }
    }
   },
@@ -500,16 +504,20 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "shading of 3/8",
+    "label": "shading of 3/6",
     "answer": {
-     "text": "3 of 8 parts shaded"
+     "text": "3 of 6 parts shaded"
     }
    }
   }
  ],
  "design": {
-  "purpose": "Read and make fractions of a whole.",
-  "rationale": "A worked example, then reading fractions, then making them: the task turns around once the child has seen it done."
+  "purpose": "Read and shade fractions of a whole.",
+  "principles": [
+   "PRINCIPLE_WORKED_EXAMPLE",
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "A worked example comes first, then reading fractions from bars, then shading them. The task reverses only after students have read several fractions."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

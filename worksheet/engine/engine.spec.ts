@@ -6,6 +6,8 @@ import {
   type ComposedSheet,
   type ItemKind,
   ComposedSheetSchema,
+  AreaByCountingSchema,
+  CircleFractionSchema,
   CompareDecimalsSchema,
   FractionAddSubtractSchema,
   FractionTimesWholeSchema,
@@ -366,4 +368,29 @@ describe('item kinds', () => {
       expect(parseAnswer((ans.kind.value as Field).answer!.text)).toBeCloseTo((Number(w.kind.value) * x.num) / x.den);
     }
   });
+
+  it('counts the squares of a shape', () => {
+    for (const lShapes of [false, true]) {
+      for (const [shape, line] of items({ case: 'areaByCounting', value: create(AreaByCountingSchema, { lShapes }) })) {
+        const cells = shape.kind.case === 'gridShape' ? shape.kind.value.cells.length : -1;
+        const ans = atoms(line).find((a) => a.kind.case === 'blank')!.kind.value as Field;
+        expect(Number(ans.answer!.text)).toBe(cells);
+      }
+    }
+  });
+
+  it('names and shades parts of a circle', () => {
+    for (const [circle, line] of items({ case: 'circleFraction', value: create(CircleFractionSchema, {}) })) {
+      const c = circle.kind.case === 'fractionCircle' ? circle.kind.value : undefined;
+      const ans = atoms(line)[0].kind.value as Field;
+      expect(ans.answer!.text).toBe(`${c!.shaded}/${c!.parts}`);
+    }
+    for (const [line, circle] of items({ case: 'circleFraction', value: create(CircleFractionSchema, { childShades: true }) })) {
+      const f = atoms(line)[1].kind.value as { num: number; den: number };
+      const c = circle.kind.case === 'fractionCircle' ? circle.kind.value : undefined;
+      expect(c!.parts).toBe(f.den);
+      expect(c!.shadeField!.answer!.text).toBe(`${f.num}/${f.den}`);
+    }
+  });
 });
+

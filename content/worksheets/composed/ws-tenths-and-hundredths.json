@@ -46,7 +46,7 @@
         }
        }
       ],
-      "text": "The square is **one whole** cut into 100 equal parts. Each part is 1/100, or 0.01."
+      "text": "The square is **1 whole** cut into 100 equal parts. Each part is 1/100, or 0.01."
      },
      "items": [
       {
@@ -220,14 +220,18 @@
      "fragmentId": "frag-hundredths-grid",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Write hundredths as fractions and decimals.",
+      "purpose": "Write hundredths as fractions and as decimals.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "The grid ties decimal notation to the fraction it stands for, so 0.3 and 0.30 can be seen to be the same amount.",
+      "rationale": "The grid ties decimal notation to the fraction it stands for. Students see that 0.3 and 0.30 shade the same amount.",
       "misconceptions": [
-       "0.30 is bigger than 0.3"
+       "0.30 is bigger than 0.3.",
+       "Writing 7 hundredths as 0.7."
+      ],
+      "references": [
+       "Resnick, Nesher, Leonard, Magone, Omanson and Peled (1989), Journal for Research in Mathematics Education 20"
       ]
      },
      "estimatedHeight": 710
@@ -239,7 +243,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Write the shaded part as a fraction and as a decimal.",
+     "instruction": "Write the shaded part as a fraction and as a decimal. Each column is 1 tenth.",
      "items": [
       {
        "label": "5",
@@ -340,16 +344,175 @@
      "fragmentId": "frag-tenths-grid",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "See tenths as a number of hundredths.",
+      "purpose": "Write tenths shaded on a hundredths grid as a fraction and a decimal.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Tenths shaded on a hundredths grid accept both 3/10 and 30/100, the equivalence 4.NF.C.5 uses to add tenths and hundredths."
+      "rationale": "Tenths shaded on a hundredths grid can be named 3/10 or 30/100, and both answers are accepted. This is the equivalence 4.NF.C.5 uses to add tenths and hundredths.",
+      "misconceptions": [
+       "Writing 3 tenths as 0.03."
+      ]
      },
      "estimatedHeight": 250
+    },
+    {
+     "label": "C",
+     "instruction": "Write the missing number.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 7,
+             "den": 10
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 100,
+             "blankNumerator": true,
+             "field": {
+              "id": "q7",
+              "label": "numerator equal to 7/10",
+              "answer": {
+               "text": "70"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "7/10 = 70/100"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 3,
+             "den": 10
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 100,
+             "blankNumerator": true,
+             "field": {
+              "id": "q8",
+              "label": "numerator equal to 3/10",
+              "answer": {
+               "text": "30"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "3/10 = 30/100"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 1,
+             "den": 10
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 100,
+             "blankNumerator": true,
+             "field": {
+              "id": "q9",
+              "label": "numerator equal to 1/10",
+              "answer": {
+               "text": "10"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "1/10 = 10/100"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "fraction": {
+             "num": 9,
+             "den": 10
+            }
+           },
+           {
+            "text": "="
+           },
+           {
+            "halfBlank": {
+             "given": 100,
+             "blankNumerator": true,
+             "field": {
+              "id": "q10",
+              "label": "numerator equal to 9/10",
+              "answer": {
+               "text": "90"
+              }
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "9/10 = 90/100"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-tenths-as-hundredths",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write a fraction with denominator 10 as an equal fraction with denominator 100.",
+      "principles": [
+       "PRINCIPLE_CONCRETENESS_FADING"
+      ],
+      "rationale": "After the grids, students write the same equivalence with no picture. 4.NF.C.5 needs it before tenths and hundredths can be added.",
+      "misconceptions": [
+       "Writing 3/10 = 3/100."
+      ]
+     },
+     "estimatedHeight": 178
     }
    ],
-   "estimatedHeight": 254
+   "estimatedHeight": 436
   }
  ],
  "key": [
@@ -492,7 +655,55 @@
      ]
     }
    }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "numerator equal to 7/10",
+    "answer": {
+     "text": "70"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "numerator equal to 3/10",
+    "answer": {
+     "text": "30"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "numerator equal to 1/10",
+    "answer": {
+     "text": "10"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "numerator equal to 9/10",
+    "answer": {
+     "text": "90"
+    }
+   }
   }
  ],
+ "design": {
+  "purpose": "Write tenths and hundredths as fractions and decimals, and write tenths as hundredths.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
+   "PRINCIPLE_CONCRETENESS_FADING"
+  ],
+  "rationale": "Hundredths come first on a grid, then tenths on the same grid, where each column is one tenth. The last section writes tenths as hundredths with no grid, the step 4.NF.C.5 needs before adding tenths and hundredths."
+ },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

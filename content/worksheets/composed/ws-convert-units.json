@@ -299,9 +299,13 @@
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "A table shows that each row is the first row times a number, which is the multiplication the conversion is."
+      "rationale": "The first row of each table gives the relationship, such as 1 foot = 12 inches. Each later row is that row multiplied, which is the multiplication a conversion is. 4.MD.A.1 asks for these tables, recorded as number pairs.",
+      "misconceptions": [
+       "Dividing instead of multiplying, because the new unit is smaller.",
+       "Adding the conversion number for each row: 2 feet = 24, 3 feet = 25."
+      ]
      },
-     "estimatedHeight": 268
+     "estimatedHeight": 288
     },
     {
      "label": "B",
@@ -603,15 +607,20 @@
      "fragmentId": "frag-convert-time-and-mass",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Express times, masses and volumes in a smaller unit.",
+      "purpose": "Express times, masses and liquid volumes in a smaller unit.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Time, mass and volume conversions sit together so students read the relationship in the first row of each table instead of assuming a factor of 10 or 100.",
+      "misconceptions": [
+       "Using 100 minutes in an hour.",
+       "Using 10 ounces in a pound."
       ]
      },
      "estimatedHeight": 268
     }
    ],
-   "estimatedHeight": 544
+   "estimatedHeight": 564
   }
  ],
  "key": [
@@ -869,10 +878,11 @@
   }
  ],
  "design": {
-  "purpose": "Convert larger units to smaller ones.",
+  "purpose": "Convert measurements from a larger unit to a smaller unit.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "Length conversions come first, then time, mass and volume. Every table starts with a row that states the relationship."
  },
  "advice": [
   "\"Complete the table.\" is practice, and nothing on the sheet introduces it with a worked example.",

@@ -9,8 +9,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick the name of each figure.",
-     "explainer": "A line goes on forever both ways. A ray starts at a point and goes on one way. A line segment has two endpoints.",
+     "instruction": "Check the name of each figure.",
+     "explainer": "A line goes on without end in both directions. A ray has one endpoint. A line segment has two endpoints.",
      "items": [
       {
        "label": "1",
@@ -145,17 +145,20 @@
      "fragmentId": "frag-name-figures",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Tell lines, rays and line segments apart.",
+      "purpose": "Identify lines, rays and line segments.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Figures are drawn at different slants so the child goes by arrows and endpoints, not by how the figure sits."
+      "rationale": "Figures are drawn at different slants, so students go by arrows and endpoints, not by how the figure sits on the page.",
+      "misconceptions": [
+       "A ray and a line segment are the same because both have a point at one end."
+      ]
      },
      "estimatedHeight": 364
     },
     {
      "label": "B",
-     "instruction": "Are the lines parallel, perpendicular or just intersecting?",
+     "instruction": "Are the lines parallel, perpendicular or intersecting? Check one.",
      "items": [
       {
        "label": "5",
@@ -272,12 +275,14 @@
      "fragmentId": "frag-name-line-pairs",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Tell parallel, perpendicular and intersecting lines apart.",
+      "purpose": "Identify parallel, perpendicular and intersecting lines.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "Perpendicular pairs are drawn at a slant as well as upright, so students look for the right-angle mark instead of horizontal and vertical lines. Perpendicular lines also intersect, so students choose the most exact name.",
       "misconceptions": [
-       "Only horizontal and vertical lines can be perpendicular"
+       "Only horizontal and vertical lines can be perpendicular.",
+       "Lines that do not cross on the page are parallel, even when they would meet if extended."
       ]
      },
      "estimatedHeight": 318
@@ -368,8 +373,15 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Identify lines, rays and segments, and parallel, perpendicular and intersecting lines.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "Single figures come first, then pairs of lines. Both sections draw figures at different slants."
+ },
  "advice": [
-  "Section \"Are the lines parallel, perpendicular or just intersecting?\" was cut from 6 to 4 items to fit."
+  "Section \"Are the lines parallel, perpendicular or intersecting? Check one.\" was cut from 6 to 4 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

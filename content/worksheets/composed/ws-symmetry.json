@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "How many lines of symmetry does each shape have? Draw them, then write the number.",
+     "instruction": "Draw all the lines of symmetry. Write how many.",
      "items": [
       {
        "label": "1",
@@ -269,12 +269,14 @@
      "fragmentId": "frag-lines-of-symmetry",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find lines of symmetry in a shape.",
+      "purpose": "Find and draw the lines of symmetry of a shape.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
+      "rationale": "The shapes have from 0 to 6 lines of symmetry, so students cannot assume every shape has one or two. Drawing each line before counting makes students test it by folding the shape in their heads.",
       "misconceptions": [
-       "Drawing a diagonal of a rectangle as a line of symmetry."
+       "Drawing a diagonal of a rectangle as a line of symmetry.",
+       "Finding one line and stopping."
       ]
      },
      "estimatedHeight": 658
@@ -346,13 +348,14 @@
   }
  ],
  "design": {
-  "purpose": "Find lines of symmetry.",
+  "purpose": "Find and draw lines of symmetry.",
   "principles": [
    "PRINCIPLE_SYSTEMATIC_VARIATION"
-  ]
+  ],
+  "rationale": "The shapes have different numbers of lines of symmetry, including none, so students test each possible line."
  },
  "advice": [
-  "\"How many lines of symmetry does each shape have? Draw them, then write the number.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Draw all the lines of symmetry. Write how many.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

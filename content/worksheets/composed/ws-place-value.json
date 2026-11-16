@@ -11,7 +11,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "What number do the blocks show?",
+     "instruction": "Write the number the blocks show.",
      "items": [
       {
        "label": "1",
@@ -123,21 +123,25 @@
      "fragmentId": "frag-base-ten-blocks",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read a number from base-ten blocks.",
+      "purpose": "Read a number to the thousands from base-ten blocks.",
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Blocks show ten tens making a hundred as a size, the 2.NBT.A.1 idea that grade 4 place value extends.",
+      "rationale": "Blocks show 10 of one unit making the next unit as a size. This is the 2.NBT.A.1 idea that grade 4 place value extends to larger numbers.",
       "misconceptions": [
-       "Writing 3 hundreds, 0 tens and 4 ones as 34"
+       "Writing 3 hundreds, 0 tens and 4 ones as 34.",
+       "Counting each block as 1 whatever its size."
+      ],
+      "references": [
+       "Fuson and Briars (1990), Journal for Research in Mathematics Education 21"
       ]
      },
      "estimatedHeight": 400
     },
     {
      "label": "B",
-     "instruction": "Read the place-value chart.",
+     "instruction": "Write the number. Then write the value of the digit.",
      "example": {
       "nodes": [
        {
@@ -203,7 +207,7 @@
         }
        }
       ],
-      "text": "Each place is worth **ten times** the place to its right. The digit tells how many of that place."
+      "text": "Each place is worth **10 times** the place to its right. The 4 is in the tens place, so it is worth 40."
      },
      "items": [
       {
@@ -289,14 +293,18 @@
      "fragmentId": "frag-place-value-chart",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Read multi-digit numbers and the value of each digit.",
+      "purpose": "Read multi-digit numbers from a place-value chart and give the value of a digit.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names.",
+      "rationale": "The chart shows each digit's place before students read the number without it. Asking for the value of one digit checks the ten-times relationship 4.NBT.A.1 names. Some numbers contain zeros, so students write zero digits in the right places.",
       "misconceptions": [
-       "A digit is worth the same wherever it is"
+       "A digit is worth the same in every place.",
+       "Leaving out a zero when writing the number: 7,040 written as 740."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 412
@@ -308,7 +316,7 @@
    "sections": [
     {
      "label": "B",
-     "instruction": "Read the place-value chart.",
+     "instruction": "Write the number. Then write the value of the digit.",
      "items": [
       {
        "label": "5",
@@ -387,27 +395,187 @@
         }
        ],
        "key": "The number is 912,409; The 4 is worth 400"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "placeValueChart": {
+          "columns": [
+           {
+            "name": "hundred thousands",
+            "digit": "9"
+           },
+           {
+            "name": "ten thousands",
+            "digit": "2"
+           },
+           {
+            "name": "thousands",
+            "digit": "3"
+           },
+           {
+            "name": "hundreds",
+            "digit": "4"
+           },
+           {
+            "name": "tens",
+            "digit": "1"
+           },
+           {
+            "name": "ones",
+            "digit": "4"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The number is"
+           },
+           {
+            "blank": {
+             "id": "q6",
+             "label": "the number in the chart",
+             "answer": {
+              "text": "923,414",
+              "also": [
+               "923414"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 3 is worth"
+           },
+           {
+            "blank": {
+             "id": "q6-2",
+             "label": "value of the 3",
+             "answer": {
+              "text": "3,000",
+              "also": [
+               "3000"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The number is 923,414; The 3 is worth 3,000"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "placeValueChart": {
+          "columns": [
+           {
+            "name": "hundred thousands",
+            "digit": "8"
+           },
+           {
+            "name": "ten thousands",
+            "digit": "4"
+           },
+           {
+            "name": "thousands",
+            "digit": "7"
+           },
+           {
+            "name": "hundreds",
+            "digit": "3"
+           },
+           {
+            "name": "tens",
+            "digit": "5"
+           },
+           {
+            "name": "ones",
+            "digit": "8"
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The number is"
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "the number in the chart",
+             "answer": {
+              "text": "847,358",
+              "also": [
+               "847358"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "The 5 is worth"
+           },
+           {
+            "blank": {
+             "id": "q7-2",
+             "label": "value of the 5",
+             "answer": {
+              "text": "50",
+              "also": [
+               "50"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "The number is 847,358; The 5 is worth 50"
       }
      ],
      "columns": 1,
      "fragmentId": "frag-place-value-chart",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Read multi-digit numbers and the value of each digit.",
+      "purpose": "Read multi-digit numbers from a place-value chart and give the value of a digit.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names.",
+      "rationale": "The chart shows each digit's place before students read the number without it. Asking for the value of one digit checks the ten-times relationship 4.NBT.A.1 names. Some numbers contain zeros, so students write zero digits in the right places.",
       "misconceptions": [
-       "A digit is worth the same wherever it is"
+       "A digit is worth the same in every place.",
+       "Leaving out a zero when writing the number: 7,040 written as 740."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "continued": true,
-     "estimatedHeight": 209
+     "estimatedHeight": 559
     }
    ],
-   "estimatedHeight": 213
+   "estimatedHeight": 563
   }
  ],
  "key": [
@@ -501,18 +669,67 @@
      ]
     }
    }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "the number in the chart",
+    "answer": {
+     "text": "923,414",
+     "also": [
+      "923414"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6-2",
+    "label": "value of the 3",
+    "answer": {
+     "text": "3,000",
+     "also": [
+      "3000"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "the number in the chart",
+    "answer": {
+     "text": "847,358",
+     "also": [
+      "847358"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7-2",
+    "label": "value of the 5",
+    "answer": {
+     "text": "50",
+     "also": [
+      "50"
+     ]
+    }
+   }
   }
  ],
  "design": {
-  "purpose": "Read big numbers and the value of each digit.",
+  "purpose": "Read multi-digit numbers and the value of each digit.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_CONCRETENESS_FADING"
   ],
-  "rationale": "Blocks, then a chart, then the number alone: each step keeps less of the picture."
+  "rationale": "Blocks come first, then a place-value chart. Each step shows less of the quantity and more of the written number."
  },
- "advice": [
-  "Section \"Read the place-value chart.\" was cut from 4 to 2 items to fit."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

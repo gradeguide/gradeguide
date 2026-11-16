@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Round. The number line shows which multiple is nearer.",
+     "instruction": "Round each number. Use the number line.",
      "items": [
       {
        "label": "1",
@@ -192,6 +192,11 @@
       "purpose": "Round three-digit numbers to the nearest 10 or 100.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
+      ],
+      "rationale": "Each number sits on a line between the two multiples it could round to, so students choose the nearer one by distance. 3.NBT.A.1 asks for rounding to both places, and the items mix them.",
+      "misconceptions": [
+       "Rounding to the wrong place, such as to the nearest 10 when asked for the nearest 100.",
+       "Rounding 203 to 300 because rounding means going up."
       ]
      },
      "estimatedHeight": 338
@@ -199,32 +204,30 @@
     {
      "label": "B",
      "instruction": "Add.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_ADD",
+         "operands": [
+          "109",
+          "754"
+         ],
+         "answer": {
+          "label": "109 + 754",
+          "answer": {
+           "text": "863"
+          }
+         },
+         "carryBoxes": true
+        }
+       }
+      ],
+      "text": "Add the ones, then the tens, then the hundreds. Write a regrouped ten or hundred in the box above the next place."
+     },
      "items": [
       {
        "label": "5",
-       "nodes": [
-        {
-         "columnArithmetic": {
-          "op": "OP_ADD",
-          "operands": [
-           "855",
-           "887"
-          ],
-          "answer": {
-           "id": "q5",
-           "label": "855 + 887",
-           "answer": {
-            "text": "1742"
-           }
-          },
-          "carryBoxes": true
-         }
-        }
-       ],
-       "key": "1742"
-      },
-      {
-       "label": "6",
        "nodes": [
         {
          "columnArithmetic": {
@@ -234,7 +237,7 @@
            "784"
           ],
           "answer": {
-           "id": "q6",
+           "id": "q5",
            "label": "152 + 784",
            "answer": {
             "text": "936"
@@ -247,76 +250,7 @@
        "key": "936"
       },
       {
-       "label": "7",
-       "nodes": [
-        {
-         "columnArithmetic": {
-          "op": "OP_ADD",
-          "operands": [
-           "923",
-           "722"
-          ],
-          "answer": {
-           "id": "q7",
-           "label": "923 + 722",
-           "answer": {
-            "text": "1645"
-           }
-          },
-          "carryBoxes": true
-         }
-        }
-       ],
-       "key": "1645"
-      },
-      {
-       "label": "8",
-       "nodes": [
-        {
-         "columnArithmetic": {
-          "op": "OP_ADD",
-          "operands": [
-           "768",
-           "821"
-          ],
-          "answer": {
-           "id": "q8",
-           "label": "768 + 821",
-           "answer": {
-            "text": "1589"
-           }
-          },
-          "carryBoxes": true
-         }
-        }
-       ],
-       "key": "1589"
-      },
-      {
-       "label": "9",
-       "nodes": [
-        {
-         "columnArithmetic": {
-          "op": "OP_ADD",
-          "operands": [
-           "832",
-           "384"
-          ],
-          "answer": {
-           "id": "q9",
-           "label": "832 + 384",
-           "answer": {
-            "text": "1216"
-           }
-          },
-          "carryBoxes": true
-         }
-        }
-       ],
-       "key": "1216"
-      },
-      {
-       "label": "10",
+       "label": "6",
        "nodes": [
         {
          "columnArithmetic": {
@@ -326,7 +260,7 @@
            "170"
           ],
           "answer": {
-           "id": "q10",
+           "id": "q6",
            "label": "464 + 170",
            "answer": {
             "text": "634"
@@ -337,22 +271,146 @@
         }
        ],
        "key": "634"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "246",
+           "193"
+          ],
+          "answer": {
+           "id": "q7",
+           "label": "246 + 193",
+           "answer": {
+            "text": "439"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "439"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "576",
+           "195"
+          ],
+          "answer": {
+           "id": "q8",
+           "label": "576 + 195",
+           "answer": {
+            "text": "771"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "771"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "273",
+           "344"
+          ],
+          "answer": {
+           "id": "q9",
+           "label": "273 + 344",
+           "answer": {
+            "text": "617"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "617"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "columnArithmetic": {
+          "op": "OP_ADD",
+          "operands": [
+           "185",
+           "748"
+          ],
+          "answer": {
+           "id": "q10",
+           "label": "185 + 748",
+           "answer": {
+            "text": "933"
+           }
+          },
+          "carryBoxes": true
+         }
+        }
+       ],
+       "key": "933"
       }
      ],
      "columns": 4,
      "fragmentId": "frag-column-add-3-digit",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Add three-digit numbers in columns, regrouping.",
+      "purpose": "Add three-digit numbers with sums to 1,000, regrouping.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "3.NBT.A.2 asks for fluency within 1,000, so no sum passes 1,000. Every item regroups at least once, and some regroup twice.",
+      "misconceptions": [
+       "Writing a two-digit column sum without regrouping.",
+       "Adding the regrouped digit to the wrong column."
       ]
      },
-     "estimatedHeight": 302
-    },
+     "estimatedHeight": 464
+    }
+   ],
+   "estimatedHeight": 810
+  },
+  {
+   "sections": [
     {
      "label": "C",
      "instruction": "Subtract.",
+     "example": {
+      "nodes": [
+       {
+        "columnArithmetic": {
+         "op": "OP_SUBTRACT",
+         "operands": [
+          "754",
+          "109"
+         ],
+         "answer": {
+          "label": "754 − 109",
+          "answer": {
+           "text": "645"
+          }
+         },
+         "carryBoxes": true
+        }
+       }
+      ],
+      "text": "Subtract the ones, then the tens, then the hundreds. When the top digit is smaller, regroup 1 from the next place to the left."
+     },
      "items": [
       {
        "label": "11",
@@ -445,31 +503,7 @@
         }
        ],
        "key": "569"
-      }
-     ],
-     "columns": 4,
-     "fragmentId": "frag-column-subtract-3-digit",
-     "stage": "STAGE_PRACTICE",
-     "design": {
-      "purpose": "Subtract three-digit numbers in columns, regrouping.",
-      "principles": [
-       "PRINCIPLE_RETRIEVAL_PRACTICE"
-      ],
-      "misconceptions": [
-       "Subtracting the smaller digit from the larger in each column, whichever is on top."
-      ]
-     },
-     "estimatedHeight": 168
-    }
-   ],
-   "estimatedHeight": 820
-  },
-  {
-   "sections": [
-    {
-     "label": "C",
-     "instruction": "Subtract.",
-     "items": [
+      },
       {
        "label": "15",
        "nodes": [
@@ -521,19 +555,21 @@
      "fragmentId": "frag-column-subtract-3-digit",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Subtract three-digit numbers in columns, regrouping.",
+      "purpose": "Subtract three-digit numbers within 1,000, regrouping.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Every item needs at least one regrouping, and some numbers have a zero in the tens place, which makes students regroup from the hundreds.",
       "misconceptions": [
-       "Subtracting the smaller digit from the larger in each column, whichever is on top."
+       "Subtracting the smaller digit from the larger in each column, whichever is on top.",
+       "Regrouping across a zero without reducing the hundreds."
       ]
      },
-     "continued": true,
-     "estimatedHeight": 168
+     "estimatedHeight": 464
     }
    ],
-   "estimatedHeight": 172
+   "estimatedHeight": 468
   }
  ],
  "key": [
@@ -593,16 +629,6 @@
    "itemLabel": "5",
    "field": {
     "id": "q5",
-    "label": "855 + 887",
-    "answer": {
-     "text": "1742"
-    }
-   }
-  },
-  {
-   "itemLabel": "6",
-   "field": {
-    "id": "q6",
     "label": "152 + 784",
     "answer": {
      "text": "936"
@@ -610,12 +636,22 @@
    }
   },
   {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "464 + 170",
+    "answer": {
+     "text": "634"
+    }
+   }
+  },
+  {
    "itemLabel": "7",
    "field": {
     "id": "q7",
-    "label": "923 + 722",
+    "label": "246 + 193",
     "answer": {
-     "text": "1645"
+     "text": "439"
     }
    }
   },
@@ -623,9 +659,9 @@
    "itemLabel": "8",
    "field": {
     "id": "q8",
-    "label": "768 + 821",
+    "label": "576 + 195",
     "answer": {
-     "text": "1589"
+     "text": "771"
     }
    }
   },
@@ -633,9 +669,9 @@
    "itemLabel": "9",
    "field": {
     "id": "q9",
-    "label": "832 + 384",
+    "label": "273 + 344",
     "answer": {
-     "text": "1216"
+     "text": "617"
     }
    }
   },
@@ -643,9 +679,9 @@
    "itemLabel": "10",
    "field": {
     "id": "q10",
-    "label": "464 + 170",
+    "label": "185 + 748",
     "answer": {
-     "text": "634"
+     "text": "933"
     }
    }
   },
@@ -711,14 +747,12 @@
   }
  ],
  "design": {
-  "purpose": "Add and subtract three-digit numbers, with rounding to check.",
+  "purpose": "Round three-digit numbers, then add and subtract within 1,000.",
   "principles": [
-   "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+   "PRINCIPLE_PREREQUISITE_REVIEW",
+   "PRINCIPLE_WORKED_EXAMPLE"
+  ],
+  "rationale": "Rounding comes first so students can estimate each sum and difference. Each operation then opens with a worked example."
  },
- "advice": [
-  "\"Add.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Subtract.\" is practice, and nothing on the sheet introduces it with a worked example."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Fill in the blanks. Each sentence and the equation under it say the same thing.",
+     "instruction": "Write the missing number. The sentence and the equation under it mean the same thing.",
      "items": [
       {
        "label": "1",
@@ -228,9 +228,13 @@
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "Each item pairs the sentence with its equation, and the unknown moves between the product and each factor, so the child cannot get by matching words to positions.",
+      "rationale": "Each item pairs a sentence with its equation, and the unknown moves between the product and each factor. Students cannot answer by matching words to positions, so they read what the comparison says. 4.OA.A.1 asks for both directions: sentence to equation and equation to sentence.",
       "misconceptions": [
-       "Reading \"times as many\" as adding: 3 times as many as 5 is 8."
+       "Reading times as many as adding: 3 times as many as 5 is 8.",
+       "Reversing the comparison: writing 5 = 3 × 15 for 15 is 3 times as many as 5."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 418
@@ -298,9 +302,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story.",
+      "rationale": "The problems ask for the larger amount, the smaller amount, and how many times as many, so students decide between multiplying and dividing from the story. The last problem asks for both a times-as-many and a how-many-more answer, which separates multiplicative from additive comparison. A tape diagram is a useful drawing for each problem.",
       "misconceptions": [
-       "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+       "Using addition for times as many: 9 times as much as 7 pounds is 16 pounds.",
+       "Multiplying whenever the word times appears, including when the larger amount is given: 48 × 6 for the blue ribbon."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "estimatedHeight": 326
@@ -417,9 +425,13 @@
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Half the problems ask for the larger amount and half for the smaller or for how many times, so the child decides between multiplying and dividing from the story.",
+      "rationale": "The problems ask for the larger amount, the smaller amount, and how many times as many, so students decide between multiplying and dividing from the story. The last problem asks for both a times-as-many and a how-many-more answer, which separates multiplicative from additive comparison. A tape diagram is a useful drawing for each problem.",
       "misconceptions": [
-       "Using addition for \"times as many\": 4 times as tall as 9 cm is 13 cm."
+       "Using addition for times as many: 9 times as much as 7 pounds is 16 pounds.",
+       "Multiplying whenever the word times appears, including when the larger amount is given: 48 × 6 for the blue ribbon."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
       ]
      },
      "continued": true,
@@ -582,10 +594,11 @@
   }
  ],
  "design": {
-  "purpose": "Solve problems that compare by multiplying or dividing.",
+  "purpose": "Solve problems that compare two amounts by multiplying or dividing.",
   "principles": [
    "PRINCIPLE_PREREQUISITE_REVIEW"
-  ]
+  ],
+  "rationale": "The comparison sentences come first, so students have the language of times as many before reading it in a story."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

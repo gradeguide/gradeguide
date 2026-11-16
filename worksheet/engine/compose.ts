@@ -84,7 +84,12 @@ export function compose(ws: Worksheet, lib: Library, opts: Options = {}): Compos
   });
   checkArc(planned, advice);
 
-  const pages = paginate(planned, ws.maxPages || 1, problems, advice, w);
+  // Items are cut to fit only when cutting saves a page: a sheet that runs
+  // to the same number of pages either way keeps every item.
+  const maxPages = ws.maxPages || 1;
+  const pageCount = (cut: boolean) => paginate(planned, maxPages, [], [], w, cut).length;
+  const keepAll = pageCount(false) <= pageCount(true);
+  const pages = paginate(planned, maxPages, problems, advice, w, !keepAll);
   const sheet = create(ComposedSheetSchema, {
     worksheetId: ws.id,
     title: ws.title,
@@ -158,7 +163,8 @@ function plan(
   }
   const itemWidth = Math.max(0, ...items.map((it) => nodesMinWidth(it.nodes, w))) + ITEM_LABEL_WIDTH;
   const most = frag.maxColumns || 4;
-  section.columns = Math.max(1, Math.min(most, Math.floor(CONTENT_WIDTH / Math.max(1, itemWidth)), items.length || 1));
+  const fit = Math.floor((CONTENT_WIDTH + COLUMN_GAP) / (Math.max(1, itemWidth) + COLUMN_GAP));
+  section.columns = Math.max(1, Math.min(most, fit, items.length || 1));
   return { section, items, minCount: Math.min(frag.items?.minCount || count, count), itemWidth };
 }
 
@@ -200,8 +206,11 @@ function headHeight(s: ComposedSheet_Section, w: Writing): number {
   return h;
 }
 
+// The gap between columns of items, as the sheet component draws it.
+const COLUMN_GAP = 12;
+
 function rowsHeight(items: readonly ComposedSheet_Item[], columns: number, w: Writing): number[] {
-  const width = CONTENT_WIDTH / columns - ITEM_LABEL_WIDTH;
+  const width = (CONTENT_WIDTH - COLUMN_GAP * (columns - 1)) / columns - ITEM_LABEL_WIDTH;
   const rows: number[] = [];
   for (let i = 0; i < items.length; i += columns) {
     const row = items.slice(i, i + columns);
@@ -211,9 +220,9 @@ function rowsHeight(items: readonly ComposedSheet_Item[], columns: number, w: Wr
 }
 
 // paginate fills pages in order. A section that does not fit first drops
-// items down to its minimum, then carries its remaining rows to the next
-// page. The worked example and figure never split from the first row.
-function paginate(planned: Planned[], maxPages: number, problems: string[], advice: string[], w: Writing): ComposedSheet['pages'] {
+// items down to its minimum, when cut is set, then carries its remaining
+// rows to the next page. The worked example and figure never split from the first row.
+function paginate(planned: Planned[], maxPages: number, problems: string[], advice: string[], w: Writing, cut: boolean): ComposedSheet['pages'] {
   const pages = [create(ComposedSheet_PageSchema, {})];
   // The page body's padding, and the gap under each section, take room too.
   const room = BODY_HEIGHT - BODY_PADDING;
@@ -230,7 +239,7 @@ function paginate(planned: Planned[], maxPages: number, problems: string[], advi
     let total = head + rows.reduce((a, b) => a + b, 0);
     // Drop items, a row at a time, while that is allowed and still needed.
     let items = p.items;
-    while (total > left && items.length - p.section.columns >= p.minCount && items.length > p.section.columns) {
+    while (cut && total > left && items.length - p.section.columns >= p.minCount && items.length > p.section.columns) {
       const keep = items.length - (items.length % p.section.columns || p.section.columns);
       if (keep < p.minCount) {
         break;

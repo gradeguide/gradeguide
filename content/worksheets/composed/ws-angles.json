@@ -10,8 +10,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Tick acute, right or obtuse.",
-     "explainer": "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line.",
+     "instruction": "Is the angle acute, right or obtuse? Check one.",
+     "explainer": "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle.",
      "items": [
       {
        "label": "1",
@@ -204,20 +204,24 @@
      "fragmentId": "frag-classify-angles",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Classify angles against a right angle.",
+      "purpose": "Classify angles as acute, right or obtuse by comparing them with a right angle.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal.",
+      "rationale": "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper.",
       "misconceptions": [
-       "Longer rays make a bigger angle"
+       "Longer rays make a bigger angle.",
+       "An angle is right only when one ray is horizontal."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
       ]
      },
      "estimatedHeight": 543
     },
     {
      "label": "B",
-     "instruction": "Find the missing angle.",
+     "instruction": "Find the missing angle measure.",
      "items": [
       {
        "label": "7",
@@ -292,11 +296,15 @@
      "fragmentId": "frag-missing-angle",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Use angle addition to find an unknown part.",
+      "purpose": "Use angle addition to find an unknown angle measure.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "4.MD.C.7 treats angle measure as additive. Right and straight angles are the wholes children know."
+      "rationale": "4.MD.C.7 treats angle measure as additive. Right and straight angles are wholes students know, so each item is a subtraction from 90 or 180.",
+      "misconceptions": [
+       "Subtracting from 180 when the whole is a right angle, or from 90 when it is a straight angle.",
+       "Measuring the given angle again instead of using the whole."
+      ]
      },
      "estimatedHeight": 226
     }
@@ -392,8 +400,15 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Classify angles, and find an unknown part of a right or straight angle.",
+  "principles": [
+   "PRINCIPLE_SYSTEMATIC_VARIATION"
+  ],
+  "rationale": "Classifying angles against a right angle comes first. The missing-angle items then use the right angle and the straight angle as known wholes."
+ },
  "advice": [
-  "Section \"Find the missing angle.\" was cut from 4 to 2 items to fit."
+  "Section \"Find the missing angle measure.\" was cut from 4 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

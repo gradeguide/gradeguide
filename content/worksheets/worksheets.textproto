@@ -7,13 +7,14 @@
 worksheets {
   id: "ws-what-a-fraction-means"
   title: "What a fraction means"
-  home_tip: "Fold a paper strip into equal parts and ask what one part is called."
+  home_tip: "Fold a paper strip into equal parts and ask the student to name one part, then two parts."
   seed: 101
   placements { fragment_id: "frag-name-the-shaded-fraction" }
   placements { fragment_id: "frag-shade-the-fraction" }
   design {
-    purpose: "Read and make fractions of a whole."
-    rationale: "A worked example, then reading fractions, then making them: the task turns around once the child has seen it done."
+    purpose: "Read and shade fractions of a whole."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "A worked example comes first, then reading fractions from bars, then shading them. The task reverses only after students have read several fractions."
   }
 }
 
@@ -21,60 +22,62 @@ worksheets {
   id: "ws-fractions-on-a-number-line"
   max_pages: 2
   title: "Fractions on a number line"
+  home_tip: "Draw a line from 0 to 1 and ask the student to mark 1/4, 2/4 and 3/4, counting the jumps aloud."
   seed: 102
   placements { fragment_id: "frag-fraction-at-arrow" }
   placements { fragment_id: "frag-label-the-marks" }
   placements { fragment_id: "frag-mistake-counting-marks" }
   placements { fragment_id: "frag-fraction-at-arrow-past-1" }
   design {
-    purpose: "Place and read fractions as distances from 0."
+    purpose: "Read and place fractions as distances from 0 on a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "Reading a point comes before labelling every mark. The marks-not-jumps mistake comes once the child has labelled marks correctly, so they can see why it is wrong."
+    rationale: "Reading one point comes before labeling every mark. The marks-not-jumps mistake comes after students have labeled marks correctly, so they can explain why it is wrong. The sheet ends with fractions greater than 1."
   }
 }
 
 worksheets {
   id: "ws-equivalent-fractions-number-line"
-  home_tip: "Ask why 2/4 and 1/2 land on the same spot before checking the answer."
+  home_tip: "Ask the student to explain why 2/4 and 1/2 are at the same point before checking the answer."
   max_pages: 2
   title: "Equivalent fractions on a number line"
   seed: 103
-  placements { fragment_id: "frag-fraction-at-arrow" count: 2 omit_example: true stage: STAGE_REVIEW instruction: "Warm up: what fraction is at the arrow?" }
+  placements { fragment_id: "frag-fraction-at-arrow" count: 2 omit_example: true stage: STAGE_REVIEW }
   placements { fragment_id: "frag-equivalent-on-number-lines" }
   placements { fragment_id: "frag-equivalent-missing" count: 6 }
   placements { fragment_id: "frag-mistake-counting-marks" }
   design {
-    purpose: "Find equivalent fractions by seeing them at the same point."
+    purpose: "Find equivalent fractions as fractions at the same point on a number line."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Starts by reading a fraction on a line, the skill everything after it uses. Then two lines show equivalence as position, then the boxes ask for it with no picture. The mistake at the end brings back the one error that breaks number-line reading."
+    rationale: "The sheet starts with reading a fraction on a line, the skill every later section uses. Two lines then show equivalence as position, and the boxes ask for equivalent fractions with no picture. The mistake at the end returns to the error that breaks number-line reading."
   }
 }
 
 worksheets {
   id: "ws-same-amount-different-names"
   title: "Same amount, different names"
+  home_tip: "Cut paper strips into halves, fourths and eighths, and ask the student to find pieces that cover the same length."
   seed: 104
   placements { fragment_id: "frag-equivalent-with-wall" }
   placements { fragment_id: "frag-equivalent-missing" }
   design {
-    purpose: "Generate equivalent fractions, first with a fraction wall, then without."
+    purpose: "Write equivalent fractions, first with fraction strips, then without."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "The same task twice, with the picture taken away the second time."
+    rationale: "The same task appears twice, with the picture removed the second time. The second section also uses fifths and multiplies by 3 and 4, which the strips do not show."
   }
 }
 
 worksheets {
   id: "ws-comparing-fractions"
   title: "Comparing fractions"
-  home_tip: "Ask them to say which fraction is bigger, and why, before writing the sign."
+  home_tip: "Ask the student to say which fraction is greater, and why, before writing the sign."
   seed: 105
   placements { fragment_id: "frag-compare-same-denominator" }
   placements { fragment_id: "frag-compare-same-numerator" }
   placements { fragment_id: "frag-compare-any" }
   design {
-    purpose: "Compare fractions by choosing a strategy."
+    purpose: "Compare fractions by choosing a strategy for each pair."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_INTERLEAVING]
-    rationale: "Two special cases the child can reason about, then a mixed set that asks which case each pair is."
+    rationale: "Two special cases come first: the same denominator and the same numerator. A mixed set follows, in which students decide which case each pair is, or use a benchmark."
   }
 }
 
@@ -82,31 +85,44 @@ worksheets {
   id: "ws-tenths-and-hundredths"
   max_pages: 2
   title: "Tenths and hundredths"
+  home_tip: "Ask the student to write 3 dimes as a fraction of a dollar in two ways: 3/10 and 30/100."
   seed: 106
   placements { fragment_id: "frag-hundredths-grid" }
   placements { fragment_id: "frag-tenths-grid" }
+  placements { fragment_id: "frag-tenths-as-hundredths" }
+  design {
+    purpose: "Write tenths and hundredths as fractions and decimals, and write tenths as hundredths."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Hundredths come first on a grid, then tenths on the same grid, where each column is one tenth. The last section writes tenths as hundredths with no grid, the step 4.NF.C.5 needs before adding tenths and hundredths."
+  }
 }
 
 worksheets {
   id: "ws-arrays"
   title: "What × and ÷ mean"
+  home_tip: "Arrange coins or cereal pieces in rows, and ask for the multiplication fact and the division fact they show."
   seed: 107
   placements { fragment_id: "frag-array-facts" }
   placements { fragment_id: "frag-division-facts" }
+  design {
+    purpose: "Write multiplication and division facts from arrays, then recall division facts."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Arrays show a multiplication fact and a division fact in one picture. The division facts that follow have no picture, so students use the related multiplication fact."
+  }
 }
 
 worksheets {
   id: "ws-facts-check"
-  home_tip: "Circle the facts that took longest and practise just those tomorrow."
+  home_tip: "Mark the facts that took the longest, and practice only those the next day."
   max_pages: 2
   title: "Facts check"
   seed: 108
-  numbering { style: STYLE_SECTION_LETTERS }
   placements { fragment_id: "frag-multiplication-facts" count: 30 }
   placements { fragment_id: "frag-division-facts" count: 15 }
   design {
-    purpose: "Find which facts are not yet automatic."
+    purpose: "Find which multiplication and division facts are not yet automatic."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "A long set drawn from the whole table shows which facts need more practice. The sheet is untimed. A teacher can note the facts a student hesitates on and use them for the next practice set."
   }
 }
 
@@ -114,70 +130,94 @@ worksheets {
   id: "ws-area-models"
   max_pages: 2
   title: "Multiply with area models"
+  home_tip: "Ask the student to say what each box of the area model stands for, such as 20 × 6."
   seed: 109
-  placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-multiplication-facts" count: 10 }
   placements { fragment_id: "frag-area-model-2-by-1" }
   placements { fragment_id: "frag-area-model-2-by-2" }
   design {
-    purpose: "Multiply by splitting numbers by place value."
+    purpose: "Multiply by splitting factors by place value."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_WORKED_EXAMPLE]
-    rationale: "Every cell of an area model is a basic fact times a power of ten, so the warm-up recalls the facts the cells need."
+    rationale: "Every cell of an area model is a basic fact times a power of ten, so the sheet opens with the facts the cells need. One-digit factors come before two-digit ones."
   }
 }
 
 worksheets {
   id: "ws-add-subtract"
   title: "Add and subtract big numbers"
+  home_tip: "Ask the student to estimate each answer by rounding first, then check the exact answer against the estimate."
   seed: 110
   placements { fragment_id: "frag-column-add" }
   placements { fragment_id: "frag-column-subtract" }
+  design {
+    purpose: "Add and subtract four-digit numbers with the standard algorithm."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Addition comes first as a fluency check. Subtraction opens with a worked example whose top number has a zero in the ones place, a case students often get wrong. Every item regroups at least once."
+  }
 }
 
 worksheets {
   id: "ws-multiply-in-columns"
   title: "From area models to columns"
+  home_tip: "For one item, ask the student to point to where each part of the area model appears in the column method."
   seed: 111
   placements { fragment_id: "frag-area-model-2-by-1" count: 2 omit_example: true stage: STAGE_REVIEW }
   placements { fragment_id: "frag-column-multiply" count: 8 }
   design {
-    purpose: "Move from partial products to the standard algorithm."
+    purpose: "Move from partial products in an area model to the standard algorithm."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Two area models come first, so the regrouped digits in the column method stand for partial products students have just written in full."
   }
 }
 
 worksheets {
   id: "ws-times-as-many"
   title: "Times as many"
+  home_tip: "Use two stacks of blocks to show 3 times as many as 4, then 3 more than 4, and ask how they differ."
   seed: 112
-  placements { fragment_id: "frag-multiplication-facts" count: 10 instruction: "Warm up: multiply." }
+  placements { fragment_id: "frag-multiplication-facts" count: 10 }
   placements { fragment_id: "frag-times-as-many" }
+  design {
+    purpose: "Solve times-as-many problems with tape diagrams."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "The facts come first because each problem ends in a multiplication fact. The worked example shows the larger tape as copies of the smaller one."
+  }
 }
 
 worksheets {
   id: "ws-angles"
   title: "Angles"
+  home_tip: "Use the corner of a sheet of paper as a right angle, and ask the student to find acute and obtuse angles at home."
   seed: 113
   placements { fragment_id: "frag-classify-angles" }
   placements { fragment_id: "frag-missing-angle" }
+  design {
+    purpose: "Classify angles, and find an unknown part of a right or straight angle."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Classifying angles against a right angle comes first. The missing-angle items then use the right angle and the straight angle as known wholes."
+  }
 }
 
 worksheets {
   id: "ws-rectangles"
   max_pages: 2
   title: "Perimeter and area"
+  home_tip: "Ask whether each question is about the distance around a shape or the space inside it."
   seed: 114
   placements { fragment_id: "frag-rectangle-perimeter" }
   placements { fragment_id: "frag-rectangle-area" }
   placements { fragment_id: "frag-rectangle-missing-side" }
   design {
-    purpose: "Tell area from perimeter, then use area backwards."
+    purpose: "Tell area from perimeter, then use area to find a missing side."
     principles: [PRINCIPLE_INTERLEAVING]
+    rationale: "Perimeter and area are asked about the same kind of rectangle, so students choose the measure from the question. The last section works backwards from the area."
   }
 }
 
 worksheets {
   id: "ws-mixed-review"
   title: "Mixed review"
+  home_tip: "Ask the student which section felt hardest, and look back at that skill together."
   seed: 115
   max_pages: 2
   numbering { style: STYLE_SECTION_LETTERS }
@@ -187,9 +227,9 @@ worksheets {
   placements { fragment_id: "frag-classify-angles" count: 3 }
   placements { fragment_id: "frag-rectangle-area" count: 3 }
   design {
-    purpose: "Bring back four units' skills weeks after they were taught."
+    purpose: "Review skills from four grade 4 units weeks after they were taught."
     principles: [PRINCIPLE_INTERLEAVING, PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Spaced, mixed review keeps skills that blocked units let fade. No worked examples: the point is recall."
+    rationale: "Spaced, mixed review keeps skills that fade after a unit ends. There are no worked examples, because the purpose is recall."
     references: "Rohrer and Taylor (2007), Instructional Science 35"
   }
 }
@@ -197,77 +237,115 @@ worksheets {
 worksheets {
   id: "ws-place-value"
   title: "Place value to a hundred thousand"
+  home_tip: "Read a large number from a price or a map, and ask the student what one of its digits is worth."
   seed: 116
   max_pages: 2
   placements { fragment_id: "frag-base-ten-blocks" }
   placements { fragment_id: "frag-place-value-chart" }
   design {
-    purpose: "Read big numbers and the value of each digit."
+    purpose: "Read multi-digit numbers and the value of each digit."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Blocks, then a chart, then the number alone: each step keeps less of the picture."
+    rationale: "Blocks come first, then a place-value chart. Each step shows less of the quantity and more of the written number."
   }
 }
 
 worksheets {
   id: "ws-rounding"
   title: "Rounding on a number line"
+  home_tip: "Ask the student to round a price to the nearest ten dollars and explain which multiple is nearer."
   seed: 117
   placements { fragment_id: "frag-round-on-number-line" count: 6 }
+  design {
+    purpose: "Round multi-digit numbers to the nearest ten, hundred or thousand."
+    principles: [PRINCIPLE_NUMBER_LINE]
+    rationale: "Every item shows a number line between the two multiples, so the rounding place and the nearer multiple are both visible."
+  }
 }
 
 worksheets {
   id: "ws-long-division"
   title: "Long division"
+  home_tip: "Ask the student to check one answer by multiplying the quotient by the divisor and adding the remainder."
   seed: 118
-  placements { fragment_id: "frag-division-facts" count: 10 stage: STAGE_REVIEW instruction: "Warm up: divide." }
+  placements { fragment_id: "frag-division-facts" count: 10 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-long-division" }
   design {
-    purpose: "Divide with remainders."
+    purpose: "Divide three-digit numbers by one-digit numbers, with remainders."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Every step of long division is a division fact, so the warm-up recalls them first."
+    rationale: "Every step of long division uses a division fact, so the sheet opens with them."
   }
 }
 
 worksheets {
   id: "ws-time"
   title: "Telling time and elapsed time"
-  home_tip: "Ask what time it will be in 15 minutes, using a real clock at home."
+  home_tip: "Using a real clock, ask what time it will be in 15 minutes, and in 1 hour 20 minutes."
   max_pages: 2
   seed: 119
   placements { fragment_id: "frag-read-clock" }
   placements { fragment_id: "frag-elapsed-time" }
+  design {
+    purpose: "Read a clock to the minute, then add a time interval."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Reading the start time comes first, because every elapsed-time item starts from a clock face."
+  }
 }
 
 worksheets {
   id: "ws-measure-and-plot"
   title: "Measure, then plot"
+  home_tip: "Measure a few leaves or pencils to the nearest quarter inch and make a line plot together."
   seed: 120
   max_pages: 2
   placements { fragment_id: "frag-measure-with-ruler" }
   placements { fragment_id: "frag-line-plot" }
+  design {
+    purpose: "Measure to the nearest quarter inch, then use a line plot of such measurements."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "The measurements in the first section are the kind of data the line plot shows, so students see where line plot data comes from."
+  }
 }
 
 worksheets {
   id: "ws-protractor"
   title: "Measuring angles"
+  home_tip: "Ask the student to estimate an angle as more or less than a right angle before measuring it."
   seed: 121
-  placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW instruction: "Warm up: tick acute, right or obtuse." }
+  placements { fragment_id: "frag-classify-angles" count: 3 stage: STAGE_REVIEW }
   placements { fragment_id: "frag-read-protractor" }
+  design {
+    purpose: "Measure angles with a protractor."
+    principles: [PRINCIPLE_PREREQUISITE_REVIEW]
+    rationale: "Classifying angles first gives an estimate to check each protractor reading against: an acute angle cannot measure 150 degrees."
+  }
 }
 
 worksheets {
   id: "ws-lines-and-rays"
   title: "Lines, rays and segments"
+  home_tip: "Look for parallel and perpendicular lines in a window frame or a road map."
   seed: 122
+  max_pages: 2
   placements { fragment_id: "frag-name-figures" count: 4 }
   placements { fragment_id: "frag-name-line-pairs" }
+  design {
+    purpose: "Identify lines, rays and segments, and parallel, perpendicular and intersecting lines."
+    principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Single figures come first, then pairs of lines. Both sections draw figures at different slants."
+  }
 }
 
 worksheets {
   id: "ws-factors-and-multiples"
   title: "Factors and multiples"
+  home_tip: "Ask the student to arrange 12 objects in as many different rectangles as possible and name each factor pair."
   seed: 123
   max_pages: 2
   placements { fragment_id: "frag-shade-multiples" }
   placements { fragment_id: "frag-factor-pairs" }
+  design {
+    purpose: "Find multiples and factor pairs, and decide whether a number is prime or composite."
+    principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
+    rationale: "Shading multiples comes first, because a factor of a number is a number it is a multiple of. Factor pairs then lead to the prime or composite decision."
+  }
 }

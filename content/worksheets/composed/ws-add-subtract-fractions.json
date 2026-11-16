@@ -9,8 +9,44 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Add. The denominators are the same.",
-     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "instruction": "Add.",
+     "example": {
+      "nodes": [
+       {
+        "math": {
+         "atoms": [
+          {
+           "fraction": {
+            "num": 1,
+            "den": 5
+           }
+          },
+          {
+           "text": "+"
+          },
+          {
+           "fraction": {
+            "num": 2,
+            "den": 5
+           }
+          },
+          {
+           "text": "="
+          },
+          {
+           "fractionBlank": {
+            "label": "1/5 + 2/5",
+            "answer": {
+             "text": "3/5"
+            }
+           }
+          }
+         ]
+        }
+       }
+      ],
+      "text": "The parts are fifths. Add the numbers of fifths. The denominator stays 5."
+     },
      "items": [
       {
        "label": "1",
@@ -351,17 +387,22 @@
      "design": {
       "purpose": "Add fractions with the same denominator.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers.",
       "misconceptions": [
        "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 348
+     "estimatedHeight": 422
     },
     {
      "label": "B",
-     "instruction": "Subtract. The denominators are the same.",
+     "instruction": "Subtract.",
      "items": [
       {
        "label": "9",
@@ -689,12 +730,16 @@
       "purpose": "Subtract fractions with the same denominator.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Subtraction follows addition with the same denominators, so students apply the same idea: the unit stays the same and only the count changes.",
+      "misconceptions": [
+       "Subtracting the denominators too: 5/8 − 2/8 = 3/0."
       ]
      },
      "estimatedHeight": 322
     }
    ],
-   "estimatedHeight": 678
+   "estimatedHeight": 752
   }
  ],
  "key": [
@@ -888,12 +933,10 @@
  "design": {
   "purpose": "Add and subtract fractions with the same denominator.",
   "principles": [
-   "PRINCIPLE_INTERLEAVING"
-  ]
+   "PRINCIPLE_WORKED_EXAMPLE",
+   "PRINCIPLE_RETRIEVAL_PRACTICE"
+  ],
+  "rationale": "A worked example sets out the rule in words: the parts keep their size, so only the numerators change. Subtraction follows with the same denominators."
  },
- "advice": [
-  "\"Add. The denominators are the same.\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Subtract. The denominators are the same.\" is practice, and nothing on the sheet introduces it with a worked example."
- ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

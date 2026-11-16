@@ -9,7 +9,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Use the bar graph to answer.",
+     "instruction": "Use the bar graph to answer the questions.",
      "items": [
       {
        "label": "1",
@@ -186,11 +186,15 @@
      "fragmentId": "frag-bar-graph-questions",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Read a scaled bar graph and answer how many, how many more, and how many in all.",
+      "purpose": "Read a scaled bar graph and answer how many, how many more and how many in all.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "The scale counts by 2, so odd values fall between gridlines and the child has to read the scale, not count lines."
+      "rationale": "The scale counts by 2, so odd values fall halfway between gridlines and students read the scale rather than counting lines. The three questions match the one-step and two-step problems 3.MD.B.3 describes.",
+      "misconceptions": [
+       "Counting gridlines as 1 each when the scale counts by 2.",
+       "Answering how many more with the larger value."
+      ]
      },
      "estimatedHeight": 722
     }
@@ -264,10 +268,11 @@
   "purpose": "Answer questions from a scaled bar graph.",
   "principles": [
    "PRINCIPLE_RETRIEVAL_PRACTICE"
-  ]
+  ],
+  "rationale": "Two graphs with the same three questions let students apply the same reading steps to new data."
  },
  "advice": [
-  "\"Use the bar graph to answer.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Use the bar graph to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

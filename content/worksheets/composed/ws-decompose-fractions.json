@@ -83,25 +83,26 @@
      "fragmentId": "frag-name-the-shaded-fraction",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Name a fraction of a whole from an area model.",
+      "purpose": "Name the shaded part of a whole as a fraction.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Bars come before number lines because a part of a shape is easier to see than a distance. Denominators vary so the child reads the bottom number every time instead of assuming fourths.",
+      "rationale": "Bars come before number lines because a part of a shape is easier to see than a distance. The denominator changes from item to item, so students read the number of equal parts every time instead of assuming fourths. The worked example names both numbers of the fraction in words.",
       "misconceptions": [
-       "Counting shaded and unshaded parts as top and bottom numbers"
+       "Writing shaded parts over unshaded parts: 2 of 6 shaded is written 2/4.",
+       "Writing the number of unshaded parts on top."
       ],
       "references": [
-       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction, rec. 2"
+       "Siegler et al. (2010), IES practice guide, Developing Effective Fractions Instruction for Kindergarten Through 8th Grade, rec. 2"
       ]
      },
      "estimatedHeight": 150
     },
     {
      "label": "B",
-     "instruction": "Split the fraction into two parts with the same denominator.",
-     "explainer": "5/8 is five eighths. Three eighths and two eighths make five eighths: 5/8 = 3/8 + 2/8.",
+     "instruction": "Write the missing numerator.",
+     "explainer": "5/8 is 5 eighths. 3 eighths and 2 eighths make 5 eighths: 5/8 = 3/8 + 2/8.",
      "items": [
       {
        "label": "3",
@@ -366,18 +367,23 @@
      "fragmentId": "frag-decompose-fraction",
      "stage": "STAGE_INTRODUCE",
      "design": {
-      "purpose": "Write a fraction as a sum of fractions with the same denominator.",
+      "purpose": "Write a fraction as a sum of two fractions with the same denominator.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Seeing 5/8 as a count of eighths is what makes adding same-denominator fractions an addition of counts."
+      "rationale": "Reading 5/8 as a count of eighths is what makes adding fractions with the same denominator an addition of counts. One part is given, so students find the other by counting on in eighths or by subtracting numerators.",
+      "misconceptions": [
+       "Splitting the denominator as well: 5/8 = 3/4 + 2/4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
+      ]
      },
      "estimatedHeight": 276
     },
     {
      "label": "C",
-     "instruction": "Add. The denominators are the same.",
-     "explainer": "Add the numbers of parts. The size of the parts stays the same.",
+     "instruction": "Add.",
      "items": [
       {
        "label": "9",
@@ -556,16 +562,21 @@
      "design": {
       "purpose": "Add fractions with the same denominator.",
       "principles": [
+       "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
+      "rationale": "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers.",
       "misconceptions": [
        "Adding the denominators too: 2/5 + 1/5 = 3/10."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
-     "estimatedHeight": 204
+     "estimatedHeight": 178
     }
    ],
-   "estimatedHeight": 642
+   "estimatedHeight": 616
   }
  ],
  "key": [
@@ -708,10 +719,11 @@
   }
  ],
  "design": {
-  "purpose": "See a fraction as a sum of unit fractions, then add fractions.",
+  "purpose": "Write a fraction as a sum of fractions with the same denominator, then add fractions.",
   "principles": [
    "PRINCIPLE_CONCRETENESS_FADING"
-  ]
+  ],
+  "rationale": "Naming shaded fractions reviews counting unit fractions. Decomposing a fraction comes before adding, because addition reverses the same step."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

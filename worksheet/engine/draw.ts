@@ -423,7 +423,9 @@ export function polygon(p: Polygon, filled: boolean): Drawing {
     const mx = (ax + bx) / 2;
     const my = (ay + by) / 2;
     const len = Math.hypot(mx - cx, my - cy) || 1;
-    const ox = mx + ((mx - cx) / len) * 20;
+    // A box for a side is pushed out further than a label, so it clears the
+    // side it names.
+    const ox = mx + ((mx - cx) / len) * (side.field ? 34 : 20);
     const oy = my + ((my - cy) / len) * 16;
     if (side.field) {
       shapes.push({ t: 'box', x: f1(ox - 24), y: f1(oy - 11), w: 48, h: 22, field: fieldId(side.field), s: shown(side.field, filled) });
@@ -450,7 +452,8 @@ export function polygon(p: Polygon, filled: boolean): Drawing {
       }
     }
   }
-  return { width: f1(pad * 2 + spanX * scale), height: f1(36 + spanY * scale), shapes };
+  const boxes = p.sides.some((side) => side.field) ? 24 : 0;
+  return { width: f1(pad * 2 + boxes + spanX * scale), height: f1(36 + spanY * scale), shapes };
 }
 
 export function placeValueChart(c: PlaceValueChart, filled: boolean): Drawing {
@@ -459,7 +462,7 @@ export function placeValueChart(c: PlaceValueChart, filled: boolean): Drawing {
   c.columns.forEach((col, i) => {
     const x = 1 + i * cw;
     shapes.push({ t: 'rect', x, y: 1, w: cw, h: 26, fill: '#eee' });
-    shapes.push({ t: 'text', x: x + cw / 2, y: 18, s: col.name, size: 10 });
+    shapes.push({ t: 'text', x: x + cw / 2, y: 18, s: col.name, size: col.name.length > 14 ? 8.5 : 10 });
     shapes.push({ t: 'rect', x, y: 27, w: cw, h: 40 });
     if (col.field) {
       shapes.push({ t: 'box', x: x + cw / 2 - 15, y: 32, w: 30, h: 30, field: fieldId(col.field), s: shown(col.field, filled), size: 18 });

@@ -10,7 +10,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "How long is the grey bar?",
+     "instruction": "Write the length of each bar.",
      "items": [
       {
        "label": "1",
@@ -128,20 +128,21 @@
      "fragmentId": "frag-measure-with-ruler",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Measure to the nearest half or quarter inch.",
+      "purpose": "Measure lengths to the nearest half inch and quarter inch.",
       "principles": [
        "PRINCIPLE_NUMBER_LINE"
       ],
-      "rationale": "A ruler is a number line. Reading one to a quarter inch produces the data line plots in 4.MD.B.4 use.",
+      "rationale": "A ruler is a number line with whole inches as units. Reading to the quarter inch produces the measurement data that line plots in 3.MD.B.4 and 4.MD.B.4 use.",
       "misconceptions": [
-       "Starting to count from 1 instead of 0"
+       "Starting to count from 1 instead of 0.",
+       "Counting the marks between whole inches as tenths."
       ]
      },
      "estimatedHeight": 436
     },
     {
      "label": "B",
-     "instruction": "Use the line plot.",
+     "instruction": "Use the line plot to answer the questions.",
      "items": [
       {
        "label": "4",
@@ -168,12 +169,12 @@
          "math": {
           "atoms": [
            {
-            "text": "How many leaves are 1 1/2 inch long?"
+            "text": "How many leaves are 1 1/2 inches long?"
            },
            {
             "blank": {
              "id": "q4",
-             "label": "leaves 1 1/2 inch long",
+             "label": "leaves 1 1/2 inches long",
              "answer": {
               "text": "1"
              }
@@ -186,7 +187,7 @@
          "math": {
           "atoms": [
            {
-            "text": "Longest minus shortest:"
+            "text": "The longest leaf is"
            },
            {
             "blank": {
@@ -201,24 +202,28 @@
             }
            },
            {
-            "text": "inch"
+            "text": "inches longer than the shortest."
            }
           ]
          }
         }
        ],
-       "key": "How many leaves are 1 1/2 inch long? 1; Longest minus shortest: 1 1/4 inch"
+       "key": "How many leaves are 1 1/2 inches long? 1; The longest leaf is 1 1/4 inches longer than the shortest."
       }
      ],
      "columns": 1,
      "fragmentId": "frag-line-plot",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Read a line plot of fractional measurements and subtract fractions from it.",
+      "purpose": "Read a line plot of measurements in fourths of an inch and find a difference from it.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "4.MD.B.4 pairs line plots with fraction addition and subtraction; the second question needs both."
+      "rationale": "4.MD.B.4 pairs line plots with adding and subtracting fractions. The second question needs the longest and shortest values and a subtraction with fourths.",
+      "misconceptions": [
+       "Reading the number of x marks as the length.",
+       "Subtracting the counts above the longest and shortest values instead of the values."
+      ]
      },
      "estimatedHeight": 260
     }
@@ -270,7 +275,7 @@
    "itemLabel": "4",
    "field": {
     "id": "q4",
-    "label": "leaves 1 1/2 inch long",
+    "label": "leaves 1 1/2 inches long",
     "answer": {
      "text": "1"
     }
@@ -290,9 +295,16 @@
    }
   }
  ],
+ "design": {
+  "purpose": "Measure to the nearest quarter inch, then use a line plot of such measurements.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ],
+  "rationale": "The measurements in the first section are the kind of data the line plot shows, so students see where line plot data comes from."
+ },
  "advice": [
-  "\"How long is the grey bar?\" is practice, and nothing on the sheet introduces it with a worked example.",
-  "\"Use the line plot.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Write the length of each bar.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "\"Use the line plot to answer the questions.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

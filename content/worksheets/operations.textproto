@@ -5,32 +5,37 @@
 
 fragments {
   id: "frag-array-facts"
-  instruction: "Write a × fact and a ÷ fact for each array. Rows first."
+  instruction: "Write a multiplication fact and a division fact for each array."
   stage: STAGE_INTRODUCE
   example {
     item { array_facts { rows { min: 3 max: 3 } cols { min: 5 max: 5 } } }
     seed: 1
-    text: "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+    text: "3 rows of 5 dots: **3 × 5 = 15**. 15 dots in 3 equal rows: **15 ÷ 3 = 5**."
   }
   items { kind { array_facts { rows { min: 2 max: 5 } cols { min: 3 max: 7 } } } count: 3 }
   max_columns: 3
   design {
-    purpose: "Read one array as a multiplication and a division."
+    purpose: "Write a multiplication fact and a division fact for the same array."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS, PRINCIPLE_WORKED_EXAMPLE]
-    rationale: "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+    rationale: "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes. Students write the rows first, so the first factor always names the number of rows, the convention most grade 3 programs use."
+    misconceptions: "Writing the division fact with the total last: 3 ÷ 15 = 5."
+    misconceptions: "Counting every dot one by one instead of using the rows."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-multiplication-facts"
-  instruction: "Multiply. Circle any you had to stop and think about."
+  instruction: "Multiply."
   stage: STAGE_REVIEW
   items { kind { multiplication_fact { factors { min: 2 max: 9 } } } count: 20 min_count: 10 }
   max_columns: 5
   design {
-    purpose: "Recall multiplication facts."
+    purpose: "Recall multiplication facts with factors from 2 to 9."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list."
+    rationale: "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic."
+    misconceptions: "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9."
+    misconceptions: "Confusing nearby facts, such as 7 × 8 = 54."
     references: "Roediger and Karpicke (2006), Psychological Science 17"
   }
 }
@@ -42,39 +47,47 @@ fragments {
   items { kind { multiplication_fact { factors { min: 2 max: 9 } division: true } } count: 10 min_count: 5 }
   max_columns: 5
   design {
-    purpose: "Recall division facts from multiplication."
+    purpose: "Recall division facts within 100 from the related multiplication facts."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Each division fact is the inverse of a multiplication fact from the same table, so students answer by thinking of the missing factor. 3.OA.C.7 expects these facts to be known from memory by the end of grade 3."
+    misconceptions: "Dividing the larger digit by the smaller one regardless of order."
+    misconceptions: "Giving the product instead of the missing factor."
   }
 }
 
 fragments {
   id: "frag-area-model-2-by-1"
-  instruction: "Fill in the area model, then the product."
+  instruction: "Complete the area model. Write the product."
   stage: STAGE_GUIDED
   example {
     item { area_model_multiply { a_digits: 2 b_digits: 1 } }
     seed: 9
-    text: "Split the big number by place value. Multiply each part, then **add the parts**."
+    text: "Split 28 into 20 and 8. Multiply each part by 2. Add the parts: **40 + 16 = 56**."
   }
   items { kind { area_model_multiply { a_digits: 2 b_digits: 1 } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Multiply a two-digit number by a one-digit number with partial products."
+    purpose: "Multiply a two-digit number by a one-digit number with an area model."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly."
-    misconceptions: "Multiplying only the ones, or forgetting the tens are tens"
+    rationale: "The area model shows the distributive property, which the standard algorithm hides. Splitting by place value gives one tens product and one ones product, and 4.NBT.B.5 names the area model as a way to explain the calculation."
+    misconceptions: "Multiplying only the ones, or treating the tens digit as ones: 28 × 2 = 2 × 2 + 8 × 2."
+    misconceptions: "Writing the two partial products side by side instead of adding them: 40 and 16 give 4016."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-area-model-2-by-2"
-  instruction: "Fill in the area model, then the product."
+  instruction: "Complete the area model. Write the product."
   stage: STAGE_STRETCH
   items { kind { area_model_multiply { a_digits: 2 b_digits: 2 } } count: 2 }
   max_columns: 2
   design {
     purpose: "Multiply two two-digit numbers with four partial products."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Splitting both factors gives four cells: tens times tens, tens times ones, ones times tens and ones times ones. It extends the previous section by one row, so the structure stays familiar."
+    misconceptions: "Multiplying tens by tens and ones by ones only, which leaves out two partial products: 74 × 62 = 4200 + 8."
+    misconceptions: "Writing 70 × 60 as 420."
   }
 }
 
@@ -85,9 +98,11 @@ fragments {
   items { kind { column_add_subtract { digits: 4 regroup: true } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Add four-digit numbers with the standard algorithm."
+    purpose: "Add multi-digit numbers with the standard algorithm."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Every item regroups at least once, so the carry boxes are used."
+    rationale: "4.NBT.B.4 asks for fluency with the standard algorithm, which students met in grade 3 with smaller numbers, so the section has no worked example. Every item regroups at least once, so the boxes above each place are used, and some items regroup in more than one place."
+    misconceptions: "Writing a two-digit column sum without regrouping."
+    misconceptions: "Adding the regrouped digit to the wrong column."
   }
 }
 
@@ -95,12 +110,19 @@ fragments {
   id: "frag-column-subtract"
   instruction: "Subtract."
   stage: STAGE_PRACTICE
+  example {
+    item { column_add_subtract { digits: 4 subtract: true regroup: true } }
+    seed: 4
+    text: "Subtract each place from right to left. When the top digit is smaller, regroup 1 from the next place to the left."
+  }
   items { kind { column_add_subtract { digits: 4 subtract: true regroup: true } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Subtract four-digit numbers with the standard algorithm."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    misconceptions: "Subtracting the smaller digit from the larger in every column"
+    purpose: "Subtract multi-digit numbers with the standard algorithm."
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Every item needs at least one regrouping, and some need it in several places or across a zero. The worked example states the rule in terms of places, not crossing out."
+    misconceptions: "Subtracting the smaller digit from the larger in every column."
+    misconceptions: "Regrouping across a zero without reducing the next nonzero place."
   }
 }
 
@@ -113,54 +135,61 @@ fragments {
   design {
     purpose: "Multiply a three-digit number by a one-digit number in columns."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+    rationale: "This section follows the area model and partial products, so each regrouped digit stands for a partial product students have already written in full."
+    misconceptions: "Adding the regrouped digit before multiplying the next place."
+    misconceptions: "Forgetting to add the regrouped digit at all."
   }
 }
 
 fragments {
   id: "frag-times-as-many"
-  instruction: "Use the tape diagram. Write the answer under the brace."
+  instruction: "Use the tape diagram to solve. Write the answer in the box."
   stage: STAGE_GUIDED
   example {
     item { times_as_many { times { min: 3 max: 3 } smaller { min: 4 max: 4 } } }
     seed: 2
-    text: "**3 times as many** means 3 tapes the same length as the smaller one: 4 + 4 + 4 = 3 × 4 = 12."
+    text: "**3 times as many** is 3 tapes the same length as Ben's: 4 + 4 + 4 = 3 × 4 = 12."
   }
   items { kind { times_as_many { times { min: 2 max: 5 } smaller { min: 3 max: 9 } } } count: 3 min_count: 2 }
   max_columns: 1
   design {
-    purpose: "Solve multiplicative comparison word problems."
+    purpose: "Solve multiplicative comparison problems with a tape diagram."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Tape diagrams separate 'times as many' from 'more than', which children often solve by adding."
-    misconceptions: "Reading '3 times as many' as '3 more'"
+    rationale: "Tape diagrams separate times as many from more than, which students often solve by adding. The larger tape is drawn as copies of the smaller one, so the multiplication is visible before it is written."
+    misconceptions: "Reading 3 times as many as 3 more."
+    references: "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
   }
 }
 
 fragments {
   id: "frag-classify-angles"
-  instruction: "Tick acute, right or obtuse."
+  instruction: "Is the angle acute, right or obtuse? Check one."
   stage: STAGE_INTRODUCE
-  explainer: "Acute is less than a right angle. Obtuse is more than a right angle and less than a straight line."
+  explainer: "An acute angle is less than a right angle. An obtuse angle is greater than a right angle and less than a straight angle."
   items { kind { classify_angle {} } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Classify angles against a right angle."
+    purpose: "Classify angles as acute, right or obtuse by comparing them with a right angle."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Angles are drawn at different turns, so the child judges the opening, not whether one ray is horizontal."
-    misconceptions: "Longer rays make a bigger angle"
+    rationale: "Angles are drawn at different turns and with rays of different lengths, so students judge the opening, not whether one ray is horizontal. A right angle is the benchmark, and students can check it with the corner of a sheet of paper."
+    misconceptions: "Longer rays make a bigger angle."
+    misconceptions: "An angle is right only when one ray is horizontal."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, K-6, Geometry"
   }
 }
 
 fragments {
   id: "frag-missing-angle"
-  instruction: "Find the missing angle."
+  instruction: "Find the missing angle measure."
   stage: STAGE_PRACTICE
   items { kind { missing_angle { wholes: [90, 180] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Use angle addition to find an unknown part."
+    purpose: "Use angle addition to find an unknown angle measure."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "4.MD.C.7 treats angle measure as additive. Right and straight angles are the wholes children know."
+    rationale: "4.MD.C.7 treats angle measure as additive. Right and straight angles are wholes students know, so each item is a subtraction from 90 or 180."
+    misconceptions: "Subtracting from 180 when the whole is a right angle, or from 90 when it is a straight angle."
+    misconceptions: "Measuring the given angle again instead of using the whole."
   }
 }
 
@@ -171,13 +200,16 @@ fragments {
   example {
     item { rectangle_measure { side { min: 3 max: 5 } ask: ASK_PERIMETER } }
     seed: 4
-    text: "Perimeter is the distance **all the way around**: add all four sides."
+    text: "Perimeter is the distance around the shape. Add all 4 sides: **5 + 3 + 5 + 3 = 16 cm**."
   }
   items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_PERIMETER } } count: 3 }
   max_columns: 3
   design {
-    purpose: "Find a rectangle's perimeter from two sides."
+    purpose: "Find the perimeter of a rectangle from two side lengths."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_WORKED_EXAMPLE]
+    rationale: "Only two sides are labeled, so students use the fact that opposite sides of a rectangle are equal. The worked example adds all four sides rather than giving a formula."
+    misconceptions: "Adding only the two labeled sides."
+    misconceptions: "Multiplying the sides, which gives the area."
   }
 }
 
@@ -188,70 +220,79 @@ fragments {
   items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_AREA } } count: 3 }
   max_columns: 3
   design {
-    purpose: "Find a rectangle's area as length times width."
+    purpose: "Find the area of a rectangle by multiplying its side lengths."
     principles: [PRINCIPLE_INTERLEAVING]
-    rationale: "Placed after perimeter so the child has to tell the two apart."
-    misconceptions: "Mixing up area and perimeter"
+    rationale: "The rectangles look like those in the perimeter section, so students must decide which measure the question asks for. Side lengths stay within the multiplication facts to 9 × 9."
+    misconceptions: "Mixing up area and perimeter."
+    misconceptions: "Writing the area in centimeters instead of square centimeters."
   }
 }
 
 fragments {
   id: "frag-rectangle-missing-side"
-  instruction: "The area is given. Find the missing side."
+  instruction: "Find the missing side length."
   stage: STAGE_STRETCH
   items { kind { rectangle_measure { side { min: 2 max: 9 } ask: ASK_MISSING_SIDE } } count: 3 }
   max_columns: 3
   design {
-    purpose: "Use area to find an unknown side."
+    purpose: "Use the area and one side of a rectangle to find the other side."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Running the formula backwards is the 4.MD.A.3 example task, and it is division as an unknown factor again."
+    rationale: "Running the area calculation backwards is the 4.MD.A.3 example task. It is division as an unknown-factor problem, the same idea as the missing-number facts."
+    misconceptions: "Subtracting the known side from the area."
+    misconceptions: "Treating the area as a perimeter and halving it."
   }
 }
 
 fragments {
   id: "frag-place-value-chart"
-  instruction: "Read the place-value chart."
+  instruction: "Write the number. Then write the value of the digit."
   stage: STAGE_INTRODUCE
   example {
     item { place_value_read { digits: 4 } }
     seed: 3
-    text: "Each place is worth **ten times** the place to its right. The digit tells how many of that place."
+    text: "Each place is worth **10 times** the place to its right. The 4 is in the tens place, so it is worth 40."
   }
   items { kind { place_value_read { digits: 6 } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Read multi-digit numbers and the value of each digit."
+    purpose: "Read multi-digit numbers from a place-value chart and give the value of a digit."
     principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The chart makes each digit's place visible before the child reads the number without it. Asking for one digit's value checks the ten-times relationship 4.NBT.A.1 names."
-    misconceptions: "A digit is worth the same wherever it is"
+    rationale: "The chart shows each digit's place before students read the number without it. Asking for the value of one digit checks the ten-times relationship 4.NBT.A.1 names. Some numbers contain zeros, so students write zero digits in the right places."
+    misconceptions: "A digit is worth the same in every place."
+    misconceptions: "Leaving out a zero when writing the number: 7,040 written as 740."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
 fragments {
   id: "frag-base-ten-blocks"
-  instruction: "What number do the blocks show?"
+  instruction: "Write the number the blocks show."
   stage: STAGE_REVIEW
   items { kind { base_ten_read { thousands: true } } count: 3 min_count: 2 }
   max_columns: 1
   design {
-    purpose: "Read a number from base-ten blocks."
+    purpose: "Read a number to the thousands from base-ten blocks."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW, PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Blocks show ten tens making a hundred as a size, the 2.NBT.A.1 idea that grade 4 place value extends."
-    misconceptions: "Writing 3 hundreds, 0 tens and 4 ones as 34"
+    rationale: "Blocks show 10 of one unit making the next unit as a size. This is the 2.NBT.A.1 idea that grade 4 place value extends to larger numbers."
+    misconceptions: "Writing 3 hundreds, 0 tens and 4 ones as 34."
+    misconceptions: "Counting each block as 1 whatever its size."
+    references: "Fuson and Briars (1990), Journal for Research in Mathematics Education 21"
   }
 }
 
 fragments {
   id: "frag-round-on-number-line"
-  instruction: "Round. The number line shows which multiple is nearer."
+  instruction: "Round each number. Use the number line."
   stage: STAGE_GUIDED
   items { kind { round_on_number_line { digits: 4 places: [10, 100, 1000] } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Round to any place by seeing which multiple is nearer."
+    purpose: "Round multi-digit numbers to any place using a number line."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "Rounding as nearness on a line explains the rule instead of replacing it. Halfway rounds up, and the line shows why that case needs a rule."
-    misconceptions: "Rounding by looking only at the next digit, without knowing what it means"
+    rationale: "Rounding as finding the nearer multiple on a line explains the rule instead of replacing it. The line shows both multiples and the halfway point, so students see why a number at the halfway point needs a rule."
+    misconceptions: "Rounding by looking only at the next digit, without knowing what it means."
+    misconceptions: "Changing the digits to the right of the rounding place to anything other than zeros."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -264,7 +305,10 @@ fragments {
   design {
     purpose: "Divide a three-digit number by a one-digit number, with remainders."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Some items divide exactly and some do not, so the child checks every time instead of always writing R0 or never."
+    rationale: "Some items divide exactly and some do not, so students check each remainder instead of always writing R0 or never writing one. Working space under each item leaves room for every step."
+    misconceptions: "A remainder greater than or equal to the divisor."
+    misconceptions: "Leaving out a zero in the quotient when a place does not divide: 812 ÷ 4 = 23."
+    references: "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
   }
 }
 
@@ -275,9 +319,11 @@ fragments {
   items { kind { clock_time { mode: MODE_READ } } count: 4 min_count: 2 }
   max_columns: 4
   design {
-    purpose: "Read an analogue clock to the minute."
+    purpose: "Read an analog clock to the nearest minute."
     principles: [PRINCIPLE_PREREQUISITE_REVIEW]
-    rationale: "Elapsed-time problems in 4.MD.A.2 assume the child can read the start time, which 3.MD.A.1 taught."
+    rationale: "3.MD.A.1 asks for time to the nearest minute. The minutes are not on the hour or half hour, so students count by fives and then by ones from the nearest number."
+    misconceptions: "Reading the hour from the number the hour hand is nearest, even when it has not reached it."
+    misconceptions: "Reading the number the minute hand points to as the minutes: 4 for 20 minutes past."
   }
 }
 
@@ -288,91 +334,101 @@ fragments {
   items { kind { clock_time { mode: MODE_ELAPSED } } count: 3 min_count: 2 }
   max_columns: 3
   design {
-    purpose: "Add a duration to a time."
+    purpose: "Add a time interval to a start time."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Treating 60 minutes like 100 when crossing the hour"
+    rationale: "Some intervals cross the hour, so students regroup 60 minutes as 1 hour. The start time is on a clock face, which links reading time to elapsed time."
+    misconceptions: "Treating 60 minutes like 100 when crossing the hour: 2:50 plus 20 minutes is 2:70."
   }
 }
 
 fragments {
   id: "frag-measure-with-ruler"
-  instruction: "How long is the grey bar?"
+  instruction: "Write the length of each bar."
   stage: STAGE_GUIDED
   items { kind { measure_with_ruler { parts_per_inch: [2, 4] } } count: 3 min_count: 2 }
   max_columns: 1
   design {
-    purpose: "Measure to the nearest half or quarter inch."
+    purpose: "Measure lengths to the nearest half inch and quarter inch."
     principles: [PRINCIPLE_NUMBER_LINE]
-    rationale: "A ruler is a number line. Reading one to a quarter inch produces the data line plots in 4.MD.B.4 use."
-    misconceptions: "Starting to count from 1 instead of 0"
+    rationale: "A ruler is a number line with whole inches as units. Reading to the quarter inch produces the measurement data that line plots in 3.MD.B.4 and 4.MD.B.4 use."
+    misconceptions: "Starting to count from 1 instead of 0."
+    misconceptions: "Counting the marks between whole inches as tenths."
   }
 }
 
 fragments {
   id: "frag-line-plot"
-  instruction: "Use the line plot."
+  instruction: "Use the line plot to answer the questions."
   stage: STAGE_PRACTICE
   items { kind { line_plot_questions { parts_per_unit: 4 } } count: 1 }
   max_columns: 1
   design {
-    purpose: "Read a line plot of fractional measurements and subtract fractions from it."
+    purpose: "Read a line plot of measurements in fourths of an inch and find a difference from it."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "4.MD.B.4 pairs line plots with fraction addition and subtraction; the second question needs both."
+    rationale: "4.MD.B.4 pairs line plots with adding and subtracting fractions. The second question needs the longest and shortest values and a subtraction with fourths."
+    misconceptions: "Reading the number of x marks as the length."
+    misconceptions: "Subtracting the counts above the longest and shortest values instead of the values."
   }
 }
 
 fragments {
   id: "frag-read-protractor"
-  instruction: "Read the protractor."
+  instruction: "Write the measure of each angle."
   stage: STAGE_GUIDED
-  explainer: "Start at the 0 where the bottom ray lies, and count up to the other ray."
+  explainer: "Start at the 0 on the bottom ray. Count up to the other ray."
   items { kind { read_protractor {} } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Measure an angle with a protractor."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "One scale, with the first ray always on 0, isolates reading the scale before the two-scale protractor of a real classroom."
-    misconceptions: "Reading the wrong scale, giving 180 minus the angle"
+    rationale: "The protractor has one scale, and the first ray always lies on 0, so students practice reading the scale before using a classroom protractor with two scales."
+    misconceptions: "Reading the wrong scale, which gives 180 minus the angle."
+    misconceptions: "Reading the nearest labeled number instead of counting the marks past it."
   }
 }
 
 fragments {
   id: "frag-name-figures"
-  instruction: "Tick the name of each figure."
+  instruction: "Check the name of each figure."
   stage: STAGE_INTRODUCE
-  explainer: "A line goes on forever both ways. A ray starts at a point and goes on one way. A line segment has two endpoints."
+  explainer: "A line goes on without end in both directions. A ray has one endpoint. A line segment has two endpoints."
   items { kind { name_line_figure {} } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Tell lines, rays and line segments apart."
+    purpose: "Identify lines, rays and line segments."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    rationale: "Figures are drawn at different slants so the child goes by arrows and endpoints, not by how the figure sits."
+    rationale: "Figures are drawn at different slants, so students go by arrows and endpoints, not by how the figure sits on the page."
+    misconceptions: "A ray and a line segment are the same because both have a point at one end."
   }
 }
 
 fragments {
   id: "frag-name-line-pairs"
-  instruction: "Are the lines parallel, perpendicular or just intersecting?"
+  instruction: "Are the lines parallel, perpendicular or intersecting? Check one."
   stage: STAGE_PRACTICE
   items { kind { name_line_figure { pairs: true } } count: 6 min_count: 3 }
   max_columns: 3
   design {
-    purpose: "Tell parallel, perpendicular and intersecting lines apart."
+    purpose: "Identify parallel, perpendicular and intersecting lines."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
-    misconceptions: "Only horizontal and vertical lines can be perpendicular"
+    rationale: "Perpendicular pairs are drawn at a slant as well as upright, so students look for the right-angle mark instead of horizontal and vertical lines. Perpendicular lines also intersect, so students choose the most exact name."
+    misconceptions: "Only horizontal and vertical lines can be perpendicular."
+    misconceptions: "Lines that do not cross on the page are parallel, even when they would meet if extended."
   }
 }
 
 fragments {
   id: "frag-factor-pairs"
-  instruction: "List every factor pair. Then tick prime or composite."
+  instruction: "List all the factor pairs. Then check prime or composite."
   stage: STAGE_PRACTICE
   items { kind { factor_pairs { number { min: 12 max: 60 } } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Find all factor pairs of a number up to 100 and decide whether it is prime."
+    purpose: "Find all factor pairs of a whole number and decide whether it is prime or composite."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
-    rationale: "Listing pairs in order, from 1 up, gives a check for when the list is complete."
+    rationale: "Listing pairs in order from 1 up gives a check for when the list is complete: the pairs start to repeat. A number with only the pair 1 and itself is prime."
+    misconceptions: "Leaving out the pair 1 and the number itself."
+    misconceptions: "All odd numbers are prime."
   }
 }
 
@@ -383,8 +439,9 @@ fragments {
   items { kind { shade_multiples { of: [3, 4, 6, 7] } } count: 2 }
   max_columns: 2
   design {
-    purpose: "See multiples as a pattern on a hundred chart."
+    purpose: "Shade the multiples of a number on a hundred chart and describe the pattern."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "Shaded multiples make columns and diagonals, which shows that a multiple of 6 is also a multiple of 3."
+    rationale: "Shaded multiples form columns or diagonals on the chart, a pattern students can describe and extend. Shading two numbers shows that every multiple of 6 is also a multiple of 3."
+    misconceptions: "Shading numbers that contain the digit, such as 14 and 24 for multiples of 4."
   }
 }

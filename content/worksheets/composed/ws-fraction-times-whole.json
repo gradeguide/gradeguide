@@ -11,8 +11,8 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Split the fraction into two parts with the same denominator.",
-     "explainer": "5/8 is five eighths. Three eighths and two eighths make five eighths: 5/8 = 3/8 + 2/8.",
+     "instruction": "Write the missing numerator.",
+     "explainer": "5/8 is 5 eighths. 3 eighths and 2 eighths make 5 eighths: 5/8 = 3/8 + 2/8.",
      "items": [
       {
        "label": "1",
@@ -105,18 +105,24 @@
      "fragmentId": "frag-decompose-fraction",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Write a fraction as a sum of fractions with the same denominator.",
+      "purpose": "Write a fraction as a sum of two fractions with the same denominator.",
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Seeing 5/8 as a count of eighths is what makes adding same-denominator fractions an addition of counts."
+      "rationale": "Reading 5/8 as a count of eighths is what makes adding fractions with the same denominator an addition of counts. One part is given, so students find the other by counting on in eighths or by subtracting numerators.",
+      "misconceptions": [
+       "Splitting the denominator as well: 5/8 = 3/4 + 2/4."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
+      ]
      },
      "estimatedHeight": 132
     },
     {
      "label": "B",
-     "instruction": "Use the bars. Multiply the whole number by the fraction.",
-     "explainer": "3 × 2/5 is three groups of two fifths: six fifths, or 6/5.",
+     "instruction": "Multiply. Use the fraction bars.",
+     "explainer": "3 × 2/5 is 3 groups of 2 fifths. That is 6 fifths, or 6/5.",
      "items": [
       {
        "label": "3",
@@ -441,13 +447,16 @@
      "fragmentId": "frag-fraction-times-whole",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a fraction by a whole number as repeated groups of unit fractions.",
+      "purpose": "Multiply a fraction by a whole number as equal groups of a fraction.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d.",
+      "rationale": "The bars show each group, so students count unit fractions before writing n × a/d = (n × a)/d. The same equal-groups meaning of multiplication from grade 3 now applies to fractions.",
       "misconceptions": [
        "Multiplying the denominator too: 3 × 2/5 = 6/15."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
       ]
      },
      "estimatedHeight": 624
@@ -534,10 +543,11 @@
   "purpose": "Multiply a fraction by a whole number.",
   "principles": [
    "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
-  ]
+  ],
+  "rationale": "Decomposing a fraction into unit fractions comes first, so a product such as 3 × 2/5 reads as a count of fifths."
  },
  "advice": [
-  "\"Use the bars. Multiply the whole number by the fraction.\" is practice, and nothing on the sheet introduces it with a worked example."
+  "\"Multiply. Use the fraction bars.\" is practice, and nothing on the sheet introduces it with a worked example."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

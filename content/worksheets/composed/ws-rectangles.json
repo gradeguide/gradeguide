@@ -3,7 +3,8 @@
  "title": "Perimeter and area",
  "headerLabels": [
   "3.MD.D.8",
-  "4.MD.A.3"
+  "4.MD.A.3",
+  "3.MD.C.7"
  ],
  "pages": [
   {
@@ -62,7 +63,7 @@
         }
        }
       ],
-      "text": "Perimeter is the distance **all the way around**: add all four sides."
+      "text": "Perimeter is the distance around the shape. Add all 4 sides: **5 + 3 + 5 + 3 = 16 cm**."
      },
      "items": [
       {
@@ -235,10 +236,15 @@
      "fragmentId": "frag-rectangle-perimeter",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Find a rectangle's perimeter from two sides.",
+      "purpose": "Find the perimeter of a rectangle from two side lengths.",
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW",
        "PRINCIPLE_WORKED_EXAMPLE"
+      ],
+      "rationale": "Only two sides are labeled, so students use the fact that opposite sides of a rectangle are equal. The worked example adds all four sides rather than giving a formula.",
+      "misconceptions": [
+       "Adding only the two labeled sides.",
+       "Multiplying the sides, which gives the area."
       ]
      },
      "estimatedHeight": 529
@@ -417,13 +423,14 @@
      "fragmentId": "frag-rectangle-area",
      "stage": "STAGE_PRACTICE",
      "design": {
-      "purpose": "Find a rectangle's area as length times width.",
+      "purpose": "Find the area of a rectangle by multiplying its side lengths.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Placed after perimeter so the child has to tell the two apart.",
+      "rationale": "The rectangles look like those in the perimeter section, so students must decide which measure the question asks for. Side lengths stay within the multiplication facts to 9 × 9.",
       "misconceptions": [
-       "Mixing up area and perimeter"
+       "Mixing up area and perimeter.",
+       "Writing the area in centimeters instead of square centimeters."
       ]
      },
      "estimatedHeight": 242
@@ -435,7 +442,7 @@
    "sections": [
     {
      "label": "C",
-     "instruction": "The area is given. Find the missing side.",
+     "instruction": "Find the missing side length.",
      "items": [
       {
        "label": "7",
@@ -580,11 +587,15 @@
      "fragmentId": "frag-rectangle-missing-side",
      "stage": "STAGE_STRETCH",
      "design": {
-      "purpose": "Use area to find an unknown side.",
+      "purpose": "Use the area and one side of a rectangle to find the other side.",
       "principles": [
        "PRINCIPLE_SYSTEMATIC_VARIATION"
       ],
-      "rationale": "Running the formula backwards is the 4.MD.A.3 example task, and it is division as an unknown factor again."
+      "rationale": "Running the area calculation backwards is the 4.MD.A.3 example task. It is division as an unknown-factor problem, the same idea as the missing-number facts.",
+      "misconceptions": [
+       "Subtracting the known side from the area.",
+       "Treating the area as a perimeter and halving it."
+      ]
      },
      "estimatedHeight": 346
     }
@@ -694,10 +705,11 @@
   }
  ],
  "design": {
-  "purpose": "Tell area from perimeter, then use area backwards.",
+  "purpose": "Tell area from perimeter, then use area to find a missing side.",
   "principles": [
    "PRINCIPLE_INTERLEAVING"
-  ]
+  ],
+  "rationale": "Perimeter and area are asked about the same kind of rectangle, so students choose the measure from the question. The last section works backwards from the area."
  },
  "writingSize": "WRITING_SIZE_STANDARD"
 }

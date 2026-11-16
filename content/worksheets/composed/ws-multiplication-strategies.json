@@ -16,7 +16,7 @@
    "sections": [
     {
      "label": "A",
-     "instruction": "Warm up: multiply.",
+     "instruction": "Multiply.",
      "items": [
       {
        "label": "1",
@@ -353,11 +353,15 @@
      "fragmentId": "frag-multiplication-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Recall multiplication facts.",
+      "purpose": "Recall multiplication facts with factors from 2 to 9.",
       "principles": [
        "PRINCIPLE_RETRIEVAL_PRACTICE"
       ],
-      "rationale": "Short untimed recall strengthens facts more than re-reading them. Circling slow facts gives the next practice list.",
+      "rationale": "Short, untimed recall strengthens facts more than re-reading them. Facts are drawn from the whole table in random order, so the set shows which facts are not yet automatic.",
+      "misconceptions": [
+       "Adding instead of multiplying when the facts are mixed with addition elsewhere: 6 × 3 = 9.",
+       "Confusing nearby facts, such as 7 × 8 = 54."
+      ],
       "references": [
        "Roediger and Karpicke (2006), Psychological Science 17"
       ]
@@ -366,7 +370,7 @@
     },
     {
      "label": "B",
-     "instruction": "Write a × fact and a ÷ fact for each array. Rows first.",
+     "instruction": "Write a multiplication fact and a division fact for each array.",
      "example": {
       "nodes": [
        {
@@ -448,7 +452,7 @@
         }
        }
       ],
-      "text": "3 rows of 5 is **3 × 5 = 15**. Split 15 dots into 3 rows and each row has 5: **15 ÷ 3 = 5**."
+      "text": "3 rows of 5 dots: **3 × 5 = 15**. 15 dots in 3 equal rows: **15 ÷ 3 = 5**."
      },
      "items": [
       {
@@ -636,19 +640,26 @@
      "fragmentId": "frag-array-facts",
      "stage": "STAGE_REVIEW",
      "design": {
-      "purpose": "Read one array as a multiplication and a division.",
+      "purpose": "Write a multiplication fact and a division fact for the same array.",
       "principles": [
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS",
        "PRINCIPLE_WORKED_EXAMPLE"
       ],
-      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes."
+      "rationale": "One picture for both operations shows division as the unknown-factor problem 3.OA.B.6 describes. Students write the rows first, so the first factor always names the number of rows, the convention most grade 3 programs use.",
+      "misconceptions": [
+       "Writing the division fact with the total last: 3 ÷ 15 = 5.",
+       "Counting every dot one by one instead of using the rows."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
+      ]
      },
      "estimatedHeight": 426
     },
     {
      "label": "C",
-     "instruction": "Multiply by tens and hundreds. Use the basic fact.",
-     "explainer": "3 × 40 is 3 × 4 tens. That is 12 tens, or 120.",
+     "instruction": "Multiply. Use a basic fact.",
+     "explainer": "3 × 40 = 3 × 4 tens = 12 tens = 120",
      "items": [
       {
        "label": "13",
@@ -797,9 +808,13 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Naming the unit (tens, hundreds) keeps the zeros meaningful, so the child is not just told to add zeros.",
+      "rationale": "Students write the product in units of tens or hundreds before writing it as a number, so the zeros come from place value rather than a rule about adding zeros. 3.NBT.A.3 asks for exactly this use of place value.",
       "misconceptions": [
-       "Adding a zero for every factor of ten without knowing why, which fails for 5 × 40 = 200."
+       "Counting zeros in the factors to place them in the product, which fails for 5 × 40 = 200.",
+       "Writing 12 tens as 102."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 156
@@ -811,7 +826,7 @@
    "sections": [
     {
      "label": "D",
-     "instruction": "Break the second number apart. Multiply each part, then add.",
+     "instruction": "Break apart the second factor. Multiply each part. Add the products.",
      "items": [
       {
        "label": "15",
@@ -1008,13 +1023,20 @@
       "principles": [
        "PRINCIPLE_PREREQUISITE_REVIEW"
       ],
-      "rationale": "Splitting at 5 uses the fives facts most children already know, and is the same move the area model and partial products make with place value."
+      "rationale": "Splitting at 5 uses the fives facts most students already know. It is the same step the area model and partial products take with place value, so this section prepares for both.",
+      "misconceptions": [
+       "Multiplying only the first part and adding the second: 7 × 8 = 7 × 5 + 3.",
+       "Adding the parts of the factor instead of the products."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for the Common Core State Standards in Mathematics, K, Counting and Cardinality; K-5, Operations and Algebraic Thinking"
+      ]
      },
      "estimatedHeight": 226
     },
     {
      "label": "E",
-     "instruction": "Fill in the area model, then the product.",
+     "instruction": "Complete the area model. Write the product.",
      "items": [
       {
        "label": "17",
@@ -1149,21 +1171,25 @@
      "fragmentId": "frag-area-model-2-by-1",
      "stage": "STAGE_GUIDED",
      "design": {
-      "purpose": "Multiply a two-digit number by a one-digit number with partial products.",
+      "purpose": "Multiply a two-digit number by a one-digit number with an area model.",
       "principles": [
        "PRINCIPLE_WORKED_EXAMPLE",
        "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
       ],
-      "rationale": "The area model makes the distributive property visible, which is what the standard algorithm hides. 4.NBT.B.5 asks for it explicitly.",
+      "rationale": "The area model shows the distributive property, which the standard algorithm hides. Splitting by place value gives one tens product and one ones product, and 4.NBT.B.5 names the area model as a way to explain the calculation.",
       "misconceptions": [
-       "Multiplying only the ones, or forgetting the tens are tens"
+       "Multiplying only the ones, or treating the tens digit as ones: 28 × 2 = 2 × 2 + 8 × 2.",
+       "Writing the two partial products side by side instead of adding them: 40 and 16 give 4016."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2015), Progressions for the Common Core State Standards in Mathematics, Number and Operations in Base Ten, K-5"
       ]
      },
      "estimatedHeight": 170
     },
     {
      "label": "F",
-     "instruction": "Multiply each place, then add the partial products.",
+     "instruction": "Multiply each place. Add the partial products.",
      "items": [
       {
        "label": "19",
@@ -1336,7 +1362,11 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Each row is one cell of an area model written as a number, so the standard algorithm that follows only shortens rows the child can already read."
+      "rationale": "Each row is one cell of an area model written as a number, and the note beside it names the product. The standard algorithm that follows writes the same rows in a shorter form.",
+      "misconceptions": [
+       "Multiplying the digit 4 in 542 as 4 instead of 40.",
+       "Lining up the partial products by their left digits."
+      ]
      },
      "estimatedHeight": 248
     }
@@ -1450,7 +1480,11 @@
       "principles": [
        "PRINCIPLE_CONCRETENESS_FADING"
       ],
-      "rationale": "Comes after the area model, so the carried digits are the partial products the child has already drawn."
+      "rationale": "This section follows the area model and partial products, so each regrouped digit stands for a partial product students have already written in full.",
+      "misconceptions": [
+       "Adding the regrouped digit before multiplying the next place.",
+       "Forgetting to add the regrouped digit at all."
+      ]
      },
      "estimatedHeight": 168
     },
@@ -1471,7 +1505,7 @@
             "barGraph": {
              "title": "Sticker packs bought",
              "valueAxis": "Packs",
-             "step": 4,
+             "step": 2,
              "bars": [
               {
                "label": "Room 4",
@@ -1479,7 +1513,7 @@
               },
               {
                "label": "Room 5",
-               "value": 23
+               "value": 22
               },
               {
                "label": "Room 6",
@@ -1505,11 +1539,11 @@
                 "id": "q26a",
                 "label": "stickers Room 5 got",
                 "answer": {
-                 "text": "184",
+                 "text": "176",
                  "also": [
-                  "184 stickers"
+                  "176 stickers"
                  ],
-                 "work": "23 × 8"
+                 "work": "22 × 8"
                 }
                }
               }
@@ -1531,11 +1565,11 @@
                 "id": "q26b",
                 "label": "how many more stickers",
                 "answer": {
-                 "text": "88",
+                 "text": "80",
                  "also": [
-                  "88 stickers"
+                  "80 stickers"
                  ],
-                 "work": "184 − 12 × 8"
+                 "work": "176 − 12 × 8"
                 }
                }
               }
@@ -1546,18 +1580,22 @@
          }
         }
        ],
-       "key": "26a: 23 × 8 = 184; 26b: 184 − 12 × 8 = 88"
+       "key": "26a: 22 × 8 = 176; 26b: 176 − 12 × 8 = 80"
       }
      ],
      "columns": 1,
      "fragmentId": "frag-multiply-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Choose and use multiplication to solve problems from a graph, a table and a comparison.",
+      "purpose": "Solve multiplication problems that take their numbers from a graph, a table and a comparison.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+      "rationale": "Each problem takes its numbers from a different source, so students locate the numbers before choosing a strategy. The graph's scale counts by 2 and every bar ends on a gridline, so reading the graph is not where the problem goes wrong.",
+      "misconceptions": [
+       "Using the number of packs as the number of stickers.",
+       "Adding 6 to 14 for 6 times as tall."
+      ]
      },
      "estimatedHeight": 572
     }
@@ -1719,11 +1757,15 @@
      "fragmentId": "frag-multiply-word-problems",
      "stage": "STAGE_APPLY",
      "design": {
-      "purpose": "Choose and use multiplication to solve problems from a graph, a table and a comparison.",
+      "purpose": "Solve multiplication problems that take their numbers from a graph, a table and a comparison.",
       "principles": [
        "PRINCIPLE_INTERLEAVING"
       ],
-      "rationale": "Each problem takes its numbers from a different kind of source, so the child has to find the numbers before using any strategy."
+      "rationale": "Each problem takes its numbers from a different source, so students locate the numbers before choosing a strategy. The graph's scale counts by 2 and every bar ends on a gridline, so reading the graph is not where the problem goes wrong.",
+      "misconceptions": [
+       "Using the number of packs as the number of stickers.",
+       "Adding 6 to 14 for 6 times as tall."
+      ]
      },
      "continued": true,
      "estimatedHeight": 760
@@ -2299,11 +2341,11 @@
     "id": "q26a",
     "label": "stickers Room 5 got",
     "answer": {
-     "text": "184",
+     "text": "176",
      "also": [
-      "184 stickers"
+      "176 stickers"
      ],
-     "work": "23 × 8"
+     "work": "22 × 8"
     }
    }
   },
@@ -2313,11 +2355,11 @@
     "id": "q26b",
     "label": "how many more stickers",
     "answer": {
-     "text": "88",
+     "text": "80",
      "also": [
-      "88 stickers"
+      "80 stickers"
      ],
-     "work": "184 − 12 × 8"
+     "work": "176 − 12 × 8"
     }
    }
   },
@@ -2372,11 +2414,11 @@
    "PRINCIPLE_PREREQUISITE_REVIEW",
    "PRINCIPLE_CONCRETENESS_FADING"
   ],
-  "rationale": "Facts and arrays come first because every later strategy is built from basic facts. Tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so the child chooses the strategy."
+  "rationale": "Facts and arrays come first because every later strategy is built from basic facts. Multiplying by tens, breaking apart, the area model and partial products each split a product into easier ones, in that order, so the standard algorithm arrives as a shorter way of writing partial products. The word problems come last so students choose the strategy. The sheet is long and suits two sessions, with the break before the area model."
  },
  "advice": [
-  "Section \"Multiply by tens and hundreds. Use the basic fact.\" was cut from 4 to 2 items to fit.",
-  "Section \"Break the second number apart. Multiply each part, then add.\" was cut from 3 to 2 items to fit."
+  "Section \"Multiply. Use a basic fact.\" was cut from 4 to 2 items to fit.",
+  "Section \"Break apart the second factor. Multiply each part. Add the products.\" was cut from 3 to 2 items to fit."
  ],
  "writingSize": "WRITING_SIZE_STANDARD"
 }

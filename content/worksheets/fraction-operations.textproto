@@ -6,41 +6,51 @@
 
 fragments {
   id: "frag-decompose-fraction"
-  instruction: "Split the fraction into two parts with the same denominator."
+  instruction: "Write the missing numerator."
   stage: STAGE_INTRODUCE
-  explainer: "5/8 is five eighths. Three eighths and two eighths make five eighths: 5/8 = 3/8 + 2/8."
+  explainer: "5/8 is 5 eighths. 3 eighths and 2 eighths make 5 eighths: 5/8 = 3/8 + 2/8."
   items { kind { decompose_fraction { denominators: [4, 5, 6, 8, 10] } } count: 6 min_count: 4 }
   max_columns: 2
   design {
-    purpose: "Write a fraction as a sum of fractions with the same denominator."
+    purpose: "Write a fraction as a sum of two fractions with the same denominator."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
-    rationale: "Seeing 5/8 as a count of eighths is what makes adding same-denominator fractions an addition of counts."
+    rationale: "Reading 5/8 as a count of eighths is what makes adding fractions with the same denominator an addition of counts. One part is given, so students find the other by counting on in eighths or by subtracting numerators."
+    misconceptions: "Splitting the denominator as well: 5/8 = 3/4 + 2/4."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-add-fractions"
-  instruction: "Add. The denominators are the same."
+  instruction: "Add."
   stage: STAGE_PRACTICE
-  explainer: "Add the numbers of parts. The size of the parts stays the same."
+  example {
+    item { fraction_add_subtract { denominators: 5 } }
+    seed: 3
+    text: "The parts are fifths. Add the numbers of fifths. The denominator stays 5."
+  }
   items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8, 10, 12] } } count: 8 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Add fractions with the same denominator."
-    principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    principles: [PRINCIPLE_WORKED_EXAMPLE, PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Students add counts of the same unit fraction, as the decomposing section prepared. Some sums are greater than 1, so students see that an answer such as 7/6 is a correct fraction. Answers may be left as fractions greater than 1 or written as mixed numbers."
     misconceptions: "Adding the denominators too: 2/5 + 1/5 = 3/10."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
 
 fragments {
   id: "frag-subtract-fractions"
-  instruction: "Subtract. The denominators are the same."
+  instruction: "Subtract."
   stage: STAGE_PRACTICE
   items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8, 10, 12] subtract: true } } count: 8 min_count: 4 }
   max_columns: 2
   design {
     purpose: "Subtract fractions with the same denominator."
     principles: [PRINCIPLE_RETRIEVAL_PRACTICE]
+    rationale: "Subtraction follows addition with the same denominators, so students apply the same idea: the unit stays the same and only the count changes."
+    misconceptions: "Subtracting the denominators too: 5/8 − 2/8 = 3/0."
   }
 }
 
@@ -48,12 +58,15 @@ fragments {
   id: "frag-add-mixed-numbers"
   instruction: "Add. Write the answer as a mixed number."
   stage: STAGE_GUIDED
-  explainer: "Add the wholes, then the parts. If the parts make more than one whole, trade them for a whole."
+  explainer: "Add the whole numbers. Add the fractions. If the fractions make 1 or more, regroup them as a whole."
   items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8] mixed: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
     purpose: "Add mixed numbers with the same denominator."
     principles: [PRINCIPLE_CONCRETENESS_FADING]
+    rationale: "Adding wholes and parts separately follows place value: the fraction parts work like ones that regroup into a whole. Some items regroup and some do not, so students check each sum of the parts."
+    misconceptions: "Leaving a fraction part of 1 or more in the answer: 3 5/4."
+    misconceptions: "Adding the denominators of the fraction parts."
   }
 }
 
@@ -61,27 +74,30 @@ fragments {
   id: "frag-subtract-mixed-numbers"
   instruction: "Subtract. Write the answer as a mixed number."
   stage: STAGE_STRETCH
-  explainer: "If there are not enough parts to take away, trade one whole for parts first."
-  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8] mixed: true subtract: true } } count: 4 min_count: 2 }
+  explainer: "If there are not enough parts to subtract, regroup 1 whole as parts first."
+  items { kind { fraction_add_subtract { denominators: [3, 4, 5, 6, 8] mixed: true subtract: true regroup: true } } count: 4 min_count: 2 }
   max_columns: 2
   design {
-    purpose: "Subtract mixed numbers with the same denominator, trading a whole when needed."
+    purpose: "Subtract mixed numbers with the same denominator, regrouping a whole as parts."
     principles: [PRINCIPLE_SYSTEMATIC_VARIATION]
+    rationale: "Every item needs a whole regrouped, which is the step 4.NF.B.3.c adds to subtraction. Regrouping 1 as 4/4 or 6/6 uses the same idea as regrouping a ten as 10 ones."
     misconceptions: "Subtracting the smaller fraction part from the larger whatever their order: 3 1/4 − 1 3/4 = 2 2/4."
+    misconceptions: "Regrouping a whole as 10 parts whatever the denominator."
   }
 }
 
 fragments {
   id: "frag-fraction-times-whole"
-  instruction: "Use the bars. Multiply the whole number by the fraction."
+  instruction: "Multiply. Use the fraction bars."
   stage: STAGE_GUIDED
-  explainer: "3 × 2/5 is three groups of two fifths: six fifths, or 6/5."
+  explainer: "3 × 2/5 is 3 groups of 2 fifths. That is 6 fifths, or 6/5."
   items { kind { fraction_times_whole { denominators: [3, 4, 5, 6, 8] wholes { min: 2 max: 4 } } } count: 4 min_count: 2 }
   max_columns: 1
   design {
-    purpose: "Multiply a fraction by a whole number as repeated groups of unit fractions."
+    purpose: "Multiply a fraction by a whole number as equal groups of a fraction."
     principles: [PRINCIPLE_MULTIPLE_REPRESENTATIONS]
-    rationale: "The bars show each group, so the child counts unit fractions before writing n × a/d = (n × a)/d."
+    rationale: "The bars show each group, so students count unit fractions before writing n × a/d = (n × a)/d. The same equal-groups meaning of multiplication from grade 3 now applies to fractions."
     misconceptions: "Multiplying the denominator too: 3 × 2/5 = 6/15."
+    references: "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Number and Operations—Fractions, 3-5"
   }
 }
