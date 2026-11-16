@@ -1,0 +1,543 @@
+{
+ "worksheetId": "ws-g7-percent-problems",
+ "title": "Percent problems",
+ "headerLabels": [
+  "7.RP.A.3",
+  "7.EE.A.2"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A meal costs $48. Sam leaves a 15% tip. What is the total with the tip?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q1",
+           "label": "total with tip",
+           "answer": {
+            "text": "55.20",
+            "also": [
+             "$55.20",
+             "55.2"
+            ],
+            "work": "48 + 48 × 0.15"
+           }
+          }
+         }
+        }
+       ],
+       "key": "55.20"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A $60 jacket is on sale for 30% off. What is the sale price?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q2",
+           "label": "sale price",
+           "answer": {
+            "text": "42",
+            "also": [
+             "$42",
+             "42.00",
+             "$42.00"
+            ],
+            "work": "60 − 60 × 0.30"
+           }
+          }
+         }
+        }
+       ],
+       "key": "42"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A bike costs $250. Sales tax is 8%. What is the total cost?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q3",
+           "label": "total cost",
+           "answer": {
+            "text": "270",
+            "also": [
+             "$270",
+             "270.00",
+             "$270.00"
+            ],
+            "work": "250 + 250 × 0.08"
+           }
+          }
+         }
+        }
+       ],
+       "key": "270"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A store buys a lamp for $40 and marks the price up 25%. What is the selling price?"
+        },
+        {
+         "workSpace": {
+          "rows": 4,
+          "field": {
+           "id": "q4",
+           "label": "selling price",
+           "answer": {
+            "text": "50",
+            "also": [
+             "$50",
+             "50.00",
+             "$50.00"
+            ],
+            "work": "40 + 40 × 0.25"
+           }
+          }
+         }
+        }
+       ],
+       "key": "50"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-percent-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multistep percent problems: tax, tips, discounts, markups, percent change and percent error.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story is a kind of percent problem from the grade 7 standard: tip, discount, tax, markup, percent increase and percent error. Most need two steps, finding the percent of the amount and then adding or taking it away. The amounts are easy to multiply, so the student can concentrate on what to do with the percent.",
+      "misconceptions": [
+       "Finding the percent change from the new amount instead of the original.",
+       "Stopping after finding the tip or discount instead of finding the new total.",
+       "Taking 30% off by subtracting 30 dollars."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "estimatedHeight": 706
+    }
+   ],
+   "estimatedHeight": 710
+  },
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Solve. Show your work.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "text": "A town grew from 800 people to 920 people. By what percent did it grow?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q5",
+           "label": "percent growth",
+           "answer": {
+            "text": "15",
+            "also": [
+             "15%"
+            ],
+            "work": "(920 − 800) ÷ 800 × 100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "15"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "text": "Jo guessed that a jar held 80 marbles. It really held 100. What was the percent error of her guess?"
+        },
+        {
+         "workSpace": {
+          "rows": 5,
+          "field": {
+           "id": "q6",
+           "label": "percent error",
+           "answer": {
+            "text": "20",
+            "also": [
+             "20%"
+            ],
+            "work": "(100 − 80) ÷ 100 × 100"
+           }
+          }
+         }
+        }
+       ],
+       "key": "20"
+      }
+     ],
+     "columns": 1,
+     "fragmentId": "frag-g7-percent-word-problems",
+     "stage": "STAGE_APPLY",
+     "design": {
+      "purpose": "Solve multistep percent problems: tax, tips, discounts, markups, percent change and percent error.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Each story is a kind of percent problem from the grade 7 standard: tip, discount, tax, markup, percent increase and percent error. Most need two steps, finding the percent of the amount and then adding or taking it away. The amounts are easy to multiply, so the student can concentrate on what to do with the percent.",
+      "misconceptions": [
+       "Finding the percent change from the new amount instead of the original.",
+       "Stopping after finding the tip or discount instead of finding the new total.",
+       "Taking 30% off by subtracting 30 dollars."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Ratios and Proportional Relationships, 6-7"
+      ]
+     },
+     "continued": true,
+     "estimatedHeight": 454
+    },
+    {
+     "label": "B",
+     "instruction": "Write each change as a single product.",
+     "explainer": "A 5% increase on p is p + 0.05p = 1.05p.",
+     "items": [
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "text": "A price p decreases by 20%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p − 0.2p ="
+           },
+           {
+            "blank": {
+             "id": "q7",
+             "label": "p − 0.2p",
+             "answer": {
+              "text": "0.8",
+              "also": [
+               "0.8p",
+               "0.80"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p − 0.2p = 0.8 p"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "text": "A price p increases by 25%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p + 0.25p ="
+           },
+           {
+            "blank": {
+             "id": "q8",
+             "label": "p + 0.25p",
+             "answer": {
+              "text": "1.25",
+              "also": [
+               "1.25p"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p + 0.25p = 1.25 p"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "text": "A price p increases by 40%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p + 0.4p ="
+           },
+           {
+            "blank": {
+             "id": "q9",
+             "label": "p + 0.4p",
+             "answer": {
+              "text": "1.4",
+              "also": [
+               "1.4p",
+               "1.40"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p + 0.4p = 1.4 p"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "text": "A price p decreases by 30%."
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "p − 0.3p ="
+           },
+           {
+            "blank": {
+             "id": "q10",
+             "label": "p − 0.3p",
+             "answer": {
+              "text": "0.7",
+              "also": [
+               "0.7p",
+               "0.70"
+              ]
+             }
+            }
+           },
+           {
+            "text": "p"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "p − 0.3p = 0.7 p"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-percent-change-expressions",
+     "stage": "STAGE_STRETCH",
+     "design": {
+      "purpose": "Rewrite a percent increase or decrease as a single multiplication.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Writing p + 0.05p as 1.05p shows that a percent change is one multiplication, which the standard gives as its example. Increases and decreases are mixed, so the student must decide whether to add or subtract the percent from 1. This is the shortcut behind the percent problems earlier on the sheet.",
+      "misconceptions": [
+       "Writing p − 0.2p as 0.2p.",
+       "Writing a 25% increase as 1.25 + p."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2011), Progressions for Expressions and Equations, 6-8"
+      ]
+     },
+     "estimatedHeight": 216
+    }
+   ],
+   "estimatedHeight": 678
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "total with tip",
+    "answer": {
+     "text": "55.20",
+     "also": [
+      "$55.20",
+      "55.2"
+     ],
+     "work": "48 + 48 × 0.15"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "sale price",
+    "answer": {
+     "text": "42",
+     "also": [
+      "$42",
+      "42.00",
+      "$42.00"
+     ],
+     "work": "60 − 60 × 0.30"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "total cost",
+    "answer": {
+     "text": "270",
+     "also": [
+      "$270",
+      "270.00",
+      "$270.00"
+     ],
+     "work": "250 + 250 × 0.08"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "selling price",
+    "answer": {
+     "text": "50",
+     "also": [
+      "$50",
+      "50.00",
+      "$50.00"
+     ],
+     "work": "40 + 40 × 0.25"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "percent growth",
+    "answer": {
+     "text": "15",
+     "also": [
+      "15%"
+     ],
+     "work": "(920 − 800) ÷ 800 × 100"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "percent error",
+    "answer": {
+     "text": "20",
+     "also": [
+      "20%"
+     ],
+     "work": "(100 − 80) ÷ 100 × 100"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "p − 0.2p",
+    "answer": {
+     "text": "0.8",
+     "also": [
+      "0.8p",
+      "0.80"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "p + 0.25p",
+    "answer": {
+     "text": "1.25",
+     "also": [
+      "1.25p"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "p + 0.4p",
+    "answer": {
+     "text": "1.4",
+     "also": [
+      "1.4p",
+      "1.40"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "p − 0.3p",
+    "answer": {
+     "text": "0.7",
+     "also": [
+      "0.7p",
+      "0.70"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Solve tax, tip, discount, markup and percent change problems.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

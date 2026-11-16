@@ -1,0 +1,286 @@
+{
+ "worksheetId": "ws-g7-circles",
+ "title": "Circumference and area of circles",
+ "headerLabels": [
+  "7.G.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Find the circumference or area. Use 3.14 for π.",
+     "explainer": "Circumference = π × diameter. Area = π × radius × radius. The diameter is twice the radius.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "text": "A circle has a radius of 4 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CIRCLE",
+          "radiusLabel": "4 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ≈"
+           },
+           {
+            "blank": {
+             "id": "q1",
+             "label": "area: A circle has a radius of 4 cm.",
+             "answer": {
+              "text": "50.24",
+              "also": [
+               "50.2",
+               "50"
+              ]
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area ≈ 50.24 sq cm"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "text": "A circle has a radius of 6 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CIRCLE",
+          "radiusLabel": "6 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Circumference ≈"
+           },
+           {
+            "blank": {
+             "id": "q2",
+             "label": "circumference: A circle has a radius of 6 cm.",
+             "answer": {
+              "text": "37.68",
+              "also": [
+               "37.7",
+               "38"
+              ]
+             }
+            }
+           },
+           {
+            "text": "cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Circumference ≈ 37.68 cm"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "text": "A circle has a radius of 9 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CIRCLE",
+          "radiusLabel": "9 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ≈"
+           },
+           {
+            "blank": {
+             "id": "q3",
+             "label": "area: A circle has a radius of 9 cm.",
+             "answer": {
+              "text": "254.34",
+              "also": [
+               "254.3",
+               "254"
+              ]
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area ≈ 254.34 sq cm"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "text": "A circle has a radius of 7 cm."
+        },
+        {
+         "roundSolid": {
+          "kind": "KIND_CIRCLE",
+          "radiusLabel": "7 cm"
+         }
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "Area ≈"
+           },
+           {
+            "blank": {
+             "id": "q4",
+             "label": "area: A circle has a radius of 7 cm.",
+             "answer": {
+              "text": "153.86",
+              "also": [
+               "153.9",
+               "154"
+              ]
+             }
+            }
+           },
+           {
+            "text": "sq cm"
+           }
+          ]
+         }
+        }
+       ],
+       "key": "Area ≈ 153.86 sq cm"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g7-circles",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the circumference and area of a circle from its radius or diameter.",
+      "principles": [
+       "PRINCIPLE_INTERLEAVING"
+      ],
+      "rationale": "Circumference and area are mixed, and some circles give the radius while others give the diameter, so the student must choose the right formula and the right length. The explainer gives both formulas. Each item has room to multiply by 3.14.",
+      "misconceptions": [
+       "Using the diameter in place of the radius in the area formula.",
+       "Using the area formula when the circumference is asked for.",
+       "Squaring π instead of the radius."
+      ]
+     },
+     "estimatedHeight": 584
+    }
+   ],
+   "estimatedHeight": 588
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "area: A circle has a radius of 4 cm.",
+    "answer": {
+     "text": "50.24",
+     "also": [
+      "50.2",
+      "50"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "circumference: A circle has a radius of 6 cm.",
+    "answer": {
+     "text": "37.68",
+     "also": [
+      "37.7",
+      "38"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "area: A circle has a radius of 9 cm.",
+    "answer": {
+     "text": "254.34",
+     "also": [
+      "254.3",
+      "254"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "area: A circle has a radius of 7 cm.",
+    "answer": {
+     "text": "153.86",
+     "also": [
+      "153.9",
+      "154"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Find the circumference and area of circles.",
+  "principles": [
+   "PRINCIPLE_INTERLEAVING"
+  ]
+ },
+ "advice": [
+  "\"Find the circumference or area. Use 3.14 for π.\" is practice, and nothing on the sheet introduces it with a worked example.",
+  "Section \"Find the circumference or area. Use 3.14 for π.\" was cut from 6 to 4 items to fit."
+ ],
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

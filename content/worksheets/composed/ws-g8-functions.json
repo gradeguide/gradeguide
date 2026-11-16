@@ -1,0 +1,1175 @@
+{
+ "worksheetId": "ws-g8-functions",
+ "title": "Functions",
+ "headerLabels": [
+  "8.F.A.1",
+  "8.F.A.3",
+  "8.F.B.4"
+ ],
+ "pages": [
+  {
+   "sections": [
+    {
+     "label": "A",
+     "instruction": "Is the relation a function? Check one.",
+     "explainer": "A function has exactly one output for each input.",
+     "items": [
+      {
+       "label": "1",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "−1"
+             },
+             {
+              "text": "3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "8"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "5"
+             },
+             {
+              "text": "1"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": "6"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "function",
+           "not a function"
+          ],
+          "field": {
+           "id": "q1",
+           "label": "is the table a function",
+           "answer": {
+            "text": "function"
+           }
+          }
+         }
+        }
+       ],
+       "key": "function"
+      },
+      {
+       "label": "2",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "−2"
+             },
+             {
+              "text": "−3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": "6"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "3"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "function",
+           "not a function"
+          ],
+          "field": {
+           "id": "q2",
+           "label": "is the table a function",
+           "answer": {
+            "text": "function"
+           }
+          }
+         }
+        }
+       ],
+       "key": "function"
+      },
+      {
+       "label": "3",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "−3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "4"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "−2"
+             },
+             {
+              "text": "4"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "−2"
+             },
+             {
+              "text": "8"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "function",
+           "not a function"
+          ],
+          "field": {
+           "id": "q3",
+           "label": "is the table a function",
+           "answer": {
+            "text": "not a function"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not a function"
+      },
+      {
+       "label": "4",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "4"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "6"
+             },
+             {
+              "text": "9"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "−3"
+             },
+             {
+              "text": "3"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "5"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "function",
+           "not a function"
+          ],
+          "field": {
+           "id": "q4",
+           "label": "is the table a function",
+           "answer": {
+            "text": "function"
+           }
+          }
+         }
+        }
+       ],
+       "key": "function"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-function-or-not",
+     "stage": "STAGE_INTRODUCE",
+     "design": {
+      "purpose": "Decide whether a table is a function.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Tables are the simplest place to check that each input has only one output. Some tables have a repeated output and are still functions, which tests the definition directly. The inputs are not in order, so the student must look for a repeated x.",
+      "misconceptions": [
+       "Thinking a repeated output means it is not a function.",
+       "Thinking the x-values must go up in order."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 468
+    },
+    {
+     "label": "B",
+     "instruction": "Is the function linear? Check one.",
+     "explainer": "A linear function can be written y = mx + b. Its graph is a straight line.",
+     "items": [
+      {
+       "label": "5",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = 3(x + 8)"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q5",
+           "label": "is y = 3(x + 8) linear",
+           "answer": {
+            "text": "linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "linear"
+      },
+      {
+       "label": "6",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = x/3 + 8"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q6",
+           "label": "is y = x/3 + 8 linear",
+           "answer": {
+            "text": "linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "linear"
+      },
+      {
+       "label": "7",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = 6 − 3x"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q7",
+           "label": "is y = 6 − 3x linear",
+           "answer": {
+            "text": "linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "linear"
+      },
+      {
+       "label": "8",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = x² + 7"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q8",
+           "label": "is y = x² + 7 linear",
+           "answer": {
+            "text": "not linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not linear"
+      },
+      {
+       "label": "9",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = x(x + 3)"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q9",
+           "label": "is y = x(x + 3) linear",
+           "answer": {
+            "text": "not linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not linear"
+      },
+      {
+       "label": "10",
+       "nodes": [
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y = 6/x"
+           }
+          ]
+         }
+        },
+        {
+         "choices": {
+          "options": [
+           "linear",
+           "not linear"
+          ],
+          "field": {
+           "id": "q10",
+           "label": "is y = 6/x linear",
+           "answer": {
+            "text": "not linear"
+           }
+          }
+         }
+        }
+       ],
+       "key": "not linear"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-linear-or-not",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Tell linear functions from nonlinear ones by their equations.",
+      "principles": [
+       "PRINCIPLE_SYSTEMATIC_VARIATION"
+      ],
+      "rationale": "Nine equation forms each appear once before any repeats, including y = a number and y = x divided by a number plus a number. The student decides whether the equation can be written as y = mx + b, not just whether it has an x. Squares, cubes, x times itself and x in the denominator are the nonlinear cases 8.F.A.3 contrasts.",
+      "misconceptions": [
+       "Thinking y = 5 is not linear because it has no x.",
+       "Thinking y = 3/x is linear because x has no power."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 300
+    }
+   ],
+   "estimatedHeight": 776
+  },
+  {
+   "sections": [
+    {
+     "label": "C",
+     "instruction": "Write the rule as y = mx + b.",
+     "items": [
+      {
+       "label": "11",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "−8"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "−13"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": "−18"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "−23"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q11",
+             "label": "the rule for the table",
+             "answer": {
+              "text": "−5x − 3",
+              "also": [
+               "-5x - 3",
+               "−5x−3",
+               "-5x-3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = −5x − 3"
+      },
+      {
+       "label": "12",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "−13"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "−17"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": "−21"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "4"
+             },
+             {
+              "text": "−25"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q12",
+             "label": "the rule for the table",
+             "answer": {
+              "text": "−4x − 9",
+              "also": [
+               "-4x - 9",
+               "−4x−9",
+               "-4x-9"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = −4x − 9"
+      },
+      {
+       "label": "13",
+       "nodes": [
+        {
+         "dataTable": {
+          "header": [
+           "x",
+           "y"
+          ],
+          "rows": [
+           {
+            "cells": [
+             {
+              "text": "0"
+             },
+             {
+              "text": "4"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "1"
+             },
+             {
+              "text": "7"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "2"
+             },
+             {
+              "text": "10"
+             }
+            ]
+           },
+           {
+            "cells": [
+             {
+              "text": "3"
+             },
+             {
+              "text": "13"
+             }
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q13",
+             "label": "the rule for the table",
+             "answer": {
+              "text": "3x + 4",
+              "also": [
+               "3x+4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 3x + 4"
+      }
+     ],
+     "columns": 3,
+     "fragmentId": "frag-g8-rule-from-table",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Find the rate of change and initial value of a linear function from a table.",
+      "principles": [
+       "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+      ],
+      "rationale": "Each table comes from a linear rule and sometimes starts at x = 0 and sometimes not. The student reads the rate of change from the steps in y, then works back to b. Negative slopes come up.",
+      "misconceptions": [
+       "Taking the first y in the table as b when the table does not start at x = 0.",
+       "Using the step in y as b."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 254
+    },
+    {
+     "label": "D",
+     "instruction": "Write the equation of the line.",
+     "explainer": "Find the slope m first. Then put one point into y = mx + b to find b.",
+     "items": [
+      {
+       "label": "14",
+       "nodes": [
+        {
+         "text": "A line passes through (−4, 28) and (−1, 13)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q14",
+             "label": "line through (−4, 28) and (−1, 13)",
+             "answer": {
+              "text": "−5x + 8",
+              "also": [
+               "-5x + 8",
+               "−5x+8",
+               "-5x+8"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = −5x + 8"
+      },
+      {
+       "label": "15",
+       "nodes": [
+        {
+         "text": "A line passes through (−2, 8) and (0, −2)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q15",
+             "label": "line through (−2, 8) and (0, −2)",
+             "answer": {
+              "text": "−5x − 2",
+              "also": [
+               "-5x - 2",
+               "−5x−2",
+               "-5x-2"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = −5x − 2"
+      },
+      {
+       "label": "16",
+       "nodes": [
+        {
+         "text": "A line passes through (−1, −7) and (0, −4)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q16",
+             "label": "line through (−1, −7) and (0, −4)",
+             "answer": {
+              "text": "3x − 4",
+              "also": [
+               "3x - 4",
+               "3x−4",
+               "3x-4"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 3x − 4"
+      },
+      {
+       "label": "17",
+       "nodes": [
+        {
+         "text": "A line passes through (1, 6) and (2, 9)."
+        },
+        {
+         "workSpace": {
+          "rows": 2
+         }
+        },
+        {
+         "math": {
+          "atoms": [
+           {
+            "text": "y ="
+           },
+           {
+            "blank": {
+             "id": "q17",
+             "label": "line through (1, 6) and (2, 9)",
+             "answer": {
+              "text": "3x + 3",
+              "also": [
+               "3x+3"
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "key": "y = 3x + 3"
+      }
+     ],
+     "columns": 2,
+     "fragmentId": "frag-g8-line-through-points",
+     "stage": "STAGE_PRACTICE",
+     "design": {
+      "purpose": "Write the equation of a line through two points.",
+      "principles": [
+       "PRINCIPLE_RETRIEVAL_PRACTICE"
+      ],
+      "rationale": "Finding the slope first and then b from one point is the method 8.F.B.4 builds. Points include negative coordinates, and when one has x = 0 the student can read b straight off. Room under each item is for both steps.",
+      "misconceptions": [
+       "Using the y of the first point as b when its x is not 0.",
+       "Finding the slope upside down, as change in x over change in y."
+      ],
+      "references": [
+       "Common Core Standards Writing Team (2013), Progressions for the Common Core State Standards in Mathematics, Grade 8, High School, Functions"
+      ]
+     },
+     "estimatedHeight": 396
+    }
+   ],
+   "estimatedHeight": 658
+  }
+ ],
+ "key": [
+  {
+   "itemLabel": "1",
+   "field": {
+    "id": "q1",
+    "label": "is the table a function",
+    "answer": {
+     "text": "function"
+    }
+   }
+  },
+  {
+   "itemLabel": "2",
+   "field": {
+    "id": "q2",
+    "label": "is the table a function",
+    "answer": {
+     "text": "function"
+    }
+   }
+  },
+  {
+   "itemLabel": "3",
+   "field": {
+    "id": "q3",
+    "label": "is the table a function",
+    "answer": {
+     "text": "not a function"
+    }
+   }
+  },
+  {
+   "itemLabel": "4",
+   "field": {
+    "id": "q4",
+    "label": "is the table a function",
+    "answer": {
+     "text": "function"
+    }
+   }
+  },
+  {
+   "itemLabel": "5",
+   "field": {
+    "id": "q5",
+    "label": "is y = 3(x + 8) linear",
+    "answer": {
+     "text": "linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "6",
+   "field": {
+    "id": "q6",
+    "label": "is y = x/3 + 8 linear",
+    "answer": {
+     "text": "linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "7",
+   "field": {
+    "id": "q7",
+    "label": "is y = 6 − 3x linear",
+    "answer": {
+     "text": "linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "8",
+   "field": {
+    "id": "q8",
+    "label": "is y = x² + 7 linear",
+    "answer": {
+     "text": "not linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "9",
+   "field": {
+    "id": "q9",
+    "label": "is y = x(x + 3) linear",
+    "answer": {
+     "text": "not linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "10",
+   "field": {
+    "id": "q10",
+    "label": "is y = 6/x linear",
+    "answer": {
+     "text": "not linear"
+    }
+   }
+  },
+  {
+   "itemLabel": "11",
+   "field": {
+    "id": "q11",
+    "label": "the rule for the table",
+    "answer": {
+     "text": "−5x − 3",
+     "also": [
+      "-5x - 3",
+      "−5x−3",
+      "-5x-3"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "12",
+   "field": {
+    "id": "q12",
+    "label": "the rule for the table",
+    "answer": {
+     "text": "−4x − 9",
+     "also": [
+      "-4x - 9",
+      "−4x−9",
+      "-4x-9"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "13",
+   "field": {
+    "id": "q13",
+    "label": "the rule for the table",
+    "answer": {
+     "text": "3x + 4",
+     "also": [
+      "3x+4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "14",
+   "field": {
+    "id": "q14",
+    "label": "line through (−4, 28) and (−1, 13)",
+    "answer": {
+     "text": "−5x + 8",
+     "also": [
+      "-5x + 8",
+      "−5x+8",
+      "-5x+8"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "15",
+   "field": {
+    "id": "q15",
+    "label": "line through (−2, 8) and (0, −2)",
+    "answer": {
+     "text": "−5x − 2",
+     "also": [
+      "-5x - 2",
+      "−5x−2",
+      "-5x-2"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "16",
+   "field": {
+    "id": "q16",
+    "label": "line through (−1, −7) and (0, −4)",
+    "answer": {
+     "text": "3x − 4",
+     "also": [
+      "3x - 4",
+      "3x−4",
+      "3x-4"
+     ]
+    }
+   }
+  },
+  {
+   "itemLabel": "17",
+   "field": {
+    "id": "q17",
+    "label": "line through (1, 6) and (2, 9)",
+    "answer": {
+     "text": "3x + 3",
+     "also": [
+      "3x+3"
+     ]
+    }
+   }
+  }
+ ],
+ "design": {
+  "purpose": "Recognize functions and linear functions, and write linear rules.",
+  "principles": [
+   "PRINCIPLE_MULTIPLE_REPRESENTATIONS"
+  ]
+ },
+ "writingSize": "WRITING_SIZE_STANDARD"
+}

@@ -17,13 +17,13 @@ export type { Drawing, Shape } from '../engine/drawing.js';
       @for (s of d().shapes; track $index) {
         @switch (s.t) {
           @case ('line') {
-            <line [attr.x1]="s.x1" [attr.y1]="s.y1" [attr.x2]="s.x2" [attr.y2]="s.y2" stroke="#222" [attr.stroke-width]="s.w ?? 1.5" [attr.stroke-dasharray]="s.dash ?? null" />
+            <line [attr.x1]="s.x1" [attr.y1]="s.y1" [attr.x2]="s.x2" [attr.y2]="s.y2" [attr.stroke]="s.color ?? '#222'" [attr.stroke-width]="s.w ?? 1.5" [attr.stroke-dasharray]="s.dash ?? null" />
           }
           @case ('rect') {
             <rect [attr.x]="s.x" [attr.y]="s.y" [attr.width]="s.w" [attr.height]="s.h" [attr.fill]="s.fill ?? 'white'" stroke="#222" [attr.stroke-width]="s.sw ?? 1.5" [attr.stroke-dasharray]="s.dash ?? null" />
           }
           @case ('circle') {
-            <circle [attr.cx]="s.cx" [attr.cy]="s.cy" [attr.r]="s.r" [attr.fill]="s.fill ?? '#222'" />
+            <circle [attr.cx]="s.cx" [attr.cy]="s.cy" [attr.r]="s.r" [attr.fill]="s.fill ?? s.color ?? '#222'" />
           }
           @case ('path') {
             <path [attr.d]="s.d" [attr.fill]="s.fill ?? 'none'" stroke="#222" [attr.stroke-width]="s.w ?? 1.5" />

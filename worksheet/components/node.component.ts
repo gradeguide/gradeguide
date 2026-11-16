@@ -28,6 +28,7 @@ import {
   DataTableComponent,
   WorkSpaceComponent,
 } from './widgets.component.js';
+import { G68WidgetComponent } from './widgets_g68.component.js';
 import { FractionCircleComponent, GridShapeComponent, MeasuringJugComponent } from './widgets_shapes.component.js';
 import {
   CoinsComponent,
@@ -80,6 +81,7 @@ import { CoordinateGridComponent, DecimalChartComponent, FractionGridComponent, 
     WorkSpaceComponent,
     GridShapeComponent,
     FractionCircleComponent,
+    G68WidgetComponent,
     MeasuringJugComponent,
     SolidComponent,
     CoordinateGridComponent,
@@ -233,6 +235,36 @@ import { CoordinateGridComponent, DecimalChartComponent, FractionGridComponent, 
       }
       @case ('lengthStrips') {
         <ws-length-strips [node]="k.value" [filled]="filled()" />
+      }
+      @case ('doubleNumberLine') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('coordinatePlane') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('boxPlot') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('histogram') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('prismNet') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('heightShape') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('transversal') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('roundSolid') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('boxSolid') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
+      }
+      @case ('angleTriangle') {
+        <ws-g68 [node]="node()" [filled]="filled()" />
       }
       @case ('choices') {
         <ws-choices [node]="k.value" [filled]="filled()" />
