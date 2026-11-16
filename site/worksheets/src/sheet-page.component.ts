@@ -10,8 +10,9 @@ import { type Crumb, TopBarComponent } from './top-bar.component.js';
 type Feeling = 'easy' | 'ok' | 'hard';
 
 // SheetPageComponent is one worksheet: the pages, with print, download and
-// answers beside them, the skills it practises, what to try next, and a
-// "how did it go?" kept only on this device.
+// answers beside them, teaching notes for each part, the skills it
+// practises, what to try next, and a "how did it go?" kept only on this
+// device.
 @Component({
   selector: 'gg-sheet-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -43,6 +44,32 @@ type Feeling = 'easy' | 'ok' | 'hard';
             }
             <span>Page {{ page() + 1 }} of {{ composed().pages.length }}</span>
           </nav>
+        }
+        @if (notes().length) {
+          <section class="notes" aria-labelledby="notes-heading">
+            <h2 id="notes-heading">Teaching notes</h2>
+            @for (n of notes(); track n.label; let first = $first) {
+              <details [open]="first">
+                <summary>Part {{ n.label }} · {{ n.instruction }}</summary>
+                @if (n.purpose) {
+                  <h3>Objective</h3>
+                  <p>{{ n.purpose }}</p>
+                }
+                @if (n.rationale) {
+                  <h3>Approach</h3>
+                  <p>{{ n.rationale }}</p>
+                }
+                @if (n.misconceptions.length) {
+                  <h3>Common errors</h3>
+                  <ul>
+                    @for (m of n.misconceptions; track m) {
+                      <li>{{ m }}</li>
+                    }
+                  </ul>
+                }
+              </details>
+            }
+          </section>
         }
         @if (related().length) {
           <section class="related">
@@ -107,6 +134,13 @@ type Feeling = 'easy' | 'ok' | 'hard';
     .chips li { font-size: 13px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
     .chips a { color: var(--text); text-decoration: none; }
     .tip { font-size: 14px; line-height: 1.5; margin: 0; }
+    .notes { margin-top: 28px; }
+    .notes h2 { margin-top: 0; }
+    .notes details { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); padding: 10px 14px; margin-top: 8px; }
+    .notes summary { font-size: 15px; font-weight: 600; cursor: pointer; }
+    .notes h3 { font-size: 13px; font-weight: 600; color: var(--muted); margin: 12px 0 2px; }
+    .notes p, .notes ul { font-size: 14px; line-height: 1.5; margin: 0; }
+    .notes ul { padding-left: 18px; }
     .related { margin-top: 28px; }
     .related h2 { margin-top: 0; }
     .report { display: inline-block; margin-top: 18px; font-size: 13px; color: var(--muted); }
@@ -122,7 +156,7 @@ type Feeling = 'easy' | 'ok' | 'hard';
       .buttons { flex-direction: row; flex-wrap: wrap; align-items: center; }
     }
     @media print {
-      .actions, .details, .strip, .related { display: none !important; }
+      .actions, .details, .strip, .notes, .related { display: none !important; }
       .layout { display: block; padding: 0; max-width: none; }
       .pages { zoom: 1 !important; display: block; }
       .pages ::ng-deep .page { box-shadow: none !important; margin: 0 !important; break-after: page; }
@@ -170,6 +204,19 @@ export class SheetPageComponent {
       .filter(Boolean)
       .join(' · ');
   });
+  /** Each part's design, once per part, for the teaching notes. */
+  protected readonly notes = computed(() =>
+    this.composed()
+      .pages.flatMap((p) => p.sections)
+      .filter((s) => !s.continued && s.design && (s.design.purpose || s.design.rationale || s.design.misconceptions.length))
+      .map((s) => ({
+        label: s.label,
+        instruction: s.instruction,
+        purpose: s.design!.purpose,
+        rationale: s.design!.rationale,
+        misconceptions: s.design!.misconceptions,
+      })),
+  );
   protected readonly related = computed(() => this.catalog().related(this.sheet()));
   /** A new issue on the worksheet feedback form, filled in with this sheet. */
   protected readonly reportUrl = computed(() => {
